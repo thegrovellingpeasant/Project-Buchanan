@@ -1,0 +1,1084 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aE" = (
+/obj/structure/chair/comfy/modern{
+	dir = 8
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"aO" = (
+/obj/structure/toilet{
+	pixel_y = -1
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -16
+	},
+/obj/structure/mirror{
+	pixel_x = -32
+	},
+/obj/machinery/light/floor{
+	pixel_y = 8;
+	invisibility = 100
+	},
+/turf/open/floor/plasteel/solarpanel,
+/area/shuttle/escape)
+"cK" = (
+/obj/machinery/door/airlock/alarmlock,
+/obj/docking_port/mobile/emergency{
+	dheight = 20;
+	height = 27;
+	width = 19;
+	dir = 8;
+	dwidth = 8;
+	id = "emergency_transit";
+	name = "Vault emergency shuttle"
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"cM" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane3";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"dD" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane14";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = -32;
+	dir = 10
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"eW" = (
+/obj/structure/chair/comfy/modern{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"eY" = (
+/obj/machinery/computer{
+	dir = 4;
+	pixel_x = -6
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"gi" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 4
+	},
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"hG" = (
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	dir = 6
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"if" = (
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"is" = (
+/obj/structure/chair/comfy/modern{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	pixel_x = 3;
+	invisibility = 100;
+	alpha = 100
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"jV" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane12";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"ln" = (
+/obj/structure/chair/comfy/shuttle{
+	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
+	dir = 8;
+	name = "prewar lounge chair"
+	},
+/mob/living/simple_animal/hostile/handy/robobrain{
+	wander = 0;
+	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner");
+	speak_chance = 3;
+	name = "H3RC-UL35";
+	speak = list("Attention, this is your captain speaking...","Of all the planes, in all the airstrips, in all the world, he walks into mine.","I picked the wrong week to stop abusing magnets.","I've had two bad accidents. The third one will either be a charm or it'll kill me.","The way of the future. The way of the future. The way of the future.");
+	desc = "A next-gen cyborg developed by General Atomic International. This one has has a dash of derring-do.";
+	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/three,/obj/item/stock_parts/cell/ammo/mfc,/obj/item/storage/backpack/satchel/old,/obj/item/reagent_containers/food/snacks/grown/rainbow_flower);
+	dir = 8
+	},
+/obj/item/clothing/head/helmet/f13/aviationcap{
+	pixel_y = -1;
+	layer = 4.1;
+	icon = 'icons/mob/clothing/head.dmi';
+	dir = 8;
+	icon_state = "aviationcapup";
+	pixel_x = -1
+	},
+/obj/item/clothing/neck/scarf/cptpatriot{
+	layer = 4.05;
+	icon = 'icons/mob/clothing/neck.dmi';
+	pixel_y = -1;
+	pixel_x = -3;
+	icon_state = "scarf"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"mA" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane7";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"oo" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane1";
+	desc = null;
+	name = "wing";
+	smooth = 0;
+	dir = 8
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane5";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = -32;
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"pq" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	smooth = 0
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = -32;
+	dir = 10
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"rO" = (
+/obj/machinery/door/airlock/survival_pod/glass,
+/obj/machinery/light/floor{
+	invisibility = 100
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"sX" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplaneflat";
+	desc = null;
+	name = "wings";
+	smooth = 0;
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"tf" = (
+/obj/structure/chair/comfy/shuttle{
+	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
+	dir = 8;
+	name = "prewar lounge chair"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"tA" = (
+/obj/structure/curtain{
+	color = "#4e638a";
+	alpha = 225
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"tO" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"tS" = (
+/obj/structure/curtain{
+	color = "#4e638a";
+	alpha = 225
+	},
+/obj/machinery/light/floor{
+	invisibility = 100
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"wO" = (
+/obj/structure/window/shuttle,
+/obj/structure/curtain{
+	color = "#4e638a";
+	alpha = 225
+	},
+/turf/closed/wall/mineral/titanium/transparentundense,
+/area/shuttle/escape)
+"wZ" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 9;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"zv" = (
+/obj/machinery/door/airlock/survival_pod,
+/turf/open/floor/plasteel/solarpanel,
+/area/shuttle/escape)
+"zH" = (
+/obj/structure/table/greyscale,
+/obj/machinery/light/floor{
+	alpha = 0
+	},
+/obj/item/radio/wendoverreceiver,
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"Bb" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane15";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"BT" = (
+/turf/template_noop,
+/area/shuttle/escape)
+"CH" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"CY" = (
+/obj/structure/closet/secure_closet/freezer/cream_pie{
+	locked = 0
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"Er" = (
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = 32;
+	dir = 6
+	},
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane16";
+	desc = null;
+	name = "wings";
+	smooth = 0;
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"EH" = (
+/obj/structure/table/greyscale,
+/obj/machinery/light/floor{
+	alpha = 0
+	},
+/turf/open/floor/plating,
+/area/shuttle/escape)
+"FG" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane13";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"Gz" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 5;
+	smooth = 0
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"HL" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"IC" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane14";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane5";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = -32;
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"Js" = (
+/turf/closed/wall/mineral/titanium/transparent,
+/area/shuttle/escape)
+"JN" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 5;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"KV" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 1;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"Nk" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	name = "wing";
+	plane = -15;
+	layer = 2.1;
+	pixel_x = 32;
+	dir = 6
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"NA" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane4";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"NM" = (
+/obj/structure/window/shuttle,
+/turf/closed/wall/mineral/titanium/transparentundense,
+/area/shuttle/escape)
+"OW" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane11";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"Pm" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane2";
+	desc = null;
+	name = "wing";
+	dir = 8;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"PQ" = (
+/turf/template_noop,
+/area/template_noop)
+"SD" = (
+/turf/closed/wall/mineral/titanium/selectivesmooth,
+/area/shuttle/escape)
+"UR" = (
+/obj/structure/lattice/catwalk{
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "airplane";
+	desc = null;
+	name = "wing";
+	dir = 4;
+	smooth = 0
+	},
+/turf/template_noop,
+/area/shuttle/escape)
+"WF" = (
+/obj/structure/sign/warning/nosmoking/circle,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"WY" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"Yt" = (
+/obj/machinery/door/airlock/external/glass,
+/turf/closed/wall/mineral/titanium/transparentundense,
+/area/shuttle/escape)
+"YR" = (
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/shuttle/escape)
+"YZ" = (
+/obj/structure/chair/comfy/modern{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	pixel_x = 1;
+	invisibility = 100;
+	alpha = 100
+	},
+/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+
+(1,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+Js
+Js
+Js
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(2,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+Js
+eY
+Js
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(3,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+tf
+YR
+ln
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(4,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+NM
+YR
+YR
+gi
+NM
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(5,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+WY
+YR
+CH
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(6,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+tO
+rO
+tO
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(7,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+CY
+if
+HL
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(8,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+zH
+if
+if
+cK
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(9,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+cM
+tO
+WF
+tA
+tO
+tO
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(10,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+cM
+Pm
+tO
+aE
+if
+aE
+tO
+oo
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(11,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+cM
+Pm
+sX
+wO
+aE
+if
+aE
+wO
+sX
+oo
+BT
+PQ
+PQ
+PQ
+PQ
+"}
+(12,1,1) = {"
+PQ
+PQ
+PQ
+cM
+Pm
+sX
+sX
+tO
+aE
+if
+aE
+tO
+sX
+sX
+oo
+BT
+PQ
+PQ
+PQ
+"}
+(13,1,1) = {"
+PQ
+PQ
+cM
+Pm
+sX
+sX
+Er
+wO
+is
+if
+YZ
+wO
+FG
+sX
+sX
+oo
+BT
+PQ
+PQ
+"}
+(14,1,1) = {"
+PQ
+cM
+Pm
+sX
+sX
+Er
+BT
+tO
+aE
+if
+aE
+tO
+NA
+FG
+sX
+sX
+oo
+BT
+PQ
+"}
+(15,1,1) = {"
+cM
+Pm
+sX
+Er
+OW
+BT
+PQ
+wO
+aE
+if
+aE
+wO
+PQ
+NA
+OW
+FG
+sX
+oo
+BT
+"}
+(16,1,1) = {"
+Bb
+Er
+OW
+BT
+PQ
+PQ
+PQ
+tO
+aE
+if
+aE
+tO
+PQ
+PQ
+PQ
+NA
+OW
+FG
+IC
+"}
+(17,1,1) = {"
+mA
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+wO
+YZ
+if
+YZ
+wO
+PQ
+PQ
+PQ
+PQ
+PQ
+NA
+jV
+"}
+(18,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+aE
+if
+aE
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(19,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+wO
+eW
+if
+aE
+wO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(20,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+aE
+if
+if
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(21,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+SD
+SD
+tS
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(22,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+tO
+aO
+zv
+if
+tO
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(23,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+wZ
+tO
+SD
+SD
+if
+tO
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(24,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+PQ
+wZ
+UR
+Yt
+if
+if
+if
+tO
+pq
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+"}
+(25,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+wZ
+UR
+Nk
+hG
+tO
+EH
+tO
+Gz
+KV
+pq
+BT
+PQ
+PQ
+PQ
+PQ
+"}
+(26,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+Bb
+Nk
+BT
+PQ
+tO
+tO
+tO
+PQ
+JN
+KV
+dD
+PQ
+PQ
+PQ
+PQ
+"}
+(27,1,1) = {"
+PQ
+PQ
+PQ
+PQ
+mA
+BT
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+JN
+jV
+PQ
+PQ
+PQ
+PQ
+"}
