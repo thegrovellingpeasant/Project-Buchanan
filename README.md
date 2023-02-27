@@ -1,8 +1,8 @@
 # Interstate-80
 
-Based and maintained from Citadel Station by way of Desert Rose, Fortune, Fortuna, Lone Star, The Wasteland and Rockstar. Good grief.
-
 This one takes place in Wendover, Utah on the Nevada/Utah Stateline just off I-80.
+
+Based and maintained from Citadel Station by way of Desert Rose, Fortune, Fortuna, Lone Star, The Wasteland and Rockstar. Good grief.
 
 **The Wasteland Information**  
 * **Code:** <https://github.com/ogrigbe/thewasteland>
