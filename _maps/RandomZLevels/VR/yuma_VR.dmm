@@ -57,13 +57,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "aL" = (
 /turf/closed/wall/rust{
@@ -147,7 +141,6 @@
 	dir = 8;
 	name = "painting";
 	desc = null;
-	plane = -14;
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -242,13 +235,7 @@
 	vision_range = 0;
 	aggro_vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "bO" = (
 /obj/effect/turf_decal/stripes/line{
@@ -316,13 +303,7 @@
 /obj/structure/barricade/sandbags{
 	resistance_flags = 6
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "cm" = (
 /obj/structure/table{
@@ -422,13 +403,7 @@
 /obj/structure/barricade/tentclothcorner{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "cD" = (
 /obj/structure/window/fulltile/ruins,
@@ -490,18 +465,10 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/deathmatch/rooms/armory)
 "dg" = (
-/obj/structure/table/greyscale{
-	color = "#949494"
-	},
+/obj/structure/table,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/under/rank/civilian/lawyer/black/alt,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "dm" = (
 /obj/effect/decal/marking{
@@ -616,13 +583,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dE" = (
 /obj/structure/legion_extractor{
@@ -636,13 +597,7 @@
 	name = "dense rock";
 	pixel_y = 32
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dF" = (
 /obj/effect/overlay/water/top{
@@ -694,13 +649,7 @@
 	layer = 3.9;
 	name = "tree"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dK" = (
 /turf/open/floor/plasteel/darkred/side{
@@ -1048,13 +997,7 @@
 	},
 /area/holodeck/followers/programs/garden)
 "ga" = (
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "gb" = (
 /obj/structure/table/reinforced,
@@ -1281,13 +1224,7 @@
 	},
 /obj/structure/rack/shelf_metal,
 /obj/item/storage/belt/military/assault/legion,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "hl" = (
 /obj/effect/turf_decal/stripes/line{
@@ -1328,13 +1265,7 @@
 	alpha = 0;
 	invisibility = 101
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "hD" = (
 /obj/effect/decal/marking{
@@ -1378,13 +1309,7 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/vr/bos/deathmatch)
 "hO" = (
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "hQ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -1411,13 +1336,7 @@
 /obj/structure/barricade/tentclothcorner{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "ie" = (
 /turf/closed/indestructible/riveted,
@@ -1692,13 +1611,7 @@
 	pixel_x = 16;
 	pixel_y = 3
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "kC" = (
 /obj/structure/table/optable,
@@ -1726,23 +1639,11 @@
 "kL" = (
 /obj/structure/bonfire,
 /obj/item/flashlight/flare/torch,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "kM" = (
 /obj/structure/bonfire,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "kP" = (
 /turf/open/floor/plating,
@@ -1956,34 +1857,20 @@
 /area/holodeck/followers/programs/medical)
 "lG" = (
 /obj/structure/kitchenspike,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "lP" = (
 /obj/item/clothing/under/f13/sorrows{
 	pixel_y = 7
 	},
 /obj/item/clothing/under/f13/female/sorrows{
-	pixel_y = 3
+	pixel_y = 7
 	},
 /obj/item/clothing/suit/f13/tribal/light/sorrows{
-	pixel_y = 3
+	pixel_y = 6
 	},
-/obj/structure/table/greyscale{
-	color = "#949494"
-	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/obj/structure/table,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "lQ" = (
 /obj/item/stack/sheet/metal/fifty,
@@ -2179,13 +2066,7 @@
 /obj/structure/campfire/barrel{
 	icon_state = "drumfire-lit"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "ng" = (
 /obj/effect/overlay/water/top{
@@ -2212,13 +2093,7 @@
 	},
 /obj/item/key/janitor,
 /obj/structure/rack/shelf_metal,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "no" = (
 /obj/item/stack/sheet/glass/fifty,
@@ -2377,13 +2252,7 @@
 /obj/structure/barricade/tentclothedge{
 	pixel_y = -2
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "om" = (
 /obj/effect/turf_decal/stripes/red/line{
@@ -2440,13 +2309,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "oH" = (
 /obj/effect/turf_decal/stripes/line,
@@ -2698,13 +2561,7 @@
 	icon = 'icons/fallout/objects/furniture/junk.dmi';
 	density = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "qT" = (
 /turf/open/floor/plating,
@@ -2722,13 +2579,7 @@
 /area/awaymission/vr/bos/deathmatch)
 "rd" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "rf" = (
 /obj/effect/turf_decal/bot_red,
@@ -2752,13 +2603,7 @@
 	pixel_y = 4
 	},
 /obj/structure/table/bronze,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "rs" = (
 /turf/open/floor/plasteel/darkblue/corner{
@@ -2819,13 +2664,7 @@
 	name = "dense rock";
 	pixel_y = 32
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "rH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2861,13 +2700,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "rT" = (
 /turf/open/indestructible/binary,
@@ -2962,13 +2795,7 @@
 /area/holodeck/den/programs/armory)
 "sC" = (
 /obj/machinery/smartfridge/drying_rack,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "sH" = (
 /obj/effect/turf_decal/stripes/line{
@@ -3069,13 +2896,7 @@
 /area/holodeck/den/programs/medical)
 "tj" = (
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "tn" = (
 /obj/structure/chair/stool/retro/black,
@@ -3140,7 +2961,6 @@
 	name = "painting";
 	desc = null;
 	color = "#800000";
-	plane = -14;
 	pixel_y = 32
 	},
 /obj/structure/mirror/magic{
@@ -3159,13 +2979,7 @@
 	dir = 8;
 	pixel_y = 3
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "ue" = (
 /obj/structure/vault_door/old{
@@ -3291,13 +3105,7 @@
 /area/holodeck/followers/programs/garden)
 "vO" = (
 /obj/structure/dresser,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "vQ" = (
 /obj/structure/rack,
@@ -3343,13 +3151,7 @@
 /area/holodeck/followers/programs/medical)
 "vW" = (
 /obj/structure/chair/stool/retro/tan,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "wc" = (
 /obj/structure/window/fulltile/store,
@@ -3386,6 +3188,10 @@
 "wn" = (
 /turf/open/floor/plasteel/darkblue,
 /area/awaymission/vr/public/deathmatch)
+"wo" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "wr" = (
 /turf/open/floor/plasteel/darkred/side{
 	dir = 6
@@ -3526,13 +3332,7 @@
 	layer = 3.9;
 	name = "tree"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "xj" = (
 /obj/machinery/computer/holodeck/virtual{
@@ -3619,23 +3419,11 @@
 	alpha = 0;
 	invisibility = 101
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "xO" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "xR" = (
 /turf/open/floor/plating,
@@ -3826,13 +3614,7 @@
 	icon_state = "campfire_o";
 	name = "fire"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "yV" = (
 /obj/structure/chair/booth{
@@ -3964,13 +3746,7 @@
 	pixel_y = -2
 	},
 /obj/item/clothing/head/beret/ncr/ncr_recon/worn,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "zT" = (
 /obj/machinery/computer/holodeck/virtual{
@@ -4100,6 +3876,7 @@
 	name = "dense rock";
 	pixel_y = 32
 	},
+/obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "AF" = (
@@ -4322,13 +4099,7 @@
 	dir = 8;
 	wander = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "CB" = (
 /obj/effect/decal/marking{
@@ -4336,8 +4107,7 @@
 	icon_state = "wlpaint2";
 	dir = 8;
 	name = "painting";
-	desc = null;
-	plane = -4
+	desc = null
 	},
 /turf/closed/indestructible/rock{
 	plane = -15
@@ -4395,13 +4165,7 @@
 	icon_state = "campfire_o";
 	name = "fire"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "CT" = (
 /obj/item/clothing/under/f13/female/rustwalkers{
@@ -4422,13 +4186,7 @@
 /obj/item/wirecutters/crude{
 	layer = 2.9
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "CU" = (
 /obj/effect/holodeck_effect/mobspawner{
@@ -4462,13 +4220,7 @@
 	name = "dense rock";
 	pixel_y = 32
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Di" = (
 /turf/open/floor/plasteel/darkblue/side,
@@ -4506,13 +4258,7 @@
 /area/awaymission/vr/public/deathmatch/red)
 "DE" = (
 /obj/structure/barricade/tentclothcorner,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "DG" = (
 /obj/effect/landmark/vr_spawn/bos,
@@ -4562,13 +4308,7 @@
 	icon = 'icons/obj/drinks.dmi';
 	pixel_y = 3
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "DQ" = (
 /turf/closed/indestructible/rock{
@@ -4588,13 +4328,7 @@
 /area/awaymission/vr/bos/deathmatch)
 "DU" = (
 /obj/structure/barricade/wooden,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "Ei" = (
 /obj/effect/landmark/vr_spawn/followers,
@@ -5121,13 +4855,7 @@
 	dir = 1;
 	wander = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "HS" = (
 /obj/effect/decal/marking{
@@ -5205,13 +4933,7 @@
 /area/awaymission/vr/bos/deathmatch)
 "Ij" = (
 /obj/item/warpaint_bowl,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Ik" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -5244,13 +4966,7 @@
 	dir = 4;
 	wander = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "IH" = (
 /turf/open/floor/plasteel/darkred/side{
@@ -5473,13 +5189,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "JP" = (
 /obj/vehicle/sealed/car{
@@ -5494,13 +5204,7 @@
 	pixel_x = -2;
 	bound_width = 96
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "JW" = (
 /turf/open/floor/plasteel/darkblue/corner,
@@ -5515,13 +5219,7 @@
 /obj/structure/bed/old{
 	icon_state = "bedroll_unrolled"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "Kr" = (
 /obj/structure/curtain,
@@ -5907,6 +5605,17 @@
 "Nf" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/vr/public/deathmatch)
+"Ng" = (
+/obj/structure/window/reinforced{
+	dir = 8;
+	alpha = 0;
+	invisibility = 101;
+	cleanable_type = null;
+	glass_type = null
+	},
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "Nl" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -6037,13 +5746,7 @@
 	pixel_x = -4
 	},
 /obj/item/grenade/plastic/c4,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Oo" = (
 /turf/open/floor/circuit/green/off,
@@ -6070,23 +5773,11 @@
 	name = null;
 	desc = null
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "ON" = (
 /obj/item/stack/sheet/mineral/sandbags,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "OQ" = (
 /obj/structure/chair/booth{
@@ -6109,13 +5800,7 @@
 	name = "dense rock";
 	pixel_y = 32
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "OT" = (
 /obj/structure/punji_sticks,
@@ -6136,13 +5821,7 @@
 	pixel_y = 20;
 	layer = 4.2
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "OY" = (
 /obj/effect/turf_decal/stripes/line{
@@ -6302,8 +5981,7 @@
 	dir = 6;
 	name = "painting";
 	desc = null;
-	pixel_y = 32;
-	plane = -14
+	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/water{
 	color = "#7dfbff";
@@ -6326,13 +6004,7 @@
 /obj/item/clothing/suit/f13/tribal/eighties/green,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/f13/tribal/eighties/blue,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Qp" = (
 /obj/machinery/door/airlock/abductor{
@@ -6353,8 +6025,7 @@
 	dir = 4;
 	name = "painting";
 	desc = null;
-	pixel_y = 32;
-	plane = -14
+	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/water{
 	color = "#7dfbff";
@@ -6396,15 +6067,10 @@
 	dir = 4;
 	layer = 2.7;
 	name = "rug";
-	plane = -15
+	plane = -15;
+	pixel_y = -6
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "QX" = (
 /obj/structure/rack,
@@ -6442,13 +6108,7 @@
 /area/awaymission/vr/bos/deathmatch)
 "Rj" = (
 /mob/living/simple_animal/bearacle,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Rk" = (
 /obj/effect/turf_decal/stripes/line,
@@ -6498,13 +6158,7 @@
 	dir = 8;
 	pixel_x = -1
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "RI" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -6654,6 +6308,10 @@
 /obj/structure/chair/stool/retro/black,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/bos/programs/medical)
+"Ta" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
 "Tb" = (
 /turf/open/floor/plasteel/darkred/corner{
 	dir = 8
@@ -6674,8 +6332,7 @@
 	dir = 1;
 	name = "painting";
 	desc = null;
-	pixel_x = 32;
-	plane = -14
+	pixel_x = 32
 	},
 /obj/effect/decal/marking{
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -6684,8 +6341,7 @@
 	desc = null;
 	pixel_y = -12;
 	color = "#800000";
-	pixel_x = 32;
-	plane = -14
+	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
@@ -6694,13 +6350,7 @@
 /area/f13/wasteland)
 "Ti" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Tj" = (
 /obj/effect/turf_decal/stripes/line{
@@ -6730,13 +6380,7 @@
 	pixel_y = -5;
 	pixel_x = 2
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "TC" = (
 /obj/effect/turf_decal/stripes/line,
@@ -6802,13 +6446,7 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "TZ" = (
 /obj/effect/turf_decal/stripes/line,
@@ -6907,13 +6545,7 @@
 /area/awaymission/vr/public/deathmatch/red)
 "UH" = (
 /obj/structure/barricade/tentclothedge,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "UI" = (
 /obj/effect/turf_decal/stripes/line,
@@ -6929,8 +6561,7 @@
 	icon_state = "wlpaint";
 	name = "painting";
 	desc = null;
-	pixel_y = 32;
-	plane = -14
+	pixel_y = 32
 	},
 /obj/effect/decal/marking{
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -6939,8 +6570,7 @@
 	name = "painting";
 	desc = null;
 	pixel_y = 32;
-	pixel_x = 32;
-	plane = -14
+	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 8;
@@ -7172,13 +6802,7 @@
 /area/awaymission/vr/public/deathmatch)
 "Wx" = (
 /obj/structure/flora/ausbushes/sunnybush,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "WA" = (
 /obj/effect/vr_clean_master,
@@ -7336,13 +6960,7 @@
 	icon_state = "bonfire_on_fire_intense";
 	name = "fire"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Yf" = (
 /obj/item/clothing/suit/f13/tribal/heavy/whitelegs,
@@ -7356,16 +6974,9 @@
 	dir = 6;
 	name = "painting";
 	desc = null;
-	pixel_x = 32;
-	plane = -14
+	pixel_x = 32
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "Yj" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -7391,16 +7002,8 @@
 /obj/item/clothing/suit/f13/tribal/light/deadhorses,
 /obj/item/clothing/suit/f13/tribal/heavy/deadhorses,
 /obj/item/clothing/suit/f13/tribal/deadhorses,
-/obj/structure/table/greyscale{
-	color = "#949494"
-	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/obj/structure/table,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "Yu" = (
 /mob/living/simple_animal/hostile/raider/sulphite{
@@ -7428,13 +7031,7 @@
 	color = "#695447";
 	name = "brahmin leather chair"
 	},
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "YK" = (
 /obj/effect/decal/marking{
@@ -7524,13 +7121,7 @@
 /obj/item/clothing/head/helmet/f13/khan,
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/turf/open/indestructible/ground/outside/gravel{
-	icon_state = "wasteland";
-	icon = 'icons/fallout/turfs/ground.dmi';
-	clawfootstep = "dirt";
-	footstep = "dirt";
-	name = "packed dirt"
-	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "YY" = (
 /obj/effect/turf_decal/stripes/line,
@@ -67006,7 +66597,7 @@ nu
 Sy
 JP
 Oe
-Oe
+Ta
 Oe
 ga
 Ts
@@ -67206,7 +66797,7 @@ vx
 dm
 DQ
 Oe
-Oe
+wo
 xM
 Oe
 Oe
@@ -67216,7 +66807,7 @@ Oe
 Oe
 yJ
 Oe
-Oe
+wo
 Oe
 Sy
 Vt
@@ -67267,7 +66858,7 @@ Oe
 Oe
 Oe
 Oe
-Oe
+Ta
 Oe
 ol
 zO
@@ -67778,7 +67369,7 @@ Sy
 nm
 Oe
 Oe
-Oe
+Ta
 Oe
 Oe
 Oe
@@ -68541,14 +68132,14 @@ Cv
 Cv
 Cv
 Cv
-Jx
+Ng
 Jx
 Jx
 Jx
 Sy
 Oe
 Oe
-Oe
+Ta
 Oe
 Oe
 Ij
@@ -68755,7 +68346,7 @@ Oe
 cf
 cf
 cf
-Oe
+wo
 Oe
 Oe
 oG
@@ -68791,7 +68382,7 @@ gE
 Gq
 OR
 Oe
-Oe
+wo
 Oe
 Oe
 Oe
@@ -68801,7 +68392,7 @@ Oe
 Oe
 IC
 Oe
-Oe
+wo
 Sy
 bh
 Zg
@@ -69067,7 +68658,7 @@ Oe
 Oe
 Oe
 Oe
-Oe
+Ta
 Oe
 hO
 hO
@@ -69264,7 +68855,7 @@ DQ
 Oe
 Oe
 zM
-Oe
+wo
 Oe
 yR
 yR
@@ -69322,7 +68913,7 @@ mH
 Oe
 Oe
 Oe
-Oe
+Ta
 Oe
 Oe
 Oe
@@ -69529,7 +69120,7 @@ yR
 yR
 ga
 Oe
-Oe
+wo
 Oe
 Sy
 aS
@@ -69818,7 +69409,7 @@ gE
 gE
 Gq
 FX
-Oe
+wo
 Oe
 Xm
 Ae
@@ -69827,7 +69418,7 @@ ZL
 ZL
 XC
 mH
-Oe
+wo
 Oe
 Oe
 Sy

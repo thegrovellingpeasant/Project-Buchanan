@@ -113,8 +113,7 @@
 "abX" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/wasteland)
@@ -1012,7 +1011,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/saltflats,
@@ -1582,8 +1581,7 @@
 "awt" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -3221,17 +3219,8 @@
 	},
 /area/f13/building)
 "aRg" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 4;
-	plane = -15;
-	name = "slope"
-	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 1;
-	plane = -15;
-	name = "slope"
+/obj/structure/flora/grass/wasteland{
+	pixel_y = -2
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -5502,6 +5491,7 @@
 	dir = 8;
 	plane = -15
 	},
+/obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "bxq" = (
@@ -7756,7 +7746,6 @@
 	},
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/structure/chair/bench{
-	layer = 2.7;
 	pixel_y = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -7904,7 +7893,6 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /obj/structure/chair/bench{
-	layer = 2.7;
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9465,9 +9453,7 @@
 	pixel_y = 16;
 	layer = 4.25
 	},
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "cDf" = (
@@ -9608,8 +9594,7 @@
 "cEH" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -10121,8 +10106,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/indestructible/ground/inside/mountain,
@@ -12188,11 +12172,6 @@
 	alpha = 0;
 	invisibility = 100
 	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge_left";
-	plane = -15;
-	name = "slope"
-	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "diW" = (
@@ -12263,9 +12242,7 @@
 	},
 /area/f13/wasteland)
 "dkA" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dkG" = (
@@ -12702,7 +12679,8 @@
 /obj/structure/cargocrate{
 	icon_state = "cargocrate3";
 	pixel_x = 2;
-	pixel_y = 35
+	pixel_y = 35;
+	layer = 4.11
 	},
 /obj/item/radio/wendoverreceiver{
 	pixel_x = 6;
@@ -13219,8 +13197,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/wasteland)
@@ -14130,9 +14107,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
 "dHN" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/building)
@@ -14248,6 +14223,14 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/outside/saltflats/gravleft,
+/area/f13/wasteland)
+"dJs" = (
+/obj/structure/stairs/slopes/east,
+/obj/structure/flora/grass/wasteland{
+	pixel_y = -2;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "dJG" = (
 /obj/structure/displaycase{
@@ -14885,9 +14868,7 @@
 	},
 /area/f13/wasteland)
 "dPT" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/instrument/guitar,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -15577,7 +15558,6 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	icon = 'icons/obj/chairs.dmi';
-	layer = 2;
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -16437,8 +16417,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/saltflats{
 	icon_state = "saltsides";
@@ -16781,7 +16760,6 @@
 	mob_storage_capacity = 0
 	},
 /obj/structure/chair/bench{
-	layer = 2.7;
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -19482,6 +19460,14 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/wasteland)
+"eVz" = (
+/obj/structure/stairs/slopes/west,
+/obj/structure/flora/grass/wasteland{
+	pixel_y = -2;
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "eVE" = (
 /obj/structure/table{
 	icon_state = "nv_metal_round";
@@ -20309,8 +20295,7 @@
 	icon_state = "bench_center";
 	dir = 1;
 	pixel_x = -6;
-	pixel_y = 2;
-	layer = 2.99
+	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -21337,7 +21322,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/structure/table,
 /obj/structure/reagent_dispensers/keg{
@@ -23723,9 +23708,7 @@
 	},
 /area/f13/wasteland)
 "fYj" = (
-/obj/structure/closet/crate/critter{
-	name = "animal carrier"
-	},
+/obj/structure/closet/crate/critter,
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "fYo" = (
@@ -25010,7 +24993,8 @@
 	desc = null;
 	name = "wings";
 	dir = 9;
-	smooth = 0
+	smooth = 0;
+	layer = 5.1
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
@@ -25109,9 +25093,7 @@
 	},
 /area/f13/wasteland)
 "gqt" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/building)
 "gqx" = (
@@ -25272,13 +25254,13 @@
 	name = "salt flats";
 	icon = 'icons/fallout/turfs/f13flatz.dmi';
 	icon_state = "edgebright";
-	layer = 2.5;
+	layer = 2.1;
 	plane = -15
 	},
 /obj/structure/car/rubbish3{
 	icon_state = "car_rubish32";
 	pixel_y = -25;
-	layer = 2.1;
+	layer = 2.11;
 	bound_height = 32
 	},
 /turf/open/indestructible/ground/outside/gravel/path_desert/intersection/alt,
@@ -26260,6 +26242,36 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/tunnel)
+"gDS" = (
+/obj/structure/railing{
+	icon_state = "straight_wood";
+	pixel_y = -8;
+	layer = 4.24
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = 15;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	dir = 4;
+	icon_state = "straight_wood";
+	pixel_x = 3
+	},
+/obj/effect/overlay/palmtree_l{
+	layer = 2.01;
+	plane = -15;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "housewood_stage_bottom_right";
+	pixel_y = -5;
+	name = null
+	},
+/turf/open/indestructible/ground/outside/roof{
+	icon_state = "housewood_stage_bottom_right";
+	icon = 'icons/turf/floors.dmi';
+	name = "porch";
+	layer = 2.01
+	},
+/area/f13/wasteland)
 "gDY" = (
 /obj/structure/barricade/tentclothcorner{
 	dir = 8;
@@ -27175,7 +27187,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -27872,7 +27884,7 @@
 /area/f13/building)
 "has" = (
 /obj/structure/railing/wood/post{
-	pixel_x = -19
+	pixel_x = -15
 	},
 /obj/effect/overlay/palmtree_l{
 	layer = 2.03;
@@ -27883,7 +27895,7 @@
 	name = null
 	},
 /obj/structure/railing/wood/post{
-	pixel_x = 18
+	pixel_x = 20
 	},
 /turf/open/indestructible/ground/outside/roof{
 	icon_state = "housewood_stage_bottom";
@@ -28889,8 +28901,7 @@
 "hoY" = (
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -30575,8 +30586,7 @@
 "hKa" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -31178,9 +31188,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/tunnel)
 "hRN" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/reagent_containers/food/drinks/beer{
 	pixel_y = 3;
 	pixel_x = -4;
@@ -32401,7 +32409,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -32451,11 +32459,14 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "ihV" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 4;
-	plane = -15;
-	name = "slope"
+/obj/effect/overlay/gravel/edge/corner{
+	icon_state = "gravel_corner";
+	pixel_y = 1;
+	pixel_x = -1;
+	plane = -15
+	},
+/obj/structure/flora/grass/wasteland{
+	pixel_y = -2
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -32625,8 +32636,7 @@
 "ikD" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/indestructible/ground/inside/mountain,
@@ -38971,8 +38981,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	dir = 4;
-	pixel_x = -6;
-	layer = 2.99
+	pixel_x = -6
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -39297,8 +39306,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/tunnel)
@@ -40569,8 +40577,7 @@
 "khm" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/tunnel)
@@ -40956,6 +40963,16 @@
 	dir = 4;
 	pixel_x = 5;
 	pixel_y = 5
+	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/fallout/turfs/walls/tents.dmi';
+	icon_state = "morecloth_edge";
+	name = null;
+	layer = 5;
+	color = "#000000";
+	alpha = 50;
+	mouse_opacity = 0;
+	dir = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/wasteland)
@@ -42338,14 +42355,6 @@
 	name = "crashed semi";
 	smooth = 0
 	},
-/obj/structure/car/rubbish6{
-	icon = 'icons/mob/nest_new.dmi';
-	icon_state = "scanner_modified";
-	name = "Empty Protectron Pod";
-	desc = null;
-	layer = 3.1;
-	pixel_y = 7
-	},
 /obj/structure/cargocrate{
 	icon_state = "cargocrate2";
 	pixel_y = 1
@@ -42443,8 +42452,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/saltflats{
 	icon_state = "saltcorners";
@@ -43402,8 +43410,7 @@
 	icon_state = "bench_center";
 	dir = 10;
 	pixel_x = -6;
-	pixel_y = 2;
-	layer = 2.99
+	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -43785,7 +43792,15 @@
 	pixel_x = -32;
 	pixel_y = -163
 	},
-/turf/closed/wall/mineral/concrete/blastproof/moresmooth,
+/turf/closed/indestructible/f13/obsidian{
+	icon = 'icons/turf/walls/f13superstore.dmi';
+	icon_state = "supermart";
+	desc = null;
+	name = "concrete wall";
+	canSmoothWith = list(/turf/closed/wall/f13/supermart,/turf/closed/wall/mineral/concrete,/turf/closed/wall,/turf/closed/indestructible/f13/obsidian);
+	icon_type_smooth = "supermart";
+	smooth = 1
+	},
 /area/f13/building)
 "kVM" = (
 /obj/structure/railing{
@@ -45237,8 +45252,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	dir = 4;
-	pixel_x = 6;
-	layer = 2.99
+	pixel_x = 6
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -45536,8 +45550,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -45856,8 +45869,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -45917,7 +45929,15 @@
 	pixel_x = -32;
 	pixel_y = 29
 	},
-/turf/closed/wall/mineral/concrete/blastproof/moresmooth,
+/turf/closed/indestructible/f13/obsidian{
+	icon = 'icons/turf/walls/f13superstore.dmi';
+	icon_state = "supermart";
+	desc = null;
+	name = "concrete wall";
+	canSmoothWith = list(/turf/closed/wall/f13/supermart,/turf/closed/wall/mineral/concrete,/turf/closed/wall,/turf/closed/indestructible/f13/obsidian);
+	icon_type_smooth = "supermart";
+	smooth = 1
+	},
 /area/f13/building)
 "lBM" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -46207,8 +46227,7 @@
 "lFY" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	pixel_x = 6;
-	layer = 2.99
+	pixel_x = 6
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -46241,8 +46260,7 @@
 "lGs" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/saltflats{
 	icon_state = "saltcorners";
@@ -48095,19 +48113,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mgJ" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 1;
-	plane = -15;
-	name = "slope"
+/obj/structure/stairs/slopes/north,
+/obj/structure/flora/grass/wasteland{
+	pixel_y = -2
 	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 4;
-	plane = -15;
-	name = "slope"
-	},
-/turf/open/indestructible/ground/outside/saltflats,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mhj" = (
 /obj/structure/chair/sofa/corp/corner{
@@ -49715,7 +49725,9 @@
 	},
 /area/f13/tunnel)
 "mDK" = (
-/obj/structure/lattice/catwalk,
+/obj/structure/lattice/catwalk{
+	layer = 5.1
+	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "mDM" = (
@@ -50175,8 +50187,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /obj/item/reagent_containers/food/snacks/f13/fancylads{
 	pixel_y = 6
@@ -50271,7 +50282,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	pixel_y = 10;
-	layer = 3.1
+	layer = 2.91
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak/lit,
@@ -52182,7 +52193,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -53597,9 +53608,7 @@
 	dir = 8;
 	wander = 0
 	},
-/obj/structure/closet/crate/critter{
-	name = "animal carrier"
-	},
+/obj/structure/closet/crate/critter,
 /turf/open/floor/f13/yellow,
 /area/f13/building)
 "nDJ" = (
@@ -53631,7 +53640,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -53655,7 +53664,6 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 4;
-	layer = 2.99;
 	pixel_x = 6;
 	pixel_y = 2
 	},
@@ -53925,8 +53933,7 @@
 "nHN" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	pixel_x = -6;
-	layer = 2.99
+	pixel_x = -6
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -54677,6 +54684,13 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
+"nQF" = (
+/obj/structure/wreck/trash/one_tire{
+	anchored = 0;
+	layer = 3
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "nQG" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/wrapping_paper,
@@ -56628,16 +56642,15 @@
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "oqb" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 1;
-	plane = -15;
-	name = "slope"
-	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge_left";
-	plane = -15;
-	name = "slope"
+/obj/structure/stairs/slopes/south,
+/obj/structure/stairs/slopes/east,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/vehicles/small_vehicles.dmi';
+	icon_state = "wheel";
+	dir = 4;
+	layer = 3.01;
+	pixel_x = -8;
+	pixel_y = 7
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -56973,8 +56986,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -57064,6 +57076,35 @@
 	layer = 3.1
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
+/area/f13/wasteland)
+"ouD" = (
+/obj/structure/railing{
+	icon_state = "straight_wood";
+	pixel_y = -8;
+	layer = 4.25
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -15;
+	layer = 4.26
+	},
+/obj/structure/railing{
+	icon_state = "straight_wood";
+	dir = 8
+	},
+/obj/effect/overlay/palmtree_l{
+	layer = 2.01;
+	plane = -15;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "housewood_stage_bottom_left";
+	pixel_y = -5;
+	name = null
+	},
+/turf/open/indestructible/ground/outside/roof{
+	icon_state = "housewood_stage_bottom_left";
+	icon = 'icons/turf/floors.dmi';
+	name = "porch";
+	layer = 2.01
+	},
 /area/f13/wasteland)
 "ouP" = (
 /obj/structure/stairs/slopes/north,
@@ -58545,8 +58586,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/wasteland)
@@ -59313,8 +59353,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -59633,8 +59672,7 @@
 	icon_state = "bench_center";
 	dir = 1;
 	pixel_x = 6;
-	pixel_y = 2;
-	layer = 2.99
+	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -62843,7 +62881,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/structure/table,
 /obj/item/binoculars{
@@ -64780,23 +64818,13 @@
 	},
 /area/f13/wasteland)
 "quH" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge_left";
-	plane = -15;
-	name = "slope"
-	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_edge";
-	dir = 1;
-	plane = -15;
-	name = "slope"
-	},
 /obj/structure/stairs/east{
 	icon_state = "slopes";
 	name = "slope";
 	alpha = 0;
 	invisibility = 100
 	},
+/obj/structure/stairs/slopes/south,
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "quN" = (
@@ -67114,9 +67142,7 @@
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
 "qWS" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/structure/curtain{
 	color = "#845f58";
 	layer = 3.3;
@@ -67590,6 +67616,27 @@
 /turf/open/indestructible/ground/outside/saltflats{
 	icon_state = "saltcorners";
 	dir = 5
+	},
+/area/f13/wasteland)
+"rcj" = (
+/obj/structure/railing{
+	icon_state = "straight_wood";
+	pixel_y = -8;
+	layer = 4.26
+	},
+/obj/effect/overlay/palmtree_l{
+	layer = 2.12;
+	plane = -15;
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "housewood_stage_bottom";
+	pixel_y = -5;
+	name = null
+	},
+/turf/open/indestructible/ground/outside/roof{
+	icon_state = "housewood_stage_bottom";
+	icon = 'icons/turf/floors.dmi';
+	name = "porch";
+	layer = 2.02
 	},
 /area/f13/wasteland)
 "rck" = (
@@ -70626,7 +70673,8 @@
 	desc = null;
 	name = "wings";
 	dir = 4;
-	smooth = 0
+	smooth = 0;
+	layer = 5.1
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
@@ -70898,7 +70946,6 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /obj/structure/chair/bench{
-	layer = 2.7;
 	pixel_y = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -72423,7 +72470,7 @@
 /area/f13/wasteland)
 "sja" = (
 /obj/item/clothing/head/hardhat{
-	pixel_y = 50
+	pixel_y = 46
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -72989,6 +73036,14 @@
 /obj/effect/overlay/junk/curtain,
 /obj/effect/overlay/junk/mirror,
 /turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
+"soJ" = (
+/obj/structure/stairs/slopes/south,
+/obj/structure/flora/grass/wasteland{
+	pixel_y = 6;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "soU" = (
 /obj/structure/railing{
@@ -74809,7 +74864,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/structure/table,
 /turf/open/indestructible/ground/outside/saltflats,
@@ -76348,8 +76403,7 @@
 	icon_state = "bench_center";
 	dir = 6;
 	pixel_x = 6;
-	pixel_y = 2;
-	layer = 2.99
+	pixel_y = 2
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -76538,8 +76592,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -78645,7 +78698,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/saltflats,
@@ -81391,7 +81444,7 @@
 /obj/structure/railing{
 	icon_state = "straight_wood";
 	pixel_y = -8;
-	layer = 4.25;
+	layer = 4.26;
 	pixel_x = 6
 	},
 /obj/effect/overlay/palmtree_l{
@@ -81639,7 +81692,7 @@
 	name = "salt flats";
 	icon = 'icons/fallout/turfs/f13flatz.dmi';
 	icon_state = "edgebright";
-	layer = 2.5;
+	layer = 2.1;
 	pixel_y = 2;
 	pixel_x = -5;
 	plane = -15
@@ -81649,7 +81702,7 @@
 	name = "salt flats";
 	icon = 'icons/fallout/turfs/f13flatz.dmi';
 	icon_state = "edgebright";
-	layer = 2.5;
+	layer = 2.1;
 	pixel_y = 2;
 	plane = -15
 	},
@@ -81696,7 +81749,6 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 8;
-	layer = 2.99;
 	pixel_x = -6;
 	pixel_y = 2
 	},
@@ -82819,9 +82871,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "uTC" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/radio/wendoverreceiver{
 	pixel_y = 1;
 	pixel_x = 1
@@ -82875,9 +82925,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "uUr" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
 	icon = 'icons/obj/drinks.dmi';
 	icon_state = "yellowcola";
@@ -82913,7 +82961,8 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	pixel_y = 6
+	pixel_y = 6;
+	layer = 2.91
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
@@ -83459,9 +83508,7 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "vat" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vav" = (
@@ -84787,15 +84834,11 @@
 /turf/open/indestructible/ground/outside/sidewalk/pateo,
 /area/f13/wasteland)
 "vtb" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "vtd" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/warpaint_bowl,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -85055,8 +85098,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/tunnel)
@@ -85782,8 +85824,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	dir = 1;
-	icon = 'icons/obj/chairs.dmi';
-	layer = 2
+	icon = 'icons/obj/chairs.dmi'
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -87637,9 +87678,7 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
 "wcu" = (
-/obj/structure/chair/bench{
-	layer = 2.1
-	},
+/obj/structure/chair/bench,
 /obj/item/reagent_containers/food/drinks/beer{
 	pixel_y = 2;
 	pixel_x = 10;
@@ -89121,10 +89160,12 @@
 	pixel_y = 3
 	},
 /obj/item/paper{
-	pixel_y = 2
+	pixel_y = 2;
+	layer = 3.01
 	},
 /obj/item/pen{
-	pixel_y = 3
+	pixel_y = 3;
+	layer = 3.02
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland)
@@ -89431,6 +89472,15 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft3"
 	},
+/area/f13/wasteland)
+"wxr" = (
+/obj/structure/stairs/slopes/south,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	plane = -15;
+	name = "slope"
+	},
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "wxC" = (
 /turf/open/indestructible/ground/outside/gravel{
@@ -89919,7 +89969,6 @@
 /obj/structure/chair/bench{
 	icon_state = "bench";
 	icon = 'icons/obj/chairs.dmi';
-	layer = 2;
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -90131,8 +90180,7 @@
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
 	icon = 'icons/obj/chairs.dmi';
-	dir = 4;
-	layer = 2
+	dir = 4
 	},
 /obj/structure/sign/poster/official/build{
 	pixel_x = -32
@@ -90761,7 +90809,8 @@
 /area/f13/wasteland)
 "wOW" = (
 /obj/structure/wreck/trash/one_tire{
-	anchored = 0
+	anchored = 0;
+	layer = 3
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -91924,7 +91973,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/saltflats,
@@ -93929,6 +93978,16 @@
 	pixel_x = -5;
 	pixel_y = -10
 	},
+/obj/effect/overlay/palmtree_l{
+	icon = 'icons/fallout/turfs/walls/tents.dmi';
+	icon_state = "morecloth_edge";
+	name = null;
+	layer = 5;
+	color = "#000000";
+	alpha = 50;
+	mouse_opacity = 0;
+	dir = 9
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "xBO" = (
@@ -95464,14 +95523,6 @@
 	density = 0;
 	icon_state = "bus6noshadow"
 	},
-/obj/structure/car/rubbish6{
-	icon = 'icons/mob/nest_new.dmi';
-	icon_state = "scanner_modified";
-	name = "Empty Protectron Pod";
-	desc = null;
-	layer = 3.1;
-	pixel_y = -8
-	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
 "xUO" = (
@@ -96069,31 +96120,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged,
 /area/f13/wasteland)
-"ybQ" = (
-/obj/structure/wreck/bus/rusted/segmented2{
-	pixel_y = -9;
-	layer = 2.1;
-	name = "Crashed Semi";
-	density = 0;
-	icon_state = "bus3noshadow"
-	},
-/obj/structure/table{
-	icon = 'icons/obj/vehicles/rustybussegmented.dmi';
-	icon_state = "bus18";
-	pixel_x = -2;
-	name = "crashed semi";
-	smooth = 0
-	},
-/obj/structure/car/rubbish6{
-	icon = 'icons/mob/nest_new.dmi';
-	icon_state = "scanner_modified";
-	name = "Empty Protectron Pod";
-	desc = null;
-	layer = 3.1;
-	pixel_y = 7
-	},
-/turf/open/indestructible/ground/outside/saltflats/crackedcenter,
-/area/f13/wasteland)
 "ybS" = (
 /obj/structure/window/fulltile/wood_window,
 /obj/structure/curtain{
@@ -96293,7 +96319,7 @@
 	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi';
 	name = "bleachers";
 	desc = null;
-	layer = 2
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -101072,7 +101098,7 @@ nIY
 uvT
 uvT
 etm
-mgJ
+xgT
 aUe
 plX
 plX
@@ -136110,7 +136136,7 @@ ppi
 plX
 plX
 aHi
-gOq
+soJ
 plX
 ppi
 ppi
@@ -137137,7 +137163,7 @@ scA
 ppi
 plX
 ouP
-oTq
+ihV
 gOq
 plX
 ppi
@@ -137650,8 +137676,8 @@ rBV
 ppi
 ppi
 plX
-aHi
-jur
+mgJ
+nQF
 gOq
 plX
 ppi
@@ -137909,7 +137935,7 @@ ppi
 plX
 kES
 urY
-ord
+oqb
 plX
 ppi
 ppi
@@ -138124,7 +138150,7 @@ plX
 aHi
 jur
 jur
-jur
+aRg
 qjx
 ord
 plX
@@ -138382,7 +138408,7 @@ aHi
 iWx
 qjx
 lwI
-ord
+wxr
 plX
 plX
 pDZ
@@ -139407,7 +139433,7 @@ ppi
 plX
 plX
 vBV
-oqb
+ord
 plX
 icF
 icF
@@ -140176,7 +140202,7 @@ csP
 afZ
 afZ
 oTq
-jur
+aRg
 gOq
 plX
 icF
@@ -140430,7 +140456,7 @@ aQE
 "}
 (170,1,1) = {"
 khn
-jur
+aRg
 jur
 jur
 jur
@@ -140701,7 +140727,7 @@ plX
 ouP
 afZ
 afZ
-aRg
+bHG
 plX
 ppi
 ppi
@@ -140954,7 +140980,7 @@ afZ
 afZ
 afZ
 afZ
-afZ
+eVz
 oTq
 jur
 jur
@@ -141464,7 +141490,7 @@ ppi
 plX
 kES
 lwI
-lwI
+dJs
 lwI
 eCE
 lwI
@@ -145802,7 +145828,7 @@ gth
 gth
 kvF
 wAk
-wAk
+gpe
 mCI
 lyk
 gfw
@@ -146061,7 +146087,7 @@ xIc
 tqt
 ioZ
 jmQ
-gfw
+fcD
 cgQ
 uRr
 jPR
@@ -147342,7 +147368,7 @@ vRP
 uvT
 uvT
 tlw
-ioZ
+fcD
 pxP
 uvT
 mJW
@@ -147597,7 +147623,7 @@ ewS
 ewS
 vRP
 uvT
-jmQ
+eRV
 nIY
 pxP
 uvT
@@ -147842,7 +147868,7 @@ dcx
 xkS
 vbm
 tWk
-wyr
+bRE
 ewS
 vkS
 ewS
@@ -147857,8 +147883,8 @@ uvT
 uvT
 uvT
 eRV
-uvT
 jmQ
+nNS
 nIY
 xaz
 bvc
@@ -148115,7 +148141,7 @@ nNS
 kzx
 uvT
 cpo
-gfw
+fcD
 tdW
 xaz
 bvc
@@ -148618,7 +148644,7 @@ ewS
 ewS
 ewS
 ewS
-sfA
+hqK
 rLB
 ewS
 ewS
@@ -149385,9 +149411,9 @@ uvT
 uvT
 uvT
 uvT
-pxP
+fcD
 nNS
-ioZ
+fcD
 fxR
 uvT
 lpq
@@ -149395,7 +149421,7 @@ ewS
 ewS
 ewS
 vRP
-uvT
+jmQ
 cxR
 kzx
 uvT
@@ -149652,7 +149678,7 @@ ewS
 ewS
 ewS
 vRP
-jmQ
+vtC
 cAl
 tdW
 uvT
@@ -151452,7 +151478,7 @@ gxW
 aMd
 gfw
 pxP
-ioZ
+fcD
 nNS
 nNS
 elS
@@ -153504,7 +153530,7 @@ cgQ
 kMx
 uvT
 eRV
-tlw
+fcD
 ioZ
 tsb
 fWv
@@ -160244,7 +160270,7 @@ ppi
 ppi
 ouu
 ouP
-ihV
+afZ
 oTq
 jur
 jur
@@ -171280,7 +171306,7 @@ oxV
 gQi
 gQi
 wlk
-fSh
+ouD
 nuI
 nuI
 nuI
@@ -171794,7 +171820,7 @@ boE
 aUx
 gQi
 aKK
-dLP
+rcj
 nuI
 nuI
 nuI
@@ -172697,7 +172723,7 @@ uvT
 jmQ
 fcD
 fcD
-ybQ
+oYh
 chs
 tdW
 eRV
@@ -172822,7 +172848,7 @@ oxV
 gQi
 gQi
 nFB
-gLF
+gDS
 nuI
 nuI
 nuI

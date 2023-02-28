@@ -1,5 +1,5 @@
 /obj/structure/closet/crate/critter
-	name = "critter crate"
+	name = "animal carrier"
 	desc = "A crate designed for safe transport of animals. It has an oxygen tank for safe transport in space."
 	icon_state = "crittercrate"
 	horizontal = FALSE
@@ -9,6 +9,7 @@
 	material_drop_amount = 4
 	delivery_icon = "deliverybox"
 	var/obj/item/tank/internals/emergency_oxygen/tank
+	max_mob_size = MOB_SIZE_LARGE
 
 /obj/structure/closet/crate/critter/New()
 	..()
