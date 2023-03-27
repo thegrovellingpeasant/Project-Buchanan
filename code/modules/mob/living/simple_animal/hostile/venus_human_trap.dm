@@ -94,6 +94,36 @@
 /mob/living/simple_animal/hostile/venus_human_trap/ghost_playable
 	playable_plant = TRUE //For admins that want to buss some harmless plants
 
+/mob/living/simple_animal/hostile/venus_human_trap/chauffleur
+	name = "Chauffleur"
+	desc = "Don't forget to tip."
+	icon_state = "venus_human_chauffeur"
+	icon_dead = "venus_human_chauffeur_d"
+	layer = MOB_LAYER
+	dir = WEST
+	wander = FALSE
+	faction = list("neutral","dog","vines")
+	environment_smash = FALSE
+	obj_damage = 0
+	speak = list("I'm on the clock, we'll talk later, eh?","One soap per visitor.","Good to see you!","Do you hear a buzzing sound? It's making me hungry.","Need a haircut? My cousin's a barber, you should see him.")
+	speak_chance = 5
+	initial_language_holder = /datum/language_holder
+
+/mob/living/simple_animal/hostile/venus_human_trap/vinny
+	name = "Viny"
+	desc = "Trash doesn't float far from the chute."
+	icon_state = "venus_human_barber"
+	icon_dead = "venus_human_barber_d"
+	layer = MOB_LAYER
+	dir = WEST
+	wander = FALSE
+	faction = list("neutral","dog","vines")
+	environment_smash = FALSE
+	obj_damage = 0
+	speak = list("Take a seat and look at the menu, we'll have you looking your best in no time.","You been seeing another barber?","Nothin' could be finer than to be in Carolina in the moorrninnng.","This one's on the house.","You see any feds, you keep your mouth shut, yea'?")
+	speak_chance = 5
+	initial_language_holder = /datum/language_holder
+
 /mob/living/simple_animal/hostile/venus_human_trap/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return

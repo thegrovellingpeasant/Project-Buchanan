@@ -148,54 +148,41 @@
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
+/obj/structure/debris
+	name = "theoretical debris"
+	bound_width = 64
+	bound_height = 32
+	anchored = 1
+	density = 1
+	layer = LATTICE_LAYER
+	resistance_flags = INDESTRUCTIBLE
+	var/mutable_appearance/debrisoverlay
+
+/obj/structure/debris/Initialize()
+	. = ..()
+	debrisoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(debrisoverlay)
 
 /obj/structure/debris/v1
 	name = "pre-War building debris"
 	desc = "A pre-War building debris."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "debris1"
-	bound_width = 64
-	bound_height = 64
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
-	resistance_flags = INDESTRUCTIBLE
-
 
 /obj/structure/debris/v2
 	name = "pre-War building debris"
 	desc = "A pre-War building debris."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "debris2"
-	bound_width = 64
-	bound_height = 64
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
-	resistance_flags = INDESTRUCTIBLE
-
 
 /obj/structure/debris/v3
 	name = "pre-War building debris"
 	desc = "A pre-War building debris."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "debris3"
-	bound_width = 64
-	bound_height = 64
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
-	resistance_flags = INDESTRUCTIBLE
-
 
 /obj/structure/debris/v4
 	name = "pre-War building debris"
 	desc = "A pre-War building debris."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "debris4"
-	bound_width = 64
-	bound_height = 64
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
-	resistance_flags = INDESTRUCTIBLE

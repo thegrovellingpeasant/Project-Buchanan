@@ -277,7 +277,7 @@
 /datum/gear/donator/kits/comradegoat
 	name = "Revolutionary kit"
 	path = /obj/item/storage/box/large/custom_kit/comradegoat
-	ckeywhitelist = list("comrade_goat")
+	ckeywhitelist = list("comradegoat") // hope this works, didn't with the underscore in it before
 
 
 /obj/item/storage/box/large/custom_kit/cookyznmlk78

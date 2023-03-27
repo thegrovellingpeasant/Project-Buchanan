@@ -913,7 +913,9 @@
 	},
 /area/holodeck/followers/programs/garden)
 "fH" = (
-/obj/structure/spirit_board,
+/obj/structure/spirit_board{
+	anchored = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "fI" = (
@@ -1044,7 +1046,7 @@
 /area/f13/building)
 "gh" = (
 /turf/closed/wall/rust{
-	canSmoothWith = list(/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/brass,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/turf/closed/wall/clockwork,/turf/closed/indestructible/rock,/obj/effect/decal/marking)
+	canSmoothWith = list(/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/brass,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/turf/closed/wall/clockwork,/turf/closed/indestructible/rock)
 	},
 /area/f13/building)
 "go" = (
@@ -1856,7 +1858,9 @@
 	},
 /area/holodeck/followers/programs/medical)
 "lG" = (
-/obj/structure/kitchenspike,
+/obj/structure/kitchenspike{
+	pixel_y = -4
+	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "lP" = (
@@ -3658,9 +3662,7 @@
 	name = "smoke";
 	pixel_y = -9
 	},
-/turf/closed/indestructible/rock{
-	plane = -15
-	},
+/turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
 "zv" = (
 /obj/structure/chair/stool/retro/black,
@@ -3684,7 +3686,7 @@
 /obj/effect/decal/marking{
 	icon = 'icons/turf/walls/wendoVR.dmi';
 	icon_state = "SW2";
-	plane = -4;
+	plane = -14;
 	layer = 3.9;
 	desc = null;
 	name = "rusted wall";
@@ -4109,9 +4111,7 @@
 	name = "painting";
 	desc = null
 	},
-/turf/closed/indestructible/rock{
-	plane = -15
-	},
+/turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
 "CC" = (
 /turf/closed/indestructible/f13,
@@ -4311,9 +4311,7 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "DQ" = (
-/turf/closed/indestructible/rock{
-	plane = -15
-	},
+/turf/closed/indestructible/rock/lowerplane,
 /area/f13/tunnel)
 "DR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6196,9 +6194,7 @@
 	},
 /area/awaymission/vr/bos/deathmatch)
 "Sy" = (
-/turf/closed/indestructible/rock{
-	plane = -15
-	},
+/turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
 "Sz" = (
 /obj/effect/overlay/water/top{
@@ -6460,9 +6456,7 @@
 	desc = null;
 	name = "smoke"
 	},
-/turf/closed/indestructible/rock{
-	plane = -15
-	},
+/turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
 "Ud" = (
 /obj/structure/chair/stool/bar,

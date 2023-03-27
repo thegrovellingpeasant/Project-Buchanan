@@ -9,8 +9,9 @@
 	desc = "A large tree."
 	density = TRUE
 	pixel_x = -16
-	layer = FLY_LAYER
+	layer = LATTICE_LAYER
 	var/log_amount = 10
+	var/mutable_appearance/treeoverlay
 
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
 	if(log_amount && (!(flags_1 & NODECONSTRUCT_1)))
@@ -107,8 +108,8 @@
 /obj/structure/flora/tree/tall/Initialize()
 	. = ..()
 	icon_state = "tree_[rand(1,3)]"
-	AddComponent(/datum/component/largetransparency, y_offset = 1, y_size = 2)
-
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)
 
 /obj/structure/festivus
 	name = "festivus pole"
@@ -125,6 +126,8 @@
 /obj/structure/flora/tree/dead/Initialize()
 	. = ..()
 	icon_state = "tree_[rand(1, 6)]"
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)
 
 /obj/structure/flora/tree/jungle
 	name = "tree"

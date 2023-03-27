@@ -253,6 +253,7 @@
 	icon_state = "mirelurkeggs"
 	max_mobs = 1
 	mob_types = list(/mob/living/simple_animal/hostile/mirelurk/baby = 5)
+	plane = FLOOR_PLANE
 
 /obj/structure/nest/raider
 	name = "narrow tunnel"

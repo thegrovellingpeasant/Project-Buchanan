@@ -223,6 +223,10 @@
 	bound_width = 32
 	bound_height = 32
 
+/obj/structure/wreck/trash
+	name = "theoretical trash"
+	layer = OBJ_LAYER
+
 /obj/structure/wreck/trash/five_tires
 	name = "Tire Pile"
 	desc = "A pile of tires."

@@ -1,0 +1,115 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/overlay/desert/sonora/saltflats/south{
+	pixel_y = -29;
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"d" = (
+/obj/effect/overlay/desert/sonora/saltflats/west{
+	pixel_x = -29;
+	pixel_y = -2
+	},
+/obj/effect/overlay/desert/sonora/saltflats/south{
+	pixel_y = -29;
+	dir = 6;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"e" = (
+/obj/effect/overlay/desert/sonora/saltflats/west{
+	pixel_x = -29;
+	pixel_y = -4
+	},
+/obj/effect/overlay/desert/sonora/saltflats/north{
+	pixel_y = 29
+	},
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"v" = (
+/obj/effect/overlay/desert/sonora/saltflats/east{
+	pixel_x = 29;
+	dir = 9
+	},
+/obj/effect/overlay/desert/sonora/saltflats/south{
+	pixel_y = -29;
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"w" = (
+/obj/structure/chair/stool/retro/black,
+/obj/docking_port/mobile/elevator{
+	dir = 8;
+	height = 3;
+	width = 4;
+	dwidth = 1;
+	id = "intrepid_elevator";
+	name = "Intrepid Elevator";
+	preferred_direction = 4
+	},
+/obj/effect/overlay/desert/sonora/saltflats/east{
+	pixel_x = 29
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"y" = (
+/obj/structure/bonfire,
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"z" = (
+/obj/effect/overlay/desert/sonora/saltflats/east{
+	pixel_x = 29;
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"J" = (
+/obj/structure/chair/stool/retro/tan,
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"S" = (
+/obj/effect/overlay/desert/sonora/saltflats/north{
+	pixel_y = 29
+	},
+/obj/effect/overlay/desert/sonora/saltflats/east{
+	pixel_x = 29
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"U" = (
+/obj/effect/overlay/desert/sonora/saltflats/north{
+	pixel_y = 29;
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+"W" = (
+/obj/effect/overlay/desert/sonora/saltflats/west{
+	pixel_x = -29;
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/outside/saltflats,
+/area/shuttle/intrepid_elevator)
+
+(1,1,1) = {"
+e
+W
+W
+d
+"}
+(2,1,1) = {"
+U
+J
+y
+a
+"}
+(3,1,1) = {"
+S
+z
+w
+v
+"}

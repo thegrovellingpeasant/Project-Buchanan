@@ -40,7 +40,7 @@
 	icon_state = "singlevertical" //See decals.dmi for different icon states of road markings.
 	anchored = 1
 	layer = 2.1
-	resistance_flags = INDESTRUCTIBLE
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
 
 /obj/effect/decal/riverbank
 	name = "riverbank"

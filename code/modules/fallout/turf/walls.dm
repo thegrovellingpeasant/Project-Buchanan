@@ -41,6 +41,21 @@
 	girder_type = 0
 	canSmoothWith = list(/turf/closed/wall/f13/wood, /turf/closed/wall)
 
+/turf/closed/wall/f13/woodalt
+	name = "wooden wall"
+	desc = "A traditional wooden wall."
+	icon = 'icons/turf/walls/wood_wall.dmi'
+	icon_state = "wood"
+	icon_type_smooth = "wood"
+	hardness = 60
+	smooth = SMOOTH_TRUE
+	unbreakable = 0
+	baseturfs = /turf/open/floor/plating/wooden
+	sheet_type = /obj/item/stack/sheet/mineral/wood
+	sheet_amount = 2
+	girder_type = 0
+	canSmoothWith = list(/turf/closed/wall/f13/wood, /turf/closed/wall, /turf/closed/wall/f13/woodalt)
+
 /turf/closed/wall/f13/wood/house
 	name = "house wall"
 	desc = "A weathered pre-War house wall."
@@ -273,6 +288,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	// layer = LATTICE_LAYER
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall)
+	plane = GAME_PLANE
 
 /turf/closed/indestructible/f13/vaultwall/notvaultwall //Just like that one game studio that worked on the original game, or that block in Minecraft!
 	name = "wall"

@@ -105,3 +105,15 @@
 	possible_destinations = "Enclave_Bunker;Enclave_Surface"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/machinery/computer/shuttle/intrepid_elevator
+	name = "elevator controls"
+	desc = "Controls for the Intrepid Potash mining company elevator."
+	icon_screen = "shuttle"
+	icon_keyboard = "tech_key"
+	light_color = LIGHT_COLOR_CYAN
+	circuit = /obj/item/circuitboard/computer/intrepid_control
+	shuttleId = "intrepid_elevator"
+	possible_destinations = "intrepid_above;intrepid_surface;intrepid_underground"
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF

@@ -490,7 +490,8 @@
 	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/f13
-	flags_inv = HIDEHAIR
+	name = "hat"
+	// flags_inv = HIDEHAIR removing this because the cure is worse than the disease in this case, baldness is more noticeable than hair tufts
 
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"

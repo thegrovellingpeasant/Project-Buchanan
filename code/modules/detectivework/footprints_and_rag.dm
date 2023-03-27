@@ -109,11 +109,13 @@
 	to_chat(user, "<span class='notice'>You lay out \the [src] flat on the ground.</span>")
 	icon_state = flat_icon
 	layer = BELOW_OBJ_LAYER
+	plane = FLOOR_PLANE
 
 /obj/item/reagent_containers/glass/rag/towel/pickup(mob/living/user)
 	. = ..()
 	icon_state = folded_icon
 	layer = initial(layer)
+	plane = initial(plane)
 
 /obj/item/reagent_containers/glass/rag/towel/on_reagent_change(changetype)
 	force = initial(force) + round(reagents.total_volume * 0.5)

@@ -199,6 +199,24 @@
 	health = 300
 	maxHealth = 300
 
+/mob/living/simple_animal/hostile/handy/robobrain/secretary
+	name = "SCR3-T3R1"
+	desc = "A next-gen cyborg developed by General Atomic International. This one has stars in her visual acuitizers."
+	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc, /obj/item/storage/backpack/satchel/old, /obj/item/reagent_containers/food/snacks/grown/rainbow_flower)
+	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
+	speak = list("Welcome home, doctor. Was the expedition conducive to your experiments?","You look strapping today, doctor! Positively modish.","Good luck out there, I will keep a hold on things here until you return.","He loves me, he loves me not. He loves me...","What would he do without me? Probably get himself killed is what- Oh, doctor, I didn't see you there.")
+	speak_chance = 5
+	wander = FALSE
+
+/mob/living/simple_animal/hostile/handy/robobrain/hercules
+	name = "H3RC-UL35"
+	desc = "A next-gen cyborg developed by General Atomic International. This one has has a dash of derring-do."
+	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
+	speak = list("Attention, this is your captain speaking...","Of all the planes, in all the airstrips, in all the world, she walks into mine.","I picked the wrong week to stop abusing magnets.","I've had two bad accidents. The third one will either be the charm or it'll kill me.","The way of the future. The way of the future. The way of the future.")
+	speak_chance = 5
+	wander = FALSE
+	dir = WEST
+
 /mob/living/simple_animal/hostile/handy/protectron
 	name = "protectron"
 	desc = "A pre-war security robot armed with deadly lasers."
@@ -283,6 +301,18 @@
 	wander = FALSE
 	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
 
+/mob/living/simple_animal/hostile/handy/protectron/tourguide // planetarium bot
+	name = "Tour Guide"
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
+	icon_state = "protectron_trade"
+	icon_living = "protectron_dead"
+	layer = TRAY_LAYER
+	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/three,/obj/item/stock_parts/cell/ammo/mfc)
+	wander = FALSE
+	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
+	speak = list("Welcome to the REPCONN: 'Blast Off to the Future!' exhibit.","The future is bright, RobCo and REPCONN will bring us there together!","The Extravehicular Mobility Unit MKI, seen on the left, saw frequent use by NASA through the 20th century!","The MKII space suit, designed in collaboration by RobCo and REPCONN continues the proud tradition of American space exploration!","♫I was strolling on the Moon one day...♫","*Bzzt* Did you ᵏⁿᵒʷ the Eighties were the first tribe in space?","Proud partners of Nuka Cola, make sure to see Nuka Girl for your complimentary bottle. And see her in theaters soon!")
+	speak_chance = 3
+
 /mob/living/simple_animal/bearacle //Not an actual bear
 	name = "The Bearacle"
 	desc = "Well-mannered by bear and post apocalyptic human standards, with a deep fatalistic streak."
@@ -292,7 +322,7 @@
 	icon_dead = "combatbear_dead"
 	maxHealth = 200
 	health = 200
-	speak_chance = 3
+	speak_chance = 5
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	faction = list("neutral", "silicon", "dog", "hostile", "pirate", "wastebot", "wolf", "plants", "turret", "enclave", "ghoul", "cazador", "supermutant", "gecko", "slime", "radscorpion", "skeleton", "carp", "bs", "bighorner")
 	speak = list("Rest and prepare.", "Your weapons, you will not need them.", "Between you and me, I'm not so sure about some of these tribes.", "Yao Guai gauntlet...? No comment.", "93 tribes are represented in this place.", "Proceed when you are ready.", "I hope you will find the answers you seek.", "Take some time to sit by the waters and reflect.")
@@ -316,7 +346,7 @@
 	icon_dead = "combatbear_dead"
 	maxHealth = 200
 	health = 200
-	speak_chance = 1
+	speak_chance = 5
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	faction = list("neutral", "silicon", "dog", "hostile", "pirate", "wastebot", "wolf", "plants", "turret", "enclave", "ghoul", "cazador", "supermutant", "gecko", "slime", "radscorpion", "skeleton", "carp", "bs", "bighorner")
 	speak = list("Ask what you will of the dead, but beware... they may ask for a boon in return.", "Take heed: death does not necessarily impart wisdom.","Do you have need of guidance?", "Your mileage may vary.", "Limit one per customer.", "Oso no se responsabiliza de los daños, lesiones o sufrimientos causados.")

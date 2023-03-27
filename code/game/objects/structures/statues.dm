@@ -228,6 +228,62 @@
 	name = "statue of the AI core."
 	icon_state = "ai2"
 
+/obj/structure/statue/diamond/indestructible  // i used this on my map too many times to redo things so i'm hijacking this and the old ai1 is now ai3    - urist
+	name = "statue of the AI hologram."
+	icon_state = "ai1"
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE
+	
+/obj/structure/statue/diamond/overlayable
+
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE
+	anchored = TRUE
+	var/mutable_appearance/signoverlay
+
+/obj/structure/statue/diamond/overlayable/Initialize()
+	. = ..()
+	signoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(signoverlay)
+
+/obj/structure/statue/diamond/overlayable/WendoverWill
+	name = "Wendover Will"
+	desc = "Iconic mascot of the Stateline casino. Where the West Begins."
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "wendoverwill"
+	density = FALSE
+
+/obj/structure/statue/diamond/overlayable/MontegoBay
+	name = "Montego Bay"
+	desc = "How you wish you were in Sherbrooke now."
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "MontegoBay"
+	pixel_x = -2
+	density = FALSE
+
+/obj/structure/statue/diamond/overlayable/MontegoBay/Initialize()
+	. = ..()
+	signoverlay = mutable_appearance(icon, "[icon_state]overlay", SPACEVINE_LAYER)
+	add_overlay(signoverlay)
+
+/obj/structure/statue/diamond/overlayable/palmtree
+	name = "palm tree"
+	desc = "A tree straight from the tropics."
+	icon = 'icons/misc/beach2.dmi'
+	icon_state = "palm1"
+
+/obj/structure/statue/diamond/overlayable/motherofcombustionright
+	name = "The Mother of Combustion"
+	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she is a valuable motif for the compound."
+	icon = 'icons/obj/tomb.dmi'
+	icon_state = "ladystatue-right"
+
+/obj/structure/statue/diamond/overlayable/motherofcombustionleft
+	name = "The Mother of Combustion"
+	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she is a valuable motif for the compound."
+	icon = 'icons/obj/tomb.dmi'
+	icon_state = "ladystatue-left"
+
 /////////////////////sandstone/////////////////////////////////////////
 
 /obj/structure/statue/sandstone
@@ -348,6 +404,19 @@
 		O.Shift(SOUTH, 6)
 		overlays += O
 
+/obj/structure/statue/wood/whitelegtotem
+	name = "war totem"
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "wartotem2"
+	anchored = TRUE
+	pixel_x = -16
+	var/mutable_appearance/totemoverlay
+
+/obj/structure/statue/wood/whitelegtotem/Initialize()
+	. = ..()
+	totemoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(totemoverlay)
+
 //fortuna statues
 
 /obj/structure/statue/bos/ladyleft
@@ -356,9 +425,12 @@
 	icon = 'icons/obj/tomb.dmi'
 	icon_state = "ladystatue-left"
 	anchored = TRUE
+
 /obj/structure/statue/bos/ladyright
 	name = "The Lady"
 	desc = "The inscription reads 'Scribe with hands outstretched, pray her shelter of the world, reborn anew of olde.'"
 	icon = 'icons/obj/tomb.dmi'
 	icon_state = "ladystatue-right"
 	anchored = TRUE
+
+

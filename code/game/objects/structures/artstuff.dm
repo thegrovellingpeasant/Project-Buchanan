@@ -210,10 +210,10 @@
 	icon_state = "23x23"
 	width = 23
 	height = 23
-	pixel_x = 5
-	pixel_y = 8
+	pixel_x = 4
+	pixel_y = 6
 	framed_offset_x = 5
-	framed_offset_y = 6
+	framed_offset_y = 5
 
 /obj/item/canvas/twentyfourXtwentyfour
 	icon_state = "24x24"

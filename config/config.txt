@@ -24,7 +24,7 @@ $include policy.txt
 SERVERNAME Fallout: Interstate 80
 
 ##Server tagline: This will appear right below the server's title.
-SERVERTAGLINE [18+] Take a trip to Utah to see the Bonneville Salt Flats!
+SERVERTAGLINE [18+] Take a trip to Utah and see the Bonneville Salt Flats!
 
 ##Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME pleasework

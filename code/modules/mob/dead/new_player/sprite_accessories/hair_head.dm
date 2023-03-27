@@ -185,10 +185,6 @@
 	name = "Combover"
 	icon_state = "hair_combover"
 
-/datum/sprite_accessory/hair/contessa
-	name = "Contessa"
-	icon_state = "hair_contessa"
-
 /datum/sprite_accessory/hair/cornrows1
 	name = "Cornrows"
 	icon_state = "hair_cornrows"

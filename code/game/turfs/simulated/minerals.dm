@@ -11,8 +11,9 @@
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS // OOPS
 	opacity = 1
 	density = TRUE
+	plane = GAME_PLANE
 	blocks_air = 1
-	layer = EDGED_TURF_LAYER
+	layer = LATTICE_LAYER
 	var/indestructible = 0 //fortuna edit
 	initial_temperature = 293.15
 	// base_icon_state = "smoothrocks"

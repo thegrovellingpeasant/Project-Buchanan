@@ -154,10 +154,27 @@
 	desc = "An extremely densely-packed rock, most mining tools or explosives would never get through this."
 	icon = 'icons/fallout/turfs/mining.dmi' //fortuna edit. fixing icon path.
 	icon_state = "rock"
+	plane = GAME_PLANE
 
 /turf/closed/indestructible/rock/lowerplane
 	name = "dense rock"
-	plane = OPENSPACE_PLANE
+	plane = FLOOR_PLANE
+
+/turf/closed/indestructible/rock/smoothing
+	name = "dense rock"
+	var/smooth_icon = 'icons/turf/smoothrocks.dmi'
+	canSmoothWith = null
+	smooth = SMOOTH_MORE|SMOOTH_BORDER
+	plane = GAME_PLANE
+
+/turf/closed/indestructible/rock/smoothing/Initialize()
+	if (!canSmoothWith)
+		canSmoothWith = list(/turf/closed/mineral, /turf/closed/indestructible)
+	var/matrix/M = new
+	M.Translate(-4, -4)
+	transform = M
+	icon = smooth_icon
+	. = ..()
 
 /turf/closed/indestructible/f13vaultrusted
 	name = "rusty vault wall"

@@ -150,16 +150,18 @@
 	anchored = 1
 	w_class = 4
 
-	layer = 4.1
+	layer = LATTICE_LAYER
 	icon = 'icons/obj/flags.dmi'
 	icon_state = "emptyflag"
 	item_state = "emptyflag"
 	var/faction = null
 	var/removing
+	var/mutable_appearance/flagoverlay
 
 /obj/item/flag/Initialize()
 	. = ..()
-	AddComponent(/datum/component/largetransparency, y_size = 1)
+	flagoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(flagoverlay)
 
 /obj/item/flag/ncr
 	name = "NCR flag"

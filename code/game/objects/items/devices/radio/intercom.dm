@@ -202,6 +202,7 @@
 	frequency = FREQ_VAULT
 	canhear_range = 5
 	channels = list(RADIO_CHANNEL_VAULT = 1)
+	plane = GAME_PLANE
 	
 /obj/item/radio/intercom/mayorsecretaryintercom
 	name = "intercom"

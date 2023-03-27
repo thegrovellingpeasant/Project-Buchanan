@@ -32,6 +32,7 @@
 	name = "slope"
 	icon = 'icons/obj/stairs.dmi'
 	icon_state = "slopes"
+	plane = FLOOR_PLANE
 
 /obj/structure/stairs/slopes/north
 	dir = NORTH
@@ -45,6 +46,17 @@
 /obj/structure/stairs/slopes/west
 	dir = WEST
 
+/obj/structure/stairs/north/invisible
+	invisibility = INVISIBILITY_ABSTRACT
+
+/obj/structure/stairs/south/invisible
+	invisibility = INVISIBILITY_ABSTRACT
+
+/obj/structure/stairs/east/invisible
+	invisibility = INVISIBILITY_ABSTRACT
+
+/obj/structure/stairs/west/invisible
+	invisibility = INVISIBILITY_ABSTRACT
 
 /obj/structure/stairs/Initialize(mapload)
 	if(force_open_above)

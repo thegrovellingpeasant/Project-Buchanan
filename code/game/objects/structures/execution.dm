@@ -12,6 +12,16 @@
 	max_integrity = 250
 	bound_height = 64
 
+/obj/structure/cross/higherlayer
+	name = "cross"
+	bound_height = 32
+	var/mutable_appearance/crossoverlay
+
+/obj/structure/cross/higherlayer/Initialize()
+	. = ..()
+	crossoverlay = mutable_appearance(icon, "crossoverlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(crossoverlay)
+
 /obj/structure/cross/crowbar_act(mob/living/user, obj/item/I)
 	if(has_buckled_mobs())
 		to_chat(user, "<span class='notice'>You can't do that while something's on the cross!</span>")

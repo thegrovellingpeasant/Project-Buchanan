@@ -96,16 +96,36 @@
 /obj/structure/flora/tree/wasteland/Initialize()
 	. = ..()
 	icon_state = "deadtree_[rand(1,6)]"
-	AddComponent(/datum/component/largetransparency, y_offset = 1)
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)
+
+/obj/structure/flora/tree/toppledpowerline
+	name = "toppled power line"
+	desc = "It's a power line. Useful source of wood in the desert. This one seems to have fallen over."
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "toppledpowerline"
+	density = FALSE
+	layer = LATTICE_LAYER
+	pixel_x = 16
+	bound_width = 96
+	log_amount = 4
+	obj_integrity = 100
+	max_integrity = 100
 
 /obj/structure/flora/tree/powerline
 	name = "power line"
 	desc = "It's a power line. Useful source of wood in the desert."
 	icon = 'icons/obj/Ritas.dmi'
 	icon_state = "powerline"
+	layer = LATTICE_LAYER
 	log_amount = 4
 	obj_integrity = 100
 	max_integrity = 100
+
+/obj/structure/flora/tree/powerline/Initialize()
+	. = ..()
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)
 
 /obj/structure/flora/wasteplant
 	name = "wasteland plant"
@@ -255,7 +275,8 @@ obj/structure/flora/wasteplant/wild_punga
 /obj/structure/flora/tree/joshua/Initialize()
 	. = ..()
 	icon_state = "joshua_[rand(1,4)]"
-	AddComponent(/datum/component/largetransparency, y_offset = 1)
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)
 
 /obj/structure/flora/tree/cactus
 	name = "cactus"
@@ -263,3 +284,9 @@ obj/structure/flora/wasteplant/wild_punga
 	icon = 'icons/obj/flora/deadtrees.dmi'
 	icon_state = "cactus"
 	log_amount = 2
+	pixel_x = 0
+
+/obj/structure/flora/tree/cactus/Initialize()
+	. = ..()
+	treeoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treeoverlay)

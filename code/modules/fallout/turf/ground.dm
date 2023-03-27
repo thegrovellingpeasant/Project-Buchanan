@@ -358,9 +358,50 @@
 	name = "desert edge"
 	icon = 'icons/fallout/turfs/wasteland.dmi'
 	icon_state = "desertedge"
+	plane = FLOOR_PLANE
+	layer = LOW_OBJ_LAYER
 
 /obj/effect/overlay/desert/sonora/edge/corner
 	icon_state = "desertcorner"
+
+/obj/effect/overlay/desert/sonora/edge/north
+	name = "desert edge"
+	dir = NORTH
+
+/obj/effect/overlay/desert/sonora/edge/south
+	name = "desert edge"
+	dir = SOUTH
+
+/obj/effect/overlay/desert/sonora/edge/east
+	name = "desert edge"
+	dir = EAST
+
+/obj/effect/overlay/desert/sonora/edge/west
+	name = "desert edge"
+	dir = WEST
+
+/obj/effect/overlay/desert/sonora/saltflats
+	name = "salt flats"
+	icon = 'icons/fallout/turfs/f13flatz.dmi'
+	icon_state = "edgebright"
+	plane = FLOOR_PLANE
+	layer = LOW_OBJ_LAYER
+
+/obj/effect/overlay/desert/sonora/saltflats/north
+	name = "salt flats"
+	dir = NORTH
+
+/obj/effect/overlay/desert/sonora/saltflats/south
+	name = "salt flats"
+	dir = SOUTH
+
+/obj/effect/overlay/desert/sonora/saltflats/east
+	name = "salt flats"
+	dir = EAST
+
+/obj/effect/overlay/desert/sonora/saltflats/west
+	name = "salt flats"
+	dir = WEST
 
 /turf/open/indestructible/ground/outside/desert/proc/plantGrass(Plantforce = FALSE)
 	var/Weight = 0
@@ -1345,6 +1386,9 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 
+/turf/open/indestructible/ground/outside/lifelessdesert/wendoverwillsafecorner // this is weird code needed to stop the buggy from driving in a way that clips with the statue
+	name = "desert"
+
 /turf/open/indestructible/ground/outside/fakeelevation
 	name = "fake elevation"
 	icon = 'icons/fallout/turfs/floors.dmi'
@@ -1359,13 +1403,41 @@
     else
         return TRUE
 
+/turf/open/indestructible/ground/outside/fakeelevation/wendoverwillsafecorner
+	name = "desert"
+	icon_state = "wasteland"
+	icon = 'icons/fallout/turfs/ground.dmi'
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+
 // Two edge smootheners for the new gravel turf
 /obj/effect/overlay/gravel/edge
 	name = "gravel edge"
 	icon = 'icons/fallout/turfs/gravel.dmi'
 	icon_state = "graveledge"
+	plane = FLOOR_PLANE
+	layer = LOW_OBJ_LAYER
 
 /obj/effect/overlay/gravel/edge/corner
 	icon_state = "gravelcorner"
+	plane = FLOOR_PLANE
+	layer = LOW_OBJ_LAYER
+
+/obj/effect/overlay/gravel/edge/north
+	name = "gravel edge"
+	dir = NORTH
+
+/obj/effect/overlay/gravel/edge/south
+	name = "gravel edge"
+	dir = SOUTH
+
+/obj/effect/overlay/gravel/edge/east
+	name = "gravel edge"
+	dir = EAST
+
+/obj/effect/overlay/gravel/edge/west
+	name = "gravel edge"
+	dir = WEST
 
 

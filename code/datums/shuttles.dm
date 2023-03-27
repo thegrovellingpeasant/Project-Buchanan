@@ -207,6 +207,10 @@
 	port_id = "vault113"
 	can_be_bought = FALSE
 
+/datum/map_template/shuttle/intrepid
+	port_id = "intrepid"
+	can_be_bought = FALSE
+
 // Shuttles start here:
 
 /datum/map_template/shuttle/emergency/backup
@@ -655,6 +659,11 @@
 /datum/map_template/shuttle/mining/elevator
 	suffix = "elevator"
 	name = "Mining Elevator"
+
+/datum/map_template/shuttle/intrepid_elevator
+	suffix = "elevator"
+	name = "Intrepid Elevator"
+	port_id = "intrepid"
 
 /datum/map_template/shuttle/emergency/pahrump
 	suffix = "pahrump"

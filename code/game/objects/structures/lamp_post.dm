@@ -16,17 +16,21 @@
 	density = TRUE
 
 	pixel_x = -32
+	var/mutable_appearance/lampunderlay
 
-/obj/structure/lamp_post/doubles
+/obj/structure/lamp_post/tall/singles
+	icon_state = "nvlamp-singles"
+
+/obj/structure/lamp_post/tall/doubles
 	icon_state = "nvlamp-straight-doubles"
 
-/obj/structure/lamp_post/doubles/bent
+/obj/structure/lamp_post/tall/doubles/bent
 	icon_state = "nvlamp-corner-doubles"
 
-/obj/structure/lamp_post/triples
+/obj/structure/lamp_post/tall/triples
 	icon_state = "nvlamp-tripples"
 
-/obj/structure/lamp_post/quadra
+/obj/structure/lamp_post/tall/quadra
 	icon_state = "nvlamp-quadra"
 
 /obj/structure/lamp_post/floodlight
@@ -45,6 +49,12 @@
 			setAnchored(!anchored)
 	else
 		return ..()
+
+/obj/structure/lamp_post/floodlight/setdressing
+	invisibility = SEE_INVISIBLE_MINIMUM
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	density = FALSE
+	alpha = 0
 
 /obj/structure/lamp_post/discoball
 	name = "disco ball"
@@ -66,6 +76,12 @@
 /obj/structure/lamp_post/Initialize()
 	. = ..()
 	GLOB.lamppost += src
+
+/obj/structure/lamp_post/tall/Initialize()
+	. = ..()
+	GLOB.lamppost += src
+	lampunderlay = mutable_appearance(icon, "lampunderlay", LATTICE_LAYER)
+	add_overlay(lampunderlay)
 
 /obj/structure/lamp_post/Destroy()
 	GLOB.lamppost -= src

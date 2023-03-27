@@ -69,3 +69,4 @@
 	icon_state = "mirelurkeggs"
 	density = FALSE
 	anchored = TRUE
+	plane = FLOOR_PLANE

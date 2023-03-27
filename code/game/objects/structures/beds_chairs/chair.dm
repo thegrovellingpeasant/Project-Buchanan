@@ -207,6 +207,28 @@
 	item_state = "wooden_chair_fancy"
 	origin_type = /obj/structure/chair/wood/fancy
 
+/obj/structure/chair/wood/fancy/dark
+	icon_state = "darkchair"
+	name = "fancy wooden chair"
+	desc = "An elegant chair made of luxurious wood."
+	item_chair = /obj/item/chair/wood/fancy/dark
+
+/obj/item/chair/wood/fancy/dark
+	icon_state = "darkchair_toppled"
+	item_state = "darkchair"
+	origin_type = /obj/structure/chair/wood/fancy/dark
+
+/obj/structure/chair/wood/fancy/christmas
+	icon_state = "christmaschair"
+	name = "fancy wooden chair"
+	desc = "An elegant chair made of luxurious wood."
+	item_chair = /obj/item/chair/wood/fancy/christmas
+
+/obj/item/chair/wood/fancy/christmas
+	icon_state = "christmaschair_toppled"
+	item_state = "christmaschair"
+	origin_type = /obj/structure/chair/wood/fancy/christmas
+
 // Folding chair
 /obj/structure/chair/folding
 	icon_state = "folding_chair"

@@ -18,6 +18,11 @@
 	path = /obj/item/clothing/suit/toggle/labcoat/f13/labgoat
 	cost = 2
 
+/datum/gear/suit/hubologist
+	name = "Hubologist Robes"
+	path = /obj/item/clothing/suit/f13/hubologist
+	cost = 2
+
 /datum/gear/suit/jacketbomber
 	name = "Bomber jacket"
 	path = /obj/item/clothing/suit/jacket

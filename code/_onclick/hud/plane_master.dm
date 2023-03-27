@@ -87,11 +87,11 @@
 	. = ..()
 	add_filter("vision_cone", 100, list(type="alpha", render_source=FIELD_OF_VISION_RENDER_TARGET, flags=MASK_INVERSE))
 
-/*obj/screen/plane_master/game_world/backdrop(mob/mymob)
+/obj/screen/plane_master/game_world/backdrop(mob/mymob)
 	if(mymob?.client?.prefs.ambientocclusion)
 		add_filter("ambient_occlusion", 0, AMBIENT_OCCLUSION(4, "#04080FAA"))
 	else
-		remove_filter("ambient_occlusion")*/ //removed because this map takes place on a white salty hellhole and drop shadows look terrible on nearly flat white
+		remove_filter("ambient_occlusion") // temporarily removed because this map takes place on a white salty hellhole and drop shadows look terrible on nearly flat white, note left here as a reminder
 
 //Reserved to chat messages, so they are still displayed above the field of vision masking.
 /obj/screen/plane_master/chat_messages

@@ -588,7 +588,7 @@
 	name = "buffalo gourd soup"
 	desc = "A tasty soup made with roasted gourd."
 	icon = 'icons/fallout/objects/food&drinks/soupsalad.dmi'
-	icon_state = "buffalo_soup"
+	icon_state = "gourd_soup"
 	volume = 40
 	bonus_reagents = list( /datum/reagent/consumable/nutriment = 4,  /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("buttery flesh" = 1, "creamy soup" = 1)

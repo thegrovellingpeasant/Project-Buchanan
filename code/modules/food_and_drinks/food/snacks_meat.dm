@@ -507,7 +507,7 @@
 	dried_being = /mob/living/simple_animal/hostile/retaliate/goat
 
 /obj/item/reagent_containers/food/snacks/cube/algernon
-	name = "Shallowly breathing mouse"
+	name = "shallowly breathing mouse"
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "mouse_white_dead"
 	desc = "He is suffering from extreme heatstroke and needs water badly."

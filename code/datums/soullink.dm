@@ -3,6 +3,8 @@
 /mob/living
 	var/list/ownedSoullinks //soullinks we are the owner of
 	var/list/sharedSoullinks //soullinks we are a/the sharer of
+	var/list/overlays_standing_mob[TOTAL_LAYERS]
+	appearance_flags = KEEP_TOGETHER
 
 /mob/living/Destroy()
 	for(var/s in ownedSoullinks)
@@ -158,3 +160,13 @@
 //Lose your claim to the throne!
 /datum/soullink/multisharer/replacementpool/sharerDies(gibbed, mob/living/sharer)
 	removeSoulsharer(sharer)
+
+/mob/living/proc/apply_layer_mob(cache_index)
+	if((. = overlays_standing_mob[cache_index]))
+		add_overlay(.)
+
+/mob/living/proc/remove_layer_mob(cache_index)
+	var/I = overlays_standing_mob[cache_index]
+	if(I)
+		cut_overlay(I)
+		overlays_standing_mob[cache_index] = null
