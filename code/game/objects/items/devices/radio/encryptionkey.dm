@@ -210,13 +210,13 @@
 
 /obj/item/encryptionkey/headset_lds
 	name = "Church radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the church channel, use :d."
+	desc = "An encryption key for a radio headset.  To access the church channel, use :c."
 	icon_state = "cmo_cypherkey"
 	channels = list(RADIO_CHANNEL_LDS = 1, RADIO_CHANNEL_TOWN = 1)
 
 /obj/item/encryptionkey/headset_usps
 	name = "Post Office radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the postal channel, use :p."
+	desc = "An encryption key for a radio headset.  To access the postal channel, use :s."
 	icon_state = "hop_cypherkey"
 	channels = list(RADIO_CHANNEL_USPS= 1, RADIO_CHANNEL_TOWN = 1)
 
@@ -228,13 +228,13 @@
 
 /obj/item/encryptionkey/headset_80sb
 	name = "blue team radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the blue team channel, use :k."
+	desc = "An encryption key for a radio headset.  To access the blue team channel, use :b."
 	icon_state = "hop_cypherkey"
 	channels = list(RADIO_CHANNEL_EIGHTIES = 1, RADIO_CHANNEL_EIGHTIESB = 1)
 
 /obj/item/encryptionkey/headset_80sr
 	name = "80s radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the red team channel, use :x."
+	desc = "An encryption key for a radio headset.  To access the red team channel, use :r."
 	icon_state = "hos_cypherkey"
 	channels = list(RADIO_CHANNEL_EIGHTIES = 1, RADIO_CHANNEL_EIGHTIESR = 1)
 
@@ -257,8 +257,8 @@
 	channels = list(RADIO_CHANNEL_MONTEGOBAY= 1, RADIO_CHANNEL_TOWN = 1)
 
 /obj/item/encryptionkey/headset_wndranger
-	name = "Ranger radio encryption key"
-	desc = "An encryption key for a radio headset. To access the town channel, use :f. To access the Ranger channel, use :r."
+	name = "Police radio encryption key"
+	desc = "An encryption key for a radio headset. To access the town channel, use :f. To access the Police channel, use :j."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_TOWN = 1, RADIO_CHANNEL_RANGER = 1)
 

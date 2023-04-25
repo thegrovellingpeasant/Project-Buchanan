@@ -17,7 +17,6 @@ Raider
 	description = "However you came to be here, you are a raider. There is a constant trickle of people on I-80 for you to con, rob, ransom, or enslave. You may find work or refuge with one of the local factions, or choose to go it alone and forge your own raider empire."
 	supervisors = "Your desire to make things interesting and fun. Don't play this as wastelander+."
 	selection_color = "#ff4747"
-	exp_requirements = 0
 	exp_type = EXP_TYPE_FALLOUT
 
 	outfit = /datum/outfit/job/wasteland/f13raider
@@ -653,6 +652,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_bos
 	uniform = /obj/item/clothing/under/f13/recon
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof
+	head = /obj/item/clothing/head/f13/boscap/reconarmorhelmet
 	shoes = /obj/item/clothing/shoes/jackboots
 	r_hand = /obj/item/book/granter/trait/selection
 	l_pocket = /obj/item/storage/bag/money/small/wastelander
@@ -734,6 +734,7 @@ Raider
 	ears = /obj/item/radio/headset/headset_bos
 	uniform = /obj/item/clothing/under/f13/recon
 	suit = /obj/item/clothing/suit/hooded/cloak/desert
+	head = /obj/item/clothing/head/f13/boscap/reconarmorhelmet
 	shoes = /obj/item/clothing/shoes/jackboots
 	r_hand = /obj/item/book/granter/trait/selection
 	l_pocket = /obj/item/storage/bag/money/small/wastelander
@@ -1391,6 +1392,7 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/clothing/shoes/f13/military/plated = 1,
 		/obj/item/clothing/suit/armor/khan_jacket = 1,
 		/obj/item/storage/bag/money/small/khan = 1,
+		/obj/item/radio/headset/headset_khans = 1,
 	)
 
 //Wayfarers

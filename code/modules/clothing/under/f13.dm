@@ -1291,9 +1291,15 @@
 
 /obj/item/clothing/under/f13/vault/v13 //The Legend is here.
 	name = "Vault 13 jumpsuit"
-	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather.<br>This jumpsuit has number 13 on the back."
+	desc = "The regulation clothing worn by the vault dwellers of Vault-Tec vaults. It's made of sturdy leather.<br>This jumpsuit has the number 13 on the back."
 	icon_state = "vault13"
 	item_color = "vault13"
+
+/obj/item/clothing/under/f13/vault/v93
+	name = "Vault 93 jumpsuit"
+	desc = "A jumpsuit emblazoned with the number 93, indicating it belonged to someone from the local vault. A more common sight in recent times with the catastrophic failure of the vault's filtration system."
+	icon_state = "vault93"
+	item_color = "vault93"
 
 /obj/item/clothing/under/f13/vault/v113
 	name = "Vault 113 jumpsuit"

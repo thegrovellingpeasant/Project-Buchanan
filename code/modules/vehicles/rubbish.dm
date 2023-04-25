@@ -1,18 +1,21 @@
 /obj/structure/statue_fal
-	name = "Ranger statue"
-	desc = "A big ranger statue."
+	name = "Patriotic statue"
+	desc = "A big statue."
 	icon = 'icons/fallout/objects/structures/statue.dmi'
 	icon_state = "statue1"
-	bound_width = 64
-	bound_height = 64
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
+	bound_width = 32
+	bound_height = 32
+	pixel_x = -19
+	anchored = TRUE
+	density = TRUE
+	layer = VISIBLE_FROM_ABOVE_LAYER
 	resistance_flags = INDESTRUCTIBLE
+	var/mutable_appearance/rangeroverlay
 
 /obj/structure/statue_fal/Initialize()
 	. = ..()
-	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 2)
+	rangeroverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(rangeroverlay)
 
 //Fallout 13 rubish decoration
 
@@ -21,8 +24,8 @@
 	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "car_rubish1"
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 	bound_height = 64
@@ -77,8 +80,8 @@
 	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "car_rubish1"
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -87,8 +90,8 @@
 	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "car_rubish2"
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -97,8 +100,8 @@
 	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "car_rubish3"
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -107,10 +110,17 @@
 	desc = "A rusty pre-War automobile carcass.<br>This car is damaged beyond repair."
 	icon = 'icons/fallout/objects/structures/rubish.dmi'
 	icon_state = "car_rubish4"
-	anchored = 1
-	density = 1
-	layer = ABOVE_MOB_LAYER
+	anchored = TRUE
+	density = TRUE
+	bound_height = 32
+	layer = LATTICE_LAYER
 	resistance_flags = INDESTRUCTIBLE
+	var/mutable_appearance/rubbish4overlay
+
+/obj/structure/car/rubbish4/Initialize()
+	. = ..()
+	rubbish4overlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(rubbish4overlay)
 
 /obj/structure/car/rubbish6
 	name = "pre-War rubbish"
@@ -119,8 +129,8 @@
 	icon_state = "car_rubish6"
 	bound_width = 32
 	bound_height = 32
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -131,8 +141,8 @@
 	icon_state = "bike_rust_med_no_wheels"
 	bound_height = 32
 	bound_width = 32
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -143,8 +153,8 @@
 	icon_state = "rust_light_no_wheels"
 	bound_width = 32
 	bound_height = 32
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = ABOVE_MOB_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
@@ -152,8 +162,8 @@
 	name = "theoretical debris"
 	bound_width = 64
 	bound_height = 32
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = LATTICE_LAYER
 	resistance_flags = INDESTRUCTIBLE
 	var/mutable_appearance/debrisoverlay

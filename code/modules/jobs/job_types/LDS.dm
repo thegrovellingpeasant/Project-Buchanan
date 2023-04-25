@@ -51,8 +51,6 @@ Mayor
 	selection_color = "#D4AF37"
 	display_order = JOB_DISPLAY_ORDER_TEMPLEPRESIDENT
 
-	exp_requirements = 300
-
 	outfit = /datum/outfit/job/latterdaysaints/f13templepresident
 	access = list(ACCESS_CHAPEL_OFFICE)
 	minimal_access = list(ACCESS_CHAPEL_OFFICE)
@@ -133,7 +131,6 @@ Mayor
 	description = "You were chosen to become a missionary for your proficiency at learning languages. How you'll best serve the Church is up to you and the Temple President, but your time among the tribes has given you a unique insight into their ways of living."
 	selection_color = "#D4AF37"
 	display_order = JOB_DISPLAY_ORDER_MISSIONARY
-	exp_requirements = 120
 
 	outfit = /datum/outfit/job/latterdaysaints/f13missionary
 
@@ -217,8 +214,6 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	description = "You are charged with the protection of the President, the Temple and all its inhabitants. If God is with you, who can be against you?"
 	selection_color = "#D4AF37"
 	display_order = JOB_DISPLAY_ORDER_TEMPLEGUARD
-
-	exp_requirements = 180
 
 	outfit = /datum/outfit/job/latterdaysaints/f13templeguard
 

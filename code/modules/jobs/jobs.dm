@@ -79,9 +79,9 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Frumentarius",
 "Vexillarius",
 "Explorer",
-"Legion Forgemaster",
-"Legion Auxilia",
-"Legion Slave",
+"Forgemaster",
+"Auxilia",
+"Slave",
 
 "Mayor",
 "Secretary",
@@ -161,9 +161,9 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Frumentarius",
 	"Vexillarius",
 	"Explorer",
-	"Legion Forgemaster",
-	"Legion Auxilia",
-	"Legion Slave",
+	"Forgemaster",
+	"Auxilia",
+	"Slave",
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
@@ -172,10 +172,10 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"Ambassador",
+	"Lieutenant",
 	"Sergeant",
 	"Corporal",
 	"Medical Officer",
-	"Logistics Officer",
 	"Military Police",
 	"Trooper",
 	"Off Duty",
@@ -315,7 +315,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_NCRCOMMAND = list("titles" = list("Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
 ))
 
 GLOBAL_LIST_INIT(exp_specialmap, list(

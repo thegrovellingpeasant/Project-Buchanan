@@ -79,7 +79,7 @@
 	icon_state = "1"
 	density = FALSE
 	anchored = TRUE
-	layer = ABOVE_ALL_MOB_LAYER
+	layer = FLY_LAYER
 	icon = 'icons/fallout/objects/tarpaulinhorizontal.dmi'
 	bound_width = 64
 	resistance_flags = INDESTRUCTIBLE
@@ -112,7 +112,7 @@
 	icon_state = "1"
 	density = FALSE
 	anchored = TRUE
-	layer = ABOVE_ALL_MOB_LAYER
+	layer = FLY_LAYER
 	icon = 'icons/fallout/objects/tarpaulin.dmi'
 	bound_width = 96
 	bound_height = 96
@@ -128,7 +128,7 @@
 	desc = "An old school bus with a REPCONN rocket attached to it."
 	density = FALSE
 	anchored = TRUE
-	layer = ABOVE_ALL_MOB_LAYER
+	layer = FLY_LAYER
 	icon = 'icons/fallout/objects/fukbus.dmi'
 	icon_state = "fukbus"
 	bound_width = 256
@@ -145,7 +145,7 @@
 	desc = "An old school bus with a REPCONN rocket attached to it."
 	density = FALSE
 	anchored = TRUE
-	layer = ABOVE_ALL_MOB_LAYER
+	layer = FLY_LAYER
 	icon = 'icons/fallout/objects/fukbus.dmi'
 	icon_state = "fukbus"
 	bound_width = 64
@@ -157,12 +157,12 @@
 
 /obj/structure/redrocketroof
 	name = "Red Rocket"
-	desc = "An old school bus with a REPCONN rocket attached to it."
+	desc = "Drive in, fly out!"
 	density = FALSE
 	anchored = TRUE
-	layer = ABOVE_ALL_MOB_LAYER
+	layer = FLY_LAYER
 	icon = 'icons/fallout/objects/redrocketredux.dmi'
-	icon_state = "fukbus"
+	icon_state = "redrocketbits"
 	bound_width = 448
 	bound_height = 160
 	resistance_flags = INDESTRUCTIBLE
@@ -175,7 +175,7 @@
 	anchored = TRUE
 	layer = LATTICE_LAYER
 	icon = 'icons/fallout/objects/redrocketredux.dmi'
-	icon_state = "drive-in"
+	icon_state = "drivein"
 	bound_width = 224
 	bound_height = 64
 	resistance_flags = INDESTRUCTIBLE
@@ -204,18 +204,19 @@
 	. = ..()
 	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 0)
 
-
 /obj/structure/billboardstatic
 	name = "billboard"
 	icon_state = "null"
 	density = TRUE
 	anchored = TRUE
-	layer = FLY_LAYER
+	layer = LATTICE_LAYER
 	icon = 'icons/obj/Ritas.dmi'
 	bound_width = 64
 	resistance_flags = INDESTRUCTIBLE
 	flags_1 = NODECONSTRUCT_1
+	var/mutable_appearance/billboardstaticoverlay
 
 /obj/structure/billboardstatic/Initialize()
 	. = ..()
-	AddComponent(/datum/component/largetransparency, x_size = 1, y_size = 1)
+	billboardstaticoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(billboardstaticoverlay)

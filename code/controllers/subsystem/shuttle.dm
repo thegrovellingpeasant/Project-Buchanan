@@ -465,8 +465,8 @@ SUBSYSTEM_DEF(shuttle)
 	var/border_path = /turf/open/space/transit/border
 	switch(travel_dir)
 		if(NORTH)
-			transit_path = /turf/open/space/transit/north
-			border_path = /turf/open/space/transit/border/north
+			transit_path = /turf/open/floor/fakespace/dense
+			border_path = /turf/open/floor/fakespace/dense
 		if(SOUTH)
 			transit_path = /turf/open/space/transit/south
 			border_path = /turf/open/space/transit/border/south
@@ -508,7 +508,7 @@ SUBSYSTEM_DEF(shuttle)
 	if(!midpoint)
 		return FALSE
 	var/area/shuttle/transit/A = new()
-	A.parallax_movedir = travel_dir
+	A.parallax_movedir = WEST //used to be travel_dir but changed for the map
 	A.contents = proposal.reserved_turfs
 	var/obj/docking_port/stationary/transit/new_transit_dock = new(midpoint)
 	new_transit_dock.reserved_area = proposal

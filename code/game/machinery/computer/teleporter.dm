@@ -207,6 +207,10 @@
 /obj/machinery/computer/teleporter/vr
 	name = "VR Scenario Loader"
 	desc = "A virtual computer acting as an interface to transport digital avatars to specific scenarios."
+	icon = 'icons/obj/computer.dmi'
+	icon_state = "terminal"
+	icon_keyboard = "terminal_key"
+	icon_screen = "terminal_on_alt"
 
 /obj/machinery/computer/teleporter/vr/Initialize()
 	. = ..()

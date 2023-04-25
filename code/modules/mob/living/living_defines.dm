@@ -27,6 +27,7 @@
 	var/cloneloss = 0	//Damage caused by being cloned or ejected from the cloner early. slimes also deal cloneloss damage to victims
 	var/staminaloss = 0		//Stamina damage, or exhaustion. You recover it slowly naturally, and are knocked down if it gets too high. Holodeck and hallucinations deal this.
 	var/crit_threshold = HEALTH_THRESHOLD_CRIT // when the mob goes from "normal" to crit
+	var/submerged = 0 // this is how the game decides whether or not to overlay pool water on people
 
 	var/mobility_flags = MOBILITY_FLAGS_DEFAULT
 

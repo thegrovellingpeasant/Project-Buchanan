@@ -509,6 +509,7 @@
 	desc = "A standard issue NCR steel helmet. Looks like you can write on it and strap a few items on the helmet band."
 	icon_state = "ncr_steelpot"
 	item_state = "ncr_steelpot"
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 25, "bullet" = 44, "laser" = 44, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
@@ -526,6 +527,7 @@
 	item_state = "steelpot_goggles"
 	alt_toggle_message = "You push the goggles down "
 	can_toggle = 1
+	dynamic_hair_suffix = ""
 	flags_inv = HIDEEARS
 	actions_types = list(/datum/action/item_action/toggle)
 	toggle_cooldown = 0
@@ -558,6 +560,7 @@
 /obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider
 	name = "NCR trench storm helmet"
 	desc = "A standard issue NCR steel helmet, issued with extra steel for close quarters fighting."
+	dynamic_hair_suffix = ""
 	armor = list("melee" = 40, "bullet" = 42, "laser" = 40, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
@@ -565,6 +568,7 @@
 	desc = "A standard issue NCR steel helmet with the addition of decalling signifying a medic."
 	icon_state = "steelpot_med"
 	item_state = "steelpot_med"
+	dynamic_hair_suffix = ""
 	unique_reskin = list("M1" = "ncr_old_med")
 
 /obj/item/clothing/head/f13/ncr/steelpot_mp
@@ -572,6 +576,7 @@
 	desc = "A standard issue NCR steel helmet emblazoned with the initials of the military police."
 	icon_state = "steelpot_mp"
 	item_state = "steelpot_mp"
+	dynamic_hair_suffix = ""
 	unique_reskin = list("M1" = "ncr_old_mp")
 
 /obj/item/clothing/head/f13/ncr/steelpot_gambler
@@ -579,6 +584,7 @@
 	desc = "A standard issue NCR steel helmet. Stashed in the strap are decks of cards, dominoes and cigarettes for personal use."
 	icon_state = "steelpot_gambler"
 	item_state = "steelpot_gambler"
+	dynamic_hair_suffix = ""
 	unique_reskin = list("M1" = "ncr_old_gambler")
 
 /obj/item/clothing/head/f13/ncr/steelpot_bandolier
@@ -586,6 +592,7 @@
 	desc = "A standard issue NCR steel helmet. This one has clearly seen heavy use, as well as having additional bullets tucked into the strap."
 	icon_state = "steelpot_bandolier"
 	item_state = "steelpot_bandolier"
+	dynamic_hair_suffix = ""
 	unique_reskin = list("M1" = "ncr_old_bandolier")
 
 /obj/item/clothing/head/hardhat/ncr
@@ -598,12 +605,14 @@
 	flags_inv = HIDEEARS
 	dog_fashion = null
 	armor = list("melee" = 25, "bullet" = 44, "laser" = 44, "energy" = 20, "bomb" = 85, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+
 /obj/item/clothing/head/f13/ncr/standard/conscript
 	name = "NCR conscript helmet"
 	desc = "A standard issue NCR steel helmet. Looks like you can write on it and strap a few items on the helmet band."
 	icon_state = "ncr_steelpot"
 	item_state = "ncr_steelpot"
 	armor = list("melee" = 20, "bullet" = 30, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	dynamic_hair_suffix = ""
 	flags_inv = HIDEEARS
 	flags_cover = HEADCOVERSEYES
 	visor_flags_cover = HEADCOVERSEYES
@@ -861,6 +870,20 @@
 	desc = "A beret typically worn with the standard fatigues of the local Brotherhood of Steel Chapter."
 	icon_state = "bos_beret"
 	item_state = "bos_beret"
+
+/obj/item/clothing/head/f13/boscap/reconarmorhelmet
+	name = "recon armor helmet"
+	desc = "Intended to serve as the under-armor of the T-45d power armor, the recon armor is a vacuum-sealed asbestos jumpsuit covering the entire body."
+	icon_state = "reconarmor_helmet"
+	item_state = "reconarmor_helmet"
+	flags_inv = HIDEHAIR|HIDEEARS
+
+/obj/item/clothing/head/f13/boscap/reconarmorhelmet/outcast
+	name = "recon armor helmet"
+	desc = "Intended to serve as the under-armor of the T-45d power armor, the recon armor is a vacuum-sealed asbestos jumpsuit covering the entire body."
+	icon_state = "reconarmor_helmet_outcast"
+	item_state = "reconarmor_helmet_outcast"
+	flags_inv = HIDEHAIR|HIDEEARS
 
 //Oasis/Town
 

@@ -267,7 +267,8 @@
 	status = LIGHT_EMPTY
 	update(0)
 
-
+/obj/machinery/light/invisible
+	invisibility = INVISIBILITY_ABSTRACT
 
 // create a new lighting fixture
 /obj/machinery/light/Initialize()

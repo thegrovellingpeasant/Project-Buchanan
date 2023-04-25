@@ -56,7 +56,7 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 	else if(!isnull(A))
 		for(var/obj/O in A.contents)
 			if(istype(O,/obj/structure/simple_door))
-				opacity = 1
+				opacity = O.opacity
 
 /turf/open/transparent/openspace/can_have_cabling()
 	if(locate(/obj/structure/lattice/catwalk, src))
@@ -158,3 +158,18 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 
 /turf/open/transparent/openspace/icemoon/can_zFall(atom/movable/A, levels = 1, turf/target)
 	return TRUE
+
+/*turf/open/transparent/openspace/air/satellite
+	name = "sky"
+	plane = PLANE_SKY
+	tiled_dirt = FALSE
+
+/turf/open/transparent/openspace/air/satellite/Initialize()
+	. = ..()
+	icon_state = SPACE_ICON_STATE
+
+/turf/open/transparent/openspace/air/satellite/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+	underlay_appearance.icon = 'icons/effects/parallax.dmi'
+	underlay_appearance.icon_state = SPACE_ICON_STATE
+	underlay_appearance.plane = PLANE_SKY
+	return TRUE*/ // failed attempt at transit shuttle tile type, but open air was replaced by plating

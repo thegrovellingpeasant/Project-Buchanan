@@ -8,6 +8,7 @@
 	climbable = TRUE
 	///Initial direction of the railing.
 	var/ini_dir
+	var/list/directional_railing_layers = list()
 
 /obj/structure/railing/corner //aesthetic corner sharp edges hurt oof ouch
 	icon_state = "railing_corner"
@@ -101,10 +102,29 @@
 	if(anchored == checked_anchored)
 		return TRUE
 
+/obj/structure/railing/proc/handle_railing_layer() //this can be done more efficiently but i don't know how and am too tired to figure out
+	if(dir == NORTH)
+		layer = BELOW_OBJ_LAYER
+	if(dir == EAST)
+		layer = BELOW_OBJ_LAYER
+	if(dir == SOUTH)
+		layer = WALL_OBJ_LAYER
+	if(dir == WEST)
+		layer = BELOW_OBJ_LAYER
+	if(dir == NORTHWEST)
+		layer = BELOW_OBJ_LAYER
+	if(dir == NORTHEAST)
+		layer = BELOW_OBJ_LAYER
+	if(dir == SOUTHEAST)
+		layer = WALL_OBJ_LAYER
+	if(dir == SOUTHWEST)
+		layer = WALL_OBJ_LAYER
+
 /obj/structure/railing/proc/after_rotation(mob/user,rotation_type)
 	air_update_turf(1)
 	ini_dir = dir
 	add_fingerprint(user)
+	handle_railing_layer()
 
 /////////////
 // RAILING //
@@ -118,6 +138,10 @@
 	icon_state = "straight_wood"
 	layer = WALL_OBJ_LAYER
 
+/obj/structure/railing/wood/Initialize()
+	. = ..()
+	ini_dir = dir
+	
 /obj/structure/railing/wood/underlayer
 	layer = BELOW_MOB_LAYER
 
@@ -139,6 +163,36 @@
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
 
+/obj/structure/railing/corrugated
+	name = "fence"
+	desc = "Marks property and prevents accidents."
+	icon = 'icons/obj/fence.dmi'
+	icon_state = "corrugatedfence"
+	layer = BELOW_OBJ_LAYER
+
+/obj/structure/railing/corrugated/two
+	name = "fence"
+	icon_state = "corrugatedfence2"
+
+/obj/structure/railing/corrugated/three
+	name = "fence"
+	icon_state = "corrugatedfence3"
+
+/obj/structure/railing/corrugated/four
+	name = "fence"
+	icon_state = "corrugatedfence4"
+
+/obj/structure/railing/corrugated/five
+	name = "fence"
+	icon_state = "corrugatedfence5"
+
+/obj/structure/railing/corrugated/six
+	name = "fence"
+	icon_state = "corrugatedfence6"
+
+/obj/structure/railing/corrugated/Initialize()
+	. = ..()
+	ini_dir = dir
 
 //Yellow rail
 /obj/structure/railing/handrail
@@ -212,3 +266,14 @@
 
 /obj/structure/railing/dancing_pole/top
 	icon_state = "pole_t"
+
+/obj/structure/railing/ridiculousattentiontodetail
+	name = "railing"
+	icon_state = "stairrailing"
+	var/mutable_appearance/railingoverlay
+
+/obj/structure/railing/ridiculousattentiontodetail/Initialize()
+	. = ..()
+	ini_dir = dir
+	railingoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(railingoverlay)

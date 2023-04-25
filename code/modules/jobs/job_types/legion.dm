@@ -300,7 +300,6 @@ commented out pending rework*/
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	exp_type = EXP_TYPE_LEGION
-	exp_requirements = 300
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
@@ -386,8 +385,8 @@ commented out pending rework*/
 	supervisors = "the Veteran Decanus"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
-	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND)
-	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND)
+	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
+	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 
 	loadout_options = list(	//ALL: Gladius, Smokebomb
 		/datum/outfit/loadout/decprimfront,	// Lever action, .357 Revolver, Legion lance, Throwing knives
@@ -503,7 +502,7 @@ commented out pending rework*/
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
-	name = "Legion Recruit Decanus"
+	name = "Recruit Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
@@ -819,7 +818,6 @@ commented out pending rework*/
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	exp_requirements = 600
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// AXE AND FISTS AND NOTHING FUCKING ELSE
@@ -900,7 +898,6 @@ commented out pending rework*/
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
-	exp_requirements = 120
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	loadout_options = list(	//ALL: Forged Machete
@@ -1075,7 +1072,7 @@ commented out pending rework*/
 // FORGE MASTER
 
 /datum/job/CaesarsLegion/Legionnaire/f13campfollower	// Extra materials, Blueprints
-	title = "Legion Forgemaster"
+	title = "Forgemaster"
 	flag = F13CAMPFOLLOWER
 	total_positions = 1
 	spawn_positions = 1
@@ -1085,7 +1082,7 @@ commented out pending rework*/
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
-	name = "Legion Forgemaster"
+	name = "Forgemaster"
 	id = /obj/item/card/id/dogtag/legforgemaster
 	glasses = /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/utility/waster/forgemaster
@@ -1131,7 +1128,7 @@ commented out pending rework*/
 // AUXILIA - Civilians with special training. Can sow new uniforms for soldiers who lost theirs, and are loyal so they would never abuse this.
 
 /datum/job/CaesarsLegion/auxilia
-	title = "Legion Auxilia"
+	title = "Auxilia"
 	flag = F13AUXILIA
 	total_positions = 3
 	spawn_positions = 3
@@ -1157,7 +1154,7 @@ commented out pending rework*/
 
 
 /datum/outfit/job/CaesarsLegion/auxilia
-	name = "Legion Auxilia"
+	name = "Auxilia"
 	jobtype = /datum/job/CaesarsLegion/auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
 	head = /obj/item/clothing/head/f13/auxilia
@@ -1237,7 +1234,7 @@ commented out pending rework*/
 // Both get Mars teachings to help out when normal work is done.
 
 /datum/job/CaesarsLegion/slave
-	title = "Legion Slave"
+	title = "Slave"
 	flag = F13LEGIONSLAVE
 	total_positions = 3
 	spawn_positions = 3
@@ -1268,7 +1265,7 @@ commented out pending rework*/
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
 /datum/outfit/job/CaesarsLegion/slave
-	name = "Legion Slave"
+	name = "Slave"
 	jobtype = /datum/outfit/job/CaesarsLegion/slave
 	id = /obj/item/card/id/legionbrand
 	neck = /obj/item/electropack/shockcollar
@@ -1419,8 +1416,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 
-// Legion Citizen
-// Really only used for ID console
+*/// Legion CitizenReally only used for ID console
 /datum/job/ncr/f13legioncitizen
 	title = "Legion Citizen"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legioncitizen
@@ -1438,4 +1434,4 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		)
-*/
+

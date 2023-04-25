@@ -52,7 +52,8 @@
 
 /obj/vehicle/ridden/wheelchair/Moved()
 	. = ..()
-	cut_overlays()  // I removed the roll.ogg cause it's annoying af, sorry. Now you have a futuristic one
+	cut_overlays()
+	playsound(src, 'sound/effects/roll.ogg', 75, 1)  
 	if(has_buckled_mobs())
 		handle_rotation_overlayed()
 

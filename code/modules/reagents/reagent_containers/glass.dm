@@ -360,6 +360,7 @@
 /obj/item/reagent_containers/glass/mortar/Initialize()
 	. = ..()
 	holdingitems = list()
+	
 /obj/item/reagent_containers/glass/mortar/examine(mob/user)
 	. = ..()
 	. += "<span class='notice'>Alt-click to eject any item put inside.</span>"

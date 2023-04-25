@@ -522,7 +522,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "NCR Captain"
 
 /obj/effect/landmark/start/f13/ncrlieutenant
-	name = "NCR Lieutenant"
+	name = "Lieutenant"
 	icon_state = "NCR Lieutenant"
 
 obj/effect/landmark/start/f13/ncrlogisticsofficer
@@ -972,11 +972,11 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/f13/blueteam
-	name = "Blue team"
+	name = "Blue Team"
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/f13/redteam
-	name = "Red team"
+	name = "Red Team"
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/f13/eighty

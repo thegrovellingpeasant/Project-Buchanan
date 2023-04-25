@@ -3642,6 +3642,7 @@
 #include "code\modules\vehicles\vehicle_key.dm"
 #include "code\modules\vehicles\wheelchair.dm"
 #include "code\modules\vehicles\cars\car.dm"
+#include "code\modules\vehicles\wasteland\buggy.dm"
 #include "code\modules\vehicles\wasteland\bus.dm"
 #include "code\modules\vending\_vending.dm"
 #include "code\modules\vending\assist.dm"

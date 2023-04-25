@@ -161,12 +161,22 @@
 /datum/soullink/multisharer/replacementpool/sharerDies(gibbed, mob/living/sharer)
 	removeSoulsharer(sharer)
 
-/mob/living/proc/apply_layer_mob(cache_index)
-	if((. = overlays_standing_mob[cache_index]))
-		add_overlay(.)
+/mob/living/update_water()
+	if(QDESTROYING(src))
+		return
 
-/mob/living/proc/remove_layer_mob(cache_index)
-	var/I = overlays_standing_mob[cache_index]
-	if(I)
-		cut_overlay(I)
-		overlays_standing_mob[cache_index] = null
+	var/list/animalwateroverlays
+	cut_overlays(animalwateroverlays)
+
+	var/depth = check_submerged()
+	if(!depth)
+		return
+	
+	var/atom/A = loc // We'd better be swimming and on a turf
+	var/mutable_appearance/animalwateroverlay = mutable_appearance(icon = 'icons/turf/pool.dmi', icon_state = "bottom[depth]")
+	animalwateroverlay.color = A.color
+	animalwateroverlay.blend_mode = BLEND_INSET_OVERLAY
+	animalwateroverlays += animalwateroverlay
+	
+
+	add_overlay(animalwateroverlays)

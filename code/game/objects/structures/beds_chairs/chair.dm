@@ -229,6 +229,18 @@
 	item_state = "christmaschair"
 	origin_type = /obj/structure/chair/wood/fancy/christmas
 
+/obj/structure/chair/wood/hitchingpost
+	name = "hitching post"
+	icon = 'icons/fallout/structures/fences.dmi'
+	icon_state = "post_wood"
+	item_chair = /obj/item/chair/wood/hitchingpost
+
+/obj/item/chair/wood/hitchingpost
+	name = "hitching post"
+	icon = 'icons/fallout/structures/fences.dmi'
+	icon_state = "post_wood"
+	origin_type = /obj/structure/chair/wood/hitchingpost
+
 // Folding chair
 /obj/structure/chair/folding
 	icon_state = "folding_chair"
@@ -300,6 +312,7 @@
 	item_chair = /obj/item/chair/stool/retro
 
 /obj/item/chair/stool/retro
+	icon = 'icons/fallout/objects/furniture/chairs_and_beds.dmi'
 	icon_state = "bar_toppled"
 	item_state = "bar"
 	origin_type = /obj/structure/chair/stool/retro
@@ -326,6 +339,7 @@
 /obj/structure/chair/stool/retro/backed
 	icon_state = "bar_backed"
 	item_chair = /obj/item/chair/stool/retro/backed
+	can_buckle = TRUE
 
 /obj/item/chair/stool/retro/backed
 	icon_state = "bar_backed_toppled"

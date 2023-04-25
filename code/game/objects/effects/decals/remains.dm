@@ -47,6 +47,55 @@
 	icon_state = "remains"
 	drop_amount = 2
 
+/obj/effect/decal/remains/skulls
+	name = "decoration"
+	desc = "A string of skulls."
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "skulls"
+	drop_amount = 1
+	plane = GAME_PLANE
+	layer = OBJ_LAYER
+
+/obj/effect/decal/remains/cloth
+	name = "decoration"
+	desc = "A simple cloth decoration."
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "skin"
+	drop_amount = 1
+	plane = GAME_PLANE
+	layer = OBJ_LAYER
+	debris_result = list(/obj/item/stack/sheet/cloth)
+
+/obj/effect/decal/remains/hay
+	name = "hay bale"
+	desc = "You'd need eight stomachs to eat that."
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "haybale"
+	drop_amount = 2
+	plane = GAME_PLANE
+	layer = OBJ_LAYER
+	debris_result = list(/obj/item/stack/sheet/hay/five)
+
+/obj/effect/decal/remains/nest
+	name = "animal nest"
+	desc = "There seems to be some eggs inside."
+	icon = 'icons/misc/Pit.dmi'
+	icon_state = "pit"
+	drop_amount = 3
+	plane = GAME_PLANE
+	layer = OBJ_LAYER
+	debris_result = list(/obj/item/reagent_containers/food/snacks/egg)
+
+/obj/effect/decal/remains/rock
+	name = "rock"
+	desc = "You see nothing out of the ordinary."
+	icon = 'icons/obj/flora/rocks.dmi'
+	icon_state = "basalt1"
+	drop_amount = 3
+	plane = GAME_PLANE
+	layer = OBJ_LAYER
+	debris_result = list(/obj/item/stack/sheet/mineral/limestone)
+
 /obj/effect/decal/remains/plasma
 	icon_state = "remainsplasma"
 	drop_amount = 0

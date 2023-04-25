@@ -13,6 +13,28 @@
 	oreAmount = 4
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "rib"
+	layer = VISIBLE_FROM_ABOVE_LAYER
+	var/mutable_appearance/riboverlay
+
+/obj/structure/statue/bone/rib/Initialize()
+	. = ..()
+	riboverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(riboverlay)
+
+/obj/structure/statue/bone/megalith
+	name = "megalith"
+	desc = "You see nothing out of the ordinary."
+	oreAmount = 4
+	icon = 'icons/obj/statuelarge.dmi'
+	icon_state = "rib"
+	color = "#00ffee"
+	layer = VISIBLE_FROM_ABOVE_LAYER
+	var/mutable_appearance/megalithoverlay
+
+/obj/structure/statue/bone/megalith/Initialize()
+	. = ..()
+	megalithoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(megalithoverlay)
 
 /obj/structure/statue/bone/skull
 	name = "collosal skull"

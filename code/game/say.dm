@@ -28,8 +28,8 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_LDS]" = "ldsradio",
 	"[FREQ_USPS]" = "uspsradio",
 	"[FREQ_EIGHTIES]" = "eightiesradio",
-	"[FREQ_EIGHTIESB]" = "eightiesradiob",
-	"[FREQ_EIGHTIESR]" = "eightiesradior",
+	"[FREQ_EIGHTIESB]" = "eightiesbradio",
+	"[FREQ_EIGHTIESR]" = "eightiesrradio",
 	"[FREQ_WND]" = "wndradio",
 	"[FREQ_MONTEGOBAY]" = "montegobayradio"
 	))

@@ -65,11 +65,91 @@
 		. = ..()
 
 /obj/structure/flora/grass/saltlakesparse
+	name = "grass"
 	icon = 'icons/obj/flora/ausflora.dmi'
 	desc = "Some dry, virtually dead grass."
 	icon_state = "sparsegrass_1"
 
+/obj/structure/flora/grass/saltlakesparse/bunchone
+	name = "grass"
+	pixel_y = 1
+
+/obj/structure/flora/grass/saltlakesparse/two
+	name = "grass"
+	icon_state = "sparsegrass_2"
+
+/obj/structure/flora/grass/saltlakesparse/three
+	name = "grass"
+	icon_state = "sparsegrass_3"
+
+/obj/structure/flora/grass/saltlakesparse/four
+	name = "grass"
+	icon_state = "fullgrass_1"
+
+/obj/structure/flora/grass/saltlakesparse/five
+	name = "grass"
+	icon_state = "fullgrass_2"
+
+/obj/structure/flora/grass/saltlakesparse/six
+	name = "grass"
+	icon_state = "fullgrass_3"
+
 /obj/structure/flora/grass/saltlake/attackby(obj/item/W, mob/user, params) //we dont use /weapon any more
+	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
+		to_chat(user, "You begin to harvest [src]...")
+		if(do_after(user, 100/W.force, target = user))
+			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
+			if(istype(H))
+				H.add(1)
+			else
+				new /obj/item/stack/sheet/hay/(get_turf(src))
+			qdel(src)
+			return 1
+	else
+		. = ..()
+
+/obj/structure/flora/grass/drygrass
+	icon = 'icons/fallout/flora/flora.dmi'
+	desc = "Some dry, virtually dead grass."
+
+/obj/structure/flora/grass/drygrass/eight
+	name = "grass"
+	icon_state = "tall_grass_8"
+
+/obj/structure/flora/grass/drygrass/eight/bunchone
+	name = "grass"
+	pixel_y = 3
+
+/obj/structure/flora/grass/drygrass/seven
+	name = "grass"
+	icon_state = "tall_grass_7"
+
+/obj/structure/flora/grass/drygrass/seven/bunchone
+	name = "grass"
+	pixel_x = 6
+	pixel_y = -5
+
+/obj/structure/flora/grass/drygrass/seven/bunchtwo
+	name = "grass"
+	pixel_x = -8
+	pixel_y = -6
+
+/obj/structure/flora/grass/drygrass/seven/bunchthree
+	name = "grass"
+	pixel_x = -10
+	pixel_y = -7
+
+/obj/structure/flora/grass/drygrass/seven/bunchfour
+	name = "grass"
+	pixel_x = 6
+	pixel_y = -6
+
+/obj/structure/flora/grass/drygrass/six
+	name = "grass"
+	icon_state = "tall_grass_6"
+
+/obj/structure/flora/grass/drygrass/attackby(obj/item/W, mob/user, params) //we dont use /weapon any more
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))

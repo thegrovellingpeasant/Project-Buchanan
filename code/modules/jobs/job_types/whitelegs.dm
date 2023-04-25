@@ -3,7 +3,7 @@
 	selection_color = "#a00000"
 	faction = FACTION_WHITELEGS
 
-	forbids = "Your tribe forbids: Hunting, gathering, fishing, farming, shoes, thinking too hard."
+	forbids = "Your tribe forbids: Hunting, gathering, fishing, farming, shoes, strenuous thinking."
 	enforces = "Your tribe desires: Glory, plunder, the approval of Caesar, the death of the Kuna-man, food, comfort and ease."
 	objectivesList = list("Sack the New Canaanite temple, bring their golden statue home to your camp.","Sack the 80s' compound, seize or destroy their precious war buggies.","Sack the NCR embassy, present their flags as gifts to the esteem representatives of Caesar.")
 	exp_type = EXP_TYPE_WHITELEGS
@@ -97,7 +97,6 @@
 	outfit = /datum/outfit/job/whitelegs/f13warchief
 	display_order = JOB_DISPLAY_ORDER_WARCHIEF
 	exp_type = EXP_TYPE_WHITELEGS
-	exp_requirements = 180
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 
@@ -176,7 +175,6 @@
 	display_order = JOB_DISPLAY_ORDER_LIGHTBRINGER
 	outfit = /datum/outfit/job/whitelegs/f13lightbringer
 	exp_type = EXP_TYPE_WHITELEGS
-	exp_requirements = 180
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
@@ -346,8 +344,8 @@
 /datum/job/whitelegs/f13stormdrummer
 	title = "Storm-drummer"
 	flag = F13STORMDRUMMER
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 2
+	spawn_positions = 2
 	description = "You wield the mighty Storm Drum, the symbol of your tribe and key to your people's greatness."
 	supervisors = "your War Chief and the Legion Decani"
 	selection_color = "#ffdddd"

@@ -506,7 +506,6 @@
 	desc = "Pretty yellow hairband"
 	icon_state = "50shairband"
 	item_state = "50shairband"
-	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/f13/nursehat
 	name = "nursehat"

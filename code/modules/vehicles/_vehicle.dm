@@ -23,6 +23,10 @@
 	var/list/autogrant_actions_controller	//assoc list "[bitflag]" = list(typepaths)
 	var/list/mob/occupant_actions			//assoc list mob = list(type = action datum assigned to mob)
 	var/obj/vehicle/trailer
+	var/submerged = 0
+	var/mutable_appearance/carwateroverlay
+	var/mutable_appearance/carunderlay
+	var/mutable_appearance/wheelunderlay
 
 /obj/vehicle/Initialize(mapload)
 	. = ..()
@@ -173,3 +177,30 @@
 		occupants[1].bullet_act(Proj) // driver dinkage
 		return BULLET_ACT_HIT
 	. = ..()
+
+/obj/vehicle/proc/vehicle_update_water()
+	return
+
+/obj/vehicle/vehicle_update_water()
+	if(QDESTROYING(src))
+		return
+
+	var/list/caroverlays
+	cut_overlays(caroverlays)
+	add_overlay(carunderlay)
+	add_overlay(wheelunderlay)
+
+	var/depth = vehicle_check_submerged()
+	if(!depth)
+		return
+	
+	var/atom/A = loc // We'd better be swimming and on a turf
+	carunderlay = mutable_appearance(icon, "[icon_state]_underlay", VEHICLE_LAYER)
+	wheelunderlay = mutable_appearance(icon, "[icon_state]wheels", VEHICLE_WHEEL_LAYER)
+	carwateroverlay = mutable_appearance(icon = 'icons/fallout/vehicles/centeredsmaller.dmi', icon_state = "bottom[depth]")
+	carwateroverlay.color = A.color
+	carwateroverlay.blend_mode = BLEND_INSET_OVERLAY
+	caroverlays += carwateroverlay
+	
+
+	add_overlay(caroverlays)

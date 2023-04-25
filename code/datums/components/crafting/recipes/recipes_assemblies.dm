@@ -175,7 +175,7 @@
 
 /datum/crafting_recipe/bellystove
 	name = "Pot belly stove"
-	result = /obj/structure/campfire/stove
+	result = /obj/structure/fireplace/potbelly
 	reqs = list(/obj/item/stack/crafting/metalparts = 3,
 				/obj/item/stack/crafting/goodparts = 2,
 				/obj/item/stack/sheet/metal = 10)

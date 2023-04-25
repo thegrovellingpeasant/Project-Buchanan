@@ -5825,13 +5825,6 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
-"pC" = (
-/obj/effect/turf_decal/caution{
-	pixel_y = 58;
-	pixel_x = -3
-	},
-/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
-/area/f13/wasteland)
 "pD" = (
 /obj/structure/chair/f13chair1{
 	dir = 8;
@@ -11896,13 +11889,6 @@
 /obj/effect/turf_decal/trimline/yellow/filled/corner,
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/four)
-"Gc" = (
-/obj/effect/turf_decal/caution{
-	pixel_y = 58;
-	pixel_x = 3
-	},
-/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
-/area/f13/wasteland)
 "Gd" = (
 /obj/structure/debris/v2,
 /turf/closed/indestructible/f13/vaultwall/notvaultwall,
@@ -12166,7 +12152,8 @@
 	pixel_x = 20;
 	pixel_y = 31;
 	name = "Mike Plush's Guarantee";
-	desc = "Lowest prices or I'll kill myself."
+	desc = "Lowest prices or I'll kill myself.";
+	plane = -4
 	},
 /obj/effect/spawner/lootdrop/bedsheet{
 	pixel_x = 4;
@@ -12518,7 +12505,6 @@
 /area/centcom/evac)
 "HK" = (
 /obj/structure/cross{
-	bound_height = 32;
 	layer = 4.1
 	},
 /obj/effect/decal/remains/human{
@@ -15302,14 +15288,6 @@
 /obj/structure/closet/crate/bin/trash_fallout,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
-"PX" = (
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/turf_decal/vg_decals/department/cargo{
-	pixel_y = 64;
-	pixel_x = 15
-	},
-/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
-/area/f13/wasteland)
 "PY" = (
 /obj/structure/sink/greyscale{
 	pixel_y = 5;
@@ -18495,7 +18473,8 @@
 	pixel_y = 31;
 	pixel_x = 4;
 	name = "Mr. Pillow, the Mattress Monkey";
-	desc = "He's fluffing pillows in heaven now."
+	desc = "He's fluffing pillows in heaven now.";
+	plane = -4
 	},
 /turf/open/floor/carpet/royalblue{
 	sunlight_state = 1
@@ -68781,7 +68760,7 @@ FY
 FY
 TR
 JS
-Gc
+QK
 DX
 QK
 QK
@@ -69038,7 +69017,7 @@ FY
 FH
 TR
 gq
-PX
+xw
 DX
 DX
 DX
@@ -69552,7 +69531,7 @@ TR
 TR
 TR
 Wc
-pC
+DX
 QK
 QK
 QK
@@ -73630,7 +73609,7 @@ Od
 LV
 ld
 TR
-Kb
+TR
 TR
 QK
 DX
@@ -75172,7 +75151,7 @@ Od
 Od
 Od
 TR
-Kb
+TR
 TR
 Zr
 QK

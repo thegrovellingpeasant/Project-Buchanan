@@ -31,15 +31,15 @@ SUBSYSTEM_DEF(nightcycle)
 	var/sunrise_sun_color = "#ffd1b3"
 	var/sunrise_sun_power = 80
 	var/morning_sun_color = "#fff2e6"
-	var/morning_sun_power = 160
+	var/morning_sun_power = 200
 	var/daytime_sun_color = "#FFFFFF"
 	var/daytime_sun_power = 230
 	var/afternoon_sun_color = "#fff2e6"
-	var/afternoon_sun_power = 160
+	var/afternoon_sun_power = 200
 	var/sunset_sun_color = "#ffcccc"
-	var/sunset_sun_power = 80
-	var/nighttime_sun_color = "#00111a"
-	var/nighttime_sun_power = 10
+	var/sunset_sun_power = 120
+	var/nighttime_sun_color = "#ffcccc" //used to be #00111a but see below
+	var/nighttime_sun_power = 40  //used to be 10 but i think night time is visually more interesting if you can see things but dimly
 	/// How does it take to get darker or brighter each step.
 	var/cycle_transition_time = 120 SECONDS
 	/// If defined with any number besides null it will determine how long each cycle lasts.

@@ -167,6 +167,10 @@
 	smooth = SMOOTH_MORE|SMOOTH_BORDER
 	plane = GAME_PLANE
 
+/turf/closed/indestructible/rock/smoothing/abovemob
+	name = "dense rock"
+	layer = EDGED_TURF_LAYER
+
 /turf/closed/indestructible/rock/smoothing/Initialize()
 	if (!canSmoothWith)
 		canSmoothWith = list(/turf/closed/mineral, /turf/closed/indestructible)

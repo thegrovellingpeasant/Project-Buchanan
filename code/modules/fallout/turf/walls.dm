@@ -292,6 +292,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 
 /turf/closed/indestructible/f13/vaultwall/notvaultwall //Just like that one game studio that worked on the original game, or that block in Minecraft!
 	name = "wall"
+	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall/notvaultwall)
 
 /turf/closed/indestructible/f13/vaultwall/fakeshutter //Just like that one game studio that worked on the original game, or that block in Minecraft!
 	name = "shutter"

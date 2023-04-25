@@ -79,6 +79,7 @@
 	. = ..()
 	icon_state = "wall_[icon_state]"
 	pixel_y = (dir == NORTH) ? 15 : 0
+	layer = (dir == SOUTH) ? EDGED_TURF_LAYER : CLOSED_BLASTDOOR_LAYER
 	pixel_x = 0
 
 /obj/structure/destructible/tribal_torch/wall/lit

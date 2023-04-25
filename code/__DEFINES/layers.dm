@@ -6,6 +6,9 @@
 #define PLANE_SPACE -95
 #define PLANE_SPACE_PARALLAX -90
 
+#define PLANE_SKYTILE -85
+#define PLANE_SKY -80
+
 #define OPENSPACE_PLANE -25 //Openspace plane below all turfs
 #define OPENSPACE_LAYER 17 //Openspace layer over all
 #define OPENSPACE_BACKDROP_PLANE -24 //Black square just over openspace plane to guaranteed cover all in openspace turf
@@ -42,6 +45,7 @@
 #define CLOSED_TURF_LAYER 2.05
 #define BULLET_HOLE_LAYER 2.06
 #define ABOVE_NORMAL_TURF_LAYER 2.08
+#define VISIBLE_FROM_ABOVE_LAYER 2.1
 #define LATTICE_LAYER 2.2
 #define DISPOSAL_PIPE_LAYER 2.3
 #define GAS_PIPE_HIDDEN_LAYER 2.35
@@ -83,6 +87,7 @@
 //#define MOB_LAYER 4 //For easy recordkeeping; this is a byond define
 #define MOB_UPPER_LAYER 4.05
 #define ABOVE_MOB_LAYER 4.1
+#define VEHICLE_WHEEL_LAYER 4.24
 #define WALL_OBJ_LAYER 4.25
 #define VEHICLE_LAYER 4.26
 #define VEHICLE_MOB_LAYER 4.27

@@ -45,8 +45,6 @@ Mayor
 	description = "You are the Mayor of Wendover, the last stop before the Great Salt Lake desert. With the fall of New Canaan to the White Legs, and decreased NCR Ranger presence due to the coming dustup at Hoover dam, trade along the I-80 has never been lower. The lack of traffic has caused the town to fall on hard times, but it's still the only speck of civilization for a hundred miles in any direction, and with a little luck and some shrewd diplomacy, Wendover can prosper again."
 	selection_color = "#d7b088"
 
-	exp_requirements = 1500
-
 	outfit = /datum/outfit/job/wendover/f13wendovermayor
 	access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS, ACCESS_SECURITY)
 	minimal_access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS, ACCESS_SECURITY)
@@ -144,7 +142,6 @@ Mayor
 	supervisors = "The Mayor"
 	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
 	selection_color = "#d7b088"
-	exp_requirements = 800
 
 	outfit = /datum/outfit/job/wendover/f13wendoversecretary
 
@@ -552,12 +549,13 @@ Mayor
 	)
 
 /datum/outfit/job/wendover/f13scavver
-	name = "Prospector"
+	name = "Scavenger"
 	jobtype = /datum/job/wendover/f13scavver
 
 	id = /obj/item/card/id/dogtag/town
 	ears = /obj/item/radio/headset/headset_town
-	suit = /obj/item/clothing/suit/armor/f13/raider/iconoclast/
+	suit = /obj/item/clothing/suit/armor/f13/utilityvest
+	head = /obj/item/clothing/head/f13/stormchaser
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = /obj/item/storage/bag/money/small/settler
@@ -571,6 +569,7 @@ Mayor
 		/obj/item/melee/onehanded/knife/hunting,
 		/obj/item/gun/ballistic/automatic/pistol/n99,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/storage/bag/salvage = 1,
 		)
 
 /datum/outfit/job/wendover/f13scavver/pre_equip(mob/living/carbon/human/H)
@@ -596,7 +595,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the fans"
-	description = "Keep the wastes informed, hold interviews, entertain your audience. Don't neglect your advertisers."
+	description = "Keep the wastes informed, hold interviews, entertain your audience. Don't neglect your advertisers. And above all, make sure to use your radio channel, and not common."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/wendover/f13radiohost
@@ -629,6 +628,7 @@ Mayor
 		/obj/item/tape = 3,
 		/obj/item/taperecorder = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/encryptionkey/headset_wnd = 1,
 		)
 
 /datum/outfit/job/wendover/f13radiohost/pre_equip(mob/living/carbon/human/H)
@@ -847,17 +847,17 @@ Mayor
 	total_positions = 8
 	spawn_positions = 8
 	supervisors = "the Mayor"
-	description = "You live in the town of Wendover, on the Nevada/Utah border, the last stop for travelers on the I-80 headed between California and New Canaan."
+	description = "You live in the town of Wendover, on the Nevada/Utah border, the last stop for travelers on the I-80 headed from California to New Canaan."
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/wendover/f13townsperson
 
 	loadout_options = list(
 		/datum/outfit/loadout/provisioner,
-		/datum/outfit/loadout/groundskeeper,
-		/datum/outfit/loadout/artisan,
-		/datum/outfit/loadout/outdoorsman,
-		/datum/outfit/loadout/militia,
+		/datum/outfit/loadout/hobo,
+		/datum/outfit/loadout/mechanic,
+		/datum/outfit/loadout/wanderer,
+		/datum/outfit/loadout/norcal,
 		/datum/outfit/loadout/singer,
 	)
 	access = list(ACCESS_BAR)
@@ -870,7 +870,6 @@ Mayor
 			/datum/job/wendover,
 		),
 	)
-
 
 /datum/outfit/job/wendover/f13townsperson
 	name = "Citizen"
@@ -890,32 +889,34 @@ Mayor
 		)
 
 /datum/outfit/loadout/provisioner
-	name = "Provisioner"
+	name = "Hunter"
 	neck = /obj/item/clothing/neck/scarf/cptpatriot
-	suit = /obj/item/clothing/suit/jacket/miljacket
-	neck = /obj/item/clothing/ears/headphones
+	suit = /obj/item/clothing/suit/armor/f13/modif_r_vest
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
 	uniform = /obj/item/clothing/under/f13/merca
-	gloves = /obj/item/clothing/gloves/f13/leather
+	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	backpack_contents = list(/obj/item/reagent_containers/food/drinks/flask = 1,
-	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-	/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
+	/obj/item/gun/ballistic/revolver/widowmaker = 1,
+	/obj/item/ammo_box/shotgun/buck = 2,
 	)
 
-/datum/outfit/loadout/groundskeeper
-	name = "Groundskeeper"
+/datum/outfit/loadout/hobo
+	name = "Hobo"
 	head = /obj/item/clothing/head/soft/grey
 	belt = /obj/item/storage/belt
 	suit = /obj/item/clothing/under/f13/mechanic
+	shoes = /obj/item/clothing/shoes/f13/raidertreads
 	gloves = /obj/item/clothing/gloves/color/yellow
 	backpack_contents = list(/obj/item/storage/bag/trash = 1, /obj/item/reagent_containers/spray/cleaner = 1,
 	/obj/item/gun/ballistic/revolver/hobo/piperifle = 1,
 	/obj/item/ammo_box/a556/stripper = 2,
-
+	/obj/item/picket_sign = 1,
+	/obj/item/pen = 1,
 	)
 
-/datum/outfit/loadout/artisan
-	name = "Artisan"
+/datum/outfit/loadout/mechanic
+	name = "Mechanic"
 	glasses = /obj/item/clothing/glasses/welding
 	suit = /obj/item/clothing/under/f13/petrochico
 	belt = /obj/item/storage/belt/utility
@@ -923,48 +924,34 @@ Mayor
 	backpack_contents = list(/obj/item/twohanded/sledgehammer/simple = 1,
 	/obj/item/stack/sheet/metal/twenty = 1,
 	/obj/item/book/granter/crafting_recipe/ODF = 1,
+	/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+	/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
 	)
 
-/datum/outfit/loadout/outdoorsman
-	name = "Outdoorsman"
-	head = /obj/item/clothing/head/f13/beaver
-	suit = /obj/item/clothing/suit/f13/cowboybvest
+/datum/outfit/loadout/wanderer
+	name = "Wanderer"
+	head = /obj/item/clothing/head/f13/stormchaser
+	suit = /obj/item/clothing/suit/f13/veteran
 	belt = /obj/item/storage/belt/bandolier
-	uniform = /obj/item/clothing/under/f13/bartenderalt
-	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(/obj/item/fishingrod = 1,
-	/obj/item/storage/fancy/cigarettes/cigars = 1,
-	/obj/item/gun/ballistic/revolver/widowmaker = 1,
-	/obj/item/ammo_box/shotgun/buck = 2,
+	uniform = /obj/item/clothing/under/f13/mercc
+	shoes = /obj/item/clothing/shoes/jackboots
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+	/obj/item/ammo_box/magazine/m9mmds = 2,
 	)
 
-/datum/outfit/loadout/militia
-	name = "Militia"
-	head = /obj/item/clothing/head/helmet/armyhelmet
-	suit = /obj/item/clothing/suit/armor/f13/metalarmor/steelbib
-	uniform = /obj/item/clothing/under/f13/mercc
+/datum/outfit/loadout/norcal
+	name = "Caravaneer"
+	head = /obj/item/clothing/head/f13/cowboy
+	suit = /obj/item/clothing/suit/jacket/flannel/red
+	uniform = /obj/item/clothing/under/pants/khaki
 	r_hand = /obj/item/gun/ballistic/rifle/hunting
-	gloves = /obj/item/clothing/gloves/f13/leather
-	backpack_contents = list(/obj/item/ammo_box/a308 = 2,
+	backpack_contents = list(/obj/item/ammo_box/a308 = 2, 
+	/obj/item/storage/bag/money/small/ncrenlisted = 1,
+	/obj/item/card/id/dogtag/town/ncr = 1,
 	)
-/*
-/datum/outfit/loadout/secretary
-	name = "Secretary"
-	uniform = /obj/item/clothing/under/suit/black
-	glasses = /obj/item/clothing/glasses/regular/hipster
-	shoes = /obj/item/clothing/shoes/laceup
-	r_hand = /obj/item/storage/briefcase
-	backpack_contents = list(/obj/item/pen = 1,
-	/obj/item/clipboard = 1,
-	/obj/item/paper_bin/bundlenatural = 1,
-	/obj/item/clothing/under/suit/black/skirt = 1,
-	/obj/item/gun/ballistic/automatic/pistol/pistol22 = 1,
-	/obj/item/ammo_box/magazine/m22 = 2,
-	)
-	///we should find something to do with this
-*/
+
 /datum/outfit/loadout/singer
-	name = "Singer"
+	name = "Entertainer"
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(/obj/item/clothing/under/f13/classdress = 1,
 	/obj/item/clothing/under/suit/black_really = 1,
@@ -1036,10 +1023,9 @@ Mayor
 	department_flag = WENDOVER
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "free hand of the market"
+	supervisors = "the free hand of the market"
 	description = "The greed of the United States survived better than its people. You are an organ of this greed. Ensure its continuation."
 	selection_color = "#dcba97"
-	exp_requirements = 800
 
 	outfit = /datum/outfit/job/wendover/f13pawnshop
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT)

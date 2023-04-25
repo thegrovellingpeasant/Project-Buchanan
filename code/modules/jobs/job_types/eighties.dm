@@ -3,8 +3,8 @@
 	selection_color = "#1858D9"
 	faction = FACTION_EIGHTIES
 
-	forbids = "The 80s forbid: "
-	enforces = ""
+	forbids = "The 80s love: excitement, chems, raiding, ransoming, showmanship, arena fights, races, the open road."
+	enforces = "The 80s hate: walking, townies, cowards, hard work, the New California Republic, Rustwalkers, flat tires."
 	objectivesList = list("Amass an army and dislodge the White Legs from their camp.","Sack Wendover to enrich the compound.","Get the Mormons to do something funny.","Remind the NCR you haven't forgotten the flight from Sactown, make an example of their ambassador.","Host fights in the arena, stock up on slaves or thrill seekers and invite the wastes to a show.")
 	exp_type = EXP_TYPE_EIGHTIES
 
@@ -72,7 +72,6 @@
 	outfit = /datum/outfit/job/eighties/f13warboss
 	display_order = JOB_DISPLAY_ORDER_WARBOSS
 	exp_type = EXP_TYPE_EIGHTIES
-	exp_requirements = 300
 	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 	minimal_access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 
@@ -155,8 +154,8 @@
 	suit_store = /obj/item/twohanded/chainsaw
 	backpack_contents = list(
 		/obj/item/stack/crafting/armor_plate/five = 1,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
-		/obj/item/reagent_containers/pill/patch/turbo = 3,
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 1,
+		/obj/item/reagent_containers/pill/patch/turbo = 1,
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		)
@@ -175,7 +174,6 @@
 	display_order = JOB_DISPLAY_ORDER_ARENAMASTER
 	exp_type = EXP_TYPE_EIGHTIES
 	outfit = /datum/outfit/job/eighties/f13arenamaster
-	exp_requirements = 180
 
 	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 	minimal_access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
@@ -217,9 +215,9 @@
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		/obj/item/storage/bag/chemistry = 1,
-		/obj/item/reagent_containers/pill/patch/jet = 3,
-		/obj/item/reagent_containers/pill/patch/turbo = 3,
-		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		/obj/item/reagent_containers/pill/patch/turbo = 2,
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 2,
 		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
 		/obj/item/storage/belt/champion = 1,
 		)
@@ -566,8 +564,9 @@
 	jobtype = /datum/job/eighties/f13blueteam
 	box = /obj/item/storage/survivalkit_tribal
 	id = /obj/item/card/id/dogtag/eighties/blueteam
-	uniform = null
-	shoes = null
+	ears = /obj/item/radio/headset/headset_80sb
+	uniform = /obj/item/clothing/under/pants/jeanripped
+	shoes = /obj/item/clothing/shoes/jackboots
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -579,8 +578,6 @@
 
 /datum/outfit/loadout/nitro
 	name = "Adrenaline Junkie"
-	uniform = /obj/item/clothing/under/pants/jeanripped
-	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/fingerless
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
@@ -651,8 +648,9 @@
 	jobtype = /datum/job/eighties/f13redteam
 	box = /obj/item/storage/survivalkit_tribal
 	id = /obj/item/card/id/dogtag/eighties/redteam
-	uniform = null
-	shoes = null
+	ears = /obj/item/radio/headset/headset_80sr
+	uniform = /obj/item/clothing/under/pants/red
+	shoes = /obj/item/clothing/shoes/jackboots
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -664,8 +662,6 @@
 
 /datum/outfit/loadout/huffer
 	name = "Paint Huffer"
-	uniform = /obj/item/clothing/under/pants/red
-	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/fingerless
 	backpack_contents = list(
 		/obj/item/paint/red = 1,

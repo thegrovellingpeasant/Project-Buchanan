@@ -151,7 +151,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
 	exp_type = EXP_TYPE_NCR
-	exp_requirements = 1500
 
 	loadout_options = list(
 		/datum/outfit/loadout/captainbackline,	// Infiltrator, El Capitan
@@ -222,18 +221,17 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // LIEUTENANT
 
 /datum/job/ncr/f13lieutenant
-	title = "NCR Lieutenant"
+	title = "Lieutenant"
 	flag = F13LIEUTENANT
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. You are the XO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
-	supervisors = "Captain"
+	description = "You are the Commanding Officer of the NCR force stationed at the Embassy in Wendover. The last stop before the Great Salt Lake desert, it enjoyed some prominence as a trade town, with caravans from California and New Canaan meeting here to exchange goods of every kind. With the fall of New Canaan, trade has diminished, and only a token force remains to protect the embassy from the belligerent tribes in the area. To make matters worse, the Ranger detachment that once patrolled I-80 has been sent south to New Vegas in expectation of a second battle at Hoover dam. Defend the Ambassador, lead your troops, and use what limited supplies you have to promote the NCR's interests in the area."
+	supervisors = "the Ambassador"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 	exp_type = EXP_TYPE_NCR
-	exp_requirements = 1000
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -245,7 +243,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, M1911 custom
-	name = "NCR Lieutenant"
+	name = "Lieutenant"
 	jobtype	= /datum/job/ncr/f13lieutenant
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -253,7 +251,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	accessory = /obj/item/clothing/accessory/ncr/LT1
 	head = /obj/item/clothing/head/beret/ncr
 	neck = /obj/item/storage/belt/holster/legholster
-	glasses = /obj/item/clothing/glasses/night/ncr
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
@@ -261,13 +258,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
-		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/ammo_box/magazine/garand308 = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
-		/obj/item/grenade/syndieminibomb/concussion = 1,
-		/obj/item/stack/crafting/armor_plate = 5
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
 		)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -293,7 +288,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
-	exp_requirements = 1000
 
 	loadout_options = list( // ALL: Bayonet, M1911 sidearm
 		/datum/outfit/loadout/sergeantrifleman,	// Worn Assault Carbine
@@ -457,14 +451,13 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13representative
 	title = "Ambassador"
 	flag = F13REP
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
+	access = list(ACCESS_NCR, ACCESS_CHANGE_IDS, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
-	supervisors = "The Captain and the NCR"
+	description = "You were personally appointed by the President to represent the people of California in all matters related to Utah and New Canaan. Your post oversaw years of rich trade between the two nations, and ensured safe passage for travelers between Reno, Vegas and Salt Lake City. Unfortunately for you, one of the local tribes launched a surprise attack on New Canaan, slaughtering or scattering its inhabitants to the last. Trade and travel have dried up, the Rangers have been redeployed to Hoover Dam and only you are left to sort out the mess on your hands. Promote NCR interests, recoup what losses you can for the caravan companies, and decide on the fate of the town and tribes of Wendover - For the Republic."
+	supervisors = "The President"
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	outfit = /datum/outfit/job/ncr/f13representative
-	exp_requirements = 180
 
 	loadout_options = list(
 		/datum/outfit/loadout/repbrahminbaron,
@@ -488,6 +481,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	shoes = /obj/item/clothing/shoes/laceup
 	id = /obj/item/card/id/dogtag/ncrrep
 	neck = /obj/item/storage/belt/holster/legholster
+	l_hand = /obj/item/storage/briefcase/crafted
 	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
@@ -905,7 +899,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
-	exp_requirements = 120
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Beanbag Shotgun, Military baton
 	name = "NCR Military Police"
@@ -1005,7 +998,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
 	outfit = /datum/outfit/job/ncr/f13corporal
-	exp_requirements = 180
 
 	loadout_options = list(
 		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Marksman Carbine, 9mm sidearm
@@ -1098,7 +1090,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13trooper
-	exp_requirements = 60
 
 	loadout_options = list(
 		/datum/outfit/loadout/trooperrifleman, // Service Rifle, Bayonet
@@ -1232,7 +1223,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
-	exp_requirements = 1500
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/ncr,
@@ -1289,7 +1279,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
-	exp_requirements = 1500
 
 /datum/outfit/job/ncr/f13logisticsofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

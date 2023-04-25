@@ -117,10 +117,10 @@
 
 /mob/living/forceMove(atom/destination)
 	stop_pulling()
-	if(buckled)
-		buckled.unbuckle_mob(src, force = TRUE)
-	if(has_buckled_mobs())
-		unbuckle_all_mobs(force = TRUE)
+	//if(buckled)
+		//buckled.unbuckle_mob(src, force = TRUE) // testing this to make buggies work short term
+	//if(has_buckled_mobs())
+		//unbuckle_all_mobs(force = TRUE)
 	. = ..()
 	if(.)
 		if(client)

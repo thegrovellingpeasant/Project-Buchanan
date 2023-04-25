@@ -504,6 +504,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	spider_panic = typecacheof(list(
 					/mob/living/simple_animal/banana_spider,
 					/mob/living/simple_animal/hostile/poison/giant_spider,
+					/mob/living/simple_animal/hostile/bloatfly
 	))
 
 /obj/item/melee/flyswatter/afterattack(atom/target, mob/user, proximity_flag)

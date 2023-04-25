@@ -4,11 +4,12 @@
 	desc = "You're safer here than in the deep."
 	icon_state = "pool_tile"
 	heat_capacity = INFINITY
+	depth = 2
 	var/filled = TRUE
 	var/next_splash = 0
 	var/obj/machinery/pool/controller/controller
 	var/obj/effect/overlay/water/watereffect
-	var/obj/effect/overlay/water/top/watertop
+	//var/obj/effect/overlay/water/top/watertop
 
 /turf/open/pool/Initialize(mapload)
 	. = ..()
@@ -19,7 +20,7 @@
 		controller.linked_turfs -= src
 		controller = null
 	QDEL_NULL(watereffect)
-	QDEL_NULL(watertop)
+	//QDEL_NULL(watertop)
 	return ..()
 
 /turf/open/pool/update_icon()
@@ -27,27 +28,26 @@
 	if(!filled)
 		name = "drained pool"
 		desc = "No diving!"
+		depth = 0
 		QDEL_NULL(watereffect)
-		QDEL_NULL(watertop)
+		//QDEL_NULL(watertop)
 	else
-		name = "poolwater"
+		name = "water"
 		desc = "You're safer here than in the deep."
+		depth = 2
 		watereffect = new /obj/effect/overlay/water(src)
-		watertop = new /obj/effect/overlay/water/top(src)
+		//watertop = new /obj/effect/overlay/water/top(src)
 
 /obj/effect/overlay/water
 	name = "water"
 	icon = 'icons/turf/pool.dmi'
-	icon_state = "bottom"
+	icon_state = "altunderlay"
 	density = FALSE
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	layer = ABOVE_MOB_LAYER
-	anchored = TRUE
-	resistance_flags = INDESTRUCTIBLE
+	layer = ABOVE_OBJ_LAYER
 
-/obj/effect/overlay/water/top
-	icon_state = "top"
-	layer = BELOW_MOB_LAYER
+//obj/effect/overlay/water/top
+	//icon_state = "top"
 
 // Mousedrop hook to normal turfs to get out of pools.
 /turf/open/MouseDrop_T(atom/from, mob/living/user)
@@ -220,3 +220,53 @@
 	sunlight_state = NO_SUNLIGHT
 	dir = NORTHWEST
 
+/mob/living/proc/poolcheck_submerged()
+	if(buckled)
+		return 0
+	if(locate(/obj/structure/lattice/catwalk) in loc)
+		return 0
+	var/turf/open/pool/T = loc
+	if(istype(T))
+		return T.filled
+	return 0
+
+/turf/open/pool/Entered(atom/movable/AM, atom/oldloc)
+	if(istype(AM, /mob/living/carbon/human))
+		var/mob/living/L = AM
+		L.update_water()
+		if(L.check_submerged() <= 0)
+			return
+		if(!istype(oldloc, /turf/open/pool))
+			to_chat(L, "<span class='warning'>You get drenched in water from entering \the [src]!</span>")
+	if(istype(AM, /mob/living))
+		var/mob/living/U = AM
+		U.update_water()
+		if(U.check_submerged() <= 0)
+			return
+	if(istype(AM, /obj/vehicle))
+		var/obj/vehicle/V = AM
+		V.vehicle_update_water()
+		if(V.vehicle_check_submerged() <= 0)
+			return
+	AM.water_act(5)
+	..()
+
+/turf/open/pool/Exited(atom/movable/AM, atom/newloc)
+	if(istype(AM, /mob/living/carbon/human))
+		var/mob/living/carbon/human/L = AM
+		L.update_water()
+		if(L.check_submerged() <= 0)
+			return
+		if(!istype(newloc, /turf/open/pool))
+			to_chat(L, "<span class='warning'>You climb out of \the [src].</span>")
+	if(istype(AM, /mob/living))
+		var/mob/living/U = AM
+		U.update_water()
+		if(U.check_submerged() <= 0)
+			return
+	if(istype(AM, /obj/vehicle))
+		var/obj/vehicle/V = AM
+		V.vehicle_update_water()
+		if(V.vehicle_check_submerged() <= 0)
+			return
+	..()

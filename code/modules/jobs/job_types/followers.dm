@@ -47,7 +47,6 @@ Administrator
 	supervisors = "No one."
 	description = "You are the Follower Administrator. You are the administrator for the on-site followers. While there is no tradtional chain of command that is used, you have been chosen to lead due to your expert knowledge in the field of medicine and other general knowledges. Make sure that the supplies donated are being put to use, help secure more donations, and fill in as needed whenever short staffed or if the clinic is busy. For the love of god, don't commit war crimes or enable those who do."
 	selection_color = "#FF95FF"
-	exp_requirements = 1500
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
@@ -72,7 +71,7 @@ Administrator
 	chemwhiz =	TRUE
 	backpack =	/obj/item/storage/backpack/explorer
 	uniform =	/obj/item/clothing/under/f13/followers
-	suit=	/obj/item/clothing/suit/toggle/labcoat/cmo
+	suit=	/obj/item/clothing/suit/toggle/labcoat/f13/followers
 	shoes =	/obj/item/clothing/shoes/f13/brownie
 	belt =	/obj/item/healthanalyzer/advanced
 	gloves =	/obj/item/clothing/gloves/color/latex/nitrile
@@ -147,7 +146,6 @@ Practitioner
 	supervisors = "Followers having no strict command structure, don't report to anyone- though they will look to the Administrator for guidance."
 	description ="You are a Followers Doctor. As a Followers Doctor it is your responsibility to maintain working order in the hospital and to manage its staff and to treat patients who come in regardless of whether or not they can afford care. Some Doctors are known for leaving the hospital to look for injured or those who need help who may not come to a health facility, however it is key that those who do travel around to give aid keep in touch with the rest of staff and if there are no other able physicans or chemist that they stay to offer the best aid possible."
 	selection_color = "#FFDDFF"
-	exp_requirements = 600
 
 	outfit = /datum/outfit/job/followers/f13practitioner
 	matchmaking_allowed = list(
@@ -186,6 +184,7 @@ Practitioner
 	name =	"Followers Doctor"
 	jobtype =	/datum/job/followers/f13practitioner
 	uniform =	/obj/item/clothing/under/f13/followers
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	id =	/obj/item/card/id/silver
 	chemwhiz =	TRUE
 	backpack =	/obj/item/storage/backpack/medic
@@ -201,7 +200,6 @@ Practitioner
 
 /datum/outfit/loadout/physician
 	name =	"Emergency Physician"
-	suit =	/obj/item/clothing/suit/toggle/labcoat/f13/followers
 	mask =	/obj/item/clothing/mask/surgical
 	gloves =	/obj/item/clothing/gloves/color/latex/nitrile
 	glasses =	/obj/item/clothing/glasses/hud/health
@@ -213,7 +211,6 @@ Practitioner
 
 /datum/outfit/loadout/pharmacist
 	name =	"Pharmacist"
-	suit =	/obj/item/clothing/suit/toggle/labcoat/chemist
 	gloves =	/obj/item/clothing/gloves/color/latex
 	glasses =	/obj/item/clothing/glasses/science
 	backpack_contents = list(
@@ -234,7 +231,6 @@ Practitioner
 
 /datum/outfit/loadout/medical_researcher
 	name =	"Medical Researcher"
-	suit =	/obj/item/clothing/suit/toggle/labcoat/f13/followers
 	backpack_contents = list(
 		/obj/item/clothing/accessory/pocketprotector/full = 1,
 		/obj/item/folder/white = 1,

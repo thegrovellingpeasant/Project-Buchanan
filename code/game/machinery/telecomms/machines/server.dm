@@ -137,27 +137,27 @@
 	freq_listening = list(FREQ_USPS)
 	autolinkers = list("usps")
 
-obj/machinery/telecomms/server/presets/mobay
+/obj/machinery/telecomms/server/presets/montegobay
 	id = "Montego Bay Server"
 	freq_listening = list(FREQ_MONTEGOBAY)
-	autolinkers = list("mobay")
+	autolinkers = list("montegobay")
 
-obj/machinery/telecomms/server/presets/wndradio
+/obj/machinery/telecomms/server/presets/wndradio
 	id = "KWND Server"
 	freq_listening = list(FREQ_WND)
 	autolinkers = list("wnd")
 
-obj/machinery/telecomms/server/presets/eighties
+/obj/machinery/telecomms/server/presets/eighties
 	id = "80s Server"
 	freq_listening = list(FREQ_EIGHTIES)
 	autolinkers = list("eighties")
 
-obj/machinery/telecomms/server/presets/eightiesb
+/obj/machinery/telecomms/server/presets/eightiesb
 	id = "Blue Server"
 	freq_listening = list(FREQ_EIGHTIESB)
 	autolinkers = list("eightiesb")
 
-obj/machinery/telecomms/server/presets/eightiesr
+/obj/machinery/telecomms/server/presets/eightiesr
 	id = "Red Server"
 	freq_listening = list(FREQ_EIGHTIESR)
 	autolinkers = list("eightiesr")

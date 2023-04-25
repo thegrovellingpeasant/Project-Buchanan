@@ -655,6 +655,11 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 /obj/structure/window/reinforced/fulltile/unanchored
 	anchored = FALSE
 
+/obj/structure/window/reinforced/fulltile/blue
+	icon = 'icons/obj/structures_spawners.dmi'
+	icon_state = "rwindow_spawner"
+	smooth = SMOOTH_FALSE
+
 /obj/structure/window/reinforced/fulltile/airport
 	name = "window"
 	icon = 'icons/fallout/objects/wendover.dmi'

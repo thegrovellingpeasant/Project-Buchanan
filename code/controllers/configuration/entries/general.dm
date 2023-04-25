@@ -223,8 +223,8 @@
 /datum/config_entry/string/wikiurltg
 	config_entry_value = ""
 
-/datum/config_entry/string/forumurl
-	config_entry_value = null
+/datum/config_entry/string/patreonurl
+	config_entry_value = "patreon.com/Interstate80"
 
 /datum/config_entry/string/rulesurl
 	config_entry_value = null

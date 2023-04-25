@@ -243,6 +243,23 @@
 	custom_materials = list(/datum/material/iron=400)
 	volume = 25
 
+/obj/item/reagent_containers/food/drinks/trophy/turquoise
+	name = "turquoise cup"
+	desc = "It seems old and well used."
+	icon_state = "pewter_cup"
+	color = "#00ffee"
+	w_class = WEIGHT_CLASS_TINY
+	force = 1
+	throwforce = 1
+	amount_per_transfer_from_this = 5
+	custom_materials = list(/datum/material/iron=100)
+	possible_transfer_amounts = list()
+	volume = 60
+	flags_1 = CONDUCT_1
+	spillable = TRUE
+	resistance_flags = FIRE_PROOF
+	isGlass = FALSE
+
 ///////////////////////////////////////////////Drinks/////////////////////////////////////////
 //Notes by Darem: Drinks are simply containers that start preloaded. Unlike condiments, the contents can be ingested directly
 //	rather then having to add it to something else first. They should only contain liquids. They have a default container size of 50.
@@ -277,10 +294,10 @@
 /obj/item/reagent_containers/food/drinks/ice/sustanance
 	custom_price = PRICE_FREE
 
-/obj/item/reagent_containers/food/drinks/mug/ // parent type is literally just so empty mug sprites are a thing
-	name = "mug"
+/obj/item/reagent_containers/food/drinks/mug // parent type is literally just so empty mug sprites are a thing
+	name = "coffee mug"
 	desc = "A drink served in a classy mug."
-	icon_state = "tea"
+	icon_state = "coco"
 	item_state = "coffee"
 	spillable = TRUE
 
@@ -476,6 +493,37 @@
 	icon_state = "britcup"
 	volume = 30
 	spillable = TRUE
+
+/obj/item/reagent_containers/food/drinks/flask/museum
+	name = "Air Museum Flask"
+	desc = "A plain steel flask, sealed by lock and key. The front is inscribed with an Army Air Force seal."
+	icon = 'icons/obj/custom.dmi'
+	icon_state = "steelflask"
+	custom_materials = list(/datum/material/iron=250)
+	volume = 60
+	isGlass = FALSE
+	custom_price = PRICE_ABOVE_NORMAL
+
+/obj/item/reagent_containers/food/drinks/flask/coffeepot
+	name = "coffee pot"
+	desc = "A pot used in making coffee."
+	icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "coffeepot"
+	custom_materials = list(/datum/material/iron=250)
+	volume = 60
+	isGlass = FALSE
+	custom_price = PRICE_ABOVE_NORMAL
+
+/obj/item/reagent_containers/food/drinks/flask/teapot
+	name = "teapot"
+	desc = "A kettle for boiling and pouring water for tea."
+	icon = 'icons/fallout/trash.dmi'
+	icon_state = "teapot"
+	custom_materials = list(/datum/material/iron=250)
+	volume = 60
+	isGlass = FALSE
+	custom_price = PRICE_ABOVE_NORMAL
+
 
 //////////////////////////soda_cans////////////////////////////////////////////////////
 //These are in their own group to be used as IED's in /obj/item/grenade/ghettobomb.dm//

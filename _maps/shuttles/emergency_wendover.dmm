@@ -36,34 +36,7 @@
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "cM" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane3";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
-/turf/template_noop,
-/area/shuttle/escape)
-"dD" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane14";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = -32;
-	dir = 10
-	},
+/obj/structure/lattice/catwalk/wing/three,
 /turf/template_noop,
 /area/shuttle/escape)
 "eW" = (
@@ -93,13 +66,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/shuttle/escape)
 "hG" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	dir = 6
+/obj/effect/overlay/airplanewing{
+	pixel_x = 0
 	},
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
@@ -118,14 +86,7 @@
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "jV" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane12";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/twelve,
 /turf/template_noop,
 /area/shuttle/escape)
 "ln" = (
@@ -153,53 +114,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/shuttle/escape)
 "mA" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane7";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/seven,
 /turf/template_noop,
 /area/shuttle/escape)
 "oo" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane1";
-	desc = null;
-	name = "wing";
-	smooth = 0;
-	dir = 8
-	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane5";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = -32;
-	dir = 8
-	},
-/turf/template_noop,
-/area/shuttle/escape)
-"pq" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	smooth = 0
-	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = -32;
-	dir = 10
-	},
+/obj/structure/lattice/catwalk/wing/one,
+/obj/effect/overlay/airplanewing/bottom,
 /turf/template_noop,
 /area/shuttle/escape)
 "rO" = (
@@ -210,14 +130,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/shuttle/escape)
 "sX" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplaneflat";
-	desc = null;
-	name = "wings";
-	smooth = 0;
-	dir = 8
-	},
+/obj/structure/lattice/catwalk/wing/flat,
 /turf/template_noop,
 /area/shuttle/escape)
 "tf" = (
@@ -256,17 +169,6 @@
 	},
 /turf/closed/wall/mineral/titanium/transparentundense,
 /area/shuttle/escape)
-"wZ" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 9;
-	smooth = 0
-	},
-/turf/template_noop,
-/area/shuttle/escape)
 "zv" = (
 /obj/machinery/door/airlock/survival_pod,
 /turf/open/floor/plasteel/solarpanel,
@@ -280,14 +182,7 @@
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "Bb" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane15";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/fifteen,
 /turf/template_noop,
 /area/shuttle/escape)
 "BT" = (
@@ -306,23 +201,8 @@
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "Er" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = 32;
-	dir = 6
-	},
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane16";
-	desc = null;
-	name = "wings";
-	smooth = 0;
-	dir = 8
-	},
+/obj/effect/overlay/airplanewing,
+/obj/structure/lattice/catwalk/wing,
 /turf/template_noop,
 /area/shuttle/escape)
 "EH" = (
@@ -333,25 +213,11 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "FG" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane13";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/thirteen,
 /turf/template_noop,
 /area/shuttle/escape)
 "Gz" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 5;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/four,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "HL" = (
@@ -361,127 +227,71 @@
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "IC" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane14";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane5";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = -32;
-	dir = 8
-	},
+/obj/structure/lattice/catwalk/wing/fourteen,
+/obj/effect/overlay/airplanewing/bottom,
 /turf/template_noop,
 /area/shuttle/escape)
 "Js" = (
 /turf/closed/wall/mineral/titanium/transparent,
 /area/shuttle/escape)
-"JN" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 5;
-	smooth = 0
-	},
-/turf/template_noop,
-/area/shuttle/escape)
-"KV" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 1;
-	smooth = 0
-	},
-/turf/template_noop,
-/area/shuttle/escape)
 "Nk" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	name = "wing";
-	plane = -15;
-	layer = 2.1;
-	pixel_x = 32;
-	dir = 6
-	},
+/obj/structure/lattice/catwalk/wing,
+/obj/effect/overlay/airplanewing,
 /turf/template_noop,
 /area/shuttle/escape)
 "NA" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane4";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/four,
 /turf/template_noop,
 /area/shuttle/escape)
 "NM" = (
 /obj/structure/window/shuttle,
 /turf/closed/wall/mineral/titanium/transparentundense,
 /area/shuttle/escape)
-"OW" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane11";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
+"NQ" = (
+/obj/structure/lattice/catwalk/wing/two,
+/obj/machinery/light/floor{
+	pixel_x = 3;
+	invisibility = 100;
+	alpha = 100
 	},
 /turf/template_noop,
 /area/shuttle/escape)
+"OW" = (
+/obj/structure/lattice/catwalk/wing/eleven,
+/turf/template_noop,
+/area/shuttle/escape)
 "Pm" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane2";
-	desc = null;
-	name = "wing";
-	dir = 8;
-	smooth = 0
-	},
+/obj/structure/lattice/catwalk/wing/two,
 /turf/template_noop,
 /area/shuttle/escape)
 "PQ" = (
 /turf/template_noop,
 /area/template_noop)
-"SD" = (
-/turf/closed/wall/mineral/titanium/selectivesmooth,
-/area/shuttle/escape)
-"UR" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "airplane";
-	desc = null;
-	name = "wing";
-	dir = 4;
-	smooth = 0
+"RY" = (
+/obj/structure/lattice/catwalk/wing/flat,
+/obj/machinery/light/floor{
+	pixel_x = 3;
+	invisibility = 100;
+	alpha = 100
 	},
 /turf/template_noop,
+/area/shuttle/escape)
+"SD" = (
+/turf/closed/wall/mineral/titanium/selectivesmooth,
 /area/shuttle/escape)
 "WF" = (
 /obj/structure/sign/warning/nosmoking/circle,
 /turf/closed/wall/mineral/titanium,
+/area/shuttle/escape)
+"WU" = (
+/obj/structure/lattice/catwalk/wing/one,
+/obj/effect/overlay/airplanewing/bottom,
+/obj/machinery/light/floor{
+	pixel_x = 3;
+	invisibility = 100;
+	alpha = 100
+	},
+/turf/template_noop,
 /area/shuttle/escape)
 "WY" = (
 /obj/structure/chair/comfy/shuttle,
@@ -489,7 +299,9 @@
 /area/shuttle/escape)
 "Yt" = (
 /obj/machinery/door/airlock/external/glass,
-/turf/closed/wall/mineral/titanium/transparentundense,
+/turf/closed/wall/mineral/titanium/transparentundense{
+	icon_state = "airplaneflat"
+	},
 /area/shuttle/escape)
 "YR" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -743,7 +555,7 @@ PQ
 PQ
 cM
 Pm
-sX
+RY
 sX
 tO
 aE
@@ -751,7 +563,7 @@ if
 aE
 tO
 sX
-sX
+RY
 oo
 BT
 PQ
@@ -803,7 +615,7 @@ PQ
 (15,1,1) = {"
 cM
 Pm
-sX
+RY
 Er
 OW
 BT
@@ -817,7 +629,7 @@ PQ
 NA
 OW
 FG
-sX
+RY
 oo
 BT
 "}
@@ -975,7 +787,7 @@ PQ
 PQ
 PQ
 PQ
-wZ
+cM
 tO
 SD
 SD
@@ -995,14 +807,14 @@ PQ
 PQ
 PQ
 PQ
-wZ
-UR
+cM
+Pm
 Yt
 if
 if
 if
 tO
-pq
+oo
 BT
 PQ
 PQ
@@ -1015,16 +827,16 @@ PQ
 PQ
 PQ
 PQ
-wZ
-UR
+cM
+NQ
 Nk
 hG
 tO
 EH
 tO
 Gz
-KV
-pq
+FG
+WU
 BT
 PQ
 PQ
@@ -1044,9 +856,9 @@ tO
 tO
 tO
 PQ
-JN
-KV
-dD
+NA
+FG
+IC
 PQ
 PQ
 PQ
@@ -1066,7 +878,7 @@ PQ
 PQ
 PQ
 PQ
-JN
+NA
 jV
 PQ
 PQ

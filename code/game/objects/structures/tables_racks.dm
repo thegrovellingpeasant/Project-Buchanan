@@ -276,6 +276,14 @@
 			RemoveItemFromTable(AM, AM.loc)
 	return TRUE
 
+/obj/structure/table/round
+	name = "table"
+	desc = "A round piece of metal standing on four metal legs. It can not move."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "nv_metal_round"
+	pixel_y = -2
+	smooth = SMOOTH_FALSE
+
 /*
  * Glass tables
  */
@@ -437,6 +445,37 @@
 	icon = 'icons/obj/smooth_structures/poker_table.dmi'
 	icon_state = "poker_table"
 	buildstack = /obj/item/stack/tile/carpet
+
+/obj/structure/table/wood/greyscale
+	name = "wooden table"
+	desc = "Do not apply fire to this. Rumour says it burns easily."
+	icon = 'icons/obj/smooth_structures/table_greyscale.dmi'
+	icon_state = "table"
+	color = "#BA8C63"
+	canSmoothWith = list(/obj/structure/table/wood, /obj/structure/table/wood/poker, /obj/structure/table/wood/bar, /obj/structure/table/wood/greyscale, /obj/structure/table/wood/greyscale/varnished, /obj/structure/table/wood/greyscale/red)
+
+/obj/structure/table/wood/greyscale/nosmooth
+	name = "wooden table"
+	smooth = SMOOTH_FALSE
+
+/obj/structure/table/wood/greyscale/varnished
+	name = "wooden table"
+	color = "#665240"
+
+/obj/structure/table/wood/greyscale/red
+	name = "wooden table"
+	color = "#7a5647"
+
+/obj/structure/table/wood/ruined
+	name = "ruined table"
+	desc = "Do not apply fire to this. Rumour says it burns easily."
+	icon = 'icons/fallout/objects/furniture/junk.dmi'
+	icon_state = "junk_table"
+	smooth = SMOOTH_FALSE
+
+/obj/structure/table/wood/ruined/bench
+	name = "ruined table"
+	icon_state = "junk_bench"
 
 /obj/structure/table/wood/poker/narsie_act()
 	..(FALSE)
@@ -658,7 +697,7 @@
  */
 
 // Wooden shelf. Construct by crafting, not rack parts.
-/obj/structure/shelf_wood
+/obj/structure/rack/shelf_wood
 	name = "wooden shelf"
 	desc = "For storage."
 	icon = 'icons/fallout/objects/furniture/stationary.dmi'

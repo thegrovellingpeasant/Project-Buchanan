@@ -5,8 +5,10 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 /obj/machinery/computer/card
 	name = "identification console"
 	desc = "You can use this to manage jobs and ID access."
-	icon_screen = "id"
-	icon_keyboard = "id_key"
+	icon = 'icons/obj/computer.dmi'
+	icon_state = "terminal"
+	icon_keyboard = "terminal_key"
+	icon_screen = "terminal_on_alt"
 	req_one_access = list(ACCESS_HEADS, ACCESS_CHANGE_IDS)
 	circuit = /obj/item/circuitboard/computer/card
 	var/mode = 0
@@ -486,17 +488,16 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	circuit = /obj/item/circuitboard/computer/card/ncr
 	// The job list is here so only specific titles are allowed.
 	job_list = list(
+		"Lieutenant",
+		"Sergeant",
+		"Corporal",
+		"Trooper",
+		"Off Duty",
 		"NCR Citizen",
-		"NCR Trooper",
-		"NCR Corporal",
-		"NCR Combat Medic",
-		"NCR Combat Engineer",
-		"NCR Sergeant",
 		)
 	job_req = list(
-		"NCR Colonel",
-		"NCR Captain",
-		"NCR Lieutenant",
+		"Ambassador",
+		"Lieutenant",
 		)
 
 /obj/machinery/computer/card/legion
@@ -504,16 +505,19 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	circuit = /obj/item/circuitboard/computer/card/legion
 	// tl;dr - We don't need more Centurions.
 	job_list = list(
-		"Legion Slave",
+		"Slave",
 		"Legion Citizen",
 		"Recruit Legionnaire",
 		"Prime Legionnaire",
 		"Veteran Legionnaire",
+		"Recruit Decanus",
+		"Prime Decanus",
 		)
 	job_req = list(
 		"Legate",
 		"Legion Centurion",
-		"Legion Veteran Decanus",
+		"Veteran Decanus",
+		"Prime Decanus",
 		)
 
 /obj/machinery/computer/card/enclave
@@ -546,4 +550,20 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Head Paladin",
 		"Head Scribe",
 		"Head Knight",
+		)
+
+/obj/machinery/computer/card/eighties
+	name = "\improper Driver's License Issuing Computer"
+	circuit = /obj/item/circuitboard/computer/card/eighties
+	job_list = list(
+		"80",
+		"Roadie",
+		"Lay Mechanic",
+		"Blackfinger",
+		"Blue Team",
+		"Red Team",
+		)
+	job_req = list(
+		"Warboss",
+		"Arena Master",
 		)

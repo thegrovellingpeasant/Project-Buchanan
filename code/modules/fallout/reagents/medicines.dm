@@ -560,9 +560,24 @@
 	description = "A powerful drug that heals and increases the perception and intelligence of the user."
 	color = "#C8A5DC"
 	reagent_state = SOLID
+	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 25
 	addiction_threshold = 15
 	ghoulfriendly = TRUE
+
+/datum/reagent/medicine/mentat/on_mob_add(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		to_chat(M, "<span class='notice'>Everything begins to make sense.</span>")
+		ADD_TRAIT(M, TRAIT_CHEMWHIZ	, "mentats")
+		ADD_TRAIT(M, TRAIT_SURGERY_LOW, "mentats")
+
+/datum/reagent/medicine/mentat/on_mob_delete(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		to_chat(M, "<span class='notice'>Your IQ returns to room temperature.</span>")
+		REMOVE_TRAIT(M, TRAIT_CHEMWHIZ, "mentats")
+		REMOVE_TRAIT(M, TRAIT_SURGERY_LOW, "mentats")
 
 /datum/reagent/medicine/mentat/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(-3*REAGENTS_EFFECT_MULTIPLIER)
@@ -570,7 +585,7 @@
 	if (!eyes)
 		return
 	if(M.getOrganLoss(ORGAN_SLOT_BRAIN) == 0)
-		M.cure_all_traumas(TRAUMA_RESILIENCE_SURGERY)
+		M.cure_all_traumas(TRAUMA_RESILIENCE_SURGERY)	
 /*	if(HAS_TRAIT(M, TRAIT_BLIND, TRAIT_GENERIC))
 		if(prob(20))
 			to_chat(M, "<span class='warning'>Your vision slowly returns...</span>")

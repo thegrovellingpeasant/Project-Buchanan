@@ -18,7 +18,7 @@
 	update_inv_handcuffed()
 	update_inv_legcuffed()
 	update_fire()
-
+	update_water()
 
 /mob/living/carbon/update_inv_hands()
 	remove_overlay(HANDS_LAYER)

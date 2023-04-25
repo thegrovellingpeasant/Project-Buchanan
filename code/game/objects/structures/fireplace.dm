@@ -75,16 +75,16 @@
 		return
 	switch(burn_time_remaining())
 		if(0 to 500)
-			. += "fireplace_fire0"
+			. += "[icon_state]_fire0"
 		if(500 to 1000)
-			. += "fireplace_fire1"
+			. += "[icon_state]_fire1"
 		if(1000 to 1500)
-			. += "fireplace_fire2"
+			. += "[icon_state]_fire2"
 		if(1500 to 2000)
-			. += "fireplace_fire3"
+			. += "[icon_state]_fire3"
 		if(2000 to MAXIMUM_BURN_TIMER)
-			. += "fireplace_fire4"
-	. += "fireplace_glow"
+			. += "[icon_state]_fire4"
+	. += "[icon_state]_glow"
 
 /obj/structure/fireplace/proc/adjust_light()
 	if(!lit)
@@ -151,3 +151,11 @@
 	update_icon()
 	adjust_light()
 	desc = initial(desc)
+
+/obj/structure/fireplace/potbelly
+	name = "pot belly stove"
+	desc = "A warm stove, for cooking food, or keeping warm in the winter. It's really old fashioned, but works wonders when there's no electricity."
+	icon = 'icons/fallout/objects/furniture/heating.dmi'
+	icon_state = "potbelly"
+	pixel_x = 0
+	pixel_y = 16

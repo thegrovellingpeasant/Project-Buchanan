@@ -6,16 +6,16 @@
 #define RADIO_KEY_COMMON ";"
 
 #define RADIO_CHANNEL_SECURITY "Security"
-#define RADIO_KEY_SECURITY "s"
-#define RADIO_TOKEN_SECURITY ":s"
+#define RADIO_KEY_SECURITY "p"
+#define RADIO_TOKEN_SECURITY ":p"
 
 #define RADIO_CHANNEL_ENGINEERING "Engineering"
 #define RADIO_KEY_ENGINEERING "e"
 #define RADIO_TOKEN_ENGINEERING ":e"
 
 #define RADIO_CHANNEL_COMMAND "Command"
-#define RADIO_KEY_COMMAND "c"
-#define RADIO_TOKEN_COMMAND ":c"
+#define RADIO_KEY_COMMAND "d"
+#define RADIO_TOKEN_COMMAND ":d"
 
 #define RADIO_CHANNEL_SCIENCE "Science"
 #define RADIO_KEY_SCIENCE "n"
@@ -30,8 +30,8 @@
 #define RADIO_TOKEN_SUPPLY ":u"
 
 #define RADIO_CHANNEL_SERVICE "Service"
-#define RADIO_KEY_SERVICE "v"
-#define RADIO_TOKEN_SERVICE ":v"
+#define RADIO_KEY_SERVICE "k"
+#define RADIO_TOKEN_SERVICE ":k"
 
 #define RADIO_CHANNEL_AI_PRIVATE "AI Private"
 #define RADIO_KEY_AI_PRIVATE "o"
@@ -46,16 +46,16 @@
 #define RADIO_TOKEN_CENTCOM ":y"
 
 #define RADIO_CHANNEL_VAULT "Vault"
-#define RADIO_KEY_VAULT "b"
-#define RADIO_TOKEN_VAULT ":b"
+#define RADIO_KEY_VAULT "v"
+#define RADIO_TOKEN_VAULT ":v"
 
 #define RADIO_CHANNEL_NCR "NCR"
 #define RADIO_KEY_NCR "w"
 #define RADIO_TOKEN_NCR ":w"
 
-#define RADIO_CHANNEL_RANGER "Ranger"
-#define RADIO_KEY_RANGER "r"
-#define RADIO_TOKEN_RANGER ":r"
+#define RADIO_CHANNEL_RANGER "Police"
+#define RADIO_KEY_RANGER "j"
+#define RADIO_TOKEN_RANGER ":j"
 
 #define RADIO_CHANNEL_BOS "BOS"
 #define RADIO_KEY_BOS "q"
@@ -78,37 +78,37 @@
 #define RADIO_TOKEN_KHANS ":a"
 
 #define RADIO_CHANNEL_DEN "Den"
-#define RADIO_KEY_DEN "j"
-#define RADIO_TOKEN_DEN ":j"
+#define RADIO_KEY_DEN "x"
+#define RADIO_TOKEN_DEN ":x"
 
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
 
-#define RADIO_CHANNEL_LDS "LDS"
-#define RADIO_KEY_LDS "d"
-#define RADIO_TOKEN_LDS ":d"
+#define RADIO_CHANNEL_LDS "New Canaan"
+#define RADIO_KEY_LDS "c"
+#define RADIO_TOKEN_LDS ":c"
 
-#define RADIO_CHANNEL_USPS "Post Office"
-#define RADIO_KEY_USPS "p"
-#define RADIO_TOKEN_USPS ":p"
+#define RADIO_CHANNEL_USPS "USPS"
+#define RADIO_KEY_USPS "s"
+#define RADIO_TOKEN_USPS ":s"
 
 #define RADIO_CHANNEL_EIGHTIES "80s"
 #define RADIO_KEY_EIGHTIES "g"
 #define RADIO_TOKEN_EIGHTIES ":g"
 
 #define RADIO_CHANNEL_EIGHTIESB "Blue"
-#define RADIO_KEY_EIGHTIESB "k"
-#define RADIO_TOKEN_EIGHTIESB ":k"
+#define RADIO_KEY_EIGHTIESB "b"
+#define RADIO_TOKEN_EIGHTIESB ":b"
 
 #define RADIO_CHANNEL_EIGHTIESR "Red"
-#define RADIO_KEY_EIGHTIESR "x"
-#define RADIO_TOKEN_EIGHTIESR ":x"
+#define RADIO_KEY_EIGHTIESR "r"
+#define RADIO_TOKEN_EIGHTIESR ":r"
 
 #define RADIO_CHANNEL_WND "Radio"
 #define RADIO_KEY_WND "t"
 #define RADIO_TOKEN_WND ":t"
 
-#define RADIO_CHANNEL_MONTEGOBAY "Bay"
+#define RADIO_CHANNEL_MONTEGOBAY "Montego Bay"
 #define RADIO_KEY_MONTEGOBAY "i"
 #define RADIO_TOKEN_MONTEGOBAY ":i"
 

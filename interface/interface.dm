@@ -42,17 +42,17 @@
 		to_chat(src, "<span class='danger'>The discord URL is not set in the server configuration.</span>")
 	return
 
-/client/verb/forum()
-	set name = "forum"
-	set desc = "Visit the forum."
+/client/verb/patreon()
+	set name = "patreon"
+	set desc = "Visit the patreon."
 	set hidden = 1
-	var/forumurl = CONFIG_GET(string/forumurl)
-	if(forumurl)
-		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")!="Yes")
+	var/patreonurl = CONFIG_GET(string/patreonurl)
+	if(patreonurl)
+		if(alert("This will open the patreon in your browser. Are you sure?",,"Yes","No")!="Yes")
 			return
-		src << link(forumurl)
+		src << link(patreonurl)
 	else
-		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='danger'>The patreon URL is not set in the server configuration.</span>")
 	return
 
 /client/verb/rules()

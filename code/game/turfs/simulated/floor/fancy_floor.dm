@@ -470,9 +470,25 @@
 	plane = PLANE_SPACE
 	tiled_dirt = FALSE
 
-/turf/open/floor/fakespace/Initialize()
+/turf/open/floor/fakespace/renamed
+	name = "space"
+
+/turf/open/floor/fakespace/dense
+	name = "space"
+	density = TRUE
+	opacity = FALSE
+
+/turf/open/floor/fakespace/dense/Initialize()
 	. = ..()
 	icon_state = SPACE_ICON_STATE
+
+/turf/open/floor/fakespace/dense/CanPass(atom/movable/mover)
+    if(istype(mover) && (mover.pass_flags & PASSTABLE))
+        return !density
+    if(locate(/obj/structure/lattice/catwalk) in loc)
+        return !density
+    else
+        return FALSE
 
 /turf/open/floor/fakespace/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/space.dmi'

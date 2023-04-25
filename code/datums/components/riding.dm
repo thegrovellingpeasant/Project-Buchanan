@@ -10,6 +10,8 @@
 	var/list/riding_offsets = list()	//position_of_user = list(dir = list(px, py)), or RIDING_OFFSET_ALL for a generic one.
 	var/list/directional_vehicle_layers = list()	//["[DIRECTION]"] = layer. Don't set it for a direction for default, set a direction to null for no change.
 	var/list/directional_vehicle_offsets = list()	//same as above but instead of layer you have a list(px, py)
+	var/list/directional_vehicle_bound_width = list()
+	var/list/directional_vehicle_bound_height = list()
 	var/list/allowed_turf_typecache
 	var/list/forbid_turf_typecache					//allow typecache for only certain turfs, forbid to allow all but those. allow only certain turfs will take precedence.
 	var/allow_one_away_from_valid_turf = TRUE		//allow moving one tile away from a valid turf but not more.
@@ -19,6 +21,11 @@
 	var/ride_check_rider_restrained = FALSE
 	var/ride_check_ridden_incapacitated = FALSE
 	var/list/offhands = list() // keyed list containing all the current riding offsets associated by mob
+	var/engine_sound = 'sound/vehicles/carrev.ogg'
+	var/last_enginesound_time
+	var/engine_sound_length = 20 //Set this to the length of the engine sound
+	var/escape_time = 5 //Time it takes to break out of the car
+	var/buckled_layer = MOB_LAYER
 
 	var/del_on_unbuckle_all = FALSE
 
@@ -56,6 +63,32 @@
 /datum/component/riding/proc/set_vehicle_dir_layer(dir, layer)
 	directional_vehicle_layers["[dir]"] = layer
 
+/datum/component/riding/proc/handle_vehicle_bound_width()
+	var/atom/movable/AM = parent
+	var/static/list/defaults = list(TEXT_NORTH = 32, TEXT_SOUTH = 32, TEXT_EAST = 64, TEXT_WEST = 64)
+	. = defaults["[AM.dir]"]
+	if(directional_vehicle_bound_width["[AM.dir]"])
+		. = directional_vehicle_bound_width["[AM.dir]"]
+	if(isnull(.))	//you can set it to null to not change it.
+		. = AM.bound_width
+	AM.bound_width = .
+
+/datum/component/riding/proc/set_vehicle_bound_width(dir, bound_width)
+	directional_vehicle_bound_width["[dir]"] = bound_width
+
+/datum/component/riding/proc/handle_vehicle_bound_height()
+	var/atom/movable/AM = parent
+	var/static/list/defaults = list(TEXT_NORTH = 64, TEXT_SOUTH = 64, TEXT_EAST = 32, TEXT_WEST = 32)
+	. = defaults["[AM.dir]"]
+	if(directional_vehicle_bound_height["[AM.dir]"])
+		. = directional_vehicle_bound_height["[AM.dir]"]
+	if(isnull(.))	//you can set it to null to not change it.
+		. = AM.bound_height
+	AM.bound_height = .
+
+/datum/component/riding/proc/set_vehicle_bound_height(dir, bound_height)
+	directional_vehicle_bound_height["[dir]"] = bound_height
+
 /datum/component/riding/proc/vehicle_moved(datum/source, dir)
 	var/atom/movable/movable_parent = parent
 	if (isnull(dir))
@@ -67,6 +100,8 @@
 		buckled_mob.set_glide_size(movable_parent.glide_size)
 	handle_vehicle_offsets(dir)
 	handle_vehicle_layer(dir)
+	/*handle_vehicle_bound_width(dir)
+	handle_vehicle_bound_height(dir)*/
 
 /datum/component/riding/proc/ride_check(mob/living/M)
 	var/atom/movable/AM = parent
@@ -94,6 +129,7 @@
 			var/list/offsets = get_offsets(passindex)
 			var/rider_dir = get_rider_dir(passindex)
 			buckled_mob.setDir(rider_dir)
+			buckled_mob.layer = VEHICLE_MOB_LAYER
 			for(var/offsetdir in offsets)
 				if(offsetdir == AM_dir)
 					var/list/diroffsets = offsets[offsetdir]
@@ -149,6 +185,7 @@
 	if(buckled_mob)
 		buckled_mob.pixel_x = 0
 		buckled_mob.pixel_y = 0
+		buckled_mob.layer = MOB_LAYER
 		if(buckled_mob.client)
 			buckled_mob.client.change_view(CONFIG_GET(string/default_view))
 

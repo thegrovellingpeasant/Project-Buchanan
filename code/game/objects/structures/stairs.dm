@@ -11,6 +11,7 @@
 	icon = 'icons/obj/stairs.dmi'
 	icon_state = "stairs"
 	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
 
 	var/force_open_above = FALSE // replaces the turf above this stair obj with /turf/open/transparent/openspace
 	var/terminator_mode = STAIR_TERMINATOR_AUTOMATIC
@@ -91,10 +92,10 @@
 		return FALSE
 	return ..()
 
-/obj/structure/stairs/Cross(atom/movable/AM)
+/*obj/structure/stairs/Cross(atom/movable/AM)
 	if(isTerminator() && (get_dir(src, AM) == dir))
 		return FALSE
-	return ..()
+	return ..()*/ // seeing if removing this will let buggies work, the cost is that stairs will be walkable from all directions
 
 /obj/structure/stairs/update_icon_state()
 	if(isTerminator())

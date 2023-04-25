@@ -11,7 +11,7 @@ GLOBAL_LIST_EMPTY(enclave_radios)
 	name = "radio control"
 	desc = "A terminal used to remotely disable radios that may have been lost."
 	icon = 'icons/obj/computer.dmi'
-	icon_state = "computer"
+	icon_state = "terminal"
 	var/open = FALSE // TRUE if open
 	var/assigned_faction
 	max_integrity = 750

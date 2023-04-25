@@ -10,16 +10,22 @@
 	buckle_lying = 0
 	can_buckle = 1
 	max_integrity = 250
-	bound_height = 64
+	bound_height = 32
+	layer = LATTICE_LAYER
+	var/mutable_appearance/crossoverlay
+
+/obj/structure/cross/Initialize()
+	. = ..()
+	crossoverlay = mutable_appearance(icon, "crossoverlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(crossoverlay)
 
 /obj/structure/cross/higherlayer
 	name = "cross"
 	bound_height = 32
-	var/mutable_appearance/crossoverlay
 
 /obj/structure/cross/higherlayer/Initialize()
 	. = ..()
-	crossoverlay = mutable_appearance(icon, "crossoverlay", ABOVE_ALL_MOB_LAYER)
+	crossoverlay = mutable_appearance(icon, "crossoverlay", SPACEVINE_MOB_LAYER)
 	add_overlay(crossoverlay)
 
 /obj/structure/cross/crowbar_act(mob/living/user, obj/item/I)
@@ -58,6 +64,7 @@
 				L.add_splatter_floor()
 			L.adjustBruteLoss(30)
 			L.setDir(2)
+			L.layer = SPACEVINE_LAYER
 			buckle_mob(L, force=1)
 			L.pixel_y = 26
 			L.overlays += image('icons/obj/cross.dmi', "lashing")
@@ -106,6 +113,7 @@
 	src.visible_message(text("<span class='danger'>[M] falls free of [src]!</span>"))
 	unbuckle_mob(M,force=1)
 	M.emote("collapse")
+	M.layer = MOB_LAYER
 	M.overlays -= image('icons/obj/cross.dmi', "lashing")
 
 /obj/structure/cross/Destroy()

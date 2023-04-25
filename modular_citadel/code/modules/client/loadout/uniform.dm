@@ -7,6 +7,10 @@
 	name = "vault jumpsuit"
 	path = /obj/item/clothing/under/f13/vault
 
+/datum/gear/uniform/vault93
+	name = "vault 93 jumpsuit"
+	path = /obj/item/clothing/under/f13/vault/v93
+
 /datum/gear/uniform/caravaneer
 	name = "caravaneer outfit"
 	path = /obj/item/clothing/under/f13/caravaneer

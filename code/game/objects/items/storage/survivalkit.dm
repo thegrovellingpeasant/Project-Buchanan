@@ -36,6 +36,7 @@
 /obj/item/storage/survivalkit_tribal/PopulateContents() //used by legion
 	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/mesh/aloe(src)
 	new /obj/item/stack/medical/suture/emergency(src)

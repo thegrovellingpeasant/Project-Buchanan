@@ -17,8 +17,8 @@
 #define MODE_KEY_INTERCOM "i"
 
 #define MODE_BINARY "binary"
-#define MODE_KEY_BINARY "b"
-#define MODE_TOKEN_BINARY ":b"
+#define MODE_KEY_BINARY "0"
+#define MODE_TOKEN_BINARY ":0"
 
 #define MODE_WHISPER "whisper"
 #define MODE_WHISPER_CRIT "whispercrit"
@@ -39,8 +39,8 @@
 #define MODE_HOLOPAD "holopad"
 
 #define MODE_CHANGELING "changeling"
-#define MODE_KEY_CHANGELING "g"
-#define MODE_TOKEN_CHANGELING ":g"
+#define MODE_KEY_CHANGELING "o"
+#define MODE_TOKEN_CHANGELING ":o"
 
 #define MODE_VOCALCORDS "cords"
 #define MODE_KEY_VOCALCORDS "x"

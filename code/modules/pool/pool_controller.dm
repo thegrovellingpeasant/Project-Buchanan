@@ -11,7 +11,7 @@
 /obj/machinery/pool/controller
 	name = "\improper Pool Controller"
 	desc = "An advanced substance generation and fluid tank management system that can refill the contents of a pool to a completely different substance in minutes."
-	icon_state = "poolc_3"
+	icon_state = "poolc"
 	density = TRUE
 	use_power = TRUE
 	idle_power_usage = 75
@@ -59,6 +59,15 @@
 	var/draining = FALSE
 	/// Reagent blacklisting
 	var/respect_reagent_blacklist = TRUE
+
+/obj/machinery/pool/controller/vent
+	name = "vent"
+	desc = "A trickling stream of water from a source high up in the mountains to the north."
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "ventblue"
+	density = FALSE
+	layer = WALL_OBJ_LAYER
+	pixel_y = 42
 
 /obj/machinery/pool/controller/examine(mob/user)
 	. = ..()
@@ -243,7 +252,7 @@
 				M.adjust_bodytemperature(-60) //cool mob at -35k per cycle, less would not affect the mob enough.
 				if(M.bodytemperature <= 50 && !M.stat)
 					M.apply_status_effect(/datum/status_effect/freon)
-		if(ishuman(M))
+		/*if(ishuman(M))
 			var/mob/living/carbon/human/drownee = M
 			if(!drownee || drownee.stat == DEAD)
 				return
@@ -253,7 +262,7 @@
 				else
 					drownee.adjustOxyLoss(4)
 					if(prob(35))
-						to_chat(drownee, "<span class='danger'>You're drowning!</span>")
+						to_chat(drownee, "<span class='danger'>You're drowning!</span>")*/
 
 /obj/machinery/pool/controller/proc/set_bloody(state)
 	if(bloody == state)
@@ -276,17 +285,17 @@
 			if(rcolor)
 				var/thecolor = BlendRGB(rgb(150, 20, 20), rcolor, 0.5)
 				color1.watereffect.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
-				color1.watertop.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
+				//color1.watertop.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
 			else
 				var/thecolor = rgb(150, 20, 20)
 				color1.watereffect.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
-				color1.watertop.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
+				//color1.watertop.add_atom_colour(thecolor, FIXED_COLOUR_PRIORITY)
 		else if(!bloody && rcolor)
 			color1.watereffect.add_atom_colour(rcolor, FIXED_COLOUR_PRIORITY)
-			color1.watertop.add_atom_colour(rcolor, FIXED_COLOUR_PRIORITY)
+			//color1.watertop.add_atom_colour(rcolor, FIXED_COLOUR_PRIORITY)
 		else
 			color1.watereffect.remove_atom_colour(FIXED_COLOUR_PRIORITY)
-			color1.watertop.remove_atom_colour(FIXED_COLOUR_PRIORITY)
+			//color1.watertop.remove_atom_colour(FIXED_COLOUR_PRIORITY)
 
 /obj/machinery/pool/controller/proc/update_temp()
 	if(mist_state)
@@ -298,7 +307,7 @@
 	update_icon()
 
 /obj/machinery/pool/controller/update_icon_state()
-	icon_state = "poolc_[temperature]"
+	icon_state = "[initial(icon_state)]_[temperature]"
 
 /obj/machinery/pool/controller/proc/CanUpTemp(mob/user)
 	if(temperature == POOL_WARM && (temperature_unlocked || issilicon(user) || IsAdminGhost(user)) || temperature < POOL_WARM)
@@ -422,3 +431,8 @@
 /obj/machinery/pool/controller/proc/mist_off() //Delete all /obj/effect/mist from all linked pool tiles.
 	QDEL_LIST(linked_mist)
 	mist_state = FALSE
+
+/obj/machinery/pool/controller/invisible
+	invisibility = 100
+	density = FALSE
+	resistance_flags = INDESTRUCTIBLE

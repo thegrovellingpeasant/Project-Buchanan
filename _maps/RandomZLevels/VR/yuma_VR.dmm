@@ -37,8 +37,6 @@
 /mob/living/simple_animal/hostile/chinese/ranged/assault{
 	dir = 1;
 	name = "chinese soldier";
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -88,36 +86,13 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/deathmatch/bos/blue_1)
 "aS" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
 	pixel_y = 32
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "aX" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -135,12 +110,8 @@
 	opacity = 0
 	},
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 8;
-	name = "painting";
-	desc = null;
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -152,16 +123,13 @@
 /turf/closed/wall/f13/supermart,
 /area/awaymission/vr/followers)
 "bj" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh_small";
 	pixel_x = -4;
 	name = "goldfish"
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "bk" = (
 /obj/structure/fluff/iced_abductor{
@@ -193,6 +161,15 @@
 /obj/item/melee/powered/ripper/prewar,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/bos/programs/armory)
+"bv" = (
+/obj/item/reagent_containers/glass/bucket/wood{
+	pixel_y = -11;
+	pixel_x = 2
+	},
+/turf/open/indestructible/ground/outside/fakeelevation/wendoverwillsafecorner{
+	blocked_direction = list(2)
+	},
+/area/f13/wasteland)
 "bz" = (
 /obj/structure/barricade/security/ctf,
 /turf/open/floor/plasteel/bluespace,
@@ -206,16 +183,13 @@
 	},
 /area/awaymission/vr/public/deathmatch)
 "bE" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	pixel_y = 1;
 	pixel_x = 2;
 	icon_state = "clownfishedit";
 	icon = 'icons/fallout/objects/wendover.dmi'
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "bI" = (
 /obj/structure/rack,
@@ -244,22 +218,10 @@
 /turf/open/floor/circuit/red,
 /area/awaymission/vr/public/deathmatch)
 "bP" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "ruinswindowbroken";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/ruinedwindow{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "rubblefull";
-	plane = -4;
-	layer = 3.89;
-	desc = null;
-	name = "wasteland";
+/obj/effect/overlay/rubble{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/old,
@@ -334,44 +296,23 @@
 	icon_state = "bs_paladin";
 	desc = null;
 	name = "US Mechanized Infantry";
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
 /area/f13/wasteland)
 "cp" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "ruinswindowbroken";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/ruinedwindow{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "rubblefull";
-	plane = -4;
-	layer = 3.89;
-	desc = null;
-	name = "wasteland";
+/obj/effect/overlay/rubble{
 	pixel_y = 32
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "cq" = (
@@ -389,8 +330,6 @@
 /mob/living/simple_animal/hostile/chinese/ranged{
 	dir = 1;
 	name = "chinese soldier";
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -471,17 +410,12 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "dm" = (
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = -32
 	},
 /turf/open/indestructible/ground/outside/grass_s{
-	icon_state = "topturnleft"
+	icon_state = "topturnleft";
+	sunlight_state = 0
 	},
 /area/f13/wasteland)
 "dr" = (
@@ -497,10 +431,7 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "dt" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "du" = (
 /obj/structure/rack,
@@ -589,48 +520,19 @@
 /obj/structure/legion_extractor{
 	pixel_y = 2
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dF" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = null
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_y = -32
 	},
-/turf/open/floor/plating/beach/water,
+/obj/effect/overlay/vrwater{
+	pixel_y = -32
+	},
+/turf/open/water/vrocean,
 /area/f13/building)
 "dH" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -678,13 +580,7 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/den/programs/armory)
 "dV" = (
-/obj/item/blanket{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "tribaldecoration4";
-	dir = 8;
-	layer = 2.7;
-	name = "rug"
-	},
+/obj/item/blanket/rug/blue,
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "dX" = (
@@ -709,12 +605,7 @@
 	icon = 'icons/mob/clothing/feet.dmi';
 	layer = 4.01
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "dZ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -803,8 +694,6 @@
 /mob/living/simple_animal/hostile/chinese/ranged/assault{
 	dir = 1;
 	name = "chinese soldier";
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -983,11 +872,7 @@
 /obj/item/clothing/head/f13/cowboy{
 	pixel_y = 4
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
@@ -1006,9 +891,6 @@
 /turf/open/floor/plasteel/bluespace,
 /area/awaymission/vr/public/deathmatch)
 "gg" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "sharkspin";
@@ -1016,33 +898,13 @@
 	name = "shark";
 	layer = 3.9
 	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
 	pixel_y = 32
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "gh" = (
 /turf/closed/wall/rust{
@@ -1105,7 +967,7 @@
 	},
 /area/holodeck/followers/programs/medical)
 "gE" = (
-/turf/open/floor/fakespace,
+/turf/open/floor/fakespace/renamed,
 /area/f13/building)
 "gH" = (
 /turf/open/floor/plasteel/darkred/corner{
@@ -1177,13 +1039,7 @@
 /area/awaymission/vr/den)
 "gU" = (
 /obj/machinery/computer/slot_machine,
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "housewindow";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/window{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/green/nosmooth,
@@ -1197,14 +1053,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/bos/programs/armory)
+"gY" = (
+/obj/machinery/light/invisible,
+/turf/open/indestructible/binary,
+/area/awaymission/vr/public)
 "hb" = (
 /turf/open/floor/holofloor/plating,
 /area/holodeck/deathmatch/bos/blue_2)
 "hc" = (
 /obj/item/fishy/clownfish,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -1212,7 +1069,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "hd" = (
 /obj/effect/vr_clean_master,
@@ -1235,14 +1092,8 @@
 /turf/open/floor/circuit/red,
 /area/awaymission/vr/public/deathmatch)
 "hq" = (
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = 32
 	},
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
@@ -1262,34 +1113,20 @@
 	aggro_vision_range = 0;
 	vision_range = 0
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "hD" = (
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock";
-	pixel_x = -32
+/obj/effect/overlay/icerock{
+	pixel_x = -32;
+	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = -32
 	},
-/turf/open/indestructible/ground/outside/grass_s,
+/turf/open/indestructible/ground/outside/grass_s{
+	sunlight_state = 0
+	},
 /area/f13/wasteland)
 "hH" = (
 /obj/effect/turf_decal/stripes/line,
@@ -1375,12 +1212,7 @@
 /area/awaymission/vr/den)
 "iI" = (
 /obj/structure/necropolis_gate,
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "iJ" = (
 /obj/structure/rack,
@@ -1431,14 +1263,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/vr/bos/deathmatch/blue)
-"iT" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/indestructible/binary,
-/area/awaymission/vr/public)
 "iW" = (
 /obj/machinery/computer/holodeck/virtual{
 	dir = 8;
@@ -1507,6 +1331,11 @@
 /obj/item/inducer/sci,
 /turf/open/floor/holofloor/plating,
 /area/holodeck/bos/programs/armory)
+"jH" = (
+/turf/open/indestructible/ground/outside/fakeelevation/desert{
+	blocked_direction = list(1)
+	},
+/area/f13/wasteland)
 "jL" = (
 /obj/structure/rack,
 /obj/item/gun/energy/laser/pistol,
@@ -1518,22 +1347,10 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/bos/programs/armory)
 "jP" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "ruinswindowbroken";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/ruinedwindow{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "rubblefull";
-	plane = -4;
-	layer = 3.89;
-	desc = null;
-	name = "wasteland";
+/obj/effect/overlay/rubble{
 	pixel_y = -32
 	},
 /turf/open/floor/wood/f13/old,
@@ -1553,11 +1370,7 @@
 /area/f13/building)
 "kb" = (
 /obj/structure/barricade/concrete,
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -1774,8 +1587,6 @@
 /mob/living/simple_animal/hostile/chinese/ranged/assault{
 	dir = 1;
 	name = "chinese soldier";
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -2058,9 +1869,7 @@
 	},
 /area/holodeck/followers/programs/medical)
 "nb" = (
-/turf/closed/indestructible/invisible{
-	plane = -15
-	},
+/turf/closed/indestructible/invisible,
 /area/f13/building)
 "ne" = (
 /obj/machinery/teleport/station,
@@ -2073,14 +1882,11 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "ng" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /mob/living/simple_animal/crab/kreb{
 	layer = 3;
 	wander = 0
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "nm" = (
 /obj/structure/barricade/tentclothedge{
@@ -2120,24 +1926,12 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = -32;
-	pixel_x = -32
+/obj/effect/overlay/nothing{
+	pixel_x = -32;
+	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
@@ -2147,16 +1941,8 @@
 	},
 /area/f13/wasteland)
 "nu" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/walls/rusty_wall.dmi';
-	icon_state = "wall";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "rusted wall";
-	pixel_y = -32;
-	canSmoothWith = list(/obj/effect/decal/marking);
-	smooth = 1
+/obj/effect/overlay/rustedwall{
+	pixel_y = -32
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -2209,15 +1995,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/den/programs/armory)
-"nV" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 4;
-	alpha = 0;
-	name = "end of the line"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
-/area/f13/building)
 "nW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -2359,10 +2136,7 @@
 /area/holodeck/den/programs/medical)
 "pi" = (
 /obj/item/fishyegg/carp,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "pp" = (
 /obj/structure/chair/west_middle,
@@ -2374,31 +2148,14 @@
 	},
 /area/awaymission/vr/public/deathmatch)
 "ps" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = -32;
-	pixel_x = 32
+/obj/effect/overlay/nothing{
+	pixel_x = 32;
+	pixel_y = -32
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "pt" = (
 /turf/closed/indestructible/riveted,
@@ -2466,13 +2223,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/followers/programs/medical)
 "qh" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "housewindow";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/window{
 	pixel_y = -32
 	},
 /turf/open/floor/carpet/green/nosmooth,
@@ -2505,14 +2256,12 @@
 /turf/open/floor/plating,
 /area/awaymission/vr/bos/deathmatch/red)
 "qo" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 10;
-	alpha = 0;
-	name = "end of the line"
+/obj/structure/campfire/barrel{
+	icon_state = "drumfire-lit";
+	layer = 2.1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
-/area/f13/building)
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
 "qp" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -2539,12 +2288,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "qL" = (
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four,
@@ -2646,7 +2390,8 @@
 	name = "nothing";
 	icon_state = "black";
 	icon = 'icons/turf/space.dmi';
-	blocked_direction = list(2,10,6)
+	blocked_direction = list(2,10,6);
+	sunlight_state = 0
 	},
 /area/f13/building)
 "rG" = (
@@ -2660,12 +2405,7 @@
 	},
 /obj/item/reagent_containers/glass/bucket/wood,
 /obj/item/reagent_containers/glass/bucket/wood,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -2827,12 +2567,7 @@
 /obj/item/toy/plush/mammal/fox{
 	pixel_y = 4
 	},
-/obj/machinery/light/floor{
-	plane = -16;
-	name = null;
-	desc = null;
-	invisibility = 1
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/holofloor/carpet,
 /area/f13/building)
 "sR" = (
@@ -2911,11 +2646,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/den/programs/medical)
 "tv" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/carpet/green/nosmooth,
 /area/f13/building)
 "ty" = (
@@ -2990,12 +2721,7 @@
 	icon_state = "openreverse";
 	opacity = 0
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "ui" = (
 /turf/open/floor/plating,
@@ -3163,9 +2889,6 @@
 /area/awaymission/vr/bos)
 "wd" = (
 /obj/item/fishy/carp,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -3173,7 +2896,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "wf" = (
 /obj/structure/simple_door/bunker{
@@ -3211,7 +2934,8 @@
 	name = "nothing";
 	icon_state = "black";
 	icon = 'icons/turf/space.dmi';
-	blocked_direction = list(2,10,6)
+	blocked_direction = list(2,10,6);
+	sunlight_state = 0
 	},
 /area/f13/tunnel)
 "wz" = (
@@ -3278,9 +3002,6 @@
 /area/awaymission/vr/public/deathmatch)
 "wX" = (
 /obj/item/fishy/lobster,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -3288,7 +3009,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "xb" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -3312,7 +3033,7 @@
 /mob/living/simple_animal/hostile/chinese{
 	dir = 8;
 	pixel_x = 13;
-	pixel_y = -12;
+	pixel_y = -9;
 	anchored = 1;
 	name = "chinese soldier";
 	stop_automated_movement = 1;
@@ -3324,7 +3045,7 @@
 	icon = 'icons/mob/clothing/head.dmi';
 	name = "chinese stealth helmet";
 	dir = 8;
-	pixel_y = -12;
+	pixel_y = -9;
 	pixel_x = 13;
 	layer = 4.2
 	},
@@ -3332,7 +3053,7 @@
 	icon = 'icons/obj/flora/jungletreesmall.dmi';
 	icon_state = "tree";
 	pixel_x = -32;
-	pixel_y = -16;
+	pixel_y = -13;
 	layer = 3.9;
 	name = "tree"
 	},
@@ -3366,9 +3087,6 @@
 /area/f13/wasteland)
 "xv" = (
 /obj/item/fishy/shrimp,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -3376,7 +3094,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "xy" = (
 /obj/structure/window/reinforced{
@@ -3386,13 +3104,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/walls/rusty_wall.dmi';
-	icon_state = "wall";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "rusted wall";
+/obj/effect/overlay/rustedwall{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/housewoodbroken3,
@@ -3418,11 +3130,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xM" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "xO" = (
@@ -3442,17 +3150,8 @@
 /turf/open/floor/wood/f13/old,
 /area/awaymission/vr/den)
 "yb" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/obj/machinery/light/invisible,
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "yj" = (
 /obj/structure/barricade/security/ctf,
@@ -3473,9 +3172,6 @@
 /turf/open/floor/wood/f13/old,
 /area/awaymission/vr/den)
 "yq" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -3483,33 +3179,13 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
 	pixel_y = 32
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "ys" = (
 /obj/machinery/computer/holodeck/virtual{
@@ -3526,33 +3202,17 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/vr/public/deathmatch/blue)
 "yv" = (
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = 32
 	},
-/obj/effect/decal/marking{
+/obj/effect/overlay/icerock{
 	pixel_y = 32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock";
 	pixel_x = -32
 	},
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "yw" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "yy" = (
@@ -3580,14 +3240,8 @@
 /turf/open/floor/holofloor/plating,
 /area/holodeck/bos/sim_1)
 "yI" = (
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = 32
 	},
 /mob/living/simple_animal/radstag{
 	dir = 4;
@@ -3598,19 +3252,11 @@
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "yJ" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "yO" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "yR" = (
@@ -3624,11 +3270,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_middle"
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "yW" = (
@@ -3669,19 +3311,11 @@
 /turf/open/floor/wood/wood_tiled,
 /area/awaymission/vr/followers)
 "zD" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "rubblefull";
-	layer = 3.89;
-	pixel_y = -32;
-	name = "wasteland"
+/obj/effect/overlay/rubble{
+	pixel_y = -32
 	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "ruinswindowbroken";
-	layer = 3.89;
-	pixel_y = -32;
-	name = "window"
+/obj/effect/overlay/ruinedwindow{
+	pixel_y = -32
 	},
 /obj/effect/decal/marking{
 	icon = 'icons/turf/walls/wendoVR.dmi';
@@ -3733,11 +3367,7 @@
 	desc = null;
 	name = "smoke"
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "zO" = (
@@ -3870,12 +3500,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
 /obj/structure/flora/grass/wasteland,
@@ -3888,29 +3513,8 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/awaymission/vr/bos)
-"AK" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 6;
-	alpha = 0;
-	name = "end of the line"
-	},
-/obj/machinery/light/floor{
-	plane = -16;
-	name = null;
-	desc = null;
-	invisibility = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
-/area/f13/building)
 "AN" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "housewindow";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/window{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/green/nosmooth,
@@ -3987,12 +3591,8 @@
 	},
 /area/awaymission/vr/bos)
 "Bq" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/floor/fakespace,
+/obj/machinery/light/invisible,
+/turf/open/floor/fakespace/renamed,
 /area/f13/building)
 "Bs" = (
 /obj/effect/turf_decal/stripes/line{
@@ -4012,11 +3612,7 @@
 	pixel_x = -14;
 	layer = 2.91
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "Bx" = (
@@ -4104,12 +3700,8 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "CB" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
-	dir = 8;
-	name = "painting";
-	desc = null
+/obj/effect/overlay/whitelegpainting/two{
+	dir = 8
 	},
 /turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
@@ -4138,12 +3730,7 @@
 	icon_state = "tome";
 	pixel_y = 4
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "CQ" = (
 /obj/structure/fence/wooden{
@@ -4186,6 +3773,11 @@
 /obj/item/wirecutters/crude{
 	layer = 2.9
 	},
+/obj/vehicle/ridden/motorcycle/buggy/red{
+	dir = 8;
+	icon_state = "buggy_blue";
+	name = "Your Dream Car"
+	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "CU" = (
@@ -4212,12 +3804,7 @@
 /area/awaymission/vr/public/deathmatch)
 "Dc" = (
 /obj/structure/reagent_dispensers/compostbin,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -4230,11 +3817,7 @@
 /area/holodeck/deathmatch/public/red_1)
 "Dl" = (
 /obj/structure/flora/tree/pine,
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "Dq" = (
@@ -4394,16 +3977,13 @@
 	},
 /area/holodeck/bos/programs/medical)
 "Fb" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "shrk";
 	pixel_x = -4;
 	name = "shark"
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Fd" = (
 /obj/structure/chair/comfy/shuttle{
@@ -4430,18 +4010,10 @@
 	},
 /area/awaymission/vr/public/deathmatch)
 "Fq" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
-/turf/closed/indestructible/invisible{
-	plane = -15
-	},
+/turf/closed/indestructible/invisible,
 /area/f13/building)
 "Fs" = (
 /turf/open/floor/plasteel/darkblue/side{
@@ -4449,41 +4021,18 @@
 	},
 /area/awaymission/vr/bos/deathmatch)
 "FC" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /mob/living/simple_animal/crab{
 	dir = 8;
 	wander = 0;
 	layer = 3
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "FG" = (
 /obj/structure/window/reinforced/fulltile/indestructable{
@@ -4498,24 +4047,14 @@
 	alpha = 0;
 	invisibility = 101
 	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = 32
 	},
 /turf/open/floor/grass/snow,
 /area/f13/tunnel)
 "FM" = (
 /obj/structure/chair/west_middle,
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "FP" = (
@@ -4535,22 +4074,12 @@
 	},
 /area/awaymission/vr/public/deathmatch)
 "FX" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
-	pixel_y = 32;
-	pixel_x = 32
+/obj/effect/overlay/denserock{
+	pixel_x = 32;
+	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -4588,96 +4117,30 @@
 /turf/open/indestructible/binary,
 /area/awaymission/vr/public)
 "Gl" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
+/obj/effect/overlay/water{
+	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = null
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_x = 32;
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
+	pixel_x = 32
+	},
+/obj/effect/overlay/vrwater{
+	pixel_x = 32
+	},
+/obj/effect/overlay/vrwater{
+	pixel_x = 32;
 	pixel_y = -32
 	},
-/turf/open/floor/plating/beach/water,
+/obj/effect/overlay/vrwater{
+	pixel_y = -32
+	},
+/turf/open/water/vrocean,
 /area/f13/building)
 "Gq" = (
-/turf/open/floor/fakespace{
-	density = 1;
+/turf/open/floor/fakespace/dense{
 	opacity = 1
 	},
 /area/f13/building)
@@ -4688,16 +4151,13 @@
 /turf/open/indestructible/binary,
 /area/awaymission/vr/den)
 "Gw" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "lobster_wall";
 	pixel_x = -4;
 	name = "goldfish"
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Gx" = (
 /obj/structure/table,
@@ -4736,19 +4196,8 @@
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "GH" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 5;
-	alpha = 0;
-	name = "end of the line"
-	},
-/obj/machinery/light/floor{
-	plane = -16;
-	name = null;
-	desc = null;
-	invisibility = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
+/obj/machinery/light/invisible,
+/turf/open/chasm,
 /area/f13/building)
 "GJ" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -4764,24 +4213,12 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_west_south"
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = -32;
-	pixel_x = 32
+/obj/effect/overlay/nothing{
+	pixel_x = 32;
+	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
@@ -4855,34 +4292,13 @@
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
-"HS" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = -32
-	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
-/area/f13/building)
 "HT" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck{
 	pixel_x = -2;
 	pixel_y = -4
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /obj/item/stack/f13Cash/aureus{
 	pixel_y = 6;
 	pixel_x = 6
@@ -4982,16 +4398,13 @@
 	},
 /area/awaymission/vr/bos/deathmatch/red)
 "Jb" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh";
 	pixel_x = -4;
 	name = "goldfish"
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Je" = (
 /obj/structure/window/reinforced/fulltile{
@@ -5023,101 +4436,33 @@
 	},
 /area/awaymission/vr/public/deathmatch/red)
 "Jl" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = null
-	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = -32
+/obj/effect/overlay/vrwater{
+	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_y = -32;
-	pixel_x = -32
+/obj/effect/overlay/water{
+	pixel_x = -32;
+	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = -32
+/obj/effect/overlay/vrwater{
+	pixel_x = -32;
+	pixel_y = -32
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Jp" = (
 /turf/open/floor/plasteel/blue,
 /area/awaymission/vr/public/deathmatch)
 "Js" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Ju" = (
 /turf/open/floor/plasteel/darkblue/side,
@@ -5190,19 +4535,21 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "JP" = (
-/obj/vehicle/sealed/car{
-	icon_state = "buggy_dune";
-	layer = 4.5;
-	desc = "Unfortunately, nothing ever works out right in dreams.";
-	key_type = /obj/item/key/janitor;
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	name = "your dream car";
-	max_occupants = 3;
-	dir = 8;
-	pixel_x = -2;
-	bound_width = 96
+/obj/structure/sink/well{
+	pixel_x = -3;
+	pixel_y = -6
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/obj/structure/sink/well{
+	icon_state = "wellwheelover3";
+	layer = 4.3;
+	name = null;
+	desc = null;
+	pixel_x = -3;
+	pixel_y = -6
+	},
+/turf/open/indestructible/ground/outside/fakeelevation/wendoverwillsafecorner{
+	blocked_direction = list(2)
+	},
 /area/f13/wasteland)
 "JW" = (
 /turf/open/floor/plasteel/darkblue/corner,
@@ -5226,13 +4573,7 @@
 	},
 /area/holodeck/bos/programs/medical)
 "Kv" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "housewindow";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/window{
 	pixel_y = -32
 	},
 /obj/structure/roulettetable,
@@ -5284,14 +4625,13 @@
 	},
 /area/awaymission/vr/bos/deathmatch)
 "KV" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 8;
-	alpha = 0;
-	name = "end of the line"
+/obj/structure/campfire/barrel{
+	icon_state = "bonfire_on_fire_intense";
+	name = "fire";
+	layer = 2.1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
-/area/f13/building)
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "KY" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -5309,18 +4649,16 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "Li" = (
-/obj/machinery/conveyor/auto{
-	alpha = 0;
-	invisibility = 100
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke";
+	layer = 4.1
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	opacity = 1;
-	name = "nothing";
-	icon_state = "black";
-	icon = 'icons/turf/space.dmi';
-	blocked_direction = list(2,10,6)
-	},
-/area/f13/building)
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "Ll" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -5370,13 +4708,7 @@
 	},
 /area/awaymission/vr/bos/deathmatch/red)
 "LE" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
@@ -5394,8 +4726,6 @@
 	icon_state = "bs_knight";
 	name = "US Infantry";
 	desc = null;
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -5423,9 +4753,6 @@
 /turf/open/floor/plating,
 /area/awaymission/vr/bos/deathmatch)
 "LT" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -5433,34 +4760,17 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "LW" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = 32;
-	pixel_x = -32
+/obj/effect/overlay/nothing{
+	pixel_x = -32;
+	pixel_y = 32
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "Md" = (
 /turf/open/floor/plasteel/darkblue,
@@ -5490,7 +4800,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/fakespace,
+/turf/open/floor/fakespace/renamed,
 /area/f13/building)
 "Mo" = (
 /obj/effect/turf_decal/stripes/line{
@@ -5622,22 +4932,8 @@
 	dir = 4
 	},
 /area/awaymission/vr/public/deathmatch/blue)
-"No" = (
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
-/area/f13/building)
 "Nu" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/walls/rusty_wall.dmi';
-	icon_state = "wall";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "rusted wall";
+/obj/effect/overlay/rustedwall{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/old,
@@ -5656,45 +4952,26 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/holodeck/deathmatch/rooms/armory)
 "NB" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh_small";
 	pixel_x = -4;
 	name = "goldfish"
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/floor/plating/beach/water,
+/obj/machinery/light/invisible,
+/turf/open/water/vrocean,
 /area/f13/building)
 "NC" = (
 /obj/structure/barricade/security/ctf,
 /turf/open/floor/circuit/green/off,
 /area/awaymission/vr/bos/deathmatch)
 "NF" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/walls/rusty_wall.dmi';
-	icon_state = "wall";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "rusted wall";
+/obj/effect/overlay/rustedwall{
 	pixel_y = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/walls/rusty_wall.dmi';
-	icon_state = "wall";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "rusted wall";
-	pixel_y = -32;
-	pixel_x = 64
+/obj/effect/overlay/rustedwall{
+	pixel_x = 64;
+	pixel_y = -32
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -5764,14 +5041,9 @@
 /turf/open/floor/plating,
 /area/awaymission/vr/public/deathmatch)
 "OL" = (
-/obj/structure/sink/well,
-/obj/structure/sink/well{
-	icon_state = "wellwheelover";
-	layer = 4.1;
-	name = null;
-	desc = null
+/turf/open/indestructible/ground/outside/fakeelevation/wendoverwillsafecorner{
+	blocked_direction = list(2)
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "ON" = (
 /obj/item/stack/sheet/mineral/sandbags,
@@ -5790,25 +5062,21 @@
 /obj/item/seeds/corn,
 /obj/item/seeds/corn/snapcorn,
 /obj/item/seeds/wheat,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/mining.dmi';
-	icon_state = "rock";
-	layer = 3.9;
-	desc = null;
-	name = "dense rock";
+/obj/effect/overlay/denserock{
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "OT" = (
-/obj/structure/punji_sticks,
-/obj/machinery/conveyor/auto{
-	dir = 9;
-	alpha = 0;
-	name = "end of the line"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
+/turf/open/chasm,
 /area/f13/building)
+"OU" = (
+/obj/effect/overlay/vrwater{
+	pixel_x = -32;
+	pixel_y = -32
+	},
+/turf/open/indestructible/binary,
+/area/awaymission/vr/public)
 "OX" = (
 /obj/structure/barricade/concrete,
 /obj/item/clothing/under/f13/chinasuitcosmetic{
@@ -5816,7 +5084,7 @@
 	name = "chinese stealth suit";
 	dir = 8;
 	pixel_x = 14;
-	pixel_y = 20;
+	pixel_y = 23;
 	layer = 4.2
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -5832,8 +5100,6 @@
 	icon_state = "bs_knight";
 	name = "US Infantry";
 	desc = null;
-	anchored = 1;
-	stop_automated_movement = 1;
 	wander = 0;
 	aggro_vision_range = 0;
 	vision_range = 0
@@ -5904,16 +5170,13 @@
 /turf/open/floor/grass/snow,
 /area/f13/wasteland)
 "PK" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "shark_bowl";
 	name = "shark";
 	pixel_y = -6
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "PN" = (
 /obj/effect/turf_decal/stripes/line{
@@ -5943,16 +5206,13 @@
 /turf/open/floor/circuit/green/anim,
 /area/awaymission/vr/bos/deathmatch/blue)
 "Qc" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh_medium";
 	pixel_x = -4;
 	name = "goldfish"
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Qi" = (
 /obj/structure/table/reinforced,
@@ -5973,12 +5233,8 @@
 	name = "reflection";
 	plane = -15
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
+/obj/effect/overlay/whitelegpainting/two{
 	dir = 6;
-	name = "painting";
-	desc = null;
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/water{
@@ -6017,12 +5273,8 @@
 	name = "reflection";
 	plane = -15
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
+/obj/effect/overlay/whitelegpainting/two{
 	dir = 4;
-	name = "painting";
-	desc = null;
 	pixel_y = 32
 	},
 /turf/open/indestructible/ground/outside/water{
@@ -6059,13 +5311,7 @@
 /area/awaymission/vr/bos/deathmatch)
 "QQ" = (
 /obj/effect/landmark/vr_spawn/tribe,
-/obj/item/blanket{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "tribaldecoration3";
-	dir = 4;
-	layer = 2.7;
-	name = "rug";
-	plane = -15;
+/obj/item/blanket/rug{
 	pixel_y = -6
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -6168,11 +5414,7 @@
 /turf/open/floor/circuit/green/off,
 /area/awaymission/vr/bos/deathmatch)
 "RQ" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/wood/f13/housewoodbroken2,
 /area/f13/building)
 "Sg" = (
@@ -6197,91 +5439,27 @@
 /turf/closed/indestructible/rock/lowerplane,
 /area/f13/building)
 "Sz" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
+/obj/effect/overlay/water{
+	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water"
-	},
-/obj/effect/decal/marking{
-	pixel_y = 32;
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "bottom";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_x = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/water{
 	pixel_x = 32;
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/pool.dmi';
-	icon_state = "top";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "water";
-	pixel_y = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_y = 32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
-	pixel_y = 32;
+/obj/effect/overlay/water{
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/misc/beach.dmi';
-	icon_state = "water";
-	layer = 3.9;
-	desc = null;
-	name = "water";
+/obj/effect/overlay/vrwater{
+	pixel_y = 32
+	},
+/obj/effect/overlay/vrwater{
+	pixel_x = 32;
+	pixel_y = 32
+	},
+/obj/effect/overlay/vrwater{
 	pixel_x = 32
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "SS" = (
 /obj/effect/turf_decal/stripes/line,
@@ -6322,19 +5500,11 @@
 	},
 /area/awaymission/vr/bos/deathmatch)
 "Tg" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
+/obj/effect/overlay/whitelegpainting/two{
 	dir = 1;
-	name = "painting";
-	desc = null;
 	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
-	name = "painting";
-	desc = null;
+/obj/effect/overlay/whitelegpainting{
 	pixel_y = -12;
 	color = "#800000";
 	pixel_x = 32
@@ -6371,13 +5541,6 @@
 	dir = 8
 	},
 /area/awaymission/vr/bos/deathmatch)
-"Ts" = (
-/obj/item/reagent_containers/glass/bucket/wood{
-	pixel_y = -5;
-	pixel_x = 2
-	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
-/area/f13/wasteland)
 "TC" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/darkblue/side{
@@ -6504,13 +5667,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
@@ -6550,19 +5707,11 @@
 "UJ" = (
 /obj/item/reagent_containers/food/snacks/f13/fancylads,
 /obj/item/trash/f13/fancylads,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
-	name = "painting";
-	desc = null;
+/obj/effect/overlay/whitelegpainting{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 1;
-	name = "painting";
-	desc = null;
 	pixel_y = 32;
 	pixel_x = 32
 	},
@@ -6576,70 +5725,31 @@
 /turf/open/floor/plasteel/dark,
 /area/awaymission/vr/bos/deathmatch)
 "UN" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = -32;
-	pixel_x = -32
-	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
+	pixel_x = -32;
 	pixel_y = -32
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
+/obj/effect/overlay/nothing{
+	pixel_y = -32
 	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "UR" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/decal/marking{
-	icon = 'icons/obj/wood_window.dmi';
-	icon_state = "ruinswindowbroken";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "window";
+/obj/effect/overlay/ruinedwindow{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "rubblefull";
-	plane = -4;
-	layer = 3.89;
-	desc = null;
-	name = "wasteland";
+/obj/effect/overlay/rubble{
 	pixel_y = 32
 	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "UU" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_west_south"
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
@@ -6651,13 +5761,7 @@
 	layer = 3.99;
 	plane = -4
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/vrnothing,
@@ -6673,28 +5777,13 @@
 /turf/closed/indestructible/riveted,
 /area/awaymission/vr/public/deathmatch/red)
 "Vt" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = 32
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "Vw" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/mineral/titanium/white,
 /area/f13/building)
 "Vy" = (
@@ -6829,21 +5918,11 @@
 	},
 /area/awaymission/vr/public/deathmatch/blue)
 "Xc" = (
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/floor/plating/beach/water,
+/obj/machinery/light/invisible,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Xd" = (
 /obj/item/fishy/salmon,
-/obj/effect/overlay/water/top{
-	icon_state = "altunderlay"
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	alpha = 0;
@@ -6851,7 +5930,7 @@
 	cleanable_type = null;
 	glass_type = null
 	},
-/turf/open/floor/plating/beach/water,
+/turf/open/water/vrocean,
 /area/f13/building)
 "Xg" = (
 /obj/structure/window/reinforced/fulltile{
@@ -6866,14 +5945,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"Xo" = (
-/obj/machinery/light{
-	dir = 8;
-	alpha = 0;
-	invisibility = 101
-	},
-/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
-/area/f13/building)
 "Xs" = (
 /obj/effect/vr_clean_master,
 /turf/closed/indestructible/riveted,
@@ -6931,17 +6002,12 @@
 	alpha = 0;
 	invisibility = 101
 	},
-/obj/effect/decal/marking{
-	pixel_y = -32;
-	icon = 'icons/turf/mining.dmi';
-	icon_state = "icerock";
-	plane = -4;
-	layer = 4;
-	desc = null;
-	name = "ice cavern rock"
+/obj/effect/overlay/icerock{
+	pixel_y = -32
 	},
 /turf/open/indestructible/ground/outside/grass_s{
-	icon_state = "bottomright"
+	icon_state = "bottomright";
+	sunlight_state = 0
 	},
 /area/f13/tunnel)
 "XV" = (
@@ -6962,12 +6028,8 @@
 /obj/item/clothing/suit/f13/tribal/whitelegs,
 /obj/item/clothing/under/f13/female/whitelegs,
 /obj/item/clothing/under/f13/whitelegs,
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 6;
-	name = "painting";
-	desc = null;
 	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -7028,31 +6090,14 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "YK" = (
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
+/obj/effect/overlay/nothing{
 	pixel_y = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	plane = -4;
-	layer = 3.9;
-	desc = null;
-	name = "nothing";
-	pixel_y = 32;
-	pixel_x = 32
+/obj/effect/overlay/nothing{
+	pixel_x = 32;
+	pixel_y = 32
 	},
-/turf/open/floor/bluespace{
-	desc = 2;
-	icon = 'icons/turf/space.dmi';
-	icon_state = "black";
-	name = "nothing"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/vrnothing,
 /area/f13/building)
 "YM" = (
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged{
@@ -7222,11 +6267,12 @@
 	invisibility = 100
 	},
 /turf/open/indestructible/ground/outside/fakeelevation{
-	opacity = sss;
+	opacity = 1;
 	name = "nothing";
 	icon_state = "black";
 	icon = 'icons/turf/space.dmi';
-	blocked_direction = list(2,10,6)
+	blocked_direction = list(2,10,6);
+	sunlight_state = 0
 	},
 /area/f13/building)
 "ZW" = (
@@ -66278,12 +65324,12 @@ hD
 DQ
 Oe
 Oe
+Li
 qe
 qe
-qe
-el
-el
-el
+KV
+KV
+KV
 Oe
 Ca
 XZ
@@ -66291,17 +65337,17 @@ XZ
 XZ
 Sy
 LW
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
 UN
 Sy
 AN
@@ -66335,8 +65381,8 @@ Sy
 Qn
 Oe
 Oe
-Oe
-ga
+jH
+JP
 OL
 Oe
 Oe
@@ -66537,7 +65583,7 @@ rP
 Oe
 Oe
 Oe
-nf
+qo
 Oe
 Oe
 Oe
@@ -66548,18 +65594,18 @@ qe
 Oe
 Sy
 Vt
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-HS
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+LE
 Cx
 eP
 TL
@@ -66589,12 +65635,12 @@ uA
 cY
 nu
 Sy
-JP
+ga
 Oe
 Ta
-Oe
-ga
-Ts
+jH
+bv
+OL
 Oe
 Oe
 ol
@@ -66764,10 +65810,10 @@ Pj
 cV
 gp
 gp
-Xo
+yb
 gp
 gp
-Xo
+yb
 gp
 Mx
 AA
@@ -66806,17 +65852,17 @@ Oe
 Sy
 Vt
 iI
-No
+gp
 yb
-No
+gp
 CN
 dY
-No
+gp
 yb
-No
-No
+gp
+gp
 ue
-HS
+LE
 Sy
 gU
 TL
@@ -67062,18 +66108,18 @@ Oe
 Oe
 Sy
 Vt
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-HS
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+LE
 Cx
 Qz
 Qz
@@ -67319,17 +66365,17 @@ cf
 Oe
 Sy
 YK
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
-No
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
+gp
 ps
 Sy
 gU
@@ -67792,14 +66838,14 @@ cV
 cV
 KH
 fo
-Xo
+yb
 gp
 Uj
 fH
 dV
 gp
 gp
-Xo
+yb
 gp
 gp
 gp
@@ -67831,7 +66877,7 @@ SW
 SW
 SW
 SW
-Li
+ZV
 SW
 SW
 SW
@@ -67845,7 +66891,7 @@ SW
 SW
 SW
 SW
-Li
+ZV
 SW
 SW
 SW
@@ -67859,7 +66905,7 @@ SW
 SW
 SW
 SW
-Li
+ZV
 SW
 SW
 SW
@@ -67874,7 +66920,7 @@ SW
 SW
 SW
 rE
-Oe
+ga
 Oe
 Oe
 Oe
@@ -68301,8 +67347,8 @@ HX
 HX
 HX
 cV
-nV
-KV
+OT
+OT
 cV
 mM
 QK
@@ -68349,13 +67395,13 @@ Sy
 aS
 dt
 dt
+Xc
 dt
 dt
 dt
 dt
 dt
-dt
-dt
+Xc
 Jb
 dt
 Jl
@@ -68558,8 +67604,8 @@ HX
 HX
 HX
 cV
-nV
-KV
+OT
+OT
 wF
 gp
 gp
@@ -68578,8 +67624,8 @@ Sy
 nt
 nt
 nt
-LJ
 nt
+LJ
 nt
 xn
 nt
@@ -68815,15 +67861,15 @@ HX
 HX
 HX
 cV
-nV
-KV
+OT
+OT
 cV
 gp
 gp
-Xo
+yb
 gp
 gp
-Xo
+yb
 gp
 OQ
 pp
@@ -68834,8 +67880,8 @@ UU
 Sy
 qU
 qU
-cn
 qU
+cn
 qU
 qU
 PO
@@ -69072,8 +68118,8 @@ HX
 HX
 HX
 cV
-nV
-KV
+OT
+OT
 cV
 gp
 gp
@@ -69091,8 +68137,8 @@ UU
 Sy
 oZ
 oZ
-Pa
 oZ
+Pa
 oZ
 oZ
 lh
@@ -69329,8 +68375,8 @@ HX
 HX
 HX
 cV
-AK
-qo
+GH
+OT
 cV
 gp
 gp
@@ -69347,11 +68393,11 @@ pp
 GS
 Sy
 ga
+ga
 dJ
 xO
 Wx
 rd
-ga
 Bg
 xh
 OX
@@ -69889,18 +68935,18 @@ HX
 HX
 HX
 HX
+gY
 HX
-iT
-HX
-HX
-HX
-iT
+gY
 HX
 HX
+gY
 HX
-iT
 HX
+gY
 HX
+gY
+OU
 HX
 HX
 HX

@@ -109,6 +109,7 @@ There are several things that need to be remembered:
 		update_mutations_overlay()
 		//damage overlays
 		update_damage_overlays()
+		update_water()
 
 /* --------------------------------------- */
 //vvvvvv UPDATE_INV PROCS vvvvvv
@@ -794,12 +795,20 @@ use_mob_overlay_icon: if FALSE, it will always use the default_icon_file even if
 	update_inv_head()
 	update_inv_wear_mask()
 
-//fortuna edit. for applying effects to players that enter water
 /mob/living/carbon/human/update_water()
 	if(QDESTROYING(src))
 		return
+
+	remove_overlay(WATER_LAYER)
+
 	var/depth = check_submerged()
 	if(!depth)
 		return
-	if(lying)
-		return
+
+	var/atom/A = loc // We'd better be swimming and on a turf
+	var/mutable_appearance/wateroverlay = mutable_appearance('icons/turf/pool.dmi', "bottom[depth]", WATER_LAYER)
+	wateroverlay.color = A.color
+	wateroverlay.blend_mode = BLEND_INSET_OVERLAY
+	overlays_standing[WATER_LAYER] = wateroverlay
+
+	apply_overlay(WATER_LAYER)

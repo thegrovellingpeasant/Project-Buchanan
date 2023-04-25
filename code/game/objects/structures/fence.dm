@@ -265,7 +265,14 @@
 	icon_state = "straight_wood"
 	cuttable = FALSE
 	climbable = TRUE
+	layer = BELOW_OBJ_LAYER
 	proj_pass_rate = 80
+
+/obj/structure/fence/wooden/side
+	icon = 'icons/obj/fence.dmi'
+	icon_state = "post_wood"
+	cuttable = FALSE
+	dir = EAST
 
 /obj/structure/fence/end/wooden
 	icon = 'icons/obj/fence.dmi'
