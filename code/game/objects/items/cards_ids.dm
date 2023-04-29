@@ -1313,7 +1313,7 @@
 	name = "driver's license"
 	desc = "This license indicates that the holder is authorized to drive in the state of Utah."
 	icon_state = "fadedvaultid"
-	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR,)
+	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR)
 
 /obj/item/card/id/usps
 	name = "USPS ID"

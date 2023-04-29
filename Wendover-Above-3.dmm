@@ -31153,9 +31153,12 @@
 /obj/structure/closet/cabinet/anchored,
 /obj/item/clothing/under/f13/legskirt,
 /obj/item/clothing/shoes/sandal,
-/obj/item/card/id/dogtag/town/legion,
-/obj/item/card/id/dogtag/town/legion,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/card/id/dogtag/legrecruit,
+/obj/item/card/id/dogtag/legrecruit,
+/obj/item/card/id/dogtag/legrecruit,
+/obj/item/card/id/dogtag/legrecruit,
+/obj/item/card/id/dogtag/legrecruit,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "tFg" = (
@@ -38344,13 +38347,19 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "xTK" = (
-/obj/structure/easel,
-/obj/item/canvas/nineteenXnineteen{
-	pixel_y = 11;
-	pixel_x = 5
+/obj/structure/easel{
+	pixel_x = 1;
+	pixel_y = -5
 	},
-/obj/item/stack/rods,
-/obj/item/toy/crayon/spraycan,
+/obj/item/canvas/nineteenXnineteen,
+/obj/item/stack/rods{
+	pixel_y = -2;
+	pixel_x = 1
+	},
+/obj/item/toy/crayon/spraycan{
+	pixel_y = 1;
+	pixel_x = 1
+	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "xUs" = (

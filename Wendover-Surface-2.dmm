@@ -45688,7 +45688,7 @@
 /area/f13/tunnel)
 "nfy" = (
 /obj/structure/simple_door/wood,
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/wood/f13/old,
 /area/f13/building)
 "nfD" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
