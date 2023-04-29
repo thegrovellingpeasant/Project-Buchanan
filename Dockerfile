@@ -1,4 +1,4 @@
-FROM fortune13/byond:513.1536	 as base
+FROM tgstation/byond:514.1571	 as base
 
 FROM base as rust_g
 
@@ -27,7 +27,7 @@ RUN /bin/bash -c "source dependencies.sh \
 
 FROM base as dm_base
 
-WORKDIR /fortune13
+WORKDIR /Interstate-80
 
 FROM dm_base as build
 
@@ -39,7 +39,7 @@ RUN DreamMaker -max_errors 0 fortune13.dme \
 
 FROM dm_base
 
-EXPOSE 1337
+EXPOSE 52341
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends software-properties-common \
@@ -57,6 +57,6 @@ RUN apt-get update \
 COPY --from=rust_g /rust_g/target/release/librust_g.so /root/.byond/bin/rust_g
 COPY --from=build /deploy ./
 
-VOLUME [ "/fortune13/config", "/fortune13/data" ]
+VOLUME [ "/Interstate-80/config", "/Interstate-80/data" ]
 
-ENTRYPOINT [ "DreamDaemon", "fortune13.dmb", "-port", "1337", "-trusted", "-close", "-verbose" ]
+ENTRYPOINT [ "DreamDaemon", "fortune13.dmb", "-port", "52341", "-trusted", "-close", "-verbose" ]

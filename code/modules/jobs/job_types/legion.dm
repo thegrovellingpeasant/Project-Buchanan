@@ -295,7 +295,7 @@ commented out pending rework*/
 	flag = F13DECANVET
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the leader of an expedition to the I-80 in Utah, the northern artery of the NCR. The White Legs performed adequately against the meek townspeople of New Canaan, but they require more training and wise command to pose a threat to the NCR. This task has been entrusted to you. IN HOC SIGNO TAVRVS VINCES."
+	description = "You are the leader of an expedition to the I-80 in Utah, the northern artery of the NCR. The White Legs performed adequately against the meek townspeople of New Canaan, but they require more training and wise leadership to pose a threat to the NCR. This task has been entrusted to you, do not invoke the wrath of Caesar. IN HOC SIGNO TAVRVS VINCES."
 	supervisors = "Mars"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet

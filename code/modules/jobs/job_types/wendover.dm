@@ -179,7 +179,6 @@ Mayor
 	ears = 			/obj/item/radio/headset/headset_town
 	id =            /obj/item/card/id/silver
 	glasses = /obj/item/clothing/glasses/regular/hipster
-	gloves = /obj/item/clothing/gloves/color/white
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	suit = /obj/item/clothing/suit/toggle/lawyer/black

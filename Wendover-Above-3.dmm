@@ -13924,7 +13924,8 @@
 "iUK" = (
 /obj/effect/overlay/curb/corner{
 	layer = 2.1;
-	pixel_x = 1
+	pixel_x = 1;
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/fakeelevation{
 	icon_state = "floor";

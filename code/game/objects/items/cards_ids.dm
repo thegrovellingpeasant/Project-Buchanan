@@ -1284,6 +1284,7 @@
 	name = "White Leg belt buckle"
 	desc = "A big belt buckle with a longhorn on it."
 	icon_state = "whitelegs"
+	item_state = "beltbuckle"
 	access = list(ACCESS_LEGION)
 	uses_overlays = FALSE
 
@@ -1291,30 +1292,27 @@
 	name = "driver's license"
 	desc = "This license indicates that the holder is authorized to drive in the state of Utah."
 	icon_state = "fadedvaultid"
-	item_state = "fadedvaultid"
+	item_state = "driverslicense"
 	access = list(ACCESS_80S)
 
 /obj/item/card/id/dogtag/eighties/blueteam
 	name = "driver's license"
 	desc = "This license indicates that the holder is authorized to drive in the state of Utah. DOB: Unknown, Height: Unimportant, Sex: Unclear, Team: BLUE."
 	icon_state = "fadedvaultid"
-	item_state = "fadedvaultid"
 	assignment = "Blue Team"
-	access = list(ACCESS_80SR)
+	access = list(ACCESS_80S, ACCESS_80SR)
 
 /obj/item/card/id/dogtag/eighties/redteam
 	name = "driver's license"
 	desc = "This license indicates that the holder is authorized to drive in the state of Utah. DOB: Unknown, Height: Unimportant, Sex: Unclear, Team: RED."
 	icon_state = "fadedvaultid"
-	item_state = "fadedvaultid"
 	assignment = "Red Team"
-	access = list(ACCESS_80SR)
+	access = list(ACCESS_80S, ACCESS_80SR)
 
 /obj/item/card/id/dogtag/eighties/leadership
 	name = "driver's license"
 	desc = "This license indicates that the holder is authorized to drive in the state of Utah."
 	icon_state = "fadedvaultid"
-	item_state = "fadedvaultid"
 	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR,)
 
 /obj/item/card/id/usps

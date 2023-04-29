@@ -36884,7 +36884,6 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcornertopright,
 /area/f13/wasteland)
 "kvH" = (
-/obj/effect/overlay/curb/corner,
 /obj/structure/railing/corner{
 	layer = 4.28;
 	pixel_y = 1
@@ -75050,6 +75049,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/overlay/curb/corner{
 	layer = 2.1;
+	dir = 1;
 	pixel_x = 1
 	},
 /turf/open/indestructible/ground/outside/fakeelevation{
@@ -81280,7 +81280,8 @@
 "xas" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/overlay/curb/corner{
-	pixel_x = -1
+	pixel_x = -1;
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/fakeelevation{
 	icon = 'icons/turf/floors/carpet_royalblack.dmi';
