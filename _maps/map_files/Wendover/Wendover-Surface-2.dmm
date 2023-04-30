@@ -31218,7 +31218,9 @@
 	},
 /obj/machinery/vending/boozeomat{
 	pixel_x = -32;
-	density = 0
+	density = 0;
+	name = "The Wright Stuff";
+	desc = "A drink fridge stocked by the most prolific hoochpeddlers in Nevada, New Reno's Wright family."
 	},
 /turf/open/floor/carpet/green,
 /area/f13/casino)

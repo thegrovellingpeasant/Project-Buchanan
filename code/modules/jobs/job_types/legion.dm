@@ -149,7 +149,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 1500
-
+	mapexclude = list("standard")
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator	// .357 Revolver, Spatha
 	name = "Orator"
@@ -200,6 +200,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
 	exp_type = EXP_TYPE_LEGION
 	exp_requirements = 1500
+	mapexclude = list("standard")
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
@@ -298,6 +299,7 @@ commented out pending rework*/
 	description = "You are the leader of an expedition to the I-80 in Utah, the northern artery of the NCR. The White Legs performed adequately against the meek townspeople of New Canaan, but they require more training and wise leadership to pose a threat to the NCR. This task has been entrusted to you, do not invoke the wrath of Caesar. IN HOC SIGNO TAVRVS VINCES."
 	supervisors = "Mars"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
+	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	exp_type = EXP_TYPE_LEGION
 
@@ -384,6 +386,7 @@ commented out pending rework*/
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus"
 	display_order = JOB_DISPLAY_ORDER_DECAN
+	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
@@ -714,6 +717,7 @@ commented out pending rework*/
 	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
 	supervisors = "the Veteran Decanus must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_F13FRUMENTARIUS
+	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius
 
 	loadout_options = list(
@@ -818,6 +822,7 @@ commented out pending rework*/
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
+	mapexclude = list("standard")
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// AXE AND FISTS AND NOTHING FUCKING ELSE
@@ -899,6 +904,7 @@ commented out pending rework*/
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+	mapexclude = list("standard")
 
 	loadout_options = list(	//ALL: Forged Machete
 		/datum/outfit/loadout/primelancer,	// .357 Revolver, Buckler, Bola.
@@ -976,7 +982,8 @@ commented out pending rework*/
 	supervisors = "the Decani."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
-
+	mapexclude = list("standard")
+	
 	loadout_options = list(	//ALL: Machete
 		/datum/outfit/loadout/recruittribal,	// Fire Axe, Bola, Trekking
 		/datum/outfit/loadout/recruitlegion,	// .357 Revolver, 2 x prefilled Molotovs

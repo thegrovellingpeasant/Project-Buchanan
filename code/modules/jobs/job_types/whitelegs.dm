@@ -1,6 +1,6 @@
 /datum/job/whitelegs
 	department_flag = WHITELEGS
-	selection_color = "#a00000"
+	selection_color = "#8e7272"
 	faction = FACTION_WHITELEGS
 
 	forbids = "Your tribe forbids: Hunting, gathering, fishing, farming, shoes, strenuous thinking."
@@ -83,6 +83,8 @@
 	H.underwear = "Nude"
 	H.undershirt = "Nude"
 	H.socks = "Nude"
+	H.warpaint = "whitelegs-[H.gender]"
+	H.warpaint_color = "#FFFFFF"
 	H.update_body()
 	
 /datum/job/whitelegs/f13warchief
@@ -91,9 +93,9 @@
 	head_announce = list("Security")
 	supervisors = "the annals of history"
 	description = "Your people have long lived off robbing the trade that flowed through the I-80, favoring it over the less glorious ways of hunting and gathering, or confusing methods like farming. However, your tribe has proven to be too good at warfare and your recent successes against the New Canaanites have brought that trade to a halt, jeopardizing your future. Caesar is wise and his lands are rich, and he has offered to let the White Legs join the Legion if they aid him against his enemies. Lead your people to victory once more. Tihda yoo sinhai, baika-dems!"
-	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
+	selection_color = "#7a3f3f"
 	outfit = /datum/outfit/job/whitelegs/f13warchief
 	display_order = JOB_DISPLAY_ORDER_WARCHIEF
 	exp_type = EXP_TYPE_WHITELEGS
@@ -124,7 +126,7 @@
 	suit = /obj/item/clothing/suit/f13/tribal/heavy/whitelegs
 	head = /obj/item/clothing/head/helmet/f13/wayfarer/shamanred
 	box = /obj/item/storage/survivalkit_tribal/chief
-	back = /obj/item/storage/backpack/satchel/bone
+	backpack = /obj/item/storage/backpack/satchel/bone
 
 /datum/outfit/loadout/powerfist
 	name = "Headturner"
@@ -170,8 +172,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are the kuna-boomber. You boomb kunas. Your role in battle is to soften up your enemies and their defenses with the wide variety of improvised explosive devices at your disposal. Though your tribe shuns industry, or perhaps can't understand it, you have the rare talent of making explosives. Just remember to stand back."
-	supervisors = "your War Chief and the Legion Decani"
-	selection_color = "#ffdddd"
+	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_LIGHTBRINGER
 	outfit = /datum/outfit/job/whitelegs/f13lightbringer
 	exp_type = EXP_TYPE_WHITELEGS
@@ -193,7 +194,7 @@
 	suit = /obj/item/clothing/suit/f13/tribal/heavy/whitelegs
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm/worn
 	satchel = /obj/item/storage/backpack/satchel/bone
-	back = /obj/item/storage/backpack/satchel/leather
+	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
@@ -211,8 +212,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are an unusually handy White Leg. A quiet click and a loud scream, your traps can humble even the strongest opponent, incapacitating them while you move in for the kill. Your grasp of technology is second to none within your tribe, and it's thanks to you that the lifespan of each Storm Drum is as long as it is."
-	supervisors = "your War Chief and the Legion Decani"
-	selection_color = "#ffdddd"
+	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_SAPPER
 	outfit = /datum/outfit/job/whitelegs/f13sapper
 	exp_type = EXP_TYPE_WHITELEGS
@@ -234,7 +234,7 @@
 	neck = /obj/item/storage/belt/holster
 	box = /obj/item/storage/survivalkit_tribal
 	satchel = /obj/item/storage/backpack/satchel/leather
-	back = /obj/item/storage/backpack/Legion_backpack
+	backpack = /obj/item/storage/backpack/Legion_backpack
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/restraints/legcuffs/beartrap = 3,
@@ -251,8 +251,7 @@
 	total_positions = -1
 	spawn_positions = -1
 	description = "You could have had class, you could have been a contender, you could have been somebody. But the bright lights of Reno weren't in the cards, and your exceptional talent at punching people will have to go uncelebrated by all but your tribe."
-	supervisors = "your War Chief and the Legion Decani"
-	selection_color = "#ffdddd"
+	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_BONEBREAKER
 	outfit = /datum/outfit/job/whitelegs/f13bonebreaker
 	exp_type = EXP_TYPE_WHITELEGS
@@ -273,7 +272,7 @@
 	box = /obj/item/storage/survivalkit_tribal
 	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs
 	satchel = /obj/item/storage/backpack/satchel/bone
-	back = /obj/item/storage/backpack/satchel/leather
+	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/reagent_containers/pill/buffout = 1,
@@ -299,8 +298,7 @@
 	total_positions = -1
 	spawn_positions = -1
 	description = "You are a Pain-maker, the purest distillation of your people's aspirations. Bring pain to the outsiders and bring their wealth home to your family."
-	supervisors = "your War Chief and the Legion Decani"
-	selection_color = "#ffdddd"
+	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_PAINMAKER
 	outfit = /datum/outfit/job/whitelegs/f13painmaker
 	exp_type = EXP_TYPE_WHITELEGS
@@ -320,7 +318,7 @@
 	box = /obj/item/storage/survivalkit_tribal
 	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs
 	satchel = /obj/item/storage/backpack/satchel/bone
-	back = /obj/item/storage/backpack/satchel/leather
+	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/throwing_star/tomahawk = 1,
@@ -347,8 +345,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	description = "You wield the mighty Storm Drum, the symbol of your tribe and key to your people's greatness."
-	supervisors = "your War Chief and the Legion Decani"
-	selection_color = "#ffdddd"
+	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_STORMDRUMMER
 	outfit = /datum/outfit/job/whitelegs/f13stormdrummer
 	exp_type = EXP_TYPE_WHITELEGS
@@ -369,7 +366,7 @@
 	suit = /obj/item/clothing/suit/f13/tribal/light/whitelegs/extra
 	suit_store = /obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs
 	satchel = /obj/item/storage/backpack/satchel/bone
-	back = /obj/item/storage/backpack/satchel/leather
+	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/ammo_box/magazine/tommygunm45/stick = 2,

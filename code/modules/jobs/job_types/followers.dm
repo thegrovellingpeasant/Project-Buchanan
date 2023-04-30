@@ -46,7 +46,7 @@ Administrator
 	spawn_positions = 1
 	supervisors = "No one."
 	description = "You are the Follower Administrator. You are the administrator for the on-site followers. While there is no tradtional chain of command that is used, you have been chosen to lead due to your expert knowledge in the field of medicine and other general knowledges. Make sure that the supplies donated are being put to use, help secure more donations, and fill in as needed whenever short staffed or if the clinic is busy. For the love of god, don't commit war crimes or enable those who do."
-	selection_color = "#FF95FF"
+	selection_color = "#FFDDFF"
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 

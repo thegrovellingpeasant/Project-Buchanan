@@ -129,7 +129,7 @@ Mayor
 	spawn_positions = 1
 	supervisors = "the Temple President"
 	description = "You were chosen to become a missionary for your proficiency at learning languages. How you'll best serve the Church is up to you and the Temple President, but your time among the tribes has given you a unique insight into their ways of living."
-	selection_color = "#D4AF37"
+	selection_color = "#d9c687"
 	display_order = JOB_DISPLAY_ORDER_MISSIONARY
 
 	outfit = /datum/outfit/job/latterdaysaints/f13missionary
@@ -212,7 +212,7 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	spawn_positions = 2
 	supervisors = "the Temple President"
 	description = "You are charged with the protection of the President, the Temple and all its inhabitants. If God is with you, who can be against you?"
-	selection_color = "#D4AF37"
+	selection_color = "#d9c687"
 	display_order = JOB_DISPLAY_ORDER_TEMPLEGUARD
 
 	outfit = /datum/outfit/job/latterdaysaints/f13templeguard
@@ -271,7 +271,7 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	spawn_positions = -1
 	supervisors = "the Temple President"
 	description = "Through birth, marriage or some other circumstance, you are a New Canaanite. A survivor of the exodus from your homeland. It's beautiful towns in the mountains and on the shores of the Great Salt Lake now ash, fallen to the treachery of the White Legs."
-	selection_color = "#D4AF37"
+	selection_color = "#d9c687"
 	display_order = JOB_DISPLAY_ORDER_NEWCANAANITE
 
 	outfit = /datum/outfit/job/latterdaysaints/f13newcanaanite

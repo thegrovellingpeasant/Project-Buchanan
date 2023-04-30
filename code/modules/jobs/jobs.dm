@@ -193,9 +193,9 @@ GLOBAL_LIST_INIT(vault_positions, list(
 ))
 
 GLOBAL_LIST_INIT(wasteland_positions, list(
-	"Raider",
-	"Tribal",
 	"Wastelander",
+	"Tribal",
+	"Raider",
 	"Brotherhood Scout",
 	"Journeyman Scribe",
 	"Remnant",

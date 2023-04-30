@@ -151,6 +151,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
 	exp_type = EXP_TYPE_NCR
+	mapexclude = list("standard")
 
 	loadout_options = list(
 		/datum/outfit/loadout/captainbackline,	// Infiltrator, El Capitan
@@ -228,7 +229,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "You are the Commanding Officer of the NCR force stationed at the Embassy in Wendover. The last stop before the Great Salt Lake desert, it enjoyed some prominence as a trade town, with caravans from California and New Canaan meeting here to exchange goods of every kind. With the fall of New Canaan, trade has diminished, and only a token force remains to protect the embassy from the belligerent tribes in the area. To make matters worse, the Ranger detachment that once patrolled I-80 has been sent south to New Vegas in expectation of a second battle at Hoover dam. Defend the Ambassador, lead your troops, and use what limited supplies you have to promote the NCR's interests in the area."
 	supervisors = "the Ambassador"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
-	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 	exp_type = EXP_TYPE_NCR
@@ -379,6 +379,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13drillsergeant
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 1500
+	mapexclude = list("standard")
 
 	loadout_options = list( // ALL: Bayonet
 		/datum/outfit/loadout/seatechnical,
@@ -540,6 +541,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 3500
+	mapexclude = list("standard")
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
 		/datum/outfit/loadout/vrclassic, // AMR, Sequoia
@@ -637,6 +639,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13ranger
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 1000
+	mapexclude = list("standard")
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
 	/datum/outfit/loadout/rangerrecon, // DKS Sniper rifle, .45 Revolver
@@ -754,6 +757,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 750
+	mapexclude = list("standard")
 
 	loadout_options = list(
 		/datum/outfit/loadout/shockht,	// Minigun
@@ -1158,6 +1162,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13conscript
+	mapexclude = list("standard")
 
 	loadout_options = list(
 		/datum/outfit/loadout/conscriptvarmint, // Service Rifle, Bayonet
@@ -1279,6 +1284,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
+	mapexclude = list("standard")
 
 /datum/outfit/job/ncr/f13logisticsofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

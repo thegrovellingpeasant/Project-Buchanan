@@ -16,7 +16,7 @@ Raider
 	spawn_positions = 16
 	description = "However you came to be here, you are a raider. There is a constant trickle of people on I-80 for you to con, rob, ransom, or enslave. You may find work or refuge with one of the local factions, or choose to go it alone and forge your own raider empire."
 	supervisors = "Your desire to make things interesting and fun. Don't play this as wastelander+."
-	selection_color = "#ff4747"
+	selection_color = "#dddddd"
 	exp_type = EXP_TYPE_FALLOUT
 
 	outfit = /datum/outfit/job/wasteland/f13raider

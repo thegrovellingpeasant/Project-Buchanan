@@ -2154,11 +2154,6 @@
 /obj/item/reagent_containers/food/snacks/grown/mutfruit,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"boO" = (
-/obj/effect/landmark/start/f13/montegobaystaff,
-/obj/effect/landmark/start/f13/montegobaydirector,
-/turf/open/floor/carpet/green,
-/area/f13/casino)
 "boS" = (
 /obj/structure/chair/bench{
 	icon_state = "bench_r";
@@ -6339,10 +6334,6 @@
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
-"dZe" = (
-/obj/effect/landmark/start/f13/montegobaystaff,
-/turf/open/floor/carpet/green,
-/area/f13/casino)
 "dZB" = (
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
@@ -33596,7 +33587,7 @@
 "vcm" = (
 /obj/effect/landmark/start/f13/montegobaydirector,
 /obj/machinery/light,
-/obj/effect/landmark/start/f13/montegobaydirector,
+/obj/effect/landmark/start/f13/montegobaystaff,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "vcL" = (
@@ -45097,7 +45088,7 @@ dGo
 fFW
 tjH
 gIJ
-dZe
+fFW
 oZi
 vYG
 tjH
@@ -45353,9 +45344,9 @@ tjH
 qTI
 fFW
 tKF
-boO
-boO
-boO
+fFW
+fFW
+fFW
 vcm
 tjH
 rqo

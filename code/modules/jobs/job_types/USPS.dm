@@ -20,7 +20,7 @@ Mayor
 	exp_type = EXP_TYPE_FALLOUT
 	faction = FACTION_USPS
 	department_flag = USPS
-	selection_color = "#004B87"
+	selection_color = "#83a4c0"
 	access = list(ACCESS_USPS)
 	minimal_access = list(ACCESS_USPS)
 
@@ -32,7 +32,7 @@ Mayor
 	spawn_positions = 1
 	supervisors = "the Constitution"
 	description = "You are the leader of the local post office, and possibly the highest ranking member of the postal service left. How you handle this burden is up to you. Sort mail, handle packages, fulfill orders from the requests console and most importantly... deliver hope."
-	selection_color = "#DA291C"
+	selection_color = "#83a4c0"
 	display_order = JOB_DISPLAY_ORDER_POSTMASTERGENERAL
 
 
@@ -90,7 +90,7 @@ Mayor
 	spawn_positions = 3
 	supervisors = "the Postmaster General"
 	description = "You have taken upon yourself the honorable service of orchestrating the receipt and delivery of mail within the town of Wendover and its surrounding areas. In doing so you risk exposure to the elements, hostile mutants, ruthless opportunists and even a few dogs. Stand and deliver."
-	selection_color = "#DA291C"
+	selection_color = "#83a4c0"
 	display_order = JOB_DISPLAY_ORDER_MAILCARRIER
 
 
