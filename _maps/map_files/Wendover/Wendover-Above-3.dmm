@@ -10391,8 +10391,7 @@
 /obj/structure/decoration/rag{
 	icon_state = "flag_ncr";
 	name = "NCR banner";
-	pixel_y = 30;
-	plane = -14
+	pixel_y = 30
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
@@ -14145,13 +14144,12 @@
 /obj/structure/railing/handrail/blue{
 	dir = 6;
 	pixel_y = -5;
-	layer = 3.91;
-	plane = -16
+	layer = 2.11;
+	icon_state = "handrail_bottom"
 	},
 /obj/structure/railing/handrail/blue{
 	dir = 4;
-	layer = 1.89;
-	plane = -16
+	layer = 2.1
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/ncr)
@@ -20450,8 +20448,7 @@
 "ngO" = (
 /obj/structure/railing/handrail/blue{
 	dir = 4;
-	layer = 3.9;
-	plane = -16
+	layer = 2.1
 	},
 /obj/structure/railing/handrail/blue{
 	dir = 5;
@@ -27049,8 +27046,7 @@
 "riD" = (
 /obj/structure/railing/handrail/blue{
 	dir = 4;
-	layer = 3.9;
-	plane = -16
+	layer = 2.1
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/ncr)
@@ -31781,13 +31777,12 @@
 /obj/structure/railing/handrail/blue{
 	dir = 10;
 	pixel_y = -5;
-	layer = 3.91;
-	plane = -16
+	layer = 2.11;
+	icon_state = "handrail_bottom"
 	},
 /obj/structure/railing/handrail/blue{
 	dir = 8;
-	layer = 1.89;
-	plane = -16
+	layer = 2.1
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/ncr)
@@ -34289,8 +34284,8 @@
 "vBN" = (
 /obj/structure/railing/handrail/blue{
 	pixel_y = -5;
-	layer = 1.9;
-	plane = -16
+	layer = 2.1;
+	icon_state = "handrail_bottom"
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/ncr)

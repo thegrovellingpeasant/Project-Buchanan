@@ -4227,7 +4227,7 @@
 	},
 /obj/structure/obstacle/barbedwire{
 	dir = 8;
-	pixel_y = -1;
+	pixel_y = -2;
 	layer = 2.79
 	},
 /obj/structure/decoration/rag{
@@ -25986,6 +25986,10 @@
 /obj/effect/overlay/catwalk,
 /turf/open/indestructible/ground/outside/saltflats/gravbottom,
 /area/f13/wasteland)
+"huk" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/tunnel)
 "hur" = (
 /obj/item/clothing/shoes/laceup,
 /obj/structure/rack/shelf_metal,
@@ -53883,7 +53887,7 @@
 	},
 /obj/structure/obstacle/barbedwire{
 	dir = 8;
-	pixel_y = -1;
+	pixel_y = -2;
 	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -97919,8 +97923,8 @@ wPA
 pQz
 wPA
 wPA
-wdn
-wdn
+huk
+huk
 wPA
 nyj
 bLN
