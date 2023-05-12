@@ -124,6 +124,15 @@
 	speak_chance = 5
 	initial_language_holder = /datum/language_holder
 
+/mob/living/simple_animal/hostile/venus_human_trap/weak
+	layer = MOB_LAYER
+	wander = FALSE
+	faction = list("hostile","vines","plants","Syndicate","gecko")
+	environment_smash = FALSE
+	obj_damage = 0
+	health = 20
+	maxHealth = 20
+
 /mob/living/simple_animal/hostile/venus_human_trap/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return

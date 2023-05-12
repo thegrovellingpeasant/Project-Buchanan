@@ -82,7 +82,7 @@
 /area/f13/wasteland)
 "abf" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/gecko{
+/obj/structure/nest/spawner/gecko{
 	layer = 2.7
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -147,15 +147,17 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "aee" = (
-/obj/structure/car/rubbish2{
-	layer = 2.1;
-	icon_state = "car_rubish22"
+/obj/structure/car/rubbish2alt{
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/road/verticalrightborder,
 /area/f13/wasteland)
 "aem" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/security/wooden_tv,
+/obj/machinery/computer/security/wooden_tv{
+	network = list("thunderdome");
+	name = "television"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/building)
 "aeo" = (
@@ -173,10 +175,7 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "aeQ" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "glass door"
-	},
+/obj/structure/simple_door/metal/store,
 /turf/open/floor/carpet/red{
 	smooth = 0
 	},
@@ -304,13 +303,8 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "aiZ" = (
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/power.dmi';
-	icon_state = "smes";
-	name = "broken electrical equipment";
+/obj/structure/car/junk/smes{
 	desc = null;
-	bound_height = 32;
-	bound_width = 32;
 	pixel_y = 1;
 	density = 0;
 	layer = 2.1
@@ -687,15 +681,7 @@
 	pixel_y = -8;
 	pixel_x = -1
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "atU" = (
 /obj/structure/barricade/tentclothcorner{
@@ -823,16 +809,11 @@
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/wasteland)
 "axN" = (
-/obj/structure/car/rubbish1{
-	icon_state = "fix2_4";
-	icon = 'icons/obj/machines/gravity_generator.dmi';
+/obj/structure/car/junk/generator/alt{
 	layer = 3.1;
 	pixel_y = -5;
 	desc = null;
-	name = "generator";
-	pixel_x = -1;
-	bound_height = 32;
-	bound_width = 32
+	pixel_x = -1
 	},
 /obj/structure/railing{
 	dir = 1;
@@ -1137,7 +1118,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "aIf" = (
-/obj/structure/nest/wolf{
+/obj/structure/nest/spawner/wolf{
 	layer = 2;
 	plane = -15;
 	mob_types = list(/mob/living/simple_animal/hostile/wolf=1,/mob/living/simple_animal/hostile/wolf/cold=5)
@@ -2190,11 +2171,8 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "bpp" = (
-/obj/structure/car/rubbish6{
-	dir = 4;
-	icon_state = "car_rubish7";
-	bound_height = 64;
-	bound_width = 64
+/obj/structure/car/rubbish7{
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -2897,8 +2875,7 @@
 	pixel_x = 12;
 	pixel_y = 3
 	},
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
@@ -2996,13 +2973,15 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "bNY" = (
-/mob/living/simple_animal/hostile/wolf/cold{
+/obj/structure/junk/foundation{
 	dir = 8;
-	wander = 0;
-	pixel_x = -2
+	pixel_y = -9
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/nest/mob/geckofire{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "bOd" = (
 /obj/structure/table/greyscale{
 	color = "#C0C0C0"
@@ -3321,6 +3300,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "caR" = (
+/obj/structure/girder,
 /turf/open/floor/wood/f13/housewoodbroken3{
 	sunlight_state = 1
 	},
@@ -3346,15 +3326,7 @@
 	pixel_x = 15;
 	pixel_y = -6
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "cbo" = (
 /obj/machinery/microwave/stove,
@@ -3923,15 +3895,7 @@
 	pixel_y = -8;
 	pixel_x = 4
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "crB" = (
 /obj/effect/decal/remains/human{
@@ -4023,7 +3987,9 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "cvA" = (
-/obj/structure/fence/wooden/side,
+/obj/structure/fence/wooden/side{
+	layer = 2.91
+	},
 /obj/structure/barricade/sandbags{
 	pixel_y = 4
 	},
@@ -4213,7 +4179,7 @@
 /area/f13/wasteland)
 "cDs" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/gecko{
+/obj/structure/nest/spawner/gecko{
 	layer = 2.7;
 	pixel_x = 34;
 	plane = -15
@@ -4301,13 +4267,9 @@
 	icon_state = "post";
 	pixel_x = 14
 	},
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/machines/particle_accelerator.dmi';
-	icon_state = "power_box";
+/obj/structure/car/junk/focuser{
 	name = "broken electrical equipment";
 	desc = null;
-	bound_height = 32;
-	bound_width = 32;
 	layer = 2.1;
 	pixel_x = -5;
 	pixel_y = -2
@@ -4330,8 +4292,7 @@
 	layer = 3.7;
 	icon_state = "drip4"
 	},
-/mob/living/simple_animal/hostile/giantant{
-	wander = 0;
+/obj/structure/nest/mob/giantant{
 	dir = 4
 	},
 /turf/open/floor/plasteel/grimy,
@@ -4358,6 +4319,13 @@
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
 /turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
+"cGZ" = (
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
 "cHi" = (
 /obj/effect/overlay/shadow,
@@ -4439,10 +4407,6 @@
 /area/f13/building)
 "cJK" = (
 /obj/effect/overlay/desert/sonora/edge/south,
-/mob/living/simple_animal/hostile/handy/protectron{
-	icon_state = "Patribot_Worker";
-	icon_dead = "protectron_k_d"
-	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "dirtyroad";
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -4832,7 +4796,6 @@
 	},
 /obj/structure/car/motoryclehor{
 	dir = 9;
-	bound_width = 64;
 	pixel_y = 12;
 	layer = 3.01;
 	pixel_x = 3
@@ -4938,10 +4901,9 @@
 /turf/open/floor/plasteel/solarpanel,
 /area/f13/building)
 "dib" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclehor{
 	dir = 8;
 	layer = 3.11;
-	bound_width = 64;
 	pixel_y = 5
 	},
 /turf/open/indestructible/ground/outside/road{
@@ -5006,8 +4968,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "dkY" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5119,9 +5080,13 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "dor" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/structure/nest/mob/wolf{
+	dir = 4;
+	layer = 3.01
+	},
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "doE" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -5131,7 +5096,7 @@
 /area/f13/building)
 "doK" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/indestructible/ground/outside/roof{
 	icon = 'icons/turf/floors.dmi';
@@ -5218,11 +5183,13 @@
 /turf/open/floor/wood/f13/housewoodbroken2,
 /area/f13/building)
 "dqu" = (
-/mob/living/simple_animal/hostile/gecko{
-	dir = 8;
-	aggro_vision_range = 7
+/obj/structure/nest/spawner/gecko{
+	layer = 2.7;
+	pixel_y = 33;
+	pixel_x = 2;
+	max_mobs = 1
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "dqy" = (
 /obj/machinery/microwave/stove{
@@ -5256,9 +5223,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "drh" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclevert/light{
 	pixel_x = -16;
-	icon_state = "rust_light_no_wheels";
 	pixel_y = -8;
 	layer = 3;
 	dir = 6
@@ -5292,6 +5258,10 @@
 	pixel_x = 1
 	},
 /turf/open/transparent/openspace/air,
+/area/f13/wasteland)
+"dsA" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
 "dtt" = (
 /obj/effect/overlay/shadow,
@@ -5406,6 +5376,12 @@
 "duV" = (
 /obj/structure/lattice/catwalk/invisible,
 /turf/open/transparent/openspace/air,
+/area/f13/wasteland)
+"dvf" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/wood/f13/housewoodbroken2{
+	sunlight_state = 1
+	},
 /area/f13/wasteland)
 "dvB" = (
 /obj/structure/window/fulltile/house,
@@ -6175,15 +6151,7 @@
 	pixel_y = -3;
 	pixel_x = 6
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "dVJ" = (
 /obj/structure/table/wood/greyscale,
@@ -6271,10 +6239,8 @@
 	dir = 6;
 	layer = 4.1
 	},
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
-	dir = 4;
-	layer = 2
+/obj/structure/nest/mob/radroach{
+	dir = 4
 	},
 /turf/open/floor/carpet/black,
 /area/f13/building)
@@ -6744,11 +6710,8 @@
 /area/f13/ncr)
 "epn" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/supermutant/rangedmutant{
+/obj/structure/nest/mob/supermutant/ranged/mutcastle{
 	dir = 8;
-	wander = 0;
-	faction = list("deathclaw");
-	loot = list(/obj/item/ammo_box/a308,/obj/item/gun/ballistic/rifle/hunting);
 	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -6847,7 +6810,7 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "erY" = (
-/obj/structure/roulettetable,
+/obj/structure/table/roulette,
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "esm" = (
@@ -7096,6 +7059,10 @@
 	dir = 6
 	},
 /area/f13/wasteland)
+"ezw" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/wood/f13/lit,
+/area/f13/wasteland)
 "eAz" = (
 /turf/open/indestructible/ground/outside/road/stripyroad/horizontal,
 /area/f13/wasteland)
@@ -7269,9 +7236,9 @@
 	},
 /area/f13/wasteland)
 "eHu" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "glass door"
+/obj/structure/simple_door/metal/store,
+/obj/structure/nest/spawner/fireant{
+	layer = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -7485,9 +7452,8 @@
 	},
 /area/f13/building)
 "eNw" = (
-/mob/living/simple_animal/hostile/wolf/cold{
-	dir = 8;
-	wander = 0
+/obj/structure/nest/mob/wolf{
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -7556,17 +7522,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/building)
 "eRe" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "eRo" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "KWI Broadcasting"
-	},
+/obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/building)
 "eRK" = (
@@ -7614,6 +7576,17 @@
 /area/f13/ncr)
 "eTp" = (
 /obj/machinery/grill,
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
+"eTs" = (
+/obj/structure/flora/grass/drygrass/eight/bunchone,
+/obj/structure/flora/grass/drygrass/seven/bunchone,
+/obj/structure/flora/grass/drygrass/seven/bunchtwo,
+/obj/structure/nest/spawner/gecko{
+	layer = 2.7;
+	pixel_y = -3;
+	max_mobs = 1
+	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "eTA" = (
@@ -7904,12 +7877,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/wastelandedge/bottom,
 /area/f13/wasteland)
 "fbC" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "wasteland";
-	plane = -15;
-	sunlight_state = 1
-	},
+/turf/closed/indestructible/f13/matrix/desert,
 /area/f13/wasteland)
 "fcb" = (
 /obj/structure/table/wood/settler,
@@ -8062,7 +8030,7 @@
 "ffy" = (
 /obj/effect/decal/remains/hay{
 	dir = 1;
-	pixel_y = -1;
+	pixel_y = -2;
 	layer = 3.01
 	},
 /turf/open/floor/carpet/nosmooth,
@@ -8131,7 +8099,7 @@
 /area/f13/building)
 "fim" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/tunnel)
@@ -8577,16 +8545,11 @@
 	pixel_y = 4;
 	layer = 4.25
 	},
-/obj/structure/car/rubbish1{
-	icon_state = "fix2_4";
-	icon = 'icons/obj/machines/gravity_generator.dmi';
+/obj/structure/car/junk/generator/alt{
 	layer = 3.1;
 	pixel_y = -5;
 	desc = null;
-	name = "generator";
-	pixel_x = -1;
-	bound_height = 32;
-	bound_width = 32
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/wasteland)
@@ -8611,15 +8574,10 @@
 	dir = 10;
 	pixel_x = -6
 	},
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/machines/gravity_generator.dmi';
-	icon_state = "fix2_6";
+/obj/structure/car/junk/generator{
 	pixel_y = 2;
 	layer = 3.2;
-	desc = null;
-	name = "generator";
-	bound_height = 32;
-	bound_width = 32
+	desc = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/wasteland)
@@ -8689,9 +8647,8 @@
 /turf/open/transparent/glass,
 /area/f13/planetarium)
 "fyH" = (
-/mob/living/simple_animal/hostile/ghoul/glowing{
-	dir = 1;
-	wander = 0
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 1
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland)
@@ -9234,15 +9191,7 @@
 	icon_state = "body";
 	pixel_x = 19
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "fQa" = (
 /obj/structure/closet/crate/coffin/blackcoffin,
@@ -9434,6 +9383,11 @@
 	dir = 8;
 	layer = 3.6
 	},
+/obj/structure/car/junk/pod{
+	desc = null;
+	layer = 3.1
+	},
+/obj/structure/nest/spawner/protectron,
 /turf/open/indestructible/ground/outside/roof{
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "floorgrime";
@@ -9712,11 +9666,13 @@
 /turf/open/floor/f13/yellow,
 /area/f13/building)
 "gfW" = (
-/obj/structure/fence/wooden,
+/obj/structure/fence/wooden{
+	layer = 2.91
+	},
 /obj/structure/railing/wood{
 	pixel_x = 16;
 	pixel_y = -1;
-	layer = 4.24
+	layer = 2.91
 	},
 /obj/structure/barricade/sandbags{
 	pixel_y = 4
@@ -9800,7 +9756,7 @@
 	},
 /area/f13/building)
 "gjL" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclehor{
 	dir = 8;
 	pixel_x = -16;
 	layer = 3.12
@@ -9904,6 +9860,14 @@
 /obj/item/trash/f13/c_ration_3,
 /turf/open/indestructible/ground/outside/dirt/east,
 /area/f13/wasteland)
+"gmE" = (
+/obj/structure/nest/mob/supermutant/ranged/mutcastle{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/housewoodbroken2{
+	sunlight_state = 1
+	},
+/area/f13/tunnel)
 "gmH" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
@@ -9916,9 +9880,8 @@
 "gmY" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/storage/photo_album,
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/housewoodbroken,
@@ -9939,12 +9902,9 @@
 	pixel_x = 5;
 	layer = 3.4
 	},
-/obj/structure/car/rubbish1{
-	icon_state = "fix2_4";
-	icon = 'icons/obj/machines/gravity_generator.dmi';
+/obj/structure/car/junk/generator/alt{
 	layer = 3.2;
 	pixel_y = 2;
-	name = "generator";
 	desc = null;
 	pixel_x = -1
 	},
@@ -9965,7 +9925,7 @@
 /area/f13/wasteland)
 "gnZ" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/cola)
@@ -9983,9 +9943,8 @@
 /area/f13/followers)
 "goL" = (
 /obj/structure/car/rubbish2,
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclevert/light{
 	pixel_x = -32;
-	icon_state = "rust_light_no_wheels";
 	layer = 2.1;
 	dir = 10;
 	pixel_y = -7;
@@ -10157,10 +10116,7 @@
 	},
 /area/f13/potashwarehouse)
 "guc" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "glass door"
-	},
+/obj/structure/simple_door/metal/store,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "guf" = (
@@ -10190,10 +10146,10 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "guU" = (
-/obj/structure/debris/v3{
-	icon_state = "debris1";
+/obj/structure/debris/v1{
 	pixel_x = -15;
-	pixel_y = -8
+	pixel_y = -8;
+	layer = 3.01
 	},
 /obj/item/radio{
 	pixel_y = 15
@@ -10287,7 +10243,7 @@
 /obj/effect/decal/remains/rock{
 	icon_state = "lavarocks1"
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "gyd" = (
 /obj/structure/table/reinforced,
@@ -10359,11 +10315,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "gAw" = (
-/mob/living/simple_animal/hostile/gecko{
-	dir = 4;
-	aggro_vision_range = 7
+/obj/structure/flora/grass/drygrass/eight/bunchone,
+/obj/structure/flora/grass/drygrass/seven/bunchone,
+/obj/structure/flora/grass/drygrass/seven/bunchtwo,
+/obj/structure/nest/spawner/gecko{
+	layer = 2.7;
+	pixel_y = -2;
+	max_mobs = 1;
+	pixel_x = 1
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "gAL" = (
 /turf/open/indestructible/ground/outside/road/parking,
@@ -10421,15 +10382,6 @@
 /obj/item/flashlight/lamp/green{
 	pixel_x = -3;
 	pixel_y = -1
-	},
-/obj/machinery/button/door{
-	pixel_x = 6;
-	id = "bearley"
-	},
-/obj/machinery/button/door{
-	pixel_x = 6;
-	id = "bearleyment";
-	pixel_y = -10
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
@@ -11031,12 +10983,11 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "gWf" = (
-/mob/living/simple_animal/hostile/molerat{
-	dir = 4;
-	faction = list("deathclaw")
+/obj/structure/fence/wooden{
+	layer = 2.91
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
 "gWk" = (
 /obj/effect/overlay/shadow,
 /obj/structure/table/wood{
@@ -11554,11 +11505,8 @@
 /turf/open/transparent/openspace/air,
 /area/f13/building)
 "hmQ" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant{
-	dir = 8;
-	wander = 0;
-	faction = list("deathclaw");
-	loot = list(/obj/item/ammo_box/a308,/obj/item/gun/ballistic/rifle/hunting)
+/obj/structure/nest/mob/supermutant/ranged/mutcastle{
+	dir = 8
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
@@ -11843,15 +11791,7 @@
 	pixel_x = -8;
 	pixel_y = -8
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "hvF" = (
 /obj/item/ammo_casing/spent,
@@ -12015,7 +11955,7 @@
 	dir = 8;
 	pixel_x = -7
 	},
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclehor{
 	dir = 8;
 	bound_height = 64;
 	pixel_x = -16;
@@ -12297,8 +12237,12 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "hJp" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/indestructible/ground/outside/road/verticalrightborder,
+/obj/structure/nest/mob/wolf{
+	dir = 4;
+	layer = 3.01;
+	pixel_y = -20
+	},
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "hJF" = (
 /obj/structure/closet/cabinet/anchored{
@@ -12720,10 +12664,11 @@
 	},
 /area/f13/wasteland)
 "ich" = (
-/mob/living/simple_animal/hostile/giantant{
-	dir = 8
+/obj/structure/nest/mob/wolf{
+	dir = 4;
+	layer = 3.01
 	},
-/turf/open/indestructible/ground/outside/dirt/south,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "icn" = (
 /obj/structure/railing/wood{
@@ -12761,9 +12706,7 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "idU" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0
-	},
+/obj/structure/nest/mob/radroach,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -12913,9 +12856,8 @@
 "ijn" = (
 /obj/structure/table/wood,
 /obj/item/stack/arcadeticket/thirty,
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/movietheater)
@@ -13378,11 +13320,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/tunnel)
 "iDp" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant{
-	dir = 4;
-	wander = 0;
-	faction = list("deathclaw");
-	loot = list(/obj/item/ammo_box/a308,/obj/item/gun/ballistic/rifle/hunting)
+/obj/structure/nest/mob/supermutant/ranged/mutcastle{
+	dir = 4
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
@@ -13422,8 +13361,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13575,9 +13513,8 @@
 	icon_state = "television"
 	},
 /obj/structure/table/wood/settler,
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/building)
@@ -13637,15 +13574,10 @@
 	pixel_y = 4;
 	layer = 4.25
 	},
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/machines/gravity_generator.dmi';
-	icon_state = "fix2_6";
+/obj/structure/car/junk/generator{
 	pixel_y = -5;
 	layer = 3.1;
-	desc = null;
-	name = "generator";
-	bound_height = 32;
-	bound_width = 32
+	desc = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/wasteland)
@@ -14067,11 +13999,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/building)
 "jau" = (
-/mob/living/simple_animal/hostile/bloatfly{
-	wander = 0;
-	dir = 8
+/obj/structure/fence/wooden/side{
+	layer = 2.91
 	},
-/turf/open/floor/wood/f13/oak/lit,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "jaL" = (
 /turf/open/floor/wood/f13/housewoodbroken3,
@@ -14406,7 +14337,7 @@
 /area/f13/wasteland)
 "jhl" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /obj/structure/lamp_post/floodlight,
 /turf/open/floor/wood/f13/lit,
@@ -14622,15 +14553,10 @@
 	pixel_y = 4;
 	layer = 4.25
 	},
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/machines/gravity_generator.dmi';
-	icon_state = "fix2_6";
+/obj/structure/car/junk/generator{
 	pixel_y = -5;
 	layer = 3.1;
-	desc = null;
-	name = "generator";
-	bound_height = 32;
-	bound_width = 32
+	desc = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/wasteland)
@@ -14860,8 +14786,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -14963,10 +14889,7 @@
 	},
 /area/f13/wasteland)
 "jyw" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "glass door"
-	},
+/obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "jyS" = (
@@ -15239,15 +15162,10 @@
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
 "jKa" = (
-/mob/living/simple_animal/hostile/supermutant/rangedmutant{
-	dir = 8;
-	wander = 0;
-	faction = list("deathclaw");
-	loot = list(/obj/item/ammo_box/a308,/obj/item/gun/ballistic/rifle/hunting);
-	aggro_vision_range = 8
-	},
-/turf/open/floor/wood/f13/lit,
-/area/f13/tunnel)
+/obj/structure/lattice/catwalk,
+/obj/structure/barricade/bars,
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "jKi" = (
 /turf/open/indestructible/ground/outside/lifelessdesert/edge/hillsfour/six,
 /area/f13/wasteland)
@@ -15291,14 +15209,10 @@
 /turf/open/transparent/glass,
 /area/f13/planetarium)
 "jNh" = (
-/obj/structure/nest/protectron{
-	max_mobs = 1;
+/obj/structure/nest/spawner/protectron{
 	pixel_y = -1
 	},
-/obj/structure/car/rubbish6{
-	icon = 'icons/mob/nest_new.dmi';
-	icon_state = "scanner_modified";
-	name = "Empty Protectron Pod";
+/obj/structure/car/junk/pod{
 	desc = null;
 	pixel_y = -1;
 	layer = 3.1
@@ -15403,10 +15317,12 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "jSH" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/spawner/radroach{
+	layer = 2;
+	pixel_x = -32;
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "jSS" = (
@@ -15578,7 +15494,7 @@
 /obj/item/radio/wendoverreceiver{
 	icon_state = "intercom_retro";
 	pixel_x = -9;
-	pixel_y = 18;
+	pixel_y = 15;
 	icon = 'icons/obj/radio.dmi';
 	layer = 4.3
 	},
@@ -16875,7 +16791,8 @@
 /obj/structure/simple_door/brokenglass,
 /obj/effect/decal/remains/skulls{
 	dir = 1;
-	pixel_y = 3
+	pixel_y = 3;
+	layer = 3.11
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/roof{
@@ -16961,11 +16878,14 @@
 /turf/open/floor/f13/lit,
 /area/f13/building)
 "kUD" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
-	dir = 4
+/obj/structure/table/greyscale{
+	color = "#C0C0C0"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
+/obj/item/trash/plate,
+/obj/structure/nest/spawner/fireant{
+	layer = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "kUM" = (
 /obj/structure/lattice/catwalk,
@@ -17648,26 +17568,13 @@
 /obj/structure/railing{
 	layer = 3.9
 	},
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/machines/gravity_generator.dmi';
-	icon_state = "fix2_6";
+/obj/structure/car/junk/generator{
 	pixel_y = 2;
 	layer = 3.2;
-	desc = null;
-	name = "generator";
-	bound_height = 32;
-	bound_width = 32
+	desc = null
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/wasteland)
-"ltd" = (
-/mob/living/simple_animal/hostile/bloatfly{
-	wander = 0;
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/oak/lit,
-/area/f13/building)
 "ltf" = (
 /obj/structure/chair/stool/retro/black,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -18166,12 +18073,15 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "lHz" = (
-/mob/living/simple_animal/hostile/giantant{
-	dir = 4
+/obj/structure/chair{
+	dir = 1
 	},
-/obj/structure/glowshroom,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/fireant{
+	dir = 8
+	},
+/turf/open/floor/plasteel/grimy,
+/area/f13/building)
 "lHI" = (
 /obj/effect/decal/remains/cloth{
 	dir = 1;
@@ -18378,7 +18288,6 @@
 "lOU" = (
 /obj/structure/car/motoryclehor{
 	dir = 9;
-	bound_width = 64;
 	pixel_y = 12;
 	layer = 3.01;
 	pixel_x = 3
@@ -18485,17 +18394,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/lit,
 /area/f13/tunnel)
-"lSB" = (
-/obj/effect/decal/cleanable/blood{
-	plane = -14;
-	layer = 3.7;
-	icon_state = "drip4"
-	},
-/mob/living/simple_animal/hostile/fireant{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
 "lTp" = (
 /obj/structure/curtain{
 	color = "#363636"
@@ -18586,9 +18484,8 @@
 /obj/structure/chair/booth{
 	dir = 1
 	},
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /turf/open/floor/carpet/red{
 	smooth = 0
@@ -19186,12 +19083,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
-"moU" = (
-/mob/living/simple_animal/hostile/giantant{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mpD" = (
 /obj/effect/overlay/shadow/shading{
 	dir = 8;
@@ -19449,7 +19340,6 @@
 "mAv" = (
 /obj/structure/car/motoryclehor{
 	dir = 4;
-	bound_width = 64;
 	pixel_x = -13;
 	pixel_y = 6;
 	layer = 3.9
@@ -19530,10 +19420,10 @@
 	icon_state = "closed";
 	open = 0;
 	opacity = 1;
-	layer = 4.11
+	layer = 4.26
 	},
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/floor/carpet/black,
 /area/f13/building)
@@ -20335,7 +20225,7 @@
 /area/f13/wasteland)
 "ndW" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /obj/effect/spawner/lootdrop/trash,
 /obj/item/trash/can{
@@ -20343,6 +20233,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
+"neu" = (
+/obj/structure/nest/mob/bloatfly{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/wasteland)
 "neP" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/f13/old,
@@ -20494,8 +20390,7 @@
 	},
 /area/f13/building)
 "nij" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,
@@ -20625,9 +20520,8 @@
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
 "noc" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclevert/light{
 	pixel_x = -16;
-	icon_state = "rust_light_no_wheels";
 	pixel_y = -8;
 	layer = 2.11;
 	dir = 1
@@ -21041,11 +20935,10 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "nDW" = (
-/obj/structure/car/motoryclehor{
+/obj/structure/car/motoryclevert/green{
 	pixel_x = -12;
 	pixel_y = -8;
-	layer = 2;
-	icon_state = "bike_no_wheels"
+	layer = 2
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -21062,7 +20955,7 @@
 	icon_state = "basalt3";
 	pixel_x = 2
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "nFc" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -21186,10 +21079,7 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "nIi" = (
-/obj/structure/car/rubbish2{
-	icon_state = "derelict2";
-	icon = 'icons/fallout/vehicles/medium_vehicles.dmi';
-	bound_height = 32;
+/obj/structure/car/derelict/alt{
 	layer = 2.1;
 	pixel_y = -7
 	},
@@ -21363,10 +21253,7 @@
 	desc = null;
 	name = "throne"
 	},
-/mob/living/simple_animal/hostile/supermutant/nightkin{
-	wander = 0;
-	faction = list("deathclaw")
-	},
+/obj/structure/nest/mob/supermutant/nightkin/mutcastle,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
 "nQi" = (
@@ -21410,12 +21297,9 @@
 /obj/structure/railing{
 	layer = 3.3
 	},
-/obj/structure/car/rubbish1{
-	icon_state = "fix2_4";
-	icon = 'icons/obj/machines/gravity_generator.dmi';
+/obj/structure/car/junk/generator/alt{
 	layer = 3.2;
 	pixel_y = 2;
-	name = "generator";
 	desc = null;
 	pixel_x = -1
 	},
@@ -21488,7 +21372,7 @@
 "nTQ" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/cola)
@@ -21878,11 +21762,8 @@
 /turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
 "ofY" = (
-/obj/structure/car/rubbish6{
-	dir = 8;
-	icon_state = "car_rubish7";
-	bound_height = 64;
-	bound_width = 64
+/obj/structure/car/rubbish7{
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -22087,17 +21968,6 @@
 /obj/item/toy/plush/snakeplushie,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
-"oox" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/ground/outside/roof{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "floorgrime";
-	name = "floor"
-	},
-/area/f13/factory)
 "ooG" = (
 /obj/structure/fermenting_barrel,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -22617,9 +22487,8 @@
 /obj/item/reagent_containers/food/snacks/f13/canned/ncr/mirelurk_filets{
 	pixel_y = 4
 	},
-/obj/structure/nest/radroach{
+/obj/structure/nest/spawner/radroach{
 	layer = 2;
-	max_mobs = 1;
 	pixel_y = 3
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -23159,8 +23028,14 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "oVr" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/indestructible/ground/outside/road/verticalleftborder,
+/obj/structure/nest/mob/giantant{
+	dir = 8;
+	pixel_x = 32;
+	pixel_y = 13
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright2top"
+	},
 /area/f13/wasteland)
 "oVB" = (
 /obj/structure/barricade/bars{
@@ -23592,11 +23467,8 @@
 	},
 /area/f13/wasteland)
 "pkn" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/objects/wendover.dmi';
+/turf/closed/indestructible/f13/matrix/wendover{
 	icon_state = "hills";
-	plane = -15;
-	sunlight_state = 1;
 	dir = 5
 	},
 /area/f13/wasteland)
@@ -23856,7 +23728,7 @@
 	pixel_x = 29
 	},
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plating/tunnel,
@@ -24008,10 +23880,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ptL" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "KWI Broadcasting"
-	},
+/obj/structure/simple_door/metal/store,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/building)
@@ -24682,16 +24551,15 @@
 	},
 /area/f13/wasteland)
 "pUo" = (
-/mob/living/simple_animal/hostile/gecko{
-	dir = 4;
-	aggro_vision_range = 7
+/obj/structure/railing/wood{
+	pixel_x = 16;
+	pixel_y = -1;
+	layer = 2.91
 	},
-/obj/structure/chair/stool/f13stool{
-	color = "#5c4a3a";
-	buildstacktype = /obj/item/stack/sheet/mineral/wood;
-	name = "wood stool"
+/obj/structure/fence/wooden/side{
+	layer = 2.91
 	},
-/turf/open/indestructible/ground/outside/dirt/east,
+/turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "pUw" = (
 /turf/open/indestructible/ground/outside/road{
@@ -24778,13 +24646,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
-"pXf" = (
-/mob/living/simple_animal/hostile/giantant,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 6;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "pXk" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -25072,6 +24933,10 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/tunnel)
+"qfe" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/wood/f13/lit,
+/area/f13/wasteland)
 "qfh" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -25415,8 +25280,7 @@
 /mob/living/simple_animal/hostile/radroach{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/old,
@@ -25470,8 +25334,7 @@
 /turf/open/transparent/glass,
 /area/f13/planetarium)
 "qsy" = (
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	wander = 0;
+/obj/structure/nest/mob/supermutant/melee{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -26076,8 +25939,7 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "qIA" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -26300,10 +26162,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/wasteland)
 "qOb" = (
-/obj/structure/simple_door/glass{
-	icon_state = "store";
-	name = "glass door"
-	},
+/obj/structure/simple_door/metal/store,
 /turf/open/floor/carpet/green{
 	sunlight_state = 1
 	},
@@ -26618,10 +26477,7 @@
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
 "qVW" = (
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	wander = 0;
-	faction = list("deathclaw")
-	},
+/obj/structure/nest/mob/supermutant/melee/mutcastle,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
@@ -26788,12 +26644,6 @@
 	smooth = 0
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
-"rbc" = (
-/mob/living/simple_animal/radstag{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "rbv" = (
 /obj/structure/bed/old{
@@ -27909,8 +27759,9 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "rHX" = (
-/mob/living/simple_animal/hostile/gecko/firegecko{
-	dir = 1
+/obj/structure/nest/mob/giantant{
+	dir = 8;
+	pixel_y = -13
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -28403,10 +28254,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "rXc" = (
-/obj/structure/simple_door/glass{
-	icon_state = "glassclosing";
-	hard_open = 1
-	},
+/obj/structure/simple_door/glass,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/yellow,
 /area/f13/building)
@@ -28458,9 +28306,8 @@
 /obj/item/melee/onehanded/club/tireiron{
 	pixel_y = 6
 	},
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -28808,9 +28655,7 @@
 /turf/open/transparent/openspace/air,
 /area/f13/building)
 "shB" = (
-/mob/living/simple_animal/hostile/bloatfly{
-	wander = 0
-	},
+/obj/structure/nest/mob/bloatfly,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/wasteland)
 "shD" = (
@@ -29248,7 +29093,7 @@
 	},
 /area/f13/movietheater)
 "ssj" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclehor{
 	dir = 4;
 	bound_height = 64;
 	pixel_x = -16
@@ -29818,7 +29663,7 @@
 "sNo" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /obj/machinery/light{
 	dir = 1
@@ -29850,10 +29695,8 @@
 /obj/structure/chair/f13foldupchair{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/ghoul/glowing{
-	dir = 8;
-	wander = 0;
-	loot = list(/obj/item/pda)
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
@@ -30187,13 +30030,11 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
 "sXP" = (
-/mob/living/simple_animal/hostile/bloatfly{
-	wander = 0;
+/obj/structure/nest/mob/radstag{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/oak/lit,
-/area/f13/building)
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "sYq" = (
 /obj/machinery/smartfridge/bottlerack{
 	pixel_y = -1;
@@ -30293,18 +30134,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/tunnel)
 "tdw" = (
-/obj/structure/nest/molerat{
+/obj/structure/nest/spawner/molerat{
 	plane = -16;
 	name = "canyon";
-	spawn_time = 1000;
-	mob_types = list(/mob/living/simple_animal/hostile/retaliate/goat/bighorn)
+	mob_types = list(/mob/living/simple_animal/hostile/retaliate/goat/bighorn);
+	max_mobs = 3
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "wasteland";
-	plane = -15;
-	sunlight_state = 1
-	},
+/turf/closed/indestructible/f13/matrix/desert,
 /area/f13/wasteland)
 "tdH" = (
 /turf/closed/wall/mineral/wood/nonmetal,
@@ -30502,7 +30338,7 @@
 /area/f13/building)
 "tkt" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/cazador{
+/obj/structure/nest/spawner/cazador{
 	layer = 2.1;
 	max_mobs = 3
 	},
@@ -30606,7 +30442,7 @@
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/wasteland)
 "tnn" = (
-/obj/structure/car/motoryclehor{
+/obj/structure/car/motoryclevert{
 	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -30691,6 +30527,12 @@
 	smooth = 0
 	},
 /area/f13/building)
+"toK" = (
+/obj/structure/girder,
+/turf/open/floor/wood/f13/housewoodbroken2{
+	sunlight_state = 1
+	},
+/area/f13/wasteland)
 "tpc" = (
 /obj/structure/fence/wooden{
 	pixel_x = 13
@@ -31198,6 +31040,11 @@
 "tHr" = (
 /turf/open/floor/f13/lit,
 /area/f13/building)
+"tHt" = (
+/obj/structure/girder,
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "tHV" = (
 /obj/effect/decal/remains/human,
 /obj/effect/spawner/lootdrop/f13/armor/clothes/postwar,
@@ -31694,9 +31541,8 @@
 /obj/item/restraints/handcuffs/cable{
 	pixel_y = 4
 	},
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -31729,11 +31575,8 @@
 /turf/open/indestructible/ground/outside/mountain,
 /area/f13/wasteland)
 "tYM" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/objects/wendover.dmi';
+/turf/closed/indestructible/f13/matrix/wendover{
 	icon_state = "hills";
-	plane = -15;
-	sunlight_state = 1;
 	dir = 10
 	},
 /area/f13/wasteland)
@@ -31765,9 +31608,8 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
 "uai" = (
-/obj/structure/car/motoryclevert{
+/obj/structure/car/motoryclevert/light{
 	pixel_x = -16;
-	icon_state = "rust_light_no_wheels";
 	pixel_y = -8;
 	layer = 3
 	},
@@ -32307,8 +32149,7 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "upL" = (
-/mob/living/simple_animal/hostile/giantant{
-	wander = 0;
+/obj/structure/nest/mob/giantant{
 	dir = 8
 	},
 /turf/open/floor/carpet/arcade,
@@ -32554,13 +32395,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "uwe" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "junk_olive";
+/obj/structure/car/totaledbuggy/olive{
 	dir = 8;
 	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert/edge/hills/seven,
 /area/f13/wasteland)
@@ -32659,8 +32497,7 @@
 	},
 /area/f13/wasteland)
 "uCP" = (
-/mob/living/simple_animal/hostile/radroach{
-	wander = 0;
+/obj/structure/nest/mob/radroach{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -32905,10 +32742,7 @@
 	},
 /area/f13/wasteland)
 "uJZ" = (
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	wander = 0;
-	faction = list("deathclaw")
-	},
+/obj/structure/nest/mob/supermutant/melee/mutcastle,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
 "uKB" = (
@@ -32964,9 +32798,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/wasteland)
 "uMb" = (
-/mob/living/simple_animal/hostile/wolf/cold{
-	dir = 8;
-	wander = 0
+/obj/structure/nest/mob/wolf{
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -33061,15 +32894,7 @@
 	pixel_y = -8;
 	pixel_x = 5
 	},
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "uPe" = (
 /obj/structure/chair/wood/worn{
@@ -33188,7 +33013,7 @@
 /area/f13/wasteland)
 "uRV" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/building)
@@ -33417,15 +33242,7 @@
 	},
 /area/f13/wasteland)
 "uXj" = (
-/turf/open/indestructible/ground/outside/fakeelevation{
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi';
-	icon_state = "tunnel0";
-	icon_type_smooth = "tunnel";
-	smooth = 32;
-	blocked_direction = list(1,4,5);
-	name = "paint wall";
-	opacity = 1
-	},
+/turf/open/floor/f13/paintwall,
 /area/f13/tunnel)
 "uXA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -33497,9 +33314,8 @@
 "vav" = (
 /obj/structure/junk/small/bed2,
 /obj/structure/dresser,
-/obj/structure/nest/radroach{
-	layer = 2;
-	max_mobs = 1
+/obj/structure/nest/spawner/radroach{
+	layer = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
@@ -33574,7 +33390,7 @@
 	aggro_vision_range = 4;
 	vision_range = 7
 	},
-/obj/structure/nest/gecko{
+/obj/structure/nest/spawner/gecko{
 	layer = 2.7
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -33800,9 +33616,7 @@
 /obj/structure/bed/old{
 	icon_state = "mattress2"
 	},
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	wander = 0
-	},
+/obj/structure/nest/mob/supermutant/melee,
 /turf/open/floor/f13/yellow,
 /area/f13/building)
 "vlz" = (
@@ -34128,6 +33942,16 @@
 /obj/machinery/computer/card/ncr{
 	dir = 4
 	},
+/obj/machinery/button/door{
+	pixel_x = 6;
+	id = "bearley";
+	pixel_y = 32
+	},
+/obj/machinery/button/door{
+	pixel_x = 6;
+	id = "bearleyment";
+	pixel_y = 22
+	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "vwQ" = (
@@ -34291,7 +34115,7 @@
 /area/f13/ncr)
 "vBV" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /turf/open/floor/plasteel/asteroid,
 /area/f13/wasteland)
@@ -35254,22 +35078,11 @@
 	layer = 3.7;
 	icon_state = "gib1r-overlay"
 	},
-/obj/structure/nest/radroach{
+/obj/structure/nest/spawner/radroach{
 	layer = 2;
-	max_mobs = 1;
 	pixel_y = -8
 	},
 /turf/open/floor/carpet/green,
-/area/f13/building)
-"wfo" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/fireant{
-	dir = 8
-	},
-/turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "wfR" = (
 /obj/structure/window/fulltile/house,
@@ -35359,13 +35172,8 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/building)
 "whO" = (
-/obj/structure/car/rubbish1{
-	icon = 'icons/obj/power.dmi';
-	icon_state = "smes";
-	name = "broken electrical equipment";
+/obj/structure/car/junk/smes{
 	desc = null;
-	bound_height = 32;
-	bound_width = 32;
 	pixel_y = 1;
 	layer = 2.1
 	},
@@ -35567,7 +35375,7 @@
 /turf/open/floor/wood/f13/old/ruinedstraightnorth,
 /area/f13/wasteland)
 "woS" = (
-/obj/structure/nest/molerat{
+/obj/structure/nest/spawner/molerat{
 	pixel_y = 33;
 	pixel_x = 2;
 	max_mobs = 2
@@ -35717,12 +35525,10 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "wuh" = (
-/obj/structure/car/rubbish2{
+/obj/structure/car/derelict/alt{
 	icon_state = "derelict";
-	icon = 'icons/fallout/vehicles/medium_vehicles.dmi';
-	pixel_y = -2;
-	dir = 8;
-	bound_height = 32
+	pixel_y = -5;
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/road/damagedvert,
 /area/f13/wasteland)
@@ -36269,7 +36075,7 @@
 /turf/open/transparent/openspace/air,
 /area/f13/tunnel)
 "wKn" = (
-/obj/structure/nest/gecko{
+/obj/structure/nest/spawner/gecko{
 	layer = 2.7;
 	pixel_y = 33;
 	pixel_x = 2;
@@ -36480,6 +36286,14 @@
 	pixel_x = -14
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
+"wPk" = (
+/obj/structure/nest/mob/giantant{
+	dir = 4;
+	pixel_x = -39;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "wPs" = (
 /obj/machinery/processor,
@@ -37125,7 +36939,7 @@
 /area/f13/building)
 "xfF" = (
 /obj/structure/railing{
-	layer = 4.1
+	layer = 4.25
 	},
 /obj/structure/debris/v3{
 	plane = -5;
@@ -37320,7 +37134,7 @@
 /area/f13/building)
 "xkK" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/wolf{
+/obj/structure/nest/spawner/wolf{
 	layer = 2;
 	plane = -15;
 	mob_types = list(/mob/living/simple_animal/hostile/wolf=1,/mob/living/simple_animal/hostile/wolf/cold=5)
@@ -37508,16 +37322,12 @@
 	dir = 8;
 	layer = 2.7
 	},
-/obj/structure/car/rubbish6{
-	icon = 'icons/mob/nest_new.dmi';
-	icon_state = "scanner_modified";
-	name = "Empty Protectron Pod";
+/obj/structure/car/junk/pod{
 	desc = null;
 	pixel_x = 3;
 	layer = 3.1
 	},
-/obj/structure/nest/protectron{
-	max_mobs = 1;
+/obj/structure/nest/spawner/protectron{
 	pixel_x = 3
 	},
 /turf/open/floor/f13/lit,
@@ -37786,13 +37596,10 @@
 	},
 /area/f13/wasteland)
 "xAx" = (
-/mob/living/simple_animal/hostile/giantant{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain1"
-	},
-/area/f13/wasteland)
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/structure/nest/mob/giantant,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "xAJ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/wood/f13/old,
@@ -37854,8 +37661,7 @@
 	icon_state = "tracks";
 	dir = 6
 	},
-/mob/living/simple_animal/hostile/supermutant/meleemutant{
-	wander = 0;
+/obj/structure/nest/mob/supermutant/melee{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -38236,19 +38042,8 @@
 /turf/open/floor/carpet/arcade,
 /area/f13/building)
 "xRN" = (
-/obj/structure/nest/ghoul{
-	icon = 'icons/fallout/mobs/humans/ghouls.dmi';
-	icon_state = "feralghoul_dead";
-	layer = 2.1;
-	spawn_text = null;
-	name = "car";
-	mob_types = list(/mob/living/simple_animal/hostile/ghoul=5);
-	dir = 4;
-	desc = null;
-	pixel_y = -6;
-	max_mobs = 1;
-	spawn_time = 100;
-	pixel_x = 4
+/obj/structure/nest/mob/ghoulcozy{
+	pixel_x = 9
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop1"
@@ -38268,7 +38063,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xSg" = (
-/obj/structure/nest/molerat{
+/obj/structure/nest/spawner/molerat{
 	layer = 2.5;
 	max_mobs = 2
 	},
@@ -38510,7 +38305,9 @@
 /area/f13/building)
 "xVT" = (
 /obj/structure/railing{
-	dir = 8
+	dir = 8;
+	pixel_y = 3;
+	pixel_x = -4
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -38562,14 +38359,11 @@
 /area/f13/building)
 "xYG" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/supermutant/rangedmutant{
+/obj/structure/nest/mob/supermutant/ranged/mutcastle{
 	dir = 4;
-	wander = 0;
-	faction = list("deathclaw");
-	loot = list(/obj/item/ammo_box/a308,/obj/item/gun/ballistic/rifle/hunting);
-	aggro_vision_range = 3;
 	pixel_x = -11;
-	pixel_y = -3
+	pixel_y = -3;
+	layer = 4
 	},
 /turf/open/floor/plasteel/f13{
 	name = "floor"
@@ -41043,7 +40837,7 @@ mfk
 mfk
 mfk
 mfk
-xSg
+vRv
 ukY
 qxq
 mfk
@@ -41300,7 +41094,7 @@ qxq
 mfk
 mfk
 mfk
-vRv
+xSg
 vRv
 qxq
 mfk
@@ -41557,7 +41351,7 @@ qxq
 qxq
 mfk
 mfk
-gWf
+vRv
 qxq
 mfk
 mfk
@@ -49575,7 +49369,7 @@ bJI
 sEW
 lyT
 aIu
-dor
+aIu
 aIu
 xBD
 aIu
@@ -50091,7 +49885,7 @@ aIu
 aIu
 aIu
 aIu
-xBD
+upA
 aIu
 aIu
 uuU
@@ -51272,7 +51066,7 @@ gbn
 taU
 gbn
 wVL
-xVT
+cGZ
 xVT
 dbv
 oVJ
@@ -52674,7 +52468,7 @@ qgq
 rGF
 wFg
 unu
-kUD
+unu
 rGF
 mVE
 mVE
@@ -52913,7 +52707,7 @@ aIu
 ebi
 aIu
 aIu
-aIu
+rHX
 ebi
 iOL
 aIu
@@ -53159,7 +52953,7 @@ kct
 rGg
 rGg
 rGg
-pXf
+qsW
 bJI
 qsI
 aIu
@@ -54203,7 +53997,7 @@ wdi
 kBe
 aIu
 aIu
-xBD
+upA
 aIu
 aIu
 aIu
@@ -55237,14 +55031,14 @@ iFH
 iFH
 iFH
 iFH
+iFH
+iFH
+iFH
+iFH
+iFH
+iFH
+iFH
 oVr
-iFH
-iFH
-iFH
-iFH
-iFH
-iFH
-rZF
 rLr
 drZ
 iFH
@@ -55978,7 +55772,7 @@ mfk
 aIu
 ryR
 fEt
-bJI
+wPk
 bJI
 bJI
 bJI
@@ -57007,7 +56801,7 @@ mfk
 aIu
 aIu
 bFA
-ich
+fEt
 bJI
 bJI
 qsI
@@ -57019,7 +56813,7 @@ wxJ
 nzU
 nzU
 wxJ
-lSB
+wxJ
 kBe
 kBe
 kBe
@@ -57532,7 +57326,7 @@ wxJ
 uSs
 bOd
 vmp
-uSs
+kUD
 fkM
 tOW
 jHu
@@ -60621,7 +60415,7 @@ eVM
 kBe
 blN
 alQ
-wfo
+lYB
 rQF
 tSb
 hQU
@@ -60880,7 +60674,7 @@ hQU
 dID
 mRT
 qPp
-mRT
+lHz
 hQU
 kBe
 aIu
@@ -61112,7 +60906,7 @@ ldf
 "}
 (87,1,1) = {"
 pAl
-mfk
+xAx
 vRv
 vRv
 qxq
@@ -61370,7 +61164,7 @@ ldf
 (88,1,1) = {"
 pAl
 mfk
-lHz
+dtF
 vRv
 qxq
 mfk
@@ -61641,7 +61435,7 @@ sPA
 gbn
 eVM
 eVM
-xAx
+eVM
 gbn
 gbn
 gbn
@@ -62948,7 +62742,7 @@ tMP
 lhV
 lhV
 noc
-hJp
+lhV
 lhV
 lhV
 lhV
@@ -64504,7 +64298,7 @@ hro
 hro
 ltC
 fNh
-xBD
+jau
 aIu
 aIu
 mWI
@@ -64761,7 +64555,7 @@ hro
 hro
 ltC
 fNh
-xBD
+jau
 aIu
 aIu
 aIu
@@ -65018,7 +64812,7 @@ hro
 hro
 ltC
 fNh
-xBD
+jau
 aIu
 aIu
 aIu
@@ -65275,7 +65069,7 @@ hro
 xWx
 xQO
 fNh
-xBD
+jau
 fDG
 aIu
 aIu
@@ -65532,7 +65326,7 @@ xWx
 hrH
 xQO
 fNh
-qrB
+pUo
 tEK
 aIu
 aIu
@@ -65789,7 +65583,7 @@ vRI
 oMF
 xQO
 fNh
-jnD
+gWf
 aIu
 aIu
 aIu
@@ -66255,7 +66049,7 @@ pAl
 mfk
 vRv
 mfk
-moU
+vRv
 vRv
 wMZ
 mfk
@@ -66509,7 +66303,7 @@ ldf
 "}
 (108,1,1) = {"
 pAl
-mfk
+xAx
 vRv
 mfk
 vRv
@@ -69406,7 +69200,7 @@ rqo
 rqo
 rqo
 vLg
-jau
+vLg
 vLg
 vLg
 vLg
@@ -70177,7 +69971,7 @@ rqo
 rqo
 rqo
 bwA
-vLg
+neu
 rGF
 wxw
 rGF
@@ -70695,7 +70489,7 @@ wxw
 rGF
 pMh
 uXY
-ltd
+uXY
 pnd
 rGF
 rGF
@@ -72236,7 +72030,7 @@ rGF
 pnd
 uXY
 uXY
-sXP
+uXY
 uXY
 uXY
 uXY
@@ -72719,7 +72513,7 @@ aIu
 aIu
 aIu
 ryR
-xPD
+gAw
 aIu
 aIu
 aIu
@@ -73758,9 +73552,9 @@ fEt
 oya
 vVN
 oya
-bJI
+dqu
 lkH
-pUo
+xCz
 xCz
 rMz
 aIu
@@ -73990,7 +73784,7 @@ aIu
 aIu
 aIu
 gkc
-bDl
+bNY
 dyb
 aIu
 gkc
@@ -73999,7 +73793,7 @@ dyb
 aIu
 aIu
 aIu
-gAw
+aIu
 aIu
 aIu
 aIu
@@ -74503,7 +74297,7 @@ aIu
 aIu
 aIu
 aIu
-rHX
+aIu
 aIu
 aIu
 aIu
@@ -75020,13 +74814,13 @@ aIu
 aIu
 aIu
 aIu
-xPD
+eTs
 syi
 aIu
 aIu
 aIu
 aIu
-aIu
+gxU
 aIu
 aIu
 ryR
@@ -75537,7 +75331,7 @@ aIu
 aIu
 aIu
 aIu
-dqu
+aIu
 aIu
 aIu
 aIu
@@ -79917,7 +79711,7 @@ mfk
 aIu
 aIu
 aIu
-hBG
+aIu
 aIu
 rom
 rqo
@@ -80090,7 +79884,7 @@ vsc
 afo
 brL
 sqt
-oox
+sqt
 sqt
 sqt
 aMM
@@ -80432,7 +80226,7 @@ aIu
 ryR
 aIu
 aIu
-aIu
+hJp
 kkx
 llN
 mfk
@@ -84993,7 +84787,7 @@ rqo
 rqo
 rqo
 ktc
-hmQ
+kRj
 kRj
 pyJ
 jeb
@@ -85004,7 +84798,7 @@ rqo
 lYR
 jww
 rti
-jKa
+rti
 tSn
 rti
 jhl
@@ -85251,7 +85045,7 @@ rqo
 rqo
 kwz
 kRj
-kRj
+hmQ
 leQ
 rti
 osh
@@ -85260,7 +85054,7 @@ rqo
 rqo
 caR
 lYR
-tSn
+gmE
 rti
 rti
 xSF
@@ -85515,7 +85309,7 @@ kRj
 rqo
 rqo
 rqo
-vjv
+toK
 lYR
 rti
 rti
@@ -85772,7 +85566,7 @@ kRj
 ocs
 ocs
 ocs
-kRj
+qfe
 rti
 rti
 rti
@@ -86029,7 +85823,7 @@ kRj
 ocs
 ocs
 ocs
-kRj
+ezw
 rti
 xSF
 rti
@@ -86059,7 +85853,7 @@ aIu
 aIu
 aIu
 aIu
-rbc
+aIu
 aIu
 aIu
 aIu
@@ -86286,7 +86080,7 @@ kRj
 ocs
 ocs
 ocs
-ocs
+jKa
 rti
 rti
 rti
@@ -86543,8 +86337,8 @@ kRj
 rqo
 rqo
 rqo
-rqo
-rqo
+tHt
+tHt
 ceb
 tyH
 eDH
@@ -86576,7 +86370,7 @@ aIu
 aIu
 aIu
 aIu
-aIu
+sXP
 ebi
 ebi
 aIu
@@ -87307,9 +87101,9 @@ rqo
 rqo
 kwz
 kRj
-vjv
-kRj
-kRj
+dvf
+dsA
+dsA
 tkG
 rqo
 rqo
@@ -87564,7 +87358,7 @@ rqo
 rqo
 kwz
 kRj
-kRj
+dsA
 kRj
 kRj
 fQk
@@ -89922,7 +89716,7 @@ vRv
 mfk
 mfk
 aIf
-sIM
+dor
 lZA
 vRv
 vRv
@@ -91210,7 +91004,7 @@ mfk
 mfk
 mfk
 bVe
-bNY
+eNw
 afc
 mfk
 mfk
@@ -97372,7 +97166,7 @@ uUg
 gWG
 aIu
 aIu
-hBG
+ich
 aIu
 aIu
 xIQ

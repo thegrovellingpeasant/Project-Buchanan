@@ -274,6 +274,14 @@
 	faction = list("raider")
 	obj_damage = 300
 
+/mob/living/simple_animal/hostile/handy/protectron/damaged
+	name = "damaged protectron"
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
+	icon_state = "protectron_dead"
+	icon_living = "protectron_dead"
+	ranged = FALSE
+	speed = 8
+
 /mob/living/simple_animal/hostile/handy/protectron/dam1 // broken display models
 	name = "damaged protectron"
 	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
@@ -312,6 +320,14 @@
 	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
 	speak = list("Welcome to the REPCONN: 'Blast Off to the Future!' exhibit.","The future is bright, RobCo and REPCONN will bring us there together!","The Extravehicular Mobility Unit MKI, seen on the left, saw frequent use by NASA through the 20th century!","The MKII space suit, designed in collaboration by RobCo and REPCONN continues the proud tradition of American space exploration!","♫I was strolling on the Moon one day...♫","*Bzzt* Did you ᵏⁿᵒʷ the Eighties were the first tribe in space?","Proud partners of Nuka Cola, make sure to see Nuka Girl for your complimentary bottle. And see her in theaters soon!")
 	speak_chance = 10
+
+/mob/living/simple_animal/hostile/handy/protectron/construction
+	name = "construction protectron"
+	icon_state = "Patribot_Worker"
+	icon_living = "Patribot_Worker"
+	icon_dead = "protectron_k_d"
+	ranged = FALSE
+	speed = 0.8
 
 /mob/living/simple_animal/bearacle //Not an actual bear
 	name = "The Bearacle"

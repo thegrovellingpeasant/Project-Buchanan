@@ -227,7 +227,22 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	name = "matrix"
 	desc = "<font color='#6eaa2c'>You suddenly realize the truth - there is no spoon.<br>Digital simulation ends here.</font>"
 	icon_state = "matrix"
+	sunlight_state = SUNLIGHT_SOURCE
+	opacity = FALSE
+	plane = FLOOR_PLANE
 	var/in_use = FALSE
+
+/turf/closed/indestructible/f13/matrix/saltflats
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow"
+
+/turf/closed/indestructible/f13/matrix/desert
+	icon = 'icons/fallout/turfs/ground.dmi'
+	icon_state = "wasteland"
+
+/turf/closed/indestructible/f13/matrix/wendover
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "gravelsiding"
 
 /turf/closed/indestructible/f13/matrix/MouseDrop_T(atom/dropping, mob/user)
 	. = ..()

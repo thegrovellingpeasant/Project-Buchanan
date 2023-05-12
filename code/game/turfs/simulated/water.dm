@@ -38,11 +38,13 @@
 			return
 		if(!istype(oldloc, /turf/open/water))
 			to_chat(L, "<span class='warning'>You get drenched in water!</span>")
+		playsound(src, "water_wade", 20, TRUE)
 	if(istype(AM, /mob/living && !/mob/living/carbon/human))
 		var/mob/living/U = AM
 		U.update_water()
 		if(U.check_submerged() <= 0)
 			return
+		playsound(src, "water_wade", 20, TRUE)
 	if(istype(AM, /obj/vehicle))
 		var/obj/vehicle/V = AM
 		V.vehicle_update_water()

@@ -850,6 +850,7 @@
 	pixel_z = 0
 
 /obj/machinery/hydroponics/soil/flat/dark
+	name = "soil"
 	icon = 'icons/fallout/turfs/ground.dmi'
 	icon_state = "dirtfull"
 

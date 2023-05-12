@@ -324,6 +324,16 @@
 	layer = VISIBLE_FROM_ABOVE_LAYER
 	pixel_y = -1
 
+/obj/effect/overlay/stair
+	name = "stairs"
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "stairs"
+	color = "#faf0b9"
+	plane = FLOOR_PLANE
+	layer = OBJ_LAYER
+	pixel_y = 1
+	dir = NORTH
+
 /obj/effect/overlay/cross
 	name = "canopy"
 	icon = 'icons/obj/graveyard.dmi'

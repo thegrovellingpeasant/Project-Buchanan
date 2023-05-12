@@ -124,3 +124,15 @@
 	attack_verb_simple = "blast"
 	attack_sound = 'sound/weapons/sonic_jackhammer.ogg'
 	loot = list(/obj/effect/decal/remains/plasma, /obj/item/pickaxe/drill/jackhammer)
+
+/mob/living/simple_animal/hostile/skeleton/traumaharness
+	name = "Y-17 Trauma Override Harness"
+	desc = "A skeleton trapped in a strange red suit."
+	icon_state = "traumaharnessbutshitty"
+	icon_living = "traumaharnessbutshitty"
+	icon_dead = "traumaharnessbutshitty"
+	maxHealth = 150
+	health = 150
+	melee_damage_lower = 20
+	melee_damage_upper = 25
+	faction = list("hostile","vines","plants","Syndicate","gecko")

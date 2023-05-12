@@ -1,6 +1,6 @@
 /datum/crafting_recipe/roulette
 	name = "Roulette Table"
-	result = /obj/structure/roulettetable
+	result = /obj/structure/table/roulette
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
 				/obj/item/stack/sheet/cloth = 5,
 				/obj/item/stack/sheet/metal = 5)
@@ -9,32 +9,27 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
-/obj/structure/roulettetable
+/obj/structure/table/roulette
 	name = "roulette table"
 	desc = "A table with a roulette wheel. The wheel is of a 'single zero' design."
 	icon = 'icons/fallout/machines/64x32.dmi'
 	icon_state = "roulette"
-	density = TRUE
-	anchored = TRUE
 	layer = TABLE_LAYER
-	climbable = TRUE
-	obj_flags = CAN_BE_HIT|SHOVABLE_ONTO
-	pass_flags = LETPASSTHROW
-	pass_flags_self = PASSTABLE
+	smooth = SMOOTH_FALSE
 	max_integrity = 100
 	bound_width = 64
 	var/working = FALSE
 	var/result
 	var/spin_timer = 30
 
-/obj/structure/roulettetable/wrench_act(mob/living/user, obj/item/I)
+/obj/structure/table/roulette/wrench_act(mob/living/user, obj/item/I)
 	if(working)
 		to_chat(user, "<span class='warning'>You cannot unwrench the table during operation!</span>")
 		return FALSE
 	default_unfasten_wrench(user, I)
 	return TRUE
 
-/obj/structure/roulettetable/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
+/obj/structure/table/roulette/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(working)
 		to_chat(user, "<span class='warning'>The wheel is already spinning!</span>")
 		return
@@ -43,10 +38,11 @@
 		return
 	spinroulettewheel(user)
 
-/obj/structure/roulettetable/proc/spinroulettewheel(mob/user)
+/obj/structure/table/roulette/proc/spinroulettewheel(mob/user)
 	visible_message("<span class='notice'>[user] spins the roulette wheel!</span>")
 	working = TRUE
 	update_icon()
+	playsound(src, 'sound/f13machines/roulette_wheel.ogg', 50, 1)
 
 	spawn(spin_timer)
 		result = rand(0,36)
@@ -62,9 +58,8 @@
 		working = FALSE
 		update_icon()
 
-/obj/structure/roulettetable/update_icon_state()
+/obj/structure/table/roulette/update_icon()
 	if(working)
 		icon_state = "roulette_act"
 	else
 		icon_state = "roulette"
-

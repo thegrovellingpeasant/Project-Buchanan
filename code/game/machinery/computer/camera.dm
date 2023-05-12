@@ -214,6 +214,18 @@
 	network = list("ss13", "labor")
 	circuit = null
 
+/obj/machinery/computer/security/enclave
+	name = "\improper Overwatch camera console"
+	desc = "A custom security console connected to a Vault's camera network"
+	icon = 'icons/obj/computer.dmi'
+	icon_state = "enclave"
+	icon_keyboard = "enclave_key"
+	icon_screen = "enclave_on"
+	network = list("labor")
+	connectable = FALSE
+	density = FALSE
+	circuit = null
+
 /obj/machinery/computer/security/labor
 	name = "labor camp monitoring"
 	desc = "Used to access the various cameras on the labor camp."

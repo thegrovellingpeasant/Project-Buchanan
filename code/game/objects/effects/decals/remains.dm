@@ -73,7 +73,7 @@
 	icon_state = "haybale"
 	drop_amount = 2
 	plane = GAME_PLANE
-	layer = OBJ_LAYER
+	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
 	debris_result = list(/obj/item/stack/sheet/hay/five)
 
 /obj/effect/decal/remains/nest
@@ -83,7 +83,7 @@
 	icon_state = "pit"
 	drop_amount = 3
 	plane = GAME_PLANE
-	layer = OBJ_LAYER
+	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
 	debris_result = list(/obj/item/reagent_containers/food/snacks/egg)
 
 /obj/effect/decal/remains/rock

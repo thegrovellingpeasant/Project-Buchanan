@@ -260,3 +260,7 @@
 	aggrosound = list('sound/f13npc/molerat/aggro1.ogg', 'sound/f13npc/molerat/aggro2.ogg',)
 	idlesound = list('sound/f13npc/molerat/idle.ogg')
 	death_sound = 'sound/f13npc/molerat/death.ogg'
+
+/mob/living/simple_animal/hostile/molerat/civilwar
+	name = "molerat"
+	faction = list("deathclaw")

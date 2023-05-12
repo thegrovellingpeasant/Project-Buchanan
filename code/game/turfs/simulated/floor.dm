@@ -15,9 +15,9 @@
 	var/icon_plating = "plating"
 	thermal_conductivity = 0.04
 	heat_capacity = 10000
-	intact = 1
-	var/broken = 0
-	var/burnt = 0
+	intact = TRUE
+	var/broken = FALSE
+	var/burnt = FALSE
 	var/floor_tile = null //tile that this floor drops
 	var/list/broken_states
 	var/list/burnt_states
@@ -125,7 +125,7 @@
 	if(broken)
 		return
 	icon_state = pick(broken_states)
-	broken = 1
+	broken = TRUE
 
 /turf/open/floor/burn_tile()
 	if(broken || burnt)
@@ -134,7 +134,7 @@
 		icon_state = pick(burnt_states)
 	else
 		icon_state = pick(broken_states)
-	burnt = 1
+	burnt = TRUE
 
 /turf/open/floor/proc/make_plating()
 	return ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
@@ -181,8 +181,8 @@
 
 /turf/open/floor/proc/remove_tile(mob/user, silent = FALSE, make_tile = TRUE, forced = FALSE)
 	if(broken || burnt)
-		broken = 0
-		burnt = 0
+		broken = FALSE
+		burnt = FALSE
 		if(user && !silent)
 			to_chat(user, "<span class='notice'>You remove the broken plating.</span>")
 	else

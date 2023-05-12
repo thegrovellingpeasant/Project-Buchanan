@@ -41,7 +41,7 @@
 	new /obj/item/stack/medical/mesh/aloe(src)
 	new /obj/item/stack/medical/suture/emergency(src)
 	new /obj/item/flashlight/flare/torch(src)
-	new /obj/item/tank/internals/emergency_oxygen(src)
+	new /obj/item/flashlight(src)
 
 /obj/item/storage/survivalkit_outlaw
 	name = "survival kit"
@@ -83,7 +83,6 @@
 	new /obj/item/stack/medical/ointment(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/reagent_containers/pill/radx(src)
-	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/survivalkit_aid
 	name = "individual first aid kit"
@@ -102,7 +101,6 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/tank/internals/emergency_oxygen(src)
 
 /obj/item/storage/survivalkit_aid_adv
 	name = "advanced-individual first aid kit"

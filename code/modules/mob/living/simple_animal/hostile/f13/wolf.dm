@@ -48,7 +48,7 @@
 
 // Alpha dog
 /mob/living/simple_animal/hostile/wolf/alpha
-	name = "alpha feral dog"
+	name = "particularly mangy dog"
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>Wait... This one's a wolf!"
 	icon_state = "dog_alpha"
 	icon_living = "dog_alpha"
@@ -104,3 +104,11 @@
 	icon_living = "shepherd"
 	icon_dead = "shepherd_dead"
 	icon_gib = "gib"
+
+/mob/living/simple_animal/hostile/wolf/mutcastle
+	name = "mangy dog"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/wolf/alpha/mutcastle
+	name = "particularly mangy dog"
+	faction = list("deathclaw")

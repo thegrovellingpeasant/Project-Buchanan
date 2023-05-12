@@ -22,7 +22,7 @@
 /turf/open/floor/f13/wood/New()
 	..()
 	if(prob(5))
-		broken = 1
+		broken = TRUE
 		icon_state = pick(broken_states)
 	else
 		icon_state = "housewood[rand(1,4)]"
@@ -57,3 +57,22 @@
 
 /turf/open/floor/f13/yellow
 	icon_state = "yellowdirtyfull"
+
+/turf/open/floor/f13/paintwall
+	name = "paint wall"
+	icon = 'icons/fallout/turfs/walls/tunnel.dmi'
+	icon_state = "tunnel0"
+	icon_type_smooth = "tunnel"
+	opacity = TRUE
+	smooth = SMOOTH_OLD
+	sunlight_state = SUNLIGHT_SOURCE
+	canSmoothWith = list(/turf/open/floor/f13/paintwall)
+	var/blocked_dir = list(NORTH, EAST, NORTHEAST)
+
+/turf/open/floor/f13/paintwall/CanPass(atom/movable/mover, border_dir)
+    if(istype(mover) && (mover.pass_flags & PASSTABLE))
+        return !density
+    if(istype(mover) && (mover.dir in blocked_dir))
+        return density
+    else
+        return TRUE

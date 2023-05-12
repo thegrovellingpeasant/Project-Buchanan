@@ -11811,7 +11811,7 @@
 /turf/open/indestructible/ground/outside/road/damagedvert,
 /area/f13/wasteland)
 "FO" = (
-/obj/structure/nest/protectron{
+/obj/structure/nest/spawner/protectron{
 	layer = 2.6;
 	max_mobs = 1
 	},

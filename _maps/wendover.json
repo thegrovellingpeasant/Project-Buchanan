@@ -40,7 +40,7 @@
 		},
 		{
 			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
+			"Baseturf": "/turf/open/transparent/openspace/air",
 			"Down": -1,
 			"Linkage" : "Cross",
 			"Above": true

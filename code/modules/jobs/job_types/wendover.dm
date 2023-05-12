@@ -82,8 +82,8 @@ Mayor
 	r_pocket = /obj/item/flashlight/seclite
 	shoes = 		/obj/item/clothing/shoes/f13/tan
 	uniform = /obj/item/clothing/under/f13/cowboyt
-	suit = /obj/item/clothing/suit/armor/f13/modif_r_vest
-	head = /obj/item/clothing/head/f13/cowboy
+	suit = null
+	head = null
 	backpack_contents = list(
 		/obj/item/storage/box/citizenship_permits = 1, \
 		/obj/item/pda = 1,
@@ -91,15 +91,14 @@ Mayor
 		/obj/item/ammo_box/magazine/m10mm_adv/ext= 1,
 		)
 
-
 /datum/outfit/loadout/manofthepeople
 	name = "Frontier Leader"
 	backpack_contents = list(
-		/obj/item/clothing/suit/armor/f13/town/mayor = 1,
+		/obj/item/clothing/suit/armor/f13/modif_r_vest = 1,
 		/obj/item/clothing/under/f13/ranger/vet/thaxflannel = 1,
 		/obj/item/clothing/under/f13/ranger/vet/foxflannel = 1,
-		/obj/item/clothing/head/f13/town/mayor = 1,
-		/obj/item/gun/ballistic/revolver/m29/snub = 1,
+		/obj/item/clothing/head/f13/cowboy = 1,
+		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/ammo_box/m44 = 4,
 		/obj/item/clothing/shoes/f13/cowboy = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
@@ -110,8 +109,7 @@ Mayor
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/vault/v93 = 1,
 		/obj/item/clothing/shoes/jackboots = 1,
-		/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer = 1,
-		/obj/item/reagent_containers/food/drinks/flask/vault113,
+		/obj/item/reagent_containers/food/drinks/flask/vault93 = 1,
 		/obj/item/gun/energy/laser/pistol= 1,
 		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/clothing/head/helmet/riot/vaultsec = 1,

@@ -100,7 +100,49 @@
 		visible_message("<span class='danger'>\the [src] shouts something incoherent about brahmins for the last time and stops moving...</span>")
 	..()
 
-/mob/living/simple_animal/hostile/supermutant/meleemutant
+/mob/living/simple_animal/hostile/supermutant/vault
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "hulk_suicider_s"
+	icon_living = "hulk_suicider_s"
+	icon_dead = "hulk_113_s"
+
+/mob/living/simple_animal/hostile/supermutant/ncr
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "hulk_special_ncr"
+	icon_living = "hulk_special_ncr"
+	icon_dead = "supbearmutant"
+
+/mob/living/simple_animal/hostile/supermutant/legion
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "hulk_special_armor"
+	icon_living = "hulk_special_armor"
+	icon_dead = "hulk_special_armor"
+
+/mob/living/simple_animal/hostile/supermutant/pvt
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "mutant_private"
+	icon_living = "mutant_private"
+	icon_dead = "mutant_private"
+
+/mob/living/simple_animal/hostile/supermutant/eng
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "mutant_engineer"
+	icon_living = "mutant_engineer"
+	icon_dead = "mutant_engineer"
+
+/mob/living/simple_animal/hostile/supermutant/nco
+	desc = "A huge and ugly mutant humanoid."
+	icon = 'icons/fallout/mobs/supermutant.dmi'
+	icon_state = "mutant_NCO"
+	icon_living = "mutant_NCO"
+	icon_dead = "mutant_NCO"
+
+/mob/living/simple_animal/hostile/supermutant/melee
 	desc = "A huge and ugly mutant humanoid.  This one is brandishing a sledgehammer."
 	icon = 'icons/fallout/mobs/supermutant.dmi'
 	icon_state = "hulk_melee_s"
@@ -113,13 +155,13 @@
 	melee_damage_upper = 40
 	attack_sound = "hit_swing"
 
-/mob/living/simple_animal/hostile/supermutant/meleemutant/death(gibbed)
+/mob/living/simple_animal/hostile/supermutant/melee/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
 	..()
 
-/mob/living/simple_animal/hostile/supermutant/rangedmutant
+/mob/living/simple_animal/hostile/supermutant/ranged
 	desc = "A huge and ugly mutant humanoid.  This one is armed with a poorly maintained hunting rifle."
 	icon = 'icons/fallout/mobs/supermutant.dmi'
 	icon_state = "hulk_ranged_s"
@@ -132,9 +174,9 @@
 	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	loot = list(/obj/item/ammo_box/a308)
+	loot = list(/obj/item/ammo_box/a308, /obj/item/gun/ballistic/rifle/hunting)
 
-/mob/living/simple_animal/hostile/supermutant/rangedmutant/death(gibbed)
+/mob/living/simple_animal/hostile/supermutant/ranged/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
@@ -186,7 +228,7 @@
 	anchored = FALSE
 	..()
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged
 	name = "nightkin veteran"
 	desc = "A blue variant of the standard Super Mutant, equiped with steathboys.  This one is holding an Assault Rifle."
 	icon = 'icons/fallout/mobs/supermutant.dmi'
@@ -209,18 +251,18 @@
 	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	loot = list(/obj/item/ammo_box/magazine/m556/rifle)
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/Aggro()
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/Aggro()
 	..()
 	summon_backup(15)
 	alpha = 255
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/death(gibbed)
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
 	..()
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant
+/mob/living/simple_animal/hostile/supermutant/nightkin/elite
 	name = "nightkin elite"
 	desc = "A blue variant of the standard Super Mutant, and a remnant of the Masters Army."
 	icon = 'icons/fallout/mobs/supermutant.dmi'
@@ -242,19 +284,19 @@
 	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
 	loot = list(/obj/item/stock_parts/cell/ammo/mfc)
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/Aggro()
+/mob/living/simple_animal/hostile/supermutant/nightkin/elite/Aggro()
 	..()
 	summon_backup(15)
 	alpha = 255
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/death(gibbed)
+/mob/living/simple_animal/hostile/supermutant/nightkin/elite/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
 	..()
 
 //Cult Of Rain
-/mob/living/simple_animal/hostile/supermutant/meleemutant/rain
+/mob/living/simple_animal/hostile/supermutant/melee/rain
 	name = "super mutant rain cultist"
 	desc = "A super mutant covered in blue markings that has been indoctrinated into the Cult Of Rain. This one wields a sledgehammer blessed by the rain gods."
 	color = "#6B87C0"
@@ -266,7 +308,7 @@
 	melee_damage_lower = 50
 	melee_damage_upper = 70
 
-/mob/living/simple_animal/hostile/supermutant/rangedmutant/rain
+/mob/living/simple_animal/hostile/supermutant/ranged/rain
 	name = "super mutant rain cultist"
 	desc = "A super mutant covered in blue markings that has been indoctrinated into the Cult Of Rain. This one wields a hunting rifle blessed by the rain gods."
 	color = "#6B87C0"
@@ -369,7 +411,7 @@
 	charging = FALSE
 
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain
 	name = "nightkin guardian rain priest"
 	desc = "A nightkin that spreads the word of the Cult Of Rain. They are covered in dark blue markings, indicating that they have been blessed by the rain god Ignacio."
 	color = "#6666FF"
@@ -384,11 +426,11 @@
 	retreat_distance = 2
 	minimum_distance = 4
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain/Initialize(mapload)
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/glow_heal, chosen_targets = /mob/living/simple_animal/hostile/supermutant, allow_revival = FALSE, restrict_faction = null, type_healing = BRUTELOSS | FIRELOSS)
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain/bullet_act(obj/item/projectile/Proj)
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		return
 	if(prob(20))
@@ -400,13 +442,13 @@
 		visible_message(span_danger("\The [Proj] is absorbed by \the [src]'s thick skin, strengthening it!"))
 		return 0
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain/proc/fire_release()
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain/proc/fire_release()
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
 		INVOKE_ASYNC(src, .proc/fire_release_wall, d)
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain/proc/fire_release_wall(dir)
+/mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain/proc/fire_release_wall(dir)
 	var/list/hit_things = list(src)
 	var/turf/E = get_edge_target_turf(src, dir)
 	var/range = 10
@@ -418,7 +460,7 @@
 		new /obj/effect/hotspot(J)
 		J.hotspot_expose(500, 500, 1)
 		for(var/mob/living/L in J.contents - hit_things)
-			if(istype(L, /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant/rain))
+			if(istype(L, /mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain))
 				continue
 			L.adjustFireLoss(20)
 			to_chat(L, "<span class='userdanger'>You're hit by the nightkin's release of energy!</span>")
@@ -426,7 +468,7 @@
 		previousturf = J
 		addtimer(1)
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/rain
+/mob/living/simple_animal/hostile/supermutant/nightkin/elite/rain
 	name = "nightkin rain lord"
 	desc = "A nightkin that writes the word of the Cult Of Rain. They are covered in dark blue markings and are adorned in pieces of bone armor, indicating that they are blessed by the rain god Hyacinth."
 	color = "#6666FF"
@@ -439,6 +481,43 @@
 	melee_damage_upper = 70
 	extra_projectiles = 1
 
-/mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/rain/Initialize(mapload)
+/mob/living/simple_animal/hostile/supermutant/nightkin/elite/rain/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/glow_heal, chosen_targets = /mob/living/simple_animal/hostile/supermutant, allow_revival = TRUE, restrict_faction = null, type_healing = BRUTELOSS | FIRELOSS)
+
+/mob/living/simple_animal/hostile/supermutant/vault/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/ncr/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/legion/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/pvt/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/eng/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/nco/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/melee/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+
+/mob/living/simple_animal/hostile/supermutant/ranged/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
+	
+	
+/mob/living/simple_animal/hostile/supermutant/nightkin/mutcastle
+	name = "super mutant"
+	faction = list("deathclaw")
