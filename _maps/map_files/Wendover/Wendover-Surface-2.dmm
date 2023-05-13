@@ -22721,7 +22721,6 @@
 	pixel_y = -13
 	},
 /obj/structure/nest/spawner/wolf{
-	layer = 2;
 	plane = -15;
 	pixel_x = 1;
 	pixel_y = 1
@@ -43854,15 +43853,6 @@
 	dir = 8
 	},
 /area/f13/wasteland)
-"mNE" = (
-/obj/structure/nest/spawner/wolf{
-	layer = 2;
-	plane = -15;
-	mob_types = list(/mob/living/simple_animal/hostile/wolf=1,/mob/living/simple_animal/hostile/wolf/cold=5);
-	pixel_x = -24
-	},
-/turf/open/indestructible/ground/outside/saltflats,
-/area/f13/wasteland)
 "mNF" = (
 /obj/structure/barricade/tentclothcorner{
 	dir = 1;
@@ -59321,7 +59311,7 @@
 	},
 /obj/structure/car/rubbish2{
 	pixel_y = -12;
-	layer = 2.11
+	layer = 2.21
 	},
 /obj/item/stack/rods{
 	pixel_x = 17;
@@ -61817,7 +61807,7 @@
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/cola)
 "rOs" = (
-/mob/living/simple_animal/cow/brahmin{
+/obj/structure/nest/mob/brahmin{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -75038,7 +75028,7 @@
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "vGy" = (
-/mob/living/simple_animal/cow/brahmin{
+/obj/structure/nest/mob/brahmin{
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt/dark,
@@ -132990,7 +132980,7 @@ fcD
 tdW
 uvT
 uvT
-mNE
+uvT
 uvT
 uvT
 uvT

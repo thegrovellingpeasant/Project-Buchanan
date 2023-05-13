@@ -18,7 +18,7 @@
 	health = 60
 	faction = list("hostile", "wolf")
 	environment_smash = 0
-	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1,/obj/item/stack/sheet/bone = 1)
+	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1, /obj/item/stack/sheet/bone = 1)
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 	aggro_vision_range = 15
@@ -53,7 +53,7 @@
 	icon_state = "dog_alpha"
 	icon_living = "dog_alpha"
 	icon_dead = "dog_alpha_dead"
-	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 2, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 3,/obj/item/stack/sheet/bone = 2)
+	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 2, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 3, /obj/item/stack/sheet/bone = 2)
 	maxHealth = 100
 	health = 100
 	melee_damage_lower = 25
@@ -78,7 +78,7 @@
 	icon_state = "wolf"
 	icon_living = "wolf"
 	icon_dead = "wolf_dead"
-	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 2, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 3,/obj/item/stack/sheet/bone = 2)
+	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 2, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 3, /obj/item/stack/sheet/bone = 2)
 	maxHealth = 100
 	health = 100
 	melee_damage_lower = 25

@@ -244,6 +244,14 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "gravelsiding"
 
+/turf/closed/indestructible/f13/matrix/asphalt
+	icon = 'icons/fallout/turfs/asphalt.dmi'
+	icon_state = "verticalleftborderright1"
+
+/turf/closed/indestructible/f13/matrix/sidewalk
+	icon = 'icons/fallout/turfs/sidewalk.dmi'
+	icon_state = "horizontalbottomborderbottom0"
+
 /turf/closed/indestructible/f13/matrix/MouseDrop_T(atom/dropping, mob/user)
 	. = ..()
 	if(!isliving(user) || user.incapacitated())

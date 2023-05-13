@@ -330,7 +330,7 @@
 /obj/structure/nest/spawner/wolf
 	name = "wolf den"
 	max_mobs = 1
-	mob_types = list(/mob/living/simple_animal/hostile/wolf = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/wolf/cold = 5)
 
 /obj/structure/nest/spawner/mangy
 	name = "mangy nest"
@@ -480,16 +480,16 @@
 	mob_types = list(/mob/living/simple_animal/hostile/wolf/cold = 5)
 
 /obj/structure/nest/mob/brahmin
-	name = "feral dog"
-	icon = 'icons/fallout/mobs/animals/dogs.dmi'
-	icon_state = "dog_feral"
-	mob_types = list(/mob/living/simple_animal/hostile/wolf = 5)
+	name = "brahmin"
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
+	icon_state = "brahmin"
+	mob_types = list(/mob/living/simple_animal/cow/brahmin = 5)
 
 /obj/structure/nest/mob/bighorner
-	name = "feral dog"
-	icon = 'icons/fallout/mobs/animals/dogs.dmi'
-	icon_state = "dog_feral"
-	mob_types = list(/mob/living/simple_animal/hostile/wolf = 5)
+	name = "bighorner"
+	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
+	icon_state = "bighorner"
+	mob_types = list(/obj/structure/nest/mob/bighorner = 5)
 
 /obj/structure/nest/mob/radstag
 	name = "radstag"

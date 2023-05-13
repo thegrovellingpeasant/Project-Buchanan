@@ -2067,9 +2067,7 @@
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "gb" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp{
 	dir = 4
 	},
@@ -2091,9 +2089,7 @@
 	layer = 3.2;
 	pixel_x = -3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "gf" = (
@@ -2104,9 +2100,7 @@
 /area/f13/wasteland)
 "gg" = (
 /obj/machinery/microwave/stove,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "gh" = (
@@ -2118,15 +2112,11 @@
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "gi" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood/fancy,
 /obj/item/candle{
 	pixel_y = 5
@@ -2146,22 +2136,16 @@
 /area/f13/wasteland)
 "gl" = (
 /obj/structure/debris/v1,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "gm" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/left,
 /obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "go" = (
@@ -2223,9 +2207,7 @@
 /area/f13/wasteland)
 "gx" = (
 /obj/structure/simple_door/brokenglass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "gz" = (
@@ -2233,9 +2215,7 @@
 	dir = 4;
 	pixel_y = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "gA" = (
@@ -2251,12 +2231,8 @@
 /area/f13/tunnel)
 "gD" = (
 /obj/structure/chair/f13chair1,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "gE" = (
@@ -2283,17 +2259,13 @@
 /turf/closed/indestructible/rock/snow,
 /area/f13/underground/mountain)
 "gI" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/bronze,
 /area/f13/building)
 "gJ" = (
 /obj/structure/table/reinforced,
 /obj/item/kitchen/knife/butcher,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "gK" = (
@@ -2323,12 +2295,8 @@
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "gN" = (
@@ -2373,43 +2341,23 @@
 	pixel_y = 3
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "gX" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
+/obj/effect/overlay/whitelegpainting/two{
 	dir = 1;
-	name = "painting";
-	desc = null;
-	pixel_x = -32;
-	plane = -14;
-	layer = 4.4
+	pixel_x = -32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 1;
-	name = "painting";
-	desc = null;
 	pixel_y = -20;
-	layer = 4.4;
-	pixel_x = -38;
-	plane = -14
+	pixel_x = -38
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
-	name = "painting";
-	desc = null;
+/obj/effect/overlay/whitelegpainting{
 	pixel_y = -12;
 	color = "#800000";
-	layer = 4.39;
-	pixel_x = -32;
-	plane = -14
+	pixel_x = -32
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/north,
 /area/f13/wasteland)
@@ -2418,9 +2366,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "gZ" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/booth{
 	icon_state = "booth_leftend"
 	},
@@ -2435,24 +2381,15 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "hb" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/structure/flora/tree/wasteland{
@@ -2464,7 +2401,7 @@
 /area/f13/wasteland)
 "hc" = (
 /obj/structure/wreck/bus/rusted{
-	layer = 4.3
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -2543,9 +2480,7 @@
 /area/f13/building)
 "hq" = (
 /obj/machinery/deepfryer,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "hr" = (
@@ -2584,9 +2519,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "hx" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblue{
 	sunlight_state = 1
 	},
@@ -2594,9 +2527,7 @@
 "hy" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/under/shorts/polychromic,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "hz" = (
@@ -2623,9 +2554,7 @@
 	smooth = 0
 	},
 /obj/item/flashlight/lamp/green,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "hD" = (
@@ -2641,9 +2570,7 @@
 "hF" = (
 /obj/structure/table/reinforced,
 /obj/item/circuitboard/computer/robco_terminal,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "hG" = (
@@ -2727,16 +2654,12 @@
 	pixel_y = 12
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "hW" = (
 /obj/structure/chair/comfy/black,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "hX" = (
@@ -2768,54 +2691,31 @@
 	dir = 4;
 	opacity = 0
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "ic" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
+/obj/effect/overlay/whitelegpainting/two{
 	dir = 1;
-	name = "painting";
-	desc = null;
-	pixel_x = 32;
-	plane = -14;
-	layer = 4.4
+	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
-	name = "painting";
-	desc = null;
+/obj/effect/overlay/whitelegpainting{
 	pixel_y = -12;
 	color = "#800000";
-	pixel_x = 32;
-	plane = -14;
-	layer = 4.4
+	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/north,
 /area/f13/wasteland)
 "id" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/structure/flora/tree/wasteland{
@@ -2827,15 +2727,12 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "ie" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
+/obj/structure/junk/foundation{
 	icon_state = "more";
-	name = "foundation";
 	resistance_flags = 115;
 	layer = 4.2;
 	dir = 4;
-	pixel_y = -26;
-	density = 0
+	pixel_y = -26
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
@@ -2875,9 +2772,7 @@
 /obj/structure/chair/stool/retro/backed{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "il" = (
@@ -3635,9 +3530,7 @@
 	pixel_y = -7;
 	pixel_x = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "ke" = (
@@ -3652,13 +3545,9 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "kg" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "verticalleftborderleft3";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "kh" = (
@@ -3853,9 +3742,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "kH" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_br,
 /area/f13/building)
 "kI" = (
@@ -3865,9 +3752,7 @@
 	can_buckle = 0;
 	layer = 2.98
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "kJ" = (
@@ -3916,9 +3801,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/neck/apron/chef,
 /obj/item/clothing/head/chefhat,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "kS" = (
@@ -3975,9 +3858,7 @@
 	layer = 2;
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "lc" = (
@@ -4390,19 +4271,17 @@
 	pixel_y = 3;
 	info = "Ground. NOW."
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "mm" = (
 /obj/structure/table/wood/fancy,
 /obj/item/toy/eightball{
-	pixel_x = 7;
+	pixel_x = 13;
 	pixel_y = 5
 	},
 /obj/item/toy/cards/deck{
-	pixel_x = -7;
+	pixel_x = -3;
 	pixel_y = 5
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4411,13 +4290,9 @@
 	},
 /area/f13/wasteland)
 "mn" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "horizontalinnermain1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "mo" = (
@@ -4621,21 +4496,15 @@
 /turf/open/floor/plasteel/grimy,
 /area/centcom/evac)
 "mR" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "mS" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "mT" = (
@@ -5021,12 +4890,8 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "nQ" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "nS" = (
@@ -5530,13 +5395,8 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "oU" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	icon = 'icons/fallout/objects/wendover.dmi'
-	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb,
+/obj/effect/overlay/curb{
 	pixel_y = -3
 	},
 /obj/effect/decal/remains/human,
@@ -5740,21 +5600,15 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "pt" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/obj/custom.dmi';
-	icon_state = "pine_c";
+/obj/effect/overlay/treepainting{
 	pixel_y = 32;
 	name = "pine tree";
 	layer = 2.2;
-	plane = -14
+	plane = -4
 	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/snow.dmi';
-	icon_state = "snow_corner";
+/obj/effect/overlay/snowpainting{
 	pixel_y = 32;
-	name = "painting";
-	plane = -14;
-	layer = 2.1
+	plane = -4
 	},
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/snacks/fortunecookie{
@@ -5830,9 +5684,7 @@
 	dir = 8;
 	pixel_x = -3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "pE" = (
@@ -5861,12 +5713,8 @@
 /turf/open/floor/bronze,
 /area/f13/building)
 "pJ" = (
-/obj/structure/car/rubbish2{
-	icon_state = "derelict2";
-	icon = 'icons/fallout/vehicles/medium_vehicles.dmi';
-	bound_height = 32;
-	layer = 3.1;
-	pixel_y = -4
+/obj/structure/car/derelict/alt{
+	layer = 3.1
 	},
 /turf/open/indestructible/ground/outside/road{
 	dir = 8;
@@ -5969,13 +5817,9 @@
 /area/centcom/evac)
 "pV" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "pW" = (
@@ -6019,9 +5863,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "qc" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/booth{
 	icon_state = "booth_north_east"
 	},
@@ -6385,9 +6227,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/centcom/evac)
 "qZ" = (
-/obj/structure/car/rubbish6{
-	icon_state = "car_rubish7"
-	},
+/obj/structure/car/rubbish7,
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/building)
 "rb" = (
@@ -6404,12 +6244,8 @@
 /obj/item/trash/f13/rotten{
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
@@ -6433,9 +6269,7 @@
 "rg" = (
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "rh" = (
@@ -6550,12 +6384,8 @@
 	},
 /area/centcom/evac)
 "rx" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
@@ -6762,15 +6592,11 @@
 /area/f13/building)
 "rY" = (
 /obj/structure/chair/f13chair1,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "rZ" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "sa" = (
@@ -7703,9 +7529,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "uD" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
 	icon = 'icons/obj/drinks.dmi';
@@ -7720,9 +7544,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "uF" = (
@@ -7730,9 +7552,7 @@
 	density = 0;
 	pixel_x = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "uG" = (
@@ -8037,9 +7857,7 @@
 	pixel_x = 17;
 	pixel_y = 3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_bl,
 /area/f13/building)
 "vm" = (
@@ -8614,9 +8432,7 @@
 	opacity = 0
 	},
 /obj/structure/filingcabinet,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "wQ" = (
@@ -8746,24 +8562,17 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "xm" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
+/obj/structure/junk/foundation{
 	dir = 8;
 	pixel_y = -9;
 	layer = 4.1;
-	density = 0;
-	resistance_flags = 115;
-	mouse_opacity = 0
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "xn" = (
 /obj/structure/chair/f13chair1,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "xo" = (
@@ -8804,9 +8613,7 @@
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "xu" = (
@@ -8844,21 +8651,14 @@
 	pixel_x = 1
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "xB" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
+/obj/structure/junk/foundation{
 	dir = 8;
 	layer = 4.1;
-	density = 0;
-	resistance_flags = 115;
-	mouse_opacity = 0
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
@@ -8875,13 +8675,9 @@
 	dir = 4;
 	layer = 2.1
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "xE" = (
@@ -8889,10 +8685,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/building)
 "xF" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
@@ -8982,9 +8776,7 @@
 /obj/item/trash/f13/rotten{
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
@@ -9032,9 +8824,7 @@
 /obj/structure/chair/wood/wings{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -9097,15 +8887,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "yj" = (
-/obj/effect/decal/marking{
+/obj/effect/overlay/bus{
 	icon = 'icons/obj/vehicles/bus1.dmi';
-	icon_state = "blue";
-	desc = null;
-	name = "bus";
 	pixel_x = -224;
 	pixel_y = -32;
-	plane = -4;
-	layer = 3
+	layer = 2.1
+	},
+/obj/effect/overlay/bus/top{
+	pixel_x = -224;
+	pixel_y = -32;
+	layer = 4.51
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -9190,9 +8981,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "yv" = (
@@ -9230,9 +9019,7 @@
 	},
 /area/centcom/evac)
 "yC" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "yD" = (
@@ -9297,9 +9084,7 @@
 	density = 0;
 	pixel_y = -1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "yO" = (
@@ -9330,32 +9115,22 @@
 /area/f13/wasteland)
 "yT" = (
 /obj/structure/debris/v1,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "yU" = (
 /obj/effect/spawner/lootdrop/trash,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "yV" = (
 /obj/structure/junk/small/table,
 /obj/item/clothing/head/fedora,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "yW" = (
@@ -9399,7 +9174,7 @@
 /area/centcom/supplypod/loading/three)
 "zc" = (
 /obj/structure/wreck/bus/blue{
-	layer = 4.2
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -9446,10 +9221,10 @@
 	dir = 8;
 	layer = 3.7;
 	pixel_x = -1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /obj/item/stack/f13Cash/caps{
-	pixel_y = -12;
+	pixel_y = -9;
 	amount = 25
 	},
 /turf/open/floor/carpet/purple/lit,
@@ -9497,9 +9272,7 @@
 "zv" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "zx" = (
@@ -9512,9 +9285,7 @@
 /area/f13/tunnel)
 "zz" = (
 /obj/structure/simple_door/tentflap_cloth,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "zA" = (
@@ -9571,25 +9342,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "zK" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint2";
-	name = "painting";
-	desc = null;
-	pixel_x = 32;
-	plane = -14;
-	layer = 5
+/obj/effect/overlay/whitelegpainting/two{
+	pixel_x = 32
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
-	name = "painting";
-	desc = null;
+/obj/effect/overlay/whitelegpainting{
 	pixel_y = -19;
 	color = "#800000";
-	pixel_x = 32;
-	plane = -14;
-	layer = 4.4
+	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/south,
 /area/f13/wasteland)
@@ -9598,13 +9357,9 @@
 	icon_state = "mattress2";
 	pixel_x = -9
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "zM" = (
@@ -9621,9 +9376,7 @@
 	color = "#b3b4b5";
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "zP" = (
@@ -9645,9 +9398,7 @@
 /obj/item/paper/crumpled{
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "zS" = (
@@ -9689,9 +9440,7 @@
 	name = "John Wendover";
 	pixel_y = 31
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -9711,9 +9460,7 @@
 	pixel_y = 6;
 	pixel_x = -9
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 4;
 	opacity = 0
@@ -9721,13 +9468,8 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "zZ" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
-	icon_state = "horizontalbottomborderbottom0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+/turf/closed/indestructible/f13/matrix/sidewalk{
+	dir = 1
 	},
 /area/f13/wasteland)
 "Aa" = (
@@ -9743,10 +9485,8 @@
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Ac" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /obj/structure/chair/bench{
@@ -9837,24 +9577,18 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
 "At" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 8;
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -9910,9 +9644,7 @@
 	pixel_x = -6;
 	pixel_y = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -9958,12 +9690,8 @@
 /obj/structure/chair/f13chair1{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "AJ" = (
@@ -9997,9 +9725,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "AO" = (
@@ -10085,25 +9811,19 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "Bd" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 4;
 	pixel_x = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1;
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
 /obj/item/grown/log/tree{
@@ -10162,9 +9882,7 @@
 /area/f13/wasteland)
 "Bl" = (
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Bm" = (
@@ -10183,9 +9901,7 @@
 	pixel_y = 3;
 	pixel_x = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Bp" = (
@@ -10281,9 +9997,7 @@
 "BD" = (
 /obj/structure/table/reinforced,
 /obj/item/pda/bar,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "BE" = (
@@ -10304,9 +10018,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "BG" = (
@@ -10400,13 +10112,8 @@
 /area/abductor_ship)
 "BS" = (
 /obj/item/light/tube/broken,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
-	icon_state = "verticalleftborderright1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+/turf/closed/indestructible/f13/matrix/asphalt{
+	dir = 1
 	},
 /area/f13/wasteland)
 "BT" = (
@@ -10424,13 +10131,9 @@
 /area/f13/building)
 "BW" = (
 /obj/structure/barricade/wooden,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "BY" = (
@@ -10569,9 +10272,7 @@
 	color = "#343434";
 	pixel_y = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Cr" = (
@@ -10740,29 +10441,21 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "CV" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/obj/custom.dmi';
-	icon_state = "pine_c";
+/obj/effect/overlay/treepainting{
 	pixel_y = 32;
 	name = "pine tree";
 	layer = 2.2;
-	plane = -14
+	plane = -4
 	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/snow.dmi';
-	icon_state = "snow_corner";
+/obj/effect/overlay/snowpainting{
 	pixel_y = 32;
-	name = "painting";
-	plane = -14;
-	layer = 2.1
+	plane = -4
 	},
 /obj/structure/table/reinforced,
 /obj/item/a_gift/anything{
 	pixel_y = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "CX" = (
@@ -10775,18 +10468,14 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "CY" = (
 /obj/item/feather{
 	icon_state = "downfeather"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy{
 	sunlight_state = 1
 	},
@@ -10858,9 +10547,7 @@
 /area/ai_multicam_room)
 "Dj" = (
 /obj/item/kirbyplants/dead,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Dk" = (
@@ -10878,9 +10565,7 @@
 /area/f13/building)
 "Dn" = (
 /obj/structure/mopbucket,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Do" = (
@@ -10891,15 +10576,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/centcom/evac)
 "Dp" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
+/obj/structure/junk/foundation{
 	icon_state = "more";
-	name = "foundation";
 	resistance_flags = 115;
 	layer = 4.2;
 	dir = 4;
-	pixel_y = -26;
-	density = 0
+	pixel_y = -26
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
@@ -11029,9 +10711,7 @@
 	dir = 4;
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "DK" = (
@@ -11047,9 +10727,7 @@
 	pixel_x = 14;
 	pixel_y = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_bl,
 /area/f13/building)
 "DN" = (
@@ -11059,9 +10737,7 @@
 	pixel_y = 10;
 	pixel_x = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "DO" = (
@@ -11075,9 +10751,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "DP" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
 	},
@@ -11092,25 +10766,19 @@
 	},
 /area/f13/wasteland)
 "DR" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 4;
 	pixel_x = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1;
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
 /turf/open/indestructible/ground/outside/dirt,
@@ -11125,9 +10793,7 @@
 	},
 /area/f13/wasteland)
 "DU" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/left{
 	dir = 1;
 	pixel_x = -5
@@ -11157,18 +10823,14 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	sunlight_state = 1
 	},
 /area/f13/building)
 "Ea" = (
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Eb" = (
@@ -11235,9 +10897,7 @@
 	pixel_y = 4;
 	id = "ineedamedicbag"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "Ek" = (
@@ -11263,22 +10923,16 @@
 	loot = list(/obj/item/clothing/under/f13/brahmin,/obj/item/clothing/under/f13/brahminf,/obj/item/clothing/under/f13/caravaneer,/obj/item/clothing/under/f13/cowboyb,/obj/item/clothing/under/f13/cowboyg,/obj/item/clothing/under/f13/cowboyt,/obj/item/clothing/under/f13/bearvest,/obj/item/clothing/under/f13/doctor,/obj/item/clothing/under/f13/doctorf,/obj/item/clothing/under/f13/follower,/obj/item/clothing/under/f13/helenduds,/obj/item/clothing/under/f13/ikeduds,/obj/item/clothing/under/f13/keksweater,/obj/item/clothing/under/f13/ncrcaravan,/obj/item/clothing/under/f13/machinist,/obj/item/clothing/under/f13/marlowduds,/obj/item/clothing/under/f13/masonduds,/obj/item/clothing/under/f13/mercc,/obj/item/clothing/under/f13/merca,/obj/item/clothing/under/f13/petrochico,/obj/item/clothing/under/f13/ncrcf,/obj/item/clothing/under/f13/rag,/obj/item/clothing/under/f13/raider_leather,/obj/item/clothing/under/f13/raiderharness,/obj/item/clothing/under/f13/raiderrags,/obj/item/clothing/under/f13/rustic,/obj/item/clothing/under/f13/settler,/obj/item/clothing/under/f13/roving,/obj/item/clothing/under/f13/tribal,/obj/item/clothing/under/f13/merchant,/obj/item/clothing/under/f13/female/mercadv,/obj/item/clothing/under/f13/female/rustwalkers,/obj/item/clothing/under/f13/female/flapper);
 	name = "post-war clothes spawner"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "En" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Eo" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Ep" = (
@@ -11303,9 +10957,7 @@
 "Et" = (
 /obj/structure/closet/athletic_mixed,
 /obj/item/reagent_containers/pill/buffout,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Eu" = (
@@ -11464,9 +11116,7 @@
 /area/centcom/evac)
 "EU" = (
 /obj/structure/closet/athletic_mixed,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "EW" = (
@@ -11511,9 +11161,7 @@
 /area/centcom/evac)
 "Fa" = (
 /obj/item/stack/sheet/mineral/wood,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "Fb" = (
@@ -11521,13 +11169,8 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Fc" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	icon = 'icons/fallout/objects/wendover.dmi'
-	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb,
+/obj/effect/overlay/curb{
 	pixel_y = -3
 	},
 /turf/open/floor/carpet/black/nosmooth/lit,
@@ -11613,15 +11256,11 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Fp" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Fq" = (
@@ -11631,13 +11270,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "Fr" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "horizontalinnermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Fs" = (
@@ -11649,9 +11284,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Ft" = (
@@ -11704,9 +11337,7 @@
 	icon_state = "coatrack";
 	pixel_y = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -11715,9 +11346,7 @@
 /obj/item/chair/wood/wings{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "FD" = (
@@ -11737,24 +11366,15 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "FG" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/structure/flora/tree/wasteland{
@@ -11770,17 +11390,12 @@
 	dir = 1
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "FI" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_hot";
-	pixel_x = -16;
-	name = "totaled buggy"
+/obj/structure/car/totaledbuggy/hot{
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
@@ -11798,9 +11413,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "FM" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
@@ -11812,8 +11425,7 @@
 /area/f13/wasteland)
 "FO" = (
 /obj/structure/nest/spawner/protectron{
-	layer = 2.6;
-	max_mobs = 1
+	layer = 2.6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
@@ -11829,9 +11441,7 @@
 /area/f13/wasteland)
 "FR" = (
 /obj/structure/table/wood/fancy,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "FS" = (
@@ -11848,9 +11458,7 @@
 	pixel_y = 7
 	},
 /obj/item/clothing/under/shorts/red,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "FU" = (
@@ -11914,9 +11522,7 @@
 "Gi" = (
 /obj/item/mop/cyborg,
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Gj" = (
@@ -11956,25 +11562,16 @@
 	},
 /area/f13/building)
 "Go" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 4;
+/obj/effect/overlay/curb/east{
 	pixel_x = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1;
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.92
 	},
 /obj/item/grown/log/tree{
@@ -12002,9 +11599,7 @@
 	},
 /obj/structure/table/wood/fancy,
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Gs" = (
@@ -12038,24 +11633,15 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/tunnel)
 "Gx" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/item/grown/log/tree{
@@ -12131,15 +11717,9 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "GH" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 9;
-	name = "painting";
-	desc = null;
-	pixel_x = -32;
-	plane = -14;
-	layer = 4.5
+	pixel_x = -32
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/north,
 /area/f13/wasteland)
@@ -12164,9 +11744,7 @@
 /area/f13/building)
 "GK" = (
 /obj/item/kirbyplants/dead,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "GL" = (
@@ -12185,12 +11763,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "GO" = (
-/mob/living/simple_animal/hostile/handy{
-	name = "model handy";
-	wander = 0;
-	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner");
-	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/three,/obj/item/stock_parts/cell/ammo/mfc)
-	},
+/obj/structure/nest/mob/misterhandy,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "GP" = (
@@ -12206,13 +11779,9 @@
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "GR" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_olive";
+/obj/structure/car/totaledbuggy/olive{
 	dir = 4;
-	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom1"
@@ -12246,9 +11815,7 @@
 	pixel_y = 31;
 	pixel_x = 16
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/bronze,
 /area/f13/building)
 "GX" = (
@@ -12306,14 +11873,10 @@
 /turf/open/floor/carpet/blue/nosmooth,
 /area/f13/building)
 "Hh" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi'
+/obj/effect/overlay/curb{
+	layer = 2.91
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Hi" = (
@@ -12353,9 +11916,7 @@
 /obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Ho" = (
@@ -12397,9 +11958,7 @@
 	icon = 'icons/obj/chairs.dmi';
 	layer = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Hu" = (
@@ -12454,9 +12013,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "HC" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/item/trash/plate{
 	pixel_y = 4;
@@ -12482,9 +12039,7 @@
 /obj/structure/chair/f13chair1{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "HF" = (
@@ -12525,9 +12080,7 @@
 /area/tdome/tdomeobserve)
 "HO" = (
 /obj/structure/junk/small/table,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "HP" = (
@@ -12589,16 +12142,12 @@
 /obj/item/clothing/glasses/hud/health{
 	pixel_y = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "HX" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi'
+/obj/effect/overlay/curb{
+	layer = 2.91
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
@@ -12617,9 +12166,7 @@
 /obj/item/trash/f13/electronic/toaster/atomics{
 	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Ia" = (
@@ -12627,9 +12174,7 @@
 /obj/machinery/libraryscanner{
 	pixel_y = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Ib" = (
@@ -12666,9 +12211,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_north"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Ih" = (
@@ -12677,14 +12220,11 @@
 /area/centcom/evac)
 "Ii" = (
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/building)
 "Ij" = (
-/obj/structure/car/rubbish6{
-	icon_state = "car_rubish7";
+/obj/structure/car/rubbish7{
 	dir = 1;
 	layer = 2.99
 	},
@@ -12703,24 +12243,17 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "In" = (
 /obj/structure/bed/dogbed,
-/mob/living/simple_animal/cow/brahmin{
-	dir = 4;
-	wander = 0
+/obj/structure/nest/mob/brahmin{
+	dir = 4
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Io" = (
@@ -12771,10 +12304,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "Iw" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
+/obj/structure/junk/foundation{
 	icon_state = "more";
-	name = "foundation";
 	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
@@ -12822,13 +12353,9 @@
 	layer = 2.1;
 	pixel_y = -2
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "IC" = (
@@ -13179,9 +12706,7 @@
 	density = 0
 	},
 /obj/item/storage/box/drinkingglasses,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "JF" = (
@@ -13191,7 +12716,9 @@
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
 "JH" = (
-/obj/effect/decal/remains/human,
+/obj/effect/decal/remains/human{
+	plane = -4
+	},
 /obj/item/clothing/head/cowboyhat/white{
 	pixel_y = 11
 	},
@@ -13305,9 +12832,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Kd" = (
@@ -13332,9 +12857,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Ki" = (
@@ -13342,9 +12865,7 @@
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Kj" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "Kk" = (
@@ -13383,15 +12904,11 @@
 /obj/item/radio/headset/headset_vault{
 	pixel_y = 7
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Kp" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola{
 	pixel_y = 6;
@@ -13404,13 +12921,9 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Kr" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "horizontalbottombordertop0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Ks" = (
@@ -13563,13 +13076,9 @@
 /area/centcom/evac)
 "KT" = (
 /obj/structure/car/rubbish3,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "KU" = (
@@ -13898,13 +13407,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "LY" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_dune";
+/obj/structure/car/totaledbuggy/dune{
 	dir = 4;
-	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
 /area/f13/wasteland)
@@ -13918,7 +13423,8 @@
 /obj/structure/car/motoryclehor{
 	dir = 4;
 	pixel_x = -14;
-	layer = 2.9
+	layer = 2.9;
+	pixel_y = 2
 	},
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/building)
@@ -13938,17 +13444,13 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	sunlight_state = 1
 	},
 /area/f13/building)
 "Me" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Mf" = (
@@ -13989,9 +13491,7 @@
 /obj/item/storage/secure/briefcase{
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Ml" = (
@@ -14035,9 +13535,7 @@
 /obj/structure/chair/sofa/corp/corner{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Mv" = (
@@ -14053,21 +13551,13 @@
 	pixel_y = -6
 	},
 /obj/item/storage/box/drinkingglasses,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Mx" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 5;
-	name = "painting";
-	desc = null;
 	pixel_x = 32;
-	plane = -14;
-	layer = 4.4;
 	pixel_y = -4
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/south,
@@ -14087,9 +13577,7 @@
 /area/centcom/evac)
 "MA" = (
 /obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/plate{
 	pixel_y = 4;
 	layer = 3.2;
@@ -14118,50 +13606,36 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "ME" = (
-/obj/effect/decal/marking{
+/obj/effect/overlay/shadow/tarp{
+	icon = 'icons/fallout/objects/tarpaulinhorizontal.dmi';
+	icon_state = "shadowcorner";
+	layer = 2.1;
+	pixel_x = -64
+	},
+/obj/effect/overlay/shadow/tarp{
 	icon = 'icons/fallout/objects/tarpaulinhorizontal.dmi';
 	icon_state = "shadow";
-	color = "#000000";
-	name = null;
-	desc = null;
-	plane = -4;
 	layer = 4.9;
-	mouse_opacity = 0
+	pixel_x = -64
 	},
-/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "MF" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "MG" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "w";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -4
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = ",";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 27;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 7
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblue{
 	sunlight_state = 1
 	},
@@ -14205,13 +13679,8 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "MO" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
-	icon_state = "verticalleftborderright1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+/turf/closed/indestructible/f13/matrix/asphalt{
+	dir = 1
 	},
 /area/f13/wasteland)
 "MP" = (
@@ -14261,7 +13730,7 @@
 /area/centcom/evac)
 "MY" = (
 /obj/structure/wreck/bus/orange/alt{
-	layer = 4.9;
+	layer = 2.1;
 	bound_height = 160;
 	bound_width = 64
 	},
@@ -14272,7 +13741,7 @@
 "MZ" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag{
-	pixel_y = 6
+	pixel_y = 10
 	},
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/purple/lit,
@@ -14305,9 +13774,7 @@
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
 /area/f13/wasteland)
 "Ng" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy{
 	sunlight_state = 1
 	},
@@ -14321,9 +13788,7 @@
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Nj" = (
@@ -14354,9 +13819,7 @@
 	pixel_y = 4;
 	pixel_x = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Np" = (
@@ -14391,9 +13854,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_middle"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Nu" = (
@@ -14401,12 +13862,9 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/one)
 "Nw" = (
-/obj/structure/car/rubbish2{
-	icon_state = "derelict";
-	icon = 'icons/fallout/vehicles/medium_vehicles.dmi';
+/obj/structure/car/derelict{
 	pixel_y = -5;
 	dir = 8;
-	bound_height = 32;
 	layer = 3.1
 	},
 /turf/open/indestructible/ground/outside/road/hor,
@@ -14419,12 +13877,12 @@
 /obj/structure/table/wood/fancy,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
 	pixel_y = 11;
-	pixel_x = -6
+	pixel_x = -7
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
 	layer = 3.2;
 	pixel_y = 5;
-	pixel_x = 3
+	pixel_x = 2
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom1";
@@ -14446,9 +13904,7 @@
 	pixel_y = 9;
 	color = "#696969"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "ND" = (
@@ -14505,9 +13961,7 @@
 /obj/effect/decal/remains/human{
 	plane = -4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "NM" = (
@@ -14515,21 +13969,15 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "NN" = (
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/obj/custom.dmi';
-	icon_state = "pine_c";
+/obj/effect/overlay/treepainting{
 	pixel_y = 32;
 	name = "pine tree";
 	layer = 2.2;
-	plane = -14
+	plane = -4
 	},
-/obj/effect/overlay/palmtree_l{
-	icon = 'icons/turf/snow.dmi';
-	icon_state = "snow_corner";
+/obj/effect/overlay/snowpainting{
 	pixel_y = 32;
-	name = "painting";
-	plane = -14;
-	layer = 2.1
+	plane = -4
 	},
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/snacks/cookie{
@@ -14546,9 +13994,7 @@
 	smooth = 0
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "NP" = (
@@ -14558,9 +14004,7 @@
 	bound_width = 64;
 	layer = 3.08
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_bl,
 /area/f13/building)
 "NQ" = (
@@ -14623,13 +14067,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "NZ" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_dune";
+/obj/structure/car/totaledbuggy/dune{
 	dir = 8;
-	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
@@ -14642,9 +14082,7 @@
 "Ob" = (
 /obj/structure/closet/crate/footlocker,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Oc" = (
@@ -14663,12 +14101,7 @@
 /turf/open/indestructible/ground/outside/roof/stairs/south,
 /area/f13/wasteland)
 "Og" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
-	density = 0
-	},
+/obj/structure/junk/foundation,
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "Oh" = (
@@ -14678,16 +14111,12 @@
 	pixel_x = -2;
 	layer = 3.21
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Oi" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
@@ -14714,9 +14143,7 @@
 /obj/structure/chair/comfy/beige{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "On" = (
@@ -14746,20 +14173,14 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Oq" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "horizontaltopborderbottom0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Or" = (
 /obj/machinery/processor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Os" = (
@@ -14786,9 +14207,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "Ow" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -14855,9 +14274,7 @@
 /obj/item/storage/secure/safe{
 	pixel_x = 36
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "OJ" = (
@@ -14882,13 +14299,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "ON" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "verticalleftborderleft1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "OO" = (
@@ -14926,27 +14339,19 @@
 /area/f13/building)
 "OT" = (
 /obj/structure/junk/small/table,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "OU" = (
 /obj/structure/chair/f13chair1{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "OV" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "OW" = (
@@ -14956,6 +14361,19 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
+"OY" = (
+/obj/structure/barricade/bars,
+/obj/structure/barricade/wooden/planks,
+/obj/effect/overlay/bus{
+	icon_state = "orangeburied";
+	name = null;
+	pixel_y = -192;
+	layer = 4.9;
+	dir = 1;
+	pixel_x = -32
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/wasteland)
 "Pa" = (
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
@@ -14978,24 +14396,15 @@
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Pe" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/structure/flora/tree/wasteland{
@@ -15017,10 +14426,8 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Pi" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /obj/structure/car/rubbish3{
@@ -15039,9 +14446,7 @@
 /turf/open/indestructible/ground/outside/road/vert,
 /area/f13/wasteland)
 "Pm" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/booth{
 	icon_state = "booth_leftend"
 	},
@@ -15082,9 +14487,7 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Pu" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/booth{
 	icon_state = "booth_rightend"
 	},
@@ -15109,19 +14512,13 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "Px" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Pz" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "PA" = (
@@ -15162,19 +14559,13 @@
 	chance_initial_contents = list(/obj/item/clothing/under/blacktango=1,/obj/item/clothing/under/redeveninggown=1,/obj/item/clothing/under/janimaid=1,/obj/item/clothing/suit/jacket/leather=1,/obj/item/clothing/under/suit/charcoal=1,/obj/item/clothing/under/f13/bennys=1,/obj/item/clothing/under/suit/burgundy=1,/obj/item/clothing/under/pants/camo=1,/obj/item/clothing/under/rank/bartender/purple=1,/obj/item/clothing/under/rank/bartender=1,/obj/item/clothing/under/suit/sl=1,/obj/item/clothing/under/suit/navy=1,/obj/item/clothing/under/suit/black/skirt=1,/obj/item/clothing/under/f13/bluedress=1,/obj/item/clothing/under/f13/pinkdress=1,/obj/item/clothing/under/f13/greendress=1,/obj/item/clothing/under/f13/housewifedress50s=1,/obj/item/clothing/under/f13/relaxedwear=1,/obj/item/clothing/under/f13/spring=1,/obj/item/clothing/under/suit/tan=1,/obj/item/clothing/under/suit/turtle/grey=1,/obj/item/clothing/under/suit_jacket/checkered=1,/obj/item/clothing/under/suit_jacket/female=1,/obj/item/clothing/under/suit/waiter=1,/obj/item/clothing/under/suit/black=1,/obj/item/clothing/under/rank/civilian/lawyer/bluesuit=1,/obj/item/clothing/under/lawyer/blacksuit=1,/obj/item/clothing/under/f13/gentlesuit=1,/obj/item/clothing/under/f13/densuit=1,/obj/item/clothing/suit/toggle/lawyer=1,/obj/item/clothing/suit/toggle/lawyer/black=1,/obj/item/clothing/suit/toggle/lawyer/purple=1,/obj/item/clothing/suit/toggle/labcoat/f13/wanderer=1,/obj/item/clothing/under/f13/agent47=1,/obj/item/clothing/under/f13/keksweater=1,/obj/item/clothing/under/lawyer/black=1,/obj/item/clothing/under/misc/poly_bottomless=1,/obj/item/clothing/under/pants/blackjeans=1,/obj/item/clothing/under/pants/jeans=1,/obj/item/clothing/under/pants/jeanshort=1,/obj/item/clothing/under/pants/khaki=1,/obj/item/clothing/under/pants/red=1);
 	name = "\improper clothes shelf"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "PG" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "PH" = (
@@ -15189,15 +14580,17 @@
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "PJ" = (
-/obj/effect/decal/marking{
-	icon = 'icons/obj/vehicles/rustybus.dmi';
+/obj/effect/overlay/bus/rusty{
 	icon_state = "busnoshadow";
-	desc = null;
-	name = "bus";
 	pixel_x = -224;
 	pixel_y = -32;
-	plane = -4;
-	layer = 4.2
+	layer = 2.1
+	},
+/obj/effect/overlay/bus/rusty{
+	icon_state = "bus_upper_half";
+	pixel_x = -224;
+	layer = 4.51;
+	pixel_y = -32
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -15217,15 +14610,11 @@
 	doc_content_5 = "Unable to contact Hubris Comics Publishing. Please try again later.";
 	name = "Grognak Demo"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "PM" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/building)
 "PN" = (
@@ -15241,13 +14630,9 @@
 	name = "cut lampost";
 	desc = null
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "PQ" = (
@@ -15255,22 +14640,16 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "PR" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
 	},
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "PS" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/building)
 "PT" = (
@@ -15279,9 +14658,7 @@
 /area/f13/building)
 "PU" = (
 /obj/item/caution,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "PW" = (
@@ -15325,9 +14702,7 @@
 "Qd" = (
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Qe" = (
@@ -15339,15 +14714,9 @@
 	},
 /area/f13/building)
 "Qg" = (
-/obj/effect/decal/marking{
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "wlpaint";
+/obj/effect/overlay/whitelegpainting{
 	dir = 10;
-	name = "painting";
-	desc = null;
-	pixel_x = 32;
-	plane = -14;
-	layer = 4.4
+	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/roof/stairs/north,
 /area/f13/wasteland)
@@ -15360,10 +14729,8 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Qj" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horheavy,
@@ -15378,9 +14745,7 @@
 "Ql" = (
 /obj/structure/closet/crate/large,
 /obj/item/pet_carrier,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Qm" = (
@@ -15416,47 +14781,22 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "Qt" = (
-/turf/closed/wall/mineral/wood/nonmetal{
-	icon = 'icons/turf/walls/wood_wall.dmi';
-	canSmoothWith = list(/obj/structure/falsewall/wood,/turf/closed/wall/mineral/wood);
-	smooth = 1
-	},
+/turf/closed/wall/f13/woodalt,
 /area/f13/tunnel)
 "Qv" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "c";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 32;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -5
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "e";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 32;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 9
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "s";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 32;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 21
 	},
 /obj/item/feather{
@@ -15464,9 +14804,7 @@
 	},
 /obj/structure/rack/shelf_metal,
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Qw" = (
@@ -15480,13 +14818,9 @@
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Qz" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "QA" = (
@@ -15508,9 +14842,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "QB" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "QC" = (
@@ -15537,10 +14869,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "QG" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi'
+/obj/effect/overlay/curb{
+	layer = 2.91
 	},
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
@@ -15548,24 +14878,15 @@
 /turf/closed/indestructible/f13/vaultwall/notvaultwall,
 /area/f13/wasteland)
 "QI" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
+/obj/effect/overlay/curb/north{
 	pixel_y = -29;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.92
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 8;
+/obj/effect/overlay/curb/west{
 	pixel_x = -1;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	layer = 2.91
 	},
-/obj/effect/decal/marking{
-	icon_state = "curb";
-	dir = 1;
-	icon = 'icons/fallout/objects/wendover.dmi';
+/obj/effect/overlay/curb/north{
 	layer = 2.91
 	},
 /obj/structure/flora/tree/wasteland{
@@ -15631,9 +14952,7 @@
 /obj/item/storage/box/drinkingglasses{
 	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "QR" = (
@@ -15662,9 +14981,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "QW" = (
@@ -15696,17 +15013,19 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/one)
 "Rb" = (
-/obj/effect/decal/marking{
+/obj/effect/overlay/shadow/tarp{
+	icon = 'icons/fallout/objects/tarpaulinhorizontal.dmi';
+	icon_state = "shadowcorner";
+	layer = 2.1;
+	pixel_x = -64
+	},
+/obj/effect/overlay/shadow/tarp{
 	icon = 'icons/fallout/objects/tarpaulinhorizontal.dmi';
 	icon_state = "shadow";
-	color = "#000000";
-	name = null;
-	desc = null;
-	plane = -4;
 	layer = 4.9;
-	mouse_opacity = 0
+	pixel_x = -64
 	},
-/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Rc" = (
 /obj/structure/rack/shelf_metal,
@@ -15715,38 +15034,28 @@
 	pixel_x = 2;
 	pixel_y = -1
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/bronze,
 /area/f13/building)
 "Rd" = (
 /obj/machinery/vending/cola/red,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Re" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Rf" = (
 /obj/structure/simple_door/brokenglass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Rg" = (
 /obj/structure/sign/poster/prewar/protectron{
 	pixel_x = -32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Ri" = (
@@ -15770,9 +15079,7 @@
 	},
 /area/f13/wasteland)
 "Rm" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/booth{
 	icon_state = "booth_north_west"
 	},
@@ -15782,9 +15089,7 @@
 /obj/structure/chair/sofa/corp/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Rp" = (
@@ -15847,9 +15152,7 @@
 /obj/structure/sign/poster/contraband/space_cube{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Rz" = (
@@ -15859,33 +15162,17 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "RA" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "l";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -25
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "o";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -13
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "RB" = (
@@ -15898,9 +15185,7 @@
 /obj/item/camera/detective{
 	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "RD" = (
@@ -15927,13 +15212,9 @@
 /obj/structure/obstacle/barbedwire{
 	dir = 8
 	},
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "RI" = (
@@ -15941,13 +15222,9 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "RJ" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "transition2";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "RK" = (
@@ -15975,9 +15252,7 @@
 	pixel_y = 3
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "RO" = (
@@ -16049,17 +15324,13 @@
 "RX" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/barricade/tentclothedge,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "RY" = (
 /obj/structure/car/rubbish2,
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /obj/structure/chair/bench{
@@ -16072,9 +15343,7 @@
 /obj/item/feather{
 	icon_state = "downfeather"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Sa" = (
@@ -16126,9 +15395,7 @@
 /area/centcom/evac)
 "Si" = (
 /obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Sj" = (
@@ -16199,9 +15466,7 @@
 /area/f13/tcoms)
 "Sw" = (
 /obj/structure/simple_door/brokenglass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/nosmooth,
 /area/f13/building)
 "Sx" = (
@@ -16262,9 +15527,7 @@
 	},
 /area/f13/tcoms)
 "SG" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/corner{
 	dir = 1
 	},
@@ -16382,12 +15645,7 @@
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Ta" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
-	density = 0
-	},
+/obj/structure/junk/foundation,
 /obj/item/crafting/lunchbox,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
@@ -16413,7 +15671,9 @@
 /area/f13/tcoms)
 "Tf" = (
 /obj/structure/table/reinforced,
-/obj/item/flashlight/lamp/green,
+/obj/item/flashlight/lamp/green{
+	pixel_y = 3
+	},
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Tg" = (
@@ -16451,15 +15711,11 @@
 	color = "#7a5647";
 	layer = 2.6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/processor/chopping_block{
 	pixel_y = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Tl" = (
@@ -16472,9 +15728,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "Tn" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "To" = (
@@ -16496,9 +15750,7 @@
 /obj/item/feather{
 	icon_state = "downfeather"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblue{
 	sunlight_state = 1
 	},
@@ -16514,9 +15766,7 @@
 /obj/item/bodypart/head/robot{
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Ty" = (
@@ -16560,13 +15810,9 @@
 	},
 /area/f13/building)
 "TG" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/left,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "TH" = (
@@ -16598,25 +15844,19 @@
 /obj/structure/chair/f13chair1{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "TM" = (
 /obj/structure/chair/stool/retro/backed,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "TN" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_north_middle"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "TO" = (
@@ -16653,13 +15893,9 @@
 /turf/closed/indestructible/f13/vaultwall/notvaultwall,
 /area/f13/building)
 "TS" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "verticalleftborderright0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "TU" = (
@@ -16738,9 +15974,7 @@
 	pixel_x = 1;
 	layer = 2.8
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Uf" = (
@@ -16749,9 +15983,7 @@
 	pixel_y = -7;
 	pixel_x = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Ug" = (
@@ -16790,9 +16022,7 @@
 /area/f13/building)
 "Ul" = (
 /obj/structure/window/fulltile/wood/broken,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/building)
 "Um" = (
@@ -16802,13 +16032,9 @@
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Un" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_red";
+/obj/structure/car/totaledbuggy{
 	dir = 4;
-	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -16828,9 +16054,7 @@
 /obj/structure/chair/sofa/corp{
 	pixel_y = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Ur" = (
@@ -16897,9 +16121,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_north_east"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "UC" = (
@@ -16911,18 +16133,14 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "UD" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	sunlight_state = 1
 	},
 /area/f13/building)
 "UE" = (
 /obj/structure/table/glass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "UF" = (
@@ -16931,15 +16149,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "UG" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "UH" = (
@@ -16961,9 +16175,7 @@
 	color = "#db4d4d";
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "UM" = (
@@ -16980,34 +16192,18 @@
 /area/centcom/evac)
 "UP" = (
 /obj/structure/chair/office/dark,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "UQ" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "l";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -11
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "o";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 1
 	},
 /turf/open/floor/carpet/royalblue{
@@ -17071,9 +16267,7 @@
 	},
 /obj/item/keycard/cheese,
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -17103,10 +16297,7 @@
 	},
 /area/f13/wasteland)
 "Vk" = (
-/mob/living/simple_animal/hostile/handy/protectron{
-	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/three,/obj/item/stock_parts/cell/ammo/mfc);
-	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner");
-	wander = 0;
+/obj/structure/nest/mob/protectron{
 	dir = 4
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
@@ -17129,9 +16320,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "Vo" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/indestructible/f13/vaultwall/notvaultwall,
 /area/f13/building)
 "Vq" = (
@@ -17150,9 +16339,7 @@
 	pixel_y = 5;
 	pixel_x = 3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -17183,9 +16370,7 @@
 	density = 0;
 	pixel_y = 12
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -17247,23 +16432,16 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "VI" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
+/obj/structure/junk/foundation{
 	dir = 8;
 	layer = 4.1;
-	density = 0;
-	resistance_flags = 115;
-	mouse_opacity = 0
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "VJ" = (
 /obj/structure/chair/sofa/corp/right,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "VK" = (
@@ -17353,9 +16531,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "VV" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/stage_tl,
 /area/f13/building)
 "VX" = (
@@ -17409,69 +16585,32 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "Wg" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "w";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -30
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = ",";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 26;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -20
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "p";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 33;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -2
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "r";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 10
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "i";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 32;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 19
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Wh" = (
@@ -17531,9 +16670,7 @@
 /area/f13/wasteland)
 "Wr" = (
 /obj/item/chair/wood/wings,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Ws" = (
@@ -17541,13 +16678,9 @@
 /turf/open/indestructible/ground/outside/road/vert,
 /area/f13/wasteland)
 "Wt" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain1";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/building)
 "Wu" = (
@@ -17640,9 +16773,7 @@
 "WJ" = (
 /obj/structure/table/wood/fancy,
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "WK" = (
@@ -17658,9 +16789,7 @@
 	can_buckle = 0;
 	layer = 2.98
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "WM" = (
@@ -17672,6 +16801,15 @@
 /obj/structure/debris/v1,
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
+"WO" = (
+/obj/structure/wreck/bus/blue{
+	layer = 4.51;
+	icon_state = "blue_upper";
+	pixel_y = -32;
+	bound_height = 32
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor,
+/area/f13/wasteland)
 "WQ" = (
 /obj/structure/chair/comfy/brown{
 	color = "#596479";
@@ -17682,12 +16820,8 @@
 	},
 /area/f13/building)
 "WR" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "WS" = (
@@ -17712,9 +16846,7 @@
 "WU" = (
 /obj/structure/junk/small/table,
 /obj/item/folder/yellow,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "WV" = (
@@ -17751,9 +16883,7 @@
 /obj/structure/noticeboard{
 	pixel_x = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Xc" = (
@@ -17806,9 +16936,7 @@
 	pixel_y = 5
 	},
 /obj/structure/rack/shelf_metal,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Xl" = (
@@ -17854,16 +16982,11 @@
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Xp" = (
-/obj/structure/junk/locker{
-	icon = 'icons/obj/smooth_structures/catwalk.dmi';
-	icon_state = "straight";
-	name = "foundation";
+/obj/structure/junk/foundation{
 	dir = 8;
 	pixel_y = -9;
 	layer = 4.1;
-	density = 0;
-	resistance_flags = 115;
-	mouse_opacity = 0
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
@@ -17877,9 +17000,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/building)
 "Xr" = (
@@ -17907,9 +17028,7 @@
 	pixel_x = 18
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "Xv" = (
@@ -17994,9 +17113,7 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_north_west"
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth/lit,
 /area/f13/building)
 "XG" = (
@@ -18046,9 +17163,7 @@
 	pixel_y = 5;
 	pixel_x = -3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "XN" = (
@@ -18099,13 +17214,9 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "XT" = (
-/obj/structure/car/rubbish3{
-	icon = 'icons/fallout/vehicles/centeredsmaller.dmi';
-	icon_state = "buggy_olive";
+/obj/structure/car/totaledbuggy/olive{
 	dir = 4;
-	bound_height = 32;
-	pixel_x = -16;
-	name = "totaled buggy"
+	pixel_x = -16
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
@@ -18118,9 +17229,7 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "XV" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
@@ -18173,33 +17282,17 @@
 /obj/item/trash/plate{
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Yc" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "l";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
-	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150
+	pixel_y = 31
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "o";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = 14
 	},
 /obj/machinery/photocopier,
@@ -18228,9 +17321,7 @@
 /obj/machinery/chem_dispenser/drinks{
 	pixel_y = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
@@ -18254,13 +17345,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "Yj" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaltopbordertop0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Yk" = (
@@ -18273,9 +17360,7 @@
 	dir = 4;
 	pixel_x = 3
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Yn" = (
@@ -18365,28 +17450,14 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "YD" = (
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = "w";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 31;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -17
 	},
-/obj/effect/decal/marking{
-	icon = 'icons/effects/crayondecal.dmi';
+/obj/effect/overlay/painting{
 	icon_state = ",";
-	dir = 1;
-	name = "graffiti";
-	desc = null;
 	pixel_y = 27;
-	layer = 2.11;
-	plane = -4;
-	alpha = 150;
 	pixel_x = -7
 	},
 /turf/open/floor/carpet/red/lit,
@@ -18411,9 +17482,7 @@
 	pixel_y = 5
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "YI" = (
@@ -18432,12 +17501,8 @@
 	layer = 2;
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "YK" = (
@@ -18508,9 +17573,7 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "YU" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
 /obj/item/trash/plate{
 	pixel_y = 7;
@@ -18545,10 +17608,8 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Zb" = (
-/obj/effect/decal/marking{
-	icon_state = "curb";
+/obj/effect/overlay/curb{
 	layer = 2.91;
-	icon = 'icons/fallout/objects/wendover.dmi';
 	pixel_y = -1
 	},
 /obj/structure/chair/bench{
@@ -18567,9 +17628,7 @@
 	loot = list(/obj/item/clothing/under/blacktango,/obj/item/clothing/under/redeveninggown,/obj/item/clothing/under/janimaid,/obj/item/clothing/suit/jacket/leather,/obj/item/clothing/under/suit/charcoal,/obj/item/clothing/under/f13/bennys,/obj/item/clothing/under/suit/burgundy,/obj/item/clothing/under/pants/camo,/obj/item/clothing/under/rank/bartender/purple,/obj/item/clothing/under/rank/bartender,/obj/item/clothing/under/suit/sl,/obj/item/clothing/under/suit/navy,/obj/item/clothing/under/suit/black/skirt,/obj/item/clothing/under/f13/bluedress,/obj/item/clothing/under/f13/pinkdress,/obj/item/clothing/under/f13/greendress,/obj/item/clothing/under/f13/housewifedress50s,/obj/item/clothing/under/f13/relaxedwear,/obj/item/clothing/under/f13/spring,/obj/item/clothing/under/suit/tan,/obj/item/clothing/under/suit/turtle/grey,/obj/item/clothing/under/suit_jacket/checkered,/obj/item/clothing/under/suit_jacket/female,/obj/item/clothing/under/suit/waiter,/obj/item/clothing/under/suit/black,/obj/item/clothing/under/rank/civilian/lawyer/bluesuit,/obj/item/clothing/under/rank/captain/suit,/obj/item/clothing/under/lawyer/blacksuit,/obj/item/clothing/under/f13/gentlesuit,/obj/item/clothing/under/f13/densuit,/obj/item/clothing/suit/toggle/lawyer,/obj/item/clothing/suit/toggle/lawyer/black,/obj/item/clothing/suit/toggle/lawyer/purple,/obj/item/clothing/suit/toggle/labcoat/f13/wanderer,/obj/item/clothing/under/f13/agent47,/obj/item/clothing/under/f13/keksweater,/obj/item/clothing/under/lawyer/black,/obj/item/clothing/under/misc/poly_bottomless,/obj/item/clothing/under/pants/blackjeans,/obj/item/clothing/under/pants/jeans,/obj/item/clothing/under/pants/jeanshort,/obj/item/clothing/under/pants/khaki,/obj/item/clothing/under/pants/red)
 	},
 /obj/item/clothing/shoes/laceup,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "Zf" = (
@@ -18583,7 +17642,7 @@
 "Zg" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/pamphlet{
-	pixel_y = -2;
+	pixel_y = 1;
 	pixel_x = -1;
 	name = "Debon Air";
 	desc = "The number one in air travel amenities."
@@ -18591,7 +17650,7 @@
 /obj/item/paper/pamphlet{
 	layer = 2.99;
 	pixel_x = 1;
-	pixel_y = 6;
+	pixel_y = 9;
 	name = "Coarse Air";
 	desc = "By, of and for raiders."
 	},
@@ -18637,13 +17696,9 @@
 /area/f13/building)
 "Zo" = (
 /obj/structure/barricade/sandbags,
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/sidewalk.dmi';
+/turf/closed/indestructible/f13/matrix/sidewalk{
 	icon_state = "horizontaloutermain0";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "Zp" = (
@@ -18676,9 +17731,7 @@
 	pixel_y = 6
 	},
 /obj/machinery/light/floor,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "Zv" = (
@@ -18689,9 +17742,7 @@
 	layer = 2.6
 	},
 /obj/item/flashlight/lamp/green,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oak{
 	sunlight_state = 1
 	},
@@ -18704,9 +17755,7 @@
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -18754,9 +17803,7 @@
 	pixel_y = -7
 	},
 /obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "ZC" = (
@@ -18768,9 +17815,7 @@
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "ZD" = (
@@ -18783,9 +17828,7 @@
 	pixel_y = 9;
 	pixel_x = -6
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "ZE" = (
@@ -18806,9 +17849,7 @@
 	pixel_y = 2;
 	layer = 3.01
 	},
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "ZH" = (
@@ -18816,9 +17857,7 @@
 /area/f13/wasteland)
 "ZI" = (
 /obj/item/kirbyplants/random,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "ZJ" = (
@@ -18838,13 +17877,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "ZM" = (
-/turf/closed/indestructible/f13/matrix{
-	icon = 'icons/fallout/turfs/asphalt.dmi';
+/turf/closed/indestructible/f13/matrix/asphalt{
 	icon_state = "transition6";
-	opacity = 0;
-	dir = 1;
-	plane = -15;
-	sunlight_state = 1
+	dir = 1
 	},
 /area/f13/wasteland)
 "ZN" = (
@@ -18878,9 +17913,7 @@
 	pixel_y = -2
 	},
 /obj/item/storage/briefcase/modularbundle,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "ZT" = (
@@ -18891,9 +17924,7 @@
 /turf/open/indestructible/ground/outside/road/stripyroad,
 /area/f13/wasteland)
 "ZV" = (
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "ZW" = (
@@ -18909,9 +17940,7 @@
 "ZY" = (
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt/dust{
-	invisibility = 101
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/f13/building)
 "ZZ" = (
@@ -58190,7 +57219,7 @@ Vd
 Vd
 TR
 qj
-qj
+OY
 Sn
 QK
 QK
@@ -65164,7 +64193,7 @@ TR
 QK
 Xf
 VU
-Rb
+DX
 QK
 QK
 QK
@@ -65678,7 +64707,7 @@ TR
 Pz
 Xf
 MD
-DX
+ME
 Er
 DX
 DX
@@ -66452,7 +65481,7 @@ Wq
 QK
 MD
 Fz
-ME
+QK
 TH
 aa
 aa
@@ -66966,7 +65995,7 @@ QK
 DX
 Xf
 MD
-QK
+Rb
 Mj
 aa
 aa
@@ -67220,7 +66249,7 @@ TR
 Pz
 Xf
 Ei
-ME
+QK
 QK
 DX
 QK
@@ -67734,7 +66763,7 @@ TR
 QK
 Xf
 MD
-QK
+Rb
 QK
 DX
 DG
@@ -69997,7 +69026,7 @@ Ax
 QK
 Xf
 hN
-Rb
+DX
 QK
 TR
 QP
@@ -70511,7 +69540,7 @@ QK
 DX
 Xf
 MD
-DX
+ME
 Pz
 TR
 TR
@@ -71022,7 +70051,7 @@ YQ
 DX
 Xf
 QA
-Rb
+DX
 QK
 QK
 QK
@@ -71536,7 +70565,7 @@ Mj
 QK
 MD
 MD
-QK
+Rb
 OM
 QK
 QK
@@ -72053,7 +71082,7 @@ QK
 DX
 Xf
 YC
-Rb
+DX
 Pz
 TR
 TR
@@ -72567,7 +71596,7 @@ QK
 DX
 Xf
 Xf
-DX
+ME
 QK
 TR
 TG
@@ -76447,7 +75476,7 @@ Ys
 Xc
 Xc
 Xc
-OJ
+WO
 zc
 Gh
 Dw

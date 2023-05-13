@@ -5064,11 +5064,13 @@
 /area/f13/caves)
 "dnH" = (
 /obj/structure/junk/foundation{
-	pixel_y = 2
+	pixel_y = 2;
+	layer = 2.1
 	},
 /obj/structure/junk/foundation{
 	dir = 10;
-	pixel_y = -5
+	pixel_y = -5;
+	layer = 2.11
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -13106,7 +13108,8 @@
 "ivV" = (
 /obj/structure/junk/foundation{
 	pixel_x = 16;
-	pixel_y = 4
+	pixel_y = 4;
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -19245,7 +19248,8 @@
 /area/f13/building)
 "mwv" = (
 /obj/structure/junk/foundation{
-	pixel_y = 2
+	pixel_y = 2;
+	layer = 2.1
 	},
 /obj/effect/overlay/desert/sonora/edge/south,
 /obj/item/crafting/lunchbox{
@@ -20961,7 +20965,7 @@
 "nEX" = (
 /obj/effect/decal/remains/rock{
 	icon_state = "basalt3";
-	pixel_x = 2
+	pixel_x = 4
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -30889,7 +30893,8 @@
 /area/f13/wasteland)
 "tAj" = (
 /obj/structure/junk/foundation{
-	pixel_y = 2
+	pixel_y = 2;
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -31678,9 +31683,6 @@
 	pixel_y = 12
 	},
 /obj/machinery/light,
-/mob/living/simple_animal/cow/brahmin{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/oil/slippery{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "brahminshit";
@@ -31688,6 +31690,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/mob/brahmin{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "ubG" = (
@@ -34085,6 +34090,13 @@
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
+"vAt" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/bloatfly{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/building)
 "vAv" = (
 /obj/structure/sign/poster/ncr/loaded{
 	pixel_x = -32
@@ -34486,7 +34498,8 @@
 /area/f13/wasteland)
 "vNo" = (
 /obj/structure/junk/foundation{
-	pixel_y = 2
+	pixel_y = 2;
+	layer = 2.1
 	},
 /obj/item/crafting/lunchbox{
 	pixel_y = 2
@@ -35134,6 +35147,9 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "wgZ" = (
+/obj/item/flashlight/lantern{
+	on = 1
+	},
 /obj/item/toy/crayon/spraycan,
 /obj/item/toy/crayon/spraycan,
 /obj/item/toy/crayon/spraycan,
@@ -37612,6 +37628,13 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"xBj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/bloatfly{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/building)
 "xBl" = (
 /obj/structure/lattice/catwalk/wing/three,
 /turf/open/floor/wood/f13/lit,
@@ -38131,7 +38154,7 @@
 /obj/structure/railing/wood/post{
 	pixel_x = -15;
 	pixel_y = 29;
-	layer = 4.26
+	layer = 4.28
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
@@ -70497,7 +70520,7 @@ wxw
 rGF
 pMh
 uXY
-uXY
+xBj
 pnd
 rGF
 rGF
@@ -72038,7 +72061,7 @@ rGF
 pnd
 uXY
 uXY
-uXY
+vAt
 uXY
 uXY
 uXY
