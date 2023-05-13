@@ -82,9 +82,7 @@
 /area/f13/wasteland)
 "abf" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7
-	},
+/obj/structure/nest/spawner/gecko,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "abH" = (
@@ -2276,7 +2274,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -4178,14 +4176,25 @@
 	},
 /area/f13/wasteland)
 "cDs" = (
-/obj/structure/plasticflaps/narrowcrevice,
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7;
-	pixel_x = 34;
-	plane = -15
+/obj/structure/flora/grass/drygrass/eight/bunchone{
+	pixel_x = -3
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/flora/grass/drygrass/seven{
+	pixel_y = -5;
+	pixel_x = 3
+	},
+/obj/structure/flora/grass/drygrass/seven{
+	pixel_y = -6;
+	pixel_x = -11
+	},
+/obj/structure/nest/mob/geckofire{
+	icon_state = "firegekko_dead";
+	pixel_y = -6;
+	pixel_x = 39;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/wasteland)
 "cDu" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowvertical";
@@ -5183,11 +5192,9 @@
 /turf/open/floor/wood/f13/housewoodbroken2,
 /area/f13/building)
 "dqu" = (
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7;
-	pixel_y = 33;
-	pixel_x = 2;
-	max_mobs = 1
+/obj/structure/table/wood/greyscale,
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -7582,10 +7589,11 @@
 /obj/structure/flora/grass/drygrass/eight/bunchone,
 /obj/structure/flora/grass/drygrass/seven/bunchone,
 /obj/structure/flora/grass/drygrass/seven/bunchtwo,
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7;
-	pixel_y = -3;
-	max_mobs = 1
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead";
+	layer = 2.89;
+	pixel_x = 21;
+	pixel_y = 9
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -10315,14 +10323,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "gAw" = (
-/obj/structure/flora/grass/drygrass/eight/bunchone,
+/obj/structure/flora/grass/drygrass/eight/bunchone{
+	layer = 2.88
+	},
 /obj/structure/flora/grass/drygrass/seven/bunchone,
 /obj/structure/flora/grass/drygrass/seven/bunchtwo,
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7;
-	pixel_y = -2;
-	max_mobs = 1;
-	pixel_x = 1
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead";
+	layer = 2.89
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -10679,7 +10687,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -36075,11 +36083,11 @@
 /turf/open/transparent/openspace/air,
 /area/f13/tunnel)
 "wKn" = (
-/obj/structure/nest/spawner/gecko{
-	layer = 2.7;
-	pixel_y = 33;
-	pixel_x = 2;
-	max_mobs = 1
+/obj/structure/nest/mob/geckofire{
+	icon_state = "firegekko_dead";
+	pixel_y = 22;
+	layer = 2.1;
+	pixel_x = 3
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -73551,8 +73559,8 @@ xPD
 fEt
 oya
 vVN
-oya
 dqu
+bJI
 lkH
 xCz
 xCz
@@ -77904,7 +77912,7 @@ mfk
 mfk
 ugf
 ugf
-ugf
+cDs
 ugf
 ugf
 rfw
@@ -79977,7 +79985,7 @@ mfk
 mfk
 koZ
 vRv
-cDs
+abf
 aIu
 aIu
 aIu

@@ -50,6 +50,7 @@
 		V.vehicle_update_water()
 		if(V.vehicle_check_submerged() <= 0)
 			return
+		playsound(src, "water_wade", 20, TRUE)
 	AM.water_act(5)
 	..()
 

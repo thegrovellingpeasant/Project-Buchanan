@@ -1511,7 +1511,8 @@
 /area/f13/tunnel)
 "axN" = (
 /obj/structure/nest/mob/geckofire{
-	dir = 4
+	dir = 4;
+	icon_state = "firegekko_dead"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -3254,9 +3255,7 @@
 /obj/machinery/door/poddoor/gate/bunker/preopen{
 	id = "80shydro"
 	},
-/turf/open/floor/vault{
-	sunlight_state = 1
-	},
+/turf/open/floor/plasteel/rockvault/lit,
 /area/f13/potashfarm)
 "aWH" = (
 /obj/effect/overlay/shadow,
@@ -3468,6 +3467,10 @@
 	icon = 'icons/fallout/objects/wendover.dmi';
 	dir = 9
 	},
+/area/f13/wasteland)
+"aZM" = (
+/obj/effect/overlay/catwalk,
+/turf/open/indestructible/ground/outside/roof/stairs,
 /area/f13/wasteland)
 "aZN" = (
 /obj/structure/lamp_post/tall/singles,
@@ -7149,7 +7152,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -11617,6 +11620,9 @@
 	layer = 4.26
 	},
 /obj/effect/overlay/catwalk,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "duL" = (
@@ -13837,11 +13843,9 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
 "dYQ" = (
-/obj/effect/overlay/desert/sonora/saltflats/south{
-	dir = 6
-	},
-/turf/open/floor/vault,
-/area/f13/building)
+/obj/effect/overlay/catwalk,
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "dYW" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -23470,6 +23474,20 @@
 /obj/effect/overlay/waterlow,
 /turf/open/indestructible/ground/outside/lifelessdesert/edge/hillsthree/one,
 /area/f13/wasteland)
+"gKl" = (
+/obj/effect/overlay/catwalk,
+/obj/structure/table{
+	pixel_y = 4
+	},
+/obj/effect/overlay/curb{
+	layer = 2.12;
+	pixel_y = -28
+	},
+/obj/item/clothing/head/helmet/f13/deathskull{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/rockvault/lit,
+/area/f13/wasteland)
 "gKp" = (
 /obj/item/storage/briefcase,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
@@ -24224,7 +24242,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -25266,6 +25284,7 @@
 /obj/structure/fluff/railing/corner{
 	dir = 8
 	},
+/obj/effect/decal/remains/skulls,
 /turf/open/indestructible/ground/outside/saltflats/old,
 /area/f13/wasteland)
 "hoQ" = (
@@ -28820,7 +28839,7 @@
 	name = "The Mother of Combustion";
 	icon_state = "ladystatue-left";
 	layer = 5;
-	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she is a valuable motif for the compound."
+	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she's a valuable motif for the compound."
 	},
 /obj/structure/wreck/trash/engine{
 	icon_state = "wellwheel";
@@ -31503,7 +31522,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /obj/structure/table/wood/greyscale/red,
 /obj/item/card/id/rusted/rustedmedallion{
@@ -36081,7 +36100,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -37818,7 +37837,7 @@
 "kRc" = (
 /obj/structure/statue/bos/ladyright{
 	name = "The Mother of Combustion";
-	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she is a valuable motif for the compound.";
+	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she's a valuable motif for the compound.";
 	layer = 4.01
 	},
 /obj/structure/wreck/trash/engine{
@@ -44243,6 +44262,12 @@
 	dir = 4;
 	layer = 2.89
 	},
+/obj/effect/decal/remains/cloth{
+	pixel_x = -12
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = -12
+	},
 /turf/open/indestructible/ground/outside/saltflats/old,
 /area/f13/wasteland)
 "mTx" = (
@@ -45958,9 +45983,7 @@
 /area/f13/wasteland)
 "nrj" = (
 /obj/effect/overlay/desert/sonora/saltflats/north,
-/turf/open/floor/vault{
-	sunlight_state = 1
-	},
+/turf/open/floor/plasteel/rockvault/lit,
 /area/f13/potashfarm)
 "nrl" = (
 /turf/open/indestructible/ground/outside/fakeelevation{
@@ -57672,6 +57695,19 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
+"qIx" = (
+/obj/structure/curtain{
+	color = "#363636";
+	alpha = 255;
+	layer = 4.26
+	},
+/obj/effect/overlay/catwalk,
+/obj/effect/overlay/desert/sonora/saltflats/north{
+	dir = 5;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/rockvault/lit,
+/area/f13/wasteland)
 "qIz" = (
 /obj/structure/railing{
 	dir = 10;
@@ -67298,7 +67334,7 @@
 "tuf" = (
 /obj/structure/statue/bos/ladyright{
 	name = "The Mother of Combustion";
-	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she is a valuable motif for the compound.";
+	desc = "Ancestor, object of worship or decoration stolen from the Brotherhood, no one can remember. All anyone knows for sure is she's a valuable motif for the compound.";
 	layer = 4.01
 	},
 /obj/structure/wreck/trash/engine{
@@ -71171,7 +71207,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
@@ -72083,7 +72119,8 @@
 "uOv" = (
 /obj/structure/nest/spawner/mirelurk/mirelurkmuck{
 	pixel_x = 7;
-	pixel_y = -5
+	pixel_y = -5;
+	plane = -15
 	},
 /turf/open/indestructible/ground/outside/saltflats/evapcorner,
 /area/f13/wasteland)
@@ -73228,7 +73265,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -74276,7 +74313,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
 	light_color = "#c0c7d0";
-	layer = 4.1
+	layer = 4.3
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
@@ -76994,8 +77031,10 @@
 	layer = 2.89
 	},
 /obj/structure/nest/spawner/mirelurk/mirelurkmuck{
-	pixel_x = 5;
-	pixel_y = -13
+	pixel_x = 7;
+	pixel_y = -12;
+	layer = 2.89;
+	plane = -15
 	},
 /obj/effect/overlay/shoreline/east{
 	icon = 'icons/fallout/objects/decals.dmi';
@@ -140711,7 +140750,7 @@ cqG
 jpc
 ikC
 uvT
-dYQ
+rod
 oFY
 gQP
 gQP
@@ -146102,10 +146141,10 @@ jOY
 tSM
 uEc
 duF
-kOG
-kOG
-kOG
-duF
+gKl
+dYQ
+aZM
+qIx
 uvT
 uvT
 fBz
