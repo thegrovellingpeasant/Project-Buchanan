@@ -480,9 +480,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	jobtype	= /datum/job/ncr/f13representative
 	uniform = /obj/item/clothing/under/suit/tan
 	shoes = /obj/item/clothing/shoes/laceup
-	id = /obj/item/card/id/dogtag/ncrrep
+	belt = null
+	id = /obj/item/card/id/dogtag/ncrambassador
 	neck = /obj/item/storage/belt/holster/legholster
 	l_hand = /obj/item/storage/briefcase/crafted
+	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
@@ -491,7 +493,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/repbrahminbaron
-	name = "Brahmin Baron"
+	name = "Northern Californian"
 	suit = /obj/item/clothing/under/suit/burgundy
 	shoes = /obj/item/clothing/shoes/f13/cowboy
 	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
@@ -501,7 +503,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/repexecutive
-	name = "Executive"
+	name = "Southern Californian"
 	suit = /obj/item/clothing/under/rank/security/detective/grey
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(

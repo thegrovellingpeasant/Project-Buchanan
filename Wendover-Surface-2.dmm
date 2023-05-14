@@ -12616,6 +12616,12 @@
 /obj/item/wrench,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
+"dKl" = (
+/obj/structure/nest/spawner/mrhandy{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "dKs" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "intersection";
@@ -76675,6 +76681,14 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/path/hor,
 /area/f13/wasteland)
+"wdU" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/binoculars{
+	pixel_y = 5
+	},
+/turf/open/floor/wood/f13/lit,
+/area/f13/building)
 "wdZ" = (
 /obj/effect/overlay/shadow,
 /obj/structure/car/motoryclehor{
@@ -77438,7 +77452,6 @@
 	},
 /area/f13/building)
 "wnu" = (
-/obj/structure/nest/spawner/mrhandy,
 /obj/structure/car/junk/pod,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -87736,7 +87749,7 @@ jur
 xFa
 vEq
 aQc
-aQc
+wdU
 oCU
 awG
 lDx
@@ -109831,7 +109844,7 @@ jur
 cbV
 inS
 wnu
-mKD
+dKl
 mKD
 mKD
 mKD
