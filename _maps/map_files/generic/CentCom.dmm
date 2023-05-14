@@ -16969,13 +16969,13 @@
 	name = "plane ticket"
 	},
 /obj/item/stack/arcadeticket{
-	pixel_x = 5;
-	pixel_y = 4;
+	pixel_x = 6;
+	pixel_y = 5;
 	name = "plane ticket"
 	},
 /obj/item/stack/arcadeticket{
-	pixel_y = -9;
-	pixel_x = -2;
+	pixel_y = -5;
+	pixel_x = -4;
 	name = "plane ticket"
 	},
 /obj/machinery/light/floor,
