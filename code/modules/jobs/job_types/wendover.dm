@@ -1118,7 +1118,7 @@ Mayor
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel
 	duffelbag = /obj/item/storage/backpack/duffelbag
-	gloves = /obj/item/clothing/gloves/fingerless
+	gloves = null
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
 		/obj/item/lighter = 1,
@@ -1128,11 +1128,9 @@ Mayor
 	..()
 	uniform = pick(
 		/obj/item/clothing/under/f13/bennys, \
-		/obj/item/clothing/under/rank/civilian/lawyer/bluesuit, \
 		/obj/item/clothing/under/suit_jacket/navy, \
 		/obj/item/clothing/under/suit_jacket/tan, \
 		/obj/item/clothing/under/suit_jacket/charcoal, \
 		/obj/item/clothing/under/suit_jacket/checkered, \
 		/obj/item/clothing/under/suit_jacket/burgundy, \
-		/obj/item/clothing/under/rank/civilian/lawyer/bluesuit, \
 		/obj/item/clothing/under/f13/merccharm)

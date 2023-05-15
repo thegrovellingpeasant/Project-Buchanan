@@ -436,7 +436,48 @@ Raider
 	suit = pick(
 		/obj/item/clothing/suit/armor/f13/kit, \
 		/obj/item/clothing/suit/f13/veteran, \
-		/obj/item/clothing/suit/toggle/labcoat/f13/wanderer \
+		/obj/item/clothing/suit/toggle/labcoat/f13/wanderer, \
+		/obj/item/clothing/suit/f13/duster, \
+		/obj/item/clothing/suit/f13/mfp/raider, \
+		/obj/item/clothing/suit/armor/f13/leatherarmor, \
+		/obj/item/clothing/suit/armor/f13/modif_r_vest, \
+		/obj/item/clothing/suit/armored/light/cowboyvest, \
+		/obj/item/clothing/suit/f13/vest, \
+		/obj/item/clothing/suit/toggle/lawyer/black \
+		)
+	uniform = pick(
+		/obj/item/clothing/under/f13/brahminm, \
+		/obj/item/clothing/under/f13/caravaneer, \
+		/obj/item/clothing/under/f13/cowboyb, \
+		/obj/item/clothing/under/f13/cowboyg, \
+		/obj/item/clothing/under/f13/doctorm, \
+		/obj/item/clothing/under/f13/follower, \
+		/obj/item/clothing/under/f13/ikeduds, \
+		/obj/item/clothing/under/f13/bennys, \
+		/obj/item/clothing/under/f13/bodyguard, \
+		/obj/item/clothing/under/f13/combat, \
+		/obj/item/clothing/under/f13/mechanic, \
+		/obj/item/clothing/under/f13/marlowduds, \
+		/obj/item/clothing/under/f13/masonduds, \
+		/obj/item/clothing/under/f13/merca, \
+		/obj/item/clothing/under/f13/machinist, \
+		/obj/item/clothing/under/f13/mercc, \
+		/obj/item/clothing/under/f13/merchant, \
+		/obj/item/clothing/under/f13/ncrcf, \
+		/obj/item/clothing/under/f13/petrochico, \
+		/obj/item/clothing/under/f13/relaxedwear, \
+		/obj/item/clothing/under/f13/spring, \
+		/obj/item/clothing/under/f13/westender, \
+		/obj/item/clothing/under/lawyer/blacksuit, \
+		/obj/item/clothing/under/misc/pj/blue, \
+		/obj/item/clothing/under/pants/classicjeans, \
+		/obj/item/clothing/under/pants/jeanripped, \
+		/obj/item/clothing/under/pants/khaki, \
+		/obj/item/clothing/under/suit_jacket/tan, \
+		/obj/item/clothing/under/pants/f13/ghoul, \
+		/obj/item/clothing/under/f13/shiny, \
+		/obj/item/clothing/under/f13/sleazeball, \
+		/obj/item/clothing/under/f13/settler \
 		)
 
 /datum/outfit/loadout/salvager

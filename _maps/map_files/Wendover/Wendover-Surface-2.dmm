@@ -1844,7 +1844,6 @@
 "aDk" = (
 /obj/structure/nest/spawner/protectron{
 	pixel_x = -6;
-	spawn_once = 1;
 	layer = 3.91
 	},
 /obj/structure/car/junk/pod{
@@ -2051,7 +2050,9 @@
 /area/f13/wasteland)
 "aFO" = (
 /obj/structure/table/wood,
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 3
+	},
 /obj/effect/overlay/curb/east{
 	layer = 2.11
 	},
@@ -2775,7 +2776,9 @@
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/factory)
 "aQc" = (
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/lit,
@@ -10913,7 +10916,8 @@
 /obj/structure/table,
 /obj/item/flashlight/seclite{
 	on = 1;
-	pixel_y = 3
+	pixel_y = 3;
+	dir = 4
 	},
 /obj/item/reagent_containers/food/drinks/trophy/turquoise{
 	pixel_y = 5
@@ -20311,7 +20315,9 @@
 	},
 /area/f13/wasteland)
 "fQj" = (
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
 /obj/structure/table,
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
@@ -24944,9 +24950,7 @@
 /turf/open/indestructible/ground/outside/saltflats/bluecenter,
 /area/f13/tunnel)
 "hjm" = (
-/obj/structure/car/rubbish4{
-	layer = 3.09
-	},
+/obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
 "hjr" = (
@@ -30994,7 +30998,9 @@
 	color = "#ada28a";
 	alpha = 245
 	},
-/obj/effect/overlay/shadow,
+/obj/effect/overlay/shadow{
+	layer = 4.28
+	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/potashfarm)
 "iVD" = (
@@ -44848,7 +44854,9 @@
 	color = "#ada28a";
 	alpha = 245
 	},
-/obj/effect/overlay/shadow,
+/obj/effect/overlay/shadow{
+	layer = 4.28
+	},
 /turf/open/indestructible/ground/outside/saltflats/crackedright,
 /area/f13/potashfarm)
 "nbe" = (
@@ -50320,8 +50328,11 @@
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/wasteland)
 "oCU" = (
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
 "oDa" = (
@@ -53848,7 +53859,9 @@
 	dir = 8;
 	name = "Scrappy";
 	faction = list("neutral","dog");
-	wander = 1
+	wander = 1;
+	icon_dead = "dog_feral_dead";
+	icon_living = "dog_feral"
 	},
 /obj/structure/bed/dogbed,
 /turf/open/indestructible/ground/outside/saltflats/crackedcornertopleft,
@@ -60608,9 +60621,7 @@
 /area/f13/building)
 "rvX" = (
 /obj/effect/overlay/shadow,
-/obj/structure/car/rubbish2{
-	layer = 4.51
-	},
+/obj/structure/car/rubbish2,
 /obj/effect/decal/cleanable/glass,
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/tunnel)
@@ -65352,7 +65363,9 @@
 /area/f13/building)
 "sNz" = (
 /obj/structure/table/wood,
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 3
+	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
 "sNY" = (
@@ -68305,7 +68318,8 @@
 /obj/effect/overlay/bus/orange{
 	name = null;
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 2.1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/roadi80,
@@ -75692,6 +75706,13 @@
 	},
 /turf/open/indestructible/ground/outside/road/horizontaltopborder,
 /area/f13/tunnel)
+"vNR" = (
+/obj/structure/table,
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
+/turf/open/floor/wood/f13/lit,
+/area/f13/building)
 "vNV" = (
 /obj/item/stack/sheet/leather/ten,
 /obj/item/weaponcrafting/string,
@@ -76686,6 +76707,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/binoculars{
 	pixel_y = 5
+	},
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
@@ -87751,7 +87775,7 @@ vEq
 aQc
 wdU
 oCU
-awG
+vNR
 lDx
 uoS
 qAy
@@ -131877,7 +131901,7 @@ rBV
 rBV
 rBV
 rBV
-jzk
+rBV
 rBV
 rBV
 rBV

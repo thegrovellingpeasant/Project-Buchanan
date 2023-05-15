@@ -63,6 +63,7 @@
 	desc = "An ancient drainage system to protect the roads from flooding."
 	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "hatch" // hatchbroken
+	layer = VISIBLE_FROM_ABOVE_LAYER
 
 /obj/structure/decoration/reflector
 	name = "road reflector"

@@ -96,10 +96,15 @@
 	var/list/bos = list()	
 	var/list/enclave = list()
 	var/list/oasis = list()
-	var/list/leg = list()
+	var/list/wendover = list()
 	var/list/ncr = list()
+	var/list/leg = list()
+	var/list/whitelegs = list()
+	var/list/eighties = list()
 	var/list/vault = list()
 	var/list/flw = list()
+	var/list/lds = list()
+	var/list/usps = list()
 	var/list/tribe = list()
 	var/list/was = list()
 	var/list/misc = list()
@@ -136,14 +141,29 @@
 		if(rank in GLOB.oasis_positions)
 			oasis[name] = rank
 			department = 1
-		if(rank in GLOB.legion_positions)
-			leg[name] = rank
+		if(rank in GLOB.wendover_positions)
+			wendover[name] = rank
 			department = 1
 		if(rank in GLOB.ncr_positions)
 			ncr[name] = rank
 			department = 1
+		if(rank in GLOB.legion_positions)
+			leg[name] = rank
+			department = 1
+		if(rank in GLOB.whitelegs_positions)
+			whitelegs[name] = rank
+			department = 1
+		if(rank in GLOB.eighties_positions)
+			eighties[name] = rank
+			department = 1
 		if(rank in GLOB.followers_positions)
 			flw[name] = rank
+			department = 1
+		if(rank in GLOB.lds_positions)
+			lds[name] = rank
+			department = 1
+		if(rank in GLOB.usps_positions)
+			usps[name] = rank
 			department = 1
 		if(rank in GLOB.tribal_positions)
 			tribe[name] = rank
@@ -176,15 +196,30 @@
 		for(var/name in oasis)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[oasis[name]]</td></tr>"
 			even = !even
-	if(length(leg))
-		dat += "<tr><th colspan=3>Caesar's Legion</th></tr>"
-		for(var/name in leg)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[leg[name]]</td></tr>"
+	if(length(wendover))
+		dat += "<tr><th colspan=3>Wendover</th></tr>"
+		for(var/name in wendover)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wendover[name]]</td></tr>"
 			even = !even
 	if(length(ncr))
 		dat += "<tr><th colspan=3>New California Republic</th></tr>"
 		for(var/name in ncr)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[ncr[name]]</td></tr>"
+			even = !even
+	if(length(leg))
+		dat += "<tr><th colspan=3>Caesar's Legion</th></tr>"
+		for(var/name in leg)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[leg[name]]</td></tr>"
+			even = !even
+	if(length(whitelegs))
+		dat += "<tr><th colspan=3>White Legs</th></tr>"
+		for(var/name in whitelegs)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[whitelegs[name]]</td></tr>"
+			even = !even
+	if(length(eighties))
+		dat += "<tr><th colspan=3>80s</th></tr>"
+		for(var/name in eighties)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[eighties[name]]</td></tr>"
 			even = !even
 	if(length(flw))
 		dat += "<tr><th colspan=3>Followers of the Apocalypse</th></tr>"
@@ -195,6 +230,16 @@
 		dat += "<tr><th colspan=3>Wayfarer Tribe</th></tr>"
 		for(var/name in tribe)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[tribe[name]]</td></tr>"
+			even = !even
+	if(length(lds))
+		dat += "<tr><th colspan=3>New Canaanites</th></tr>"
+		for(var/name in lds)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[lds[name]]</td></tr>"
+			even = !even
+	if(length(usps))
+		dat += "<tr><th colspan=3>USPS</th></tr>"
+		for(var/name in usps)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[usps[name]]</td></tr>"
 			even = !even
 	if(length(vault))
 		dat += "<tr><th colspan=3>Vault</th></tr>"
