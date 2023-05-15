@@ -16271,7 +16271,9 @@
 "eKj" = (
 /obj/effect/overlay/shadow,
 /obj/structure/table,
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags{
+	pixel_y = 5
+	},
 /obj/item/binoculars,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/tunnel)
@@ -36341,10 +36343,13 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "kuY" = (
-/obj/structure/debris/v3,
-/obj/effect/spawner/lootdrop/f13/crafting,
-/turf/open/indestructible/ground/outside/sidewalk/innervertical,
-/area/f13/wasteland)
+/obj/effect/overlay/shadow,
+/obj/structure/table,
+/obj/structure/barricade/sandbags{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/lifelessdesert,
+/area/f13/tunnel)
 "kuZ" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/indestructible/ground/inside/mountain,
@@ -57448,8 +57453,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "qEz" = (
-/obj/structure/debris/v4,
-/obj/item/mine/sound/bwoink,
+/obj/item/paperplane{
+	dir = 4
+	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged,
 /area/f13/wasteland)
 "qEA" = (
@@ -68995,7 +69001,9 @@
 /area/f13/wasteland)
 "tVY" = (
 /obj/structure/debris/v3,
-/obj/structure/wreck/trash/machinepile,
+/obj/structure/wreck/trash/machinepile{
+	pixel_y = -16
+	},
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "tVZ" = (
@@ -72816,12 +72824,6 @@
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/indestructible/ground/outside/saltflats/crackedinnertopright,
-/area/f13/wasteland)
-"uZf" = (
-/obj/item/paperplane{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "uZg" = (
 /turf/open/water/cavern/deep,
@@ -92792,9 +92794,9 @@ nIY
 ioZ
 uvT
 uvT
+lTd
 uvT
-uvT
-uvT
+cnX
 uvT
 uvT
 uvT
@@ -93049,10 +93051,10 @@ fcD
 cgQ
 uvT
 uvT
+lTd
 uvT
 uvT
-uvT
-jmQ
+yhs
 nNS
 nNS
 nNS
@@ -97116,7 +97118,7 @@ pET
 iPl
 wnK
 pvD
-nKl
+kuY
 hMi
 hMi
 hMi
@@ -97373,7 +97375,7 @@ dHb
 kbE
 jgC
 pvD
-nKl
+kuY
 hMi
 hMi
 hMi
@@ -97887,7 +97889,7 @@ euz
 eMP
 jgC
 pvD
-nKl
+kuY
 hMi
 khM
 hMi
@@ -98144,13 +98146,13 @@ asc
 lIY
 wnK
 syO
-nKl
-nKl
+kuY
+kuY
 eKj
 nKl
 wPA
-nKl
-nKl
+kuY
+kuY
 wPA
 dja
 oWv
@@ -102323,8 +102325,8 @@ mdb
 mdb
 mdb
 mdb
-icP
 qEz
+wId
 mdb
 mdb
 mdb
@@ -102581,7 +102583,7 @@ mdb
 mdb
 mdb
 icP
-uZf
+mdb
 mdb
 mdb
 mdb
@@ -104370,8 +104372,8 @@ mdb
 mdb
 mdb
 mdb
-mdb
 bvu
+mdb
 uvd
 mdb
 mdb
@@ -106942,7 +106944,7 @@ kLk
 icP
 mdb
 mdb
-kuY
+pev
 mdb
 tiC
 tiC
@@ -107198,7 +107200,7 @@ ntx
 kLk
 mdb
 mdb
-mdb
+bvu
 mdb
 ojt
 tiC

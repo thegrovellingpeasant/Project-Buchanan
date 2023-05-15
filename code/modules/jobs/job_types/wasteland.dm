@@ -426,8 +426,6 @@ Raider
 	backpack = /obj/item/storage/backpack/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak,
 		/obj/item/reagent_containers/pill/radx,
 		)
 
