@@ -8100,7 +8100,8 @@
 "fhT" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
-	dir = 8
+	dir = 8;
+	layer = 3.01
 	},
 /obj/machinery/light{
 	dir = 4
@@ -11857,7 +11858,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
 	dir = 4;
-	pixel_x = 1
+	pixel_x = 1;
+	layer = 3.01
 	},
 /obj/machinery/light{
 	dir = 8
@@ -29645,6 +29647,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
+"sMH" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/building)
 "sMP" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -29917,6 +29927,10 @@
 /obj/structure/closet/crate/footlocker,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/item/clothing/under/f13/eighties,
+/obj/item/clothing/under/f13/eighties,
+/obj/item/clothing/under/f13/female/eighties,
+/obj/item/clothing/under/f13/female/eighties,
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
 "sUy" = (
@@ -30858,7 +30872,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
 	dir = 4;
-	pixel_x = 1
+	pixel_x = 1;
+	layer = 3.01
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/building)
@@ -93986,12 +94001,12 @@ rqo
 rqo
 nkT
 dzv
-ncL
-ncL
-ncL
+sMH
+sMH
+sMH
 fhT
-ncL
-ncL
+sMH
+sMH
 uov
 fVj
 kTj

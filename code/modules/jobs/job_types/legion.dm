@@ -192,7 +192,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the camp commander and strongest soldier. Use your officers, the Decanii, to delegate tasks, make sure you lead and give orders. Take no disrespect, you are the dominus. If you prove a fool or weak, expect to be dispatched by a stronger subordinate."
+	description = "You are the camp commander and strongest soldier. Use your officers, the Decani, to delegate tasks, make sure you lead and give orders. Take no disrespect, you are the dominus. If you prove a fool or weak, expect to be dispatched by a stronger subordinate."
 	supervisors = "the Legate"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
@@ -714,8 +714,8 @@ commented out pending rework*/
 	flag = F13FRUMENTARIUS
 	total_positions = 1
 	spawn_positions = 1
-	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
-	supervisors = "the Veteran Decanus must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
+	description = "You are a Frumentarius, one of Vulpes Inculta's agents, handpicked by Caesar himself. You are charged with lulling the White Leg tribe into the arms of the Legion, to fulfill the bidding of Caesar. Ensure that relations remain smooth between the Legion forces and the tribals. Act as an infiltrator against the locals. Lie, manipulate, and entice the White Legs into acting as a tool. Remember, the eyes of Caesar are upon you"
+	supervisors = "the Decani"
 	display_order = JOB_DISPLAY_ORDER_F13FRUMENTARIUS
 	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius
@@ -978,7 +978,7 @@ commented out pending rework*/
 	flag = F13RECRUITLEG
 	total_positions = 5
 	spawn_positions = 5
-	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii. Respect the soldiers of higher rank."
+	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decani. Respect the soldiers of higher rank."
 	supervisors = "the Decani."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
@@ -1084,7 +1084,7 @@ commented out pending rework*/
 	total_positions = 1
 	spawn_positions = 1
 	description = "The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge and makes sure the camp is defended."
-	supervisors = "the Centurion."
+	supervisors = "the Decani."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
 
@@ -1139,8 +1139,8 @@ commented out pending rework*/
 	flag = F13AUXILIA
 	total_positions = 3
 	spawn_positions = 3
-	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
-	supervisors = "the Centurion"
+	description = "A non-combat position in the Legion for slaves who perform tasks that need special training, such as surgery. They are loyal to the Legion and are expected to provide guidance to lesser slaves and fresh captures."
+	supervisors = "the Decani"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
 

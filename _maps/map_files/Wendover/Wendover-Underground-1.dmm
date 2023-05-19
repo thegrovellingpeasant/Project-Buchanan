@@ -13543,7 +13543,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "mpO" = (
-/obj/structure/closet/crate/critter,
+/obj/structure/closet/critter,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "mqk" = (

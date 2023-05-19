@@ -24,7 +24,7 @@
 /obj/vehicle/ridden/motorcycle/buggy/Initialize()
 	. = ..()
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
-	D.vehicle_move_delay = 1.5
+	D.vehicle_move_delay = 1.25
 	D.set_riding_offsets(1, list(TEXT_NORTH = list(0, 9), TEXT_SOUTH = list(0, 11), TEXT_EAST = list(-3, 8), TEXT_WEST = list(7, 8)))
 	D.set_riding_offsets(2, list(TEXT_NORTH = list(0, 9), TEXT_SOUTH = list(0, 11), TEXT_EAST = list(-3, 8), TEXT_WEST = list(7, 8)))
 	D.set_vehicle_dir_layer(SOUTH, VEHICLE_FRAME_LAYER)

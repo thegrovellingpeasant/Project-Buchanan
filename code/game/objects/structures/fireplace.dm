@@ -159,3 +159,18 @@
 	icon_state = "potbelly"
 	pixel_x = 0
 	pixel_y = 16
+
+/obj/structure/fireplace/barrel
+	name = "steel drum firepit"
+	desc = "A campfire made out of an old steel drum. You're not going to fall into the fire, but you feel like a hobo using it. Which you are."
+	icon = 'icons/fallout/objects/furniture/heating.dmi'
+	icon_state = "drumfirealt"
+
+/obj/structure/fireplace/barrel/overlay
+	name = "steel drum firepit"
+	var/mutable_appearance/firebarreloverlay
+
+/obj/structure/fireplace/barrel/overlay/Initialize()
+	. = ..()
+	firebarreloverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(firebarreloverlay)

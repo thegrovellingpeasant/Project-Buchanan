@@ -289,7 +289,8 @@
 "aeG" = (
 /obj/structure/junk/foundation{
 	dir = 4;
-	pixel_y = -10
+	pixel_y = -10;
+	layer = 4.3
 	},
 /obj/structure/car/derelict{
 	pixel_y = -5;
@@ -1091,7 +1092,6 @@
 "arL" = (
 /obj/structure/lamp_post/floodlight,
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -3660,7 +3660,7 @@
 /area/f13/wasteland)
 "bdZ" = (
 /obj/structure/car/rubbish1{
-	layer = 3.14
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -4961,7 +4961,6 @@
 	alpha = 0
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk/wastelandedge/left,
@@ -5201,6 +5200,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/lit,
 /area/f13/building)
+"bBW" = (
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/outside/roadi80/bottomyellow{
+	icon_state = "endoftheroad4";
+	dir = 6
+	},
+/area/f13/wasteland)
 "bBX" = (
 /turf/closed/wall/rust,
 /area/f13/building)
@@ -11677,7 +11686,6 @@
 /area/f13/wasteland)
 "dvC" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /obj/effect/overlay/gravel/edge{
@@ -12965,10 +12973,10 @@
 /area/f13/wasteland)
 "dNH" = (
 /obj/structure/car/rubbish2{
-	layer = 4.12
+	layer = 4.251
 	},
 /obj/structure/tires/five{
-	layer = 4.26
+	layer = 4.252
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
@@ -13068,7 +13076,6 @@
 /area/f13/building)
 "dOX" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1
 	},
 /turf/open/indestructible/ground/outside/saltflats,
@@ -13650,7 +13657,7 @@
 	},
 /obj/structure/junk/foundation{
 	dir = 4;
-	layer = 4.26;
+	layer = 4.3;
 	pixel_y = -10
 	},
 /turf/open/indestructible/ground/outside/saltflats,
@@ -14054,7 +14061,6 @@
 	dir = 1
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/graveldirt/pink,
@@ -18462,6 +18468,12 @@
 	dir = 1
 	},
 /area/f13/wasteland)
+"fpo" = (
+/obj/structure/barricade/sandbags{
+	resistance_flags = 6
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "fpE" = (
 /obj/structure/nest/mob/supermutant/ranged/mutcastle,
 /turf/open/floor/plasteel/f13{
@@ -19588,7 +19600,6 @@
 /area/f13/wasteland)
 "fES" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -20571,6 +20582,13 @@
 	},
 /turf/open/indestructible/ground/outside/road/parking/four,
 /area/f13/wasteland)
+"fTn" = (
+/obj/machinery/door/unpowered/celldoor/legion{
+	opacity = 0;
+	name = "door"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "fTw" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -20761,7 +20779,6 @@
 /area/f13/wasteland)
 "fWD" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -20852,7 +20869,7 @@
 /turf/open/indestructible/ground/outside/saltflats/blueleft,
 /area/f13/wasteland)
 "fYj" = (
-/obj/structure/closet/crate/critter,
+/obj/structure/closet/critter,
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "fYo" = (
@@ -20885,7 +20902,6 @@
 	pixel_y = 12
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -20958,7 +20974,7 @@
 "gaz" = (
 /obj/structure/car/motoryclehor{
 	dir = 9;
-	pixel_y = 12;
+	pixel_y = 6;
 	layer = 3.11;
 	pixel_x = 3
 	},
@@ -22359,6 +22375,10 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
+/area/f13/wasteland)
+"gvc" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/dirt/west,
 /area/f13/wasteland)
 "gvd" = (
 /obj/structure/railing{
@@ -25369,7 +25389,8 @@
 "hqw" = (
 /obj/item/salvage/high{
 	icon = 'icons/fallout/trash.dmi';
-	icon_state = "engine"
+	icon_state = "engine";
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
@@ -26839,6 +26860,13 @@
 	icon_state = "endoftheroad4";
 	dir = 6
 	},
+/area/f13/wasteland)
+"hLA" = (
+/obj/effect/overlay/redrocket{
+	pixel_x = -64;
+	pixel_y = -163
+	},
+/turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
 "hLU" = (
 /obj/structure/car/rubbish1alt{
@@ -28310,7 +28338,6 @@
 /area/f13/building)
 "ihV" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -28372,7 +28399,8 @@
 "ijM" = (
 /obj/structure/junk/foundation{
 	dir = 4;
-	pixel_y = -10
+	pixel_y = -10;
+	layer = 4.3
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedinnertopleft,
 /area/f13/wasteland)
@@ -31035,7 +31063,6 @@
 /area/f13/wasteland)
 "iWv" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_x = -1
 	},
 /turf/open/indestructible/ground/outside/road/salt,
@@ -31066,7 +31093,6 @@
 /area/f13/wasteland)
 "iXe" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4;
 	pixel_x = 1
 	},
@@ -32036,7 +32062,6 @@
 "jjt" = (
 /obj/effect/overlay/desert/sonora/edge/north,
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain{
@@ -39798,12 +39823,10 @@
 	icon_state = "tracks"
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /obj/effect/overlay/desert/sonora/edge/north,
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -40922,6 +40945,12 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/bluecenter,
 /area/f13/wasteland)
+"lRu" = (
+/obj/structure/barricade/sandbags{
+	resistance_flags = 6
+	},
+/turf/open/indestructible/ground/outside/dirt/west,
+/area/f13/wasteland)
 "lRP" = (
 /obj/structure/fence{
 	icon_state = "post";
@@ -41221,7 +41250,7 @@
 /area/f13/building)
 "lWP" = (
 /obj/structure/car/rubbish1{
-	layer = 4.27
+	layer = 4.253
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
@@ -41799,7 +41828,7 @@
 /area/f13/building)
 "mfr" = (
 /obj/structure/car/rubbish1{
-	layer = 2.1
+	layer = 2.11
 	},
 /obj/item/salvage/high{
 	icon = 'icons/fallout/mobs/robots/protectrons.dmi';
@@ -43749,11 +43778,9 @@
 	},
 /area/f13/building)
 "mKA" = (
-/obj/structure/campfire/barrel{
+/obj/structure/fireplace/barrel/overlay{
 	pixel_x = 16;
-	pixel_y = 16;
-	density = 0;
-	layer = 4.1
+	pixel_y = 16
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
@@ -43784,7 +43811,7 @@
 /area/f13/wasteland)
 "mLl" = (
 /obj/structure/railing{
-	layer = 4.25
+	layer = 4.26
 	},
 /obj/structure/car/rubbish6{
 	pixel_x = -17;
@@ -44506,7 +44533,6 @@
 /area/f13/wasteland)
 "mWp" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /obj/effect/overlay/gravel/edge{
@@ -46777,7 +46803,6 @@
 /area/f13/casinofloor)
 "nDv" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 6
 	},
 /turf/open/water/shore,
@@ -46799,7 +46824,7 @@
 /obj/structure/nest/mob/centaur{
 	dir = 8
 	},
-/obj/structure/closet/crate/critter,
+/obj/structure/closet/critter,
 /turf/open/floor/f13/yellow,
 /area/f13/building)
 "nDJ" = (
@@ -47030,7 +47055,8 @@
 	icon_state = "orangeburied";
 	pixel_x = -224;
 	pixel_y = -32;
-	layer = 2.7
+	layer = 2.7;
+	plane = -15
 	},
 /turf/open/indestructible/ground/outside/saltflats/bluecenter,
 /area/f13/wasteland)
@@ -47570,7 +47596,6 @@
 /area/f13/wasteland)
 "nOu" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -48384,7 +48409,6 @@
 /area/f13/building)
 "oau" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -49729,7 +49753,6 @@
 /area/f13/tunnel)
 "otU" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4;
 	pixel_x = 1
 	},
@@ -51330,7 +51353,6 @@
 /area/f13/wasteland)
 "oTq" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -51849,7 +51871,7 @@
 /area/f13/building)
 "paj" = (
 /obj/structure/car/rubbish2{
-	layer = 4.28
+	layer = 4.26
 	},
 /obj/item/salvage/high{
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -51882,7 +51904,6 @@
 /area/f13/shamanhut)
 "paL" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -53250,6 +53271,12 @@
 	icon_state = "runningoutofroadnames";
 	dir = 1
 	},
+/area/f13/wasteland)
+"pvo" = (
+/obj/structure/railing{
+	layer = 4.26
+	},
+/turf/open/indestructible/ground/outside/roadi80/bottomyellow,
 /area/f13/wasteland)
 "pvv" = (
 /obj/effect/overlay/baseball{
@@ -55210,7 +55237,6 @@
 /area/f13/building)
 "pXk" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -60743,7 +60769,6 @@
 	pixel_x = -33
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/graveldirt/pink,
@@ -61642,6 +61667,13 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
+"rLv" = (
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/outside/roadi80/bottomyellow,
+/area/f13/wasteland)
 "rLB" = (
 /obj/effect/overlay/gravel/edge{
 	dir = 1;
@@ -62051,7 +62083,6 @@
 	layer = 2.49
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -62582,7 +62613,7 @@
 "rZQ" = (
 /obj/structure/junk/foundation{
 	dir = 4;
-	layer = 4.26;
+	layer = 4.3;
 	pixel_y = -10
 	},
 /turf/open/indestructible/ground/outside/saltflats/diagonal,
@@ -64733,7 +64764,6 @@
 /area/f13/building)
 "sDV" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -66181,7 +66211,7 @@
 /area/f13/wasteland)
 "tbO" = (
 /obj/structure/railing{
-	layer = 4.25
+	layer = 4.26
 	},
 /obj/structure/car/rubbish6{
 	pixel_x = -17;
@@ -67539,6 +67569,10 @@
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "doubleyellow"
 	},
+/area/f13/wasteland)
+"twM" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/dirt/east,
 /area/f13/wasteland)
 "twT" = (
 /obj/structure/table/reinforced,
@@ -70799,7 +70833,6 @@
 /area/f13/wasteland)
 "urY" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /obj/effect/overlay/gravel/edge{
@@ -71623,7 +71656,6 @@
 /area/f13/casinofloor)
 "uFH" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -73669,7 +73701,6 @@
 /area/f13/building)
 "vlR" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/graveldirt/pink,
@@ -73906,7 +73937,6 @@
 "vpS" = (
 /obj/structure/stairs/slopes/south,
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -74030,7 +74060,6 @@
 /area/f13/caves)
 "vrV" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8;
 	pixel_y = -1
 	},
@@ -76762,7 +76791,6 @@
 /area/f13/building)
 "wev" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8;
 	pixel_y = -4
 	},
@@ -78166,7 +78194,6 @@
 	alpha = 0
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -78411,7 +78438,6 @@
 /area/f13/wasteland)
 "wyB" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/saltflats,
@@ -78579,6 +78605,12 @@
 	icon = 'icons/fallout/objects/wendover.dmi';
 	dir = 1
 	},
+/area/f13/wasteland)
+"wBy" = (
+/obj/structure/barricade/sandbags{
+	resistance_flags = 6
+	},
+/turf/open/indestructible/ground/outside/dirt/east,
 /area/f13/wasteland)
 "wBA" = (
 /turf/open/indestructible/ground/outside/road{
@@ -79650,7 +79682,8 @@
 "wRA" = (
 /obj/structure/junk/foundation{
 	dir = 4;
-	pixel_y = -10
+	pixel_y = -10;
+	layer = 4.3
 	},
 /obj/structure/car/rubbish1{
 	layer = 3.01
@@ -80694,7 +80727,6 @@
 /area/f13/wasteland)
 "xfg" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -81702,11 +81734,9 @@
 	icon_state = "gib3"
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -82292,6 +82322,13 @@
 	pixel_y = -32;
 	name = "vines"
 	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32;
+	pixel_y = -32
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xDf" = (
@@ -82530,7 +82567,6 @@
 /area/f13/wasteland)
 "xHI" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8;
 	pixel_y = -1;
 	pixel_x = -1
@@ -83639,7 +83675,6 @@
 /area/f13/wasteland)
 "xWI" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -83791,7 +83826,6 @@
 "xYD" = (
 /obj/effect/overlay/desert/sonora/edge/north,
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain{
@@ -88012,8 +88046,8 @@ xtJ
 dkA
 dch
 mKD
-rkt
-jur
+aod
+jGx
 jur
 qki
 ulT
@@ -88269,10 +88303,10 @@ xtJ
 cCZ
 dch
 mKD
-rkt
-jur
-jur
-kOg
+mKD
+aod
+jGx
+fpo
 wdn
 qki
 jur
@@ -88526,13 +88560,13 @@ xtJ
 uTC
 dch
 mKD
-rkt
-jur
-qki
-kOg
-wdn
-qki
-xxG
+mKD
+mKD
+aod
+wBy
+twM
+gVW
+gVW
 gVW
 gVW
 gVW
@@ -88783,13 +88817,13 @@ qki
 eqK
 dch
 mKD
-rkt
-jur
-qki
-qki
-sLJ
-qki
-dch
+cdz
+fNt
+mKD
+mKD
+fTn
+mKD
+mKD
 mKD
 mKD
 mKD
@@ -89039,14 +89073,14 @@ jur
 jur
 jur
 dch
-cdz
-oJH
-jur
-qki
-qki
-sLJ
-qki
-dch
+mKD
+rkt
+vQZ
+fNt
+mKD
+fTn
+mKD
+mKD
 mKD
 mKD
 mKD
@@ -89296,14 +89330,14 @@ jtW
 jur
 xxG
 iUd
-rkt
+cdz
+oJH
 jur
-jur
-qki
-kOg
-wdn
-qki
 vQZ
+lRu
+gvc
+aEH
+aEH
 aEH
 aEH
 aEH
@@ -94224,7 +94258,7 @@ wjb
 wjb
 wjb
 wjb
-xyB
+rLv
 rHe
 iDm
 jtW
@@ -94738,7 +94772,7 @@ wjb
 wjb
 wjb
 wjb
-svV
+pvo
 rHe
 iDm
 jur
@@ -95252,7 +95286,7 @@ wjb
 iEt
 eQL
 wjb
-hLr
+bBW
 rHe
 iDm
 jur
@@ -157656,7 +157690,7 @@ uvT
 uvT
 jmQ
 nIY
-uvT
+hLA
 lpq
 qlf
 nvf

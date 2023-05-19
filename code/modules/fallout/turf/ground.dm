@@ -1904,7 +1904,7 @@
 	layer = LOW_OBJ_LAYER
 
 /obj/effect/overlay/gravel/edge/corner
-	icon_state = "gravelcorner"
+	icon_state = "gravel_corner"
 	plane = FLOOR_PLANE
 	layer = LOW_OBJ_LAYER
 

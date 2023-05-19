@@ -644,7 +644,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Slavemaster"
 
 /obj/effect/landmark/start/f13/explorer
-	name = "Scout"
+	name = "Explorer"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/venator

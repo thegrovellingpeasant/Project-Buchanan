@@ -8,7 +8,7 @@
 
 /datum/supply_pack/critter
 	group = "Livestock"
-	crate_type = /obj/structure/closet/crate/critter
+	crate_type = /obj/structure/closet/critter
 
 /datum/supply_pack/critter/animal_feed
 	name = "Animal Feed Crate"

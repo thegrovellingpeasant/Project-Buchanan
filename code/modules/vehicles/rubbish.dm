@@ -118,7 +118,7 @@
 	icon_state = "car_rubish6"
 	bound_width = 32
 	bound_height = 32
-	layer = ABOVE_MOB_LAYER
+	layer = WALL_OBJ_LAYER
 
 /obj/structure/car/rubbish7
 	icon_state = "car_rubish7"

@@ -623,8 +623,8 @@ Raider
 	title = "Brotherhood Scout"
 	flag = F13BROTHERHOODSCOUT
 	faction = FACTION_WASTELAND
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a Brotherhood scout, a Knight tasked with keeping tabs on the outside world. There is no bunker in Wendover, so you will have to make do as best you can. Improvise, adapt, acquire tech and look out for your brothers."
 	supervisors = "The Head Knight back home, the Elder"
 	selection_color = "#dddddd"
@@ -709,8 +709,8 @@ Raider
 	title = "Journeyman Scribe"
 	flag = F13JOURNEYMANSCRIBE
 	faction = FACTION_WASTELAND
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a Brotherhood Scribe on a mission from your chapter. There is no bunker in Wendover, so you will have to make do as best you can. Improvise, adapt, acquire tech, and learn what you can about the wastes."
 	supervisors = "The Head Scribe back home, the Elder"
 	selection_color = "#dddddd"
@@ -793,8 +793,8 @@ Raider
 	title = "Remnant"
 	flag = F13REMNANT
 	faction = FACTION_WASTELAND
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 4
+	spawn_positions = 4
 	description = "You are a citizen of the United States of America. With the destruction of the Oil Rig and Navarro, you are alone in the world. Your business is your own, but you may be aware of a friendly bunker beneath the local airport."
 	supervisors = "the Constitution"
 	selection_color = "#dddddd"

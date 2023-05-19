@@ -1,6 +1,7 @@
-/obj/structure/closet/crate/critter
+/obj/structure/closet/critter
 	name = "animal carrier"
 	desc = "A crate designed for safe transport of animals. It has an oxygen tank for safe transport in space."
+	icon = 'icons/obj/crates.dmi'
 	icon_state = "crittercrate"
 	horizontal = FALSE
 	allow_objects = FALSE
@@ -11,11 +12,11 @@
 	var/obj/item/tank/internals/emergency_oxygen/tank
 	max_mob_size = MOB_SIZE_LARGE
 
-/obj/structure/closet/crate/critter/New()
+/obj/structure/closet/critter/New()
 	..()
 	tank = new
 
-/obj/structure/closet/crate/critter/Destroy()
+/obj/structure/closet/critter/Destroy()
 	var/turf/T = get_turf(src)
 	if(tank)
 		tank.forceMove(T)
@@ -23,19 +24,17 @@
 
 	return ..()
 
-/obj/structure/closet/crate/critter/update_icon_state()
+/obj/structure/closet/critter/update_icon_state()
 	return
 
-/obj/structure/closet/crate/critter/closet_update_overlays(list/new_overlays)
+/obj/structure/closet/critter/closet_update_overlays(list/new_overlays)
 	. = new_overlays
 	if(opened)
 		. += "crittercrate_door_open"
 	else
 		. += "crittercrate_door"
-		if(manifest)
-			. += "manifest"
-
-/obj/structure/closet/crate/critter/return_air()
+		
+/obj/structure/closet/critter/return_air()
 	if(tank)
 		return tank.air_contents
 	else
