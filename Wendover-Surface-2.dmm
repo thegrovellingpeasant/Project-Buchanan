@@ -1425,6 +1425,10 @@
 /area/f13/wasteland)
 "awG" = (
 /obj/structure/barricade/sandbags,
+/obj/item/radio/wendoverreceiver{
+	pixel_y = -10;
+	pixel_x = 1
+	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
 "awH" = (
@@ -38266,6 +38270,13 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
+"kXI" = (
+/obj/effect/overlay/redrocket{
+	pixel_x = -384;
+	pixel_y = -163
+	},
+/turf/open/indestructible/ground/outside/saltflats/crackedtopalt,
+/area/f13/wasteland)
 "kXS" = (
 /obj/effect/decal/cleanable/stones,
 /turf/open/indestructible/ground/outside/ruins{
@@ -40155,6 +40166,7 @@
 "lDx" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/binoculars,
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
 "lDy" = (
@@ -61774,10 +61786,6 @@
 /area/f13/building)
 "rNw" = (
 /obj/structure/barricade/sandbags,
-/obj/item/radio/wendoverreceiver{
-	pixel_y = 3;
-	pixel_x = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
@@ -76736,9 +76744,6 @@
 "wdU" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/binoculars{
-	pixel_y = 5
-	},
 /obj/structure/barricade/sandbags{
 	pixel_y = 6
 	},
@@ -160260,7 +160265,7 @@ uvT
 uvT
 uvT
 uvT
-vtC
+kXI
 caV
 qlf
 wLs

@@ -501,7 +501,7 @@
 	name = "mangy dog"
 	icon = 'icons/fallout/mobs/animals/dogs.dmi'
 	icon_state = "dog_feral"
-	mob_types = list(/mob/living/simple_animal/hostile/wolf = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/retaliate/mangydog = 5)
 
 /obj/structure/nest/mob/dogalpha
 	name = "particularly mangy dog"
