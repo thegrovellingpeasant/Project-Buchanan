@@ -2401,7 +2401,8 @@
 /area/f13/wasteland)
 "hc" = (
 /obj/structure/wreck/bus/rusted{
-	layer = 2.1
+	layer = 2.1;
+	icon_state = "busnoshadow"
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
@@ -14581,10 +14582,10 @@
 /area/f13/building)
 "PJ" = (
 /obj/effect/overlay/bus/rusty{
-	icon_state = "busnoshadow";
 	pixel_x = -224;
 	pixel_y = -32;
-	layer = 2.1
+	layer = 2.1;
+	icon_state = "bus"
 	},
 /obj/effect/overlay/bus/rusty{
 	icon_state = "bus_upper_half";
