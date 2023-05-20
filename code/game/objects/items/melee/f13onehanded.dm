@@ -843,12 +843,6 @@ obj/item/melee/unarmed/punchdagger/cyborg
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_speed = CLICK_CD_MELEE * 0.7
 
-/obj/item/melee/unarmed/yaoguaigauntlet/attack(mob/living/target, mob/living/user)
-	if(isliving(target))
-		target.apply_status_effect(/datum/status_effect/stacking/saw_bleed/yaoguaigauntlet)
-	else
-		return
-
 
 ///////////
 // TOOLS //

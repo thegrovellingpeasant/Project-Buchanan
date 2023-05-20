@@ -29352,7 +29352,7 @@
 	},
 /area/f13/building)
 "sBT" = (
-/obj/structure/cursed_slot_machine,
+/obj/machinery/computer/slot_machine,
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "sCt" = (
@@ -35531,9 +35531,9 @@
 /area/f13/building)
 "wtL" = (
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/door/unpowered/securedoor/police{
-	req_access_txt = "0";
-	req_one_access = "1"
+/obj/machinery/door/unpowered/securedoor{
+	req_one_access_txt = "1";
+	name = "Sheriff's Department Armory"
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
