@@ -10023,7 +10023,9 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "BG" = (
-/obj/structure/debris/v2,
+/obj/structure/debris/v2{
+	layer = 2.91
+	},
 /obj/structure/girder/displaced,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/wasteland)

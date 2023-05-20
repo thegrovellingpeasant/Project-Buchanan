@@ -1033,7 +1033,6 @@
 /area/f13/wasteland)
 "aFk" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8;
 	pixel_y = -2;
 	pixel_x = -1
@@ -8597,7 +8596,6 @@
 	dir = 1
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4
 	},
 /turf/open/floor/wood/f13/lit,
@@ -20233,7 +20231,6 @@
 	pixel_y = -7
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -22668,7 +22665,6 @@
 /area/f13/building)
 "oLd" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1
 	},
 /turf/open/floor/wood/f13/lit,
@@ -22689,7 +22685,6 @@
 /area/f13/wasteland)
 "oMz" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4;
 	pixel_y = -2;
 	pixel_x = 2
@@ -23591,7 +23586,6 @@
 /area/f13/building)
 "pmt" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 4;
 	pixel_x = 17
 	},
@@ -24834,7 +24828,6 @@
 /area/f13/casino)
 "qbf" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	pixel_y = 1;
 	pixel_x = -1
 	},
@@ -27847,7 +27840,6 @@
 	pixel_y = -7
 	},
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 8
 	},
 /obj/item/extinguisher,
@@ -32637,7 +32629,6 @@
 /area/f13/caves)
 "uGP" = (
 /obj/effect/overlay/gravel/edge/corner{
-	icon_state = "gravel_corner";
 	dir = 1;
 	pixel_y = 2;
 	pixel_x = 16
@@ -35540,7 +35531,10 @@
 /area/f13/building)
 "wtL" = (
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/door/unpowered/securedoor/police,
+/obj/machinery/door/unpowered/securedoor/police{
+	req_access_txt = "0";
+	req_one_access = "1"
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "wtN" = (

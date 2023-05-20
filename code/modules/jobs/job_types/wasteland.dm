@@ -204,7 +204,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/painspike
 	head = /obj/item/clothing/head/helmet/f13/raider/psychotic
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
+		/obj/item/gun/ballistic/revolver/caravan_shotgun = 1,
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/ammo_box/shotgun/bean = 1,
 		/obj/item/melee/onehanded/club/fryingpan = 1,
@@ -237,12 +237,12 @@ Raider
 	uniform = /obj/item/clothing/under/f13/exile
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/service = 1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/storage/box/ration/ranger_breakfast = 1,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/breakfast = 1,
 		/obj/item/radio/headset = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 1
+		/obj/item/book/granter/crafting_recipe/blueprint/service = 1
 		)
 
 /datum/outfit/loadout/raider_legion
@@ -251,11 +251,10 @@ Raider
 	uniform = /obj/item/clothing/under/f13/exile/legion
 	id = /obj/item/card/id/rusted/rustedmedallion
 	backpack_contents = list(
-		/obj/item/melee/onehanded/machete/gladius = 1,
+		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/ammo_box/magazine/greasegun = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
@@ -264,13 +263,11 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
 	id = /obj/item/card/id/rusted/brokenholodog
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/gun/energy/laser/wattz = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/aep7 = 1,
 		/obj/item/storage/belt/holster/legholster = 1,
-		/obj/item/pda = 1,
 		/obj/item/radio/headset = 1,
-		/obj/item/grenade/empgrenade = 2
 		)
 
 /datum/outfit/loadout/raider_sheriff
@@ -279,9 +276,9 @@ Raider
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/m29/snub = 2,
+		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/storage/belt/holster = 1,
-		/obj/item/ammo_box/m44 = 3,
+		/obj/item/ammo_box/m44 = 2,
 		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/gunslinger = 1
 		)
@@ -293,7 +290,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
+		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
 		/obj/item/ammo_box/magazine/m45 = 1,
 		/obj/item/twohanded/steelsaw = 1,
 		/obj/item/melee/smith/hammer = 1,
@@ -309,9 +306,8 @@ Raider
 	uniform = /obj/item/clothing/under/f13/exile/vault
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/radio/headset = 1
 		)
 
@@ -328,7 +324,6 @@ Raider
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/radio/tribal = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
@@ -339,9 +334,9 @@ Raider
 	suit = /obj/item/clothing/suit/armor/vest/big
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/ammo_box/magazine/greasegun = 2,
-		/obj/item/grenade/f13/dynamite = 2,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/grenade/f13/dynamite = 1,
 		/obj/item/book/granter/trait/explosives = 1
 		)
 
@@ -1422,8 +1417,8 @@ datum/job/wasteland/f13dendoctor
 	name = "Great Khan"
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
-		/obj/item/ammo_box/magazine/greasegun = 1,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/clothing/head/helmet/f13/khan = 1,
 		/obj/item/clothing/head/helmet/f13/khan/bandana = 1,
 		/obj/item/clothing/under/f13/khan = 1,
