@@ -3274,7 +3274,6 @@
 /area/f13/caves)
 "dly" = (
 /obj/structure/guncase,
-/obj/item/ammo_box/shotgun/buck,
 /obj/item/ammo_box/shotgun/slug,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5362,6 +5361,13 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/followers)
+"fiG" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowbottom";
+	max_integrity = 20
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/vault)
 "fjh" = (
 /obj/machinery/hydroponics/constructable,
 /mob/living/simple_animal/hostile/jungle/seedling{
@@ -8022,7 +8028,7 @@
 /area/f13/vault)
 "hpL" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/automatic/shotgun/riot,
+/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -13668,6 +13674,12 @@
 	},
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
+"msI" = (
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/vault)
 "msN" = (
 /obj/effect/overlay/curb{
 	dir = 1;
@@ -14123,6 +14135,10 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/vault)
+"mIS" = (
+/obj/structure/nest/mob/ghoulreaver,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "mJw" = (
 /obj/machinery/door/window/northright{
@@ -17168,7 +17184,8 @@
 /area/f13/tunnel)
 "pvg" = (
 /obj/structure/window/fulltile/store{
-	icon_state = "storewindowtop"
+	icon_state = "storewindowtop";
+	max_integrity = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
@@ -18935,9 +18952,7 @@
 /area/f13/caves)
 "qQA" = (
 /obj/structure/guncase,
-/obj/item/ammo_box/shotgun/slug,
 /obj/item/ammo_box/shotgun/buck,
-/obj/item/ammo_box/magazine/d12g/empty,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -19489,7 +19504,6 @@
 /area/f13/caves)
 "rpb" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/shotgun/police,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -23215,6 +23229,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/vault)
+"uGe" = (
+/obj/structure/nest/mob/ghoulreaver{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/vault)
 "uGv" = (
 /obj/machinery/telecomms/server/presets/eightiesr,
 /turf/open/floor/f13/green,
@@ -25158,6 +25178,16 @@
 	},
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
+"wld" = (
+/obj/structure/car/junk/pod{
+	layer = 3.9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/spawner/protectron{
+	layer = 2.6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/vault)
 "wlg" = (
 /obj/machinery/telecomms/server/presets/medical,
 /turf/open/floor/f13/green,
@@ -25675,6 +25705,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
+"wBY" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "vaultarmory2"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/vault)
 "wCv" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -26349,9 +26385,6 @@
 	},
 /obj/structure/car/junk/pod{
 	layer = 3.9
-	},
-/obj/structure/nest/spawner/protectron{
-	layer = 2.6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -39115,7 +39148,7 @@ sAl
 iDi
 aCm
 dML
-iDi
+msI
 nzD
 nzD
 nzD
@@ -40124,20 +40157,20 @@ fzd
 fzd
 sKe
 pvg
-sSc
+fiG
 sKe
 dbN
 sKe
 pvg
-sSc
+fiG
 sKe
 pvg
-sSc
+fiG
 qEZ
 dbN
 sKe
 pvg
-sSc
+fiG
 vti
 cYI
 dWu
@@ -40646,7 +40679,7 @@ mqE
 mqE
 mqE
 mqE
-mqE
+mIS
 mqE
 mqE
 obM
@@ -41663,35 +41696,35 @@ sKe
 sKe
 fzd
 fzd
-fzd
+wBY
 sKe
 pvg
-sSc
+fiG
 sKe
 dbN
 sKe
 pvg
-sSc
+fiG
 sKe
 pvg
-sSc
+fiG
 sKe
 dbN
 sKe
 pvg
-sSc
+fiG
 vti
 sKe
 pvg
-sSc
+fiG
 sKe
 usA
 sKe
 pvg
 pvg
-sSc
+fiG
 sKe
-iDi
+uGe
 mqE
 iDi
 sKe
@@ -41920,7 +41953,7 @@ sKe
 sKe
 ooC
 xpr
-iuc
+wld
 sKe
 xVZ
 mqE

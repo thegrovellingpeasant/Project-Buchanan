@@ -12613,9 +12613,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/building)
 "hZw" = (
-/obj/structure/closet/locker,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/cig_packs,
+/obj/machinery/vending/cola,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "hZx" = (
@@ -33357,9 +33355,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/casino)
 "vbr" = (
-/obj/structure/closet/locker,
-/obj/effect/spawner/lootdrop/trash,
-/obj/effect/spawner/lootdrop/f13/bomb/tier2,
+/obj/machinery/vending/cola/space_up,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "vbC" = (

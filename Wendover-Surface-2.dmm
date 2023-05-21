@@ -1296,6 +1296,13 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
+"auT" = (
+/obj/effect/turf_decal{
+	dir = 4
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/wasteland)
 "auY" = (
 /obj/structure/tires/five{
 	icon_state = "tirestacks";
@@ -4317,6 +4324,10 @@
 /area/f13/tunnel)
 "bol" = (
 /obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 4;
+	pixel_x = -1
+	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "bayparking5";
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -11093,6 +11104,14 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/building)
+"dnc" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -2;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/road/parkingalt,
+/area/f13/wasteland)
 "dnv" = (
 /obj/structure/table/wood/junk{
 	smooth = 0
@@ -11138,6 +11157,14 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
+"dnY" = (
+/obj/effect/overlay/shadow,
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/tunnel)
 "dot" = (
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -13096,11 +13123,32 @@
 "dOw" = (
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/casino)
+"dOI" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/right,
+/area/f13/wasteland)
 "dOP" = (
 /obj/structure/car/derelict{
 	layer = 3.1
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/wasteland)
+"dOU" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -2;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "bayparking2";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 1;
+	plane = -12;
+	name = "parking lot"
+	},
 /area/f13/wasteland)
 "dOV" = (
 /obj/structure/closetundense{
@@ -17898,9 +17946,10 @@
 /area/f13/wasteland)
 "fhr" = (
 /obj/effect/overlay/desert/sonora/edge/south,
-/obj/structure/barricade/sandbags,
-/obj/effect/turf_decal{
-	dir = 1
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8;
+	layer = 2.1;
+	pixel_y = -2
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/bottom,
 /area/f13/wasteland)
@@ -18458,6 +18507,19 @@
 	color = "#800000"
 	},
 /turf/open/indestructible/ground/outside/saltflats/old,
+/area/f13/wasteland)
+"foC" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8;
+	layer = 2.1;
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "bayparking5";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 4;
+	name = "parking lot"
+	},
 /area/f13/wasteland)
 "foE" = (
 /obj/structure/table,
@@ -20217,6 +20279,13 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcornertopright,
+/area/f13/wasteland)
+"fNJ" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "fNK" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -23911,6 +23980,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/housewoodbroken,
 /area/f13/building)
+"gPP" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/wasteland)
 "gPQ" = (
 /obj/item/blanket/rug/blue,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -29087,7 +29163,8 @@
 /area/f13/wasteland)
 "isw" = (
 /obj/effect/turf_decal{
-	dir = 1
+	dir = 5;
+	pixel_x = -1
 	},
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -30843,7 +30920,8 @@
 "iSE" = (
 /obj/structure/barricade/sandbags,
 /obj/effect/turf_decal{
-	dir = 8;
+	dir = 9;
+	pixel_y = -1;
 	pixel_x = -1
 	},
 /turf/open/indestructible/ground/outside/road{
@@ -35170,9 +35248,10 @@
 	pixel_y = 4;
 	pixel_x = 2
 	},
-/obj/structure/barricade/sandbags,
-/obj/effect/turf_decal{
-	dir = 1
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -2;
+	layer = 2.79
 	},
 /turf/open/indestructible/ground/outside/sidewalk/right,
 /area/f13/wasteland)
@@ -36369,6 +36448,13 @@
 	icon_state = "horizontaltopborderbottom1"
 	},
 /area/f13/wasteland)
+"ktE" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/wasteland)
 "ktI" = (
 /obj/effect/overlay/desert/sonora/edge/north,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -36685,10 +36771,6 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "kwN" = (
-/obj/structure/curtain{
-	color = "#FFFFFF";
-	pixel_y = 32
-	},
 /obj/structure/chair/stool/retro/backed{
 	dir = 8
 	},
@@ -37030,11 +37112,17 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcornerbottomright,
 /area/f13/wasteland)
 "kCQ" = (
-/obj/structure/barricade/sandbags,
-/obj/effect/turf_decal{
-	dir = 9;
+/obj/structure/obstacle/barbedwire/end{
+	dir = 4;
+	layer = 2.5;
 	pixel_y = -1;
-	pixel_x = -1
+	pixel_x = -5
+	},
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -2;
+	layer = 2.49;
+	pixel_x = 11
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft1"
@@ -37166,6 +37254,20 @@
 	name = "floor"
 	},
 /area/f13/building)
+"kEd" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 4;
+	layer = 2.1;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "bayparking";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 5;
+	plane = -12;
+	name = "parking lot"
+	},
+/area/f13/wasteland)
 "kEi" = (
 /obj/structure/table,
 /obj/item/picket_sign{
@@ -37470,6 +37572,12 @@
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
+"kHB" = (
+/obj/effect/overlay/shadow,
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/tunnel)
 "kHC" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -46678,6 +46786,9 @@
 "nyU" = (
 /obj/effect/overlay/shadow/diagonal,
 /obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 8
+	},
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "nzC" = (
@@ -48176,6 +48287,11 @@
 "nTm" = (
 /obj/structure/lattice/catwalk/wing/one,
 /obj/effect/overlay/airplanewing/bottom,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/wasteland)
+"nTu" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "nTN" = (
@@ -53596,6 +53712,7 @@
 /area/f13/building)
 "pwF" = (
 /obj/structure/barricade/sandbags,
+/obj/effect/turf_decal,
 /turf/open/indestructible/ground/outside/sidewalk/damaged/bottom,
 /area/f13/wasteland)
 "pwL" = (
@@ -62481,6 +62598,13 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
+"rVe" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/wasteland)
 "rVF" = (
 /obj/structure/car/rubbish3{
 	layer = 3.11
@@ -64599,6 +64723,7 @@
 "sxF" = (
 /obj/effect/overlay/shadow/diagonal/north,
 /obj/structure/barricade/sandbags,
+/obj/effect/turf_decal,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
 "sxO" = (
@@ -65999,6 +66124,14 @@
 	pixel_x = 1
 	},
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
+/area/f13/wasteland)
+"sTz" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8;
+	layer = 2.1;
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
 "sTO" = (
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
@@ -71464,6 +71597,19 @@
 	desc = null
 	},
 /area/f13/wasteland)
+"uxT" = (
+/obj/effect/turf_decal{
+	dir = 4;
+	pixel_x = -1
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "bayparking5";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 8;
+	name = "parking lot"
+	},
+/area/f13/wasteland)
 "uya" = (
 /obj/structure/fence/wooden{
 	pixel_x = 13
@@ -71932,6 +72078,14 @@
 	},
 /obj/machinery/hydroponics/soil/flat,
 /turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"uFQ" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -2;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/road/parkingalt/three,
 /area/f13/wasteland)
 "uGj" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -73677,6 +73831,13 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats,
 /area/f13/wasteland)
+"vhy" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical,
+/area/f13/wasteland)
 "vhD" = (
 /obj/structure/fence{
 	icon_state = "post";
@@ -74646,6 +74807,16 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/old,
 /area/f13/wasteland)
+"vwS" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal{
+	dir = 8;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft1"
+	},
+/area/f13/wasteland)
 "vwY" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
@@ -75613,10 +75784,6 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
 "vJM" = (
-/obj/structure/curtain{
-	color = "#FFFFFF";
-	pixel_y = 32
-	},
 /obj/structure/table/round,
 /obj/item/newspaper{
 	pixel_y = 5
@@ -81752,6 +81919,11 @@
 	name = "floor"
 	},
 /area/f13/potashwarehouse)
+"xqg" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal,
+/turf/open/indestructible/ground/outside/saltflats,
+/area/f13/wasteland)
 "xqh" = (
 /obj/effect/overlay/shadow/shading{
 	name = null;
@@ -93140,7 +93312,7 @@ nIY
 ioZ
 uvT
 uvT
-lTd
+xqg
 uvT
 cnX
 uvT
@@ -93397,7 +93569,7 @@ fcD
 cgQ
 uvT
 uvT
-lTd
+xqg
 uvT
 uvT
 yhs
@@ -95891,7 +96063,7 @@ hQN
 tYy
 hQN
 hQN
-wdg
+kEd
 taQ
 taQ
 taQ
@@ -96148,7 +96320,7 @@ tCM
 tCM
 tCM
 tCM
-gkV
+dnc
 gJu
 uNg
 nPR
@@ -96405,7 +96577,7 @@ cxs
 cxs
 cxs
 cxs
-pDM
+dOU
 vsI
 kTY
 kTY
@@ -96662,7 +96834,7 @@ fmK
 fmK
 fmK
 fmK
-yff
+uFQ
 vsI
 oIT
 oIT
@@ -96919,7 +97091,7 @@ usg
 usg
 pNL
 usg
-usg
+sTz
 vsI
 usg
 usg
@@ -97690,7 +97862,7 @@ hQN
 hQN
 hQN
 hQN
-wdg
+kEd
 vsI
 hQN
 hQN
@@ -97947,7 +98119,7 @@ tCM
 tCM
 tCM
 tCM
-gkV
+dnc
 gJu
 tCM
 tCM
@@ -98204,7 +98376,7 @@ cxs
 cxs
 cxs
 cxs
-pDM
+dOU
 gJu
 cxs
 cxs
@@ -98461,11 +98633,11 @@ eaf
 eaf
 eaf
 eaf
-tLm
+foC
 isw
 bol
-eaf
-eaf
+bol
+uxT
 eaf
 eaf
 eaf
@@ -100269,7 +100441,7 @@ kWa
 kWa
 kCQ
 iSE
-kWa
+vwS
 kWa
 kCq
 kCq
@@ -100525,7 +100697,7 @@ icz
 icz
 icz
 kaZ
-uTa
+dOI
 uTa
 uTa
 uTa
@@ -100782,7 +100954,7 @@ jur
 jur
 jur
 fhr
-icP
+ktE
 kLk
 mdb
 mdb
@@ -102915,9 +103087,9 @@ qCx
 qCx
 mVH
 qCx
-nxL
-nxL
-nxL
+vhy
+vhy
+rVe
 mDs
 mdb
 eiy
@@ -103174,7 +103346,7 @@ hTx
 qCx
 mdb
 mdb
-nxL
+nTu
 mDs
 mdb
 mdb
@@ -103431,7 +103603,7 @@ hTx
 xsM
 mdb
 mdb
-nxL
+nTu
 mDs
 mdb
 mdb
@@ -103688,7 +103860,7 @@ szg
 qCx
 mdb
 mdb
-nxL
+nTu
 mDs
 mdb
 oXc
@@ -103944,8 +104116,8 @@ qCx
 qCx
 dfQ
 ihi
-nxL
-nxL
+gPP
+fNJ
 mDs
 mdb
 mdb
@@ -109085,7 +109257,7 @@ aAy
 qCx
 mdb
 nyU
-rva
+dnY
 qLA
 tiC
 tiC
@@ -109342,7 +109514,7 @@ qCx
 qCx
 mdb
 tiC
-rva
+kHB
 qLA
 rHH
 mdb
@@ -109856,7 +110028,7 @@ vQD
 kaD
 mdb
 mdb
-nxL
+nTu
 mDs
 mdb
 mdb
@@ -110113,7 +110285,7 @@ vQD
 kaD
 mdb
 mdb
-nxL
+nTu
 mDs
 mdb
 icP
@@ -110368,9 +110540,9 @@ qCx
 xsM
 qCx
 qCx
-nxL
-nxL
-nxL
+gPP
+gPP
+fNJ
 mDs
 mdb
 mdb
@@ -114221,7 +114393,7 @@ mdb
 mdb
 mdb
 mdb
-nxL
+nTu
 mdb
 mdb
 mdb
@@ -114478,7 +114650,7 @@ mdb
 mdb
 mdb
 mdb
-nxL
+nTu
 mdb
 mdb
 mdb
@@ -114735,7 +114907,7 @@ mdb
 ntx
 kLk
 mdb
-nxL
+nTu
 mdb
 mdb
 mdb
@@ -115249,7 +115421,7 @@ mdb
 mdb
 mdb
 mdb
-nxL
+nTu
 mdb
 mdb
 mdb
@@ -118061,7 +118233,7 @@ pQI
 pQI
 dcG
 pQI
-hPV
+auT
 ruh
 pQI
 oVZ
