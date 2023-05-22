@@ -676,11 +676,14 @@
 	layer = 2.91;
 	pixel_x = -1
 	},
-/obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	plane = -16
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin/trash_fallout{
+	pixel_x = 1;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/freezer,
 /area/f13/followers)
 "aNB" = (
@@ -13782,7 +13785,6 @@
 	pixel_y = 6
 	},
 /obj/machinery/sleeper{
-	layer = 2.9;
 	pixel_x = 2
 	},
 /obj/structure/closetundense/locker/higherlayer{
