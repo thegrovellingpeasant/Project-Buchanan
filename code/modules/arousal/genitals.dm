@@ -92,49 +92,6 @@
 		var/mob/living/carbon/human/H = owner
 		H.update_genitals()
 
-/mob/living/carbon/verb/toggle_genitals()
-	set category = "IC"
-	set name = "Expose/Hide genitals"
-	set desc = "Allows you to toggle which genitals should show through clothes or not."
-
-	var/list/genital_list = list()
-	for(var/obj/item/organ/genital/G in internal_organs)
-		if(!CHECK_BITFIELD(G.genital_flags, GENITAL_INTERNAL))
-			genital_list += G
-	if(!genital_list.len) //There is nothing to expose
-		return
-	//Full list of exposable genitals created
-	var/obj/item/organ/genital/picked_organ
-	picked_organ = input(src, "Choose which genitalia to expose/hide", "Expose/Hide genitals") as null|anything in genital_list
-	if(picked_organ && (picked_organ in internal_organs))
-		var/picked_visibility = input(src, "Choose visibility setting", "Expose/Hide genitals") as null|anything in GLOB.genitals_visibility_toggles
-		if(picked_visibility && picked_organ && (picked_organ in internal_organs))
-			picked_organ.toggle_visibility(picked_visibility)
-	return
-
-/mob/living/carbon/verb/toggle_arousal_state()
-	set category = "IC"
-	set name = "Toggle genital arousal"
-	set desc = "Allows you to toggle which genitals are showing signs of arousal."
-	var/list/genital_list = list()
-	for(var/obj/item/organ/genital/G in internal_organs)
-		if(G.genital_flags & GENITAL_CAN_AROUSE)
-			genital_list += G
-	if(!genital_list.len) //There's nothing that can show arousal
-		return
-	var/obj/item/organ/genital/picked_organ
-	picked_organ = input(src, "Choose which genitalia to toggle arousal on", "Set genital arousal", null) in genital_list
-	if(picked_organ)
-		var/original_state = picked_organ.aroused_state
-		picked_organ.set_aroused_state(!picked_organ.aroused_state)
-		if(original_state != picked_organ.aroused_state)
-			to_chat(src,"<span class='userlove'>[picked_organ.aroused_state ? picked_organ.arousal_verb : picked_organ.unarousal_verb].</span>")
-		else
-			to_chat(src,"<span class='userlove'>You can't make that genital [picked_organ.aroused_state ? "unaroused" : "aroused"]!</span>")
-		picked_organ.update_appearance()
-	return
-
-
 /obj/item/organ/genital/proc/modify_size(modifier, min = -INFINITY, max = INFINITY)
 	fluid_max_volume += modifier*2.5
 	fluid_rate += modifier/10

@@ -8959,7 +8959,7 @@
 	},
 /obj/structure/chair/bench{
 	icon_state = "bench";
-	dir = 8
+	dir = 4
 	},
 /obj/effect/landmark/deathmatch,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
@@ -9988,6 +9988,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
+"Bz" = (
+/obj/structure/chair/f13chair1{
+	dir = 8
+	},
+/obj/effect/landmark/deathmatch,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/wasteland)
 "BB" = (
 /obj/item/cardboard_cutout/adaptive{
 	pixel_y = 2
@@ -12065,6 +12072,14 @@
 	dir = 1
 	},
 /area/f13/wasteland)
+"HI" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	dir = 8
+	},
+/obj/effect/landmark/deathmatch,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
+/area/f13/wasteland)
 "HJ" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars,
@@ -12618,6 +12633,7 @@
 	dir = 4;
 	pixel_y = 1
 	},
+/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "Jp" = (
@@ -13871,6 +13887,10 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/one)
+"Nv" = (
+/obj/effect/landmark/deathmatch,
+/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/area/f13/building)
 "Nw" = (
 /obj/structure/car/derelict{
 	pixel_y = -5;
@@ -15160,6 +15180,7 @@
 	pixel_x = 1;
 	pixel_y = -2
 	},
+/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "Rx" = (
@@ -58300,7 +58321,7 @@ sX
 UX
 Rk
 Qx
-Yl
+Nv
 yC
 yC
 zh
@@ -62133,7 +62154,7 @@ QK
 QK
 QK
 Gx
-Zb
+yp
 QK
 HG
 Ys
@@ -68815,7 +68836,7 @@ DX
 QK
 DX
 hb
-Zb
+yp
 QK
 RK
 gw
@@ -71911,7 +71932,7 @@ OJ
 Gh
 BN
 QK
-Kn
+HI
 DR
 Oi
 DX
@@ -75237,7 +75258,7 @@ Od
 ZV
 Kb
 QK
-hE
+Bz
 QK
 DX
 QK

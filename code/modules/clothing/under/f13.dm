@@ -1368,7 +1368,7 @@
 
 /obj/item/clothing/under/f13/combat/militia
 	name = "ODF fatigues"
-	desc = "An olive-green combat uniform, issued to members of the Oasis Defense Force."
+	desc = "An olive-green combat uniform, issued to members of the Wendover Police Force."
 
 /obj/item/clothing/under/f13/enclave_officer
 	name = "officer uniform"

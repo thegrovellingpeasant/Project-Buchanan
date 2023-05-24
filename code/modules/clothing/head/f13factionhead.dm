@@ -916,7 +916,7 @@
 	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/town/officer
-	name = "oasis officer's cap"
+	name = "Wendover officer's cap"
 	desc = "A simple dark navy peaked cap, worn by police."
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
@@ -1135,7 +1135,6 @@
 	desc = "A standard issue vault security helmet, pretty robust."
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 40, "fire" = 70, "acid" = 40, "wound" = 50)
 	slowdown = 0.01
-
 
 /obj/item/clothing/head/helmet/riot/vaultsec/vc
 	name = "vtcc riot helmet"

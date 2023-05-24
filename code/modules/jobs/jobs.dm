@@ -86,14 +86,13 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Sheriff",
 "Deputy",
 "Farmer",
-"Prospector",
+"Scavenger",
 "Citizen",
 "Radio Host",
 "Montego Bay Host",
 "Montego Bay Staff",
 "Shopkeeper",
 "Bartender",
-"Citizen",
 "Entrepreneur",
 
 "Followers Administrator",
@@ -133,19 +132,7 @@ GLOBAL_LIST_INIT(wendover_positions, list(
 ))
 
 GLOBAL_LIST_INIT(oasis_positions, list(
-	"Mayor",
-	"Secretary",
-	"Sheriff",
-	"Deputy",
-	"Farmer",
 	"Prospector",
-	"Citizen",
-	"Radio Host",
-	"Montego Bay Host",
-	"Montego Bay Staff",
-	"Shopkeeper",
-	"Bartender",
-	"Entrepreneur",
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
