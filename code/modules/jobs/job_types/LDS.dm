@@ -26,8 +26,8 @@ Mayor
 	objectivesList = list("Grow the flock by converting outsiders to the faith.","Avenge the loss of New Canaan, strike the White Legs.","Perform charity for the people of Wendover.")
 	exp_type = EXP_TYPE_LDS
 
-	access = list(ACCESS_CHAPEL_OFFICE)
-	minimal_access = (ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 
 /datum/outfit/job/latterdaysaints
 	ears = /obj/item/radio/headset/headset_lds
@@ -52,8 +52,8 @@ Mayor
 	display_order = JOB_DISPLAY_ORDER_TEMPLEPRESIDENT
 
 	outfit = /datum/outfit/job/latterdaysaints/f13templepresident
-	access = list(ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/latterdaysaints,
@@ -134,8 +134,8 @@ Mayor
 
 	outfit = /datum/outfit/job/latterdaysaints/f13missionary
 
-	access = list(ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/latterdaysaints,
@@ -217,8 +217,8 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 
 	outfit = /datum/outfit/job/latterdaysaints/f13templeguard
 
-	access = list(ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/latterdaysaints,
@@ -275,8 +275,8 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	display_order = JOB_DISPLAY_ORDER_NEWCANAANITE
 
 	outfit = /datum/outfit/job/latterdaysaints/f13newcanaanite
-	access = list(ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/latterdaysaints,

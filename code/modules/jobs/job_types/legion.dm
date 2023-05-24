@@ -378,7 +378,7 @@ commented out pending rework*/
 
 // PRIME DECANUS
 
-/datum/job/CaesarsLegion/Legionnaire/f13decan
+/*datum/job/CaesarsLegion/Legionnaire/f13decan
 	title = "Prime Decanus"
 	flag = F13DECAN
 	total_positions = 2
@@ -547,7 +547,7 @@ commented out pending rework*/
 		/obj/item/ammo_box/tube/a357 = 2,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		)
+		)*/
 
 
 

@@ -304,6 +304,60 @@
 /obj/structure/chair/office/dark
 	icon_state = "office_chair_dark"
 
+/obj/structure/chair/office/prop
+	name = "prop"
+	desc = "A prop used for filming local TV."
+	icon = 'icons/obj/flora/deadtrees.dmi'
+	icon_state = "cactus"
+	can_buckle = FALSE
+
+/obj/structure/chair/office/prop/xmastree
+	name = "prop"
+	icon = 'icons/obj/custom.dmi'
+	icon_state = "pine_c"
+
+/obj/structure/chair/office/prop/overlayable/cactus
+	name = "prop"
+	icon = 'icons/fallout/flora/trees.dmi'
+	icon_state = "cactus"
+	var/mutable_appearance/cactpropoverlay
+
+/obj/structure/chair/office/prop/overlayable/cactus/Initialize()
+	. = ..()
+	cactpropoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(cactpropoverlay)
+
+/obj/structure/chair/office/prop/overlayable/deadtree
+	name = "prop"
+	icon = 'icons/fallout/flora/trees.dmi'
+	icon_state = "deadtree_1"
+	pixel_x = -18
+	var/mutable_appearance/treepropoverlay
+
+/obj/structure/chair/office/prop/overlayable/deadtree/Initialize()
+	. = ..()
+	treepropoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(treepropoverlay)
+
+/obj/structure/chair/office/prop/overlayable/joshua
+	name = "prop"
+	icon = 'icons/fallout/flora/trees.dmi'
+	icon_state = "joshua_1"
+	pixel_x = -18
+	var/mutable_appearance/joshpropoverlay
+
+/obj/structure/chair/office/prop/overlayable/joshua/Initialize()
+	. = ..()
+	joshpropoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(joshpropoverlay)
+
+/obj/structure/chair/office/prop/backdrop1
+	name = "prop"
+	desc = "A prop used for filming local TV."
+	icon = 'icons/obj/flora/deadtrees.dmi'
+	icon_state = "cactus"
+
+
 // Bar stools
 /obj/structure/chair/stool/retro
 	name = "bar stool"

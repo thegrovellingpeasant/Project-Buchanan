@@ -338,7 +338,7 @@ SUBSYSTEM_DEF(vote)
 			if(. == "Restart Round")
 				end_round = TRUE
 		if("transfer")
-			if(. == "Call Train")
+			if(. == "Call Plane")
 				end_round = TRUE
 		if("gamemode")
 			if(GLOB.master_mode != .)
@@ -468,7 +468,7 @@ SUBSYSTEM_DEF(vote)
 			if("restart")
 				choices.Add("Restart Round","Continue Playing")
 			if("transfer")
-				choices.Add("Call Train","Continue Playing")
+				choices.Add("Call Plane","Continue Playing")
 			if("gamemode")
 				choices.Add(config.votable_modes)
 			if("map")
@@ -655,9 +655,9 @@ SUBSYSTEM_DEF(vote)
 		//train
 		var/aveor = CONFIG_GET(flag/allow_vote_transfer)
 		if(trialmin || aveor)
-			. += "<a href='?src=[REF(src)];vote=transfer'>Call train</a>"
+			. += "<a href='?src=[REF(src)];vote=transfer'>Call Plane</a>"
 		else
-			. += "<font color='grey'>Call train (Disallowed)</font>"
+			. += "<font color='grey'>Call Plane (Disallowed)</font>"
 		if(trialmin)
 			. += "\t(<a href='?src=[REF(src)];vote=toggle_allow_vote_transfer'>[aveor ? "Allowed" : "Disallowed"]</a>)"
 		. += "</li><li>"

@@ -21,8 +21,8 @@ Mayor
 	faction = FACTION_USPS
 	department_flag = USPS
 	selection_color = "#83a4c0"
-	access = list(ACCESS_USPS)
-	minimal_access = list(ACCESS_USPS)
+	access = list(ACCESS_BAR, ACCESS_USPS)
+	minimal_access = list(ACCESS_BAR, ACCESS_USPS)
 
 /datum/job/usps/f13postmastergeneral
 	title = "Postmaster General"
@@ -37,8 +37,8 @@ Mayor
 
 
 	outfit = /datum/outfit/job/usps/f13postmastergeneral
-	access = list(ACCESS_USPS)
-	minimal_access = list(ACCESS_USPS)
+	access = list(ACCESS_BAR, ACCESS_USPS)
+	minimal_access = list(ACCESS_BAR, ACCESS_USPS)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wendover,
@@ -95,8 +95,8 @@ Mayor
 
 
 	outfit = /datum/outfit/job/usps/f13mailcarrier
-	access = list(ACCESS_USPS)
-	minimal_access = list(ACCESS_USPS)
+	access = list(ACCESS_BAR, ACCESS_USPS)
+	minimal_access = list(ACCESS_BAR, ACCESS_USPS)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wendover,
