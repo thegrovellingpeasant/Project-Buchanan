@@ -381,8 +381,8 @@ commented out pending rework*/
 /*datum/job/CaesarsLegion/Legionnaire/f13decan
 	title = "Prime Decanus"
 	flag = F13DECAN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus"
 	display_order = JOB_DISPLAY_ORDER_DECAN

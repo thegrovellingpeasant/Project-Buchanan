@@ -312,8 +312,8 @@
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5)
 	
 /obj/item/clothing/suit/armored/light/town/vest
-	name = "Wendover flak vest"
-	desc = "A refurbished flak vest, repaired by the Wendover Police Department. The ballistic nylon has a much tougher weave, but it still will not take acid or most high-powered rounds."
+	name = "Oasis flak vest"
+	desc = "A refurbished flak vest, repaired by the Oasis Police Department. The ballistic nylon has a much tougher weave, but it still will not take acid or most high-powered rounds."
 	icon_state = "vest_flak"
 	item_state = "vest_flak"
 	armor = list("melee" = 10, "bullet" = 30, "laser" = 10, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)

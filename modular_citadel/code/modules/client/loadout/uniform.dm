@@ -759,6 +759,7 @@
 	path = /obj/item/clothing/under/f13/ranger
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "Rangers"
+	restricted_roles = list("NCR Veteran Ranger", "NCR Ranger")
 
 /datum/gear/uniform/ranger/trail
 	name = "trail ranger outfit"
@@ -772,6 +773,26 @@
 	name = "ranger flannel outfit"
 	path = /obj/item/clothing/under/f13/ranger/vet
 
+//Oasis
+
+/datum/gear/uniform/suit/blueshift
+	name = "security suit and tie"
+	path = /obj/item/clothing/under/rank/security/officer/blueshirt
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "Oasis"
+	restricted_roles = list("Mayor",
+							"Secretary",
+							"Chief of Police",
+							"Doctor",
+							"Citizen",
+							"Officer",
+							"Shopkeeper",
+							"Farmer",
+							"Prospector",
+							"Detective",
+							"Barkeep",
+							)
 
 //Khans 
 
