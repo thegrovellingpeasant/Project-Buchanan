@@ -20,8 +20,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	faction = FACTION_NCR
 	exp_type = EXP_TYPE_NCR
 
-	access = list(ACCESS_BAR, ACCESS_NCR)
-	minimal_access = list(ACCESS_BAR, ACCESS_NCR)
+	access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
@@ -58,7 +58,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	flag = F13COLONEL
 	head_announce = list("Security")
 	supervisors = "The Republic Senate, High Command"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 
 	total_positions = 0
@@ -100,7 +100,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	title = "NCR Personal Aide"
 	flag = F13COLONEL
 	supervisors = "The Colonel"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
 	req_admin_notify = 1
 	total_positions = 0
 	spawn_positions = 0
@@ -146,7 +146,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -228,7 +228,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the Commanding Officer of the NCR force stationed at the Embassy in Wendover. The last stop before the Great Salt Lake desert, it enjoyed some prominence as a trade town, with caravans from California and New Canaan meeting here to exchange goods of every kind. With the fall of New Canaan, trade has diminished, and only a token force remains to protect the embassy from the belligerent tribes in the area. To make matters worse, the Ranger detachment that once patrolled I-80 has been sent south to New Vegas in expectation of a second battle at Hoover dam. Defend the Ambassador, lead your troops, and use what limited supplies you have to promote the NCR's interests in the area."
 	supervisors = "the Ambassador"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 	exp_type = EXP_TYPE_NCR
@@ -285,7 +285,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Sergeant First Class and Above"
 	selection_color = "#fff5cc"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13sergeant
 
@@ -374,7 +374,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "The direct superior to all enlisted, you are to provide training exercises, maintain military discipline, and instill orderliness within the ranks. You may also manage the NCOs. You are the pinnacle of the NCR's enlisted ranks, and are to advise the commissioned officers. You are not a frontline trooper, you are camp support."
 	supervisors = "Lieutenant and Above"
 	selection_color = "#fff5cc"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	outfit = /datum/outfit/job/ncr/f13drillsergeant
 	exp_type = EXP_TYPE_NCR
@@ -452,7 +452,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/job/ncr/f13representative
 	title = "Ambassador"
 	flag = F13REP
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_CHANGE_IDS, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
+	access = list(ACCESS_NCR, ACCESS_CHANGE_IDS, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
 	total_positions = 1
 	spawn_positions = 1
 	description = "You were personally appointed by the President to represent the people of California in all matters related to Utah and New Canaan. Your post oversaw years of rich trade between the two nations, and ensured safe passage for travelers between Reno, Vegas and Salt Lake City. Unfortunately for you, one of the local tribes launched a surprise attack on New Canaan, slaughtering or scattering its inhabitants to the last. Trade and travel have dried up, the Rangers have been redeployed to Hoover Dam and only you are left to sort out the mess on your hands. Promote NCR interests, recoup what losses you can for the caravan companies, and decide on the fate of the town and tribes of Wendover - For the Republic."
@@ -538,7 +538,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	supervisors = "NCRA Captain, High Command"
 	selection_color = "#ffeeaa"
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	exp_type = EXP_TYPE_NCR
 	exp_requirements = 3500
@@ -752,7 +752,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
 	supervisors = "Lieutenant and Above"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
@@ -1226,7 +1226,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "You are the lead medical professional in the embassy, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
 	supervisors = "Captain and Above"
 	selection_color = "#fff5cc"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 	matchmaking_allowed = list(
@@ -1281,7 +1281,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the lead engineering professional in the embassy, you do not have any command authority beyond the logistical side. Your duties are to ensure your outpost is well defended, the armory is in order, and you always have supplies. Organize the rear echelon to offload the frontline officers and make things happen."
 	supervisors = "Captain and Above"
-	access = list(ACCESS_BAR, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_LOGISTICSOFFICER
 	outfit = /datum/outfit/job/ncr/f13logisticsofficer
@@ -1372,8 +1372,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // Really only used for ID console
 /datum/job/ncr/f13ncrcitizen
 	title = "NCR Citizen"
-	access = list(ACCESS_BAR, ACCESS_NCROFFDUTY)
-	minimal_access = list(ACCESS_BAR, ACCESS_NCROFFDUTY)
+	access = list(ACCESS_NCROFFDUTY)
+	minimal_access = list(ACCESS_NCROFFDUTY)
 	outfit = /datum/outfit/job/ncr/f13ncrcitizen
 
 /datum/outfit/job/ncr/f13ncrcitizen

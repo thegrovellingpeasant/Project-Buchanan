@@ -188,8 +188,8 @@
 					update_icon()
 					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "graverobbing", /datum/mood_event/graverobbing)
 					if(lead_tomb == TRUE && first_open == TRUE)
-						user.gain_trauma(/datum/brain_trauma/special/imaginary_friend)
-						to_chat(user, "<span class='boldwarning'>There is a presence watching you.</span>")
+						user.gain_trauma(/datum/brain_trauma/magic/stalker)
+						to_chat(user, "<span class='boldwarning'>Oh no, no no no, THEY'RE EVERYWHERE! EVERY ONE OF THEM IS EVERYWHERE!</span>")
 						first_open = FALSE
 					return 1
 				return 1
@@ -228,6 +228,7 @@
 /obj/structure/closet/crate/grave/lead_researcher/PopulateContents()  //ADVANCED GRAVEROBBING
 	..()
 	new /obj/effect/decal/cleanable/blood/gibs/old(src)
+	new /obj/item/book/granter/crafting_recipe/boneyard_notes(src)
 
 /obj/effect/decal/remains/human/grave
 	turf_loc_check = FALSE

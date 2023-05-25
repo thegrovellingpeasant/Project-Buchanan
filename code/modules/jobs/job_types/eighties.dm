@@ -698,7 +698,7 @@
 
 /*--------------------------------------------------------------*/
 
-/*datum/job/eighties/f13roadie
+/datum/job/eighties/f13roadie
 	title = "Roadie"
 	flag = F13ROADIE
 	total_positions = -1
@@ -792,4 +792,3 @@
 		/obj/item/clothing/shoes/f13/diesel/alt,\
 		/obj/item/clothing/shoes/f13/raidertreads \
 		)
-*/

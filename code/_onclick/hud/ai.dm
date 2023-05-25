@@ -87,7 +87,7 @@
 	AI.announcement()
 
 /obj/screen/ai/call_shuttle
-	name = "Call Plain"
+	name = "Call Train"
 	icon_state = "call_shuttle"
 
 /obj/screen/ai/call_shuttle/Click()

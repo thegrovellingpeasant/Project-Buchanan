@@ -4576,7 +4576,7 @@
 /obj/effect/overlay/window{
 	pixel_y = -32
 	},
-/obj/structure/table/roulette,
+/obj/structure/roulettetable,
 /turf/open/floor/carpet/green/nosmooth,
 /area/f13/building)
 "Kx" = (
@@ -5975,7 +5975,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "XD" = (
-/obj/structure/table/roulette,
+/obj/structure/roulettetable,
 /turf/open/floor/carpet/green/nosmooth,
 /area/f13/building)
 "XG" = (

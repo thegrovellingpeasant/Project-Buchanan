@@ -69,7 +69,7 @@
 			else
 				users_in_range++
 
-	if(users_in_range < 1)
+	if(users_in_range < 2)
 		to_chat(M, "<span class='warning'>There aren't enough people to use the [src.name]!</span>")
 		return 0
 
