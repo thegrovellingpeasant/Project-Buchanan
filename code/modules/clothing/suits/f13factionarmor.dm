@@ -714,7 +714,7 @@
 	slowdown = 0.08 //combat armor but less slowdown
 
 /obj/item/clothing/suit/armor/vest/oasis
-	name = "OPD vest"
+	name = "SLCPD vest"
 	desc = "a lightweight ballistic vest that combines protection and comfort. This one has pockets sewn into the front and a badge pinned on it."
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	armor = list("melee" = 15, "bullet" = 45, "laser" = 15,  "energy" = 30, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
@@ -724,7 +724,7 @@
 
 /obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis
 	name = "heavy steel breastplate"
-	desc = "a steel breastplate, inspired by a pre-war design. Looks like oasis citizens added an additional layer of metal on the front face."
+	desc = "a steel breastplate, inspired by a pre-war design. Looks like Wendover citizens added an additional layer of metal on the front face."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
 	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 45)

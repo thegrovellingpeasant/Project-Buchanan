@@ -9,7 +9,7 @@
 	desc = "An old pre war machine, used to stablize and heal patients"
 	icon = 'icons/obj/machines/autodoc.dmi'
 	icon_state = "autodoc"
-	layer = 3.3
+	layer = BELOW_OBJ_LAYER
 	density = FALSE
 	state_open = TRUE
 	circuit = /obj/item/circuitboard/machine/sleeper

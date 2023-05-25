@@ -399,8 +399,8 @@
 					return
 				mode = SHUTTLE_DOCKED
 				setTimer(SSshuttle.emergencyDockTime)
-				send2irc("Server", "The train has arrived at the station.")
-				priority_announce("The train has arrived the station. You have [timeLeft(600)] minutes to board the train.", null, 'sound/f13/quest.ogg', "Vault-Tec")
+				send2irc("Server", "The plane has landed in the Salt Flats.")
+				priority_announce("The plane has landed in the Salt Flats. You have [timeLeft(600)] minutes to board.", null, 'sound/f13/quest.ogg', "Vault-Tec")
 				ShuttleDBStuff()
 
 
@@ -451,7 +451,7 @@
 				mode = SHUTTLE_ESCAPE
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
-				priority_announce("The train has left the station. Estimate [timeLeft(600)] minutes until the train arrives to the target destination.", null, null, "Vault-Tec")
+				priority_announce("The plane has left the Salt Flats. Estimate [timeLeft(600)] minutes until the plane arrives in Salt Lake City.", null, null, "Vault-Tec")
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()
