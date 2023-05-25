@@ -784,7 +784,7 @@
 		return TRUE
 
 /obj/machinery/porta_turret/ai
-	faction = list("wastebot")
+	faction = list("silicon")
 	nonlethal_projectile = /obj/item/projectile/beam/disabler
 	nonlethal_projectile_sound = 'sound/weapons/taser2.ogg'
 	turret_flags = TURRET_FLAG_SHOOT_CRIMINALS | TURRET_FLAG_SHOOT_ANOMALOUS | TURRET_FLAG_SHOOT_HEADS

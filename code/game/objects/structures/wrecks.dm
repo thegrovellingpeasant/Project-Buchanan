@@ -18,10 +18,9 @@
 /obj/structure/wreck/bus
 	name = "wrecked bus"
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
-	icon = 'icons/obj/vehicles/bus1.dmi'	
 	bound_width = 192
 	bound_height = 64
-	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	icon = 'icons/obj/vehicles/bus1.dmi'
 
 /obj/structure/wreck/bus/blue
 	icon_state = "blue"
