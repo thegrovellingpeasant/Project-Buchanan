@@ -382,7 +382,7 @@
 	update_pull_movespeed()
 	update_pull_hud_icon()
 
-/mob/living/verb/stop_pulling1()
+/mob/verb/stop_pulling1()
 	set name = "Stop Pulling"
 	set category = "IC"
 	stop_pulling()

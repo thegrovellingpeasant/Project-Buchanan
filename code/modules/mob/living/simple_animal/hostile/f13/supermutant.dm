@@ -49,7 +49,6 @@
 	see_in_dark = 8
 	wander = 0
 	anchored = FALSE
-	dextrous = TRUE
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 
 
