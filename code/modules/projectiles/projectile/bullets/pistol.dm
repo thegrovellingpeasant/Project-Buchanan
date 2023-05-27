@@ -39,6 +39,7 @@ Uranium, Contaminated
 	name = ".22lr bullet"
 	damage = 0
 	wound_bonus = 6
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
@@ -65,6 +66,7 @@ Uranium, Contaminated
 	name = ".38 bullet"
 	damage = 0
 	wound_bonus = 10
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
@@ -82,6 +84,7 @@ Uranium, Contaminated
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
+	is_reflectable = FALSE
 
 /obj/item/projectile/bullet/c38/acid/Initialize()
 	. = ..()
@@ -118,6 +121,7 @@ Uranium, Contaminated
 	name = "9mm FMJ bullet"
 	damage = 0
 	wound_bonus = 10
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c9mm/op
 	name = "9mm +P bullet"
@@ -137,6 +141,7 @@ Uranium, Contaminated
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
+	is_reflectable = FALSE
 
 /obj/item/projectile/bullet/c9mm/acid/Initialize()
 	. = ..()
@@ -178,6 +183,7 @@ Uranium, Contaminated
 	name = "10mm FMJ bullet"
 	damage = 0
 	wound_bonus = 11
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
@@ -213,6 +219,7 @@ Uranium, Contaminated
 	name = ".45 FMJ bullet"
 	damage = 0
 	wound_bonus = 15
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c45/simple
 	name = ".45 FMJ bullet"

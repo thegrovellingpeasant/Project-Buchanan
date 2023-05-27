@@ -118,3 +118,8 @@
 	if(. & EMP_PROTECT_SELF)
 		return
 	damage += severity
+
+/obj/item/organ/liver/gecko
+	name = "fire sac"
+	desc = "The liver of the infamous Kuna Bogwezhi. This seems to be the organ which gives the creature its' flame breath! A craftsman of the White Legs can make use of this."
+	icon_state = "liver-x"

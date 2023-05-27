@@ -1212,6 +1212,16 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "white_legs_armour_heavy"
 	item_state = "white_legs_armour_heavy"
 
+/obj/item/clothing/suit/f13/tribal/heavy/whitelegs/yaoguai
+	name = "White Legs Akoiah armour"
+	desc = "Made of bones taken from the mighty Ainka-Akoiah and reinforced heavily with metal plating, this set of armor acts as a symbol and a reminder of the White Legs' dominance over the untamed wastes."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny
+	icon = 'icons/fallout/clothing/armored_heavy.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
+	icon_state = "white_legs_bone_heavy"
+	item_state = "white_legs_bone_heavy"
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+
 /obj/item/clothing/suit/f13/tribal/light/eighties
 	name = "80s light armour"
 	desc = "A black leather jacket with the number 80 stitched onto the back. Worn by the members of the 80s tribe."

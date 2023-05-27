@@ -8,6 +8,10 @@
 	icon_state = "sheet-geckohide"
 	merge_type = /obj/item/stack/sheet/animalhide/gecko
 
+/obj/item/stack/sheet/animalhide/gecko/fireking
+	name = "kuna skin"
+	desc = "The hide of the infamous Kuna Bogwezhi. It's tough, a craftsman of the White Legs can make use of this."
+
 /obj/item/stack/sheet/animalhide/molerat
 	name = "molerat skin"
 	desc = "A smelly piece of hide, mostly used as a doormat."
@@ -45,3 +49,11 @@
 	singular_name = "brahmin skin piece"
 	icon_state = "sheet-hide" //ToDo: Brahmin Mat
 	merge_type = /obj/item/stack/sheet/animalhide/brahmin
+
+/obj/item/stack/sheet/animalhide/feather
+	name = "feathers"
+	desc = "A feather plucked from a bird."
+	singular_name = "feather"
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "downfeather"
+	merge_type = /obj/item/stack/sheet/animalhide/feather

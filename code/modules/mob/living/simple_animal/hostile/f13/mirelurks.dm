@@ -15,6 +15,9 @@
 	icon_dead = "mirelurk_d"
 	speed = 1
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/mirelurk = 2, /obj/item/stack/sheet/sinew = 1)
+	attack_sound = 'sound/creatures/radscorpion_attack.ogg'
+	idlesound = list('sound/creatures/radscorpion_snip.ogg')
+	faction = list("mirelurk")
 	maxHealth = 150
 	health = 150
 	melee_damage_lower = 10
