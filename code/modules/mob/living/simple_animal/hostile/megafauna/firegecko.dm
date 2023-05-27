@@ -28,6 +28,8 @@
 	wander = FALSE
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/gecko/fireking = 25, /obj/item/stack/sheet/sinew = 15, /obj/item/organ/eyes/gecko = 1, /obj/item/organ/liver/gecko = 1)
 	decompose = FALSE
+	can_devour = FALSE
+	stat_attack = UNCONSCIOUS
 	var/swooping = NONE
 	var/swoop_cooldown = 0
 	var/fire_rain_cooldown = 0
@@ -261,7 +263,6 @@
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
 			visible_message("<span class='warning'>[src] slams down on [L], crushing [L.p_them()]!</span>")
-			L.gib()
 		else
 			L.adjustBruteLoss(75)
 			if(L && !QDELETED(L)) // Some mobs are deleted on death

@@ -23,6 +23,8 @@
 	pixel_x = -32
 	gender = FEMALE
 	wander = FALSE
+	can_devour = FALSE
+	stat_attack = UNCONSCIOUS
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/sinew = 15, /obj/item/stack/sheet/animalhide/chitin/mirelurk = 20)
 	decompose = FALSE
 	var/grabbing = 0

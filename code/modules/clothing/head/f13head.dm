@@ -838,8 +838,6 @@
 	item_state = "diohelmet"
 	flags_inv = HIDEHAIR
 	flash_protect = 1
-	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
-	darkness_view = 24
 
 /obj/item/clothing/head/helmet/f13/herbertranger
 	name = "weathered desert ranger helmet"

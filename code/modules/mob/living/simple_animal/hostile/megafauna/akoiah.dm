@@ -27,6 +27,8 @@
 	wander = FALSE
 	guaranteed_butcher_results = list(/obj/item/organ/heart/freedom/yaoguai = 1, /obj/item/stack/sheet/sinew = 15, /obj/item/stack/sheet/bone/yaoguai = 30)
 	decompose = FALSE
+	can_devour = FALSE
+	stat_attack = UNCONSCIOUS
 	var/charging = 0
 	deathmessage = "collapses onto the ground, letting out one last guttural roar."
 	death_sound = 'sound/f13npc/deathclaw/death.ogg'
