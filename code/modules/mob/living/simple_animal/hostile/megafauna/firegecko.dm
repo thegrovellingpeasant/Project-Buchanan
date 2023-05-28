@@ -17,7 +17,7 @@
 	friendly_verb_simple = "stare down"
 	faction = list("gecko")
 	speak_emote = list("roars")
-	armour_penetration = 0.7
+	armour_penetration = 0.4
 	melee_damage_lower = 40
 	melee_damage_upper = 40
 	speed = 0
@@ -26,6 +26,7 @@
 	pixel_x = -16
 	gender = MALE
 	wander = FALSE
+	loot = list(/obj/item/twohanded/broken_thermic_lance, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid, /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/gecko/fireking = 25, /obj/item/stack/sheet/sinew = 15, /obj/item/organ/eyes/gecko = 1, /obj/item/organ/liver/gecko = 1)
 	decompose = FALSE
 	can_devour = FALSE

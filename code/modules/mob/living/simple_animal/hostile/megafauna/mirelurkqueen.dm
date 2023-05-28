@@ -25,9 +25,11 @@
 	wander = FALSE
 	can_devour = FALSE
 	stat_attack = UNCONSCIOUS
+	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid, /obj/item/throwing_star/tomahawk/pvc)
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/sinew = 15, /obj/item/stack/sheet/animalhide/chitin/mirelurk = 20)
 	decompose = FALSE
 	var/grabbing = 0
+	var/charging = FALSE
 	var/grabbing_cooldown = 0
 	var/max_mobs = 4
 	var/mob_types = list(/mob/living/simple_animal/hostile/mirelurk, /mob/living/simple_animal/hostile/mirelurk/hunter, /mob/living/simple_animal/hostile/mirelurk/baby)
@@ -54,7 +56,10 @@
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return
-	move_to_delay = clamp(round((health/maxHealth) * 10), 4, 6)
+	if(change_behaviour == TRUE)
+		move_to_delay = 3
+	if(change_behaviour == FALSE)
+		move_to_delay = 6
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/OpenFire()
 	anger_modifier = clamp(((maxHealth - health)/50),0,20)
@@ -70,30 +75,26 @@
 	. = ..()
 	AddComponent(/datum/component/spawner/ranged, mob_types, spawn_time, faction, spawn_text, max_mobs, _range = 7)
 
-	for(var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/B in GLOB.mob_list)
-		if(B != src)
-			return INITIALIZE_HINT_QDEL //There can be only one
-
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/AttackingTarget()
-	if(!grabbing)
+	if(!grabbing || !charging)
 		return ..()
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/DestroySurroundings()
-	if(!grabbing)
+	if(!grabbing || !charging)
 		..()
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/Move()
-	if(!grabbing)
+	if(!grabbing || !charging)
 		if(!stat)
 			playsound(src.loc, 'sound/effects/meteorimpact.ogg', 200, 1, 2, 1)
 			..()
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/Goto(target, delay, minimum_distance)
-	if(!grabbing)
+	if(!grabbing || !charging)
 		..()
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/proc/grab_attack(atom/movable/manual_target)
-	if(stat || grabbing)
+	if(stat || grabbing || charging)
 		return
 	if(manual_target)
 		target = manual_target
@@ -121,4 +122,62 @@
 
 	stop_automated_movement = FALSE
 	grabbing = 0
+
+/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/proc/Charge()
+	var/turf/T = get_turf(target)
+	if(!T || T == loc)
+		return
+	charging = TRUE
+	visible_message(span_danger(">[src] charges!"))
+	DestroySurroundings()
+	walk(src, 0)
+	setDir(get_dir(src, T))
+	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
+	animate(D, alpha = 0, color = "#FF0000", transform = matrix()*2, time = 1)
+	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, .proc/charge_end))
+
+/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/proc/charge_end(list/effects_to_destroy)
+	charging = FALSE
+	if(target)
+		Goto(target, move_to_delay, minimum_distance)
+
+/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/Bump(atom/A)
+	if(charging)
+		if(isturf(A) || isobj(A) && A.density)
+			A.ex_act(EXPLODE_HEAVY)
+		DestroySurroundings()
+	..()
+
+/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/throw_impact(atom/A)
+	if(!charging)
+		return ..()
+
+	else if(isliving(A))
+		var/mob/living/L = A
+		L.visible_message(span_danger("[src] slams into [L]!"), span_userdanger("[src] slams into you!"))
+		L.apply_damage(melee_damage_lower/2, BRUTE)
+		playsound(get_turf(L), 'sound/effects/meteorimpact.ogg', 100, 1)
+		shake_camera(L, 4, 3)
+		shake_camera(src, 2, 3)
+		var/throwtarget = get_edge_target_turf(src, get_dir(src, get_step_away(L, src)))
+		L.throw_at(throwtarget, 3)
+
+
+	charging = FALSE
+	charging = FALSE
+
+/mob/living/simple_animal/hostile/megafauna/mirelurkqueen/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		return
+	if(prob(10))
+		if(change_behaviour == TRUE)
+			visible_message(span_danger("\The [src] hisses, enraged!"))
+		
+			addtimer(CALLBACK(src, .proc/Charge), 3)
+	if(prob(85) || Proj.damage > 30)
+		return ..()
+	else
+		visible_message(span_danger("\The [Proj] bounces off \the [src]'s thick shell!"))
+		return 0
+
 

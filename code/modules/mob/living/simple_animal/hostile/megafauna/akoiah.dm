@@ -19,12 +19,13 @@
 	melee_damage_lower = 55
 	melee_damage_upper = 55
 	speed = 1
-	move_to_delay = 5
+	move_to_delay = 4
 	ranged_cooldown_time = 10
 	ranged = 1
 	pixel_x = -32
 	gender = MALE
 	wander = FALSE
+	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid)
 	guaranteed_butcher_results = list(/obj/item/organ/heart/freedom/yaoguai = 1, /obj/item/stack/sheet/sinew = 15, /obj/item/stack/sheet/bone/yaoguai = 30)
 	decompose = FALSE
 	can_devour = FALSE
@@ -41,7 +42,7 @@
 /mob/living/simple_animal/hostile/megafauna/yaoguai/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return
-	move_to_delay = clamp(round((health/maxHealth) * 10), 2, 5)
+	move_to_delay = clamp(round((health/maxHealth) * 10), 2, 4)
 
 /mob/living/simple_animal/hostile/megafauna/yaoguai/OpenFire()
 	anger_modifier = clamp(((maxHealth - health)/50),0,20)
@@ -60,9 +61,6 @@
 
 /mob/living/simple_animal/hostile/megafauna/yaoguai/Initialize()
 	. = ..()
-	for(var/mob/living/simple_animal/hostile/megafauna/yaoguai/B in GLOB.mob_list)
-		if(B != src)
-			return INITIALIZE_HINT_QDEL //There can be only one
 
 /mob/living/simple_animal/hostile/megafauna/yaoguai/do_attack_animation(atom/A, visual_effect_icon, obj/item/used_item, no_effect)
 	if(charging)

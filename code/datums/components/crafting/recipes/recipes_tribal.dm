@@ -293,6 +293,7 @@
 			/obj/item/stack/sheet/bone/yaoguai = 30,
 			/obj/item/stack/sheet/sinew = 15,
 			/obj/item/stack/sheet/metal = 20,
+			/obj/item/stack/sheet/leather = 8,
 			/obj/item/stack/crafting/goodparts = 5
 	)
 	result = /obj/item/clothing/suit/f13/tribal/heavy/whitelegs/yaoguai

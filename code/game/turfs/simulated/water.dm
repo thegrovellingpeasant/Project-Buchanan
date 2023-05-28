@@ -51,6 +51,12 @@
 		if(V.vehicle_check_submerged() <= 0)
 			return
 		playsound(src, "water_wade", 20, TRUE)
+	if(istype(AM, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
+		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = AM
+		if(mirelurkqueen.change_behaviour == FALSE)
+			visible_message(span_danger(">The mirelurk queen speeds up in the water!"))
+			mirelurkqueen.change_behaviour = TRUE
+		playsound(src, "water_wade", 20, TRUE)
 	AM.water_act(5)
 	..()
 
@@ -71,7 +77,7 @@
 		var/obj/vehicle/V = AM
 		V.vehicle_update_water()
 		if(V.vehicle_check_submerged() <= 0)
-			return		
+			return
 	..()
 
 /mob/living/proc/check_submerged()
