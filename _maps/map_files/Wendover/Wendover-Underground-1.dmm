@@ -18180,8 +18180,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "qmD" = (
-/obj/item/chisel,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/item/chisel,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "qnA" = (
@@ -21898,7 +21899,7 @@
 /turf/closed/wall/f13/vault,
 /area/f13/bunker)
 "tpA" = (
-/obj/item/stack/sheet/mineral/sandstone/thirty,
+/obj/machinery/recycler,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "tqz" = (

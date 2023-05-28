@@ -3390,6 +3390,10 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/saltflats/crackedcornerbottomright,
 /area/f13/wasteland)
+"aYs" = (
+/obj/structure/table,
+/turf/open/indestructible/ground/outside/roadi80/topwhite,
+/area/f13/wasteland)
 "aYu" = (
 /obj/machinery/hydroponics/soil/flat/dark,
 /obj/effect/overlay/curb/east{
@@ -17764,7 +17768,7 @@
 /area/f13/wasteland)
 "fal" = (
 /obj/structure/car/derelict/alt{
-	layer = 3.1
+	layer = 3.04
 	},
 /obj/item/storage/briefcase,
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
@@ -21280,6 +21284,17 @@
 	icon_state = "ash";
 	icon = 'icons/turf/mining.dmi';
 	dir = 8
+	},
+/area/f13/wasteland)
+"fWP" = (
+/obj/item/broom{
+	layer = 3.06;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "endoftheroad2";
+	dir = 5
 	},
 /area/f13/wasteland)
 "fWW" = (
@@ -27005,6 +27020,12 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
+"hDw" = (
+/obj/machinery/recycler{
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/roadi80/topwhite,
+/area/f13/wasteland)
 "hDB" = (
 /obj/item/flashlight/floodlight{
 	on = 1;
@@ -29434,6 +29455,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/factory)
+"ipV" = (
+/obj/item/broom{
+	layer = 3.06;
+	pixel_x = -2
+	},
+/obj/structure/table,
+/turf/open/indestructible/ground/outside/roadi80,
+/area/f13/wasteland)
 "ipX" = (
 /obj/effect/overlay/infuriatingroad{
 	icon_state = "infuriatingroad2";
@@ -35182,6 +35211,9 @@
 /area/f13/casino)
 "jQN" = (
 /obj/machinery/recycler,
+/obj/machinery/conveyor/auto{
+	dir = 4
+	},
 /turf/open/indestructible/ground/outside/roadi80/topwhite,
 /area/f13/wasteland)
 "jQX" = (
@@ -46284,7 +46316,7 @@
 	pixel_y = 17;
 	name = "John's Scrap 'n' Crap";
 	icon_state = "newboard_text8";
-	layer = 2.81
+	layer = 2.91
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "crackedconcrete2";
@@ -46688,6 +46720,13 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
+"nkc" = (
+/obj/item/broom{
+	layer = 3.06;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/outside/roadi80/topwhite,
+/area/f13/wasteland)
 "nke" = (
 /obj/structure/tires/half,
 /turf/open/indestructible/ground/outside/saltflats,
@@ -52615,7 +52654,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "oSi" = (
-/obj/structure/wreck/trash/bus_door,
+/obj/machinery/recycler,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "oSj" = (
@@ -52744,6 +52783,10 @@
 	icon_state = "endoftheroad4";
 	dir = 6
 	},
+/area/f13/wasteland)
+"oTF" = (
+/obj/machinery/recycler,
+/turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
 "oTJ" = (
 /obj/structure/fence{
@@ -77762,7 +77805,7 @@
 /area/f13/building)
 "vOY" = (
 /obj/item/broom{
-	layer = 3.01
+	layer = 3.06
 	},
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
@@ -88436,7 +88479,7 @@ qki
 aAK
 iIr
 gnE
-fLU
+nkc
 wjb
 wjb
 iEt
@@ -88451,7 +88494,7 @@ ugx
 iIr
 hQS
 fal
-wjb
+oTF
 wjb
 qGl
 wjb
@@ -88693,7 +88736,7 @@ jur
 qki
 iIr
 gnE
-fLU
+hDw
 wjb
 wjb
 fms
@@ -88708,7 +88751,7 @@ jur
 iIr
 gnE
 rFu
-wjb
+ipV
 wjb
 wjb
 wjb
@@ -162452,7 +162495,7 @@ taZ
 hAA
 lpq
 gnE
-uKU
+fWP
 wjb
 wjb
 iEt
@@ -162966,7 +163009,7 @@ rJn
 ixQ
 wYp
 clU
-fLU
+aYs
 nee
 wjb
 wjb
@@ -163223,7 +163266,7 @@ avP
 tVU
 jDL
 gnE
-fLU
+aYs
 wjb
 wjb
 wjb
