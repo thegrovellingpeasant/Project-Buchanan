@@ -72,6 +72,7 @@
 	outfit = /datum/outfit/job/eighties/f13warboss
 	display_order = JOB_DISPLAY_ORDER_WARBOSS
 	exp_type = EXP_TYPE_EIGHTIES
+	exp_requirements = 900
 	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 	minimal_access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 
@@ -172,6 +173,7 @@
 	supervisors = "the Warboss"
 	display_order = JOB_DISPLAY_ORDER_ARENAMASTER
 	exp_type = EXP_TYPE_EIGHTIES
+	exp_requirements = 600
 	outfit = /datum/outfit/job/eighties/f13arenamaster
 
 	access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)

@@ -74,8 +74,6 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Veteran Decanus",
-"Prime Decanus",
-"Recruit Decanus",
 "Frumentarius",
 "Vexillarius",
 "Explorer",
@@ -246,7 +244,6 @@ GLOBAL_LIST_INIT(eighties_positions, list(
 	"Blackfinger",
 	"Blue Team",
 	"Red Team",
-	"Roadie",
 	"80",
 ))
 

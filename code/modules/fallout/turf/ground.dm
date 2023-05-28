@@ -144,23 +144,6 @@
 	footstep = FOOTSTEP_GRAVEL
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_GRAVEL
-	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
-	var/pit_sand = 1
-	var/storedindex = 0			//amount of stored items
-	var/mob/living/gravebody	//is there a body in the pit?
-	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
-	var/obj/salvage //or salvage
-	var/pitcontents = list()
-	var/obj/dugpit/mypit
-	var/unburylevel = 0
-	var/list/loots = list(
-						/obj/item/stack/crafting/metalparts/five = 30,
-						/obj/item/stack/crafting/goodparts/five = 30,
-						/obj/item/stack/ore/blackpowder/twenty = 10,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
-						)
-
 
 /turf/open/indestructible/ground/outside/saltflats/gravleft
 	icon = 'icons/fallout/objects/wendover.dmi'

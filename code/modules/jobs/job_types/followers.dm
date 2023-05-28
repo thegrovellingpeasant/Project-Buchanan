@@ -2,8 +2,8 @@
 	department_flag = FOLLOWERS
 	selection_color = "#ffeeaa"
 	exp_type = EXP_TYPE_FOLLOWERS
-	access = list(ACCESS_FOLLOWER)
-	minimal_access = list(ACCESS_FOLLOWER)
+	access = list(ACCESS_BAR, ACCESS_FOLLOWER)
+	minimal_access = list(ACCESS_BAR, ACCESS_FOLLOWER)
 	forbids = "Collaborating, working with, or enabling organizations hostile to human life or society in general, such as the Enclave or Legion. Treating raiders or enabling those who will go on to cause more harm. Producing and selling drugs. Having sex all day while people die in front of you."
 	enforces = "Preaching humanitarianism and valuing human life. Assist and provide medical services to those who value human life. Provide free education for all those who are willing to learn."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish medical outposts throughout the wasteland","Leadership recommends the following goal for this week: Experiment with and improve medical techniques and equipment", "Leadership recommends the following goal for this week: Replenish the operation's funds through donations and sales.")
@@ -50,8 +50,8 @@ Administrator
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
-	access = list(ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+	access = list(ACCESS_BAR, ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+	minimal_access = list(ACCESS_BAR, ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
 
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -347,8 +347,8 @@ Follower Volunteer
 	loadout_options = list(/datum/outfit/loadout/guard_ranged,
 	/datum/outfit/loadout/guard_close
 	)
-	access = list(ACCESS_FOLLOWER, ACCESS_MILITARY)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_MILITARY)
+	access = list(ACCESS_BAR, ACCESS_FOLLOWER, ACCESS_MILITARY)
+	minimal_access = list(ACCESS_BAR, ACCESS_FOLLOWER, ACCESS_MILITARY)
 
 /datum/outfit/job/followers/f13followerguard
 	name =	"Followers Guard"

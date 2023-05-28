@@ -352,6 +352,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
+"aut" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/centaur{
+	dir = 8
+	},
+/turf/open/floor/f13/green,
+/area/f13/enclave)
 "auJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -361,7 +368,7 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/building)
 "awd" = (
-/obj/structure/window/reinforced/tinted/fulltile,
+/obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/machinery/door/poddoor/shutters{
 	id = "enclavesec"
 	},
@@ -410,6 +417,13 @@
 /obj/item/cardboard_cutout,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
+"azp" = (
+/obj/machinery/porta_turret/syndicate/vehicle_turret{
+	dir = 8;
+	faction = list("hostile","vines","plants","Syndicate","gecko")
+	},
+/turf/open/floor/f13/green,
+/area/f13/enclave)
 "azq" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/human/corpse/raidermelee,
@@ -527,6 +541,15 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/green,
+/area/f13/enclave)
+"aEf" = (
+/obj/item/reagent_containers/glass/bowl/mushroom_bowl{
+	name = "dog bowl";
+	color = "#fa6464";
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/turf/open/floor/f13/blue,
 /area/f13/enclave)
 "aFw" = (
 /obj/effect/decal/cleanable/oil/slippery,
@@ -1254,7 +1277,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "bvK" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer3"
 	},
@@ -3877,7 +3900,7 @@
 /turf/open/floor/f13/green,
 /area/f13/enclave)
 "dLK" = (
-/obj/structure/window/reinforced/tinted/fulltile,
+/obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/structure/grille,
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
@@ -4570,7 +4593,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "etK" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
@@ -5520,6 +5543,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/melee/onehanded/machete/scrapsabre,
 /turf/open/floor/f13/red,
 /area/f13/enclave)
 "fmM" = (
@@ -5631,6 +5655,12 @@
 /obj/machinery/light,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
+"fqe" = (
+/obj/structure/nest/mob/supermutant/enclaveng{
+	dir = 4
+	},
+/turf/open/floor/f13/green,
+/area/f13/enclave)
 "frg" = (
 /obj/structure/statue/wood/headstonewood,
 /obj/item/clothing/head/helmet/f13/vaquerohat{
@@ -9104,6 +9134,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/green,
 /area/f13/enclave)
+"irb" = (
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/floor/f13/blue,
+/area/f13/enclave)
 "irp" = (
 /obj/structure/car/junk/panel{
 	desc = null;
@@ -9841,14 +9877,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "jdb" = (
-/obj/structure/bed{
-	pixel_x = -1
-	},
-/obj/item/bedsheet/sneedclave{
-	pixel_x = -2
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/f13/green,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/floor/f13/blue,
 /area/f13/enclave)
 "jdv" = (
 /obj/machinery/light/fo13colored/Red{
@@ -11995,9 +12028,14 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/building)
 "kRt" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
 /turf/open/floor/plasteel/rockvault,
+/area/f13/enclave)
+"kRv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13/green,
 /area/f13/enclave)
 "kRN" = (
 /obj/machinery/light/floor{
@@ -12877,7 +12915,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "lRg" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer3"
 	},
@@ -13035,8 +13073,10 @@
 	pixel_x = -7;
 	icon_state = "saltshakersmall"
 	},
-/obj/item/fishy/eel{
-	pixel_y = 4
+/obj/item/toy/plush/snakeplushie{
+	pixel_y = 3;
+	pixel_x = 2;
+	color = "#454530"
 	},
 /turf/open/floor/f13/blue,
 /area/f13/building)
@@ -13122,10 +13162,14 @@
 	icon_state = "b_end_mirrored";
 	pixel_x = 1
 	},
+/obj/machinery/porta_turret/syndicate/vehicle_turret{
+	dir = 8;
+	faction = list("hostile","vines","plants","Syndicate","gecko")
+	},
 /turf/open/floor/f13/green,
 /area/f13/enclave)
 "mcH" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
 /turf/open/floor/f13/red,
 /area/f13/enclave)
@@ -13498,7 +13542,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/wastelandedge,
 /area/f13/wasteland)
 "mnj" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
 /turf/open/floor/f13/green,
 /area/f13/enclave)
@@ -16005,6 +16049,13 @@
 	name = "destroyed wall"
 	},
 /area/f13/building)
+"osK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/bed/dogbed{
+	name = "centaur bed"
+	},
+/turf/open/floor/f13/blue,
+/area/f13/enclave)
 "osN" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/mug{
@@ -16216,6 +16267,13 @@
 /area/f13/followers)
 "oCq" = (
 /obj/structure/nest/mob/misterhandy,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oDm" = (
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/obj/structure/table,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "oDy" = (
@@ -17268,6 +17326,15 @@
 /obj/item/trash/f13/rotten,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/vault)
+"pyw" = (
+/obj/structure/bed{
+	pixel_x = -2
+	},
+/obj/item/bedsheet/sneedclave{
+	pixel_x = -2
+	},
+/turf/open/floor/f13/red,
+/area/f13/enclave)
 "pyP" = (
 /obj/structure/toilet{
 	dir = 1;
@@ -17919,7 +17986,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "qgL" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer1"
 	},
@@ -19527,7 +19594,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rpP" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer1"
 	},
@@ -19570,7 +19637,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
 "rrJ" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer2"
 	},
@@ -19905,7 +19972,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low{
 	loot = list(/obj/effect/spawner/bundle/f13/wattz=40,/obj/effect/spawner/bundle/f13/wattzm=25,/obj/effect/spawner/bundle/f13/laserpistol=35,/obj/effect/spawner/bundle/f13/plasmapistol=15)
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13/red,
 /area/f13/enclave)
@@ -23467,7 +23533,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/f13/enclave)
 "uMT" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/vault)
@@ -23655,6 +23721,10 @@
 	},
 /turf/open/floor/f13/blue,
 /area/f13/enclave)
+"uVe" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13/green,
+/area/f13/enclave)
 "uVu" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 4
@@ -23750,7 +23820,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "uZq" = (
-/obj/structure/window/reinforced/tinted/fulltile,
+/obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/structure/grille,
 /turf/open/floor/plasteel/rockvault,
 /area/f13/enclave)
@@ -24348,7 +24418,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vwi" = (
-/obj/structure/window/reinforced/fulltile,
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "encontainer2"
 	},
@@ -26257,14 +26327,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/vault)
 "xkB" = (
-/obj/structure/table_frame,
-/obj/effect/decal/cleanable/glass,
-/obj/item/electronics/airlock,
-/obj/item/shard,
-/obj/structure/windoor_assembly{
-	dir = 8
-	},
-/turf/open/floor/f13/green,
+/obj/structure/barricade/wooden/planks,
+/turf/closed/wall/f13/wood/house/shack,
 /area/f13/enclave)
 "xkL" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -53601,8 +53665,8 @@ opM
 vYB
 wnj
 ygf
-aSj
-wnj
+osK
+aEf
 eIH
 wnj
 wnj
@@ -53863,7 +53927,7 @@ eIH
 eIH
 eIH
 wnj
-aSj
+jdb
 aSj
 aSj
 aSj
@@ -54117,10 +54181,10 @@ eIH
 sGP
 opM
 opM
-eIH
+aut
 eIH
 opM
-opM
+uVe
 opM
 opM
 opM
@@ -54377,7 +54441,7 @@ opM
 eIH
 opM
 wnj
-aSj
+jdb
 yfA
 uMf
 wnj
@@ -54887,9 +54951,9 @@ imH
 wnj
 ygf
 ygf
-wnj
-eIH
-wnj
+irb
+kRv
+irb
 ygf
 ygf
 wnj
@@ -60278,7 +60342,7 @@ gKG
 opM
 opM
 opM
-kMl
+opM
 eIH
 eIH
 eIH
@@ -60534,10 +60598,10 @@ ygf
 bHx
 nwQ
 opM
-opM
+kMl
 mcC
 yfP
-opM
+azp
 opM
 lAr
 ygf
@@ -63608,7 +63672,7 @@ ygf
 opM
 ygf
 hZk
-jdb
+eIH
 xjy
 ygf
 eCT
@@ -72121,9 +72185,9 @@ opM
 sGP
 opM
 opM
-opM
+fqe
 eIH
-moh
+pyw
 ygf
 kZK
 eUt
@@ -72887,9 +72951,9 @@ ceQ
 ceQ
 drl
 kZK
-kZK
-kZK
-kZK
+ygf
+ygf
+ygf
 kZK
 kZK
 kZK
@@ -88715,13 +88779,13 @@ tZj
 uPV
 iDb
 dud
-nbO
+oDm
 dud
 dud
-nbO
+oDm
 dud
 dud
-nbO
+oDm
 dud
 dud
 kZK
@@ -89229,13 +89293,13 @@ tZj
 uPV
 iDb
 dud
-nbO
+oDm
 dud
 dud
-nbO
+oDm
 dud
 dud
-nbO
+oDm
 dud
 dud
 kZK

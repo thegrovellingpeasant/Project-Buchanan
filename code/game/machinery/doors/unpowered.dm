@@ -175,6 +175,25 @@
 	name = "Prison door"
 	req_access_txt = "123"
 
+/obj/machinery/door/unpowered/fence
+	name = "fence door"
+	desc = "Celldoor with a built-in lock. Can't be padlocked."
+	icon = 'icons/fallout/structures/fences.dmi'
+	icon_state = "fence"
+	max_integrity = 600
+	obj_integrity = 600
+	assemblytype = /obj/item/stack/rods
+	visible = FALSE
+	explosion_block = FALSE
+	pass_flags = LETPASSTHROW  // would be great but the var is not functional for some reason.
+	proj_pass_rate = 95
+
+/obj/machinery/door/unpowered/fence/update_icon()
+	if(density)
+		icon_state = "fence"
+	else
+		icon_state = "fenceopen"
+
 
 // ------------------------------------
 // LEGION SECURE REINFORCED DOOR - tough airlock replacement

@@ -309,3 +309,12 @@
 	desc = "Keep your head, heels and standards high."
 	icon_state = "fancyheels"
 	item_state = "fancyheels"
+
+/obj/item/clothing/shoes/f13/whitelegshoes
+	desc = "Hardened by years of barefoot walking, impervious to glass traps."
+	icon_state = "whitelegs"
+	item_state = "whitelegs"
+
+/obj/item/clothing/shoes/f13/whitelegshoes/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)

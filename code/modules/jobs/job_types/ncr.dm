@@ -232,6 +232,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 	exp_type = EXP_TYPE_NCR
+	exp_requirements = 300
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -458,6 +459,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "You were personally appointed by the President to represent the people of California in all matters related to Utah and New Canaan. Your post oversaw years of rich trade between the two nations, and ensured safe passage for travelers between Reno, Vegas and Salt Lake City. Unfortunately for you, one of the local tribes launched a surprise attack on New Canaan, slaughtering or scattering its inhabitants to the last. Trade and travel have dried up, the Rangers have been redeployed to Hoover Dam and only you are left to sort out the mess on your hands. Promote NCR interests, recoup what losses you can for the caravan companies, and decide on the fate of the town and tribes of Wendover - For the Republic."
 	supervisors = "The President"
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
+	exp_requirements = 600
 	outfit = /datum/outfit/job/ncr/f13representative
 
 	loadout_options = list(

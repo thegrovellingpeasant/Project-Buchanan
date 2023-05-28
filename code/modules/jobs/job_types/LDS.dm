@@ -182,7 +182,6 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	backpack = /obj/item/storage/backpack/satchel/bone
 	satchel = /obj/item/storage/backpack/satchel/leather
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911/custom
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45 = 3,
 		/obj/item/melee/onehanded/club/warclub = 1,

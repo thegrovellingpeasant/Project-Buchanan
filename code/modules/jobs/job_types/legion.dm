@@ -302,6 +302,7 @@ commented out pending rework*/
 	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	exp_type = EXP_TYPE_LEGION
+	exp_requirements = 900
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
@@ -381,8 +382,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13decan
 	title = "Prime Decanus"
 	flag = F13DECAN
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus"
 	display_order = JOB_DISPLAY_ORDER_DECAN
@@ -472,8 +473,8 @@ commented out pending rework*/
 /datum/job/CaesarsLegion/Legionnaire/f13decanrec
 	title = "Recruit Decanus"
 	flag = F13DECANREC
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus"
 	display_order = JOB_DISPLAY_ORDER_DECANREC

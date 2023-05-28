@@ -150,6 +150,12 @@
 	},
 /turf/open/indestructible/ground/outside/road/verticalrightborder,
 /area/f13/wasteland)
+"aek" = (
+/obj/structure/window/fulltile/house{
+	layer = 2.74
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/followers)
 "aem" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/security/wooden_tv{
@@ -559,6 +565,11 @@
 	name = "walkway"
 	},
 /area/f13/wasteland)
+"apn" = (
+/turf/closed/indestructible/rock/smoothing{
+	layer = 4.25
+	},
+/area/f13/caves)
 "apJ" = (
 /obj/structure/chair/comfy/black{
 	dir = 8;
@@ -1375,7 +1386,6 @@
 /obj/effect/overlay/shadow,
 /obj/structure/rack/shelf_metal,
 /obj/item/ammo_box/shotgun/bean,
-/obj/item/ammo_box/shotgun/buck,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
@@ -4467,6 +4477,17 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"cLL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door/interior_gate{
+	pixel_y = 1;
+	id = "ldssouth";
+	pixel_x = -26;
+	layer = 2.81;
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/plasteel/showroomfloor/lit,
+/area/f13/building)
 "cMg" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
@@ -5472,7 +5493,9 @@
 /area/f13/building)
 "dyb" = (
 /obj/structure/junk/foundation{
-	icon_state = "more"
+	icon_state = "more";
+	density = 1;
+	layer = 2.1
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
@@ -5663,8 +5686,6 @@
 "dCW" = (
 /obj/effect/overlay/shadow,
 /obj/structure/rack/shelf_metal,
-/obj/item/melee/onehanded/knife/bowie,
-/obj/item/melee/onehanded/knife/bowie,
 /obj/item/melee/onehanded/knife/bayonet,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
@@ -5992,15 +6013,6 @@
 	pixel_y = 3;
 	can_weld_shut = 0
 	},
-/obj/item/taperecorder,
-/obj/item/camera/detective{
-	name = "ProSnap camera"
-	},
-/obj/item/camera_film,
-/obj/item/camera_film,
-/obj/item/tape/random,
-/obj/item/tape/random,
-/obj/item/storage/box/evidence,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "dQI" = (
@@ -6027,12 +6039,6 @@
 /area/f13/building)
 "dRH" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/item/pen/fountain/captain{
-	name = "Sheriff's fountain pen";
-	pixel_y = 6;
-	layer = 3.01;
-	pixel_x = -1
-	},
 /obj/item/paper_bin{
 	pixel_y = 4
 	},
@@ -7931,7 +7937,7 @@
 /area/f13/building)
 "fcM" = (
 /obj/structure/closet/crate/footchest,
-/obj/item/ammo_box/c4570box/explosive{
+/obj/item/ammo_box/c4570box{
 	icon_state = "improvshotbag"
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
@@ -8162,8 +8168,6 @@
 "fjq" = (
 /obj/effect/overlay/shadow,
 /obj/structure/closet/crate/leftfootlocker,
-/obj/item/ammo_box/shotgun/improvised,
-/obj/item/ammo_box/shotgun/improvised,
 /obj/item/ammo_box/shotgun/improvised,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
@@ -10645,15 +10649,11 @@
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "gLO" = (
-/obj/effect/overlay/shadow,
-/obj/structure/bed/old{
-	icon_state = "bedroll_unrolled";
-	plane = -15;
-	name = "sleeping bag";
-	color = "#4257fc"
+/obj/machinery/door/unpowered/securedoor{
+	req_one_access_txt = "1";
+	name = "Sheriff's Department"
 	},
-/obj/effect/landmark/start/f13/greenhorn,
-/turf/open/floor/plasteel/showroomfloor/lit,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "gMj" = (
 /obj/structure/statue/wood/headstonewood{
@@ -11062,14 +11062,6 @@
 /obj/item/key,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/seeds/cannabis,
-/obj/item/lighter{
-	icon_state = "lighter_overlay_slime"
-	},
-/obj/item/storage/fancy/rollingpapers,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
 "gXJ" = (
@@ -11479,6 +11471,9 @@
 	req_one_access_txt = "22";
 	opacity = 0
 	},
+/obj/machinery/door/poddoor/shutters{
+	id = "ldssouth"
+	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "hmf" = (
@@ -11880,9 +11875,6 @@
 /area/f13/wasteland)
 "hxv" = (
 /obj/structure/closet/secure_closet/evidence,
-/obj/item/storage/box/evidence,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/mask/surgical,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -11912,8 +11904,6 @@
 "hyh" = (
 /obj/effect/overlay/shadow,
 /obj/structure/rack/shelf_metal,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "hyN" = (
@@ -12373,15 +12363,8 @@
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "hPq" = (
-/obj/structure/fluff/bus/passable/seat{
-	dir = 8;
-	pixel_y = 0
-	},
-/obj/item/binoculars{
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/showroomfloor/lit,
-/area/f13/building)
+/turf/closed/wall/mineral/concrete/blastproof/moresmooth,
+/area/f13/followers)
 "hPs" = (
 /obj/structure/window/fulltile/house,
 /obj/structure/barricade/bars{
@@ -13081,10 +13064,6 @@
 /area/f13/building)
 "ivk" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/taperecorder,
-/obj/item/camera/detective{
-	name = "ProSnap camera"
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -13242,8 +13221,12 @@
 	dir = 1
 	},
 /obj/structure/table,
+/obj/item/storage/pill_bottle/chem_tin/fixer,
 /obj/item/storage/firstaid/ancient{
 	pixel_y = 5
+	},
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -14071,10 +14054,6 @@
 	pixel_y = -9
 	},
 /obj/effect/decal/cleanable/ash,
-/obj/item/storage/fancy/cigarettes/cigpack_bigboss{
-	pixel_x = 8;
-	pixel_y = -9
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -14149,9 +14128,6 @@
 /turf/open/transparent/glass,
 /area/f13/planetarium)
 "jcN" = (
-/obj/structure/filingcabinet{
-	pixel_x = -19
-	},
 /obj/machinery/photocopier{
 	pixel_y = -3
 	},
@@ -14326,7 +14302,10 @@
 	},
 /area/f13/wasteland)
 "jgY" = (
-/obj/structure/simple_door/interior,
+/obj/machinery/door/unpowered/securedoor{
+	req_one_access_txt = "1";
+	name = "Sheriff's Department"
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -14929,6 +14908,14 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"jAo" = (
+/obj/structure/window/fulltile/house,
+/obj/structure/curtain{
+	color = "#FFFFFF"
+	},
+/obj/machinery/door/poddoor/shutters,
+/turf/open/floor/plasteel/showroomfloor/lit,
+/area/f13/building)
 "jAr" = (
 /obj/machinery/chem_dispenser{
 	pixel_y = 5;
@@ -18529,7 +18516,6 @@
 	icon_state = "troughs";
 	name = "trough";
 	desc = null;
-	tank_volume = 100;
 	icon = 'icons/fallout/farming/trough.dmi';
 	pixel_x = -36
 	},
@@ -19557,15 +19543,6 @@
 	},
 /turf/open/indestructible/ground/outside/road/parkingalt,
 /area/f13/wasteland)
-"mJr" = (
-/obj/structure/filingcabinet/security{
-	pixel_x = -16
-	},
-/obj/structure/filingcabinet{
-	pixel_x = -1
-	},
-/turf/open/floor/carpet/red/lit,
-/area/f13/building)
 "mJs" = (
 /obj/effect/overlay/shadow,
 /obj/effect/landmark/start/f13/redteam,
@@ -19868,12 +19845,6 @@
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
-"mTY" = (
-/obj/item/binoculars{
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/showroomfloor/lit,
-/area/f13/building)
 "mUq" = (
 /obj/structure/table/wood,
 /obj/item/radio/wendoverreceiver{
@@ -20169,6 +20140,13 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "ncy" = (
+/obj/machinery/button/door/interior_gate{
+	pixel_y = 1;
+	id = "ldssouth";
+	pixel_x = -26;
+	layer = 2.81;
+	req_one_access_txt = "25"
+	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/tunnel)
 "ncF" = (
@@ -20564,13 +20542,9 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "npZ" = (
-/obj/structure/fluff/bus/passable/seat{
-	dir = 8;
-	pixel_y = 0
-	},
-/obj/effect/overlay/shadow,
-/obj/effect/landmark/start/f13/greenhorn,
-/turf/open/floor/plasteel/showroomfloor/lit,
+/obj/effect/decal/cleanable/glass,
+/obj/item/stack/sheet/mineral/wood,
+/turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "nqq" = (
 /obj/structure/chair/stool/f13stool{
@@ -21163,7 +21137,15 @@
 /area/f13/building)
 "nKJ" = (
 /obj/structure/railing{
-	pixel_y = -4
+	pixel_y = -4;
+	layer = 4.25
+	},
+/obj/machinery/button/door/interior_gate{
+	pixel_y = 1;
+	id = "ldsnorth";
+	pixel_x = -26;
+	layer = 2.81;
+	req_one_access_txt = "25"
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/tunnel)
@@ -22467,12 +22449,12 @@
 /obj/structure/table/wood/greyscale{
 	color = "#845346"
 	},
-/obj/item/storage/fancy/cigarettes/cigars{
-	pixel_y = 11;
-	name = "Premium cigar case"
-	},
 /obj/item/storage/box/matches{
 	pixel_y = 4
+	},
+/obj/item/clothing/mask/cigarette/cigar/ncr{
+	pixel_x = -3;
+	pixel_y = 6
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
@@ -23406,10 +23388,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/hydroponics/soil/pot{
-	pixel_y = 12;
-	pixel_z = 0;
-	layer = 2.81
+/obj/item/restraints/handcuffs,
+/obj/item/clothing/head/cowboyhat{
+	pixel_y = 11
 	},
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
@@ -24418,8 +24399,6 @@
 	pixel_y = 1;
 	can_weld_shut = 0
 	},
-/obj/item/storage/box/bodybags,
-/obj/item/storage/box/handcuffs,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "pPb" = (
@@ -25597,9 +25576,7 @@
 /obj/structure/bed,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
+/obj/effect/landmark/start/f13/greenhorn,
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
 "qze" = (
@@ -27969,10 +27946,6 @@
 "rNI" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/folder/syndicate/red,
-/obj/item/clothing/accessory/medal/ribbon{
-	pixel_y = 6;
-	pixel_x = 15
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -29895,15 +29868,6 @@
 /area/f13/building)
 "sTB" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/item/salvage/high{
-	icon_state = "strength";
-	pixel_y = 12;
-	name = "Strength Bobblehead"
-	},
-/obj/item/clothing/accessory/medal/silver/security{
-	pixel_y = 8;
-	pixel_x = 14
-	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "sTD" = (
@@ -30839,8 +30803,6 @@
 /obj/effect/overlay/shadow,
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/head/f13/army,
-/obj/item/clothing/head/helmet/f13/combat,
-/obj/item/clothing/head/helmet/f13/combat,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "tyo" = (
@@ -31375,13 +31337,8 @@
 	pixel_x = 3;
 	opacity = 0
 	},
-/obj/structure/bed{
-	pixel_x = -1
-	},
-/obj/item/bedsheet/medical{
-	pixel_x = -1
-	},
 /obj/effect/landmark/start/f13/newcanaanite,
+/obj/structure/table/optable,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "tRT" = (
@@ -31496,6 +31453,7 @@
 /obj/structure/sign/poster/contraband/space_cola{
 	pixel_y = 32
 	},
+/obj/effect/landmark/start/f13/greenhorn,
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
 "tVh" = (
@@ -31923,6 +31881,10 @@
 	name = "vertipad"
 	},
 /area/f13/wasteland)
+"ujg" = (
+/obj/item/stack/sheet/mineral/wood,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ujv" = (
 /obj/item/clothing/suit/hooded/surgical{
 	pixel_y = 6
@@ -31947,6 +31909,7 @@
 /obj/structure/noticeboard{
 	pixel_y = 34
 	},
+/obj/effect/landmark/start/f13/desertranger,
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
 "ujK" = (
@@ -33718,6 +33681,9 @@
 	opacity = 0
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor/shutters{
+	id = "ldsnorth"
+	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "voI" = (
@@ -34286,7 +34252,6 @@
 	},
 /obj/effect/overlay/shadow,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/start/f13/greenhorn,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "vHm" = (
@@ -34369,31 +34334,36 @@
 	desc = "A pass that grants its holder access to the LDS Temple in Wendover";
 	name = "Temple Recommend";
 	req_access_txt = "22";
-	assignment = "New Canaanite"
+	assignment = "New Canaanite";
+	registered_name = "Temple Guest"
 	},
 /obj/item/card/id/ert{
 	desc = "A pass that grants its holder access to the LDS Temple in Wendover";
 	name = "Temple Recommend";
 	req_access_txt = "22";
-	assignment = "New Canaanite"
+	assignment = "New Canaanite";
+	registered_name = "Temple Guest"
 	},
 /obj/item/card/id/ert{
 	desc = "A pass that grants its holder access to the LDS Temple in Wendover";
 	name = "Temple Recommend";
 	req_access_txt = "22";
-	assignment = "New Canaanite"
+	assignment = "New Canaanite";
+	registered_name = "Temple Guest"
 	},
 /obj/item/card/id/ert{
 	desc = "A pass that grants its holder access to the LDS Temple in Wendover";
 	name = "Temple Recommend";
 	req_access_txt = "22";
-	assignment = "New Canaanite"
+	assignment = "New Canaanite";
+	registered_name = "Temple Guest"
 	},
 /obj/item/card/id/ert{
 	desc = "A pass that grants its holder access to the LDS Temple in Wendover";
 	name = "Temple Recommend";
 	req_access_txt = "22";
-	assignment = "New Canaanite"
+	assignment = "New Canaanite";
+	registered_name = "Temple Guest"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
@@ -34701,6 +34671,16 @@
 	icon_state = "horizontaltopborderbottom2"
 	},
 /area/f13/wasteland)
+"vUc" = (
+/obj/machinery/button/door/interior_gate{
+	pixel_y = 1;
+	id = "ldsnorth";
+	pixel_x = -26;
+	layer = 2.81;
+	req_one_access_txt = "25"
+	},
+/turf/open/floor/plasteel/showroomfloor/lit,
+/area/f13/building)
 "vUg" = (
 /obj/structure/lattice/catwalk,
 /obj/item/storage/backpack/satchel/flat,
@@ -34841,6 +34821,23 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/under/f13/cowboyb,
 /obj/item/clothing/suit/f13/cowboybvest,
+/obj/item/clothing/accessory/medal/silver/security{
+	pixel_y = 3
+	},
+/obj/item/clothing/accessory/medal/ribbon{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/item/pen/fountain/captain{
+	name = "Sheriff's fountain pen";
+	pixel_y = 2;
+	pixel_x = -1
+	},
+/obj/item/salvage/high{
+	icon_state = "strength";
+	pixel_y = 5;
+	name = "Strength Bobblehead"
+	},
 /turf/open/floor/carpet/nosmooth,
 /area/f13/building)
 "vZs" = (
@@ -34868,7 +34865,7 @@
 /area/f13/building)
 "vZM" = (
 /obj/structure/window/fulltile/house{
-	layer = 2.1
+	layer = 2.74
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
@@ -35527,10 +35524,6 @@
 /area/f13/building)
 "wtL" = (
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/door/unpowered/securedoor{
-	req_one_access_txt = "1";
-	name = "Sheriff's Department Armory"
-	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/building)
 "wtN" = (
@@ -35748,21 +35741,16 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "wBU" = (
-/obj/structure/toilet{
-	pixel_y = 12
-	},
-/obj/effect/overlay/junk/shower{
-	dir = 4
-	},
-/obj/effect/overlay/junk/sink{
-	dir = 4;
-	pixel_x = 12;
-	pixel_y = 4
-	},
 /obj/machinery/light/floor{
 	pixel_y = 10
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/structure/closet/secure_closet/evidence,
+/obj/item/detective_scanner{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "wBV" = (
@@ -35937,14 +35925,6 @@
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
-"wFY" = (
-/obj/structure/fluff/bus/passable/seat{
-	pixel_y = 0
-	},
-/obj/effect/overlay/shadow,
-/obj/effect/landmark/start/f13/desertranger,
-/turf/open/floor/plasteel/showroomfloor/lit,
-/area/f13/building)
 "wGf" = (
 /obj/structure/chair/bench{
 	icon_state = "bench_center";
@@ -36066,12 +36046,24 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "wJe" = (
-/obj/effect/overlay/shadow,
-/obj/structure/rack/shelf_metal,
-/obj/item/clothing/suit/armor/f13/combat,
-/obj/item/clothing/suit/armor/f13/combat,
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closetundense{
+	icon_state = "medcab";
+	density = 0;
+	icon = 'icons/fallout/objects/furniture/closet.dmi';
+	pixel_y = -6;
+	pixel_x = -32;
+	name = "medicine cabinet";
+	mob_storage_capacity = 0;
+	max_mob_size = 0;
+	can_weld_shut = 0
+	},
+/obj/item/camera/detective{
+	name = "ProSnap camera"
+	},
+/obj/item/taperecorder,
+/turf/open/floor/carpet/nosmooth,
+/area/f13/building)
 "wJE" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "straight";
@@ -38007,7 +37999,6 @@
 /obj/effect/overlay/shadow,
 /obj/structure/rack/shelf_metal,
 /obj/item/reagent_containers/food/drinks/coffee/type2,
-/obj/item/reagent_containers/food/drinks/coffee/type2,
 /obj/item/reagent_containers/food/drinks/flask/coffeepot{
 	name = "coffeepot";
 	desc = null;
@@ -38547,19 +38538,10 @@
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "yez" = (
-/obj/structure/table/wood/greyscale/varnished,
-/obj/item/storage/box/deputy_badges{
-	pixel_y = 7;
-	pixel_x = 4;
-	layer = 3.42
+/turf/open/floor/wood/f13/housewoodbroken4{
+	sunlight_state = 1
 	},
-/obj/item/storage/box/deputy{
-	pixel_y = 6;
-	pixel_x = -13;
-	layer = 3.42
-	},
-/turf/open/floor/plasteel/showroomfloor/lit,
-/area/f13/building)
+/area/f13/wasteland)
 "yeC" = (
 /obj/structure/barricade/tentclothcorner{
 	dir = 1;
@@ -44812,7 +44794,7 @@ rqo
 mfj
 wuy
 kOE
-koZ
+apn
 koZ
 koZ
 koZ
@@ -45067,7 +45049,7 @@ rqo
 rqo
 mfj
 kOE
-koZ
+apn
 koZ
 koZ
 mfk
@@ -45323,7 +45305,7 @@ mfj
 qIT
 qIT
 kOE
-koZ
+apn
 koZ
 mfk
 mfk
@@ -45577,7 +45559,7 @@ tzV
 tzV
 tzV
 kOE
-koZ
+apn
 koZ
 koZ
 koZ
@@ -45804,7 +45786,7 @@ jHG
 jHG
 jHG
 jHG
-mfk
+qxq
 mfk
 mfk
 mfk
@@ -46056,7 +46038,7 @@ rqo
 jHG
 jHG
 jHG
-mfk
+qxq
 mfk
 mfk
 mfk
@@ -46311,7 +46293,7 @@ rqo
 rqo
 rqo
 jHG
-mfk
+qxq
 mfk
 mfk
 mfk
@@ -52101,13 +52083,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+kRj
+kRj
+kRj
+kRj
+kRj
+kRj
+yez
 rqo
 rqo
 rqo
@@ -52169,7 +52151,7 @@ rqo
 oul
 mdM
 tyf
-wJe
+hyh
 txl
 hro
 ovu
@@ -52358,13 +52340,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+kRj
+evJ
+kRj
+kRj
+kRj
+kRj
+kRj
 rqo
 rqo
 rqo
@@ -52430,7 +52412,7 @@ ssV
 ssV
 ssV
 hro
-hro
+ujg
 ssV
 ssV
 ssV
@@ -52615,13 +52597,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+kRj
+kRj
+kRj
+kRj
+vjv
+kRj
+kRj
 rqo
 rqo
 rqo
@@ -52686,7 +52668,7 @@ qpH
 qpH
 qpH
 tTU
-wtL
+npZ
 wtL
 tTU
 qpH
@@ -52872,13 +52854,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+kRj
+kRj
+kRj
+kRj
+kRj
+kRj
+kRj
 rqo
 rqo
 rqo
@@ -53129,13 +53111,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+seq
+vjv
+kRj
+kRj
+kRj
+kRj
+kRj
 rqo
 rqo
 rqo
@@ -54157,13 +54139,13 @@ rqo
 rqo
 rqo
 rqo
+kRj
+kRj
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
+kRj
+kRj
 rqo
 rqo
 rqo
@@ -54415,11 +54397,11 @@ rqo
 rqo
 rqo
 rqo
+kRj
 rqo
 rqo
 rqo
-rqo
-rqo
+kRj
 rqo
 rqo
 rqo
@@ -54672,12 +54654,12 @@ rqo
 rqo
 rqo
 rqo
-rqo
-nfd
-nfd
+seq
+hPq
+hPq
 gvQ
 gol
-nfd
+hPq
 nfd
 nfd
 gvQ
@@ -55766,7 +55748,7 @@ cSN
 kOW
 iuv
 dnB
-npZ
+dnB
 dnB
 cgd
 uXA
@@ -57051,7 +57033,7 @@ hWd
 sOB
 aCj
 myI
-wFY
+myI
 myI
 cyo
 xoQ
@@ -57308,7 +57290,7 @@ fiB
 sOB
 aCj
 rqc
-gLO
+rqc
 rqc
 aLH
 riX
@@ -57564,7 +57546,7 @@ hro
 cAW
 sOB
 aCj
-npZ
+dnB
 dnB
 dnB
 aLH
@@ -57767,7 +57749,7 @@ hfp
 hfp
 hfp
 hfp
-xyV
+aek
 hiG
 roF
 roF
@@ -58024,7 +58006,7 @@ hfp
 hfp
 hfp
 hfp
-xyV
+aek
 hiG
 roF
 qOO
@@ -58281,7 +58263,7 @@ hfp
 hfp
 hfp
 hfp
-xyV
+aek
 hiG
 roF
 lvo
@@ -58538,7 +58520,7 @@ lVg
 qne
 hfp
 pdY
-xyV
+aek
 hiG
 roF
 oNl
@@ -58795,7 +58777,7 @@ wbB
 jcT
 hfp
 pdY
-xyV
+aek
 hiG
 roF
 roF
@@ -59052,7 +59034,7 @@ kXu
 rQS
 cDg
 pdY
-xyV
+aek
 hiG
 roF
 roF
@@ -61419,7 +61401,7 @@ hro
 kqz
 sOB
 iuv
-mTY
+cyo
 cgd
 cgd
 cyo
@@ -61676,7 +61658,7 @@ hro
 fiB
 sOB
 iuv
-hPq
+oJw
 ovn
 oJw
 cyo
@@ -62941,7 +62923,7 @@ gTf
 laE
 cgd
 laE
-fAG
+jAo
 hmb
 upG
 laE
@@ -63195,9 +63177,9 @@ mXB
 glt
 cyo
 cgd
+vUc
 cyo
-cyo
-cgd
+cLL
 cgd
 cyo
 cyo
@@ -63738,7 +63720,7 @@ cyo
 cyo
 xoQ
 gGH
-mJr
+xoQ
 xoQ
 cgd
 sMm
@@ -67339,7 +67321,7 @@ xSo
 xSo
 pNe
 pqj
-yez
+sTB
 cyo
 cgd
 cyo
@@ -67532,7 +67514,7 @@ bzP
 dWH
 xRf
 duw
-bzP
+gLO
 duw
 xRf
 xRf
@@ -67782,7 +67764,7 @@ rqo
 xRf
 wBU
 mpF
-pLo
+wJe
 bJf
 ogG
 gtJ
@@ -68297,7 +68279,7 @@ xRf
 tVe
 pLo
 iWu
-bzP
+gLO
 czW
 rqo
 rqo
@@ -71386,7 +71368,7 @@ rqo
 rqo
 rqo
 rqo
-rqo
+wKv
 rqo
 rqo
 rqo
@@ -71643,7 +71625,7 @@ rqo
 rqo
 rqo
 rqo
-rqo
+wKv
 rqo
 rqo
 rqo
@@ -71900,7 +71882,7 @@ rqo
 rqo
 rqo
 rqo
-rqo
+wKv
 rqo
 rqo
 rqo
@@ -72671,7 +72653,7 @@ rqo
 rqo
 rqo
 rqo
-rqo
+wKv
 rqo
 rqo
 rqo
@@ -72928,8 +72910,8 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
+wKv
+wKv
 rqo
 rqo
 rqo
@@ -73186,13 +73168,13 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
-rqo
+wKv
+wKv
+wKv
+wKv
+wKv
+wKv
+wKv
 rqo
 rqo
 rqo

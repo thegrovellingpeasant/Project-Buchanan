@@ -44,6 +44,7 @@ Mayor
 	supervisors = "Wendover"
 	description = "You are the Mayor of Wendover, the last stop before the Great Salt Lake desert. With the fall of New Canaan to the White Legs, and decreased NCR Ranger presence due to the coming dustup at Hoover dam, trade along the I-80 has never been lower. The lack of traffic has caused the town to fall on hard times, but it's still the only speck of civilization for a hundred miles in any direction, and with a little luck and some shrewd diplomacy, Wendover can prosper again."
 	selection_color = "#d7b088"
+	exp_requirements = 900
 
 	outfit = /datum/outfit/job/wendover/f13wendovermayor
 	access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS, ACCESS_SECURITY, ACCESS_ARMORY)
@@ -240,6 +241,7 @@ Mayor
 	supervisors = "the people of Wendover and the Mayor"
 	description = "You are the democratically elected law enforcement in town, you are in charge of appointing deputies and organizing your team to defend the town and enforce its laws."
 	selection_color = "#d7b088"
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/wendover/f13desertranger
 
@@ -660,6 +662,7 @@ Mayor
 	supervisors = "the free market"
 	description = "You are the proprietor of Wendover's only attraction, the Montego Bay Resort & Casino. Possessing a casino, a pool, rooms for rent, a stage, and a wide assortment of chems and alcohol. It's up to you to provide an irresistible experience or sink with the rest of the town."
 	selection_color = "#dcba97"
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/wendover/f13montegobayhost
 

@@ -30,7 +30,7 @@
 	name ="shoddy plasma pistol"
 	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas. This one's internal parts have loose seals and corroded electronics."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol/worn)
-	fire_delay = 4.5
+	fire_delay = 10
 
 //Glock 86 Plasma pistol
 /obj/item/gun/energy/laser/plasma/glock

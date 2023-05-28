@@ -771,7 +771,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 /client/proc/admin_call_shuttle()
 	set category = "Admin.Events"
-	set name = "Call Train"
+	set name = "Call Plane"
 
 	if(EMERGENCY_AT_LEAST_DOCKED)
 		return
@@ -786,7 +786,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 	SSshuttle.emergency.request()
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Call Train") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Call Plane") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_admin("[key_name(usr)] admin-called the train.")
 	message_admins("<span class='adminnotice'>[key_name_admin(usr)] admin-called the train.</span>")
 	return

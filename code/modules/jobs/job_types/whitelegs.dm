@@ -43,7 +43,7 @@
 	belt = /obj/item/storage/belt/military/assault/legion
 	ears = /obj/item/radio/headset/headset_legion
 	id = /obj/item/card/id/whiteleg
-	shoes = null 	// NO shoes NO shirt NO service
+	shoes = /obj/item/clothing/shoes/f13/whitelegshoes	// NO shoes NO shirt NO service
 	l_pocket = /obj/item/flashlight/flare/torch
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder = 1,

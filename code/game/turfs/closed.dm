@@ -315,3 +315,153 @@
 	icon = 'icons/fallout/turfs/mining.dmi' 
 	icon_state = "rock"
 	invisibility = INVISIBILITY_ABSTRACT
+
+/turf/closed/indestructible/rock/edge
+	name = "desert"
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "hills4"
+	opacity = TRUE
+
+/turf/closed/indestructible/rock/edge/hills
+	name = "desert"
+	icon_state = "hills"
+
+/turf/closed/indestructible/rock/edge/hills/one
+	name = "desert"
+	dir = NORTH
+
+/turf/closed/indestructible/rock/edge/hills/two
+	name = "desert"
+	dir = EAST
+
+/turf/closed/indestructible/rock/edge/hills/three
+	name = "desert"
+	dir = SOUTH
+
+/turf/closed/indestructible/rock/edge/hills/four
+	name = "desert"
+	dir = WEST
+
+/turf/closed/indestructible/rock/edge/hills/five
+	name = "desert"
+	dir = NORTHWEST
+
+/turf/closed/indestructible/rock/edge/hills/six
+	name = "desert"
+	dir = NORTHEAST
+
+/turf/closed/indestructible/rock/edge/hills/seven
+	name = "desert"
+	dir = SOUTHEAST
+
+/turf/closed/indestructible/rock/edge/hills/eight
+	name = "desert"
+	dir = SOUTHWEST
+
+/turf/closed/indestructible/rock/edge/hillstwo
+	name = "desert"
+	icon_state = "hills2"
+
+/turf/closed/indestructible/rock/edge/hillstwo/one
+	name = "desert"
+	dir = NORTH
+
+/turf/closed/indestructible/rock/edge/hillstwo/two
+	name = "desert"
+	dir = EAST
+
+/turf/closed/indestructible/rock/edge/hillstwo/three
+	name = "desert"
+	dir = SOUTH
+
+/turf/closed/indestructible/rock/edge/hillstwo/four
+	name = "desert"
+	dir = WEST
+
+/turf/closed/indestructible/rock/edge/hillstwo/five
+	name = "desert"
+	dir = NORTHWEST
+
+/turf/closed/indestructible/rock/edge/hillstwo/six
+	name = "desert"
+	dir = NORTHEAST
+
+/turf/closed/indestructible/rock/edge/hillstwo/seven
+	name = "desert"
+	dir = SOUTHEAST
+
+/turf/closed/indestructible/rock/edge/hillstwo/eight
+	name = "desert"
+	dir = SOUTHWEST
+
+/turf/closed/indestructible/rock/edge/hillsthree
+	name = "desert"
+	icon_state = "hills3"
+
+/turf/closed/indestructible/rock/edge/hillsthree/one
+	name = "desert"
+	dir = NORTH
+
+/turf/closed/indestructible/rock/edge/hillsthree/two
+	name = "desert"
+	dir = EAST
+
+/turf/closed/indestructible/rock/edge/hillsthree/three
+	name = "desert"
+	dir = SOUTH
+
+/turf/closed/indestructible/rock/edge/hillsthree/four
+	name = "desert"
+	dir = WEST
+
+/turf/closed/indestructible/rock/edge/hillsthree/five
+	name = "desert"
+	dir = NORTHWEST
+
+/turf/closed/indestructible/rock/edge/hillsthree/six
+	name = "desert"
+	dir = NORTHEAST
+
+/turf/closed/indestructible/rock/edge/hillsthree/seven
+	name = "desert"
+	dir = SOUTHEAST
+
+/turf/closed/indestructible/rock/edge/hillsthree/eight
+	name = "desert"
+	dir = SOUTHWEST
+
+/turf/closed/indestructible/rock/edge/hillsfour
+	name = "desert"
+	icon_state = "hills4"
+
+/turf/closed/indestructible/rock/edge/hillsfour/one
+	name = "desert"
+	dir = NORTH
+
+/turf/closed/indestructible/rock/edge/hillsfour/two
+	name = "desert"
+	dir = EAST
+
+/turf/closed/indestructible/rock/edge/hillsfour/three
+	name = "desert"
+	dir = SOUTH
+
+/turf/closed/indestructible/rock/edge/hillsfour/four
+	name = "desert"
+	dir = WEST
+
+/turf/closed/indestructible/rock/edge/hillsfour/five
+	name = "desert"
+	dir = NORTHWEST
+
+/turf/closed/indestructible/rock/edge/hillsfour/six
+	name = "desert"
+	dir = NORTHEAST
+
+/turf/closed/indestructible/rock/edge/hillsfour/seven
+	name = "desert"
+	dir = SOUTHEAST
+
+/turf/closed/indestructible/rock/edge/hillsfour/eight
+	name = "desert"
+	dir = SOUTHWEST

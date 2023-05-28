@@ -5,7 +5,7 @@
 	desc = "A large crushing machine used to recycle small items inefficiently. There are lights on the side."
 	icon = 'icons/obj/recycling.dmi'
 	icon_state = "grinder-o0"
-	layer = ABOVE_ALL_MOB_LAYER // Overhead
+	layer = CLOSED_BLASTDOOR_LAYER
 	density = TRUE
 	circuit = /obj/item/circuitboard/machine/recycler
 	var/safety_mode = FALSE // Temporarily stops machine if it detects a mob, or upon deconstruction.

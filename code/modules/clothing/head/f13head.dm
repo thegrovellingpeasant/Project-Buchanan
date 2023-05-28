@@ -817,6 +817,14 @@
 	item_state = "welding"
 	tint = 1
 
+/obj/item/clothing/head/welding/f13/skull
+	name = "skull welding helmet"
+	desc = "A welding helmet in the shape of a skull."
+	icon = 'icons/obj/clothing/masks.dmi'
+	icon_state = "weldingmask"
+	item_state = "welding"
+	tint = 1
+
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"
 	desc = "The headwear of the true faith."
