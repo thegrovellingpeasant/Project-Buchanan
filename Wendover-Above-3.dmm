@@ -7344,7 +7344,6 @@
 /area/f13/building)
 "eJm" = (
 /obj/effect/mob_spawn/human/corpse/raider,
-/obj/item/mine/shrapnel,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "eJB" = (
