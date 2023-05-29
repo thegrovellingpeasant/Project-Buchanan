@@ -148,7 +148,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/shishkebabpack = 1,
+		/obj/item/melee/onehanded/knife/cosmicdirty = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/radio/headset = 1,
@@ -1424,7 +1424,7 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/clothing/under/f13/khan = 1,
 		/obj/item/clothing/under/f13/khan/shorts = 1,
 		/obj/item/clothing/shoes/f13/military/plated = 1,
-		/obj/item/clothing/suit/armor/khan_jacket = 1,
+		/obj/item/clothing/suit/toggle/armor/f13khan_jacket = 1,
 		/obj/item/storage/bag/money/small/khan = 1,
 		/obj/item/radio/headset/headset_khans = 1,
 	)

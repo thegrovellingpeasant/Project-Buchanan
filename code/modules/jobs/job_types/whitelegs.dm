@@ -73,7 +73,6 @@
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_FREERUNNING, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	H.grant_language(/datum/language/tribal)
 	H.dna.add_mutation(WHITELEGLANGUAGE)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/lightarmour)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/armour)

@@ -10070,14 +10070,14 @@
 	},
 /obj/machinery/button/door/interior_gate{
 	pixel_y = -5;
-	id = "80sgate1";
+	id = 80;
 	name = "\improper gate button";
 	pixel_x = -6;
 	layer = 3.3
 	},
 /obj/machinery/button/door/interior_gate{
 	pixel_y = -5;
-	id = "80sgate2";
+	id = 81;
 	name = "\improper gate button";
 	pixel_x = 6;
 	layer = 3.3

@@ -740,7 +740,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
 	slowdown = 0.05
 
-/obj/item/clothing/suit/armor/khan_jacket/Initialize()
+/obj/item/clothing/suit/toggle/armor/f13khan_jacket/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
