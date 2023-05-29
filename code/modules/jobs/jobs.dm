@@ -89,7 +89,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Radio Host",
 "Montego Bay Host",
 "Montego Bay Staff",
-"Shopkeeper",
 "Bartender",
 "Citizen",
 "Entrepreneur",

@@ -323,7 +323,7 @@
 	jobtype = /datum/job/eighties/f13laymechanic
 	id = /obj/item/card/id/dogtag/eighties
 	ears = /obj/item/radio/headset/headset_80s
-	suit = /obj/item/clothing/suit/f13/tribal/light/eighties
+	suit = /obj/item/clothing/suit/f13/tribal/eighties/green
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine
 	box = /obj/item/storage/survivalkit_tribal
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -409,6 +409,7 @@
 	name = "Blackfinger"
 	jobtype = /datum/job/eighties/f13blackfinger
 	id = /obj/item/card/id/dogtag/eighties
+	suit = /obj/item/clothing/suit/f13/tribal/eighties/green
 	ears = /obj/item/radio/headset/headset_80s
 	box = /obj/item/storage/survivalkit_tribal
 	shoes = /obj/item/clothing/shoes/jackboots

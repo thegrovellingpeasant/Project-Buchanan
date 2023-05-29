@@ -16870,6 +16870,7 @@
 /obj/item/bedsheet/patriot{
 	pixel_y = 1
 	},
+/obj/effect/landmark/start/f13/postmastergeneral,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
 "kTH" = (

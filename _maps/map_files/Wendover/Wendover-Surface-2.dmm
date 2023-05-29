@@ -2381,19 +2381,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/building)
 "aKv" = (
-/obj/structure/table,
-/obj/item/folder/yellow{
-	pixel_y = 3;
-	pixel_x = 1
-	},
-/obj/item/folder/red{
-	pixel_y = 3;
-	pixel_x = -1
-	},
-/obj/item/folder/blue{
-	pixel_y = 3;
-	pixel_x = -2
-	},
+/obj/machinery/workbench/advanced,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "aKK" = (
@@ -4492,11 +4485,7 @@
 	},
 /area/f13/wasteland)
 "bqW" = (
-/obj/machinery/door/unpowered/celldoor{
-	name = "barred door";
-	req_one_access_txt = "34";
-	opacity = 0
-	},
+/obj/structure/simple_door/metal/barred,
 /obj/machinery/light{
 	dir = 4;
 	layer = 2
@@ -7738,8 +7727,10 @@
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/building)
 "coV" = (
-/obj/machinery/door/window/northright{
-	pixel_y = -3
+/obj/machinery/door/unpowered/celldoor{
+	name = "barred door";
+	req_one_access_txt = "76";
+	opacity = 0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 4
@@ -9436,6 +9427,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/flashlight/lamp/green{
 	pixel_x = 1
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
@@ -14909,8 +14903,6 @@
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
 	},
-/obj/effect/landmark/start/f13/postmastergeneral,
-/obj/effect/landmark/start/f13/postalworker,
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "ekQ" = (
@@ -17263,6 +17255,9 @@
 	pixel_y = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "eSD" = (
@@ -29261,13 +29256,27 @@
 /area/f13/potashwarehouse)
 "imN" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/cardboard/twenty{
-	pixel_y = 3;
-	pixel_x = 1
-	},
-/obj/item/paper_bin{
-	pixel_y = 3
-	},
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/pda,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/item/card/id/selfassign,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "imQ" = (
@@ -29653,31 +29662,6 @@
 	},
 /turf/open/indestructible/ground/outside/road/vert,
 /area/f13/wasteland)
-"isK" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/pda,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/item/card/id/selfassign,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/black/nosmooth,
-/area/f13/building)
 "isL" = (
 /obj/effect/overlay/shadow,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -31906,13 +31890,16 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/wasteland)
 "iXU" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/wrapping_paper,
+/obj/item/stack/packageWrap,
+/obj/item/hand_labeler,
 /obj/machinery/requests_console{
 	department = "Post Office";
 	name = "delivery requests";
 	pixel_x = -32;
 	departmentType = 7
 	},
-/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 8
 	},
@@ -36688,13 +36675,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"knU" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/ore/blackpowder/twenty,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/black/nosmooth,
-/area/f13/building)
 "knW" = (
 /obj/structure/table/reinforced,
 /obj/item/bodypart/r_leg/robot/surplus_upgraded,
@@ -45819,11 +45799,14 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/wasteland)
 "mXL" = (
-/obj/structure/chair/comfy/brown{
-	dir = 8;
-	color = "#8f7e74";
-	name = "brahmin leather chair"
-	},
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "mXN" = (
@@ -45924,12 +45907,6 @@
 /area/f13/building)
 "mZf" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/holster,
-/obj/item/storage/belt/military,
-/obj/item/storage/belt/military/alt,
-/obj/item/storage/belt/military/army,
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "mZB" = (
@@ -46753,23 +46730,6 @@
 "nkq" = (
 /turf/open/water/shore/east,
 /area/f13/wasteland)
-"nkr" = (
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/effect/spawner/lootdrop/f13/attachments,
-/obj/structure/rack/shelf_metal,
-/obj/machinery/requests_console{
-	department = "Post Office";
-	name = "delivery requests";
-	departmentType = 7;
-	pixel_y = 30;
-	pixel_x = -1
-	},
-/turf/open/floor/carpet/black/nosmooth,
-/area/f13/building)
 "nku" = (
 /obj/effect/overlay/shadow/edgeshading{
 	dir = 4;
@@ -47281,7 +47241,13 @@
 	},
 /area/f13/wasteland)
 "nqS" = (
-/obj/structure/filingcabinet/chestdrawer/wheeled,
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "nqW" = (
@@ -47622,11 +47588,10 @@
 /turf/open/floor/carpet/orange,
 /area/f13/building)
 "nws" = (
+/obj/machinery/autolathe/ammo,
+/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/crafting{
-	pixel_y = -3
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "nwA" = (
@@ -49006,14 +48971,17 @@
 /area/f13/wasteland)
 "nQG" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/wrapping_paper,
-/obj/item/stack/packageWrap,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/holster,
+/obj/item/storage/belt/military,
+/obj/item/storage/belt/military/alt,
+/obj/item/storage/belt/military/army,
 /obj/structure/decoration/clock/old{
 	pixel_x = -32;
 	pixel_y = -3;
 	name = "old clock"
 	},
-/obj/item/hand_labeler,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 8
 	},
@@ -58802,6 +58770,9 @@
 	pixel_y = 5;
 	pixel_x = -16
 	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "qCd" = (
@@ -62861,8 +62832,10 @@
 /turf/open/indestructible/ground/outside/gravel/roadsouthedge,
 /area/f13/wasteland)
 "rEV" = (
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/f13chair1{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "rFg" = (
@@ -64752,6 +64725,9 @@
 /obj/item/paper_bin/carbon{
 	pixel_y = 5;
 	pixel_x = -10
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
@@ -71016,14 +70992,12 @@
 /turf/open/indestructible/ground/outside/saltflats/path/ver,
 /area/f13/wasteland)
 "tYu" = (
-/obj/machinery/autolathe/ammo,
-/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
-/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/secure/safe{
 	pixel_y = 32;
 	pixel_x = 6
 	},
+/obj/structure/rack/shelf_metal,
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "tYx" = (
@@ -73302,8 +73276,20 @@
 /turf/open/indestructible/ground/outside/gravel/path_desert/intersection/alt,
 /area/f13/wasteland)
 "uBn" = (
-/obj/machinery/photocopier,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/effect/spawner/lootdrop/f13/attachments,
+/obj/structure/rack/shelf_metal,
+/obj/machinery/requests_console{
+	department = "Post Office";
+	name = "delivery requests";
+	departmentType = 7;
+	pixel_y = 30;
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "uBt" = (
@@ -73973,10 +73959,11 @@
 /turf/open/indestructible/ground/outside/saltflats/old,
 /area/f13/wasteland)
 "uMN" = (
-/obj/machinery/door/window/northright{
-	pixel_y = -4
-	},
+/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "uMO" = (
@@ -75666,19 +75653,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
-"vlP" = (
-/obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/obj/structure/sign/poster/contraband/syndicate_pistol{
-	pixel_y = 32
-	},
-/turf/open/floor/carpet/black/nosmooth,
-/area/f13/building)
 "vlR" = (
 /obj/effect/overlay/gravel/edge/corner{
 	dir = 1
@@ -76247,16 +76221,9 @@
 /area/f13/building)
 "vvp" = (
 /obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/obj/structure/sign/poster/contraband/pinup_vixen{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "vvq" = (
@@ -82627,6 +82594,10 @@
 	},
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 8
 	},
@@ -82811,8 +82782,10 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
 "xeB" = (
-/obj/machinery/door/window/northleft{
-	pixel_y = -3
+/obj/machinery/door/unpowered/celldoor{
+	name = "barred door";
+	req_one_access_txt = "76";
+	opacity = 0
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
@@ -84552,11 +84525,10 @@
 	},
 /area/f13/wasteland)
 "xDF" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/ore/blackpowder/twenty,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/crafting{
-	pixel_y = 10
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "xDL" = (
@@ -85414,18 +85386,6 @@
 /obj/effect/mob_spawn/human/corpse/raider/tribal,
 /turf/open/indestructible/ground/outside/saltflats/altcrackedbot,
 /area/f13/wasteland)
-"xPN" = (
-/obj/machinery/workbench/advanced,
-/obj/structure/sign/poster/contraband/rebels_unite{
-	pixel_y = 32
-	},
-/obj/effect/spawner/lootdrop/f13/blueprintMid,
-/obj/effect/spawner/lootdrop/f13/blueprintMid,
-/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
-/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
-/turf/open/floor/carpet/black/nosmooth,
-/area/f13/building)
 "xPP" = (
 /turf/open/indestructible/ground/outside/saltflats/evaporationpond,
 /area/f13/wasteland)
@@ -111939,7 +111899,7 @@ jur
 bBX
 mZf
 ekF
-isK
+aDb
 ujW
 wTa
 fgz
@@ -112194,7 +112154,7 @@ drS
 shY
 jur
 bBX
-vlP
+vvp
 ixP
 aDb
 eKi
@@ -112451,7 +112411,7 @@ oWn
 shY
 jur
 bBX
-nkr
+mZf
 ixP
 ixP
 eKi
@@ -112708,7 +112668,7 @@ wam
 shY
 jur
 bBX
-xPN
+ixP
 ixP
 ixP
 poa
@@ -113479,7 +113439,7 @@ kJW
 myh
 jur
 bBX
-knU
+mZf
 grl
 toJ
 ixP
@@ -114791,7 +114751,7 @@ nuU
 cNC
 flu
 imN
-vOn
+rEV
 flu
 vOn
 mFT
@@ -115559,7 +115519,7 @@ aFj
 jGy
 nuU
 nuU
-rEV
+uMN
 flu
 flu
 nuU
@@ -116587,7 +116547,7 @@ sGX
 toL
 iJZ
 nuU
-rEV
+uMN
 nuU
 nuU
 flu
