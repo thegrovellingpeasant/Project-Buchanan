@@ -7217,6 +7217,9 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"eGp" = (
+/turf/open/floor/wood/f13/lit,
+/area/f13/building)
 "eGs" = (
 /obj/structure/curtain{
 	color = "#363636"
@@ -22306,6 +22309,13 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"oyV" = (
+/obj/structure/railing/corner{
+	layer = 4.25;
+	pixel_x = 5
+	},
+/turf/open/floor/wood/f13/lit,
+/area/f13/building)
 "ozE" = (
 /turf/open/indestructible/ground/outside/sidewalk/wastelandedge,
 /area/f13/wasteland)
@@ -22879,6 +22889,14 @@
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "doubleyellow"
 	},
+/area/f13/wasteland)
+"oRH" = (
+/obj/structure/railing{
+	dir = 6;
+	pixel_x = 4;
+	layer = 4.25
+	},
+/turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
 "oRW" = (
 /obj/structure/railing/wood{
@@ -24278,6 +24296,13 @@
 	layer = 2.8
 	},
 /turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"pIM" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 4
+	},
+/turf/open/floor/wood/f13/lit,
 /area/f13/wasteland)
 "pJp" = (
 /obj/effect/overlay/desert/sonora/edge/south,
@@ -27768,6 +27793,10 @@
 	dir = 4;
 	pixel_x = 7;
 	pixel_y = -7
+	},
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 7
 	},
 /turf/closed/wall/rust,
 /area/f13/building)
@@ -65220,8 +65249,8 @@ fvP
 ihA
 puL
 gaw
-mbG
-mbG
+eGp
+oyV
 rIE
 rKi
 oUF
@@ -65476,9 +65505,9 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
+pIM
+pIM
+oRH
 rqo
 rqo
 rqo
