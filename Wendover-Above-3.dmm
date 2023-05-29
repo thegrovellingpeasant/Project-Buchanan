@@ -6308,6 +6308,13 @@
 	dir = 10
 	},
 /area/f13/wasteland)
+"dYK" = (
+/obj/structure/chair/wood/worn{
+	dir = 8
+	},
+/obj/effect/landmark/start/f13/townsperson,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/wasteland)
 "dYX" = (
 /obj/structure/flora/tree/powerline{
 	icon_state = "powerlinedecor"
@@ -13065,6 +13072,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
+"ivj" = (
+/obj/structure/chair/wood/worn,
+/obj/effect/landmark/start/f13/entrepreneur,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/wasteland)
 "ivk" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -16859,7 +16871,6 @@
 /obj/item/bedsheet/patriot{
 	pixel_y = 1
 	},
-/obj/effect/landmark/start/f13/postmastergeneral,
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/building)
 "kTH" = (
@@ -17329,6 +17340,7 @@
 	pixel_x = 7
 	},
 /obj/structure/chair/wood/modern,
+/obj/effect/landmark/start/f13/townsperson,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "lkh" = (
@@ -23482,6 +23494,7 @@
 /area/f13/wasteland)
 "pkp" = (
 /obj/item/blanket/rug/blue,
+/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pkr" = (
@@ -32911,6 +32924,7 @@
 /obj/structure/chair/wood/worn{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/townsperson,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/wasteland)
 "uPm" = (
@@ -34644,6 +34658,14 @@
 "vSj" = (
 /turf/open/floor/mineral/titanium/white/lit,
 /area/f13/wasteland)
+"vSl" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15
+	},
+/obj/effect/landmark/start/f13/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "vSF" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -60862,7 +60884,7 @@ aHD
 kTH
 rQm
 wDs
-uLu
+ivj
 pgN
 rqo
 cSQ
@@ -61889,7 +61911,7 @@ rQm
 aHD
 aHD
 wDs
-mlH
+dYK
 wKv
 pgN
 rqo
@@ -98221,7 +98243,7 @@ ldf
 (232,1,1) = {"
 pAl
 mfk
-pkH
+vSl
 vRv
 vRv
 vRv

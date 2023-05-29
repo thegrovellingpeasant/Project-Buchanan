@@ -26,8 +26,8 @@ Mayor
 	objectivesList = list("Grow the flock by converting outsiders to the faith.","Avenge the loss of New Canaan, strike the White Legs.","Perform charity for the people of Wendover.")
 	exp_type = EXP_TYPE_LDS
 
-	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_FOLLOWER, ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	minimal_access = list(ACCESS_FOLLOWER, ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
 
 /datum/outfit/job/latterdaysaints
 	ears = /obj/item/radio/headset/headset_lds

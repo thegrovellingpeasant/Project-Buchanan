@@ -6654,7 +6654,6 @@
 	},
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/bottomwhite,
 /area/f13/wasteland)
 "bZS" = (
@@ -14910,7 +14909,8 @@
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
 	},
-/obj/effect/landmark/start/f13/shopkeeper,
+/obj/effect/landmark/start/f13/postmastergeneral,
+/obj/effect/landmark/start/f13/postalworker,
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "ekQ" = (
@@ -16951,7 +16951,6 @@
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/latejoin,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
 "eQH" = (
@@ -23966,7 +23965,6 @@
 	},
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/bottomyellow{
 	icon_state = "endoftheroad4";
 	dir = 6
@@ -27075,7 +27073,6 @@
 	},
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "endoftheroad2";
@@ -28350,6 +28347,9 @@
 	icon_state = "storewindowtop"
 	},
 /obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "hWI" = (
@@ -29346,7 +29346,6 @@
 "inA" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/topwhite,
 /area/f13/wasteland)
 "inF" = (
@@ -36387,11 +36386,14 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kjH" = (
-/obj/effect/landmark/start/f13/wastelander,
-/obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
-/turf/open/indestructible/ground/outside/roadi80,
-/area/f13/wasteland)
+/obj/machinery/door/unpowered/celldoor{
+	req_access_txt = null;
+	name = "barred door";
+	req_one_access_txt = "28";
+	opacity = 0
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/building)
 "kjO" = (
 /obj/machinery/door/unpowered/securedoor{
 	req_one_access_txt = "1";
@@ -36771,6 +36773,7 @@
 	icon_state = "gray"
 	},
 /obj/effect/spawner/lootdrop/cig_packs,
+/obj/item/storage/box/matches,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "koW" = (
@@ -36896,7 +36899,6 @@
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/latejoin,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "stripyroadSE";
@@ -46759,6 +46761,13 @@
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/effect/spawner/lootdrop/f13/attachments,
 /obj/structure/rack/shelf_metal,
+/obj/machinery/requests_console{
+	department = "Post Office";
+	name = "delivery requests";
+	departmentType = 7;
+	pixel_y = 30;
+	pixel_x = -1
+	},
 /turf/open/floor/carpet/black/nosmooth,
 /area/f13/building)
 "nku" = (
@@ -48795,12 +48804,19 @@
 	icon = 'icons/fallout/objects/furniture/closet.dmi';
 	icon_state = "gray"
 	},
-/obj/item/storage/box/matches,
 /obj/structure/decoration/clock/old/active{
 	pixel_y = 29;
 	layer = 2.1;
 	pixel_x = 32
 	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "nNr" = (
@@ -50647,7 +50663,6 @@
 	},
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/bottomyellow,
 /area/f13/wasteland)
 "opd" = (
@@ -51271,7 +51286,6 @@
 /obj/effect/landmark/latejoin,
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "crackedconcrete2";
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -60576,7 +60590,6 @@
 "ral" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "crackedconcrete";
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -60881,6 +60894,9 @@
 	icon_state = "storewindowbottom"
 	},
 /obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "reh" = (
@@ -61430,7 +61446,6 @@
 "rmx" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "allwhite";
@@ -62146,7 +62161,6 @@
 	},
 /area/f13/wasteland)
 "rvI" = (
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/gravel{
 	icon_state = "onramp3SE";
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -65062,6 +65076,9 @@
 	icon_state = "storewindowvertical"
 	},
 /obj/structure/barricade/wooden/planks,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "sjk" = (
@@ -65177,7 +65194,6 @@
 /obj/effect/landmark/latejoin,
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
 "skx" = (
@@ -65363,7 +65379,6 @@
 "smL" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "enramp2SE";
@@ -69822,7 +69837,6 @@
 "tEm" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "stripyroadNE";
@@ -73903,7 +73917,6 @@
 "uLU" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "onramp3NE";
@@ -74949,10 +74962,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/building)
 "vaE" = (
-/obj/effect/landmark/start/f13/entrepreneur,
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
 "vaF" = (
@@ -80372,7 +80383,6 @@
 "wxU" = (
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/topyellow,
 /area/f13/wasteland)
 "wxV" = (
@@ -80556,10 +80566,8 @@
 	},
 /area/f13/tunnel)
 "wzs" = (
-/obj/effect/landmark/start/f13/entrepreneur,
 /obj/effect/landmark/start/f13/wastelander,
 /obj/effect/landmark/start/f13/raider,
-/obj/effect/landmark/start/f13/tribal,
 /turf/open/indestructible/ground/outside/roadi80/center,
 /area/f13/wasteland)
 "wzC" = (
@@ -87464,9 +87472,9 @@ iIr
 gnE
 rmx
 eQz
-kjH
 vaE
-kjH
+vaE
+vaE
 eQz
 ooR
 rHe
@@ -87478,9 +87486,9 @@ iIr
 gnE
 wxU
 oww
-kjH
 vaE
-kjH
+vaE
+vaE
 sks
 hEw
 rHe
@@ -107837,7 +107845,7 @@ kTY
 asc
 hCQ
 bBX
-exU
+kjH
 exU
 exU
 egC
@@ -108094,7 +108102,7 @@ kTY
 asc
 mIs
 bBX
-rEQ
+uZi
 rEQ
 jdb
 jdb
@@ -163795,7 +163803,7 @@ inA
 eQz
 ral
 wzs
-kjH
+vaE
 eQz
 gIA
 rHe
@@ -163807,16 +163815,16 @@ rXo
 gnE
 wxU
 eQz
-kjH
+vaE
 wzs
-kjH
+vaE
 eQz
 bZQ
 rHe
 wSj
 smL
 kqK
-kjH
+vaE
 rvI
 hOV
 uvT

@@ -86,8 +86,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Sheriff",
 "Deputy",
 "Farmer",
-"Prospector",
-"Citizen",
 "Radio Host",
 "Montego Bay Host",
 "Montego Bay Staff",
@@ -122,30 +120,16 @@ GLOBAL_LIST_INIT(wendover_positions, list(
 	"Sheriff",
 	"Deputy",
 	"Farmer",
-	"Prospector",
 	"Citizen",
 	"Radio Host",
 	"Montego Bay Host",
 	"Montego Bay Staff",
-	"Shopkeeper",
 	"Bartender",
 	"Entrepreneur",
 ))
 
 GLOBAL_LIST_INIT(oasis_positions, list(
-	"Mayor",
-	"Secretary",
-	"Sheriff",
-	"Deputy",
-	"Farmer",
 	"Prospector",
-	"Citizen",
-	"Radio Host",
-	"Montego Bay Host",
-	"Montego Bay Staff",
-	"Shopkeeper",
-	"Bartender",
-	"Entrepreneur",
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
@@ -154,11 +138,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 
 GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Decanus",
-	"Prime Decanus",
-	"Recruit Decanus",
 	"Frumentarius",
-	"Vexillarius",
-	"Explorer",
 	"Forgemaster",
 	"Auxilia",
 	"Slave",
@@ -194,9 +174,6 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Wastelander",
 	"Tribal",
 	"Raider",
-	"Brotherhood Scout",
-	"Journeyman Scribe",
-	"Remnant",
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
