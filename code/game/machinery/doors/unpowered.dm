@@ -183,6 +183,7 @@
 	max_integrity = 600
 	obj_integrity = 600
 	assemblytype = /obj/item/stack/rods
+	opacity = FALSE
 	visible = FALSE
 	explosion_block = FALSE
 	pass_flags = LETPASSTHROW  // would be great but the var is not functional for some reason.

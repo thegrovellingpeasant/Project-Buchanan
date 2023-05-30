@@ -24587,6 +24587,21 @@
 	},
 /turf/open/indestructible/ground/outside/graveldirt/pink,
 /area/f13/wasteland)
+"gTy" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/curtain{
+	color = "#3d3228";
+	alpha = 225
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/outside/roof{
+	icon_state = "oakfloor1";
+	icon = 'icons/turf/floors.dmi';
+	name = "floor"
+	},
+/area/f13/building)
 "gTI" = (
 /obj/structure/chair/bench{
 	icon_state = "bench";
@@ -55879,12 +55894,6 @@
 /obj/structure/dresser,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"pKY" = (
-/obj/structure/simple_door/interior{
-	req_one_access_txt = "1"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/building)
 "pLc" = (
 /obj/effect/overlay/catwalk,
 /turf/open/floor/wood/f13/maple/lit,
@@ -100590,7 +100599,7 @@ vZQ
 gXG
 pfs
 voj
-ylS
+gTy
 trF
 trF
 trF
@@ -101104,7 +101113,7 @@ wgy
 kDY
 wgy
 iYu
-ylS
+gTy
 jur
 xCk
 jur
@@ -115749,7 +115758,7 @@ aQu
 jur
 bGI
 qrV
-pKY
+tmH
 qrV
 qrV
 qrV

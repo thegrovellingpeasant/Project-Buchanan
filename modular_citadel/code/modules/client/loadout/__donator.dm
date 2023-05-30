@@ -294,4 +294,17 @@
 	path = /obj/item/storage/box/large/custom_kit/cookyznmlk78
 	ckeywhitelist = list("cookyznmlk78")
 
+/obj/item/storage/box/large/custom_kit/Oddbomber3768
+	name = "Ayayayayayayayayirlooms"
+	desc = "A few heirlooms belonging to Waking Dreams."
+	icon_state = "mre"
 
+/obj/item/storage/box/large/custom_kit/Oddbomber3768/PopulateContents()
+	new /obj/item/warpaint_bowl(src)
+	new /obj/item/clothing/glasses/f13/tribaleyepatch(src)
+	new /obj/item/clothing/suit/f13/tribal/ncr(src)
+
+/datum/gear/donator/kits/Oddbomber3768
+	name = "Ayayayayayayayayirlooms"
+	path = /obj/item/storage/box/large/custom_kit/cookyznmlk78
+	ckeywhitelist = list("oddbomber3768")

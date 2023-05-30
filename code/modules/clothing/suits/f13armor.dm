@@ -1138,19 +1138,19 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."
 	icon_state = "tribal"
 	item_state = "tribal"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 35, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/f13/tribal/light
 	name = "light tribal armor"
 	desc = "A set of armor made of a variety of tanned hides. It's not the best."
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 30)
 	slowdown = 0.025
 
 /obj/item/clothing/suit/f13/tribal/heavy
 	name = "heavy tribal armor"
 	desc = "A heavy suit of armour made of brahmin and gecko hides. It seems rather heavy."
-	armor = list("melee" = 37, "bullet" = 40, "laser" = 37, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 37, "bullet" = 45, "laser" = 37, "energy" = 25, "bomb" = 40, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/f13/tribal/ncr
@@ -1232,7 +1232,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80sarmor"
 	item_state = "80sarmor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 /obj/item/clothing/suit/f13/tribal/eighties/green
 	name = "80s armour"
@@ -1240,7 +1240,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80sgreen"
 	item_state = "80sgreen"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 20, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 /obj/item/clothing/suit/f13/tribal/heavy/eighties
 	name = "80s heavy armour"
@@ -1249,7 +1249,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "80s_armour_heavy"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 45, "energy" = 40, "bomb" = 40, "bio" = 20, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/f13/tribal/light/deadhorses
@@ -1258,7 +1258,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "dead_horses_armour_light"
 	item_state = "dead_horses_armour_light"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 25, "bullet" = 40, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 30)
 	slowdown = 0.01
 
 
@@ -1268,7 +1268,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "dead_horses_armour"
 	item_state = "dead_horses_armour"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 	slowdown = 0.025
 
 /obj/item/clothing/suit/f13/tribal/heavy/deadhorses
@@ -1277,7 +1277,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "dead_horses_armour_heavy"
 	item_state = "dead_horses_armour_heavy"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/f13/tribal/light/sorrows
@@ -1285,7 +1285,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A worn ballistic vest from Salt Lake, adorned with feathers and turqoise beads, with an ornamental pattern painted over the sides. Commonly worn by the members of the peaceful Sorrows tribe."
 	icon_state = "sorrows_armour"
 	item_state = "sorrows_armour"
-	armor = list("melee" = 20, "bullet" = 45, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 20, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
 	slowdown = 0.08
 
 /obj/item/clothing/suit/f13/tribal/light/bone

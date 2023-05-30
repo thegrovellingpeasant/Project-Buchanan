@@ -12,8 +12,8 @@ Raider
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
 	social_faction = FACTION_RAIDERS
-	total_positions = 16
-	spawn_positions = 16
+	total_positions = 6
+	spawn_positions = 6
 	description = "However you came to be here, you are a raider. There is a constant trickle of people on I-80 for you to con, rob, ransom, or enslave. You may find work or refuge with one of the local factions, or choose to go it alone and forge your own raider empire."
 	supervisors = "Your desire to make things interesting and fun. Don't play this as wastelander+."
 	selection_color = "#dddddd"
@@ -618,8 +618,8 @@ Raider
 	title = "Brotherhood Scout"
 	flag = F13BROTHERHOODSCOUT
 	faction = FACTION_WASTELAND
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a Brotherhood scout, a Knight tasked with keeping tabs on the outside world. There is no bunker in Wendover, so you will have to make do as best you can. Improvise, adapt, acquire tech and look out for your brothers."
 	supervisors = "The Head Knight back home, the Elder"
 	selection_color = "#dddddd"
@@ -704,8 +704,8 @@ Raider
 	title = "Journeyman Scribe"
 	flag = F13JOURNEYMANSCRIBE
 	faction = FACTION_WASTELAND
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a Brotherhood Scribe on a mission from your chapter. There is no bunker in Wendover, so you will have to make do as best you can. Improvise, adapt, acquire tech, and learn what you can about the wastes."
 	supervisors = "The Head Scribe back home, the Elder"
 	selection_color = "#dddddd"
@@ -788,8 +788,8 @@ Raider
 	title = "Remnant"
 	flag = F13REMNANT
 	faction = FACTION_WASTELAND
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a citizen of the United States of America. With the destruction of the Oil Rig and Navarro, you are alone in the world. Your business is your own, but you may be aware of a friendly bunker beneath the local airport."
 	supervisors = "the Constitution"
 	selection_color = "#dddddd"
@@ -1215,8 +1215,8 @@ datum/job/wasteland/f13dendoctor
 	title = "Tribal"
 	flag = F13TRIBAL
 	faction = FACTION_WASTELAND
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 6
+	spawn_positions = 6
 	description = "You are a member of a tribe, far away from your homeland. Well, relatively far away. Whatever your reasons for coming here, you've found yourself pinned between the ongoing war of the NCR and Caesar's Legion. Try not to get shot."
 	supervisors = "the stars above"
 	selection_color = "#dddddd"
