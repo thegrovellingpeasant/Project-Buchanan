@@ -71,7 +71,7 @@ em						{font-style: normal;	font-weight: bold;}
 .eightiesradio			{color: #1858D9;}
 .eightiesbradio			{color: #0000FF;}
 .eightiesrradio			{color: #FF0000;}
-.wndradio				{color: #686868;}
+.wndradio				{color: #a280ba;}
 .montegobayradio		{color: #008000;}
 
 .yell					{					font-weight: bold;}

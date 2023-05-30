@@ -306,5 +306,5 @@
 
 /datum/gear/donator/kits/Oddbomber3768
 	name = "Ayayayayayayayayirlooms"
-	path = /obj/item/storage/box/large/custom_kit/cookyznmlk78
+	path = /obj/item/storage/box/large/custom_kit/Oddbomber3768
 	ckeywhitelist = list("oddbomber3768")

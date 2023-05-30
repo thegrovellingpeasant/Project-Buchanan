@@ -704,8 +704,8 @@
 /datum/job/eighties/f13roadie
 	title = "Roadie"
 	flag = F13ROADIE
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're one of the many hangers-on of the 80s. Whether you're a raider hoping to join up, a scavver working the graveyard, a hopeful revhead or just lost, you're under the protection of the 80s."
 	supervisors = "the Warboss."
 	display_order = JOB_DISPLAY_ORDER_ROADIE

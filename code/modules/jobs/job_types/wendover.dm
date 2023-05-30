@@ -1021,8 +1021,8 @@ Mayor
 	title = "Shopkeeper"
 	flag = F13PAWNSHOP
 	department_flag = WENDOVER
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the free hand of the market"
 	description = "The greed of the United States survived better than its people. You are an organ of this greed. Ensure its continuation."
 	selection_color = "#dcba97"

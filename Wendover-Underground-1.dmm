@@ -3807,10 +3807,7 @@
 /area/f13/caves)
 "dHQ" = (
 /obj/structure/table,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/vault)
 "dIj" = (
@@ -19721,10 +19718,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
 "ruR" = (
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rvv" = (
@@ -25281,12 +25275,7 @@
 	plane = -15
 	},
 /obj/item/clothing/head/hardhat/dblue,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup";
-	pixel_x = -10;
-	pixel_y = 9
-	},
+/obj/item/clothing/head/welding,
 /turf/open/floor/plating/tunnel,
 /area/f13/vault)
 "wlO" = (

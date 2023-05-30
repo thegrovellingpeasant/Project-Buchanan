@@ -302,7 +302,6 @@ commented out pending rework*/
 	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
 	exp_type = EXP_TYPE_LEGION
-	exp_requirements = 900
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)

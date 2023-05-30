@@ -14237,10 +14237,7 @@
 	},
 /area/f13/wasteland)
 "jeb" = (
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding/f13,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/lit,
 /area/f13/tunnel)
@@ -21479,10 +21476,8 @@
 /area/f13/potashwarehouse)
 "nVF" = (
 /obj/structure/table,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup";
-	pixel_y = 4
+/obj/item/clothing/head/welding/f13{
+	pixel_y = 9
 	},
 /turf/open/floor/plasteel/f13{
 	name = "floor"
@@ -23076,10 +23071,7 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "oWY" = (
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding/f13,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "oXA" = (
@@ -29574,10 +29566,7 @@
 "sKh" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/storage/belt/utility/full,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding/f13,
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
 "sKB" = (
@@ -31381,6 +31370,10 @@
 	},
 /obj/effect/landmark/start/f13/newcanaanite,
 /obj/structure/table/optable,
+/obj/item/defibrillator/primitive{
+	pixel_y = 7;
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "tRT" = (
@@ -38585,6 +38578,10 @@
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_x = -32
+	},
+/obj/item/defibrillator/primitive{
+	pixel_y = 7;
+	pixel_x = -1
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)

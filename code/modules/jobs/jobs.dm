@@ -75,7 +75,6 @@ GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Veteran Decanus",
 "Frumentarius",
-"Vexillarius",
 "Explorer",
 "Forgemaster",
 "Auxilia",
@@ -138,6 +137,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Decanus",
 	"Frumentarius",
+	"Explorer",
 	"Forgemaster",
 	"Auxilia",
 	"Slave",

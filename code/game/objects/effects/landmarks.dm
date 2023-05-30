@@ -530,7 +530,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrmedofficer
-	name = "NCR Medical Officer"
+	name = "Medical Officer"
 	icon_state = "NCR Lieutenant"
 
 /obj/effect/landmark/start/f13/ncrfirstsergeant

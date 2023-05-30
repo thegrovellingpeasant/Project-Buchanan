@@ -16234,10 +16234,7 @@
 "eDG" = (
 /obj/structure/table/reinforced,
 /obj/item/bodypart/l_leg/robot/surplus,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup"
-	},
+/obj/item/clothing/head/welding/f13,
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/factory)
 "eDK" = (
@@ -18882,11 +18879,8 @@
 "fpL" = (
 /obj/structure/table,
 /obj/effect/overlay/shadow,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup";
-	pixel_x = -4;
-	pixel_y = 5
+/obj/item/clothing/head/welding/f13{
+	pixel_y = 3
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/tunnel)
@@ -46649,16 +46643,6 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
-"nhS" = (
-/obj/effect/overlay/shadow,
-/obj/item/clothing/head/welding{
-	up = 1;
-	icon_state = "weldingup";
-	pixel_x = -10;
-	pixel_y = 28
-	},
-/turf/open/indestructible/ground/outside/saltflats/crackedcenter,
-/area/f13/tunnel)
 "nhT" = (
 /obj/effect/overlay/bus{
 	name = null;
@@ -107811,7 +107795,7 @@ sub
 usg
 aJM
 kTY
-asc
+qLx
 hCQ
 bBX
 kjH
@@ -134530,7 +134514,7 @@ wmM
 dUS
 kQl
 caq
-nhS
+dUZ
 uAh
 kjZ
 lil
