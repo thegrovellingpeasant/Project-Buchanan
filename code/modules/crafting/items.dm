@@ -176,6 +176,7 @@
 				/obj/item/stack/sheet/metal/ten,
 				/obj/item/stack/sheet/glass/five,
 				/obj/item/stack/sheet/plastic,
+				/obj/item/stack/sheet/leather/five
 				/obj/item/stack/sheet/prewar/five,
 				/obj/item/stack/crafting/goodparts/five,
 				/obj/item/stack/ore/blackpowder/five
