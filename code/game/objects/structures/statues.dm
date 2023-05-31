@@ -589,6 +589,7 @@
 
 /obj/structure/statue/wood/whitelegtotem
 	name = "war totem"
+	desc = "A White Leg war totem, superstitiously linked to the tribe's success in war."
 	icon = 'icons/obj/Ritas.dmi'
 	icon_state = "wartotem2"
 	anchored = TRUE

@@ -632,7 +632,7 @@
 	dat += "<input type='hidden' name='src' value='[REF(src)]'>"
 	dat += "<input type='hidden' name='operation' value='[ai_interface ? "ai-callshuttle2" : "callshuttle2"]'>"
 	dat += "<b>Nature of emergency:</b><BR> <input type='text' id='reasonfield' name='call' style='width:250px; background-color:#FFDDDD; onkeydown='getLength() onkeyup='getLength()' onkeypress='getLength()'>"
-	dat += "<BR>Are you sure you want to call the train? \[ <a href='#' onclick='submit()'>Call</a> \]"
+	dat += "<BR>Are you sure you want to call the plane? \[ <a href='#' onclick='submit()'>Call</a> \]"
 	return dat
 
 /obj/machinery/computer/communications/proc/get_cancel_shuttle_form()
@@ -642,7 +642,7 @@
 	dat += "<input type='hidden' name='src' value='[REF(src)]'>"
 	dat += "<input type='hidden' name='operation' value='cancelshuttle2'>"
 
-	dat += "<BR>Are you sure you want to cancel the train? \[ <a href='#' onclick='submit()'>Cancel</a> \]"
+	dat += "<BR>Are you sure you want to cancel the plane? \[ <a href='#' onclick='submit()'>Cancel</a> \]"
 	return dat
 
 /obj/machinery/computer/communications/proc/interact_ai(mob/living/silicon/ai/user)

@@ -79,10 +79,10 @@
 	icon_living = "wolf"
 	icon_dead = "wolf_dead"
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 2, /obj/item/reagent_containers/food/snacks/meat/slab/wolf = 3, /obj/item/stack/sheet/bone = 2)
-	maxHealth = 100
-	health = 100
-	melee_damage_lower = 25
-	melee_damage_upper = 35
+	maxHealth = 60
+	health = 60
+	melee_damage_lower = 20
+	melee_damage_upper = 30
 
 //Unique Dogs - Guerilla for Khans is a Rottweiler, Brutus and Lupa german shepherds, Sniffs-the-Earth a sheepdog.
 //Feel free to move or add code for different behaviours like sleep, some unused sprites prepped for that sort of thing.

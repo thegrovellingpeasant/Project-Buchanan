@@ -347,8 +347,8 @@
 			return
 		SSshuttle.emergency.setTimer(timer*10)
 		log_admin("[key_name(usr)] edited the Train's timeleft to [timer] seconds.")
-		minor_announce("The train will reach its destination in [round(SSshuttle.emergency.timeLeft(600))] minutes.")
-		message_admins("<span class='adminnotice'>[key_name_admin(usr)] edited the Train's timeleft to [timer] seconds.</span>")
+		minor_announce("The plane will reach its destination in [round(SSshuttle.emergency.timeLeft(600))] minutes.")
+		message_admins("<span class='adminnotice'>[key_name_admin(usr)] edited the plane's timeleft to [timer] seconds.</span>")
 		href_list["secrets"] = "check_antagonist"
 	else if(href_list["trigger_centcom_recall"])
 		if(!check_rights(R_ADMIN))

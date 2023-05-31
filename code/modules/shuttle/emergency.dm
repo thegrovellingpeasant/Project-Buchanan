@@ -126,7 +126,7 @@
 		var/repeal = (authorized.len < old_len)
 		var/remaining = max(0, auth_need - authorized.len)
 		if(authorized.len && remaining)
-			minor_announce("[remaining] authorizations needed until train is launched early", null, alert)
+			minor_announce("[remaining] authorizations needed until plane is launched early", null, alert)
 		if(repeal)
 			minor_announce("Early launch authorization revoked, [remaining] authorizations needed")
 		auth_cooldown = world.time + 15 SECONDS
@@ -146,8 +146,8 @@
 
 	authorized += ID
 
-	message_admins("[ADMIN_LOOKUPFLW(user)] has authorized early train launch")
-	log_shuttle("[key_name(user)] has authorized early train launch in [COORD(src)]")
+	message_admins("[ADMIN_LOOKUPFLW(user)] has authorized early plane launch")
+	log_shuttle("[key_name(user)] has authorized early plane launch in [COORD(src)]")
 	// Now check if we're on our way
 	. = TRUE
 	process()
@@ -171,7 +171,7 @@
 		// shuttle timers use 1/10th seconds internally
 		SSshuttle.emergency.setTimer(ENGINES_START_TIME)
 		var/system_error = obj_flags & EMAGGED ? "SYSTEM ERROR:" : null
-		minor_announce("The train will leave in \
+		minor_announce("The plane will leave in \
 			[TIME_LEFT] seconds", system_error, alert=TRUE)
 		. = TRUE
 
@@ -201,7 +201,7 @@
 	if(hijack_hacking == TRUE)
 		return
 	if(SSshuttle.emergency.hijack_status >= HIJACKED)
-		to_chat(user, "<span class='warning'>The train is already loaded with a corrupt navigational payload. What more do you want from it?</span>")
+		to_chat(user, "<span class='warning'>The plane is already loaded with a corrupt navigational payload. What more do you want from it?</span>")
 		return
 	if(hijack_last_stage_increase >= world.time + hijack_stage_cooldown)
 		say("Error - Catastrophic software error detected. Input is currently on timeout.")
@@ -248,12 +248,12 @@
 		return
 
 	if((obj_flags & EMAGGED) || ENGINES_STARTED)	//SYSTEM ERROR: THE SHUTTLE WILL LA-SYSTEM ERROR: THE SHUTTLE WILL LA-SYSTEM ERROR: THE SHUTTLE WILL LAUNCH IN 10 SECONDS
-		to_chat(user, "<span class='warning'>The train is already about to depart!</span>")
+		to_chat(user, "<span class='warning'>The plane is already about to depart!</span>")
 		return
 
 	var/time = TIME_LEFT
-	message_admins("[ADMIN_LOOKUPFLW(user.client)] has emagged the train [time] seconds before departure.")
-	log_shuttle("[key_name(user)] has emagged the train in [COORD(src)] [time] seconds before departure.")
+	message_admins("[ADMIN_LOOKUPFLW(user.client)] has emagged the plane [time] seconds before departure.")
+	log_shuttle("[key_name(user)] has emagged the plane in [COORD(src)] [time] seconds before departure.")
 	obj_flags |= EMAGGED
 	SSshuttle.emergency.movement_force = list("KNOCKDOWN" = 60, "THROW" = 20)//YOUR PUNY SEATBELTS can SAVE YOU NOW, MORTAL
 	var/datum/species/S = new
@@ -340,7 +340,7 @@
 		SSshuttle.emergencyLastCallLoc = null
 
 	if(!silent)
-		priority_announce("The train has been called. [redAlert ? "Red Alert state confirmed: Dispatching priority train. " : "" ]It will arrive in [timeLeft(600)] minutes.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nCall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
+		priority_announce("The plane has been called. [redAlert ? "Red Alert state confirmed: Dispatching priority plane. " : "" ]It will arrive in [timeLeft(600)] minutes.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nCall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
 
 /obj/docking_port/mobile/emergency/cancel(area/signalOrigin)
 	if(mode != SHUTTLE_CALL)
@@ -355,7 +355,7 @@
 		SSshuttle.emergencyLastCallLoc = signalOrigin
 	else
 		SSshuttle.emergencyLastCallLoc = null
-	priority_announce("The train has been recalled.[SSshuttle.emergencyLastCallLoc ? " Recall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
+	priority_announce("The plane has been recalled.[SSshuttle.emergencyLastCallLoc ? " Recall signal traced. Results can be viewed on any communications console." : "" ]", null, 'sound/f13/quest.ogg', "Vault-Tec")
 
 /obj/docking_port/mobile/emergency/proc/is_hijacked()
 	return hijack_status == HIJACKED
@@ -399,8 +399,8 @@
 					return
 				mode = SHUTTLE_DOCKED
 				setTimer(SSshuttle.emergencyDockTime)
-				send2irc("Server", "The train has arrived at the station.")
-				priority_announce("The train has arrived the station. You have [timeLeft(600)] minutes to board the train.", null, 'sound/f13/quest.ogg', "Vault-Tec")
+				send2irc("Server", "The plane has arrived at the station.")
+				priority_announce("The plane has arrived the station. You have [timeLeft(600)] minutes to board the plane.", null, 'sound/f13/quest.ogg', "Vault-Tec")
 				ShuttleDBStuff()
 
 
@@ -451,7 +451,7 @@
 				mode = SHUTTLE_ESCAPE
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
-				priority_announce("The train has left the station. Estimate [timeLeft(600)] minutes until the train arrives to the target destination.", null, null, "Vault-Tec")
+				priority_announce("The plane has left the station. Estimate [timeLeft(600)] minutes until the plane arrives to the target destination.", null, null, "Vault-Tec")
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()
@@ -498,12 +498,12 @@
 
 /obj/docking_port/mobile/emergency/transit_failure()
 	..()
-	message_admins("Moving train directly to centcom dock to prevent deadlock.")
+	message_admins("Moving plane directly to centcom dock to prevent deadlock.")
 
 	mode = SHUTTLE_ESCAPE
 	launch_status = ENDGAME_LAUNCHED
 	setTimer(SSshuttle.emergencyEscapeTime)
-	priority_announce("The Train is preparing for direct journey. Estimate [timeLeft(600)] minutes until the train arrives at the destination.", null, null, "Vault-Tec")
+	priority_announce("The plane is preparing for direct journey. Estimate [timeLeft(600)] minutes until the plane arrives at the destination.", null, null, "Vault-Tec")
 
 
 /obj/docking_port/mobile/pod

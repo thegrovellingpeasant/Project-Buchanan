@@ -440,6 +440,12 @@
 	icon_state = "wanamingo"
 	mob_types = list(/mob/living/simple_animal/hostile/alien = 5)
 
+/obj/structure/nest/mob/yaoguai
+	name = "yao guai"
+	icon = 'icons/fallout/mobs/animals/yaoguai_2.dmi'
+	icon_state = "yaoguai"
+	mob_types = list(/mob/living/simple_animal/hostile/bear/yaoguai = 5)
+
 /obj/structure/nest/mob/molerat
 	name = "molerat"
 	icon = 'icons/fallout/mobs/animals/wasteanimals.dmi'
