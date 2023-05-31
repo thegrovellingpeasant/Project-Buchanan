@@ -847,6 +847,10 @@
 	var/obj/item/projectile/P = A
 	return istype(P) && P.is_reflectable
 
+/proc/is_bullet_reflectable_projectile(atom/A)
+	var/obj/item/projectile/bullet/P = A
+	return istype(P) && P.is_reflectable
+
 //Check armor penetration
 /proc/check_armor_penetration(atom/A)
 	var/obj/item/projectile/P = A

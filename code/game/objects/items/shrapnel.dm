@@ -39,6 +39,7 @@
 	ricochet_incidence_leeway = 60
 	sharpness = SHARP_EDGED
 	wound_bonus = 50
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/shrapnel/plasma // plasma grenades
 	name = "plasma split"

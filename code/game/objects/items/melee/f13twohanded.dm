@@ -518,6 +518,33 @@
 	else if(istype(A, /turf/closed))
 		playsound(loc, hitsound, 70, TRUE)
 
+/obj/item/twohanded/broken_thermic_lance
+	name = "broken thermic lance"
+	desc = "A versatile power-welding tool. It seems to have stopped working like it used to, but it can be repaired with the right parts."
+	icon = 'icons/fallout/objects/melee/twohanded.dmi'
+	icon_state = "thermiclance"
+	icon_prefix = "thermiclance"
+	lefthand_file = 'icons/fallout/onmob/weapons/64x64_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/64x64_righthand.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	damtype = "brute"
+	force = 5
+	armour_penetration = 0.1
+	throwforce = 5
+	throw_speed = 2
+	throw_range = 3
+	attack_verb = list("attacked", "poked", "jabbed")
+
+/obj/item/twohanded/broken_thermic_lance/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=25, icon_wielded="[icon_prefix]")
+
+/obj/item/twohanded/broken_thermic_lance/afterattack(atom/A, mob/living/user, proximity)
+	. = ..()
+	if(!proximity || !wielded || IS_STAMCRIT(user))
+		return
+
 // Proton axe			Keywords: Damage 20/32, AP 0.7
 /obj/item/melee/transforming/energy/axe/protonaxe
 	name = "proton axe"

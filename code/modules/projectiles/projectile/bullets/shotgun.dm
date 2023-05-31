@@ -115,6 +115,7 @@
 	wound_bonus = 5
 	bare_wound_bonus = 5
 	wound_falloff_tile = -2.5 // low damage + additional dropoff will already curb wounding potential anything past point blank
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubbershot pellet"
@@ -122,6 +123,7 @@
 	stamina = 10
 	sharpness = SHARP_NONE
 	embedding = null
+	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/pellet/Range()
 	..()

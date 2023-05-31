@@ -224,7 +224,12 @@
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/punji_sticks)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/repair_thermic_lance)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/pvc_tomahawk)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/mirelurk_shield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/akoiah_armor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/gecko_helmet)
+	
 /datum/outfit/job/whitelegs/f13sapper
 	name = "Sapper"
 	jobtype = /datum/job/whitelegs/f13sapper

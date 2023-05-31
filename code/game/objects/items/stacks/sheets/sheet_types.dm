@@ -810,6 +810,9 @@ GLOBAL_LIST_INIT(bone_recipes, list(
 	. = ..()
 	. += GLOB.bone_recipes
 
+/obj/item/stack/sheet/bone/yaoguai
+	name = "Akoiah bones"
+	desc = "The bones of the infamous Ainka-Akoiah. They're pretty tough, a crafstman of the White Legs can find use for this."
 
 // Plastic
 

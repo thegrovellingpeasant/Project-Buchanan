@@ -241,6 +241,11 @@ GLOBAL_LIST_INIT(sinew_recipes, list ( \
 	grind_results = list(/datum/reagent/sodium = 3, /datum/reagent/chlorine = 3)
 	merge_type = /obj/item/stack/sheet/animalhide/chitin
 
+/obj/item/stack/sheet/animalhide/chitin/mirelurk
+	name = "Mirelurk Chitin"
+	desc = "Pieces of the shell of the infamous Hivizoh-Tsi Paakate. They're pretty durable, a crafstman of the White Legs can make use of this."
+	merge_type = /obj/item/stack/sheet/animalhide/chitin/mirelurk
+
 /obj/item/stack/sheet/animalhide/ashdrake
 	name = "ash drake hide"
 	desc = "The strong, scaled hide of an ash drake."

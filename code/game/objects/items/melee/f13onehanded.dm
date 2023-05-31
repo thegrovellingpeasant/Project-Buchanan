@@ -145,6 +145,18 @@
 	embedding = list("pain_mult" = 2, "embed_chance" = 60, "fall_chance" = 20)
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/throwing_star/tomahawk/pvc
+	name = "pvc tomahawk"
+	desc = "A crudely made lightweight axe consisting of a pvc pipe and railways spikes, commonly used by the White Legs tribe."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
+	force = 35
+	throwforce = 20
+	armour_penetration = 0.15
+	icon_state = "pvc_tomahawk"
+	item_state = "pvc_tomahawk"
+
 
 ////////////
 // KNIVES //

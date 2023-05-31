@@ -41,6 +41,10 @@
 	var/obj/item/gps/internal
 	/// Next time fauna can use a melee attack
 	var/recovery_time = 0
+	/// Allows megafauna to gib people. Set to FALSE if you don't want that. Also make sure to set stat_attack to UNCONSCIOUS to make it so they don't keep attacking dead people
+	var/can_devour = TRUE
+	/// Changes behaviour based on certain linked conditions
+	var/change_behaviour = FALSE
 
 	var/true_spawn = TRUE // if this is a megafauna that should grant achievements, or have a gps signal
 	var/nest_range = 10
@@ -116,7 +120,8 @@
 			if(!client && ranged && ranged_cooldown <= world.time)
 				OpenFire()
 		else
-			devour(L)
+			if(can_devour)
+				devour(L)
 
 /mob/living/simple_animal/hostile/megafauna/proc/devour(mob/living/L)
 	if(!L)
