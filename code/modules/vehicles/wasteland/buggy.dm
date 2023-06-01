@@ -53,6 +53,23 @@
 			if(!(A in buckled_mobs))
 				Bump(A)
 
+obj/vehicle/ridden/motorcycle/buggy/user_unbuckle_mob(mob/living/buckled_mob, mob/user)
+	if(user != buckled_mob)
+		visible_message("<span class='warning'>[user] starts to unbuckle [buckled_mob] from [src]!</span>")
+		if(do_after(user, 50, 1, target = buckled_mob, required_mobility_flags = MOBILITY_RESIST))
+			return ..()
+		else
+			visible_message("<span class='warning'>[user] fails to unbuckle [buckled_mob] from [src]!</span>")
+			return
+	if(user == buckled_mob)
+		unbuckle_mob(buckled_mob, user)
+	return
+
+/obj/vehicle/ridden/motorcycle/buggy/post_buckle_mob(mob/living/M)
+	. = ..()
+	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
+	D.equip_buckle_inhands(M, 1, M)
+
 /*obj/vehicle/ridden/motorcycle/buggy/driver_move(mob/user, direction)
 	if(world.time < last_enginesound_time + engine_sound_length)
 		return
