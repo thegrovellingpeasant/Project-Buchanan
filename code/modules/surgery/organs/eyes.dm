@@ -447,3 +447,8 @@
 #undef BLURRY_VISION_ONE
 #undef BLURRY_VISION_TWO
 #undef BLIND_VISION_THREE
+
+/obj/item/organ/eyes/gecko
+	name = "Bogwezhi eyes"
+	desc = "The eyes of the infamous Kuna Bogwezhi. Its' eyes still glow, a crafstman of the White legs can make use of this."
+	icon_state = "gecko_eyes"

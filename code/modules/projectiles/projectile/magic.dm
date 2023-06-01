@@ -488,6 +488,9 @@
 	var/turf/T = get_turf(target)
 	explosion(T, -1, exp_heavy, exp_light, exp_flash, 0, flame_range = exp_fire)
 
+/obj/item/projectile/magic/aoe/fireball/gecko
+	exp_flash = 0
+
 /obj/item/projectile/magic/aoe/fireball/infernal
 	name = "infernal fireball"
 	exp_heavy = -1

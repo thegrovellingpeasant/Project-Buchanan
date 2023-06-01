@@ -839,11 +839,13 @@
 	icon_state = "gamblerrang"
 	item_state = "gamblerrang"
 
-/obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
-	name = "galerum lacertarex"
-	desc = "The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
+/obj/item/clothing/head/helmet/f13/wayfarer/whitelegs/gecko
+	name = "Bogwezhi Head"
+	desc = "Made from the hide of the mighty Kuna Bogwezhi, this head turned helmet acts as a symbol and a reminder of the White Legs' dominance over the untamed wastes."
 	icon_state = "diohelmet"
 	item_state = "diohelmet"
+	flags_inv = HIDEHAIR
+	flash_protect = 1
 
 /obj/item/clothing/head/helmet/f13/herbertranger
 	name = "weathered desert ranger helmet"

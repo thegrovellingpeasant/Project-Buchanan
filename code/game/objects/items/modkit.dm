@@ -94,7 +94,7 @@
 /obj/item/modkit/diohelmet
 	name = "galerum lacertarex"
 	target_items = list(/obj/item/clothing/head/helmet/f13/legion/venator)
-	result_item = /obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
+	result_item = /obj/item/clothing/head/helmet/f13/wayfarer/whitelegs/gecko
 
 /obj/item/modkit/trenchcoatfollowers
 	name = "followers trenchcoat modkit"

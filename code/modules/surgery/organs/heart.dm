@@ -252,3 +252,26 @@ obj/item/organ/heart/cybernetic/upgraded/on_life()
 	name = "synth  heart"
 	desc = "An electronic pump that regulates hydraulic functions, the electronics have EMP shielding."
 	icon_state = "heart-c"
+
+/obj/item/organ/heart/freedom/yaoguai
+	name = "Akoiah heart"
+	desc = "The heart of the infamous Ainka-Akoiah. It's... still beating? A skilled surgeon could make use of this."
+	icon_state = "demon_heart-on"
+
+/obj/item/organ/heart/freedom/yaoguai/on_life()
+	. = ..()
+	if(. && owner.health >= 50)
+		if(HAS_TRAIT(owner, TRAIT_BUFFOUT_BUFF))
+			to_chat(owner, "<span class='notice'>You feel your muscles loosen up a bit.</span>")
+			REMOVE_TRAIT(owner, TRAIT_BUFFOUT_BUFF, "heart")
+	if(. && owner.health < 40)
+		if(!(HAS_TRAIT(owner, TRAIT_BUFFOUT_BUFF)))
+			to_chat(owner, "<span class='userdanger'>You're in bad shape, but you must fight harder!</span>")
+			ADD_TRAIT(owner, TRAIT_BUFFOUT_BUFF, "heart")
+	if(. && owner.health < 5 && world.time > min_next_adrenaline)
+		min_next_adrenaline = world.time + rand(250, 600) //anywhere from 4.5 to 10 minutes
+		to_chat(owner, "<span class='userdanger'>You feel yourself dying, but you refuse to give up!</span>")
+		owner.heal_overall_damage(15, 15)
+		if(owner.reagents.get_reagent_amount(/datum/reagent/medicine/ephedrine) < 20)
+			owner.reagents.add_reagent(/datum/reagent/medicine/ephedrine, 10)
+	

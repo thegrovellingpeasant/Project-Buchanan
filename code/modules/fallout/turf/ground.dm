@@ -35,6 +35,15 @@
 			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 	else
 		return ..()
+
+/turf/open/indestructible/ground/Entered(atom/movable/AM, atom/oldloc)
+	if(istype(AM, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
+		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = AM
+		if(mirelurkqueen.change_behaviour== TRUE)
+			visible_message(span_danger(">The mirelurk queen slows down on dry land!"))
+			mirelurkqueen.change_behaviour = FALSE
+	..()
+
 /*
 /turf/ground/Entered(go/A)
 	..()

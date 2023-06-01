@@ -66,6 +66,43 @@
 				)
 	tools = list(TOOL_WORKBENCH)
 
+/datum/crafting_recipe/tribalwar/repair_thermic_lance
+	name = "Repair thermic lance"
+	time = 30
+	reqs = list(
+			/obj/item/organ/liver/gecko = 1,
+			/obj/item/twohanded/broken_thermic_lance)
+	result = /obj/item/twohanded/thermic_lance
+	tools = list(TOOL_WORKBENCH)
+	always_available = FALSE
+
+/datum/crafting_recipe/tribalwar/pvc_tomahawk
+	name = "PVC Tomahawk"
+	time = 30
+	reqs = list(
+			/obj/item/stack/sheet/animalhide/chitin/mirelurk = 5,
+			/obj/item/stack/rods = 6,
+			/obj/item/stack/sheet/animalhide/feather = 2,
+			/obj/item/stack/sheet/metal = 5,
+			/obj/item/stack/sheet/plastic = 5
+	)
+	result = /obj/item/throwing_star/tomahawk/pvc
+	tools = list(TOOL_WORKBENCH)
+	always_available = FALSE
+
+/datum/crafting_recipe/tribalwar/mirelurk_shield
+	name = "Shell Shield"
+	time = 40
+	reqs = list(
+			/obj/item/stack/sheet/sinew = 15,
+			/obj/item/stack/sheet/animalhide/chitin/mirelurk = 10,
+			/obj/item/stack/sheet/metal = 10,
+			/obj/item/stack/crafting/goodparts = 5
+	)
+	result = /obj/item/shield/legion/mirelurk
+	tools = list(TOOL_WORKBENCH)
+	always_available = FALSE
+
 //CLOTHING AND TOOLS
 
 /datum/crafting_recipe/tribal
@@ -248,6 +285,31 @@
 				/obj/item/stack/sheet/animalhide/gecko = 3,
 				/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/crafting/goodparts = 5)
+
+/datum/crafting_recipe/tribalwar/whitelegs/akoiah_armor
+	name = "White Legs Akoiah Armor"
+	time = 40
+	reqs = list(
+			/obj/item/stack/sheet/bone/yaoguai = 30,
+			/obj/item/stack/sheet/sinew = 15,
+			/obj/item/stack/sheet/metal = 20,
+			/obj/item/stack/sheet/leather = 8,
+			/obj/item/stack/crafting/goodparts = 5
+	)
+	result = /obj/item/clothing/suit/f13/tribal/heavy/whitelegs/yaoguai
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalwar/whitelegs/gecko_helmet
+	name = "Bogwezhi Head"
+	time = 40
+	reqs = list(
+			/obj/item/stack/sheet/animalhide/gecko/fireking = 25,
+			/obj/item/organ/eyes/gecko = 1,
+			/obj/item/stack/sheet/metal = 15,
+			/obj/item/stack/crafting/goodparts = 3
+	)
+	result = /obj/item/clothing/head/helmet/f13/wayfarer/whitelegs/gecko
+	tools = list(TOOL_WORKBENCH)
 
 /datum/crafting_recipe/tribalwar/whitelegs/garb
 	name = "White Legs Garb"
