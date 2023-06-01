@@ -306,6 +306,19 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"aiF" = (
+/obj/structure/table/wood/greyscale{
+	color = "#734d39"
+	},
+/obj/item/storage/secure/safe{
+	pixel_y = 32;
+	pixel_x = 5
+	},
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/green,
+/area/f13/casino)
 "aiZ" = (
 /obj/structure/car/junk/smes{
 	desc = null;
@@ -5734,6 +5747,15 @@
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
+"dEQ" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/storage/bag/trash,
+/obj/item/mop,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/glass/bucket,
+/turf/open/floor/carpet/green,
+/area/f13/casino)
 "dFC" = (
 /obj/machinery/msgterminal/legion{
 	pixel_x = 6;
@@ -5758,11 +5780,19 @@
 /turf/open/floor/wood/f13/oakbroken,
 /area/f13/building)
 "dGo" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
+/obj/structure/closet{
+	anchored = 1
 	},
-/turf/open/floor/carpet/green,
-/area/f13/casino)
+/obj/item/clothing/suit/toggle/chef,
+/obj/item/clothing/head/chefhat,
+/obj/item/clothing/neck/apron/chef,
+/obj/item/book/manual/chef_recipes,
+/obj/item/paper,
+/obj/item/pen,
+/obj/item/storage/box/drinkingglasses,
+/obj/item/soap/deluxe,
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
 "dGx" = (
 /obj/structure/railing{
 	dir = 8;
@@ -5853,14 +5883,13 @@
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
 /area/f13/wasteland)
 "dJR" = (
-/obj/structure/chair/bench{
-	icon_state = "bench";
-	dir = 8
+/obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.25
 	},
-/turf/open/floor/plasteel/f13{
-	name = "floor"
-	},
-/area/f13/casino)
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "dJX" = (
 /obj/structure/closet/crate/footchest,
 /obj/item/gun/ballistic/revolver/revolver45,
@@ -6976,10 +7005,9 @@
 /area/f13/building)
 "euP" = (
 /obj/structure/table/greyscale,
-/obj/item/reagent_containers/glass/rag/towel/random{
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/obj/item/kitchen/knife/butcher,
+/obj/structure/reagent_dispensers/keg/milk,
+/turf/open/floor/plasteel/freezer,
 /area/f13/building)
 "evb" = (
 /obj/structure/table/wood/greyscale/varnished,
@@ -7468,10 +7496,9 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "eMO" = (
-/obj/structure/dresser,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
+/obj/structure/dresser{
+	pixel_y = 12;
+	density = 0
 	},
 /turf/open/floor/carpet/orange{
 	smooth = 0
@@ -8301,6 +8328,9 @@
 /obj/structure/curtain{
 	color = "#845f58"
 	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/carpet/orange{
 	smooth = 0
 	},
@@ -8433,13 +8463,28 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/wasteland)
 "fqt" = (
-/obj/structure/chair/bench{
-	icon_state = "bench";
-	dir = 4
+/obj/structure/closet{
+	base_storage_capacity = 20;
+	storage_capacity = 20
 	},
-/turf/open/floor/plasteel/f13{
-	name = "floor"
-	},
+/obj/item/reagent_containers/pill/patch/jet,
+/obj/item/reagent_containers/pill/patch/turbo,
+/obj/item/reagent_containers/hypospray/medipen/psycho,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/buffout,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/item/storage/bag/chemistry,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "frv" = (
 /obj/structure/curtain{
@@ -8870,19 +8915,13 @@
 	},
 /area/f13/wasteland)
 "fDm" = (
-/obj/structure/table/rolling,
-/obj/item/storage/bag/tray{
-	pixel_y = 9
+/obj/structure/railing/corner{
+	dir = 1;
+	layer = 2.91;
+	pixel_x = -1;
+	color = "#665240"
 	},
-/obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = -4;
-	pixel_y = 7
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = 5;
-	pixel_y = 7
-	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "fDt" = (
 /obj/effect/decal/remains/human,
@@ -9670,10 +9709,15 @@
 	},
 /area/f13/caves)
 "gbF" = (
-/turf/open/floor/plasteel/f13{
-	name = "floor"
+/obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	layer = 4.25
 	},
-/area/f13/casino)
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "gbW" = (
 /obj/structure/obstacle/barbedwire{
 	dir = 8
@@ -10699,8 +10743,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gLx" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
+/obj/structure/sign/poster/official/high_class_martini{
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/green,
 /area/f13/casino)
@@ -10783,9 +10827,7 @@
 /obj/structure/bed/wooden,
 /obj/item/bedsheet/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/random{
-	pixel_x = 32
-	},
+/obj/effect/landmark/start/f13/montegobaystaff,
 /turf/open/floor/carpet/orange{
 	smooth = 0
 	},
@@ -10904,9 +10946,13 @@
 /turf/open/floor/wood/f13/old/ruinedstraightnorth,
 /area/f13/wasteland)
 "gSp" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/turf/open/floor/plasteel/freezer,
-/area/f13/casino)
+/obj/machinery/door/unpowered/montegobay{
+	req_one_access_txt = "38"
+	},
+/turf/open/floor/carpet/orange{
+	smooth = 0
+	},
+/area/f13/building)
 "gSx" = (
 /obj/structure/railing/handrail{
 	dir = 8;
@@ -11111,10 +11157,10 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "gXo" = (
-/obj/structure/simple_door/room,
-/turf/open/floor/plasteel/f13{
-	name = "floor"
-	},
+/obj/machinery/autolathe,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "gXF" = (
 /obj/structure/closet/cabinet,
@@ -11240,8 +11286,22 @@
 /turf/open/transparent/openspace/air,
 /area/f13/building)
 "hco" = (
-/obj/structure/simple_door/room,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/table/rolling,
+/obj/item/storage/bag/tray{
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "hcu" = (
 /obj/structure/railing{
@@ -11296,6 +11356,13 @@
 	},
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/ncr)
+"heU" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/casino)
 "hfp" = (
 /turf/open/floor/f13,
 /area/f13/followers)
@@ -11409,7 +11476,9 @@
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
 "hiG" = (
-/obj/machinery/hydroponics/soil,
+/obj/machinery/hydroponics/constructable{
+	pixel_y = 6
+	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "hiO" = (
@@ -11733,6 +11802,14 @@
 	pixel_x = -4
 	},
 /turf/open/floor/wood/f13/oak/lit,
+/area/f13/wasteland)
+"hsB" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	dir = 5;
+	layer = 2.1
+	},
+/turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "hsI" = (
 /obj/effect/overlay/curb{
@@ -12384,6 +12461,9 @@
 	opacity = 1;
 	layer = 4.01
 	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
 /turf/open/floor/carpet/orange{
 	smooth = 0
 	},
@@ -12688,13 +12768,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/wasteland)
 "iao" = (
-/obj/structure/sign/poster/prewar/poster82{
-	pixel_x = -32
+/obj/structure/lattice/catwalk,
+/obj/structure/railing/corner{
+	pixel_y = -1;
+	layer = 4.1
 	},
-/turf/open/floor/plasteel/f13{
-	name = "floor"
+/obj/structure/railing/corner{
+	dir = 4;
+	layer = 2.91
 	},
-/area/f13/casino)
+/turf/open/transparent/openspace/air,
+/area/f13/wasteland)
 "ibh" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -13024,11 +13108,10 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "ipq" = (
-/obj/structure/sign/painting/library{
-	pixel_y = 32;
-	pixel_x = -32
+/mob/living/simple_animal/mouse{
+	name = "William"
 	},
-/turf/open/floor/carpet/green,
+/turf/open/floor/plasteel/freezer,
 /area/f13/casino)
 "iqo" = (
 /obj/structure/lattice/catwalk/invisible,
@@ -13278,13 +13361,9 @@
 /turf/open/floor/clockwork/reebe,
 /area/f13/tunnel)
 "iBg" = (
-/obj/structure/toilet{
-	pixel_y = 12;
-	open = 1;
-	icon_state = "toilet10"
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/obj/structure/kitchenspike,
+/turf/open/floor/plasteel/freezer,
 /area/f13/building)
 "iBO" = (
 /obj/structure/car/rubbish3,
@@ -14260,7 +14339,7 @@
 "jdP" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/turf/open/floor/plasteel/freezer,
 /area/f13/building)
 "jdR" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -14560,14 +14639,16 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "jnY" = (
-/obj/structure/closet,
-/obj/item/reagent_containers/glass/rag/towel,
-/obj/item/reagent_containers/glass/rag/towel,
-/obj/item/reagent_containers/spray/spraytan,
-/obj/item/reagent_containers/spray/spraytan,
-/turf/open/floor/plasteel/f13{
-	name = "floor"
+/obj/item/instrument/violin,
+/obj/structure/closet{
+	base_storage_capacity = 20;
+	storage_capacity = 20
 	},
+/obj/item/instrument/trumpet,
+/obj/item/instrument/guitar,
+/obj/item/instrument/banjo,
+/obj/item/instrument/piano_synth,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "joB" = (
 /obj/structure/chair/booth{
@@ -16144,6 +16225,18 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"ktO" = (
+/obj/structure/table/round{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-15";
+	pixel_y = 12;
+	layer = 3
+	},
+/turf/open/floor/carpet/green,
+/area/f13/casino)
 "kuN" = (
 /obj/structure/flora/grass/wasteland{
 	pixel_x = 7;
@@ -17814,7 +17907,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "lwW" = (
-/obj/machinery/autolathe/ammo,
+/obj/structure/rack/shelf_metal,
+/obj/item/ammo_box/shotgun/bean,
+/obj/item/ammo_box/shotgun/bean,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "lxH" = (
@@ -18477,14 +18572,14 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/wasteland)
 "lTF" = (
-/mob/living/simple_animal/mouse{
-	name = "William"
+/obj/structure/railing/corner{
+	dir = 8;
+	layer = 4.1;
+	pixel_x = -1;
+	pixel_y = -1;
+	color = "#665240"
 	},
-/obj/machinery/smartfridge/food{
-	pixel_x = -32;
-	density = 0
-	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "lTM" = (
 /obj/structure/lattice/catwalk/invisible,
@@ -19504,21 +19599,14 @@
 /turf/open/floor/carpet/black,
 /area/f13/building)
 "mDP" = (
-/obj/structure/closet{
-	anchored = 1
-	},
-/obj/item/clothing/suit/toggle/chef,
-/obj/item/clothing/head/chefhat,
-/obj/item/clothing/neck/apron/chef,
-/obj/item/book/manual/chef_recipes,
-/obj/item/paper,
-/obj/item/pen,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/soap/deluxe,
+/obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/plasteel/freezer,
-/area/f13/casino)
+/area/f13/building)
 "mEq" = (
 /obj/machinery/smartfridge/bottlerack/grownbin,
+/obj/structure/sink/greyscale{
+	pixel_y = 25
+	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "mEz" = (
@@ -19985,6 +20073,15 @@
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/building)
+"mVD" = (
+/obj/structure/closet/fridge,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/carpet/green,
+/area/f13/casino)
 "mVE" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "dirtyroad";
@@ -21500,14 +21597,17 @@
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "nUl" = (
-/obj/structure/table/greyscale,
-/obj/item/clothing/glasses/welding{
-	pixel_x = 1;
-	pixel_y = 3
+/obj/structure/table/wood/greyscale{
+	color = "#734d39"
 	},
-/turf/open/floor/plasteel/f13{
-	name = "floor"
+/obj/structure/sign/poster/random{
+	pixel_y = 32
 	},
+/obj/item/flashlight/lamp/green{
+	pixel_y = 4;
+	pixel_x = 2
+	},
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "nUV" = (
 /obj/structure/railing{
@@ -21578,6 +21678,8 @@
 /area/f13/building)
 "nWV" = (
 /obj/machinery/autolathe,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/indestructible/ground/outside/mountain,
 /area/f13/tunnel)
 "nXd" = (
@@ -21870,13 +21972,8 @@
 	},
 /area/f13/wasteland)
 "ogO" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/bag/tray{
-	pixel_y = 6;
-	icon = 'icons/obj/janitor.dmi';
-	pixel_x = -1
-	},
-/turf/open/floor/plasteel/freezer,
+/obj/structure/guncase,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "oha" = (
 /obj/structure/table/wood/greyscale/varnished,
@@ -22260,6 +22357,9 @@
 	},
 /obj/structure/curtain{
 	color = "#845f58"
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
 	},
 /turf/open/floor/carpet/orange{
 	smooth = 0
@@ -22876,20 +22976,10 @@
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "oPb" = (
-/obj/structure/bed/pod{
-	name = "tanning bed";
-	layer = 3.1
-	},
-/obj/item/flashlight/tanningbed{
-	pixel_y = 9;
-	dir = 4;
-	anchored = 1;
-	on = 1
-	},
-/obj/structure/statue/diamond/indestructible/tanningbed,
-/turf/open/floor/plasteel/f13{
-	name = "floor"
-	},
+/obj/structure/guncase,
+/obj/item/gun/ballistic/revolver/caravan_shotgun,
+/obj/item/gun/ballistic/revolver/caravan_shotgun,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "oPn" = (
 /obj/item/blanket/rug,
@@ -22911,8 +23001,13 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "oPS" = (
-/obj/structure/reagent_dispensers/keg/milk,
-/turf/open/floor/plasteel/freezer,
+/obj/structure/railing{
+	dir = 6;
+	color = "#665240"
+	},
+/turf/open/transparent/openspace/air{
+	sunlight_state = 0
+	},
 /area/f13/casino)
 "oQd" = (
 /obj/structure/rack/shelf_metal,
@@ -22950,6 +23045,11 @@
 /obj/structure/table/reinforced,
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/item/storage/bag/tray{
+	pixel_y = 6;
+	icon = 'icons/obj/janitor.dmi';
+	pixel_x = -1
 	},
 /turf/open/floor/plasteel/freezer,
 /area/f13/casino)
@@ -23204,14 +23304,19 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "oZi" = (
-/obj/machinery/workbench/bottler{
-	pixel_y = 4;
-	pixel_x = -1
+/obj/structure/table/wood/greyscale{
+	color = "#734d39"
 	},
-/obj/structure/table/wood,
-/obj/structure/sign/poster/contraband/red_rum{
-	pixel_x = -32;
-	pixel_y = -16
+/obj/structure/noticeboard{
+	pixel_y = 34
+	},
+/obj/item/paper_bin{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/item/pen{
+	pixel_x = -4;
+	pixel_y = 3
 	},
 /turf/open/floor/carpet/green,
 /area/f13/casino)
@@ -23791,6 +23896,22 @@
 	name = "basketball court"
 	},
 /area/f13/wasteland)
+"ppY" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "housewindowbroken"
+	},
+/obj/structure/curtain{
+	color = "#baa15d";
+	pixel_y = -1
+	},
+/obj/machinery/light{
+	dir = 1;
+	layer = 3.7;
+	plane = -14
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/casino)
 "pqf" = (
 /obj/structure/railing{
 	dir = 9
@@ -24792,7 +24913,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "pYx" = (
-/obj/structure/table/reinforced,
+/obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "pYT" = (
@@ -26478,12 +26599,13 @@
 /turf/open/transparent/openspace/air,
 /area/f13/potashwarehouse)
 "qTI" = (
-/obj/structure/table/round{
-	pixel_x = -1;
-	pixel_y = -4
+/obj/machinery/workbench/bottler{
+	pixel_y = 4;
+	pixel_x = -1
 	},
-/obj/item/flashlight/lamp/green{
-	pixel_y = 4
+/obj/structure/table/wood,
+/obj/structure/sign/poster/contraband/red_rum{
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/green,
 /area/f13/casino)
@@ -27337,6 +27459,21 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"rsS" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "housewindowbroken"
+	},
+/obj/structure/curtain{
+	color = "#baa15d";
+	pixel_y = -1
+	},
+/obj/machinery/light{
+	layer = 2.7;
+	plane = -14
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/casino)
 "rsW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet,
@@ -27607,6 +27744,7 @@
 	pixel_y = 11
 	},
 /obj/item/bedsheet/hos,
+/obj/effect/landmark/start/f13/montegobaydirector,
 /turf/open/floor/carpet/orange{
 	smooth = 0
 	},
@@ -28044,13 +28182,13 @@
 	},
 /area/f13/wasteland)
 "rMS" = (
-/obj/structure/sign/poster/random{
-	pixel_x = -32
+/obj/structure/railing/corner{
+	layer = 4.1;
+	pixel_x = -1;
+	pixel_y = -1;
+	color = "#665240"
 	},
-/obj/structure/chair/comfy{
-	dir = 4
-	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "rNC" = (
 /obj/item/ammo_casing/spent{
@@ -28398,6 +28536,7 @@
 /obj/machinery/autolathe/ammo,
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
+/obj/item/screwdriver,
 /turf/open/indestructible/ground/outside/mountain,
 /area/f13/tunnel)
 "rXX" = (
@@ -29575,26 +29714,9 @@
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
 "sHT" = (
-/obj/structure/closet{
-	base_storage_capacity = 20;
-	storage_capacity = 20
+/obj/machinery/door/unpowered/montegobay{
+	req_one_access_txt = "38"
 	},
-/obj/item/reagent_containers/pill/patch/jet,
-/obj/item/reagent_containers/pill/patch/turbo,
-/obj/item/reagent_containers/hypospray/medipen/psycho,
-/obj/item/reagent_containers/hypospray/medipen/medx,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
-/obj/item/storage/pill_bottle/chem_tin/buffout,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "sHU" = (
@@ -30722,11 +30844,8 @@
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
 "tsl" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
-/turf/open/floor/carpet/orange{
-	smooth = 0
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/freezer,
 /area/f13/building)
 "tst" = (
 /obj/structure/railing{
@@ -31351,6 +31470,7 @@
 /obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
+/obj/effect/landmark/start/f13/montegobaystaff,
 /turf/open/floor/carpet/orange{
 	smooth = 0
 	},
@@ -33115,14 +33235,13 @@
 /turf/open/indestructible/ground/outside/lifelessdesert/wendoverwillsafecorner,
 /area/f13/wasteland)
 "uRf" = (
-/obj/structure/chair/bench{
-	icon_state = "bench_center";
-	dir = 1
+/obj/machinery/smartfridge{
+	layer = 3.1;
+	density = 0;
+	pixel_x = -32
 	},
-/turf/open/floor/plasteel/f13{
-	name = "floor"
-	},
-/area/f13/casino)
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
 "uRy" = (
 /obj/structure/table/round{
 	pixel_y = 0
@@ -33546,9 +33665,8 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "vcm" = (
-/obj/effect/landmark/start/f13/montegobaydirector,
 /obj/machinery/light,
-/obj/effect/landmark/start/f13/montegobaystaff,
+/obj/machinery/workbench,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "vcL" = (
@@ -34980,7 +35098,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "vYG" = (
-/obj/structure/fermenting_barrel,
+/obj/machinery/autolathe/ammo,
+/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
+/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
+/obj/item/screwdriver,
+/obj/item/stack/ore/blackpowder/five,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "vYS" = (
@@ -36819,7 +36941,7 @@
 	pixel_y = 11;
 	pixel_x = -5
 	},
-/obj/structure/table/reinforced,
+/obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "wYi" = (
@@ -37249,13 +37371,9 @@
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
 "xiJ" = (
-/obj/machinery/autolathe,
 /obj/structure/sign/poster/official/high_class_martini{
-	pixel_x = 32;
-	pixel_y = 16
+	pixel_x = 32
 	},
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "xiU" = (
@@ -37289,7 +37407,7 @@
 	pixel_y = 32;
 	pixel_x = 32
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/carpet/green,
 /area/f13/casino)
 "xjy" = (
 /obj/structure/railing{
@@ -38335,6 +38453,12 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/wasteland)
+"xTH" = (
+/obj/machinery/door/unpowered/montegobay{
+	req_one_access_txt = "38"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/building)
 "xTK" = (
 /obj/structure/easel{
 	pixel_x = 1;
@@ -38794,9 +38918,9 @@
 /obj/structure/table/round{
 	pixel_x = 1
 	},
-/obj/item/cigbutt/cigarbutt{
-	pixel_y = 3;
-	pixel_x = 5
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 4;
+	pixel_x = 2
 	},
 /turf/open/floor/f13/lit,
 /area/f13/building)
@@ -38981,7 +39105,7 @@
 /obj/machinery/shower{
 	dir = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/turf/open/floor/plasteel/freezer,
 /area/f13/building)
 "ylH" = (
 /obj/structure/junk/pipe{
@@ -41477,12 +41601,12 @@ eVF
 kBe
 ovA
 ovA
-dfp
+gSp
 ovA
 kBe
 hLg
 hLg
-dfp
+gSp
 hLg
 kBe
 rqo
@@ -41988,7 +42112,7 @@ kBe
 run
 eVF
 eVF
-dfp
+gSp
 vBV
 rqo
 rqo
@@ -42245,7 +42369,7 @@ kBe
 tou
 eVF
 eVF
-dfp
+gSp
 vBV
 rqo
 rqo
@@ -43010,8 +43134,8 @@ rqo
 rqo
 rqo
 kBe
-ark
-rfJ
+mDP
+uRf
 dfp
 sBq
 pfx
@@ -43267,7 +43391,7 @@ rqo
 rqo
 rqo
 kBe
-eXo
+dGo
 jdP
 kBe
 cea
@@ -43525,12 +43649,12 @@ rqo
 rqo
 kBe
 iBg
-lrl
+tsl
 kBe
 eMO
 sBq
 sBq
-dfp
+gSp
 vBV
 rqo
 rqo
@@ -43784,9 +43908,9 @@ kBe
 euP
 ylA
 kBe
-tsl
-gPv
 eVF
+gPv
+ntd
 ovA
 vBV
 rqo
@@ -44039,9 +44163,9 @@ rqo
 rqo
 kBe
 kBe
+xTH
 kBe
-kBe
-kBe
+gSp
 kBe
 kBe
 kBe
@@ -44296,9 +44420,9 @@ rqo
 rqo
 rqo
 rqo
-rqo
-rqo
-rqo
+hsB
+iao
+dJR
 rqo
 rqo
 rqo
@@ -44554,7 +44678,7 @@ rqo
 rqo
 rqo
 rqo
-rqo
+gbF
 rqo
 rqo
 rqo
@@ -44811,21 +44935,21 @@ rqo
 rqo
 tjH
 tjH
+sHT
 tjH
 tjH
 tjH
 tjH
 tjH
+tjH
+tjH
+ppY
+eev
 tjH
 tjH
 tjH
 eev
-eev
-tjH
-tjH
-eev
-tjH
-tjH
+rsS
 tjH
 rqo
 rqo
@@ -45067,21 +45191,21 @@ rqo
 rqo
 rqo
 tjH
-gSp
-lTF
+mVD
+fFW
 rMS
 oPS
-tjH
+hco
 jnY
-iao
+bAd
 fqt
-tjH
-dGo
-fFW
 tjH
 gIJ
 fFW
-oZi
+ktO
+tjH
+ogO
+fFW
 vYG
 tjH
 rqo
@@ -45324,19 +45448,19 @@ rqo
 rqo
 rqo
 tjH
-mDP
+mVD
 xjv
-gUg
+lTF
 fDm
-tjH
-oPb
-gbF
-uRf
+fFW
+fFW
+fFW
+fFW
 tjH
 qTI
 fFW
-tKF
 fFW
+sHT
 fFW
 fFW
 vcm
@@ -45582,19 +45706,19 @@ rqo
 rqo
 tjH
 tjH
-tjH
 cnR
 tjH
 tjH
+tjH
 nUl
-gbF
-dJR
+fFW
+fFW
 tjH
 gLx
 fFW
+dEQ
 tjH
-sHT
-bAd
+oPb
 xiJ
 lwW
 tjH
@@ -45840,15 +45964,15 @@ rqo
 tjH
 bLO
 gUg
-gUg
 pJR
+obj
 tjH
-tjH
-gXo
-tjH
-tjH
-fKY
+oZi
 fFW
+fFW
+fFW
+fFW
+tQo
 tjH
 tjH
 tjH
@@ -46096,16 +46220,16 @@ rqo
 rqo
 mcX
 uXH
+ipq
 gUg
 pfh
-gUg
-bTt
+tjH
+aiF
 fFW
 fFW
 fFW
 fFW
-ipq
-fFW
+gXo
 tjH
 lUr
 fFW
@@ -46354,13 +46478,13 @@ rqo
 tjH
 dnT
 gUg
-obj
+gUg
 gUg
 bTt
 fFW
 sqv
 fFW
-fFW
+fKY
 lGk
 tjH
 tjH
@@ -46611,12 +46735,12 @@ rqo
 orb
 qba
 gUg
-ogO
+gUg
 gUg
 tjH
 tjH
 tjH
-hco
+tKF
 tjH
 tjH
 tjH
@@ -47128,7 +47252,7 @@ gIf
 gIf
 gIf
 gIf
-gIf
+heU
 njp
 fFW
 fFW

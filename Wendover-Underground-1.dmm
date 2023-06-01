@@ -165,6 +165,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
+"aiY" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/bag/casings,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
 "ajt" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -3412,6 +3417,9 @@
 	icon_state = "greendirtyfull"
 	},
 /area/f13/enclave)
+"dpH" = (
+/turf/closed/indestructible/f13/vaultwall,
+/area/f13/caves)
 "dqs" = (
 /obj/effect/overlay/shadow,
 /turf/open/indestructible/ground/outside/sidewalk/wastelandedge/left,
@@ -16999,6 +17007,9 @@
 	sunlight_state = 0
 	},
 /area/f13/enclave)
+"pcB" = (
+/turf/open/floor/carpet/green,
+/area/f13/caves)
 "pcP" = (
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
@@ -18992,6 +19003,13 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"qJE" = (
+/obj/structure/stairs/east,
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
 "qJT" = (
 /obj/item/flashlight/floodlight{
 	on = 1;
@@ -20194,6 +20212,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
+"rIs" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
 "rIF" = (
 /obj/item/melee/onehanded/knife/switchblade,
 /turf/open/indestructible/ground/outside/road{
@@ -32467,12 +32491,12 @@ nzD
 mqE
 iDi
 sKe
-kZK
+pcB
 sKe
 kwc
 dRK
 sKe
-kZK
+pcB
 sKe
 hVh
 orm
@@ -32724,12 +32748,12 @@ nzD
 mqE
 xNj
 sKe
-kZK
+pcB
 sKe
 sKe
 sKe
 sKe
-kZK
+pcB
 sKe
 fag
 orm
@@ -32981,12 +33005,12 @@ eyF
 mqE
 nzD
 sKe
-kZK
-kZK
-kZK
-kZK
-kZK
-kZK
+pcB
+pcB
+pcB
+pcB
+pcB
+pcB
 sKe
 hVh
 uVu
@@ -33238,12 +33262,12 @@ iDi
 obM
 iDi
 sKe
-kZK
-kZK
-kZK
-kZK
-kZK
-kZK
+pcB
+pcB
+pcB
+pcB
+pcB
+pcB
 aXL
 soA
 oDy
@@ -33495,12 +33519,12 @@ taL
 ehz
 eAS
 sKe
-kZK
-kZK
-kZK
-kZK
-kZK
-kZK
+pcB
+pcB
+pcB
+pcB
+pcB
+pcB
 sKe
 hEo
 orm
@@ -33752,12 +33776,12 @@ kuZ
 jra
 kuZ
 sKe
-kZK
-kZK
-kZK
-kZK
-kZK
-kZK
+pcB
+pcB
+pcB
+pcB
+pcB
+pcB
 sKe
 hVh
 xbl
@@ -34011,10 +34035,10 @@ sKe
 sKe
 sKe
 sKe
-kZK
-kZK
-kZK
-kZK
+pcB
+rIs
+qJE
+pcB
 sKe
 mNI
 ewG
@@ -34269,9 +34293,9 @@ qiX
 hKz
 sKe
 sKe
-kZK
-kZK
-kZK
+dpH
+dpH
+dpH
 aXL
 aXL
 kJx
@@ -54083,7 +54107,7 @@ uCY
 wun
 pbI
 yaq
-auJ
+aiY
 tpA
 pbI
 rwP

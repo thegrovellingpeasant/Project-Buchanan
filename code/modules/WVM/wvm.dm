@@ -651,12 +651,11 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		)
 
 /obj/machinery/mineral/wasteland_vendor/followerterminal
-	name = "Follower's Resupply Terminal"
+	name = "Medical supply Terminal"
 	desc = "a vending machine stocked with imported medical supplies. The pricing is to cover the cost of shipping and handling."
 	icon_state = "med_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
-		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
 		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
 		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200),
 		new /datum/data/wasteland_equipment("Metamaterial Beaker",			/obj/item/reagent_containers/glass/beaker/meta,						500),

@@ -42,6 +42,13 @@
 	oreAmount = 12
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "skull"
+	var/mutable_appearance/mastodonoverlay
+
+/obj/structure/statue/bone/skull/Initialize()
+	. = ..()
+	mastodonoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(mastodonoverlay)
+
 
 /obj/structure/statue/bone/skull/half
 	desc = "The gaping maw of a dead, titanic monster. This one is cracked in half."
