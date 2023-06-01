@@ -15,6 +15,7 @@
 	friendly_verb_continuous = "stares down"
 	friendly_verb_simple = "stare down"
 	speak_emote = list("roars")
+	faction = list("yaoguai")
 	armour_penetration = 0.7
 	melee_damage_lower = 55
 	melee_damage_upper = 55
@@ -23,6 +24,7 @@
 	ranged_cooldown_time = 10
 	ranged = 1
 	pixel_x = -32
+	
 	gender = MALE
 	wander = FALSE
 	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid)

@@ -368,6 +368,34 @@
 	},
 /turf/open/water/shore/north,
 /area/f13/wasteland)
+"afO" = (
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	pixel_y = -15;
+	color = "#4a3931"
+	},
+/obj/structure/stone_tile/slab{
+	pixel_y = -17;
+	pixel_x = 2;
+	density = 1
+	},
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.08;
+	pixel_y = -15;
+	color = "#4a3931"
+	},
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 8;
+	layer = 4.1
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = -13;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "afS" = (
 /turf/closed/indestructible/f13/matrix/wendover{
 	icon_state = "evaporationpond4"
@@ -2479,6 +2507,14 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/tunnel)
+"aLs" = (
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier2,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "aLu" = (
 /obj/structure/railing/wood{
 	dir = 8;
@@ -4900,6 +4936,11 @@
 	name = "floor"
 	},
 /area/f13/building)
+"bwN" = (
+/obj/item/blanket/rug/blue,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "bwO" = (
 /obj/structure/simple_door/metal/store{
 	name = "DMV"
@@ -6083,19 +6124,6 @@
 "bPi" = (
 /turf/open/indestructible/ground/outside/saltflats/blueinnerbottomright,
 /area/f13/wasteland)
-"bPq" = (
-/obj/structure/table/wood/ruined,
-/obj/item/reagent_containers/glass/mortar{
-	pixel_y = 6;
-	pixel_x = -4
-	},
-/obj/item/pestle{
-	pixel_y = 1;
-	pixel_x = 5;
-	layer = 3.01
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "bPH" = (
 /obj/structure/barricade/sandbags{
 	canSmoothWith = list(/obj/structure/barricade/sandbags,/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/obj/structure/barricade/security,/turf/closed/wall/f13/wood/house)
@@ -8197,6 +8225,13 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/altcrackedbot,
 /area/f13/wasteland)
+"cvE" = (
+/obj/structure/sink/puddle{
+	plane = -15
+	},
+/obj/item/reagent_containers/glass/bucket/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "cvG" = (
 /obj/effect/landmark/start/f13/secretary,
 /obj/structure/bed/wooden{
@@ -12964,7 +12999,6 @@
 "dIZ" = (
 /obj/item/kirbyplants/dead,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
 "dJe" = (
@@ -16380,6 +16414,27 @@
 	},
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
+"eEk" = (
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	pixel_y = -15;
+	color = "#4a3931"
+	},
+/obj/structure/stone_tile/slab{
+	pixel_y = -16;
+	pixel_x = 2;
+	density = 1
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia{
+	pixel_y = -16;
+	layer = 2.99
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "eEm" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -16904,6 +16959,10 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
+"eNB" = (
+/obj/item/pickaxe/drill,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "eND" = (
 /mob/living/simple_animal/hostile/supermutant{
 	icon_state = "hulk_special_ncr";
@@ -16929,9 +16988,24 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/tunnel)
 "eOt" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/turf/open/indestructible/ground/outside/dirt/north,
-/area/f13/wasteland)
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.09;
+	pixel_y = -7;
+	color = "#4a3931"
+	},
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.11;
+	pixel_y = -12;
+	color = "#4a3931"
+	},
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 8;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "eOv" = (
 /obj/structure/fence{
 	icon_state = "post";
@@ -17882,6 +17956,21 @@
 	dir = 5
 	},
 /area/f13/wasteland)
+"fam" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 5
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -6
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/spawner/lootdrop/f13/attachments,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "fav" = (
 /obj/machinery/workbench/bottler{
 	pixel_y = 5;
@@ -21738,21 +21827,6 @@
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
-"gcl" = (
-/obj/effect/decal/remains/human{
-	pixel_y = 5
-	},
-/obj/effect/decal/remains/human{
-	pixel_y = -4;
-	pixel_x = -6
-	},
-/obj/effect/decal/remains/human{
-	pixel_y = -6;
-	pixel_x = 6
-	},
-/obj/effect/spawner/lootdrop/f13/attachments,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "gcB" = (
 /obj/structure/chair/stool/retro/tan,
 /turf/open/indestructible/ground/outside/road{
@@ -24477,6 +24551,10 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"gNP" = (
+/obj/machinery/smartfridge/drying_rack,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "gOn" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -24688,6 +24766,14 @@
 	icon_state = "whitereddirty"
 	},
 /area/f13/followers)
+"gSF" = (
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
+	},
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "gSM" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/stack/f13Cash/ncr,
@@ -26541,6 +26627,12 @@
 	icon_state = "verticalrightborderright2"
 	},
 /area/f13/wasteland)
+"hvf" = (
+/obj/structure/legion_extractor{
+	pixel_y = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "hvi" = (
 /obj/item/reagent_containers/food/snacks/f13/giantantegg,
 /obj/effect/decal/cleanable/dirt/dust{
@@ -29299,7 +29391,6 @@
 /area/f13/caves)
 "ikE" = (
 /obj/structure/window/fulltile/wood/broken,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
 "ikN" = (
@@ -31235,12 +31326,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"iOp" = (
-/obj/structure/legion_extractor{
-	pixel_y = 2
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "iOq" = (
 /obj/structure/stairs/east{
 	pixel_y = 3;
@@ -32928,14 +33013,6 @@
 	dir = 1
 	},
 /obj/structure/destructible/tribal_torch,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"jiG" = (
-/obj/effect/decal/remains/human{
-	debris_result = list(/obj/item/pda);
-	drop_amount = 1
-	},
-/obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "jiS" = (
@@ -35663,9 +35740,19 @@
 /turf/open/floor/plating/tunnel/lit,
 /area/f13/building)
 "jUG" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/turf/closed/wall/f13/woodalt,
-/area/f13/building)
+/obj/effect/overlay/curb{
+	layer = 2.11;
+	plane = -4;
+	pixel_y = 2;
+	color = "#4a3931"
+	},
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.11;
+	color = "#4a3931"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "jUH" = (
 /obj/effect/overlay/baseball{
 	icon_state = "ballpark6";
@@ -39042,18 +39129,12 @@
 /turf/open/indestructible/ground/outside/saltflats/crackedcenteralt,
 /area/f13/tunnel)
 "kQC" = (
-/obj/structure/lattice/catwalk{
-	icon_state = "smooth";
-	dir = 1;
-	desc = null;
-	name = null;
-	icon = 'icons/turf/floors/junglechasm.dmi';
-	alpha = 0;
-	invisibility = 101;
-	canSmoothWith = list(/obj/structure/lattice/catwalk,/turf/open/chasm/jungle);
-	resistance_flags = 115
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
 	},
-/turf/open/chasm/jungle,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "kQE" = (
 /obj/structure/chair/booth{
@@ -44651,10 +44732,6 @@
 	icon_state = "rubblecorner"
 	},
 /area/f13/wasteland)
-"mBt" = (
-/obj/machinery/hydroponics/soil,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mBW" = (
 /obj/structure/filingcabinet/filingcabinet{
 	name = "A-M";
@@ -45232,7 +45309,6 @@
 	dir = 4;
 	layer = 4.25
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
 "mKg" = (
@@ -46463,6 +46539,19 @@
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
+"ncr" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines"
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "ncs" = (
 /turf/open/indestructible/ground/outside/roof/stairs/north,
 /area/f13/followers)
@@ -46757,6 +46846,16 @@
 /obj/structure/window/fulltile/house/broken,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/building)
+"ngi" = (
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.11;
+	color = "#4a3931"
+	},
+/obj/structure/stone_tile/slab,
+/obj/item/storage/belt/mining/primitive,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ngp" = (
 /obj/structure/fence{
 	icon_state = "post";
@@ -46941,6 +47040,14 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/blueleft,
 /area/f13/wasteland)
+"nhU" = (
+/obj/machinery/smartfridge/bottlerack/grownbin,
+/obj/item/storage/bag/plants,
+/obj/item/cultivator{
+	icon_state = "cultivator_tribal"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "nia" = (
 /obj/effect/overlay/shoreline/west,
 /obj/effect/overlay/shoreline/south,
@@ -48835,6 +48942,14 @@
 	},
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/wasteland)
+"nKP" = (
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "nKS" = (
 /obj/structure/junk/foundation{
 	dir = 6;
@@ -50547,13 +50662,6 @@
 /area/f13/building)
 "ojm" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/item/reagent_containers/food/drinks/shaker{
-	pixel_y = 6;
-	pixel_x = 1
-	},
-/obj/item/storage/box/drinkingglasses{
-	pixel_y = 6
-	},
 /obj/structure/railing{
 	layer = 4.25
 	},
@@ -51321,6 +51429,27 @@
 	icon_state = "transition3"
 	},
 /area/f13/wasteland)
+"ote" = (
+/obj/structure/stone_tile/slab{
+	pixel_x = -2
+	},
+/obj/effect/overlay/curb/east{
+	plane = -4;
+	color = "#4a3931";
+	layer = 2.1
+	},
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.11;
+	color = "#4a3931"
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier1{
+	loot = list(/obj/item/clothing/head/helmet/f13/wayfarer/shamanred,/obj/item/clothing/head/helmet/f13/wayfarer/shamanblue,/obj/item/clothing/head/helmet/f13/wayfarer/chief,/obj/item/clothing/head/helmet/f13/wayfarer/chief/green,/obj/item/clothing/head/helmet/f13/wayfarer/chief/red);
+	name = "tribal armor";
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "otm" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
@@ -56085,6 +56214,13 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/wasteland)
+"pJx" = (
+/obj/item/blanket/ruined,
+/mob/living/simple_animal/hostile/megafauna/yaoguai{
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "pJy" = (
 /obj/structure/curtain{
 	color = "#b8a482";
@@ -56152,19 +56288,6 @@
 	},
 /turf/open/indestructible/ground/outside/roadi80,
 /area/f13/wasteland)
-"pKw" = (
-/obj/structure/flora/grass/whitelegvine{
-	icon_state = "Med1";
-	layer = 4.26;
-	name = "vines"
-	},
-/obj/structure/flora/grass/whitelegvine{
-	icon_state = "Med1";
-	layer = 4.26;
-	name = "vines"
-	},
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
 "pKz" = (
 /obj/effect/overlay/whitelegpainting/two{
 	dir = 10;
@@ -57784,6 +57907,13 @@
 	name = "cheezy poofs"
 	},
 /obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qgv" = (
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "qgG" = (
@@ -60814,9 +60944,9 @@
 	},
 /area/f13/wasteland)
 "qZh" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/item/clothing/mask/cigarette/pipe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "qZk" = (
 /obj/effect/overlay/shadow,
 /turf/open/indestructible/ground/outside/saltflats/crackedcornertopleft,
@@ -62447,6 +62577,10 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
+"rup" = (
+/obj/structure/chair/stool/retro,
+/turf/open/floor/carpet/green,
+/area/f13/casino)
 "rux" = (
 /obj/structure/car/derelict{
 	dir = 5;
@@ -63469,13 +63603,6 @@
 	name = "floor"
 	},
 /area/f13/building)
-"rId" = (
-/obj/effect/decal/remains/human{
-	debris_result = list(/obj/item/pda);
-	drop_amount = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "rIt" = (
 /obj/effect/decal/marking{
 	icon_state = "stateborderNV";
@@ -66250,10 +66377,7 @@
 	color = "#734d39"
 	},
 /obj/machinery/light/invisible,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	pixel_y = 4;
-	pixel_x = 6
-	},
+/obj/machinery/reagentgrinder,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "suj" = (
@@ -66922,7 +67046,10 @@
 /turf/open/indestructible/ground/outside/graveldirt/pink,
 /area/f13/wasteland)
 "sED" = (
-/obj/item/flashlight,
+/obj/item/flashlight{
+	dir = 8;
+	on = 1
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sEI" = (
@@ -68976,10 +69103,6 @@
 /obj/item/binoculars,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/wasteland)
-"tkZ" = (
-/obj/item/blanket/rug/blue,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "tlw" = (
 /turf/open/indestructible/ground/outside/saltflats/crackedinnertopright,
 /area/f13/wasteland)
@@ -71091,6 +71214,11 @@
 	},
 /turf/open/indestructible/ground/outside/saltflats/old,
 /area/f13/wasteland)
+"tSb" = (
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/structure/table/wood/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "tSv" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -72946,14 +73074,6 @@
 	},
 /turf/open/floor/plasteel/rockvault/lit,
 /area/f13/building)
-"uot" = (
-/obj/machinery/smartfridge/bottlerack/grownbin,
-/obj/item/storage/bag/plants,
-/obj/item/cultivator{
-	icon_state = "cultivator_tribal"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "uow" = (
 /obj/machinery/door/window/westleft{
 	dir = 2;
@@ -76245,6 +76365,12 @@
 /obj/structure/wreck/trash/two_tire,
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
+"vnH" = (
+/obj/item/reagent_containers/food/drinks/trophy/turquoise{
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "vnK" = (
 /obj/structure/table/wood{
 	icon = 'icons/obj/hand_of_god_structures.dmi';
@@ -77032,6 +77158,10 @@
 	sunlight_state = 0
 	},
 /area/f13/casino)
+"vza" = (
+/obj/machinery/hydroponics/soil,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "vzf" = (
 /obj/machinery/jukebox,
 /obj/machinery/light,
@@ -77799,6 +77929,10 @@
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vJA" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vJG" = (
@@ -78780,6 +78914,15 @@
 /obj/structure/table/wood/ruined,
 /obj/item/stack/sheet/animalhide/generic,
 /obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vWV" = (
+/obj/structure/nest/mob/geckofire{
+	icon_state = "firegekko_dead";
+	layer = 2.1;
+	pixel_x = 3
+	},
+/obj/structure/glowshroom,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vWY" = (
@@ -80419,10 +80562,27 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "wrz" = (
-/obj/structure/fence/wooden/side,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
-/turf/open/indestructible/ground/outside/dirt/dark,
-/area/f13/building)
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.1;
+	pixel_y = -2;
+	color = "#4a3931"
+	},
+/obj/effect/overlay/curb/north{
+	plane = -4;
+	layer = 2.11;
+	color = "#4a3931"
+	},
+/obj/structure/stone_tile/slab{
+	pixel_x = 2
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier1{
+	loot = list(/obj/item/clothing/suit/armor/f13/tribe_heavy_armor,/obj/item/clothing/suit/armored/heavy/wardenplate,/obj/item/clothing/suit/f13/tribal/heavy/bone,/obj/item/clothing/suit/f13/tribal/heavy/westernwayfarer);
+	name = "tribal armor";
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wrB" = (
 /obj/effect/overlay/curb/east{
 	layer = 2.91;
@@ -81318,7 +81478,6 @@
 /area/f13/tunnel)
 "wDi" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/machinery/reagentgrinder,
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 4;
 	pixel_y = 4
@@ -82110,6 +82269,27 @@
 	sunlight_state = 0
 	},
 /area/f13/building)
+"wPr" = (
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	pixel_y = -12;
+	color = "#4a3931"
+	},
+/obj/structure/stone_tile/slab{
+	pixel_y = -15;
+	pixel_x = 2;
+	density = 1
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = 9;
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wPu" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "crackedconcrete";
@@ -83055,6 +83235,19 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/carpet/royalblack/nosmooth,
 /area/f13/casinofloor)
+"xbl" = (
+/obj/structure/table/wood/ruined,
+/obj/item/reagent_containers/glass/mortar{
+	pixel_y = 6;
+	pixel_x = -4
+	},
+/obj/item/pestle{
+	pixel_y = 1;
+	pixel_x = 5;
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "xbn" = (
 /obj/effect/overlay/curb/west{
 	plane = -4;
@@ -84420,6 +84613,16 @@
 /obj/item/blanket/rug/blue,
 /turf/open/indestructible/ground/outside/saltflats/crackedcenter,
 /area/f13/potashfarm)
+"xup" = (
+/obj/structure/lattice/catwalk/invisible,
+/obj/effect/decal/cleanable/blood/footprints{
+	icon_state = "bloodclaw1";
+	dir = 1;
+	pixel_y = 9;
+	color = "#FFFFFF"
+	},
+/turf/open/chasm/jungle,
+/area/f13/caves)
 "xux" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "gib3"
@@ -84991,13 +85194,6 @@
 	},
 /turf/open/indestructible/ground/outside/lifelessdesert,
 /area/f13/wasteland)
-"xCH" = (
-/obj/structure/sink/puddle{
-	plane = -15
-	},
-/obj/item/reagent_containers/glass/bucket/wood,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xCN" = (
 /obj/structure/closet/crate/large,
 /obj/item/brahmincollar,
@@ -93932,7 +94128,7 @@ mZB
 lBx
 cxv
 cxv
-cxv
+rup
 cxv
 sUN
 mzb
@@ -119802,7 +119998,7 @@ jur
 jur
 jur
 jur
-qZh
+jur
 jur
 rfz
 spg
@@ -120060,7 +120256,7 @@ jur
 jur
 jur
 jur
-qZh
+jur
 rfz
 spg
 iNp
@@ -120318,7 +120514,7 @@ jur
 jur
 jur
 jur
-jUG
+rfz
 spg
 iwO
 spg
@@ -120575,7 +120771,7 @@ jur
 jur
 jur
 jur
-jUG
+rfz
 kUx
 mlI
 yhg
@@ -121085,14 +121281,14 @@ plX
 plX
 xVb
 aHi
-qZh
-qZh
+jur
+jur
 jur
 jur
 rfz
 spg
 nIa
-wrz
+hlm
 spg
 spg
 cUH
@@ -121104,7 +121300,7 @@ jur
 dch
 mKD
 mKD
-eOt
+rkt
 jur
 eue
 dIZ
@@ -121312,7 +121508,7 @@ ppi
 ppi
 ppi
 pQA
-jql
+vWV
 rBV
 rBV
 rBV
@@ -121344,19 +121540,19 @@ xVb
 aHi
 jur
 cOd
-qZh
+jur
 jur
 rfz
-jUG
 rfz
-jUG
+rfz
+rfz
 ikE
 ikE
 rfz
 rfz
 rfz
 rfz
-qZh
+jur
 jur
 vQZ
 fNt
@@ -121590,7 +121786,7 @@ ppi
 bdC
 cLk
 rBV
-ppi
+tmy
 ppi
 ppi
 ppi
@@ -121604,9 +121800,9 @@ jur
 jur
 jur
 jur
-qZh
-qZh
-qZh
+jur
+jur
+jur
 jur
 jur
 wEL
@@ -121849,8 +122045,8 @@ rBV
 rBV
 rBV
 rBV
-ppi
-ppi
+tmy
+tmy
 ppi
 ppi
 plX
@@ -122103,11 +122299,11 @@ rBV
 rBV
 ptx
 rBV
+iEa
 rBV
 rBV
 rBV
-rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -122357,15 +122553,15 @@ srv
 ppi
 rBV
 rBV
-rBV
+iEa
 rBV
 rBV
 rBV
 dAF
 rBV
 ptx
-ppi
-ppi
+tmy
+tmy
 plX
 plX
 xVb
@@ -122622,7 +122818,7 @@ rBV
 rBV
 rBV
 rBV
-ppi
+tmy
 plX
 myW
 wEc
@@ -122879,7 +123075,7 @@ hhQ
 rBV
 rBV
 rBV
-ppi
+tmy
 plX
 xVb
 ouP
@@ -123131,13 +123327,13 @@ rBV
 aOL
 nJA
 fvL
-rBV
+iEa
 fIj
 rBV
-rBV
+iEa
 rBV
 oMV
-plX
+mNh
 iEl
 aHi
 jur
@@ -123383,7 +123579,7 @@ rBV
 rBV
 rBV
 rBV
-rBV
+iEa
 rBV
 rBV
 rBV
@@ -123394,7 +123590,7 @@ rBV
 rBV
 rBV
 cfv
-plX
+mNh
 xYD
 aHi
 jur
@@ -123636,7 +123832,7 @@ oUJ
 ttH
 tmy
 pIz
-rBV
+iEa
 rBV
 rBV
 ptx
@@ -123651,7 +123847,7 @@ rBV
 rBV
 rBV
 rBV
-plX
+mNh
 xVb
 aHi
 jur
@@ -123908,7 +124104,7 @@ rBV
 rBV
 rBV
 rBV
-plX
+mNh
 xYD
 aHi
 jur
@@ -124165,7 +124361,7 @@ rBV
 rBV
 rBV
 rBV
-plX
+mNh
 xYD
 aHi
 qki
@@ -124422,7 +124618,7 @@ fRC
 rBV
 ptx
 rBV
-plX
+mNh
 xYD
 aHi
 qki
@@ -124679,7 +124875,7 @@ rBV
 rBV
 rBV
 rBV
-plX
+mNh
 xVb
 aHi
 qki
@@ -124891,7 +125087,7 @@ ydH
 iOH
 iOH
 ydH
-ydH
+xup
 qMX
 czA
 czA
@@ -124928,15 +125124,15 @@ srv
 ppi
 iFp
 rBV
+iEa
 rBV
 rBV
 rBV
 rBV
+iEa
 rBV
 rBV
-rBV
-rBV
-plX
+mNh
 iEl
 aHi
 qki
@@ -125192,7 +125388,7 @@ rBV
 rBV
 rBV
 rBV
-ppi
+tmy
 plX
 xYD
 aHi
@@ -125448,7 +125644,7 @@ rBV
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 xVb
@@ -125704,7 +125900,7 @@ urM
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -125959,9 +126155,9 @@ ppi
 vEN
 bIu
 rBV
-ptx
 rBV
-ppi
+rBV
+tmy
 ppi
 plX
 plX
@@ -126173,7 +126369,7 @@ lXz
 plX
 ydH
 ydH
-kQC
+ydH
 ydH
 iOH
 iOH
@@ -126216,9 +126412,9 @@ ppi
 ppi
 ppi
 rBV
-rBV
-ppi
-ppi
+ptx
+tmy
+tmy
 ppi
 plX
 myW
@@ -126474,7 +126670,7 @@ ppi
 ppi
 pfi
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -126731,7 +126927,7 @@ ppi
 rBV
 pfi
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -126985,10 +127181,10 @@ vau
 plX
 ppi
 ppi
-rBV
+wYo
 pfi
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -127245,7 +127441,7 @@ ppi
 bai
 wFY
 jBa
-ppi
+tmy
 ppi
 ppi
 plX
@@ -127502,7 +127698,7 @@ ppi
 pfi
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 plX
@@ -127759,7 +127955,7 @@ ppi
 pfi
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 myW
@@ -128015,8 +128211,8 @@ ppi
 bai
 wFY
 rBV
-ppi
-ppi
+tmy
+tmy
 ppi
 plX
 xYD
@@ -128271,8 +128467,8 @@ plX
 ppi
 wHv
 rBV
-rBV
-ppi
+wYo
+tmy
 ppi
 ppi
 plX
@@ -128529,7 +128725,7 @@ ppi
 nUk
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -128785,8 +128981,8 @@ plX
 ppi
 rBV
 rBV
-ppi
-ppi
+tmy
+tmy
 ppi
 plX
 plX
@@ -129031,7 +129227,7 @@ rBV
 rBV
 tmy
 ppi
-ppi
+plX
 pIz
 plX
 pkx
@@ -129039,10 +129235,10 @@ evU
 gAc
 plX
 plX
-ppi
+joN
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -129287,19 +129483,19 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-plX
-plX
-plX
-plX
 plX
 ppi
-joN
+ppi
+plX
+plX
+plX
+plX
+plX
 rBV
 rBV
-ppi
+rBV
+rBV
+tmy
 ppi
 ppi
 plX
@@ -129543,20 +129739,20 @@ ppi
 ppi
 ppi
 ppi
-ppi
-ppi
-ppi
 plX
 ppi
-ppi
-ppi
-ppi
-ppi
+rBV
+rBV
 ppi
 ppi
 rBV
-jBa
+rBV
+rBV
+rBV
 ppi
+wYo
+rBV
+tmy
 ppi
 plX
 plX
@@ -129799,21 +129995,21 @@ owi
 ppi
 ppi
 ppi
-ppi
-ppi
-ppi
-ppi
 plX
 ppi
-ppi
-ppi
+rBV
+rBV
+rBV
+rBV
+wYo
+rBV
 ppi
 ppi
 ppi
 ppi
 rBV
-rBV
-ppi
+jBa
+tmy
 ppi
 plX
 myW
@@ -130056,13 +130252,13 @@ ppi
 ppi
 plX
 plX
-plX
-plX
-plX
-plX
 ppi
+rBV
+rBV
 ppi
-ppi
+rBV
+rBV
+rBV
 rBV
 rBV
 ppi
@@ -130070,7 +130266,7 @@ ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 xYD
@@ -130314,9 +130510,9 @@ plX
 plX
 ppi
 ppi
-ppi
-ppi
-ppi
+rBV
+wYo
+tmy
 ppi
 ppi
 ppi
@@ -130325,8 +130521,8 @@ rBV
 rBV
 rBV
 rBV
-ppi
-ppi
+tmy
+tmy
 ppi
 ppi
 plX
@@ -130568,10 +130764,10 @@ tmy
 ppi
 ppi
 plX
-plX
 ppi
 ppi
-ppi
+rBV
+rBV
 ppi
 ppi
 kuK
@@ -130583,9 +130779,9 @@ jBa
 rBV
 rBV
 rBV
+tmy
 ppi
-ppi
-ppi
+tmy
 plX
 xYD
 aHi
@@ -130824,11 +131020,11 @@ iOH
 tmy
 ppi
 ppi
-ppi
 plX
 ppi
-ppi
-ppi
+rBV
+rBV
+tmy
 ppi
 rxb
 rxb
@@ -130837,12 +131033,12 @@ rBV
 rBV
 ppi
 rBV
+wYo
 rBV
 rBV
 rBV
 rBV
-rBV
-ppi
+tmy
 plX
 xVb
 aHi
@@ -131080,12 +131276,12 @@ iOH
 iOH
 tmy
 ppi
-ppi
-ppi
-ppi
-plX
 plX
 ppi
+ppi
+ppi
+rBV
+tmy
 ppi
 rxb
 rxb
@@ -131098,7 +131294,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 iEl
@@ -131337,14 +131533,14 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
 plX
 ppi
 ppi
-gcl
+ppi
+rBV
+tmy
+ppi
+fam
 rBV
 rBV
 ppi
@@ -131355,7 +131551,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 xYD
@@ -131594,26 +131790,26 @@ rBV
 rBV
 kQb
 tmy
-ppi
-ppi
-ppi
-ppi
-plX
 plX
 ppi
 ppi
 rBV
 rBV
 rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-rBV
+tmy
 ppi
-ppi
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+tmy
+tmy
 plX
 xYD
 aHi
@@ -131852,12 +132048,12 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-ppi
 plX
 ppi
+wYo
+rBV
+rBV
+tmy
 ppi
 ppi
 rBV
@@ -131870,7 +132066,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 plX
 xVb
 aHi
@@ -132109,15 +132305,15 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
 plX
-ppi
-ppi
-ppi
 rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+ppi
+ppi
 jBa
 rBV
 ppi
@@ -132127,7 +132323,7 @@ ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 plX
 xVb
 aHi
@@ -132366,25 +132562,25 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+tmy
+ppi
+rBV
+ppi
+rBV
+rBV
+ppi
+rBV
+rBV
 ppi
 ppi
 ppi
 ppi
 rBV
-rBV
-ppi
-ppi
-ppi
 ppi
 rBV
-ppi
-rBV
-ppi
+tmy
 plX
 xYD
 aHi
@@ -132623,25 +132819,25 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
-ppi
-ppi
 rBV
-rBV
-rBV
+tmy
+wYo
 rBV
 ppi
 ppi
 rBV
 rBV
+rBV
+rBV
+rBV
 ppi
 ppi
+rBV
+rBV
 ppi
+ppi
+tmy
 plX
 xVb
 aHi
@@ -132880,24 +133076,24 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+tmy
+ppi
+rBV
+rBV
+ppi
+ppi
+ppi
+wYo
+rBV
+rBV
 ppi
 ppi
 ppi
 rBV
 rBV
-rBV
-ppi
-ppi
-ppi
-rBV
-rBV
-ppi
+tmy
 ppi
 plX
 xYD
@@ -133137,12 +133333,12 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+tmy
+ppi
+rBV
+rBV
 ppi
 ppi
 ppi
@@ -133151,10 +133347,10 @@ rBV
 rBV
 ppi
 rBV
+wYo
 rBV
 rBV
-rBV
-ppi
+tmy
 ppi
 plX
 xVb
@@ -133394,23 +133590,23 @@ rBV
 rBV
 kQb
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+tmy
 ppi
 ppi
-ppi
-ppi
 rBV
 rBV
 rBV
 rBV
 rBV
 rBV
-ppi
+rBV
+rBV
+rBV
+rBV
+rBV
+tmy
 ppi
 ppi
 plX
@@ -133651,13 +133847,13 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+tmy
 ppi
+rBV
+rBV
+rBV
 ppi
 ppi
 rBV
@@ -133667,7 +133863,7 @@ ppi
 jBa
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -133908,13 +134104,13 @@ rBV
 rBV
 rBV
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
+rBV
+wYo
 ppi
+rBV
+qmH
+tmy
 ppi
 ppi
 ppi
@@ -133925,7 +134121,7 @@ rBV
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 xYD
@@ -134165,25 +134361,25 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
-ppi
+rBV
+rBV
+rBV
+rBV
+qgv
+tmy
 ppi
 ppi
 ppi
 ppi
 rBV
+wYo
+tmy
+ppi
+ppi
 rBV
-ppi
-ppi
-ppi
 rBV
-rBV
-ppi
+tmy
 plX
 xVb
 aHi
@@ -134422,25 +134618,25 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-ppi
-plX
 plX
 ppi
 ppi
+rBV
+rBV
+plX
+ppi
+ppi
 ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 plX
 xYD
 aHi
@@ -134678,11 +134874,11 @@ rBV
 rBV
 tmy
 ppi
+plX
 ppi
 ppi
-ppi
-ppi
-ppi
+rBV
+rBV
 plX
 ppi
 ppi
@@ -134935,15 +135131,15 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
 ppi
 ppi
-ppi
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
 ppi
 ppi
 ppi
@@ -135191,23 +135387,23 @@ rBV
 rBV
 tmy
 ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
 plX
 plX
 ppi
 ppi
 ppi
-rBV
-rBV
-rBV
-rBV
 ppi
+ppi
+rBV
+wYo
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+rBV
+tmy
 ppi
 ppi
 ppi
@@ -135446,25 +135642,25 @@ rBV
 rBV
 qSi
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
+plX
+plX
 plX
 ppi
 ppi
+plX
+plX
+plX
+plX
+plX
+plX
+ppi
 ppi
 rBV
 rBV
+wYo
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -135703,16 +135899,16 @@ lDH
 tmy
 tmy
 tmy
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
-ppi
+plX
+plX
+plX
+plX
+plX
+plX
+plX
+plX
+plX
+plX
 plX
 plX
 ppi
@@ -135721,7 +135917,7 @@ ppi
 ppi
 rBV
 jBa
-ppi
+tmy
 ppi
 ppi
 plX
@@ -135978,7 +136174,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -136234,7 +136430,7 @@ rxb
 ppi
 ppi
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -136492,7 +136688,7 @@ rxb
 ppi
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 myW
@@ -136749,7 +136945,7 @@ rBV
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 xYD
@@ -137004,8 +137200,8 @@ ppi
 rBV
 pKj
 rBV
-rBV
-ppi
+wYo
+tmy
 ppi
 ppi
 plX
@@ -137261,8 +137457,8 @@ ppi
 rBV
 rBV
 rBV
-rId
-ppi
+qgv
+tmy
 ppi
 plX
 plX
@@ -137519,7 +137715,7 @@ jBa
 rBV
 rBV
 pQA
-ppi
+tmy
 ppi
 plX
 myW
@@ -137775,8 +137971,8 @@ ppi
 rBV
 rBV
 rBV
-rId
-ppi
+qgv
+tmy
 ppi
 plX
 xYD
@@ -138032,7 +138228,7 @@ ppi
 rBV
 ppi
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -138289,7 +138485,7 @@ ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -138543,9 +138739,9 @@ ppi
 ppi
 plX
 ppi
+wYo
 rBV
-rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -138803,7 +138999,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 plX
 plX
 myW
@@ -139050,11 +139246,11 @@ ppi
 ppi
 ppi
 ppi
-plX
-plX
-plX
-plX
-plX
+pIz
+pIz
+pIz
+pIz
+pIz
 plX
 ppi
 ppi
@@ -139300,23 +139496,23 @@ tmy
 ppi
 ppi
 ppi
-plX
-plX
-plX
-plX
-plX
-plX
-plX
+pIz
+pIz
+pIz
+pIz
+pIz
+pIz
+pIz
 rBV
+wYo
 rBV
-rBV
-rBV
-plX
+fRf
+mNh
 ppi
 ppi
 rBV
 rBV
-plX
+mNh
 plX
 myW
 wEc
@@ -139556,19 +139752,19 @@ dJQ
 tmy
 ppi
 ppi
-plX
-plX
+pIz
+pIz
+tzJ
+oig
+afO
+eEk
+wPr
+eOt
+qgv
 rBV
 rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-plX
-plX
+mNh
+pIz
 ppi
 rBV
 rBV
@@ -139811,8 +140007,11 @@ lAQ
 oUJ
 vEN
 tmy
-ppi
-plX
+pIz
+pIz
+tzJ
+kQC
+wYo
 rBV
 rBV
 rBV
@@ -139820,11 +140019,8 @@ rBV
 rBV
 rBV
 rBV
-rBV
-rBV
-rBV
-plX
-plX
+mNh
+pIz
 ppi
 rBV
 rBV
@@ -140068,19 +140264,19 @@ qSw
 oUJ
 oUJ
 tmy
-plX
-plX
-rBV
-rBV
-rxb
-rBV
+pIz
+pIz
+nKP
 rBV
 rBV
 rBV
 rBV
 rBV
+qgv
 rBV
-plX
+rBV
+rBV
+mNh
 ppi
 rBV
 rBV
@@ -140325,7 +140521,8 @@ lAQ
 gHa
 xzX
 tmy
-plX
+pIz
+gSF
 rBV
 rBV
 rxb
@@ -140334,10 +140531,9 @@ rxb
 rBV
 rBV
 rBV
-rBV
-rBV
-plX
-plX
+wYo
+mNh
+pIz
 ppi
 rBV
 ppi
@@ -140582,18 +140778,18 @@ lAQ
 bLl
 fVy
 tmy
-plX
+pIz
+tzJ
 rBV
 rBV
-rBV
+rxb
+pJx
 rxb
 rBV
 rBV
 rBV
 rBV
-rBV
-rBV
-plX
+mNh
 ppi
 rBV
 rBV
@@ -140839,20 +141035,20 @@ kqA
 acn
 acn
 tmy
-plX
+pIz
+gEe
 rBV
 rBV
+rxb
+rxb
+rxb
 rBV
 rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-plX
+qgv
+mNh
 ppi
 ppi
-rBV
+wYo
 rBV
 ppi
 plX
@@ -141096,16 +141292,16 @@ rBV
 rBV
 kQb
 tmy
-plX
+pIz
+wrz
+jUG
+rBV
+rBV
+wYo
 rBV
 rBV
 rBV
-rBV
-rBV
-rBV
-rBV
-rBV
-plX
+mNh
 ppi
 ppi
 ppi
@@ -141353,11 +141549,11 @@ rBV
 rBV
 rBV
 tmy
-plX
+pIz
+ngi
+jUG
 rBV
-rBV
-rBV
-rBV
+qgv
 rBV
 rBV
 rBV
@@ -141610,23 +141806,23 @@ rBV
 rkf
 sVF
 tmy
-plX
+pIz
+ote
+jUG
 rBV
 rBV
 rBV
-rBV
-rBV
-plX
-rBV
+pIz
+wYo
 rBV
 rBV
 rBV
 ppi
 rBV
-ppi
+rBV
 ppi
 plX
-nUU
+myW
 wEc
 aHi
 jur
@@ -141867,21 +142063,21 @@ cJI
 rBV
 scA
 tmy
-plX
+pIz
+gEe
+wYo
 rBV
-rBV
-rBV
-rBV
-plX
+qgv
+mNh
 plX
 ppi
 rBV
 rBV
+wYo
+ppi
+ppi
 rBV
-ppi
-ppi
-ppi
-plX
+mNh
 plX
 xYD
 ouP
@@ -142124,21 +142320,21 @@ rBV
 rBV
 ppi
 ppi
-plX
+pIz
+gNP
 rBV
 rBV
-rBV
-plX
+mNh
 plX
 ppi
 ppi
 jBa
 rBV
-rBV
+ppi
 ppi
 rBV
-ppi
-plX
+rBV
+mNh
 myW
 wEc
 aHi
@@ -142381,10 +142577,10 @@ ppi
 ppi
 ppi
 ppi
-plX
+pIz
+qZh
 rBV
-rBV
-plX
+mNh
 plX
 ppi
 ppi
@@ -142394,7 +142590,7 @@ rBV
 rBV
 rBV
 rBV
-plX
+mNh
 plX
 xYD
 ouP
@@ -142637,10 +142833,10 @@ ppi
 ppi
 ppi
 ppi
-ppi
+pIz
 rBV
 rBV
-plX
+mNh
 plX
 ppi
 ppi
@@ -142894,15 +143090,15 @@ ppi
 ppi
 ppi
 ppi
-plX
-ppi
-plX
+pIz
+fRf
+mNh
 plX
 ppi
 ppi
 rBV
 rBV
-rBV
+ppi
 ppi
 rBV
 rBV
@@ -143151,16 +143347,16 @@ ppi
 ppi
 ppi
 ppi
+pIz
+pIz
 plX
-plX
-plX
+ppi
+ppi
+wYo
+rBV
 ppi
 ppi
 rBV
-rBV
-rBV
-ppi
-ppi
 rBV
 ppi
 plX
@@ -143416,9 +143612,9 @@ ppi
 rBV
 rBV
 ppi
-ppi
-ppi
-plX
+rBV
+rBV
+mNh
 plX
 plX
 myW
@@ -143672,10 +143868,10 @@ ppi
 ppi
 ppi
 rBV
-ppi
-ppi
-plX
-plX
+rBV
+rBV
+mNh
+mNh
 myW
 xdl
 wEc
@@ -143929,7 +144125,7 @@ ppi
 rBV
 mdf
 rBV
-ppi
+tmy
 ppi
 plX
 myW
@@ -144179,13 +144375,13 @@ plX
 ppi
 ppi
 ppi
-iOp
-xCH
+hvf
+cvE
 ppi
 bAJ
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 plX
@@ -144435,14 +144631,14 @@ plX
 plX
 ppi
 ppi
-bPq
+xbl
 rBV
 rBV
 bIu
 rBV
 rBV
-rBV
-ppi
+wYo
+tmy
 ppi
 plX
 myW
@@ -144692,14 +144888,14 @@ plX
 ppi
 ppi
 ppi
-uot
+nhU
 rBV
-tkZ
+bwN
 ppi
 rBV
 rBV
 rBV
-ppi
+tmy
 ppi
 plX
 wEc
@@ -145204,17 +145400,17 @@ ppi
 plX
 plX
 ppi
-mBt
-mBt
-mBt
+vza
+vza
+vza
 ppi
 ppi
 rBV
 rBV
 rBV
+tmy
 ppi
-ppi
-plX
+pIz
 plX
 xYD
 had
@@ -145467,8 +145663,8 @@ ppi
 ppi
 ppi
 rBV
+wYo
 rBV
-ppi
 ppi
 ppi
 plX
@@ -145724,8 +145920,8 @@ ppi
 ppi
 rBV
 rBV
-ppi
-ppi
+tmy
+rBV
 ppi
 plX
 plX
@@ -145980,7 +146176,7 @@ ppi
 ppi
 rBV
 rBV
-ppi
+tmy
 ppi
 ppi
 plX
@@ -146239,7 +146435,7 @@ rBV
 rBV
 rBV
 jBa
-plX
+mNh
 plX
 myW
 wEc
@@ -146492,11 +146688,11 @@ ppi
 rBV
 rBV
 bzY
+qgv
 rBV
 rBV
-rBV
-rBV
-plX
+vnH
+mNh
 myW
 wEc
 ouP
@@ -146747,12 +146943,12 @@ ppi
 ppi
 ppi
 rBV
+wYo
 rBV
 rBV
 rBV
-rBV
-rBV
-plX
+tSb
+mNh
 plX
 xYD
 ouP
@@ -147003,11 +147199,11 @@ ppi
 ppi
 ppi
 ppi
+eNB
 rBV
 rBV
 rBV
-rBV
-rBV
+tSb
 ppi
 plX
 myW
@@ -147260,7 +147456,7 @@ ppi
 ppi
 ppi
 ppi
-jiG
+aLs
 ptx
 rBV
 jBa
@@ -147776,8 +147972,8 @@ fTG
 rBV
 rBV
 rBV
-ppi
-plX
+rBV
+mNh
 plX
 myW
 wEc
@@ -148288,7 +148484,7 @@ fTG
 fTG
 rBV
 rBV
-pKw
+ncr
 fTG
 plX
 plX
@@ -149570,7 +149766,7 @@ ppi
 fTG
 rBV
 rBV
-rId
+qgv
 fTG
 plX
 plX
@@ -150080,7 +150276,7 @@ ppi
 ppi
 ppi
 fTG
-rId
+qgv
 rBV
 rBV
 fTG
@@ -150591,7 +150787,7 @@ rBV
 rBV
 rBV
 ppi
-rBV
+vJA
 rBV
 rBV
 duf

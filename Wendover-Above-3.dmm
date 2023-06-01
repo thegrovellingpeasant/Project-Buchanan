@@ -6061,10 +6061,7 @@
 /turf/open/indestructible/ground/outside/graveldirt/pink,
 /area/f13/wasteland)
 "dQP" = (
-/obj/structure/table/round{
-	pixel_x = -1;
-	pixel_y = -4
-	},
+/obj/structure/table/wood/fancy/black,
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
@@ -20671,10 +20668,7 @@
 	},
 /area/f13/wasteland)
 "nnd" = (
-/obj/structure/table/round{
-	pixel_x = -1;
-	pixel_y = -4
-	},
+/obj/structure/table/wood/fancy/black,
 /obj/structure/sign/painting/library{
 	pixel_x = 32
 	},
@@ -27841,13 +27835,6 @@
 	smooth = 0
 	},
 /area/f13/building)
-"rBM" = (
-/obj/structure/table/round{
-	pixel_x = -1;
-	pixel_y = -4
-	},
-/turf/open/floor/carpet/green,
-/area/f13/casino)
 "rBU" = (
 /turf/open/indestructible/ground/outside/road{
 	icon = 'icons/fallout/objects/wendover.dmi';
@@ -47765,7 +47752,7 @@ dQP
 jdp
 fFW
 wVT
-rBM
+pYx
 jdp
 fFW
 eFJ
