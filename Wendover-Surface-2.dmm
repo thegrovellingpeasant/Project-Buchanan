@@ -43241,11 +43241,13 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
 "meY" = (
-/obj/effect/overlay/shoreline/south{
-	dir = 1;
-	pixel_y = 0
+/obj/effect/overlay/gravel/edge{
+	dir = 4
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left"
+	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland)
 "mfo" = (
 /obj/structure/table/reinforced,
@@ -57311,6 +57313,20 @@
 	icon_state = "transition2"
 	},
 /area/f13/tunnel)
+"pYd" = (
+/obj/effect/overlay/gravel/edge/corner{
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/obj/effect/overlay/gravel/edge/corner{
+	dir = 1
+	},
+/obj/effect/overlay/shoreline/south{
+	dir = 1;
+	pixel_y = 0
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "pYv" = (
 /obj/machinery/hydroponics/soil/pot{
 	pixel_y = 6
@@ -145156,7 +145172,7 @@ rBV
 rBV
 lDH
 meY
-mKD
+pYd
 rkt
 jur
 heV
