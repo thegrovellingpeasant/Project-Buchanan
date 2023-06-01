@@ -56,7 +56,7 @@
 obj/vehicle/ridden/motorcycle/buggy/user_unbuckle_mob(mob/living/buckled_mob, mob/user)
 	if(user != buckled_mob)
 		visible_message("<span class='warning'>[user] starts to unbuckle [buckled_mob] from [src]!</span>")
-		if(do_after(user, 50, 0, required_mobility_flags = MOBILITY_RESIST) && !Moved())
+		if(do_after(user, 50, 1, target = buckled_mob, required_mobility_flags = MOBILITY_RESIST))
 			return ..()
 		else
 			visible_message("<span class='warning'>[user] fails to unbuckle [buckled_mob] from [src]!</span>")
