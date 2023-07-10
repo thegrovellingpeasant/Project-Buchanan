@@ -262,6 +262,37 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_TOWN = 1, RADIO_CHANNEL_RANGER = 1)
 
+
+/obj/item/encryptionkey/headset_salvatores
+	name = "Salvatores radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Salvatore channel, use :s."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_SALVATORES = 1)
+
+/obj/item/encryptionkey/headset_bishops
+	name = "Bishops radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Bishop channel, use :b."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_BISHOPS = 1)
+
+/obj/item/encryptionkey/headset_mordinos
+	name = "Mordinos radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Mordino channel, use :m."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_MORDINOS = 1)
+
+/obj/item/encryptionkey/headset_wrights
+	name = "Wrights radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Wright channel, use :w."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_WRIGHTS = 1)
+
+/obj/item/encryptionkey/headset_hotel
+	name = "Hotel radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Hotel channel, use :h."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_HOTEL = 1)
+
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_AI_PRIVATE = 1)
 

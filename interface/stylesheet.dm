@@ -73,6 +73,12 @@ em						{font-style: normal;	font-weight: bold;}
 .eightiesrradio			{color: #FF0000;}
 .wndradio				{color: #a280ba;}
 .montegobayradio		{color: #008000;}
+.salvatoresradio		{color: #FF99CC;}
+.bishopsradio			{color: #8CA2BD;}
+.mordinosradio			{color: #FF7566;}
+.wrightsradio			{color: #B3875E;}
+.hotelradio				{color: #F7EFCF;}
+.vangraffsradio			{color: #4da34e;}
 
 .yell					{					font-weight: bold;}
 

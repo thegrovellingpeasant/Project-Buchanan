@@ -89,6 +89,12 @@
 #define EXP_TYPE_LDS			"New Canaanites"
 #define EXP_TYPE_USPS			"United States Postal Service"
 #define EXP_TYPE_WENDOVER		"Wendover"
+#define EXP_TYPE_SALVATORES		"Salvatores"
+#define EXP_TYPE_MORDINOS		"Mordinos"
+#define EXP_TYPE_BISHOPS		"Bishops"
+#define EXP_TYPE_WRIGHTS		"Wrights"
+#define EXP_TYPE_CITIZENS		"Citizens"
+#define EXP_TYPE_VANGRAFFS		"Van Graffs"
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

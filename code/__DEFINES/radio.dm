@@ -112,6 +112,26 @@
 #define RADIO_KEY_MONTEGOBAY "i"
 #define RADIO_TOKEN_MONTEGOBAY ":i"
 
+#define RADIO_CHANNEL_SALVATORES "Salvatores"
+#define RADIO_KEY_SALVATORES "s"
+#define RADIO_TOKEN_SALVATORES ":s"
+
+#define RADIO_CHANNEL_BISHOPS "Bishops"
+#define RADIO_KEY_BISHOPS"b"
+#define RADIO_TOKEN_BISHOPS ":b"
+
+#define RADIO_CHANNEL_MORDINOS "Mordinos"
+#define RADIO_KEY_MORDINOS "m"
+#define RADIO_TOKEN_MORDINOS ":m"
+
+#define RADIO_CHANNEL_WRIGHTS "Wrights"
+#define RADIO_KEY_WRIGHTS "w"
+#define RADIO_TOKEN_WRIGHTS ":w"
+
+#define RADIO_CHANNEL_HOTEL "Hotel"
+#define RADIO_KEY_HOTEL "h"
+#define RADIO_TOKEN_HOTEL ":h"
+
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
@@ -142,6 +162,12 @@
 #define FREQ_EIGHTIESR 1385 // 80s red team
 #define FREQ_WND 1387 // radio station
 #define FREQ_MONTEGOBAY 1389 // montego bay
+#define FREQ_SALVATORES 1391 //Salvatores
+#define FREQ_BISHOPS 1393 //Bishops
+#define FREQ_MORDINOS 1395 //Mordinos
+#define FREQ_WRIGHTS 1397 //Wrights
+#define FREQ_HOTEL 1399 //Hotel
+#define FREQ_VANGRAFFS 1401 //Vangraffs
 
 #define FREQ_HOLOGRID_SOLUTION 1433
 #define FREQ_STATUS_DISPLAYS 1435

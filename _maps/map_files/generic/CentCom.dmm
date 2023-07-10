@@ -2113,7 +2113,6 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "gi" = (
@@ -2217,7 +2216,6 @@
 	pixel_y = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/red/lit,
 /area/f13/building)
 "gA" = (
@@ -2571,12 +2569,13 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/wasteland)
 "hE" = (
-/obj/structure/chair/f13chair1{
-	dir = 8
+/obj/structure/sign/poster/prewar/poster72{
+	pixel_y = 32
 	},
+/obj/structure/chair/bench,
 /obj/effect/landmark/deathmatch,
-/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "hF" = (
 /obj/structure/table/reinforced,
 /obj/item/circuitboard/computer/robco_terminal,
@@ -8953,17 +8952,10 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
 /area/f13/wasteland)
 "yp" = (
-/obj/effect/overlay/curb{
-	layer = 2.91;
-	pixel_y = -1
-	},
-/obj/structure/chair/bench{
-	icon_state = "bench";
-	dir = 8
-	},
+/obj/structure/chair/bench,
 /obj/effect/landmark/deathmatch,
-/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "yq" = (
 /obj/machinery/telecomms/relay/preset/mining,
 /obj/machinery/light/small{
@@ -9431,6 +9423,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/glass,
+/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "zU" = (
@@ -9439,6 +9432,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "zV" = (
@@ -12590,6 +12584,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/glass,
+/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "Jk" = (
@@ -13507,7 +13502,6 @@
 /obj/structure/chair/comfy/purple{
 	dir = 8
 	},
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
 "Mm" = (
@@ -13881,7 +13875,6 @@
 /area/f13/wasteland)
 "Nx" = (
 /obj/structure/bed/old,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
 "Ny" = (
@@ -14155,7 +14148,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
 /area/f13/building)
 "On" = (
@@ -14347,7 +14339,6 @@
 /obj/machinery/light/floor{
 	pixel_y = -7
 	},
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "OT" = (
@@ -14464,7 +14455,6 @@
 	icon_state = "booth_leftend"
 	},
 /obj/machinery/light/floor,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "Po" = (
@@ -15142,7 +15132,6 @@
 /area/f13/wasteland)
 "Ru" = (
 /obj/structure/bed/wooden,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Rv" = (
@@ -15860,7 +15849,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/lit,
 /area/f13/building)
 "TM" = (
@@ -16034,7 +16022,6 @@
 	can_buckle = 0;
 	layer = 2.98
 	},
-/obj/effect/landmark/deathmatch,
 /turf/open/floor/carpet/purple/lit,
 /area/f13/building)
 "Ul" = (
@@ -16235,14 +16222,6 @@
 /obj/effect/turf_decal/stripes/end,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/centcom/supplypod/loading/three)
-"UU" = (
-/obj/structure/chair/bench{
-	icon_state = "bench";
-	dir = 8
-	},
-/obj/effect/landmark/deathmatch,
-/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
-/area/f13/wasteland)
 "UV" = (
 /obj/structure/debris/v2,
 /turf/open/floor/carpet/royalblack/nosmooth/lit,
@@ -16858,12 +16837,13 @@
 /area/centcom/evac)
 "WT" = (
 /obj/docking_port/stationary{
-	dir = 2;
+	dir = 4;
 	dwidth = 25;
-	height = 50;
-	id = "emergency_awayNIXED";
+	height = 25;
+	id = "emergency_reno";
 	name = "CentCom Emergency Shuttle Dock";
-	width = 50
+	width = 25;
+	json_key = "emergency"
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/centcom/evac)
@@ -17380,9 +17360,10 @@
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
 "Yl" = (
+/obj/structure/chair/stool/retro/tan,
 /obj/effect/landmark/deathmatch,
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
-/area/f13/building)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "Ym" = (
 /obj/structure/chair/f13chair1{
 	dir = 4;
@@ -42342,7 +42323,7 @@ rb
 rb
 EF
 Yw
-yi
+hE
 Yv
 Yv
 Yv
@@ -45683,7 +45664,7 @@ rb
 rb
 EF
 Yw
-DW
+yp
 Yv
 Yv
 Yv
@@ -46721,7 +46702,7 @@ CN
 Yv
 Yv
 zd
-zd
+Yl
 zd
 Yv
 DY
@@ -58300,7 +58281,7 @@ sX
 UX
 Rk
 Qx
-Yl
+zh
 yC
 yC
 zh
@@ -62390,7 +62371,7 @@ DX
 QK
 QK
 Go
-yp
+Ac
 QK
 yS
 Ys
@@ -69084,7 +69065,7 @@ OJ
 Gh
 BN
 QK
-UU
+Kn
 DR
 Pi
 QK
@@ -71899,7 +71880,7 @@ QK
 QK
 QK
 DR
-yp
+Ac
 QK
 RK
 Ys
@@ -75237,7 +75218,7 @@ Od
 ZV
 Kb
 QK
-hE
+SW
 QK
 DX
 QK
@@ -78581,7 +78562,7 @@ zj
 QK
 QK
 DR
-yp
+Ac
 QK
 yS
 Ys

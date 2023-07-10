@@ -21,6 +21,11 @@
 	user.visible_message("<span class='suicide'>[user] begins to swipe [user.p_their()] neck with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
 
+/obj/item/card/slotmachine
+	name = "slot machine card"
+	desc = "Allows you to cash out the stored money inside of the slot machines."
+	icon_state = "budgetcard"
+
 /obj/item/card/data
 	name = "data card"
 	desc = "A plastic magstripe card for simple and speedy data storage and transfer. This one has a stripe running down the middle."
@@ -1358,3 +1363,225 @@
 	icon_state = "ranger"
 	access = list(ACCESS_SECURITY)
 	uses_overlays = FALSE
+
+
+///////////
+//RENO ID//
+///////////
+
+//bishops
+
+/obj/item/card/id/reno/bishops/ring/soldier
+	name = "bronze ring"
+	desc = "An old ring that is seemingly of some value."
+	icon_state = "bronze_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop bronze ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/officer
+	name = "silver ring"
+	desc = "A well crafted silver ring."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop silver ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/boss
+	name = "golden ring"
+	desc = "A ring that is seemingly made of gold. Seems valuable."
+	icon_state = "bishop_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop golden ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop employment papers"
+	access = list(ACCESS_BISHOPS)
+
+//mordinos
+
+/obj/item/card/id/reno/mordinos/ring/soldier
+	name = "bronze ring"
+	desc = "An old ring that is seemingly of some value."
+	icon_state = "bronze_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "mordino bronze ring"
+	access = list(ACCESS_MORDINOS)
+
+/obj/item/card/id/reno/mordinos/ring/officer
+	name = "silver ring"
+	desc = "A well crafted silver ring."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop silver ring"
+	access = list(ACCESS_MORDINOS)
+
+/obj/item/card/id/reno/mordinos/ring/boss
+	name = "golden ring"
+	desc = "A ring that is seemingly made of gold. Seems valuable."
+	icon_state = "mordino_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "mordino golden ring"
+	access = list(ACCESS_MORDINOS)
+
+/obj/item/card/id/reno/mordinos/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "mordino employment papers"
+	access = list(ACCESS_MORDINOS)
+
+/obj/item/card/id/reno/mordinos/papers/chemist
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "mordino employment papers"
+	access = list(ACCESS_MORDINOS)
+
+//salvatores
+
+/obj/item/card/id/reno/salvatores/ring/soldier
+	name = "bronze ring"
+	desc = "An old ring that is seemingly of some value."
+	icon_state = "bronze_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "salvatore bronze ring"
+	access = list(ACCESS_SALVATORES)
+
+/obj/item/card/id/reno/salvatores/ring/officer
+	name = "silver ring"
+	desc = "A well crafted silver ring."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "salvatore silver ring"
+	access = list(ACCESS_SALVATORES)
+
+/obj/item/card/id/reno/salvatores/ring/don
+	name = "golden ring"
+	desc = "A ring that is seemingly made of gold. Seems valuable."
+	icon_state = "salvatore_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "salvatore gold ring"
+	access = list(ACCESS_SALVATORES)
+
+/obj/item/card/id/reno/salvatores/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "salvatore employment papers"
+	access = list(ACCESS_SALVATORES)
+
+//wrights
+
+/obj/item/card/id/reno/wrights/ring/soldier
+	name = "bronze ring"
+	desc = "An old ring that is seemingly of some value."
+	icon_state = "bronze_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "wright bronze ring"
+	access = list(ACCESS_WRIGHTS)
+
+/obj/item/card/id/reno/wrights/ring/officer
+	name = "silver ring"
+	desc = "A well crafted silver ring."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "wright silver ring"
+	access = list(ACCESS_WRIGHTS)
+
+/obj/item/card/id/reno/wrights/ring/boss
+	name = "golden ring"
+	desc = "A ring that is seemingly made of gold. Seems valuable."
+	icon_state = "wright_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "wright golden ring"
+	access = list(ACCESS_WRIGHTS)
+
+//misc
+
+/obj/item/card/id/reno/hotel/papers/owner
+	name = "hotel deed"
+	desc = "Papers detailing the official ownership of New Reno's hotel."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "hotel deed"
+	access = list(ACCESS_HOTEL)
+
+/obj/item/card/id/reno/hotel/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "hotel employment papers"
+	access = list(ACCESS_HOTEL)
+
+/obj/item/card/id/reno/nra/papers/owner
+	name = "new reno arms deed"
+	desc = "Papers detailing the official ownership of New Reno Arms."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "NRA deed"
+	access = list(ACCESS_NRA)
+
+/obj/item/card/id/reno/junglegym/papers/owner
+	name = "jungle gym deed"
+	desc = "Papers detailing the official ownership of the Jungle Gym."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "jungle gym deed"
+	access = list(ACCESS_GYM)
+
+/obj/item/card/id/reno/clinic/papers
+	name = "medical license"
+	desc = "Papers showing a medical license of sorts. You aren't sure if it is credible or not."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "medical license"
+	access = list(ACCESS_RENO_CLINIC)
+
+/obj/item/card/id/reno/pharmacy/owner
+	name = "pharmacy deed"
+	desc = "Papers detailing the offical ownership of the New Reno Pharmacy."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "pharmacy deed"
+	access = list(ACCESS_PHAR)
+
+/obj/item/card/id/reno/yakuza/ring
+	name = "silver ring"
+	desc = "A well crafted silver ring with a funny dragon on it."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "yakuza ring"
+	access = list(ACCESS_YAKUZA)

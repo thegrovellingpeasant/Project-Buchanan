@@ -619,6 +619,9 @@
 	dog_fashion = null
 	unique_reskin = list("M1" = "ncr_old")
 
+/obj/item/clothing/head/f13/ncr/standard/conscript/reno
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
 /obj/item/clothing/head/f13/ncr/ncr_flapcap
 	name = "NCR field cap"
 	desc = "A special issue canvas NCR field cap with cotton neckflap, for sun protection in arid climates."
@@ -655,6 +658,10 @@
 	icon_state = "ncr_officer_beret"
 	item_state = "ncr_officer_beret"
 	armor = list("melee" = 15, "bullet" = 30, "laser" = 40, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
+
+/obj/item/clothing/head/beret/ncr/reno
+	name = "NCR officer beret"
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 5, "bio" = 5, "rad" = 5, "fire" = 5, "acid" = 0, "wound" = 0)
 
 /obj/item/clothing/head/beret/ncr/ncr_medic
 	name = "NCR medical beret"
@@ -1403,3 +1410,68 @@ obj/item/clothing/head/f13/army/beret
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+
+//////////////
+//Salvatores//
+//////////////
+
+/obj/item/clothing/head/helmet/f13/salvatores/fedora
+	name = "salvatores fedora"
+	desc = "The family fedora of the Salvatores."
+	icon_state = "salvatores_fedora"
+	item_state = "salvatores_fedora"
+
+////////////
+//mordinos//
+////////////
+
+/obj/item/clothing/head/helmet/f13/mordinos/fedora
+	name = "mordino fedora"
+	desc = "The family fedora of the Mordinos."
+	icon_state = "mordinos_fedora"
+	item_state = "mordinos_fedora"
+///////////
+//bishops//
+///////////
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora
+	name = "bishop fedora"
+	desc = "The family fedora of the Bishops."
+	icon_state = "bishops_fedora"
+	item_state = "bishops_fedora"
+////////////
+//wrights//
+////////////
+
+/obj/item/clothing/head/helmet/f13/wrights/tophat
+	name = "wright top hat"
+	desc = "The family top hat of the Wrights."
+	icon_state = "wrights_tophat"
+	item_state = "wrights_tophat"
+
+//////////
+//hotel//
+/////////
+
+/obj/item/clothing/head/helmet/f13/hotel/concierge/cap
+	name = "concierge cap"
+	desc = "A slightly worn out concierge cap."
+	icon_state = "concierge_cap"
+	item_state = "concierge_cap"
+
+/////////////
+//civilians//
+/////////////
+
+/obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
+	name = "concierge cap"
+	desc = "A slightly worn out concierge cap."
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	icon_state = "ahp_helmet"
+	item_state = "ahp_helmet"
+
+/obj/item/clothing/head/helmet/f13/foreign_hat
+	name = "formal hat"
+	desc = "A very well made hat."
+	icon_state = "schlimmhat"
+	item_state = "schlimmhat"

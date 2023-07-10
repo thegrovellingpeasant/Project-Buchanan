@@ -17,8 +17,9 @@ Mayor
 */
 
 /datum/job/wendover
-	exp_type = EXP_TYPE_WENDOVER
 	faction = FACTION_WENDOVER
+	exp_type = EXP_TYPE_WENDOVER
+	maptype = "wendover"
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/bounty_hunter = list(

@@ -313,6 +313,54 @@
 	tableVariant = /obj/structure/table/wood/fancy/royalblue
 	merge_type = /obj/item/stack/tile/carpet/royalblue
 
+/obj/item/stack/tile/carpet/brown
+	name = "brown carpet"
+	icon_state = "tile-carpet_brown"
+	item_state = "tile-carpet_brown"
+	turf_type = /turf/open/floor/carpet/brown
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/brown
+
+/obj/item/stack/tile/carpet/reno/green
+	name = "green carpet"
+	icon_state = "tile-carpet_green"
+	item_state = "tile-carpet_green"
+	turf_type = /obj/item/stack/tile/carpet/reno/green
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/reno/green
+
+/obj/item/stack/tile/carpet/reno/blue
+	name = "blue carpet"
+	icon_state = "tile-carpet_blue"
+	item_state = "tile-carpet_blue"
+	turf_type = /turf/open/floor/carpet/reno/blue
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/reno/blue
+
+/obj/item/stack/tile/carpet/reno/burgandy
+	name = "burgandy carpet"
+	icon_state = "tile-carpet_burgandy"
+	item_state = "tile-carpet_burgandy"
+	turf_type = /turf/open/floor/carpet/reno/burgandy
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/reno/burgandy
+
+/obj/item/stack/tile/carpet/reno/pattern1
+	name = "white pattern carpet"
+	icon_state = "tile-carpet_pattern1"
+	item_state = "tile-carpet_pattern1"
+	turf_type = /turf/open/floor/carpet/reno/pattern1
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/reno/pattern1
+
+/obj/item/stack/tile/carpet/reno/pattern2
+	name = "red pattern carpet"
+	icon_state = "tile-carpet_pattern2"
+	item_state = "tile-carpet_pattern2"
+	turf_type = /turf/open/floor/carpet/reno/pattern2
+	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
+	merge_type = /obj/item/stack/tile/carpet/reno/pattern2
+
 /obj/item/stack/tile/carpet/ten
 	amount = 10
 

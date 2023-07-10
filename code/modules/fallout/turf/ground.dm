@@ -859,6 +859,26 @@
 	name = "parking lot"
 	dir = SOUTHWEST
 
+/turf/open/indestructible/ground/outside/road/parking/six
+	name = "parking lot"
+	icon_state = "bayparkingshaded"
+	dir = EAST
+
+/turf/open/indestructible/ground/outside/road/parking/seven
+	name = "parking lot"
+	icon_state = "bayparkingshaded"
+	dir = WEST
+
+/turf/open/indestructible/ground/outside/road/parking/eight
+	name = "parking lot"
+	icon_state = "bayparkingshaded"
+	dir = NORTHEAST
+
+/turf/open/indestructible/ground/outside/road/parking/nine
+	name = "parking lot"
+	icon_state = "bayparking2shaded"
+	dir = SOUTH
+
 /turf/open/indestructible/ground/outside/road/parkingalt
 	name = "parking lot"
 	icon = 'icons/fallout/objects/wendover.dmi'
@@ -1916,4 +1936,23 @@
 	name = "gravel edge"
 	dir = WEST
 
+/turf/open/indestructible/ground/outside/lifelessdesert/gravdag
+	name = "desert"
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "railroaddesert"
 
+/turf/open/indestructible/ground/outside/lifelessdesert/gravdag/one
+	name = "desert"
+	dir = NORTH
+
+/turf/open/indestructible/ground/outside/lifelessdesert/gravdag/two
+	name = "desert"
+	dir = EAST
+
+/turf/open/indestructible/ground/outside/lifelessdesert/gravdag/three
+	name = "desert"
+	dir = SOUTH
+
+/turf/open/indestructible/ground/outside/lifelessdesert/gravdag/four
+	name = "desert"
+	dir = WEST

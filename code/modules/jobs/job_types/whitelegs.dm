@@ -7,6 +7,7 @@
 	enforces = "Your tribe desires: Glory, plunder, the approval of Caesar, the death of the Kuna-man, food, comfort and ease."
 	objectivesList = list("Sack the New Canaanite temple, bring their golden statue home to your camp.","Sack the 80s' compound, seize or destroy their precious war buggies.","Sack the NCR embassy, present their flags as gifts to the esteem representatives of Caesar.")
 	exp_type = EXP_TYPE_WHITELEGS
+	maptype = "wendover"
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
@@ -97,7 +98,6 @@
 	selection_color = "#7a3f3f"
 	outfit = /datum/outfit/job/whitelegs/f13warchief
 	display_order = JOB_DISPLAY_ORDER_WARCHIEF
-	exp_type = EXP_TYPE_WHITELEGS
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 
@@ -174,7 +174,6 @@
 	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_LIGHTBRINGER
 	outfit = /datum/outfit/job/whitelegs/f13lightbringer
-	exp_type = EXP_TYPE_WHITELEGS
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
@@ -214,7 +213,6 @@
 	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_SAPPER
 	outfit = /datum/outfit/job/whitelegs/f13sapper
-	exp_type = EXP_TYPE_WHITELEGS
 
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
@@ -258,7 +256,6 @@
 	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_BONEBREAKER
 	outfit = /datum/outfit/job/whitelegs/f13bonebreaker
-	exp_type = EXP_TYPE_WHITELEGS
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
@@ -305,7 +302,6 @@
 	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_PAINMAKER
 	outfit = /datum/outfit/job/whitelegs/f13painmaker
-	exp_type = EXP_TYPE_WHITELEGS
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)
@@ -352,7 +348,6 @@
 	supervisors = "your War Chief and the Legion Decanii"
 	display_order = JOB_DISPLAY_ORDER_STORMDRUMMER
 	outfit = /datum/outfit/job/whitelegs/f13stormdrummer
-	exp_type = EXP_TYPE_WHITELEGS
 
 	access = list(ACCESS_LEGION)
 	minimal_access = list(ACCESS_LEGION)

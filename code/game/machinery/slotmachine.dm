@@ -4,14 +4,13 @@
 |	  Tgstation port by Miauw	|
 \*******************************/
 
-#define SPIN_PRICE 25
-#define SMALL_PRIZE 600
-#define BIG_PRIZE 1500
-#define DEFAULT_JACKPOT 10000
+#define SPIN_PRICE 5
+#define SMALL_PRIZE 200
+#define BIG_PRIZE 500
+#define JACKPOT 2000
 #define SPIN_TIME 65 //As always, deciseconds.
 #define REEL_DEACTIVATE_DELAY 7
 #define SEVEN "<font color='red'>7</font>"
-#define MAX_CASH_STACK_AMOUNT 15000 // This should be the currencies max limit.
 
 /obj/machinery/computer/slot_machine
 	name = "slot machine"
@@ -22,7 +21,8 @@
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 50
 	circuit = /obj/item/circuitboard/computer/slot_machine
-	var/money = DEFAULT_JACKPOT //How much money it has CONSUMED
+	var/money = 4000 //How much money it has for prize payouts
+	var/consumed_money = 0 //Money that actual players put inside
 	var/plays = 0
 	var/working = FALSE
 	var/balance = 0 //How much money is in the machine, ready to be CONSUMED.
@@ -35,12 +35,8 @@
 
 /obj/machinery/computer/slot_machine/Initialize()
 	. = ..()
-	var/obj/item/circuitboard/computer/slot_machine/crct = circuit
-	jackpots = rand(1, 4) //false hope
-	plays = rand(75, 200)
-	if(prob(25) && crct.start_cash)
-		give_money(rand(1, 125))
-		crct.start_cash = FALSE
+	jackpots = rand(0, 2) //false hope
+	plays = rand(5, 20)
 
 	INVOKE_ASYNC(src, .proc/toggle_reel_spin, TRUE)//The reels won't spin unless we activate them
 
@@ -52,7 +48,7 @@
 
 /obj/machinery/computer/slot_machine/Destroy()
 	if(balance)
-		drop_caps(balance)
+		give_money(balance, TRUE)
 	return ..()
 
 /obj/machinery/computer/slot_machine/process()
@@ -81,14 +77,46 @@
 
 /obj/machinery/computer/slot_machine/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/stack/f13Cash))
-		var/obj/item/stack/f13Cash/currency = I
-		if(!user.temporarilyRemoveItemFromInventory(currency))
-			return
-		to_chat(user, "<span class='notice'>You insert [currency] into [src]'s slot!</span>")
-		give_money(round(currency.value * currency.amount))
-		qdel(currency)
+		var/obj/item/stack/f13Cash/caps/C = I
+		if(prob(2))
+			if(!user.transferItemToLoc(C, drop_location()))
+				return
+			C.throw_at(user, 3, 10)
+			to_chat(user, "<span class='warning'>[src] spits your dollars back out!</span>")
+
+		else
+			if(!user.temporarilyRemoveItemFromInventory(C))
+				return
+			to_chat(user, "<span class='notice'>You insert [C.amount] dollars into [src]'s slot!</span>")
+			playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+			balance += C.amount
+			qdel(C)
+	else if(istype(I, /obj/item/stack/f13Cash))
+		to_chat(user, "<span class='warning'>[src] only accepts hub currency!</span>")
+		return
+	else if(istype(I, /obj/item/card/slotmachine))
+		if(consumed_money > 0)
+			if(!do_after(user, 100, target = src))
+				return
+			to_chat(user, "<span class='notice'>You swipe [I] on the [src]'s card reader and it dispenses stored caps!</span>")
+			give_money(consumed_money, TRUE)
+			consumed_money = 0
+		else
+			to_chat(user, "<span class='danger'>You swipe [I] on the [src]'s card reader, but it has no caps stored!</span>")
+		return
 	else
 		return ..()
+
+/obj/machinery/computer/slot_machine/emag_act()
+	. = ..()
+	if(obj_flags & EMAGGED)
+		return
+	obj_flags |= EMAGGED
+	var/datum/effect_system/spark_spread/spark_system = new /datum/effect_system/spark_spread()
+	spark_system.set_up(4, 0, src.loc)
+	spark_system.start()
+	playsound(src, "sparks", 50, 1)
+	return TRUE
 
 /obj/machinery/computer/slot_machine/ui_interact(mob/living/user)
 	. = ..()
@@ -105,9 +133,9 @@
 		dat = reeltext
 
 	else
-		dat = {"[SPIN_PRICE] caps to play!<BR>
-		<B>Prize Money Available:</B> [money] (jackpot payout is ALWAYS 100%!)<BR>
-		<B>Caps Remaining:</B> [balance]<BR>
+		dat = {"Five dollars to play!<BR>
+		<B>Prize Money Available:</B> [money]<BR>
+		<B>Credit Remaining:</B> [balance]<BR>
 		[plays] players have tried their luck today, and [jackpots] have won a jackpot!<BR>
 		<HR><BR>
 		<A href='?src=[REF(src)];spin=1'>Play!</A><BR>
@@ -129,42 +157,39 @@
 		spin(usr)
 
 	else if(href_list["refund"])
-		drop_caps(balance)
-		updateDialog()
+		give_money(balance, TRUE)
+		balance = 0
 
-/obj/machinery/computer/slot_machine/proc/drop_caps(amt)
-	// Come back when you're a little bit richer...
-	if(!balance)
-		return FALSE
-
-	if(isturf(get_turf(src)))
-		var/currentamt = amt
-		// Stop cash stacks from going over their limit.
-		if(currentamt >= MAX_CASH_STACK_AMOUNT)
-			while(currentamt >= MAX_CASH_STACK_AMOUNT)
-				var/obj/item/stack/f13Cash/moneytodrop = new /obj/item/stack/f13Cash/caps(get_turf(src))
-				moneytodrop.amount = MAX_CASH_STACK_AMOUNT
-				moneytodrop.use(0) //Hacky, updates the sprite
-				currentamt -= MAX_CASH_STACK_AMOUNT
-		if(currentamt)
-			var/obj/item/stack/f13Cash/moneytodrop = new /obj/item/stack/f13Cash/caps(get_turf(src))
-			moneytodrop.amount = currentamt
-			moneytodrop.use(0) //Hacky, updates the sprite
-		balance -= amt
-		return TRUE
-
-	return FALSE
+/obj/machinery/computer/slot_machine/emp_act(severity)
+	. = ..()
+	if(stat & (NOPOWER|BROKEN) || . & EMP_PROTECT_SELF)
+		return
+	if(prob(1500 / severity))
+		return
+	if(prob(1 * severity/100)) // :^)
+		obj_flags |= EMAGGED
+	var/severity_ascending = 4 - severity
+	money = max(rand(money - (200 * severity_ascending), money + (200 * severity_ascending)), 0)
+	balance = max(rand(balance - (50 * severity_ascending), balance + (50 * severity_ascending)), 0)
+	money -= max(0, give_money(min(rand(-50, 100 * severity_ascending)), money)) //This starts at -50 because it shouldn't always dispense coins yo
+	spin()
 
 /obj/machinery/computer/slot_machine/proc/spin(mob/user)
-	if(!can_spin(user) || !user)
+	if(!can_spin(user))
 		return
 
-	visible_message("<span class='notice'>[user] pulls the lever and the slot machine starts spinning!</span>")
+	var/the_name
+	if(user)
+		the_name = user.real_name
+		visible_message("<span class='notice'>[user] pulls the lever and the slot machine starts spinning!</span>")
+	else
+		the_name = "Exaybachay"
 
 	balance -= SPIN_PRICE
 	money += SPIN_PRICE
+	consumed_money += round(SPIN_PRICE / 2) // So you can't abuse it to hell and just play yourself until jackpot
 	plays += 1
-	working = TRUE
+	working = 1
 
 	toggle_reel_spin(1)
 	update_icon()
@@ -178,8 +203,8 @@
 
 	spawn(SPIN_TIME - (REEL_DEACTIVATE_DELAY * reels.len)) //WARNING: no sanity checking for user since it's not needed and would complicate things (machine should still spin even if user is gone), be wary of this if you're changing this code.
 		toggle_reel_spin(0, REEL_DEACTIVATE_DELAY)
-		working = FALSE
-		give_prizes(user)
+		working = 0
+		give_prizes(the_name, user)
 		update_icon()
 		updateDialog()
 
@@ -209,26 +234,26 @@
 			reel[2] = reel[1]
 			reel[1] = pick(symbols)
 
-/obj/machinery/computer/slot_machine/proc/give_prizes(mob/user)
+/obj/machinery/computer/slot_machine/proc/give_prizes(usrname, mob/user)
 	var/linelength = get_lines()
 
 	if(reels[1][2] + reels[2][2] + reels[3][2] + reels[4][2] + reels[5][2] == "[SEVEN][SEVEN][SEVEN][SEVEN][SEVEN]")
-		visible_message("<b>[src]</b> says, 'JACKPOT! You win [money] caps!'")
+		visible_message("<b>[src]</b> says, 'JACKPOT! You win [JACKPOT] dollars!'")
+		priority_announce("Congratulations to [user ? user.real_name : usrname] for winning the jackpot at the slot machine in [get_area(src)]!")
 		jackpots += 1
-		give_money(money)
-		money = 0
+		give_money(JACKPOT)
 
 	else if(linelength == 5)
-		visible_message("<b>[src]</b> says, 'Big Winner! You win [BIG_PRIZE] caps!'")
+		visible_message("<b>[src]</b> says, 'Big Winner! You win [BIG_PRIZE] dollars!'")
 		give_money(BIG_PRIZE)
 
 	else if(linelength == 4)
-		visible_message("<b>[src]</b> says, 'Winner! You win [SMALL_PRIZE] caps!'")
+		visible_message("<b>[src]</b> says, 'Winner! You win [BIG_PRIZE] dollars!'")
 		give_money(SMALL_PRIZE)
 
 	else if(linelength == 3)
 		to_chat(user, "<span class='notice'>You win three free games!</span>")
-		give_money(SPIN_PRICE * 4)
+		balance += SPIN_PRICE * 4
 		money = max(money - SPIN_PRICE * 4, money)
 
 	else
@@ -253,13 +278,24 @@
 
 	return amountthesame
 
-/obj/machinery/computer/slot_machine/proc/give_money(amt)
-	balance += amt
+/obj/machinery/computer/slot_machine/proc/give_money(amount, force = FALSE)
+	if(amount < 1)
+		return
+	var/amount_to_give = amount
+	if(!force) // So if it's a balance refund - don't do the shit below
+		amount_to_give = money >= amount ? amount : money
+		money = max(0, money - amount)
+	// Spawn the money
+	playsound(src, 'sound/items/coinflip.ogg', 60, 1)
+	var/obj/item/stack/f13Cash/winning_money = new /obj/item/stack/f13Cash
+	winning_money.amount = amount_to_give
+	winning_money.update_desc()
+	winning_money.update_icon()
+	winning_money.forceMove(src.loc)
 
 #undef SEVEN
 #undef SPIN_TIME
-#undef DEFAULT_JACKPOT
+#undef JACKPOT
 #undef BIG_PRIZE
 #undef SMALL_PRIZE
 #undef SPIN_PRICE
-#undef MAX_CASH_STACK_AMOUNT

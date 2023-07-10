@@ -134,25 +134,27 @@
 	icon_state = "tree"
 	desc = "It's seriously hampering your view of the jungle."
 	icon = 'icons/obj/flora/jungletrees.dmi'
+	layer = EDGED_TURF_LAYER
 	pixel_x = -48
 	pixel_y = -20
 
 /obj/structure/flora/tree/jungle/Initialize()
 	. = ..()
 	icon_state = "[icon_state][rand(1, 6)]"
-	setup_transparency()
+	//setup_transparency()
 
-/obj/structure/flora/tree/jungle/proc/setup_transparency()
-	AddComponent(/datum/component/largetransparency, 1, 2, 1, 1)
+//obj/structure/flora/tree/jungle/proc/setup_transparency()
+	//AddComponent(/datum/component/largetransparency, 1, 2, 1, 1)
 
 
 /obj/structure/flora/tree/jungle/small
 	pixel_y = 0
 	pixel_x = -32
+	layer = EDGED_TURF_LAYER
 	icon = 'icons/obj/flora/jungletreesmall.dmi'
 
-/obj/structure/flora/tree/jungle/small/setup_transparency()
-	AddComponent(/datum/component/largetransparency, 1, 1, 0, 1)
+//obj/structure/flora/tree/jungle/small/setup_transparency()
+	//AddComponent(/datum/component/largetransparency, 1, 1, 0, 1)
 
 //grass
 /obj/structure/flora/grass

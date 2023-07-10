@@ -17,12 +17,13 @@ Mayor
 */
 
 /datum/job/usps
-	exp_type = EXP_TYPE_FALLOUT
 	faction = FACTION_USPS
 	department_flag = USPS
 	selection_color = "#83a4c0"
 	access = list(ACCESS_CARGO_BOT, ACCESS_USPS)
 	minimal_access = list(ACCESS_CARGO_BOT, ACCESS_USPS)
+	exp_type = EXP_TYPE_USPS
+	maptype = "wendover"
 
 /datum/job/usps/f13postmastergeneral
 	title = "Postmaster General"

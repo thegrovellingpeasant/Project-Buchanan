@@ -74,8 +74,49 @@
 /obj/item/stack/f13Cash/caps
 	merge_type = /obj/item/stack/f13Cash/caps
 
+/obj/item/stack/f13Cash/caps/suicide_act(mob/user)
+	if(src.amount <= 100)
+		user.visible_message("<span class='suicide'>[user] cannot live with being poor anymore! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+		return BRUTELOSS
+	user.visible_message("<span class='suicide'>Money couldn't buy [user] happiness! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+	var/floored_amount = round(src.amount / 8)
+	for(var/throw_dir in GLOB.alldirs)
+		var/obj/item/stack/f13Cash/caps/tcaps = new (get_turf(user))
+		src.use(floored_amount)
+		tcaps.amount = floored_amount
+		tcaps.update_icon()
+		var/throw_range = rand(1,2)
+		var/turf/throw_at = get_ranged_target_turf(user, throw_dir, throw_range)
+		tcaps.throw_at(throw_at, throw_range, 1)
+
+	return BRUTELOSS
+
+/obj/item/stack/f13Cash/caps/onezero
+	amount = 10
+	merge_type = /obj/item/stack/f13Cash/caps
+
+/obj/item/stack/f13Cash/caps/threezero
+	amount = 30
+	merge_type = /obj/item/stack/f13Cash/caps
+
+/obj/item/stack/f13Cash/caps/fourzero
+	amount = 40
+	merge_type = /obj/item/stack/f13Cash/caps
+
+/obj/item/stack/f13Cash/caps/fivezero
+	amount = 50
+	merge_type = /obj/item/stack/f13Cash/caps
+
+/obj/item/stack/f13Cash/caps/sevenzero
+	amount = 70
+	merge_type = /obj/item/stack/f13Cash/caps
+
 /obj/item/stack/f13Cash/caps/onezerozero
 	amount = 100
+	merge_type = /obj/item/stack/f13Cash/caps
+
+/obj/item/stack/f13Cash/caps/onefivezero
+	amount = 150
 	merge_type = /obj/item/stack/f13Cash/caps
 
 /obj/item/stack/f13Cash/caps/fivezerozero
@@ -86,10 +127,10 @@
 	amount = 350
 	merge_type = /obj/item/stack/f13Cash/caps
 
-
 /obj/item/stack/f13Cash/caps/onezerozerozero
 	amount = 1000
 	merge_type = /obj/item/stack/f13Cash/caps
+
 
 /obj/item/stack/f13Cash/Initialize()
 	. = ..()
@@ -256,6 +297,34 @@
 
 /obj/item/stack/f13Cash/random/ncr
 	money_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/onefivezero
+	amount = 150
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/onezerozero
+	amount = 100
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/sevenzero
+	amount = 70
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/fivezero
+	amount = 50
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/fourzero
+	amount = 40
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/threezero
+	amount = 30
+	merge_type = /obj/item/stack/f13Cash/ncr
+
+/obj/item/stack/f13Cash/ncr/onezero
+	amount = 10
+	merge_type = /obj/item/stack/f13Cash/ncr
 
 /obj/item/stack/f13Cash/random/ncr/low
 	min_qty = TEMP3_MIN / CASH_NCR

@@ -61,8 +61,8 @@
 /obj/machinery/telecomms/bus/preset_three
 	id = "Bus 3"
 	network = "tcommsat"
-	freq_listening = list(FREQ_SECURITY, FREQ_COMMAND, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_TOWN, FREQ_LEGION, FREQ_RANGER, FREQ_KHANS, FREQ_LDS, FREQ_USPS, FREQ_MONTEGOBAY, FREQ_WND, FREQ_EIGHTIES, FREQ_EIGHTIESB, FREQ_EIGHTIESR)
-	autolinkers = list("processor3", "security", "command", "den","vault", "ncr", "bos", "enclave", "town", "legion", "ranger", "khans", "lds", "usps", "montegobay", "wnd", "eighties", "eightiesb", "eightiesr")
+	freq_listening = list(FREQ_SECURITY, FREQ_COMMAND, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_TOWN, FREQ_LEGION, FREQ_RANGER, FREQ_KHANS, FREQ_LDS, FREQ_USPS, FREQ_MONTEGOBAY, FREQ_WND, FREQ_EIGHTIES, FREQ_EIGHTIESB, FREQ_EIGHTIESR, FREQ_SALVATORES, FREQ_BISHOPS, FREQ_MORDINOS, FREQ_WRIGHTS, FREQ_HOTEL, FREQ_VANGRAFFS)
+	autolinkers = list("processor3", "security", "command", "den","vault", "ncr", "bos", "enclave", "town", "legion", "ranger", "khans", "lds", "usps", "montegobay", "wnd", "eighties", "eightiesb", "eightiesr","salvatores", "bishops", "mordinos", "wrights", "hotel", "vangraffs")
 
 /obj/machinery/telecomms/bus/preset_four
 	id = "Bus 4"

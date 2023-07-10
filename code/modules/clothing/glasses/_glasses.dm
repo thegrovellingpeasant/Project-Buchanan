@@ -633,3 +633,16 @@
 			user.blind_eyes(30)
 		return
 
+//special case, and it's not really glasses, but whatever.
+
+/obj/item/clothing/glasses/concierge_m
+	name = "concierge mask"
+	desc = "A off-white creepy old mask made of an uncertain material. Looks sturdy enough. It's sometimes used by the hotel staff."
+	icon_state = "concierge_mask_m"
+	item_state = "concierge_mask_m"
+
+/obj/item/clothing/glasses/concierge_f
+	name = "concierge mask"
+	desc = "A off-white creepy old mask made of an uncertain material. It has paint on it to resemble makeup. Looks sturdy enough. It's sometimes used by the hotel staff."
+	icon_state = "concierge_mask_f"
+	item_state = "concierge_mask_f"

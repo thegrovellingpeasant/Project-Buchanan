@@ -19,6 +19,10 @@
 		#include "map_files\Sunnyvale\Sunnyvale-Underground-1.dmm"
 		#include "map_files\Sunnyvale\Dungeons.dmm"
 
+		#include "map_files\Reno\Reno-Above-3.dmm"
+		#include "map_files\Reno\Reno-Surface-2.dmm"
+		#include "map_files\Reno\Reno-Underground-1.dmm"
+
 		#ifdef TRAVISBUILDING
 			#include "templates.dm"
 		#endif

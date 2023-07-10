@@ -1,18 +1,17 @@
 {
-	"map_name": "Wendover",
-	"map_path": "map_files/Wendover",
+	"map_name": "Reno",
+	"map_path": "map_files/Reno",
 	"map_file": [
-		"Dungeons.dmm",
-		"Wendover-Underground-1.dmm",
-		"Wendover-Surface-2.dmm",
-		"Wendover-Above-3.dmm"
+		"Reno-Underground-1.dmm",
+		"Reno-Surface-2.dmm",
+		"Reno-Above-3.dmm"
 	],
 	"station_ruin_budget":0,
 	"space_ruin_levels":0,
 	"space_empty_levels":0,
 	"shuttles": {
 		"cargo":"cargo_pahrump",
-		"emergency": "emergency_wendover",
+		"emergency": "emergency_pahrump",
 		"ferry": "ferry_fancy"
 	},
 	"traits":[
@@ -46,6 +45,6 @@
 			"Above": true
 		}
 	],
-	"maptype": "wendover",
+	"maptype": "reno",
 	"minetype": "none"
 }

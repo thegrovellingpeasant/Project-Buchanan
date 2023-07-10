@@ -90,3 +90,11 @@
 	density = 1
 	desc = "Where the west is still wild!"
 	light_color = LIGHT_COLOR_PINK
+
+/obj/machinery/light/sign/reno_sign
+	name = "new reno sign"
+	icon_state = "reno_sign"
+	base_state = "reno_sign"
+	icon = 'icons/fallout/objects/structures/reno.dmi'
+	desc = "The Biggest Little City in the World!"
+	light_color = LIGHT_COLOR_YELLOW

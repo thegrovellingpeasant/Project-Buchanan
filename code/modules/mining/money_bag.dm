@@ -127,3 +127,81 @@
 	new /obj/item/stack/f13Cash/random/high(src)
 	//mob boss, reasonably wealthy
 
+////////
+//Reno//
+////////
+
+/obj/item/storage/bag/money/small/reno/threezerozero/PopulateContents()
+	// ~300 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
+	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
+
+/obj/item/storage/bag/money/small/reno/onefivezero/PopulateContents()
+	// ~150 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
+
+/obj/item/storage/bag/money/small/reno/onezerozero/PopulateContents()
+	// ~100 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/onezerozero(src)
+
+/obj/item/storage/bag/money/small/reno/sevenzero/PopulateContents()
+	// ~70 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/sevenzero(src)
+
+/obj/item/storage/bag/money/small/reno/fivezero/PopulateContents()
+	// ~50 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/fivezero(src)
+
+/obj/item/storage/bag/money/small/reno/fourzero/PopulateContents()
+	// ~40 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/fourzero(src)
+
+/obj/item/storage/bag/money/small/reno/threezero/PopulateContents()
+	// ~30 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/threezero(src)
+
+/obj/item/storage/bag/money/small/reno/onezero/PopulateContents()
+	// ~10 worth of assorted money
+	new /obj/item/stack/f13Cash/ncr/onezero(src)
+
+//Reno Cap Placeholders
+
+/obj/item/storage/bag/money/small/reno/cap/sixzerozero/PopulateContents()
+	// ~600 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/threezerozero/PopulateContents()
+	// ~300 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/onefivezero/PopulateContents()
+	// ~150 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/onefivezero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/onezerozero/PopulateContents()
+	// ~100 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/onezerozero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/sevenzero/PopulateContents()
+	// ~70 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/sevenzero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/fivezero/PopulateContents()
+	// ~50 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/fivezero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/fourzero/PopulateContents()
+	// ~40 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/fourzero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/threezero/PopulateContents()
+	// ~30 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/threezero(src)
+
+/obj/item/storage/bag/money/small/reno/cap/onezero/PopulateContents()
+	// ~10 worth of assorted money
+	new /obj/item/stack/f13Cash/caps/onezero(src)

@@ -106,6 +106,18 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_80SB 	    81  //80s blue access
 #define ACCESS_80SR 	    82  //80s red access
 #define ACCESS_USPS	        76  //Postal service access
+#define ACCESS_MORDINOS 	135 //mordino casino/stables
+#define ACCESS_BISHOPS 		136 //bishop casino
+#define ACCESS_WRIGHTS 		137 //wright estate/trainstation
+#define ACCESS_SALVATORES 	138 //salvatores bar
+#define ACCESS_HOTEL 		139 //hotel
+#define ACCESS_NRA 			140 //new reno arms
+#define ACCESS_RENO_CLINIC 	141 //clinic
+#define ACCESS_PHAR			142 //pharamacy
+#define ACCESS_YAKUZA 		143 //yakuza dojo
+#define ACCESS_GYM			144 //gym/store
+
+
 
 
 	//The Syndicate

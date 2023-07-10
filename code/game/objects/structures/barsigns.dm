@@ -7,7 +7,7 @@
 	max_integrity = 500
 	integrity_failure = 0.5
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = 0
+	buildable_sign = FALSE
 	var/list/barsigns=list()
 	var/panel_open = FALSE
 
@@ -124,6 +124,16 @@
 	if(!picked_name)
 		return
 	set_sign(picked_name)
+
+/obj/structure/sign/reno/barsign/sharkclub
+	name = "Shark Club"
+	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "sharkclub"
+	max_integrity = 500
+	integrity_failure = 0.5
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	buildable_sign = FALSE
 
 //Code below is to define useless variables for datums. It errors without these
 
@@ -309,3 +319,8 @@
 	name = "Bar Sign"
 	icon = "empty"
 	desc = "This sign doesn't seem to be on."
+
+/datum/barsign/sharkclub
+	name = "Shark Club"
+	icon = "sharkclub"
+	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."

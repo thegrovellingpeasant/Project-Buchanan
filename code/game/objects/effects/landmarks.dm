@@ -1061,3 +1061,176 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 /obj/effect/landmark/start/f13/pawnshop
 	name = "Shopkeeper"
 	icon_state = "Barkeep"
+
+
+
+////////
+//Reno//
+////////
+
+//salvatores
+/obj/effect/landmark/start/f13/don
+	name = "Salvatores Don"
+	icon_state = "Salvatores Don"
+
+/obj/effect/landmark/start/f13/underboss
+	name = "Salvatores Underboss"
+	icon_state = "Salvatores Underboss"
+
+/obj/effect/landmark/start/f13/capo
+	name = "Salvatores Capo"
+	icon_state = "Salvatores Capo"
+
+/obj/effect/landmark/start/f13/soldier
+	name = "Salvatores Soldier"
+	icon_state = "Salvatores Soldier"
+
+/obj/effect/landmark/start/f13/bartender
+	name = "Salvatores Bartender"
+	icon_state = "Salvatores Bartender"
+
+/obj/effect/landmark/start/f13/roboticist
+	name = "Salvatores Roboticist"
+	icon_state = "Salvatores Roboticist"
+
+//mordinos
+
+/obj/effect/landmark/start/f13/mordinos/boss
+	name = "Mordinos Boss"
+	icon_state = "Mordinos Boss"
+
+/obj/effect/landmark/start/f13/mordinos/underboss
+	name = "Mordinos Underboss"
+	icon_state = "Mordinos Underboss"
+
+/obj/effect/landmark/start/f13/mordinos/capo
+	name = "Mordinos Capo"
+	icon_state = "Mordinos Capo"
+
+/obj/effect/landmark/start/f13/mordinos/soldier
+	name = "Mordinos Goon"
+	icon_state = "Mordinos Goon"
+
+/obj/effect/landmark/start/f13/mordinos/bartender
+	name = "Mordinos Casino Worker"
+	icon_state = "Mordinos Casino Worker"
+
+/obj/effect/landmark/start/f13/mordinos/chemist
+	name = "Mordinos Chemist"
+	icon_state = "Mordinos Chemist"
+
+//bishops
+
+/obj/effect/landmark/start/f13/bishops/boss
+	name = "Bishops Boss"
+	icon_state = "Bishops Boss"
+
+/obj/effect/landmark/start/f13/bishops/underboss
+	name = "Bishops Underboss"
+	icon_state = "Bishops Underboss"
+
+/obj/effect/landmark/start/f13/bishops/capo
+	name = "Bishops Capo"
+	icon_state = "Bishops Capo"
+
+/obj/effect/landmark/start/f13/bishops/soldier
+	name = "Bishops Soldier"
+	icon_state = "Bishops Soldier"
+
+/obj/effect/landmark/start/f13/bishops/bartender
+	name = "Bishops Casino Worker"
+	icon_state = "Bishops Casino Worker"
+
+/obj/effect/landmark/start/f13/bishops/comedian
+	name = "Bishops Comedian"
+	icon_state = "Bishops Comedian"
+
+
+//wrights
+/obj/effect/landmark/start/f13/wrights/boss
+	name = "Wrights Boss"
+	icon_state = "Wrights Boss"
+
+/obj/effect/landmark/start/f13/wrights/underboss
+	name = "Wrights Underboss"
+	icon_state = "Wrights Underboss"
+
+/obj/effect/landmark/start/f13/wrights/capo
+	name = "Wrights Capo"
+	icon_state = "Wrights Capo"
+
+/obj/effect/landmark/start/f13/wrights/soldier
+	name = "Wrights Soldier"
+	icon_state = "Wrights Soldier"
+
+//hotel
+
+/obj/effect/landmark/start/f13/civilians/hotelowner
+	name = "Hotel Owner"
+	icon_state = "Hotel Owner"
+
+/obj/effect/landmark/start/f13/civilians/hotelconcierge
+	name = "Hotel Concierges"
+	icon_state = "Hotel Concierges"
+
+//citizens
+
+/obj/effect/landmark/start/f13/civilians/yakuza
+	name = "Yakuza"
+	icon_state = "Yakuza"
+
+/obj/effect/landmark/start/f13/civilians/pharmacist
+	name = "Pharmacist"
+	icon_state = "Pharmacist"
+
+/obj/effect/landmark/start/f13/civilians/armsdealer
+	name = "Arms Dealer"
+	icon_state = "Arms Dealer"
+
+/obj/effect/landmark/start/f13/civilians/priest
+	name = "Priest"
+	icon_state = "Priest"
+
+/obj/effect/landmark/start/f13/civilians/junglegymowner
+	name = "Jungle Gym Owner"
+	icon_state = "Jungle Gym Owner"
+
+/obj/effect/landmark/start/f13/civilians/bum
+	name = "Bum"
+	icon_state = "Bum"
+
+/obj/effect/landmark/start/f13/civilians/mercenary
+	name = "Mercenary"
+	icon_state = "Mercenary"
+
+/obj/effect/landmark/start/f13/civilians/peasant
+	name = "Peasant"
+	icon_state = "Peasant"
+
+/obj/effect/landmark/start/f13/civilians/renodoctor
+	name = "Reno Doctor"
+	icon_state = "Reno Doctor"
+
+/obj/effect/landmark/start/f13/civilians/raider
+	name = "Raider"
+	icon_state = "Raider"
+
+/obj/effect/landmark/start/f13/civilians/tourist
+	name = "Tourist"
+	icon_state = "Tourist"
+
+/obj/effect/landmark/start/f13/civilians/brahminbaron
+	name = "Brahmin Baron"
+	icon_state = "Brahmin Baron"
+
+/obj/effect/landmark/start/f13/civilians/ambassador
+	name = "NCR Ambassador"
+	icon_state = "NCR Ambassador"
+
+/obj/effect/landmark/start/f13/civilians/provostmarshal
+	name = "NCRA Provost Marshal"
+	icon_state = "NCRA Provost Marshal"
+
+/obj/effect/landmark/start/f13/civilians/militarypolice
+	name = "NCRA Military Police"
+	icon_state = "NCRA Military Police"

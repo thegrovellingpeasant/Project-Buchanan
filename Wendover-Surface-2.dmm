@@ -2418,6 +2418,7 @@
 /obj/effect/spawner/lootdrop/f13/blueprintLowMid,
 /obj/effect/spawner/lootdrop/f13/blueprintLowMid,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "aKK" = (
@@ -43682,9 +43683,6 @@
 	color = "#b8a482";
 	pixel_y = -1
 	},
-/obj/structure/railing{
-	dir = 9
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
@@ -43950,11 +43948,6 @@
 /obj/structure/curtain{
 	color = "#b8a482";
 	pixel_y = -1
-	},
-/obj/structure/railing{
-	dir = 8;
-	layer = 3;
-	plane = -14
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 1
@@ -47989,6 +47982,7 @@
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/ore/blackpowder/twenty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
 "nwA" = (
@@ -85287,9 +85281,7 @@
 	},
 /area/f13/wasteland)
 "xDF" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/ore/blackpowder/twenty,
+/obj/machinery/autolathe,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)

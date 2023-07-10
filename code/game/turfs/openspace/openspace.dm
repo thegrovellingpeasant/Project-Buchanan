@@ -51,7 +51,7 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 /turf/open/transparent/openspace/proc/is_wall_below()
 	var/turf/A = SSmapping.get_turf_below(src)
 	if(istype(A,/turf/closed/wall))
-		opacity = 1
+		opacity = FALSE
 
 	else if(!isnull(A))
 		for(var/obj/O in A.contents)

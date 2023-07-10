@@ -245,6 +245,68 @@ GLOBAL_LIST_INIT(usps_positions, list(
 ))
 
 
+
+GLOBAL_LIST_INIT(salvatores_positions, list(
+	"Salvatores Don",
+	"Salvatores Underboss",
+	"Salvatores Capo",
+	"Salvatores Soldier",
+	"Salvatores Bartender",
+	"Salvatores Roboticist",
+))
+
+GLOBAL_LIST_INIT(mordinos_positions, list(
+	"Mordinos Boss",
+	"Mordinos Underboss",
+	"Mordinos Capo",
+	"Mordinos Goon",
+	"Mordinos Casino Worker",
+	"Mordinos Chemist",
+))
+
+GLOBAL_LIST_INIT(bishops_positions, list(
+	"Bishops Boss",
+	"Bishops Underboss",
+	"Bishops Capo",
+	"Bishops Soldier",
+	"Bishops Casino Worker",
+	"Bishops Comedian",
+))
+
+GLOBAL_LIST_INIT(wrights_positions, list(
+	"Wrights Boss",
+	"Wrights Underboss",
+	"Wrights Capo",
+	"Wrights Soldier",
+))
+
+GLOBAL_LIST_INIT(vangraffs_positions, list(
+	"Van Graffs",
+	"Van Graffs Underboss",
+	"Van Graffs Capo",
+	"Van Graffs Soldier",
+))
+
+GLOBAL_LIST_INIT(citizens_positions, list(
+	"Hotel Owner",
+	"Hotel Concierges",
+	"Pharmacist",
+	"Arms Dealer",
+	"Jungle Gym Owner",
+	"Reno Doctor",
+	"Bum",
+	"Mercenary",
+	"Priest",
+	"Yakuza",
+	"Peasant",
+	"Raider",
+	"Tourist",
+	"Brahmin Baron",
+	"NCR Ambassador",
+	"NCRA Provost Marshal",
+	"NCRA Military Police",
+))
+
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(	
 	EXP_TYPE_WENDOVER = list("jobs" = wendover_positions, "color" = "#1c94d0"),
@@ -256,6 +318,12 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WHITELEGS = list("jobs" = whitelegs_positions, "color" = "#b60202"),
 	EXP_TYPE_EIGHTIES = list("jobs" = eighties_positions, "color" = "#1858D9"),
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
+	EXP_TYPE_SALVATORES = list("jobs" = salvatores_positions, "color" = "#ffeeaa"),
+	EXP_TYPE_MORDINOS = list("jobs" = mordinos_positions, "color" = "#D50000"),
+	EXP_TYPE_BISHOPS = list("jobs" = bishops_positions, "color" = "#8CA2BD"),
+	EXP_TYPE_WRIGHTS = list("jobs" = wrights_positions, "color" = "#B3875E"),
+	EXP_TYPE_VANGRAFFS = list("jobs" = vangraffs_positions, "color" = "#4da34e"),
+	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#F7EFCF"),
 	
 ))
 
@@ -270,7 +338,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions | wendover_positions | usps_positions | lds_positions | whitelegs_positions | eighties_positions | salvatores_positions | mordinos_positions | bishops_positions | wrights_positions | vangraffs_positions | citizens_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Raider")),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
@@ -285,6 +353,16 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_RANGER = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
 	EXP_TYPE_SCRIBE = list("titles" = list("Scribe")),
 	EXP_TYPE_DECANUS = list("titles" = list("Legion Decanus")),
+	EXP_TYPE_WENDOVER = list("titles" = wendover_positions),
+	EXP_TYPE_USPS = list("titles" = usps_positions),
+	EXP_TYPE_LDS = list("titles" = lds_positions),
+	EXP_TYPE_WHITELEGS = list("titles" = whitelegs_positions),
+	EXP_TYPE_EIGHTIES = list("titles" = eighties_positions),
+	EXP_TYPE_SALVATORES = list("titles" = salvatores_positions),
+	EXP_TYPE_MORDINOS = list("titles" = mordinos_positions),
+	EXP_TYPE_BISHOPS = list("titles" = bishops_positions),
+	EXP_TYPE_WRIGHTS = list("titles" = wrights_positions),
+	EXP_TYPE_CITIZENS = list("titles" = citizens_positions),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),

@@ -584,6 +584,17 @@
 /obj/item/reagent_containers/food/drinks/bottle/grenadine/empty
 	list_reagents = null
 
+/obj/item/reagent_containers/food/drinks/bottle/grapejuice
+	name = "Grape juice"
+	desc = "Wow! It's juice!"
+	icon_state = "eco_box"
+	item_state = "carton"
+	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/kitchen_righthand.dmi'
+	isGlass = FALSE
+	list_reagents = list(/datum/reagent/consumable/grapejuice = 100)
+	foodtype = FRUIT
+
 /obj/item/export/bottle
 	name = "Report this please"
 	desc = "A sealed bottle of alcohol, ready to be exported"
@@ -712,6 +723,35 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/nukashine = 100)
 	foodtype = NUKA
 
+/obj/item/reagent_containers/food/drinks/bottle/ale
+	name = "ale"
+	desc = "A type of beer brewed using a warm fermentation method, resulting in a sweet, full-bodied and fruity taste."
+	icon_state = "beerbottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/ale = 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/creme_de_menthe
+	name = "creme de menthe"
+	desc = "A minty liqueur excellent for refreshing, cool drinks."
+	icon_state = "greenbottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/creme_de_menthe = 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/creme_de_cacao
+	name = "creme de cacao"
+	desc = "A chocolatey liqueur excellent for adding dessert notes to beverages and bribing sororities."
+	icon_state = "darkbrownbottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/creme_de_cacao = 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/creme_de_coconut
+	name = "creme de coconut"
+	desc = "A coconut liqueur for smooth, creamy, tropical drinks."
+	icon_state = "whitebottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/creme_de_coconut = 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/triple_sec
+	name = "triple sec"
+	desc = "A sweet and vibrant orange liqueur."
+	icon_state = "beerbottle"
+	list_reagents = list(/datum/reagent/consumable/ethanol/triple_sec = 100)
 
 // Empty bottles
 /obj/item/reagent_containers/food/drinks/bottle/brown/white

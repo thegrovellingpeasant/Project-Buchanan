@@ -1011,3 +1011,131 @@
 	item_state = "altbodyarmor"
 	armor = list("melee" = 20, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
 	body_parts_covered = CHEST
+
+
+//////////////
+//Salvatores//
+//////////////
+
+/obj/item/clothing/suit/armor/f13/salvatores/white_coat
+	name = "white coat"
+	desc = "An armored coat with large pockets."
+	icon_state = "white_coat"
+	item_state = "white_coat"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+////////////
+//Mordinos//
+////////////
+
+/obj/item/clothing/suit/armor/f13/mordinos/grey_trench_coat
+	name = "grey trench coat"
+	desc = "An armored coat with large pockets."
+	icon_state = "grey_trench_coat"
+	item_state = "grey_trench_coat"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+///////////
+//Bishops//
+///////////
+
+/obj/item/clothing/suit/armor/f13/bishops/blue_trench_coat
+	name = "blue trench coat"
+	desc = "An armored coat with large pockets."
+	icon_state = "blue_trench_coat"
+	item_state = "blue_trench_coat"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+///////////
+//Wrights//
+///////////
+
+/obj/item/clothing/suit/armor/f13/wrights/armored_vest
+	name = "brown vest"
+	desc = "An armored vest with large interior pockets."
+	icon_state = "wrights_vest"
+	item_state = "wrights_vest"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+/////////
+//Hotel//
+/////////
+
+/obj/item/clothing/suit/armor/f13/hotel/concierge/vest
+	name = "concierge vest"
+	desc = "A well enough kept red vest, meant for the hotel staff."
+	icon_state = "concierge_vest"
+	item_state = "concierge_vest"
+
+/obj/item/clothing/suit/armor/f13/hotel/concierge/coat
+	name = "concierge coat"
+	desc = "A well enough kept red suit, meant for the hotel staff."
+	icon_state = "concierge_coat"
+	item_state = "concierge_coat"
+
+/////////////
+//civilians//
+/////////////
+
+/obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	name = "NCR police coat"
+	desc = "A repurposed oldworld police coat."
+	icon_state = "ahp_suit"
+	item_state = "ahp_suit"
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+
+/obj/item/clothing/suit/armor/f13/civilians/schlimmcoat
+	name = "foreign coat"
+	desc = "A well made coat."
+	icon_state = "schlimmcoat"
+	item_state = "schlimmcoat"
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+
+///////////
+//raiders//
+///////////
+
+/obj/item/clothing/suit/armor/f13/raiders/roadwarriors
+	name = "roadsign armor"
+	desc = "A couple of roadsigns put together, seemingly originating from highway 80 due to the sign on the back."
+	icon_state = "road_armor"
+	item_state = "road_armor"
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+
+
+///////////
+//Misc//
+///////////
+
+/obj/item/clothing/suit/armor/f13/reno/bulletproof
+	name = "concealed kevlar armor"
+	desc = "A vest of kevlar that is concealable."
+	icon_state = "altbodyarmor"
+	item_state = "altbodyarmor"
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	body_parts_covered = CHEST
+
+/obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
+	name = "crude concealed kevlar armor"
+	armor = list("melee" = 17, "bullet" = 20, "laser" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/reno
+	name = "reserve NCR patrol vest"
+	desc = "A standard issue NCR Infantry vest."
+	icon_state = "ncr_infantry_vest"
+	item_state = "ncr_infantry_vest"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+
+/obj/item/clothing/suit/armor/f13/ncrarmor/dresscoat/reno
+	name = "NCR dress coat"
+	desc = "A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
+	icon_state = "ncr_dresscoat"
+	item_state = "ncr_dresscoat"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
