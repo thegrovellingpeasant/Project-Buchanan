@@ -65,6 +65,36 @@
 	belt = /obj/item/gun/energy/laser/pistol
 	//backpack_contents =
 
+/datum/outfit/job/salvatores/f13don/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len - 1] == "Van" && family_name[family_name.len] == "Graff")
+		return
+	if(family_name[family_name.len - 1] == "Graff" && family_name[family_name.len] == "Van")
+		family_name[family_name.len - 1] = "Van"
+		family_name[family_name.len] = "Graff"	//If for some reason someone wants to be funny and switch up the two words to bypass the change
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
+		return							//Wouldn't write this proc over usually, but for some reason it just adds Van Graff over again if I don't do this
+	if(family_name.len == 1)
+		H.real_name += " Van Graff"
+	else
+		family_name[family_name.len] = "Van Graff"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
+
 /*--------------------------------------------------------------*/
 
 /datum/job/salvatores/f13underboss

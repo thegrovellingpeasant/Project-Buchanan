@@ -10,6 +10,26 @@
 	forbids = "The Wright family forbids: Due to the relations of the family with the Temperance Faction of New Reno, gambling, prostitution, and drugs are forbidden. Also, due to the close blood ties among the members of the families, ghouls are not allowed."
 	enforces = "The Wright family demands: The Wrights are the only Reno family that are a literal family, so it is expected of all of its members to have blood ties to the family. Due to this, extreme loyalty and obedience to a strong chain of command are also expected of its members. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list ("Focus on the mass production of cheap guns.", "Focus on the mass production of alcohol to provide to the other families and the people of New Reno.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
+
+
+/datum/outfit/job/wrights/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13boss
