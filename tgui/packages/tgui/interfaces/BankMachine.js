@@ -25,14 +25,14 @@ export const BankMachine = (props, context) => {
               buttons={(
                 <Button
                   icon={siphoning ? 'times' : 'sync'}
-                  content={siphoning ? 'Stop Siphoning' : 'Siphon Credits'}
+                  content={siphoning ? 'Stop Withdrawing' : 'Withdraw Caps'}
                   selected={siphoning}
                   onClick={() => act(siphoning ? 'halt' : 'siphon')} />
               )}>
               <AnimatedNumber
                 value={current_balance}
                 format={value => formatMoney(value)} />
-              {' cr'}
+              {' caps'}
             </LabeledList.Item>
           </LabeledList>
         </Section>
