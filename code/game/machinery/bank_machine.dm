@@ -31,11 +31,14 @@
 	else if(istype(I, /obj/item/holochip))
 		var/obj/item/holochip/H = I
 		value = H.credits
+	else if(istype(I, /obj/item/stack/f13Cash/caps))
+		var/obj/item/stack/f13Cash/caps/H = I
+		value = H.amount
 	if(value)
 		var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 		if(D)
 			D.adjust_money(value)
-			to_chat(user, "<span class='notice'>You deposit [I]. The Cargo Budget is now [D.account_balance] cr.</span>")
+			to_chat(user, "<span class='notice'>You deposit [I]. The town budget is now [D.account_balance] caps.</span>")
 		qdel(I)
 		return
 	return ..()
@@ -44,22 +47,24 @@
 	..()
 	if(siphoning)
 		if (stat & (BROKEN|NOPOWER))
-			say("Insufficient power. Halting siphon.")
+			say("Unable to withdraw town funds.")
 			end_syphon()
 		var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 		if(!D.has_money(200))
-			say("Cargo budget depleted. Halting siphon.")
+			say("Town funds depleted. Halting withdrawal.")
 			end_syphon()
 			return
 
 		playsound(src, 'sound/items/poster_being_created.ogg', 100, TRUE)
 		syphoning_credits += 200
 		D.adjust_money(-200)
+		/*
 		if(next_warning < world.time && prob(15))
 			var/area/A = get_area(loc)
 			var/message = "Unauthorized credit withdrawal underway in [A.map_name]!!"
 			radio.talk_into(src, message, radio_channel)
 			next_warning = world.time + minimum_time_between_warnings
+		*/
 
 /obj/machinery/computer/bank_machine/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -86,15 +91,15 @@
 
 	switch(action)
 		if("siphon")
-			say("Siphon of station credits has begun!")
+			say("Withdrawal of town funds has begun!")
 			siphoning = TRUE
 			. = TRUE
 		if("halt")
-			say("Station credit withdrawal halted.")
+			say("Town fund withdrawal halted.")
 			end_syphon()
 			. = TRUE
 
 /obj/machinery/computer/bank_machine/proc/end_syphon()
 	siphoning = FALSE
-	new /obj/item/holochip(drop_location(), syphoning_credits) //get the loot
+	new /obj/item/stack/f13Cash/caps(drop_location(), syphoning_credits) //get the loot
 	syphoning_credits = 0

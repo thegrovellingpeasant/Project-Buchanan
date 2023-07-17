@@ -84,7 +84,7 @@ const CargoStatus = (props, context) => {
           <AnimatedNumber
             value={points}
             format={value => formatMoney(value)} />
-          {' credits'}
+          {' caps'}
         </Box>
       )}>
       <LabeledList>
@@ -193,7 +193,7 @@ export const CargoCatalog = (props, context) => {
                       {formatMoney(self_paid && !pack.goody
                         ? Math.round(pack.cost * 1.1)
                         : pack.cost)}
-                      {' cr'}
+                      {' caps'}
                     </Button>
                   </Table.Cell>
                 </Table.Row>
@@ -247,7 +247,7 @@ const CargoRequests = (props, context) => {
                 <i>{request.reason}</i>
               </Table.Cell>
               <Table.Cell collapsing textAlign="right">
-                {formatMoney(request.cost)} cr
+                {formatMoney(request.cost)} caps
               </Table.Cell>
               {!requestonly && (
                 <Table.Cell collapsing>
@@ -290,7 +290,7 @@ const CargoCartButtons = (props, context) => {
         {cart.length === 1 && '1 item'}
         {cart.length >= 2 && cart.length + ' items'}
         {' '}
-        {total > 0 && `(${formatMoney(total)} cr)`}
+        {total > 0 && `(${formatMoney(total)} caps)`}
       </Box>
       <Button
         icon="times"
@@ -339,7 +339,7 @@ const CargoCart = (props, context) => {
                 )}
               </Table.Cell>
               <Table.Cell collapsing textAlign="right">
-                {formatMoney(entry.cost)} cr
+                {formatMoney(entry.cost)} caps
               </Table.Cell>
               <Table.Cell collapsing>
                 <Button
