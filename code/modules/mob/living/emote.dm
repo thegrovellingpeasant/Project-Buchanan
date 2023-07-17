@@ -422,7 +422,6 @@
 	key = "me"
 	key_third_person = "custom"
 	message = null
-	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
 	if(stop_bad_mime.Find(input, 1, 1))
@@ -458,6 +457,7 @@
 	message = user.say_emphasis(message)
 	. = ..()
 	message = null
+	emote_type = EMOTE_VISIBLE
 
 /datum/emote/living/custom/replace_pronoun(mob/user, message)
 	return message
