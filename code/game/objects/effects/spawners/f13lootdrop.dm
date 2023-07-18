@@ -337,6 +337,7 @@
 	loot = list(
 				/obj/item/clothing/suit/armor/f13/leather_jacket,
 				/obj/item/clothing/suit/armor/f13/leatherarmor,
+				/obj/item/clothing/suit/armored/light/leathersuit,
 				/obj/effect/spawner/bundle/f13/armor/supafly,
 				/obj/effect/spawner/bundle/f13/armor/sadist,
 				/obj/effect/spawner/bundle/f13/armor/blastmaster,
@@ -348,6 +349,12 @@
 				/obj/item/clothing/suit/armor/f13/raider/iconoclast,
 				/obj/item/clothing/suit/armor/f13/plates,
 	)
+
+/obj/effect/spawner/bundle/f13/armor/leather
+	name = "leather armor spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/f13/leatherarmor
+				)
 
 /obj/effect/spawner/bundle/f13/armor/supafly
 	name = "supafly raider armor spawner"
@@ -408,6 +415,9 @@
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat,
 				/obj/item/clothing/suit/armor/vest,
 				/obj/item/clothing/suit/armor/vest/alt,
+				/obj/effect/spawner/bundle/f13/armor/leather/mk2,
+				/obj/item/clothing/suit/armored/light/leather_jacketmk2,
+				/obj/item/clothing/suit/armored/light/leathercoat,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/knight
@@ -429,6 +439,12 @@
 	items = list(
 				/obj/item/clothing/suit/armor/f13/metalarmor/laserproof,
 				/obj/item/clothing/head/helmet/f13/metalmask
+				)
+
+/obj/effect/spawner/bundle/f13/armor/leather/mk2
+	name = "leather armor mk2 spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 				)
 
 
