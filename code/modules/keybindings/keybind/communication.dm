@@ -14,6 +14,12 @@
 	full_name = "Out Of Character Say (OOC)"
 	clientside = "ooc"
 
+/datum/keybinding/client/communication/fooc
+	hotkey_keys = list("P")
+	name = "FOOC"
+	full_name = "Faction Out Of Character Say (OOC)"
+	clientside = "fooc"
+
 /datum/keybinding/client/communication/me
 	hotkey_keys = list("CtrlM")
 	classic_keys = list("Unbound")

@@ -74,6 +74,12 @@ Overseer
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/crowbar = 1)
 
+/datum/outfit/job/vault/f13overseer/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*
 Head of Security
 */
@@ -129,6 +135,12 @@ Head of Security
 		/obj/item/crowbar = 1)
 
 	implants = list(/obj/item/implant/mindshield)
+
+/datum/outfit/job/vault/f13hos/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*
 Medical Doctor
