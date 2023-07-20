@@ -91,8 +91,8 @@
 
 /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 	name = "reinforced leather armor"
-	icon_state = "leather_armor_2"
-	item_state = "leather_armor_2"
+	icon_state = "leather_armor_mk2"
+	item_state = "leather_armor_mk2"
 	desc = "An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
 	armor = list("melee" = 37, "bullet" = 22, "laser" = 37, "energy" = 27, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35, "wound" = 35)
 	slowdown = 0.08
