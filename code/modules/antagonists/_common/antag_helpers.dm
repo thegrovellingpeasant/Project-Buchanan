@@ -17,3 +17,11 @@
 		var/datum/team/T = A.get_team()
 		if(!team_type || istype(T,team_type))
 			. |= T
+
+/proc/get_all_leaders()
+	. = list()
+	for(var/mob/M in GLOB.player_list)
+		if(!M.mind)
+			continue
+		if(HAS_TRAIT(M, TRAIT_LEADER))
+			. += M.mind

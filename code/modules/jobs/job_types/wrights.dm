@@ -32,7 +32,7 @@
 		)
 
 /datum/outfit/job/wrights/f13elder
-	name = "Wrights Elder"
+	name = "Wright Elder"
 	jobtype = /datum/job/wrights/f13wrightelder
 
 	uniform	= /obj/item/clothing/under/f13/wrights/elder
@@ -86,6 +86,8 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
+	
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
@@ -102,7 +104,7 @@
 	outfit = /datum/outfit/job/wrights/f13enforcer
 
 /datum/outfit/job/wrights/f13enforcer
-	name = "Capo"
+	name = "Wright Capo"
 	jobtype = /datum/job/wrights/f13enforcer
 
 	uniform	= /obj/item/clothing/under/f13/wrights/officer
@@ -147,6 +149,8 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
+	
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
@@ -164,7 +168,7 @@
 
 
 /datum/outfit/job/wrights/f13hooligan
-	name = "Soldier"
+	name = "Wright Soldier"
 	jobtype = /datum/job/wrights/f13hooligan
 
 	id = /obj/item/card/id/reno/wrights/ring/soldier
@@ -248,7 +252,7 @@
 	outfit = /datum/outfit/job/wrights/f13manager
 
 /datum/outfit/job/wrights/f13manager
-	name = "Shop Manager"
+	name = "Wright Shop Manager"
 	jobtype = /datum/job/wrights/f13manager
 
 	uniform	= /obj/item/clothing/under/f13/wrights/officer
@@ -304,7 +308,7 @@
 	outfit = /datum/outfit/job/wrights/f13employee
 
 /datum/outfit/job/wrights/f13employee
-	name = "Employee"
+	name = "Wright Employee"
 	jobtype = /datum/job/wrights/f13employee
 
 	id = /obj/item/card/id/reno/papers/worker
@@ -349,7 +353,7 @@
 	outfit = /datum/outfit/job/wrights/f13clinicsupervisor
 
 /datum/outfit/job/wrights/f13clinicsupervisor
-	name = "Clinic Supervisor"
+	name = "Wright Clinic Supervisor"
 	jobtype = /datum/job/wrights/f13clinicsupervisor
 
 	uniform	= /obj/item/clothing/under/suit/charcoal
@@ -395,7 +399,7 @@
 	access = list(ACCESS_RENO_CLINIC)
 
 /datum/outfit/job/wrights/f13practitioner
-	name = "Practitioner"
+	name = "Wright Practitioner"
 	jobtype = /datum/job/wrights/f13practitioner
 
 	uniform	= /obj/item/clothing/under/f13/doctor
