@@ -937,7 +937,7 @@
 	item_state = "card-doctor"
 	assignment = "citizenship permit"
 	access = list(ACCESS_BAR)
-	
+
 /obj/item/card/id/dogtag/MDfakepermit
 	name = "faded medical license"
 	desc = "a revoked medical license. This is why we do not remove people's skeletons "
@@ -1356,7 +1356,7 @@
 	icon_state = "vetranger"
 	access = list(ACCESS_BAR, ACCESS_SECURITY, ACCESS_LAWYER, ACCESS_COMMAND)
 	uses_overlays = FALSE
-	
+
 /obj/item/card/id/greenhorn
 	name = "deputy badge"
 	desc = "A badge granted to its holder on being deputized by the Town Sheriff."
@@ -1387,6 +1387,15 @@
 	item_state = null
 	uses_overlays = FALSE
 	assignment = "bishop silver ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/wedding
+	name = "wedding ring"
+	desc = "A well crafted silver ring with a diamond."
+	icon_state = "wedding_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "wedding ring"
 	access = list(ACCESS_BISHOPS)
 
 /obj/item/card/id/reno/bishops/ring/boss
@@ -1522,6 +1531,15 @@
 	access = list(ACCESS_WRIGHTS)
 
 //misc
+
+/obj/item/card/id/reno/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "employment papers"
+
 
 /obj/item/card/id/reno/hotel/papers/owner
 	name = "hotel deed"

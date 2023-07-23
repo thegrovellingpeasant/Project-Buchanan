@@ -1746,6 +1746,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet,
 /area/f13/building)
+"bEt" = (
+/obj/structure/barricade/bars,
+/obj/structure/window/fulltile/wood,
+/turf/open/floor/wood/cold,
+/area/f13/building)
 "bEJ" = (
 /obj/structure/fence/handrail{
 	density = 0;
@@ -27144,6 +27149,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13,
 /area/f13/building)
+"wtk" = (
+/obj/structure/barricade/wooden/planks,
+/obj/structure/window/fulltile/ruins,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "wtC" = (
 /obj/structure/wreck/trash/five_tires,
 /turf/open/indestructible/ground/outside/road{
@@ -27491,6 +27501,11 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
+"wJa" = (
+/obj/structure/barricade/bars,
+/obj/structure/window/fulltile/house,
+/turf/open/floor/wood/cold,
+/area/f13/building)
 "wJh" = (
 /obj/structure/barricade/tentleathercorner,
 /turf/open/indestructible/ground/outside/dirt{
@@ -49228,7 +49243,7 @@ wwV
 kAD
 jxj
 lhS
-mUt
+wtk
 aNY
 ryM
 bGC
@@ -49380,7 +49395,7 @@ miN
 mFP
 iqC
 iqC
-mUt
+wtk
 dHv
 ryM
 bGC
@@ -50893,10 +50908,10 @@ evw
 kNK
 evw
 pMb
-evw
+bEt
 kNK
 sHT
-evw
+bEt
 kNK
 kNK
 lXS
@@ -51812,7 +51827,7 @@ ugu
 daK
 qZp
 ugu
-evw
+wJa
 aNY
 ryM
 bGC
@@ -52116,7 +52131,7 @@ ugu
 qjg
 gzn
 ugu
-evw
+wJa
 aNY
 ryM
 bGC
@@ -52420,7 +52435,7 @@ ugu
 ugu
 ugu
 ugu
-evw
+wJa
 aNY
 ryM
 bGC
@@ -52724,7 +52739,7 @@ rBN
 ugu
 ygy
 lYu
-evw
+wJa
 dHv
 ryM
 bGC
@@ -53028,7 +53043,7 @@ hWx
 ugu
 ugu
 ugu
-evw
+wJa
 aNY
 ryM
 bGC
@@ -53173,13 +53188,13 @@ hVx
 hVx
 oFS
 kNK
-evw
+wJa
 kNK
-evw
+wJa
 kNK
-evw
+wJa
 kNK
-evw
+wJa
 kNK
 aNY
 ryM

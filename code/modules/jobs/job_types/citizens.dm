@@ -518,7 +518,7 @@
 	faction = FACTION_CITIZENS
 	total_positions = -1
 	spawn_positions = -1
-	description = "You are a member of one of the infamous raider gangs of the wastes. Pillaging, robbing, murdering wasters are a recurrent chore for your people. Depending on their affiliation, though, raiders may vary from an illiterate chemhead, to a straight edge tribal, or even a member of a group with strong connections and an unique culture based on raiding, and all of this should be considered when defining your character. Form loose associations with other raiders to get an edge. Betray said raiders because of a dumb argument. Be weary of the inside of the city or destroying family businesses, since the gangs may not take kindly to your presence in town."
+	description = "You are a member of one of the infamous raider gangs of the wastes. Pillaging, robbing, murdering wasters are a recurrent chore for your people. Depending on their affiliation, though, raiders may vary from an illiterate chemhead, to a straight edge tribal, or even a member of a group with strong connections and an unique culture based on raiding, and all of this should be considered when defining your character. Form loose associations with other raiders to get an edge. Betray said raiders because of a dumb argument. Be wary of the inside of the city or destroying family businesses, since the gangs may not take kindly to your presence in town."
 	supervisors = "the man with the biggest stick"
 	selection_color = "#F7EFCF"
 	exp_requirements = EXP_TYPE_CITIZENS
@@ -1049,3 +1049,90 @@
 		return
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+/*--------------------------------------------------------------*/
+//////////////////////TEMPORARY HOLDING//////////////////////////
+/*--------------------------------------------------------------*/
+
+/*
+/datum/job/reno/rpdpolicechief
+	title = "RPD Chief"
+	flag = F13RPDPOLICECHIEF
+	total_positions = 1
+	spawn_positions = 1
+	description = "Reno is a borderline lawless city, 'human sewage', as it's often said, washes into Reno on a near daily basis; it's not rare to see the results of dealings gone wrong, chem fueled violent bums, and the escalated situations with the gangs. And you're the one who's supposed to deal with this, the Chief of the Reno Police Department. Corruption isn't out of the window, especially considering it was the Bishops who funded the department. Your duties are to organize your men to keep the peace, prevent gang wars from breaking out, and enforcing NCR common law."
+	supervisors = "NCR common law and the mayor"
+	display_order = JOB_DISPLAY_ORDER_F13RPDPOLICECHIEF
+	selection_color = "#ffdddd"
+	outfit = /datum/outfit/job/reno/rpdpolicechief
+
+
+/datum/outfit/job/reno/rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+
+/datum/outfit/job/reno/rpdpolicechief
+	name = "Police Chief"
+	jobtype = /datum/job/reno/rpdpolicechief
+	id = /obj/item/card/id/dogtag/sheriff
+	uniform	= /obj/item/clothing/under/f13/ncr/police
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/rubber = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
+		)
+
+/datum/job/reno/rpdofficer
+	title = "RPD Officer"
+	flag = F13RPDOFFICER
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are an officer of the Reno Police Department. Uphold NCR common law, follow the orders of the Chief of Police, and keep the situation in the streets from getting too bloody."
+	supervisors = "NCR common law and the mayor"
+	display_order = JOB_DISPLAY_ORDER_F13RPDPOLICECHIEF
+	selection_color = "#ffdddd"
+	outfit = /datum/outfit/job/reno/policechief
+
+
+/datum/outfit/job/reno/rpdofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+/datum/outfit/job/reno/rpdofficer
+	name = "Police Chief"
+	jobtype = /datum/job/reno/rpdofficer
+	id = /obj/item/card/id/dogtag/deputy
+	uniform	= /obj/item/clothing/under/f13/ncr/police
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit_store = /obj/item/gun/ballistic/shotgun/police
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/rubber = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
+		)
+*/

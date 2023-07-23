@@ -109,6 +109,10 @@
 	siemens_coefficient = 0.5
 	permeability_coefficient = 0.1
 
+/obj/item/clothing/gloves/f13/crudemedical/formal
+	name = "faded white gloves"
+	desc = "A set of aged formal gloves."
+
 /obj/item/clothing/gloves/f13/mutant
 	name = "mutant bracers"
 	desc = "A pair of metal tubes with rope on the inside."
