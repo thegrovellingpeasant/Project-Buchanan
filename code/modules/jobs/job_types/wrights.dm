@@ -10,13 +10,7 @@
 	forbids = "Due to the Wrights moralistic outlook prostitution and chems are forbidden. Also, due to the close blood ties among the members of the families, ghouls are not allowed."
 	enforces = "The Wrights are the only Reno family that are a literal family, so it is expected of all of its members to have blood ties to the family. Due to this, extreme loyalty and obedience to a strong chain of command are also expected of its members. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list ("Focus on the mass production of cheap guns.", "Focus on the mass production of alcohol to provide to the other families and the people of New Reno.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
-
-
-/datum/outfit/job/wrights/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-
+	
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
