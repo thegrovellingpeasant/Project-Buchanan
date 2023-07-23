@@ -19,7 +19,7 @@
 	backpack = /obj/item/storage/backpack/satchel/old
 	satchel = /obj/item/storage/backpack/satchel/old
 
-/datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/vangraffs/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
