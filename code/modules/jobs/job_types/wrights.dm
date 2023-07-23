@@ -16,20 +16,7 @@
 	..()
 	if(visualsOnly)
 		return
-	var/list/family_name = splittext(H.real_name, " ")
-	if(family_name[family_name.len] == "Wright")
-		return
-	if(family_name.len == 1)
-		H.real_name += " Wright"
-	else
-		family_name[family_name.len] = "Wright"
-		var/new_name = jointext(family_name, " ")
-		H.real_name = new_name
-	H.name = H.real_name
-	if(H.wear_id)
-		var/obj/item/card/id/dogtag/L = H.wear_id
-		L.registered_name = H.name
-		L.update_label()
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
@@ -51,7 +38,7 @@
 		)
 
 /datum/outfit/job/wrights/f13elder
-	name = "Elder"
+	name = "Wrights Elder"
 	jobtype = /datum/job/wrights/f13wrightelder
 
 	uniform	= /obj/item/clothing/under/f13/wrights/elder
@@ -85,6 +72,26 @@
 		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
 		/obj/item/ammo_box/magazine/m22smg = 1,
 		)
+
+/datum/outfit/job/wrights/f13elder/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 
 /*--------------------------------------------------------------*/
 
@@ -126,6 +133,26 @@
 	r_hand = pick(
 		/obj/item/storage/backpack/duffelbag/equipment/wrights/enforcer/set1,
 		/obj/item/storage/backpack/duffelbag/equipment/wrights/enforcer/set2)
+
+/datum/outfit/job/wrights/f13enforcer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 
 /*--------------------------------------------------------------*/
 
@@ -188,6 +215,25 @@
 		/obj/item/storage/backpack/duffelbag/equipment/wrights/hooligan/set4,
 		/obj/item/storage/backpack/duffelbag/equipment/wrights/hooligan/set5)
 
+/datum/outfit/job/wrights/f13hooligan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 
 /*--------------------------------------------------------------*/
 
@@ -229,6 +275,26 @@
 		/obj/item/pen = 1,
 		)
 
+/datum/outfit/job/wrights/f13manager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13employee
@@ -269,7 +335,7 @@
 	uniform = pick(
 		/obj/item/clothing/under/overalls,
 		/obj/item/clothing/under/f13/shiny,
-		/obj/item/clothing/under/f13/caravaneer.
+		/obj/item/clothing/under/f13/caravaneer,
 		/obj/item/clothing/under/f13/machinist,
 		/obj/item/clothing/under/f13/lumberjack)
 
