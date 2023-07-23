@@ -19,7 +19,7 @@
 	backpack = /obj/item/storage/backpack/satchel/old
 	satchel = /obj/item/storage/backpack/satchel/old
 
-/datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/vangraffs/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -58,7 +58,7 @@
 		/obj/item/storage/bag/money/small/reno/cap/threezerozero = 1,
 		)
 
-/datum/outfit/job/vangraffs/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/vangraffs/f13branchmanager/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -67,6 +67,43 @@
 
 	if(H.gender == MALE)
 		uniform = /obj/item/clothing/under/f13/merccharm
+	
+	if(H.skin_tone == "african1")
+		return						
+	if(H.skin_tone == "african2")
+		return
+	else
+		H.skin_tone = pick("african1", "african2")			
+	
+/datum/outfit/job/vangraffs/f13branchmanager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len - 1] == "Van" && family_name[family_name.len] == "Graff")
+		return
+	if(family_name[family_name.len - 1] == "Graff" && family_name[family_name.len] == "Van")
+		family_name[family_name.len - 1] = "Van"
+		family_name[family_name.len] = "Graff"	//If for some reason someone wants to be funny and switch up the two words to bypass the change
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
+		return							//Wouldn't write this proc over usually, but for some reason it just adds Van Graff over again if I don't do this
+	if(family_name.len == 1)
+		H.real_name += " Van Graff"
+	else
+		family_name[family_name.len] = "Van Graff"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 
 /*--------------------------------------------------------------*/
 
