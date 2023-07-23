@@ -1,30 +1,85 @@
-/datum/job/salvatores //do NOT use this for anything, it's just to store faction datums
-	department_flag = SALVATORES
-	selection_color = "#F3F3F3"
-	faction = FACTION_SALVATORES
-	exp_type = EXP_TYPE_SALVATORES
+/datum/job/vangraffs //do NOT use this for anything, it's just to store faction datums
+	department_flag = VANGRAFFS
+	selection_color = "#98e698"
+	faction = FACTION_VANGRAFFS
+	exp_type = EXP_TYPE_VANGRAFFS
 	maptype = "reno"
 
-	access = list(ACCESS_SALVATORES)
-	minimal_access = list(ACCESS_SALVATORES)
-	forbids = "The Salvatore family forbids: Both the West Side Massacre and the old Salvatore glory fading with age have made the family grown reclusive and distant from the rest of the gangs of New Reno. It wasn't until the Enclave started providing laser guns to the family that they became relevant again, and by this point, they were already bitter schemers. Avoid talking about the family secrets to the outside world, be it their relation to the Enclave, or any schemes that the boss may be planning."
-	enforces = "The Salvatore family is not of many taboos and will consider most types of business a 'fair game', but due to the lack of proper numbers to confront the big families, subterfuge and scheming should be favored instead of direct confrontation. Dispose of anyone digging among the family affairs. Do not allow your family to be insulted."
-	objectivesList = list("Focus on the acquisition and selling of laser weaponry.", "Focus on managing the Salvatore's Bar", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too; 'Extend loans to the tourists and gamblers, break their legs when they're unwilling (or unable) to pay'.")
+	access = list(ACCESS_VANGRAFFS)
+	minimal_access = list(ACCESS_VANGRAFFS)
+	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
+	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
+	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
+
+/datum/outfit/job/vangraffs
+	name = "vangraffsdatums"
+	jobtype = /datum/job/vangraffs
+	ears = null
+	id = null
+	backpack = /obj/item/storage/backpack/satchel/old
+	satchel = /obj/item/storage/backpack/satchel/old
+
+/datum/outfit/job/ncr/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/vangraffgate)
 
 /*--------------------------------------------------------------*/
 
-/datum/job/salvatores/f13don
-	title = "Salvatores Don"
-	flag = F13SALVATRESDON
-	department_flag = SALVATORES
+/datum/job/vangraffs/f13branchmanager
+	title = "Van Graff Branch Manager"
+	flag = F13BRANCHMANAGER
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself"
-	description = "You are the head of the Salvatore family. Your family may be considered the weakest one in New Reno due the fact that you do not own any of the top casinos, nor do you have any important numbers among your ranks, nor do you produce any kind of substance. Nevertheless, the Salvatore family still stands, thanks to their anonymous benefactors, as the only entity in New Reno with access to laser weaponry to a fair price. Make sure the bar is well managed, sell the laser weaponry to the private entities of New Reno (or hoard it exclusively for your family), and do anything necessary to regain the influence your family once had in the city. Remember: quality is much more important than quantity."
-	selection_color = "#E1E1E1"
-	exp_requirements = EXP_TYPE_SALVATORES
+	supervisors = "the Matriarch"
+	description = "You are the Branch Manager of the Reno Branch of the Van Graffs.  You are a member of the Van Graff family by blood and entrusted with the management of the local operation and its assets. Make sure profits continue to flow in, strike deals with the locals, and further your power in the city."
+	selection_color = "#5bd75b"
+	exp_requirements = EXP_TYPE_VANGRAFFS
 
-	outfit = /datum/outfit/job/salvatores/f13don
+	outfit = /datum/outfit/job/vangraffs/f13branchmanager
+
+/datum/outfit/job/vangraffs/f13branchmanager
+	name = "Branch Manager"
+	jobtype = /datum/job/vangraffs/f13branchmanager
+
+	accessory = null
+	shoes = /obj/item/clothing/shoes/f13/diesel
+	head = null
+	glasses = null
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = null
+	belt = null
+	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof
+	suit_store = /obj/item/gun/energy/laser/plasma/pistol
+	r_hand = null
+	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/storage/bag/money/small/reno/cap/threezerozero = 1,
+		)
+
+/datum/outfit/job/vangraffs/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == FEMALE)
+		uniform = /obj/item/clothing/under/f13/female/merccharm
+
+	if(H.gender == MALE)
+		uniform = /obj/item/clothing/under/f13/merccharm
+
+/*--------------------------------------------------------------*/
+
+/datum/job/vangraffs/f13vgenforcer
+	title = "Van Graff Enforcer"
+	flag = F13VGENFORCER
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "The Branch Manager"
+	description = "By some means or another you were appointed as the head of security for the Reno Branch. You are to manage the team of guards, protect Van Graff property, and follow the Branch Manager's orders to the letter."
+	selection_color = "5bd75b"
+
+	outfit = /datum/outfit/job/vangraffs/f13vgenforcer
 /*
 	loadout_options = list(
 	/datum/outfit/loadout/pr,
@@ -42,28 +97,24 @@
 		),
 	)
 */
-/datum/outfit/job/salvatores/f13don
-	name = "Don"
-	jobtype = /datum/job/salvatores/f13don
+/datum/outfit/job/vangraffs/f13vgenforcer
+	name = "Van Graff Enforcer"
+	jobtype = /datum/job/vangraffs/f13vgenforcer
 
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/ring/don
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel/leather
-	satchel = /obj/item/storage/backpack/satchel/leather
-	//r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onefivezero
-	r_pocket = /obj/item/stock_parts/cell/ammo/ec
-	mask = /obj/item/clothing/mask/cigarette/pipe
-	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
+	uniform	= /obj/item/clothing/under/f13/vangraffs/tacticalfatigues
+	accessory = null
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/f13/combat/vangraffs/enforcer
+	glasses = null
 	neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	suit =/obj/item/clothing/suit/armor/f13/reno/bulletproof
-	uniform = /obj/item/clothing/under/f13/salvatores/don
-	belt = /obj/item/gun/energy/laser/pistol
-	//backpack_contents =
+	gloves = /obj/item/clothing/gloves/f13/military
+	belt = /obj/item/clothing/gloves/f13/military
+	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs/enforcer
+	suit_store = /obj/item/gun/energy/laser/plasma
+	r_hand = null
+	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 1)
 
 /datum/outfit/job/salvatores/f13don/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -97,72 +148,15 @@
 
 /*--------------------------------------------------------------*/
 
-/datum/job/salvatores/f13underboss
-	title = "Salvatores Underboss"
-	flag = F13SALVATRESUNDERBOSS
-	department_flag = SALVATORES
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "The Don"
-	description = "You have proven your worth as an earner for the Salvatore Family and, as such, it has been trusted to you to lead a small band of soldiers for the boss. You are the mediator between the head of the family and said soldiers, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the soldiers not be assigned to you by the Boss or the Underboss, the decision will fall unto you and the other capos. The Salvatore family does not have many taboos regarding what kind of businesses they involve themselves into, so focus on following the orders of your superiors and protecting the family premises. Keep the affairs of the family as a secret, by any means necessary"
-	selection_color = "E1E1E1"
-	exp_requirements = EXP_TYPE_SALVATORES
-
-	outfit = /datum/outfit/job/salvatores/f13underboss
-/*
-	loadout_options = list(
-	/datum/outfit/loadout/pr,
-	/datum/outfit/loadout/pw,
-	)
-
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/oasis,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/oasis,
-		),
-	)
-*/
-/datum/outfit/job/salvatores/f13underboss
-	name = "Underboss"
-	jobtype = /datum/job/salvatores/f13underboss
-
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/ring/officer
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel/leather
-	satchel = /obj/item/storage/backpack/satchel/leather
-	//r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onezerozero
-	r_pocket = /obj/item/stock_parts/cell/ammo/ec
-	mask = /obj/item/clothing/mask/cigarette/cigar
-	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
-	neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	suit =/obj/item/clothing/suit/armor/f13/reno/bulletproof
-	uniform = /obj/item/clothing/under/f13/salvatores/officer
-	belt = /obj/item/gun/energy/laser/wattz/magneto
-	//backpack_contents =
-
-/*--------------------------------------------------------------*/
-
-/datum/job/salvatores/f13capo
-	title = "Salvatores Capo"
-	flag = F13SALVATRESCAPO
-	department_flag = SALVATORES
+/datum/job/vangraffs/f13weaponsmith
+	title = "Van Graff Weapon Smith"
+	flag = F13WEAPONSMITH
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "The Underboss and the Don"
-	description = "You have proven your worth as an earner for the Salvatore Family and, as such, it has been trusted to you to lead a small band of soldiers for the boss. You are the mediator between the head of the family and said soldiers, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the soldiers not be assigned to you by the Boss or the Underboss, the decision will fall unto you and the other capos. The Salvatore family does not have many taboos regarding what kind of businesses they involve themselves into, so focus on following the orders of your superiors and protecting the family premises. Keep the affairs of the family as a secret, by any means necessary."
-	selection_color = "#F2F2F2"
-	exp_requirements = EXP_TYPE_SALVATORES
+	supervisors = "the Branch Manager"
+	description = "You're an employee of the Van Graffs, in charge of the manufacturing and sale of energy weapons. However, you are not allowed to use merchandise for yourself unless given permission."
 
-	outfit = /datum/outfit/job/salvatores/f13capo
+	outfit = /datum/outfit/job/vangraffs/f13weaponsmith
 /*
 	loadout_options = list(
 	/datum/outfit/loadout/pr,
@@ -180,107 +174,83 @@
 		),
 	)
 */
-/datum/outfit/job/salvatores/f13capo
-	name = "Capo"
-	jobtype = /datum/job/salvatores/f13capo
+/datum/outfit/job/vangraffs/f13weaponsmith
+	name = "Weapon Smith"
+	jobtype = /datum/job/vangraffs/f13weaponsmith
 
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/ring/officer
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel
-	satchel = /obj/item/storage/backpack/satchel
-	//r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/sevenzero
-	r_pocket = null
-	mask = /obj/item/clothing/mask/cigarette/cigar
-	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
-	neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/f13/salvatores/officer
-	suit = /obj/item/clothing/suit/armor/f13/salvatores/white_coat
-	belt = /obj/item/gun/energy/laser/wattz/magneto
-	//backpack_contents =
+	accessory = null
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	head = null
+	glasses = /obj/item/clothing/glasses/welding
+	neck = null
+	gloves = null
+	belt = /obj/item/storage/belt/utility/full
+	suit = null
+	suit_store = null
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/wastelander = 1,
+		)
 
-/*--------------------------------------------------------------*/
+/datum/outfit/job/vangraffs/f13weaponsmith/pre_equip(mob/living/carbon/human/H)
+	..()
 
-/datum/job/salvatores/f13soldier
-	title = "Salvatores Soldier"
-	flag = F13SALVATRESSOLDIER
-	department_flag = SALVATORES
-	total_positions = 5
-	spawn_positions = 5
-	supervisors = "Your capo, the underboss, and the Don"
-	description = "You have been made a soldier of the Salvatore Family. Expect to be assigned to follow the orders of one of the Capos, be it selling laser guns, extorting businesses, protecting the bar, delivering the family's goods to some private entity, working on discrete sabotage missions, and so on. Do not disturb the boss or the underboss with unnecessary affairs. Do not mention the affairs of the family to any outsider."
-	selection_color = "#F2F2F2"
-	exp_requirements = EXP_TYPE_SALVATORES
-
-	outfit = /datum/outfit/job/salvatores/f13soldier
-/*
-	loadout_options = list(
-	/datum/outfit/loadout/pr,
-	/datum/outfit/loadout/pw,
-	)
-
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/oasis,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/oasis,
-		),
-	)
-*/
-/datum/outfit/job/salvatores/f13soldier
-	name = "Soldier"
-	jobtype = /datum/job/salvatores/f13soldier
-
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/ring/soldier
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel
-	satchel = /obj/item/storage/backpack/satchel
-	//r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
-	r_pocket = /obj/item/stock_parts/cell/ammo/ec
-	//mask = /obj/item/clothing/mask/cigarette/cigar
-	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
-	//neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/f13/salvatores/soldier
-	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
-	belt = null
-	//backpack_contents =
-
-/datum/outfit/job/salvatores/f13soldier/pre_equip(mob/living/carbon/human/H)
-	. = ..()
 	r_hand = pick(
-		/obj/item/melee/onehanded/knife/switchblade, \
-		/obj/item/melee/onehanded/club, \
-		/obj/item/gun/ballistic/automatic/hobo/zipgun, \
-		/obj/item/twohanded/sledgehammer/simple , \
-		/obj/item/kitchen/knife, \
-		/obj/item/twohanded/baseball)
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
+		/obj/item/book/granter/crafting_recipe/blueprint/aer9,
+		/obj/item/book/granter/crafting_recipe/blueprint/lightplasmapistol,
+		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle)
+
+	uniform = pick(
+		/obj/item/clothing/under/f13/roving,
+		/obj/item/clothing/under/f13/caravaneer,
+		/obj/item/clothing/under/f13/merchant,
+		/obj/item/clothing/under/f13/shiny)
 
 /*--------------------------------------------------------------*/
 
-/datum/job/salvatores/f13bartender
-	title = "Salvatores Bartender"
-	flag = F13SALVATRESBARTENDER
-	department_flag = SALVATORES
+/datum/job/vangraffs/f13researchcontractor
+	title = "Research Contractor"
+	flag = F13RESEARCHCONTRACTOR
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the capos, the underboss, and the Don"
-	description = "You are the sole employee of the old Salvatore's bar. Though you're not a proper member of the family, you count with their protection and you're also expected to fulfill their demands. Serve drinks and food to the costumers and the family members, make sure the the place stays clean, and keep a constant dialogue with whoever is keeping the bar safe to kick drunkards, bums, or the more dangerous folks that may come pay a visit to the family."
-	selection_color = "#F2F2F2"
-	exp_requirements = EXP_TYPE_SALVATORES
+	supervisors = "the underboss, and the Don"
+	description = "The egghead of the operation; your job is involved with the research and production of state-of-the-art robotics."
 
-	outfit = /datum/outfit/job/salvatores/f13chef
+	outfit = /datum/outfit/job/vangraffs/f13researchcontractor
+
+/datum/outfit/job/vangraffs/f13researchcontractor
+	name = "Researcher"
+	jobtype = /datum/job/vangraffs/f13researchcontractor
+
+	belt = /obj/item/storage/belt/utility/full
+	uniform = /obj/item/clothing/under/f13/vault/vcity
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13
+	glasses = /obj/item/clothing/glasses/hud/health
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1)
+
+/datum/outfit/job/vangraffs/f13researchcontractor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+
+/*--------------------------------------------------------------*/
+
+/datum/job/vangraffs/f13guard
+	title = "Van Graff Guard"
+	flag = F13GUARD
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Enforcer"
+	description = "You're a member of the Van Graff's private army. Protect the interests and property of the local branch, but don't scare off potential customers."
+
+	outfit = /datum/outfit/job/vangraffs/f13guard
 /*
 	loadout_options = list(
 	/datum/outfit/loadout/chef,
@@ -298,64 +268,23 @@
 		),
 	)
 */
-/datum/outfit/job/salvatores/f13chef
-	name = "Chef"
-	jobtype = /datum/job/salvatores/f13bartender
+/datum/outfit/job/vangraffs/f13guard
+	name = "Van Graff Guard"
+	jobtype = /datum/job/vangraffs/f13guard
 
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/papers/worker
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel
-	satchel = /obj/item/storage/backpack/satchel
-	r_hand = /obj/item/book/manual/chef_recipes
-	l_hand = /obj/item/storage/box/ingredients/italian
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
-	r_pocket = /obj/item/stock_parts/cell/ammo/ec
-	mask = /obj/item/clothing/mask/fakemoustache/italian
-	head = /obj/item/clothing/head/chefhat
-	//neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/rank/chef
-	suit = /obj/item/clothing/suit/toggle/chef
-	belt = null
-	//backpack_contents =
-
-/*--------------------------------------------------------------*/
-
-/datum/job/salvatores/f13roboticist
-	title = "Salvatores Roboticist"
-	flag = F13SALVATRESROBOTICIST
-	department_flag = SALVATORES
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the underboss, and the Don"
-	description = "You are a contractor from Vault City employed by the Salvatores to maintain certain technologies given to them by a third party."
-	selection_color = "#F2F2F2"
-	exp_requirements = EXP_TYPE_SALVATORES
-
-	outfit = /datum/outfit/job/salvatores/f13roboticist
-
-/datum/outfit/job/salvatores/f13roboticist
-	name = "Roboticist"
-	jobtype = /datum/job/salvatores/f13roboticist
-
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/salvatores/papers/worker
-	belt = /obj/item/storage/belt/utility/full
-	uniform = /obj/item/clothing/under/f13/vault/vcity
+	uniform	= /obj/item/clothing/under/f13/vangraffs/tacticalfatigues
+	accessory = null
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13
-	glasses = /obj/item/clothing/glasses/hud/health
+	head = /obj/item/clothing/head/helmet/f13/combat/vangraffs
+	glasses = null
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = /obj/item/clothing/gloves/f13/military
+	belt = /obj/item/storage/belt/military/assault
+	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs
+	suit_store = /obj/item/gun/energy/laser/aer9
+	r_hand = null
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz/magneto = 1,
-		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1)
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 1)
 
-/datum/outfit/job/salvatores/f13roboticist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+

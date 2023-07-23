@@ -1046,20 +1046,68 @@
 	desc = "An armored coat with large pockets."
 	icon_state = "blue_trench_coat"
 	item_state = "blue_trench_coat"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+/obj/item/clothing/suit/armor/f13/bishops/boss
+	name = "armored trench coat"
+	desc = "An armored coat with large pockets."
+	icon_state = "boss_coat"
+	item_state = "boss_coat"
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 
 ///////////
 //Wrights//
 ///////////
 
+/obj/item/clothing/suit/armor/f13/wrights/jacket
+	name = "scruffy blue jacket"
+	desc = "A noticeable worn out stiff cloth jacket with some room for pockets. This one has some stains on it."
+	icon_state = "scruffy_jacket_1"
+	item_state = "scruffy_jacket_1"
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+/obj/item/clothing/suit/armor/f13/wrights/jacket/tan
+	name = "brown vest"
+	desc = "A noticeable worn out stiff cloth jacket with some room for pockets."
+	icon_state = "scruffy_jacket_2"
+	item_state = "scruffy_jacket_2"
+
+/obj/item/clothing/suit/armor/f13/wrights/jacket/black
+	name = "brown vest"
+	desc = "A noticeable worn out stiff cloth jacket with some room for pockets."
+	icon_state = "scruffy_jacket_3"
+	item_state = "scruffy_jacket_3"
+
+/obj/item/clothing/suit/armor/f13/wrights/jacket/brown
+	name = "raggedy coat"
+	desc = "A brown coat that looks to be gutter-wear."
+	icon_state = "raggedy_browncoat"
+	item_state = "raggedy_browncoat"
+
 /obj/item/clothing/suit/armor/f13/wrights/armored_vest
 	name = "brown vest"
 	desc = "An armored vest with large interior pockets."
 	icon_state = "wrights_vest"
 	item_state = "wrights_vest"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
+
+/obj/item/clothing/suit/armor/f13/wrights/formalcoat
+	name = "formal beige coat"
+	desc = "A well made but old coat with leather lining."
+	icon_state = "wrights_vest"
+	item_state = "wrights_vest"
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+/obj/item/clothing/suit/armor/f13/wrights/elder
+	name = "tailored coat"
+	desc = "A custom made coat with protective ANTI LASER leather lining stitched in. Your safety GUARANTEED."
+	icon_state = "wright_suit"
+	item_state = "wright_suit"
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25,"wound" = 30)
 
 /////////
 //Hotel//
@@ -1077,9 +1125,9 @@
 	icon_state = "concierge_coat"
 	item_state = "concierge_coat"
 
-/////////////
-//civilians//
-/////////////
+///////
+//RPD//
+///////
 
 /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
 	name = "NCR police coat"
@@ -1087,6 +1135,10 @@
 	icon_state = "ahp_suit"
 	item_state = "ahp_suit"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+
+////////
+//Reno//
+////////
 
 /obj/item/clothing/suit/armor/f13/civilians/schlimmcoat
 	name = "foreign coat"
@@ -1139,3 +1191,25 @@
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
+
+
+//////////////
+//Van Graffs//
+//////////////
+
+/obj/item/clothing/suit/armor/f13/combat/vangraffs
+	name = "Van Graff combat armor"
+	desc = "An old military grade pre war combat armor set with a slick black paintjob."
+	icon_state = "VG_combarmor"
+	item_state = "VG_combarmor"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 35)
+	slowdown = 0.12
+	salvage_loot = null
+
+/obj/item/clothing/suit/armor/f13/combat/vangraffs/enforcer
+	name = "Van Graff enforcer armor"
+	desc = "An old military grade pre war combat armor set with a slick black paintjob."
+	icon_state = "VG_reinforced_combatarmor"
+	item_state = "VG_reinforced_combatarmor"
+	armor = list("melee" = 30, "bullet" = 40, "laser" = 35, "energy" = 35, "bomb" = 35, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 40)
+

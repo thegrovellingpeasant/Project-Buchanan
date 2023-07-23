@@ -1147,21 +1147,33 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 
 //wrights
-/obj/effect/landmark/start/f13/wrights/boss
-	name = "Wrights Boss"
-	icon_state = "Wrights Boss"
+/obj/effect/landmark/start/f13/wrights/elder
+	name = "Wright Elder"
+	icon_state = "Wright Elder"
 
-/obj/effect/landmark/start/f13/wrights/underboss
-	name = "Wrights Underboss"
-	icon_state = "Wrights Underboss"
+/obj/effect/landmark/start/f13/wrights/enforcer
+	name = "Wright Enforcer"
+	icon_state = "Wright Enforcer"
 
-/obj/effect/landmark/start/f13/wrights/capo
-	name = "Wrights Capo"
-	icon_state = "Wrights Capo"
+/obj/effect/landmark/start/f13/wrights/hooligan
+	name = "Wright Hooligan"
+	icon_state = "Wrights Hooligan"
 
-/obj/effect/landmark/start/f13/wrights/soldier
-	name = "Wrights Soldier"
+/obj/effect/landmark/start/f13/wrights/shopmanager
+	name = "Shop Manager"
 	icon_state = "Wrights Soldier"
+
+/obj/effect/landmark/start/f13/wrights/shopemployee
+	name = "Shop Employee"
+	icon_state = "Arms Dealer"
+
+/obj/effect/landmark/start/f13/wrights/clinicsupervisor
+	name = "Clinic Supervisor"
+	icon_state = "Chief Medical Officer"
+
+/obj/effect/landmark/start/f13/wrights/practitioner
+	name = "Practitioner"
+	icon_state = "Reno Doctor"
 
 //hotel
 
