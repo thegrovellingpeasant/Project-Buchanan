@@ -337,6 +337,7 @@
 	loot = list(
 				/obj/item/clothing/suit/armor/f13/leather_jacket,
 				/obj/item/clothing/suit/armor/f13/leatherarmor,
+				/obj/item/clothing/suit/armored/light/leathersuit,
 				/obj/effect/spawner/bundle/f13/armor/supafly,
 				/obj/effect/spawner/bundle/f13/armor/sadist,
 				/obj/effect/spawner/bundle/f13/armor/blastmaster,
@@ -408,6 +409,9 @@
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat,
 				/obj/item/clothing/suit/armor/vest,
 				/obj/item/clothing/suit/armor/vest/alt,
+				/obj/item/clothing/suit/armor/f13/leatherarmor/reinforced,
+				/obj/item/clothing/suit/armored/light/leather_jacketmk2,
+				/obj/item/clothing/suit/armored/light/leathercoat,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/knight
