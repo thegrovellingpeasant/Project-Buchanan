@@ -104,6 +104,8 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
+	
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
@@ -153,6 +155,13 @@
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 1)
 
+/datum/outfit/job/vangraffs/f13vgenforcer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/vangraffs/f13weaponsmith
@@ -182,7 +191,7 @@
 	)
 */
 /datum/outfit/job/vangraffs/f13weaponsmith
-	name = "Weapon Smith"
+	name = "Van Graff Weapon Smith"
 	jobtype = /datum/job/vangraffs/f13weaponsmith
 
 	accessory = null
@@ -226,7 +235,7 @@
 	outfit = /datum/outfit/job/vangraffs/f13researchcontractor
 
 /datum/outfit/job/vangraffs/f13researchcontractor
-	name = "Researcher"
+	name = "Van Graff Researcher"
 	jobtype = /datum/job/vangraffs/f13researchcontractor
 
 	belt = /obj/item/storage/belt/utility/full

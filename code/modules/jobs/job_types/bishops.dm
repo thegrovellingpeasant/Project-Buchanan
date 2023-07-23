@@ -37,7 +37,7 @@
 		)
 
 /datum/outfit/job/bishops/f13boss
-	name = "Boss"
+	name = "Bishop Boss"
 	jobtype = /datum/job/bishops/f13boss
 
 	uniform	= /obj/item/clothing/under/f13/bishops/boss
@@ -73,6 +73,13 @@
 		/obj/item/ammo_box/magazine/m22smg = 1,
 		)
 
+/datum/outfit/job/bishops/f13boss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13wife
@@ -89,7 +96,7 @@
 	outfit = /datum/outfit/job/bishops/f13wife
 
 /datum/outfit/job/bishops/f13wife
-	name = "Boss"
+	name = "Boss Wife"
 	jobtype = /datum/job/bishops/f13wife
 
 	id = /obj/item/card/id/reno/bishops/ring/wedding
@@ -117,6 +124,13 @@
 		/obj/item/clothing/under/f13/housewifedress50s,
 		/obj/item/clothing/under/f13/bluedress)
 
+/datum/outfit/job/bishops/f13wife/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+		
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13capo
@@ -138,7 +152,7 @@
 	)
 
 /datum/outfit/job/bishops/f13capo
-	name = "Capo"
+	name = "Bishop Capo"
 	jobtype = /datum/job/bishops/f13capo
 
 	uniform	= /obj/item/clothing/under/f13/bishops/soldier
@@ -174,6 +188,13 @@
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		)
 
+/datum/outfit/job/bishops/f13capo/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+		
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13soldier
@@ -207,7 +228,7 @@
 	)
 */
 /datum/outfit/job/bishops/f13soldier
-	name = "Soldier"
+	name = "Bishop Soldier"
 	jobtype = /datum/job/bishops/f13soldier
 
 	uniform	= /obj/item/clothing/under/f13/bishops/soldier
@@ -317,7 +338,7 @@
 
 
 /datum/outfit/job/bishops/f13racketeer
-	name = "comedian"
+	name = "Comedian"
 	jobtype = /datum/job/bishops/f13racketeer
 
 	uniform	= /obj/item/clothing/under/f13/sleazeball
