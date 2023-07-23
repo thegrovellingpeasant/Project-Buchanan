@@ -1241,6 +1241,13 @@
 	item_color = "mercc_m"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
 
+/obj/item/clothing/under/f13/female/merccharm //Female version
+	name = "female merc charmer outfit"
+	desc = "A blue skirt outfit."
+	icon_state = "mercc_f"
+	item_state = "mercc_f"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
+
 /obj/item/clothing/under/f13/mechanic
 	name = "worn blue jumpsuit"
 	desc = "A worn jumpsuit, made of soft-blue colored cloth, with old machine oil stains on it.<br>Long time ago it could have belonged to a repair mechanic."
@@ -1974,6 +1981,12 @@
 	icon_state = "bishop_soldier"
 	item_state = "bishop_soldier"
 
+/obj/item/clothing/under/f13/bishops/soldier/alt
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_alt"
+	item_state = "bishop_soldier_alt"
+
 /obj/item/clothing/under/f13/bishops/casino_worker
 	name = "shark club uniform"
 	desc = "The standard uniform for workers at sharkclub"
@@ -1982,23 +1995,29 @@
 
 //wrights
 
-/obj/item/clothing/under/f13/wrights/boss
-	name = "formal suit"
+/obj/item/clothing/under/f13/wrights/elder
+	name = "well tailored suit"
 	desc = "A neat, well maintained suit."
 	icon_state = "wright_boss"
 	item_state = "wright_boss"
 
 /obj/item/clothing/under/f13/wrights/officer
-	name = "wright officer suit"
-	desc = "A brown suit with a sense of formality to it."
+	name = "formal attire"
+	desc = "A brown and black suit with a sense of formality to it."
 	icon_state = "wright_officer"
 	item_state = "wright_officer"
 
-/obj/item/clothing/under/f13/wrights/soldier
-	name = "wright family suit"
-	desc = "A suit with suspenders."
-	icon_state = "wright_soldier"
-	item_state = "wright_soldier"
+/obj/item/clothing/under/f13/wrights/man
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man"
+	item_state = "wright_man"
+
+/obj/item/clothing/under/f13/wrights/woman
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_woman"
+	item_state = "wright_woman"
 
 //hotel
 
@@ -2048,14 +2067,24 @@
 	icon_state = "hawaiianpink_s"
 	item_state = "hawaiianpink_s"
 
-/obj/item/clothing/under/f13/ncr/police
-	name = "NCR police uniform"
-	desc = "A standard issue NCR police uniform, repurposed from the old world."
-	icon_state = "ahp_uniform"
-	item_state = "ahp_uniform"
-
 /obj/item/clothing/under/f13/brahminbaron/foreign_suit
 	name = "foreign suit"
 	desc = "A very well made suit."
 	icon_state = "schlimmsuit"
 	item_state = "schlimmsuit"
+
+/obj/item/clothing/under/f13/vangraffs/tacticalfatigues
+	name = "Tactical Fatgiues"
+	desc = "A tactical pseudomiliteristic uniform."
+	icon_state = "tactical_fatigues"
+	item_state = "tactical_fatigues"
+
+///////
+//RPD//
+///////
+
+/obj/item/clothing/under/f13/ncr/police
+	name = "NCR police uniform"
+	desc = "A standard issue NCR police uniform, repurposed from the old world."
+	icon_state = "ahp_uniform"
+	item_state = "ahp_uniform"

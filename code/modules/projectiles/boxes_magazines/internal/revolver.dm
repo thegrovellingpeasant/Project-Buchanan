@@ -49,7 +49,7 @@
 	name = "improvised internal magazine piperifle"
 	ammo_type = /obj/item/ammo_casing/a556/sport
 	caliber = "a556"
-	max_ammo = 1
+	max_ammo = 3
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised45
 	name = "improvised internal magazine .45"
