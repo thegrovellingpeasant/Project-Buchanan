@@ -43,12 +43,22 @@
 	damage = 12 //slight damage on impact
 	range = 10
 
+/obj/item/projectile/incendiary/flamethrower/robot
+	damage = 10
+
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	. = ..()
 	if(iscarbon(target))
 		var/mob/living/carbon/M = target
 		M.adjust_fire_stacks(3)
 		M.IgniteMob()
+
+/obj/item/projectile/incendiary/flamethrower/robot/Move()
+	. = ..()
+	var/turf/location = get_turf(src)
+	if(location)
+		new /obj/effect/hotspot(location)
+		location.hotspot_expose(700, 5, 1)
 
 /obj/item/projectile/bullet/shotgun_stunslug
 	name = "stunslug"
