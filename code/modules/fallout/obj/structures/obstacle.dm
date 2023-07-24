@@ -403,6 +403,7 @@
 	name = "metal bars"
 	desc = "Old, corroded metal bars. Ain't got a file on you, right?" //Description by Mr.Fagetti
 	icon_state = "bars"
+	layer = CLOSED_BLASTDOOR_LAYER
 	obj_integrity = 400
 	max_integrity = 400
 	proj_pass_rate = 90

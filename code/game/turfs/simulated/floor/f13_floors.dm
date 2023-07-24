@@ -340,6 +340,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark
 	icon_state = "dark"
 
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid
 	icon_state = "darksolid"
 

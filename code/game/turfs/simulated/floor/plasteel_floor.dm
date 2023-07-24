@@ -30,6 +30,8 @@
 	icon_state = "dark"
 /turf/open/floor/plasteel/dark/corner
 	icon_state = "darkcorner"
+/turf/open/floor/plasteel/dark/lit
+	sunlight_state = SUNLIGHT_SOURCE
 
 
 

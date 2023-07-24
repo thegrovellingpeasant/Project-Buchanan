@@ -15,6 +15,14 @@
 	density = FALSE
 	climbable = FALSE
 
+/obj/structure/railing/casino
+	icon_state = "railing_casino"
+
+/obj/structure/railing/casino/corner //aesthetic corner sharp edges hurt oof ouch
+	icon_state = "casino_corner"
+	density = FALSE
+	climbable = FALSE
+
 /obj/structure/railing/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, .proc/can_be_rotated),CALLBACK(src,.proc/after_rotation))

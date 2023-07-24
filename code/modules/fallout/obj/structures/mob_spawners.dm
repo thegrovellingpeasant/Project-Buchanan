@@ -365,6 +365,7 @@
 /obj/structure/nest/mob
 	desc = "You see nothing out of the ordinary."
 	density = TRUE
+	layer = MOB_LAYER
 	max_mobs = 1
 	spawn_time = 1 SECONDS
 
@@ -684,6 +685,60 @@
 	icon = 'icons/fallout/mobs/robots/eyebots.dmi'
 	icon_state = "eyebot"
 	mob_types = list(/mob/living/simple_animal/hostile/eyebot = 5)
+
+/obj/structure/nest/mob/raider
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "raider_melee"
+	mob_types = list(/mob/living/simple_animal/hostile/raider = 5)
+
+/obj/structure/nest/mob/raider/baseball
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "baseball_raider"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/baseball = 5)
+
+/obj/structure/nest/mob/raider/firefighter
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "firefighter_raider"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/firefighter = 5)
+
+/obj/structure/nest/mob/raider/ranged
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "raider_ranged"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/ranged = 5)
+
+/obj/structure/nest/mob/raider/biker
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "biker_raider"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/biker = 5)
+
+/obj/structure/nest/mob/raider/boss
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "raiderboss"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/boss = 5)
+
+/obj/structure/nest/mob/raider/sulphiteranged
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "metal_raider"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/sulphiteranged = 5)
+
+/obj/structure/nest/mob/raider/sulphite
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "sulphite"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/sulphite = 5)
+
+/obj/structure/nest/mob/raider/tribal
+	name = "Raider"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "tribal_raider"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/tribal = 5)
 
 //Event Nests
 /obj/structure/nest/zombieghoul

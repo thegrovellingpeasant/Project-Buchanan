@@ -509,7 +509,7 @@
 	name = "radio"
 	icon = 'icons/fallout/machines/radio.dmi'
 	icon_state = "radio_on"
-	desc = "Tuned into Wendover's number one radio station, KWI."
+	desc = "Tuned into the number one local radio station."
 	keyslot = new /obj/item/encryptionkey/headset_wnd
 	frequency = FREQ_WND
 	freqlock = TRUE
