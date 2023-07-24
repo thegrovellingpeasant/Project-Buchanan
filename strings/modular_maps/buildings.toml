@@ -1,0 +1,4 @@
+directory = "_maps/templates/"
+
+[buildings.shelter]
+modules = ["shelter_1.dmm", "shelter_2.dmm", "shelter_3.dmm"]

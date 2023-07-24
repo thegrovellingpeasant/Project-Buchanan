@@ -71,6 +71,7 @@ Mayor
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/wendover/f13wendovermayor
@@ -228,6 +229,7 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 
 /*--------------------------------------------------------------*/
@@ -346,6 +348,7 @@ Mayor
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 

@@ -11,180 +11,211 @@
 	enforces = "The Bishops are an ambitious family; make sure to assert dominance among the other families of New Reno to let them know who is the most powerful gang in town. Make sure the Casino doesn't run short of money, alcohol and entretainment. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list("Focus on managing the Shark Club casino.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
 
+/datum/outfit/job/bishops
+	name = "bishopsdatums"
+	jobtype = /datum/job/bishops
+	ears = null
 
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13boss
-	title = "Bishops Boss"
+	title = "Bishop Boss"
 	flag = F13BISHOPSBOSS
 	department_flag = BISHOPS
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself"
-	description = "You are the head of the Bishop family. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with he NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Nevertheless, the Bishops still rely on the other gangs of the city to provide them with new guns, chems, and alcohol. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
+	supervisors = "Mr Bishop"
+	description = "You are the head of the Bishop family. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with the NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution, if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
 
 	outfit = /datum/outfit/job/bishops/f13boss
 
+	loadout_options = list(
+		/datum/outfit/loadout/handcannon,		// Desert Eagle
+		/datum/outfit/loadout/mylittlefriend,	// American180
+		)
+
 /datum/outfit/job/bishops/f13boss
-	name = "Boss"
+	name = "Bishop Boss"
 	jobtype = /datum/job/bishops/f13boss
 
+	uniform	= /obj/item/clothing/under/f13/bishops/boss
 	id = /obj/item/card/id/reno/bishops/ring/boss
-	backpack = /obj/item/storage/backpack/satchel/leather
-	ears = /obj/item/radio/headset
-	satchel = /obj/item/storage/backpack/satchel/leather
-	r_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
-	mask = /obj/item/clothing/mask/cigarette/cigar/ncr
+	accessory = null
+	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
 	neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/laceup
-	suit =/obj/item/clothing/suit/armor/f13/reno/bulletproof
-	uniform = /obj/item/clothing/under/f13/bishops/boss
-	belt = /obj/item/gun/ballistic/revolver/m29
+	gloves = null
+	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
+	suit_store = null
+	r_hand = null
+	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
+	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 1,
-		/obj/item/ammo_box/m44 = 1,
 		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
-		/obj/item/circular_saw = 1,
+		/obj/item/clothing/mask/cigarette/cigar/ncr = 1,
+		/obj/item/lighter/gold = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		)
 
+/datum/outfit/loadout/handcannon
+	name = "Hand Cannon"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2,
+		)
+
+/datum/outfit/loadout/mylittlefriend
+	name = "My little friend"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
+		/obj/item/ammo_box/magazine/m22smg = 1,
+		)
+
+/datum/outfit/job/bishops/f13boss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 /*--------------------------------------------------------------*/
 
-/datum/job/bishops/f13underboss
-	title = "Bishops Underboss"
-	flag = F13BISHOPSUNDERBOSS
+/datum/job/bishops/f13wife
+	title = "Bishop Wife"
+	flag = F13BISHOPSWIFE
 	department_flag = BISHOPS
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Mordino Boss"
-	description = "You are the underboss of the Bishop family. Your role may vary from a simple consigliere, to a diplomat with the other families, to assigning soldiers to the capos, or even as the chief supervisor of the family casino; keep the dialogue with the boss constant and clear to know what he needs from you. In a world where treason is treated as common currency, a position such as a 'right hand man' for the boss is extremely valuable... nevertheless, should the boss be unable to lead the family, the job will fall unto you."
+	supervisors = "the Bishop Boss"
+	description = "You are the wife of the Boss; how this happened? Who knows, maybe it was a drunken marriage. While you have no real responsibilities you do hold some level of authority, albeit lesser than that of the boss. You may find yourself doing things like micromanaging the casino staff, pestering the boss and the mobsters, and getting thrown off the third story of the Shark Club in an impromptu divorce."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13underboss
-/*
-	loadout_options = list(
-	/datum/outfit/loadout/pr,
-	/datum/outfit/loadout/pw,
-	)
+	outfit = /datum/outfit/job/bishops/f13wife
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/oasis,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/oasis,
-		),
-	)
-*/
-/datum/outfit/job/bishops/f13underboss
-	name = "Underboss"
-	jobtype = /datum/job/bishops/f13underboss
+/datum/outfit/job/bishops/f13wife
+	name = "Boss Wife"
+	jobtype = /datum/job/bishops/f13wife
 
-	ears = /obj/item/radio/headset
-	id = /obj/item/card/id/reno/bishops/ring/officer
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel
-	satchel = /obj/item/storage/backpack/satchel
-//	r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onezerozero
-	r_pocket = /obj/item/ammo_box/m44
-	mask = /obj/item/clothing/mask/cigarette/cigar/ncr
-	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	neck = /obj/item/storage/belt/holster/legholster
+	id = /obj/item/card/id/reno/bishops/ring/wedding
+	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	suit =/obj/item/clothing/suit/armor/f13/reno/bulletproof
-	uniform = /obj/item/clothing/under/f13/bishops/officer
-	belt = /obj/item/gun/ballistic/revolver/m29
-//	backpack_contents = list(
-//		/obj/item/ammo_box/m44 = 1,
-//		/obj/item/storage/bag/money/small/ncr = 1,
-//		)
+	head = null
+	neck = null
+	gloves = null
+	suit = null
+	suit_store = null
+	r_hand = null
+	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
+	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
+		/obj/item/melee/onehanded/club/fryingpan = 1,
+		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
+		/obj/item/suppressor = 1,
+		)
+
+/datum/outfit/job/bishops/f13soldier/pre_equip(mob/living/carbon/human/H)
+	. = ..()
+	uniform = pick(
+		/obj/item/clothing/under/f13/picnicdress50s,
+		/obj/item/clothing/under/f13/housewifedress50s,
+		/obj/item/clothing/under/f13/bluedress)
+
+/datum/outfit/job/bishops/f13wife/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+		
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13capo
-	title = "Bishops Capo"
+	title = "Bishop Capo"
 	flag = F13BISHOPSCAPO
 	department_flag = BISHOPS
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "Bishop Underboss and the Bishop Boss"
-	description = "You have proven your worth as an earner for the Bishop Family and, as such, it has been trusted to you to lead a small band of soldiers for the boss. You are the mediator between the head of the family and said soldiers, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the soldiers not be assigned to you by the Boss or the Underboss, the decision will fall unto you and the other capos. Help to manage the Casino, make sure there's entertainment for the visitors, follow the instructions of your superiors, keep the soldiers in line."
+	supervisors = "the Bishop Boss"
+	description = "You have proven your worth as an earner for the Bishop Family and, as such, it has been trusted to you to lead a small band of made men for the boss. You are the mediator between the head of the family and said made men, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the made men not be assigned to you by the Boss, the decision will fall unto you and the other capos. Help to manage the Casino, make sure there's entertainment for the visitors, follow the instructions of your superior, keep the made men in line."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
 	outfit = /datum/outfit/job/bishops/f13capo
-/*
+
 	loadout_options = list(
-	/datum/outfit/loadout/pr,
-	/datum/outfit/loadout/pw,
+	/datum/outfit/loadout/shotgun,
+	/datum/outfit/loadout/smg,
 	)
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/oasis,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/oasis,
-		),
-	)
-*/
 /datum/outfit/job/bishops/f13capo
-	name = "Capo"
+	name = "Bishop Capo"
 	jobtype = /datum/job/bishops/f13capo
 
-	ears = /obj/item/radio/headset
+	uniform	= /obj/item/clothing/under/f13/bishops/soldier
 	id = /obj/item/card/id/reno/bishops/ring/officer
-	//glasses =
-	//gloves =
-	backpack = /obj/item/storage/backpack/satchel
-	satchel = /obj/item/storage/backpack/satchel
-//	r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/sevenzero //placeholder
-	r_pocket = /obj/item/ammo_box/c38
-	mask = /obj/item/clothing/mask/cigarette/cigar
-	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-//	neck = /obj/item/storage/belt/holster/legholster
+	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/f13/bishops/officer
+	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/blue_trench_coat
-	belt = /obj/item/gun/ballistic/revolver/detective
-//	backpack_contents = list(
-//		/obj/item/ammo_box/m44 = 1,
-//		/obj/item/storage/bag/money/small/ncr = 1,
-//		)
+	suit_store = null
+	r_hand = null
+	backpack = /obj/item/storage/backpack/satchel/leather
+	satchel = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
+		/obj/item/clothing/mask/cigarette/cigar = 1,
+		/obj/item/lighter/greyscale = 1,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
+		)
+
+/datum/outfit/loadout/shotgun
+	name = "Heavy Hitter"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/shotgun/hunting = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		)
+
+/datum/outfit/loadout/smg
+	name = "Greaser"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/ammo_box/magazine/greasegun = 2,
+		)
+
+/datum/outfit/job/bishops/f13capo/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+		
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13soldier
-	title = "Bishops Soldier"
+	title = "Bishop Made Man"
 	flag = F13BISHOPSSOLDIER
 	department_flag = BISHOPS
 	total_positions = 7
 	spawn_positions = 7
-	supervisors = "Bishop Capos, the Underboss, and the Bishop Boss"
-	description = "You have been made a soldier of the Bishop Family. Expect to be assigned to follow the orders of one of the Capos, be it helping in the casino, extorting businesses, protecting your superiors during a meeting, and so on. Do not disturb the boss or the underboss with unnecessary affairs."
+	supervisors = "Capos and the Bishop Boss"
+	description = "You have become a made man of the Bishop Family. Expect to be assigned to follow the orders of one of the Capos, be it helping in the casino, extorting businesses, protecting your superiors during a meeting, and so on. Do not disturb the boss with unnecessary affairs."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
 	outfit = /datum/outfit/job/bishops/f13soldier
-/*
-	loadout_options = list(
-	/datum/outfit/loadout/pr,
-	/datum/outfit/loadout/pw,
-	)
 
+	loadout_options = list(
+	/datum/outfit/loadout/batterup,
+	/datum/outfit/loadout/buttonman,
+	/datum/outfit/loadout/hitman,
+	)
+/*
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
@@ -197,39 +228,66 @@
 	)
 */
 /datum/outfit/job/bishops/f13soldier
-	name = "Soldier"
+	name = "Bishop Soldier"
 	jobtype = /datum/job/bishops/f13soldier
 
-	ears = /obj/item/radio/headset
+	uniform	= /obj/item/clothing/under/f13/bishops/soldier
 	id = /obj/item/card/id/reno/bishops/ring/soldier
+	accessory = null
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
+	neck = null
+	gloves = null
+	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
+	suit_store = null
+	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero //placeholder
-	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/f13/bishops/soldier
-	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
+		)
 
 /datum/outfit/job/bishops/f13soldier/pre_equip(mob/living/carbon/human/H)
 	. = ..()
-	r_hand = pick(
-		/obj/item/melee/onehanded/knife/switchblade, \
-		/obj/item/melee/onehanded/club, \
-		/obj/item/gun/ballistic/automatic/hobo/zipgun, \
-		/obj/item/twohanded/sledgehammer/simple, \
-		/obj/item/kitchen/knife, \
-		/obj/item/twohanded/baseball)
+	uniform = pick(
+		/obj/item/clothing/under/f13/bishops/soldier,
+		/obj/item/clothing/under/f13/bishops/soldier/alt)
+
+/datum/outfit/loadout/batterup
+	name = "Batter up"
+	backpack_contents = list(
+		/obj/item/twohanded/baseball = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		)
+
+/datum/outfit/loadout/buttonman
+	name = "Button Man"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
+		/obj/item/melee/unarmed/brass
+		)
+
+/datum/outfit/loadout/hitman
+	name = "Hitman"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/rifle/hunting = 1,
+		/obj/item/ammo_box/a308 = 2,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
+		)
 
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13casinoworker
-	title = "Bishops Casino Worker"
+	title = "Bishop Casino Worker"
 	flag = F13BISHOPCASINOWORKER
 	department_flag = BISHOPS
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Bishop Capos, the Underboss, and the Bishop Boss"
-	description = "You are an employee of the Shark Club, the Bishop owned casino in New Reno. Though you're not a proper member of the family, you count with their protection and you're also expected to fulfill their demands. Serve drinks to the costumers, deal the cards on the tables, change money for casino chips (and viceversa), and keep a constant dialogue with whoever is keeping the casino safe to kick out drunkards, cheaters, and the more dangerous folks that may come to pay a visit to the family."
+	description =  "You are an employee of the Shark Club, the Bishop owned casino in New Reno. Though you're not a proper member of the family, you count with their protection, and you're also expected to fulfill their demands. Serve drinks to the costumers, deal the cards on the tables, change money for casino chips (and vice versa), and keep a constant dialogue with whoever is keeping the casino safe to kick out drunkards, cheaters, and the more dangerous folks that may come to pay a visit to the family."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
@@ -239,58 +297,111 @@
 	name = "Casino Worker"
 	jobtype = /datum/job/bishops/f13casinoworker
 
-	ears = /obj/item/radio/headset
+	uniform	= /obj/item/clothing/under/f13/bishops/casino_worker
 	id = /obj/item/card/id/reno/bishops/papers/worker
-	//glasses =
+	accessory = null
+	shoes = /obj/item/clothing/shoes/laceup
+	head = null
+	neck = null
 	gloves = /obj/item/clothing/gloves/color/white
+	suit = null
+	suit_store = null
+	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
-//	r_hand =
-	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
-	r_pocket = /obj/item/card/slotmachine
-//	mask =
-//	head =
-//	neck =
-	shoes = /obj/item/clothing/shoes/laceup
-	uniform = /obj/item/clothing/under/f13/bishops/casino_worker
-//	suit =
-//	belt =
-//	backpack_contents = list(
-//		/obj/item/ammo_box/m44 = 1,
-//		/obj/item/storage/bag/money/small/ncr = 1,
-//		)
-
+	backpack_contents = list(
+		/obj/item/card/slotmachine = 1,
+		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		)
 /*--------------------------------------------------------------*/
 
-/datum/job/bishops/f13comedian
-	title = "Bishops Comedian"
-	flag = F13BISHOPCOMEDIAN
+/datum/job/bishops/f13racketeer
+	title = "Bishop Racketeer"
+	flag = F13RACKETEER
 	department_flag = BISHOPS
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "Bishop Capos, the Underboss, and the Bishop Boss"
-	description = "You are... well... the funny person of the Shark Club! Honk honk! This usually means you'll be expected to be funny to the tourists and whoever else is paying to see you. This is harder than it sounds."
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "Bishop Capos and the Bishop Boss"
+	description = "You're an affiliate of the Bishops, though while you are not a member of the family you are under their protection provided you pull your weight in your respective racket and give them their share."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13bishopcomedian
+	outfit = /datum/outfit/job/bishops/f13racketeer
 
-/datum/outfit/job/bishops/f13bishopcomedian
-	name = "comedian"
-	jobtype = /datum/job/bishops/f13comedian
+	loadout_options = list(
+		/datum/outfit/loadout/fightpromotor,
+		/datum/outfit/loadout/escort,
+		/datum/outfit/loadout/filmdirector,
+		/datum/outfit/loadout/pusher,
+		/datum/outfit/loadout/pimp,
+		)
 
-	ears = /obj/item/radio/headset
+
+/datum/outfit/job/bishops/f13racketeer
+	name = "Comedian"
+	jobtype = /datum/job/bishops/f13racketeer
+
+	uniform	= /obj/item/clothing/under/f13/sleazeball
 	id = /obj/item/card/id/reno/bishops/papers/worker
-	gloves = /obj/item/clothing/gloves/color/white
+	accessory = null
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = null
+	neck = null
+	gloves = null
+	suit = null
+	suit_store = null
+	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
-	r_pocket = null
-	head = /obj/item/clothing/head/jester
-	shoes = /obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/jester
 	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/pie/cream = 5,
-		/obj/item/megaphone/clown = 1
+		/obj/item/ammo_box/magazine/m44 = 2,
+		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		/obj/item/gun/ballistic/revolver/detective = 1,
+		/obj/item/ammo_box/c38 = 1
+		)
+
+/datum/outfit/loadout/fightpromotor
+	name = "Fight Promotor"
+	uniform = /obj/item/clothing/under/f13/bennys
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/megaphone = 1,
+		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
+		)
+
+/datum/outfit/loadout/escort
+	name = "Escort"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/fprostitute = 1,
+		/obj/item/clothing/under/f13/mprostitute = 1,
+		/obj/item/picket_sign = 1,
+		)
+
+/datum/outfit/loadout/filmdirector
+	name = "Film Director"
+	uniform = /obj/item/clothing/under/f13/jamrock
+	shoes = /obj/item/clothing/shoes/laceup
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	backpack_contents = list(
+		/obj/item/camera = 1,
+		/obj/item/taperecorder = 1,
+		/obj/item/tape = 1,
+		)
+
+/datum/outfit/loadout/pusher
+	name = "Pusher"
+	uniform = /obj/item/clothing/under/f13/sleazeball
+	shoes = /obj/item/clothing/shoes/jackboots
+	backpack_contents = list(
+		/obj/item/book/granter/trait/chemistry = 1,
+		)
+
+/datum/outfit/loadout/pimp
+	name = "Pimp"
+	uniform = /obj/item/clothing/under/suit_jacket/tan
+	shoes = /obj/item/clothing/shoes/laceup
+	glasses = /obj/item/clothing/glasses/orange
+	backpack_contents = list(
+		/obj/item/cane = 1,
+		/obj/item/restraints/handcuffs/fake/kinky = 1,
 		)

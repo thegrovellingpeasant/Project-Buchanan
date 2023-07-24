@@ -64,7 +64,10 @@ GLOBAL_LIST_INIT(command_positions, list(
 	//For Alternative maptypes - Kitsunemitsu
 	"Chief",
 
-	"Overseer"
+	"Overseer",
+
+	"Van Graff Branch Manager",
+	"Van Graff Enforcer",
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -265,26 +268,30 @@ GLOBAL_LIST_INIT(mordinos_positions, list(
 ))
 
 GLOBAL_LIST_INIT(bishops_positions, list(
-	"Bishops Boss",
-	"Bishops Underboss",
-	"Bishops Capo",
-	"Bishops Soldier",
-	"Bishops Casino Worker",
-	"Bishops Comedian",
+	"Bishop Boss",
+	"Bishop Wife",
+	"Bishop Capo",
+	"Bishop Soldier",
+	"Bishop Casino Worker",
+	"Bishop Racketeer",
 ))
 
 GLOBAL_LIST_INIT(wrights_positions, list(
-	"Wrights Boss",
-	"Wrights Underboss",
-	"Wrights Capo",
-	"Wrights Soldier",
+	"Wright Elder",
+	"Wright Enforcer",
+	"Wright Hooligan",
+	"Store Manager",
+	"Shop Employee",
+	"Clinic Supervisor",
+	"Practitioner",
 ))
 
 GLOBAL_LIST_INIT(vangraffs_positions, list(
-	"Van Graffs",
-	"Van Graffs Underboss",
-	"Van Graffs Capo",
-	"Van Graffs Soldier",
+	"Van Graff Branch Manager",
+	"Van Graff Enforcer",
+	"Van Graff Weapon Smith",
+	"Van Graff Contractor",
+	"Van Graff Guard",
 ))
 
 GLOBAL_LIST_INIT(citizens_positions, list(
@@ -308,7 +315,7 @@ GLOBAL_LIST_INIT(citizens_positions, list(
 ))
 
 // job categories for rendering the late join menu
-GLOBAL_LIST_INIT(position_categories, list(	
+GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WENDOVER = list("jobs" = wendover_positions, "color" = "#1c94d0"),
 	EXP_TYPE_USPS = list("jobs" = usps_positions, "color" = "#0262b0"),
 	EXP_TYPE_LDS = list("jobs" = lds_positions, "color" = "#ffffff"),
@@ -324,7 +331,7 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WRIGHTS = list("jobs" = wrights_positions, "color" = "#B3875E"),
 	EXP_TYPE_VANGRAFFS = list("jobs" = vangraffs_positions, "color" = "#4da34e"),
 	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#F7EFCF"),
-	
+
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -363,6 +370,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_BISHOPS = list("titles" = bishops_positions),
 	EXP_TYPE_WRIGHTS = list("titles" = wrights_positions),
 	EXP_TYPE_CITIZENS = list("titles" = citizens_positions),
+	EXP_TYPE_VANGRAFFS = list("titles" = vangraffs_positions),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),

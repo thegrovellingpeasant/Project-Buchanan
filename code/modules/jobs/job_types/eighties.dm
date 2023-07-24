@@ -89,6 +89,7 @@
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -199,6 +200,7 @@
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /datum/outfit/job/eighties/f13arenamaster
 	name = "Arena Master"

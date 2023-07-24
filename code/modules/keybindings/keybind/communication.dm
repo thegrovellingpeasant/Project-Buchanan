@@ -14,12 +14,25 @@
 	full_name = "Out Of Character Say (OOC)"
 	clientside = "ooc"
 
+/datum/keybinding/client/communication/fooc
+	hotkey_keys = list("P")
+	name = "FOOC"
+	full_name = "Faction Out Of Character Say (OOC)"
+	clientside = "fooc"
+
 /datum/keybinding/client/communication/me
 	hotkey_keys = list("CtrlM")
 	classic_keys = list("Unbound")
 	name = "Me"
 	full_name = "Me (emote)"
 	clientside = "me"
+
+/datum/keybinding/client/communication/Do
+	hotkey_keys = list("CtrlK")
+	classic_keys = list("Unbound")
+	name = "Do"
+	full_name = "Do"
+	clientside = "do"
 
 //indicators
 /datum/keybinding/client/communication/say_with_indicator
@@ -40,6 +53,16 @@
 /datum/keybinding/client/communication/me_with_indicator/down(client/user)
 	var/mob/M = user.mob
 	M.me_typing_indicator()
+	return TRUE
+
+/datum/keybinding/client/communication/do_with_indicator
+	hotkey_keys = list("K")
+	name = "do_with_indicator"
+	full_name = "Do with Typing Indicator"
+
+/datum/keybinding/client/communication/do_with_indicator/down(client/user)
+	var/mob/M = user.mob
+	M.do_typing_indicator()
 	return TRUE
 
 /datum/keybinding/client/communication/subtle

@@ -1439,15 +1439,50 @@ obj/item/clothing/head/f13/army/beret
 	desc = "The family fedora of the Bishops."
 	icon_state = "bishops_fedora"
 	item_state = "bishops_fedora"
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 20, "bomb" = 10, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+
 ////////////
 //wrights//
 ////////////
 
 /obj/item/clothing/head/helmet/f13/wrights/tophat
-	name = "wright top hat"
+	name = "black tophat"
 	desc = "The family top hat of the Wrights."
-	icon_state = "wrights_tophat"
-	item_state = "wrights_tophat"
+	icon_state = "wright_tophat"
+	item_state = "wright_tophat"
+
+/obj/item/clothing/head/helmet/f13/wrights/boater
+	name = "boater hat"
+	desc = "Oh God, another wedding...."
+	icon_state = "wright_boater"
+	item_state = "wright_boater"
+
+/obj/item/clothing/head/helmet/f13/wrights/conductor
+	name = "conductor cap"
+	desc = "Choo choo!"
+	icon_state = "wright_conductor"
+	item_state = "wright_conductor"
+
+/obj/item/clothing/head/helmet/f13/wrights
+	name = "puffer"
+	desc = "A puffy white cap commonly worn by the Wright Family."
+	icon_state = "wright_puffer"
+	item_state = "wright_puffer"
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
+
+/obj/item/clothing/head/helmet/f13/wrights/flatcap
+	name = "weathered flat cap"
+	desc = "A flat cap seen worn normally by the Wright family; unfortunately, if seen too close, you may find yourself bleeding quite profusely due to the razor affixed to the brim."
+	icon_state = "wright_flatcap"
+	item_state = "wright_flatcap"
+	force = 20
+	throwforce = 23
+	armour_penetration = 0.25
+	bare_wound_bonus = 15 //keep your arteries covered
+	throw_speed = 5
+	throw_range = 7
+	embedding = list("pain_mult" = 4, "embed_chance" = 70, "fall_chance" = 5)
+
 
 //////////
 //hotel//
@@ -1459,19 +1494,54 @@ obj/item/clothing/head/f13/army/beret
 	icon_state = "concierge_cap"
 	item_state = "concierge_cap"
 
-/////////////
-//civilians//
-/////////////
+///////
+//RPD//
+///////
 
 /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
-	name = "concierge cap"
-	desc = "A slightly worn out concierge cap."
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	name = "RPD helmet"
+	desc = "An old repurposed helmet now utilized by the NCR's police forces."
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 30)
 	icon_state = "ahp_helmet"
 	item_state = "ahp_helmet"
+
+/obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
+	name = "police chief cap"
+	desc = "An oldworld symbol of authority."
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 15)
+	icon_state = "officer_cap"
+	item_state = "officer_cap"
+
+////////
+//Reno//
+////////
 
 /obj/item/clothing/head/helmet/f13/foreign_hat
 	name = "formal hat"
 	desc = "A very well made hat."
 	icon_state = "schlimmhat"
 	item_state = "schlimmhat"
+
+//////////////
+//Van Graffs//
+//////////////
+
+/obj/item/clothing/head/helmet/f13/combat/vangraffs
+	name = "van graff combat helmet"
+	desc = "An old military grade pre-war combat helmet with a slick black paintjob."
+	icon_state = "black_combat_helmet"
+	item_state = "black_combat_helmet"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 35)
+	strip_delay = 50
+	flags_inv = HIDEEARS|HIDEHAIR
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+	salvage_loot = null
+
+/obj/item/clothing/head/helmet/f13/combat/vangraffs/enforcer
+	name = "van graff enforcer helmet"
+	desc = "An old military grade pre-war combat helmet with a slick black paintjob and a red visor."
+	icon_state = "black_combat_helmet"
+	item_state = "black_combat_helmet"
+	armor = list("melee" = 30, "bullet" = 40, "laser" = 35, "energy" = 35, "bomb" = 35, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 40)

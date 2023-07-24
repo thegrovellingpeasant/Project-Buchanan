@@ -77,6 +77,7 @@ Mayor
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SPIRITUAL, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /datum/outfit/job/latterdaysaints/f13templepresident
 	name = "Temple President"
@@ -198,6 +199,7 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 
 /*--------------------------------------------------------------*/

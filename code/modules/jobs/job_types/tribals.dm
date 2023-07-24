@@ -65,6 +65,7 @@ Tribal Chief
 		return
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /datum/outfit/job/tribal/f13chief
 	name =	"Chief"
@@ -121,6 +122,7 @@ Tribal Shaman
 		return
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SPIRITUAL, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /datum/outfit/job/tribal/f13shaman
 	name = "Shaman"
@@ -196,6 +198,7 @@ Tribal Head Hunter
 		return
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /datum/outfit/job/tribal/f13Hhunter
 	name = "Hunter"
