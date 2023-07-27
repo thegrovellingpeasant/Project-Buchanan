@@ -445,7 +445,7 @@
 		dance_over()
 		playsound(src,'sound/machines/terminal_off.ogg',50,1)
 		update_icon()
-		stop = world.time + 100
+		stop = world.time + 20
 
 
 /obj/machinery/jukebox/disco/process()
