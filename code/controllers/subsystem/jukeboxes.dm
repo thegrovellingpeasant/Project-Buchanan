@@ -64,10 +64,10 @@ SUBSYSTEM_DEF(jukeboxes)
 	return FALSE
 
 /datum/controller/subsystem/jukeboxes/Initialize()
-	var/list/tracks = flist("config/jukebox_music/sounds/")
+	var/list/tracks = flist("sound/f13music/jukebox_music/")
 	for(var/S in tracks)
 		var/datum/track/T = new()
-		T.song_path = file("config/jukebox_music/sounds/[S]")
+		T.song_path = file("sound/f13music/jukebox_music/[S]")
 		var/list/L = splittext(S,"+")
 		T.song_name = L[1]
 		T.song_length = text2num(L[2])

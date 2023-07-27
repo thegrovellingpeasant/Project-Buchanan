@@ -1,11 +1,11 @@
 /obj/machinery/jukebox
 	name = "jukebox"
-	desc = "A classic music player."
+	desc = "A classic music player, loaded with a wide array of songs."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "jukebox"
 	verb_say = "states"
 	density = TRUE
-	req_one_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_HYDROPONICS, ACCESS_ENGINE, ACCESS_CARGO, ACCESS_THEATRE)
+	req_one_access = list()
 	var/active = FALSE
 	var/list/rangers = list()
 	var/stop = 0
@@ -54,14 +54,14 @@
 
 /obj/machinery/jukebox/ui_status(mob/user)
 	if(!anchored)
-		to_chat(user,"<span class='warning'>This device must be anchored by a wrench!</span>")
+		to_chat(user,"<span class='warning'>The jukebox must be anchored by a wrench!</span>")
 		return UI_CLOSE
 	if(!allowed(user) && !isobserver(user))
 		to_chat(user,"<span class='warning'>Error: Access Denied.</span>")
 		user.playsound_local(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	if(!SSjukeboxes.songs.len && !isobserver(user))
-		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for your station. Petition Central Command to resolve this issue.</span>")
+		to_chat(user,"<span class='warning'>Error: No music tracks have been loaded into the jukebox!</span>")
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
 	return ..()
@@ -102,7 +102,7 @@
 				return
 			if(!active)
 				if(stop > world.time)
-					to_chat(usr, "<span class='warning'>Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)].</span>")
+					to_chat(usr, "<span class='warning'>Error: The jukebox is not ready for use yet. It will be ready again in [DisplayTimeText(stop-world.time)].</span>")
 					playsound(src, 'sound/misc/compiler-failure.ogg', 50, TRUE)
 					return
 				activate_music()
@@ -143,6 +143,7 @@
 	if(jukeboxslottotake)
 		active = TRUE
 		update_icon()
+		desc = "A classic music player, loaded with a wide array of songs. Currently playing: <span class='notice'>[selection.song_name]</span>"
 		START_PROCESSING(SSobj, src)
 		stop = world.time + selection.song_length
 		return TRUE
