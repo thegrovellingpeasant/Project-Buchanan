@@ -8,6 +8,7 @@ SUBSYSTEM_DEF(jukeboxes)
 /datum/track
 	var/song_name = "generic"
 	var/song_path = null
+	var/song_type = null
 	var/song_length = 0
 	var/song_beat = 0
 	var/song_associated_id = null
@@ -70,9 +71,10 @@ SUBSYSTEM_DEF(jukeboxes)
 		T.song_path = file("sound/f13music/jukebox_music/[S]")
 		var/list/L = splittext(S,"+")
 		T.song_name = L[1]
-		T.song_length = text2num(L[2])
-		T.song_beat = text2num(L[3])
-		T.song_associated_id = L[4]
+		T.song_type = L[2]
+		T.song_length = text2num(L[3])
+		T.song_beat = text2num(L[4])
+		T.song_associated_id = L[5]
 		songs |= T
 	for(var/i in CHANNEL_JUKEBOX_START to CHANNEL_JUKEBOX)
 		freejukeboxchannels |= i

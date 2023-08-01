@@ -10,6 +10,8 @@
 	var/list/rangers = list()
 	var/stop = 0
 	var/volume = 70
+	var/list/available_types = list("Base")
+	var/list/music_tapes = list()
 	var/datum/track/selection = null
 
 /obj/machinery/jukebox/disco
@@ -44,7 +46,37 @@
 				setAnchored(FALSE)
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			return
+	
+	if(istype(O, /obj/item/musictape))
+		var/obj/item/musictape/D = O
+		if(!(D.music_category in available_types))
+			if(user.transferItemToLoc(O, src))
+				to_chat(user, span_notice("You insert \the [O] into the jukebox."))
+				playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50)
+				music_tapes += O
+				available_types += D.music_category
+		else
+			to_chat(user, span_warning("The jukebox already has the music on [O]!"))
+		return
 	return ..()
+
+/obj/machinery/jukebox/AltClick(mob/user)
+	var/list/choice_list = list()
+	for(var/obj/item/musictape/X in music_tapes)
+		choice_list[X] = image(X)
+	var/obj/item/musictape/choice =  show_radial_menu(user, src, choice_list, require_near = TRUE, tooltips = TRUE)
+	if(user && (choice in music_tapes))
+		remove_tape(user, choice)
+
+/obj/machinery/jukebox/proc/remove_tape(mob/living/user, obj/item/musictape/choice)
+	user.visible_message(span_notice("[user] removes \the [choice] from the jukebox!"), \
+		span_notice("You remove [choice] from the jukebox."))
+	choice.add_fingerprint(user)
+	user.put_in_hands(choice)
+	
+	music_tapes -= choice
+	available_types -= choice.music_category
+	playsound(src, 'sound/machines/terminal_eject_disc.ogg', 50)
 
 /obj/machinery/jukebox/update_icon_state()
 	if(active)
@@ -77,10 +109,11 @@
 	data["active"] = active
 	data["songs"] = list()
 	for(var/datum/track/S in SSjukeboxes.songs)
-		var/list/track_data = list(
-			name = S.song_name
-		)
-		data["songs"] += list(track_data)
+		if(S.song_type in available_types)
+			var/list/track_data = list(
+				name = S.song_name
+			)
+			data["songs"] += list(track_data)
 	data["track_selected"] = null
 	data["track_length"] = null
 	data["track_beat"] = null
