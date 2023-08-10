@@ -458,6 +458,11 @@
 
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .) //This also handles flavor texts now
 
+	if(client.prefs.age_verified)
+		. += span_boldnotice("This player is Age Verified.")
+	if(!client.prefs.age_verified)
+		. += span_boldwarning("This player is not Age Verified.")
+
 	if(has_status_effect(STATUS_EFFECT_ADMINSLEEP))
 		. += span_danger("<B>This player has been slept by staff.</B>\n")
 
