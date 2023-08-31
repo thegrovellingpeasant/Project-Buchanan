@@ -30,6 +30,8 @@
 	icon_state = "dark"
 /turf/open/floor/plasteel/dark/corner
 	icon_state = "darkcorner"
+/turf/open/floor/plasteel/dark/lit
+	sunlight_state = SUNLIGHT_SOURCE
 
 
 
@@ -333,6 +335,10 @@
 
 /turf/open/floor/plasteel/grimy
 	icon_state = "grimy"
+
+/turf/open/floor/plasteel/grimy/lit
+	icon_state = "grimy"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/cafeteria
 	icon_state = "cafeteria"

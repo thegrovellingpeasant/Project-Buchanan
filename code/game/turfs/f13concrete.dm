@@ -158,7 +158,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 //Barricade can't be removed with hands unlike sandbags, needs a welder
 
 /turf/closed/wall/mineral/concrete
-	name = "supermart wall"
+	name = "concrete wall"
 	desc = "A pre-War supermart wall made of reinforced concrete. This one looks newly built"
 	icon = 'icons/turf/walls/f13superstore.dmi'
 	icon_state = "supermart"

@@ -235,6 +235,9 @@
 	start_showpiece_type = /obj/item/clothing/mask/facehugger/lamarr
 	req_access = list(ACCESS_RD)
 
+/obj/structure/displaycase/nationaltreasure
+	start_showpiece_type = /obj/item/poster/nationaltreasure
+
 /obj/structure/displaycase/trophy
 	name = "trophy display case"
 	desc = "Store your trophies of accomplishment in here, and they will stay forever."

@@ -5,6 +5,7 @@
 #define CASH_AUR 100 /* 100 caps to 1 AUR */
 #define CASH_DEN 4 /* 4 caps to 1 DEN */
 #define CASH_NCR 0.4 /* $100 to 40 caps */
+#define CASH_SHRK 0.2 /* 5 Chips to 1 cap */
 
 /* value of coins to spawn, use as-is for caps */
 /* LOW_MIN / AUR = amount in AUR */
@@ -314,6 +315,10 @@
 	amount = 50
 	merge_type = /obj/item/stack/f13Cash/ncr
 
+/obj/item/stack/f13Cash/ncr/fivezerozero
+	amount = 500
+	merge_type = /obj/item/stack/f13Cash/ncr
+
 /obj/item/stack/f13Cash/ncr/fourzero
 	amount = 40
 	merge_type = /obj/item/stack/f13Cash/ncr
@@ -350,11 +355,97 @@
 	min_qty = HIGH_MIN / CASH_NCR
 	max_qty = HIGH_MAX / CASH_NCR
 
+/obj/item/stack/f13Cash/chips
+	name = "Shark Club Chip"
+	singular_name = "Chip"  /* same for denarius, we can pretend the legion can't latin properly */
+	flavor_desc = "A chip used for gambling at the Shark Club in New Reno."
+	icon = 'icons/obj/economy.dmi'
+	icon_state = "shark" /* 10 points to whoever writes flavour text for each bill */
+	value = CASH_SHRK * CASH_CAP
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/update_icon()
+	switch(amount)
+		if(1 to 9)
+			icon_state = "[initial(icon_state)]"
+		if(10 to 19)
+			icon_state = "[initial(icon_state)]10"
+		if(20 to 24)
+			icon_state = "[initial(icon_state)]20"
+		if(25 to 49)
+			icon_state = "[initial(icon_state)]25"
+		if(50 to 99)
+			icon_state = "[initial(icon_state)]50"
+		if(100 to 499)
+			icon_state = "[initial(icon_state)]100"
+		if(500 to 999)
+			icon_state = "[initial(icon_state)]200"
+		if(500 to 999)
+			icon_state = "[initial(icon_state)]500"
+		if(1000 to 1999)
+			icon_state = "[initial(icon_state)]1000"
+		if(2000 to 2999)
+			icon_state = "[initial(icon_state)]2000"
+		if(3000 to 3999)
+			icon_state = "[initial(icon_state)]3000"
+		if(4000 to 4999)
+			icon_state = "[initial(icon_state)]4000"
+		if(5000 to 15000)
+			icon_state = "[initial(icon_state)]5000"
+
+/obj/item/stack/f13Cash/random/chips
+	money_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/twofivezero
+	amount = 250
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/onezerozero
+	amount = 100
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/sevenzero
+	amount = 70
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/fivezero
+	amount = 50
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/fourzero
+	amount = 40
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/threezero
+	amount = 30
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/onezero
+	amount = 10
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/chips/onezerozerozero
+	amount = 1000
+	merge_type = /obj/item/stack/f13Cash/chips
+
+/obj/item/stack/f13Cash/random/chips/low
+	min_qty = TEMP3_MIN / CASH_SHRK
+	max_qty = TEMP3_MAX / CASH_SHRK
+
+/obj/item/stack/f13Cash/random/chips/med
+	min_qty = TEMP_MIN / CASH_SHRK
+	max_qty = TEMP_MAX / CASH_SHRK
+
+/obj/item/stack/f13Cash/random/chips/high
+	min_qty = TEMP2_MIN / CASH_SHRK
+	max_qty = TEMP2_MAX / CASH_SHRK
+
 #undef maxCoinIcon
 #undef CASH_CAP
 #undef CASH_AUR
 #undef CASH_DEN
 #undef CASH_NCR
+#undef CASH_SHRK
 #undef LOW_MIN
 #undef LOW_MAX
 #undef MED_MIN

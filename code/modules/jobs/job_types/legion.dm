@@ -804,7 +804,7 @@ commented out pending rework*/
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/exile/legion = 1,
 		/obj/item/clothing/suit/hooded/tribaloutcast = 1,
-		/obj/item/clothing/shoes/roman = 1,
+		/obj/item/clothing/shoes/f13/military/legion = 1,
 		/obj/item/clothing/gloves/bracer = 1,
 		/obj/item/melee/onehanded/club/warclub = 1,
 		/obj/item/throwing_star/tomahawk = 2,

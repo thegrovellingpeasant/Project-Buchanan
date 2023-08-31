@@ -260,6 +260,23 @@
 	resistance_flags = FIRE_PROOF
 	isGlass = FALSE
 
+/obj/item/reagent_containers/food/drinks/trophy/datura
+	name = "sacred datura root tea"
+	desc = "It seems old and well used."
+	icon_state = "daturatea"
+	w_class = WEIGHT_CLASS_TINY
+	force = 1
+	throwforce = 1
+	amount_per_transfer_from_this = 5
+	custom_materials = list(/datum/material/iron=100)
+	list_reagents = list(/datum/reagent/consumable/ethanol/daturatea = 60)
+	possible_transfer_amounts = list()
+	volume = 60
+	flags_1 = CONDUCT_1
+	spillable = TRUE
+	resistance_flags = FIRE_PROOF
+	isGlass = FALSE
+
 ///////////////////////////////////////////////Drinks/////////////////////////////////////////
 //Notes by Darem: Drinks are simply containers that start preloaded. Unlike condiments, the contents can be ingested directly
 //	rather then having to add it to something else first. They should only contain liquids. They have a default container size of 50.

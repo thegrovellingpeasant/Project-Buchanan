@@ -440,3 +440,25 @@
 	icon_state = "rvladder2"
 	height = 0
 
+/obj/structure/ladder/unbreakable/manhole
+	name = "manhole"
+	desc = "A sturdy metal ladder."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "manhole_closed"
+	plane = FLOOR_PLANE
+	height = 0
+
+/obj/structure/ladder/unbreakable/manholeopen
+	name = "manhole"
+	desc = "A sturdy metal ladder."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "manhole_open"
+	plane = FLOOR_PLANE
+	height = 0
+
+/obj/structure/ladder/unbreakable/vanilla
+	name = "ladder"
+	desc = "A sturdy metal ladder."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "ladder10"
+	height = 0

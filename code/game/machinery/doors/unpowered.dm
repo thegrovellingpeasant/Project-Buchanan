@@ -87,6 +87,7 @@
 /obj/machinery/door/unpowered/secure_NCR
 	name = "reinforced door"
 	desc = "Door with a built-in lock. Can't be padlocked."
+	icon_state = "secure_NCR"
 	assemblytype = /obj/item/stack/sheet/metal/ten
 	max_integrity = 700
 	obj_integrity = 700
@@ -111,14 +112,30 @@
 // ------------------------------------
 // Van Graff SECURE REINFORCED DOOR
 
-/obj/machinery/door/unpowered/secure/vangraff
+/obj/machinery/door/unpowered/secure_vangraff
 	name = "reinforced door"
 	desc = "Solid oak and metal reinforcements make this style of door a favoured method to secure Republic buildings. Has a built in lock."
+	icon_state = "secure_steel"
 	assemblytype = /obj/item/stack/sheet/metal/ten
 	max_integrity = 700
 	obj_integrity = 700
 	explosion_block = TRUE
 	req_access_txt = "145"
+
+/obj/machinery/door/unpowered/secure_vangraff/update_icon()
+	if(density)
+		icon_state = "secure_steel"
+	else
+		icon_state = "secure_steel_open"
+
+/obj/machinery/door/unpowered/secure_vangraff/do_animate(animation)
+	switch(animation)
+		if("opening")
+			playsound(src,'sound/machines/door_open.ogg',40,1)
+			flick("secure_steel_open", src)
+		if("closing")
+			playsound(src,'sound/machines/door_close.ogg',40,1)
+			flick("secure_steel_closing", src)
 
 // ------------------------------------
 // SECURE STEEL DOOR - tougher

@@ -74,6 +74,9 @@
 /turf/open/floor/wood/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
+/turf/open/floor/wood/lit
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/wood/wood_large
 	desc = "Stylish dark wood."
 	icon_state = "large_wood"

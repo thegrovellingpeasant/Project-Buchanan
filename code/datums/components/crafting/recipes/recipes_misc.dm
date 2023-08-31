@@ -63,7 +63,7 @@
 
 /datum/crafting_recipe/vangraffgate
 	name = "Van Graff reinforced door"
-	result = /obj/machinery/door/unpowered/secure/vangraff
+	result = /obj/machinery/door/unpowered/secure_vangraff
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 20,)
 	time = 60
 	subcategory = CAT_MISCELLANEOUS

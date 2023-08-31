@@ -142,8 +142,8 @@
 	throwforce = 15
 	armour_penetration = 0.10
 	max_reach = 1
-	embedding = list("pain_mult" = 2, "embed_chance" = 60, "fall_chance" = 20)
-	w_class = WEIGHT_CLASS_NORMAL
+	embedding = list("pain_mult" = 2, "embed_chance" = 40, "fall_chance" = 20)
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/throwing_star/tomahawk/pvc
 	name = "pvc tomahawk"

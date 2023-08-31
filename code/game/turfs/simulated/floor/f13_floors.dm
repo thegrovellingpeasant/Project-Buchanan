@@ -184,9 +184,58 @@
 /turf/open/floor/wood/f13/oakbroken4
 	icon_state = "oakfloor4-broken"
 
+/turf/open/floor/wood/f13/oakbase
+	icon_state = "housebase"
+
 /turf/open/floor/wood/f13/oak/lit
 	name = "floor"
 	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/housewoodbroken/lit
+	icon_state = "housewood1-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/housewoodbroken2/lit
+	icon_state = "housewood2-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/housewoodbroken3/lit
+	icon_state = "housewood3-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/housewoodbroken4/lit
+	icon_state = "housewood4-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/oakbroken/lit
+	icon_state = "oakfloor1-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/oakbroken2/lit
+	icon_state = "oakfloor2-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/oakbroken3/lit
+	icon_state = "oakfloor3-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/oakbroken4/lit
+	icon_state = "oakfloor4-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
+/turf/open/floor/wood/f13/oakbase/lit
+	icon_state = "housebase"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
 
 /turf/open/floor/wood/f13/maple
 	icon_state = "maplefloor1"
@@ -316,6 +365,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating
 	icon_state = "plating"
 
+/turf/open/floor/plasteel/f13/vault_floor/plating/curb
+	name = "floor"
+	icon_state = "platingcurb"
+
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit
 	name = "floor"
 	sunlight_state = SUNLIGHT_SOURCE
@@ -340,10 +393,22 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark
 	icon_state = "dark"
 
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid
 	icon_state = "darksolid"
 
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/darkrusty
+	icon = 'icons/fallout/turfs/floors.dmi'
+	icon_state = "floorrustysolid"
+
+/turf/open/floor/plasteel/f13/vault_floor/darkrusty/lit
 	name = "floor"
 	sunlight_state = SUNLIGHT_SOURCE
 
@@ -390,6 +455,46 @@
 
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2
 	icon_state = "whiteredchess2"
+
+/turf/open/floor/plasteel/f13/vault_floor/red/lit
+	icon_state = "redfull"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull/lit
+	icon_state = "whiteredfull"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/side/lit
+	icon_state = "red"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/corner/lit
+	icon_state = "redcorner"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/redchess/lit
+	icon_state = "redchess"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2/lit
+	icon_state = "redchess2"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/white/side/lit
+	icon_state = "whitered"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/white/corner/lit
+	icon_state = "whiteredcorner"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit
+	icon_state = "whiteredchess"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2/lit
+	icon_state = "whiteredchess2"
+	sunlight_state = SUNLIGHT_SOURCE
 
 	/* BLUE TILES */
 
@@ -610,6 +715,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1
 	icon_state = "vault1"
 
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1/lit
+	icon_state = "vault1"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/circuit/f13_blue
 	icon = 'icons/turf/f13floors2.dmi'

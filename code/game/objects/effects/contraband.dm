@@ -52,6 +52,11 @@
 	poster_type = /obj/structure/sign/poster/official/random
 	icon_state = "rolled_legit"
 
+/obj/item/poster/nationaltreasure
+	name = "Declaration of Independence"
+	poster_type = /obj/structure/sign/poster/artifact/nationaltreasure
+	icon_state = "scroll"
+
 // The poster sign/structure
 
 /obj/structure/sign/poster
@@ -691,6 +696,15 @@
 	desc = "A pin-up of a woman in a space suit that's definately NOT spaceproof."
 	icon_state = "poster59"
 
+/obj/structure/sign/poster/artifact
+	poster_item_name = "Declaration of Independence"
+	poster_item_desc = "An original broadside of the Declaration of Independence."
+	poster_item_icon_state = "scroll"
+
+/obj/structure/sign/poster/artifact/nationaltreasure
+	name = "Declaration of Independence"
+	desc = "An original broadside of the Declaration of Independence."
+	icon_state = "poster2"
 
 #undef PLACE_SPEED
 

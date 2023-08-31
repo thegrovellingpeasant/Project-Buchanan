@@ -1,5 +1,5 @@
 /obj/item/circuitboard/machine/sleeper
-	name = "Sleeper (Machine Board)"
+	name = "Auto-Doc (Machine Board)"
 	build_path = /obj/machinery/sleeper
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 1,

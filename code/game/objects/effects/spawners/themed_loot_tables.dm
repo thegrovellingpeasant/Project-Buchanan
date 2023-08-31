@@ -389,7 +389,7 @@
 		/obj/item/reagent_containers/glass/bottle/blackpowder,
 		/obj/item/stack/cable_coil,
 		/obj/item/assembly/timer,
-		/obj/item/crafting/coffee_pot,
+		/obj/item/reagent_containers/food/drinks/flask/coffeepot,
 		/obj/item/assembly/igniter,
 		/obj/item/ammo_box/jerrycan,
 		/obj/item/reagent_containers/rag,

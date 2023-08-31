@@ -489,7 +489,7 @@
 	name = "primitive radio"
 	icon_state = "radio"
 	item_state = "radio"
-	desc = "a homemade radio transceiver made out of transistors and wire."
+	desc = "A homemade radio transceiver made out of transistors and wire."
 	canhear_range = 2
 	w_class = WEIGHT_CLASS_NORMAL
 
@@ -509,7 +509,7 @@
 	name = "radio"
 	icon = 'icons/fallout/machines/radio.dmi'
 	icon_state = "radio_on"
-	desc = "Tuned into Wendover's number one radio station, KWI."
+	desc = "Tuned into the number one local radio station."
 	keyslot = new /obj/item/encryptionkey/headset_wnd
 	frequency = FREQ_WND
 	freqlock = TRUE

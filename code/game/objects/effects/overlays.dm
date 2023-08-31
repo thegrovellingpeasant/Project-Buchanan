@@ -33,6 +33,20 @@
 	layer = WALL_OBJ_LAYER
 	anchored = TRUE
 
+/obj/effect/overlay/light
+	name = ""
+	icon = 'icons/effects/light_overlays/light_cone.dmi'
+	icon_state = "light"
+	layer = BELOW_OBJ_LAYER
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	alpha = 110
+	var/mutable_appearance/spotlightoverlay
+
+/obj/effect/overlay/light/Initialize()
+	. = ..()
+	spotlightoverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
+	add_overlay(spotlightoverlay)
+
 /obj/effect/overlay/curb
 	name = "curb"
 	desc = "A street curb."

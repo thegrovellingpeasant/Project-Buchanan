@@ -49,7 +49,7 @@
 /datum/crafting_recipe/explosive/coffeepotbomb
 	name = "Coffeepot Bomb"
 	result = /obj/item/grenade/homemade/coffeepotbomb
-	reqs = list(/obj/item/crafting/coffee_pot = 1,
+	reqs = list(/obj/item/reagent_containers/food/drinks/flask/coffeepot = 1,
 				/obj/item/stack/ore/blackpowder = 5,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/assembly/timer = 1)
