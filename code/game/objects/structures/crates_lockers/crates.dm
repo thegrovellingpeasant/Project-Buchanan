@@ -274,3 +274,7 @@
 	..()
 	for(var/i in 1 to 5)
 		new /obj/item/coin/silver(src)
+
+/obj/structure/closet/crate/safe
+	name = "safe"
+	icon_state = "safe"

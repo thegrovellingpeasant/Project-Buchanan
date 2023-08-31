@@ -714,19 +714,19 @@
 	name = "Raider"
 	icon = 'icons/fallout/mobs/humans/raider.dmi'
 	icon_state = "biker_raider"
-	mob_types = list(/mob/living/simple_animal/hostile/raider/biker = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/raider/ranged/biker = 5)
 
 /obj/structure/nest/mob/raider/boss
 	name = "Raider"
 	icon = 'icons/fallout/mobs/humans/raider.dmi'
 	icon_state = "raiderboss"
-	mob_types = list(/mob/living/simple_animal/hostile/raider/boss = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/raider/ranged/boss = 5)
 
 /obj/structure/nest/mob/raider/sulphiteranged
 	name = "Raider"
 	icon = 'icons/fallout/mobs/humans/raider.dmi'
 	icon_state = "metal_raider"
-	mob_types = list(/mob/living/simple_animal/hostile/raider/sulphiteranged = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged = 5)
 
 /obj/structure/nest/mob/raider/sulphite
 	name = "Raider"

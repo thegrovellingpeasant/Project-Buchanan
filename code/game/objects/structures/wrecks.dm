@@ -1,6 +1,6 @@
 /obj/structure/wreck
-	anchored = 1
-	density = 1
+	anchored = TRUE
+	density = TRUE
 	layer = MOB_LAYER + 1
 
 /obj/structure/wreck/car
@@ -99,7 +99,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus7"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -156,7 +156,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus14"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -165,7 +165,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus15"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -174,7 +174,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus16"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -183,7 +183,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus17"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -192,7 +192,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus18"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -201,7 +201,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus19"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -210,7 +210,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus20"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -219,7 +219,7 @@
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
 	icon = 'icons/obj/vehicles/rustybussegmented.dmi'
 	icon_state = "bus21"
-	density = 0
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 
@@ -258,7 +258,7 @@
 	icon_state = "half_t"
 	bound_width = 32
 	bound_height = 32
-	density = 0
+	density = FALSE
 	layer = TURF_LAYER
 
 /obj/structure/wreck/trash/four_barrels
@@ -308,7 +308,7 @@
 	icon_state = "auto_shaft"
 	bound_width = 32
 	bound_height = 32
-	density = 0
+	density = FALSE
 	layer = TURF_LAYER
 
 /obj/structure/wreck/trash/bus_door
@@ -318,7 +318,7 @@
 	icon_state = "bus_door"
 	bound_width = 32
 	bound_height = 32
-	density = 0
+	density = FALSE
 	layer = TURF_LAYER
 
 /obj/structure/wreck/trash/secway
@@ -326,6 +326,7 @@
 	desc = "Looks like the axle was split in half."
 	icon = 'icons/fallout/trash.dmi'
 	icon_state = "secwaybroke"
+	density = FALSE
 	bound_width = 32
 	bound_height = 32
 

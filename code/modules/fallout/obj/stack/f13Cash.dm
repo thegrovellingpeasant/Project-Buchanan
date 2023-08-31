@@ -315,6 +315,10 @@
 	amount = 50
 	merge_type = /obj/item/stack/f13Cash/ncr
 
+/obj/item/stack/f13Cash/ncr/fivezerozero
+	amount = 500
+	merge_type = /obj/item/stack/f13Cash/ncr
+
 /obj/item/stack/f13Cash/ncr/fourzero
 	amount = 40
 	merge_type = /obj/item/stack/f13Cash/ncr

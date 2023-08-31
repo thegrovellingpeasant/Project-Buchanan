@@ -489,7 +489,7 @@
 	name = "primitive radio"
 	icon_state = "radio"
 	item_state = "radio"
-	desc = "a homemade radio transceiver made out of transistors and wire."
+	desc = "A homemade radio transceiver made out of transistors and wire."
 	canhear_range = 2
 	w_class = WEIGHT_CLASS_NORMAL
 

@@ -317,6 +317,15 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	name = "wall"
 	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall/notvaultwall)
 
+/turf/closed/indestructible/f13/supermart
+	name = "concrete wall"
+	desc = "No matter what you do with this rock, there's not even a scratch left on its surface.<br><font color='#7e0707'>You shall not pass!!!</font>"
+	icon = 'icons/turf/walls/f13superstore.dmi'
+	icon_state = "supermart"
+	icon_type_smooth = "supermart"
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall, /turf/closed/wall/mineral/concrete)
+
 /turf/closed/indestructible/f13/vaultwall/fakeshutter //Just like that one game studio that worked on the original game, or that block in Minecraft!
 	name = "shutter"
 	icon = 'icons/obj/doors/shutters.dmi'

@@ -950,6 +950,62 @@
 /turf/open/indestructible/ground/outside/sidewalk/damaged/horleft
 	icon_state = "horizontaloutermain2left"
 
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/left/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/right/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+	
+/turf/open/indestructible/ground/outside/sidewalk/top/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/top/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/bottom/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horheavy/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horright/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horleft/dark
+	name = "\proper sidewalk"
+	sunlight_state = NO_SUNLIGHT
+
 /turf/open/indestructible/ground/outside/sidewalk/pateo
 	name = "pateo"
 	icon = 'icons/turf/floors.dmi'
@@ -1076,6 +1132,11 @@
 
 /turf/open/indestructible/ground/outside/water/cavern
 	icon_state = "riverwater"
+	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/water/sewer
+	name = "canal"
+	icon_state = "riverwatercurb"
 	sunlight_state = NO_SUNLIGHT
 
 /turf/open/indestructible/ground/outside/water/cavernriver
@@ -1208,6 +1269,25 @@
 	icon_state = "innermiddle"
 	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
 //	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/roaddirt/dark
+	name = "canal"
+	icon_state = "innermiddlecurb"
+
+/turf/open/indestructible/ground/outside/roaddirt/dark/east
+	name = "canal"
+	icon_state = "innermiddlecurb"
+	dir = EAST
+
+/turf/open/indestructible/ground/outside/roaddirt/dark/west
+	name = "canal"
+	icon_state = "innermiddlecurb"
+	dir = WEST
+
+/turf/open/indestructible/ground/outside/roaddirt/dark/north
+	name = "canal"
+	icon_state = "innermiddlecurb"
+	dir = NORTH
 
 /turf/open/indestructible/ground/outside/sidewalkdirt
 	name = "sidewalk"

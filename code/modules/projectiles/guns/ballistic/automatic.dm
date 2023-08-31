@@ -705,7 +705,7 @@
 //Commando carbine (BoS De Lisle variant)							Keywords: BoS, .45 ACP, 12 round magazine, Long barrel, Suppressed
 /obj/item/gun/ballistic/automatic/delisle/commando
 	name = "commando carbine"
-	desc = "A integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
+	desc = "An integrally suppressed carbine, known for being one of the quietest firearms ever made. This modified version is often used by the Brotherhood of Steel. Its stock has been replaced by post-war polymer furniture, with space to mount a scope. Chambered in .45 ACP."
 	icon_state = "commando"
 	item_state = "commando"
 	mag_type = /obj/item/ammo_box/magazine/m45exp

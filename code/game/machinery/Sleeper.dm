@@ -5,11 +5,11 @@
 	density = FALSE
 
 /obj/machinery/sleeper
-	name = "autodoc"
+	name = "Auto-Doc"
 	desc = "An old pre war machine, used to stablize and heal patients"
 	icon = 'icons/obj/machines/autodoc.dmi'
 	icon_state = "autodoc"
-	layer = 3.3
+	layer = ABOVE_WINDOW_LAYER
 	density = FALSE
 	state_open = TRUE
 	circuit = /obj/item/circuitboard/machine/sleeper

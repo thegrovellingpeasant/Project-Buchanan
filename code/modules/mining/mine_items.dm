@@ -90,5 +90,6 @@
 
 /obj/structure/closet/crate/miningcar
 	desc = "A mining car. This one doesn't work on rails, but has to be dragged."
-	name = "Mining car (not for rails)"
+	name = "Mining car"
 	icon_state = "miningcar"
+	drag_delay = 0.0 SECONDS //Heavy, but wheeled.
