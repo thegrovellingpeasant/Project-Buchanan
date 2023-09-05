@@ -1542,6 +1542,6 @@ obj/item/clothing/head/f13/army/beret
 /obj/item/clothing/head/helmet/f13/combat/vangraffs/enforcer
 	name = "van graff enforcer helmet"
 	desc = "An old military grade pre-war combat helmet with a slick black paintjob and a red visor."
-	icon_state = "black_combat_helmet"
-	item_state = "black_combat_helmet"
+	icon_state = "visored_combat_helmet"
+	item_state = "visored_combat_helmet"
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 35, "energy" = 35, "bomb" = 35, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 40)

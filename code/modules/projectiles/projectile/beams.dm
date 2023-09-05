@@ -301,7 +301,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 60
+	damage = 40
 	flag = "energy"
 	eyeblur = 0
 	is_reflectable = TRUE

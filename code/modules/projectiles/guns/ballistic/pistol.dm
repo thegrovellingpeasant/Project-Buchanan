@@ -135,7 +135,7 @@
 
 //Maria									Keywords: UNIQUE, 9mm, Semi-auto, 10 round magazine. Special modifiers: fire delay -1, damage +10, penetration +0.2
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria
-	name = "Maria"
+	name = "plated Browning Hi-power"
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with pearl grips and a polished nickel finish. The firing mechanism has been upgraded, so for anyone on the receiving end, it must seem like an eighteen-karat run of bad luck."
 	icon_state = "maria"
 	fire_delay = 2

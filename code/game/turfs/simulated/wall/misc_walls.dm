@@ -210,3 +210,11 @@
 	sheet_type = /obj/item/stack/sheet/bronze
 	sheet_amount = 2
 	girder_type = /obj/structure/girder/bronze
+
+/turf/closed/wall/gothic
+	name = "gothic wall"
+	desc = "A remnant of the old world."
+	icon = 'icons/turf/walls/gothic_wall.dmi'
+	hardness = 45
+	canSmoothWith = list(/turf/closed/wall/gothic)
+	icon_type_smooth = "gothic"

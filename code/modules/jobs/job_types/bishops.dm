@@ -117,7 +117,7 @@
 		/obj/item/suppressor = 1,
 		)
 
-/datum/outfit/job/bishops/f13soldier/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/bishops/f13wife/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	uniform = pick(
 		/obj/item/clothing/under/f13/picnicdress50s,
@@ -128,7 +128,7 @@
 	..()
 	if(visualsOnly)
 		return
-		
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -192,7 +192,7 @@
 	..()
 	if(visualsOnly)
 		return
-		
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
