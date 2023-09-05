@@ -64,7 +64,7 @@
 
 //Cold Feral Ghoul
 /mob/living/simple_animal/hostile/ghoul/coldferal
-	name = "cold ghoul feral"
+	name = "cold feral ghoul"
 	desc = "A ghoul that has lost its mind and become aggressive. This one is strapped with metal armor, and appears far stronger."
 	icon_state = "cold_feral"
 	icon_living = "cold_feral"
@@ -151,28 +151,6 @@
 	armour_penetration = 0.1
 
 //Alive Ghoul
-/mob/living/simple_animal/hostile/ghoul/soldier
-	name = "ghoul soldier"
-	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon_state = "soldier_ghoul"
-	icon_living = "soldier_ghoul"
-	icon_dead = "soldier_ghoul_d"
-	icon_gib = "syndicate_gib"
-	maxHealth = 90
-	health = 90
-
-//Alive Ghoul
-/mob/living/simple_animal/hostile/ghoul/soldier/armored
-	name = "armored ghoul soldier"
-	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
-	icon_state = "soldier_ghoul_a"
-	icon_living = "soldier_ghoul_a"
-	icon_dead = "soldier_ghoul_a_d"
-	icon_gib = "syndicate_gib"
-	maxHealth = 100
-	health = 100
-
-//Alive Ghoul
 /mob/living/simple_animal/hostile/ghoul/scorched
 	name = "scorched ghoul soldier"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
@@ -193,9 +171,77 @@
 	attack_verb_simple = "punches"
 	attack_sound = "punch"
 
+/mob/living/simple_animal/hostile/ghoul/melee
+	name = "scorched ghoul soldier"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "scorched_m"
+	icon_living = "scorched_m"
+	icon_dead = "scorched_m_d"
+	icon_gib = "syndicate_gib"
+	speak_chance = 1
+	environment_smash = 0
+	response_help_simple = "hugs"
+	response_disarm_simple = "pushes aside"
+	response_harm_simple = "growl"
+	move_to_delay = 4
+	faction = list("ghoul")
+	death_sound = null
+	melee_damage_upper = 20
+	aggro_vision_range = 10
+	attack_verb_simple = "punches"
+	attack_sound = "punch"
+
+/mob/living/simple_animal/hostile/ghoul/melee/soldier
+	name = "ghoul soldier"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "soldier_ghoul"
+	icon_living = "soldier_ghoul"
+	icon_dead = "soldier_ghoul_d"
+	icon_gib = "syndicate_gib"
+	maxHealth = 90
+	health = 90
+
+/mob/living/simple_animal/hostile/ghoul/melee/soldier/armored
+	name = "armored ghoul soldier"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "soldier_ghoul_a"
+	icon_living = "soldier_ghoul_a"
+	icon_dead = "soldier_ghoul_a_d"
+	icon_gib = "syndicate_gib"
+	maxHealth = 100
+	health = 100
+
+/mob/living/simple_animal/hostile/ghoul/melee/slave
+	name = "ghoul slave"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound"
+	icon_living = "rebound"
+	icon_dead = "rebound_d"
+	icon_gib = "syndicate_gib"
+
+/mob/living/simple_animal/hostile/ghoul/melee/harmless
+	name = "ghoul bum"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "retro_ghoul"
+	icon_living = "retro_ghoul"
+	icon_dead = "retro_ghoul_d"
+	icon_gib = "syndicate_gib"
+	maxHealth = 125
+	health = 125
+
+/mob/living/simple_animal/hostile/ghoul/melee/mostlyarmless
+	name = "One Armed Bandit"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "angry_ghoul"
+	icon_living = "angry_ghoul"
+	icon_dead = "angry_ghoul_d"
+	icon_gib = "syndicate_gib"
+	maxHealth = 150
+	health = 150
+
 //Alive Ghoul Ranged
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged
-	name = "Ranged Ghoul Solder"
+	name = "ranged ghoul solder"
 	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
 	icon_state = "scorched_r"
 	icon_living = "scorched_r"
@@ -218,6 +264,201 @@
 	aggro_vision_range = 10
 	attack_verb_simple = "shoots"
 	attack_sound = "punch"
+
+/mob/living/simple_animal/hostile/ghoul/ranged
+	name = "ranged ghoul soldier"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "scorched_r"
+	icon_living = "scorched_r"
+	icon_dead = "scorched_r_d"
+	icon_gib = "syndicate_gib"
+	speak_chance = 1
+	turns_per_move = 5
+	environment_smash = 0
+	response_help_simple = "hugs"
+	response_disarm_simple = "pushes aside"
+	response_harm_simple = "ow"
+	move_to_delay = 4
+	ranged = TRUE
+	ranged_cooldown_time = 100
+	projectiletype = /obj/item/projectile/bullet/c9mm/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	faction = list("ghoul")
+	melee_damage_lower = 15
+	melee_damage_upper = 20
+	aggro_vision_range = 10
+	attack_verb_simple = "shoots"
+	attack_sound = "punch"
+
+/mob/living/simple_animal/hostile/ghoul/ranged/fiend
+	name = "ghoul raider"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "fiend_ghoul"
+	icon_living = "fiend_ghoul"
+	icon_dead = "fiend_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	faction = list("ghoul", "raider")
+	ranged_cooldown_time = 50
+	projectiletype = /obj/item/projectile/bullet/c10mm/simple
+	projectilesound = 'sound/f13weapons/10mm_fire_03.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m10mm_adv/ext)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/desperado
+	name = "ghoul desperado"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "desperado_ghoul"
+	icon_living = "desperado_ghoul"
+	icon_dead = "desperado_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	faction = list("ghoul", "raider")
+	ranged_cooldown_time = 100
+	projectiletype = /obj/item/projectile/bullet/m44/simple
+	projectilesound = 'sound/f13weapons/44revolver.ogg'
+	loot = list(/obj/item/ammo_box/m44)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/garand
+	name = "ghoul bruiser"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_initiate"
+	icon_living = "rebound_initiate"
+	icon_dead = "rebound_initiate_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 150
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/garand308)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/garandalt
+	name = "ghoul enforcer"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_initiate_b"
+	icon_living = "rebound_initiate_b"
+	icon_dead = "rebound_initiate_b_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 50
+	projectiletype = /obj/item/projectile/bullet/c45/simple
+	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+	loot = list(/obj/item/ammo_box/magazine/tommygunm45/stick)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/masksniper
+	name = "ghoul sniper"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_initiate_c"
+	icon_living = "rebound_initiate_c"
+	icon_dead = "rebound_initiate_c_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 150
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/w308)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/combatak
+	name = "ghoul commando"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_reaver"
+	icon_living = "rebound_reaver"
+	icon_dead = "rebound_reaver_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 75
+	projectiletype = /obj/item/projectile/bullet/a556/simple
+	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m556/rifle/assault)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/combatshot
+	name = "ghoul hired gun"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_reaver_b"
+	icon_living = "rebound_reaver_b"
+	icon_dead = "rebound_reaver_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 120
+	projectiletype = /obj/item/projectile/bullet/pellet/shotgun_buckshot
+	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
+	loot = list(/obj/item/ammo_box/shotgun/buck)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/combatsniper
+	name = "ghoul specialist"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_reaver_c"
+	icon_living = "rebound_reaver_c"
+	icon_dead = "rebound_reaver_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 150
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/w308)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/officerfn
+	name = "ghoul officer"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_commissar"
+	icon_living = "rebound_commissar"
+	icon_dead = "rebound_commissar_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 80
+	projectiletype = /obj/item/projectile/bullet/a762/microshrapnel
+	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m762)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/officergarand
+	name = "ghoul marksman"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "rebound_commissar_b"
+	icon_living = "rebound_commissar_b"
+	icon_dead = "rebound_commissar_b_d"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 150
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	loot = list(/obj/item/ammo_box/magazine/garand308)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/combatbrush
+	name = "ghoul mercenary"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "raider_ghoul"
+	icon_living = "raider_ghoul"
+	icon_dead = "raider_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 200
+	projectiletype = /obj/item/projectile/bullet/c4570/knockback
+	projectilesound = 'sound/f13weapons/brushgunfire.ogg'
+	loot = list(/obj/item/ammo_box/magazine/internal/shot/tube4570)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/vaultsmg
+	name = "vault ghoul"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "vault_ghoul"
+	icon_living = "vault_ghoul"
+	icon_dead = "vault_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 85
+	projectiletype = /obj/item/projectile/bullet/c10mm/simple
+	projectilesound = 'sound/f13weapons/10mm_fire_03.ogg'
+	loot = list(/obj/item/ammo_box/magazine/m10mm_adv/ext)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/vaultshotgun
+	name = "vault ghoul"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "vault_ghoul_b"
+	icon_living = "vault_ghoul_b"
+	icon_dead = "vault_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 110
+	projectiletype = /obj/item/projectile/bullet/pellet/shotgun_buckshot
+	projectilesound = 'sound/f13weapons/auto5.ogg'
+	loot = list(/obj/item/ammo_box/shotgun/buck)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/vaultlaser
+	name = "vault ghoul"
+	desc = "Have you ever seen a living ghoul before?<br>Ghouls are necrotic post-humans - decrepit, rotting, zombie-like mutants."
+	icon_state = "vault_ghoul_c"
+	icon_living = "vault_ghoul_c"
+	icon_dead = "vault_ghoul_dead"
+	icon_gib = "syndicate_gib"
+	ranged_cooldown_time = 140
+	projectiletype = /obj/item/projectile/beam/laser/musket
+	projectilesound = 'sound/f13weapons/lasmusket_fire.ogg'
+	loot = list(/obj/item/ammo_box/lasmusket)
 
 /mob/living/simple_animal/hostile/ghoul/wyomingghost
 	name = "ghost soldier"
