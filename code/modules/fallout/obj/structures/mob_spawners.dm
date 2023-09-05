@@ -393,6 +393,162 @@
 	icon_state = "glowinghoul"
 	mob_types = list(/mob/living/simple_animal/hostile/ghoul/glowing = 5)
 
+/obj/structure/nest/mob/ghoulcommunist
+	name = "chinese remnant soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "chinesesoldier"
+	mob_types = list(/mob/living/simple_animal/hostile/chinese = 5)
+
+/obj/structure/nest/mob/ghoulcommunistpistol
+	name = "chinese remnant soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "chinesepistol"
+	mob_types = list(/mob/living/simple_animal/hostile/chinese/ranged = 5)
+
+/obj/structure/nest/mob/ghoulcommunistassault
+	name = "chinese remnant assault soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "chineseassault"
+	mob_types = list(/mob/living/simple_animal/hostile/chinese/ranged/assault = 5)
+
+/obj/structure/nest/mob/ghoulfrigid
+	name = "cold feral ghoul"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "cold_feral"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/coldferal = 5)
+
+/obj/structure/nest/mob/ghoulfrozen
+	name = "frozen ghoul reaver"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "frozen_reaver"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/frozenreaver = 5)
+
+/obj/structure/nest/mob/ghoulmelee
+	name = "scorched ghoul soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "scorched_m"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee = 5)
+
+/obj/structure/nest/mob/ghoulharmless
+	name = "ghoul bum"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "retro_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee/harmless = 5)
+
+/obj/structure/nest/mob/ghoularmless
+	name = "One Armed Bandit"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "angry_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee/mostlyarmless = 5)
+
+/obj/structure/nest/mob/ghoulslave
+	name = "ghoul slave"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee/slave = 5)
+
+/obj/structure/nest/mob/ghoulsoldier
+	name = "ghoul soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "soldier_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee/soldier = 5)
+
+/obj/structure/nest/mob/ghoularmored
+	name = "armored ghoul soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "soldier_ghoul_a"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/melee/soldier/armored = 5)
+
+/obj/structure/nest/mob/ghoulranged
+	name = "ranged ghoul soldier"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "scorched_r"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged = 5)
+
+/obj/structure/nest/mob/ghoulcommando
+	name = "ghoul commando"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_reaver"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/combatak = 5)
+
+/obj/structure/nest/mob/ghoulbrush
+	name = "ghoul hired gun"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_reaver_b"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/combatshot = 5)
+
+/obj/structure/nest/mob/ghoulsniper
+	name = "ghoul specialist"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_reaver_c"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/combatsniper = 5)
+
+/obj/structure/nest/mob/ghoulmerc
+	name = "ghoul mercenary"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "raider_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/combatbrush = 5)
+
+/obj/structure/nest/mob/ghoulfiend
+	name = "ghoul raider"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "fiend_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/fiend = 5)
+
+/obj/structure/nest/mob/ghouldesperado
+	name = "ghoul desperado"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "desperado_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/desperado = 5)
+
+/obj/structure/nest/mob/ghoulgarand
+	name = "ghoul bruiser"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_initiate"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/garand = 5)
+
+/obj/structure/nest/mob/ghoulgarandalt
+	name = "ghoul enforcer"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_initiate_b"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/garandalt = 5)
+
+/obj/structure/nest/mob/ghoulmasksniper
+	name = "ghoul sniper"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_initiate_c"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/masksniper = 5)
+
+/obj/structure/nest/mob/ghoulofficer
+	name = "ghoul officer"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_commissar"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/officerfn = 5)
+
+/obj/structure/nest/mob/ghoulmarksman
+	name = "ghoul marksman"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "rebound_commissar_b"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/officergarand = 5)
+
+/obj/structure/nest/mob/ghoulvaultsmg
+	name = "vault ghoul"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "vault_ghoul"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/vaultsmg = 5)
+
+/obj/structure/nest/mob/ghoulvaultshotgun
+	name = "vault ghoul"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "vault_ghoul_b"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/vaultshotgun = 5)
+
+/obj/structure/nest/mob/ghoulvaultmusket
+	name = "vault ghoul"
+	icon = 'icons/fallout/mobs/humans/ghouls.dmi'
+	icon_state = "vault_ghoul_c"
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul/ranged/vaultlaser = 5)
+
 /obj/structure/nest/mob/deathclaw
 	name = "deathclaw"
 	icon = 'icons/fallout/mobs/monsters/deathclaw.dmi'
