@@ -717,6 +717,24 @@
 	faction = list(ROLE_SYNDICATE)
 	desc = "A ballistic machine gun auto-turret."
 
+/obj/machinery/porta_turret/syndicate/deserter
+	///graft code
+	var/rapid = 0 //How many shots per volley.
+	var/rapid_fire_delay = 2 //Time between rapid fire shots
+	var/list/loot = list()
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "hmg"
+	stun_projectile = /obj/item/projectile/bullet/a762/simple
+	lethal_projectile = /obj/item/projectile/bullet/a762/simple
+	lethal_projectile_sound = 'sound/weapons/gunshot.ogg'
+	stun_projectile_sound = 'sound/weapons/gunshot.ogg'
+	base_icon_state = "hmg"
+	faction = list("raider")
+	rapid = 5
+	rapid_fire_delay = 2
+	desc = "A deserter manning a heavy machine gun."
+	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/effect/decal/cleanable/blood/gibs)
+
 /obj/machinery/porta_turret/syndicate/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/empprotection, EMP_PROTECT_SELF | EMP_PROTECT_WIRES)

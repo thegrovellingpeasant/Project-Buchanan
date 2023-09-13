@@ -923,3 +923,48 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	smooth = SMOOTH_FALSE
 	level = 3
 	glass_amount = 2
+
+/obj/structure/window/gothic/fulltile
+	name = "gothic window"
+	desc = "An old world relic that is holding steadfast."
+	icon = 'icons/obj/smooth_structures/gothic_window.dmi'
+	icon_state = "gothic_window"
+	canSmoothWith = null
+	smooth = SMOOTH_TRUE
+	fulltile = TRUE
+	flags_1 = PREVENT_CLICK_UNDER_1
+	dir = FULLTILE_WINDOW_DIR
+	max_integrity = 100
+	glass_amount = 2
+	level = 3
+
+/obj/structure/window/gothic/fulltile/unanchored
+	anchored = FALSE
+
+/obj/structure/window/gothic2/fulltile
+	name = "gothic window"
+	desc = "An old world relic that is holding steadfast."
+	icon = 'icons/obj/smooth_structures/gothic_window_alt.dmi'
+	icon_state = "gothic_1"
+	canSmoothWith = null
+	smooth = SMOOTH_FALSE
+	fulltile = TRUE
+	flags_1 = PREVENT_CLICK_UNDER_1
+	dir = FULLTILE_WINDOW_DIR
+	max_integrity = 100
+	glass_amount = 2
+	level = 3
+
+/obj/structure/window/gothic3/fulltile
+	name = "gothic window"
+	desc = "An old world relic that is holding steadfast."
+	icon = 'icons/obj/smooth_structures/gothic_window_alt.dmi'
+	icon_state = "gothic_2"
+	canSmoothWith = null
+	smooth = SMOOTH_FALSE
+	fulltile = TRUE
+	flags_1 = PREVENT_CLICK_UNDER_1
+	dir = FULLTILE_WINDOW_DIR
+	max_integrity = 100
+	glass_amount = 2
+	level = 3
