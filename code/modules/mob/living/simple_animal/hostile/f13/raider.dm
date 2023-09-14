@@ -332,6 +332,8 @@ mob/living/simple_animal/hostile/raider/deserter/trooper
 	maxHealth = 150
 	health = 150
 	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/a556/match
 	projectilesound = 'sound/f13weapons/auto5.ogg'
 
@@ -345,6 +347,9 @@ mob/living/simple_animal/hostile/raider/deserter/trooper
 	melee_damage_upper = 20
 	maxHealth = 150
 	health = 150
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/pellet/shotgun_buckshot
 	projectilesound = 'sound/f13weapons/shotgun.ogg'
 
@@ -358,6 +363,9 @@ mob/living/simple_animal/hostile/raider/deserter/trooper
 	melee_damage_upper = 20
 	maxHealth = 150
 	health = 150
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
 	projectiletype = /obj/item/projectile/incendiary/flamethrower
 	projectilesound = 'sound/weapons/flamethrower.ogg'
 
@@ -371,6 +379,9 @@ mob/living/simple_animal/hostile/raider/deserter/trooper
 	melee_damage_upper = 20
 	maxHealth = 200
 	health = 200
+	ranged = TRUE
 	extra_projectiles = 2
+	retreat_distance = 4
+	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/m44/simple
 	projectilesound = 'sound/f13weapons/magnum_fire.ogg'

@@ -145,6 +145,46 @@
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	buildable_sign = FALSE
 
+/obj/structure/sign/reno/barsign/catspaw
+	name = "Cat's Paw"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "catspaw"
+	desc = "A brothel....on virgin street."
+	max_integrity = 500
+	integrity_failure = 0.5
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	buildable_sign = FALSE
+
+/obj/structure/sign/reno/barsign/newrenoarms
+	name = "New Reno Arms"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "newrenoarms"
+	desc = "The infamous previously independent firearms vendor of Reno. In recent times it came under the racket of the Wright Family."
+	max_integrity = 500
+	integrity_failure = 0.5
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	buildable_sign = FALSE
+
+/obj/structure/sign/reno/barsign/rpd
+	name = "Reno Police Department"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "rpd"
+	desc = "The old corpse of the Desperado turned into a court and police department."
+	max_integrity = 500
+	integrity_failure = 0.5
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	buildable_sign = FALSE
+
+/obj/structure/sign/reno/barsign/goldenglobes
+	name = "Golden Globes"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "goldenglobes"
+	desc = "A hive of scum and villainy."
+	max_integrity = 500
+	integrity_failure = 0.5
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	buildable_sign = FALSE
+
 //Code below is to define useless variables for datums. It errors without these
 
 
