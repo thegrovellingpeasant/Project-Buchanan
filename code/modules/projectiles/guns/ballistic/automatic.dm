@@ -1089,13 +1089,13 @@
 	suppressor_y_offset = 28
 
 
-//R91 assault rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 25dmg
+//M16A2 assault rifle				Keywords: 5.56mm, Automatic, 30 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/assault_rifle
-	name = "r91 assault rifle"
-	desc = "The R91 was the standard US Army assault rifle, and so saw wide-spread use after the war. Most are worn out by now."
-	icon_state = "assault_rifle"
-	item_state = "fnfal"
-	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	name = "assault rifle"
+	desc = "An 5.56mm assault rifle, designated M16A2. Although somewhat antiquated by the time of the Great War, this model of rifle was widely used by state-side military units, making it relatively common today."
+	icon_state = "m16a2"
+	item_state = "assault_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle/assault
 	fire_delay = 2.5
 	slowdown = 0.35
 	spread = 10
@@ -1105,7 +1105,7 @@
 	automatic = 1
 	autofire_shot_delay = 2.5
 	can_attachments = TRUE
-	can_bayonet = FALSE
+	can_bayonet = TRUE
 	bayonet_state = "rifles"
 	knife_x_offset = 23
 	knife_y_offset = 11
@@ -1114,13 +1114,13 @@
 	suppressor_y_offset = 15
 	suppressor_state = "ar_suppressor"
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 
 
 //Infiltrator			Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, Suppressed, Small scope, Pistol grip
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
 	name = "infiltrator"
-	desc = "A customized R91 assault rifle, with an integrated suppressor, small scope, cut down stock and polymer furniture."
+	desc = "A customized assault rifle, with an integrated suppressor, small scope, cut down stock and polymer furniture."
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
@@ -1233,7 +1233,7 @@
 	item_state = "assault_carbine"
 	icon_prefix = "assault_carbine"
 	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/m5mm
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3
 	burst_shot_delay = 2.0
 	is_automatic = TRUE
@@ -1280,6 +1280,7 @@
 	spread = 14
 	extra_damage = 18
 	extra_penetration = 0.12
+
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1294,7 +1295,7 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 1.9
-	mag_type = /obj/item/ammo_box/magazine/m762
+	mag_type = /obj/item/ammo_box/magazine/m762/ext
 	spread = 12 //infamously hard to control on full-auto
 	recoil = 0.25
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -1320,9 +1321,30 @@ obj/item/gun/ballistic/automatic/bar
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
 
+//H&K G3				Keywords: 7.62mm, Automatic, 10/20 round magazine
+//Needs work -Oddherring
+/obj/item/gun/ballistic/automatic/g3
+	name = "G3"
+	desc = "A 7.62mm German battle rifle."
+	icon_state = "g3"
+	item_state = "fnfal"
+	force = 20
+	extra_damage = 28
+	extra_penetration = 0.1
+	extra_speed = 400
+	fire_delay = 3.5
+	is_automatic = TRUE
+	automatic = 1
+	autofire_shot_delay = 1.9
+	mag_type = /obj/item/ammo_box/magazine/m762/ext
+	spread = 12
+	recoil = 0.25
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	fire_sound = 'sound/f13weapons/ServiceRifle.ogg'
+
 //H&K G11				Keywords: 4.73mm, Automatic, 50 round magazine
 /obj/item/gun/ballistic/automatic/g11
-	name = "g11"
+	name = "G11"
 	desc = "This experimental gun fires a caseless cartridge consisting of a block of propellant with a bullet buried inside. The weight and space savings allows for a very high magazine capacity. Chambered in 4.73mm."
 	icon_state = "g11"
 	item_state = "arg"
