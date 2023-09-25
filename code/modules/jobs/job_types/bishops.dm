@@ -77,6 +77,10 @@
 	..()
 	if(visualsOnly)
 		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
@@ -128,6 +132,10 @@
 	..()
 	if(visualsOnly)
 		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 		
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
@@ -192,6 +200,10 @@
 	..()
 	if(visualsOnly)
 		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 		
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
@@ -277,6 +289,15 @@
 		/obj/item/ammo_box/a308 = 2,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		)
+
+/datum/outfit/job/bishops/f13soldier/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 
 /*--------------------------------------------------------------*/
 

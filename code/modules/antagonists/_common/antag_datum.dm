@@ -29,6 +29,8 @@ GLOBAL_LIST_EMPTY(antagonists)
 
 	var/list/skill_modifiers
 
+	var/f13_antag = FALSE //Diffrentiates an F13 antag from a regular one
+
 /datum/antagonist/New()
 	GLOB.antagonists += src
 	typecache_datum_blacklist = typecacheof(typecache_datum_blacklist)
