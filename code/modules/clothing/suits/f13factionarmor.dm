@@ -1097,8 +1097,8 @@
 /obj/item/clothing/suit/armor/f13/wrights/formalcoat
 	name = "formal beige coat"
 	desc = "A well made but old coat with leather lining."
-	icon_state = "wrights_vest"
-	item_state = "wrights_vest"
+	icon_state = "formal_coat"
+	item_state = "formal_coat"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 

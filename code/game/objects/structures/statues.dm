@@ -263,6 +263,14 @@
 	anchored = TRUE
 	density = FALSE
 
+/obj/structure/statue/diamond/indestructible/oldworldstatue
+	name = "old world statue"
+	desc = "It is watching over you."
+	icon = 'icons/obj/Ritas.dmi'
+	icon_state = "face"
+	anchored = TRUE
+	density = FALSE
+
 /obj/structure/statue/diamond/indestructible/redrocket
 	name = "Red Rocket"
 	desc = "Drive in, Fly out!"
@@ -309,7 +317,7 @@
 /obj/structure/statue/diamond/indestructible/carheap/upper
 	name = "car pile"
 	icon_state = "carpile_upper"
-	
+
 /obj/structure/statue/diamond/indestructible/landinggear
 	name = "landing gear"
 	desc = "The landing gear of a plane."

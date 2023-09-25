@@ -92,9 +92,18 @@
 	light_color = LIGHT_COLOR_PINK
 
 /obj/machinery/light/sign/reno_sign
-	name = "new reno sign"
+	name = "New Reno sign"
 	icon_state = "reno_sign"
 	base_state = "reno_sign"
 	icon = 'icons/fallout/objects/structures/reno.dmi'
 	desc = "The Biggest Little City in the World!"
+	light_color = LIGHT_COLOR_YELLOW
+
+
+/obj/machinery/light/sign/shark_club
+	name = "Shark Club sign"
+	icon_state = "shark_club"
+	base_state = "shark_club"
+	icon = 'icons/fallout/objects/structures/sharkclub.dmi'
+	desc = "A hive of scum and villainy!"
 	light_color = LIGHT_COLOR_YELLOW

@@ -302,3 +302,86 @@
 	ranged_cooldown_time = 15
 	projectiletype = /obj/item/projectile/bullet/shrapnel
 	projectilesound = 'sound/f13weapons/auto5.ogg'
+
+//DESERTERS
+
+/mob/living/simple_animal/hostile/raider/deserter/heavy_trooper
+	name = "Deserter Heavy Trooper"
+	desc = "A heavy trooper, clad in salvaged power armor, and wielding a deadly tommy."
+	icon_state = "heavytrooper"
+	icon_living = "heavytrooper"
+	icon_dead = "heavytrooper_dead"
+	maxHealth = 500
+	health = 500
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
+	extra_projectiles = 5
+	ranged_cooldown_time = 4
+	projectiletype = /obj/item/projectile/bullet/c45/simple
+	projectilesound = 'sound/weapons/gunshot_smg.ogg'
+
+mob/living/simple_animal/hostile/raider/deserter/trooper
+	name = "Deserter Trooper"
+	desc = "He is what looks to be a deserter."
+	icon_state = "trooper"
+	icon_living = "trooper"
+	icon_dead = "trooper_dead"
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	maxHealth = 150
+	health = 150
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/bullet/a556/match
+	projectilesound = 'sound/f13weapons/auto5.ogg'
+
+/mob/living/simple_animal/hostile/raider/deserter/trooper2
+	name = "Deserter Trooper"
+	desc = "He is what looks to be a deserter."
+	icon_state = "trooper2"
+	icon_living = "trooper2"
+	icon_dead = "trooper2_dead"
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	maxHealth = 150
+	health = 150
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/bullet/pellet/shotgun_buckshot
+	projectilesound = 'sound/f13weapons/shotgun.ogg'
+
+/mob/living/simple_animal/hostile/raider/deserter/trooper3
+	name = "Deserter Trooper"
+	desc = "He is what looks to be a deserter."
+	icon_state = "trooper3"
+	icon_living = "trooper3"
+	icon_dead = "trooper2_dead"
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	maxHealth = 150
+	health = 150
+	ranged = TRUE
+	retreat_distance = 4
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/incendiary/flamethrower
+	projectilesound = 'sound/weapons/flamethrower.ogg'
+
+/mob/living/simple_animal/hostile/raider/deserter/lieutenant
+	name = "Deserter Lieutenant"
+	desc = "Did they say why, Willard, why they want to terminate my command?"
+	icon_state = "lieutenant"
+	icon_living = "lieutenant"
+	icon_dead = "lieutenant_dead"
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	maxHealth = 200
+	health = 200
+	ranged = TRUE
+	extra_projectiles = 2
+	retreat_distance = 4
+	minimum_distance = 6
+	projectiletype = /obj/item/projectile/bullet/m44/simple
+	projectilesound = 'sound/f13weapons/magnum_fire.ogg'

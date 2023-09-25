@@ -102,6 +102,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	wound_bonus = 18
 	bare_wound_bonus = -20
 
+/obj/item/projectile/bullet/a762/simple
+	name = "7.62 FMJ bullet"
+	damage = 25
+	wound_bonus = 18
+	bare_wound_bonus = -20
+
+
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport
 	name = ".308 bullet"

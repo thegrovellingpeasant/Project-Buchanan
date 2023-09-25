@@ -10,7 +10,7 @@
 	forbids = "Due to the Wrights moralistic outlook prostitution and chems are forbidden. Also, due to the close blood ties among the members of the families, ghouls are not allowed."
 	enforces = "The Wrights are the only Reno family that are a literal family, so it is expected of all of its members to have blood ties to the family. Due to this, extreme loyalty and obedience to a strong chain of command are also expected of its members. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list ("Focus on the mass production of cheap guns.", "Focus on the mass production of alcohol to provide to the other families and the people of New Reno.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
-	
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
@@ -90,7 +90,7 @@
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
-	
+  
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -108,7 +108,7 @@
 	outfit = /datum/outfit/job/wrights/f13enforcer
 
 /datum/outfit/job/wrights/f13enforcer
-	name = "Wright Capo"
+	name = "Wright Enforcer"
 	jobtype = /datum/job/wrights/f13enforcer
 
 	uniform	= /obj/item/clothing/under/f13/wrights/officer
@@ -157,7 +157,7 @@
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
-	
+  
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -372,7 +372,7 @@
 	id = /obj/item/card/id/reno/clinic/papers
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/helmet/f13/wrights/boater
+	head = null
 	mask =  /obj/item/clothing/mask/surgical
 	neck = null
 	gloves = null

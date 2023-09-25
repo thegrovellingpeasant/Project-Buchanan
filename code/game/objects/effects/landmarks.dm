@@ -1122,28 +1122,28 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 //bishops
 
 /obj/effect/landmark/start/f13/bishops/boss
-	name = "Bishops Boss"
-	icon_state = "Bishops Boss"
+	name = "Bishop Boss"
+	icon_state = "Bishop Boss"
 
-/obj/effect/landmark/start/f13/bishops/underboss
-	name = "Bishops Underboss"
-	icon_state = "Bishops Underboss"
+/obj/effect/landmark/start/f13/bishops/wife
+	name = "Bishop Wife"
+	icon_state = "Bishop Wife"
 
 /obj/effect/landmark/start/f13/bishops/capo
-	name = "Bishops Capo"
-	icon_state = "Bishops Capo"
+	name = "Bishop Capo"
+	icon_state = "Bishop Capo"
 
-/obj/effect/landmark/start/f13/bishops/soldier
-	name = "Bishops Soldier"
-	icon_state = "Bishops Soldier"
+/obj/effect/landmark/start/f13/bishops/mademan
+	name = "Bishop Made Man"
+	icon_state = "Bishop Made Man"
 
-/obj/effect/landmark/start/f13/bishops/bartender
+/obj/effect/landmark/start/f13/bishops/casinoworker
 	name = "Bishops Casino Worker"
 	icon_state = "Bishops Casino Worker"
 
-/obj/effect/landmark/start/f13/bishops/comedian
-	name = "Bishops Comedian"
-	icon_state = "Bishops Comedian"
+/obj/effect/landmark/start/f13/bishops/racketeer
+	name = "Bishop Racketeer"
+	icon_state = "Bishop Racketeer"
 
 
 //wrights
@@ -1157,7 +1157,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/wrights/hooligan
 	name = "Wright Hooligan"
-	icon_state = "Wrights Hooligan"
+	icon_state = "Wright Hooligan"
 
 /obj/effect/landmark/start/f13/wrights/shopmanager
 	name = "Shop Manager"
