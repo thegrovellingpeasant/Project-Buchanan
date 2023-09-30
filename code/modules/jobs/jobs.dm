@@ -331,7 +331,7 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WRIGHTS = list("jobs" = wrights_positions, "color" = "#B3875E"),
 	EXP_TYPE_VANGRAFFS = list("jobs" = vangraffs_positions, "color" = "#4da34e"),
 	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#F7EFCF"),
-
+	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#727272")
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(

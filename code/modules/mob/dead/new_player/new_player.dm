@@ -557,13 +557,10 @@
 	var/list/mapjobs = GLOB.position_categories
 
 	if (SSmaptype.maptype == "wendover")
-		mapjobs = list("Wendover", "New Canaanites", "United States Postal Service", "NCR", "Followers", "Legion", "White Legs", "Eighties", "Wasteland")
-
-	if (SSmaptype.maptype == "sunnyvale")
-		mapjobs = list("Vault", "Followers", "NCR", "Legion", "Town", "Enclave", "Wasteland")
+		mapjobs = list(EXP_TYPE_WENDOVER, EXP_TYPE_LDS, EXP_TYPE_USPS, EXP_TYPE_NCR, EXP_TYPE_FOLLOWERS, EXP_TYPE_LEGION, EXP_TYPE_WHITELEGS, EXP_TYPE_EIGHTIES, EXP_TYPE_WASTELAND)
 
 	if (SSmaptype.maptype == "reno")
-		mapjobs = list("Bishops", "Van Graffs", "Wrights", "Citizens", "Brotherhood of Steel")
+		mapjobs = list(EXP_TYPE_BISHOPS, EXP_TYPE_VANGRAFFS, EXP_TYPE_WRIGHTS, EXP_TYPE_CITIZENS, EXP_TYPE_BROTHERHOOD)
 
 	for(var/category in mapjobs)
 		// position_categories contains category names mapped to available jobs and an appropriate color
