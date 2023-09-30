@@ -193,7 +193,7 @@ Temporary Items
 /tools/LinuxOneShot/TGS_Config
 /tools/LinuxOneShot/TGS_Instances
 /tools/LinuxOneShot/TGS_Logs
-auxmos.dll
-auxmos.dll
+
+#leaveauxmosalone
 auxmos.dll
 auxmos.pdb
