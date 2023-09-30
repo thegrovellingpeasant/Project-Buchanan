@@ -73,7 +73,7 @@
 	if(H.skin_tone == "african2")
 		return
 	else
-		H.skin_tone = pick("african1", "african2")			
+		H.skin_tone = pick("african1", "african2")
 	
 /datum/outfit/job/vangraffs/f13branchmanager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -105,6 +105,10 @@
 		L.registered_name = H.name
 		L.update_label()
 	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -159,6 +163,10 @@
 	..()
 	if(visualsOnly)
 		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
 
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
@@ -222,6 +230,15 @@
 		/obj/item/clothing/under/f13/merchant,
 		/obj/item/clothing/under/f13/shiny)
 
+/datum/outfit/job/vangraffs/f13weaponsmith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/vangraffs/f13researchcontractor
@@ -252,6 +269,11 @@
 	..()
 	if(visualsOnly)
 		return
+
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
+	
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
@@ -303,4 +325,12 @@
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 1)
 
+/datum/outfit/job/vangraffs/f13guard/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
+		H.mind.special_role = ROLE_MOBSTER
+		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
 

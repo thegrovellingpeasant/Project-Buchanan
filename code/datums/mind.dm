@@ -473,8 +473,9 @@
 		var/static/list/choices
 		if(!choices)
 			choices = list()
+			var/list/allowed_types
 
-			var/list/allowed_types = list(
+			var/list/base_types = list(
 				/datum/objective/assassinate,
 				/datum/objective/assassinate/once,
 				/datum/objective/maroon,
@@ -491,6 +492,21 @@
 				/datum/objective/absorb,
 				/datum/objective/custom
 			)
+
+			var/list/f13_types = list(
+				/datum/objective/f13/mob_assassinate,
+				/datum/objective/f13/mob_steal,
+				/datum/objective/f13/mob_frame,
+				/datum/objective/f13/mob_recruit,
+				/datum/objective/f13/mob_coup,
+				/datum/objective/f13/mob_wealth,
+				/datum/objective/custom
+			)
+
+			if(target_antag.f13_antag)
+				allowed_types = f13_types
+			else
+				allowed_types = base_types
 
 			for(var/T in allowed_types)
 				var/datum/objective/X = T
