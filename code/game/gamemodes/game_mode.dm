@@ -48,6 +48,7 @@
 	var/allow_persistence_save = TRUE
 
 	var/gamemode_ready = FALSE //Is the gamemode all set up and ready to start checking for ending conditions.
+	var/objs_generated = FALSE	//For f13 gamemodes. Signals if objectives have been generated or not
 	var/setup_error		//What stopepd setting up the mode.
 	var/flipseclevel = FALSE //CIT CHANGE - adds a 10% chance for the alert level to be the opposite of what the gamemode is supposed to have
 
