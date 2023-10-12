@@ -130,60 +130,73 @@
 	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "sharkclub"
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
 
 /obj/structure/sign/reno/barsign/divorce
 	name = "24/7 Divorce"
 	desc = "Modern divorce, for the modern couple."
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "divorce"
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
 
 /obj/structure/sign/reno/barsign/catspaw
 	name = "Cat's Paw"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "catspaw"
 	desc = "A brothel....on virgin street."
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
 
 /obj/structure/sign/reno/barsign/newrenoarms
 	name = "New Reno Arms"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "newrenoarms"
 	desc = "The infamous previously independent firearms vendor of Reno. In recent times it came under the racket of the Wright Family."
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
 
 /obj/structure/sign/reno/barsign/rpd
 	name = "Reno Police Department"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "rpd"
 	desc = "The old corpse of the Desperado turned into a court and police department."
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
 
 /obj/structure/sign/reno/barsign/goldenglobes
 	name = "Golden Globes"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "goldenglobes"
 	desc = "A hive of scum and villainy."
-	max_integrity = 500
-	integrity_failure = 0.5
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-	buildable_sign = FALSE
+
+/obj/structure/sign/reno/barsign/motel
+	name = "motel"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "motel"
+	desc = "This seems to be some sort of hotel for motor vehicles...."
+
+/obj/structure/sign/reno/barsign/cafe
+	name = "cafe"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "cafe"
+	desc = "An elegant man sipping on a cup of....something"
+
+/obj/structure/sign/reno/barsign/junglegym
+	name = "jungle gym"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "junglegym"
+	desc = "A large glowing weight, this place has been known for its game show fights."
+
+/obj/structure/sign/reno/barsign/liquor
+	name = "liquo store sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "liquor"
+	desc = "A sinner's drink establishment, or it was at least."
+
+/obj/structure/sign/reno/barsign/train
+	name = "Train station"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "train"
+	desc = "Don't want to be late..."
+
+/obj/structure/sign/reno/barsign/renowok
+	name = "Reno Wok"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "renowok"
+	desc = "A place of noodles clearly..."
+
 
 //Code below is to define useless variables for datums. It errors without these
 

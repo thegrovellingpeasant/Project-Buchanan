@@ -107,3 +107,11 @@
 	icon = 'icons/fallout/objects/structures/sharkclub.dmi'
 	desc = "A hive of scum and villainy!"
 	light_color = LIGHT_COLOR_YELLOW
+
+/obj/machinery/light/sign/pepgas
+	name = "Pep Gas sign"
+	icon_state = "pepgas"
+	base_state = "pepgas"
+	icon = 'icons/fallout/objects/structures/pepgas.dmi'
+	desc = "A place of gas; pep's gas, or well, it used to be."
+	light_color = LIGHT_COLOR_YELLOW

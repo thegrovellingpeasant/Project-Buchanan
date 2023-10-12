@@ -81,3 +81,12 @@
 	'sound/f13ambience/music/invisible_ghosts_ambience.ogg',\
 	'sound/f13ambience/music/mole_miners_ambience.ogg',\
 	'sound/f13ambience/music/portaltothepast_ambience.ogg','sound/f13ambience/music/wind_and_the_reeds_ambience.ogg')
+
+//Project Buchanan: Reno
+#define RENO_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
+	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+
+#define RENO_WASTELAND_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
+	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+
+#define CASINO_AMBIENCE list('sound/f13ambience/music/casino_1.ogg','sound/f13ambience/music/casino_2.ogg')
