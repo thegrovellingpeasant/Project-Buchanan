@@ -1145,6 +1145,29 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Bishop Racketeer"
 	icon_state = "Bishop Racketeer"
 
+//van graffs
+
+/obj/effect/landmark/start/f13/vangraffs/branchmanager
+	name = "Van Graff Branch Manager"
+	icon_state = "Bishop Boss"
+
+/obj/effect/landmark/start/f13/vangraffs/enforcer
+	name = "Van Graff Enforcer"
+	icon_state = "Bishop Wife"
+
+/obj/effect/landmark/start/f13/vangraffs/vangraffguard
+	name = "Van Graff Guard"
+	icon_state = "Bishop Wife"
+
+
+/obj/effect/landmark/start/f13/vangraffs/weaposmith
+	name = "Van Graff Weapon Smith"
+	icon_state = "Mercenary"
+
+/obj/effect/landmark/start/f13/vangraffs/researchcontractor
+	name = "Research Contractor"
+	icon_state = "Research Director"
+
 
 //wrights
 /obj/effect/landmark/start/f13/wrights/elder
@@ -1187,62 +1210,72 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 //citizens
 
-/obj/effect/landmark/start/f13/civilians/yakuza
-	name = "Yakuza"
-	icon_state = "Yakuza"
+/obj/effect/landmark/start/f13/civilians/judge
+	name = "Judge"
+	icon_state = "Judge"
 
-/obj/effect/landmark/start/f13/civilians/pharmacist
-	name = "Pharmacist"
-	icon_state = "Pharmacist"
+/obj/effect/landmark/start/f13/civilians/nrpdchief
+	name = "NRPD Chief"
+	icon_state = "NRPD Chief"
 
-/obj/effect/landmark/start/f13/civilians/armsdealer
-	name = "Arms Dealer"
-	icon_state = "Arms Dealer"
+/obj/effect/landmark/start/f13/civilians/nrpdofficer
+	name = "NRPD Officer"
+	icon_state = "NRPD Officer"
 
-/obj/effect/landmark/start/f13/civilians/priest
-	name = "Priest"
-	icon_state = "Priest"
+/obj/effect/landmark/start/f13/civilians/ncrcfwarden
+	name = "NCRCF Warden"
+	icon_state = "NCRCF Warden"
 
-/obj/effect/landmark/start/f13/civilians/junglegymowner
-	name = "Jungle Gym Owner"
-	icon_state = "Jungle Gym Owner"
+/obj/effect/landmark/start/f13/civilians/ncrcfguard
+	name = "NCRCF Guard"
+	icon_state = "NCRCF Guard"
 
-/obj/effect/landmark/start/f13/civilians/bum
-	name = "Bum"
-	icon_state = "Bum"
-
-/obj/effect/landmark/start/f13/civilians/mercenary
-	name = "Mercenary"
-	icon_state = "Mercenary"
-
-/obj/effect/landmark/start/f13/civilians/peasant
-	name = "Peasant"
-	icon_state = "Peasant"
-
-/obj/effect/landmark/start/f13/civilians/renodoctor
-	name = "Reno Doctor"
+/obj/effect/landmark/start/f13/civilians/ncrcfphysician
+	name = "NCRCF Physician"
 	icon_state = "Reno Doctor"
 
-/obj/effect/landmark/start/f13/civilians/raider
-	name = "Raider"
-	icon_state = "Raider"
+/obj/effect/landmark/start/f13/civilians/convict
+	name = "Convict"
+	icon_state = "Convict"
 
 /obj/effect/landmark/start/f13/civilians/tourist
 	name = "Tourist"
 	icon_state = "Tourist"
 
-/obj/effect/landmark/start/f13/civilians/brahminbaron
-	name = "Brahmin Baron"
-	icon_state = "Brahmin Baron"
+/obj/effect/landmark/start/f13/wastes/raider
+	name = "Reno Raider"
+	icon_state = "Raider"
 
-/obj/effect/landmark/start/f13/civilians/ambassador
-	name = "NCR Ambassador"
-	icon_state = "NCR Ambassador"
+/obj/effect/landmark/start/f13/wastes/tribalmigrant
+	name = "Tribal Migrant"
+	icon_state = "Tribal"
 
-/obj/effect/landmark/start/f13/civilians/provostmarshal
-	name = "NCRA Provost Marshal"
-	icon_state = "NCRA Provost Marshal"
+//lost hills chapter
 
-/obj/effect/landmark/start/f13/civilians/militarypolice
-	name = "NCRA Military Police"
-	icon_state = "NCRA Military Police"
+/obj/effect/landmark/start/f13/losthills/paladin
+	name = "BOS Paladin"
+	icon_state = "Paladin"
+
+/obj/effect/landmark/start/f13/losthills/seniorknight
+	name = "BOS Senior Knight"
+	icon_state = "Knight"
+
+/obj/effect/landmark/start/f13/losthills/knight
+	name = "BOS Knight"
+	icon_state = "Knight"
+
+/obj/effect/landmark/start/f13/losthills/seniorscribe
+	name = "BOS Senior Scribe"
+	icon_state = "Scribe"
+
+/obj/effect/landmark/start/f13/losthills/scribe
+	name = "BOS Scribe"
+	icon_state = "Scribe"
+
+/obj/effect/landmark/start/f13/losthills/inititate
+	name = "BOS Initiate"
+	icon_state = "Initiate"
+
+/obj/effect/landmark/start/f13/losthills/bosoffduty
+	name = "BOS Off-Duty"
+	icon_state = "Initiate"

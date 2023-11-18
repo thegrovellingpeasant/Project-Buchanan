@@ -89,4 +89,25 @@
 #define RENO_WASTELAND_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
 	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
 
-#define CASINO_AMBIENCE list('sound/f13ambience/music/casino_1.ogg','sound/f13ambience/music/casino_2.ogg')
+
+#define RENO_STREETS_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
+	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+
+#define RENO_BUILDING_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
+	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+
+#define SHARKCLUB_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg','sound/f13ambience/music/casino_2.ogg')
+
+#define YAKUZA_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg')
+
+#define RENO_CAVES_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+
+#define RENO_SEWERS_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+
+#define RENO_SUBWAY_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+
+#define RENO_PREWARBUNKER_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+
+#define RENO_BOS_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+
+

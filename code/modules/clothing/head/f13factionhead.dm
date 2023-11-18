@@ -657,11 +657,15 @@
 	desc = "A green beret, standard issue for all commissioned NCR Officers."
 	icon_state = "ncr_officer_beret"
 	item_state = "ncr_officer_beret"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 40, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
+
+/obj/item/clothing/head/beret/ncr/military_police
+	name = "NCR officer beret"
+	desc = "A brown beret, standard issue for all commissioned NCR Military Police Officers."
+	icon_state = "ncr_mp_beret"
+	item_state = "ncr_mp_beret"
 
 /obj/item/clothing/head/beret/ncr/reno
 	name = "NCR officer beret"
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 5, "bio" = 5, "rad" = 5, "fire" = 5, "acid" = 0, "wound" = 0)
 
 /obj/item/clothing/head/beret/ncr/ncr_medic
 	name = "NCR medical beret"

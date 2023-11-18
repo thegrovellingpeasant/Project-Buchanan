@@ -68,6 +68,9 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"Van Graff Branch Manager",
 	"Van Graff Enforcer",
+	"Judge",
+	"NCRCF Warden",
+	"BOS Paladin",
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -295,23 +298,29 @@ GLOBAL_LIST_INIT(vangraffs_positions, list(
 ))
 
 GLOBAL_LIST_INIT(citizens_positions, list(
-	"Hotel Owner",
-	"Hotel Concierges",
-	"Pharmacist",
-	"Arms Dealer",
-	"Jungle Gym Owner",
-	"Reno Doctor",
-	"Bum",
-	"Mercenary",
-	"Priest",
-	"Yakuza",
-	"Peasant",
-	"Raider",
+	"Judge",
+	"NRPD Chief",
+	"NRPD Officer",
+	"NCRCF Warden",
+	"NCRCF Guard",
+	"NCRCF Physician",
+	"Convict",
 	"Tourist",
-	"Brahmin Baron",
-	"NCR Ambassador",
-	"NCRA Provost Marshal",
-	"NCRA Military Police",
+))
+
+GLOBAL_LIST_INIT(wastes_positions, list(
+	"Reno Raider",
+	"Tribal Migrant",
+))
+
+GLOBAL_LIST_INIT(losthills_positions, list(
+	"BOS Paladin",
+	"BOS Senior Knight",
+	"BOS Knight",
+	"BOS Senior Scribe",
+	"BOS Scribe",
+	"BOS Initiate",
+	"BOS Off-Duty",
 ))
 
 // job categories for rendering the late join menu
@@ -330,8 +339,10 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_BISHOPS = list("jobs" = bishops_positions, "color" = "#8CA2BD"),
 	EXP_TYPE_WRIGHTS = list("jobs" = wrights_positions, "color" = "#B3875E"),
 	EXP_TYPE_VANGRAFFS = list("jobs" = vangraffs_positions, "color" = "#4da34e"),
-	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#F7EFCF"),
-	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#727272")
+	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#ffeeaa"),
+	EXP_TYPE_WASTES = list("jobs" = wastes_positions, "color" = "#e6e1cf"),
+	EXP_TYPE_BROTHERHOOD = list("jobs" = losthills_positions, "color" = "#e6e1cf"),
+
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -369,8 +380,10 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_MORDINOS = list("titles" = mordinos_positions),
 	EXP_TYPE_BISHOPS = list("titles" = bishops_positions),
 	EXP_TYPE_WRIGHTS = list("titles" = wrights_positions),
-	EXP_TYPE_CITIZENS = list("titles" = citizens_positions),
 	EXP_TYPE_VANGRAFFS = list("titles" = vangraffs_positions),
+	EXP_TYPE_CITIZENS = list("titles" = citizens_positions),
+	EXP_TYPE_WASTES = list("titles" = wastes_positions),
+	EXP_TYPE_BROTHERHOOD = list("titles" = losthills_positions),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),

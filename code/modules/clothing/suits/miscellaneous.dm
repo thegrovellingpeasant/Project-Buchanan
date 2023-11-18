@@ -1022,3 +1022,26 @@
 	icon_state = "bomberalt"
 	item_state = "bomberalt"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 20, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+
+/*
+ * Robes : project buchanan addition
+ */
+
+/obj/item/clothing/suit/hooded/robes/hubology
+	name = "hubologist robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "hubologist_robes"
+	item_state = "hubologist_robes"
+	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	hoodtype = /obj/item/clothing/head/hooded/robes
+
+/obj/item/clothing/head/hooded/robes/hubology
+	name = "black hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "hubologist_hood"
+	item_state = "hubologist_hood"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSEYES
+	flash_protect = 2
+
