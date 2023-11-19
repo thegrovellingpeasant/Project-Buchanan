@@ -48,7 +48,6 @@
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		)
@@ -86,11 +85,11 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
-  
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -123,7 +122,6 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		)
@@ -153,11 +151,11 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
-  
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
@@ -183,7 +181,6 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		)
@@ -240,7 +237,7 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
@@ -335,7 +332,6 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		)

@@ -208,10 +208,8 @@
 	},
 /area/space)
 "aJ" = (
-/obj/structure/stairs/north{
-	color = "#A47449"
-	},
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/stairs/north,
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "aK" = (
 /obj/structure/sink/kitchen{
@@ -406,17 +404,20 @@
 	},
 /area/space)
 "by" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/deck,
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/table/wood/greyscale/red,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "bz" = (
 /obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/space)
 "bA" = (
-/obj/structure/table/wood/poker,
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/table,
+/obj/item/paper_bin,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
 /area/space)
 "bC" = (
 /obj/structure/window/reinforced/tinted{
@@ -529,22 +530,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/brown,
-/area/space)
-"bU" = (
-/obj/structure/bed/pod{
-	pixel_y = 13
-	},
-/obj/item/bedsheet/brown{
-	pixel_y = 12
-	},
-/obj/structure/bed/pod{
-	pixel_y = 1;
-	layer = 2.91
-	},
-/obj/item/bedsheet/brown{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet/blue,
 /area/space)
 "bV" = (
 /obj/structure/table/wood{
@@ -899,14 +884,6 @@
 "df" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/blue,
-/area/space)
-"dg" = (
-/obj/structure/obstacle/barbedwire{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
-	color = "#800000"
-	},
 /area/space)
 "di" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1425,12 +1402,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "eR" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/terminal{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/table,
+/obj/item/clothing/glasses/sunglasses/blindfold,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
 /area/space)
 "eT" = (
@@ -1475,12 +1451,12 @@
 	},
 /area/space)
 "fa" = (
-/obj/item/radio/intercom/retro{
-	pixel_x = 29
+/obj/structure/railing/casino{
+	dir = 4;
+	pixel_x = 2
 	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/table/wood/greyscale,
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "fb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1526,13 +1502,8 @@
 /turf/open/floor/plasteel/grimy,
 /area/space)
 "fk" = (
-/obj/machinery/door/airlock/vault{
-	name = "casino vault";
-	req_one_access_txt = "136"
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/railing,
+/turf/open/transparent/openspace/air,
 /area/space)
 "fl" = (
 /obj/structure/table/reinforced,
@@ -2095,12 +2066,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/space)
-"hn" = (
-/obj/structure/chair/wood/normal{
-	dir = 8
-	},
-/turf/open/floor/carpet/blue,
-/area/space)
 "ho" = (
 /obj/structure/chair/sofa,
 /obj/effect/decal/cleanable/dirt,
@@ -2394,12 +2359,11 @@
 	},
 /area/space)
 "il" = (
-/obj/structure/closet/cabinet,
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
+/obj/structure/chair/comfy/brown{
+	color = "#695447";
+	name = "brahmin leather chair"
 	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "im" = (
 /obj/effect/decal/cleanable/dirt{
@@ -2809,14 +2773,14 @@
 /turf/open/floor/clockwork/reebe,
 /area/space)
 "jO" = (
-/obj/structure/closet/crate/wooden,
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
+/obj/structure/chair/sofa/left{
+	color = "#f06262";
+	dir = 2
 	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/item/clothing/head/collectable/tophat{
+	pixel_y = -2
 	},
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "jP" = (
 /obj/structure/window/fulltile/house,
@@ -2874,10 +2838,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/space)
 "ka" = (
-/obj/structure/railing{
-	dir = 4
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "kc" = (
 /turf/closed/wall/r_wall/rust,
@@ -3101,10 +3066,7 @@
 /turf/open/floor/wood/wood_tiled,
 /area/space)
 "kI" = (
-/obj/structure/curtain{
-	color = "#845f58"
-	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "kJ" = (
 /obj/structure/lattice/catwalk{
@@ -3124,11 +3086,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/space)
 "kL" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/storage/toolbox/mechanical,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/railing/casino{
+	dir = 4;
+	pixel_x = 2
 	},
+/turf/open/floor/carpet/reno/evil4,
 /area/space)
 "kM" = (
 /obj/structure/window/reinforced/tinted{
@@ -3277,10 +3239,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/space)
 "lg" = (
-/obj/structure/chair/booth{
-	dir = 8
+/obj/item/cigbutt/cigarbutt,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "lh" = (
 /obj/structure/railing{
@@ -3919,12 +3882,7 @@
 	},
 /area/space)
 "np" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "nq" = (
 /obj/structure/window/fulltile/store{
@@ -4149,10 +4107,15 @@
 	},
 /area/space)
 "of" = (
-/obj/structure/closet/crate/secure/weapon,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/sink/greyscale{
+	dir = 8;
+	pixel_x = -13;
+	pixel_y = 4
 	},
+/obj/structure/mirror{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "og" = (
 /obj/structure/table/reinforced,
@@ -4232,12 +4195,6 @@
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
-/area/space)
-"ow" = (
-/obj/structure/chair/wood/worn{
-	dir = 8
-	},
-/turf/open/floor/carpet/blue,
 /area/space)
 "ox" = (
 /obj/structure/table,
@@ -4459,8 +4416,13 @@
 	},
 /area/space)
 "pk" = (
-/obj/structure/closet/cabinet,
-/turf/open/floor/carpet/blue,
+/obj/structure/sign/poster/official/high_class_martini{
+	pixel_y = 32
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
 /area/space)
 "pn" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4597,10 +4559,11 @@
 /turf/open/transparent/openspace/air,
 /area/space)
 "pM" = (
-/obj/structure/barricade/concrete,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
-	color = "#800000"
+/obj/structure/railing{
+	dir = 1;
+	layer = 4.25
 	},
+/turf/open/transparent/openspace/air,
 /area/space)
 "pN" = (
 /obj/structure/chair/f13chair1{
@@ -4738,20 +4701,10 @@
 /turf/open/floor/plating/wooden,
 /area/space)
 "qm" = (
-/obj/structure/rack/shelf_metal,
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_x = 14
 	},
-/obj/item/stack/tile/carpet/reno/pattern2{
-	amount = 60
-	},
-/obj/item/stack/tile/carpet/reno/pattern2{
-	amount = 60
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "qn" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4859,11 +4812,11 @@
 /turf/open/floor/wood/f13/carpet,
 /area/space)
 "qD" = (
-/obj/item/storage/secure/safe{
-	pixel_x = 31
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
 /area/space)
 "qF" = (
@@ -5159,10 +5112,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "rO" = (
-/obj/structure/table/wood/settler,
-/obj/item/paper,
-/obj/item/pen,
-/turf/open/floor/carpet/blue,
+/obj/structure/sign/departments/restroom{
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "rP" = (
 /obj/structure/chair/comfy/purple{
@@ -5653,25 +5606,6 @@
 	icon_state = "rubbleslab"
 	},
 /area/space)
-"tE" = (
-/obj/item/bedsheet/brown{
-	pixel_y = 13;
-	dir = 8
-	},
-/obj/structure/bed/wooden{
-	dir = 4;
-	pixel_y = 13
-	},
-/obj/structure/bed/wooden{
-	dir = 4;
-	pixel_y = 2
-	},
-/obj/item/bedsheet/brown{
-	pixel_y = 2;
-	dir = 8
-	},
-/turf/open/floor/carpet/blue,
-/area/space)
 "tF" = (
 /obj/item/restraints/handcuffs/cable/zipties/used,
 /turf/open/floor/wood/f13/oakbroken4,
@@ -5819,11 +5753,14 @@
 /turf/open/floor/wood/f13/carpet,
 /area/space)
 "ui" = (
-/obj/structure/table/wood/poker,
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
-	pixel_y = 12
+/obj/structure/table,
+/obj/item/storage/box/handcuffs{
+	pixel_y = 8
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
 /area/space)
 "uj" = (
 /obj/structure/wreck/trash/one_tire,
@@ -5871,14 +5808,8 @@
 /turf/open/floor/carpet/brown,
 /area/space)
 "us" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/clothing/head/helmet/f13/bishops/fedora,
-/obj/item/clothing/head/helmet/f13/bishops/fedora,
-/obj/item/clothing/head/helmet/f13/bishops/fedora,
-/obj/item/clothing/head/helmet/f13/bishops/fedora,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/simple_door,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "ut" = (
 /obj/structure/sign/poster/official/report_crimes{
@@ -6082,8 +6013,10 @@
 /turf/open/transparent/openspace/air,
 /area/space)
 "vh" = (
-/obj/machinery/light/small,
-/turf/open/floor/carpet/blue,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/transparent/openspace/air,
 /area/space)
 "vi" = (
 /obj/structure/table/wood/greyscale/red,
@@ -6391,9 +6324,10 @@
 /area/space)
 "wp" = (
 /obj/structure/railing{
-	dir = 8
+	dir = 6;
+	layer = 4.25
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/transparent/openspace/air,
 /area/space)
 "wq" = (
 /turf/closed/indestructible/rock,
@@ -6414,12 +6348,11 @@
 /turf/open/floor/wood/f13/oakbroken,
 /area/space)
 "wv" = (
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
+/obj/structure/table,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
-/obj/structure/bookcase,
-/turf/open/floor/carpet/blue,
 /area/space)
 "ww" = (
 /obj/structure/simple_door/room,
@@ -6578,10 +6511,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/space)
-"xi" = (
-/obj/structure/railing,
-/turf/open/floor/wood/f13/carpet,
-/area/space)
 "xk" = (
 /obj/structure/table/greyscale{
 	color = "#C0C0C0"
@@ -6719,12 +6648,6 @@
 /obj/structure/campfire/barrel,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/f13,
-/area/space)
-"xH" = (
-/obj/structure/chair/f13chair2{
-	dir = 4
-	},
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "xK" = (
 /obj/item/clothing/under/suit/lawyerblackalt,
@@ -7371,12 +7294,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/space)
-"zD" = (
-/obj/structure/filingcabinet,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
-/area/space)
 "zE" = (
 /obj/structure/table/reinforced,
 /obj/item/salvage/high{
@@ -7774,8 +7691,8 @@
 /turf/open/floor/carpet/reno/green,
 /area/space)
 "AT" = (
-/obj/structure/dresser,
-/turf/open/floor/carpet/blue,
+/obj/structure/simple_door/room,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "AU" = (
 /obj/structure/table/wood/settler,
@@ -7796,11 +7713,12 @@
 	},
 /area/space)
 "AZ" = (
-/obj/structure/obstacle/barbedwire/end{
+/obj/structure/chair/f13chair1{
 	dir = 8
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
-	color = "#800000"
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
 /area/space)
 "Ba" = (
@@ -8104,12 +8022,13 @@
 /turf/open/floor/wood/wood_tiled,
 /area/space)
 "Cf" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/clothing/under/f13/bishops/soldier,
-/obj/item/clothing/under/f13/bishops/soldier,
-/obj/item/clothing/under/f13/bishops/soldier,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/chair/f13chair1{
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
 /area/space)
 "Cg" = (
@@ -8122,11 +8041,13 @@
 	},
 /area/space)
 "Ch" = (
-/obj/item/storage/secure/safe{
-	pixel_y = 26
+/obj/structure/chair/f13chair1{
+	dir = 4
 	},
-/obj/structure/closet/cabinet,
-/turf/open/floor/carpet/blue,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
 /area/space)
 "Ci" = (
 /obj/structure/decoration/clock/active{
@@ -8809,12 +8730,7 @@
 	},
 /area/space)
 "EL" = (
-/obj/structure/obstacle/barbedwire/end{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
-	color = "#800000"
-	},
+/turf/open/floor/carpet/reno/evil4,
 /area/space)
 "EM" = (
 /obj/structure/table/greyscale{
@@ -8960,10 +8876,6 @@
 	color = "000000"
 	},
 /turf/open/floor/carpet/purple,
-/area/space)
-"Fo" = (
-/obj/structure/closet/fridge,
-/turf/open/floor/carpet/blue,
 /area/space)
 "Fp" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -9245,13 +9157,10 @@
 /turf/open/floor/carpet/reno/pattern1,
 /area/space)
 "Gh" = (
-/obj/structure/chair/wood/worn{
-	dir = 8
+/obj/structure/toilet{
+	pixel_y = 6
 	},
-/obj/item/storage/secure/safe{
-	pixel_y = 26
-	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "Gi" = (
 /obj/structure/closet/cabinet,
@@ -9767,10 +9676,8 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "HS" = (
-/obj/structure/closet/crate/wooden,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/window/gothic/fulltile,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/space)
 "HU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10769,8 +10676,8 @@
 /turf/open/floor/carpet/brown,
 /area/space)
 "Lw" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/simple_door/room,
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "Lx" = (
 /obj/machinery/light/small,
@@ -11580,11 +11487,10 @@
 	},
 /area/space)
 "Ow" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/simple_door/room,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
 /area/space)
 "Ox" = (
@@ -11748,10 +11654,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/space)
 "Pc" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/right{
 	dir = 4
 	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "Pe" = (
 /obj/structure/statue/diamond/indestructible/oldworldstatue{
@@ -11792,12 +11698,6 @@
 /obj/structure/closet/cabinet/anchored,
 /obj/item/storage/secure/briefcase,
 /turf/open/floor/wood/f13/oak,
-/area/space)
-"Pj" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/carpet/blue,
 /area/space)
 "Pk" = (
 /obj/structure/chair/wood/worn{
@@ -12143,8 +12043,14 @@
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/space)
 "Qw" = (
-/obj/structure/chair/booth,
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/table,
+/obj/machinery/computer/security/wooden_tv{
+	pixel_y = 9
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
 /area/space)
 "Qx" = (
 /obj/structure/barricade/tentleathercorner{
@@ -12245,10 +12151,6 @@
 	icon_state = "oakfloor3-broken"
 	},
 /area/space)
-"QO" = (
-/obj/machinery/smartfridge/bottlerack,
-/turf/open/floor/carpet/blue,
-/area/space)
 "QP" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
@@ -12256,8 +12158,10 @@
 	},
 /area/space)
 "QQ" = (
-/obj/structure/bookcase,
-/turf/open/floor/carpet/blue,
+/obj/structure/chair/left{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/space)
 "QR" = (
 /obj/structure/chair/left{
@@ -12302,13 +12206,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "Ra" = (
-/obj/structure/table/wood/settler,
-/obj/item/paper,
-/obj/item/pen,
-/obj/item/storage/secure/safe{
-	pixel_x = -19
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -5
 	},
-/turf/open/floor/carpet/blue,
+/turf/open/transparent/openspace/air,
 /area/space)
 "Rc" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -12570,15 +12472,15 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "RU" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/terminal{
-	dir = 4;
-	pixel_y = 3;
-	termtag = "Business"
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_x = 3;
+	pixel_y = 2
 	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "RW" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -12798,10 +12700,11 @@
 /turf/open/transparent/openspace/air,
 /area/space)
 "SL" = (
-/obj/item/radio/intercom/retro{
-	pixel_x = 29
+/obj/structure/window/fulltile/wood,
+/obj/structure/curtain{
+	color = "#5c131b"
 	},
-/turf/open/floor/wood/f13/carpet,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "SN" = (
 /obj/machinery/microwave/stove,
@@ -12922,10 +12825,6 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
-/area/space)
-"Tj" = (
-/obj/structure/table,
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "Tk" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13097,10 +12996,11 @@
 /turf/closed/wall/mineral/concrete,
 /area/space)
 "TQ" = (
-/obj/item/storage/secure/safe{
-	pixel_x = 31
+/obj/structure/chair/sofa/right{
+	color = "#f06262";
+	dir = 2
 	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "TR" = (
 /turf/open/floor/plating/f13/outside/roof/metal,
@@ -13148,13 +13048,11 @@
 /turf/open/floor/wood/f13/carpet,
 /area/space)
 "TZ" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/melee/onehanded/club,
-/obj/item/melee/onehanded/club,
-/obj/item/melee/onehanded/club,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/railing{
+	dir = 8;
+	layer = 2.1
 	},
+/turf/open/transparent/openspace/air,
 /area/space)
 "Ua" = (
 /obj/structure/table/reinforced,
@@ -13224,12 +13122,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit{
 	color = "#f00000"
 	},
-/area/space)
-"Uu" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "Uv" = (
 /obj/item/picket_sign,
@@ -13476,11 +13368,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/space)
 "Vm" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/storage/box/handcuffs,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
+/obj/structure/table/round,
+/obj/item/gun/ballistic/revolver/russian,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "Vn" = (
 /obj/structure/nest/mob/venushumantrap,
@@ -13576,16 +13466,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "VI" = (
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
+/obj/structure/urinal{
+	pixel_y = 32
 	},
-/area/space)
-"VK" = (
-/obj/structure/closet/crate/wooden,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/lit,
 /area/space)
 "VM" = (
 /obj/structure/fence/pole_b{
@@ -13611,10 +13495,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "VQ" = (
-/obj/machinery/porta_turret/syndicate,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit{
-	color = "#800000"
+/obj/structure/railing{
+	dir = 5
 	},
+/turf/open/transparent/openspace/air,
 /area/space)
 "VR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13708,11 +13592,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "Wn" = (
-/obj/structure/table/wood/settler,
-/obj/item/storage/secure/safe{
-	pixel_x = -19
-	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/carpet/reno/evil2,
 /area/space)
 "Wo" = (
 /obj/effect/decal/cleanable/dirt{
@@ -14177,10 +14057,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/space)
 "XN" = (
-/obj/structure/chair/f13chair2{
-	dir = 8
+/obj/structure/closet/crate/bin/trash_fallout,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
-/turf/open/floor/wood/f13/carpet,
 /area/space)
 "XP" = (
 /obj/structure/window/fulltile/wood{
@@ -14475,20 +14356,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/space)
 "YH" = (
-/obj/structure/bed/pod{
-	pixel_y = 8
+/obj/structure/chair/office/dark{
+	name = "office chair";
+	dir = 1
 	},
-/obj/item/bedsheet/brown{
-	pixel_y = 8
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
 	},
-/obj/structure/bed/pod{
-	pixel_y = -4;
-	layer = 2.91
-	},
-/obj/item/bedsheet/brown{
-	pixel_y = -3
-	},
-/turf/open/floor/carpet/blue,
 /area/space)
 "YJ" = (
 /obj/structure/guncase,
@@ -37515,18 +37390,18 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-EL
-IL
-IL
-kc
-kc
-kc
-kc
-kc
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
 tq
 Aq
 tq
@@ -37667,30 +37542,30 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
-pM
-pM
-kc
-Vm
+tq
+bA
+wv
+aC
+aC
+Ch
+tq
+Gh
+us
 np
 of
-kc
-AT
-LW
+of
+tq
+Wn
+Wn
 Wn
 tq
-AT
-LW
-LW
-Ra
+Wn
+Wn
+Wn
 tq
-tE
-LW
-rO
+Wn
+Wn
+Wn
 tq
 Er
 Er
@@ -37819,30 +37694,30 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
-pM
-VQ
-kc
-Cf
-VI
-of
-kc
+tq
+Qw
 YH
-LW
-hn
+aC
+aC
+qD
 tq
-tE
-LW
-LW
-ow
 tq
-AT
-LW
-ow
+tq
+VI
+np
+np
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
 tq
 Er
 Er
@@ -37971,30 +37846,30 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
-pM
-pM
-kc
+tq
+wv
+aC
+aC
+aC
+AZ
+tq
+Gh
 us
-VI
-of
-kc
-pk
-LW
-LW
+np
+qm
+np
 tq
-il
-LW
-LW
-LW
+Wn
+Wn
+Wn
 tq
-il
-LW
-Fo
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
 tq
 Er
 Er
@@ -38123,30 +37998,30 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-AZ
-IL
-IL
-kc
-TZ
-VI
-of
-kc
-wv
-LW
-Fo
 tq
-QQ
-LW
-LW
-LW
+ui
+eR
+aC
 tq
-QQ
-LW
-LW
+tq
+tq
+tq
+tq
+tq
+tq
+us
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
 tq
 tq
 tq
@@ -38275,34 +38150,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-kL
-VI
-of
-kc
-QQ
-LW
-LW
 tq
-Fo
-LW
-QO
-VK
 tq
-QQ
-LW
-TQ
 tq
-QQ
-LW
-ow
+Ow
+tq
+pv
+pv
+pv
+pv
+fk
+rO
+kI
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
+tq
+Wn
+Wn
+Wn
 tq
 pv
 pv
@@ -38427,34 +38302,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-qm
-VI
-of
-kc
-QQ
-LW
-LW
 tq
+EL
+kI
+kI
+EL
+pM
+pv
+pv
+pv
+fk
+kI
+kI
 tq
-Tr
+Wn
+Wn
+Wn
 tq
+Wn
+Wn
+Wn
 tq
+Wn
+Wn
+Wn
 tq
-tq
-Tr
-tq
-tq
-LW
-LW
-LW
+Wn
+Wn
+Wn
 ds
 pv
 pv
@@ -38579,34 +38454,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
+tq
 EL
-IL
-IL
-kc
-RU
-VI
-VI
-kc
+kI
+kI
+EL
+pM
+pv
+pv
+pv
+fk
+kI
+kI
+tq
+AT
 tq
 tq
-Tr
 tq
-Tj
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-Tr
-LW
-Pj
-TQ
+tq
+AT
+tq
+tq
+tq
+AT
+tq
+tq
+Wn
+Wn
+Wn
 tq
 pv
 pv
@@ -38731,34 +38606,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
+HS
+kI
+TZ
+tq
+kI
 pM
-pM
-kc
-VI
-VI
-fa
+pv
+pv
+pv
 fk
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
+kI
+kI
+kI
+kI
 tq
+pv
+pv
 tq
+kI
+kI
+kI
+kI
+kI
 tq
-tq
+Wn
+Wn
+Wn
+Wn
 tq
 pv
 pv
@@ -38883,34 +38758,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
+HS
+kI
+pv
+tq
+kI
 pM
-VQ
-kc
-kc
+pv
+pv
+pv
 fk
-kc
-kc
-Qw
-by
-iv
-iv
-iv
-SL
-iv
-NN
-iv
-iv
-iv
-iv
-iv
-iv
-xH
-xH
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+AT
+Wn
+Wn
+Wn
+Wn
 tq
 pv
 pv
@@ -39035,34 +38910,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-dg
-pM
-pM
-kc
 HS
-VI
-zD
-kc
-Qw
-bA
-iv
-iv
+kI
+vh
+tq
+kI
+pM
+pv
+pv
+pv
+fk
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
 tq
 tq
-Tr
-tq
-Tr
 tq
 tq
-iv
-iv
-iv
-by
-ui
+tq
 ds
 pv
 pv
@@ -39187,34 +39062,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-AZ
-IL
-IL
-kc
-HS
-VI
-zD
-kc
-IX
-lg
-iv
-iv
-tq
-rO
-LW
 tq
 kI
 kI
-tq
-IX
-iv
-iv
-XN
-XN
+kI
+kI
+VQ
+vh
+vh
+vh
+wp
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
 tq
 pv
 pv
@@ -39339,34 +39214,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-jO
-VI
-Ow
-kc
-iv
-ka
-iv
-iv
 tq
-Gh
-vh
-tq
+EL
 kI
-bU
-tq
-iv
-iv
-ka
-iv
-iv
+kI
+EL
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
 tq
 pv
 pv
@@ -39491,34 +39366,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-HS
-VI
-VI
-kc
-iv
-pv
-Uu
-iv
 tq
-pk
-LW
+EL
+kI
+kI
+EL
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
+kI
 tq
-Ch
-Pc
-tq
-iv
-xi
 aJ
-iv
-iv
+kI
+kI
 ds
 pv
 pv
@@ -39643,34 +39518,34 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
+tq
+AN
+AN
+tq
 HS
-qD
-eR
-kc
-iv
-pv
-Uu
-iv
+tq
+EL
+tq
+HS
+tq
+tq
+tq
+tq
+ka
+tq
+tq
 tq
 AT
-YH
 tq
-AT
-rO
 tq
-iv
-iv
-wp
-iv
-iv
+tq
+kI
+kI
+kI
+tq
+aJ
+kI
+kI
 tq
 pv
 pv
@@ -39795,26 +39670,26 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-kc
-kc
-kc
-kc
-iv
-wp
-iv
-iv
 tq
-Xo
+AN
+AN
+kI
+kI
+kI
+EL
+kI
+kI
 tq
+XN
+Cf
+Cf
+aC
 tq
+Wn
+Wn
+Wn
+Wn
+Wn
 tq
 Xo
 tq
@@ -39946,28 +39821,28 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-kc
-JV
-ew
-Lw
-Aq
 tq
-IL
-IL
-IL
-IL
+tq
+AN
+AN
+tq
+EL
+EL
+EL
+EL
+EL
+ka
+aC
+aC
+aC
+aC
+tq
+Wn
+Wn
+Wn
+Wn
+Wn
+tq
 pv
 pv
 pv
@@ -40098,28 +39973,28 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+tq
+Lw
+Lw
+tq
+QQ
+Pc
+EL
+QQ
+Pc
+tq
+aC
+aC
+aC
+aC
+tq
+Wn
+Wn
+Wn
+Wn
+Wn
+tq
 pv
 pv
 pv
@@ -40250,28 +40125,28 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+RU
+Wn
+Wn
+tq
+fa
+fa
+kL
+fa
+fa
+tq
+pk
+aC
+lg
+aC
+tq
+Wn
+Wn
+Wn
+Wn
+Wn
+tq
 pv
 pv
 pv
@@ -40402,28 +40277,28 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+by
+Wn
+Wn
+SL
+pv
+pv
+pv
+pv
+pv
+tq
+aC
+aC
+aC
+aC
+tq
+tq
+tq
+tq
+tq
+tq
+tq
 pv
 pv
 pv
@@ -40554,26 +40429,26 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-xP
-iZ
-iZ
-lO
+tq
+by
+Wn
+il
+SL
 pv
-IL
-IL
-IL
-IL
+pv
+pv
+pv
+pv
+tq
+Ra
+Ra
+Ra
+Ra
+pv
+pv
+pv
+pv
+pv
 tq
 tq
 tq
@@ -40706,26 +40581,26 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+Wn
+Wn
+TQ
+SL
 pv
 pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
+tq
+pv
+pv
+pv
+pv
+pv
+pv
+pv
+pv
+pv
 tq
 hG
 Ro
@@ -40858,26 +40733,26 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+Vm
+Wn
+jO
+SL
 pv
 pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
+tq
+pv
+pv
+pv
+pv
+pv
+pv
+pv
+pv
+pv
 tq
 Ro
 Ro
@@ -41010,26 +40885,26 @@ pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
-IL
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
+tq
 pv
 pv
 pv
 pv
 pv
-IL
-IL
-IL
-IL
+pv
+pv
+pv
+pv
 tq
 mz
 Ro
@@ -41172,10 +41047,10 @@ IL
 IL
 IL
 IL
-IL
-qx
-qx
-ae
+pv
+pv
+pv
+pv
 pv
 pv
 pv
@@ -41324,10 +41199,10 @@ IL
 IL
 IL
 IL
-vg
-vg
-vg
-Mv
+pv
+pv
+pv
+pv
 pv
 pv
 pv
@@ -41476,10 +41351,10 @@ IL
 IL
 IL
 IL
-vg
-vg
-vg
-Mv
+pv
+pv
+pv
+pv
 pv
 pv
 pv
@@ -41628,10 +41503,10 @@ IL
 IL
 IL
 IL
-iZ
-iZ
-iZ
-lO
+pv
+pv
+pv
+pv
 pv
 pv
 pv

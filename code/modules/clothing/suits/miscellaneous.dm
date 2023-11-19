@@ -1034,7 +1034,7 @@
 	item_state = "hubologist_robes"
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	hoodtype = /obj/item/clothing/head/hooded/robes
+	hoodtype = /obj/item/clothing/head/hooded/robes/hubology
 
 /obj/item/clothing/head/hooded/robes/hubology
 	name = "black hood"

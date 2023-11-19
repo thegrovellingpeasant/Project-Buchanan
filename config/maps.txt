@@ -26,5 +26,5 @@ map wendover
 	voteweight 1
 endmap
 map reno
-	voteweight 1
+	default
 endmap

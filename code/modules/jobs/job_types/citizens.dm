@@ -1,32 +1,32 @@
 /datum/job/citizens
 	department_flag = CITIZENS
 	exp_type = EXP_TYPE_CITIZENS
+	faction = FACTION_CITIZENS
 	maptype = "reno"
 	selection_color = "#ffeeaa"
 
-/datum/job/reno/judge
+/datum/job/citizens/f13judge
 	title = "Judge"
 	flag = F13JUDGE
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are a great arbiter, and the only one in this shithole! Your word is law, and you give definitive unquestionable conclusions to matters that are too complex for your average NCR citizen. In your stead the NRPD Chief and officers of the army may extraordinarily hold your position."
 	supervisors = "NCR law"
-	display_order = JOB_DISPLAY_ORDER_F13JUDGE
 	selection_color = "#dece90"
-	outfit = /datum/outfit/job/reno/judge
+	outfit = /datum/outfit/job/citizens/f13judge
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD)
 
 
-/datum/outfit/job/reno/judge/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13judge/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
-/datum/outfit/job/reno/judge
+/datum/outfit/job/citizens/f13judge
 	name = "Judge"
-	jobtype = /datum/job/reno/judge
+	jobtype = /datum/job/citizens/f13judge
 	id = /obj/item/card/id/dogtag/sheriff
 	uniform	= /obj/item/clothing/under/suit/lawyerblackalt
 	shoes = /obj/item/clothing/shoes/laceup
@@ -39,29 +39,28 @@
 		/obj/item/pen/fourcolor = 1,
 		)
 
-/datum/job/reno/rpdpolicechief
+/datum/job/citizens/f13rpdpolicechief
 	title = "NRPD Chief"
 	flag = F13RPDPOLICECHIEF
 	total_positions = 1
 	spawn_positions = 1
 	description = "Reno is a borderline lawless city, 'human sewage', as it's often said, washes into Reno on a near daily basis; it's not rare to see the results of dealings gone wrong, chem fueled violent bums, and the escalated situations with the gangs. And you're the one who's supposed to deal with this, the Chief of the Reno Police Department. Corruption isn't out of the window, especially considering it was the Bishops who funded the department. Your duties are to organize your men to keep the peace, prevent gang wars from breaking out, and enforcing NCR common law."
 	supervisors = "NCR common law and the mayor"
-	display_order = JOB_DISPLAY_ORDER_F13RPDPOLICECHIEF
-	outfit = /datum/outfit/job/reno/rpdpolicechief
+	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD)
 
 
-/datum/outfit/job/reno/rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/outfit/job/reno/rpdpolicechief
+/datum/outfit/job/citizens/f13rpdpolicechief
 	name = "Police Chief"
-	jobtype = /datum/job/reno/rpdpolicechief
+	jobtype = /datum/job/citizens/f13rpdpolicechief
 	id = /obj/item/card/id/dogtag/sheriff
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -81,29 +80,28 @@
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		)
 
-/datum/job/reno/rpdofficer
+/datum/job/citizens/f13rpdofficer
 	title = "NRPD Officer"
 	flag = F13RPDOFFICER
 	total_positions = 5
 	spawn_positions = 5
 	description = "You are an officer of the Reno Police Department. Uphold NCR common law, follow the orders of the Chief of Police, and keep the situation in the streets from getting too bloody."
 	supervisors = "NCR common law and the mayor"
-	display_order = JOB_DISPLAY_ORDER_F13RPDPOLICECHIEF
 	selection_color = "#ffdddd"
-	outfit = /datum/outfit/job/reno/rpdofficer
+	outfit = /datum/outfit/job/citizens/f13rpdofficer
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD)
 
 
-/datum/outfit/job/reno/rpdofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13rpdofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/reno/rpdofficer
+/datum/outfit/job/citizens/f13rpdofficer
 	name = "Police Officer"
-	jobtype = /datum/job/reno/rpdofficer
+	jobtype = /datum/job/citizens/f13rpdofficer
 	id = /obj/item/card/id/dogtag/deputy
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -123,30 +121,29 @@
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		)
 
-/datum/job/reno/ncrcfwarden
+/datum/job/citizens/f13ncrcfwarden
 	title = "NCRCF Warden"
 	flag = F13NCRCFWARDEN
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Lieutenant in charge of the correctional facility. The convicts will abide by NCR regulation, your guards will obey your every order, and you'll get to have a little fun while the magnifying glass isn't on you. Historically, NCR prisoners have not had the best quality of life!"
 	supervisors = "the captain"
-	display_order = JOB_DISPLAY_ORDER_F13NCRCFWARDEN
 	selection_color = "#dece90"
-	outfit = /datum/outfit/job/reno/ncrcfwarden
+	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
 
 
-/datum/outfit/job/reno/ncrcfwarden/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13ncrcfwarden/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
-/datum/outfit/job/reno/ncrcfwarden
+/datum/outfit/job/citizens/f13ncrcfwarden
 	name = "Warden"
-	jobtype = /datum/job/reno/ncrcfwarden
+	jobtype = /datum/job/citizens/f13ncrcfwarden
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	belt = /obj/item/storage/belt/military/assault/ncr
@@ -168,28 +165,27 @@
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		)
 
-/datum/job/reno/ncrcfguard
+/datum/job/citizens/f13ncrcfguard
 	title = "NCRCF Guard"
 	flag = F13NCRCFGUARD
 	total_positions = 6
 	spawn_positions = 6
 	description = "Obey and protect. The Warden has swathes of orders ready for you, and the prisoners must be stopped from harming others - even themselves. Put them to work and make this facility profitable, soldier!"
 	supervisors = "the Warden"
-	display_order = JOB_DISPLAY_ORDER_F13NCRCFGUARD
-	outfit = /datum/outfit/job/reno/ncrcfguard
+	outfit = /datum/outfit/job/citizens/f13ncrcfguard
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
 
 
-/datum/outfit/job/reno/ncrcfguard/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13ncrcfguard/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/reno/ncrcfguard
+/datum/outfit/job/citizens/f13ncrcfguard
 	name = "Guard"
-	jobtype = /datum/job/reno/ncrcfguard
+	jobtype = /datum/job/citizens/f13ncrcfguard
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	uniform	= /obj/item/clothing/under/f13/ncr
 	belt = /obj/item/storage/belt/military/assault/ncr
@@ -211,20 +207,19 @@
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		)
 
-/datum/job/reno/f13ncrcfphysician
+/datum/job/citizens/f13ncrcfphysician
 	title = "NCRCF Physician"
 	flag = F13NCRCFPHYSICIAN
-	faction = FACTION_CITIZENS
 	total_positions = 1
 	spawn_positions = 1
 	description = "You lucked out and managed a somewhat well-paying occupation. Learned physicians are hard to come by, so your New Californian citizenship only sweetened the deal as you were whisked away by the government into working on a backwater correctional facility."
-	outfit = /datum/outfit/job/reno/f13ncrcfphysician
+	outfit = /datum/outfit/job/citizens/f13ncrcfphysician
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
 
-/datum/outfit/job/reno/f13ncrcfphysician
+/datum/outfit/job/citizens/f13ncrcfphysician
 	name = "NCRCF Physician"
-	jobtype = /datum/job/reno/f13ncrcfphysician
+	jobtype = /datum/job/citizens/f13ncrcfphysician
 
 	uniform	= /obj/item/clothing/under/rank/medical/doctor/purple
 	id = /obj/item/card/id/reno/clinic/papers
@@ -244,7 +239,7 @@
 		/obj/item/healthanalyzer = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1)
 
-/datum/outfit/job/reno/f13ncrcfphysician/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/citizens/f13ncrcfphysician/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -256,7 +251,6 @@
 /datum/job/citizens/f13convict
 	title = "Convict"
 	flag = F13CONVICT
-	faction = FACTION_CITIZENS
 	total_positions = -1
 	spawn_positions = -1
 	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg..."
@@ -330,7 +324,6 @@
 /datum/job/citizens/f13tourist
 	title = "Tourist"
 	flag = F13TOURIST
-	faction = FACTION_CITIZENS
 	total_positions = -1
 	spawn_positions = -1
 	description = "You have found you way to New Reno, The Biggest Little City in the World. Though the city itself is usually in a perpetual state of tension between the clashes among the families, the poor state of the charities, or the rampant hobo criminality, you don't need to think too much about it. You've come here to visit the landmarks, stay at a hotel, play some cards in the casino, or enjoy the so called 'New Reno experience', and you have enough caps to make that happen."

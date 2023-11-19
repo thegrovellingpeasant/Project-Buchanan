@@ -28,12 +28,6 @@
 	name = "metal plating"
 	},
 /area/f13/reno_building)
-"abK" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
 "abQ" = (
 /obj/structure/simple_door/metal/dirtystore,
 /obj/structure/barricade/wooden/planks,
@@ -419,10 +413,6 @@
 	icon_state = "horizontalbottomborderbottomright"
 	},
 /area/f13/reno_wasteland)
-"aoa" = (
-/obj/machinery/mineral/wasteland_vendor/clothing,
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
 "aot" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/old,
@@ -572,22 +562,12 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "art" = (
-/obj/structure/window/reinforced/tinted{
-	pixel_y = -6
+/obj/structure/table/wood/greyscale/red,
+/obj/item/cigbutt/cigarbutt{
+	pixel_y = 4;
+	pixel_x = 9
 	},
-/obj/machinery/door/window/northright{
-	dir = 8;
-	opacity = 1
-	},
-/obj/structure/toilet{
-	dir = 8;
-	open = 1;
-	icon_state = "toilet10"
-	},
-/obj/structure/window/reinforced/tinted{
-	pixel_y = 28
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "asd" = (
 /obj/structure/chair/stool/retro,
@@ -653,10 +633,11 @@
 /turf/closed/wall/f13/ruins,
 /area/f13/reno_wasteland)
 "atO" = (
-/turf/closed/wall/f13/supermart{
-	opacity = 0
+/obj/structure/chair/pew{
+	dir = 4
 	},
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "auh" = (
 /obj/structure/junk/small/tv{
 	icon = 'icons/fallout/objects/decorations.dmi';
@@ -896,10 +877,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
 "aBU" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/turf/open/floor/plasteel/freezer,
+/obj/structure/chair/booth{
+	icon_state = "booth_north_east";
+	dir = 1
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "aCu" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -922,8 +904,7 @@
 	},
 /area/f13/reno_streets)
 "aDf" = (
-/obj/structure/chair/stool/retro/backed,
-/turf/open/floor/carpet/blue,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
 /area/f13/reno_sharkclub)
 "aDg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1071,10 +1052,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
-"aFR" = (
-/obj/effect/landmark/start/f13/bishops/racketeer,
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
 "aFU" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowvertical"
@@ -1124,9 +1101,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "aHg" = (
-/obj/structure/table/wood/settler,
-/obj/item/reagent_containers/glass/bucket/wood,
-/turf/open/indestructible/ground/outside/dirt,
+/obj/structure/chair/pew/left{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
 /area/f13/reno_streets)
 "aHI" = (
 /obj/structure/closet/fridge,
@@ -1155,10 +1133,6 @@
 /obj/structure/fluff/railsnew,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/reno_subway)
-"aIn" = (
-/obj/effect/landmark/start/f13/bishops/boss,
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
 "aIq" = (
 /obj/item/radio/intercom/retro{
 	pixel_y = 27
@@ -1317,13 +1291,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_building)
 "aPz" = (
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
+/obj/structure/chair/stool/retro/backed,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "aPB" = (
 /obj/item/bedsheet/brown,
@@ -1847,12 +1816,11 @@
 	},
 /area/f13/reno_building)
 "bdk" = (
-/obj/structure/chair/office/dark{
-	dir = 8
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
 /area/f13/reno_building)
 "bdt" = (
 /obj/structure/table/reinforced,
@@ -1940,9 +1908,11 @@
 	},
 /area/f13/reno_wasteland)
 "bgq" = (
-/obj/structure/window/fulltile/house,
-/obj/structure/barricade/bars,
-/turf/open/floor/wood/cold,
+/obj/machinery/vending/games,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "bgB" = (
 /turf/open/indestructible/ground/outside/road{
@@ -2225,22 +2195,8 @@
 /turf/open/floor/carpet/green,
 /area/f13/reno_building)
 "bmV" = (
-/obj/structure/window/reinforced/tinted{
-	pixel_y = -6
-	},
-/obj/machinery/door/window/eastleft{
-	opacity = 1
-	},
-/obj/structure/toilet{
-	dir = 4;
-	open = 1;
-	icon_state = "toilet11"
-	},
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/obj/structure/table/snooker,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "bmX" = (
 /obj/structure/car/rubbish1,
@@ -2357,8 +2313,8 @@
 /turf/open/indestructible/ground/outside/sidewalk/left,
 /area/f13/reno_streets)
 "brh" = (
-/obj/structure/rack/shelf_metal,
-/turf/open/floor/carpet/red,
+/obj/structure/window/gothic/fulltile,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "brj" = (
 /obj/structure/bed,
@@ -2389,29 +2345,18 @@
 	},
 /area/f13/reno_building)
 "brv" = (
-/obj/structure/table/wood/poker,
-/obj/machinery/door/window{
-	pixel_y = -7
-	},
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/water,
+/area/f13/reno_streets)
 "brw" = (
-/obj/machinery/door/window/eastright{
-	opacity = 1
+/obj/structure/table/snooker{
+	dir = 6
 	},
-/obj/structure/toilet{
-	dir = 4
+/obj/item/twohanded/baseball/poolcue{
+	pixel_x = 5;
+	pixel_y = -11
 	},
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/window/reinforced/tinted{
-	pixel_y = -1;
-	layer = 4.1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "brz" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -3075,10 +3020,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_building)
 "bIN" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 5;
-	icon_state = "dirt"
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 1
 	},
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/water,
 /area/f13/reno_streets)
 "bIU" = (
 /obj/structure/closet/fridge,
@@ -3237,9 +3188,6 @@
 	},
 /turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_building)
-"bPV" = (
-/turf/open/floor/wood/f13/stage_bl,
-/area/f13/reno_sharkclub)
 "bQo" = (
 /obj/structure/fence/corner{
 	dir = 8;
@@ -3357,8 +3305,14 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
 "bVM" = (
-/obj/structure/table/wood/poker,
-/turf/open/floor/carpet/blue,
+/obj/structure/musician/piano{
+	icon_state = "piano";
+	name = "piano";
+	layer = 2;
+	plane = -14;
+	pixel_x = -1
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/reno_sharkclub)
 "bVQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3802,17 +3756,20 @@
 	},
 /area/f13/reno_streets)
 "chE" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel/freezer,
-/area/f13/reno_sharkclub)
+/obj/structure/flora/junglebush,
+/turf/open/water,
+/area/f13/reno_streets)
 "chF" = (
-/obj/structure/closet/boxinggloves,
-/turf/open/floor/f13{
-	icon_state = "hydrofloor"
+/obj/structure/table/wood/greyscale/red,
+/obj/item/paper/crumpled{
+	pixel_y = 4;
+	pixel_x = 5
 	},
-/area/f13/reno_building)
+/obj/item/clothing/mask/cigarette/cigar{
+	pixel_x = -7
+	},
+/turf/open/floor/wood/f13,
+/area/f13/reno_sharkclub)
 "chQ" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/f13/fancylads,
@@ -3914,13 +3871,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_wasteland)
 "ckR" = (
-/obj/machinery/microwave/stove{
-	pixel_y = -1
+/obj/structure/chair/booth{
+	icon_state = "booth_west_south"
 	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "ckV" = (
 /obj/structure/destructible/tribal_torch/wall{
@@ -4573,12 +4527,9 @@
 	},
 /area/f13/reno_building)
 "cCR" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/effect/overlay/curb/north,
+/obj/effect/overlay/curb/east,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "cCU" = (
 /obj/structure/chair/pew/left,
@@ -4727,12 +4678,10 @@
 	},
 /area/f13/reno_building)
 "cGG" = (
-/obj/effect/overlay/palmtree_l{
-	pixel_x = 6
+/obj/structure/chair/booth{
+	dir = 4
 	},
-/turf/closed/wall/f13/supermart{
-	opacity = 0
-	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "cGK" = (
 /obj/structure/barricade/tentclothedge{
@@ -4955,7 +4904,10 @@
 "cNR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/obj/effect/overlay/curb/west,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
 /area/f13/reno_building)
 "cOh" = (
 /obj/structure/junk/micro,
@@ -5059,21 +5011,10 @@
 	},
 /area/f13/reno_building)
 "cQy" = (
-/obj/structure/closet/fridge,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/yeast,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/storage/fancy/egg_box,
-/obj/item/pizzabox,
-/obj/item/reagent_containers/food/snacks/spaghetti,
-/obj/item/reagent_containers/food/snacks/spaghetti,
-/obj/item/reagent_containers/food/snacks/spaghetti,
-/obj/item/reagent_containers/food/snacks/spaghetti,
-/obj/item/reagent_containers/food/snacks/spaghetti,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/obj/structure/chair/wood/normal{
+	dir = 1
+	},
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "cQX" = (
 /obj/structure/destructible/tribal_torch/wall{
@@ -5174,8 +5115,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "cVb" = (
-/obj/structure/chair/stool/retro/tan,
-/turf/open/floor/carpet/red,
+/obj/structure/table/round,
+/obj/item/kirbyplants/random{
+	pixel_y = 11
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "cVl" = (
 /turf/closed/wall/f13/tentwall,
@@ -5613,8 +5557,11 @@
 	},
 /area/f13/reno_building)
 "dfo" = (
-/obj/structure/closet/crate/wicker,
-/turf/open/indestructible/ground/outside/dirt,
+/obj/structure/chair/pew/right{
+	dir = 8;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
 /area/f13/reno_streets)
 "dfu" = (
 /obj/structure/car/rubbish3,
@@ -5631,9 +5578,13 @@
 /turf/open/indestructible/ground/outside/sidewalk/top,
 /area/f13/reno_streets)
 "dfW" = (
-/obj/machinery/computer/slot_machine,
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
+/obj/structure/statue/diamond/indestructible/artdecofountain/center{
+	dir = 1;
+	layer = 4.31;
+	pixel_y = -15
+	},
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "dfZ" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5818,10 +5769,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/white,
 /area/f13/reno_building)
 "dlM" = (
+/obj/effect/overlay/curb,
 /obj/effect/overlay/curb/west,
-/obj/effect/overlay/curb/north,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "dlN" = (
 /obj/structure/junk/small/tv{
 	pixel_y = 7
@@ -6003,8 +5954,9 @@
 	},
 /area/f13/reno_building)
 "dqB" = (
-/obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet/blue,
+/obj/structure/table/booth,
+/obj/item/storage/box/drinkingglasses,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "dqV" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -6210,12 +6162,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "dwl" = (
-/obj/structure/table/reinforced,
-/obj/machinery/chem_dispenser/drinks/beer{
-	dir = 8
-	},
-/obj/effect/overlay/curb/west,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "dwy" = (
 /obj/structure/table/wood/ruined/bench,
@@ -6291,10 +6240,12 @@
 	},
 /area/f13/reno_wasteland)
 "dyl" = (
-/obj/structure/closet/athletic_mixed,
-/turf/open/floor/f13{
-	icon_state = "hydrofloor"
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 2
 	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/water,
 /area/f13/reno_building)
 "dyp" = (
 /obj/structure/barricade/tentleathercorner{
@@ -6723,23 +6674,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
 "dJZ" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "dKm" = (
-/obj/machinery/door/unpowered/latterdaysaints{
-	req_one_access_txt = "130";
-	name = "Employee's Only"
-	},
-/turf/open/floor/wood/f13,
+/obj/structure/table/wood/greyscale/red,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "dKv" = (
 /obj/structure/table,
@@ -6915,9 +6854,12 @@
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/reno_streets)
 "dSh" = (
-/obj/structure/table/round,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	layer = 4.31;
+	pixel_y = 12
+	},
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "dSj" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowvertical";
@@ -6948,11 +6890,10 @@
 /turf/open/floor/carpet/red,
 /area/f13/reno_building)
 "dSy" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/north,
+/obj/effect/overlay/curb/west,
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "dSG" = (
 /obj/structure/chair/stool/retro,
 /turf/open/floor/carpet,
@@ -7057,7 +6998,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_building)
 "dVG" = (
-/turf/open/floor/carpet/black,
+/obj/structure/table/wood/fancy,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "dVM" = (
 /obj/structure/rack,
@@ -7780,11 +7722,10 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "etF" = (
-/obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/f13/cash_random_low,
-/turf/open/floor/carpet,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
 /area/f13/reno_building)
 "etG" = (
 /turf/open/indestructible/ground/outside/sidewalk/right,
@@ -8134,12 +8075,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_building)
 "eCr" = (
-/obj/effect/overlay/palmtree_r{
-	pixel_x = -6
-	},
-/turf/closed/wall/f13/supermart{
-	opacity = 0
-	},
+/turf/open/floor/carpet/reno/evil4,
 /area/f13/reno_sharkclub)
 "eCz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8186,19 +8122,9 @@
 /turf/closed/wall/mineral/stonewall,
 /area/f13/reno_building)
 "eDh" = (
-/obj/structure/table,
-/obj/item/kitchen/rollingpin,
-/obj/item/kitchen/knife/butcher,
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -8;
-	pixel_y = 11
-	},
-/obj/item/kitchen/knife,
-/obj/structure/sink/kitchen{
-	icon_state = "sink_alt2";
-	pixel_y = 12
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/obj/structure/chair/stool/retro,
+/obj/effect/overlay/curb/east,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "eDt" = (
 /obj/machinery/light{
@@ -8246,8 +8172,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_building)
 "eEt" = (
-/turf/open/floor/plasteel/freezer,
-/area/f13/reno_sharkclub)
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/leafybush,
+/turf/open/water,
+/area/f13/reno_streets)
 "eEu" = (
 /obj/structure/plasticflaps/narrowcrevice,
 /obj/effect/decal/cleanable/blood{
@@ -9013,12 +8948,9 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/reno_wasteland)
 "ffw" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino8";
-	layer = 4.25
-	},
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet/red,
+/obj/structure/chair/stool/retro,
+/obj/effect/overlay/curb/west,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "ffJ" = (
 /obj/structure/table/wood/settler,
@@ -9147,7 +9079,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
 "fkr" = (
-/turf/open/floor/carpet/reno/green,
+/obj/structure/curtain{
+	color = "#845f58";
+	layer = 3.0
+	},
+/obj/structure/curtain{
+	color = "#845f58";
+	layer = 3.0
+	},
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "fkx" = (
 /obj/structure/barricade/tentleatheredge{
@@ -9919,10 +9859,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/left,
 /area/f13/reno_streets)
-"fHF" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet,
-/area/f13/reno_building)
 "fHS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -10060,9 +9996,8 @@
 /turf/open/floor/wood/f13/oakbroken,
 /area/f13/reno_wasteland)
 "fKO" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/deck,
-/turf/open/floor/carpet/blue,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
 /area/f13/reno_sharkclub)
 "fLb" = (
 /obj/structure/wreck/trash/engine,
@@ -10289,10 +10224,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
 "fRu" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/storage/box/drinkingglasses,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/wood/f13/stage_tr,
 /area/f13/reno_sharkclub)
 "fRy" = (
 /obj/structure/fence{
@@ -10509,10 +10441,7 @@
 	},
 /area/f13/reno_building)
 "fWk" = (
-/obj/structure/curtain,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/turf/open/floor/carpet/red/lit,
 /area/f13/reno_sharkclub)
 "fWq" = (
 /obj/machinery/light/small,
@@ -10550,8 +10479,7 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_building)
 "fXO" = (
-/obj/structure/railing/casino/corner,
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/wood/f13/stage_l,
 /area/f13/reno_sharkclub)
 "fXP" = (
 /obj/structure/car/rubbish1,
@@ -10768,11 +10696,10 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "gfO" = (
-/obj/structure/mirror{
-	pixel_x = 28
+/obj/structure/table/snooker{
+	dir = 10
 	},
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "gfR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11117,11 +11044,9 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
 "gss" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/west,
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "gst" = (
 /obj/structure/toilet{
 	dir = 4
@@ -11334,10 +11259,8 @@
 	},
 /area/f13/reno_building)
 "gxv" = (
-/obj/structure/filingcabinet,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
-/area/f13/reno_building)
+/turf/open/floor/wood/f13/stage_r,
+/area/f13/reno_sharkclub)
 "gxA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/right,
@@ -12515,14 +12438,14 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "hgE" = (
-/obj/machinery/shower{
-	dir = 1;
-	layer = 4.29
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	icon_state = "lab";
+	icon_keyboard = "lab_key";
+	icon_screen = "lab_on"
 	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/reno_sharkclub)
+/turf/open/floor/plasteel/grimy,
+/area/f13/reno_building)
 "hgQ" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/wood/f13/oakbase,
@@ -12801,11 +12724,12 @@
 	},
 /area/f13/reno_building)
 "hpy" = (
-/obj/structure/railing{
-	dir = 4;
-	icon_state = "railing_casino2"
+/obj/effect/overlay/curb/west,
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -27
 	},
-/turf/open/floor/wood/f13/stage_tr,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "hpz" = (
 /obj/effect/overlay/plaque{
@@ -13449,7 +13373,11 @@
 	},
 /area/f13/reno_building)
 "hGR" = (
-/turf/open/floor/carpet/red,
+/obj/structure/chair/booth{
+	icon_state = "booth_north_west";
+	dir = 1
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "hHo" = (
 /obj/structure/chair/wood,
@@ -13623,7 +13551,9 @@
 	},
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
 /area/f13/reno_building)
 "hLU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13905,12 +13835,8 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
 "hTV" = (
-/obj/structure/table/wood/fancy/black,
-/obj/structure/curtain{
-	color = "#7c131b";
-	pixel_y = -1
-	},
-/turf/open/floor/carpet/brown,
+/obj/structure/chair/stool/retro/black,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "hUe" = (
 /obj/structure/window/gothic/fulltile,
@@ -14080,14 +14006,16 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "iaL" = (
-/obj/structure/railing/handrail{
-	dir = 8
+/obj/structure/table/wood/greyscale/red,
+/obj/item/paper/crumpled{
+	pixel_y = 4;
+	pixel_x = 5
 	},
-/turf/open/pool{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "whitesolid"
+/obj/item/pen{
+	pixel_x = -5
 	},
-/area/f13/reno_building)
+/turf/open/floor/wood/f13,
+/area/f13/reno_sharkclub)
 "iaP" = (
 /obj/structure/flora/tree/tall,
 /turf/open/indestructible/ground/outside/desert,
@@ -14109,10 +14037,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "ibg" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 10;
-	icon_state = "dirt"
-	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
 /area/f13/reno_streets)
 "ibi" = (
 /obj/structure/tires/five{
@@ -14574,14 +14499,10 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/reno_building)
 "iob" = (
-/obj/structure/railing/casino{
-	dir = 4;
-	layer = 4.25
-	},
-/obj/structure/chair/comfy/black{
+/obj/structure/chair/wood/normal{
 	dir = 8
 	},
-/turf/open/floor/wood/f13/stage_r,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "iol" = (
 /obj/effect/decal/cleanable/glass,
@@ -14832,14 +14753,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_wasteland)
-"isg" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino7";
-	layer = 4.25
-	},
-/obj/structure/chair/stool/retro/tan,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
 "iso" = (
 /obj/structure/closet,
 /obj/item/clothing/mask/luchador,
@@ -14914,10 +14827,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
 "ivM" = (
-/obj/structure/curtain{
-	color = "#808080"
-	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/indestructible/ground/outside/roof/stairs/south,
 /area/f13/reno_sharkclub)
 "iwC" = (
 /obj/item/camera,
@@ -15040,10 +14950,6 @@
 	sunlight_state = 1
 	},
 /area/f13/reno_building)
-"iAE" = (
-/obj/structure/chair/sofa/corp/right,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
 "iAF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/f13/oakbroken,
@@ -15455,9 +15361,13 @@
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/reno_streets)
 "iOJ" = (
-/obj/effect/landmark/start/f13/bishops/capo,
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/west,
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -29
+	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "iOM" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/shoes/laceup,
@@ -15843,7 +15753,10 @@
 	},
 /area/f13/reno_building)
 "jaz" = (
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/obj/structure/chair/booth{
+	icon_state = "booth_east_north"
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "jaC" = (
 /obj/structure/barricade/wooden,
@@ -15993,13 +15906,8 @@
 	},
 /area/f13/reno_building)
 "jdg" = (
-/obj/structure/table/wood/fancy,
-/obj/item/candle{
-	pixel_y = 5
-	},
-/obj/machinery/light/floor,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "jdE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/nest/mob/ghoulglowing{
@@ -16079,12 +15987,10 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
 "jfD" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino5";
-	layer = 4.25
+/obj/structure/chair/sofa/left{
+	color = "#800000"
 	},
-/obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "jfJ" = (
 /obj/structure/wreck/trash/engine{
@@ -16239,12 +16145,12 @@
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/reno_streets)
 "jkq" = (
-/obj/structure/curtain{
-	color = "#66314a";
-	alpha = 255;
-	layer = 4.26
+/obj/effect/overlay/curb/east,
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -27
 	},
-/turf/open/floor/carpet/reno/burgandy,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "jkr" = (
 /obj/structure/railing{
@@ -16681,12 +16587,11 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "juq" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/bag/tray{
-	pixel_y = 6
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
 	},
-/turf/open/floor/carpet/black,
-/area/f13/reno_sharkclub)
+/area/f13/reno_building)
 "jur" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/f13/cram{
@@ -16800,8 +16705,9 @@
 	},
 /area/f13/reno_wasteland)
 "jyJ" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet/reno/burgandy,
+/obj/effect/overlay/curb/east,
+/obj/structure/chair/stool/retro,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "jyO" = (
 /obj/structure/simple_door/metal/store,
@@ -17193,12 +17099,9 @@
 	},
 /area/f13/reno_wasteland)
 "jIH" = (
-/obj/structure/table,
-/obj/structure/bedsheetbin/towel,
-/turf/open/floor/f13{
-	icon_state = "hydrofloor"
-	},
-/area/f13/reno_building)
+/obj/structure/chair/bench,
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "jIL" = (
 /obj/effect/overlay/curb/west,
 /obj/effect/overlay/curb/north,
@@ -17387,15 +17290,18 @@
 	},
 /area/f13/reno_wasteland)
 "jOX" = (
-/obj/structure/chair/wood/normal{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/overlay/curb/east{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
 /area/f13/reno_building)
 "jPz" = (
-/obj/structure/table/roulette,
-/turf/open/floor/carpet/red,
+/obj/effect/overlay/curb/north,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "jPA" = (
 /obj/structure/table/wood/fancy,
@@ -17723,10 +17629,8 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
 "jXV" = (
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "jXZ" = (
 /obj/structure/barricade/tentleatheredge,
@@ -17915,24 +17819,13 @@
 /turf/open/water/shore,
 /area/f13/reno_wasteland)
 "kdG" = (
-/obj/structure/window/reinforced/tinted{
-	dir = 1
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -29;
+	pixel_x = 3
 	},
-/obj/machinery/door/window/westleft{
-	opacity = 1
-	},
-/obj/structure/toilet{
-	dir = 8;
-	open = 1;
-	icon_state = "toilet10"
-	},
-/obj/structure/window/reinforced/tinted{
-	pixel_y = -1;
-	layer = 4.1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "kdM" = (
 /obj/item/toy/plush/slaggy,
 /obj/item/toy/plush/mr_buckety,
@@ -18149,12 +18042,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_building)
-"kjs" = (
-/obj/structure/windoor_assembly,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
-/area/f13/reno_sharkclub)
 "kju" = (
 /turf/open/indestructible/ground/outside/road/damagedvert,
 /area/f13/reno_streets)
@@ -18378,16 +18265,8 @@
 	},
 /area/f13/reno_wasteland)
 "kqq" = (
-/obj/structure/urinal{
-	pixel_y = 26
-	},
-/obj/structure/urinal{
-	pixel_y = 26;
-	pixel_x = -15
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/structure/chair/sofa/corp/corner,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "kqt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19042,10 +18921,10 @@
 /turf/closed/wall/f13/tunnel,
 /area/f13/reno_building)
 "kIn" = (
-/obj/structure/chair/comfy/purple{
-	dir = 4
+/obj/structure/railing/casino{
+	pixel_y = -2
 	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/carpet/red/lit,
 /area/f13/reno_sharkclub)
 "kIq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19241,20 +19120,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "kOr" = (
-/obj/structure/chair/sofa/corp/corner{
-	dir = 8
-	},
-/obj/structure/railing/casino{
-	icon_state = "railing_casino7";
-	layer = 4.25
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "kOw" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -19275,9 +19141,9 @@
 /turf/open/floor/carpet/red,
 /area/f13/reno_building)
 "kOG" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/wood/f13/stage_t,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/north,
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "kPi" = (
 /obj/effect/decal/cleanable/glass,
 /obj/structure/car/rubbish3alt,
@@ -19797,8 +19663,11 @@
 /turf/open/indestructible/ground/outside/savannah/leftcenter,
 /area/f13/reno_streets)
 "lab" = (
-/turf/open/floor/wood/f13/stage_b,
-/area/f13/reno_sharkclub)
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "laq" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar{
 	icon_state = "bar2"
@@ -20067,8 +19936,16 @@
 /turf/open/pool/pond,
 /area/f13/reno_wasteland)
 "lit" = (
-/obj/machinery/hydroponics/soil,
-/turf/open/indestructible/ground/outside/dirt,
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 2
+	},
+/obj/structure/flora/junglebush/c,
+/turf/open/water,
 /area/f13/reno_streets)
 "liA" = (
 /obj/structure/table/round,
@@ -20576,15 +20453,11 @@
 /turf/open/indestructible/ground/outside/road/damagedvert,
 /area/f13/reno_wasteland)
 "lxn" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -27
 	},
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = -2
-	},
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "lxy" = (
 /obj/structure/window/fulltile/store{
@@ -20603,13 +20476,11 @@
 /turf/open/floor/carpet/red,
 /area/f13/reno_building)
 "lyC" = (
-/obj/structure/railing/dancing_pole/top{
-	layer = 4.27;
-	density = 0;
-	pixel_x = 16
+/obj/structure/chair/office/dark{
+	dir = 4
 	},
-/turf/open/floor/wood/f13/stage_l,
-/area/f13/reno_sharkclub)
+/turf/open/floor/plasteel/grimy,
+/area/f13/reno_building)
 "lyE" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/decal/cleanable/dirt{
@@ -20624,7 +20495,12 @@
 	},
 /area/f13/reno_building)
 "lyV" = (
-/turf/closed/wall/f13/supermart,
+/obj/structure/table,
+/obj/item/kirbyplants/dead{
+	pixel_y = 13
+	},
+/obj/effect/overlay/curb/north,
+/turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
 "lyY" = (
 /obj/machinery/porta_turret/syndicate{
@@ -21119,14 +20995,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/reno_streets)
 "lLW" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino2";
-	layer = 4.25
-	},
-/obj/effect/overlay/porch{
-	pixel_y = -5
-	},
-/turf/open/floor/wood/f13/stage_b/outdoors,
+/turf/open/indestructible/ground/outside/roof/stairs/east,
 /area/f13/reno_sharkclub)
 "lLX" = (
 /obj/structure/railing,
@@ -21182,15 +21051,9 @@
 	},
 /area/f13/reno_building)
 "lNM" = (
-/obj/structure/railing/casino{
-	dir = 6;
-	layer = 4.25
-	},
-/obj/effect/overlay/porch{
-	icon_state = "housewood_stage_bottom_right";
-	pixel_y = -5
-	},
-/turf/open/floor/wood/f13/stage_br,
+/obj/effect/overlay/curb/north,
+/obj/effect/overlay/curb/west,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "lNQ" = (
 /turf/closed/wall/mineral/stonewall,
@@ -21458,7 +21321,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_building)
 "lVH" = (
-/turf/open/floor/carpet/reno/burgandy,
+/obj/machinery/microwave/stove/fancy,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
 /area/f13/reno_sharkclub)
 "lVJ" = (
 /obj/structure/table/reinforced,
@@ -21840,7 +21704,7 @@
 /area/f13/reno_building)
 "mfX" = (
 /obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet/reno/green,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "mgh" = (
 /obj/structure/table/reinforced,
@@ -21936,18 +21800,8 @@
 /turf/open/floor/plasteel/dark,
 /area/f13/reno_building)
 "mhT" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/item/reagent_containers/food/urinalcake,
-/obj/structure/urinal{
-	pixel_y = 26
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/structure/chair/sofa/corp/right,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "mih" = (
 /obj/structure/table/wood/settler,
@@ -22019,18 +21873,11 @@
 	},
 /area/f13/reno_building)
 "mjV" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder,
-/obj/structure/closet/locker/medcabinet{
-	pixel_y = 26
+/obj/structure/chair/sofa/corner{
+	color = "#800000";
+	dir = 4
 	},
-/obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/effect/overlay/curb/west,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "mjW" = (
 /obj/effect/overlay/curb/east{
@@ -22089,14 +21936,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_wasteland)
 "mkP" = (
-/obj/structure/chair/sofa/corp/corner{
-	dir = 1
+/obj/machinery/newscaster{
+	pixel_x = -32
 	},
-/obj/structure/railing/casino{
-	icon_state = "railing_casino4";
-	layer = 4.25
-	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "mkS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23120,9 +22963,11 @@
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
 /area/f13/reno_streets)
 "mOO" = (
-/obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
+/obj/structure/closet/locker,
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
 /area/f13/reno_building)
 "mOU" = (
 /obj/structure/barricade/tentleathercorner{
@@ -23177,11 +23022,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "mQE" = (
-/turf/open/pool{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "whitesolid"
-	},
-/area/f13/reno_building)
+/obj/structure/simple_door,
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "mQW" = (
 /obj/item/cardboard_cutout/adaptive{
 	pixel_y = 2
@@ -23358,10 +23201,7 @@
 /turf/open/floor/wood/f13/housewoodbroken,
 /area/f13/reno_wasteland)
 "mWD" = (
-/obj/structure/closet/fridge,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/vending/dinnerware,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "mWM" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -23467,11 +23307,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_building)
 "naY" = (
-/obj/structure/curtain{
-	color = "#b8a482"
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 4;
+	layer = 3.9;
+	pixel_y = -20
 	},
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "nbc" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
@@ -23797,8 +23639,8 @@
 	},
 /area/f13/reno_streets)
 "nlr" = (
-/obj/effect/overlay/curb/west,
-/turf/open/floor/carpet/red,
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/carpet/red/lit,
 /area/f13/reno_sharkclub)
 "nlA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23931,14 +23773,11 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_streets)
 "nov" = (
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/bottle/instacoffee{
+	pixel_y = 10
 	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/obj/effect/landmark/start/f13/bishops/casinoworker,
-/turf/open/floor/carpet/black,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "noD" = (
 /obj/item/reagent_containers/glass/bucket/wood,
@@ -24047,9 +23886,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_wasteland)
 "nrG" = (
-/obj/effect/landmark/start/f13/bishops/wife,
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb,
+/obj/effect/overlay/curb/east{
+	dir = 8
+	},
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "nrT" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
@@ -24173,12 +24015,13 @@
 /turf/open/indestructible/ground/outside/sidewalk/bottom,
 /area/f13/reno_streets)
 "nvG" = (
-/obj/structure/railing/handrail,
-/turf/open/pool{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "whitesolid"
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 1;
+	layer = 4.31;
+	pixel_y = 12
 	},
-/area/f13/reno_building)
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "nvI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -24339,11 +24182,12 @@
 /turf/open/floor/carpet/brown,
 /area/f13/reno_wasteland)
 "nBS" = (
-/obj/structure/chair/stool/retro/backed{
-	dir = 4
+/obj/structure/table/round,
+/obj/item/kirbyplants/random{
+	pixel_y = 11
 	},
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "nBZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table_frame,
@@ -24493,15 +24337,6 @@
 	icon_state = "outerborder"
 	},
 /area/f13/reno_streets)
-"nGn" = (
-/obj/structure/railing/casino{
-	layer = 4.25
-	},
-/obj/effect/overlay/porch{
-	pixel_y = -5
-	},
-/turf/open/floor/wood/f13/stage_b/outdoors,
-/area/f13/reno_sharkclub)
 "nGw" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 8;
@@ -24659,12 +24494,6 @@
 /obj/structure/kitchenspike,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
-"nJu" = (
-/obj/structure/chair/stool/retro/backed{
-	dir = 8
-	},
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
 "nJA" = (
 /obj/structure/curtain{
 	color = "#4B5320"
@@ -24794,10 +24623,11 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/reno_building)
 "nNC" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/right{
+	color = "#800000";
 	dir = 4
 	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "nNW" = (
 /obj/structure/filingcabinet/filingcabinet,
@@ -24819,11 +24649,9 @@
 /turf/open/floor/carpet/blue,
 /area/f13/reno_building)
 "nPq" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/f13{
-	icon_state = "hydrofloor"
-	},
-/area/f13/reno_building)
+/obj/structure/closet/fridge,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
+/area/f13/reno_sharkclub)
 "nPK" = (
 /obj/structure/chair/folding,
 /turf/open/indestructible/ground/outside/dirt/south,
@@ -24873,10 +24701,8 @@
 /turf/open/floor/carpet/black,
 /area/f13/reno_building)
 "nRo" = (
-/obj/structure/table/wood/settler,
-/obj/item/shovel/spade,
-/obj/item/cultivator/rake,
-/turf/open/indestructible/ground/outside/dirt,
+/obj/effect/overlay/curb/east,
+/turf/open/pool/pond,
 /area/f13/reno_streets)
 "nRz" = (
 /obj/structure/rack/shelf_metal,
@@ -25207,10 +25033,9 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/reno_streets)
 "nZw" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/effect/overlay/curb/west,
+/obj/structure/chair/stool/retro,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "nZA" = (
 /obj/effect/overlay/junk/sink{
@@ -25370,8 +25195,17 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "ofd" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet/reno/burgandy,
+/obj/item/radio{
+	icon_state = "micstand";
+	name = "radio";
+	canhear_range = 7;
+	layer = 4.1;
+	icon = 'icons/fallout/machines/radio.dmi';
+	anchored = 1;
+	pixel_y = -4;
+	can_be_unanchored = 1
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/reno_sharkclub)
 "ofk" = (
 /obj/effect/decal/remains/human,
@@ -25659,10 +25493,8 @@
 	},
 /area/f13/reno_wasteland)
 "onf" = (
-/obj/structure/railing/casino{
-	dir = 4
-	},
-/turf/open/floor/wood/f13/stage_r,
+/obj/effect/overlay/curb,
+/turf/open/floor/carpet/red/lit,
 /area/f13/reno_sharkclub)
 "oni" = (
 /obj/item/storage/secure/safe{
@@ -25756,13 +25588,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite,
 /area/f13/reno_building)
 "opm" = (
-/obj/structure/chair/sofa/corp/corner,
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = -2
-	},
-/turf/open/floor/carpet/red,
+/obj/structure/table/wood/greyscale/red,
+/obj/item/paper_bin,
+/obj/item/paper_bin,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "oqy" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -26508,8 +26337,10 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_wasteland)
 "oOR" = (
-/obj/machinery/jukebox,
-/turf/open/floor/carpet/red,
+/obj/structure/chair/booth{
+	icon_state = "booth_east_south"
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "oPM" = (
 /obj/structure/decoration/rag{
@@ -26783,13 +26614,17 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "oXQ" = (
-/obj/structure/chair/office/dark{
-	dir = 1
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 8
 	},
-/turf/open/floor/f13{
-	icon_state = "greendirtyfull"
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 2
 	},
-/area/f13/reno_building)
+/obj/structure/flora/junglebush,
+/turf/open/water,
+/area/f13/reno_streets)
 "oXT" = (
 /obj/structure/rack,
 /obj/item/mop,
@@ -27181,12 +27016,13 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
 "pnH" = (
-/obj/structure/railing/casino{
-	dir = 4;
-	layer = 4.25
+/obj/structure/table/wood/greyscale/red,
+/obj/item/cigbutt/cigarbutt,
+/obj/item/lighter/greyscale{
+	pixel_x = -5;
+	pixel_y = 5
 	},
-/obj/item/kirbyplants/random,
-/turf/open/floor/wood/f13/stage_r,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "pnR" = (
 /obj/structure/table/reinforced,
@@ -27495,8 +27331,12 @@
 	},
 /area/f13/reno_wasteland)
 "pxG" = (
-/obj/structure/chair/stool/retro/tan,
-/turf/open/floor/carpet/blue,
+/obj/structure/statue/sandstone/venus{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/effect/overlay/curb/east,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "pxK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -27561,15 +27401,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
-"pAb" = (
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive,
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive,
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive,
-/obj/structure/closet/fridge,
-/obj/item/reagent_containers/food/drinks/bottle/nukashine,
-/obj/item/book/manual/nuka_recipes,
-/turf/open/floor/plasteel/freezer,
-/area/f13/reno_sharkclub)
 "pAC" = (
 /obj/structure/barricade/tentleatheredge,
 /turf/open/indestructible/ground/outside/dirt,
@@ -27658,10 +27489,11 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
 "pCX" = (
-/obj/structure/window/reinforced,
-/obj/machinery/vending/games,
-/turf/open/floor/wood/cold,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/east{
+	dir = 8
+	},
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "pDz" = (
 /obj/structure/wreck/trash/two_tire,
 /turf/open/indestructible/ground/outside/dirt/south,
@@ -27735,12 +27567,10 @@
 	},
 /area/f13/reno_building)
 "pFA" = (
-/obj/structure/railing/casino{
-	dir = 4;
-	pixel_x = 7;
-	layer = 2.91
+/obj/structure/table/snooker{
+	dir = 5
 	},
-/turf/open/transparent/openspace/air,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "pFK" = (
 /obj/structure/closet/crate/wooden,
@@ -27833,24 +27663,11 @@
 /turf/open/floor/wood,
 /area/f13/reno_building)
 "pHN" = (
-/obj/structure/window/reinforced/tinted{
-	pixel_y = -6
+/obj/effect/overlay/curb/corner{
+	dir = 8
 	},
-/obj/machinery/door/window/eastleft{
-	opacity = 1
-	},
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/structure/window/reinforced/tinted{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/window/reinforced/tinted{
-	pixel_y = 28
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "pHP" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowvertical"
@@ -28067,10 +27884,10 @@
 /turf/open/indestructible/ground/outside/sidewalk/left,
 /area/f13/reno_streets)
 "pNy" = (
-/obj/structure/railing{
-	layer = 4.25
+/obj/structure/chair/booth{
+	icon_state = "booth_west_north"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "pNz" = (
 /turf/open/floor/wood/f13/oakbroken,
@@ -28254,8 +28071,9 @@
 	},
 /area/f13/reno_wasteland)
 "pSR" = (
-/obj/structure/table/roulette,
-/turf/open/floor/carpet/blue,
+/obj/structure/table/booth,
+/obj/structure/window,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "pSW" = (
 /obj/structure/closet/crate/trashcart,
@@ -28436,8 +28254,11 @@
 	},
 /area/f13/reno_building)
 "pYj" = (
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/effect/overlay/curb/corner{
+	dir = 8
+	},
+/obj/effect/overlay/curb/north,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "pYr" = (
 /turf/open/indestructible/ground/outside/desert,
@@ -28457,13 +28278,6 @@
 	},
 /turf/open/floor/wood/f13,
 /area/f13/reno_building)
-"pYy" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino2";
-	layer = 4.25
-	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_sharkclub)
 "pYH" = (
 /obj/structure/barricade/tentclothcorner{
 	dir = 1;
@@ -28698,9 +28512,18 @@
 /turf/open/indestructible/ground/outside/road/verticalrightborder,
 /area/f13/reno_streets)
 "qdx" = (
-/obj/effect/overlay/curb/west,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
-/area/f13/reno_sharkclub)
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 1
+	},
+/turf/open/water,
+/area/f13/reno_streets)
 "qdy" = (
 /turf/open/floor/wood/f13/oakbroken4,
 /area/f13/reno_building)
@@ -28783,10 +28606,6 @@
 /obj/structure/simple_door/tentflap_leather,
 /turf/open/indestructible/ground/outside/dirt/dark,
 /area/f13/reno_wasteland)
-"qgD" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet/cyan,
-/area/f13/reno_sharkclub)
 "qgI" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleplate"
@@ -28861,8 +28680,9 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/reno_streets)
 "qkb" = (
-/obj/structure/table/round,
-/turf/open/floor/wood/f13/oak,
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/flask/coffeepot,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "qkA" = (
 /turf/open/indestructible/ground/outside/sidewalk/damaged/heavy,
@@ -29194,13 +29014,8 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "qsC" = (
-/obj/structure/table/wood/fancy/black,
-/obj/machinery/light/floor,
-/obj/structure/curtain{
-	color = "#7c131b";
-	pixel_y = -1
-	},
-/turf/open/floor/carpet/brown,
+/obj/structure/railing/casino,
+/turf/open/indestructible/ground/outside/roof/stairs/east,
 /area/f13/reno_sharkclub)
 "qsS" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -29415,8 +29230,15 @@
 /turf/open/floor/wood/cold,
 /area/f13/reno_wasteland)
 "qAt" = (
-/obj/effect/landmark/start/f13/bishops/mademan,
-/turf/open/floor/carpet/reno/burgandy,
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_x = 3;
+	pixel_y = 2
+	},
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "qAJ" = (
 /obj/structure/chair/booth{
@@ -29461,12 +29283,11 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "qCu" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino6";
-	layer = 4.25
+/obj/structure/chair/pew/left{
+	dir = 4
 	},
-/turf/open/floor/carpet/reno/burgandy,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "qCB" = (
 /obj/structure/car/motoryclevert/light{
 	layer = 3.11;
@@ -30190,12 +30011,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
-"qWi" = (
-/obj/structure/table/wood/settler,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
-/area/f13/reno_building)
 "qWj" = (
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/indestructible/ground/inside/mountain,
@@ -30615,11 +30430,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "riY" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 1
-	},
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/east,
+/obj/effect/overlay/curb,
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "rje" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontaltopborderbottom3"
@@ -30685,7 +30499,12 @@
 /turf/closed/wall/mineral/brick,
 /area/f13/reno_building)
 "rlP" = (
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/obj/structure/table/booth,
+/obj/machinery/chem_dispenser/drinks{
+	dir = 1
+	},
+/obj/structure/window,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "rlT" = (
 /obj/structure/flora/tree/joshua,
@@ -30805,11 +30624,10 @@
 /turf/open/floor/carpet/red,
 /area/f13/reno_building)
 "roE" = (
-/obj/structure/sink/kitchen{
-	dir = 8;
-	pixel_x = 12
-	},
-/turf/open/floor/plasteel/freezer,
+/obj/effect/overlay/curb/north,
+/obj/structure/table/wood/greyscale/red,
+/obj/item/lighter/greyscale,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "roI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -31118,8 +30936,8 @@
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/reno_building)
 "ryd" = (
-/obj/machinery/computer/slot_machine,
-/turf/open/floor/carpet/red,
+/obj/structure/table/roulette,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "ryT" = (
 /obj/structure/bed/old,
@@ -31315,13 +31133,6 @@
 	icon_state = "wasteland33"
 	},
 /area/f13/reno_wasteland)
-"rEG" = (
-/obj/item/kirbyplants/random,
-/obj/effect/overlay/curb/corner{
-	dir = 4
-	},
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
 "rEP" = (
 /obj/structure/chair/wood/modern{
 	dir = 1
@@ -31330,13 +31141,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "rET" = (
-/obj/structure/table/reinforced,
-/obj/machinery/chem_dispenser/drinks{
-	dir = 8
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/overlay/curb/west,
-/turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2,
-/area/f13/reno_sharkclub)
+/turf/open/floor/f13{
+	icon_state = "hydrofloor"
+	},
+/area/f13/reno_building)
 "rFr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar{
@@ -31665,8 +31475,10 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
 "rOs" = (
-/obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet/red,
+/obj/structure/chair/stool/retro/backed{
+	dir = 1
+	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "rOw" = (
 /obj/structure/rack,
@@ -32037,17 +31849,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_streets)
-"saP" = (
-/obj/machinery/door/window/northright{
-	dir = 8;
-	opacity = 1
-	},
-/obj/structure/toilet{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_sharkclub)
 "saQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -32256,11 +32057,6 @@
 /obj/structure/car/rubbish5,
 /turf/open/indestructible/ground/outside/road/verticalleftborder,
 /area/f13/reno_building)
-"sgu" = (
-/obj/machinery/light,
-/obj/structure/table/wood/poker,
-/turf/open/floor/carpet/blue,
-/area/f13/reno_sharkclub)
 "sgB" = (
 /obj/effect/overlay/junk/sink{
 	dir = 8;
@@ -32423,8 +32219,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "skN" = (
-/obj/structure/table/rolling,
-/turf/open/floor/carpet/red,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "skQ" = (
 /obj/structure/flora/grass/wasteland{
@@ -32639,16 +32434,8 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "ssa" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/obj/effect/overlay/shadow/edgeshading{
-	dir = 8
-	},
-/turf/open/floor/carpet/black,
+/obj/machinery/vending/cigarette,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "ssE" = (
 /obj/structure/table,
@@ -33620,7 +33407,10 @@
 /turf/open/indestructible/ground/outside/road/verticalleftborder,
 /area/f13/reno_streets)
 "sWg" = (
-/turf/open/floor/wood/f13/stage_t,
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_x = 10
+	},
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "sWj" = (
 /obj/structure/sink/greyscale{
@@ -33757,13 +33547,6 @@
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_building)
-"taS" = (
-/obj/structure/table/wood/settler,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/stock_parts/matter_bin,
-/turf/open/floor/carpet,
 /area/f13/reno_building)
 "tbc" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -33914,25 +33697,18 @@
 	},
 /area/f13/reno_building)
 "tfs" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino4";
-	layer = 4.25
-	},
-/obj/machinery/computer/slot_machine,
-/turf/open/floor/carpet/red,
+/obj/structure/table/wood/greyscale/red,
+/obj/effect/spawner/lootdrop/cig_packs,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_sharkclub)
 "tgj" = (
-/obj/structure/railing{
-	dir = 6;
-	icon_state = "railing_casino2";
-	layer = 4.25
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 8;
+	layer = 3.9;
+	pixel_y = -20
 	},
-/obj/effect/overlay/porch{
-	icon_state = "housewood_stage_bottom_right";
-	pixel_y = -5
-	},
-/turf/open/floor/wood/f13/stage_br,
-/area/f13/reno_sharkclub)
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "tgC" = (
 /obj/structure/wreck/trash/engine,
 /turf/open/indestructible/ground/outside/desert,
@@ -34430,17 +34206,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
-"twQ" = (
-/obj/structure/chair/sofa/corp/corner{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = -2
-	},
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
 "twT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -34686,15 +34451,6 @@
 	color = "#f00000"
 	},
 /area/f13/reno_building)
-"tEa" = (
-/obj/structure/railing/handrail{
-	dir = 10
-	},
-/turf/open/pool{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "whitesolid"
-	},
-/area/f13/reno_building)
 "tEf" = (
 /turf/open/indestructible/ground/outside/desert{
 	icon_state = "wasteland33"
@@ -34916,15 +34672,8 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/reno_building)
 "tIq" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = -2
-	},
-/turf/open/floor/carpet/red,
+/obj/structure/chair/right,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "tIE" = (
 /obj/structure/bed/mattress{
@@ -35307,13 +35056,17 @@
 /turf/open/indestructible/ground/outside/sidewalk/top,
 /area/f13/reno_streets)
 "tTe" = (
-/obj/structure/stairs/north,
-/obj/structure/railing/casino{
-	dir = 4;
-	pixel_x = 3
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 4
 	},
-/turf/open/floor/carpet/reno/pattern2,
-/area/f13/reno_sharkclub)
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 2
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/water,
+/area/f13/reno_streets)
 "tTt" = (
 /obj/structure/closet/crate/silvercrate,
 /turf/open/indestructible/ground/outside/dirt,
@@ -35435,15 +35188,9 @@
 	},
 /area/f13/reno_building)
 "tYs" = (
-/obj/structure/chair/sofa/corp{
-	dir = 1
-	},
-/obj/structure/railing/casino{
-	icon_state = "railing_casino6";
-	layer = 4.25
-	},
-/turf/open/floor/carpet/black,
-/area/f13/reno_sharkclub)
+/obj/structure/flora/junglebush/large,
+/turf/open/water,
+/area/f13/reno_streets)
 "tYx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -35574,14 +35321,9 @@
 /turf/open/indestructible/ground/outside/dirt/east,
 /area/f13/reno_wasteland)
 "ubJ" = (
-/obj/structure/chair/sofa/corp{
-	dir = 1
-	},
-/obj/structure/railing/casino{
-	icon_state = "railing_casino5";
-	layer = 4.25
-	},
-/turf/open/floor/carpet/black,
+/obj/structure/table/wood/greyscale/red,
+/obj/item/newspaper,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "ubW" = (
 /turf/open/floor/wood/f13/stage_br,
@@ -35591,11 +35333,8 @@
 /turf/closed/wall/mineral/concrete,
 /area/f13/reno_wasteland)
 "ucg" = (
-/obj/structure/railing/casino{
-	dir = 4
-	},
-/obj/structure/table/round,
-/turf/open/floor/wood/f13/stage_tr,
+/obj/structure/stairs/north,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "ucy" = (
 /obj/machinery/workbench,
@@ -36169,14 +35908,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
 "uwV" = (
-/obj/structure/stairs/north,
-/obj/structure/sign/reno/barsign/sharkclub{
-	pixel_y = 14;
-	icon_state = "rooms";
-	pixel_x = 2
+/obj/structure/chair/pew{
+	dir = 8
 	},
-/turf/open/floor/carpet/reno/pattern2,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "uwX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood{
@@ -36754,13 +36490,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_wasteland)
 "uPy" = (
-/obj/machinery/door/unpowered/latterdaysaints{
-	req_one_access_txt = "130";
-	name = "Employee's Only"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/structure/chair/stool/retro,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "uPR" = (
 /obj/structure/car/rubbish4,
@@ -37653,15 +37384,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "voN" = (
-/obj/structure/window/reinforced/tinted{
-	dir = 1
+/obj/structure/window/reinforced{
+	color = "#3e3d42";
+	dir = 2
 	},
-/obj/structure/window/reinforced/tinted,
-/obj/structure/window/reinforced/tinted{
-	dir = 4
-	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_sharkclub)
+/turf/open/water,
+/area/f13/reno_streets)
 "voV" = (
 /obj/structure/nest/spawner/ghoul,
 /turf/open/indestructible/ground/outside/dirt,
@@ -38187,7 +37915,8 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_building)
 "vEy" = (
-/turf/closed/wall/f13/supermart,
+/obj/structure/table/wood/poker,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "vEI" = (
 /obj/structure/window/spawner/north,
@@ -38232,13 +37961,8 @@
 /turf/open/floor/carpet/green,
 /area/f13/reno_building)
 "vFB" = (
-/obj/structure/barricade/bars,
-/obj/structure/curtain{
-	color = "#66314a";
-	alpha = 255;
-	layer = 4.26
-	},
-/turf/open/transparent/openspace/air,
+/obj/structure/chair/left,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "vFR" = (
 /obj/structure/barricade/sandbags,
@@ -39033,14 +38757,17 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
 "wcg" = (
-/obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet/black,
+/obj/structure/table/wood/greyscale/red,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "wch" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/effect/overlay/curb/north,
+/obj/structure/chair/wood/normal{
 	dir = 4
 	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "wcw" = (
 /obj/structure/sign/reno/barsign/rpd{
@@ -39732,17 +39459,8 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "wwr" = (
-/obj/structure/table/reinforced,
-/obj/structure/sink/kitchen{
-	icon_state = "sink_alt2";
-	pixel_y = 6
-	},
-/obj/structure/mirror{
-	pixel_y = 28
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wwF" = (
 /obj/structure/closet/crate/bin/trashbin{
@@ -39784,9 +39502,10 @@
 /turf/open/floor/wood/f13/oakbroken,
 /area/f13/reno_wasteland)
 "wyd" = (
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
 	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wyg" = (
 /obj/structure/table/snooker{
@@ -39920,7 +39639,12 @@
 	},
 /area/f13/reno_building)
 "wAA" = (
-/turf/open/floor/carpet/blue,
+/obj/structure/table/booth,
+/obj/machinery/chem_dispenser/drinks/beer{
+	dir = 1
+	},
+/obj/structure/window,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "wAO" = (
 /obj/structure/flora/grass/wasteland{
@@ -39994,10 +39718,17 @@
 	},
 /area/f13/reno_building)
 "wCm" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_x = 7;
+	pixel_y = 7
 	},
-/turf/open/floor/wood/f13/oak,
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/coffee,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "wCs" = (
 /turf/open/indestructible/ground/outside/road{
@@ -40024,13 +39755,10 @@
 	},
 /area/f13/reno_streets)
 "wCX" = (
-/obj/structure/railing/dancing_pole{
-	dir = 1;
-	layer = 2.1;
-	pixel_x = 16;
-	density = 0
+/obj/structure/table/snooker{
+	dir = 1
 	},
-/turf/open/floor/wood/f13/stage_l,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wDc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -40306,12 +40034,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/reno_building)
 "wKg" = (
-/obj/effect/overlay/curb/north{
-	pixel_y = 4;
-	layer = 2.21
-	},
-/obj/effect/overlay/curb,
-/turf/open/indestructible/ground/outside/roof/stairs/east,
+/obj/structure/chair/stool/bar,
+/turf/open/floor/wood/f13/stage_r,
 /area/f13/reno_sharkclub)
 "wKp" = (
 /obj/structure/chair/wood{
@@ -40398,13 +40122,8 @@
 /turf/open/floor/plating/f13/inside,
 /area/f13/reno_building)
 "wLX" = (
-/obj/structure/closet/crate/trashcart,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
-/obj/item/storage/bag/trash,
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
-	},
+/obj/structure/table/wood/greyscale/varnished,
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wMe" = (
 /obj/effect/overlay/curb,
@@ -41314,12 +41033,11 @@
 	},
 /area/f13/reno_building)
 "xqu" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino3";
+/obj/effect/overlay/curb/corner{
 	dir = 4
 	},
-/turf/open/floor/wood/f13/stage_tr,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "xqP" = (
 /obj/structure/flora/grass/whitelegvine,
 /turf/closed/mineral/random/low_chance,
@@ -41768,13 +41486,8 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "xDV" = (
-/obj/structure/table/reinforced,
-/obj/structure/curtain{
-	color = "#808080"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/structure/table/wood/greyscale/red,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "xEI" = (
 /obj/structure/campfire/barrel,
@@ -41787,11 +41500,11 @@
 /turf/open/indestructible/ground/outside/roaddirt,
 /area/f13/reno_wasteland)
 "xEQ" = (
-/obj/effect/overlay/curb/corner{
-	dir = 8
+/obj/structure/curtain{
+	color = "#845f58";
+	layer = 3.0
 	},
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet/red,
+/turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "xFe" = (
 /obj/structure/car/rubbish4,
@@ -41955,15 +41668,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "xKp" = (
-/obj/structure/railing/casino{
-	icon_state = "railing_casino3";
-	layer = 4.25
-	},
-/obj/effect/overlay/porch{
-	pixel_y = -5
-	},
-/turf/open/floor/wood/f13/stage_b/outdoors,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb,
+/turf/open/pool/pond,
+/area/f13/reno_streets)
 "xKy" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -41992,23 +41699,6 @@
 	icon_state = "darkyellow"
 	},
 /area/f13/reno_building)
-"xMe" = (
-/obj/item/radio{
-	icon_state = "micstand";
-	name = "radio";
-	canhear_range = 7;
-	icon = 'icons/fallout/machines/radio.dmi';
-	anchored = 1;
-	pixel_y = -3;
-	can_be_unanchored = 1;
-	layer = 3.01;
-	pixel_x = 13
-	},
-/obj/effect/overlay/light{
-	pixel_x = -44
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/reno_sharkclub)
 "xMq" = (
 /obj/structure/reagent_dispensers/rainwater_tank{
 	icon_state = "troughl";
@@ -42081,13 +41771,14 @@
 /turf/open/indestructible/ground/outside/road/damagedhor/right,
 /area/f13/reno_streets)
 "xOH" = (
-/obj/machinery/door/unpowered/latterdaysaints{
-	req_one_access_txt = "130";
-	name = "Employee's Only"
+/obj/structure/table/snooker{
+	dir = 9
 	},
-/turf/open/floor/f13{
-	icon_state = "bluerustysolid"
+/obj/item/twohanded/baseball/poolcue{
+	pixel_y = 19;
+	pixel_x = -11
 	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "xOQ" = (
 /obj/structure/barricade/tentclothedge{
@@ -42637,8 +42328,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "ygc" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet,
+/obj/structure/table,
+/obj/effect/overlay/curb/north,
+/turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
 "ygm" = (
 /obj/structure/table/wood/ruined,
@@ -42650,9 +42342,12 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
 "ygz" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/carpet/red,
-/area/f13/reno_sharkclub)
+/obj/effect/overlay/curb/north{
+	layer = 2.91;
+	pixel_y = -27
+	},
+/turf/open/indestructible/ground/outside/sidewalk/walkway,
+/area/f13/reno_streets)
 "ygC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -65427,9 +65122,9 @@ lqe
 lqe
 nLz
 nLz
-bgq
+hNb
 nLz
-bgq
+hNb
 nLz
 nLz
 nLz
@@ -65577,30 +65272,30 @@ sOi
 oQr
 lqe
 lqe
-qgD
-lVH
-jyJ
+mfX
+fWk
+fWk
+aPz
 ryd
+uPy
+eCr
+aPz
 ryd
-tfs
-sWg
 uPy
-kni
-uPy
-nGn
-wch
+nLz
+mjV
 nNC
-dVG
+dJZ
 wch
 mkP
-kOG
+kOr
 qkb
 wCm
-nLz
-wAA
-aoa
-jyJ
-lVH
+nov
+kOr
+xEQ
+fWk
+fWk
 mfX
 lqe
 lqe
@@ -65728,31 +65423,31 @@ ebq
 sOi
 hvS
 nLz
-qgD
+mfX
 nLz
-lVH
-lVH
-rOs
-cVb
+fWk
+fWk
+aPz
+mWD
+mWD
+eCr
+aPz
+mWD
+mWD
+nLz
 jfD
-sWg
-nLz
-voN
-nLz
-lLW
-pYj
-pYj
-rlP
-pYj
+tfs
+dJZ
+roE
 ubJ
-sWg
-kni
-kni
-ivM
+kOr
+kOr
+kOr
+kOr
+kOr
 fkr
-fkr
-lVH
-lVH
+fWk
+fWk
 mfX
 lqe
 lqe
@@ -65880,33 +65575,33 @@ lQB
 cwR
 oQr
 nLz
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-qCu
-sWg
-kni
-kni
-kni
-xKp
-pYj
-pYj
-rlP
-pYj
-tYs
-kOG
-kni
-kni
-ivM
-fkr
-fkr
-lVH
-lVH
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
 nLz
-ofd
+dJZ
+dJZ
+dJZ
+pYj
+iob
+kOr
+kOr
+kOr
+kOr
+kOr
+nLz
+fWk
+fWk
+nLz
+mfX
 nLz
 wHk
 tZI
@@ -66032,33 +65727,33 @@ lQB
 sOi
 oQr
 bgq
-jyJ
-lVH
-lVH
-lVH
-cVb
-rOs
-isg
-xqu
-kni
-xMe
-fXO
-lNM
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+nLz
 ssa
 dJZ
-dVG
-ssa
+dJZ
+ivM
 kOr
-ucg
+kOr
 iob
 pnH
+iob
 nLz
-dfW
-dqB
-lVH
-lVH
-lVH
-jyJ
+nLz
+fWk
+fWk
+fWk
+fWk
 vQC
 oQr
 tZI
@@ -66183,34 +65878,34 @@ jjE
 cZc
 sOi
 oQr
-nLz
-ryd
+brh
+wwr
 rOs
-lVH
-lVH
-ryd
-ryd
-ryd
+fWk
+fWk
+lNM
+nZw
+nZw
 ffw
 hpy
 onf
-tgj
-rEG
-nlr
-nlr
-wKg
-dlM
-nlr
-xEQ
-skN
+fWk
+nLz
+brh
+brh
 brh
 nLz
-dfW
+xEQ
+xEQ
+nLz
+brh
+brh
+nLz
 pxG
-lVH
-lVH
-pxG
-dqB
+onf
+fWk
+fWk
+fWk
 hNb
 bIa
 mLP
@@ -66335,34 +66030,34 @@ jjE
 xdP
 sOi
 oQr
-bgq
-ryd
-cVb
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-aIn
-qAt
-nrG
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-naY
-lVH
-lVH
-lVH
-lVH
-dfW
-dfW
+brh
+wwr
+rOs
+fWk
+fWk
+jPz
+dwl
+vEy
+vEy
+lxn
+onf
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
 nLz
 oQr
 tZI
@@ -66487,34 +66182,34 @@ emO
 xdP
 sOi
 oQr
-nLz
-ryd
+brh
+wwr
 rOs
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-iOJ
-aFR
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-lVH
-naY
-lVH
-lVH
-lVH
-lVH
-wAA
-nBS
+fWk
+fWk
+jPz
+vEy
+hTV
+vEy
+lxn
+onf
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
 hNb
 oQr
 tZI
@@ -66639,34 +66334,34 @@ jjE
 dmY
 sOi
 oQr
-bgq
-ryd
-cVb
-lVH
-rOs
-jPz
-cVb
-hGR
-hGR
-hGR
-lVH
-lVH
-hGR
-hGR
-hGR
-hGR
-hGR
-cVb
-rOs
-cVb
-rOs
 nLz
-wAA
-nBS
-lVH
-lVH
-aDf
-sgu
+nLz
+ucg
+fWk
+fWk
+jPz
+skN
+skN
+skN
+lxn
+onf
+fWk
+fuO
+fuO
+nLz
+lLW
+qsC
+cVb
+eCr
+mWD
+nLz
+brh
+brh
+nLz
+nLz
+nLz
+nLz
+nLz
 nLz
 oQr
 tZI
@@ -66792,34 +66487,34 @@ kNs
 sOi
 oQr
 nLz
-ryd
-rOs
-lVH
-cVb
-hGR
-rOs
-hGR
-iAE
-jdg
-lVH
-lVH
-jdg
-riY
-hGR
-hGR
-rOs
-jXV
-jXV
-jXV
-jXV
 nLz
+ucg
+fWk
+fWk
+jPz
+vEy
+hTV
+vEy
+lxn
+onf
+fWk
+nLz
+nLz
+nLz
+nLz
+nLz
+jXV
+eCr
+aPz
+dVG
+kOr
 dqB
 pSR
 lVH
-lVH
 aDf
-brv
-pCX
+aDf
+aDf
+nLz
 oQr
 tZI
 xrB
@@ -66943,34 +66638,34 @@ ebq
 cIz
 sOi
 oQr
+nLz
+nLz
+ucg
+fWk
+fWk
+jPz
+dwl
 vEy
 vEy
-vEy
-dSy
-vEy
-vEy
-vEy
-vEy
-opm
 lxn
-lVH
-lVH
+onf
+kIn
 tIq
-twQ
+dKm
 hGR
-cVb
-jXV
-juq
-wcg
+tIq
+dKm
+hGR
+eCr
+aPz
 dVG
-dVG
-xDV
-pxG
+kOr
+kOr
 wAA
-lVH
-lVH
+nPq
 aDf
-bVM
+aDf
+aDf
 nLz
 bTp
 tZI
@@ -67095,34 +66790,34 @@ jjE
 mSv
 sOi
 oQr
-vEy
+nLz
 wwr
-wyd
-wyd
-vEy
-cCR
-vEy
-vEy
-vEy
-jkq
-jkq
-jkq
-vFB
-fuO
-hGR
 rOs
-jXV
+fWk
+fWk
+cCR
+jyJ
+eDh
+jyJ
+jkq
+onf
+kIn
+vFB
+dKm
+aBU
+vFB
+dKm
+aBU
+eCr
 aPz
-nov
-aPz
-aPz
-xDV
-wAA
-dqB
-lVH
-lVH
-wAA
-nJu
+dVG
+kOr
+kOr
+rlP
+nPq
+aDf
+aDf
+aDf
 hNb
 oQr
 mLP
@@ -67247,34 +66942,34 @@ gCe
 fox
 sOi
 eUT
-vEy
-wwr
-wyd
-wyd
-fWk
-wyd
-hgE
-vEy
-vEy
-abK
-abK
-abK
-vFB
-pFA
-hGR
-hGR
 nLz
-mjV
-rET
-dwl
-qdx
-xOH
-lVH
-lVH
-lVH
-lVH
-nBS
-nBS
+wwr
+rOs
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+mWD
+mWD
+mWD
+mWD
+mWD
+mWD
+eCr
+aPz
+dVG
+kOr
+kOr
+kOr
+nLz
+aDf
+fKO
+aDf
 nLz
 bIa
 tZI
@@ -67399,34 +67094,34 @@ jjE
 lQB
 oTv
 oQr
-vEy
+nLz
 wwr
-wyd
-wyd
-pHN
-bmV
-brw
-vEy
-atO
-hTV
-qsC
-hTV
-nLz
-uwV
-hGR
-hGR
-nLz
-cQy
-jaz
-jaz
-jaz
-nLz
-dqB
-wAA
-lVH
-lVH
+rOs
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+fWk
+eCr
+eCr
+eCr
+eCr
+eCr
+eCr
+eCr
+aPz
+dVG
+kOr
+kOr
+kOr
+aDf
+aDf
 fKO
-bVM
+aDf
 hNb
 oQr
 tZI
@@ -67551,34 +67246,34 @@ scE
 lQB
 wup
 oQr
-vEy
+nLz
 mhT
-wyd
-wyd
-kjs
-wyd
-wyd
-vEy
+mWD
+mWD
 eCr
-lyC
-wCX
-bPV
+eCr
+eCr
+eCr
+eCr
 nLz
-tTe
-hGR
-hGR
-nLz
-ckR
-jaz
-jaz
-jaz
-nLz
-bVM
-pxG
-lVH
-lVH
-nJu
-nJu
+fWk
+fWk
+eCr
+eCr
+eCr
+eCr
+eCr
+eCr
+eCr
+mWD
+mWD
+kOr
+kOr
+kOr
+aDf
+aDf
+aDf
+aDf
 nLz
 oQr
 tZI
@@ -67703,26 +67398,26 @@ jjE
 fox
 uLO
 dgn
-vEy
+nLz
 kqq
 wyd
 wLX
-art
-saP
-kdG
-vEy
 cGG
-kni
-kni
-lab
-nLz
-ygz
-hGR
-hGR
-nLz
-eDh
-jaz
-jaz
+cGG
+eCr
+cGG
+cGG
+brh
+fWk
+fWk
+mWD
+mWD
+mWD
+brw
+pFA
+mWD
+mWD
+mWD
 nLz
 nLz
 hNb
@@ -67854,27 +67549,27 @@ xrB
 gCe
 fox
 sOi
-lyV
-vEy
-vEy
-dSy
-vEy
-vEy
-vEy
-vEy
-vEy
-vEy
-vEy
-dKm
 nLz
 nLz
+nLz
+nLz
+nLz
+eCr
+mWD
+eCr
+mWD
+eCr
+brh
+fWk
+kIn
+jaz
 oOR
-hGR
-hGR
-nLz
+mWD
+bmV
+wCX
 mWD
 jaz
-jaz
+oOR
 nLz
 jNS
 wrO
@@ -68006,27 +67701,27 @@ iFz
 gCe
 fox
 sOi
-lyV
+nLz
 chF
-pEz
-pEz
-pEz
-eUo
-pEz
-eUo
-pEz
-pEz
-vEy
-gss
+wcg
+qAt
+nLz
+cGG
+cGG
+eCr
+cGG
+cGG
+brh
+fWk
 kIn
 dKm
-hGR
-hGR
-hGR
+dKm
+mWD
+gfO
 xOH
-jaz
-jaz
-jaz
+mWD
+dKm
+dKm
 nLz
 tZI
 xrB
@@ -68158,27 +67853,27 @@ rje
 jjE
 fox
 sdK
-lyV
-jIH
-pEz
-pEz
-pEz
-pEz
-pEz
-pEz
-pEz
-pEz
-vEy
-pYy
-gfO
 nLz
-hGR
-hGR
-dSh
+kOr
+iob
+kOr
 nLz
-jaz
+eCr
+eCr
+eCr
+eCr
+eCr
+brh
+fWk
+kIn
 pNy
-fuO
+ckR
+mWD
+mWD
+mWD
+mWD
+pNy
+ckR
 nLz
 sWr
 xrB
@@ -68310,25 +68005,25 @@ kKV
 jjE
 fox
 sOi
-lyV
-dyl
-pEz
-pEz
-pEz
-pEz
-tEm
-pEz
-cjF
-pEz
-vEy
+nLz
+kOr
+kOr
+kOr
+nLz
+fXO
+fXO
+fXO
+fXO
+fXO
+nLz
+nlr
+nlr
 nLz
 nLz
 nLz
-nZw
-nZw
 nLz
 nLz
-dSy
+nLz
 nLz
 nLz
 nLz
@@ -68462,25 +68157,25 @@ gdG
 jjE
 fox
 rxh
-psF
-iaL
-iaL
-iaL
-tEa
-pEz
-pEz
-pEz
-pEz
-pEz
-lyV
-qQK
-qQK
-qQK
-qQK
-qQK
 nLz
-pAb
-eEt
+iaL
+kOr
+kOr
+nLz
+kni
+kni
+ofd
+kni
+kni
+nLz
+ibg
+ibg
+nBS
+lab
+atO
+qCu
+ibg
+qdx
 chE
 nLz
 nLz
@@ -68614,25 +68309,25 @@ xrB
 gCe
 lQB
 sOi
-psF
-mQE
-mQE
-mQE
-mQE
-pEz
-pEz
-pEz
-pEz
-pEz
-nPq
-qQK
-qQK
-qQK
-qQK
-qQK
 nLz
-aBU
-eEt
+opm
+cQy
+kOr
+mQE
+kni
+kni
+kni
+kni
+bVM
+nLz
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
 eEt
 nLz
 aDN
@@ -68766,26 +68461,26 @@ xrB
 jjE
 lQB
 sOi
-psF
-mQE
-mQE
-mQE
-nvG
-pEz
-pEz
-pEz
-pEz
-pEz
-nPq
-qQK
-qQK
-qQK
-qQK
-qQK
+nLz
+art
+xDV
+sWg
 nLz
 fRu
-eEt
-roE
+gxv
+gxv
+gxv
+wKg
+nLz
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
 nLz
 bYO
 bYO
@@ -68918,26 +68613,26 @@ xrB
 jjE
 fox
 uPR
-psF
-mQE
-mQE
-mQE
-nvG
-pEz
-cjF
-pEz
-tEm
-pEz
-lyV
-qQK
-qQK
-qQK
-qQK
-qQK
 nLz
 nLz
 nLz
 nLz
+nLz
+nLz
+nLz
+nLz
+nLz
+nLz
+nLz
+ibg
+ibg
+kdG
+dlM
+gss
+gss
+kOG
+ibg
+ibg
 nLz
 lPj
 hBs
@@ -69070,26 +68765,26 @@ gdG
 gCe
 fox
 sOi
+lpq
+pEz
+tEm
+pEz
+cjF
+pEz
 lyV
-lyV
-lyV
-lyV
-lyV
-dWD
-lyV
-lyV
-lyV
-lyV
-lyV
-qQK
-qQK
-qQK
-qQK
-qQK
-qQK
-qQK
-qQK
-qQK
+maV
+maV
+lpq
+dyl
+ibg
+ygz
+nrG
+dSh
+naY
+jdg
+pCX
+kOG
+ibg
 lpq
 bYO
 inZ
@@ -69223,24 +68918,24 @@ gCe
 fox
 sOi
 nAO
-tzJ
-tzJ
-tzJ
-tzJ
-tzJ
+pEz
+pEz
+etF
+pEz
+pEz
 ygc
-htU
-fHF
-lyV
-qQK
-qQK
-dlI
-eof
-eof
-eof
-eof
-eof
-eof
+lyC
+maV
+lpq
+voN
+ibg
+ygz
+xKp
+dfW
+jdg
+jdg
+jdg
+kOG
 ibg
 szQ
 inZ
@@ -69374,26 +69069,26 @@ xrB
 jjE
 fox
 ftt
-lyV
-tzJ
-tzJ
-tzJ
-lyV
-lyV
-lyV
-htU
-pSA
-lyV
-qQK
-dlI
-hyD
-pYr
-pYr
-jJK
-pYr
-pYr
-pYr
-vYj
+lpq
+pEz
+cjF
+pEz
+tEm
+pEz
+ygc
+hgE
+maV
+lpq
+tTe
+ibg
+ygz
+xKp
+nvG
+tgj
+jdg
+jdg
+kOG
+ibg
 lpq
 qOi
 inZ
@@ -69527,25 +69222,25 @@ jjE
 fox
 xiU
 dWD
-tzJ
-nXI
-nXI
-lyV
-htU
+pEz
+pEz
+pEz
+pEz
+etF
 cNR
+rET
 jOX
-jOX
-lyV
-qQK
-dhQ
-pYr
-pYr
-pYr
-pYr
-pYr
-pYr
-pYr
-vYj
+lpq
+jIH
+ibg
+ygz
+xKp
+jdg
+jdg
+jdg
+jdg
+kOG
+ibg
 lpq
 lpq
 jqq
@@ -69679,25 +69374,25 @@ jjE
 fox
 xiU
 dWD
-tzJ
-nXI
-oXQ
-lyV
-htU
-taS
-qWi
+pEz
+pEz
+pEz
+pEz
+pEz
+pEz
+bdk
 etF
-lyV
-hcl
-dhQ
-pYr
-pYr
-pYr
-pYr
-pYr
-pYr
-pYr
-vYj
+lpq
+jIH
+ibg
+xqu
+iOJ
+riY
+nRo
+nRo
+dSy
+pHN
+ibg
 lpq
 adD
 tzJ
@@ -69830,26 +69525,26 @@ gMy
 jjE
 fox
 ftt
-lyV
-tzJ
-nXI
-tzJ
-lyV
-htU
-cNR
+lpq
+pEz
+pEz
+pEz
+pEz
+pEz
+pEz
 bdk
-htU
-lyV
-qQK
+etF
+lpq
+oXQ
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
+ibg
 bIN
-wDh
-wDh
-wDh
-wDh
-wDh
-wDh
-wDh
-bYZ
 lpq
 qVH
 tzJ
@@ -69983,25 +69678,25 @@ gCe
 fox
 sOi
 nAO
-tzJ
-tzJ
-tzJ
-lyV
-gxv
+juq
+eUo
+pEz
+eUo
+pEz
 mOO
-htU
+mOO
 hLE
-lyV
+lpq
+brv
 lit
-lit
-lit
-nRo
+ibg
+ibg
 aHg
-hcl
+uwV
 dfo
-qQK
-qQK
-qQK
+ibg
+bIN
+tYs
 lpq
 kSw
 tzJ
@@ -70134,16 +69829,16 @@ xrB
 gCe
 fox
 sOi
-lyV
-lyV
-lyV
-lyV
-lyV
-lyV
+lpq
+lpq
+lpq
+lpq
+lpq
+lpq
 rgx
 hRJ
-lyV
-lyV
+lpq
+lpq
 lpq
 lpq
 lpq
