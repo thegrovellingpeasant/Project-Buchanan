@@ -690,13 +690,52 @@
 	outdoors = 1
 	open_space = 1
 
+/area/f13/reno_prison
+	name = "prison"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_STREETS_AMBIENCE
+
+/area/f13/reno_prison_yard
+	name = "prison_yard"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_STREETS_AMBIENCE
+	outdoors = 1
+	open_space = 1
+
 /area/f13/reno_building
 	name = "Building"
 	icon_state = "building"
 	ambientmusic = RENO_BUILDING_AMBIENCE
 
+/area/f13/vangraffs
+	name = "Van Graffs"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/vangraffs_armory
+	name = "Van Graff Armory"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/wrights
+	name = "Wrights"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/wrights_armory
+	name = "Wright Armory"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
 /area/f13/reno_sharkclub
 	name = "Shark Club"
+	icon_state = "casino"
+	ambientmusic = SHARKCLUB_AMBIENCE
+
+/area/f13/reno_sharkclub_armory
+	name = "Shark Club Armory"
 	icon_state = "casino"
 	ambientmusic = SHARKCLUB_AMBIENCE
 

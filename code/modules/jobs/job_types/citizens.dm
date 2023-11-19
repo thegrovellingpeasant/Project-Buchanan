@@ -87,7 +87,6 @@
 	spawn_positions = 5
 	description = "You are an officer of the Reno Police Department. Uphold NCR common law, follow the orders of the Chief of Police, and keep the situation in the streets from getting too bloody."
 	supervisors = "NCR common law and the mayor"
-	selection_color = "#ffdddd"
 	outfit = /datum/outfit/job/citizens/f13rpdofficer
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD)
