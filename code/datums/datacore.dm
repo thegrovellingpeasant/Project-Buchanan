@@ -86,11 +86,6 @@
 			manifest_inject(N.new_character, N.client, N.client.prefs)
 		CHECK_TICK
 
-/datum/datacore/proc/manifest_modify(name, assignment)
-	var/datum/data/record/foundrecord = find_record("name", name, GLOB.data_core.general)
-	if(foundrecord)
-		foundrecord.fields["rank"] = assignment
-
 /datum/datacore/proc/get_manifest_dr(monochrome, OOC)
 	var/list/command = list()
 	var/list/bos = list()
@@ -107,6 +102,12 @@
 	var/list/usps = list()
 	var/list/tribe = list()
 	var/list/was = list()
+	var/list/bishops = list()
+	var/list/wrights = list()
+	var/list/vangraffs = list()
+	var/list/citizens = list()
+	var/list/wastes = list()
+	var/list/losthills = list()
 	var/list/misc = list()
 	var/dat = {"
 	<head><style>
