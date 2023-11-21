@@ -86,6 +86,11 @@
 			manifest_inject(N.new_character, N.client, N.client.prefs)
 		CHECK_TICK
 
+/datum/datacore/proc/manifest_modify(name, assignment)
+	var/datum/data/record/foundrecord = find_record("name", name, GLOB.data_core.general)
+	if(foundrecord)
+		foundrecord.fields["rank"] = assignment
+
 /datum/datacore/proc/get_manifest_dr(monochrome, OOC)
 	var/list/command = list()
 	var/list/bos = list()
