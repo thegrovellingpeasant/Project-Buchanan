@@ -176,22 +176,22 @@
 			was[name] = rank
 			department = 1
 		if(rank in GLOB.bishops_positions)
-			was[name] = rank
+			bishops[name] = rank
 			department = 1
 		if(rank in GLOB.wrights_positions)
-			was[name] = rank
+			wrights[name] = rank
 			department = 1
 		if(rank in GLOB.vangraffs_positions)
-			was[name] = rank
+			vangraffs[name] = rank
 			department = 1
 		if(rank in GLOB.citizens_positions)
-			was[name] = rank
+			citizens[name] = rank
 			department = 1
 		if(rank in GLOB.wastes_positions)
-			was[name] = rank
+			wastes[name] = rank
 			department = 1
 		if(rank in GLOB.losthills_positions)
-			was[name] = rank
+			losthills[name] = rank
 			department = 1
 		if(!department && !(name in command))
 			misc[name] = rank
@@ -270,35 +270,34 @@
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
 			even = !even
-
 	if(length(bishops))
 		dat += "<tr><th colspan=3>Bishops</th></tr>"
-		for(var/name in tribe)
+		for(var/name in bishops)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bishops[name]]</td></tr>"
 			even = !even
 	if(length(wrights))
 		dat += "<tr><th colspan=3>Wrights</th></tr>"
-		for(var/name in lds)
+		for(var/name in wrights)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wrights[name]]</td></tr>"
 			even = !even
 	if(length(vangraffs))
 		dat += "<tr><th colspan=3>Van Graffs</th></tr>"
-		for(var/name in vault)
+		for(var/name in vangraffs)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vangraffs[name]]</td></tr>"
 			even = !even
 	if(length(citizens))
 		dat += "<tr><th colspan=3>Citizens</th></tr>"
-		for(var/name in was)
+		for(var/name in citizens)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[citizens[name]]</td></tr>"
 			even = !even
 	if(length(wastes))
 		dat += "<tr><th colspan=3>Wastes</th></tr>"
-		for(var/name in was)
+		for(var/name in wastes)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wastes[name]]</td></tr>"
 			even = !even
 	if(length(losthills))
 		dat += "<tr><th colspan=3>Lost Hills Chapter</th></tr>"
-		for(var/name in was)
+		for(var/name in losthills)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[losthills[name]]</td></tr>"
 			even = !even
 	// misc guys
