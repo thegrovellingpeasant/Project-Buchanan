@@ -1149,16 +1149,15 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/vangraffs/branchmanager
 	name = "Van Graff Branch Manager"
-	icon_state = "Bishop Boss"
+	icon_state = "Jungle Gym Owner"
 
 /obj/effect/landmark/start/f13/vangraffs/enforcer
 	name = "Van Graff Enforcer"
-	icon_state = "Bishop Wife"
+	icon_state = "van graff enforcer"
 
 /obj/effect/landmark/start/f13/vangraffs/vangraffguard
 	name = "Van Graff Guard"
-	icon_state = "Bishop Wife"
-
+	icon_state = "van graff guard"
 
 /obj/effect/landmark/start/f13/vangraffs/weaposmith
 	name = "Van Graff Weapon Smith"
@@ -1166,7 +1165,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/vangraffs/researchcontractor
 	name = "Research Contractor"
-	icon_state = "Research Director"
+	icon_state = "Salvatores Roboticist"
 
 
 //wrights

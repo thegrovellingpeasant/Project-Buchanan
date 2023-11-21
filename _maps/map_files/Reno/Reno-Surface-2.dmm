@@ -2525,6 +2525,12 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_streets)
+"bvx" = (
+/obj/effect/landmark/start/f13/vangraffs/enforcer,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/reno_building)
 "bvP" = (
 /obj/structure/railing{
 	pixel_y = 3;
@@ -7697,6 +7703,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/housewoodbroken,
 /area/f13/reno_building)
+"etc" = (
+/obj/effect/landmark/start/f13/bishops/racketeer,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "etg" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
@@ -17092,6 +17102,10 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/reno_wasteland)
+"jIm" = (
+/obj/effect/landmark/start/f13/bishops/casinoworker,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "jIC" = (
 /obj/structure/wreck/trash/halftire,
 /turf/open/indestructible/ground/outside/desert{
@@ -26294,6 +26308,12 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_building)
+"oMO" = (
+/obj/effect/landmark/start/f13/vangraffs/vangraffguard,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/reno_building)
 "oMS" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -27194,6 +27214,12 @@
 	icon_state = "innermaincornerouter"
 	},
 /area/f13/reno_wasteland)
+"ptJ" = (
+/obj/effect/landmark/start/f13/vangraffs/branchmanager,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/reno_building)
 "puj" = (
 /obj/item/clothing/head/cone,
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
@@ -29077,6 +29103,10 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/reno_streets)
+"qvd" = (
+/obj/effect/landmark/start/f13/bishops/mademan,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "qvm" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/machinery/computer/terminal{
@@ -30278,6 +30308,10 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/reno_building)
+"reJ" = (
+/obj/effect/landmark/start/f13/bishops/wife,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "reV" = (
 /turf/open/floor/wood/f13/oakbroken4,
 /area/f13/reno_streets)
@@ -30903,6 +30937,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/reno_wasteland)
+"rxF" = (
+/obj/effect/landmark/start/f13/bishops/capo,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "rxK" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/storage/bag/trash,
@@ -33688,6 +33726,12 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
+"tfk" = (
+/obj/effect/landmark/start/f13/vangraffs/researchcontractor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/reno_building)
 "tfr" = (
 /obj/structure/chair/f13chair1{
 	dir = 4
@@ -40233,6 +40277,10 @@
 /obj/structure/chair/greyscale,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_wasteland)
+"wQh" = (
+/obj/effect/landmark/start/f13/bishops/boss,
+/turf/open/floor/carpet/red/lit,
+/area/f13/reno_sharkclub)
 "wQB" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4"
@@ -49471,10 +49519,10 @@ gMP
 gMP
 gMP
 lNQ
-eUQ
-eUQ
-eUQ
-eUQ
+oMO
+ptJ
+bvx
+tfk
 uAb
 wgN
 eUQ
@@ -65882,7 +65930,7 @@ brh
 wwr
 rOs
 fWk
-fWk
+rxF
 lNM
 nZw
 nZw
@@ -66034,7 +66082,7 @@ brh
 wwr
 rOs
 fWk
-fWk
+jIm
 jPz
 dwl
 vEy
@@ -66186,7 +66234,7 @@ brh
 wwr
 rOs
 fWk
-fWk
+etc
 jPz
 vEy
 hTV
@@ -66338,7 +66386,7 @@ nLz
 nLz
 ucg
 fWk
-fWk
+qvd
 jPz
 skN
 skN
@@ -66490,7 +66538,7 @@ nLz
 nLz
 ucg
 fWk
-fWk
+reJ
 jPz
 vEy
 hTV
@@ -66642,7 +66690,7 @@ nLz
 nLz
 ucg
 fWk
-fWk
+wQh
 jPz
 dwl
 vEy

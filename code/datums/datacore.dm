@@ -93,7 +93,7 @@
 
 /datum/datacore/proc/get_manifest_dr(monochrome, OOC)
 	var/list/command = list()
-	var/list/bos = list()	
+	var/list/bos = list()
 	var/list/enclave = list()
 	var/list/oasis = list()
 	var/list/wendover = list()
@@ -134,7 +134,7 @@
 			department = 1
 		if(rank in GLOB.brotherhood_positions)
 			bos[name] = rank
-			department = 1		
+			department = 1
 		if(rank in GLOB.enclave_positions)
 			enclave[name] = rank
 			department = 1
@@ -172,6 +172,24 @@
 			vault[name] = rank
 			department = 1
 		if(rank in GLOB.wasteland_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.bishops_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.wrights_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.vangraffs_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.citizens_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.wastes_positions)
+			was[name] = rank
+			department = 1
+		if(rank in GLOB.losthills_positions)
 			was[name] = rank
 			department = 1
 		if(!department && !(name in command))
