@@ -270,6 +270,37 @@
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
 			even = !even
+
+	if(length(bishops))
+		dat += "<tr><th colspan=3>Bishops</th></tr>"
+		for(var/name in tribe)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bishops[name]]</td></tr>"
+			even = !even
+	if(length(wrights))
+		dat += "<tr><th colspan=3>Wrights</th></tr>"
+		for(var/name in lds)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wrights[name]]</td></tr>"
+			even = !even
+	if(length(vangraffs))
+		dat += "<tr><th colspan=3>Van Graffs</th></tr>"
+		for(var/name in vault)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vangraffs[name]]</td></tr>"
+			even = !even
+	if(length(citizens))
+		dat += "<tr><th colspan=3>Citizens</th></tr>"
+		for(var/name in was)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[citizens[name]]</td></tr>"
+			even = !even
+	if(length(wastes))
+		dat += "<tr><th colspan=3>Wastes</th></tr>"
+		for(var/name in was)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wastes[name]]</td></tr>"
+			even = !even
+	if(length(losthills))
+		dat += "<tr><th colspan=3>Lost Hills Chapter</th></tr>"
+		for(var/name in was)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[losthills[name]]</td></tr>"
+			even = !even
 	// misc guys
 	if(length(misc))
 		dat += "<tr><th colspan=3>Miscellaneous</th></tr>"
