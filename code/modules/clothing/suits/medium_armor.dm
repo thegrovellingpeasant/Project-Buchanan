@@ -11,14 +11,15 @@
 	desc = "Large bulletproof vest with ballistic plates."
 	icon_state = "vest_armor"
 	item_state = "vest_armor"
-	armor = list("melee" = 15, "bullet" = 45, "laser" = 10, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = -5)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 50)
+	strip_delay = 70
 
 /obj/item/clothing/suit/armored/medium/vestchinese
 	name = "chinese flak vest"
 	desc = "An uncommon suit of pre-war Chinese armor. It's a very basic and straightforward piece of armor that covers the front of the user."
 	icon_state = "vest_chicom"
 	item_state = "vest_chicom"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 5, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 5, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
 
 // Plated medium armor
 /obj/item/clothing/suit/armored/medium/scrapchest
@@ -27,7 +28,7 @@
 	icon_state = "metal_chestplate"
 	item_state = "metal_chestplate"
 	siemens_coefficient = 1.3
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
 	slowdown = 0.125
 
 /obj/item/clothing/suit/armored/medium/scrapchest/reinforced
@@ -35,8 +36,16 @@
 	desc = "Various metal bits welded together to form a crude chestplate, with extra bits of metal top of the first layer. Heavy."
 	icon_state = "metal_chestplate2"
 	item_state = "metal_chestplate2"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 30, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
 
+/obj/item/clothing/suit/armored/medium/motorball
+	name = "motorball suit"
+	desc = "Reproduction motorcycle-football suit, made in vault 75 that was dedicated to a pure sports oriented culture."
+	icon_state = "motorball"
+	item_state = "motorball"
+	armor = list("melee" = 30, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 10, "wound" = 30)
+
+/*
 /obj/item/clothing/suit/armored/medium/brokencombat
 	name = "broken combat armor chestpiece"
 	desc = "It's barely holding together, but the plates might still work, you hope."
@@ -52,13 +61,14 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 10, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = -10)
 	slowdown = 0.11
 
+
 // Combat armor
 /obj/item/clothing/suit/armored/medium/combat
 	name = "combat armor"
 	desc = "Military grade pre-war combat armor."
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 //recipe any combat armor + duster
 /obj/item/clothing/suit/armored/medium/combat/duster
@@ -180,14 +190,14 @@
 	desc = "A heavy padded leather coat with faded colors, worn over a armor vest."
 	icon_state = "battlecoat_tan"
 	item_state = "battlecoat_tan"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 25, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
 
 /obj/item/clothing/suit/armored/medium/duster_renegade
 	name = "renegade duster"
 	desc = "Metal armor worn under a stylish duster. For the bad boy who wants to look good while commiting murder."
 	icon_state = "duster-renegade"
 	item_state = "duster-renegade"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 25, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
 
 /obj/item/clothing/suit/armored/medium/slam
 	name = "slammer raider armor"
@@ -239,7 +249,6 @@
 	icon_state = "legion_combat"
 	item_state = "legion_combat"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
-
 
 
 /////////
@@ -418,13 +427,6 @@
 	slowdown = 0.1
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
-/obj/item/clothing/suit/armored/medium/motorball
-	name = "motorball suit"
-	desc = "Reproduction motorcycle-football suit, made in vault 75 that was dedicated to a pure sports oriented culture."
-	icon_state = "motorball"
-	item_state = "motorball"
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 10)
-
 /// Midwestern Event stuff
 
 /obj/item/clothing/suit/armored/medium/midwesternarmor
@@ -439,8 +441,6 @@
 
 //THE GRAVEYARD
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
-
-/*
 
 /obj/item/clothing/suit/armored/medium/lawcoat/mayor
 	name = "mayor trenchcoat"
@@ -470,3 +470,5 @@
 	item_state = "armor_enclave_officer"
 	armor = list("melee" = 60, "bullet" = 45, "energy" = 40, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 */
+
+

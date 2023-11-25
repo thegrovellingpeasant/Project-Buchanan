@@ -152,7 +152,7 @@ Raider
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/radio/headset = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,	
+		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
@@ -164,7 +164,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/kitchen/knife/butcher = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/radio/headset = 1,	
+		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/explosives = 1
 		)
 
@@ -208,7 +208,7 @@ Raider
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/ammo_box/shotgun/bean = 1,
 		/obj/item/melee/onehanded/club/fryingpan = 1,
-		/obj/item/radio/headset = 1,	
+		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/grenade/chem_grenade/cleaner = 2
@@ -285,7 +285,7 @@ Raider
 
 /datum/outfit/loadout/raider_smith
 	name = "Raider Smith"
-	suit = /obj/item/clothing/suit/armored/heavy/raidermetal
+	suit = /obj/item/clothing/suit/armor/f13/raider/raidermetal
 	uniform = /obj/item/clothing/under/f13/raider_leather
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
