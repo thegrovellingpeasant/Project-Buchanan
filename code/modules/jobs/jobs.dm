@@ -274,7 +274,7 @@ GLOBAL_LIST_INIT(bishops_positions, list(
 	"Bishop Boss",
 	"Bishop Wife",
 	"Bishop Capo",
-	"Bishop Soldier",
+	"Bishop Made Man",
 	"Bishop Casino Worker",
 	"Bishop Racketeer",
 ))
@@ -283,7 +283,7 @@ GLOBAL_LIST_INIT(wrights_positions, list(
 	"Wright Elder",
 	"Wright Enforcer",
 	"Wright Hooligan",
-	"Store Manager",
+	"Shop Manager",
 	"Shop Employee",
 	"Clinic Supervisor",
 	"Practitioner",
@@ -293,7 +293,7 @@ GLOBAL_LIST_INIT(vangraffs_positions, list(
 	"Van Graff Branch Manager",
 	"Van Graff Enforcer",
 	"Van Graff Weapon Smith",
-	"Van Graff Contractor",
+	"Van Graff Research Contractor",
 	"Van Graff Guard",
 ))
 

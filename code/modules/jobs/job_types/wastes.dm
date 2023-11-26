@@ -1,6 +1,6 @@
 /datum/job/wastes
 	department_flag = WASTES
-	exp_type = EXP_TYPE_CITIZENS
+	exp_type = EXP_TYPE_WASTES
 	maptype = "reno"
 	selection_color = "#e6e1cf"
 

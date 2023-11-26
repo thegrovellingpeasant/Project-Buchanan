@@ -102,7 +102,7 @@
 	desc = "T-51b power armor with servomotors and all valuable components stripped out of it."
 	icon_state = "t51b_salvaged"
 	item_state = "t51b_salvaged"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 60, "energy" = 60, "bomb" = 45, "bio" = 70, "rad" = 50, "fire" = 75, "acid" = 35, "wound" = 40)
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 45, "bio" = 70, "rad" = 50, "fire" = 75, "acid" = 35, "wound" = 40)
 // T-60A
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 	name = "salvaged T-60a power armor"

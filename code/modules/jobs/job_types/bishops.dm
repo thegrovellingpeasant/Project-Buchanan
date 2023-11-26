@@ -77,7 +77,7 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
@@ -132,7 +132,7 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
@@ -200,18 +200,18 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
-  
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
 /*--------------------------------------------------------------*/
 
-/datum/job/bishops/f13soldier
+/datum/job/bishops/f13mademan
 	title = "Bishop Made Man"
-	flag = F13BISHOPSSOLDIER
+	flag = F13MADEMAN
 	department_flag = BISHOPS
 	total_positions = 7
 	spawn_positions = 7
@@ -239,9 +239,9 @@
 		),
 	)
 */
-/datum/outfit/job/bishops/f13soldier
+/datum/outfit/job/bishops/f13mademan
 	name = "Bishop Soldier"
-	jobtype = /datum/job/bishops/f13soldier
+	jobtype = /datum/job/bishops/f13mademan
 
 	uniform	= /obj/item/clothing/under/f13/bishops/soldier
 	id = /obj/item/card/id/reno/bishops/ring/soldier
@@ -294,7 +294,7 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
