@@ -339,6 +339,6 @@
 		/obj/item/melee/onehanded/machete/scrapsabre = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
-		/obj/item/book/granter/crafting)recipe/tribal/eighties = 1)
+		/obj/item/book/granter/crafting_recipe/tribal/eighties = 1)
 
 
