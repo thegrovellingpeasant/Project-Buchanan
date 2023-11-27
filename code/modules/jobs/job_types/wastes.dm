@@ -9,8 +9,8 @@
 	title = "Reno Raider"
 	flag = F13RENORAIDER
 	faction = FACTION_WASTES
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 8
+	spawn_positions = 4
 	description = "You are a member of one of the infamous raider gangs of the wastes. Pillaging, robbing, murdering wasters are a recurrent chore for your people. Depending on their affiliation, though, raiders may vary from an illiterate chemhead, to a straight edge tribal, or even a member of a group with strong connections and an unique culture based on raiding, and all of this should be considered when defining your character. Form loose associations with other raiders to get an edge. Betray said raiders because of a dumb argument. Be wary of the inside of the city or destroying family businesses, since the gangs may not take kindly to your presence in town."
 	supervisors = "the man with the biggest stick"
 

@@ -81,6 +81,14 @@
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
+	if(H.gender == FEMALE)
+		H.gender = MALE
+		H.real_name = random_unique_name(MALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/reno/bishops/ring/boss/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
 
 	ADD_TRAIT(H, TRAIT_LEADER, src)
 
@@ -137,7 +145,17 @@
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 
+	if(H.gender == MALE)
+		H.gender = FEMALE
+		H.real_name = random_unique_name(FEMALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/reno/bishops/ring/wedding/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
+
 	ADD_TRAIT(H, TRAIT_LEADER, src)
+
 
 /*--------------------------------------------------------------*/
 
