@@ -323,7 +323,8 @@
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/female/whitelegs = 1,
 		/obj/item/throwing_star/tomahawk = 3,
-		/obj/item/reagent_containers/pill/patch/healingpowder = 2
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
+		/obj/item/book/granter/crafting_recipe/tribal/whitelegs = 1
 	)
 
 /datum/outfit/loadout/nomad_80
@@ -337,6 +338,7 @@
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/scrapsabre = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/reagent_containers/pill/patch/turbo = 2)
+		/obj/item/reagent_containers/pill/patch/turbo = 2,
+		/obj/item/book/granter/crafting)recipe/tribal/eighties = 1)
 
 
