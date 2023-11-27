@@ -392,7 +392,7 @@
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 
 /obj/item/clothing/suit/jacket/flannel
@@ -426,7 +426,7 @@
 	item_state = "hostrench"
 	resistance_flags = NONE
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/jacket/leather/overcoat
 	name = "leather overcoat"
@@ -434,7 +434,7 @@
 	icon_state = "leathercoat"
 	cold_protection = CHEST|GROIN|ARMS|LEGS
 	mutantrace_variation = STYLE_DIGITIGRADE
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 
 /obj/item/clothing/suit/jacket/puffer
@@ -455,14 +455,12 @@
 	desc = "A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable."
 	icon_state = "militaryjacket"
 	item_state = "militaryjacket"
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/jacket/letterman
 	name = "letterman jacket"
 	desc = "A classic brown letterman jacket. Looks pretty hot and heavy."
 	icon_state = "letterman"
 	item_state = "letterman"
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/jacket/letterman_red
 	name = "red letterman jacket"
@@ -945,7 +943,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
 	resistance_flags = NONE
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = -10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = -10)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/assu_suit
@@ -1021,4 +1019,27 @@
 	desc = "It looks like someone dragged this out of a muddy lake."
 	icon_state = "bomberalt"
 	item_state = "bomberalt"
-	armor = list("melee" = 25, "bullet" = 10, "laser" = 20, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+
+/*
+ * Robes : project buchanan addition
+ */
+
+/obj/item/clothing/suit/hooded/robes/hubology
+	name = "hubologist robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "hubologist_robes"
+	item_state = "hubologist_robes"
+	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	hoodtype = /obj/item/clothing/head/hooded/robes/hubology
+
+/obj/item/clothing/head/hooded/robes/hubology
+	name = "black hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "hubologist_hood"
+	item_state = "hubologist_hood"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSEYES
+	flash_protect = 2
+

@@ -117,7 +117,7 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_YAKUZA 		143 //yakuza dojo
 #define ACCESS_GYM			144 //gym/store
 #define ACCESS_VANGRAFFS	145 //van graff HQ, store
-
+#define ACCESS_NRPD			146 //new reno police department
 
 
 

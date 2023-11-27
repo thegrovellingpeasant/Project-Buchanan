@@ -93,7 +93,7 @@
 
 /datum/datacore/proc/get_manifest_dr(monochrome, OOC)
 	var/list/command = list()
-	var/list/bos = list()	
+	var/list/bos = list()
 	var/list/enclave = list()
 	var/list/oasis = list()
 	var/list/wendover = list()
@@ -107,6 +107,12 @@
 	var/list/usps = list()
 	var/list/tribe = list()
 	var/list/was = list()
+	var/list/bishops = list()
+	var/list/wrights = list()
+	var/list/vangraffs = list()
+	var/list/citizens = list()
+	var/list/wastes = list()
+	var/list/losthills = list()
 	var/list/misc = list()
 	var/dat = {"
 	<head><style>
@@ -134,7 +140,7 @@
 			department = 1
 		if(rank in GLOB.brotherhood_positions)
 			bos[name] = rank
-			department = 1		
+			department = 1
 		if(rank in GLOB.enclave_positions)
 			enclave[name] = rank
 			department = 1
@@ -173,6 +179,24 @@
 			department = 1
 		if(rank in GLOB.wasteland_positions)
 			was[name] = rank
+			department = 1
+		if(rank in GLOB.bishops_positions)
+			bishops[name] = rank
+			department = 1
+		if(rank in GLOB.wrights_positions)
+			wrights[name] = rank
+			department = 1
+		if(rank in GLOB.vangraffs_positions)
+			vangraffs[name] = rank
+			department = 1
+		if(rank in GLOB.citizens_positions)
+			citizens[name] = rank
+			department = 1
+		if(rank in GLOB.wastes_positions)
+			wastes[name] = rank
+			department = 1
+		if(rank in GLOB.losthills_positions)
+			losthills[name] = rank
 			department = 1
 		if(!department && !(name in command))
 			misc[name] = rank
@@ -250,6 +274,36 @@
 		dat += "<tr><th colspan=3>Wasteland</th></tr>"
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
+			even = !even
+	if(length(bishops))
+		dat += "<tr><th colspan=3>Bishops</th></tr>"
+		for(var/name in bishops)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bishops[name]]</td></tr>"
+			even = !even
+	if(length(wrights))
+		dat += "<tr><th colspan=3>Wrights</th></tr>"
+		for(var/name in wrights)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wrights[name]]</td></tr>"
+			even = !even
+	if(length(vangraffs))
+		dat += "<tr><th colspan=3>Van Graffs</th></tr>"
+		for(var/name in vangraffs)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vangraffs[name]]</td></tr>"
+			even = !even
+	if(length(citizens))
+		dat += "<tr><th colspan=3>Citizens</th></tr>"
+		for(var/name in citizens)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[citizens[name]]</td></tr>"
+			even = !even
+	if(length(wastes))
+		dat += "<tr><th colspan=3>Wastes</th></tr>"
+		for(var/name in wastes)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[wastes[name]]</td></tr>"
+			even = !even
+	if(length(losthills))
+		dat += "<tr><th colspan=3>Lost Hills Chapter</th></tr>"
+		for(var/name in losthills)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[losthills[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(length(misc))

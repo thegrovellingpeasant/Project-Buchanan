@@ -67,14 +67,14 @@
 
 	if(H.gender == MALE)
 		uniform = /obj/item/clothing/under/f13/merccharm
-	
+
 	if(H.skin_tone == "african1")
-		return						
+		return
 	if(H.skin_tone == "african2")
 		return
 	else
 		H.skin_tone = pick("african1", "african2")
-	
+
 /datum/outfit/job/vangraffs/f13branchmanager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -104,7 +104,7 @@
 		var/obj/item/card/id/dogtag/L = H.wear_id
 		L.registered_name = H.name
 		L.update_label()
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
@@ -163,7 +163,7 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
@@ -234,7 +234,7 @@
 	..()
 	if(visualsOnly)
 		return
-	
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
@@ -242,7 +242,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/vangraffs/f13researchcontractor
-	title = "Research Contractor"
+	title = "Van Graff Research Contractor"
 	flag = F13RESEARCHCONTRACTOR
 	total_positions = 1
 	spawn_positions = 1
@@ -273,7 +273,7 @@
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
-	
+
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)

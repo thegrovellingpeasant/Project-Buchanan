@@ -3,7 +3,7 @@
 	selection_color = "#FF7566"
 	faction = FACTION_MORDINOS
 	exp_type = EXP_TYPE_MORDINOS
-	maptype = "reno"
+	maptype = "yuma"
 
 	access = list(ACCESS_MORDINOS)
 	minimal_access = list(ACCESS_MORDINOS)
