@@ -14,7 +14,7 @@
 /datum/outfit/job/vangraffs
 	name = "vangraffsdatums"
 	jobtype = /datum/job/vangraffs
-	ears = null
+	ears = /obj/item/radio/headset/headset_vangraffs
 	id = null
 	backpack = /obj/item/storage/backpack/satchel/old
 	satchel = /obj/item/storage/backpack/satchel/old

@@ -28,6 +28,7 @@
 	name = "Judge"
 	jobtype = /datum/job/citizens/f13judge
 	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
 	uniform	= /obj/item/clothing/under/suit/lawyerblackalt
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/judgerobe
@@ -62,6 +63,7 @@
 	name = "Police Chief"
 	jobtype = /datum/job/citizens/f13rpdpolicechief
 	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
@@ -102,6 +104,7 @@
 	name = "Police Officer"
 	jobtype = /datum/job/citizens/f13rpdofficer
 	id = /obj/item/card/id/dogtag/deputy
+	ears = /obj/item/radio/headset/headset_nrpd
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
@@ -147,7 +150,7 @@
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	ears = /obj/item/radio/headset/headset_ncr
+	ears = /obj/item/radio/headset/headset_government_ncrcf
 	head = /obj/item/clothing/head/beret/ncr/military_police
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
@@ -189,7 +192,7 @@
 	uniform	= /obj/item/clothing/under/f13/ncr
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	ears = /obj/item/radio/headset/headset_ncr
+	ears = /obj/item/radio/headset/headset_ncrcf
 	head = /obj/item/clothing/head/f13/ncr/steelpot_mp
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster

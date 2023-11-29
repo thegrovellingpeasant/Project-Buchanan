@@ -14,7 +14,7 @@
 /datum/outfit/job/bishops
 	name = "bishopsdatums"
 	jobtype = /datum/job/bishops
-	ears = null
+	ears = /obj/item/radio/headset/headset_bishops
 
 /*--------------------------------------------------------------*/
 
