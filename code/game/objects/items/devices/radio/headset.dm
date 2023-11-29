@@ -29,10 +29,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_WND = RADIO_TOKEN_WND,
 	RADIO_CHANNEL_MONTEGOBAY = RADIO_TOKEN_MONTEGOBAY,
 	RADIO_CHANNEL_SALVATORES = RADIO_TOKEN_SALVATORES,
-	RADIO_CHANNEL_BISHOPS = RADIO_TOKEN_BISHOPS,
 	RADIO_CHANNEL_MORDINOS = RADIO_TOKEN_MORDINOS,
+	RADIO_CHANNEL_HOTEL = RADIO_TOKEN_HOTEL,
+	RADIO_CHANNEL_BISHOPS = RADIO_TOKEN_BISHOPS,
 	RADIO_CHANNEL_WRIGHTS = RADIO_TOKEN_WRIGHTS,
-	RADIO_CHANNEL_HOTEL = RADIO_TOKEN_HOTEL
+	RADIO_CHANNEL_VANGRAFFS = RADIO_TOKEN_VANGRAFFS,
+	RADIO_CHANNEL_NRPD = RADIO_TOKEN_NRPD,
+	RADIO_CHANNEL_NCRCF = RADIO_TOKEN_NCRCF,
+	RADIO_CHANNEL_GOVERNMENT = RADIO_TOKEN_GOVERNMENT
 ))
 
 /obj/item/radio/headset
@@ -469,6 +473,51 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_com
 	keyslot2 = new /obj/item/encryptionkey/headset_cent
+
+/obj/item/radio/headset/headset_bishops
+	name = "den radio headset"
+	desc = "This is used by the Bishops. \nTo access the Bishop channel, use :b."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_bishops
+
+/obj/item/radio/headset/headset_wrights
+	name = "den radio headset"
+	desc = "This is used by the Wrights. \nTo access the Wright channel, use :w."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_wrights
+
+/obj/item/radio/headset/headset_vangraffs
+	name = "den radio headset"
+	desc = "This is used by the Van Graffs. \nTo access the Van Graff channel, use :v."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_vangraffs
+
+/obj/item/radio/headset/headset_nrpd
+	name = "den radio headset"
+	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :p."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_nrpd
+
+/obj/item/radio/headset/headset_ncrcf
+	name = "den radio headset"
+	desc = "This is used by the NCRCF. \nTo access the NCRCF channel, use :n."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_ncrcf
+
+/obj/item/radio/headset/headset_government_nrpd
+	name = "NCR government headset"
+	desc = "This is used by the NCR Command. \nTo access the NRPD channel, use :p. \nTo access the Government channel, use :g."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_nrpd
+	keyslot2 = new /obj/item/encryptionkey/headset_government
+
+/obj/item/radio/headset/headset_government_ncrcf
+	name = "NCR government headset"
+	desc = "This is used by the NCR Command. \nTo access the NCRCF channel, use :n. \nTo access the Government channel, use :g."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_ncrcf
+	keyslot2 = new /obj/item/encryptionkey/headset_government
+
 
 /obj/item/radio/headset/headset_cent/empty
 	keyslot = null

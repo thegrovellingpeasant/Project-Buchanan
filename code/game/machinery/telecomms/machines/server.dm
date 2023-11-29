@@ -187,30 +187,45 @@
 	freq_listening = list(FREQ_SALVATORES)
 	autolinkers = list("salvatores")
 
-/obj/machinery/telecomms/server/presets/bishops
-	id = "Bishops Server"
-	freq_listening = list(FREQ_BISHOPS)
-	autolinkers = list("bishops")
-
 /obj/machinery/telecomms/server/presets/mordinos
 	id = "Mordinos Server"
 	freq_listening = list(FREQ_MORDINOS)
 	autolinkers = list("mordinos")
-
-/obj/machinery/telecomms/server/presets/wrights
-	id = "Wrights Server"
-	freq_listening = list(FREQ_WRIGHTS)
-	autolinkers = list("wrights")
 
 /obj/machinery/telecomms/server/presets/hotel
 	id = "Hotel Server"
 	freq_listening = list(FREQ_HOTEL)
 	autolinkers = list("hotel")
 
+/obj/machinery/telecomms/server/presets/bishops
+	id = "Bishop Server"
+	freq_listening = list(FREQ_BISHOPS)
+	autolinkers = list("bishops")
+
+/obj/machinery/telecomms/server/presets/wrights
+	id = "Wright Server"
+	freq_listening = list(FREQ_WRIGHTS)
+	autolinkers = list("wrights")
+
 /obj/machinery/telecomms/server/presets/vangraffs
 	id = "Van Graff Server"
 	freq_listening = list(FREQ_VANGRAFFS)
 	autolinkers = list("vangraffs")
+
+/obj/machinery/telecomms/server/presets/nrpd
+	id = "NRPD Server"
+	freq_listening = list(FREQ_NRPD)
+	autolinkers = list("nrpd")
+
+/obj/machinery/telecomms/server/presets/ncrcf
+	id = "NCRCF Server"
+	freq_listening = list(FREQ_NCRCF)
+	autolinkers = list("ncrcf")
+
+/obj/machinery/telecomms/server/presets/government
+	id = "Government Server"
+	freq_listening = list(FREQ_GOVERNMENT)
+	autolinkers = list("government")
 
 //Common and other radio frequencies for people to freely use
 /obj/machinery/telecomms/server/presets/common/Initialize()

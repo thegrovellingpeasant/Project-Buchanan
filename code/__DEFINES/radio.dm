@@ -116,21 +116,37 @@
 #define RADIO_KEY_SALVATORES "s"
 #define RADIO_TOKEN_SALVATORES ":s"
 
-#define RADIO_CHANNEL_BISHOPS "Bishops"
-#define RADIO_KEY_BISHOPS"b"
-#define RADIO_TOKEN_BISHOPS ":b"
-
 #define RADIO_CHANNEL_MORDINOS "Mordinos"
 #define RADIO_KEY_MORDINOS "m"
 #define RADIO_TOKEN_MORDINOS ":m"
+
+#define RADIO_CHANNEL_HOTEL "Hotel"
+#define RADIO_KEY_HOTEL "h"
+#define RADIO_TOKEN_HOTEL ":h"
+
+#define RADIO_CHANNEL_BISHOPS "Bishops"
+#define RADIO_KEY_BISHOPS "b"
+#define RADIO_TOKEN_BISHOPS ":b"
 
 #define RADIO_CHANNEL_WRIGHTS "Wrights"
 #define RADIO_KEY_WRIGHTS "w"
 #define RADIO_TOKEN_WRIGHTS ":w"
 
-#define RADIO_CHANNEL_HOTEL "Hotel"
-#define RADIO_KEY_HOTEL "h"
-#define RADIO_TOKEN_HOTEL ":h"
+#define RADIO_CHANNEL_VANGRAFFS "Van Graffs"
+#define RADIO_KEY_VANGRAFFS	"v"
+#define RADIO_TOKEN_VANGRAFFS ":v"
+
+#define RADIO_CHANNEL_NRPD "NRPD"
+#define RADIO_KEY_NRPD "p"
+#define RADIO_TOKEN_NRPD ":p"
+
+#define RADIO_CHANNEL_NCRCF "NCRCF"
+#define RADIO_KEY_NCRCF "n"
+#define RADIO_TOKEN_NCRCF ":n"
+
+#define RADIO_CHANNEL_GOVERNMENT "Government"
+#define RADIO_KEY_GOVERNMENT "g"
+#define RADIO_TOKEN_GOVERNMENT ":g"
 
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
@@ -163,11 +179,17 @@
 #define FREQ_WND 1387 // radio station
 #define FREQ_MONTEGOBAY 1389 // montego bay
 #define FREQ_SALVATORES 1391 //Salvatores
-#define FREQ_BISHOPS 1393 //Bishops
+//#define FREQ_BISHOPS 1393 //Bishops
 #define FREQ_MORDINOS 1395 //Mordinos
-#define FREQ_WRIGHTS 1397 //Wrights
+//#define FREQ_WRIGHTS 1397 //Wrights
 #define FREQ_HOTEL 1399 //Hotel
-#define FREQ_VANGRAFFS 1401 //Vangraffs
+#define FREQ_BISHOPS 1401 // Bishops
+#define FREQ_WRIGHTS 1403 // Wrights
+#define FREQ_VANGRAFFS 1405 // Van Graffs
+#define FREQ_NRPD 1407 // New Reno Police Department
+#define FREQ_NCRCF 1409 // New California Correctional Facility
+#define FREQ_GOVERNMENT 1311 // Government
+
 
 #define FREQ_HOLOGRID_SOLUTION 1433
 #define FREQ_STATUS_DISPLAYS 1435
