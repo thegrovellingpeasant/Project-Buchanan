@@ -2088,3 +2088,21 @@
 	desc = "A standard issue NCR police uniform, repurposed from the old world."
 	icon_state = "ahp_uniform"
 	item_state = "ahp_uniform"
+
+/////////////
+//Reno misc//
+/////////////
+
+/obj/item/clothing/under/f13/chosen
+	name = "tribal outfit"
+	desc = "A leather outfit of a style commonly seen worn by tribals."
+	icon_state = "chosen"
+	item_state = "chosen"
+
+/obj/item/clothing/under/f13/chosenf
+	name = "tribal outfit"
+	desc = "A leather outfit of a style commonly seen worn by tribals."
+	icon_state = "chosen_f"
+	item_state = "chosen"
+
+

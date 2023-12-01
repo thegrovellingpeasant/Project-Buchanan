@@ -669,3 +669,102 @@
 	blob_allowed = 0
 	environment = 5
 	grow_chance = 5
+
+//reno
+/area/f13/reno_wasteland
+	name = "Wasteland"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = WASTELAND_AMBIENCE
+	outdoors = 1
+	open_space = 1
+	blob_allowed = 0
+	environment = 19
+	grow_chance = 45
+
+/area/f13/reno_streets
+	name = "Streets of Reno"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_STREETS_AMBIENCE
+	outdoors = 1
+	open_space = 1
+
+/area/f13/reno_prison
+	name = "prison"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_STREETS_AMBIENCE
+
+/area/f13/reno_prison_yard
+	name = "prison_yard"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_STREETS_AMBIENCE
+	outdoors = 1
+	open_space = 1
+
+/area/f13/reno_building
+	name = "Building"
+	icon_state = "building"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/vangraffs
+	name = "Van Graffs"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/vangraffs_armory
+	name = "Van Graff Armory"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/wrights
+	name = "Wrights"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/wrights_armory
+	name = "Wright Armory"
+	icon_state = "den"
+	ambientmusic = RENO_BUILDING_AMBIENCE
+
+/area/f13/reno_sharkclub
+	name = "Shark Club"
+	icon_state = "casino"
+	ambientmusic = SHARKCLUB_AMBIENCE
+
+/area/f13/reno_sharkclub_armory
+	name = "Shark Club Armory"
+	icon_state = "casino"
+	ambientmusic = SHARKCLUB_AMBIENCE
+
+/area/f13/reno_yakuza
+	name = "Yakuza"
+	icon_state = "pool"
+	ambientmusic = YAKUZA_AMBIENCE
+
+/area/f13/reno_caves
+	name = "Caves"
+	icon_state = "caves"
+	ambientmusic = RENO_CAVES_AMBIENCE
+
+/area/f13/reno_sewers
+	name = "Sewers"
+	icon_state = "sewer"
+	ambientmusic = RENO_SEWERS_AMBIENCE
+
+/area/f13/reno_subway
+	name = "Subway"
+	icon_state = "subway"
+	ambientmusic = RENO_SUBWAY_AMBIENCE
+
+/area/f13/reno_prewarbunker
+	name = "Bunker"
+	icon_state = "bunker"
+	ambientmusic = RENO_PREWARBUNKER_AMBIENCE
+
+/area/f13/reno_bos
+	name = "BOS"
+	icon_state = "brotherhood"
+	ambientmusic = RENO_BOS_AMBIENCE
