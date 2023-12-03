@@ -55,7 +55,7 @@
 	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/storage/bag/money/reno/huge = 1,
+		/obj/item/storage/bag/money/small/huge = 1,
 		)
 
 /datum/outfit/job/vangraffs/f13branchmanager/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -157,7 +157,7 @@
 	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/storage/bag/money/reno/big = 1)
+		/obj/item/storage/bag/money/small/big = 1)
 
 /datum/outfit/job/vangraffs/f13vgenforcer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -212,7 +212,7 @@
 	suit = null
 	suit_store = null
 	backpack_contents = list(
-		/obj/item/storage/bag/money/reno/few = 1,
+		/obj/item/storage/bag/money/small/few = 1,
 		)
 
 /datum/outfit/job/vangraffs/f13weaponsmith/pre_equip(mob/living/carbon/human/H)
@@ -263,7 +263,7 @@
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/reno/medium = 1)
+		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/job/vangraffs/f13researchcontractor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -323,7 +323,7 @@
 	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/storage/bag/money/reno/few = 1)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/job/vangraffs/f13guard/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

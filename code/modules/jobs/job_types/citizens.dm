@@ -38,7 +38,7 @@
 		/obj/item/megaphone = 1,
 		/obj/item/pen/fountain = 1,
 		/obj/item/pen/fourcolor = 1,
-		/obj/item/storage/bag/money/reno/big = 1,
+		/obj/item/storage/bag/money/small/big = 1,
 		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
 		/obj/item/ammo_box/magazine/m44 = 2
 		)
@@ -83,7 +83,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/reno/medium = 1
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/job/citizens/f13rpdofficer
@@ -125,7 +125,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/reno/meager = 1
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/job/citizens/f13ncrcfwarden
@@ -170,7 +170,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/reno/medium = 1
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/job/citizens/f13ncrcfguard
@@ -213,7 +213,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/reno/meager = 1
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/job/citizens/f13ncrcfphysician
@@ -246,7 +246,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/reno/medium = 1)
+		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/job/citizens/f13ncrcfphysician/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -408,7 +408,7 @@
 	name = "Tourist"
 	backpack_contents = list(
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/storage/bag/money/reno/large = 1)
+		/obj/item/storage/bag/money/small/large = 1)
 
 /datum/outfit/loadout/gambler
 	name = "Gambler"
@@ -419,7 +419,7 @@
 	r_hand = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/storage/bag/money/reno/large = 1)
+		/obj/item/storage/bag/money/small/large = 1)
 
 /datum/outfit/loadout/vaultcitytourist
 	name = "Vault City Tourist"
@@ -429,7 +429,7 @@
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/card/id/selfassign = 1,
 		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/reno/big = 1)
+		/obj/item/storage/bag/money/small/big = 1)
 
 /datum/outfit/loadout/vaquero
 	name = "Vaquero"
@@ -443,7 +443,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/a357 = 1,
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/storage/bag/money/reno/meager = 1)
+		/obj/item/storage/bag/money/small/meager = 1)
 
 /datum/outfit/loadout/reporter
 	name = "Reporter"
@@ -460,7 +460,7 @@
 		/obj/item/gun/energy/disabler = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/wallframe/newscaster = 1,
-		/obj/item/storage/bag/money/reno/few = 1)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/loadout/lawyer
 	name = "Lawyer"
@@ -470,7 +470,7 @@
 	backpack_contents = list(
 		/obj/item/clothing/accessory/lawyers_badge = 1,
 		/obj/item/storage/briefcase/lawyer = 1,
-		/obj/item/storage/bag/money/reno/medium = 2)
+		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/loadout/detective
 	name = "Detective"
@@ -491,7 +491,7 @@
 		/obj/item/storage/box/gloves = 1,
 		/obj/item/storage/box/evidence = 1,
 		/obj/item/ammo_box/a357 = 1,
-		/obj/item/storage/bag/money/reno/meager =1)
+		/obj/item/storage/bag/money/small/meager =1)
 
 /datum/outfit/loadout/hubologist
 	name = "Hubologist"
@@ -500,7 +500,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health/f13
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/storage/bag/money/reno/few = 1)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/loadout/mercenary
 	name = "mercenary"
@@ -609,19 +609,19 @@
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set14/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/storage/bag/money/reno/meager = 1
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set15/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/storage/bag/money/reno/few = 1
+		/obj/item/storage/bag/money/small/few = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set16/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/storage/bag/money/reno/big = 1
+		/obj/item/storage/bag/money/small/big = 1
 		)
 	generate_items_inside(items_inside, src)
 

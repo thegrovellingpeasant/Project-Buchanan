@@ -56,7 +56,7 @@
 		/obj/item/clothing/mask/cigarette/cigar/ncr = 1,
 		/obj/item/lighter/gold = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
-		/obj/item/storage/bag/money/reno/huge = 1
+		/obj/item/storage/bag/money/small/huge = 1
 		)
 
 /datum/outfit/loadout/handcannon
@@ -126,7 +126,7 @@
 		/obj/item/melee/onehanded/club/fryingpan = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
 		/obj/item/suppressor = 1,
-		/obj/item/storage/bag/money/reno/huge = 1
+		/obj/item/storage/bag/money/small/huge = 1
 		)
 
 /datum/outfit/job/bishops/f13wife/pre_equip(mob/living/carbon/human/H)
@@ -197,7 +197,7 @@
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
-		/obj/item/storage/bag/money/reno/big = 1
+		/obj/item/storage/bag/money/small/big = 1
 		)
 
 /datum/outfit/loadout/shotgun
@@ -274,7 +274,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/reno/few = 1,
+		/obj/item/storage/bag/money/small/few = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		)
 
@@ -350,7 +350,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/card/slotmachine = 1,
-		/obj/item/storage/bag/money/reno/few = 1,
+		/obj/item/storage/bag/money/small/few = 1,
 		)
 /*--------------------------------------------------------------*/
 
@@ -394,7 +394,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m44 = 2,
-		/obj/item/storage/bag/money/reno/meager = 1,
+		/obj/item/storage/bag/money/small/meager = 1,
 		/obj/item/gun/ballistic/revolver/detective = 1,
 		/obj/item/ammo_box/c38 = 1
 		)

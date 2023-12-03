@@ -132,35 +132,35 @@
 ////////
 
 //HUGE 560ish
-/obj/item/storage/bag/money/reno/huge/PopulateContents()
-	new /obj/item/stack/f13Cash/random/high(src)
+/obj/item/storage/bag/money/small/huge/PopulateContents()
 	new /obj/item/stack/f13Cash/random/ncr/high(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
 
 //LARGE 305ish
-/obj/item/storage/bag/money/reno/large/PopulateContents()
+/obj/item/storage/bag/money/small/large/PopulateContents()
 	new /obj/item/stack/f13Cash/random/ncr/high(src)
+	new /obj/item/stack/f13Cash/random/low(src)
 	new /obj/item/stack/f13Cash/random/low(src)
 
 //BIG 180ish
-/obj/item/storage/bag/money/reno/big/PopulateContents()
+/obj/item/storage/bag/money/small/big/PopulateContents()
 	new /obj/item/stack/f13Cash/random/med(src)
 	new /obj/item/stack/f13Cash/random/ncr/med(src)
-	new /obj/item/stack/f13Cash/random/ncr/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
 //MEDIUM 145ish
-/obj/item/storage/bag/money/reno/medium/PopulateContents()
-	new /obj/item/stack/f13Cash/random/med(src)
+/obj/item/storage/bag/money/small/medium/PopulateContents()
+	new /obj/item/stack/f13Cash/random/low(src)
 	new /obj/item/stack/f13Cash/random/ncr/med(src)
-	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
 //FEW 75ish
-/obj/item/storage/bag/money/reno/few/PopulateContents()
-	new /obj/item/stack/f13Cash/random/ncr/low(src)
+/obj/item/storage/bag/money/small/few/PopulateContents()
 	new /obj/item/stack/f13Cash/random/ncr/low(src)
 	new /obj/item/stack/f13Cash/random/low(src)
 
 //MEAGER 25ish
-/obj/item/storage/bag/money/reno/meager/PopulateContents()
+/obj/item/storage/bag/money/small/meager/PopulateContents()
 	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
 

@@ -55,7 +55,7 @@
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
-		/obj/item/storage/bag/money/reno/large = 1,
+		/obj/item/storage/bag/money/small/large = 1,
 		)
 
 /datum/outfit/loadout/feelluckypunk
@@ -136,7 +136,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/reno/medium = 1
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/outfit/job/wrights/f13enforcer/pre_equip(mob/living/carbon/human/H)
@@ -194,7 +194,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/reno/meager = 1
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 
@@ -288,7 +288,7 @@
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/clipboard = 1,
 		/obj/item/pen = 1,
-		/obj/item/storage/bag/money/reno/medium = 1
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/outfit/job/wrights/f13manager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -341,7 +341,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/reno/meager = 1
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/outfit/job/wrights/f13employee/pre_equip(mob/living/carbon/human/H)
@@ -388,7 +388,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/reno/few = 1)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -434,7 +434,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/reno/meager = 1)
+		/obj/item/storage/bag/money/small/meager = 1)
 
 /datum/outfit/job/wrights/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
