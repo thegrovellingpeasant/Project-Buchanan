@@ -53,10 +53,10 @@
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
 		/obj/item/clothing/mask/cigarette/cigar/ncr = 1,
 		/obj/item/lighter/gold = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/reno/huge = 1
 		)
 
 /datum/outfit/loadout/handcannon
@@ -123,10 +123,10 @@
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
 		/obj/item/melee/onehanded/club/fryingpan = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
 		/obj/item/suppressor = 1,
+		/obj/item/storage/bag/money/reno/huge = 1
 		)
 
 /datum/outfit/job/bishops/f13wife/pre_equip(mob/living/carbon/human/H)
@@ -194,10 +194,10 @@
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/reno/big = 1
 		)
 
 /datum/outfit/loadout/shotgun
@@ -238,7 +238,7 @@
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13soldier
+	outfit = /datum/outfit/job/bishops/f13mademan
 
 	loadout_options = list(
 	/datum/outfit/loadout/batterup,
@@ -274,7 +274,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
+		/obj/item/storage/bag/money/reno/few = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		)
 
@@ -319,9 +319,9 @@
 
 /*--------------------------------------------------------------*/
 
-/datum/job/bishops/f13casinoworker
-	title = "Bishop Casino Worker"
-	flag = F13BISHOPCASINOWORKER
+/datum/job/bishops/f13floorman
+	title = "Bishop Floorman"
+	flag = F13BISHOPFLOORMAN
 	department_flag = BISHOPS
 	total_positions = 3
 	spawn_positions = 3
@@ -330,11 +330,11 @@
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13casinoworker
+	outfit = /datum/outfit/job/bishops/f13floorman
 
-/datum/outfit/job/bishops/f13casinoworker
+/datum/outfit/job/bishops/f13floorman
 	name = "Casino Worker"
-	jobtype = /datum/job/bishops/f13casinoworker
+	jobtype = /datum/job/bishops/f13floorman
 
 	uniform	= /obj/item/clothing/under/f13/bishops/casino_worker
 	id = /obj/item/card/id/reno/bishops/papers/worker
@@ -350,7 +350,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/card/slotmachine = 1,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		/obj/item/storage/bag/money/reno/few = 1,
 		)
 /*--------------------------------------------------------------*/
 
@@ -394,7 +394,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m44 = 2,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		/obj/item/storage/bag/money/reno/meager = 1,
 		/obj/item/gun/ballistic/revolver/detective = 1,
 		/obj/item/ammo_box/c38 = 1
 		)
