@@ -14136,11 +14136,6 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
-"lGq" = (
-/obj/item/bedsheet/brown,
-/obj/structure/bed/pod,
-/turf/open/floor/carpet/brown,
-/area/f13/building)
 "lGt" = (
 /obj/structure/simple_door/wood,
 /obj/structure/decoration/rag{
@@ -27594,6 +27589,11 @@
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/building)
+"wRF" = (
+/obj/item/bedsheet/brown,
+/obj/structure/bed/pod,
+/turf/open/floor/carpet/brown,
 /area/f13/building)
 "wRK" = (
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -59404,7 +59404,7 @@ kZO
 iGY
 nER
 kZO
-lGq
+wRF
 sBo
 lbT
 kZO
@@ -59558,7 +59558,7 @@ iVO
 nMa
 lbT
 iVO
-lGq
+wRF
 kZO
 aNY
 cSP
@@ -59708,7 +59708,7 @@ kZO
 mog
 iVO
 kZO
-lGq
+wRF
 iVO
 lbT
 kZO
