@@ -25110,7 +25110,7 @@
 	environment_smash = 0;
 	obj_damage = 0;
 	speak_chance = 3;
-	speak = list("How may I be of service to you today!","The Vault has been in an uproar since the reactor leak. Acute hysteria, I do hope the Overseer will make an announcement soon.","Ah! Another visitor! Good day!","Have you tried the cuisine? I haven't.","Vault 93! Be Our Company!")
+	speak = list("How  may  I  be  of  service  to  you  today!","The  Vault  has  been  in  an  uproar  since  the  reactor  leak.  Acute  hysteria,  I  do  hope  the  Overseer  will  make  an  announcement  soon.","Ah!  Another  visitor!  Good  day!","Have  you  tried  the  cuisine?  I  haven't.","Vault  93!  Be  Our  Company!")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/vault)
