@@ -121,10 +121,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/padded,
 /area/f13/wasteland)
-"mJ" = (
-/obj/effect/landmark/start/f13/bishops/underboss,
-/turf/open/floor/wood/f13/carpet,
-/area/f13/building)
 "nf" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13,
@@ -21941,7 +21937,7 @@ cZ
 cZ
 ds
 vg
-mJ
+rh
 BK
 Ma
 wB

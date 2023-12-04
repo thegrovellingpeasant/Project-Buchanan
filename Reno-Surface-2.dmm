@@ -86,14 +86,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess/neutralchess2,
 /area/f13/building)
-"aN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/wrights/capo,
-/obj/item/radio/intercom/retro{
-	pixel_x = 29
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/building)
 "aO" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -185,7 +177,6 @@
 /area/f13/building)
 "bz" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/landmark/start/f13/civilians/renodoctor,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "bA" = (
@@ -344,13 +335,6 @@
 "dg" = (
 /obj/structure/sign/poster/prewar/poster81,
 /turf/closed/wall/rust,
-/area/f13/building)
-"dk" = (
-/obj/structure/chair/f13chair2{
-	dir = 4
-	},
-/obj/effect/landmark/start/f13/bishops/soldier,
-/turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "dr" = (
 /obj/structure/chair{
@@ -831,11 +815,6 @@
 "gX" = (
 /obj/machinery/door/unpowered/securedoor,
 /turf/open/floor/wood/f13/oak,
-/area/f13/building)
-"hc" = (
-/obj/structure/chair/booth,
-/obj/effect/landmark/start/f13/bishops/soldier,
-/turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "hj" = (
 /obj/structure/dresser,
@@ -1875,7 +1854,6 @@
 /obj/structure/chair/wood/worn{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/bishops/soldier,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "qd" = (
@@ -2300,7 +2278,6 @@
 /obj/item/storage/secure/safe{
 	pixel_y = 26
 	},
-/obj/effect/landmark/start/f13/bishops/soldier,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "tj" = (
@@ -2968,13 +2945,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/old,
-/turf/open/floor/wood/f13/carpet,
-/area/f13/building)
-"zs" = (
-/obj/structure/chair/f13chair2{
-	dir = 8
-	},
-/obj/effect/landmark/start/f13/bishops/soldier,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "zu" = (
@@ -5352,13 +5322,6 @@
 	icon_state = "supermart0"
 	},
 /area/f13/tcoms)
-"Ut" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/wrights/soldier,
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor2-broken"
-	},
-/area/f13/building)
 "UD" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/wood/cold,
@@ -5651,11 +5614,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/building)
-"XT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/wrights/soldier,
-/turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "XV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28511,7 +28469,7 @@ gT
 TE
 gT
 gT
-hc
+kJ
 iw
 mK
 XJ
@@ -28525,7 +28483,7 @@ XJ
 mK
 iq
 mK
-dk
+BR
 BR
 XJ
 dI
@@ -28830,7 +28788,7 @@ Oo
 mK
 mK
 Ak
-zs
+Ak
 XJ
 dI
 dI
@@ -37154,7 +37112,7 @@ Fn
 lr
 ce
 lr
-Ut
+Fn
 cB
 dI
 dI
@@ -37755,8 +37713,8 @@ dI
 dI
 dI
 cB
-XT
-Ut
+lr
+Fn
 Hg
 Tf
 lr
@@ -38063,7 +38021,7 @@ lr
 Ii
 oD
 NY
-aN
+ro
 ro
 pA
 sS
