@@ -2105,4 +2105,15 @@
 	icon_state = "chosen_f"
 	item_state = "chosen"
 
+/obj/item/clothing/under/f13/sequin_dress
+	name = "sequin dress"
+	desc = "A dress that sparkles. How fancy."
+	icon_state = "sequin_dress"
+	item_state = "sequin_dress"
+
+/obj/item/clothing/under/f13/collar_dress
+	name = "collar dress"
+	desc = "A conservative garment with an aged appearance."
+	icon_state = "collar_dress"
+	item_state = "collar_dress"
 

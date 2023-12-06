@@ -371,24 +371,47 @@
 	/datum/outfit/loadout/mercenary,
 	)
 
-/datum/outfit/job/citizens/f13tourist/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	uniform = pick(
-		/obj/item/clothing/under/f13/caravan,
-		/obj/item/clothing/under/f13/caravaneer,
-		/obj/item/clothing/under/f13/brahmin,
-		/obj/item/clothing/under/f13/merchant,
-		/obj/item/clothing/under/f13/spring,
-		/obj/item/clothing/under/f13/relaxedwear,
-		/obj/item/clothing/under/f13/rustic,
-		/obj/item/clothing/under/f13/sleazeball,
-		/obj/item/clothing/under/f13/shiny,
-		/obj/item/clothing/under/f13/hawaiian/red)
+/datum/outfit/job/citizens/f13tourist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == FEMALE)
+		uniform = pick(
+			/obj/item/clothing/under/suit/modeusformalwear,
+			/obj/item/clothing/under/f13/bluedress,
+			/obj/item/clothing/under/f13/greendress,
+			/obj/item/clothing/under/f13/housewifedress50s,
+			/obj/item/clothing/under/f13/picnicdress50s,
+			/obj/item/clothing/under/f13/pinkdress,
+			/obj/item/clothing/under/f13/sequin_dress,
+			/obj/item/clothing/under/f13/collar_dress,
+			/obj/item/clothing/under/stripeddress,
+			/obj/item/clothing/under/sundress,
+			/obj/item/clothing/under/dress/blacktango)
 
-	shoes = pick(
-		/obj/item/clothing/shoes/f13/explorer,
-		/obj/item/clothing/shoes/f13/brownie,
-		/obj/item/clothing/shoes/sandal)
+		shoes = pick(
+			/obj/item/clothing/shoes/f13/highheels,
+			/obj/item/clothing/shoes/f13/brownie,
+			/obj/item/clothing/shoes/sandal,
+			/obj/item/clothing/shoes/laceup)
+
+	if(H.gender == MALE)
+		uniform = pick(
+			/obj/item/clothing/under/f13/caravan,
+			/obj/item/clothing/under/f13/caravaneer,
+			/obj/item/clothing/under/f13/brahmin,
+			/obj/item/clothing/under/f13/merchant,
+			/obj/item/clothing/under/f13/spring,
+			/obj/item/clothing/under/f13/relaxedwear,
+			/obj/item/clothing/under/f13/rustic,
+			/obj/item/clothing/under/f13/sleazeball,
+			/obj/item/clothing/under/f13/shiny,
+			/obj/item/clothing/under/f13/hawaiian/red)
+
+		shoes = pick(
+			/obj/item/clothing/shoes/f13/explorer,
+			/obj/item/clothing/shoes/f13/brownie,
+			/obj/item/clothing/shoes/sandal)
 
 /datum/outfit/job/citizens/f13tourist
 	name = "Tourist"

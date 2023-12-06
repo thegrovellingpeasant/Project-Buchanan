@@ -377,7 +377,7 @@
 
 
 /datum/outfit/job/bishops/f13racketeer
-	name = "Comedian"
+	name = "Racketeer"
 	jobtype = /datum/job/bishops/f13racketeer
 
 	uniform	= /obj/item/clothing/under/f13/sleazeball
