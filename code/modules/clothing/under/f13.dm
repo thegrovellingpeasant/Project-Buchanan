@@ -2110,10 +2110,15 @@
 	desc = "A dress that sparkles. How fancy."
 	icon_state = "sequin_dress"
 	item_state = "sequin_dress"
+	fitted = NO_FEMALE_UNIFORM
+	can_adjust = FALSE
 
 /obj/item/clothing/under/f13/collar_dress
 	name = "collar dress"
 	desc = "A conservative garment with an aged appearance."
 	icon_state = "collar_dress"
 	item_state = "collar_dress"
+	fitted = NO_FEMALE_UNIFORM
+	can_adjust = FALSE
+
 
