@@ -311,6 +311,50 @@
 			</body>
 			</html>"}
 
+/obj/item/book/manual/ncrcode
+	name = "New California Republic Code"
+	icon_state ="bookSpaceLaw"
+	author = "Temp"
+	title = "NCR Code"
+	dat = {"<html>
+			<body>
+<p><span style="font-size: 24px;">I. MINOR OFFENSES</span></p>
+<p>MINOR OFFENSES ARE ACTIONS THAT DISRUPT THE PEACE AND ORDER OF SOCIETY BUT ARE CONSIDERED LESS SEVERE.</p>
+<p><br></p>
+<p><strong>Vandalism</strong>: Willful destruction or defacement of public or private property without causing significant harm or danger.</p>
+<p><strong>Trespassing</strong>: Unauthorized entry onto private property without causing harm or posing a significant threat.</p>
+<p><strong>Indecent Exposure</strong>: Displaying one&apos;s body in public, causing offense but without physical harm.</p>
+<p><strong>Resisting Arrest</strong>: Non-violently resisting or evading lawful arrest.</p>
+<p><strong>Tax Evasion</strong>: Willfully evading taxes owed to the Republic without significant harm or fraud.</p>
+<p><strong>Discrimination</strong>: Discrimination on those based on mutation, sex, or religion, resulting in minor harm or inconvenience.</p>
+<p><br></p>
+<p><span style="font-size: 24px;">II. MAJOR OFFENSES</span></p>
+<p>MAJOR OFFENSES ARE ACTIONS THAT CAUSE SIGNIFICANT HARM OR DANGER TO INDIVIDUALS OR SOCIETY.</p>
+<p><br></p>
+<p><strong>Assault</strong>: Physically harming another person, causing injury or substantial pain.</p>
+<p><strong>Armed Assault</strong>: Committing assault with a weapon or any object that poses a significant threat to life or well-being.</p>
+<p><strong>Attempted Murder</strong>: Intentionally attempting to kill another person but failing to do so.</p>
+<p><strong>Manslaughter</strong>: Unintentionally causing the death of another person due to recklessness or negligence.</p>
+<p><strong>Theft</strong>: Unauthorized taking of another&apos;s property, causing substantial financial loss or harm.</p>
+<p><strong>Chemical Possession</strong>: Unauthorized possession of controlled substances without intent to distribute.</p>
+<p><strong>Voter Fraud</strong>: Manipulating or attempting to manipulate the electoral process, undermining the integrity of the Republic&apos;s democracy.</p>
+<p><strong>Breaking &amp; Entering:</strong> Illegally entering a structure with the intent to commit a crime, causing substantial harm or danger.</p>
+<p><strong>Prison Escape</strong>: Aiding or participating in the escape of incarcerated individuals, undermining the justice system.</p>
+<p><strong>Chemical Trafficking</strong>: Illegally manufacturing, distributing, or trafficking controlled substances, posing a significant threat to public health and safety.</p>
+<p><strong>Rioting</strong>: Participating in a violent disturbance of the peace, causing significant harm to individuals and property.</p>
+<p><strong>Inciting a Riot</strong>: Encouraging others to engage in rioting, causing significant harm to individuals and property.</p>
+<p><strong>Trespassing on Government Property</strong>: Unauthorized entry onto government property with the intent to disrupt its operations or security.</p>
+<p><span style="font-size: 24px;">III. CAPITAL OFFENSES</span></p>
+<p>CAPITAL OFFENSES ARE ACTIONS THAT POSE A GRAVE THREAT TO LIFE, LIBERTY, OR THE STABILITY OF THE REPUBLIC.</p>
+<p><br></p>
+<p><strong>Murder</strong>: Intentionally causing the death of an individual with malice aforethought.</p>
+<p><strong>Membership in a Terrorist Organization</strong>: Joining or actively supporting organizations that threaten the security and well-being of the Republic.</p>
+<p><strong>Slavery</strong>: Engaging in human trafficking or keeping individuals in bondage, depriving them of freedom and basic rights.</p>
+<p><strong>Insurrection</strong>: Engaging in acts of armed rebellion against the Republic, seeking to overthrow the government.</p>
+<p><strong>Embezzlement</strong>: Misappropriating government funds entrusted to one&apos;s care for personal gain.</p>
+			</body>
+			</html>"}
+
 // Wiki books that are linked to the configured wiki link.
 
 // A book that links to the wiki
