@@ -12179,7 +12179,7 @@
 "gWD" = (
 /turf/open/floor/plating/f13/outside/road{
 	dir = 4;
-	icon_state = "reno_road"
+	icon_state = "reno_road_2"
 	},
 /area/f13/reno_streets)
 "gWO" = (
@@ -26505,6 +26505,12 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/top,
 /area/f13/reno_streets)
+"oRq" = (
+/turf/open/floor/plating/f13/outside/road{
+	dir = 4;
+	icon_state = "reno_road4"
+	},
+/area/f13/reno_streets)
 "oRK" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
@@ -35039,7 +35045,7 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/plating/f13/outside/road{
 	dir = 4;
-	icon_state = "reno_road"
+	icon_state = "reno_road4"
 	},
 /area/f13/reno_streets)
 "tNQ" = (
@@ -40953,6 +40959,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_building)
+"xhf" = (
+/turf/open/floor/plating/f13/outside/road{
+	dir = 4;
+	icon_state = "reno_road4"
+	},
+/area/f13/reno_wasteland)
 "xhq" = (
 /obj/structure/nest/mob/ghoulmelee{
 	dir = 1;
@@ -41518,6 +41530,12 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
+"xwL" = (
+/turf/open/floor/plating/f13/outside/road{
+	dir = 4;
+	icon_state = "reno_road_2"
+	},
+/area/f13/reno_wasteland)
 "xwS" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/sidewalk/left,
@@ -56184,10 +56202,10 @@ wnC
 wnC
 wnC
 wnC
-wnC
-wnC
-wnC
-wnC
+xwL
+xwL
+xwL
+xwL
 gWD
 gWD
 gWD
@@ -56336,32 +56354,32 @@ wnC
 wnC
 wnC
 wnC
-wnC
-wnC
-wnC
-wnC
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
+xhf
+xhf
+xhf
+xhf
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
 tNP
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
-gWD
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
+oRq
 hrq
 irM
 cVY
@@ -56488,10 +56506,10 @@ wnC
 wnC
 wnC
 wnC
-wnC
-wnC
-wnC
-wnC
+xwL
+xwL
+xwL
+xwL
 gWD
 gWD
 gWD

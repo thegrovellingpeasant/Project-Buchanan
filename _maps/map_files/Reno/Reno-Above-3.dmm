@@ -2909,6 +2909,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_wasteland)
+"km" = (
+/obj/machinery/camera{
+	network = list("film");
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/reno_wasteland)
 "kn" = (
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/lootdrop/f13/ncr_c_ration,
@@ -6712,7 +6719,7 @@
 "xU" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/security/wooden_tv{
-	network = list("thunderdome");
+	network = list("film");
 	icon = 'icons/fallout/objects/decorations.dmi';
 	name = "television";
 	icon_screen = null
@@ -7186,7 +7193,7 @@
 	pixel_x = 16
 	},
 /obj/machinery/computer/security/wooden_tv{
-	network = list("thunderdome");
+	network = list("rpd");
 	icon = 'icons/fallout/objects/decorations.dmi';
 	name = "television";
 	icon_screen = null
@@ -13570,6 +13577,12 @@
 /obj/machinery/telecomms/server/presets/command,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"Wc" = (
+/obj/machinery/camera{
+	network = list("rpd")
+	},
+/turf/open/floor/carpet/brown,
+/area/f13/reno_wasteland)
 "Wd" = (
 /obj/structure/table/snooker{
 	dir = 1
@@ -30692,9 +30705,9 @@ mH
 oC
 TL
 cb
-gf
+km
 Zb
-XW
+Wc
 Ks
 XW
 XW

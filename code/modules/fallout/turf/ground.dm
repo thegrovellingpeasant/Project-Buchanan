@@ -417,7 +417,7 @@
 	icon_state = "evaporationpond1"
 	dir = NORTHWEST
 
-/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft 
+/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft
 	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "evaporationpond3"
 	dir = WEST
@@ -965,7 +965,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/right/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
-	
+
 /turf/open/indestructible/ground/outside/sidewalk/top/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
@@ -1456,7 +1456,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southwest
 	dir = SOUTHWEST
@@ -1483,7 +1483,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southwest
 	dir = SOUTHWEST
@@ -1510,7 +1510,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southwest
 	dir = SOUTHWEST
@@ -1537,7 +1537,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southwest
 	dir = SOUTHWEST
@@ -1565,7 +1565,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southwest
 	dir = SOUTHWEST
@@ -1593,7 +1593,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southwest
 	dir = SOUTHWEST
@@ -1621,7 +1621,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southwest
 	dir = SOUTHWEST
@@ -1648,7 +1648,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southwest
 	dir = SOUTHWEST
@@ -1675,7 +1675,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southwest
 	dir = SOUTHWEST
@@ -1702,7 +1702,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southwest
 	dir = SOUTHWEST
@@ -1729,7 +1729,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southwest
 	dir = SOUTHWEST
@@ -2036,3 +2036,20 @@
 /turf/open/indestructible/ground/outside/lifelessdesert/gravdag/four
 	name = "desert"
 	dir = WEST
+
+
+/turf/open/indestructible/ground/outside/reno_road
+	name = "\proper road"
+	icon_state = "road"
+	icon = 'icons/fallout/turfs/reno_road.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+//	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/reno_sidewalk
+	name = "\proper sidewalk"
+	icon_state = "sidewalk"
+	icon = 'icons/fallout/turfs/reno_sidewalk.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+
