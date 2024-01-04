@@ -1489,6 +1489,13 @@
 	icon_state = "horizontaltopbordertopleft"
 	},
 /area/f13/reno_streets)
+"aTB" = (
+/obj/machinery/mineral/stacking_machine/laborstacker{
+	input_dir = 2;
+	output_dir = 1
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_building)
 "aTG" = (
 /obj/structure/closet,
 /obj/item/clothing/mask/luchador/rudos,
@@ -10723,6 +10730,10 @@
 /obj/structure/chair/sofa/right,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
+"geF" = (
+/obj/item/card/id/captains_spare,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_building)
 "geT" = (
 /obj/structure/stacklifter,
 /turf/open/indestructible/ground/outside/desert,
@@ -12715,6 +12726,10 @@
 /obj/structure/flora/junglebush/c,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_wasteland)
+"hmF" = (
+/obj/item/storage/box/prisoner,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_building)
 "hmX" = (
 /obj/structure/chair/pew{
 	dir = 4
@@ -21047,6 +21062,15 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_building)
+"lLk" = (
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25;
+	dir = 1
+	},
+/obj/machinery/computer/prisoner/gulag_teleporter_computer,
+/turf/open/floor/wood/f13/oak,
+/area/f13/reno_building)
 "lLr" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
@@ -26521,6 +26545,10 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/indestructible/ground/outside/road/hor,
 /area/f13/reno_streets)
+"oSo" = (
+/obj/machinery/ore_silo,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_building)
 "oSp" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -35229,6 +35257,18 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/water,
 /area/f13/reno_streets)
+"tTr" = (
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25;
+	dir = 1
+	},
+/obj/machinery/mineral/labor_claim_console{
+	machinedir = 1;
+	pixel_x = 30
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/reno_building)
 "tTt" = (
 /obj/structure/closet/crate/silvercrate,
 /turf/open/indestructible/ground/outside/dirt,
@@ -37516,6 +37556,14 @@
 "vno" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/mineral/concrete,
+/area/f13/reno_building)
+"vnx" = (
+/obj/machinery/mineral/stacking_unit_console{
+	machinedir = 2;
+	pixel_x = 30;
+	pixel_y = 30
+	},
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_building)
 "vnz" = (
 /obj/structure/chair/bench{
@@ -40257,6 +40305,10 @@
 	name = "metal plating"
 	},
 /area/f13/reno_building)
+"wKC" = (
+/obj/machinery/mineral/ore_redemption,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_building)
 "wKS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/nest/mob/ghoul{
@@ -42249,6 +42301,15 @@
 /obj/item/kirbyplants/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
+/area/f13/reno_building)
+"xWG" = (
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25;
+	dir = 1
+	},
+/obj/machinery/gulag_teleporter,
+/turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "xWL" = (
 /obj/structure/table,
@@ -57277,7 +57338,7 @@ mcp
 oxG
 mcp
 lnL
-taG
+lLk
 dTg
 dTg
 oQf
@@ -57429,7 +57490,7 @@ mcp
 oxG
 mcp
 lnL
-taG
+xWG
 qNQ
 qNQ
 kpC
@@ -57581,8 +57642,8 @@ mqI
 axj
 axj
 axj
-axj
-axj
+hmF
+geF
 axj
 aiR
 miv
@@ -57731,7 +57792,7 @@ kpC
 spf
 xSH
 axj
-axj
+oSo
 axj
 axj
 axj
@@ -57883,11 +57944,11 @@ kpC
 odm
 sxX
 axj
+wKC
 axj
 axj
-axj
-axj
-axj
+vnx
+aTB
 aiR
 miv
 miv
@@ -58341,7 +58402,7 @@ iSv
 oxG
 oxG
 oxG
-taG
+tTr
 wEu
 qNQ
 oQf
