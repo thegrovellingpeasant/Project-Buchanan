@@ -45,7 +45,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	neck = /obj/item/storage/belt/holster/legholster
+	neck = /obj/item/clothing/neck/mayoral_sash
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
 	suit_store = null
