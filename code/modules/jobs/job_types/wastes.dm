@@ -34,7 +34,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	ears = null
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onezero //placeholder
+	l_pocket = /obj/item/storage/bag/money/small/meager
 	id = null
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(

@@ -131,77 +131,36 @@
 //Reno//
 ////////
 
-/obj/item/storage/bag/money/small/reno/threezerozero/PopulateContents()
-	// ~300 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
-	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
+//HUGE 560ish
+/obj/item/storage/bag/money/small/huge/PopulateContents()
+	new /obj/item/stack/f13Cash/random/ncr/high(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
 
-/obj/item/storage/bag/money/small/reno/onefivezero/PopulateContents()
-	// ~150 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/onefivezero(src)
+//LARGE 305ish
+/obj/item/storage/bag/money/small/large/PopulateContents()
+	new /obj/item/stack/f13Cash/random/ncr/high(src)
+	new /obj/item/stack/f13Cash/random/low(src)
+	new /obj/item/stack/f13Cash/random/low(src)
 
-/obj/item/storage/bag/money/small/reno/onezerozero/PopulateContents()
-	// ~100 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/onezerozero(src)
+//BIG 180ish
+/obj/item/storage/bag/money/small/big/PopulateContents()
+	new /obj/item/stack/f13Cash/random/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
+	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
-/obj/item/storage/bag/money/small/reno/sevenzero/PopulateContents()
-	// ~70 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/sevenzero(src)
+//MEDIUM 145ish
+/obj/item/storage/bag/money/small/medium/PopulateContents()
+	new /obj/item/stack/f13Cash/random/low(src)
+	new /obj/item/stack/f13Cash/random/ncr/med(src)
 
-/obj/item/storage/bag/money/small/reno/fivezero/PopulateContents()
-	// ~50 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/fivezero(src)
+//FEW 75ish
+/obj/item/storage/bag/money/small/few/PopulateContents()
+	new /obj/item/stack/f13Cash/random/ncr/low(src)
+	new /obj/item/stack/f13Cash/random/low(src)
 
-/obj/item/storage/bag/money/small/reno/fourzero/PopulateContents()
-	// ~40 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/fourzero(src)
+//MEAGER 25ish
+/obj/item/storage/bag/money/small/meager/PopulateContents()
+	new /obj/item/stack/f13Cash/random/ncr/low(src)
 
-/obj/item/storage/bag/money/small/reno/threezero/PopulateContents()
-	// ~30 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/threezero(src)
 
-/obj/item/storage/bag/money/small/reno/onezero/PopulateContents()
-	// ~10 worth of assorted money
-	new /obj/item/stack/f13Cash/ncr/onezero(src)
-
-//Reno Cap Placeholders
-
-/obj/item/storage/bag/money/small/reno/cap/sixzerozero/PopulateContents()
-	// ~600 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/threezerozero/PopulateContents()
-	// ~300 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/onefivezero/PopulateContents()
-	// ~150 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/onefivezero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/onezerozero/PopulateContents()
-	// ~100 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/onezerozero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/sevenzero/PopulateContents()
-	// ~70 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/sevenzero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/fivezero/PopulateContents()
-	// ~50 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/fivezero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/fourzero/PopulateContents()
-	// ~40 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/fourzero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/threezero/PopulateContents()
-	// ~30 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/threezero(src)
-
-/obj/item/storage/bag/money/small/reno/cap/onezero/PopulateContents()
-	// ~10 worth of assorted money
-	new /obj/item/stack/f13Cash/caps/onezero(src)

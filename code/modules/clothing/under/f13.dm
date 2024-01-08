@@ -1981,6 +1981,24 @@
 	icon_state = "bishop_soldier"
 	item_state = "bishop_soldier"
 
+/obj/item/clothing/under/f13/bishops/soldier2
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_2"
+	item_state = "bishop_soldier_2"
+
+/obj/item/clothing/under/f13/bishops/soldier3
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_3"
+	item_state = "bishop_soldier_3"
+
+/obj/item/clothing/under/f13/bishops/soldier4
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_4"
+	item_state = "bishop_soldier_4"
+
 /obj/item/clothing/under/f13/bishops/soldier/alt
 	name = "bishop family suit"
 	desc = "A light blue suit. Nice."
@@ -2104,5 +2122,21 @@
 	desc = "A leather outfit of a style commonly seen worn by tribals."
 	icon_state = "chosen_f"
 	item_state = "chosen"
+
+/obj/item/clothing/under/f13/sequin_dress
+	name = "sequin dress"
+	desc = "A dress that sparkles. How fancy."
+	icon_state = "sequin_dress"
+	item_state = "sequin_dress"
+	fitted = NO_FEMALE_UNIFORM
+	can_adjust = FALSE
+
+/obj/item/clothing/under/f13/collar_dress
+	name = "collar dress"
+	desc = "A conservative garment with an aged appearance."
+	icon_state = "collar_dress"
+	item_state = "collar_dress"
+	fitted = NO_FEMALE_UNIFORM
+	can_adjust = FALSE
 
 

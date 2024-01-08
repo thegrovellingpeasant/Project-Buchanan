@@ -269,17 +269,23 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_SALVATORES = 1)
 
-/obj/item/encryptionkey/headset_bishops
-	name = "Bishops radio encryption key"
-	desc = "An encryption key for a radio headset. To access the Bishop channel, use :b."
-	icon_state = "cypherkey"
-	channels = list(RADIO_CHANNEL_BISHOPS = 1)
-
 /obj/item/encryptionkey/headset_mordinos
 	name = "Mordinos radio encryption key"
 	desc = "An encryption key for a radio headset. To access the Mordino channel, use :m."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_MORDINOS = 1)
+
+/obj/item/encryptionkey/headset_hotel
+	name = "Hotel radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Hotel channel, use :h."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_HOTEL = 1)
+
+/obj/item/encryptionkey/headset_bishops
+	name = "Bishops radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Bishop channel, use :b."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_BISHOPS = 1)
 
 /obj/item/encryptionkey/headset_wrights
 	name = "Wrights radio encryption key"
@@ -287,11 +293,30 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_WRIGHTS = 1)
 
-/obj/item/encryptionkey/headset_hotel
-	name = "Hotel radio encryption key"
-	desc = "An encryption key for a radio headset. To access the Hotel channel, use :h."
+/obj/item/encryptionkey/headset_vangraffs
+	name = "Van Graffs radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Van Graff channel, use :w."
 	icon_state = "cypherkey"
-	channels = list(RADIO_CHANNEL_HOTEL = 1)
+	channels = list(RADIO_CHANNEL_VANGRAFFS = 1)
+
+/obj/item/encryptionkey/headset_nrpd
+	name = "NRPD radio encryption key"
+	desc = "An encryption key for a radio headset. To access the NRPD channel, use :w."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_NRPD = 1)
+
+/obj/item/encryptionkey/headset_ncrcf
+	name = "NCRCF radio encryption key"
+	desc = "An encryption key for a radio headset. To access the NCRCF channel, use :w."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_NCRCF = 1)
+
+/obj/item/encryptionkey/headset_government
+	name = "Government radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Government channel, use :w."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_GOVERNMENT = 1)
+
 
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_AI_PRIVATE = 1)

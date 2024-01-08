@@ -11,10 +11,16 @@
 	enforces = "The Wrights are the only Reno family that are a literal family, so it is expected of all of its members to have blood ties to the family. Due to this, extreme loyalty and obedience to a strong chain of command are also expected of its members. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list ("Focus on the mass production of cheap guns.", "Focus on the mass production of alcohol to provide to the other families and the people of New Reno.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
 
+
+
+/datum/outfit/job/wrights
+	name = "wrightsdatums"
+	jobtype = /datum/job/wrights
+	ears = /obj/item/radio/headset/headset_wrights
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
-	title = "Wrights Elder"
+	title = "Wright Elder"
 	flag = F13WRIGHTSELDER
 	department_flag = WRIGHTS
 	total_positions = 1
@@ -49,7 +55,7 @@
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
-		/obj/item/storage/bag/money/small/ncrenlisted = 1,
+		/obj/item/storage/bag/money/small/large = 1,
 		)
 
 /datum/outfit/loadout/feelluckypunk
@@ -130,8 +136,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/lighter/greyscale = 1,
-		/obj/item/clothing/mask/cigarette/cigar = 1,
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/outfit/job/wrights/f13enforcer/pre_equip(mob/living/carbon/human/H)
@@ -189,8 +194,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/lighter/greyscale = 1,
-		/obj/item/clothing/mask/cigarette/cigar = 1,
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 
@@ -252,10 +256,6 @@
 
 /*--------------------------------------------------------------*/
 
-/////////
-///WIP///
-/////////
-
 /datum/job/wrights/f13manager
 	title = "Shop Manager"
 	flag = F13WRIGHTSMANAGER
@@ -288,6 +288,7 @@
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/clipboard = 1,
 		/obj/item/pen = 1,
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/outfit/job/wrights/f13manager/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -340,8 +341,7 @@
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/lighter/greyscale = 1,
-		/obj/item/clothing/mask/cigarette/cigar = 1,
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/outfit/job/wrights/f13employee/pre_equip(mob/living/carbon/human/H)
@@ -388,7 +388,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1,)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -434,7 +434,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1)
+		/obj/item/storage/bag/money/small/meager = 1)
 
 /datum/outfit/job/wrights/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

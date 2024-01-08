@@ -54,7 +54,7 @@
 	satchel = /obj/item/storage/backpack/satchel/leather
 	//r_hand =
 	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onefivezero
+	l_pocket = null
 	r_pocket = /obj/item/stock_parts/cell/ammo/ec
 	mask = /obj/item/clothing/mask/cigarette/pipe
 	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
@@ -108,7 +108,7 @@
 	satchel = /obj/item/storage/backpack/satchel/leather
 	//r_hand =
 	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/onezerozero
+	l_pocket = null
 	r_pocket = /obj/item/stock_parts/cell/ammo/ec
 	mask = /obj/item/clothing/mask/cigarette/cigar
 	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
@@ -162,7 +162,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	//r_hand =
 	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/sevenzero
+	l_pocket = null
 	r_pocket = null
 	mask = /obj/item/clothing/mask/cigarette/cigar
 	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
@@ -216,7 +216,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	//r_hand =
 	//l_hand =
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
+	l_pocket = null
 	r_pocket = /obj/item/stock_parts/cell/ammo/ec
 	//mask = /obj/item/clothing/mask/cigarette/cigar
 	head = /obj/item/clothing/head/helmet/f13/salvatores/fedora
@@ -280,7 +280,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	r_hand = /obj/item/book/manual/chef_recipes
 	l_hand = /obj/item/storage/box/ingredients/italian
-	l_pocket = /obj/item/storage/bag/money/small/reno/cap/fivezero
+	l_pocket = null
 	r_pocket = /obj/item/stock_parts/cell/ammo/ec
 	mask = /obj/item/clothing/mask/fakemoustache/italian
 	head = /obj/item/clothing/head/chefhat
@@ -319,8 +319,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
-		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1)
+		/obj/item/pda = 1)
 
 /datum/outfit/job/salvatores/f13roboticist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

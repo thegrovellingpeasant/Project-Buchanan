@@ -339,3 +339,10 @@ obj/item/clothing/neck/neckerchief
 	item_color = "eldritch_tie"
 	item_state = "eldritch_tie"
 	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/clothing/neck/mayoral_sash
+	name = "Mayoral Sash"
+	desc = "An important symbol which represents the position of mayor in New Reno."
+	icon_state = "mayoral_sash"
+	item_color = "mayoral_sash"
+	item_state = "mayoral_sash"

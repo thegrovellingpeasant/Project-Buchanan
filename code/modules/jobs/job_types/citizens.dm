@@ -28,6 +28,7 @@
 	name = "Judge"
 	jobtype = /datum/job/citizens/f13judge
 	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
 	uniform	= /obj/item/clothing/under/suit/lawyerblackalt
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/judgerobe
@@ -37,6 +38,9 @@
 		/obj/item/megaphone = 1,
 		/obj/item/pen/fountain = 1,
 		/obj/item/pen/fourcolor = 1,
+		/obj/item/storage/bag/money/small/big = 1,
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2
 		)
 
 /datum/job/citizens/f13rpdpolicechief
@@ -62,6 +66,7 @@
 	name = "Police Chief"
 	jobtype = /datum/job/citizens/f13rpdpolicechief
 	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
@@ -78,6 +83,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/job/citizens/f13rpdofficer
@@ -102,6 +108,7 @@
 	name = "Police Officer"
 	jobtype = /datum/job/citizens/f13rpdofficer
 	id = /obj/item/card/id/dogtag/deputy
+	ears = /obj/item/radio/headset/headset_nrpd
 	uniform	= /obj/item/clothing/under/f13/ncr/police
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
@@ -118,6 +125,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/job/citizens/f13ncrcfwarden
@@ -147,7 +155,7 @@
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	ears = /obj/item/radio/headset/headset_ncr
+	ears = /obj/item/radio/headset/headset_government_ncrcf
 	head = /obj/item/clothing/head/beret/ncr/military_police
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
@@ -162,6 +170,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/medium = 1
 		)
 
 /datum/job/citizens/f13ncrcfguard
@@ -189,7 +198,7 @@
 	uniform	= /obj/item/clothing/under/f13/ncr
 	belt = /obj/item/storage/belt/military/assault/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	ears = /obj/item/radio/headset/headset_ncr
+	ears = /obj/item/radio/headset/headset_ncrcf
 	head = /obj/item/clothing/head/f13/ncr/steelpot_mp
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
@@ -204,6 +213,7 @@
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/meager = 1
 		)
 
 /datum/job/citizens/f13ncrcfphysician
@@ -236,7 +246,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1)
+		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/job/citizens/f13ncrcfphysician/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -274,6 +284,24 @@
 		/obj/item/clothing/shoes/sneakers/blue,
 		/obj/item/clothing/shoes/f13/brownie)
 
+	r_hand = pick(
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set1,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set2,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set3,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set4,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set5
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set6,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set7,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set8,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set9,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set10,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set11,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set12,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set13,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set14,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set15,
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set16)
+
 /datum/outfit/job/citizens/f13convict
 	name = "Convict"
 	jobtype = /datum/job/citizens/f13convict
@@ -283,7 +311,7 @@
 	ears = null
 	id = /obj/item/card/id/prisoner
 	uniform = /obj/item/clothing/under/f13/ncrcf
-	suit = /obj/item/clothing/under/f13/ncrcf
+	suit = /obj/item/clothing/suit/armor/f13/ncrcfjacket
 
 /datum/outfit/loadout/inmate
 	name = "Inmate"
@@ -340,26 +368,50 @@
 	/datum/outfit/loadout/lawyer,
 	/datum/outfit/loadout/detective,
 	/datum/outfit/loadout/hubologist,
+	/datum/outfit/loadout/mercenary,
 	)
 
-/datum/outfit/job/citizens/f13tourist/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	uniform = pick(
-		/obj/item/clothing/under/f13/caravan,
-		/obj/item/clothing/under/f13/caravaneer,
-		/obj/item/clothing/under/f13/brahmin,
-		/obj/item/clothing/under/f13/merchant,
-		/obj/item/clothing/under/f13/spring,
-		/obj/item/clothing/under/f13/relaxedwear,
-		/obj/item/clothing/under/f13/rustic,
-		/obj/item/clothing/under/f13/sleazeball,
-		/obj/item/clothing/under/f13/shiny,
-		/obj/item/clothing/under/f13/hawaiian/red)
+/datum/outfit/job/citizens/f13tourist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == FEMALE)
+		uniform = pick(
+			/obj/item/clothing/under/suit/modeusformalwear,
+			/obj/item/clothing/under/f13/bluedress,
+			/obj/item/clothing/under/f13/greendress,
+			/obj/item/clothing/under/f13/housewifedress50s,
+			/obj/item/clothing/under/f13/picnicdress50s,
+			/obj/item/clothing/under/f13/pinkdress,
+			/obj/item/clothing/under/f13/sequin_dress,
+			/obj/item/clothing/under/f13/collar_dress,
+			/obj/item/clothing/under/stripeddress,
+			/obj/item/clothing/under/sundress,
+			/obj/item/clothing/under/dress/blacktango)
 
-	shoes = pick(
-		/obj/item/clothing/shoes/f13/explorer,
-		/obj/item/clothing/shoes/f13/brownie,
-		/obj/item/clothing/shoes/sandal)
+		shoes = pick(
+			/obj/item/clothing/shoes/f13/highheels,
+			/obj/item/clothing/shoes/f13/brownie,
+			/obj/item/clothing/shoes/sandal,
+			/obj/item/clothing/shoes/laceup)
+
+	if(H.gender == MALE)
+		uniform = pick(
+			/obj/item/clothing/under/f13/caravan,
+			/obj/item/clothing/under/f13/caravaneer,
+			/obj/item/clothing/under/f13/brahmin,
+			/obj/item/clothing/under/f13/merchant,
+			/obj/item/clothing/under/f13/spring,
+			/obj/item/clothing/under/f13/relaxedwear,
+			/obj/item/clothing/under/f13/rustic,
+			/obj/item/clothing/under/f13/sleazeball,
+			/obj/item/clothing/under/f13/shiny,
+			/obj/item/clothing/under/f13/hawaiian/red)
+
+		shoes = pick(
+			/obj/item/clothing/shoes/f13/explorer,
+			/obj/item/clothing/shoes/f13/brownie,
+			/obj/item/clothing/shoes/sandal)
 
 /datum/outfit/job/citizens/f13tourist
 	name = "Tourist"
@@ -379,8 +431,7 @@
 	name = "Tourist"
 	backpack_contents = list(
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/melee/onehanded/club = 1,
-		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 2)
+		/obj/item/storage/bag/money/small/large = 1)
 
 /datum/outfit/loadout/gambler
 	name = "Gambler"
@@ -391,8 +442,7 @@
 	r_hand = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/ammo_box/a357 = 1,
-		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 2)
+		/obj/item/storage/bag/money/small/large = 1)
 
 /datum/outfit/loadout/vaultcitytourist
 	name = "Vault City Tourist"
@@ -402,7 +452,7 @@
 		/obj/item/melee/classic_baton/telescopic = 1,
 		/obj/item/card/id/selfassign = 1,
 		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/small/reno/cap/onezerozero = 2)
+		/obj/item/storage/bag/money/small/big = 1)
 
 /datum/outfit/loadout/vaquero
 	name = "Vaquero"
@@ -416,7 +466,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/a357 = 1,
 		/obj/item/card/id/dogtag/town/ncr = 1,
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1)
+		/obj/item/storage/bag/money/small/meager = 1)
 
 /datum/outfit/loadout/reporter
 	name = "Reporter"
@@ -433,7 +483,7 @@
 		/obj/item/gun/energy/disabler = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/wallframe/newscaster = 1,
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1)
+		/obj/item/storage/bag/money/small/few = 1)
 
 /datum/outfit/loadout/lawyer
 	name = "Lawyer"
@@ -443,7 +493,7 @@
 	backpack_contents = list(
 		/obj/item/clothing/accessory/lawyers_badge = 1,
 		/obj/item/storage/briefcase/lawyer = 1,
-		/obj/item/storage/bag/money/small/reno/cap/threezero = 2)
+		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/loadout/detective
 	name = "Detective"
@@ -464,7 +514,7 @@
 		/obj/item/storage/box/gloves = 1,
 		/obj/item/storage/box/evidence = 1,
 		/obj/item/ammo_box/a357 = 1,
-		/obj/item/storage/bag/money/small/reno/cap/threezero =1)
+		/obj/item/storage/bag/money/small/meager =1)
 
 /datum/outfit/loadout/hubologist
 	name = "Hubologist"
@@ -473,6 +523,131 @@
 	glasses = /obj/item/clothing/glasses/hud/health/f13
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1)
+		/obj/item/storage/bag/money/small/few = 1)
+
+/datum/outfit/loadout/mercenary
+	name = "mercenary"
+	suit = /obj/item/clothing/suit/armor/f13/metalarmor
+	head = /obj/item/clothing/head/helmet/blueshirt
+	backpack_contents = list(
+		/obj/item/gun/ballistic/shotgun/hunting = 1,
+		/obj/item/ammo_box/shotgun/buck = 2)
+
+
+//------- EXTRA -------//
+
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set1/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/pill/patch/jet = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set2/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/toy/cards/deck = 1,
+		/obj/item/storage/box/dice = 1,
+		/obj/item/toy/eightball = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set3/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/lighter/greyscale = 1,
+		/obj/item/storage/fancy/cigarettes/cigpack_bigboss = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set4/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/gun/ballistic/revolver/hobo/knifegun = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set5/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/melee/onehanded/knife/hunting = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set6/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/gun/ballistic/automatic/hobo/zipgun = 1,
+		/obj/item/ammo_box/magazine/zipgun = 2
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set7/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 2
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set8/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/hypospray/medipen/medx = 2
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set9/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/toy/crayon/spraycan = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set10/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/pill/patch/turbo = 2
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set11/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set12/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/storage/box/matches = 1,
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set13/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/circuitboard/machine/chem_dispenser = 1,
+		/obj/item/stock_parts/cell/high = 1,
+		/obj/item/stock_parts/matter_bin = 2,
+		/obj/item/stock_parts/capacitor = 1,
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/stock_parts/cell = 1,
+		/obj/item/stack/sheet/metal/twenty = 1,
+		/obj/item/stack/cable_coil = 1,
+		/obj/item/screwdriver = 1,
+		/obj/item/wrench = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set14/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/storage/bag/money/small/meager = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set15/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/storage/bag/money/small/few = 1
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/contraband/set16/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/storage/bag/money/small/big = 1
+		)
+	generate_items_inside(items_inside, src)
+
+
 
 

@@ -275,7 +275,7 @@ GLOBAL_LIST_INIT(bishops_positions, list(
 	"Bishop Wife",
 	"Bishop Capo",
 	"Bishop Made Man",
-	"Bishop Casino Worker",
+	"Bishop Floorman",
 	"Bishop Racketeer",
 ))
 
