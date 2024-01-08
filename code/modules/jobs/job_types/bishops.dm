@@ -245,11 +245,6 @@
 
 	outfit = /datum/outfit/job/bishops/f13mademan
 
-	loadout_options = list(
-	/datum/outfit/loadout/batterup,
-	/datum/outfit/loadout/buttonman,
-	/datum/outfit/loadout/hitman,
-	)
 /*
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -263,7 +258,7 @@
 	)
 */
 /datum/outfit/job/bishops/f13mademan
-	name = "Bishop Soldier"
+	name = "Bishop Mademan"
 	jobtype = /datum/job/bishops/f13mademan
 
 	uniform	= /obj/item/clothing/under/f13/bishops/soldier
