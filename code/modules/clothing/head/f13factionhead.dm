@@ -1409,11 +1409,29 @@ obj/item/clothing/head/f13/army/beret
 ///////////
 
 /obj/item/clothing/head/helmet/f13/bishops/fedora
-	name = "bishop fedora"
-	desc = "The family fedora of the Bishops."
+	name = "blue fedora"
+	desc = "A fedora with a washed out navy color to it. It has a protective layering in it."
 	icon_state = "bishops_fedora"
 	item_state = "bishops_fedora"
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 20, "bomb" = 10, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora2
+	name = "dark grey fedora"
+	icon_state = "bishops_fedora_2"
+	item_state = "bishops_fedora_2"
+	desc = "A fedora with a dark grey color to it. It has a protective layering in it."
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora3
+	name = "black fedora"
+	icon_state = "bishops_fedora_3"
+	item_state = "bishops_fedora_3"
+	desc = "A black fedora. It has a protective layering in it."
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora4
+	name = "grey fedora"
+	icon_state = "bishops_fedora_4"
+	item_state = "bishops_fedora_4"
+	desc = "A light grey fedora. It has a protective layering in it."
 
 ////////////
 //wrights//

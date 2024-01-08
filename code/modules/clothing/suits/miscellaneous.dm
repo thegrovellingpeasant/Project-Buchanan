@@ -85,7 +85,6 @@
 	desc = "This robe commands authority."
 	icon_state = "judge"
 	item_state = "judge"
-	flags_inv = HIDEJUMPSUIT
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/tailcoat
