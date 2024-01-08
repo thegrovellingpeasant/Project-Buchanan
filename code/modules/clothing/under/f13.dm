@@ -1981,6 +1981,24 @@
 	icon_state = "bishop_soldier"
 	item_state = "bishop_soldier"
 
+/obj/item/clothing/under/f13/bishops/soldier2
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_2"
+	item_state = "bishop_soldier_2"
+
+/obj/item/clothing/under/f13/bishops/soldier3
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_3"
+	item_state = "bishop_soldier_3"
+
+/obj/item/clothing/under/f13/bishops/soldier4
+	name = "bishop family suit"
+	desc = "A light blue suit. Nice."
+	icon_state = "bishop_soldier_4"
+	item_state = "bishop_soldier_4"
+
 /obj/item/clothing/under/f13/bishops/soldier/alt
 	name = "bishop family suit"
 	desc = "A light blue suit. Nice."

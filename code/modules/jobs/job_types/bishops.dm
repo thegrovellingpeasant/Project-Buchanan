@@ -181,7 +181,7 @@
 	name = "Bishop Capo"
 	jobtype = /datum/job/bishops/f13capo
 
-	uniform	= /obj/item/clothing/under/f13/bishops/soldier
+	uniform	= /obj/item/clothing/under/f13/bishops/officer
 	id = /obj/item/card/id/reno/bishops/ring/officer
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
@@ -282,6 +282,9 @@
 	. = ..()
 	uniform = pick(
 		/obj/item/clothing/under/f13/bishops/soldier,
+		/obj/item/clothing/under/f13/bishops/soldier2,
+		/obj/item/clothing/under/f13/bishops/soldier3,
+		/obj/item/clothing/under/f13/bishops/soldier4,
 		/obj/item/clothing/under/f13/bishops/soldier/alt)
 
 /datum/outfit/loadout/batterup
