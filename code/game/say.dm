@@ -33,10 +33,14 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_WND]" = "wndradio",
 	"[FREQ_MONTEGOBAY]" = "montegobayradio",
 	"[FREQ_SALVATORES]" = "salvatoresradio",
-	"[FREQ_BISHOPS]" = "bishopsradio",
 	"[FREQ_MORDINOS]" = "mordinosradio",
+	"[FREQ_HOTEL]" = "hotelradio",
+	"[FREQ_BISHOPS]" = "bishopsradio",
 	"[FREQ_WRIGHTS]" = "wrightsradio",
-	"[FREQ_HOTEL]" = "hotelradio"
+	"[FREQ_VANGRAFFS]" = "vangraffsradio",
+	"[FREQ_NRPD]" = "nrpdradio",
+	"[FREQ_NCRCF]" = "ncrcfradio",
+	"[FREQ_GOVERNMENT]" = "governmentradio"
 	))
 
 /atom/movable/proc/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)

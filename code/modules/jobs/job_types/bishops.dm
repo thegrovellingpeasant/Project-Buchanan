@@ -14,7 +14,7 @@
 /datum/outfit/job/bishops
 	name = "bishopsdatums"
 	jobtype = /datum/job/bishops
-	ears = null
+	ears = /obj/item/radio/headset/headset_bishops
 
 /*--------------------------------------------------------------*/
 
@@ -45,7 +45,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	neck = /obj/item/storage/belt/holster/legholster
+	neck = /obj/item/clothing/neck/mayoral_sash
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
 	suit_store = null
@@ -53,10 +53,10 @@
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
 		/obj/item/clothing/mask/cigarette/cigar/ncr = 1,
 		/obj/item/lighter/gold = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/small/huge = 1
 		)
 
 /datum/outfit/loadout/handcannon
@@ -123,10 +123,10 @@
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/onefivezero = 1,
 		/obj/item/melee/onehanded/club/fryingpan = 1,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
 		/obj/item/suppressor = 1,
+		/obj/item/storage/bag/money/small/huge = 1
 		)
 
 /datum/outfit/job/bishops/f13wife/pre_equip(mob/living/carbon/human/H)
@@ -181,11 +181,10 @@
 	name = "Bishop Capo"
 	jobtype = /datum/job/bishops/f13capo
 
-	uniform	= /obj/item/clothing/under/f13/bishops/soldier
+	uniform	= /obj/item/clothing/under/f13/bishops/officer
 	id = /obj/item/card/id/reno/bishops/ring/officer
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/blue_trench_coat
@@ -194,11 +193,17 @@
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/small/big = 1
 		)
+
+/datum/outfit/job/bishops/f13capo/pre_equip(mob/living/carbon/human/H)
+	. = ..()
+	head = pick(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora2,
+		/obj/item/clothing/head/helmet/f13/bishops/fedora3)
 
 /datum/outfit/loadout/shotgun
 	name = "Heavy Hitter"
@@ -238,13 +243,15 @@
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13soldier
+	outfit = /datum/outfit/job/bishops/f13mademan
 
 	loadout_options = list(
-	/datum/outfit/loadout/batterup,
-	/datum/outfit/loadout/buttonman,
-	/datum/outfit/loadout/hitman,
-	)
+		/datum/outfit/loadout/fedora1,
+		/datum/outfit/loadout/fedora2,
+		/datum/outfit/loadout/fedora3,
+		/datum/outfit/loadout/fedora4
+		)
+
 /*
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -258,54 +265,58 @@
 	)
 */
 /datum/outfit/job/bishops/f13mademan
-	name = "Bishop Soldier"
+	name = "Bishop Mademan"
 	jobtype = /datum/job/bishops/f13mademan
 
 	uniform	= /obj/item/clothing/under/f13/bishops/soldier
 	id = /obj/item/card/id/reno/bishops/ring/soldier
-	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	neck = null
-	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
-	suit_store = null
 	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/reno/cap/sevenzero = 1,
-		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/small/few = 1
 		)
 
-/datum/outfit/job/bishops/f13soldier/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/bishops/f13mademan/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	uniform = pick(
 		/obj/item/clothing/under/f13/bishops/soldier,
+		/obj/item/clothing/under/f13/bishops/soldier2,
+		/obj/item/clothing/under/f13/bishops/soldier3,
+		/obj/item/clothing/under/f13/bishops/soldier4,
 		/obj/item/clothing/under/f13/bishops/soldier/alt)
 
-/datum/outfit/loadout/batterup
-	name = "Batter up"
+	r_hand = pick(
+		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set1,
+		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set2,
+		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set3
+		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set4,
+		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set5)
+
+/datum/outfit/loadout/fedora
+	name = "Blue Fedora"
 	backpack_contents = list(
-		/obj/item/twohanded/baseball = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/clothing/head/helmet/f13/bishops/fedora = 1,
 		)
 
-/datum/outfit/loadout/buttonman
-	name = "Button Man"
+/datum/outfit/loadout/fedora2
+	name = "Dark Grey Fedora"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/varmint = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
-		/obj/item/melee/unarmed/brass
+		/obj/item/clothing/head/helmet/f13/bishops/fedora2 = 1,
 		)
 
-/datum/outfit/loadout/hitman
-	name = "Hitman"
+/datum/outfit/loadout/fedora3
+	name = "Black Fedora"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/rifle/hunting = 1,
-		/obj/item/ammo_box/a308 = 2,
-		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/clothing/head/helmet/f13/bishops/fedora3 = 1,
+		)
+
+/datum/outfit/loadout/fedora4
+	name = "Grey Fedora"
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora4 = 1,
 		)
 
 /datum/outfit/job/bishops/f13soldier/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -319,9 +330,9 @@
 
 /*--------------------------------------------------------------*/
 
-/datum/job/bishops/f13casinoworker
-	title = "Bishop Casino Worker"
-	flag = F13BISHOPCASINOWORKER
+/datum/job/bishops/f13floorman
+	title = "Bishop Floorman"
+	flag = F13BISHOPFLOORMAN
 	department_flag = BISHOPS
 	total_positions = 3
 	spawn_positions = 3
@@ -330,11 +341,11 @@
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
 
-	outfit = /datum/outfit/job/bishops/f13casinoworker
+	outfit = /datum/outfit/job/bishops/f13floorman
 
-/datum/outfit/job/bishops/f13casinoworker
+/datum/outfit/job/bishops/f13floorman
 	name = "Casino Worker"
-	jobtype = /datum/job/bishops/f13casinoworker
+	jobtype = /datum/job/bishops/f13floorman
 
 	uniform	= /obj/item/clothing/under/f13/bishops/casino_worker
 	id = /obj/item/card/id/reno/bishops/papers/worker
@@ -350,7 +361,7 @@
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/card/slotmachine = 1,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		/obj/item/storage/bag/money/small/few = 1,
 		)
 /*--------------------------------------------------------------*/
 
@@ -369,15 +380,13 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/fightpromotor,
-		/datum/outfit/loadout/escort,
 		/datum/outfit/loadout/filmdirector,
 		/datum/outfit/loadout/pusher,
-		/datum/outfit/loadout/pimp,
 		)
 
 
 /datum/outfit/job/bishops/f13racketeer
-	name = "Comedian"
+	name = "Racketeer"
 	jobtype = /datum/job/bishops/f13racketeer
 
 	uniform	= /obj/item/clothing/under/f13/sleazeball
@@ -393,8 +402,7 @@
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
-		/obj/item/storage/bag/money/small/reno/cap/fivezero = 1,
+		/obj/item/storage/bag/money/small/meager = 1,
 		/obj/item/gun/ballistic/revolver/detective = 1,
 		/obj/item/ammo_box/c38 = 1
 		)
@@ -408,17 +416,10 @@
 		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
 		)
 
-/datum/outfit/loadout/escort
-	name = "Escort"
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/fprostitute = 1,
-		/obj/item/clothing/under/f13/mprostitute = 1,
-		/obj/item/picket_sign = 1,
-		)
-
 /datum/outfit/loadout/filmdirector
 	name = "Film Director"
 	uniform = /obj/item/clothing/under/f13/jamrock
+	suit = /obj/item/clothing/suit/f13/jamrock
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
@@ -435,12 +436,37 @@
 		/obj/item/book/granter/trait/chemistry = 1,
 		)
 
-/datum/outfit/loadout/pimp
-	name = "Pimp"
-	uniform = /obj/item/clothing/under/suit_jacket/tan
-	shoes = /obj/item/clothing/shoes/laceup
-	glasses = /obj/item/clothing/glasses/orange
-	backpack_contents = list(
-		/obj/item/cane = 1,
-		/obj/item/restraints/handcuffs/fake/kinky = 1,
-		)
+
+
+/////////////
+//loadouts///
+/////////////
+
+//made men
+
+/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set1/PopulateContents() //9mm, poolcue
+    new /obj/item/gun/ballistic/automatic/pistol/ninemil(src)
+    new /obj/item/ammo_box/magazine/m9mm(src)
+    new /obj/item/ammo_box/magazine/m9mm(src)
+    new /obj/item/twohanded/baseball/poolcue(src)
+
+/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set2/PopulateContents() //357 revolver
+    new /obj/item/gun/ballistic/revolver/colt357(src)
+    new /obj/item/ammo_box/a357(src)
+    new /obj/item/ammo_box/a357(src)
+
+/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set3/PopulateContents() //22 pistol, golfclub
+    new /obj/item/gun/ballistic/automatic/pistol/pistol22(src)
+    new /obj/item/ammo_box/magazine/m22(src)
+    new /obj/item/ammo_box/magazine/m22(src)
+    new /obj/item/twohanded/baseball/golfclub(src)
+
+/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set4/PopulateContents() //sig
+    new /obj/item/gun/ballistic/automatic/pistol/sig(src)
+    new /obj/item/ammo_box/magazine/m9mm(src)
+    new /obj/item/ammo_box/magazine/m9mm(src)
+
+/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set5/PopulateContents() //caravan shotgun, switchblade
+    new /obj/item/gun/ballistic/revolver/caravan_shotgun (src)
+    new /obj/item/ammo_box/shotgun/improvised(src)
+    new /obj/item/melee/onehanded/knife/switchblade(src)

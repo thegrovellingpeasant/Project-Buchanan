@@ -949,8 +949,6 @@
 	icon_state = "detectivealt"
 	item_state = "fedora"
 	flags_inv = HIDEHAIR
-	armor = list("melee" = 15, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 10, "fire" = 15, "acid" = 5)
-
 
 ////////////////////////
 // GREAT KHAN HELMETS //
@@ -963,7 +961,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
 	icon_state = "khan_helmet"
 	item_state = "khan_helmet"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 20,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 30)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 20,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 30)
 	flags_inv = null
 	flags_cover = null
 	strip_delay = 20
@@ -994,6 +992,7 @@
 	dynamic_hair_suffix = null
 	dynamic_fhair_suffix = null
 	var/helmettoggled = FALSE
+	armor = null
 
 /obj/item/clothing/head/helmet/f13/khan/bandana/Initialize()
 	. = ..()
@@ -1034,7 +1033,7 @@
 	desc = " A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."
 	icon_state = "khan_fullhelmet"
 	item_state = "khan_fullhelmet"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 40)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
@@ -1410,11 +1409,29 @@ obj/item/clothing/head/f13/army/beret
 ///////////
 
 /obj/item/clothing/head/helmet/f13/bishops/fedora
-	name = "bishop fedora"
-	desc = "The family fedora of the Bishops."
+	name = "blue fedora"
+	desc = "A fedora with a washed out navy color to it. It has a protective layering in it."
 	icon_state = "bishops_fedora"
 	item_state = "bishops_fedora"
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 15, "energy" = 20, "bomb" = 10, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 20)
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora2
+	name = "dark grey fedora"
+	icon_state = "bishops_fedora_2"
+	item_state = "bishops_fedora_2"
+	desc = "A fedora with a dark grey color to it. It has a protective layering in it."
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora3
+	name = "black fedora"
+	icon_state = "bishops_fedora_3"
+	item_state = "bishops_fedora_3"
+	desc = "A black fedora. It has a protective layering in it."
+
+/obj/item/clothing/head/helmet/f13/bishops/fedora4
+	name = "grey fedora"
+	icon_state = "bishops_fedora_4"
+	item_state = "bishops_fedora_4"
+	desc = "A light grey fedora. It has a protective layering in it."
 
 ////////////
 //wrights//
