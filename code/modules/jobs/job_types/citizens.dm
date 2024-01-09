@@ -500,6 +500,7 @@
 	backpack_contents = list(
 		/obj/item/clothing/accessory/lawyers_badge = 1,
 		/obj/item/storage/briefcase/lawyer = 1,
+		/obj/item/book/manual/civilcode = 1,
 		/obj/item/storage/bag/money/small/medium = 1)
 
 /datum/outfit/loadout/detective

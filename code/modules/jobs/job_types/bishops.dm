@@ -245,6 +245,13 @@
 
 	outfit = /datum/outfit/job/bishops/f13mademan
 
+	loadout_options = list(
+		/datum/outfit/loadout/fedora1,
+		/datum/outfit/loadout/fedora2,
+		/datum/outfit/loadout/fedora3,
+		/datum/outfit/loadout/fedora4
+		)
+
 /*
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -281,12 +288,6 @@
 		/obj/item/clothing/under/f13/bishops/soldier4,
 		/obj/item/clothing/under/f13/bishops/soldier/alt)
 
-	head = pick(
-		/obj/item/clothing/head/helmet/f13/bishops/fedora,
-		/obj/item/clothing/head/helmet/f13/bishops/fedora2,
-		/obj/item/clothing/head/helmet/f13/bishops/fedora3,
-		/obj/item/clothing/head/helmet/f13/bishops/fedora4)
-
 	r_hand = pick(
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set1,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set2,
@@ -294,6 +295,29 @@
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set4,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set5)
 
+/datum/outfit/loadout/fedora
+	name = "Blue Fedora"
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora = 1,
+		)
+
+/datum/outfit/loadout/fedora2
+	name = "Dark Grey Fedora"
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora2 = 1,
+		)
+
+/datum/outfit/loadout/fedora3
+	name = "Black Fedora"
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora3 = 1,
+		)
+
+/datum/outfit/loadout/fedora4
+	name = "Grey Fedora"
+	backpack_contents = list(
+		/obj/item/clothing/head/helmet/f13/bishops/fedora4 = 1,
+		)
 
 /datum/outfit/job/bishops/f13soldier/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -378,7 +402,6 @@
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/storage/bag/money/small/meager = 1,
 		/obj/item/gun/ballistic/revolver/detective = 1,
 		/obj/item/ammo_box/c38 = 1
@@ -412,6 +435,8 @@
 	backpack_contents = list(
 		/obj/item/book/granter/trait/chemistry = 1,
 		)
+
+
 
 /////////////
 //loadouts///
