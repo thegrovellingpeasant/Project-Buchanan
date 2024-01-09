@@ -598,6 +598,9 @@ so as to remain in compliance with the most up-to-date laws."
 	desc = "Mech integrity is low."
 	icon_state = "low_mech_integrity"
 
+/obj/screen/alert/low_mech_integrity/robot
+	name = "Hull Damaged"
+	desc = "Hull integrity is low."
 
 //GHOSTS
 //TODO: expand this system to replace the pollCandidates/CheckAntagonist/"choose quickly"/etc Yes/No messages
