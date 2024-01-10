@@ -182,6 +182,7 @@
 	if(user)
 		the_name = user.real_name
 		visible_message("<span class='notice'>[user] pulls the lever and the slot machine starts spinning!</span>")
+		playsound(src, pick(list('sound/f13machines/slots_1.ogg', 'sound/f13machines/slots_2.ogg')), 50, TRUE)
 	else
 		the_name = "Exaybachay"
 
