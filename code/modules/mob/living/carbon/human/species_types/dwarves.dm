@@ -16,8 +16,8 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 	liked_food = ALCOHOL | MEAT | DAIRY //Dwarves like alcohol, meat, and dairy products.
 	disliked_food = JUNKFOOD | FRIED //Dwarves hate foods that have no nutrition other than alcohol.
 	mutant_organs = list(/obj/item/organ/dwarfgland) //Dwarven alcohol gland, literal gland warrior
-//	mutantliver = /obj/item/organ/liver/dwarf //Dwarven super liver (Otherwise they r doomed)
-//	species_language_holder = /datum/language_holder/dwarf
+	mutantliver = /obj/item/organ/liver/dwarf //Dwarven super liver (Otherwise they r doomed)
+	species_language_holder = /datum/language_holder/dwarf
 	species_type = "human" //a kind of human
 
 /mob/living/carbon/human/species/dwarf //species admin spawn path
@@ -47,7 +47,7 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 
 /datum/species/dwarf/random_name(gender,unique,lastname)
 	return dwarf_name() //hello, ill return the value from dwarf_name proc to you when called.
-/*
+
 //Dwarf Speech handling - Basically a filter/forces them to say things. The IC helper
 /datum/species/dwarf/proc/handle_speech(datum/source, list/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]
@@ -139,4 +139,3 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 			if(last_alcohol_spam + 50 SECONDS < world.time)
 				to_chat(owner, "<span class='notice'>You feel like you could use a good brew.</span>")
 				last_alcohol_spam = world.time
-*/
