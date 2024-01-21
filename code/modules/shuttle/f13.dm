@@ -124,7 +124,7 @@
 	icon = 'icons/obj/machines/mining_machines.dmi'
 	icon_state = "console"
 	light_color = LIGHT_COLOR_CYAN
-	circuit = /obj/item/circuitboard/computer/enclave_control
+	circuit = /obj/item/circuitboard/computer/bishop_control
 	shuttleId = "bishop_elevator"
 	possible_destinations = "bishop_elevator_top;bishop_elevator_down"
 	flags_1 = NODECONSTRUCT_1

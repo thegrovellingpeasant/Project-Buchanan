@@ -29069,9 +29069,11 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/reno_streets)
 "qkb" = (
-/obj/machinery/computer/slot_machine,
 /obj/structure/sign/poster/official/cohiba_robusto_ad{
 	pixel_x = -32
+	},
+/obj/machinery/computer/slot_machine{
+	dir = 4
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -39987,7 +39989,9 @@
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
 /area/f13/reno_streets)
 "wwr" = (
-/obj/machinery/computer/slot_machine,
+/obj/machinery/computer/slot_machine{
+	dir = 4
+	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wwF" = (
