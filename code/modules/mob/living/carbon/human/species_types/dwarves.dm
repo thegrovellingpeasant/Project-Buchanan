@@ -66,7 +66,7 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 	if(prob(3))
 		message += " By Armok!"
 	speech_args[SPEECH_MESSAGE] = trim(message)
-/*
+
 //This mostly exists because my testdwarf's liver died while trying to also not die due to no alcohol.
 /obj/item/organ/liver/dwarf
 	name = "dwarf liver"
