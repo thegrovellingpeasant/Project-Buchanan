@@ -560,10 +560,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side,
 /area/f13/reno_subway)
 "avh" = (
-/obj/machinery/light/small{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 8
 	},
-/turf/open/floor/carpet,
+/turf/open/pool,
 /area/f13/reno_subway)
 "avj" = (
 /obj/structure/barricade/tentleathercorner,
@@ -1436,7 +1437,8 @@
 	},
 /area/f13/reno_subway)
 "bfJ" = (
-/obj/machinery/light/small{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -2404,7 +2406,6 @@
 "bVr" = (
 /obj/machinery/light/small,
 /obj/structure/chair/stool/retro/black,
-/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/carpet,
 /area/f13/reno_subway)
 "bVN" = (
@@ -4812,7 +4813,8 @@
 	dir = 4
 	},
 /obj/effect/overlay/curb/west,
-/obj/machinery/light/fo13colored/Red{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -9313,16 +9315,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/reno_subway)
-"gJU" = (
-/obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1";
-	pixel_y = -17
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	name = "vault floor"
-	},
-/area/f13/reno_subway)
 "gKa" = (
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/airless/cafeteria{
@@ -11136,7 +11128,8 @@
 	},
 /area/f13/reno_subway)
 "hXP" = (
-/obj/machinery/light{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 4
 	},
 /turf/open/pool,
@@ -13411,7 +13404,8 @@
 	dir = 4
 	},
 /obj/effect/overlay/curb/west,
-/obj/machinery/light/fo13colored/Red{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -13691,7 +13685,6 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/obj/effect/landmark/start/f13/bishops/racketeer,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "casino"
@@ -14631,12 +14624,6 @@
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/floor/carpet,
 /area/f13/reno_subway)
-"kJi" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/carpet,
-/area/f13/reno_subway)
 "kJo" = (
 /obj/effect/decal/cleanable/flour,
 /turf/open/floor/f13{
@@ -15540,7 +15527,8 @@
 	dir = 8
 	},
 /obj/effect/overlay/curb/east,
-/obj/machinery/light/fo13colored/Red{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -16883,11 +16871,6 @@
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
-"mkD" = (
-/obj/structure/chair/stool/retro,
-/obj/effect/landmark/start/f13/bishops/mademan,
-/turf/open/floor/carpet,
-/area/f13/reno_subway)
 "mkE" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/sheet/metal/fifty,
@@ -16949,7 +16932,6 @@
 /area/f13/reno_subway)
 "mng" = (
 /obj/structure/chair/stool/retro/black,
-/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/carpet,
 /area/f13/reno_subway)
 "mno" = (
@@ -29046,7 +29028,8 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_subway)
 "vtG" = (
-/obj/machinery/light/small{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -30890,7 +30873,8 @@
 	pixel_x = 0
 	},
 /obj/effect/overlay/curb/east,
-/obj/machinery/light/fo13colored/Red{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -31089,7 +31073,8 @@
 /obj/structure/sign/poster/prewar/poster93{
 	pixel_x = 32
 	},
-/obj/machinery/light/small{
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -55596,14 +55581,14 @@ voN
 jUp
 wFV
 lLb
-gJU
 lOY
 lOY
 lOY
 lOY
 lOY
 lOY
-gJU
+lOY
+lOY
 jNI
 wFV
 dVT
@@ -55749,12 +55734,12 @@ uIw
 wFV
 lLb
 lOY
-huL
+avh
 huL
 huL
 hZY
 huL
-huL
+avh
 lOY
 jyu
 wFV
@@ -56347,13 +56332,13 @@ mZG
 wFV
 koV
 dee
-avh
 dee
 dee
 dee
 dee
-mkD
-mkD
+dee
+wqe
+wqe
 hVx
 goS
 lOY
@@ -56958,7 +56943,7 @@ wFV
 wFV
 wFV
 wFV
-kJi
+dee
 dee
 dee
 dee
