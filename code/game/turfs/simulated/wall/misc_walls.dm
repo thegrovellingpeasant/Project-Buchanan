@@ -216,7 +216,7 @@
 	desc = "A remnant of the old world."
 	icon = 'icons/turf/walls/gothic_wall.dmi'
 	hardness = 45
-	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet, /obj/structure/window/gothic/fulltile)
+	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet, /obj/structure/window/gothic/fulltile, /obj/structure/window/gothic2/fulltile, /obj/structure/window/gothic3/fulltile)
 	icon_type_smooth = "gothic"
 
 /turf/closed/wall/gothic/rivet
@@ -224,5 +224,5 @@
 	desc = "A remnant of the old world."
 	icon = 'icons/turf/walls/gothic_wall_rivet.dmi'
 	hardness = 100
-	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet, /obj/structure/window/gothic/fulltile)
+	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet, /obj/structure/window/gothic/fulltile, /obj/structure/window/gothic2/fulltile, /obj/structure/window/gothic3/fulltile)
 	icon_type_smooth = "gothic"
