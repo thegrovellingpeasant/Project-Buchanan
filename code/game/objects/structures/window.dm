@@ -929,7 +929,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	desc = "An old world relic that is holding steadfast."
 	icon = 'icons/obj/smooth_structures/gothic_window.dmi'
 	icon_state = "gothic_window"
-    canSmoothWith = list(/obj/structure/window/gothic/fulltile, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
+	canSmoothWith = list(/obj/structure/window/gothic/fulltile, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
 	smooth = SMOOTH_TRUE
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1
