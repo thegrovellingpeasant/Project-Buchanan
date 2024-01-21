@@ -96,7 +96,7 @@
 #define RENO_BUILDING_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
 	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
 
-#define SHARKCLUB_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg','sound/f13ambience/music/casino_2.ogg')
+#define SHARKCLUB_AMBIENCE list('sound/f13ambience/music/casino_1.ogg','sound/f13ambience/music/casino_2.ogg')
 
 #define YAKUZA_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg')
 

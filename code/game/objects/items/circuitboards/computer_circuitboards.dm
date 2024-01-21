@@ -458,3 +458,7 @@
 /obj/item/circuitboard/computer/intrepid_control
 	name = "Intrepid Mining Elevator Control (Computer board)"
 	build_path = /obj/machinery/computer/shuttle/intrepid_elevator
+
+/obj/item/circuitboard/computer/bishop_control
+	name = "Bishop Elevator Control (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/bishopelevator
