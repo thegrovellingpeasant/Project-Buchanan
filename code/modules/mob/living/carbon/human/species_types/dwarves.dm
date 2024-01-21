@@ -139,3 +139,4 @@ GLOBAL_LIST_INIT(dwarf_last, world.file2list("strings/names/dwarf_last.txt")) //
 			if(last_alcohol_spam + 50 SECONDS < world.time)
 				to_chat(owner, "<span class='notice'>You feel like you could use a good brew.</span>")
 				last_alcohol_spam = world.time
+*/
