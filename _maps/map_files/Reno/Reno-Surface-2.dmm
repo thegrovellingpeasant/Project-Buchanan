@@ -2650,6 +2650,15 @@
 /obj/structure/table_frame,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_building)
+"bxB" = (
+/obj/machinery/computer/slot_machine{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "bxD" = (
 /obj/structure/wreck/bus/rusted,
 /turf/open/indestructible/ground/outside/desert{
@@ -5572,6 +5581,9 @@
 /area/f13/reno_wasteland)
 "del" = (
 /obj/structure/closet/crate,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/side{
 	dir = 4
 	},
@@ -8191,16 +8203,11 @@
 /turf/closed/wall/mineral/stonewall,
 /area/f13/reno_building)
 "eDh" = (
-/obj/structure/statue/diamond/overlayable/colossalskull{
-	pixel_x = 1;
-	density = 0
-	},
-/obj/structure/statue/diamond/overlayable/colossalskull{
-	density = 0;
-	icon_state = "colossalskulloverlay";
-	pixel_x = 1
-	},
 /obj/structure/table/glass,
+/obj/structure/statue/diamond/overlayable/colossalskull{
+	icon_state = "skull";
+	pixel_y = 8
+	},
 /turf/open/floor/carpet/red,
 /area/f13/reno_sharkclub)
 "eDt" = (
@@ -10330,7 +10337,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
 "fRu" = (
-/obj/effect/landmark/start/f13/bishops/casinoworker,
+/obj/machinery/light{
+	dir = 4;
+	pixel_y = -16
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_sharkclub)
 "fRy" = (
@@ -11062,6 +11072,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/arcade,
 /area/f13/reno_building)
+"gof" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "gom" = (
 /obj/structure/chair/left,
 /obj/effect/decal/cleanable/dirt,
@@ -15138,6 +15154,12 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/reno_building)
+"iCd" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/evil4,
+/area/f13/reno_sharkclub)
 "iCw" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -16484,6 +16506,10 @@
 	color = "#f00000"
 	},
 /area/f13/reno_building)
+"jpd" = (
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "jpj" = (
 /obj/item/chair/wood,
 /turf/open/floor/wood/f13/oak,
@@ -17976,6 +18002,13 @@
 /obj/item/lighter/greyscale,
 /turf/open/floor/carpet/green,
 /area/f13/reno_building)
+"kci" = (
+/obj/structure/table/wood/fancy/black,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "kcX" = (
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road/horizontaltopborder,
@@ -22168,6 +22201,9 @@
 "mkA" = (
 /obj/structure/musician/piano{
 	icon_state = "piano"
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -29035,10 +29071,22 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_building)
+"qhI" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "qhL" = (
 /obj/structure/wreck/bus/rusted,
 /turf/open/indestructible/ground/outside/sidewalk/bottom,
 /area/f13/reno_wasteland)
+"qhS" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "qif" = (
 /obj/structure/chair/stool/retro,
 /obj/effect/decal/cleanable/dirt,
@@ -29661,6 +29709,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
+"qBQ" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/reno_sharkclub)
 "qBS" = (
 /obj/structure/chair/right,
 /turf/open/floor/wood/f13/carpet{
@@ -30411,6 +30465,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
+"qWi" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "qWj" = (
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/indestructible/ground/inside/mountain,
@@ -31305,8 +31365,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/reno_wasteland)
 "rxF" = (
-/obj/effect/landmark/start/f13/bishops/casinoworker,
-/turf/open/floor/wood,
+/obj/machinery/light,
+/turf/open/floor/carpet/red,
 /area/f13/reno_sharkclub)
 "rxK" = (
 /obj/structure/closet/crate/trashcart,
@@ -32151,6 +32211,12 @@
 /obj/effect/overlay/junk/curtain,
 /turf/open/indestructible/ground/outside/road/verticalrightborder,
 /area/f13/reno_streets)
+"rXl" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/reno_sharkclub)
 "rXC" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
@@ -34023,6 +34089,12 @@
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_building)
+"tcR" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "tdf" = (
 /turf/open/indestructible/ground/outside/desert{
 	dug = 1
@@ -65880,7 +65952,7 @@ aDf
 aDf
 aDf
 aDf
-aDf
+qhI
 vVz
 hTV
 nLz
@@ -65890,11 +65962,11 @@ mjV
 nLz
 fuO
 fuO
-aDf
+qhI
 mWD
 qkb
 qkb
-wwr
+bxB
 wwr
 wwr
 mWD
@@ -66028,7 +66100,7 @@ hvS
 nLz
 wOi
 nLz
-aDf
+qhS
 aDf
 aDf
 aDf
@@ -66179,7 +66251,7 @@ cwR
 oQr
 nLz
 eCr
-eCr
+iCd
 eCr
 eCr
 eCr
@@ -66202,7 +66274,7 @@ mWD
 mWD
 mWD
 mWD
-aDf
+rxF
 nLz
 mfX
 nLz
@@ -66343,7 +66415,7 @@ mkA
 onf
 onf
 onf
-onf
+rXl
 cQy
 ivM
 aDf
@@ -66355,7 +66427,7 @@ aPz
 ryd
 rOs
 aDf
-aDf
+qhI
 iVZ
 nLz
 oQr
@@ -66654,7 +66726,7 @@ aDf
 aDf
 aDf
 aDf
-aDf
+jpd
 aDf
 aDf
 aDf
@@ -66964,7 +67036,7 @@ ryd
 rOs
 aDf
 aDf
-aDf
+rxF
 nLz
 oQr
 tZI
@@ -67554,7 +67626,7 @@ jPz
 cCR
 mWD
 mWD
-mWD
+qWi
 mWD
 mWD
 mWD
@@ -67701,7 +67773,7 @@ nLz
 nLz
 nLz
 nLz
-skN
+gof
 jSF
 tIq
 ubJ
@@ -67712,7 +67784,7 @@ reJ
 lxn
 reJ
 lxn
-mWD
+qWi
 aDf
 aDf
 mWD
@@ -67876,7 +67948,7 @@ skN
 bmV
 mQE
 aDf
-aDf
+tcR
 gfO
 oQr
 tZI
@@ -68019,7 +68091,7 @@ dKm
 brw
 aDf
 aDf
-mWD
+qWi
 mWD
 nLz
 gfO
@@ -68153,7 +68225,7 @@ gCe
 fox
 sOi
 nLz
-qAt
+qBQ
 qAt
 qAt
 pFA
@@ -68464,7 +68536,7 @@ nLz
 skN
 skN
 jkq
-ucg
+kci
 cGG
 nLz
 cVb
@@ -69069,7 +69141,7 @@ art
 xDV
 sWg
 fRu
-fRu
+qAt
 nLz
 gxv
 del
@@ -69079,7 +69151,7 @@ aBU
 tfs
 xEQ
 lVH
-rxF
+atO
 nLz
 ibg
 ibg

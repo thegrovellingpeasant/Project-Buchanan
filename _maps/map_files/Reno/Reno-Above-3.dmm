@@ -13,6 +13,9 @@
 /obj/machinery/computer/shuttle/bishopelevator{
 	pixel_x = 32
 	},
+/obj/structure/sign/poster/prewar/poster80{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/reno/evil4,
 /area/f13/reno_sharkclub)
 "ad" = (
@@ -2883,6 +2886,10 @@
 /area/f13/reno_streets)
 "jH" = (
 /obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/drinks/beer{
+	name = "Wright beer";
+	desc = "A cheap, popular beer in a reused bottle. It has the Wright logo on it."
+	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "jK" = (
@@ -6534,13 +6541,10 @@
 /turf/open/floor/wood/f13/oakbroken2,
 /area/f13/reno_streets)
 "wf" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_x = -32
 	},
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
+/turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
 "wg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6708,6 +6712,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_streets)
+"wN" = (
+/obj/structure/sign/poster/prewar/poster93{
+	pixel_x = 32
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "wO" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/f13,
@@ -8803,7 +8813,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
 "DF" = (
-/obj/machinery/light{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/f13{
@@ -9565,6 +9575,10 @@
 /area/f13/reno_streets)
 "Gh" = (
 /obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/drinks/beer{
+	name = "Wright beer";
+	desc = "A cheap, popular beer in a reused bottle. It has the Wright logo on it."
+	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_sharkclub)
 "Gi" = (
@@ -10148,6 +10162,12 @@
 /obj/structure/chair/pew/right,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
+"Ih" = (
+/obj/structure/sign/poster/prewar/poster81{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "Ij" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light{
@@ -11411,6 +11431,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
+"Mq" = (
+/obj/structure/railing/casino{
+	dir = 4;
+	pixel_x = 2
+	},
+/obj/structure/sign/poster/prewar/poster82{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/reno/evil4,
+/area/f13/reno_sharkclub)
 "Mr" = (
 /turf/open/floor/wood/f13/oakbroken3,
 /area/f13/reno_streets)
@@ -12555,6 +12585,7 @@
 	pixel_y = 9
 	},
 /obj/structure/table/wood/greyscale,
+/obj/structure/sign/poster/contraband/buzzfuzz,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Qr" = (
@@ -14021,6 +14052,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
+"Vu" = (
+/obj/structure/sign/poster/official/the_owl{
+	pixel_x = 32
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "Vv" = (
 /obj/structure/chair/office/dark{
 	name = "office chair";
@@ -38200,7 +38237,7 @@ pv
 pv
 Pc
 bA
-wf
+TZ
 qK
 Ch
 Ch
@@ -38215,7 +38252,7 @@ np
 np
 eR
 Cf
-Cf
+wf
 Pc
 Qq
 fa
@@ -38512,7 +38549,7 @@ TZ
 Pc
 Pc
 Pc
-qm
+Mq
 qm
 qm
 qm
@@ -39126,7 +39163,7 @@ AT
 AT
 AT
 Pc
-Cf
+Ih
 Cf
 Cf
 Cf
@@ -39287,7 +39324,7 @@ Cf
 Cf
 Cf
 Cf
-Cf
+wN
 Cf
 Cf
 Vm
@@ -40342,7 +40379,7 @@ Cf
 Cf
 np
 jo
-Cf
+Vu
 To
 Pc
 Wn

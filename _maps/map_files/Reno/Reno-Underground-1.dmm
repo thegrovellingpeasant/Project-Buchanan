@@ -285,6 +285,7 @@
 "alM" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/random,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_subway)
 "alU" = (
@@ -1547,6 +1548,11 @@
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/reno_subway)
+"bjK" = (
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet15"
+	},
+/area/f13/reno_subway)
 "bjM" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -2406,7 +2412,7 @@
 "bVr" = (
 /obj/machinery/light/small,
 /obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "bVN" = (
 /obj/structure/bed/mattress{
@@ -7305,6 +7311,11 @@
 /turf/closed/wall/gothic,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
+"fox" = (
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet11"
+	},
+/area/f13/reno_subway)
 "foH" = (
 /obj/structure/decoration/vent{
 	icon_state = "drain";
@@ -9314,6 +9325,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/reno_subway)
+"gJU" = (
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet3"
+	},
 /area/f13/reno_subway)
 "gKa" = (
 /obj/structure/table/glass,
@@ -12403,7 +12419,7 @@
 /area/f13/reno_subway)
 "iRK" = (
 /obj/structure/simple_door/metal/dirtystore,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "iSg" = (
 /obj/effect/decal/cleanable/dirt{
@@ -12932,7 +12948,7 @@
 /area/f13/reno_subway)
 "joq" = (
 /obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "jov" = (
 /turf/closed/wall/r_wall/rust,
@@ -14152,7 +14168,7 @@
 /obj/structure/sign/poster/prewar/poster94{
 	pixel_y = 32
 	},
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kpb" = (
 /obj/structure/table/reinforced,
@@ -14290,7 +14306,7 @@
 /obj/item/toy/cards/deck{
 	pixel_y = 4
 	},
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kur" = (
 /obj/structure/closet/crate,
@@ -14622,7 +14638,10 @@
 "kIY" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters/preopen,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_subway)
+"kJi" = (
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kJo" = (
 /obj/effect/decal/cleanable/flour,
@@ -16871,6 +16890,10 @@
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
+"mkD" = (
+/obj/structure/chair/stool/retro,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_subway)
 "mkE" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/sheet/metal/fifty,
@@ -16932,7 +16955,9 @@
 /area/f13/reno_subway)
 "mng" = (
 /obj/structure/chair/stool/retro/black,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet4"
+	},
 /area/f13/reno_subway)
 "mno" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21290,6 +21315,10 @@
 	},
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/reno_subway)
+"pJh" = (
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_subway)
 "pJl" = (
 /obj/structure/closet/crate/bin/trashbin{
 	pixel_y = -10;
@@ -24202,7 +24231,7 @@
 /obj/structure/sign/poster/prewar/poster61{
 	pixel_x = 32
 	},
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "rRP" = (
 /obj/item/trash/f13/blamco,
@@ -25505,7 +25534,7 @@
 /area/f13/reno_subway)
 "sLs" = (
 /obj/structure/table/wood/poker,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "sLG" = (
 /obj/effect/turf_decal/bot_white,
@@ -25862,6 +25891,10 @@
 	pixel_y = 11
 	},
 /turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/reno_subway)
+"sZh" = (
+/obj/machinery/computer/arcade,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "sZJ" = (
 /obj/structure/table/glass,
@@ -27312,7 +27345,8 @@
 /area/f13/reno_subway)
 "udo" = (
 /obj/machinery/computer/slot_machine,
-/turf/open/floor/carpet,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "udv" = (
 /obj/structure/fence,
@@ -30147,8 +30181,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_subway)
 "wqe" = (
-/obj/structure/chair/stool/retro,
-/turf/open/floor/carpet,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet9"
+	},
 /area/f13/reno_subway)
 "wqp" = (
 /obj/structure/chair/stool/retro/black,
@@ -56331,14 +56366,14 @@ fpP
 mZG
 wFV
 koV
-dee
-dee
-dee
-dee
-dee
-dee
-wqe
-wqe
+kJi
+kJi
+kJi
+kJi
+kJi
+kJi
+mkD
+mkD
 hVx
 goS
 lOY
@@ -56482,13 +56517,13 @@ wFV
 bOr
 fpP
 wFV
-udo
-wqe
-dee
-udo
-wqe
-dee
-dee
+pJh
+mkD
+kJi
+sZh
+mkD
+kJi
+kJi
 sLs
 kua
 hVx
@@ -56634,13 +56669,13 @@ wFV
 fpP
 fpP
 wFV
-udo
-wqe
-dee
-udo
-wqe
-dee
-dee
+pJh
+mkD
+kJi
+sZh
+mkD
+bjK
+gJU
 mng
 bVr
 wFV
@@ -56787,14 +56822,14 @@ wFV
 wgf
 wFV
 udo
-wqe
+mkD
 rRM
-udo
+sZh
+mkD
 wqe
-dee
-dee
-dee
-dee
+fox
+wqe
+kJi
 iRK
 wvk
 wvk
@@ -56943,10 +56978,10 @@ wFV
 wFV
 wFV
 wFV
-dee
-dee
-dee
-dee
+kJi
+kJi
+kJi
+kJi
 iRK
 wvk
 wvk
