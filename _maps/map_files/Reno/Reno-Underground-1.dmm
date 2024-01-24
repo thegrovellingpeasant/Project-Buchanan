@@ -648,7 +648,8 @@
 /area/f13/reno_subway)
 "axy" = (
 /obj/structure/simple_door/metal{
-	name = "room A1"
+	name = "room A1";
+	req_access_txt = "152"
 	},
 /turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_subway)
@@ -843,8 +844,8 @@
 	pixel_x = -6
 	},
 /turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 8
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_subway)
 "aGW" = (
@@ -917,12 +918,8 @@
 	},
 /area/f13/reno_subway)
 "aJd" = (
-/obj/structure/table,
-/obj/machinery/computer/terminal,
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 1
-	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "aJm" = (
 /obj/structure/railing/corrugated{
@@ -1176,7 +1173,8 @@
 /area/f13/reno_subway)
 "aSD" = (
 /obj/structure/simple_door/metal{
-	name = "room A3"
+	name = "room A3";
+	req_access_txt = "154"
 	},
 /turf/open/floor/carpet/reno/evil,
 /area/f13/reno_subway)
@@ -2412,6 +2410,7 @@
 "bVr" = (
 /obj/machinery/light/small,
 /obj/structure/chair/stool/retro/black,
+/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "bVN" = (
@@ -2459,8 +2458,8 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 1
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_subway)
 "bXi" = (
@@ -4521,12 +4520,9 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/reno_subway)
 "dvJ" = (
-/obj/machinery/autolathe,
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 5;
-	sunlight_state = 1
-	},
+/obj/structure/chair/stool/retro,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "dvN" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4980,7 +4976,8 @@
 /area/f13/reno_subway)
 "dKb" = (
 /obj/structure/simple_door/metal{
-	icon_state = "secure_steel"
+	icon_state = "secure_steel";
+	req_access_txt = "164"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkyellowfull"
@@ -6862,8 +6859,8 @@
 "eRF" = (
 /obj/machinery/chem_master,
 /turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 8
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_subway)
 "eRM" = (
@@ -7220,9 +7217,9 @@
 	},
 /area/f13/reno_subway)
 "fiE" = (
-/turf/open/floor/f13{
-	icon_state = "darkblue"
-	},
+/obj/machinery/computer/arcade,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "fiW" = (
 /obj/structure/barricade/wooden,
@@ -10890,7 +10887,8 @@
 /area/f13/reno_subway)
 "hQb" = (
 /obj/structure/simple_door/metal{
-	name = "room A2"
+	name = "room A2";
+	req_access_txt = "153"
 	},
 /turf/open/floor/carpet/reno/evil,
 /area/f13/reno_subway)
@@ -11112,7 +11110,22 @@
 /area/f13/reno_subway)
 "hWF" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/terminal,
+/obj/machinery/computer/terminal{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/machinery/button/door{
+	pixel_y = 8;
+	pixel_x = -7;
+	name = "entrance";
+	id = "basement_entrance"
+	},
+/obj/machinery/button/door{
+	pixel_y = 1;
+	pixel_x = -7;
+	id = "scb_desk";
+	name = "desk"
+	},
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "casino"
@@ -11491,9 +11504,11 @@
 /area/f13/reno_subway)
 "igH" = (
 /obj/structure/simple_door/metal{
-	icon_state = "secure_steel"
+	icon_state = "secure_steel";
+	name = "out of order";
+	req_access_txt = "167"
 	},
-/turf/closed/wall/gothic,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_subway)
 "igM" = (
 /obj/structure/bed/mattress{
@@ -12947,8 +12962,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
 "joq" = (
-/obj/structure/simple_door/metal/store,
-/turf/open/floor/wood/f13/carpet,
+/obj/structure/simple_door/metal{
+	icon_state = "secure_steel";
+	req_access_txt = "164"
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
 /area/f13/reno_subway)
 "jov" = (
 /turf/closed/wall/r_wall/rust,
@@ -12992,6 +13013,16 @@
 	},
 /obj/structure/nest/mob/ghoulcozy,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/reno_subway)
+"jqg" = (
+/obj/machinery/camera{
+	dir = 4;
+	network = list("bishops");
+	c_tag = "basement pool"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	name = "vault floor"
+	},
 /area/f13/reno_subway)
 "jqE" = (
 /obj/structure/railing{
@@ -13865,9 +13896,10 @@
 /obj/structure/sign/poster/prewar/poster74{
 	pixel_x = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 4
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "warnplate"
 	},
 /area/f13/reno_subway)
 "kdy" = (
@@ -14168,6 +14200,7 @@
 /obj/structure/sign/poster/prewar/poster94{
 	pixel_y = 32
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kpb" = (
@@ -14306,6 +14339,7 @@
 /obj/item/toy/cards/deck{
 	pixel_y = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kur" = (
@@ -14637,7 +14671,9 @@
 /area/f13/reno_subway)
 "kIY" = (
 /obj/structure/simple_door/metal/store,
-/obj/machinery/door/poddoor/shutters/preopen,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "basement_entrance"
+	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "kJi" = (
@@ -20874,10 +20910,7 @@
 "pvo" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 9
-	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
 "pvR" = (
 /obj/effect/decal/cleanable/oil/slippery{
@@ -21317,6 +21350,7 @@
 /area/f13/reno_subway)
 "pJh" = (
 /obj/machinery/computer/slot_machine,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "pJl" = (
@@ -23500,6 +23534,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
+"rpE" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "warnplate"
+	},
+/area/f13/reno_subway)
 "rqm" = (
 /obj/structure/chair/wood/modern{
 	dir = 8
@@ -24456,10 +24497,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
 "rZG" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/turf/open/floor/f13{
-	icon_state = "darkyellowfull"
-	},
+/obj/structure/chair/stool/retro,
+/obj/effect/landmark/start/f13/bishops/mademan,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "rZJ" = (
 /turf/open/floor/f13{
@@ -25380,12 +25421,13 @@
 /turf/open/floor/f13/green,
 /area/f13/reno_subway)
 "sFu" = (
-/obj/machinery/chem_dispenser,
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 10;
-	sunlight_state = 1
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera{
+	dir = 4;
+	network = list("bishops");
+	c_tag = "basemenst pit"
 	},
+/turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "sFx" = (
 /obj/structure/table/glass,
@@ -25534,6 +25576,7 @@
 /area/f13/reno_subway)
 "sLs" = (
 /obj/structure/table/wood/poker,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "sLG" = (
@@ -27346,6 +27389,7 @@
 "udo" = (
 /obj/machinery/computer/slot_machine,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
 "udv" = (
@@ -27469,10 +27513,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_subway)
 "ugU" = (
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 6
-	},
+/obj/structure/dresser,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/carpet/reno/evil5,
 /area/f13/reno_subway)
 "uhy" = (
 /obj/structure/chair/bench{
@@ -27797,8 +27840,8 @@
 	pixel_y = 6
 	},
 /turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 8
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/reno_subway)
 "usF" = (
@@ -28101,9 +28144,11 @@
 	},
 /area/f13/reno_subway)
 "uFi" = (
-/turf/open/floor/f13{
-	icon_state = "darkblue";
-	dir = 4
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "warnplate";
+	dir = 8
 	},
 /area/f13/reno_subway)
 "uFw" = (
@@ -28477,9 +28522,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/turf/open/floor/f13{
-	icon_state = "darkyellowfull"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_subway)
 "uYT" = (
 /obj/structure/disposalpipe/junction,
@@ -29916,12 +29959,10 @@
 /area/f13/reno_subway)
 "wgf" = (
 /obj/structure/simple_door/metal{
-	icon_state = "secure_steel"
+	icon_state = "secure_steel";
+	req_access_txt = "164"
 	},
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
+/turf/open/floor/plating/f13,
 /area/f13/reno_subway)
 "wgo" = (
 /obj/structure/table/wood/poker,
@@ -31687,8 +31728,11 @@
 /area/f13/reno_subway)
 "xsU" = (
 /obj/machinery/light,
-/turf/open/floor/f13{
-	icon_state = "darkblue"
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "warnplate";
+	dir = 8
 	},
 /area/f13/reno_subway)
 "xsZ" = (
@@ -55602,9 +55646,9 @@ pvo
 aGi
 usz
 eRF
-sFu
+jig
 wFV
-adW
+ugU
 cBN
 onA
 onA
@@ -55619,7 +55663,7 @@ lLb
 lOY
 lOY
 lOY
-lOY
+jqg
 lOY
 lOY
 lOY
@@ -55750,11 +55794,11 @@ ggw
 eLk
 ggw
 wFV
-aJd
+sXQ
 uXK
-gyU
-gyU
-fiE
+gts
+gts
+gts
 wFV
 azZ
 onA
@@ -55903,9 +55947,9 @@ eLk
 ggw
 wFV
 bWK
-gyU
-gyU
-gyU
+fpP
+rpE
+uFi
 xsU
 wFV
 sbN
@@ -56054,11 +56098,11 @@ ggw
 eLk
 ggw
 wFV
-dvJ
-uFi
+sho
+fpP
 kcY
-uFi
-ugU
+gts
+fpP
 wFV
 vFV
 onA
@@ -56366,14 +56410,14 @@ fpP
 mZG
 wFV
 koV
-kJi
-kJi
-kJi
-kJi
-kJi
-kJi
-mkD
-mkD
+aJd
+aJd
+sFu
+aJd
+aJd
+aJd
+rZG
+rZG
 hVx
 goS
 lOY
@@ -56518,12 +56562,12 @@ bOr
 fpP
 wFV
 pJh
+dvJ
+aJd
+fiE
 mkD
 kJi
-sZh
-mkD
-kJi
-kJi
+aJd
 sLs
 kua
 hVx
@@ -56670,9 +56714,9 @@ fpP
 fpP
 wFV
 pJh
-mkD
+dvJ
 kJi
-sZh
+fiE
 mkD
 bjK
 gJU
@@ -56819,17 +56863,17 @@ dct
 dct
 wFV
 wFV
-wgf
+joq
 wFV
 udo
-mkD
+dvJ
 rRM
 sZh
 mkD
 wqe
 fox
 wqe
-kJi
+aJd
 iRK
 wvk
 wvk
@@ -56978,10 +57022,10 @@ wFV
 wFV
 wFV
 wFV
+aJd
+aJd
 kJi
-kJi
-kJi
-kJi
+aJd
 iRK
 wvk
 wvk
@@ -57130,7 +57174,7 @@ gyU
 gyU
 gyU
 wFV
-joq
+kIY
 kIY
 wFV
 wFV
@@ -57276,7 +57320,7 @@ gyU
 gyU
 gyU
 gyU
-rZG
+gyU
 gyU
 kqQ
 gyU

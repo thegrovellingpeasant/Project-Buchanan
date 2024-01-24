@@ -107,7 +107,7 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_80SR 	    82  //80s red access
 #define ACCESS_USPS	        76  //Postal service access
 #define ACCESS_MORDINOS 	135 //mordino casino/stables
-#define ACCESS_BISHOPS 		136 //bishop casino
+
 #define ACCESS_WRIGHTS 		137 //wright estate/trainstation
 #define ACCESS_SALVATORES 	138 //salvatores bar
 #define ACCESS_HOTEL 		139 //hotel
@@ -121,9 +121,37 @@ also be like that but I can't be arsed to go back and change them all*/
 
 
 
+
 	//The Syndicate
 #define ACCESS_SYNDICATE 150//General Syndicate Access. Includes Syndicate mechs and ruins.
 #define ACCESS_SYNDICATE_LEADER 151//Nuke Op Leader Access
+
+
+//////////////////////
+//Shark Club/Bishops//
+//////////////////////
+
+	//Room Keys
+#define ACCESS_ROOMONE		152 //hotel room access
+#define ACCESS_ROOMTWO		153 //hotel room access
+#define ACCESS_ROOMTHREE	154 //hotel room access
+#define ACCESS_ROOMFOUR		155 //hotel room access
+#define ACCESS_ROOMFIVE		156 //hotel room access
+#define ACCESS_ROOMSIX		157 //hotel room access
+#define ACCESS_ROOMSEVEN	158 //hotel room access
+#define ACCESS_ROOMEIGHT	159 //hotel room access
+#define ACCESS_ROOMNINE		160 //hotel room access
+
+#define ACCESS_SUITEONE		161 //hotel room access
+#define ACCESS_SUITETWO		162 //hotel room access
+
+	//Shark Club
+#define ACCESS_BISHOPS		163
+#define ACCESS_BISHOPSLAB	164
+#define ACCESS_BISHOPCOM	165
+#define ACCESS_BISHOPVAULT	166
+#define ACCESS_BISHOPRR		167
+
 
 	//Away Missions or Ruins
 	/*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict

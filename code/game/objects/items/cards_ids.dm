@@ -1369,53 +1369,6 @@
 //RENO ID//
 ///////////
 
-//bishops
-
-/obj/item/card/id/reno/bishops/ring/soldier
-	name = "bronze ring"
-	desc = "An old ring that is seemingly of some value."
-	icon_state = "bronze_ring"
-	item_state = null
-	uses_overlays = FALSE
-	assignment = "bishop bronze ring"
-	access = list(ACCESS_BISHOPS)
-
-/obj/item/card/id/reno/bishops/ring/officer
-	name = "silver ring"
-	desc = "A well crafted silver ring."
-	icon_state = "silver_ring"
-	item_state = null
-	uses_overlays = FALSE
-	assignment = "bishop silver ring"
-	access = list(ACCESS_BISHOPS)
-
-/obj/item/card/id/reno/bishops/ring/wedding
-	name = "wedding ring"
-	desc = "A well crafted silver ring with a diamond."
-	icon_state = "wedding_ring"
-	item_state = null
-	uses_overlays = FALSE
-	assignment = "wedding ring"
-	access = list(ACCESS_BISHOPS)
-
-/obj/item/card/id/reno/bishops/ring/boss
-	name = "golden ring"
-	desc = "A ring that is seemingly made of gold. Seems valuable."
-	icon_state = "bishop_ring"
-	item_state = null
-	uses_overlays = FALSE
-	assignment = "bishop golden ring"
-	access = list(ACCESS_BISHOPS)
-
-/obj/item/card/id/reno/bishops/papers/worker
-	name = "employment papers"
-	desc = "Papers detailing general information about an employee."
-	icon_state = "papers"
-	item_state = null
-	uses_overlays = FALSE
-	assignment = "bishop employment papers"
-	access = list(ACCESS_BISHOPS)
-
 //mordinos
 
 /obj/item/card/id/reno/mordinos/ring/soldier
@@ -1603,3 +1556,168 @@
 	uses_overlays = FALSE
 	assignment = "yakuza ring"
 	access = list(ACCESS_YAKUZA)
+
+//bishops
+
+/obj/item/card/id/reno/bishops/ring/soldier
+	name = "bronze ring"
+	desc = "An old ring that is seemingly of some value."
+	icon_state = "bronze_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop bronze ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/officer
+	name = "silver ring"
+	desc = "A well crafted silver ring."
+	icon_state = "silver_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop silver ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/wedding
+	name = "wedding ring"
+	desc = "A well crafted silver ring with a diamond."
+	icon_state = "wedding_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "wedding ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/ring/boss
+	name = "golden ring"
+	desc = "A ring that is seemingly made of gold. Seems valuable."
+	icon_state = "bishop_ring"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop golden ring"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/papers/worker
+	name = "employment papers"
+	desc = "Papers detailing general information about an employee."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop employment papers"
+	access = list(ACCESS_BISHOPS)
+
+/obj/item/card/id/reno/bishops/papers/associate
+	name = "food safety certificate"
+	desc = "A certificate of employment for the food safety board of the Shark Club."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "bishop employment papers"
+	access = list(ACCESS_BISHOPSLAB)
+
+/////////////////////////
+///SHARK CLUB ROOM KEYS//
+/////////////////////////
+
+//Basement
+
+/obj/item/card/id/reno/bishops/key/rooma1
+	name = "room A1 key"
+	desc = "An unslightly old rusty key with a dreadful tactile feeling to it. This is naturally for a room in the Shark Club's basement."
+	icon_state = "roomkey_1"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "basement room key"
+	access = list(ACCESS_ROOMONE)
+
+/obj/item/card/id/reno/bishops/key/rooma2
+	name = "room A2 key"
+	desc = "An unslightly old rusty key with a dreadful tactile feeling to it. This is naturally for a room in the Shark Club's basement."
+	icon_state = "roomkey_1"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "basement room key"
+	access = list(ACCESS_ROOMTWO)
+
+/obj/item/card/id/reno/bishops/key/rooma3
+	name = "room A3 key"
+	desc = "An unslightly old rusty key with a dreadful tactile feeling to it. This is naturally for a room in the Shark Club's basement."
+	icon_state = "roomkey_1"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "basement room key"
+	access = list(ACCESS_ROOMTHREE)
+
+//2nd floor
+
+/obj/item/card/id/reno/bishops/key/roomb1
+	name = "room B1 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMFOUR)
+
+/obj/item/card/id/reno/bishops/key/roomb2
+	name = "room B2 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMFIVE)
+
+/obj/item/card/id/reno/bishops/key/roomb3
+	name = "room B3 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMSIX)
+
+/obj/item/card/id/reno/bishops/key/roomb4
+	name = "room B4 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMSEVEN)
+
+/obj/item/card/id/reno/bishops/key/roomb5
+	name = "room B5 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMEIGHT)
+
+/obj/item/card/id/reno/bishops/key/roomb6
+	name = "room B6 key"
+	desc = "A plain metal key for one of the Shark Club's second floor hotel rooms."
+	icon_state = "roomkey_2"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "2nd floor room key"
+	access = list(ACCESS_ROOMNINE)
+
+//suite key
+
+/obj/item/card/id/reno/bishops/key/suite1
+	name = "suite 1 key"
+	desc = "A golden key with the inscription 'shark club'. This is for one of the top floor suites."
+	icon_state = "roomkey_3"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "suite key"
+	access = list(ACCESS_SUITEONE, ACCESS_BISHOPCOM)
+
+/obj/item/card/id/reno/bishops/key/suite2
+	name = "suite 2 key"
+	desc = "A golden key with the inscription 'shark club'. This is for one of the top floor suites."
+	icon_state = "roomkey_3"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "suite key"
+	access = list(ACCESS_SUITETWO, ACCESS_BISHOPCOM)

@@ -2377,7 +2377,8 @@
 /area/f13/reno_streets)
 "brw" = (
 /obj/machinery/door/unpowered/securedoor{
-	name = "bar"
+	name = "bar";
+	req_access_txt = "163"
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_sharkclub)
@@ -4721,7 +4722,7 @@
 /obj/structure/chair/wood/fancy/dark{
 	dir = 1
 	},
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "cGK" = (
 /obj/structure/barricade/tentclothedge{
@@ -5837,6 +5838,11 @@
 	id = Sharkclubbar;
 	pixel_y = -24;
 	pixel_x = -6
+	},
+/obj/machinery/camera{
+	dir = 10;
+	network = list("bishops");
+	c_tag = "FLR1 bar"
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_sharkclub)
@@ -10341,6 +10347,7 @@
 	dir = 4;
 	pixel_y = -16
 	},
+/obj/effect/landmark/start/f13/bishops/casinoworker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_sharkclub)
 "fRy" = (
@@ -10608,7 +10615,8 @@
 /area/f13/reno_building)
 "fXO" = (
 /obj/machinery/door/unpowered/securedoor{
-	name = "kitchen"
+	name = "kitchen";
+	req_access_txt = "163"
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -11073,10 +11081,12 @@
 /turf/open/floor/carpet/arcade,
 /area/f13/reno_building)
 "gof" = (
-/obj/machinery/light{
-	dir = 1
+/obj/machinery/camera{
+	dir = 6;
+	network = list("bishops");
+	c_tag = "FLR1 restaurant"
 	},
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "gom" = (
 /obj/structure/chair/left,
@@ -16329,7 +16339,7 @@
 /area/f13/reno_streets)
 "jkq" = (
 /obj/structure/chair/wood/fancy/dark,
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "jkr" = (
 /obj/structure/railing{
@@ -17503,7 +17513,7 @@
 /area/f13/reno_building)
 "jPz" = (
 /obj/structure/railing/casino,
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "jPA" = (
 /obj/structure/table/wood/fancy,
@@ -17615,7 +17625,7 @@
 /obj/structure/railing/casino{
 	icon_state = "railing_casino8"
 	},
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "jTd" = (
 /obj/item/trash/can,
@@ -18007,7 +18017,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "kcX" = (
 /obj/structure/car/rubbish4,
@@ -18483,7 +18493,8 @@
 /area/f13/reno_wasteland)
 "kqq" = (
 /obj/machinery/door/unpowered/securedoor{
-	name = "brewery"
+	name = "brewery";
+	req_access_txt = "163"
 	},
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
@@ -21227,7 +21238,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_building)
 "lLg" = (
-/obj/machinery/door/airlock/freezer,
+/obj/machinery/door/airlock/freezer{
+	req_access_txt = "163"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/reno_sharkclub)
 "lLr" = (
@@ -26203,6 +26216,20 @@
 /obj/structure/chair/pew/right,
 /turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_building)
+"oAg" = (
+/obj/structure/sign/poster/official/cohiba_robusto_ad{
+	pixel_x = -32
+	},
+/obj/machinery/computer/slot_machine{
+	dir = 4
+	},
+/obj/machinery/camera{
+	dir = 4;
+	network = list("bishops");
+	c_tag = "FLR1 casino pit 1"
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "oAi" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -27141,6 +27168,15 @@
 /obj/structure/chair/wood/normal,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
+"pbT" = (
+/obj/structure/table/wood/poker,
+/obj/machinery/camera{
+	dir = 8;
+	network = list("bishops");
+	c_tag = "FLR1 casino pit 2"
+	},
+/turf/open/floor/carpet/reno/evil3,
+/area/f13/reno_sharkclub)
 "pdq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
@@ -28293,6 +28329,9 @@
 	dir = 8;
 	pixel_x = 2
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_sharkclub)
 "pNz" = (
@@ -28398,6 +28437,37 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/reno_building)
+"pQw" = (
+/obj/structure/table,
+/obj/item/card/id/reno/bishops/key/rooma1{
+	pixel_y = 25
+	},
+/obj/item/card/id/reno/bishops/key/rooma2{
+	pixel_y = 22
+	},
+/obj/item/card/id/reno/bishops/key/rooma3{
+	pixel_y = 19
+	},
+/obj/item/card/id/reno/bishops/key/roomb1{
+	pixel_y = 16
+	},
+/obj/item/card/id/reno/bishops/key/roomb2{
+	pixel_y = 13
+	},
+/obj/item/card/id/reno/bishops/key/roomb3{
+	pixel_y = 10
+	},
+/obj/item/card/id/reno/bishops/key/roomb4{
+	pixel_y = 7
+	},
+/obj/item/card/id/reno/bishops/key/roomb5{
+	pixel_y = 4
+	},
+/obj/item/card/id/reno/bishops/key/roomb6{
+	pixel_y = 1
+	},
+/turf/open/floor/wood,
+/area/f13/reno_sharkclub)
 "pQC" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
@@ -29929,6 +29999,9 @@
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/road/horizontalbottomborder,
 /area/f13/reno_streets)
+"qIU" = (
+/turf/closed/wall/gothic/rivet,
+/area/f13/reno_sharkclub)
 "qIY" = (
 /obj/machinery/smartfridge/bottlerack,
 /turf/open/floor/wood/f13/oak,
@@ -32227,6 +32300,14 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innervertical,
 /area/f13/reno_streets)
+"rXO" = (
+/obj/machinery/camera{
+	dir = 4;
+	network = list("bishops");
+	c_tag = "FLR1 north entrance"
+	},
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "rXS" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -32309,6 +32390,15 @@
 	dir = 5
 	},
 /area/f13/reno_streets)
+"rZT" = (
+/obj/structure/chair/wood/fancy/dark{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "rZU" = (
 /obj/structure/fence{
 	name = "fence gate"
@@ -32919,7 +33009,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_wasteland)
 "ssa" = (
-/obj/machinery/door/airlock/freezer,
+/obj/machinery/door/airlock/freezer{
+	req_access_txt = "163"
+	},
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
 "ssE" = (
@@ -34166,6 +34258,14 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/reno_building)
+"teL" = (
+/obj/machinery/camera{
+	dir = 10;
+	network = list("bishops");
+	c_tag = "FLR1 casino pit 3"
+	},
+/turf/open/floor/carpet/red,
+/area/f13/reno_sharkclub)
 "teV" = (
 /obj/effect/overlay/curb/north,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal{
@@ -34200,6 +34300,9 @@
 /obj/item/reagent_containers/food/drinks/bottle/brown/white{
 	pixel_x = 8;
 	pixel_y = 12
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
@@ -34686,6 +34789,9 @@
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk/top,
 /area/f13/reno_wasteland)
+"tuS" = (
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "tvg" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright2bottom"
@@ -35861,7 +35967,7 @@
 /area/f13/reno_wasteland)
 "ucg" = (
 /obj/structure/table/wood/fancy/black,
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "ucy" = (
 /obj/machinery/workbench,
@@ -36104,6 +36210,10 @@
 /obj/effect/overlay/curb,
 /turf/open/indestructible/ground/outside/road/horizontaltopborder,
 /area/f13/reno_streets)
+"ukl" = (
+/obj/effect/landmark/start/f13/bishops/casinoworker,
+/turf/open/floor/wood,
+/area/f13/reno_sharkclub)
 "uks" = (
 /obj/machinery/mineral/wasteland_vendor/reno/materials,
 /turf/open/floor/wood/f13/oak,
@@ -40246,6 +40356,11 @@
 	pixel_y = 24;
 	pixel_x = 6
 	},
+/obj/machinery/camera{
+	dir = 6;
+	network = list("bishops");
+	c_tag = "FLR1 kitchen"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_sharkclub)
 "wAO" = (
@@ -42087,6 +42202,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/brown,
 /area/f13/reno_building)
+"xBQ" = (
+/obj/machinery/camera{
+	dir = 4;
+	network = list("bishops");
+	c_tag = "FLR1 stage"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/reno_sharkclub)
 "xCd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/mattress{
@@ -42408,6 +42531,12 @@
 /obj/machinery/smartfridge/bottlerack/lootshelf/construction,
 /turf/open/floor/wood/f13,
 /area/f13/reno_building)
+"xNv" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "xNx" = (
 /obj/machinery/deepfryer,
 /obj/effect/decal/cleanable/dirt,
@@ -65795,31 +65924,31 @@ sOi
 oQr
 lqe
 lqe
-nLz
-nLz
+qIU
+qIU
 hNb
-nLz
+qIU
 hNb
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
 hNb
-nLz
+qIU
 hNb
-nLz
+qIU
 hNb
-nLz
+qIU
 hNb
-nLz
+qIU
 hNb
-nLz
-nLz
+qIU
+qIU
 lqe
 tns
 oQr
@@ -65950,21 +66079,21 @@ lqe
 mfX
 aDf
 aDf
-aDf
+rXO
 aDf
 qhI
 vVz
 hTV
-nLz
+qIU
 fuO
 dJZ
 mjV
-nLz
+qIU
 fuO
 fuO
 qhI
 mWD
-qkb
+oAg
 qkb
 bxB
 wwr
@@ -66097,9 +66226,9 @@ gCe
 ebq
 sOi
 hvS
-nLz
+qIU
 wOi
-nLz
+qIU
 qhS
 aDf
 aDf
@@ -66107,11 +66236,11 @@ aDf
 aDf
 pnH
 fKO
-nLz
+qIU
 nNC
 dJZ
 dJZ
-nLz
+qIU
 roE
 roE
 aDf
@@ -66249,7 +66378,7 @@ jjE
 lQB
 cwR
 oQr
-nLz
+qIU
 eCr
 iCd
 eCr
@@ -66258,12 +66387,12 @@ eCr
 eCr
 eCr
 eCr
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
 uPy
-nLz
-nLz
+qIU
+qIU
 nLz
 pYj
 aDf
@@ -66275,9 +66404,9 @@ mWD
 mWD
 mWD
 rxF
-nLz
+qIU
 mfX
-nLz
+qIU
 wHk
 tZI
 xrB
@@ -66414,7 +66543,7 @@ hpy
 mkA
 onf
 onf
-onf
+xBQ
 rXl
 cQy
 ivM
@@ -66429,7 +66558,7 @@ rOs
 aDf
 qhI
 iVZ
-nLz
+qIU
 oQr
 tZI
 xrB
@@ -66733,7 +66862,7 @@ aDf
 aDf
 aDf
 eDh
-nLz
+qIU
 oQr
 tZI
 xrB
@@ -67009,11 +67138,11 @@ jjE
 dmY
 sOi
 oQr
-nLz
+qIU
 jkq
 ucg
 cGG
-skN
+tuS
 jPz
 wQh
 mWD
@@ -67037,7 +67166,7 @@ rOs
 aDf
 aDf
 rxF
-nLz
+qIU
 oQr
 tZI
 xrB
@@ -67161,11 +67290,11 @@ jjE
 kNs
 sOi
 oQr
-nLz
+qIU
 jkq
 ucg
 cGG
-skN
+tuS
 jPz
 qvd
 mWD
@@ -67313,12 +67442,12 @@ ebq
 cIz
 sOi
 oQr
-nLz
-skN
-skN
-skN
-skN
-skN
+qIU
+xNv
+tuS
+tuS
+tuS
+tuS
 dwl
 aDf
 aDf
@@ -67340,8 +67469,8 @@ nPq
 nPq
 aDf
 aDf
-aDf
-nLz
+teL
+qIU
 bTp
 tZI
 xrB
@@ -67465,12 +67594,12 @@ jjE
 mSv
 sOi
 oQr
-nLz
+qIU
 jkq
 ucg
 cGG
-skN
-skN
+tuS
+tuS
 jyJ
 aDf
 aDf
@@ -67617,11 +67746,11 @@ gCe
 fox
 sOi
 oQr
-nLz
+qIU
 jkq
 ucg
-cGG
-skN
+rZT
+tuS
 jPz
 cCR
 mWD
@@ -67768,11 +67897,11 @@ fgw
 jjE
 lQB
 oTv
-nLz
-nLz
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
+qIU
+qIU
 gof
 jSF
 tIq
@@ -67789,7 +67918,7 @@ aDf
 aDf
 mWD
 fkr
-dVG
+pbT
 vFB
 skN
 ghB
@@ -67920,13 +68049,13 @@ fgw
 scE
 lQB
 wup
-nLz
+qIU
 iob
 mhT
 qAt
 pFA
-skN
-skN
+tuS
+tuS
 jkq
 ucg
 cGG
@@ -67936,12 +68065,12 @@ jXV
 jXV
 jXV
 jXV
-nLz
+qIU
 aDf
 aDf
 mWD
 mWD
-nLz
+qIU
 wcg
 skN
 skN
@@ -68072,13 +68201,13 @@ gMy
 jjE
 fox
 uLO
-nLz
+qIU
 qAt
 qAt
 qAt
 pFA
-skN
-skN
+tuS
+tuS
 jkq
 ucg
 cGG
@@ -68093,15 +68222,15 @@ aDf
 aDf
 qWi
 mWD
-nLz
+qIU
 gfO
 gfO
 gfO
 gfO
-nLz
+qIU
 hNb
-nLz
-nLz
+qIU
+qIU
 oQr
 tZI
 xrB
@@ -68224,28 +68353,28 @@ xrB
 gCe
 fox
 sOi
-nLz
+qIU
 qBQ
 qAt
 qAt
 pFA
-skN
-skN
-skN
-skN
-skN
+tuS
+tuS
+tuS
+tuS
+tuS
 brh
 wch
 dKm
 jaz
 oOR
 lNM
-nLz
+qIU
 wCX
 wCX
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
 jNS
 wrO
 rCl
@@ -68376,13 +68505,13 @@ iFz
 gCe
 fox
 sOi
-nLz
+qIU
 chF
 qAt
 qAt
 pFA
-skN
-skN
+tuS
+tuS
 jkq
 ucg
 cGG
@@ -68392,7 +68521,7 @@ dKm
 dKm
 dKm
 dlM
-nLz
+qIU
 xOH
 xOH
 xOH
@@ -68528,23 +68657,23 @@ rje
 jjE
 fox
 sdK
-nLz
+qIU
 wyd
 qAt
 kdG
-nLz
-skN
-skN
+qIU
+tuS
+tuS
 jkq
 kci
 cGG
-nLz
+qIU
 cVb
 kIn
 pNy
 ckR
 dKm
-nLz
+qIU
 xOH
 xOH
 xOH
@@ -68680,23 +68809,23 @@ kKV
 jjE
 fox
 sOi
-nLz
+qIU
 wAA
 qAt
 kOr
-nLz
+qIU
 fXO
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
 qsC
 kqq
-nLz
+qIU
 xOH
 xOH
 nLz
@@ -68832,23 +68961,23 @@ gdG
 jjE
 fox
 rxh
-nLz
+qIU
 sWg
 qAt
 qAt
 nJK
 qAt
-nLz
+qIU
 ofd
 nlr
 mkP
-nLz
+qIU
 nBS
 nBS
 nBS
 lab
 atO
-nLz
+qIU
 ibg
 qdx
 chE
@@ -68984,7 +69113,7 @@ xrB
 gCe
 lQB
 sOi
-nLz
+qIU
 opm
 qAt
 qAt
@@ -68996,11 +69125,11 @@ kni
 bVM
 ssa
 atO
+ukl
 atO
 atO
-atO
-atO
-nLz
+ukl
+qIU
 ibg
 ibg
 eEt
@@ -69136,23 +69265,23 @@ xrB
 jjE
 lQB
 sOi
-nLz
+qIU
 art
 xDV
 sWg
 fRu
 qAt
-nLz
+qIU
 gxv
 del
 wKg
-nLz
+qIU
 aBU
 tfs
 xEQ
 lVH
-atO
-nLz
+pQw
+qIU
 ibg
 ibg
 ibg
@@ -69288,23 +69417,23 @@ xrB
 jjE
 fox
 uPR
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
-nLz
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
+qIU
 kOG
 ibg
 ibg

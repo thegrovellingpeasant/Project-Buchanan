@@ -487,6 +487,10 @@
 /area/f13/reno_sharkclub)
 "fi" = (
 /obj/structure/table/wood/poker,
+/obj/item/card/id/reno/bishops/key/suite1{
+	pixel_y = 7
+	},
+/obj/item/card/id/reno/bishops/key/suite2,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "casino"
@@ -1294,7 +1298,8 @@
 /area/f13/reno_sharkclub)
 "nq" = (
 /obj/structure/simple_door/house{
-	name = "mayor's office"
+	name = "mayor's office";
+	req_access_txt = "165"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bishop_boss_doors";
@@ -1350,7 +1355,8 @@
 	name = "office entrance"
 	},
 /obj/structure/simple_door/house{
-	name = "mayor's office"
+	name = "mayor's office";
+	req_access_txt = "165"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -2514,6 +2520,11 @@
 /obj/item/bedsheet/random,
 /turf/open/floor/wood/f13/oakbroken2,
 /area/f13/reno_streets)
+"BC" = (
+/obj/structure/chair/wood/fancy,
+/obj/effect/landmark/start/f13/bishops/capo,
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "BK" = (
 /obj/structure/fluff/railing{
 	dir = 4;
@@ -2811,6 +2822,9 @@
 /obj/item/camera,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
+"EU" = (
+/turf/closed/wall/gothic/rivet,
+/area/f13/reno_sharkclub)
 "EW" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -3191,16 +3205,17 @@
 /area/f13/reno_streets)
 "Jz" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/machinery/computer/terminal{
-	icon_state = "lab";
-	pixel_y = 7;
-	icon_screen = null;
-	icon_keyboard = null;
-	layer = 4.25
-	},
 /obj/item/clothing/mask/cigarette/cigar/ncr{
 	pixel_y = -6;
 	pixel_x = -4
+	},
+/obj/machinery/computer/security{
+	icon_keyboard = null;
+	icon_screen = null;
+	icon_state = "lab";
+	network = list("bishops");
+	dir = 8;
+	pixel_y = 6
 	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
@@ -3422,7 +3437,8 @@
 /area/f13/reno_streets)
 "LV" = (
 /obj/structure/simple_door/house{
-	name = "suite 2"
+	name = "suite 2";
+	req_access_txt = "162"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -3674,7 +3690,10 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_streets)
 "PO" = (
-/obj/machinery/door/airlock/wood/glass,
+/obj/structure/simple_door/bunker/glass{
+	req_access_txt = "165";
+	name = "elevator"
+	},
 /turf/open/floor/plasteel/f13,
 /area/f13/reno_sharkclub)
 "PS" = (
@@ -3693,7 +3712,8 @@
 /area/f13/reno_streets)
 "PT" = (
 /obj/structure/simple_door/house{
-	name = "suite 1"
+	name = "suite 1";
+	req_access_txt = "161"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -27219,33 +27239,33 @@ qD
 rt
 Cg
 cD
-mh
+EU
 hM
-mh
+EU
 hM
-mh
+EU
 kf
 kf
 kf
 kf
 kf
 kf
-mh
-mh
+EU
+EU
 SS
 SS
 SS
 SS
 SS
 SS
-mh
+EU
 rp
-mh
+EU
 rp
-mh
+EU
 mV
 mV
-mh
+EU
 qD
 qD
 qD
@@ -27375,14 +27395,14 @@ hQ
 Id
 Uv
 Ki
-mh
+EU
 Sy
 Id
 RT
 na
 na
 na
-mh
+EU
 tj
 Rk
 Rk
@@ -27390,7 +27410,7 @@ Rk
 Rk
 Rk
 gI
-mh
+EU
 tk
 OH
 OH
@@ -27521,20 +27541,20 @@ qD
 qD
 qD
 qD
-mh
+EU
 yS
-mh
+EU
 Uv
 oV
 oV
-mh
+EU
 VG
 Uv
 VN
 Hp
 dc
 rc
-mh
+EU
 rw
 ad
 ad
@@ -27542,7 +27562,7 @@ Rc
 OD
 ad
 ad
-mh
+EU
 EG
 OH
 OH
@@ -27679,29 +27699,29 @@ Uv
 Uv
 jp
 aO
-mh
+EU
 AL
 RO
 Ts
 Nx
 sn
 Kx
-mh
-mh
+EU
+EU
 uU
 ad
 oE
 Jz
 xh
 ad
-mh
+EU
 rm
 rm
 OH
 OH
 OH
 Cb
-mh
+EU
 qD
 qD
 qD
@@ -27825,13 +27845,13 @@ qD
 qD
 qD
 qD
-mh
+EU
 gz
 Uv
 Uv
 Bm
 Bm
-mh
+EU
 VL
 ad
 Pa
@@ -27839,14 +27859,14 @@ ly
 Qm
 Kx
 Mp
-mh
+EU
 ad
 ad
 Da
 ad
 Da
 ad
-mh
+EU
 rd
 fi
 OH
@@ -27983,29 +28003,29 @@ Uv
 Uv
 Uv
 Uv
-mh
+EU
 Ui
 ad
 NP
 Kx
 Kx
 Kx
-mh
-mh
+EU
+EU
 Up
 VN
 VN
 VN
 VN
 ft
-mh
+EU
 rN
 vX
 OH
 OH
 ha
 gk
-mh
+EU
 qD
 qD
 qD
@@ -28129,20 +28149,20 @@ qD
 qD
 qD
 qD
-mh
+EU
 nd
 Uv
 Ti
 VN
 JW
-mh
+EU
 oo
 ad
 sA
 Kx
 Kx
 rc
-mh
+EU
 nh
 Eu
 Eu
@@ -28287,14 +28307,14 @@ Uv
 Ey
 by
 by
-mh
+EU
 iT
 My
 LE
 Kx
 Kn
 Lj
-mh
+EU
 VN
 ce
 Eu
@@ -28302,14 +28322,14 @@ Eu
 Eu
 Eu
 dA
-mh
+EU
 pw
 pw
 MU
 Dt
 OH
 Cb
-mh
+EU
 qD
 qD
 qD
@@ -28433,20 +28453,20 @@ qD
 qD
 qD
 qD
-mh
+EU
 Rr
 Uv
 Ey
 by
 by
-mh
+EU
 fu
 gs
 VN
 Kx
 xw
 At
-mh
+EU
 iy
 VN
 Eu
@@ -28454,7 +28474,7 @@ Eu
 Eu
 Eu
 kM
-mh
+EU
 by
 by
 YD
@@ -28591,14 +28611,14 @@ Uv
 Ey
 nk
 by
-mh
+EU
 Cl
 en
 Zu
 Kx
 Jv
 dd
-mh
+EU
 VN
 Px
 yB
@@ -28606,14 +28626,14 @@ Eu
 Eu
 yB
 Aq
-mh
+EU
 vz
 by
 YD
 BA
 cA
 EE
-mh
+EU
 qD
 qD
 qD
@@ -28737,35 +28757,35 @@ qD
 qD
 qD
 qD
-mh
-mh
+EU
+EU
 LV
-mh
+EU
 hR
-mh
-mh
-mh
+EU
+EU
+EU
 hR
-mh
+EU
 PT
-mh
+EU
 ao
-mh
-mh
-mh
-mh
+EU
+EU
+EU
+EU
 nq
 nL
-mh
-mh
-mh
-mh
-mh
-mh
-mh
-mh
-mh
-mh
+EU
+EU
+EU
+EU
+EU
+EU
+EU
+EU
+EU
+EU
 qD
 qD
 qD
@@ -28904,7 +28924,7 @@ cy
 cy
 cy
 cy
-mh
+EU
 wX
 ad
 ad
@@ -28912,12 +28932,12 @@ Uv
 qR
 aO
 sj
-zS
+BC
 Ln
 Eu
 sH
 OV
-mh
+EU
 qD
 qD
 qD
@@ -29056,7 +29076,7 @@ cy
 cy
 cy
 TG
-mh
+EU
 uI
 ad
 ad
@@ -29069,7 +29089,7 @@ Ln
 Eu
 Eu
 Eu
-mh
+EU
 qD
 qD
 qD
@@ -29192,8 +29212,8 @@ qD
 qD
 qD
 qD
-mh
-mh
+EU
+EU
 rl
 TG
 rl
@@ -29212,16 +29232,16 @@ TP
 Uv
 Uv
 Uv
-Cx
+Yt
 Yt
 Cx
 Uv
 Uv
-mh
+EU
 Eu
 Eu
 Wo
-mh
+EU
 qD
 qD
 qD
@@ -29360,7 +29380,7 @@ cy
 cy
 cy
 vD
-mh
+EU
 we
 hY
 Uv
@@ -29373,7 +29393,7 @@ KI
 Eu
 oH
 XW
-mh
+EU
 qD
 qD
 qD
@@ -29512,20 +29532,20 @@ rl
 cy
 cy
 da
-mh
+EU
 we
 hY
 Uv
 lj
-mh
+EU
 kf
 kf
 kf
-mh
+EU
 hM
-mh
+EU
 hM
-mh
+EU
 qD
 qD
 qD
@@ -29664,7 +29684,7 @@ cy
 cy
 cy
 Du
-mh
+EU
 kf
 kf
 kf
@@ -29963,12 +29983,12 @@ zv
 zv
 zv
 Gx
-mh
-mh
+EU
+EU
 PO
-mh
-mh
-mh
+EU
+EU
+EU
 qD
 qD
 qD
@@ -30115,12 +30135,12 @@ zv
 zv
 zv
 Gx
-mh
+EU
 df
 df
 df
 df
-mh
+EU
 qD
 qD
 qD
@@ -30267,12 +30287,12 @@ zv
 zv
 zv
 Gx
-mh
+EU
 df
 df
 Ku
 df
-mh
+EU
 qD
 qD
 qD
@@ -30419,12 +30439,12 @@ zv
 zv
 TU
 Gx
-mh
+EU
 df
 df
 df
 df
-mh
+EU
 qD
 qD
 qD
@@ -30571,12 +30591,12 @@ el
 el
 el
 hG
-mh
+EU
 df
 df
 df
 df
-mh
+EU
 qD
 qD
 qD
@@ -30723,12 +30743,12 @@ uc
 uc
 uc
 uc
-mh
-mh
-mh
-mh
-mh
-mh
+EU
+EU
+EU
+EU
+EU
+EU
 qD
 qD
 qD

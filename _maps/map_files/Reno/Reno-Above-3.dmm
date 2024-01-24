@@ -236,7 +236,8 @@
 /area/f13/reno_streets)
 "aL" = (
 /obj/structure/simple_door{
-	name = "room B5"
+	name = "room B5";
+	req_access_txt = "159"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -1483,7 +1484,8 @@
 /area/f13/reno_streets)
 "eX" = (
 /obj/structure/simple_door{
-	name = "room B2"
+	name = "room B2";
+	req_access_txt = "156"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -2780,7 +2782,7 @@
 /obj/machinery/camera{
 	dir = 8;
 	network = list("bishops");
-	c_tag = "2nd floor elevator"
+	c_tag = "FLR2 elevator"
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -2988,6 +2990,7 @@
 /area/f13/reno_sharkclub)
 "kb" = (
 /obj/structure/chair/wood/fancy,
+/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/carpet/red,
 /area/f13/reno_sharkclub)
 "kc" = (
@@ -3073,7 +3076,7 @@
 /obj/machinery/camera{
 	dir = 10;
 	network = list("bishops");
-	c_tag = "2nd floor vault hallway"
+	c_tag = "FLR2 vault hallway"
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -3406,7 +3409,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_streets)
 "lg" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/structure/simple_door/bunker/glass{
+	req_access_txt = "165";
+	name = "elevator"
+	},
 /turf/open/floor/plasteel/f13,
 /area/f13/reno_sharkclub)
 "lh" = (
@@ -4205,6 +4211,7 @@
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
 "nR" = (
@@ -4766,6 +4773,9 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/reno_streets)
+"pP" = (
+/turf/closed/wall/gothic/rivet,
+/area/f13/reno_sharkclub_armory)
 "pQ" = (
 /obj/structure/statue/diamond/overlayable/motherofcombustionright{
 	name = "Old Statue";
@@ -4879,7 +4889,7 @@
 /obj/machinery/camera{
 	dir = 4;
 	network = list("bishops");
-	c_tag = "2nd floor vault"
+	c_tag = "FLR2 vault"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkyellowfull"
@@ -5558,7 +5568,15 @@
 /obj/machinery/camera{
 	dir = 8;
 	network = list("bishops");
-	c_tag = "2nd floor security room"
+	c_tag = "FLR2 security room"
+	},
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_y = 4
+	},
+/obj/machinery/computer/security{
+	icon_keyboard = "terminal_key";
+	icon_screen = "terminal_on_alt"
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -5828,7 +5846,9 @@
 	},
 /area/f13/reno_streets)
 "ty" = (
-/obj/machinery/door/unpowered/secure_steeldoor,
+/obj/machinery/door/unpowered/secure_steeldoor{
+	req_access_txt = "166"
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -5894,7 +5914,8 @@
 /area/f13/reno_streets)
 "tK" = (
 /obj/structure/simple_door{
-	name = "room B4"
+	name = "room B4";
+	req_access_txt = "158"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -6754,6 +6775,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/bishops/mademan,
 /turf/open/floor/carpet/red,
 /area/f13/reno_sharkclub)
 "wV" = (
@@ -7618,7 +7640,8 @@
 /area/f13/reno_streets)
 "zD" = (
 /obj/structure/simple_door{
-	name = "room B1"
+	name = "room B1";
+	req_access_txt = "155"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -8189,7 +8212,8 @@
 /area/f13/reno_streets)
 "Bz" = (
 /obj/structure/simple_door{
-	name = "room B6"
+	name = "room B6";
+	req_access_txt = "160"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -8816,6 +8840,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/computer/security,
+/obj/machinery/computer/security{
+	icon_keyboard = "terminal_key"
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -8966,6 +8994,9 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
+/area/f13/reno_sharkclub)
+"En" = (
+/turf/closed/wall/gothic/rivet,
 /area/f13/reno_sharkclub)
 "Ep" = (
 /obj/structure/table,
@@ -9427,7 +9458,7 @@
 /obj/machinery/camera{
 	dir = 8;
 	network = list("bishops");
-	c_tag = "2nd floor stairway"
+	c_tag = "FLR2 stairway"
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -10104,7 +10135,7 @@
 /obj/machinery/camera{
 	dir = 4;
 	network = list("bishops");
-	c_tag = "2nd floor hallway 1"
+	c_tag = "FLR2 hallway 1"
 	},
 /turf/open/floor/carpet/reno/evil4,
 /area/f13/reno_sharkclub)
@@ -10770,6 +10801,20 @@
 "Kb" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/reno_streets)
+"Kd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/security{
+	icon_keyboard = "terminal_key";
+	icon_screen = "terminal_on_alt";
+	icon_state = "terminal";
+	network = list("bishops");
+	dir = 4
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/reno_sharkclub)
 "Kg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/human,
@@ -10788,7 +10833,8 @@
 /area/f13/reno_streets)
 "Ki" = (
 /obj/structure/simple_door{
-	name = "room B3"
+	name = "room B3";
+	req_access_txt = "157"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -12341,7 +12387,7 @@
 /obj/machinery/camera{
 	dir = 6;
 	network = list("bishops");
-	c_tag = "smoking lounge"
+	c_tag = "FLR2 smoking lounge"
 	},
 /turf/open/floor/wood/f13,
 /area/f13/reno_sharkclub)
@@ -12620,7 +12666,12 @@
 /area/f13/reno_streets)
 "Qw" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/terminal,
+/obj/machinery/computer/security{
+	icon_keyboard = "terminal_key";
+	icon_screen = "terminal_on_alt";
+	icon_state = "terminal";
+	network = list("bishops")
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -13756,7 +13807,10 @@
 /turf/open/floor/carpet/green,
 /area/f13/reno_streets)
 "Uw" = (
-/obj/machinery/door/airlock/vault,
+/obj/machinery/door/airlock/vault{
+	name = "Shark Club vault";
+	req_access_txt = "166"
+	},
 /obj/machinery/door/poddoor/preopen{
 	layer = 2.71;
 	id = "casino_vault"
@@ -14149,6 +14203,13 @@
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
+"VS" = (
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_y = 4
+	},
+/turf/closed/wall/gothic/rivet,
+/area/f13/reno_sharkclub_armory)
 "VT" = (
 /turf/open/floor/carpet/purple,
 /area/f13/reno_streets)
@@ -14646,7 +14707,7 @@
 /obj/machinery/camera{
 	dir = 4;
 	network = list("bishops");
-	c_tag = "2nd floor hallway 2"
+	c_tag = "FLR2 shallway 2"
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -38083,33 +38144,33 @@ pv
 pv
 pv
 pv
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
+En
+En
+En
+En
+En
+En
 Vm
-Pc
+En
 Vm
-Pc
+En
 Vm
-Pc
+En
 Vm
-Pc
-Pc
+En
+En
 jN
 jN
 jN
-Pc
-Pc
+En
+En
 jN
 jN
-Pc
+En
 UB
 hx
 Zs
@@ -38235,14 +38296,14 @@ pv
 pv
 pv
 pv
-Pc
+En
 bA
 TZ
 qK
 Ch
-Ch
+Kd
 hB
-Pc
+En
 VI
 VI
 np
@@ -38253,12 +38314,12 @@ np
 eR
 Cf
 wf
-Pc
+En
 Qq
 fa
 Ip
 WL
-Pc
+En
 Rb
 fa
 wm
@@ -38387,14 +38448,14 @@ pv
 pv
 pv
 pv
-Pc
+En
 Qw
 YH
 TZ
 TZ
 qD
 bA
-Pc
+En
 VI
 VI
 np
@@ -38405,17 +38466,17 @@ np
 FM
 Cf
 Cf
-Pc
+En
 Ud
 fa
 fX
 fa
-Pc
+En
 jK
 fa
-Pc
+En
 wm
-Pc
+En
 pv
 pv
 pv
@@ -38539,30 +38600,30 @@ pv
 pv
 pv
 pv
-Pc
+En
 wv
 TZ
 TZ
 TZ
 TZ
 TZ
-Pc
-Pc
-Pc
+En
+En
+En
 Mq
 qm
 qm
 qm
 mn
-Pc
+En
 Cf
 Cf
-Pc
+En
 dN
 fa
 fa
 fa
-Pc
+En
 us
 fa
 Er
@@ -38691,15 +38752,15 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
 sE
 DF
 TZ
 TZ
-Pc
-Pc
+En
+En
 VI
 VI
 VI
@@ -38709,12 +38770,12 @@ VI
 VI
 Cf
 Cf
-Pc
+En
 fa
 BV
 BV
 BV
-Pc
+En
 fa
 fa
 fa
@@ -38843,15 +38904,15 @@ pv
 pv
 pv
 pv
-Pc
+En
 ty
-Pc
-wp
+En
+VS
 wp
 wp
 Uw
-wp
-wp
+pP
+pP
 VI
 VI
 VI
@@ -38861,12 +38922,12 @@ VI
 VI
 Cf
 Cf
-Pc
+En
 fa
 DN
 XN
 pk
-Pc
+En
 fa
 Lh
 by
@@ -38995,15 +39056,15 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 Ut
-wp
+pP
 wK
 qi
 pM
 FG
-wp
+pP
 VI
 VI
 VI
@@ -39013,17 +39074,17 @@ VI
 VI
 Cf
 To
-Pc
+En
 zD
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 eX
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 pv
 pv
 pv
@@ -39147,22 +39208,22 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
-wp
+pP
 EL
 pM
 pM
 AC
-wp
-wp
+pP
+pP
 AT
 AT
 AT
 AT
 AT
-Pc
+En
 Ih
 Cf
 Cf
@@ -39299,22 +39360,22 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
-wp
+pP
 Do
 pM
 pM
 pM
 pM
-wp
+pP
 Wm
 EF
 vh
 jd
 cT
-Pc
+En
 Cf
 Cf
 Cf
@@ -39451,35 +39512,35 @@ pv
 pv
 pv
 pv
-Pc
+En
 Ng
 kp
-wp
+pP
 AZ
 pM
 Ow
 GH
 pM
-wp
+pP
 MH
 pI
 vh
 nQ
 nQ
-Pc
+En
 Cf
 Cf
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 Ki
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 tK
-Pc
+En
 pv
 pv
 pv
@@ -39603,30 +39664,30 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
-wp
+pP
 AZ
 pM
 GH
 GH
 pM
-wp
+pP
 PA
 vh
 vh
 vh
 vh
-Pc
+En
 th
 Cf
-Pc
+En
 Rt
 sh
 OS
 kI
-Pc
+En
 MO
 QQ
 ui
@@ -39755,35 +39816,35 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
-wp
+pP
 Qk
 pM
 pM
 pM
 pM
-wp
+pP
 qV
 vh
 kb
 Ni
 RX
-Pc
+En
 Cf
 Cf
-Pc
+En
 oS
 KR
 kI
 kI
-Pc
+En
 rV
 ui
 ui
 ui
-Pc
+En
 pv
 pv
 pv
@@ -39907,30 +39968,30 @@ pv
 pv
 pv
 pv
-Pc
+En
 TZ
 TZ
-wp
+pP
 fJ
 EW
 Lw
 Lw
 Ji
-wp
+pP
 dh
 vh
 wU
 su
 RX
-Pc
+En
 Cf
 Cf
-Pc
+En
 kI
 kI
 kI
 kI
-Pc
+En
 LN
 ui
 ui
@@ -40058,36 +40119,36 @@ pv
 pv
 pv
 pv
-Pc
-Pc
-Pc
+En
+En
+En
 ty
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-Pc
+pP
+pP
+pP
+pP
+pP
+pP
+pP
+En
 So
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 Cf
 Cf
-Pc
+En
 jH
 kI
 kI
 kI
-Pc
+En
 Jz
 aJ
 rO
 rO
-Pc
+En
 pv
 pv
 pv
@@ -40229,12 +40290,12 @@ np
 Cf
 Cf
 Cf
-Pc
+En
 SI
 kI
 ry
 Uq
-Pc
+En
 in
 gb
 zs
@@ -40362,7 +40423,7 @@ pv
 pv
 pv
 pv
-Pc
+En
 fk
 Cf
 Cf
@@ -40381,17 +40442,17 @@ np
 jo
 Vu
 To
-Pc
+En
 Wn
 ds
-Pc
+En
 ds
 Pc
 Xo
 Xo
 Xo
-Pc
-Pc
+En
+En
 pv
 pv
 pv
@@ -40530,10 +40591,10 @@ np
 Cf
 Cf
 np
-Pc
-Pc
+En
+En
 Vm
-Pc
+En
 eZ
 eZ
 gm
@@ -40666,18 +40727,18 @@ pv
 pv
 pv
 pv
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
 Bz
-Pc
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
+En
 aL
-Pc
+En
 ac
 np
 iZ
@@ -40824,17 +40885,17 @@ fa
 OU
 fa
 fa
-Pc
+En
 kL
 dz
 zK
 zK
-Pc
+En
 Pc
 lg
-Pc
-Pc
-Pc
+En
+En
+En
 pv
 pv
 pv
@@ -40970,23 +41031,23 @@ pv
 pv
 pv
 pv
-Pc
+En
 by
 fa
 SL
 SL
 fr
-Pc
+En
 hn
 zK
 zK
 zK
-Pc
+En
 Ra
 Ra
 Ra
 Ra
-Pc
+En
 pv
 pv
 pv
@@ -41128,17 +41189,17 @@ fa
 il
 rO
 rO
-Pc
+En
 XX
 zK
 zK
 dK
-Pc
+En
 Ra
 Ra
 Nu
 Ra
-Pc
+En
 pv
 pv
 pv
@@ -41274,23 +41335,23 @@ pv
 pv
 pv
 pv
-Pc
+En
 Ct
 fa
 TQ
 rO
 rO
-Pc
+En
 zK
 zK
 zK
 zK
-Pc
+En
 Ra
 Ra
 Ra
 Ra
-Pc
+En
 pv
 pv
 pv
@@ -41432,17 +41493,17 @@ ph
 jO
 sm
 Ly
-Pc
+En
 Gh
 Aq
 Zw
 Em
-Pc
+En
 Ra
 Ra
 Ra
 Ra
-Pc
+En
 pv
 pv
 pv
@@ -41578,23 +41639,23 @@ pv
 pv
 pv
 pv
-Pc
-Pc
-Pc
+En
+En
+En
 jN
 jN
 jN
-Pc
-Pc
+En
+En
 jN
 jN
 jN
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
+En
+En
+En
+En
+En
+En
 pv
 pv
 pv
