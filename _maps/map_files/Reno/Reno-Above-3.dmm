@@ -5570,14 +5570,6 @@
 	network = list("bishops");
 	c_tag = "FLR2 security room"
 	},
-/obj/machinery/computer/terminal{
-	dir = 4;
-	pixel_y = 4
-	},
-/obj/machinery/computer/security{
-	icon_keyboard = "terminal_key";
-	icon_screen = "terminal_on_alt"
-	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -6623,9 +6615,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/reno_streets)
-"wp" = (
-/turf/closed/wall/gothic,
-/area/f13/reno_sharkclub_armory)
 "wq" = (
 /turf/closed/indestructible/rock,
 /area/f13/reno_streets)
@@ -8840,10 +8829,6 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/computer/security,
-/obj/machinery/computer/security{
-	icon_keyboard = "terminal_key"
-	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -10803,12 +10788,10 @@
 /area/f13/reno_streets)
 "Kd" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/security{
-	icon_keyboard = "terminal_key";
-	icon_screen = "terminal_on_alt";
-	icon_state = "terminal";
-	network = list("bishops");
-	dir = 4
+/obj/machinery/computer/security/vault{
+	dir = 4;
+	name = "security camera terminal";
+	network = list("bishops")
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -11197,12 +11180,6 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/carpet/brown,
 /area/f13/reno_streets)
-"Lw" = (
-/obj/structure/rack/shelf_metal,
-/turf/open/floor/f13{
-	icon_state = "darkyellowfull"
-	},
-/area/f13/reno_sharkclub_armory)
 "Lx" = (
 /obj/machinery/light/small,
 /turf/open/floor/wood/f13/oakbroken3,
@@ -12666,10 +12643,9 @@
 /area/f13/reno_streets)
 "Qw" = (
 /obj/structure/table/reinforced,
-/obj/machinery/computer/security{
-	icon_keyboard = "terminal_key";
-	icon_screen = "terminal_on_alt";
-	icon_state = "terminal";
+/obj/machinery/computer/security/vault{
+	dir = 2;
+	name = "security camera terminal";
 	network = list("bishops")
 	},
 /turf/open/floor/f13{
@@ -14203,13 +14179,6 @@
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_streets)
-"VS" = (
-/obj/machinery/computer/terminal{
-	dir = 4;
-	pixel_y = 4
-	},
-/turf/closed/wall/gothic/rivet,
-/area/f13/reno_sharkclub_armory)
 "VT" = (
 /turf/open/floor/carpet/purple,
 /area/f13/reno_streets)
@@ -38907,9 +38876,9 @@ pv
 En
 ty
 En
-VS
-wp
-wp
+pP
+pP
+pP
 Uw
 pP
 pP
@@ -39974,8 +39943,8 @@ TZ
 pP
 fJ
 EW
-Lw
-Lw
+Do
+Do
 Ji
 pP
 dh

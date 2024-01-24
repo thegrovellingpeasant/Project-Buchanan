@@ -7609,7 +7609,6 @@
 /area/f13/reno_subway)
 "fzS" = (
 /obj/structure/stairs/south{
-	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "rampdowntop";
 	dir = 1
 	},
@@ -13739,7 +13738,6 @@
 /area/f13/reno_subway)
 "jUp" = (
 /obj/structure/stairs/south{
-	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "rampdowntop";
 	dir = 1
 	},
@@ -25425,7 +25423,7 @@
 /obj/machinery/camera{
 	dir = 4;
 	network = list("bishops");
-	c_tag = "basemenst pit"
+	c_tag = "basement pit"
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_subway)
@@ -28216,7 +28214,6 @@
 	pixel_x = 7
 	},
 /obj/structure/stairs/south{
-	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "rampdowntop";
 	dir = 1
 	},

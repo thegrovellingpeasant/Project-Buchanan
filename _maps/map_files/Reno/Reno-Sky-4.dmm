@@ -3209,13 +3209,11 @@
 	pixel_y = -6;
 	pixel_x = -4
 	},
-/obj/machinery/computer/security{
-	icon_keyboard = null;
-	icon_screen = null;
-	icon_state = "lab";
+/obj/machinery/computer/security/wooden_tv{
 	network = list("bishops");
-	dir = 8;
-	pixel_y = 6
+	icon_state = "lab";
+	icon_screen = null;
+	pixel_y = 7
 	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)

@@ -10112,7 +10112,6 @@
 	pixel_x = 7
 	},
 /obj/structure/stairs/south{
-	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "rampdowntop";
 	dir = 1
 	},
@@ -14004,7 +14003,6 @@
 /area/f13/reno_wasteland)
 "hTV" = (
 /obj/structure/stairs/south{
-	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "rampdowntop";
 	dir = 1
 	},
@@ -67768,7 +67766,7 @@ dVG
 dVG
 dVG
 vFB
-mWD
+skN
 skN
 skN
 mQE
