@@ -462,3 +462,33 @@
 /obj/item/circuitboard/computer/bishop_control
 	name = "Bishop Elevator Control (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/bishopelevator
+
+//id consoles
+
+/obj/item/circuitboard/computer/card/bishops
+	name = "Bishop ID Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/bishops
+
+/obj/item/circuitboard/computer/card/vangraffs
+	name = "Van Graff ID Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/vangraffs
+
+/obj/item/circuitboard/computer/card/wrights
+	name = "Wright ID Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/wrights
+
+/obj/item/circuitboard/computer/card/wrights/shop
+	name = "Shop Employment Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/wrights/shop
+
+/obj/item/circuitboard/computer/card/wrights/clinic
+	name = "Clinic Employement Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/wrights/clinic
+
+/obj/item/circuitboard/computer/card/nrpd
+	name = "NRPD ID Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/nrpd
+
+/obj/item/circuitboard/computer/card/ncr_mp
+	name = "NCR ID Console (Computer Board)"
+	build_path = /obj/machinery/computer/card/ncr_mp
