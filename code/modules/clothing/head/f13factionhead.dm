@@ -1437,6 +1437,12 @@ obj/item/clothing/head/f13/army/beret
 //wrights//
 ////////////
 
+/obj/item/clothing/head/helmet/f13/wrights/fedora
+	name = "beige fedora"
+	desc = "A fedora in beige."
+	icon_state = "wright_fedora"
+	item_state = "wright_fedora"
+
 /obj/item/clothing/head/helmet/f13/wrights/tophat
 	name = "black tophat"
 	desc = "The family top hat of the Wrights."

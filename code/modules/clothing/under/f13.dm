@@ -1963,6 +1963,12 @@
 
 //Bishops
 
+/obj/item/clothing/under/f13/bishops/mayor
+	name = "navy blue suit"
+	desc = "A tailored suit, in navy blue, complete with a tie and pocket square."
+	icon_state = "bishop_mayor"
+	item_state = "bishop_mayor"
+
 /obj/item/clothing/under/f13/bishops/boss
 	name = "blue checkers"
 	desc = "Ay, dat's a nice suit ya got there. Be a shame if something were to happen to it."
@@ -2012,6 +2018,12 @@
 	item_state = "bishop_casino_worker"
 
 //wrights
+
+/obj/item/clothing/under/f13/wrights/patriarch
+	name = "well tailored suit"
+	desc = "A neat, well maintained suit."
+	icon_state = "wright_boss"
+	item_state = "wright_boss"
 
 /obj/item/clothing/under/f13/wrights/elder
 	name = "well tailored suit"

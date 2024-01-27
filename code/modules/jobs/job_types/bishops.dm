@@ -18,14 +18,58 @@
 
 /*--------------------------------------------------------------*/
 
+/datum/job/bishops/f13mayor
+	title = "Mr Bishop"
+	flag = F13BISHOPSBOSS
+	department_flag = BISHOPS
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "The Federal government of the NCR, God"
+	description = "You are John Henry Bishop II (better known as Mr. Bishop), the leader of the Bishop family, you are also Mayor of the City-County of New Reno, blah blah blah, you're an admin so you should probably already know all of this"
+	selection_color = "#7C93AF"
+	exp_requirements = EXP_TYPE_BISHOPS
+
+	outfit = /datum/outfit/job/bishops/f13mayor
+
+	loadout_options = list(
+		/datum/outfit/loadout/handcannon,		// Desert Eagle
+		/datum/outfit/loadout/mylittlefriend,	// American180
+		)
+
+/datum/outfit/job/bishops/f13mayor
+	name = "Bishop Mayor"
+	jobtype = /datum/job/bishops/f13mayor
+
+	uniform	= /obj/item/clothing/under/f13/bishops/mayor
+	id = /obj/item/card/id/reno/bishops/ring/boss
+	accessory = null
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
+	neck = /obj/item/clothing/neck/mayoral_sash
+	glasses = /obj/item/clothing/glasses/eyepatch
+	gloves = null
+	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
+	suit_store = null
+	r_hand = null
+	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
+	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
+	backpack_contents = list(
+		/obj/item/clothing/mask/cigarette/cigar/ncr = 1,
+		/obj/item/lighter/gold = 1,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/storage/bag/money/small/huge = 1
+		)
+
+/*--------------------------------------------------------------*/
+
 /datum/job/bishops/f13boss
-	title = "Bishop Boss"
+	title = "Bishop Underboss"
 	flag = F13BISHOPSBOSS
 	department_flag = BISHOPS
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Mr Bishop"
-	description = "You are the head of the Bishop family. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with the NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution, if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
+	description = "You are the second highest member of the Bishop family, with your only superior being Mr. John H. Bishop himself. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with the NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution, if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
 
@@ -37,7 +81,7 @@
 		)
 
 /datum/outfit/job/bishops/f13boss
-	name = "Bishop Boss"
+	name = "Bishop Undeross"
 	jobtype = /datum/job/bishops/f13boss
 
 	uniform	= /obj/item/clothing/under/f13/bishops/boss
@@ -45,7 +89,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
-	neck = /obj/item/clothing/neck/mayoral_sash
+	neck = null
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
 	suit_store = null
@@ -100,8 +144,8 @@
 	department_flag = BISHOPS
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Bishop Boss"
-	description = "You are the wife of the Boss; how this happened? Who knows, maybe it was a drunken marriage. While you have no real responsibilities you do hold some level of authority, albeit lesser than that of the boss. You may find yourself doing things like micromanaging the casino staff, pestering the boss and the mobsters, and getting thrown off the third story of the Shark Club in an impromptu divorce."
+	supervisors = "the Bishop Underboss"
+	description = "You are the wife of the Underboss; how this happened? Who knows, maybe it was a drunken marriage. While you have no real responsibilities you do hold some level of authority, albeit lesser than that of the boss. You may find yourself doing things like micromanaging the casino staff, pestering the boss and the mobsters, and getting thrown off the third story of the Shark Club in an impromptu divorce."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
 
@@ -165,7 +209,7 @@
 	department_flag = BISHOPS
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Bishop Boss"
+	supervisors = "the Bishop Underboss, Mr. Bishop"
 	description = "You have proven your worth as an earner for the Bishop Family and, as such, it has been trusted to you to lead a small band of made men for the boss. You are the mediator between the head of the family and said made men, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the made men not be assigned to you by the Boss, the decision will fall unto you and the other capos. Help to manage the Casino, make sure there's entertainment for the visitors, follow the instructions of your superior, keep the made men in line."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
@@ -246,7 +290,7 @@
 	outfit = /datum/outfit/job/bishops/f13mademan
 
 	loadout_options = list(
-		/datum/outfit/loadout/fedora1,
+		/datum/outfit/loadout/fedora,
 		/datum/outfit/loadout/fedora2,
 		/datum/outfit/loadout/fedora3,
 		/datum/outfit/loadout/fedora4
