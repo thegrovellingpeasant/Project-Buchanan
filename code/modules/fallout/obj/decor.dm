@@ -124,3 +124,182 @@
 	desc = "A sign indicating which cell block you are in prisoner."
 	icon = 'icons/fallout/objects/decals.dmi'
 	icon_state = "cells"
+
+//////////////////
+//new reno stuff//
+
+/obj/structure/decoration/framed
+	name = "DO NOT USE"
+	desc = "If you are seeing this text, somebody fucked up."
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "no name"
+
+/obj/structure/decoration/framed/family_photos
+	name = "framed photos"
+	desc = "Framed photos of various people."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "wright_photos"
+
+/obj/structure/decoration/framed/diploma
+	name = "medical diploma"
+	desc = "A diploma from a Californian university."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "diploma"
+
+/obj/structure/decoration/framed/president_tandi
+	name = "portrait of a young woman"
+	desc = "A framed portrait of younger looking woman in a suit. The plaque reads 'Tandi N.M.; President of the New California Republic, 2196-2248'."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "portrait_kimball"
+
+/obj/structure/decoration/framed/president_kimball
+	name = "portrait of a middle aged man"
+	desc = "A framed portrait of a middle aged man in a suit with a military haircut. The plaque reads 'Aaron Kimball; President of the New California Republic'."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "portrait_kimball"
+
+/obj/structure/decoration/framed/mr_bishop
+	name = "portrait of a young man"
+	desc = "A framed portrait of a younger looking man in a suit with an eyepatch. The plaque reads 'John H. Bishop II; Mayor of the City-County of New Reno'."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "portrait_bishop"
+
+/obj/structure/decoration/framed/mr_wright
+	name = "portrait of an elderly man"
+	desc = "A framed portrait of an elderly man wearing a suit. The plaque reads 'Christopher Wright'."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "portrait_bishop"
+
+/obj/structure/decoration/framed/wright_photos
+	name = "framed photos"
+	desc = "Framed photos of various members of the Wright family."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "wright_photos"
+
+//flags
+
+/obj/structure/decoration/flag
+	name = "DO NOT USE"
+	desc = "If you are seeing this text, somebody fucked up."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "no name"
+
+/obj/structure/decoration/flag/ncr
+	name = "flag of the New California Republic"
+	desc = "The flag of the NCR. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_ncr"
+
+/obj/structure/decoration/flag/ncr/pristine
+	name = "flag of the New California Republic"
+	desc = "The flag of the NCR. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_ncr_pristine"
+
+/obj/structure/decoration/flag/cascadia
+	name = "flag of the Cascadia Republic"
+	desc = "The flag of the CR. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_cascadia"
+
+/obj/structure/decoration/flag/cascadia/pristine
+	name = "flag of the Cascadia Republic"
+	desc = "The flag of the CR. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_cascadia_pristine"
+
+/obj/structure/decoration/flag/legion
+	name = "flag of Caesar's legion"
+	desc = "The flag of that tribal horde in the east."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_legion"
+
+/obj/structure/decoration/flag/texas
+	name = "flag of Texas"
+	desc = "The flag of the Lone Star State. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_texas"
+
+/obj/structure/decoration/flag/texas/pristine
+	name = "flag of Texas"
+	desc = "The flag of the Lone Star State. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_texas"
+
+/obj/structure/decoration/flag/mexico
+	name = "flag of Mexico"
+	desc = "The flag of the United Mexican States. It's a bit faded and has a few holes, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_texas"
+
+/obj/structure/decoration/flag/mexico/undamaged
+	name = "flag of Mexico"
+	desc = "The flag of the United Mexican States. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_texas_undamaged"
+
+/obj/structure/decoration/flag/mexico/pristine
+	name = "flag of Mexico"
+	desc = "The flag of the United Mexican States. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_texas_pristine"
+
+/obj/structure/decoration/flag/usa
+	name = "flag of America"
+	desc = "The flag of the United States of America. Although the government it once represented is long gone, these stars and stripes still mean a lot to some."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_usa"
+
+/obj/structure/decoration/flag/usa/tattered
+	name = "flag of America"
+	desc = "The flag of the United States of America. Although the government it once represented is long gone, these stars and stripes still mean a lot to some."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_usa_tattered"
+
+/obj/structure/decoration/flag/usa/undamaged
+	name = "flag of America"
+	desc = "The flag of the United States of America. Although the government it once represented is long gone, these stars and stripes still mean a lot to some."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_usa_undamaged"
+
+/obj/structure/decoration/flag/usa/pristine
+	name = "flag of America"
+	desc = "The flag of the United States of America. Although the government it once represented is long gone, these stars and stripes still mean a lot to some."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_usa_pristine"
+
+/obj/structure/decoration/flag/china
+	name = "flag of China"
+	desc = "The flag of the People's Republic of China. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_china"
+
+/obj/structure/decoration/flag/china/pristine
+	name = "flag of China"
+	desc = "The flag of the People's Republic of China. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_china_pristine"
+
+/obj/structure/decoration/flag/christian
+	name = "Christian flag"
+	desc = "A flag that represents Christianity and Christendom. It's a bit faded, but still recognizable."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_christian"
+
+/obj/structure/decoration/flag/christian/pristine
+	name = "Christian flag"
+	desc = "A flag that represents Christianity and Christendom. It is in perfect condition."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_christian_pristine"
+
+/obj/structure/decoration/flag/redcross
+	name = "Red Cross flag"
+	desc = "A flag generally used to identify medical instutions, but is by law reserved for the Californian Red Cross Society, the NCR's attempt at establishing a 'non-political' alternative to the Followers of the Apocalypse."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_redcross"
+
+/obj/structure/decoration/flag/redcross/pristine
+	name = "Red Cross flag"
+	desc = "A flag generally used to identify medical instutions, but is by law reserved for the Californian Red Cross Society, the NCR's attempt at establishing a 'non-political' alternative to the Followers of the Apocalypse."
+	icon = 'icons/fallout/objects/newreno.dmi'
+	icon_state = "flag_redcross_pristine"

@@ -19,6 +19,47 @@
 	ears = /obj/item/radio/headset/headset_wrights
 /*--------------------------------------------------------------*/
 
+/datum/job/wrights/f13patriarch
+	title = "Wright Patriarch"
+	flag = F13WRIGHTSELDER
+	department_flag = WRIGHTS
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "God"
+	description = "You are the head of the Wright family. Although small, the Wrights are a proud and prosperous family, and it falls onto you to ensure that all the members keep the core tenets of your organization by avoiding both the consumption and distribution of chems and prostitution. To compensate, you have in your power the monopoly to the local production of alcohol and access to most of the cheap guns in the area. Assign soldiers to your capos. Allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business. Talk to your underboss to help you coordinate the affairs of the gang. You are the most proper and correct family in New Reno: Be polite, don't act like a thug, and keep bums and vagrants away from your territory."
+	selection_color = "#A27954"
+	exp_requirements = EXP_TYPE_WRIGHTS
+
+	outfit = /datum/outfit/job/wrights/f13patriarch
+
+	loadout_options = list(
+		/datum/outfit/loadout/feelluckypunk,		// .44 magnum
+		/datum/outfit/loadout/householddefense,	// lever action
+		)
+
+/datum/outfit/job/wrights/f13patriarch
+	name = "Wright Patriarch"
+	jobtype = /datum/job/wrights/f13patriarch
+
+	uniform	= /obj/item/clothing/under/f13/wrights/patriarch
+	id = /obj/item/card/id/reno/wrights/ring/boss
+	accessory = null
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/helmet/f13/wrights/fedora
+	neck = /obj/item/storage/belt/holster
+	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
+	suit = /obj/item/clothing/suit/armor/f13/wrights/elder
+	suit_store = null
+	r_hand = null
+	backpack = /obj/item/storage/backpack/satchel/leather
+	satchel = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/clothing/mask/cigarette/pipe = 1,
+		/obj/item/storage/bag/money/small/large = 1,
+		)
+
+/*--------------------------------------------------------------*/
+
 /datum/job/wrights/f13wrightelder
 	title = "Wright Elder"
 	flag = F13WRIGHTSELDER
