@@ -1099,7 +1099,7 @@
 	desc = "A coat for the most fanciful formal formalities."
 	icon_state = "morning_coat"
 	item_state = "morning_coat"
-	suittoggled = FALSE
+	suittoggled = TRUE
 
 /////////
 //Hotel//
