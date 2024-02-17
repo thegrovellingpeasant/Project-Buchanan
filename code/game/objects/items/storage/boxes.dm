@@ -1455,4 +1455,16 @@ list(/obj/item/stack/sheet/metal = 20,
 		new randomgun(src)
 
 
+/obj/item/storage/backpack/duffelbag/equipment/slotmachine/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/grenade/f13/dynamite = 7
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/backpack/duffelbag/equipment/slotmachine2/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/stock_parts/cell/ammo/alien = 2,
+		/obj/item/gun/energy/laser/plasma/pistol = 1
+		)
+	generate_items_inside(items_inside, src)
 

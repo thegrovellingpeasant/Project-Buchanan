@@ -998,6 +998,9 @@
 	desc = "A dog tag proving enlistment."
 	icon_state = "ncrdogtagrecruit"
 
+/obj/item/card/id/dogtag/ncrtrooper/escape
+	access = list(ACCESS_NCR)
+
 /obj/item/card/id/dogtag/ncrmp
 	name = "military police tags"
 	desc = "A dog tag that associates one with the NCROSI."
