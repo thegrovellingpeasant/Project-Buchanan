@@ -17,6 +17,8 @@
 	Therefore, the top right corner (except during admin shenanigans) is at "15,15"
 */
 
+#define ui_entire_screen "WEST,SOUTH to EAST,NORTH"
+
 //Lower left, persistent menu
 #define ui_inventory "WEST:6,SOUTH:5"
 
