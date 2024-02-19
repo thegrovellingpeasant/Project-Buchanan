@@ -136,7 +136,7 @@
 
 /obj/screen/fullscreen/noise
 	icon = 'icons/effects/static.dmi'
-	icon_state = "1 light"
+	icon_state = "grain"
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	layer = FULLSCREEN_LAYER
 	alpha = 127
