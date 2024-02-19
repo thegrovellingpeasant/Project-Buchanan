@@ -668,6 +668,7 @@
 
 //to recalculate and update the mob's total tint from tinted equipment it's wearing.
 /mob/living/carbon/proc/update_tint()
+	overlay_fullscreen("noise", /obj/screen/fullscreen/noise)
 	if(!GLOB.tinted_weldhelh)
 		return
 	tinttotal = get_total_tint()
