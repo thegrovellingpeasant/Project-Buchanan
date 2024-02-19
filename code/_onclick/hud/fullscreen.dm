@@ -137,14 +137,14 @@
 /obj/screen/fullscreen/noise
 	icon = 'icons/effects/static.dmi'
 	icon_state = "1 light"
-	screen_loc = ui_entire_screen
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	layer = FULLSCREEN_LAYER
 	alpha = 127
 
 /obj/screen/fullscreen/scanline
 	icon = 'icons/effects/static.dmi'
 	icon_state = "scanlines"
-	screen_loc = ui_entire_screen
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	alpha = 50
 	layer = FULLSCREEN_LAYER
 
