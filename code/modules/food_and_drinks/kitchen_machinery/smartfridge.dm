@@ -771,7 +771,7 @@
 		/obj/item/reagent_containers/food/drinks/bottle/hcider = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/grappa = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/sake = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/fernet = 1,		
+		/obj/item/reagent_containers/food/drinks/bottle/fernet = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/amaretto = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/hooch = 1,)
 
@@ -839,3 +839,37 @@
 		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two = 1,
 		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three = 1,)
+
+/obj/machinery/smartfridge
+	name = "smartfridge"
+	desc = "Keeps cold things cold and hot things cold."
+	icon = 'icons/obj/vending.dmi'
+	icon_state = "smartfridge"
+
+
+/obj/machinery/smartfridge/bottlerack/lootshelf/gary
+	name = "\improper shop shelf"
+	desc = "A rusted pre-war shelf, this one has a faded label about soft drinks. "
+	icon = 'icons/obj/rack2.dmi'
+	icon_state = "shelf_m"
+	max_n_of_items = 35
+
+/obj/machinery/smartfridge/bottlerack/lootshelf
+	chance_initial_contents = list(
+		/obj/item/reagent_containers/food/drinks/bottle/lemonjuice = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/limejuice = 3,
+		/obj/item/reagent_containers/food/drinks/bottle/tomatojuice = 4,
+		/obj/item/reagent_containers/food/drinks/bottle/orangejuice = 2,
+		/obj/item/reagent_containers/food/drinks/soda_cans/tonic = 3,
+		/obj/item/reagent_containers/food/drinks/soda_cans/sodawater = 2,
+		/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/f13nukacola = 4,
+		/obj/item/reagent_containers/food/drinks/bottle/bawls = 3,
+		/obj/item/reagent_containers/food/drinks/bottle/vim = 3,
+		/obj/item/reagent_containers/food/drinks/bottle/sunset = 3)
+
+/obj/machinery/smartfridge/bottlerack/lootshelf/gary/left
+	icon_state = "shelf_l"
+
+/obj/machinery/smartfridge/bottlerack/lootshelf/gary/right
+	icon_state = "shelf_r"
