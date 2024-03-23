@@ -1,10 +1,3 @@
-//In this document: Ammo boxes, speed loaders, stripper clips.
-
-
-////////////////////
-//AMMUNITION BOXES//
-////////////////////
-
 
 //Shotguns
 /obj/item/ammo_box/shotgun
