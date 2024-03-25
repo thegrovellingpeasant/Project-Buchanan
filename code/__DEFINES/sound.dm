@@ -83,31 +83,59 @@
 	'sound/f13ambience/music/portaltothepast_ambience.ogg','sound/f13ambience/music/wind_and_the_reeds_ambience.ogg')
 
 //Project Buchanan: Reno
-#define RENO_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
-	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
-
-#define RENO_WASTELAND_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
-	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
-
+#define RENO_WASTELAND_AMBIENCE list('sound/f13ambience/music/after_the_blast.ogg','sound/f13ambience/music/collapse.ogg',\
+	'sound/f13ambience/music/desert_nomads.ogg','sound/f13ambience/music/many_contrasts.ogg','sound/f13ambience/music/my_chrysalis_highwayman.ogg',\
+	'sound/f13ambience/music/second_chance.ogg','sound/f13ambience/music/villa.ogg')
 
 #define RENO_STREETS_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
-	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg','sound/f13ambience/music/alternative_3.ogg',\
+	'sound/f13ambience/music/city_of_flagstaff.ogg','sound/f13ambience/music/city_of_pheonix.ogg')
 
 #define RENO_BUILDING_AMBIENCE list('sound/f13ambience/music/city_1.ogg','sound/f13ambience/music/city_2.ogg',\
 	'sound/f13ambience/music/city_3.ogg','sound/f13ambience/music/city_4.ogg')
+
+#define RENO_WEST_AMBIENCE list('sound/f13ambience/music/city_of_lost_angels.ogg',\
+	'sound/f13ambience/music/flame_of_the_ancient_world.ogg',\
+	'sound/f13ambience/music/followers_credo.ogg', 'sound/f13ambience/music/industrial_junktown.ogg',\
+	'sound/f13ambience/music/jackals.ogg', 'sound/f13ambience/music/twisted_preacher.ogg')
+
+#define RENO_EAST_AMBIENCE list('sound/f13ambience/music/a_traders_life.ogg',\
+	'sound/f13ambience/music/beyond_the_canyon.ogg', 'sound/f13ambience/music/california_revisted.ogg', \
+	'sound/f13ambience/music/dream_town.ogg','sound/f13ambience/music/gold_slouch.ogg', \
+	'sound/f13ambience/music/moribound_world.ogg')
+
+#define RENO_PRISON_AMBIENCE list('sound/f13ambience/music/citadel.ogg', 'sound/f13ambience/music/highpool_prison.ogg',\
+	'sound/f13ambience/music/yesterday.ogg')
+
+#define RENO_NRPD_AMBIENCE list('sound/f13ambience/music/earthmen.ogg')
+
+#define RENO_VANGRAFF_AMBIENCE list('sound/f13ambience/music/equilibrium.ogg','sound/f13ambience/music/nonadmittance.ogg',\
+	'sound/f13ambience/music/trammel.ogg')
+
+#define RENO_WRIGHT_AMBIENCE list('sound/f13ambience/music/choo_choo.ogg')
+
+#define RENO_HOTEL_AMBIENCE list('sound/f13ambience/music/tower_of_terror.ogg')
 
 #define SHARKCLUB_AMBIENCE list('sound/f13ambience/music/casino_1.ogg','sound/f13ambience/music/casino_2.ogg')
 
 #define YAKUZA_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg')
 
-#define RENO_CAVES_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+#define RENO_CAVES_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg', \
+	'sound/f13ambience/music/crevices.ogg','sound/f13ambience/music/quartz.ogg', \
+	'sound/f13ambience/music/radiation_cloud.ogg','sound/f13ambience/music/the_underground.ogg')
 
-#define RENO_SEWERS_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+#define RENO_TRIBAL_AMBIENCE list('sound/f13ambience/music/khans_of_new_california.ogg')
 
-#define RENO_SUBWAY_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+#define RENO_SEWERS_AMBIENCE list('sound/f13ambience/music/radiation_cloud.ogg','sound/f13ambience/music/vats_of_goo.ogg',\
+	'sound/f13ambience/music/one_way.ogg','sound/f13ambience/music/fogbound.ogg','sound/f13ambience/music/futuristic_horrors.ogg',\
+	'sound/f13ambience/music/mannerites.ogg')
 
-#define RENO_PREWARBUNKER_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+#define RENO_SUBWAY_AMBIENCE list('sound/f13ambience/music/trilobite.ogg','sound/f13ambience/music/vats_of_goo.ogg',\
+	'sound/f13ambience/music/one_way.ogg','sound/f13ambience/music/motel.ogg')
 
-#define RENO_BOS_AMBIENCE list('sound/f13ambience/music/underground_1.ogg','sound/f13ambience/music/underground_2.ogg')
+#define RENO_PREWARBUNKER_AMBIENCE list('sound/f13ambience/music/all_clear_signal.ogg','sound/f13ambience/music/metallic_monks.ogg',\
+	'sound/f13ambience/music/the_vault_of_the_future.ogg')
 
+#define RENO_BOS_AMBIENCE list('sound/f13ambience/music/all_clear_signal.ogg','sound/f13ambience/music/metallic_monks.ogg',\
+	'sound/f13ambience/music/the_vault_of_the_future.ogg')
 

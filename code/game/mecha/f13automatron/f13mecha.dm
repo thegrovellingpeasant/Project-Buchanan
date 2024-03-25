@@ -268,8 +268,8 @@
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 75, "fire" = 100, "acid" = 100)
 	melee_multiplier = 2
 	force = 30
-	step_energy_drain = 40
-	normal_step_energy_drain = 40
+	step_energy_drain = 0
+	normal_step_energy_drain = 0
 	internal_damage_threshold = 20
 	cargo_capacity = 10
 	wreckage = /obj/structure/mecha_wreckage/f13/sentrybot
@@ -288,8 +288,8 @@
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 75, "fire" = 100, "acid" = 100)
 	force = 30
 	melee_multiplier = 1.5
-	step_energy_drain = 30
-	normal_step_energy_drain = 30
+	step_energy_drain = 0
+	normal_step_energy_drain = 0
 	internal_damage_threshold = 30
 	cargo_capacity = 6
 	wreckage = /obj/structure/mecha_wreckage/f13/assaultron
@@ -319,8 +319,8 @@
 	max_weapons = 3
 	max_equip = 4
 	force = 30
-	step_energy_drain = 35
-	normal_step_energy_drain = 35
+	step_energy_drain = 0
+	normal_step_energy_drain = 0
 	internal_damage_threshold = 40
 	cargo_capacity = 4
 	stepsound = null
@@ -351,8 +351,8 @@
 	max_weapons = 2
 	max_equip = 4
 	force = 30
-	step_energy_drain = 25
-	normal_step_energy_drain = 25
+	step_energy_drain = 0
+	normal_step_energy_drain = 0
 	internal_damage_threshold = 50
 	cargo_capacity = 6
 	var/mode = null
@@ -384,8 +384,8 @@
 		if("peacekeeper")
 			step_in = 3
 			force = 40
-			step_energy_drain = 40 * power_multiplier
-			normal_step_energy_drain = 40
+			step_energy_drain = 0 * power_multiplier
+			normal_step_energy_drain = 0
 			weapons_type = list("Light", "Medium", "Melee")
 			wreckage = /obj/structure/mecha_wreckage/f13/protectron/peacekeeper
 
