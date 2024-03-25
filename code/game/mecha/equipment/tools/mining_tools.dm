@@ -95,7 +95,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/drill/can_attach(obj/mecha/M as obj)
 	if(..())
-		if(istype(M, /obj/mecha/working) || istype(M, /obj/mecha/combat))
+		if(istype(M, /obj/mecha/working) || istype(M, /obj/mecha/combat) || istype(M, /obj/mecha/f13))
 			return 1
 	return 0
 

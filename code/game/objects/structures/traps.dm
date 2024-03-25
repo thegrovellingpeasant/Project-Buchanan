@@ -99,6 +99,12 @@
 	..()
 	new /obj/effect/hotspot(get_turf(src))
 
+/obj/structure/trap/fire/vent
+	name = "vent"
+	desc = "An exhaust ventilation system designed to keep the air safe via several stages of filtering."
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "ventrusty"
+	alpha = 200
 
 /obj/structure/trap/chill
 	name = "frost trap"

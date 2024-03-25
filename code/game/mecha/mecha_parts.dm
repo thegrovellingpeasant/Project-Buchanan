@@ -8,6 +8,7 @@
 	icon_state = "blank"
 	w_class = WEIGHT_CLASS_GIGANTIC
 	flags_1 = CONDUCT_1
+	var/wastebot = FALSE //Mainly used to identify F13 robot parts
 
 /obj/item/mecha_parts/proc/try_attach_part(mob/user, obj/mecha/M) //For attaching parts to a finished mech
 	if(!user.transferItemToLoc(src, M))

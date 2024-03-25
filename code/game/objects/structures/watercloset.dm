@@ -815,3 +815,9 @@
 		density = FALSE
 		open = TRUE
 		set_opacity(FALSE)
+
+/obj/structure/curtain/stage
+	name = "stage curtain"
+	desc = "Contains less than 1% mercury."
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "fancy_open"

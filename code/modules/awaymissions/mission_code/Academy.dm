@@ -208,7 +208,7 @@
 			//Swarm of creatures
 			for(var/direction in GLOB.alldirs)
 				var/turf/T = get_turf(src)
-				new /mob/living/simple_animal/hostile/netherworld(get_step(T,direction))
+				new /mob/living/simple_animal/hostile/venus_human_trap(get_step(T,direction))
 		if(4)
 			//Destroy Equipment
 			for (var/obj/item/I in user)
@@ -229,7 +229,7 @@
 			user.throw_at(throw_target, 200, 4)
 		if(8)
 			//Fueltank Explosion
-			explosion(loc,-1,0,2, flame_range = 2)
+			explosion(loc,-1,0,2, flame_range = 6)
 		if(9)
 			//Cold
 			var/datum/disease/D = new /datum/disease/cold()
@@ -246,21 +246,13 @@
 			user.revive(full_heal = 1, admin_revive = 1)
 		if(13)
 			//Mad Dosh
-			var/turf/Start = get_turf(src)
-			for(var/direction in GLOB.alldirs)
-				var/turf/T = get_step(Start,direction)
-				if(rand(0,1))
-					new /obj/item/stack/spacecash/c1000(T)
-				else
-					var/obj/item/storage/bag/money/M = new(T)
-					for(var/i in 1 to rand(5,50))
-						new /obj/item/coin/gold(M)
+			new /obj/item/stack/f13Cash/caps/onezerozerozero(drop_location())
 		if(14)
 			//Free Gun
-			new /obj/item/gun/ballistic/revolver/m29/snub(drop_location())
+			new /obj/item/gun/energy/laser/plasma/pistol(drop_location())
 		if(15)
 			//Random One-use spellbook
-			new /obj/item/book/granter/spell/random(drop_location())
+			new /obj/item/book/granter(drop_location())
 		if(16)
 			//Servant & Servant Summon
 			var/mob/living/carbon/human/H = new(drop_location())
@@ -282,11 +274,11 @@
 			user.mind.AddSpell(S)
 
 		if(17)
-			//Tator Kit
-			new /obj/item/storage/box/syndicate(drop_location())
+			//Dynamite Kit
+			new /obj/item/storage/backpack/duffelbag/equipment/slotmachine(drop_location())
 		if(18)
-			//Captain ID
-			new /obj/item/card/id/captains_spare(drop_location())
+			//Guard ID
+			new /obj/item/card/id/dogtag/ncrtrooper/escape(drop_location())
 		if(19)
 			//Instrinct Resistance
 			to_chat(user, "<span class='notice'>You feel robust.</span>")
@@ -295,17 +287,17 @@
 			S.burnmod *= 0.5
 			S.coldmod *= 0.5
 		if(20)
-			//Free wizard!
-			user.mind.make_Wizard()
+			//Free alien pistol
+			new /obj/item/storage/backpack/duffelbag/equipment/slotmachine2(drop_location())
 
 
 /datum/outfit/butler
 	name = "Butler"
-	uniform = /obj/item/clothing/under/suit/black_really
+	uniform = /obj/item/clothing/under/f13/formal
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/bowler
+	head = /obj/item/clothing/head/collectable/tophat
 	glasses = /obj/item/clothing/glasses/monocle
-	gloves = /obj/item/clothing/gloves/color/white
+	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
 
 /obj/effect/proc_holder/spell/targeted/summonmob
 	name = "Summon Servant"

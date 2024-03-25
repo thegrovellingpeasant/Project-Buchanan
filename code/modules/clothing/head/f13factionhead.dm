@@ -1028,6 +1028,10 @@
 		var/datum/action/A = X
 		A.UpdateButtonIcon()
 
+/obj/item/clothing/head/helmet/f13/khan/bandana/generic
+	name = "red bandana"
+	desc = "A bandana to put on your head. One side of the cloth is dark, the other red, so it can be reversed."
+
 /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	name = "Great Khan full helmet"
 	desc = " A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."

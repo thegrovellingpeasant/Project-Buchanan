@@ -5,109 +5,104 @@
 	selection_color = "#e6e1cf"
 
 
-/datum/job/wastes/f13renoraider
-	title = "Reno Raider"
+/datum/job/wastes/f13vagrant
+	title = "Vagrant"
 	flag = F13RENORAIDER
 	faction = FACTION_WASTES
-	total_positions = 8
-	spawn_positions = 4
-	description = "You are a member of one of the infamous raider gangs of the wastes. Pillaging, robbing, murdering wasters are a recurrent chore for your people. Depending on their affiliation, though, raiders may vary from an illiterate chemhead, to a straight edge tribal, or even a member of a group with strong connections and an unique culture based on raiding, and all of this should be considered when defining your character. Form loose associations with other raiders to get an edge. Betray said raiders because of a dumb argument. Be wary of the inside of the city or destroying family businesses, since the gangs may not take kindly to your presence in town."
+	total_positions = 5
+	spawn_positions = 5
+	description = "In The Biggest Little City, life isn't so prosperous for those outside of the gangs running the place, and you aren't some tourist, you live here. Make by with whatever means you can, even if it means breaking a few knees. Maybe that's too violent so you'll beg for a handout instead or maybe deceive a few schmucks for their money. And who says you can't do a job for one of the gangs?"
 	supervisors = "the man with the biggest stick"
 
-	outfit = /datum/outfit/job/wastes/f13renoraider
+	outfit = /datum/outfit/job/wastes/f13vagrant
 
 	loadout_options = list(
-	/datum/outfit/loadout/raider_fugitive,
-	/datum/outfit/loadout/raider_bandido,
-	/datum/outfit/loadout/raider_ncradeserter,
-	/datum/outfit/loadout/raider_slaver,
-	/datum/outfit/loadout/raider_vipers,
-	/datum/outfit/loadout/raider_jackals,
-	/datum/outfit/loadout/raider_manhunter,
-	/datum/outfit/loadout/raider_psychotic,
-	/datum/outfit/loadout/raider_eyebot
+	/datum/outfit/loadout/vagrant_addict,
+	/datum/outfit/loadout/vagrant_59thstreet,
+	/datum/outfit/loadout/vagrant_yakuza,
+	/datum/outfit/loadout/vagrant_khan,
+	/datum/outfit/loadout/vagrant_veteran,
+	/datum/outfit/loadout/vagrant_viper,
+	/datum/outfit/loadout/vagrant_jackal
 	)
 
-/datum/outfit/job/wastes/f13renoraider
-	name = "Reno Raider"
-	jobtype = /datum/job/wastes/f13renoraider
+/datum/outfit/job/wastes/f13vagrant
+	name = "Vagrant"
+	jobtype = /datum/job/wastes/f13vagrant
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	ears = null
 	l_pocket = /obj/item/storage/bag/money/small/meager
 	id = null
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = null
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/melee/onehanded/knife/trench = 1,
-		/obj/item/restraints/handcuffs = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/radio = 1
 		)
-/datum/outfit/job/wastes/f13renoraider/pre_equip(mob/living/carbon/human/H)
+
+/datum/outfit/job/wastes/f13vagrant/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	uniform = pick(
-		/obj/item/clothing/under/f13/merca,
-		/obj/item/clothing/under/syndicate/camo,
-		/obj/item/clothing/under/f13/mercc,
+		/obj/item/clothing/under/f13/brahmin,
+		/obj/item/clothing/under/f13/rag,
 		/obj/item/clothing/under/f13/raider_leather,
 		/obj/item/clothing/under/f13/raiderrags,
 		/obj/item/clothing/under/pants/f13/ghoul,
 		/obj/item/clothing/under/jabroni)
 
-/datum/outfit/loadout/raider_fugitive
-	name = "Fugitive"
-	suit = /obj/item/clothing/suit/armor/f13/ncrcfjacket
-	uniform = /obj/item/clothing/under/f13/ncrcf
-	mask = /obj/item/clothing/mask/russian_balaclava
+/datum/outfit/loadout/vagrant_addict
+	name = "Addict"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/caravan_shotgun = 1,
-		/obj/item/ammo_box/shotgun/improvised = 2,
-		/obj/item/melee/classic_baton = 1)
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 1)
 
-/datum/outfit/loadout/raider_bandido
-	name = "Bandido"
-	belt = /obj/item/gun/ballistic/revolver/colt357
-	neck = /obj/item/storage/belt/holster
-	mask = /obj/item/clothing/mask/ncr_facewrap
-	uniform = /obj/item/clothing/under/f13/jamrock
-	head = /obj/item/clothing/head/helmet/f13/vaquerohat
-	glasses = /obj/item/clothing/glasses/f13/biker
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	backpack_contents = list(
-		/obj/item/ammo_box/a357 = 2,
-		/obj/item/kitchen/knife = 1)
-
-/datum/outfit/loadout/raider_ncradeserter
-	name = "NCRA Deserter"
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = /obj/item/gun/ballistic/rifle/hunting
-	belt = /obj/item/storage/belt/military/assault/ncr
-	mask = /obj/item/clothing/mask/ncr_facewrap
-	uniform = /obj/item/clothing/under/f13/ncr
-	head = /obj/item/clothing/head/f13/ncr/goggles
-	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	backpack_contents = list(
-		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/ammo_box/a308 = 2)
-
-/datum/outfit/loadout/raider_slaver
-	name = "Slaver"
-	suit = /obj/item/clothing/suit/armored/light/leather_jacketmk2
-	suit_store = /obj/item/gun/ballistic/automatic/autopipe
-	mask = /obj/item/clothing/mask/bandana/durathread
-	uniform = /obj/item/clothing/under/f13/navy
-	head = /obj/item/clothing/head/helmet/riot
+/datum/outfit/loadout/vagrant_59thstreet
+	name = "59th street killer"
+	suit = /obj/item/clothing/suit/armor/f13/reno/fiftyninthstreet
+	uniform = /obj/item/clothing/under/f13/redz
+	head = /obj/item/clothing/head/helmet/f13/khan/bandana/generic
 	glasses = /obj/item/clothing/glasses/f13/biker
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(
-		/obj/item/melee/classic_baton = 1,
-		/obj/item/restraints/legcuffs/bola/tactical = 3,
-		/obj/item/ammo_box/magazine/autopipe = 1)
+		/obj/item/twohanded/baseball = 1,
+		/obj/item/kitchen/knife = 1)
 
-/datum/outfit/loadout/raider_vipers
+/datum/outfit/loadout/vagrant_yakuza
+	name = "Yakuza"
+	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
+	belt = /obj/item/storage/belt/military/assault/ncr
+	uniform = /obj/item/clothing/under/f13/yakuza
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(
+		/obj/item/katana = 1)
+
+/datum/outfit/loadout/vagrant_khan
+	name = "Khan"
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	uniform = /obj/item/clothing/under/f13/khan
+	gloves = /obj/item/melee/unarmed/brass/spiked
+	head = /obj/item/clothing/head/helmet/f13/khan/pelt
+	shoes = /obj/item/clothing/shoes/f13/military/khan_pelt
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/improvised = 2)
+
+/datum/outfit/loadout/vagrant_veteran
+	name = "Veteran"
+	suit = /obj/item/clothing/suit/armor/f13/exile/ncrexile
+	uniform = /obj/item/clothing/under/f13/exile
+	id = /obj/item/card/id/rusted
+	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 1,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/storage/box/ration/menu_two = 1)
+
+/datum/outfit/loadout/vagrant_viper
 	name = "Viper"
 	suit = /obj/item/clothing/suit/armored/light/duster/vet
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/n99
-	uniform = /obj/item/clothing/under/jabroni
 	glasses = /obj/item/clothing/glasses/f13/biker
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(
@@ -115,7 +110,7 @@
 		/obj/item/viper_venom = 2,
 		/obj/item/ammo_box/magazine/m10mm_adv = 2)
 
-/datum/outfit/loadout/raider_jackals
+/datum/outfit/loadout/vagrant_jackal
 	name = "Jackal"
 	uniform = /obj/item/clothing/under/f13/raider_leather
 	shoes = /obj/item/clothing/shoes/f13/raidertreads
@@ -125,43 +120,14 @@
 		/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human = 2,
 		/obj/item/kitchen/knife/butcher = 1)
 
-/datum/outfit/loadout/raider_manhunter
-	name = "Manhunter"
-	suit = /obj/item/clothing/suit/armored/light/tribalraider
-	belt = /obj/item/storage/backpack/spearquiver
-	uniform = /obj/item/clothing/under/f13/exile/tribal
-	head = /obj/item/clothing/head/helmet/f13/deathskull
-	backpack_contents = list(
-		/obj/item/restraints/legcuffs/beartrap = 5,
-		/obj/item/nullrod/tribal_knife = 1)
 
-/datum/outfit/loadout/raider_psychotic
-	name = "Painspike"
-	suit = /obj/item/clothing/suit/armor/f13/raider/painspike
-	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
-	head = /obj/item/clothing/head/helmet/f13/raider/psychotic
-	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/improvised = 1,
-		/obj/item/melee/onehanded/club/fryingpan = 1)
-
-/datum/outfit/loadout/raider_eyebot
-	name = "Eyebot"
-	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
-	head = /obj/item/clothing/head/helmet/f13/raider/eyebot
-	backpack_contents = list(
-		/obj/item/pizzabox/bomb = 1,
-		/obj/item/restraints/legcuffs/beartrap = 3)
-
-	head = /obj/item/clothing/head/rice_hat
-	shoes = /obj/item/clothing/shoes/f13/raidertreads
-	uniform = /obj/item/clothing/under/f13/raider_leather
 /*--------------------------------------------------------------*/
 /datum/job/wastes/f13tribalmigrant
 	title = "Tribal Migrant"
 	flag = F13TRIBALMIGRANT
 	faction = FACTION_WASTES
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 5
+	spawn_positions = 5
 	description = "You are a member of some tribe that wandered into the area, maybe you'll take a look at the pretty colors in the big village, or scalp someone..."
 	supervisors = "your instincts"
 

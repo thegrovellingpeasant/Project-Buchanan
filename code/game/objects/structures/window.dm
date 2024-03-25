@@ -938,6 +938,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	glass_amount = 2
 	level = 3
 
+
 /obj/structure/window/gothic/fulltile/unanchored
 	anchored = FALSE
 
@@ -954,6 +955,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	max_integrity = 100
 	glass_amount = 2
 	level = 3
+
 
 /obj/structure/window/gothic3/fulltile
 	name = "gothic window"

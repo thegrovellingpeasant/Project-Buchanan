@@ -4,44 +4,51 @@
 /datum/component/construction/mecha
 	var/base_icon
 	var/looky_helpy = TRUE
+	var/keyword = "mech"
 
 /datum/component/construction/mecha/examine(datum/source, mob/user, list/examine_list)
 	. = ..()
 	if(looky_helpy)
+		var/atom/parent_atom = parent
+		var/obj/item/mecha_parts/D = parent_atom
+		if(D.wastebot)
+			keyword = "robot"
 		switch(steps[index]["key"])
 			if(TOOL_WRENCH)
-				examine_list += "<span class='notice'>The mech could be <b>wrenched</b> into place.</span>"
+				examine_list += "<span class='notice'>The [keyword] could be <b>wrenched</b> into place.</span>"
 			if(TOOL_SCREWDRIVER)
-				examine_list += "<span class='notice'>The mech could be <b>screwed</b> into place.</span>"
+				examine_list += "<span class='notice'>The [keyword] could be <b>screwed</b> into place.</span>"
 			if(TOOL_WIRECUTTER)
-				examine_list += "<span class='notice'>The mech wires could be <b>trimmed</b> into place.</span>"
+				examine_list += "<span class='notice'>The [keyword] wires could be <b>trimmed</b> into place.</span>"
 			if(/obj/item/stack/cable_coil)
-				examine_list += "<span class='notice'>The mech could use some <b>wiring</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use some <b>wiring</b>.</span>"
 			if(/obj/item/circuitboard)
-				examine_list += "<span class='notice'>The mech could use a type of<b>circuitboard</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a type of<b>circuitboard</b>.</span>"
 			if(/obj/item/stock_parts/scanning_module)
-				examine_list += "<span class='notice'>The mech could use a <b>scanning stock part</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a <b>scanning stock part</b>.</span>"
 			if(/obj/item/stock_parts/capacitor)
-				examine_list += "<span class='notice'>The mech could use a <b>power based stock part</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a <b>power based stock part</b>.</span>"
 			if(/obj/item/stock_parts/cell)
-				examine_list += "<span class='notice'>The mech could use a <b>power source</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a <b>power source</b>.</span>"
 			if(/obj/item/stack/sheet/metal)
-				examine_list += "<span class='notice'>The mech could use some <b>sheets of metal</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use some <b>sheets of metal</b>.</span>"
 			if(/obj/item/stack/sheet/plasteel)
-				examine_list += "<span class='notice'>The mech could use some <b>sheets of strong steel</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use some <b>sheets of strong steel</b>.</span>"
 			if(/obj/item/mecha_parts/part)
-				examine_list += "<span class='notice'>The mech could use a mech <b>part</b>.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a [keyword] <b>part</b>.</span>"
 			if(/obj/item/stack/ore/bluespace_crystal)
-				examine_list += "<span class='notice'>The mech could use a <b>crystal</b> of sorts.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a <b>crystal</b> of sorts.</span>"
 			if(/obj/item/assembly/signaler/anomaly)
-				examine_list += "<span class='notice'>The mech could use a <b>anomaly</b> of sorts.</span>"
+				examine_list += "<span class='notice'>The [keyword] could use a <b>anomaly</b> of sorts.</span>"
 
 /datum/component/construction/mecha/spawn_result()
 	if(!result)
 		return
-	// Remove default mech power cell, as we replace it with a new one.
+	// Remove default stock parts, as we replace them with new ones.
 	var/obj/mecha/M = new result(drop_location())
 	QDEL_NULL(M.cell)
+	QDEL_NULL(M.scanning_module)
+	QDEL_NULL(M.capacitor)
 
 	var/obj/item/mecha_parts/chassis/parent_chassis = parent
 	M.CheckParts(parent_chassis.contents)
@@ -68,7 +75,11 @@
 
 /datum/component/construction/unordered/mecha_chassis/spawn_result()
 	var/atom/parent_atom = parent
-	parent_atom.icon = 'icons/mecha/mech_construction.dmi'
+	var/obj/item/mecha_parts/D = parent_atom
+	if(D.wastebot)
+		parent_atom.icon = 'icons/mecha/f13automatron/f13mech_construction.dmi'
+	else
+		parent_atom.icon = 'icons/mecha/mech_construction.dmi'
 	parent_atom.density = TRUE
 	parent_atom.cut_overlays()
 	..()

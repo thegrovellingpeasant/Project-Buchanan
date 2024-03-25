@@ -1760,6 +1760,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/shuttle/intrepid_elevator
 	name = "Intrepid Elevator"
 
+/area/shuttle/bishop_elevator
+	name = "Bishop Elevator"
+
 /area/shuttle/bos_foyer
 	name = "Brotherhood of Steel Foyer"
 

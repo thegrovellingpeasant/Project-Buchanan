@@ -250,3 +250,96 @@
 				/obj/item/mecha_parts/part/clarke_left_arm,
 				/obj/item/mecha_parts/part/clarke_right_arm,
 				/obj/item/stack/conveyor)
+
+///////////////////////////////
+///// F13 ROBOT WRECKAGES /////
+//////////////////////////////
+
+/obj/structure/mecha_wreckage/f13
+	name = "robot wreckage"
+	desc = "Remains of a totalled robot. Completely irreparable, but perhaps something can be salvaged."
+	icon = 'icons/fallout/mobs/robots/wasterobots.dmi'
+
+/obj/structure/mecha_wreckage/f13/sentrybot
+	name = "\improper Sentry Bot wreckage"
+	icon_state = "sentrybot_dead"
+	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/mecha_wreckage/f13/sentrybot/Initialize()
+	. = ..()
+	var/list/parts = list(
+								/obj/item/mecha_parts/part/f13/sentry_torso,
+								/obj/item/mecha_parts/part/f13/sentry_head,
+								/obj/item/mecha_parts/part/f13/sentry_left_arm,
+								/obj/item/mecha_parts/part/f13/sentry_right_arm,
+								/obj/item/mecha_parts/part/f13/sentry_left_leg,
+								/obj/item/mecha_parts/part/f13/sentry_right_leg)
+	for(var/i = 0; i < 2; i++)
+		if(parts.len && prob(40))
+			var/part = pick(parts)
+			welder_salvage += part
+			parts -= part
+
+/obj/structure/mecha_wreckage/f13/assaultron
+	name = "\improper Assaultron wreckage"
+	icon_state = "assaultron_dead"
+
+/obj/structure/mecha_wreckage/f13/assaultron/Initialize()
+	. = ..()
+	var/list/parts = list(
+								/obj/item/mecha_parts/part/f13/assaultron_torso,
+								/obj/item/mecha_parts/part/f13/assaultron_head,
+								/obj/item/mecha_parts/part/f13/assaultron_left_arm,
+								/obj/item/mecha_parts/part/f13/assaultron_right_arm,
+								/obj/item/mecha_parts/part/f13/assaultron_left_leg,
+								/obj/item/mecha_parts/part/f13/assaultron_right_leg)
+	for(var/i = 0; i < 2; i++)
+		if(parts.len && prob(40))
+			var/part = pick(parts)
+			welder_salvage += part
+			parts -= part
+
+/obj/structure/mecha_wreckage/f13/gutsy
+	name = "\improper Gutsy Mk II wreckage"
+	icon_state = "pvtgutsymk2_dead"
+
+/obj/structure/mecha_wreckage/f13/gutsy/Initialize()
+	. = ..()
+	var/list/parts = list(
+								/obj/item/mecha_parts/part/f13/gutsy_torso,
+								/obj/item/mecha_parts/part/f13/gutsy_head,
+								/obj/item/mecha_parts/part/f13/gutsy_left_arm,
+								/obj/item/mecha_parts/part/f13/gutsy_right_arm,
+								/obj/item/mecha_parts/part/f13/gutsy_left_leg,
+								/obj/item/mecha_parts/part/f13/gutsy_right_leg)
+	for(var/i = 0; i < 2; i++)
+		if(parts.len && prob(40))
+			var/part = pick(parts)
+			welder_salvage += part
+			parts -= part
+
+/obj/structure/mecha_wreckage/f13/protectron
+	name = "\improper Protectron wreckage"
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
+	icon_state = "protectron_dead"
+
+/obj/structure/mecha_wreckage/f13/protectron/trade
+	icon_state = "protectron_trade_dead"
+
+/obj/structure/mecha_wreckage/f13/protectron/peacekeeper
+	icon_state = "protectron_peacekeeper_dead"
+
+/obj/structure/mecha_wreckage/f13/protectron/Initialize()
+	. = ..()
+	var/list/parts = list(
+								/obj/item/mecha_parts/part/f13/protectron_torso,
+								/obj/item/mecha_parts/part/f13/protectron_head,
+								/obj/item/mecha_parts/part/f13/protectron_left_arm,
+								/obj/item/mecha_parts/part/f13/protectron_right_arm,
+								/obj/item/mecha_parts/part/f13/protectron_left_leg,
+								/obj/item/mecha_parts/part/f13/protectron_right_leg)
+	for(var/i = 0; i < 2; i++)
+		if(parts.len && prob(40))
+			var/part = pick(parts)
+			welder_salvage += part
+			parts -= part

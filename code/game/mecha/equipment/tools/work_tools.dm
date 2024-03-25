@@ -15,9 +15,9 @@
 	harmful = TRUE
 	mech_flags = EXOSUIT_MODULE_RIPLEY
 
-/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/can_attach(obj/mecha/working/ripley/M as obj)
+/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/can_attach(obj/mecha/M as obj)
 	if(..())
-		if(istype(M))
+		if(istype(M, /obj/mecha/working/ripley) || istype(M, /obj/mecha/f13))
 			return 1
 	return 0
 
@@ -44,26 +44,26 @@
 				if(M.ammo_resupply(box, chassis.occupant, TRUE))
 					return
 		if(have_ammo)
-			to_chat(chassis.occupant, "No further supplies can be provided to [M].")
+			to_chat(chassis.occupant, "No further ammunition can be provided to [M].")
 		else
-			to_chat(chassis.occupant, "No providable supplies found in cargo hold")
+			to_chat(chassis.occupant, "No providable ammunition found in storage compartment.")
 		return
 	if(isobj(target))
 		var/obj/O = target
 		if(!O.anchored)
 			if(cargo_holder.cargo.len < cargo_holder.cargo_capacity)
-				chassis.visible_message("[chassis] lifts [target] and starts to load it into cargo compartment.")
+				chassis.visible_message("[chassis] lifts [target] and starts to load it into storage compartment.")
 				O.anchored = TRUE
 				if(do_after_cooldown(target))
 					cargo_holder.cargo += O
 					O.forceMove(chassis)
 					O.anchored = FALSE
 					occupant_message("<span class='notice'>[target] successfully loaded.</span>")
-					mecha_log_message("Loaded [O]. Cargo compartment capacity: [cargo_holder.cargo_capacity - cargo_holder.cargo.len]")
+					mecha_log_message("Loaded [O]. Storage compartment capacity: [cargo_holder.cargo_capacity - cargo_holder.cargo.len]")
 				else
 					O.anchored = initial(O.anchored)
 			else
-				occupant_message("<span class='warning'>Not enough room in cargo compartment!</span>")
+				occupant_message("<span class='warning'>Not enough room in storage compartment!</span>")
 		else
 			occupant_message("<span class='warning'>[target] is firmly secured!</span>")
 
@@ -234,9 +234,9 @@
 /obj/item/mecha_parts/mecha_equipment/extinguisher/get_equip_info()
 	return "[..()] \[[src.reagents.total_volume]\]"
 
-/obj/item/mecha_parts/mecha_equipment/extinguisher/can_attach(obj/mecha/working/M as obj)
+/obj/item/mecha_parts/mecha_equipment/extinguisher/can_attach(obj/mecha/M as obj)
 	if(..())
-		if(istype(M))
+		if(istype(M, /obj/mecha/working) || istype(M, /obj/mecha/f13))
 			return 1
 	return 0
 
@@ -359,9 +359,9 @@
 	. = ..()
 	cable = new(src, 0)
 
-/obj/item/mecha_parts/mecha_equipment/cable_layer/can_attach(obj/mecha/working/M)
+/obj/item/mecha_parts/mecha_equipment/cable_layer/can_attach(obj/mecha/M)
 	if(..())
-		if(istype(M))
+		if(istype(M, /obj/mecha/working) || istype(M, /obj/mecha/f13))
 			return 1
 	return 0
 

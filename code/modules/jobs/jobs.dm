@@ -320,7 +320,6 @@ GLOBAL_LIST_INIT(losthills_positions, list(
 	"BOS Senior Scribe",
 	"BOS Scribe",
 	"BOS Initiate",
-	"BOS Off-Duty",
 ))
 
 // job categories for rendering the late join menu

@@ -9,11 +9,22 @@
 	var/projectile_delay = 0
 	var/firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect	//the visual effect appearing when the weapon is fired.
 	var/kickback = TRUE //Will using this weapon in no grav push mecha back.
+	var/weapons_type = "All"
 	mech_flags = EXOSUIT_MODULE_COMBAT
+	is_weapon = TRUE
 
-/obj/item/mecha_parts/mecha_equipment/weapon/can_attach(obj/mecha/combat/M)
+/obj/item/mecha_parts/mecha_equipment/weapon/can_attach(obj/mecha/M)
 	if(..())
-		if(istype(M))
+		if(istype(M, /obj/mecha/combat) || istype(M, /obj/mecha/f13))
+			if(istype(M, /obj/mecha/f13))
+				var/obj/mecha/f13/D = M
+				if((weapons_type in D.weapons_type) || weapons_type == "All")		//Checks if weapon can be attached to robot due to type
+					if(D.weapons < D.max_weapons)										//Checks if weapon can be attached to robot due to capacity
+						return 1
+					else
+						return 0
+				else																	//This lookes messy, I know
+					return 0
 			return 1
 	return 0
 
