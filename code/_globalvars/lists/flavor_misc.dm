@@ -285,3 +285,17 @@ GLOBAL_LIST_INIT(prosthetic_limb_types, list("xion","bishop","cybersolutions","g
 
 //body ids that have non-gendered bodyparts
 GLOBAL_LIST_INIT(nongendered_limb_types, list(/*"fly", "zombie" ,"synth", "shadow", "cultgolem", "agent", "plasmaman", "clockgolem", "clothgolem"*/"smutant"))
+
+GLOBAL_LIST_INIT(prisoner_crimes, list(
+	"Abhorrent Criminal Negligence" = "Incompetently risked numerous lives.",
+	"Attempted Murder" = "Attempted to maliciously kill someone.",
+	"Classified" = "Contact Legal", 
+	"Enemy of New California" = "Acted as, or knowingly aided, an enemy of New California",
+	"Grand Sabatage" = "Engaged in malicious destructive actions, seriously threatening New Reno citizens and or infrastructure.",
+	"Grand Theft" = "Stole items of high value or sensitive nature.",
+	"Identity Theft of High-Ranking Government Official" = "Impersonated a high-ranking official of New Reno.",
+	"Jaywalker" = "Jaywalked across non-green street crossings or vertibird landing zones.",
+	"Kidnapping" = "Planned and executed a kidnapping.",
+	"",
+))
+

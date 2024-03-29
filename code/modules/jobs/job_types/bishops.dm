@@ -291,11 +291,11 @@
 	r_hand = pick(
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set1,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set2,
-		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set3
+  		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set3,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set4,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set5)
 
-/datum/outfit/loadout/fedora
+/datum/outfit/loadout/fedora1
 	name = "Blue Fedora"
 	backpack_contents = list(
 		/obj/item/clothing/head/helmet/f13/bishops/fedora = 1,
