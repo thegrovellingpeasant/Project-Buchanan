@@ -20,7 +20,7 @@
 
 	light_color = LIGHT_COLOR_RED
 
-	//timer bullshit mkay?
+	//timer variables
 	var/id			// id of linked machinery/lockers
 
 	var/activation_time = 0

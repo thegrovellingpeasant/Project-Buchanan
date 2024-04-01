@@ -290,12 +290,20 @@ GLOBAL_LIST_INIT(prisoner_crimes, list(
 	"Abhorrent Criminal Negligence" = "Incompetently risked numerous lives.",
 	"Attempted Murder" = "Attempted to maliciously kill someone.",
 	"Classified" = "Contact Legal", 
-	"Enemy of New California" = "Acted as, or knowingly aided, an enemy of New California",
+	"Enemy of NCR" = "Acted as, or knowingly aided, an enemy of NCR",
 	"Grand Sabatage" = "Engaged in malicious destructive actions, seriously threatening New Reno citizens and or infrastructure.",
 	"Grand Theft" = "Stole items of high value or sensitive nature.",
 	"Identity Theft of High-Ranking Government Official" = "Impersonated a high-ranking official of New Reno.",
 	"Jaywalker" = "Jaywalked across non-green street crossings or vertibird landing zones.",
 	"Kidnapping" = "Planned and executed a kidnapping.",
-	"",
+	"Mass Murder" = "Maliciously planned and executed the slaughter of many people.",
+	"Raiding" =  "Engaged in violent activities as a raider.",
+	"Murder" = "Maliciously killed someone.",
+	"Other" = "Consult Legal.",
+	"Medical Malpractice" = "Engaged in organ harvesting, limb theft, or other malicious medical procedure.",
+	"Brahmin Rustler" = "Maliciously, negligently, or otherwise willfully rustled-up privately owned brahmin.",
+	"Tax Evasion" = "Oustanding amount of tax evasion.",
+	"Cannibal" = "Engaged in the consumption of human flesh or organs.",
+	"Chem Dealer" = "Peddled illegal narcotics knowingly."
 ))
 
