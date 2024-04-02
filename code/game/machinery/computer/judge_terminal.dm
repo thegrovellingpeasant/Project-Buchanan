@@ -490,6 +490,7 @@ What a mess.*/
 					R.fields["mi_crim"] = list()
 					R.fields["ma_crim"] = list()
 					R.fields["notes"] = "No notes."
+					R.fields["remaining sentence"] = "None"
 					GLOB.data_core.security += R
 					active2 = R
 					screen = 3
@@ -520,7 +521,6 @@ What a mess.*/
 				R.fields["mi_crim"] = list()
 				R.fields["ma_crim"] = list()
 				R.fields["notes"] = "No notes."
-				R.field["remaining time"] = time()
 				GLOB.data_core.security += R
 				active2 = R
 

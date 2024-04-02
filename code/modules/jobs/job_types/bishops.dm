@@ -294,8 +294,7 @@
   		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set3,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set4,
 		/obj/item/storage/backpack/duffelbag/equipment/bishops/mademan/set5)
-
-/datum/outfit/loadout/fedora1
+/datum/outfit/loadout/fedora
 	name = "Blue Fedora"
 	backpack_contents = list(
 		/obj/item/clothing/head/helmet/f13/bishops/fedora = 1,
