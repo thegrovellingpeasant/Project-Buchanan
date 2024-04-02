@@ -246,7 +246,7 @@
 	outfit = /datum/outfit/job/bishops/f13mademan
 
 	loadout_options = list(
-		/datum/outfit/loadout/fedora1,
+		/datum/outfit/loadout/fedora,
 		/datum/outfit/loadout/fedora2,
 		/datum/outfit/loadout/fedora3,
 		/datum/outfit/loadout/fedora4
