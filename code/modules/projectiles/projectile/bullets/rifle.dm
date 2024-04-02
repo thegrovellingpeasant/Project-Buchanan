@@ -39,124 +39,173 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
-	damage = 0
-	wound_bonus = 15
-	bare_wound_bonus = -18
+	damage = 30
+	sharpness = SHARP_EDGED
+	wound_bonus = 26
 
-/obj/item/projectile/bullet/a556/match
+/obj/item/projectile/bullet/a556/match //bobnote/ WHAT THE FUCK IS THIS BULLET, fuck it i'm making it exactly the same.
 	name = "5.56 match bullet"
-	damage = 29
-	armour_penetration = 0.21
-	wound_bonus = 15
-	bare_wound_bonus = -16
-	var/extra_speed = 200
+	damage = 30
+	sharpness = SHARP_EDGED
+	wound_bonus = 26
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
-	damage = -4
-	wound_bonus = 18
-	bare_wound_bonus = -18
+	damage = 24
+	sharpness = SHARP_EDGED
+	wound_bonus = 20
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
-	damage = -21
+	damage = 7
 	stamina = 30
-	sharpness = SHARP_NONE
-	armour_penetration = 0
-	wound_bonus = 0
-	bare_wound_bonus = 0
 
 /obj/item/projectile/bullet/a556/microshrapnel
 	name = "5.56 microshrapnel bullet"
-	damage = -5
-	wound_bonus = 15
-	bare_wound_bonus = 15
+	damage = 24
+	sharpness = SHARP_EDGED
+	wound_bonus = 10
+	bare_wound_bonus = 10
 	wound_falloff_tile = 0.5
 	embed_falloff_tile = 0.5
-	embedding = list(embed_chance=5, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.5, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a556/microshrapnel)
+	embedding = list(embed_chance=15, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.5, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a556/microshrapnel)
 
 /*
 /obj/item/projectile/bullet/a556/uraniumtipped
 	name = "5.56 uranium-tipped bullet"
-	damage = -9
-	armour_penetration = 0
-	irradiate = 300
+	damage = 24
+	irradiate = 500
 */
 
 /obj/item/projectile/bullet/a556/simple //for simple mobs, separate to allow balancing
 	name = "5.56 bullet"
-	damage = 25
+	damage = 40
+	sharpness = SHARP_EDGED
+	wound_bonus = 31
 
 /obj/item/projectile/bullet/a556/ap/simple //for simple mobs, separate to allow balancing
 	name = "5.56 bullet"
-	damage = 19
+	damage = 40
+	sharpness = SHARP_EDGED
 	armour_penetration = 0.1
+	wound_bonus = 31
 
-////////////////////
-// 7.62 MM & .308 //
-////////////////////			- heavy rifle round, powerful but high recoil and less rof in the guns that can use it. .308 civilian version for hunting.
+
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 0
-	wound_bonus = 18
-	bare_wound_bonus = -20
+	damage = 40
+	wound_bonus = 10
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.1
+	wound_bonus = 35
 
 /obj/item/projectile/bullet/a762/simple
 	name = "7.62 FMJ bullet"
-	damage = 25
-	wound_bonus = 18
-	bare_wound_bonus = -20
+	damage = 50
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.1
+	wound_bonus = 40
 
 
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport
 	name = ".308 bullet"
-	damage = -4
+	damage = 34
+	sharpness = SHARP_EDGED
+	wound_bonus = 29
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
-	damage = -30
-	stamina = 30
+	damage = 8
+	stamina = 35
 	sharpness = SHARP_NONE
-	armour_penetration = 0
-	wound_bonus = 0
-	bare_wound_bonus = 0
 
 /obj/item/projectile/bullet/a762/sport/simple //for simple mobs, separate to allow balancing
 	name = ".308 bullet"
-	damage = 35
-	armour_penetration = 0.2
+	damage = 44
+	sharpness = SHARP_EDGED
+	wound_bonus = 35
 
 /*
 /obj/item/projectile/bullet/a762/uraniumtipped
 	name = "7.62 uranium-tipped bullet"
-	damage = -10
-	armour_penetration = 0
-	irradiate = 300
+	damage = 34
+	irradiate = 500
 */
 
 /obj/item/projectile/bullet/a762/microshrapnel
 	name = "7.62 microshrapnel bullet"
-	damage = -7
+	damage = 34
+	sharpness = SHARP_EDGED
 	wound_bonus = 15
 	bare_wound_bonus = 15
 	wound_falloff_tile = 0.5
 	embed_falloff_tile = 0.5
-	embedding = list(embed_chance=12, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.3, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a762/microshrapnel)
+	embedding = list(embed_chance=15, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.3, pain_mult=5, jostle_pain_mult=6, rip_time=7, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a762/microshrapnel)
 
-/////////
-// .50 //
-/////////			-Very heavy rifle round.
 
+
+
+/obj/item/projectile/bullet/c4570
+	name = ".45-70 FMJ bullet"
+	damage = 45
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.2
+	wound_bonus = 41
+
+/obj/item/projectile/bullet/c4570/explosive //bobnote, I don't know how to balance this
+	damage = 39
+	pixels_per_second = TILES_TO_PIXELS(500)
+	name = ".45-70 explosive bullet"
+
+/obj/item/projectile/bullet/c4570/explosive/on_hit(atom/target, blocked = FALSE)
+	..()
+	explosion(target, 0, 0, 1, 1, flame_range = 1)
+
+/obj/item/projectile/bullet/c4570/acid
+	name = ".45-70 acid-tipped bullet"
+	damage = 39
+	sharpness = SHARP_NONE
+	var/acid_type = /datum/reagent/toxin/acid/fluacid
+
+/obj/item/projectile/bullet/c4570/acid/Initialize()
+	. = ..()
+	create_reagents(10, NO_REACT, NO_REAGENTS_VALUE)
+	reagents.add_reagent(acid_type, 10)
+
+/obj/item/projectile/bullet/c4570/acid/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(isliving(target))
+		var/mob/living/M = target
+		reagents.reaction(M, TOUCH)
+		reagents.trans_to(M, reagents.total_volume)
+
+/obj/item/projectile/bullet/c4570/knockback
+	name = ".45-70 ultradense bullet"
+	damage = 39
+	sharpness = SHARP_NONE
+	pixels_per_second = TILES_TO_PIXELS(500)
+
+/obj/item/projectile/bullet/c4570/knockback/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(ismovable(target) && prob(50))
+		var/atom/movable/M = target
+		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
+		M.safe_throw_at(throw_target, 2, 3)
+
+
+//bobnote, assume this will never be in a round unless admin shittery
 /obj/item/projectile/bullet/a50MG
-	damage = 0
-	pixels_per_second = 4000
-	zone_accuracy_factor = 100
+	damage = 70
+	armour_penetration = 0.2
+	sharpness = SHARP_EDGED
+	wound_bonus = 70
+	hitscan = TRUE
 
 /obj/item/projectile/bullet/a50MG/incendiary
-	damage = -10
-	var/fire_stacks = 4
+	damage = 50
+	var/fire_stacks = 3
 	zone_accuracy_factor = 100
 
 /obj/item/projectile/bullet/a50MG/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -167,7 +216,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/a50MG/explosive
-	damage = -20
+	damage = 50
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -175,27 +224,28 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a50MG/rubber
 	name = ".50 rubber bullet"
-	damage = -50
+	damage = 15
 	stamina = 80
 	armour_penetration = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/a50MG/penetrator
 	name = ".50 penetrator round"
-	damage = -10
+	damage = 60
+	armour_penetration = 0.1
 	movement_type = FLYING | UNSTOPPABLE
 
 /*
 /obj/item/projectile/bullet/a50MG/uraniumtipped
 	name = "12.7mm uranium-tipped bullet"
-	damage = -15
-	armour_penetration = 0.2
+	damage = 60
+	armour_penetration = 0.1
 	irradiate = 500
 */
 
 /obj/item/projectile/bullet/a50MG/contam
 	name = "12.7mm contaminated bullet"
-	damage = -10
+	damage = 60
 	var/smoke_radius = 1
 
 /obj/item/projectile/bullet/a50MG/contam/Initialize()
@@ -213,31 +263,24 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 		S.start()
 	..()
 
-//////////////////////
-// 4.73 MM CASELESS //
-//////////////////////			-Small rifle bullet
+
 
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
-	damage = 0
-	wound_bonus = 10
-	bare_wound_bonus = -10
+	damage = 25
+	armour_penetration = 0.1
+	sharpness = SHARP_EDGED
+	wound_bonus = 21
 
 /obj/item/projectile/bullet/a473/rubber
 	name = "4.73 polyurethane bullet"
-	damage = -20
-	stamina = 18
-	sharpness = SHARP_NONE
-	armour_penetration = 0.05
-	wound_bonus = 0
-	bare_wound_bonus = 0
+	damage = 5
+	stamina = 25
 
 /obj/item/projectile/bullet/a473/incendiary
 	name = "4.73 tracer bullet"
-	damage = -8
-	armour_penetration = 0.1
-	var/fire_stacks = 3
-	zone_accuracy_factor = 100
+	damage = 19
+	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/a473/incendiary/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -249,23 +292,19 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /*
 /obj/item/projectile/bullet/a473/uraniumtipped
 	name = "4.73 U-235 bullet"
-	damage = -2
-	armour_penetration = 0.3
-	irradiate = 300
+	damage = 19
+	irradiate = 500
 */
 
-/obj/item/projectile/bullet/a473/dumdum
+/obj/item/projectile/bullet/a473/dumdum //bobnote, whoever tweaked this gun before was a fucking idiot, 5 damage, with better wounding, negative AP, did more damage to mobs, straight up a buff with no downsides lol (negative ap does nothing)
 	name = "4.73 flat-nose bullet"
-	damage = 5
-	supereffective_damage = 10
-	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot")
-	armour_penetration = -0.2
-	wound_bonus = 20
-	bare_wound_bonus = 30
+	damage = 25
+	sharpness = SHARP_EDGED
+	wound_bonus = 28
 
 /obj/item/projectile/bullet/a473/explosive
 	name = "4.73 explosive bullet"
-	damage = 0
+	damage = 19
 
 /obj/item/projectile/bullet/a473/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -276,37 +315,38 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/shock
 	name = "4.73mm shock bullet"
-	wound_bonus = 0
+	wound_bonus = 19
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/a473/shock/on_hit(atom/target, blocked = FALSE)
 	..()
 	target.emp_act(15)//5 severity is very, very low
 
-/obj/item/projectile/bullet/a473/hv
+/obj/item/projectile/bullet/a473/hv //bobnote, what, remove this NOW!!!!!!!
 	name = "4.73mm highvelocity bullet"
-	damage = -6 //the g11 is now just straight up 16 damage so this makes it 10
-	hitscan = TRUE
-	wound_bonus = 0
+	damage = 25
+	armour_penetration = 0.1
+	wound_bonus = 21
 
-//////////////////////////
-// 5 MM rifle			 //
-//////////////////////////
+
 
 /obj/item/projectile/bullet/m5mm  //for rifles// one of the only bullets to have integral AP
-	damage = 0
-	wound_bonus = 10
-	bare_wound_bonus = -10
-	var/extra_speed = 200
+	damage = 35
+	armour_penetration = 0.2
+	sharpness = SHARP_EDGED
+	wound_bonus = 16
+	
 
 /obj/item/projectile/bullet/m5mm/simple //for simple mobs, separate to allow balancing
 	name = "5mm bullet"
-	damage = 19
-	armour_penetration = 0.19
+	damage = 40
+	armour_penetration = 0.3
+	sharpness = SHARP_EDGED
+	wound_bonus = 22
 
 /obj/item/projectile/bullet/m5mm/shock
 	name = "5mm shock bullet"
-	damage = -6 //about -30% damage
+	damage = 29
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -314,28 +354,28 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	..()
 	target.emp_act(15)//5 severity is very, very low
 
-//////////////////////////
-// 5 MM minigun special //
-//////////////////////////
 
-/obj/item/projectile/bullet/c5mm
-	damage = 19
+
+/obj/item/projectile/bullet/c5mm //bobnote, we do a little bit of trolling
+	damage = 25
+	wound_bonus = 20
+	sharpness = SHARP_EDGED
 	armour_penetration = 0.5
 
 
-/////////////////////////
-//2 MM ELECTROMAGNETIC //
-/////////////////////////			- Gauss rifle
 
 /obj/item/projectile/bullet/c2mm
-	damage = 0
-	armour_penetration = 0.9 //if only one bullet has built in AP, its this one
-	pixels_per_second = TILES_TO_PIXELS(100)
+	damage = 80
+	wound_bonus = 80
+	sharpness = SHARP_EDGED
+	armour_penetration = 1
 
 /obj/item/projectile/bullet/c2mm/blender //welcome to pain town
 	name = "2mm blender projectile"
-	damage = -20
+	damage = 60
 	hitscan = TRUE
+	wound_bonus = 80
+	sharpness = SHARP_EDGED
 	pass_flags = PASSTABLE
 	armour_penetration = 1
 	ricochets_max = 9 //ain't called the 'blender' for nothin'

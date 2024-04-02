@@ -37,20 +37,20 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c22
 	name = ".22lr bullet"
-	damage = 0
-	wound_bonus = 6
+	damage = 14
+	sharpness = SHARP_EDGED
+	bare_wound_bonus = 10
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
-	damage = 0
-	stamina = 22
-	wound_bonus = 0
+	damage = 3
+	stamina = 24
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c22/shock
 	name = ".22lr shock bullet"
-	damage = -4 //about -25% damage
+	damage = 14
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -58,31 +58,27 @@ Uranium, Contaminated
 	..()
 	target.emp_act(15)//5 severity is very, very low
 
-/////////////////
-// .38 SPECIAL //
-/////////////////		-Light round, damage focus
-
 /obj/item/projectile/bullet/c38
 	name = ".38 bullet"
-	damage = 0
-	wound_bonus = 10
+	damage = 19
+	sharpness = SHARP_EDGED
+	wound_bonus = 8
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
-	damage = -28
-	stamina = 32
+	damage = 5
+	stamina = 29
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c38/improv
-	damage = -3
+	damage = 13
+	wound_bonus = 6
 
 /obj/item/projectile/bullet/c38/acid
 	name = ".38 acid-tipped bullet"
-	damage = -5
-	wound_bonus = 0
-	sharpness = SHARP_NONE
+	damage = 10
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
 	is_reflectable = FALSE
 
@@ -101,7 +97,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c38/incendiary
 	name = ".38 incendiary bullet"
-	damage = -5
+	damage = 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c38/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -112,32 +108,29 @@ Uranium, Contaminated
 		M.IgniteMob()
 
 
-
-//////////
-// 9 MM //
-//////////				-Light round, all around, these guns should higher capacity
-
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
-	damage = 0
+	damage = 16.5
+	sharpness = SHARP_EDGED
 	wound_bonus = 10
 	is_reflectable = TRUE
 
-/obj/item/projectile/bullet/c9mm/op
+/obj/item/projectile/bullet/c9mm/op //not in
 	name = "9mm +P bullet"
-	damage = 27
-	var/extra_speed = 500
+	damage = 26.5
+	sharpness = SHARP_EDGED
+	wound_bonus = 15
 
 /obj/item/projectile/bullet/c9mm/rubber
 	name = "9mm rubber bullet"
-	damage = -15
-	stamina = 25
+	damage = 6
+	stamina = 27
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c9mm/acid
 	name = "9mm acid-tipped bullet"
-	damage = -5
+	damage = 10.5
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -157,7 +150,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm/incendiary
 	name = "9mm incendiary bullet"
-	damage = -5
+	damage = 11.5
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c9mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -168,39 +161,42 @@ Uranium, Contaminated
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/c9mm/improv
-	damage = -3
+	damage = 11.5
+	sharpness = SHARP_EDGED
+	wound_bonus = 5
 
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
 	name = "9mm bullet"
-	damage = 20
+	damage = 26.5
+	sharpness = SHARP_EDGED
+	wound_bonus = 15
 
 
-///////////
-// 10 MM //
-///////////				-Medium round, wounding focus, guns in 10mm should have lower capacity
+
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
-	damage = 0
-	wound_bonus = 11
+	damage = 20
+	sharpness = SHARP_EDGED
+	wound_bonus = 14
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
-	damage = 20
-	armour_penetration = 0.1
-	wound_bonus = 11
+	damage = 30
+	sharpness = SHARP_EDGED
+	wound_bonus = 19
 
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
-	damage = -15
-	stamina = 26
+	damage = 6
+	stamina = 28
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c10mm/incendiary
 	name = "10mm incendiary bullet"
-	damage = -5
+	damage = 14
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c10mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -211,36 +207,37 @@ Uranium, Contaminated
 		M.IgniteMob()
 
 
-/////////////
-// .45 ACP //
-/////////////			-Medium round, damage focus, very low capacity guns
+
 
 /obj/item/projectile/bullet/c45
 	name = ".45 FMJ bullet"
-	damage = 0
+	damage = 18
+	sharpness = SHARP_EDGED
 	wound_bonus = 15
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c45/simple
 	name = ".45 FMJ bullet"
-	damage = 30
-	wound_bonus = 15
+	damage = 28
+	sharpness = SHARP_EDGED
+	wound_bonus = 20
 
-/obj/item/projectile/bullet/c45/op
+/obj/item/projectile/bullet/c45/op //not in
 	name = ".45 +P bullet"
-	damage = 32
-	var/extra_speed = 500
+	damage = 28
+	sharpness = SHARP_EDGED
+	wound_bonus = 20
 
 /obj/item/projectile/bullet/c45/rubber
 	name = ".45 rubber bullet"
-	damage = -28
-	stamina = 45
+	damage = 5
+	stamina = 32
 	sharpness = SHARP_NONE
 	wound_bonus = 0
 
 /obj/item/projectile/bullet/c45/incendiary
 	name = ".45 incendiary bullet"
-	damage = -5
+	damage = 12
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c45/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -250,20 +247,20 @@ Uranium, Contaminated
 		M.adjust_fire_stacks(fire_stacks)
 		M.IgniteMob()
 
-/////////////////
-// .357 MAGNUM //
-/////////////////		-High power round
+
 
 /obj/item/projectile/bullet/a357
 	name = ".357 FMJ bullet"
-	damage = 0
-	wound_bonus = 12
-	bare_wound_bonus = -14
+	damage = 23
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.1
+	wound_bonus = 23
+
 
 // 3 ricochets, more than enough to kill anything that moves
 /obj/item/projectile/bullet/a357/ricochet
 	name = ".357 ricochet bullet"
-	damage = 0
+	damage = 17
 	ricochets_max = 3
 	ricochet_chance = 140
 	ricochet_auto_aim_angle = 50
@@ -272,7 +269,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/acid
 	name = ".357 acid-tipped bullet"
-	damage = -5
+	damage = 17
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -280,7 +277,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/a357/acid/Initialize()
 	. = ..()
 	create_reagents(5, NO_REACT, NO_REAGENTS_VALUE)
-	reagents.add_reagent(acid_type, 5)
+	reagents.add_reagent(acid_type, 2.5)
 
 /obj/item/projectile/bullet/a357/acid/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -291,8 +288,8 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/incendiary
 	name = ".357 incendiary bullet"
-	damage = -5
-	var/fire_stacks = 2
+	damage = 17
+	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/a357/incendiary/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -303,27 +300,31 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/improv
 	name = "poor .357 bullet"
-	damage = -5
-////////////////
-// .44 MAGNUM //
-////////////////		- Higher power round
+	damage = 17
+	sharpness = SHARP_EDGED
+	wound_bonus = 15
+
 
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
-	damage = 0
-	wound_bonus = 15
-	bare_wound_bonus = -20
+	damage = 28
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.1
+	wound_bonus = 28
+
 
 
 /obj/item/projectile/bullet/m44/simple //for simple mobs, separate to allow balancing
 	name = ".44 bullet"
-	damage = 40
+	damage = 38
+	sharpness = SHARP_EDGED
 	armour_penetration = 0.1
+	wound_bonus = 33
 
 /obj/item/projectile/bullet/m44/incendiary
 	name = ".44 incendiary bullet"
-	damage = -5
-	var/fire_stacks = 2
+	damage = 22
+	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/m44/incendiary/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -332,72 +333,19 @@ Uranium, Contaminated
 		M.adjust_fire_stacks(fire_stacks)
 		M.IgniteMob()
 
-////////////
-// .45-70 //
-////////////			-very heavy round
-
-/obj/item/projectile/bullet/c4570
-	name = ".45-70 FMJ bullet"
-	damage = 0
-	wound_bonus = 18
-	bare_wound_bonus = -24
-
-/obj/item/projectile/bullet/c4570/explosive
-	damage = -15
-	pixels_per_second = TILES_TO_PIXELS(500)
-	name = ".45-70 explosive bullet"
-
-/obj/item/projectile/bullet/c4570/explosive/on_hit(atom/target, blocked = FALSE)
-	..()
-	explosion(target, 0, 0, 1, 1, flame_range = 1)
-
-/obj/item/projectile/bullet/c4570/acid
-	name = ".45-70 acid-tipped bullet"
-	damage = -10
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	var/acid_type = /datum/reagent/toxin/acid/fluacid
-
-/obj/item/projectile/bullet/c4570/acid/Initialize()
-	. = ..()
-	create_reagents(10, NO_REACT, NO_REAGENTS_VALUE)
-	reagents.add_reagent(acid_type, 10)
-
-/obj/item/projectile/bullet/c4570/acid/on_hit(atom/target, blocked = FALSE)
-	. = ..()
-	if(isliving(target))
-		var/mob/living/M = target
-		reagents.reaction(M, TOUCH)
-		reagents.trans_to(M, reagents.total_volume)
-
-/obj/item/projectile/bullet/c4570/knockback
-	name = ".45-70 ultradense bullet"
-	damage = -15
-	wound_bonus = 0
-	sharpness = SHARP_NONE
-	pixels_per_second = TILES_TO_PIXELS(500)
-
-/obj/item/projectile/bullet/c4570/knockback/on_hit(atom/target, blocked = FALSE)
-	. = ..()
-	if(ismovable(target) && prob(50))
-		var/atom/movable/M = target
-		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
-		M.safe_throw_at(throw_target, 2, 3)
 
 
-///////////
-// 14 MM //
-///////////				-very heavy round, AP (reference to FO1/2)
 
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
-	damage = 0
-	wound_bonus = 25
-	bare_wound_bonus = -28
+	damage = 32
+	sharpness = SHARP_EDGED
+	armour_penetration = 0.2
+	wound_bonus = 32
 
 /obj/item/projectile/bullet/mm14/contam
 	name = "14mm contaiminated bullet"
-	damage = -10
+	damage = 26
 	var/smoke_radius = 1
 
 /obj/item/projectile/bullet/mm14/contam/Initialize()
@@ -418,41 +366,37 @@ Uranium, Contaminated
 /*
 /obj/item/projectile/bullet/mm14/uraniumtipped
 	name = "14mm uranium-tipped bullet"
-	damage = -5
+	damage = 26
 	armour_penetration = 0.1
-	irradiate = 300
+	irradiate = 500
 */
 
 
 
-//////////////////////
-//SPECIAL AMMO TYPES//
-//////////////////////
+
 
 //45 Long Colt. Bouncy ammo but less damage then the Sequoia. It's in one of the Vet Ranger kits
 /obj/item/projectile/bullet/a45lc
 	name = ".45 LC bullet"
-	damage = 0
-	armour_penetration = 0
-	wound_bonus = 20
-	bare_wound_bonus = -20
+	damage = 26
+	armour_penetration = 0.1
+	sharpness = SHARP_EDGED
+	wound_bonus = 25
 	ricochets_max = 3
 	ricochet_incidence_leeway = 130
 	ricochet_decay_damage = 1.1 //48 damage on first bounce, 53 on second, 58 on third. Unless you bounce, the DPS dual wielding is lower then a single M29
 	ricochet_decay_chance = 11
-	ricochet_chance = 80 //100% if you have the vet's trait
+	ricochet_chance = 100 //100% if you have the vet's trait //bobnote bouncy bullet go bounce bounce
 	ricochet_auto_aim_range = 4
 
 
-/////////////
-// NEEDLER //
-/////////////			- AP focus
+
 
 /obj/item/projectile/bullet/needle
 	name = "needle"
 	icon_state = "cbbolt"
-	damage = 0
-	armour_penetration = 0.8 //rare AP pistol ammo
+	damage = 30
+	armour_penetration = 0.5
 	var/piercing = FALSE
 
 

@@ -1,11 +1,73 @@
-/obj/item/projectile/bullet/shotgun_slug
+	/obj/item/projectile/bullet/pellet
+	var/tile_dropoff = 0.45
+	var/tile_dropoff_s = 1.25
+
+	/obj/item/projectile/bullet/pellet/Range()
+	..()
+	if(damage > 0)
+		damage -= tile_dropoff
+	if(stamina > 0)
+		stamina -= tile_dropoff_s
+	if(damage < 0 && stamina < 0)
+		qdel(src)
+
+    /obj/item/projectile/bullet/pellet/shotgun_buckshot
+	name = "buckshot pellet"
+	damage = 9.5
+	wound_bonus = 10
+	bare_wound_bonus = 10
+	wound_falloff_tile = -1.5
+	is_reflectable = TRUE
+
+	/obj/item/projectile/bullet/pellet/shotgun_improvised
+	damage = 7
+	wound_bonus = 5
+	bare_wound_bonus = 5
+
+/obj/item/projectile/bullet/pellet/shotgun_improvised/Initialize()
+	. = ..()
+	range = rand(1, 8)
+
+	/obj/item/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
-	damage = 50
-	stamina = 10 //all shotguns deal a very slight amount of stamina damage from the impact
-	sharpness = SHARP_POINTY
+	damage = 35
+	sharpness = SHARP_EDGED
 	wound_bonus = 26
-	bare_wound_bonus = -26
-	spread = 2
+
+	/obj/item/projectile/bullet/pellet/shotgun_rubbershot
+	name = "rubbershot pellet"
+	damage = 4
+	stamina = 10
+	sharpness = SHARP_NONE
+	embedding = null
+	is_reflectable = TRUE
+
+    /obj/item/projectile/bullet/shotgun_beanbag
+	name = "beanbag slug"
+	damage = 8
+	stamina = 50
+	sharpness = SHARP_NONE
+	embedding = null
+
+
+		/obj/item/projectile/bullet/pellet/magnum_buckshot
+	name = "magnum buckshot pellet"
+	damage = 13
+	wound_bonus = 15
+	wound_falloff_tile = -1.5
+	bare_wound_bonus = 15
+
+		/obj/item/projectile/bullet/pellet/trainshot
+	damage = 11
+	armour_penetration = 0.2
+	sharpness = SHARP_NONE
+
+       /obj/item/projectile/bullet/pellet/trainshot/on_hit(atom/target)
+	. = ..()
+	if(ismovable(target) && prob(25))
+		var/atom/movable/M = target
+		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
+		M.safe_throw_at(throw_target, 2, 3)
 
 /obj/item/projectile/bullet/shotgun_slug/executioner
 	name = "executioner slug" // admin only, can dismember limbs
@@ -17,21 +79,29 @@
 	sharpness = SHARP_NONE
 	wound_bonus = 80
 
-/obj/item/projectile/bullet/shotgun_beanbag
-	name = "beanbag slug"
-	damage = 10
-	stamina = 60
-	wound_bonus = 20
-	sharpness = SHARP_NONE
-	embedding = null
+
 
 /obj/item/projectile/bullet/incendiary/shotgun
 	name = "incendiary slug"
-	damage = 20
+	damage = 25
 
 /obj/item/projectile/bullet/incendiary/shotgun/dragonsbreath
 	name = "dragonsbreath pellet"
 	damage = 5
+
+		/obj/item/projectile/bullet/incendiary/shotgun/Move()
+	. = ..()
+	var/turf/location = get_turf(src)
+	if(location)
+		new /obj/effect/hotspot(location)
+		location.hotspot_expose(700, 5, 1)
+
+		/obj/item/projectile/bullet/incendiary/shotgun/on_hit(atom/target)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(2)
+		M.IgniteMob()
 
 /obj/item/projectile/incendiary/flamethrower
 	name = "FIREEEEEEEEEE!!!!!"
@@ -40,7 +110,7 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 12 //slight damage on impact
+	damage = 7.5
 	range = 10
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
@@ -105,25 +175,9 @@
 	explosion(target, -1, 0, 1)
 	return BULLET_ACT_HIT
 
-/obj/item/projectile/bullet/pellet
-	var/tile_dropoff = 0.45
-	var/tile_dropoff_s = 1.25
 
-/obj/item/projectile/bullet/pellet/shotgun_buckshot
-	name = "buckshot pellet"
-	damage = 11
-	wound_bonus = 5
-	bare_wound_bonus = 5
-	wound_falloff_tile = -2.5 // low damage + additional dropoff will already curb wounding potential anything past point blank
-	is_reflectable = TRUE
 
-/obj/item/projectile/bullet/pellet/shotgun_rubbershot
-	name = "rubbershot pellet"
-	damage = 2
-	stamina = 10
-	sharpness = SHARP_NONE
-	embedding = null
-	is_reflectable = TRUE
+
 
 /obj/item/projectile/bullet/pellet/Range()
 	..()
@@ -134,31 +188,15 @@
 	if(damage < 0 && stamina < 0)
 		qdel(src)
 
-/obj/item/projectile/bullet/pellet/shotgun_improvised
-	tile_dropoff = 0.35		//Come on it does 6 damage don't be like that.
-	damage = 6
-	wound_bonus = 0
-	bare_wound_bonus = 7.5
+
 
 /obj/item/projectile/bullet/pellet/shotgun_improvised/Initialize()
 	. = ..()
 	range = rand(1, 8)
 
-/obj/item/projectile/bullet/pellet/shotgun_improvised/on_range()
-	do_sparks(1, TRUE, src)
-	..()
 
-/obj/item/projectile/bullet/pellet/trainshot
-	damage = 15 // less pellets, more dam + tiny bit of pen
-	armour_penetration = 0.4
-	sharpness = SHARP_NONE
 
-/obj/item/projectile/bullet/pellet/trainshot/on_hit(atom/target)
-	. = ..()
-	if(ismovable(target) && prob(8))
-		var/atom/movable/M = target
-		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
-		M.safe_throw_at(throw_target, 2, 3)
+
 
 // Mech Scattershots
 
@@ -178,12 +216,7 @@
 	damage = 1
 	stamina = 6
 
-/obj/item/projectile/bullet/pellet/magnum_buckshot
-	name = "magnum buckshot pellet"
-	damage = 15
-	armour_penetration = 0.15
-	wound_bonus = 10
-	bare_wound_bonus = 10
+
 
 // BETA STUFF // Obsolete
 /obj/item/projectile/bullet/pellet/shotgun_buckshot/test
