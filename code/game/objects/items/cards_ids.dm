@@ -1724,3 +1724,18 @@
 	uses_overlays = FALSE
 	assignment = "suite key"
 	access = list(ACCESS_SUITETWO, ACCESS_BISHOPCOM)
+
+//van graffs
+
+/obj/item/card/id/reno/vangraffs/business
+	name = "business card"
+	desc = "It has bone coloring."
+	icon_state = "business_card"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "buisness card"
+	access = list(ACCESS_VANGRAFFS)
+
+/obj/item/card/id/reno/vangraffs/business/management
+	desc = "It has eggshell coloring."
+	icon_state = "business_card_2"
