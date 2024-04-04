@@ -877,6 +877,52 @@
 	icon_state = "fannypack_pink"
 	item_state = "fannypack_pink"
 
+	/obj/item/storage/belt/canesword
+	name = "cane"
+	desc = "A cane, something that a gentlemen only has, or someone who killed a gentlemen has."
+	icon_state = "cane"
+	inhand_icon_state = "cane"
+	worn_icon_state = "cane"
+	w_class = WEIGHT_CLASS_BULKY
+
+/obj/item/storage/belt/canesword/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
+
+	atom_storage.max_slots = 1
+	atom_storage.rustle_sound = FALSE
+	atom_storage.max_specific_storage = WEIGHT_CLASS_BULKY
+	atom_storage.set_holdable(/obj/item/melee/onehanded/canesword)
+
+/obj/item/storage/belt/canesword/examine(mob/user)
+	. = ..()
+	if(length(contents))
+		. += span_notice("Alt-click it to quickly draw the blade.")
+
+/obj/item/storage/belt/canesword/AltClick(mob/user)
+	if(!user.can_perform_action(src, NEED_DEXTERITY|NEED_HANDS))
+		return
+	if(length(contents))
+		var/obj/item/I = contents[1]
+		user.visible_message(span_notice("[user] takes [I] out of [src]."), span_notice("You take [I] out of [src]."))
+		user.put_in_hands(I)
+		update_appearance()
+	else
+		balloon_alert(user, "it's empty!")
+
+/obj/item/storage/belt/canesword/update_icon_state()
+	icon_state = initial(inhand_icon_state)
+	inhand_icon_state = initial(inhand_icon_state)
+	worn_icon_state = initial(worn_icon_state)
+	if(contents.len)
+		icon_state += "-unsheathed"
+		inhand_icon_state += "-unsheathed"
+		worn_icon_state += "-unsheathed"
+	return ..()
+
+/obj/item/storage/belt/canesword/PopulateContents()
+	new /obj/item/melee/unsheathed(src)
+	update_appearance()
 
 /obj/item/storage/belt/sabre
 	name = "sword sheath"
