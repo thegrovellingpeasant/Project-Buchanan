@@ -28,6 +28,26 @@
 ////////////		-block, 34-39 damage
 
 
+/obj/item/melee/onehanded/canesword
+	name = "canesword"
+	desc = "An elegant weapon, made for a gentlemen of the highest degree."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	icon_state = "canesword"
+	inhand_icon_state = "canesword"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	attack_verb = list("dueled", "lashed", "stabbed", "disagreed")
+	obj_flags = UNIQUE_RENAME
+	force = 39
+	throwforce = 15
+	w_class = WEIGHT_CLASS_BULKY
+	block_chance = 50
+	armour_penetration = 0.25
+	wound_bonus = 28
+	bare_wound_bonus = 15
+
+
+
 /obj/item/melee/onehanded/dragonfire
 	name = "Dragonfire Katana"
 	desc = "This used to be a collecters item, now it's a weapon."
