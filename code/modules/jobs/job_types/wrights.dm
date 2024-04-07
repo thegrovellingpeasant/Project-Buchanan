@@ -48,8 +48,6 @@
 	head = /obj/item/clothing/head/helmet/f13/wrights/tophat
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
-	suit = /obj/item/clothing/suit/armor/f13/wrights/elder
-	suit_store = null
 	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather

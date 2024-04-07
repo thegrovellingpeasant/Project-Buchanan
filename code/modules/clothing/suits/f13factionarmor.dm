@@ -1094,12 +1094,13 @@
 	item_state = "wright_suit"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25,"wound" = 30)
 
-/obj/item/clothing/suit/armor/f13/wrights/elder/morningcoat
+/obj/item/clothing/suit/toggle/armor/wrights/elder/morningcoat
 	name = "morning coat"
 	desc = "A coat for the most fanciful formal formalities."
 	icon_state = "morning_coat"
 	item_state = "morning_coat"
-	suittoggled = TRUE
+
+
 
 /////////
 //Hotel//
