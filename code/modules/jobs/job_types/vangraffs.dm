@@ -28,6 +28,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/vangraffs/f13branchmanager
+	faction_head = TRUE
 	title = "Van Graff Branch Manager"
 	flag = F13BRANCHMANAGER
 	total_positions = 1
