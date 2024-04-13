@@ -182,6 +182,8 @@
 	if(user)
 		the_name = user.real_name
 		visible_message("<span class='notice'>[user] pulls the lever and the slot machine starts spinning!</span>")
+		playsound(src, 'sound/lavaland/cursed_slot_machine.ogg', 50, 0)
+
 	else
 		the_name = "Exaybachay"
 
@@ -286,7 +288,7 @@
 		amount_to_give = money >= amount ? amount : money
 		money = max(0, money - amount)
 	// Spawn the money
-	playsound(src, 'sound/items/coinflip.ogg', 60, 1)
+	playsound(src, 'sound/lavaland/cursed_slot_machine_jackpot.ogg', 60, 1)
 	var/obj/item/stack/f13Cash/winning_money = new /obj/item/stack/f13Cash
 	winning_money.amount = amount_to_give
 	winning_money.update_desc()

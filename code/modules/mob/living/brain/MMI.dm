@@ -13,6 +13,7 @@
 	var/datum/ai_laws/laws = new()
 	var/force_replace_ai_name = FALSE
 	var/overrides_aicore_laws = FALSE // Whether the laws on the MMI, if any, override possible pre-existing laws loaded on the AI core.
+	var/wastebot = FALSE //Used for F13 purposes
 
 /obj/item/mmi/update_icon_state()
 	if(!brain)
@@ -196,7 +197,7 @@
 
 /obj/item/mmi/examine(mob/user)
 	. = ..()
-	if(brainmob)
+	if(brainmob && !wastebot)
 		var/mob/living/brain/B = brainmob
 		if(!B.key || !B.mind || B.stat == DEAD)
 			. += "<span class='warning'>The MMI indicates the brain is completely unresponsive.</span>"

@@ -135,7 +135,8 @@
 						<div class='links'>"}
 		for(var/X in equipment)
 			var/obj/item/mecha_parts/mecha_equipment/W = X
-			. += "[W.name] <a href='?src=[REF(W)];detach=1'>Detach</a><br>"
+			if(!W.innate)
+				. += "[W.name] <a href='?src=[REF(W)];detach=1'>Detach</a><br>"
 		. += "<b>Available equipment slots:</b> [max_equip-equipment.len]"
 		. += "</div></div>"
 
@@ -275,6 +276,7 @@
 			selected = equip
 			occupant_message("You switch to [equip]")
 			visible_message("[src] raises [equip]")
+			playsound(src.loc, equipsound , 50)
 			send_byjax(usr, "exosuit.browser","eq_list", get_equipment_list())
 
 	if(href_list["rmictoggle"])
@@ -361,4 +363,3 @@
 			else
 				occupant_message("<span class='warning'>Recalibration failed!</span>")
 				mecha_log_message("Recalibration of coordination system failed with 1 error.", color="red")
-

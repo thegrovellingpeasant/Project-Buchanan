@@ -47,6 +47,24 @@
 /obj/structure/stairs/slopes/west
 	dir = WEST
 
+/obj/structure/stairs/alt
+	name = "stairs"
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "rampdowntop"
+	plane = FLOOR_PLANE
+
+/obj/structure/stairs/alt/north
+	dir = NORTH
+
+/obj/structure/stairs/alt/south
+	dir = SOUTH
+
+/obj/structure/stairs/alt/east
+	dir = EAST
+
+/obj/structure/stairs/alt/west
+	dir = WEST
+
 /obj/structure/stairs/north/invisible
 	invisibility = INVISIBILITY_ABSTRACT
 

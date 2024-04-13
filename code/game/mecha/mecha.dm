@@ -36,10 +36,10 @@
 	var/mob/living/occupant = null
 	var/step_in = 10 //make a step in step_in/10 sec.
 	var/dir_in = SOUTH //What direction will the mech face when entered/powered on? Defaults to South.
-	var/normal_step_energy_drain = 10 //How much energy the mech will consume each time it moves. This variable is a backup for when leg actuators affect the energy drain.
-	var/step_energy_drain = 10
+	var/normal_step_energy_drain = 0 //How much energy the mech will consume each time it moves. This variable is a backup for when leg actuators affect the energy drain.
+	var/step_energy_drain = 0
 	var/melee_energy_drain = 15
-	var/overload_step_energy_drain_min = 100
+	var/overload_step_energy_drain_min = 0
 	max_integrity = 300 //max_integrity is base health
 	move_force = MOVE_FORCE_VERY_STRONG
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
@@ -48,6 +48,8 @@
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	var/list/facing_modifiers = list(FRONT_ARMOUR = 1.5, SIDE_ARMOUR = 1, BACK_ARMOUR = 0.5)
 	var/obj/item/stock_parts/cell/cell
+	var/obj/item/stock_parts/scanning_module/scanning_module
+	var/obj/item/stock_parts/capacitor/capacitor
 	var/state = 0
 	var/list/log = new
 	var/last_message = 0
@@ -64,6 +66,13 @@
 	var/breach_time = 0
 	var/recharge_rate = 0
 	var/can_be_locked = FALSE //Whether the mech can be DNA-locked or not.
+	var/weapons = 0 //Used for F13 Robots. Used for limiting the amount of weapons they can have
+	var/cooldown_multiplier = 1 //Determines equipment cooldown, based off of capacitor tier
+	var/power_multiplier = 1 //Determines how much power is used by equipment and walking, based off of scanning module tier
+	var/melee_multiplier = 1 //How well robots use melee weapons. Multiplies the damage of a melee weapon
+	var/wastebot = FALSE //Used for F13 Robots. Enables certain things unique to F13 Robots
+	var/explode_on_death = TRUE
+	var/explode_devastate = FALSE
 
 	var/bumpsmash = 0 //Whether or not the mech destroys walls by running into it.
 	//inner atmos
@@ -93,6 +102,7 @@
 	var/stepsound = 'sound/mecha/mechstep.ogg'
 	var/turnsound = 'sound/mecha/mechturn.ogg'
 	var/attacksound = 'sound/weapons/punch4.ogg'
+	var/equipsound = 'sound/machines/piston_raise.ogg'
 
 	var/melee_cooldown = 10
 	var/melee_can_hit = 1
@@ -159,6 +169,8 @@
 	smoke_system.set_up(3, src)
 	smoke_system.attach(src)
 	add_cell()
+	add_scanner()
+	add_capacitor()
 	START_PROCESSING(SSobj, src)
 	GLOB.poi_list |= src
 	mecha_log_message("[src.name] created.")
@@ -188,8 +200,11 @@
 		else
 			M.forceMove(loc)
 	if(wreckage)
-		if(prob(85))
-			explosion(get_turf(src), 0, 1, 2, 3)
+		if(explode_on_death)
+			if(explode_devastate)
+				explosion(get_turf(src), 1, 2, 4, 4)
+			else
+				explosion(get_turf(src), 0, 1, 2, 3)
 		var/obj/structure/mecha_wreckage/WR = new wreckage(loc, AI)
 		for(var/obj/item/mecha_parts/mecha_equipment/E in equipment)
 			if(E.salvageable && prob(30))
@@ -203,7 +218,7 @@
 			WR.crowbar_salvage += cell
 			cell.forceMove(WR)
 			cell.charge = rand(0, cell.charge)
-		if(internal_tank)
+		if(internal_tank && !wastebot)
 			WR.crowbar_salvage += internal_tank
 			internal_tank.forceMove(WR)
 	else
@@ -220,6 +235,8 @@
 	GLOB.poi_list.Remove(src)
 	equipment.Cut()
 	cell = null
+	scanning_module = null
+	capacitor = null
 	internal_tank = null
 	assume_air(cabin_air)
 	cabin_air = null
@@ -233,7 +250,7 @@
 
 /obj/mecha/proc/restore_equipment()
 	equipment_disabled = 0
-	if(istype(src, /obj/mecha/combat))
+	if(istype(src, /obj/mecha/combat) || istype(src, /obj/mecha/f13))
 		mouse_pointer = 'icons/mecha/mecha_mouse.dmi'
 	if(occupant)
 		SEND_SOUND(occupant, sound('sound/items/timer.ogg', volume=50))
@@ -243,15 +260,41 @@
 /obj/mecha/CheckParts(list/parts_list)
 	..()
 	cell = locate(/obj/item/stock_parts/cell) in contents
-	var/obj/item/stock_parts/scanning_module/SM = locate() in contents
-	var/obj/item/stock_parts/capacitor/CP = locate() in contents
-	if(SM)
-		normal_step_energy_drain = 20 - (5 * SM.rating) //10 is normal, so on lowest part its worse, on second its ok and on higher its real good up to 0 on best
-		step_energy_drain = normal_step_energy_drain
-		qdel(SM)
-	if(CP)
-		armor = armor.modifyRating(energy = (CP.rating * 10)) //Each level of capacitor protects the mech against emp by 10%
-		qdel(CP)
+	scanning_module = locate(/obj/item/stock_parts/scanning_module) in contents
+	capacitor = locate(/obj/item/stock_parts/capacitor) in contents
+	if(scanning_module)
+		if(scanning_module.rating > 1)
+			power_multiplier = 1 - ((scanning_module.rating * 0.25) - 0.25) //Each level of scanning module decreases power consumption from walking
+		else																//and using energy weapons, starting at tier 2
+			power_multiplier = 1
+		step_energy_drain = normal_step_energy_drain * power_multiplier
+
+	if(capacitor)
+		armor = armor.setRating(energy = (capacitor.rating * 10)) //Each level of capacitor protects the mech against emp by 10%
+		if(capacitor.rating > 1)
+			cooldown_multiplier = 1 - ((capacitor.rating * 0.25) - 0.25) //Each level of capacitor decreases the cooldown of equipment, starting at tier 2
+		else
+			cooldown_multiplier = 1
+
+/obj/mecha/proc/UpdateParts(obj/item/stock_parts/C)
+	if(istype(C, /obj/item/stock_parts/scanning_module))
+		if(C.rating > 1)
+			power_multiplier = 1 - ((C.rating * 0.25) - 0.25)
+		else
+			power_multiplier = 1
+		step_energy_drain = normal_step_energy_drain * power_multiplier
+		for(var/obj/item/mecha_parts/mecha_equipment/E in equipment)
+			E.update_equipment(src)
+
+	if(istype(C, /obj/item/stock_parts/capacitor))
+		armor = armor.setRating(energy = (C.rating * 10))
+		if(C.rating > 1)
+			cooldown_multiplier = 1 - ((C.rating * 0.25) - 0.25)
+		else
+			cooldown_multiplier = 1
+		for(var/obj/item/mecha_parts/mecha_equipment/E in equipment)
+			E.update_equipment(src)
+
 
 ////////////////////////
 ////// Helpers /////////
@@ -267,6 +310,20 @@
 		cell = C
 		return
 	cell = new /obj/item/stock_parts/cell/high/plus(src)
+
+/obj/mecha/proc/add_scanner(obj/item/stock_parts/scanning_module/S=null)
+	if(S)
+		S.forceMove(src)
+		scanning_module = S
+		return
+	scanning_module = new /obj/item/stock_parts/scanning_module(src)
+
+/obj/mecha/proc/add_capacitor(obj/item/stock_parts/capacitor/D=null)
+	if(D)
+		D.forceMove(src)
+		capacitor = D
+		return
+	capacitor = new /obj/item/stock_parts/capacitor(src)
 
 /obj/mecha/proc/add_cabin()
 	cabin_air = new
@@ -388,11 +445,20 @@
 		var/integrity = obj_integrity/max_integrity*100
 		switch(integrity)
 			if(30 to 45)
-				occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 1)
+				if(wastebot)
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity/robot, 1)
+				else
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 1)
 			if(15 to 35)
-				occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 2)
+				if(wastebot)
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity/robot, 2)
+				else
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 2)
 			if(-INFINITY to 15)
-				occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 3)
+				if(wastebot)
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity/robot, 3)
+				else
+					occupant.throw_alert("mech damage", /obj/screen/alert/low_mech_integrity, 3)
 			else
 				occupant.clear_alert("mech damage")
 		var/atom/checking = occupant.loc
@@ -727,7 +793,7 @@
 			card.AI = AI
 			AI.controlled_mech = null
 			AI.remote_control = null
-			icon_state = initial(icon_state)+"-open"
+			icon_state = icon_state +"-open"
 			to_chat(AI, "You have been downloaded to a mobile storage device. Wireless connection offline.")
 			to_chat(user, "<span class='boldnotice'>Transfer successful</span>: [AI.name] ([rand(1000,9999)].exe) removed from [name] and stored within local memory.")
 
@@ -798,7 +864,7 @@
 		occupant = null
 	if(pilot_mob.mecha == src)
 		pilot_mob.mecha = null
-	icon_state = "[initial(icon_state)]-open"
+	icon_state = "[icon_state]-open"
 	pilot_mob.forceMove(get_turf(src))
 	RemoveActions(pilot_mob)
 
@@ -906,8 +972,9 @@
 		return 0
 
 /obj/mecha/proc/mmi_move_inside(obj/item/mmi/mmi_as_oc, mob/user)
+	//Disable this block if testing is to be done on a private server
 	if(!mmi_as_oc.brainmob || !mmi_as_oc.brainmob.client)
-		to_chat(user, "<span class='warning'>Consciousness matrix not detected!</span>")
+		to_chat(user, "<span class='warning'>Personality matrix not detected!</span>")
 		return FALSE
 	else if(mmi_as_oc.brainmob.stat)
 		to_chat(user, "<span class='warning'>Beta-rhythm below acceptable level!</span>")
@@ -919,7 +986,7 @@
 		to_chat(user, "<span class='warning'>Access denied. [name] is secured with a DNA lock.</span>")
 		return FALSE
 
-	visible_message("<span class='notice'>[user] starts to insert an MMI into [name].</span>")
+	visible_message("<span class='notice'>[user] starts to insert an personality matrix into [name].</span>")
 
 	if(do_after(user, exit_delay, target = src))
 		if(!occupant)
@@ -927,7 +994,7 @@
 		else
 			to_chat(user, "<span class='warning'>Occupant detected!</span>")
 	else
-		to_chat(user, "<span class='notice'>You stop inserting the MMI.</span>")
+		to_chat(user, "<span class='notice'>You stop inserting the personality matrix.</span>")
 	return FALSE
 
 /obj/mecha/proc/mmi_moved_inside(obj/item/mmi/mmi_as_oc, mob/user)
@@ -1016,7 +1083,7 @@
 			mmi.mecha = null
 			mmi.update_icon()
 			L.mobility_flags = NONE
-		icon_state = initial(icon_state)+"-open"
+		icon_state = icon_state+"-open"
 		setDir(dir_in)
 
 	if(L && L.client)
