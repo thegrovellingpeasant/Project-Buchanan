@@ -134,20 +134,6 @@
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	icon_state = "druggy"
 
-/obj/screen/fullscreen/noise
-	icon = 'icons/effects/static.dmi'
-	icon_state = "grain"
-	screen_loc = "WEST,SOUTH to EAST,NORTH"
-	layer = FULLSCREEN_LAYER
-	alpha = 127
-
-/obj/screen/fullscreen/scanline
-	icon = 'icons/effects/static.dmi'
-	icon_state = "scanlines"
-	screen_loc = "WEST,SOUTH to EAST,NORTH"
-	alpha = 50
-	layer = FULLSCREEN_LAYER
-
 /obj/screen/fullscreen/color_vision
 	icon = 'icons/mob/screen_gen.dmi'
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
