@@ -265,6 +265,8 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 /datum/job/citizens/f13convict
+
+	title = "Convict"
 	title = "Convict"
 	flag = F13CONVICT
 	total_positions = -1
@@ -296,7 +298,7 @@
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set2,
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set3,
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set4,
-		/obj/item/storage/backpack/duffelbag/equipment/contraband/set5
+		/obj/item/storage/backpack/duffelbag/equipment/contraband/set5,
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set6,
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set7,
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set8,
