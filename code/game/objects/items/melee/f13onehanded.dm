@@ -18,7 +18,7 @@
 	force = 30
 	throwforce = 10
 	w_class = WEIGHT_CLASS_NORMAL
-	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cutted")
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	resistance_flags = FIRE_PROOF
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 
@@ -71,7 +71,7 @@
 
 /obj/item/melee/onehanded/machete
 	name = "simple machete"
-	desc = "A makeshift machete made of a blade scavenged from various things."
+	desc = "A makeshift machete made from a lawnmower blade."
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
 	force = 33
