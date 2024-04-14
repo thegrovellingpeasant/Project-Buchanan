@@ -267,6 +267,7 @@
 /datum/job/citizens/f13convict
 
 	title = "Convict"
+	title = "Convict"
 	flag = F13CONVICT
 	total_positions = -1
 	spawn_positions = -1
@@ -284,7 +285,7 @@
 	/datum/outfit/loadout/inmate_raider,
 	/datum/outfit/loadout/inmate_viper,
 	)
-	
+
 /datum/outfit/job/citizens/f13convict/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	shoes = pick(

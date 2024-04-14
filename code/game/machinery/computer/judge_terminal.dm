@@ -490,7 +490,7 @@ What a mess.*/
 					R.fields["mi_crim"] = list()
 					R.fields["ma_crim"] = list()
 					R.fields["notes"] = "No notes."
-					R.fields["remaining sentence"] = "None"
+					R.fields["remaining_sentence"] = 0.00
 					GLOB.data_core.security += R
 					active2 = R
 					screen = 3
@@ -521,6 +521,7 @@ What a mess.*/
 				R.fields["mi_crim"] = list()
 				R.fields["ma_crim"] = list()
 				R.fields["notes"] = "No notes."
+				R.fields["remaining_sentence"] = "None"
 				GLOB.data_core.security += R
 				active2 = R
 
@@ -593,6 +594,8 @@ What a mess.*/
 							if(!canUseSecurityRecordsConsole(usr, t1, a1))
 								return
 							active1.fields["species"] = t1
+					if("remaining_sentence")
+						
 					if("show_photo_front")
 						if(active1.fields["photo_front"])
 							if(istype(active1.fields["photo_front"], /obj/item/photo))
@@ -683,8 +686,6 @@ What a mess.*/
 							temp += "<li><a href='?src=[REF(src)];choice=Change Criminal Status;criminal2=paroled'>Paroled</a></li>"
 							temp += "<li><a href='?src=[REF(src)];choice=Change Criminal Status;criminal2=released'>Discharged</a></li>"
 							temp += "</ul>"
-					if("timer")
-						
 					if("rank")
 						var/list/L = list( "Head of Personnel", "Captain", "AI", "Central Command" )
 						//This was so silly before the change. Now it actually works without beating your head against the keyboard. /N
