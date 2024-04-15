@@ -130,7 +130,7 @@
 			if(authenticated==2)
 				playsound(src, 'sound/machines/terminal_prompt.ogg', 50, FALSE)
 				make_announcement(usr)
-
+/*
 		if("crossserver")
 			if(authenticated==2)
 				var/dest = href_list["cross_dest"]
@@ -208,6 +208,7 @@
 				else
 					SSshuttle.cancelEvac(usr)
 			state = STATE_DEFAULT
+*/
 		if("messagelist")
 			currmsg = 0
 			state = STATE_MESSAGELIST
@@ -243,8 +244,8 @@
 						currmsg.answer_callback.InvokeAsync()
 				state = STATE_VIEWMESSAGE
 				updateDialog()
-		if("status")
-			state = STATE_STATUSDISPLAY
+//		if("status")
+//			state = STATE_STATUSDISPLAY
 		if("securitylevel")
 			tmp_alertlevel = text2num( href_list["newalertlevel"] )
 			if(!tmp_alertlevel)
@@ -252,7 +253,7 @@
 			state = STATE_CONFIRM_LEVEL
 		if("changeseclevel")
 			state = STATE_ALERT_LEVEL
-
+/*
 		if("emergencyaccess")
 			state = STATE_TOGGLE_EMERGENCY
 		if("enableemergency")
@@ -285,7 +286,7 @@
 		if("setmsg2")
 			stat_msg2 = reject_bad_text(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40)
 			updateDialog()
-
+*/
 		// OMG CENTCOM LETTERHEAD
 		if("MessageCentCom")
 			if(authenticated)
@@ -332,7 +333,7 @@
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
 			obj_flags &= ~EMAGGED
 			updateDialog()
-
+/*
 		if("nukerequest") //When there's no other way
 			if(authenticated==2)
 				if(!checkCCcooldown())
@@ -346,7 +347,7 @@
 				usr.log_message("has requested the nuclear codes from CentCom with reason \"[input]\"", LOG_SAY)
 				priority_announce("The codes for the on-station nuclear self-destruct have been requested by [usr]. Confirmation or denial of this request will be sent shortly.", "Nuclear Self Destruct Codes Requested","commandreport")
 				CM.lastTimeUsed = world.time
-
+*/
 
 		// AI interface
 		if("ai-main")
@@ -484,7 +485,7 @@
 					if(SSshuttle.emergencyLastCallLoc)
 						dat += "Most recent train call/recall traced to: <b>[format_text(SSshuttle.emergencyLastCallLoc.name)]</b><BR>"
 					else
-						dat += "Unable to trace most recent train call/recall signal.<BR>"
+						dat += "Unable to trace most recent transit call/recall signal.<BR>"
 				dat += "Logged in as: [auth_id]"
 				dat += "<BR>"
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=logout'>Log Out</A> \]<BR>"
@@ -492,14 +493,14 @@
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=messagelist'>Message List</A> \]"
 				switch(SSshuttle.emergency.mode)
 					if(SHUTTLE_IDLE, SHUTTLE_RECALL)
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=callshuttle'>Call Plane</A> \]"
+						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=callshuttle'>Call transit</A> \]"
 					else
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=cancelshuttle'>Cancel Plane Call</A> \]"
+						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=cancelshuttle'>Cancel transit Call</A> \]"
 
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=status'>Set Status Display</A> \]"
 				if (authenticated==2)
 					dat += "<BR><BR><B>Captain Functions</B>"
-					dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=announce'>Make a Captain's Announcement</A> \]"
+					dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=announce'>Make an announcement</A> \]"
 					var/list/cross_servers = CONFIG_GET(keyed_list/cross_server)
 					var/our_id = CONFIG_GET(string/cross_comms_name)
 					if(cross_servers.len)
