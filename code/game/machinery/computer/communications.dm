@@ -287,7 +287,7 @@
 			stat_msg2 = reject_bad_text(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40)
 			updateDialog()
 */
-		// OMG CENTCOM LETTERHEAD
+/*		// OMG CENTCOM LETTERHEAD
 		if("MessageCentCom")
 			if(authenticated)
 				if(!checkCCcooldown())
@@ -333,7 +333,7 @@
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
 			obj_flags &= ~EMAGGED
 			updateDialog()
-/*
+
 		if("nukerequest") //When there's no other way
 			if(authenticated==2)
 				if(!checkCCcooldown())
@@ -573,9 +573,9 @@
 			if(GLOB.security_level == SEC_LEVEL_DELTA)
 				dat += "<font color='red'><b>The self-destruct mechanism is active. Find a way to deactivate the mechanism to lower the alert level or evacuate.</b></font>"
 			else
-				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_AMBER]'>Amber</A><BR>"
-				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_BLUE]'>Blue</A><BR>"
-				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_GREEN]'>Green</A>"
+				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_AMBER]'>Declare Martial Law</A><BR>"
+//				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_BLUE]'>Blue</A><BR>"
+				dat += "<A HREF='?src=[REF(src)];operation=securitylevel;newalertlevel=[SEC_LEVEL_GREEN]'>End Martial Law</A>"
 		if(STATE_CONFIRM_LEVEL)
 			dat += "Current alert level: [NUM2SECLEVEL(GLOB.security_level)]<BR>"
 			dat += "Confirm the change to: [NUM2SECLEVEL(tmp_alertlevel)]<BR>"
@@ -734,7 +734,7 @@
 	if(!SScommunications.can_announce(user, is_silicon))
 		to_chat(user, "<span class='alert'>Intercomms recharging. Please stand by.</span>")
 		return
-	var/input = stripped_input(user, "Please choose a message to announce to the station crew.", "What?")
+	var/input = stripped_input(user, "Please choose a message to announce to the city.", "What?")
 	if(!input || !user.canUseTopic(src, !issilicon(usr)))
 		return
 	if(!(user.can_speak())) //No more cheating, mime/random mute guy!
