@@ -13,7 +13,6 @@
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	flags_1 = CONDUCT_1
-	sharpness = SHARP_EDGED
 	slot_flags = ITEM_SLOT_BELT
 	force = 30
 	throwforce = 10
@@ -28,29 +27,9 @@
 ////////////		-block, 34-39 damage
 
 
-/obj/item/melee/onehanded/canesword
-	name = "canesword"
-	desc = "An elegant weapon, made for a gentlemen of the highest degree."
-	icon = 'icons/fallout/objects/melee/melee.dmi'
-	icon_state = "canesword"
-	inhand_icon_state = "canesword"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	attack_verb = list("dueled", "lashed", "stabbed", "disagreed")
-	obj_flags = UNIQUE_RENAME
-	force = 39
-	throwforce = 15
-	w_class = WEIGHT_CLASS_BULKY
-	block_chance = 50
-	armour_penetration = 0.25
-	wound_bonus = 28
-	bare_wound_bonus = 15
-
-
-
 /obj/item/melee/onehanded/dragonfire
 	name = "Dragonfire Katana"
-	desc = "This used to be a collecters item, now it's a weapon."
+	desc = "After the world ended, seppuku rates in Japan skyrocketed, the owner of this one however is crazy enough to keep going!"
 	icon_state = "DFkatana"
 	item_state = "DFkatana"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -58,11 +37,12 @@
 	flags_1 = CONDUCT_1
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	force = 30
+	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
 	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_EDGED
 	max_integrity = 200
-	wound_bonus = 10
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 50)
 	resistance_flags = FIRE_PROOF
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
@@ -71,12 +51,13 @@
 
 /obj/item/melee/onehanded/machete
 	name = "simple machete"
-	desc = "A makeshift machete made from a lawnmower blade."
+	desc = "A makeshift machete made of a lawn mower blade."
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
-	force = 33
-	block_chance = 10
-	wound_bonus = 14
+	force = 34
+	block_chance = 7
+	throwforce = 20
+	wound_bonus = 10
 	sharpness = SHARP_EDGED
 
 /obj/item/melee/onehanded/machete/forgedmachete
@@ -84,17 +65,17 @@
 	desc = "A forged machete made of high quality steel."
 	icon_state = "machete"
 	force = 35
-	block_chance = 20
-	wound_bonus = 25
+	wound_bonus = 20
 	block_chance = 8
 
 /obj/item/melee/onehanded/machete/training
 	name = "training machete"
 	desc = "A training machete made of tough wood."
 	icon_state = "machete_training"
-	force = 0
+	force = 1
 	throwforce = 5
-	block_chance = 10
+	wound_bonus = -20
+	block_chance = 8
 
 /obj/item/melee/onehanded/machete/training/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -107,9 +88,8 @@
 	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
 	icon_state = "gladius"
 	item_state = "gladius"
-	force = 37
+	force = 36
 	wound_bonus = 30
-	block_chance = 25
 	block_chance = 10
 
 /obj/item/melee/onehanded/machete/spatha
@@ -119,23 +99,23 @@
 	item_state = "spatha"
 	force = 38
 	wound_bonus = 30
-	block_chance = 30
+	block_chance = 18
 
 /obj/item/melee/onehanded/machete/spatha/longblade
 	name = "forged claymore"
 	desc = "A long one-handed blade sporting lovingly applied wraps and a wonderfully forged and engraved guard. The blade looks to be carefully sharpened."
 	icon_state = "longblade"
 	item_state = "longblade"
-	force = 41
-	block_chance = 20
+	force = 38
+	block_chance = 18
 
 /obj/item/melee/onehanded/machete/scrapsabre
 	name = "scrap sabre"
 	desc = "Made from materials found in the wastes, a skilled blacksmith has turned it into a thing of deadly beauty."
 	icon_state = "scrapsabre"
 	item_state = "scrapsabre"
-	force = 35
-	wound_bonus = 18
+	force = 37
+	block_chance = 15
 
 /obj/item/throwing_star/spear
 	name = "throwing spear"
@@ -145,11 +125,10 @@
 	icon_state = "throw_spear"
 	item_state = "tribalspear"
 	force = 20
-	wound_bonus = 15
-	throwforce = 32
-	armour_penetration = 0.2
+	throwforce = 35
+	armour_penetration = 0.10
 	max_reach = 2
-	embedding = list("pain_mult" = 2, "embed_chance" = 65 "fall_chance" = 20)
+	embedding = list("pain_mult" = 2, "embed_chance" = 60, "fall_chance" = 20)
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/throwing_star/tomahawk
@@ -160,11 +139,10 @@
 	icon_state = "tomahawk"
 	item_state = "hatchet_tribal"
 	force = 20
-	wound_bonus = 16
-	throwforce = 27
+	throwforce = 15
 	armour_penetration = 0.10
 	max_reach = 1
-	embedding = list("pain_mult" = 2, "embed_chance" = 45, "fall_chance" = 20)
+	embedding = list("pain_mult" = 2, "embed_chance" = 40, "fall_chance" = 20)
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/throwing_star/tomahawk/pvc
@@ -173,9 +151,9 @@
 	icon = 'icons/fallout/objects/melee/melee.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
-	force = 17
-	wound_bonus = 12
-	throwforce = 21
+	force = 35
+	throwforce = 20
+	armour_penetration = 0.15
 	icon_state = "pvc_tomahawk"
 	item_state = "pvc_tomahawk"
 
@@ -192,11 +170,10 @@
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 15
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	armour_penetration = 0.1
-	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
+	armour_penetration = 0.05
 	throw_speed = 3
 	throw_range = 6
-	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cutted")
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_POINTY
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	var/bayonet = FALSE	//Can this be attached to a gun?
@@ -225,17 +202,18 @@
 	name = "hunting knife"
 	icon_state = "knife_hunting"
 	desc = "Dependable hunting knife."
+	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
 	force = 27
-	wound_bonus = 12
-	throwforce = 23
-	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cutted")
+	throwforce = 25
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
 
 /obj/item/melee/onehanded/knife/survival
 	name = "survival knife"
 	icon_state = "knife_survival"
 	desc = "Multi-purpose knife with blackened steel."
+	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
 	force = 27
-	throwforce = 23
+	throwforce = 25
 
 /obj/item/melee/onehanded/knife/bayonet
 	name = "bayonet knife"
@@ -260,7 +238,7 @@
 	desc = "This blade is designed for brutal close quarters combat."
 	force = 31
 	custom_materials = list(/datum/material/iron=8000)
-	attack_verb = list("slashed", "stabbed", "sliced", "ripped", "lacerated", "punched")
+	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
 
 /obj/item/melee/onehanded/knife/bone
 	name = "bone dagger"
@@ -280,6 +258,7 @@
 	icon_state = "knife_ritual"
 	item_state = "knife_ritual"
 	force = 25
+	armour_penetration = 0.1
 	custom_materials = null
 
 obj/item/melee/onehanded/knife/switchblade
@@ -386,9 +365,10 @@ obj/item/melee/onehanded/knife/switchblade
 	force = 20
 	throwforce = 23
 	armour_penetration = 0.25
-	bare_wound_bonus = 15
-	throw_speed = 7
-	embedding = list("pain_mult" = 4, "embed_chance" = 55 "fall_chance" = 5)
+	bare_wound_bonus = 15 //keep your arteries covered
+	throw_speed = 5
+	throw_range = 7
+	embedding = list("pain_mult" = 4, "embed_chance" = 70, "fall_chance" = 5)
 
 ///////////
 // CLUBS //
@@ -400,7 +380,7 @@ obj/item/melee/onehanded/knife/switchblade
 	desc = "A piece of rusted metal pipe, good for smashing heads. "
 	icon_state = "pipe"
 	item_state = "pipe"
-	attack_verb = list("mashed", "bashed", "piped", "bludgeoned", "whacked", "bonked")
+	attack_verb = list("mashed", "bashed", "piped", "hit", "bludgeoned", "whacked", "bonked")
 	force = 26
 	throwforce = 10
 	throw_speed = 3
@@ -420,7 +400,7 @@ obj/item/melee/onehanded/knife/switchblade
 	desc = "A simple carved wooden club with turquoise inlays."
 	icon_state = "warclub"
 	item_state = "warclub"
-	attack_verb = list("mashed", "bashed", "bludgeoned", "whacked")
+	attack_verb = list("mashed", "bashed", "hit", "bludgeoned", "whacked")
 	force = 30
 	throwforce = 25
 	block_chance = 5
@@ -448,8 +428,8 @@ obj/item/melee/onehanded/knife/switchblade
 	item_state = "flag-ncr"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = null
-	force = 30
-	block_chance = 50
+	force = 26
+	block_chance = 30
 	attack_verb = list("smacked", "thwacked", "democratized", "freedomed")
 
 // Classic Baton
