@@ -12,12 +12,9 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 25
-	wound_bonus = 28
-	sharpness = SHARP_NONE
-	armour_penetration = 0.1
+	force = 22
 	throwforce = 10
-	throw_range = 1
+	throw_range = 3
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
@@ -59,17 +56,14 @@
 // Goliath				Throws targets far. Max damage 50.
 /obj/item/melee/powerfist/f13/goliath
 	name = "Goliath"
-	desc = "A massive, experimental metal gauntlet, some egghead really wanted to punch his boss."
+	desc = "A massive, experimental metal gauntlet captured by the Legion. The piston-powered ram on top is designed to throw targets very, very far."
 	icon = 'icons/fallout/objects/melee/melee.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	wound_bonus = 35
-	armour_penetration = 0.3
-	sharpness = SHARP_NONE
 	force = 25
-	throw_distance = 2
+	throw_distance = 3
 
 
 // Ballistic Fist			Keywords: Damage max 42, AP 0.45, Shotgun
@@ -82,9 +76,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	force = 30
-	sharpness = SHARP_POINTY
-	wound_bonus = 21
-	armour_penetration = 0.1
+	armour_penetration = 0.45
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
@@ -94,11 +86,34 @@
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 
 
+// Mole Miner				
+/obj/item/melee/powerfist/f13/moleminer
+	name = "mole miner gauntlet"
+	desc = "A hand-held mining and cutting implement, repurposed into a deadly melee weapon.  Its name origins are a mystery..."
+	icon_state = "mole_miner_g"
+	item_state = "mole_miner_g"
+	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
+	flags_1 = CONDUCT_1
+	force = 15
+	throwforce = 10
+	throw_range = 7
+	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	tool_behaviour = TOOL_MINING
+	var/digrange = 0
+	toolspeed = 0.4
+	sharpness = SHARP_EDGED
+	w_class = WEIGHT_CLASS_NORMAL
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_GLOVES
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+
 /////////////////////
 // ADVANCED SWORDS //
 /////////////////////
 
-// Ripper				Keywords: Damage 10/45, Wound bonus,
+// Ripper				Keywords: Damage 10/45, Wound bonus, block
 /obj/item/melee/powered/ripper
 	name = "ripper"
 	desc = "The Ripper™ vibroblade is powered by a small energy cell wich allows it to easily cut through flesh and bone."
@@ -110,7 +125,8 @@
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	force = 10
-	wound_bonus = 36
+	wound_bonus = 25
+	block_chance = 15
 	throw_speed = 3
 	throw_range = 4
 	throwforce = 10
@@ -154,7 +170,7 @@
 	add_fingerprint(user)
 
 
-      		Keywords: Damage 10/50, Wound bonus, Block, Bonus AP + 0.15
+//Warhammer chainsword			Keywords: Damage 10/50, Wound bonus, Block, Bonus AP + 0.15
 /obj/item/melee/powered/ripper/prewar
 	name = "pre-war military ripper"
 	desc = "A hand-held, militarized chainsaw, popular with Army units requiring a compact engineering tool for cutting. Just what material is intended to be cut with the weapon remains open to debate."
@@ -164,6 +180,7 @@
 	on_item_state = "prewarrip_on"
 	off_item_state = "prewarrip_off"
 	force_on = 50
+	armour_penetration = 0.15
 
 
 // Shishkebab backpack				The shishkebab weapon base unit
@@ -175,7 +192,6 @@
 	item_state = "shishkebabpack"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	slowdown = 0.15
 //	actions_types = list(/datum/action/item_action/toggle_shishkebab)
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 30)
 	resistance_flags = FIRE_PROOF
@@ -260,7 +276,7 @@
 	..()
 	remove_sword()
 
-// Shishkebab sword				Keywords: Tool welder
+// Shishkebab sword				Keywords: Damage 55 (fire), Tool welder
 /obj/item/weapon/melee/shishkebab //This should never exist without the backpack.
 	name = "shishkebab"
 	desc = "A deadly flaming sword covered in fuel. You're not sure this is entirely safe."
@@ -273,8 +289,6 @@
 	item_flags = ABSTRACT  // don't put in storage
 	slot_flags = 0
 	force = 55
-	wound_bonus = 21
-	sharpness = SHARP_EDGED
 	damtype = "fire"
 	tool_behaviour = TOOL_WELDER
 	toolspeed = 0.3
