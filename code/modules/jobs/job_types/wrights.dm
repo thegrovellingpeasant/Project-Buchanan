@@ -63,7 +63,7 @@
 
 /datum/outfit/loadout/sundaybest
 	name = "Sunday Best"
-	suit = /obj/item/clothing/suit/armor/f13/wrights/elder
+	suit = /obj/item/clothing/suit/toggle/armor/wrights/elder/morningcoat
 
 
 /datum/outfit/job/wrights/f13elder/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
