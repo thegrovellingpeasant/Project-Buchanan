@@ -767,11 +767,11 @@
 	GLOB.shuttle_caller_list -= src
 	SSshuttle.autoEvac()
 	return ..()
-/*
+
 /obj/machinery/computer/communications/proc/overrideCooldown()
 	var/obj/item/circuitboard/computer/communications/CM = circuit
 	CM.lastTimeUsed = 0
-*/
+
 /obj/machinery/computer/communications/proc/add_message(datum/comm_message/new_message)
 	messages += new_message
 
