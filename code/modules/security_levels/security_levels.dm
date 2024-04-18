@@ -21,7 +21,7 @@ GLOBAL_LIST_INIT(all_security_levels, list("green", "blue", "amber", "red", "del
 	if(level >= SEC_LEVEL_GREEN && level <= SEC_LEVEL_DELTA && level != GLOB.security_level)
 		switch(level)
 			if(SEC_LEVEL_GREEN)
-				minor_announce(CONFIG_GET(string/alert_green), "Attention! Martial law is no under in effect:")
+				minor_announce(CONFIG_GET(string/alert_green), "Attention! Martial law is no longer in effect:")
 				if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 					if(GLOB.security_level >= SEC_LEVEL_RED)
 						SSshuttle.emergency.modTimer(4)
