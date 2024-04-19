@@ -2031,11 +2031,65 @@
 	icon_state = "wright_man"
 	item_state = "wright_man"
 
+/obj/item/clothing/under/f13/wrights/man2
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man2"
+	item_state = "wright_man2"
+
+/obj/item/clothing/under/f13/wrights/man3
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man3"
+	item_state = "wright_man3"
+
+/obj/item/clothing/under/f13/wrights/man4
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man4"
+	item_state = "wright_man4"
+
+/obj/item/clothing/under/f13/wrights/man5
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man5"
+	item_state = "wright_man5"
+
+/obj/item/clothing/under/f13/wrights/man6
+	name = "handy down clothes"
+	desc = "Worn out handy down clothes."
+	icon_state = "wright_man6"
+	item_state = "wright_man6"
+
 /obj/item/clothing/under/f13/wrights/woman
 	name = "handy down clothes"
 	desc = "Worn out handy down clothes."
 	icon_state = "wright_woman"
 	item_state = "wright_woman"
+
+/obj/item/clothing/under/f13/wrights/worker1
+	name = "old clothes"
+	desc = "Worn out old clothes."
+	icon_state = "worker1"
+	item_state = "worker1"
+
+/obj/item/clothing/under/f13/wrights/worker2
+	name = "old clothes"
+	desc = "Worn out old clothes."
+	icon_state = "worker2"
+	item_state = "worker2"
+
+/obj/item/clothing/under/f13/wrights/worker3
+	name = "old clothes"
+	desc = "Worn out old clothes."
+	icon_state = "worker3"
+	item_state = "worker3"
+
+/obj/item/clothing/under/f13/wrights/worker4
+	name = "old clothes"
+	desc = "Worn out old clothes."
+	icon_state = "worker4"
+	item_state = "worker4"
 
 //hotel
 
@@ -2139,4 +2193,15 @@
 	fitted = NO_FEMALE_UNIFORM
 	can_adjust = FALSE
 
+/obj/item/clothing/under/f13/redz
+	name = "gang clothes"
+	desc = "A red shirt with slacks."
+	icon_state = "redz"
+	item_state = "redz"
+
+/obj/item/clothing/under/f13/yakuza
+	name = "white suit"
+	desc = "A white suit with a lavender shirt."
+	icon_state = "yakuza"
+	item_state = "yakuza"
 

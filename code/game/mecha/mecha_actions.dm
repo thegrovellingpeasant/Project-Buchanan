@@ -3,7 +3,7 @@
 /obj/mecha/proc/GrantActions(mob/living/user, human_occupant = 0)
 	if(human_occupant)
 		eject_action.Grant(user, src)
-	internals_action.Grant(user, src)
+	//internals_action.Grant(user, src)
 	cycle_action.Grant(user, src)
 	if(haslights)
 		lights_action.Grant(user, src)
@@ -15,7 +15,7 @@
 /obj/mecha/proc/RemoveActions(mob/living/user, human_occupant = 0)
 	if(human_occupant)
 		eject_action.Remove(user)
-	internals_action.Remove(user)
+	//internals_action.Remove(user)
 	cycle_action.Remove(user)
 	if(haslights)
 		lights_action.Remove(user)
@@ -92,7 +92,7 @@
 		chassis.occupant_message("You select [chassis.selected]")
 		send_byjax(chassis.occupant,"exosuit.browser","eq_list",chassis.get_equipment_list())
 		button_icon_state = "mech_cycle_equip_on"
-		playsound(chassis,'sound/machines/piston_raise.ogg', 40, TRUE)
+		playsound(chassis, chassis.equipsound , 40, TRUE)
 		UpdateButtonIcon()
 		return
 	var/number = 0
@@ -103,12 +103,12 @@
 				chassis.selected = null
 				chassis.occupant_message("You switch to no equipment")
 				button_icon_state = "mech_cycle_equip_off"
-				playsound(chassis,'sound/machines/piston_lower.ogg', 40, TRUE)
+				playsound(chassis, chassis.equipsound, 40, TRUE)
 			else
 				chassis.selected = available_equipment[number+1]
 				chassis.occupant_message("You switch to [chassis.selected]")
 				button_icon_state = "mech_cycle_equip_on"
-				playsound(chassis,'sound/machines/piston_raise.ogg', 40, TRUE)
+				playsound(chassis, chassis.equipsound, 40, TRUE)
 			send_byjax(chassis.occupant,"exosuit.browser","eq_list",chassis.get_equipment_list())
 			UpdateButtonIcon()
 			return
@@ -245,7 +245,7 @@
 		chassis.mecha_log_message("Toggled zoom mode.")
 		chassis.occupant_message("<font color='[chassis.zoom_mode?"blue":"red"]'>Zoom mode [chassis.zoom_mode?"en":"dis"]abled.</font>")
 		if(chassis.zoom_mode)
-			owner.client.change_view(12)
+			owner.client.change_view(18)
 			SEND_SOUND(owner, sound('sound/mecha/imag_enh.ogg',volume=50))
 		else
 			owner.client.change_view(CONFIG_GET(string/default_view)) //world.view - default mob view size

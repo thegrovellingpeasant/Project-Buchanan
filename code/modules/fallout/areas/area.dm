@@ -675,7 +675,7 @@
 	name = "Wasteland"
 	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
 	icon_state = "transparent"
-	ambientmusic = WASTELAND_AMBIENCE
+	ambientmusic = RENO_WASTELAND_AMBIENCE
 	outdoors = 1
 	open_space = 1
 	blob_allowed = 0
@@ -690,44 +690,64 @@
 	outdoors = 1
 	open_space = 1
 
-/area/f13/reno_prison
-	name = "prison"
-	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
-	icon_state = "transparent"
-	ambientmusic = RENO_STREETS_AMBIENCE
-
-/area/f13/reno_prison_yard
-	name = "prison_yard"
-	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
-	icon_state = "transparent"
-	ambientmusic = RENO_STREETS_AMBIENCE
-	outdoors = 1
-	open_space = 1
-
 /area/f13/reno_building
 	name = "Building"
 	icon_state = "building"
 	ambientmusic = RENO_BUILDING_AMBIENCE
 
+/area/f13/reno_west_building
+	name = "Building"
+	icon_state = "building"
+	ambientmusic = RENO_WEST_AMBIENCE
+
+/area/f13/reno_east_building
+	name = "Building"
+	icon_state = "building"
+	ambientmusic = RENO_EAST_AMBIENCE
+
+/area/f13/reno_prison
+	name = "prison"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_PRISON_AMBIENCE
+
+/area/f13/reno_prison_yard
+	name = "prison_yard"
+	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon_state = "transparent"
+	ambientmusic = RENO_PRISON_AMBIENCE
+	outdoors = 1
+	open_space = 1
+
+/area/f13/nrpd
+	name = "NRPD"
+	icon_state = "building"
+	ambientmusic = RENO_NRPD_AMBIENCE
+
 /area/f13/vangraffs
 	name = "Van Graffs"
 	icon_state = "den"
-	ambientmusic = RENO_BUILDING_AMBIENCE
+	ambientmusic = RENO_VANGRAFF_AMBIENCE
 
 /area/f13/vangraffs_armory
 	name = "Van Graff Armory"
 	icon_state = "den"
-	ambientmusic = RENO_BUILDING_AMBIENCE
+	ambientmusic = RENO_VANGRAFF_AMBIENCE
 
 /area/f13/wrights
 	name = "Wrights"
 	icon_state = "den"
-	ambientmusic = RENO_BUILDING_AMBIENCE
+	ambientmusic = RENO_WRIGHT_AMBIENCE
 
 /area/f13/wrights_armory
 	name = "Wright Armory"
 	icon_state = "den"
-	ambientmusic = RENO_BUILDING_AMBIENCE
+	ambientmusic = RENO_WRIGHT_AMBIENCE
+
+/area/f13/reno_hotel
+	name = "Hotel"
+	icon_state = "den"
+	ambientmusic = RENO_HOTEL_AMBIENCE
 
 /area/f13/reno_sharkclub
 	name = "Shark Club"
@@ -748,6 +768,11 @@
 	name = "Caves"
 	icon_state = "caves"
 	ambientmusic = RENO_CAVES_AMBIENCE
+
+/area/f13/reno_tribal
+	name = "Tribal"
+	icon_state = "caves"
+	ambientmusic = RENO_TRIBAL_AMBIENCE
 
 /area/f13/reno_sewers
 	name = "Sewers"

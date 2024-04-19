@@ -133,14 +133,59 @@
 /obj/item/reagent_containers/food/drinks/bottle/tequila/empty
 	list_reagents = null
 
+////////////
+//Nukacola//
+////////////
+
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola
 	name = "Nuka-Cola"
 	desc = "The most popular flavored soft drink in the United States before the Great War."
-	icon = 'icons/obj/f13vending.dmi'
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
 	icon_state = "nukacola"
 	list_reagents = list(/datum/reagent/consumable/nuka_cola = 25, /datum/reagent/radium = 5)
 	foodtype = NUKA
+	spillable = FALSE
 	isGlass = TRUE
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/attack_self(mob/user)
+	if(!is_drainable())
+		to_chat(user, "You twist off the cap of \the [src] with a satisfying pop.") //Ahhhhhhhh
+		ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
+		playsound(src, "can_open", 50, 1)
+		spillable = TRUE
+		return
+	return ..()
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive
+	desc = "The most popular flavored soft drink in the United States before the Great War.<br>It was preserved in a fairly pristine state.<br>The bottle is slightly glowing."
+	list_reagents = list(/datum/reagent/consumable/nuka_cola = 15, /datum/reagent/radium = 5)
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukacherry
+	name = "Nuka-Cherry"
+	desc = "Nuka-Cola with a Cherry Aftertaste."
+	icon_state = "cherrycola"
+	list_reagents = list(/datum/reagent/consumable/nukacherry = 25, /datum/reagent/radium = 5)
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquartz
+	name = "Nuka-Quartz"
+	desc = "An abomination of Americas favourite soda."
+	icon_state = "quartzcola"
+	list_reagents = list(/datum/reagent/consumable/nukaquartz = 25, /datum/reagent/radium = 5)
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquantum
+	name = "Nuka-Quantum"
+	desc = "An extremely blue and glowing combination of Nuka-Cola and (REDACTED)."
+	icon_state = "quantumcola"
+	list_reagents = list(/datum/reagent/consumable/ethanol/nukaquantum = 25, /datum/reagent/radium = 5)
+
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukavictory
+	name = "Nuka-Victory"
+	desc = "Nuka Cola with an <BIG>AMERICAN<BIG> twist."
+	icon_state = "victorycola"
+	list_reagents = list(/datum/reagent/consumable/ethanol/nukavictory = 25, /datum/reagent/radium = 5)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive
 	desc = "The most popular flavored soft drink in the United States before the Great War.<br>It was preserved in a fairly pristine state.<br>The bottle is slightly glowing."
@@ -409,16 +454,16 @@
 	desc = "A bottle of rotgut. Its owner has applied some street wisdom to cleverly disguise it as a brown paper bag."
 	icon_state = "hoochbottle"
 	list_reagents = list(/datum/reagent/consumable/ethanol/hooch = 100)
-	
+
 /obj/item/reagent_containers/food/drinks/bottle/hooch/empty
 	list_reagents = null
-	
+
 /obj/item/reagent_containers/food/drinks/bottle/amaretto
 	name = "Luini Amaretto"
 	desc = "A gentle and syrup-like drink, tastes of almonds and apricots."
 	icon_state = "disaronno"
 	list_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 100)
-	
+
 /obj/item/reagent_containers/food/drinks/bottle/amaretto/empty
 	list_reagents = null
 

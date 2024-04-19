@@ -574,3 +574,97 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		"Warboss",
 		"Arena Master",
 		)
+
+/obj/machinery/computer/card/bishops
+	name = "\improper Bishop identification console"
+	circuit = /obj/item/circuitboard/computer/card/bishops
+	// tl;dr - mamma mia!
+	job_list = list(
+		"Bishop Consigliere",
+		"Bishop Capo",
+		"Bishop Made Man",
+		"Bishop Floorman",
+		)
+	job_req = list(
+		"Bishop Boss",
+		"Bishop Wife",
+		)
+
+/obj/machinery/computer/card/vangraffs
+	name = "\improper Van Graff identification console"
+	circuit = /obj/item/circuitboard/computer/card/vangraffs
+	//While I respect their business acumen, I'm obligated to try to destroy them however I can. That's business, after all.
+	job_list = list(
+		"Van Graff Guard",
+		"Van Graff Weapon Smith",
+		"Van Graff Research Contractor",
+		)
+	job_req = list(
+		"Van Graff Branch Manager",
+		"Van Graff Enforcer",
+		)
+
+/obj/machinery/computer/card/wrights
+	name = "\improper Wright identification console"
+	circuit = /obj/item/circuitboard/computer/card/wrights
+	//So happens MY family IS family Wright. Blood thicker than water and all.
+	job_list = list(
+		"Wright Enforcer",
+		"Wright Hooligan",
+		"Shop Manager",
+		"Shop Employee",
+		"Clinic Supervisor",
+		"Practitioner",
+		)
+	job_req = list(
+		"Wright Elder",
+		)
+
+/obj/machinery/computer/card/wrights/shop
+	name = "\improper Shop identification console"
+	circuit = /obj/item/circuitboard/computer/card/wrights/shop
+	//So happens MY family IS family Wright. Blood thicker than water and all.
+	job_list = list(
+		"Shop Employee",
+		)
+	job_req = list(
+		"Wright Elder",
+		"Shop Manager",
+		)
+
+/obj/machinery/computer/card/wrights/clinic
+	name = "\improper Clinic identification console"
+	circuit = /obj/item/circuitboard/computer/card/wrights/clinic
+	//So happens MY family IS family Wright. Blood thicker than water and all.
+	job_list = list(
+		"Practitioner",
+		)
+	job_req = list(
+		"Wright Elder",
+		"Clinic Supervisor",
+		)
+
+/obj/machinery/computer/card/nrpd
+	name = "\improper NRPD identification console"
+	circuit = /obj/item/circuitboard/computer/card/nrpd
+	//I am...THE LAW....drop your weapons.
+	job_list = list(
+		"NRPD Officer",
+		)
+	job_req = list(
+		"Judge",
+		"NRPD Chief",
+		)
+
+
+/obj/machinery/computer/card/ncr_mp
+	name = "\improper NCR identification console"
+	circuit = /obj/item/circuitboard/computer/card/ncr_mp
+	//"That may be the worst-kept secret on the base. I'd be more surprised if you had proof he wasn't involved in criminal activity."
+	job_list = list(
+		"NCRCF Guard",
+		"NCRCF Physician",
+		)
+	job_req = list(
+		"NCRCF Warden",
+		)

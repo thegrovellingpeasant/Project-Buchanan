@@ -20,6 +20,8 @@
 	var/selectable = 1	// Set to 0 for passive equipment such as mining scanner or armor plates
 	var/harmful = FALSE //Controls if equipment can be used to attack by a pacifist.
 	//var/destroy_sound = 'sound/mecha/critdestr.ogg'
+	var/is_weapon = FALSE //Determines if equipment is a weapon for F13 purposes
+	var/innate = FALSE //Determines if equipment is innate to the robot model, and can not be unloaded. This is for F13 purposes
 
 /obj/item/mecha_parts/mecha_equipment/proc/update_chassis_page()
 	if(chassis)
@@ -125,6 +127,8 @@
 /obj/item/mecha_parts/mecha_equipment/proc/attach(obj/mecha/M)
 	M.equipment += src
 	chassis = M
+	equip_cooldown = equip_cooldown * M.cooldown_multiplier
+	energy_drain = energy_drain * M.power_multiplier
 	forceMove(M)
 	M.mecha_log_message("[src] initialized.")
 	src.update_chassis_page()
@@ -134,6 +138,11 @@
 	moveto = moveto || get_turf(chassis)
 	if(src.Move(moveto))
 		chassis.equipment -= src
+		if(chassis.wastebot)
+			if(src.is_weapon)
+				chassis.weapons -= 1
+		equip_cooldown = initial(equip_cooldown)
+		energy_drain = initial(energy_drain)
 		if(chassis.selected == src)
 			chassis.selected = null
 		update_chassis_page()
@@ -142,6 +151,9 @@
 		set_ready_state(1)
 	return
 
+/obj/item/mecha_parts/mecha_equipment/proc/update_equipment(obj/mecha/M)
+	equip_cooldown = initial(equip_cooldown) * M.cooldown_multiplier
+	energy_drain = initial(energy_drain) * M.power_multiplier
 
 /obj/item/mecha_parts/mecha_equipment/Topic(href,href_list)
 	if(href_list["detach"])

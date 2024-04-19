@@ -1241,9 +1241,9 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Tourist"
 	icon_state = "Tourist"
 
-/obj/effect/landmark/start/f13/wastes/raider
-	name = "Reno Raider"
-	icon_state = "Raider"
+/obj/effect/landmark/start/f13/wastes/vagrant
+	name = "Vagrant"
+	icon_state = "Bum"
 
 /obj/effect/landmark/start/f13/wastes/tribalmigrant
 	name = "Tribal Migrant"

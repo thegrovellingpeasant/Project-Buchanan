@@ -130,7 +130,7 @@
 /obj/mecha/handle_atom_del(atom/A)
 	if(A == occupant)
 		occupant = null
-		icon_state = initial(icon_state)+"-open"
+		icon_state = icon_state+"-open"
 		setDir(dir_in)
 
 /obj/mecha/emp_act(severity)
@@ -142,7 +142,7 @@
 		take_damage(severity/3, BURN, "energy", 1)
 	mecha_log_message("EMP detected", color="red")
 
-	if(istype(src, /obj/mecha/combat))
+	if(istype(src, /obj/mecha/combat) || istype(src, /obj/mecha/f13))
 		mouse_pointer = 'icons/mecha/mecha_mouse-disable.dmi'
 		occupant?.update_mouse_pointer()
 	if(!equipment_disabled && occupant) //prevent spamming this message with back-to-back EMPs
@@ -197,17 +197,21 @@
 	else if(istype(W, /obj/item/wrench))
 		if(state==1)
 			state = 2
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You undo the securing bolts.</span>")
 		else if(state==2)
 			state = 1
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You tighten the securing bolts.</span>")
 		return
 	else if(istype(W, /obj/item/crowbar))
 		if(state==2)
 			state = 3
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You open the hatch to the power unit.</span>")
 		else if(state==3)
 			state=2
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You close the hatch to the power unit.</span>")
 		return
 	else if(istype(W, /obj/item/stack/cable_coil))
@@ -221,15 +225,18 @@
 	else if(istype(W, /obj/item/screwdriver) && user.a_intent != INTENT_HARM)
 		if(internal_damage & MECHA_INT_TEMP_CONTROL)
 			clearInternalDamage(MECHA_INT_TEMP_CONTROL)
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You repair the damaged temperature controller.</span>")
 		else if(state==3 && cell)
-			cell.forceMove(loc)
+			cell.forceMove(user.loc)
 			cell = null
 			state = 4
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You unscrew and pry out the powercell.</span>")
 			mecha_log_message("Powercell removed")
 		else if(state==4 && cell)
 			state=3
+			W.play_tool_sound(src, 50)
 			to_chat(user, "<span class='notice'>You screw the cell in place.</span>")
 		return
 
@@ -246,16 +253,44 @@
 				to_chat(user, "<span class='notice'>There's already a powercell installed.</span>")
 		return
 
+	else if(istype(W, /obj/item/stock_parts/scanning_module))
+		if(state==4)
+			if(!user.transferItemToLoc(W, src))
+				return
+			var/obj/item/stock_parts/scanning_module/C = W
+			to_chat(user, "<span class='notice'>You replace the scanning module.</span>")
+			scanning_module.forceMove(user.loc)
+			scanning_module = null
+			scanning_module = C
+			UpdateParts(C)
+			mecha_log_message("New scanning module installed")
+		return
+
+	else if(istype(W, /obj/item/stock_parts/capacitor))
+		if(state==4)
+			if(!user.transferItemToLoc(W, src))
+				return
+			var/obj/item/stock_parts/capacitor/C = W
+			to_chat(user, "<span class='notice'>You replace the capacitor.</span>")
+			capacitor.forceMove(user.loc)
+			capacitor = null
+			capacitor = C
+			UpdateParts(C)
+			mecha_log_message("New capacitor installed")
+		return
+
 	else if(istype(W, /obj/item/weldingtool) && user.a_intent != INTENT_HARM)
 		user.DelayNextAction(CLICK_CD_MELEE)
 		if(obj_integrity < max_integrity)
 			if(W.use_tool(src, user, 0, volume=50, amount=1))
 				if (internal_damage & MECHA_INT_TANK_BREACH)
 					clearInternalDamage(MECHA_INT_TANK_BREACH)
+					W.play_tool_sound(src, 50)
 					to_chat(user, "<span class='notice'>You repair the damaged gas tank.</span>")
 				else
 					user.visible_message("<span class='notice'>[user] repairs some damage to [name].</span>", "<span class='notice'>You repair some damage to [src].</span>")
 					obj_integrity += min(10, max_integrity-obj_integrity)
+					W.play_tool_sound(src, 50)
 					if(obj_integrity == max_integrity)
 						to_chat(user, "<span class='notice'>It looks to be fully repaired now.</span>")
 			return 1

@@ -34,8 +34,8 @@
 	outfit = /datum/outfit/job/wrights/f13elder
 
 	loadout_options = list(
-		/datum/outfit/loadout/feelluckypunk,		// .44 magnum
-		/datum/outfit/loadout/householddefense,	// lever action
+		/datum/outfit/loadout/aristocrat,		// .44 magnum
+		/datum/outfit/loadout/sundaybest,	// lever action
 		)
 
 /datum/outfit/job/wrights/f13elder
@@ -49,8 +49,6 @@
 	head = /obj/item/clothing/head/helmet/f13/wrights/tophat
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
-	suit = /obj/item/clothing/suit/armor/f13/wrights/elder
-	suit_store = null
 	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
@@ -59,19 +57,15 @@
 		/obj/item/storage/bag/money/small/large = 1,
 		)
 
-/datum/outfit/loadout/feelluckypunk
-	name = "Feel lucky punk?"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/revolver44 = 1,
-		/obj/item/ammo_box/magazine/m44 = 2,
-		)
+/datum/outfit/loadout/aristocrat
+	name = "Aristocrat"
+	suit = /obj/item/clothing/suit/armor/f13/wrights/elder/morningcoat
 
-/datum/outfit/loadout/householddefense
-	name = "Household Defense"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
-		/obj/item/ammo_box/magazine/m22smg = 1,
-		)
+
+/datum/outfit/loadout/sundaybest
+	name = "Sunday Best"
+	suit = /obj/item/clothing/suit/armor/f13/wrights/elder
+
 
 /datum/outfit/job/wrights/f13elder/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -208,8 +202,22 @@
 		shoes = /obj/item/clothing/shoes/laceup
 
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/wrights/man
-		shoes = /obj/item/clothing/shoes/f13/explorer
+		uniform = pick(
+			/obj/item/clothing/under/f13/wrights/man,
+			/obj/item/clothing/under/f13/wrights/man2,
+			/obj/item/clothing/under/f13/wrights/man3,
+			/obj/item/clothing/under/f13/wrights/man4,
+			/obj/item/clothing/under/f13/wrights/man5,
+			/obj/item/clothing/under/f13/wrights/man6)
+		shoes = pick(
+			/obj/item/clothing/shoes/f13/explorer,
+			/obj/item/clothing/shoes/f13/raidertreads,
+			/obj/item/clothing/shoes/f13/brownie)
+		gloves = pick(
+			null,
+			/obj/item/clothing/gloves/f13/handwraps)
+
+
 
 /datum/outfit/job/wrights/f13hooligan/pre_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -280,7 +288,7 @@
 	head = /obj/item/clothing/head/helmet/f13/wrights/conductor
 	neck = null
 	gloves = null
-	suit = /obj/item/clothing/suit/armor/f13/wrights/jacket/brown
+	suit = /obj/item/clothing/suit/armor/f13/wrights/formalcoat/overcoat
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
 	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
@@ -348,11 +356,13 @@
 /datum/outfit/job/wrights/f13employee/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	uniform = pick(
-		/obj/item/clothing/under/overalls,
-		/obj/item/clothing/under/f13/shiny,
-		/obj/item/clothing/under/f13/caravaneer,
-		/obj/item/clothing/under/f13/machinist,
-		/obj/item/clothing/under/f13/lumberjack)
+		/obj/item/clothing/under/f13/wrights/worker1,
+		/obj/item/clothing/under/f13/wrights/worker2,
+		/obj/item/clothing/under/f13/wrights/worker3,
+		/obj/item/clothing/under/f13/wrights/worker4)
+	suit = pick(
+		/obj/item/clothing/suit/armor/f13/wrights/jacket/worker,
+		/obj/item/clothing/suit/armor/f13/wrights/jacket/brown)
 
 
 /*--------------------------------------------------------------*/
@@ -373,7 +383,7 @@
 	name = "Wright Clinic Supervisor"
 	jobtype = /datum/job/wrights/f13clinicsupervisor
 
-	uniform	= /obj/item/clothing/under/suit/charcoal
+	uniform	= /obj/item/clothing/under/f13/wrights/officer
 	id = /obj/item/card/id/reno/clinic/papers
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
@@ -391,15 +401,32 @@
 		/obj/item/healthanalyzer = 1,
 		/obj/item/storage/bag/money/small/few = 1)
 
-/datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/wrights/f13clinicsupervisor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Wright")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Wright"
+	else
+		family_name[family_name.len] = "Wright"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
+
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+
 
 /*--------------------------------------------------------------*/
 

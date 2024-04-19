@@ -15,7 +15,7 @@
 	name = "vangraffsdatums"
 	jobtype = /datum/job/vangraffs
 	ears = /obj/item/radio/headset/headset_vangraffs
-	id = null
+	id = /obj/item/card/id/reno/vangraffs/business
 	backpack = /obj/item/storage/backpack/satchel/old
 	satchel = /obj/item/storage/backpack/satchel/old
 
@@ -47,6 +47,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/f13/diesel
 	head = null
+	id = /obj/item/card/id/reno/vangraffs/business/management
 	glasses = null
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = null
@@ -149,6 +150,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/f13/combat/vangraffs/enforcer
+	id = /obj/item/card/id/reno/vangraffs/business/management
 	glasses = null
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/military
@@ -247,7 +249,7 @@
 	flag = F13RESEARCHCONTRACTOR
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the underboss, and the Don"
+	supervisors = "the Branch Manager"
 	description = "The egghead of the operation; your job is involved with the research and production of state-of-the-art robotics."
 
 	outfit = /datum/outfit/job/vangraffs/f13researchcontractor
@@ -257,6 +259,7 @@
 	jobtype = /datum/job/vangraffs/f13researchcontractor
 
 	belt = /obj/item/storage/belt/utility/full
+	id = /obj/item/card/id
 	uniform = /obj/item/clothing/under/f13/vault/vcity
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13
