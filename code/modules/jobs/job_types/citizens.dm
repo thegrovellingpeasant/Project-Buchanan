@@ -15,7 +15,7 @@
 	selection_color = "#dece90"
 	outfit = /datum/outfit/job/citizens/f13judge
 	access = list(ACCESS_NRPD)
-	minimal_access = list(ACCESS_NRPD)
+	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
 
 
 /datum/outfit/job/citizens/f13judge/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -52,7 +52,7 @@
 	supervisors = "NCR common law and the mayor"
 	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
 	access = list(ACCESS_NRPD)
-	minimal_access = list(ACCESS_NRPD)
+	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
 
 
 /datum/outfit/job/citizens/f13rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -141,7 +141,7 @@
 	selection_color = "#dece90"
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
 	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 
 
 /datum/outfit/job/citizens/f13ncrcfwarden/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

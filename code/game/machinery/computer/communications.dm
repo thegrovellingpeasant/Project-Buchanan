@@ -16,7 +16,7 @@
 	desc = "A console used for high-priority announcements and emergencies."
 	icon_screen = "comm"
 	icon_keyboard = "tech_key"
-	req_access = list(ACCESS_HEADS)
+	req_access = list(ACCESS_HEADS, ACCESS_NCR_COMMAND)
 	circuit = /obj/item/circuitboard/computer/communications
 	light_color = LIGHT_COLOR_BLUE
 	var/auth_id = "Unknown" //Who is currently logged in?
@@ -95,7 +95,7 @@
 				var/obj/item/pda/pda = I
 				I = pda.id
 			if (I && istype(I))
-				if(ACCESS_CAPTAIN in I.access)
+				if(ACCESS_NCR_COMMAND in I.access)
 					if(security_level_cd > world.time)
 						to_chat(usr, "<span class='warning'>Security level protocols are currently on cooldown. Please stand by.</span>")
 						return
