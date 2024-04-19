@@ -41,18 +41,20 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 		"/datum/faction_task/individual_player/coupdetat" = 20
 		),
 //	"tourists" = list(
-//		"/datum/faction_task/global_faction/heist" = TRUE,
+//		"/datum/faction_task/global_faction/heist" = TRUE,			/////------------------------pick tasks and fix path
 //	)
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 /datum/faction_task_controller
-	var/list/all_tasks = list()			// Available tasks. ("[cat]" = list([task], ...), ...)
+	var/list/all_tasks = list()				// Available tasks. ("[cat]" = list([task], ...), ...)
 	var/IFT_total_chance = 0				// Individual faction task total because chances are weights so all factions are tasked.
-	var/list/faction_tasks = list()		// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
-	var/list/player_tasks = list()		// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
-	var/list/global_tasks = list()		// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
+	var/list/faction_tasks = list()			// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
+	var/list/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
+	var/list/global_tasks = list()			// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
+	var/ticks_elapsed = 0
+	var/mob/living/list/players = list()	// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
 
 /datum/faction_task_controller/New()
 	. = ..()
@@ -76,6 +78,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		for(var/FT in faction_tasks[F])
 			var/datum/faction_task/task_datum = FT
 			task_datum.update()
+	ticks_elapsed++
 
 
 ////////////////////////////////
@@ -115,7 +118,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Assign Tasks to Factions */
 //////////////////////////////
 
-// -- Global Tasks --//
+// -- Player Tasks --//
 /datum/faction_task_controller/proc/assign_player_tasks()
 	var/shifted_chance
 	var/r_num
@@ -125,15 +128,15 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		// Random Task Selection
 		shifted_chance = 0
 		r_num = rand(1, 100)
-		for(var/T in GLOB.faction_task_probabilities["[F]"])
+		for(var/T in GLOB.faction_task_probabilities[F])
 			// Task Type Check
 			var/T_path = text2path(T)
 			if(!ispath(T_path, /datum/faction_task/individual_player))
 				continue
 			// Assign Task if Selected
-			shifted_chance += GLOB.faction_task_probabilities["[F]"]["[T]"]
+			shifted_chance += GLOB.faction_task_probabilities[F]["[T]"]
 			if(r_num <= shifted_chance)
-				var/datum/faction_task/task_datum = new T_path()
+				var/datum/faction_task/task_datum = new T_path(text2path(F))
 				player_tasks["[F]"] = task_datum
 				task_datum.faction = text2path(F)
 				break
@@ -146,14 +149,14 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	// Random Task Selection
 	for(var/T in all_tasks["global_faction"])
 		// Assign Task to all Factions if Selected
-		var/datum/faction_task/task_type = T
-		shifted_chance += initial(task_type.chance)
+		var/datum/faction_task/T_path = T
+		shifted_chance += initial(T_path.chance)
 		if(r_num <= shifted_chance)
 			for(var/F in GLOB.faction_task_probabilities)
 				if(!GLOB.faction_task_probabilities[F]["[T]"])
 					continue
-				var/datum/faction_task/task_datum = new task_type()
-				global_tasks["[F]"] = task_datum
+				var/datum/faction_task/task_datum = new T_path(text2path(F))
+				global_tasks[F] = task_datum
 				task_datum.faction = text2path(F)
 			break
 
@@ -169,29 +172,28 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		// Select Tasks
 		_amount = amount
 		task_names = list()
-		for(var/datum/faction_task/T in faction_tasks["[F]"])
+		for(var/datum/faction_task/T in faction_tasks[F])
 			task_names.Add(T.name)
 		while(_amount > 0)
 			// Random Task Selection
 			shifted_chance = 0
 			r_num = rand(1, 100)
-			for(var/T in GLOB.faction_task_probabilities["[F]"])
+			for(var/T in GLOB.faction_task_probabilities[F])
 				// Task Type Check
 				var/datum/faction_task/T_path = text2path(T)
 				if(!ispath(T_path, /datum/faction_task/individual_faction))
 					continue
 				// Assign Task if Selected
-				shifted_chance += GLOB.faction_task_probabilities["[F]"]["[T]"]
+				shifted_chance += GLOB.faction_task_probabilities[F]["[T]"]
 				if(r_num <= shifted_chance)
 					// No Repeat Tasks
 					if(task_names.Find(initial(T_path.name)))
 						break
 					task_names.Add(initial(T_path.name))
-					var/datum/faction_task/task_datum = new T_path()
-					if(!faction_tasks["[F]"])
-						faction_tasks["[F]"] = list()
-					faction_tasks["[F]"].Add(task_datum)
-					task_datum.faction = text2path(F)
+					var/datum/faction_task/task_datum = new T_path(text2path(F))
+					if(!faction_tasks[F])
+						faction_tasks[F] = list()
+					faction_tasks[F].Add(task_datum)
 					_amount--
 					break
 
@@ -203,23 +205,78 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /datum/faction_task_controller/proc/add_player(var/mob/living/L)
 	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
 	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	var/player_assigned = FALSE
 
 	// Global Tasks
 	if(global_tasks.Find(faction))
-		addtimer(CALLBACK(global_tasks[faction], .proc/add_player, L), 15 SECONDS)
-		//global_tasks[faction].add_player(L)
+		if(global_tasks[faction].add_player(L))
+			player_assigned = TRUE
+
 	// Faction Tasks
 	if(initial(job.has_faction_task) && faction_tasks.Find(faction))
 		for(var/T in faction_tasks[faction])
 			var/datum/faction_task/task_datum = T
-			addtimer(CALLBACK(task_datum, .proc/add_player, L), 15 SECONDS)
-			//task_datum.add_player(L)
+			if(task_datum.add_player(L))
+				player_assigned = TRUE
 
 	// Player Tasks
 	if(initial(job.has_player_task) && player_tasks.Find(faction))
-		addtimer(CALLBACK(player_tasks[faction], .proc/add_player, L), 15 SECONDS)
-		//player_tasks[faction].add_player(L)
+		if(player_tasks[faction].add_player(L))
+			player_assigned = TRUE
 
+	// Spawn Message
+	if(player_assigned)
+		addtimer(CALLBACK(src, .proc/spawn_message, L), max(30, 300 - ticks_elapsed*2) SECONDS)
+
+
+////////////////////
+/* Spawn Messages */
+////////////////////
+
+/datum/faction_task_controller/proc/spawn_message(var/mob/living/L)
+	to_chat(L, "<h1><b><font color='#139e3a'>Assigned Tasks:</font></b><h1>")
+
+	var/counter = 1
+	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
+	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	if(global_tasks[faction])
+		var/datum/faction_task/task_datum = global_tasks[faction]
+		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+		counter++
+	if(faction_tasks[faction])
+		for(var/T in faction_tasks[faction])
+			var/datum/faction_task/task_datum = T
+			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+			counter++
+	if(player_tasks[faction])
+		var/datum/faction_task/task_datum = player_tasks[faction]
+		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+		counter++
+
+
+////////////////////////
+/* End Round Messages */
+////////////////////////
+
+/datum/faction_task_controller/proc/end_message(var/mob/living/L)
+	to_chat(L, "<h1><b><font color='#139e3a'>Task Completion:</font></b><h1>")
+
+	var/counter = 1
+	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
+	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	if(global_tasks[faction])
+		var/datum/faction_task/task_datum = global_tasks[faction]
+		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+		counter++
+	if(faction_tasks[faction])
+		for(var/T in faction_tasks[faction])
+			var/datum/faction_task/task_datum = T
+			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+			counter++
+	if(player_tasks[faction])
+		var/datum/faction_task/task_datum = player_tasks[faction]
+		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+		counter++
 
 
 ///////////////
@@ -235,7 +292,8 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		for(var/FT in faction_tasks[F])
 			var/datum/faction_task/task_datum = FT
 			task_datum.round_end()
-
+	for(var/mob/living/L in players)
+		end_message(L)
 
 
 
@@ -247,29 +305,39 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 //////////////////
 
 /datum/faction_task
-	var/datum/job/faction			// Job datum the task is assigned to
+	var/faction						// Job datum the task is assigned to
 	var/name						// Task name
 	var/chance						// Chance of this task being selected for a faction
 	var/mob/list/players = list()	// Players in the faction as a /mob
 	var/task_completed = FALSE		// Task completion status
 
-/datum/faction_task/proc/calculate_score()
-	return 0
+/datum/faction_task/New(_faction)
+	faction = _faction
+	..()
 
-/datum/faction_task/proc/spawn_message(var/mob/user)
-	return
-
-/datum/faction_task/proc/round_end()
-	task_completion()
-
-/datum/faction_task/proc/task_completion()
-	return
-
-/datum/faction_task/proc/add_player(var/mob/user)
+/datum/faction_task/proc/add_player(var/mob/living/user)
 	players.Add(user)
-	spawn_message(user)
+	if(!GLOB.faction_task_controller.players.Find(user))
+		GLOB.faction_task_controller.players.Add(user)
+	return TRUE
 
-/datum/faction_task/proc/update() //runs every tick
+/datum/faction_task/proc/remove_player(var/mob/living/user)
+	players.Remove(user)
+	return TRUE
+
+/datum/faction_task/proc/calculate_score()	// Just use TRUE or FALSE if it is a boolean. Score is not tallied.
+	return FALSE
+
+/datum/faction_task/proc/task_status_msg()
+	return null
+
+/datum/faction_task/proc/end_round_msg()
+	return
+
+/datum/faction_task/proc/round_end()		// Runs at round end.
+	return
+
+/datum/faction_task/proc/update()			// Runs every tick.
 	return
 
 
@@ -279,10 +347,10 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Global Faction Task */
 /////////////////////////
 
-GLOBAL_LIST_INIT(faction_vault_areas, list( ///------------------------------------------------- for pestarzt to finish
-/*	"/datum/job/bishops" = , \
-	"/datum/job/vangraffs" = , \
-	"/datum/job/wrights" = , \*/
+GLOBAL_LIST_INIT(faction_vault_areas, list(
+	"/datum/job/bishops" = /area/f13/reno_building, \
+	"/datum/job/vangraffs" = /area/f13/vangraffs , \
+	"/datum/job/wrights" = /area/f13/wrights, \
 ))
 
 /datum/faction_task/global_faction
@@ -296,14 +364,10 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 	name = "Wealth"
 	chance = 100
 
-/datum/faction_task/global_faction/wealth/spawn_message(mob/user)
-	to_chat(user, "<span class='boldnotice'>The boss has big plans and he needs a large sum to enact them. He has ordered you to gather as much wealth for your faction as you and your team is capable of collecting.</span>")
-
 /datum/faction_task/global_faction/wealth/calculate_score()
 	var/area/task_area = GLOB.faction_vault_areas["[faction]"]
-	var/total_money = -1
+	var/total_money = 0
 	if(task_area)
-		total_money = 0
 		for(var/turf/T in task_area)
 			for(var/obj/item/I in T.contents)
 				if(istype(I, /obj/item/stack/f13Cash))
@@ -311,7 +375,10 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 					total_money += C.get_item_credit_value()
 	return total_money
 
-/datum/faction_task/global_faction/wealth/task_completion()
+/datum/faction_task/global_faction/wealth/task_status_msg()
+	return "Secure more cash in your faction's vault that any other."
+
+/datum/faction_task/global_faction/wealth/end_round_msg()
 	var/highest_score = 0
 	var/winning_faction = null
 	for(var/F in GLOB.faction_task_controller.global_tasks)
@@ -319,11 +386,14 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 		if(score > highest_score)
 			highest_score = score
 			winning_faction = faction
-	for(var/P in players)
-		if(winning_faction == faction)
-			to_chat(P, "<span class='boldnotice'>Your faction's wealth exceeds all others. Good work.</span>")
-		else
-			to_chat(P, "<span class='boldnotice'>It's over, you lose, you get nothing.</span>")
+	if(winning_faction == faction && highest_score > 0)
+		return "<font color='#097f10'>Your faction's wealth exceeds all others.</font>"
+	else if(highest_score == 0)
+		return "<font color='#c7863e'>You're all cashless losers.</font>"
+	else
+		return "<font color='#bc2621'>Another faction ([winning_faction]) has exceeded yours in wealth.</font>"
+
+
 
 
 /////////////////////////
@@ -334,6 +404,7 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 	name = "faction task"
 
 
+
 /* Frame */
 
 /datum/faction_task/individual_faction/frame
@@ -341,35 +412,45 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 	chance = 20
 	var/datum/job/target_faction
 	var/mob/living/carbon/target
-	var/prison_area = null			// Where the target must be by the end of the round to win
+	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win	////-- PESTARZT!!
 	var/target_chosen = FALSE
 
 /datum/faction_task/individual_faction/frame/New()
 	. = ..()
-	target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 300 SECONDS)
+	while(!target_faction || "[target_faction]" == "[faction]")
+		target_faction = text2path(pick(GLOB.faction_task_probabilities))
+	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
 
 /datum/faction_task/individual_faction/frame/proc/pick_target()
 	var/datum/faction_task/FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
-	target = pick(FT.players)
+	if(length(FT.players) > 0)
+		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 300 SECONDS)
+		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
 		return
 	target_chosen = TRUE
-	for(var/P in players)
-		to_chat(P, "<span class='boldnotice'>The target's name is \"[target.name].\" Get to it.</span>")
-
-/datum/faction_task/individual_faction/frame/spawn_message(mob/user)
-	if(!target_chosen)
-		to_chat(user, "<span class='boldnotice'>The [initial(target_faction.faction)] have someone whose reputation the boss needs dragged through the mud. In a about five minutes the big man's gonna announce who that is. Your job is to frame them into the NCR prison.</span>")
-	else
-		to_chat(user, "<span class='boldnotice'>Boss man wants [target.name]'s reputation dragged through the mud. Get to it.</span>")
+	if(GLOB.faction_task_controller.ticks_elapsed > 150)
+		for(var/P in players)
+			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
 
 /datum/faction_task/individual_faction/frame/calculate_score()
 	var/turf/T = get_turf(target)
 	if(target && istype(T.loc, prison_area))
-		return 1000
-	return 0
+		return TRUE
+	return FALSE
+
+/datum/faction_task/individual_faction/frame/task_status_msg()
+	if(target_chosen)
+		return "Frame [target.name] ([initial(target_faction.faction)]) into the NCR prison."
+	else
+		return "Frame someone from the [initial(target_faction.faction)] into the NCR prison (Target to be announced)..."
+
+/datum/faction_task/individual_faction/frame/end_round_msg()
+	if(calculate_score())
+		return "<font color='#097f10'>Your target has been imprisoned.</font>"
+	else
+		return "<font color='#bc2621'>The target evaded imprisonment.</font>"
+
 
 
 /* Assassination */
@@ -383,36 +464,39 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 
 /datum/faction_task/individual_faction/assassination/New()
 	..()
-	target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 300 SECONDS)
+	while(!target_faction || "[target_faction]" == "[faction]")
+		target_faction = text2path(pick(GLOB.faction_task_probabilities))
+	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
 
 /datum/faction_task/individual_faction/assassination/proc/pick_target()
 	var/datum/faction_task/FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
-	target = pick(FT.players)
+	if(length(FT.players) > 0)
+		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 300 SECONDS)
+		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
+		return
 	target_chosen = TRUE
-	for(var/P in players)
-		to_chat(P, "<span class='boldnotice'>The snake is \"[target.name].\" Fuck 'em up.</span>")
-
-/datum/faction_task/individual_faction/assassination/spawn_message(mob/user)
-	if(!target_chosen)
-		to_chat(user, "<span class='boldnotice'>Someone from the [initial(target_faction.faction)] is trying to start some shit. In 5 minutes it'll be announced who that is. Prepare yourself and organize to form a plan with your team.</span>")
-	else
-		to_chat(user, "<span class='boldnotice'>[target.name] is trying to start some shit. Fuck 'em up.</span>")
+	if(GLOB.faction_task_controller.ticks_elapsed > 150)
+		for(var/P in players)
+			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
 
 /datum/faction_task/individual_faction/assassination/calculate_score()
 	if(target_chosen && (!target || !considered_alive(target)))
-		return 1000
-	return 0
+		return TRUE
+	return FALSE
 
-/datum/faction_task/individual_faction/assassination/task_completion()
-	var/score = calculate_score()
-	for(var/P in players)
-		if(score > 0)
-			to_chat(P, "<span class='boldnotice'>Your job is finished. Now move on as usual.</span>")
-		else
-			to_chat(P, "<span class='boldnotice'>You failed, the target survived.</span>")
+/datum/faction_task/individual_faction/assassination/task_status_msg()
+	if(target_chosen)
+		return "Kill [target.name] ([initial(target_faction.faction)])."
+	else
+		return "Kill someone from the [initial(target_faction.faction)] (Target to be announced)..."
+
+/datum/faction_task/individual_faction/assassination/end_round_msg()
+	if(calculate_score())
+		return "<font color='#097f10'>Your target is dead.</font>"
+	else
+		return "<font color='#bc2621'>The target survived.</font>"
+
 
 
 
@@ -442,32 +526,29 @@ GLOBAL_LIST_INIT(faction_vault_areas, list( ///---------------------------------
 	var/mob/living/carbon/target
 
 /datum/faction_task/individual_player/coupdetat/add_player(mob/user)
+	if(calculate_score())
+		return FALSE
 	if(initial(SSjob.GetJob(user.mind.assigned_role).faction_head))
 		target_chosen = TRUE
 		target = user
 		for(var/mob/living/P in players)
-			spawn_message(P)
-		return
+			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
+		return FALSE
 	..()
-
-/datum/faction_task/individual_player/coupdetat/spawn_message(mob/user)
-	if(target)
-		to_chat(user, "<span class='boldnotice'>[target] is an illegitimate leader. They are a useles no good bastard. They must be removed from their position at once. Find others, if any, who realize this truth and execute them.</span>")
 
 /datum/faction_task/individual_player/coupdetat/calculate_score()
 	if(target_chosen && (!target || !considered_alive(target)))
-		return 1000
-	return 0
+		return TRUE
+	return FALSE
 
-/datum/faction_task/individual_player/coupdetat/task_completion()
-	var/score = calculate_score()
-	for(var/P in players)
-		if(score > 0)
-			to_chat(P, "<span class='boldnotice'>The scoundrel is dead, congratulations.</span>")
-		else
-			to_chat(P, "<span class='boldnotice'>You have failed, the tyrant lives on...</span>")
+/datum/faction_task/individual_player/coupdetat/task_status_msg()
+	return "Kill your tyrant of a leader and don't get caught by his loyalists."
 
-
+/datum/faction_task/individual_player/coupdetat/end_round_msg()
+	if(calculate_score())
+		return "<font color='#097f10'>The scoundrel is dead.</font>"
+	else
+		return "<font color='#bc2621'>Your leader survived.</font>"
 
 
 
