@@ -27,6 +27,7 @@ GLOBAL_VAR(posibrain_notify_cooldown)
 	var/recharge_message = "<span class='warning'>The positronic brain isn't ready to activate again yet! Give it some time to recharge.</span>"
 	var/list/possible_names //If you leave this blank, it will use the global posibrain names
 	var/picked_name
+	var/activation_delay = FALSE
 
 /obj/item/mmi/posibrain/Initialize()
 	. = ..()
@@ -69,6 +70,9 @@ GLOBAL_VAR(posibrain_notify_cooldown)
 			GLOB.posibrain_notify_cooldown = world.time + askDelay
 
 /obj/item/mmi/posibrain/attack_self(mob/user)
+	if(activation_delay)
+		to_chat(user, "<span class='notice'>You configure with the device...</span>")
+		sleep(50)
 	if(!brainmob)
 		brainmob = new(src)
 	if(is_occupied())

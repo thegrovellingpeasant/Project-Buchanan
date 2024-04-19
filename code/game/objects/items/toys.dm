@@ -1091,8 +1091,8 @@
 */
 
 /obj/item/toy/cards/deck/syndicate
-	name = "suspicious looking deck of cards"
-	desc = "A deck of space-grade playing cards. They seem unusually rigid."
+	name = "Nuka-Cola playing cards"
+	desc = "A deck of quantum-grade playing cards. Wow, they're limited edition too! They seem unusually rigid."
 	icon_state = "deck_syndicate_full"
 	deckstyle = "syndicate"
 	card_hitsound = 'sound/weapons/bladeslice.ogg'
@@ -1102,6 +1102,7 @@
 	card_throw_range = 7
 	card_attack_verb = list("attacked", "sliced", "diced", "slashed", "cut")
 	resistance_flags = NONE
+
 
 /*
  * Fake nuke
@@ -1538,7 +1539,7 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "deck_nanotrasen_full"
 	attack_verb = list("declares an attack against")
-	
+
 /obj/item/toy/tragicthegarnering/attack_self(mob/user)
 	if(Adjacent(user))
 		user.visible_message("<span class='notice'>[user] resists the urge to play with his deck of Tragic", \

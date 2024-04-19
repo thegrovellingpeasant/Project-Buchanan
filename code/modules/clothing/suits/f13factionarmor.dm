@@ -1060,6 +1060,12 @@
 	icon_state = "raggedy_browncoat"
 	item_state = "raggedy_browncoat"
 
+/obj/item/clothing/suit/armor/f13/wrights/jacket/worker
+	name = "old coat"
+	desc = "A brown coat that with holes in it."
+	icon_state = "worker"
+	item_state = "worker"
+
 /obj/item/clothing/suit/armor/f13/wrights/armored_vest
 	name = "brown vest"
 	desc = "An armored vest with large interior pockets."
@@ -1075,12 +1081,26 @@
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 
+/obj/item/clothing/suit/armor/f13/wrights/formalcoat/overcoat
+	name = "fur-lined overcoat"
+	desc = "This garment looks to have seen better days."
+	icon_state = "wright_overcoat"
+	item_state = "wright_overcoat"
+
 /obj/item/clothing/suit/armor/f13/wrights/elder
 	name = "tailored coat"
 	desc = "A custom made coat with protective ANTI LASER leather lining stitched in. Your safety GUARANTEED."
 	icon_state = "wright_suit"
 	item_state = "wright_suit"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25,"wound" = 30)
+
+/obj/item/clothing/suit/toggle/armor/wrights/elder/morningcoat
+	name = "morning coat"
+	desc = "A coat for the most fanciful formal formalities."
+	icon_state = "morning_coat"
+	item_state = "morning_coat"
+
+
 
 /////////
 //Hotel//
@@ -1120,9 +1140,9 @@
 	item_state = "schlimmcoat"
 	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
 
-///////////
-//raiders//
-///////////
+////////
+//Misc//
+////////
 
 /obj/item/clothing/suit/armor/f13/raiders/roadwarriors
 	name = "roadsign armor"
@@ -1133,9 +1153,6 @@
 	strip_delay = 40
 	slowdown = 0.05
 
-///////////
-//Misc//
-///////////
 
 /obj/item/clothing/suit/armor/f13/reno/bulletproof
 	name = "concealed kevlar armor"
@@ -1149,6 +1166,13 @@
 	name = "crude concealed kevlar armor"
 	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
+/obj/item/clothing/suit/armor/f13/reno/fiftyninthstreet
+	name = "59th street killer jacket"
+	desc = "A leather jacket with a shoulder pad and the 59th street killer logo on the back."
+	icon_state = "59th_street"
+	item_state = "59th_street"
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25) //up to change
+	body_parts_covered = CHEST
 
 //////////////
 //Van Graffs//

@@ -597,39 +597,10 @@ Initiate
 		/obj/item/clothing/accessory/bos/initiateS=1,
 		)
 
-/*
-Off-Duty
-*/
-
-/datum/job/losthills/f13lhoffdutybos
-	title = "BOS Off-Duty"
-	flag = F13LHOFFDUTYBOS
-	total_positions = 3
-	spawn_positions = 3
-	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
-	supervisors = "your superior rank."
-	selection_color = "#95a5a6"
-
-	exp_requirements = 300
-
-	outfit = /datum/outfit/job/losthills/f13lhoffdutybos
-
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
-	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
-
 /datum/outfit/job/losthills/f13lhoffdutybos
 	name = "BoS Off-Duty"
-	jobtype = /datum/job/losthills/f13lhoffdutybos
-	backpack = /obj/item/storage/backpack
-	ears = 			/obj/item/radio/headset
-	uniform =		/obj/item/clothing/under/syndicate
-	belt = 			/obj/item/storage/belt/military/army
-	shoes = 		/obj/item/clothing/shoes/combat
-	gloves = 		/obj/item/clothing/gloves/combat
-	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
-		/obj/item/encryptionkey/headset_bos=1,
-		/obj/item/melee/onehanded/knife/survival=1
+		/obj/item/toy/cards/deck = 1
 		)
+
 
