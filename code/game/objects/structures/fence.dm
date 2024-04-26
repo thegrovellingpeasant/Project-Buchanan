@@ -299,3 +299,42 @@
 	cuttable = FALSE
 	density = FALSE
 
+//LIGHTNING BOLT LIGHTNING BOLT
+//Taken straight from Grille code, has the electrification stuff ported over.
+
+/obj/structure/fence/Bumped(atom/movable/AM)
+	if(!ismob(AM))
+		return
+	var/mob/M = AM
+	shock(M, 70)
+
+/obj/structure/fence/hulk_damage()
+	return 60
+
+/obj/structure/fence/CanPass(atom/movable/mover, border_dir)
+	if(istype(mover) && (mover.pass_flags & PASSGRILLE))
+		return TRUE
+	else
+		if(istype(mover, /obj/item/projectile) && density)
+			return prob(30)
+		else
+			return !density
+
+/obj/structure/fence/proc/shock(mob/user, prb)
+	if(!anchored || broken)		// anchored/broken fence are never connected
+		return FALSE
+	if(!prob(prb))
+		return FALSE
+	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
+		return FALSE
+	var/turf/T = get_turf(src)
+	var/obj/structure/cable/C = T.get_cable_node()
+	if(C)
+		if(electrocute_mob(user, C, src, 1, TRUE))
+			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+			s.set_up(3, 1, src)
+			s.start()
+			return TRUE
+		else
+			return FALSE
+	return FALSE
