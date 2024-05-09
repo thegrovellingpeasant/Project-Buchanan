@@ -1,6 +1,7 @@
-/////////////////////////////
-/* Faction Task Controller */
-/////////////////////////////
+/////////////////////////////////////
+/* Faction Task Controller         */
+/* Original PR by Fulminating Gold */
+/////////////////////////////////////
 
 /*---------------------------------------------------------------------------------------------*\
 |																								|
@@ -40,8 +41,8 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 		"/datum/faction_task/individual_faction/assassination" = 50,
 		"/datum/faction_task/individual_player/coupdetat" = 20
 		),
-//	"tourists" = list(
-//		"/datum/faction_task/global_faction/heist" = TRUE,			/////------------------------pick tasks and fix path
+//	"tourists" = list( /////------------------------------------------------------ Pestarzt, set type path for tourists
+//		"/datum/faction_task/global_faction/heist" = TRUE,
 //	)
 ))
 
@@ -250,8 +251,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 			counter++
 	if(player_tasks[faction])
 		var/datum/faction_task/task_datum = player_tasks[faction]
-		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
-		counter++
+		if(task_datum.players.Find(L))
+			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+			counter++
 
 
 ////////////////////////
@@ -275,8 +277,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 			counter++
 	if(player_tasks[faction])
 		var/datum/faction_task/task_datum = player_tasks[faction]
-		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
-		counter++
+		if(task_datum.players.Find(L))
+			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+			counter++
 
 
 ///////////////
@@ -325,7 +328,8 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	players.Remove(user)
 	return TRUE
 
-/datum/faction_task/proc/calculate_score()	// Just use TRUE or FALSE if it is a boolean. Score is not tallied.
+// Just use TRUE or FALSE if it is a boolean. Score is not tallied.
+/datum/faction_task/proc/calculate_score()
 	return FALSE
 
 /datum/faction_task/proc/task_status_msg()
@@ -347,12 +351,6 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Global Faction Task */
 /////////////////////////
 
-GLOBAL_LIST_INIT(faction_vault_areas, list(
-	"/datum/job/bishops" = /area/f13/reno_building, \
-	"/datum/job/vangraffs" = /area/f13/vangraffs , \
-	"/datum/job/wrights" = /area/f13/wrights, \
-))
-
 /datum/faction_task/global_faction
 	name = "global task"
 
@@ -360,19 +358,23 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 /* Wealth */
 
+GLOBAL_LIST_INIT(faction_vault_areas, list(			///////----------------------------------------- Pestarzt, set areas
+	"/datum/job/bishops" = /area/f13/reno_building, \
+	"/datum/job/vangraffs" = /area/f13/vangraffs , \
+	"/datum/job/wrights" = /area/f13/wrights, \
+))
+
 /datum/faction_task/global_faction/wealth
 	name = "Wealth"
 	chance = 100
 
 /datum/faction_task/global_faction/wealth/calculate_score()
-	var/area/task_area = GLOB.faction_vault_areas["[faction]"]
+	var/area/task_area = GLOB.areas_by_type[GLOB.faction_vault_areas["[faction]"]]
 	var/total_money = 0
 	if(task_area)
 		for(var/turf/T in task_area)
-			for(var/obj/item/I in T.contents)
-				if(istype(I, /obj/item/stack/f13Cash))
-					var/obj/item/stack/f13Cash/C = I
-					total_money += C.get_item_credit_value()
+			for(var/obj/item/stack/f13Cash/C in T)
+				total_money += C.get_item_credit_value()
 	return total_money
 
 /datum/faction_task/global_faction/wealth/task_status_msg()
@@ -380,18 +382,21 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 /datum/faction_task/global_faction/wealth/end_round_msg()
 	var/highest_score = 0
+	var/personal_score = 0
 	var/winning_faction = null
 	for(var/F in GLOB.faction_task_controller.global_tasks)
 		var/score = GLOB.faction_task_controller.global_tasks[F].calculate_score()
+		if(F == "[faction]")
+			personal_score = score
 		if(score > highest_score)
 			highest_score = score
-			winning_faction = faction
-	if(winning_faction == faction && highest_score > 0)
-		return "<font color='#097f10'>Your faction's wealth exceeds all others.</font>"
+			winning_faction = F
+	if(winning_faction == "[faction]" && highest_score > 0)
+		return "<font color='#097f10'>Your faction's wealth exceeds all others ($[highest_score]).</font>"
 	else if(highest_score == 0)
 		return "<font color='#c7863e'>You're all cashless losers.</font>"
 	else
-		return "<font color='#bc2621'>Another faction ([winning_faction]) has exceeded yours in wealth.</font>"
+		return "<font color='#bc2621'>Another faction ([initial(text2path(winning_faction).faction)], $[highest_score]) has exceeded yours in wealth ($[personal_score]).</font>"
 
 
 
@@ -412,7 +417,7 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 	chance = 20
 	var/datum/job/target_faction
 	var/mob/living/carbon/target
-	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win	////-- PESTARZT!!
+	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win	//!!!!Pestarzt, set area
 	var/target_chosen = FALSE
 
 /datum/faction_task/individual_faction/frame/New()
@@ -446,7 +451,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 		return "Frame someone from the [initial(target_faction.faction)] into the NCR prison (Target to be announced)..."
 
 /datum/faction_task/individual_faction/frame/end_round_msg()
-	if(calculate_score())
+	if(!target_chosen)
+		return "<font color='#c7863e'>Your target never arrived.</font>"
+	else if(calculate_score())
 		return "<font color='#097f10'>Your target has been imprisoned.</font>"
 	else
 		return "<font color='#bc2621'>The target evaded imprisonment.</font>"
@@ -481,7 +488,7 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
 
 /datum/faction_task/individual_faction/assassination/calculate_score()
-	if(target_chosen && (!target || !considered_alive(target)))
+	if(target_chosen && (!target || !considered_alive(target.mind)))
 		return TRUE
 	return FALSE
 
@@ -492,7 +499,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 		return "Kill someone from the [initial(target_faction.faction)] (Target to be announced)..."
 
 /datum/faction_task/individual_faction/assassination/end_round_msg()
-	if(calculate_score())
+	if(!target_chosen)
+		return "<font color='#c7863e'>Your target never arrived.</font>"
+	else if(calculate_score())
 		return "<font color='#097f10'>Your target is dead.</font>"
 	else
 		return "<font color='#bc2621'>The target survived.</font>"
@@ -506,7 +515,7 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 /datum/faction_task/individual_player
 	name = "player task"
-	var/player_chance
+	var/player_chance = 100
 	var/max_players = 0
 	var/overlapping_faction_task = TRUE
 
@@ -528,16 +537,17 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 /datum/faction_task/individual_player/coupdetat/add_player(mob/user)
 	if(calculate_score())
 		return FALSE
-	if(initial(SSjob.GetJob(user.mind.assigned_role).faction_head))
+	var/datum/job/job = SSjob.GetJob(user.mind.assigned_role)
+	if(initial(job.faction_head))
 		target_chosen = TRUE
 		target = user
 		for(var/mob/living/P in players)
 			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
 		return FALSE
-	..()
+	return ..()
 
 /datum/faction_task/individual_player/coupdetat/calculate_score()
-	if(target_chosen && (!target || !considered_alive(target)))
+	if(target_chosen && (!target || !considered_alive(target.mind)))
 		return TRUE
 	return FALSE
 
@@ -545,7 +555,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 	return "Kill your tyrant of a leader and don't get caught by his loyalists."
 
 /datum/faction_task/individual_player/coupdetat/end_round_msg()
-	if(calculate_score())
+	if(!target_chosen)
+		return "<font color='#c7863e'>Your target never arrived.</font>"
+	else if(calculate_score())
 		return "<font color='#097f10'>The scoundrel is dead.</font>"
 	else
 		return "<font color='#bc2621'>Your leader survived.</font>"
