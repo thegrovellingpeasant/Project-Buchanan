@@ -47,7 +47,7 @@
 	attack_verb = list("axed", "chopped", "cleaved", "torn", "hacked")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-	/obj/item/twohanded/fireaxe/ComponentInitialize()
+/obj/item/twohanded/fireaxe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound) //axes are not known for being precision butchering tools
 	AddComponent(/datum/component/two_handed, force_unwielded=26, force_wielded=39, icon_wielded="[icon_prefix]2")
@@ -582,7 +582,7 @@ obj/item/twohanded/sledgehammer/supersledge/afterattack(atom/A, mob/living/user,
 	icon_prefix = "hammer-courtmartial"
 	attack_verb = list("punished", "resolved", "judged", "pummeled", "thrashed")
 	toolspeed = 0.8
-	
+
 
 /obj/item/twohanded/sledgehammer/rockethammer/courtmartial/ComponentInitialize()
 	. = ..()
