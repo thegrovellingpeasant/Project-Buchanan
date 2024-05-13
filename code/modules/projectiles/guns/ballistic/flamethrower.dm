@@ -97,7 +97,7 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 0.3
+	slowdown = 0.5
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
@@ -109,7 +109,6 @@
 	fire_sound = 'sound/weapons/flamethrower.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
 	casing_ejector = FALSE
-	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/m2flamethrowertank/ammo_pack
 
 /obj/item/gun/ballistic/m2flamethrower/Initialize()
