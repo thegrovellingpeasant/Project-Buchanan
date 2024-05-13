@@ -140,7 +140,6 @@
 /datum/outfit/loadout/brainy
 	name = "The Smartest"
 	gloves = /obj/item/clothing/gloves/f13/military
-	suit_store = /obj/item/gun/energy/laser/wattz2k/extended
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/melee/baton/boomerang = 1,
