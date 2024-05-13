@@ -41,9 +41,9 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 		"/datum/faction_task/individual_faction/assassination" = 50,
 		"/datum/faction_task/individual_player/coupdetat" = 20
 		),
-//	"tourists" = list( /////------------------------------------------------------ Pestarzt, set type path for tourists
-//		"/datum/faction_task/global_faction/heist" = TRUE,
-//	)
+	"/datum/job/citizens/f13tourist" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+		),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -171,10 +171,15 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	// Loop Through Factions
 	for(var/F in GLOB.faction_task_probabilities)
 		// Select Tasks
-		_amount = amount
 		task_names = list()
+		var/num_FT = 0
+		for(var/T in GLOB.faction_task_probabilities[F])
+			if(ispath(text2path(T), /datum/faction_task/individual_faction))
+				num_FT++
 		for(var/datum/faction_task/T in faction_tasks[F])
+			num_FT--
 			task_names.Add(T.name)
+		_amount = min(amount, num_FT)
 		while(_amount > 0)
 			// Random Task Selection
 			shifted_chance = 0
@@ -199,13 +204,26 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 					break
 
 
+/////////////////
+/* Get Faction */
+/////////////////
+
+/datum/faction_task_controller/proc/getFaction(var/mob/living/L)
+	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
+//	return "/datum/job/[splittext("[job]", "/")[4]]"
+	for(var/F in GLOB.faction_task_probabilities)
+		if(istype(job, text2path(F)))
+			return F
+	return null
+
+
 ////////////////
 /* Add Player */
 ////////////////
 
 /datum/faction_task_controller/proc/add_player(var/mob/living/L)
 	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
-	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	var/faction = getFaction(L)
 	var/player_assigned = FALSE
 
 	// Global Tasks
@@ -238,8 +256,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	to_chat(L, "<h1><b><font color='#139e3a'>Assigned Tasks:</font></b><h1>")
 
 	var/counter = 1
-	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
-	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	var/faction = getFaction(L)
 	if(global_tasks[faction])
 		var/datum/faction_task/task_datum = global_tasks[faction]
 		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
@@ -264,8 +281,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	to_chat(L, "<h1><b><font color='#139e3a'>Task Completion:</font></b><h1>")
 
 	var/counter = 1
-	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
-	var/faction = "/datum/job/[splittext("[job]", "/")[4]]"
+	var/faction = getFaction(L)
 	if(global_tasks[faction])
 		var/datum/faction_task/task_datum = global_tasks[faction]
 		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
@@ -345,6 +361,21 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	return
 
 
+GLOBAL_LIST_INIT(faction_vault_areas, list(			///////----------------------------------------- Pestarzt, set areas
+	"/datum/job/bishops" = /area/f13/reno_building, \
+	"/datum/job/vangraffs" = /area/f13/vangraffs , \
+	"/datum/job/wrights" = /area/f13/wrights, \
+	"/datum/job/citizen/f13tourist" = /area/f13/reno_building, \
+))
+
+// Can be an item or object
+GLOBAL_LIST_INIT(faction_relics, list(			///////----------------------------------------- Pestarzt, set targets
+	"/datum/job/bishops" = /obj/item/stack/f13Cash/caps, \
+	"/datum/job/vangraffs" = /obj/item/stack/f13Cash/caps , \
+	"/datum/job/wrights" = /obj/item/stack/f13Cash/caps, \
+))
+
+
 
 
 /////////////////////////
@@ -357,12 +388,6 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 
 /* Wealth */
-
-GLOBAL_LIST_INIT(faction_vault_areas, list(			///////----------------------------------------- Pestarzt, set areas
-	"/datum/job/bishops" = /area/f13/reno_building, \
-	"/datum/job/vangraffs" = /area/f13/vangraffs , \
-	"/datum/job/wrights" = /area/f13/wrights, \
-))
 
 /datum/faction_task/global_faction/wealth
 	name = "Wealth"
@@ -417,7 +442,8 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(			///////---------------------------
 	chance = 20
 	var/datum/job/target_faction
 	var/mob/living/carbon/target
-	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win	//!!!!Pestarzt, set area
+	//vvvvvvvvvvvvvvvvv================================================================================ Pestarzt set area
+	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win
 	var/target_chosen = FALSE
 
 /datum/faction_task/individual_faction/frame/New()
@@ -563,6 +589,40 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(			///////---------------------------
 		return "<font color='#bc2621'>Your leader survived.</font>"
 
 
+
+/* Heist */
+
+/datum/faction_task/individual_player/heist
+	name = "Heist"
+	max_players = 5
+	player_chance = 75
+	var/datum/job/target_faction
+	var/obj/target
+	var/area/drop_off
+
+/datum/faction_task/individual_player/heist/New()
+	..()
+	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+
+/datum/faction_task/individual_player/heist/proc/pick_target()
+	drop_off = GLOB.faction_vault_areas["[faction]"]
+	target_faction = text2path(pick(GLOB.faction_relics))
+	//target = locate(GLOB.faction_relics["[target_faction]"])
+
+/datum/faction_task/individual_player/heist/calculate_score()
+	var/turf/T = get_turf(target)
+	if(target && istype(T.loc, drop_off))
+		return TRUE
+	return FALSE
+
+/datum/faction_task/individual_player/heist/task_status_msg()
+	return "Steal the relic from the vault of your target ([target_faction])."
+
+/datum/faction_task/individual_player/heist/end_round_msg()
+	if(calculate_score())
+		return "<font color='#097f10'>The heist was successful.</font>"
+	else
+		return "<font color='#bc2621'>The heist failed.</font>"
 
 
 
