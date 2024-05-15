@@ -468,3 +468,135 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/coal/ten
 	amount = 10
+
+/*
+ * black brick
+ */
+
+GLOBAL_LIST_INIT(blackbrick_recipes, list (
+	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1)
+	))
+
+/obj/item/stack/sheet/mineral/blackbrick
+	name = "black brick"
+	desc = "A crude black brick."
+	singular_name = "black brick"
+	icon_state = "sheet-blackbrick"
+	item_state = "sheet-blackbrick"
+	throw_speed = 3
+	throw_range = 5
+	force = 15
+	custom_materials = list(/datum/material/blackbrick=MINERAL_MATERIAL_AMOUNT)
+	sheettype = "blackbrick"
+	merge_type = /obj/item/stack/sheet/mineral/blackbrick
+	walltype = /turf/closed/wall/gothic
+	material_type = /datum/material/blackbrick
+
+/obj/item/stack/sheet/mineral/blackbrick/get_main_recipes()
+	. = ..()
+	. += GLOB.blackbrick_recipes
+
+/obj/item/stack/sheet/mineral/blackbrick/thirty
+	amount = 30
+
+/obj/item/stack/sheet/mineral/blackbrick/twelve
+	amount = 12
+
+/*
+ * red brick
+ */
+
+GLOBAL_LIST_INIT(redbrick_recipes, list (
+	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1)
+	))
+
+/obj/item/stack/sheet/mineral/redbrick
+	name = "red brick"
+	desc = "A crude red brick."
+	singular_name = "red brick"
+	icon_state = "sheet-redbrick"
+	item_state = "sheet-redbrick"
+	throw_speed = 3
+	throw_range = 5
+	force = 15
+	custom_materials = list(/datum/material/redbrick=MINERAL_MATERIAL_AMOUNT)
+	sheettype = "redbrick"
+	merge_type = /obj/item/stack/sheet/mineral/redbrick
+	walltype = /turf/closed/wall/mineral/brick
+	material_type = /datum/material/redbrick
+
+/obj/item/stack/sheet/mineral/redbrick/get_main_recipes()
+	. = ..()
+	. += GLOB.redbrick_recipes
+
+/obj/item/stack/sheet/mineral/redbrick/thirty
+	amount = 30
+
+/obj/item/stack/sheet/mineral/redbrick/twelve
+	amount = 12
+
+/*
+ * blue brick
+ */
+
+GLOBAL_LIST_INIT(bluebrick_recipes, list (
+	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1)
+	))
+
+/obj/item/stack/sheet/mineral/bluebrick
+	name = "blue brick"
+	desc = "A crude blue brick."
+	singular_name = "blue brick"
+	icon_state = "sheet-bluebrick"
+	item_state = "sheet-bluebrick"
+	throw_speed = 3
+	throw_range = 5
+	force = 15
+	custom_materials = list(/datum/material/bluebrick=MINERAL_MATERIAL_AMOUNT)
+	sheettype = "bluebrick"
+	merge_type = /obj/item/stack/sheet/mineral/bluebrick
+	walltype = /turf/closed/wall/mineral/stonewall
+	material_type = /datum/material/bluebrick
+
+/obj/item/stack/sheet/mineral/bluebrick/get_main_recipes()
+	. = ..()
+	. += GLOB.bluebrick_recipes
+
+/obj/item/stack/sheet/mineral/bluebrick/thirty
+	amount = 30
+
+/obj/item/stack/sheet/mineral/bluebrick/twelve
+	amount = 12
+
+/*
+ * blue brick
+ */
+
+GLOBAL_LIST_INIT(whitebrick_recipes, list (
+	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = 0, on_floor = 1)
+	))
+
+/obj/item/stack/sheet/mineral/whitebrick
+	name = "white brick"
+	desc = "A crude white brick."
+	singular_name = "white brick"
+	icon_state = "sheet-whitebrick"
+	item_state = "sheet-whitebrick"
+	throw_speed = 3
+	throw_range = 5
+	force = 15
+	custom_materials = list(/datum/material/whitebrick=MINERAL_MATERIAL_AMOUNT)
+	sheettype = "whitebrick"
+	merge_type = /obj/item/stack/sheet/mineral/whitebrick
+	walltype = /turf/closed/wall/mineral/whitebrick
+	material_type = /datum/material/whitebrick
+
+/obj/item/stack/sheet/mineral/whitebrick/get_main_recipes()
+	. = ..()
+	. += GLOB.whitebrick_recipes
+
+/obj/item/stack/sheet/mineral/whitebrick/thirty
+	amount = 30
+
+/obj/item/stack/sheet/mineral/whitebrick/twelve
+	amount = 12

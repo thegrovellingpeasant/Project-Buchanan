@@ -286,3 +286,23 @@
 /turf/closed/wall/r_wall/syndicate/pirate/overspace
 	icon_state = "map-overspace"
 	fixed_underlay = list("space"=1)
+
+//reno
+
+/turf/closed/wall/r_wall/gothic/rivet
+	name = "gothic wall"
+	desc = "A remnant of the old world."
+	icon = 'icons/turf/walls/gothic_wall_rivet.dmi'
+	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/r_wall/gothic/rivet, /obj/structure/window/gothic/fulltile, /obj/structure/window/gothic2/fulltile, /obj/structure/window/gothic3/fulltile)
+	icon_type_smooth = "gothic"
+
+	hardness = 100
+	sheet_type = /obj/item/stack/sheet/mineral/blackbrick
+	sheet_amount = 20
+	girder_type = /obj/structure/girder/reinforced
+	explosion_block = 2
+	rad_insulation = RAD_HEAVY_INSULATION
+
+/turf/closed/wall/r_wall/gothic/rivet/devastate_wall()
+	new sheet_type(src, sheet_amount)
+	new /obj/item/stack/sheet/mineral/blackbrick(src, 5)
