@@ -5,7 +5,6 @@
 
 #define GENERATOR_COVER_CLOSED 0
 #define GENERATOR_COVER_OPENED 1
-#define GENERATOR_COVER_REMOVED 2
 
 /obj/machinery/power/fusion_generator
 	name = "fusion generator"
@@ -16,52 +15,76 @@
 	req_access = null
 	use_power = NO_POWER_USE
 
+	var/start_charge = 95
 	var/area/area
 	var/opened = GENERATOR_COVER_CLOSED
 	var/wiring = GENERATOR_WIRING_INTACT
 	var/obj/item/stock_parts/cell/cell
 	var/cell_type = /obj/item/stock_parts/cell/fusion
 
+/obj/machinery/power/fusion_generator/get_cell()
+	return cell
+
 /obj/machinery/power/fusion_generator/Initialize(mapload)
 	. = ..()
 	cell = new cell_type
+	cell.charge = start_charge * cell.maxcharge / 100 
 	connect_to_network()
 
 /obj/machinery/power/fusion_generator/examine(mob/user)
 	. = ..()
+	if(opened)
+		. += "The cover to the fusion core pod has been pried open!"
+		if(wiring)
+			. += "The wiring has been mangled and tampered with!"
+			if(cell)
+				. += "The [cell] remains intact in the generator."
+			else
+				. += "The generator lacks an energy cell!"
+	else
+		. += "The cover to the fusion core pod is closed and intact."
 	
-/obj/machinery/power/fusion_generator/crowbar_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(opened == GENERATOR_COVER_CLOSED)
-		opened = GENERATOR_COVER_OPENED
-		user.visible_message("[user] pries open the panel cover from the [src]!","<span class='notice'>You remove \the panel cover.</span>")
+/obj/machinery/power/fusion_generator/crowbar_act(mob/user, obj/item/I)
+	. = TRUE
+	if(opened = GENERATOR_COVER_CLOSED)
+		I.play_tool_sound(src)
+		if(I.use_tool(src,user,70))
+			if(opened = GENERATOR_COVER_CLOSED)
+				opened = GENERATOR_COVER_OPENED
+				user.visible_message(\
+					"[user.name] has pried open the fusion core cover panel of the[src.name]!",\
+					"<span class='notice'>You pry open the fusion core's cover panel.</span>")
+				return
 	
 /obj/machinery/power/fusion_generator/wirecutter_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(opened == GENERATOR_COVER_OPENED)
-		wiring = GENERATOR_WIRING_DISABLED
-		user.visible_message("[user] removes \the [cell] from [src]!","<span class='notice'>You remove \the [cell].</span>")
+	. = TRUE
+	if(opened = GENERATOR)
+		I.play_tool_sound
+		if(I.use_tool(src,user,100))
+			if(wiring = GENERATOR_WIRING_INTACT)
+				wiring = GENERATOR_WIRING_DISABLED
+				user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
+	else
+		to_chat(user, "<span class='warning'>The panel is still on!</span>")
+		return
 
 /obj/machinery/power/fusion_generator/screwdriver_act(mob/living/user, obj/item/I)
 	. = ..()
-	if(wiring == GENERATOR_WIRING_DISABLED)
+	if(wiring)
 		if(cell)
-			user.visible_message("[user] removes \the [cell] from [src]!","<span class='notice'>You remove \the [cell].</span>")
+			user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
 			cell = null
 
-/obj/machinery/power/fusion_generator/attackby(obj/item/W, mob/living/user, params)
+/obj/machinery/power/fusion_generator/attackby(obj/item/I, mob/living/user, params)
 
-	if	(istype(W, /obj/item/stock_parts/cell) && (opened && wiring))
+	if	(istype(I, /obj/item/stock_parts/cell) && (opened && wiring))
 		if(cell)
 			to_chat(user, "<span class='warning'>There is a power cell already installed!</span>")
 			return
 		else
-			if (stat & MAINT)
-				to_chat(user, "<span class='warning'>There is no connector for your power cell!</span>")
+			if(!user.transferItemToLoc(I, src))
 				return
-			if(!user.transferItemToLoc(W, src))
-				return
-			cell = W
+			cell = I
 			user.visible_message(\
-				"[user.name] has inserted the power cell to [src.name]!",\
-				"<span class='notice'>You insert the power cell.</span>")
+				"[user.name] has inserted the [cell] to [src.name]!",\
+				"<span class='notice'>You insert the [cell].</span>")
