@@ -46,22 +46,24 @@
 	
 /obj/machinery/power/fusion_generator/crowbar_act(mob/user, obj/item/I)
 	. = TRUE
-	if(opened = GENERATOR_COVER_CLOSED)
+	if(opened == GENERATOR_COVER_CLOSED)
 		I.play_tool_sound(src)
 		if(I.use_tool(src,user,70))
-			if(opened = GENERATOR_COVER_CLOSED)
+			if(opened == GENERATOR_COVER_CLOSED)
 				opened = GENERATOR_COVER_OPENED
 				user.visible_message(\
 					"[user.name] has pried open the fusion core cover panel of the[src.name]!",\
 					"<span class='notice'>You pry open the fusion core's cover panel.</span>")
 				return
+			else
+				return
 	
 /obj/machinery/power/fusion_generator/wirecutter_act(mob/living/user, obj/item/I)
 	. = TRUE
-	if(opened = GENERATOR)
-		I.play_tool_sound
+	if(opened == GENERATOR_COVER_OPENED)
+		I.play_tool_sound(src)
 		if(I.use_tool(src,user,100))
-			if(wiring = GENERATOR_WIRING_INTACT)
+			if(wiring == GENERATOR_WIRING_INTACT)
 				wiring = GENERATOR_WIRING_DISABLED
 				user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
 	else
@@ -69,11 +71,19 @@
 		return
 
 /obj/machinery/power/fusion_generator/screwdriver_act(mob/living/user, obj/item/I)
-	. = ..()
+	if(..())
+		return TRUE
+	. = TRUE
 	if(wiring)
 		if(cell)
 			user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
-			cell = null
+			var/turf/T = get_turf(user)
+			cell.forceMove(T)
+			cell.update_icon()
+			return
+	else
+		to_chat(user, "<span class='warning'>The wiring is still in the way!</span>")
+		return
 
 /obj/machinery/power/fusion_generator/attackby(obj/item/I, mob/living/user, params)
 
