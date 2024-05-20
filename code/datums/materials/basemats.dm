@@ -377,11 +377,22 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 //reno stuff
 
 /datum/material/blackbrick
-	name = "black birck"
+	name = "black brick"
 	desc = "A common building material."
-	color = "#B77D31"
+	color = "#1E0704"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/mineral/blackbrick
+	value_per_unit = 0.0025
+	armor_modifiers = list("melee" = 0.5, "bullet" = 0.5, "laser" = 1.25, "energy" = 0.5, "bomb" = 0.5, "bio" = 0.25, "rad" = 1.5, "fire" = 1.5, "acid" = 1.5)
+	beauty_modifier = 0.3
+	turf_sound_override = FOOTSTEP_WOOD
+
+/datum/material/blackbrick/reinforced
+	name = "strong black brick"
+	desc = "A common building material."
+	color = "#1E0704"
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
+	sheet_type = /obj/item/stack/sheet/mineral/blackbrick/reinforced
 	value_per_unit = 0.0025
 	armor_modifiers = list("melee" = 0.5, "bullet" = 0.5, "laser" = 1.25, "energy" = 0.5, "bomb" = 0.5, "bio" = 0.25, "rad" = 1.5, "fire" = 1.5, "acid" = 1.5)
 	beauty_modifier = 0.3
@@ -390,7 +401,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 /datum/material/redbrick
 	name = "red birck"
 	desc = "A common building material."
-	color = "#B77D31"
+	color = "#c64a39"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/mineral/redbrick
 	value_per_unit = 0.0025
@@ -401,7 +412,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 /datum/material/bluebrick
 	name = "blue birck"
 	desc = "A common building material."
-	color = "#B77D31"
+	color = "#4709ab"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/mineral/bluebrick
 	value_per_unit = 0.0025
@@ -412,7 +423,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 /datum/material/whitebrick
 	name = "white birck"
 	desc = "A common building material."
-	color = "#B77D31"
+	color = "#fdfce8"
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE)
 	sheet_type = /obj/item/stack/sheet/mineral/whitebrick
 	value_per_unit = 0.0025

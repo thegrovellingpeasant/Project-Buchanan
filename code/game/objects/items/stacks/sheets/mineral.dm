@@ -505,7 +505,7 @@ GLOBAL_LIST_INIT(blackbrick_recipes, list (
 /obj/item/stack/sheet/mineral/blackbrick/reinforced
 	name = "strong black brick"
 	desc = "A well made black brick."
-	walltype = /turf/closed/wall/rivet
+	walltype = /turf/closed/wall/r_wall/gothic/rivet
 /*
  * red brick
  */
