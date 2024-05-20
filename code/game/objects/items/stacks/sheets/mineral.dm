@@ -498,8 +498,9 @@ GLOBAL_LIST_INIT(blackbrick_recipes, list (
 
 /obj/item/stack/sheet/mineral/blackbrick/attackby(obj/item/W, mob/user, params)
 	add_fingerprint(user)
+
 	if(istype(W, /obj/item/stack/sheet/plasteel))
-		var/obj/item/stack/plasteel/V = W
+		var/obj/item/stack/sheet/plasteel/V = W
 		if (V.get_amount() >= 1 && get_amount() >= 1)
 			var/obj/item/stack/sheet/mineral/blackbrick/reinforced/RG = new (get_turf(user))
 			RG.add_fingerprint(user)
@@ -509,7 +510,7 @@ GLOBAL_LIST_INIT(blackbrick_recipes, list (
 			if(QDELETED(src) && replace)
 				user.put_in_hands(RG)
 		else
-			to_chat(user, "<span class='warning'>You need one sheet of plasteel and one sheet of black brick to make strong black brick</span>")
+			to_chat(user, "<span class='warning'>You need one sheet of plasteel and one sheet of black brick to make strong black brick!</span>")
 			return
 	else
 		return ..()
