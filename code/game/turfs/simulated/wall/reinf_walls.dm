@@ -297,7 +297,7 @@
 	icon_type_smooth = "gothic"
 
 	hardness = 100
-	sheet_type = /obj/item/stack/sheet/mineral/blackbrick
+	sheet_type = /obj/item/stack/sheet/mineral/blackbrick/reinforced
 	sheet_amount = 20
 	girder_type = /obj/structure/girder/reinforced
 	explosion_block = 2
