@@ -298,7 +298,7 @@
 
 	hardness = 100
 	sheet_type = /obj/item/stack/sheet/mineral/blackbrick/reinforced
-	sheet_amount = 20
+	sheet_amount = 1
 	girder_type = /obj/structure/girder/reinforced
 	explosion_block = 2
 	rad_insulation = RAD_HEAVY_INSULATION

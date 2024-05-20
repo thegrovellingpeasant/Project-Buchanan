@@ -496,6 +496,24 @@ GLOBAL_LIST_INIT(blackbrick_recipes, list (
 	. = ..()
 	. += GLOB.blackbrick_recipes
 
+/obj/item/stack/sheet/mineral/blackbrick/attackby(obj/item/W, mob/user, params)
+	add_fingerprint(user)
+	if(istype(W, /obj/item/stack/sheet/plasteel))
+		var/obj/item/stack/plasteel/V = W
+		if (V.get_amount() >= 1 && get_amount() >= 1)
+			var/obj/item/stack/sheet/mineral/blackbrick/reinforced/RG = new (get_turf(user))
+			RG.add_fingerprint(user)
+			var/replace = user.get_inactive_held_item()==src
+			V.use(1)
+			use(1)
+			if(QDELETED(src) && replace)
+				user.put_in_hands(RG)
+		else
+			to_chat(user, "<span class='warning'>You need one sheet of plasteel and one sheet of black brick to make strong black brick</span>")
+			return
+	else
+		return ..()
+
 /obj/item/stack/sheet/mineral/blackbrick/thirty
 	amount = 30
 
@@ -506,6 +524,13 @@ GLOBAL_LIST_INIT(blackbrick_recipes, list (
 	name = "strong black brick"
 	desc = "A well made black brick."
 	walltype = /turf/closed/wall/r_wall/gothic/rivet
+
+/obj/item/stack/sheet/mineral/blackbrick/reinforced/thirty
+	amount = 30
+
+/obj/item/stack/sheet/mineral/blackbrick/reinforced/twelve
+	amount = 12
+
 /*
  * red brick
  */
