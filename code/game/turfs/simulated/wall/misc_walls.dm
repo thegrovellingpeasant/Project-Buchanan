@@ -218,4 +218,5 @@
 	hardness = 45
 	canSmoothWith = list(/turf/closed/wall/gothic, /turf/closed/wall/r_wall/gothic/rivet, /obj/structure/window/gothic/fulltile, /obj/structure/window/gothic2/fulltile, /obj/structure/window/gothic3/fulltile)
 	icon_type_smooth = "gothic"
+	girder_type = /obj/structure/girder
 
