@@ -1,7 +1,7 @@
 /obj/machinery/mecha_part_fabricator
 	icon = 'icons/obj/robotics.dmi'
 	icon_state = "fab-idle"
-	name = "exosuit fabricator"
+	name = "robot fabricator"
 	desc = "Nothing is being built."
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -46,18 +46,22 @@
 	/// A list of categories that valid MECHFAB design datums will broadly categorise themselves under.
 	var/list/part_sets = list(
 								"Cyborg",
-								"Clarke",
-								"Ripley",
+							//	"Clarke",
+							//	"Ripley",
 							//	"Firefighter",
-								"Odysseus",
-								"Gygax",
-								"Medical-Spec Gygax",
-								"Durand",
-								"Marauder",
+							//	"Odysseus",
+							//	"Gygax",
+							//	"Medical-Spec Gygax",
+							//	"Durand",
+							//	"Marauder",
 							//	"H.O.N.K",
 							//	"Phazon",
-								"Exosuit Equipment",
-								"Exosuit Ammunition",
+								"Protectron",
+								"Gutsy Mk II",
+								"Assaultron",
+								"Sentry Bot",
+								"Robot Equipment",
+								"Robot Ammunition",
 								"Cyborg Upgrade Modules",
 								"Cybernetics",
 								"Implants",
