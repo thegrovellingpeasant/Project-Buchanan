@@ -60,6 +60,7 @@
 								"Gutsy Mk II",
 								"Assaultron",
 								"Sentry Bot",
+								"Robot Weapons",
 								"Robot Equipment",
 								"Robot Ammunition",
 								"Cyborg Upgrade Modules",

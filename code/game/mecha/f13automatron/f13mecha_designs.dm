@@ -403,17 +403,17 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/melee/saw
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Melee Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_hammer
-	name = "Robot Weapon (Robot-fitted Sledgehammer"
+	name = "Robot Weapon (Robot-fitted Sledgehammer)"
 	desc = "Allows for the construction of Robot-fitted Sledgehammer."
 	id = "robot_hammer"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/melee/hammer
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Melee Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_pistol
 	name = "Robot Weapon (Robot-fitted 10mm pistol)"
@@ -423,7 +423,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/pistol
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Light Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_laser_pistol
 	name = "Robot Weapon (Robot-fitted AEP7)"
@@ -433,7 +433,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/pistol
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Light Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_plasma_pistol
 	name = "Robot Weapon (Robot-fitted Plasma pistol)"
@@ -443,7 +443,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/plasma/pistol
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Light Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_light_flamethrower
 	name = "Robot Weapon (Robot-fitted Light flamethrower)"
@@ -453,7 +453,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower/light
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Medium Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_laser_rifle
 	name = "Robot Weapon (Robot-fitted AER9)"
@@ -463,7 +463,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/rifle
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Medium Weapons")
+	category = list("Robot Weapons")
  
 /datum/design/robot_laser_sniper
 	name = "Robot Weapon (Robot-fitted Wattz 2k)"
@@ -473,7 +473,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/sniper
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Medium Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_plasma_rifle
 	name = "Robot Weapon (Robot-fitted Plasma rifle)"
@@ -483,7 +483,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/plasma
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Medium Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_ballistic_minigun
 	name = "Robot Weapon (Robot-fitted CZ53 minigun)"
@@ -493,7 +493,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/minigun
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
  
 /datum/design/robot_heavy_flamethrower
 	name = "Robot Weapon (Robot-fitted Heavy flamethrower)"
@@ -503,7 +503,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_grenade_launcher
 	name = "Robot Weapon (Robot-fitted Heavy grenade launcher)"
@@ -513,7 +513,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/grenade_launcher
 	materials = list(/datum/material/iron=22000,/datum/material/gold=6000,/datum/material/silver=8000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_missle_rack
 	name = "Robot Weapon (Robot-fitted Rocket rack)"
@@ -523,7 +523,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/f13
 	materials = list(/datum/material/iron=30000,/datum/material/gold=8000,/datum/material/silver=8000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_laser_minigun
 	name = "Robot Weapon (Robot-fitted Gatling laser)"
@@ -533,7 +533,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/minigun
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
 
 /datum/design/robot_plasma_minigun
 	name = "Robot Weapon (Robot-fitted Winchester P94 plasma caster)"
@@ -543,7 +543,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/caster
 	materials = list(/datum/material/iron=10000)
 	construction_time = 100
-	category = list("Heavy Weapons")
+	category = list("Robot Weapons")
 
 ///////////////////////
 ///// Equipment /////
