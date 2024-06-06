@@ -858,18 +858,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-/datum/crafting_recipe/commando
-	name = "DeLisle Commando Carbine"
-	result = /obj/item/gun/ballistic/automatic/delisle/commando
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/crafting/metalparts = 2
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
 
 //infiltrator
 /datum/crafting_recipe/infiltrator
@@ -1113,19 +1101,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//BoS plasma pistol
-/datum/crafting_recipe/lightplasmapistol
-	name = "Lightweight Plasma Pistol"
-	result = /obj/item/gun/energy/laser/plasma/pistol/light
-	reqs = list(/obj/item/advanced_crafting_components/flux = 1,
-				/obj/item/stack/crafting/metalparts = 5,
-				/obj/item/stack/crafting/electronicparts = 2
-				)
-	tools = list(TOOL_AWORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
 
 //uzi
 /datum/crafting_recipe/uzi
@@ -1465,21 +1440,6 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//R82 heavy service rifle
-/datum/crafting_recipe/R82
-	name = "R82 heavy service rifle"
-	result = /obj/item/gun/ballistic/automatic/service/r82
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/sheet/mineral/wood = 5,
-				/obj/item/stack/crafting/goodparts = 5
-				)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
 
 //R82 heavy service rifle
 /datum/crafting_recipe/R93

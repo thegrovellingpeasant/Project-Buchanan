@@ -114,7 +114,7 @@
 	icon_state = "esniper"
 	equip_cooldown = 30
 	energy_drain = 100
-	projectile = /obj/item/projectile/beam/laser/wattz2k/hitscan
+	projectile = /obj/item/projectile/beam/laser/rifle/wattz2k
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	harmful = TRUE
 	weapons_type = "Medium"
@@ -126,7 +126,7 @@
 	icon_state = "lasercannon"
 	equip_cooldown = 20
 	energy_drain = 70
-	projectile = /obj/item/projectile/beam/laser/lasgun/hitscan
+	projectile = /obj/item/projectile/beam/laser/rifle/aer9
 	fire_sound = 'sound/f13weapons/aer9fire.ogg'
 	harmful = TRUE
 	weapons_type = "Medium"
@@ -168,7 +168,7 @@
 	icon_state = "alienpistol"
 	equip_cooldown = 8
 	energy_drain = 40
-	projectile = /obj/item/projectile/beam/laser/pistol/hitscan
+	projectile = /obj/item/projectile/beam/laser/pistol/aer7
 	fire_sound = 'sound/f13weapons/aep7fire.ogg'
 	harmful = TRUE
 	weapons_type = "Light"

@@ -21,7 +21,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 	can_automatic = FALSE
-	slowdown = 0.5
+	slowdown = 0.4
 	fire_delay = 6
 	spread = 0
 	force = 15 //Decent clubs generally speaking
@@ -116,8 +116,6 @@
 	icon_state = "cowboyrepeater"
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
-	extra_damage = 35
-	extra_speed = 300
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 
 
@@ -128,8 +126,6 @@
 	icon_state = "trailcarbine"
 	item_state = "trailcarbine"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
-	extra_damage = 40
-	extra_speed = 200
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 
 
@@ -140,9 +136,6 @@
 	icon_state = "brushgun"
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	extra_damage = 50
-	extra_penetration = 0.05
-	extra_speed = 100
 	fire_delay = 3
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
@@ -162,9 +155,6 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 4
-	extra_damage = 37
-	extra_penetration = 0.20
-	extra_speed = 800
 	spread = 0
 	force = 18
 	can_scope = TRUE
@@ -189,8 +179,6 @@
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	fire_delay = 2
-	extra_damage = 39
-	extra_speed = 800
 	force = 18
 
 /obj/item/gun/ballistic/rifle/hunting/remington/attackby(obj/item/A, mob/user, params) //DO NOT BUBBA YOUR STANDARD ISSUE RIFLE SOLDIER!
@@ -212,8 +200,7 @@
 	item_state = "paciencia"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/paciencia
 	fire_delay = 9
-	extra_damage = 50 //hits like an AMR
-	extra_penetration = 0.2
+	slowdown = 0.5
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -230,7 +217,27 @@
 		..()
 
 
-//Mosin-Nagant							Keywords: 7.62, Bolt-action, 5 rounds internal
+//Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, very fast firing rate, high stamina cost on working bolt
+/obj/item/gun/ballistic/rifle/enfield
+	name = "Lee-Enfield rifle"
+	desc = "A british rifle sometimes known as the SMLE. It seems to have been re-chambered in .308."
+	icon_state = "enfield2"
+	item_state = "308"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
+	fire_delay = 1
+	force = 16
+	can_scope = TRUE
+	scope_state = "scope_mosin"
+	scope_x_offset = 3
+	scope_y_offset = 13
+	can_bayonet = TRUE
+	bayonet_state = "bayonet"
+	knife_x_offset = 22
+	knife_y_offset = 21
+	pump_sound = 'sound/weapons/boltpump.ogg'
+	fire_sound = 'sound/f13weapons/boltfire.ogg'
+	pump_stam_cost = 15
+
 /obj/item/gun/ballistic/rifle/mosin
 	name = "Mosin-Nagant m38"
 	desc = "A rusty old Russian bolt action chambered in 7.62."
@@ -251,32 +258,6 @@
 	knife_y_offset = 21
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
-
-//Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, very fast firing rate, high stamina cost on working bolt
-/obj/item/gun/ballistic/rifle/enfield
-	name = "Lee-Enfield rifle"
-	desc = "A british rifle sometimes known as the SMLE. It seems to have been re-chambered in .308."
-	icon_state = "enfield2"
-	item_state = "308"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 40
-	extra_speed = 600
-	fire_delay = 1
-	slowdown = 0.35
-	force = 16
-	can_scope = TRUE
-	scope_state = "scope_mosin"
-	scope_x_offset = 3
-	scope_y_offset = 13
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-	pump_stam_cost = 15
-
-
 
 
 /////////////////////////////////////
@@ -328,10 +309,9 @@
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
-	extra_damage = 50
-	extra_penetration = 0.6
 	recoil = 1
 	spread = 0
+	slowdown = 0.7
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
 	zoomable = TRUE
 	zoom_amt = 10

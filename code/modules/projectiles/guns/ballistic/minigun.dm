@@ -91,7 +91,7 @@
 	icon_state = "minigunbal_spin"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
-	slowdown = 2
+	slowdown = 0.5
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	burst_size = 1
@@ -102,12 +102,9 @@
 	ranged_attack_speed = CLICK_CD_RAPID
 	spread = 12
 	weapon_weight = WEAPON_HEAVY
-	extra_penetration = 0.01
-	extra_damage = 10
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/minigunbal5mm
 	casing_ejector = TRUE
-	item_flags = SLOWS_WHILE_IN_HAND
 	var/obj/item/minigunpackbal5mm/ammo_pack
 
 /obj/item/gun/ballistic/minigunbal5mm/Initialize()

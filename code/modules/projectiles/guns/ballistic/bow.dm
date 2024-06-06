@@ -108,7 +108,6 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/claw
 	fire_delay = 2
-	extra_speed = 100
 
 //Sturdy Bow
 /obj/item/gun/ballistic/bow/sturdy
@@ -119,7 +118,6 @@
 	icon_prefix = "bow"
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/sturdy
-	extra_speed = 300
 
 //Silver Bow
 /obj/item/gun/ballistic/bow/silver
@@ -142,7 +140,6 @@
 	force = 10
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/cross
 	fire_delay = 1.5
-	extra_speed = 400
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13

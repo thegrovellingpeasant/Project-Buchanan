@@ -150,7 +150,7 @@
 				/obj/item/clothing/under/f13/female/rustwalkers,
 				/obj/item/clothing/under/f13/female/flapper
 				)
-				
+
 /obj/effect/spawner/bundle/f13/worker
 	name = "overalls and flat cap"
 	items = list(
@@ -880,7 +880,6 @@
 	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 26,
 				/obj/effect/spawner/bundle/f13/aer12 = 13,
 				/obj/effect/spawner/bundle/f13/wattz2k = 26,
-				/obj/effect/spawner/bundle/f13/wattz2kext = 15,
 				/obj/effect/spawner/bundle/f13/plasmapistol = 15,
 				/obj/effect/spawner/bundle/f13/ionrifle = 5
 				)
@@ -889,7 +888,6 @@
 	name = "mid-high tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/plasmapistol,
-				/obj/effect/spawner/bundle/f13/wattz2kext,
 				/obj/effect/spawner/bundle/f13/ionrifle,
 				/obj/effect/spawner/bundle/f13/aer14
 				)
@@ -1484,13 +1482,6 @@ obj/effect/spawner/bundle/f13/combat_rifle
 	name = "Wattz 2000 laser rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/energy/laser/wattz2k,
-				/obj/item/stock_parts/cell/ammo/mfc
-	)
-
-/obj/effect/spawner/bundle/f13/wattz2kext
-	name = "Wattz 2000 laser extended laser rifle and ammo spawner"
-	items = list(
-				/obj/item/gun/energy/laser/wattz2k/extended,
 				/obj/item/stock_parts/cell/ammo/mfc
 	)
 
@@ -2237,7 +2228,6 @@ obj/effect/spawner/bundle/f13/combat_rifle
 		/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
 		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
 		/obj/item/book/granter/crafting_recipe/blueprint/greasegun,
-		/obj/item/book/granter/crafting_recipe/blueprint/commando,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1carbine,
 	)
 /obj/effect/spawner/lootdrop/f13/blueprintMid
@@ -2245,7 +2235,6 @@ obj/effect/spawner/bundle/f13/combat_rifle
 	icon_state = "blueprint_loot"
 	lootcount = 1
 	loot = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/r82,
 		/obj/item/book/granter/crafting_recipe/blueprint/service,
 		/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
