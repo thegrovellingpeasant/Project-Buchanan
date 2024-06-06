@@ -14,6 +14,7 @@
 	exit_delay = 100
 	enter_delay = 100
 	equipsound = 'sound/mecha/powerloader_step.ogg'
+	move_resist = MOVE_FORCE_DEFAULT
 	var/max_weapons = 2
 	var/weapons_type = list() //Defines what kind of weapons the robot can equip
 	var/parameters = ""
