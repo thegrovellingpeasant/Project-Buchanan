@@ -874,3 +874,11 @@ By design, d1 is the smallest direction and d2 is the highest
 	var/list/cable_colors = GLOB.cable_colors
 	color = pick(cable_colors)
 
+//Reinforced Cable Coil, only will be used for the NCRCF Electric Fenses
+
+/obj/structure/cable/reinforced_cable
+	name = "reinforced power cable"
+	desc = "A flexible, superconducting insulated cable for heavy-duty power transfer. This one has been reinforced by NCR sappers and less vulnerable to external damage."
+
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
