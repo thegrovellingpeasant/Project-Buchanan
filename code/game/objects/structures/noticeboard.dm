@@ -2,7 +2,7 @@
 	name = "notice board"
 	desc = "A board for pinning important notices upon."
 	icon = 'icons/fallout/objects/furniture/stationary.dmi'
-	icon_state = "nboard00"
+	icon_state = "nboard0"
 	plane = WALL_PLANE
 	density = FALSE
 	anchored = TRUE
@@ -21,7 +21,7 @@
 		if(istype(I, /obj/item/paper))
 			I.forceMove(src)
 			notices++
-	icon_state = "nboard0[notices]"
+	icon_state = "[initial(icon_state)][notices]"
 
 //attaching papers!!
 /obj/structure/noticeboard/attackby(obj/item/O, mob/user, params)
@@ -33,7 +33,7 @@
 			if(!user.transferItemToLoc(O, src))
 				return
 			notices++
-			icon_state = "nboard0[notices]"
+			icon_state = "[initial(icon_state)][notices]"
 			to_chat(user, "<span class='notice'>You pin the [O] to the noticeboard.</span>")
 		else
 			to_chat(user, "<span class='notice'>The notice board is full</span>")
@@ -66,7 +66,7 @@
 			I.forceMove(usr.loc)
 			usr.put_in_hands(I)
 			notices--
-			icon_state = "nboard0[notices]"
+			icon_state = "[initial(icon_state)][notices]"
 
 	if(href_list["write"])
 		if((usr.stat || usr.restrained())) //For when a player is handcuffed while they have the notice window open
@@ -123,3 +123,9 @@
 /obj/structure/noticeboard/staff
 	name = "Staff Notice Board"
 	desc = "Important notices from the heads of staff."
+
+/obj/structure/noticeboard/letterbox
+	name = "apartment letterboxes"
+	desc = "A receptacle for mail."
+	icon_state = "letterbox0"
+	pixel_y = 32

@@ -141,7 +141,7 @@
 	name = "Cat's Paw"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "catspaw"
-	desc = "A brothel....on virgin street."
+	desc = "Once a good place to catch a venereal disease. Now, under NCR law, just a cheap hotel."
 
 /obj/structure/sign/reno/barsign/newrenoarms
 	name = "New Reno Arms"
@@ -197,6 +197,59 @@
 	icon_state = "renowok"
 	desc = "A place of noodles clearly..."
 
+/obj/structure/sign/reno/barsign/renovangraffs
+	name = "Atomic Blast"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "atomicblast"
+	desc = "The home of the Van Graffs. It smells faintly of smoke."
+
+/obj/structure/sign/reno/barsign/renobank
+	name = "Commonwealth Savings & Loans"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "bank"
+	desc = "The Southwest Commonwealth's most trusted bank. With its redundant security systems, maybe the vault is still intact?"
+
+/obj/structure/sign/reno/barsign/renocrop
+	name = "Mizpah Cropshare"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "mizpah"
+	desc = "New Reno's most idealistic community."
+
+/obj/structure/sign/reno/barsign/renoshare
+	name = "Mizpah Cropshare"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "cropshare"
+	desc = "New Reno's most idealistic community."
+
+/obj/structure/sign/reno/barsign/girlsgirlsgirls
+	name = "Girls Girls Girls"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "girlsgirlsgirls"
+	desc = "A very warm welcome to town."
+
+/obj/structure/sign/reno/barsign/booze
+	name = "Booze sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "booze"
+	desc = "The city known for its excess has all the booze you could ever need, steadfastly provided by the Wright family for generations."
+
+/obj/structure/sign/reno/barsign/slots
+	name = "Slots sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "slots"
+	desc = "New Reno, the original New Vegas. Enjoy gambling at the Shark Club 24/7."
+
+/obj/structure/sign/reno/barsign/subway
+	name = "Subway Map"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "subwayred"
+	desc = "A guide to the subway stations and routes in this part of Reno."
+
+/obj/structure/sign/reno/barsign/interstate80
+	name = "Interstate 80 roadsign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "Interstate80"
+	desc = "An old Interstate 80 sign, marking the city's placement on the famous road."
 
 //Code below is to define useless variables for datums. It errors without these
 

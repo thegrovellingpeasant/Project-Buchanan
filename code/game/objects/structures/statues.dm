@@ -263,6 +263,22 @@
 	anchored = TRUE
 	density = FALSE
 
+/obj/structure/statue/diamond/indestructible/artdecohead
+	name = "weathered statue"
+	desc = "Winged guardians watching over the airport."
+	icon = 'icons/obj/artdeco.dmi'
+	icon_state = "head"
+	anchored = TRUE
+	density = FALSE
+
+/obj/structure/statue/diamond/indestructible/artdecoatlas
+	name = "weathered statue"
+	desc = "Winged guardians watching over the airport."
+	icon = 'icons/obj/artdeco.dmi'
+	icon_state = "atlas"
+	anchored = TRUE
+	density = FALSE
+
 /obj/structure/statue/diamond/indestructible/oldworldstatue
 	name = "old world statue"
 	desc = "It is watching over you."

@@ -63,6 +63,8 @@
 				/obj/item/clothing/under/f13/housewifedress50s,
 				/obj/item/clothing/under/f13/relaxedwear,
 				/obj/item/clothing/under/f13/spring,
+				/obj/item/clothing/under/dress/sundress,
+				/obj/item/clothing/under/dress/sundress/white,
 				/obj/item/clothing/under/suit/tan,
 				/obj/item/clothing/under/suit/turtle/grey,
 				/obj/item/clothing/under/suit_jacket/checkered,
@@ -111,7 +113,13 @@
 				/obj/item/clothing/under/suit/tuxedo,
 				/obj/item/clothing/under/suit/black_really_really,
 				/obj/item/clothing/under/suit/black_really_really_alt_skirtalt,
-				/obj/item/clothing/under/misc/mailman
+				/obj/item/clothing/under/f13/sequin_dress,
+            	/obj/item/clothing/under/f13/collar_dress,
+				/obj/item/clothing/under/misc/mailman,
+				/obj/item/clothing/under/f13/hawaiian/red,
+				/obj/item/clothing/under/f13/hawaiian/blue,
+				/obj/item/clothing/under/f13/hawaiian/orange,
+				/obj/item/clothing/under/f13/hawaiian/pink
 				)
 
 /obj/effect/spawner/lootdrop/f13/armor/clothes/postwar
@@ -134,6 +142,7 @@
 				/obj/item/clothing/under/f13/marlowduds,
 				/obj/item/clothing/under/f13/masonduds,
 				/obj/item/clothing/under/f13/mercc,
+				/obj/item/clothing/under/f13/female/merccharm,
 				/obj/item/clothing/under/f13/merca,
 				/obj/item/clothing/under/f13/petrochico,
 				/obj/item/clothing/under/f13/ncrcf,
@@ -141,6 +150,7 @@
 				/obj/item/clothing/under/f13/raider_leather,
 				/obj/item/clothing/under/f13/raiderharness,
 				/obj/item/clothing/under/f13/raiderrags,
+				/obj/item/clothing/under/f13/bodyguard,
 				/obj/item/clothing/under/f13/rustic,
 				/obj/item/clothing/under/f13/settler,
 				/obj/item/clothing/under/f13/roving,
@@ -148,7 +158,9 @@
 				/obj/item/clothing/under/f13/merchant,
 				/obj/item/clothing/under/f13/female/mercadv,
 				/obj/item/clothing/under/f13/female/rustwalkers,
-				/obj/item/clothing/under/f13/female/flapper
+				/obj/item/clothing/under/f13/female/doctor,
+				/obj/item/clothing/under/f13/female/flapper,
+				/obj/item/clothing/suit/armor/f13/mordinos/grey_trench_coat
 				)
 				
 /obj/effect/spawner/bundle/f13/worker
