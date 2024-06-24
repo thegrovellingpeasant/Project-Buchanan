@@ -428,7 +428,7 @@
 	icon_dead = "raider_ghoul_dead"
 	icon_gib = "syndicate_gib"
 	ranged_cooldown_time = 200
-	projectiletype = /obj/item/projectile/bullet/c4570/explosive
+	projectiletype = /obj/item/projectile/bullet/c4570
 	projectilesound = 'sound/f13weapons/brushgunfire.ogg'
 	loot = list(/obj/item/ammo_box/magazine/internal/shot/tube4570)
 
