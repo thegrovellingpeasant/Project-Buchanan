@@ -1209,6 +1209,7 @@
 	M.apply_effect(2*REM/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
 	H.set_light(2, 15, LIGHT_COLOR_GREEN)
 	..()
+	
 /datum/reagent/radium/on_mob_delete(mob/living/carbon/M)
 	H.set_light(0)
 	..()
