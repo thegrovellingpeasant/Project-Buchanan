@@ -107,16 +107,20 @@
 #define RENO_PRISON_AMBIENCE list('sound/f13ambience/music/citadel.ogg', 'sound/f13ambience/music/highpool_prison.ogg',\
 	'sound/f13ambience/music/yesterday.ogg')
 
-#define RENO_NRPD_AMBIENCE list('sound/f13ambience/music/earthmen.ogg')
+#define RENO_NRPD_AMBIENCE list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
 
 #define RENO_VANGRAFF_AMBIENCE list('sound/f13ambience/music/equilibrium.ogg','sound/f13ambience/music/nonadmittance.ogg',\
 	'sound/f13ambience/music/trammel.ogg')
 
-#define RENO_WRIGHT_AMBIENCE list('sound/f13ambience/music/choo_choo.ogg')
+#define RENO_WRIGHT_AMBIENCE list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
 
-#define RENO_HOTEL_AMBIENCE list('sound/f13ambience/music/tower_of_terror.ogg')
+#define RENO_HOTEL_AMBIENCE list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
 
-#define SHARKCLUB_AMBIENCE list('sound/f13ambience/music/casino_1.ogg','sound/f13ambience/music/casino_2.ogg')
+#define SHARKCLUB_AMBIENCE list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
 
 #define YAKUZA_AMBIENCE list('sound/f13ambience/music/yakuzatrack_1.ogg')
 

@@ -308,7 +308,7 @@
 /obj/structure/nest/spawner/goose
 	name = "canada goose nest"
 	icon = 'icons/misc/Pit.dmi'
-	icon_state = "pit"
+	icon_state = "wasteland_pit"
 	plane = FLOOR_PLANE
 	max_mobs = 2
 	spawnsound = 'sound/creatures/goose3.ogg'
@@ -591,6 +591,12 @@
 	icon_state = "FireAnt"
 	mob_types = list(/mob/living/simple_animal/hostile/fireant = 5)
 
+/obj/structure/nest/mob/queenant
+	name = "ant queen"
+	icon = 'icons/fallout/mobs/animals/antqueen.dmi'
+	icon_state = "antqueen"
+	mob_types = list(/mob/living/simple_animal/hostile/giantantqueen = 5)
+
 /obj/structure/nest/mob/wanamingo
 	name = "wanamingo"
 	icon = 'icons/fallout/mobs/monsters/wanamingo.dmi'
@@ -659,6 +665,12 @@
 	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "radstag"
 	mob_types = list(/mob/living/simple_animal/radstag = 5)
+
+/obj/structure/nest/mob/cat
+	name = "cat"
+	icon = 'icons/mob/pets.dmi'
+	icon_state = "cat"
+	mob_types = list(/mob/living/simple_animal/pet/cat = 5)
 
 /obj/structure/nest/mob/dog
 	name = "mangy dog"
@@ -773,6 +785,12 @@
 	name = "supermutant"
 	mob_types = list(/mob/living/simple_animal/hostile/supermutant/nightkin/mutcastle = 5)
 
+/obj/structure/nest/mob/snake
+	name = "snake"
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "snake"
+	mob_types = list(/mob/living/simple_animal/hostile/retaliate/poison/snake = 5)
+
 /obj/structure/nest/mob/nightstalker
 	name = "nightstalker"
 	icon = 'icons/fallout/mobs/animals/nightstalker.dmi'
@@ -818,6 +836,12 @@
 	icon_state = "handy"
 	mob_types = list(/mob/living/simple_animal/hostile/handy = 5)
 
+/obj/structure/nest/mob/privategutsy
+	name = "pvt. gutsy"
+	icon = 'icons/fallout/mobs/robots/wasterobots.dmi'
+	icon_state = "pvtgutsy"
+	mob_types = list(/mob/living/simple_animal/hostile/handy/gutsy = 5)
+
 /obj/structure/nest/mob/protectron
 	name = "protectron"
 	icon = 'icons/fallout/mobs/robots/protectrons.dmi'
@@ -839,8 +863,14 @@
 /obj/structure/nest/mob/eyebot
 	name = "eyebot"
 	icon = 'icons/fallout/mobs/robots/eyebots.dmi'
-	icon_state = "eyebot"
+	icon_state = "sentrybot"
 	mob_types = list(/mob/living/simple_animal/hostile/eyebot = 5)
+
+/obj/structure/nest/mob/sentrybot
+	name = "sentrybot"
+	icon = 'icons/fallout/mobs/robots/wasterobots.dmi'
+	icon_state = "sentrybot"
+	mob_types = list(/mob/living/simple_animal/hostile/securitron/sentrybot = 5)
 
 /obj/structure/nest/mob/raider
 	name = "Raider"
