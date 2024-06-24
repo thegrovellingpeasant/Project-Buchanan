@@ -30,7 +30,7 @@
 		/datum/matchmaking_pref/outlaw = list(
 			/datum/job/wendover,
 			/datum/job/wasteland/f13wastelander,
-		),	
+		),
 		/datum/matchmaking_pref/bounty_hunter = list(
 			/datum/job/wendover,
 			/datum/job/wasteland/f13wastelander,
@@ -77,9 +77,9 @@
 	minimal_access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 
 	loadout_options = list(
-		/datum/outfit/loadout/brawny,	// 
-		/datum/outfit/loadout/brainy,	// 
-		/datum/outfit/loadout/brazen,	// 
+		/datum/outfit/loadout/brawny,	//
+		/datum/outfit/loadout/brainy,	//
+		/datum/outfit/loadout/brazen,	//
 		)
 
 /datum/outfit/job/eighties/f13warboss/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -94,7 +94,7 @@
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-/datum/outfit/job/eighties/f13warboss	
+/datum/outfit/job/eighties/f13warboss
 	name = "Warboss"
 	jobtype = /datum/job/eighties/f13warboss
 
@@ -180,8 +180,8 @@
 	minimal_access = list(ACCESS_80S, ACCESS_80SB, ACCESS_80SR, ACCESS_CHANGE_IDS)
 
 	loadout_options = list(
-		/datum/outfit/loadout/punk,	// 
-		/datum/outfit/loadout/ringleader,	// 
+		/datum/outfit/loadout/punk,	//
+		/datum/outfit/loadout/ringleader,	//
 		/*/datum/outfit/loadout/tbd,	*/ //
 		)
 
@@ -192,7 +192,7 @@
 	if(H.gender == FEMALE)
 		uniform = /obj/item/clothing/under/f13/female/eighties
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/eighties 
+		uniform = /obj/item/clothing/under/f13/eighties
 
 
 /datum/outfit/job/eighties/f13arenamaster/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -309,7 +309,7 @@
 	if(H.gender == FEMALE)
 		uniform = /obj/item/clothing/under/f13/female/eighties
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/eighties 
+		uniform = /obj/item/clothing/under/f13/eighties
 
 
 /datum/outfit/job/eighties/f13laymechanic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -394,7 +394,7 @@
 	if(H.gender == FEMALE)
 		uniform = /obj/item/clothing/under/f13/female/eighties
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/eighties 
+		uniform = /obj/item/clothing/under/f13/eighties
 
 /datum/outfit/job/eighties/f13blackfinger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -482,7 +482,7 @@
 		uniform = /obj/item/clothing/under/f13/female/eighties
 	if(H.gender == MALE)
 		uniform = /obj/item/clothing/under/f13/eighties
-	
+
 	suit = pick(
 		/obj/item/clothing/suit/f13/tribal/heavy/eighties, \
 		/obj/item/clothing/suit/f13/tribal/eighties, \

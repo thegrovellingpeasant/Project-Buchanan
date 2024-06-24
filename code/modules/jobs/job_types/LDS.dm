@@ -88,7 +88,7 @@ Mayor
 	satchel = /obj/item/storage/backpack/satchel/leather
 	accessory = /obj/item/clothing/accessory/waistcoat
 	gloves = /obj/item/pda/chaplain
-	shoes = /obj/item/clothing/shoes/laceup 
+	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/storage/belt/holster
 	uniform = /obj/item/clothing/under/rank/civilian/lawyer/black/alt
 	suit = /obj/item/clothing/suit/toggle/lawyer/black
@@ -173,7 +173,7 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 /datum/outfit/job/latterdaysaints/f13missionary
 	name = "Missionary"
 	jobtype = /datum/job/latterdaysaints/f13missionary
-	
+
 	id = /obj/item/card/id/newcanaanite
 	belt = /obj/item/storage/belt/mining/primitive
 	accessory = /obj/item/clothing/accessory/talisman
