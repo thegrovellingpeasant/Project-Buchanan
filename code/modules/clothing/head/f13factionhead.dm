@@ -1444,8 +1444,8 @@ obj/item/clothing/head/f13/army/beret
 /obj/item/clothing/head/helmet/f13/wrights/tophat
 	name = "black tophat"
 	desc = "The family top hat of the Wrights."
-	icon_state = "wright_tophat"
-	item_state = "wright_tophat"
+	icon_state = "tophat"
+	item_state = "that"
 
 /obj/item/clothing/head/helmet/f13/wrights/boater
 	name = "boater hat"
