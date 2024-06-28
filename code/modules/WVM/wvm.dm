@@ -1282,6 +1282,98 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Metal",						/obj/item/stack/sheet/metal/fifty,									25)
 		)
 
+/obj/machinery/mineral/wasteland_vendor/reno/prison_recreation
+	name = "prison commissary - stimulants"
+	icon_state = "generic_idle"
+	prize_list = list(
+		//cigarettes
+		new /datum/data/wasteland_equipment("Cheap Lighter",				/obj/item/lighter/greyscale,										25),
+		new /datum/data/wasteland_equipment("Bigboss",						/obj/item/storage/fancy/cigarettes/cigpack_bigboss,					15),
+		new /datum/data/wasteland_equipment("Greytort",						/obj/item/storage/fancy/cigarettes/cigpack_greytort,				15),
+		new /datum/data/wasteland_equipment("Pyramid",						/obj/item/storage/fancy/cigarettes/cigpack_pyramid,					15),
+		// chems
+		new /datum/data/wasteland_equipment("Jet",							/obj/item/reagent_containers/pill/patch/jet,						45),
+		new /datum/data/wasteland_equipment("Psycho",						/obj/item/reagent_containers/hypospray/medipen/psycho,				45),
+		new /datum/data/wasteland_equipment("Turbo",						/obj/item/reagent_containers/pill/patch/turbo,						30),
+		new /datum/data/wasteland_equipment("Mentats",						/obj/item/storage/pill_bottle/chem_tin/mentats,						30),
+		new /datum/data/wasteland_equipment("Stimpak",						/obj/item/reagent_containers/hypospray/medipen/stimpak,				150)
+		)
+	highpop_list = 	list(
+		//cigarettes
+		new /datum/data/wasteland_equipment("Cheap Lighter",				/obj/item/lighter/greyscale,										25),
+		new /datum/data/wasteland_equipment("Bigboss",						/obj/item/storage/fancy/cigarettes/cigpack_bigboss,					15),
+		new /datum/data/wasteland_equipment("Greytort",						/obj/item/storage/fancy/cigarettes/cigpack_greytort,				15),
+		new /datum/data/wasteland_equipment("Pyramid",						/obj/item/storage/fancy/cigarettes/cigpack_pyramid,					15),
+		// chems
+		new /datum/data/wasteland_equipment("Jet",							/obj/item/reagent_containers/pill/patch/jet,						45),
+		new /datum/data/wasteland_equipment("Psycho",						/obj/item/reagent_containers/hypospray/medipen/psycho,				45),
+		new /datum/data/wasteland_equipment("Turbo",						/obj/item/reagent_containers/pill/patch/turbo,						30),
+		new /datum/data/wasteland_equipment("Mentats",						/obj/item/storage/pill_bottle/chem_tin/mentats,						30),
+		new /datum/data/wasteland_equipment("Stimpak",						/obj/item/reagent_containers/hypospray/medipen/stimpak,				150)
+		)
+
+/obj/machinery/mineral/wasteland_vendor/reno/prison_expedition
+	name = "prison commissary - expeditions"
+	icon_state = "generic_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Flashlight",					/obj/item/flashlight,												20),
+		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										65),
+		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							45),
+		new /datum/data/wasteland_equipment("Hard Hat",						/obj/item/clothing/head/hardhat,									35),
+		new /datum/data/wasteland_equipment("Explorer satchel",				/obj/item/storage/backpack/satchel/explorer,						35)
+	)
+	highpop_list = 	list(
+		new /datum/data/wasteland_equipment("Flashlight",					/obj/item/flashlight,												20),
+		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										65),
+		new /datum/data/wasteland_equipment("Survival Knife",				/obj/item/melee/onehanded/knife/survival, 							45),
+		new /datum/data/wasteland_equipment("Hard Hat",						/obj/item/clothing/head/hardhat,									35),
+		new /datum/data/wasteland_equipment("Explorer Satchel",				/obj/item/storage/backpack/satchel/explorer,						35)
+	)
+
+/obj/machinery/mineral/wasteland_vendor/reno/prison_firearms
+	name = "prison commissary - firearms"
+	icon_state = "generic_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Zipgun",						/obj/item/gun/ballistic/automatic/hobo/zipgun,						40),
+		new /datum/data/wasteland_equipment(".38 Detective Special",		/obj/item/gun/ballistic/revolver/detective,							65),
+		new /datum/data/wasteland_equipment(".22 pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					50),
+		new /datum/data/wasteland_equipment("lr22",							/obj/item/ammo_box/magazine/m22,									20),
+		new /datum/data/wasteland_equipment("38",							/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment("Box of .308 Win.",				/obj/item/ammo_box/a308box,											100)
+	)
+	highpop_list = list(
+		new /datum/data/wasteland_equipment("Zipgun",						/obj/item/gun/ballistic/automatic/hobo/zipgun,						40),
+		new /datum/data/wasteland_equipment(".38 Detective Special",		/obj/item/gun/ballistic/revolver/detective,							65),
+		new /datum/data/wasteland_equipment(".22 pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					55),
+		new /datum/data/wasteland_equipment("lr22",							/obj/item/ammo_box/magazine/m22,									20),
+		new /datum/data/wasteland_equipment("38",							/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment("Box of .308 Win.",				/obj/item/ammo_box/a308box,											100)
+	)
+
+/obj/machinery/mineral/wasteland_vendor/reno/prison_accessories
+	name = "prison commissary - accessories"
+	icon_state = "generic_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Red Scarf",					/obj/item/clothing/neck/scarf/red,									5),
+		new /datum/data/wasteland_equipment("Dark-blue Scarf", 				/obj/item/clothing/neck/scarf/darkblue,								5),
+		new /datum/data/wasteland_equipment("Red Armband",					/obj/item/clothing/accessory/armband,								5),
+		new /datum/data/wasteland_equipment("Blue Armband",					/obj/item/clothing/accessory/armband/blue,							5),
+		new /datum/data/wasteland_equipment("Gold Necklace",				/obj/item/clothing/neck/necklace/dope,								35),
+		new /datum/data/wasteland_equipment("Fedora",						/obj/item/clothing/head/fedora,										10),
+		new /datum/data/wasteland_equipment("French Beret",					/obj/item/clothing/head/frenchberet,								10),
+		new /datum/data/wasteland_equipment("Cowboy Hat",					/obj/item/clothing/head/cowboyhat,									10)
+	)
+	highpop_list = list(
+		new /datum/data/wasteland_equipment("Red Scarf",					/obj/item/clothing/neck/scarf/red,									5),
+		new /datum/data/wasteland_equipment("Dark-blue Scarf", 				/obj/item/clothing/neck/scarf/darkblue,								5),
+		new /datum/data/wasteland_equipment("Red Armband",					/obj/item/clothing/accessory/armband,								5),
+		new /datum/data/wasteland_equipment("Blue Armband",					/obj/item/clothing/accessory/armband/blue,							5),
+		new /datum/data/wasteland_equipment("Gold Necklace",				/obj/item/clothing/neck/necklace/dope,								35),
+		new /datum/data/wasteland_equipment("Fedora",						/obj/item/clothing/head/fedora,										10),
+		new /datum/data/wasteland_equipment("French Beret",					/obj/item/clothing/head/frenchberet,								10),
+		new /datum/data/wasteland_equipment("Cowboy Hat",					/obj/item/clothing/head/cowboyhat,									10)
+	)
+
 /datum/data/wasteland_equipment
 	var/equipment_name = "generic"
 	var/equipment_path = null

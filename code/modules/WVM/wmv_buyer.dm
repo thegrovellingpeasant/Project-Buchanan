@@ -335,3 +335,15 @@ Fence
 	popup.set_content(dat)
 	popup.open()
 	return
+
+/obj/machinery/mineral/wasteland_trader/renobuyer
+	name =  "Contraband Buyer"
+	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go to the NCRCF Commissary."
+	goods_list = list(/obj/item/gun/ballistic/automatic/hobo/zipgun = 5,
+						/obj/item/lighter/greyscale = 15,
+						/obj/item/storage/fancy/cigarettes/cigpack_bigboss = 10,
+						/obj/item/storage/fancy/cigarettes/cigpack_greytort = 10,
+						/obj/item/storage/fancy/cigarettes/cigpack_pyramid = 15,
+						/obj/item/reagent_containers/pill/patch/jet = 40,
+						/obj/item/reagent_containers/hypospray/medipen/psycho = 40,
+						)
