@@ -1318,14 +1318,15 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Flashlight",					/obj/item/flashlight,												20),
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										65),
-		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							45),
+		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							35),
 		new /datum/data/wasteland_equipment("Hard Hat",						/obj/item/clothing/head/hardhat,									35),
+		new /datum/data/wasteland_equipment("Flak jacket",					/obj/item/clothing/suit/flakjack,									45),
 		new /datum/data/wasteland_equipment("Explorer satchel",				/obj/item/storage/backpack/satchel/explorer,						35)
 	)
 	highpop_list = 	list(
 		new /datum/data/wasteland_equipment("Flashlight",					/obj/item/flashlight,												20),
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										65),
-		new /datum/data/wasteland_equipment("Survival Knife",				/obj/item/melee/onehanded/knife/survival, 							45),
+		new /datum/data/wasteland_equipment("Survival Knife",				/obj/item/melee/onehanded/knife/survival, 							35),
 		new /datum/data/wasteland_equipment("Hard Hat",						/obj/item/clothing/head/hardhat,									35),
 		new /datum/data/wasteland_equipment("Explorer Satchel",				/obj/item/storage/backpack/satchel/explorer,						35)
 	)
@@ -1337,16 +1338,23 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Zipgun",						/obj/item/gun/ballistic/automatic/hobo/zipgun,						40),
 		new /datum/data/wasteland_equipment(".38 Detective Special",		/obj/item/gun/ballistic/revolver/detective,							65),
 		new /datum/data/wasteland_equipment(".22 pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					50),
-		new /datum/data/wasteland_equipment("lr22",							/obj/item/ammo_box/magazine/m22,									20),
-		new /datum/data/wasteland_equipment("38",							/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment("9mm Pistol",					/obj/item/gun/ballistic/automatic/pistol/ninemil,					115),
+		new /datum/data/wasteland_equipment("M1911",						/obj/item/gun/ballistic/automatic/pistol/m1911,						135),
+		new /datum/data/wasteland_equipment(".22lr ammo",					/obj/item/ammo_box/magazine/m22,									20),
+		new /datum/data/wasteland_equipment(".38 ammo",						/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment(".45 ACP ammo",					/obj/item/ammo_box/magazine/m45, 									55),
 		new /datum/data/wasteland_equipment("Box of .308 Win.",				/obj/item/ammo_box/a308box,											100)
 	)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Zipgun",						/obj/item/gun/ballistic/automatic/hobo/zipgun,						40),
 		new /datum/data/wasteland_equipment(".38 Detective Special",		/obj/item/gun/ballistic/revolver/detective,							65),
-		new /datum/data/wasteland_equipment(".22 pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					55),
-		new /datum/data/wasteland_equipment("lr22",							/obj/item/ammo_box/magazine/m22,									20),
-		new /datum/data/wasteland_equipment("38",							/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment(".22 pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					50),
+		new /datum/data/wasteland_equipment("9mm Pistol",					/obj/item/gun/ballistic/automatic/pistol/ninemil,					115),
+		new /datum/data/wasteland_equipment("M1911",						/obj/item/gun/ballistic/automatic/pistol/m1911,						135),
+		new /datum/data/wasteland_equipment(".22lr ammo",					/obj/item/ammo_box/magazine/m22,									20),
+		new /datum/data/wasteland_equipment(".38 ammo",						/obj/item/ammo_box/c38,												20),
+		new /datum/data/wasteland_equipment("9mm Pistol magazine",			/obj/item/ammo_box/magazine/m9mmds,									55),
+		new /datum/data/wasteland_equipment(".45 ACP ammo",					/obj/item/ammo_box/magazine/m45, 									65),
 		new /datum/data/wasteland_equipment("Box of .308 Win.",				/obj/item/ammo_box/a308box,											100)
 	)
 
@@ -1356,8 +1364,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Red Scarf",					/obj/item/clothing/neck/scarf/red,									5),
 		new /datum/data/wasteland_equipment("Dark-blue Scarf", 				/obj/item/clothing/neck/scarf/darkblue,								5),
-		new /datum/data/wasteland_equipment("Red Armband",					/obj/item/clothing/accessory/armband,								5),
-		new /datum/data/wasteland_equipment("Blue Armband",					/obj/item/clothing/accessory/armband/blue,							5),
+		new /datum/data/wasteland_equipment("Green Scarf",					/obj/item/clothing/neck/scarf/green,								5),
+		new /datum/data/wasteland_equipment("Black Armband",				/obj/item/clothing/accessory/armband/black,							5),
 		new /datum/data/wasteland_equipment("Gold Necklace",				/obj/item/clothing/neck/necklace/dope,								35),
 		new /datum/data/wasteland_equipment("Fedora",						/obj/item/clothing/head/fedora,										10),
 		new /datum/data/wasteland_equipment("French Beret",					/obj/item/clothing/head/frenchberet,								10),
@@ -1366,8 +1374,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Red Scarf",					/obj/item/clothing/neck/scarf/red,									5),
 		new /datum/data/wasteland_equipment("Dark-blue Scarf", 				/obj/item/clothing/neck/scarf/darkblue,								5),
-		new /datum/data/wasteland_equipment("Red Armband",					/obj/item/clothing/accessory/armband,								5),
-		new /datum/data/wasteland_equipment("Blue Armband",					/obj/item/clothing/accessory/armband/blue,							5),
+		new /datum/data/wasteland_equipment("Green Scarf",					/obj/item/clothing/neck/scarf/green,								5),
+		new /datum/data/wasteland_equipment("Black Armband",				/obj/item/clothing/accessory/armband/black,							5),
 		new /datum/data/wasteland_equipment("Gold Necklace",				/obj/item/clothing/neck/necklace/dope,								35),
 		new /datum/data/wasteland_equipment("Fedora",						/obj/item/clothing/head/fedora,										10),
 		new /datum/data/wasteland_equipment("French Beret",					/obj/item/clothing/head/frenchberet,								10),
