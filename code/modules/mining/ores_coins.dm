@@ -128,7 +128,11 @@
 	amount = 5
 
 GLOBAL_LIST_INIT(sand_recipes, list(\
-	new/datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50),\
+	new/datum/stack_recipe("sandstone", /obj/item/stack/sheet/mineral/sandstone, 1, 1, 50),
+	new/datum/stack_recipe("black brick", /obj/item/stack/sheet/mineral/blackbrick, 1, 1, 50),
+	new/datum/stack_recipe("red brick", /obj/item/stack/sheet/mineral/redbrick, 1, 1, 50),
+	new/datum/stack_recipe("blue brick", /obj/item/stack/sheet/mineral/bluebrick, 1, 1, 50),
+	new/datum/stack_recipe("white brick", /obj/item/stack/sheet/mineral/whitebrick, 1, 1, 50),
 	))
 
 /obj/item/stack/ore/glass/get_main_recipes()

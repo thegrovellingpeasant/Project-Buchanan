@@ -85,6 +85,21 @@
 	if(visualsOnly)
 		return
 
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Bishop")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Bishop"
+	else
+		family_name[family_name.len] = "Bishop"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
+
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
@@ -150,6 +165,21 @@
 	..()
 	if(visualsOnly)
 		return
+
+	var/list/family_name = splittext(H.real_name, " ")
+	if(family_name[family_name.len] == "Bishop")
+		return
+	if(family_name.len == 1)
+		H.real_name += " Bishop"
+	else
+		family_name[family_name.len] = "Bishop"
+		var/new_name = jointext(family_name, " ")
+		H.real_name = new_name
+	H.name = H.real_name
+	if(H.wear_id)
+		var/obj/item/card/id/dogtag/L = H.wear_id
+		L.registered_name = H.name
+		L.update_label()
 
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
