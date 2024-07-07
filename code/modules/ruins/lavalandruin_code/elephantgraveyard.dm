@@ -276,3 +276,36 @@
 	name = "important looking Note"
 	desc = "This note is well written, and seems to have been put here so you'd find it."
 	info = "If you find this... you don't need to know who I am.<BR><BR>You need to leave this place. I dunno what shit they did to me out here, but I don't think I'm going to be making it out of here.<BR><BR>This place... it wears down your psyche. The other researchers out here laughed it off but... They were the first to go.<BR><BR>One by one they started turning on each other. The more they found out, the more they started fighting and arguing...<BR>As I speak now, I had to... I wound up having to put most of my men down. I know what I had to do, and I know there's no way left for me to live with myself.<BR> If anyone ever finds this, just don't touch the graves.<BR><BR>DO NOT. TOUCH. THE GRAVES. Don't be a dumbass, like we all were."
+
+
+/obj/structure/closet/crate/arc
+	name = "Arc of the Convenent"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchorable = FALSE
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = crowbar
+	var/shock_per_touch = 0
+	var/shock_type = /datum/chemical_reaction/reagent_explosion/teslium_lightning
+
+/obj/structure/closet/crate/grave/arc/tool_interact(obj/item/S, mob/living/carbon/user)
+	..()
+	new /obj/effect/decal/remains/human/grave(src)
+	switch(rand(1,3))
+		if(1)
+			//Instrinct Resistance
+			to_chat(user, "<span class='notice'>You feel blessed.</span>")
+			S.brutemod *= 1
+			S.burnmod *= 1
+			S.coldmod *= 1
+		if(2)
+			new /mob/living/simple_animal/hostile/megafauna/watcher
+		if(3)
+			if(. && isliving(target))
+				var/mob/living/L = target
+				if(L.reagents && !shock_per_touch == 0)
+					L.reagents.add_reagent(shock_type, shock_per_touch)
+		else
+			return

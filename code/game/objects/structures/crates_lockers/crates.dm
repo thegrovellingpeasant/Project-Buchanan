@@ -278,3 +278,4 @@
 /obj/structure/closet/crate/safe
 	name = "safe"
 	icon_state = "safe"
+
