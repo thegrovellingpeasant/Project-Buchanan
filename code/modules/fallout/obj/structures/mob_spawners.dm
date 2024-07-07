@@ -597,6 +597,18 @@
 	icon_state = "antqueen"
 	mob_types = list(/mob/living/simple_animal/hostile/giantantqueen = 5)
 
+/obj/structure/nest/mob/aphid
+	name = "aphid"
+	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
+	icon_state = "gutlunch"
+	mob_types = list(/mob/living/simple_animal/hostile/asteroid/gutlunch/gubbuck = 5)
+
+/obj/structure/nest/mob/aphid/hen
+	name = "aphid"
+	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
+	icon_state = "gutlunch"
+	mob_types = list(/mob/living/simple_animal/hostile/asteroid/gutlunch/guthen = 5)
+
 /obj/structure/nest/mob/wanamingo
 	name = "wanamingo"
 	icon = 'icons/fallout/mobs/monsters/wanamingo.dmi'
@@ -863,7 +875,7 @@
 /obj/structure/nest/mob/eyebot
 	name = "eyebot"
 	icon = 'icons/fallout/mobs/robots/eyebots.dmi'
-	icon_state = "sentrybot"
+	icon_state = "eyebot"
 	mob_types = list(/mob/living/simple_animal/hostile/eyebot = 5)
 
 /obj/structure/nest/mob/sentrybot
@@ -925,6 +937,36 @@
 	icon = 'icons/fallout/mobs/humans/raider.dmi'
 	icon_state = "tribal_raider"
 	mob_types = list(/mob/living/simple_animal/hostile/raider/tribal = 5)
+
+/obj/structure/nest/mob/deserter
+	name = "Deserter"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "trooper"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/trooper = 5)
+
+/obj/structure/nest/mob/deserter/shotgun
+	name = "Deserter"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "trooper2"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/trooper2 = 5)
+
+/obj/structure/nest/mob/deserter/flamer
+	name = "Deserter"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "trooper3"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/trooper3 = 5)
+
+/obj/structure/nest/mob/deserter/powerarmor
+	name = "Deserter"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "heavytrooper"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/heavy_trooper = 5)
+
+/obj/structure/nest/mob/deserter/lieutenant
+	name = "Deserter"
+	icon = 'icons/fallout/mobs/humans/raider.dmi'
+	icon_state = "lieutenant"
+	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/lieutenant = 5)
 
 //Event Nests
 /obj/structure/nest/zombieghoul
