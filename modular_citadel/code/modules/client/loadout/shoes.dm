@@ -77,6 +77,11 @@
 	path = /obj/item/clothing/shoes/f13/highheels
 	cost = 2
 
+/datum/gear/shoes/brownshoes
+	name = "leather dress shoes"
+	path = /obj/item/clothing/shoes/f13/brownie
+	cost = 2
+
 /datum/gear/shoes/cowboy
 	name = "cowboy boots"
 	path = /obj/item/clothing/shoes/f13/cowboy

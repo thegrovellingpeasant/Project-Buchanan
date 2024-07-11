@@ -172,6 +172,30 @@
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
 	)
 
+/obj/item/clothing/suit/toggle/armor/f13viper_jacket
+	name = "viper denim vest"
+	desc = "Don't get too close or you might get bit, Vipers Rule!"
+	icon_state = "viper_jacket"
+	item_state = "viper_jacket"
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
+	slowdown = 0.05
+
+/obj/item/clothing/suit/toggle/armor/f13patriot_jacket
+	name = "denim vest"
+	desc = "Faded blues and a flag that wont stop flying, this jacket is for a real patriot."
+	icon_state = "rockflageagle_jacket"
+	item_state = "rockflageagle_jacket"
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
+	slowdown = 0.05
+
+/obj/item/clothing/suit/toggle/armor/f13sasquatch_jacket
+	name = "bigfoot denim vest"
+	desc = "Only mentioned in passing and unconfirmed sightings, this is truly a rare find."
+	icon_state = "sasquatch_jacket"
+	item_state = "sasquatch_jacket"
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
+	slowdown = 0.05
+
 /obj/item/clothing/suit/hooded/outcast
 	name = "patched heavy leather cloak"
 	desc = "A robust cloak made from layered gecko skin patched with various bits of leather from dogs and other animals, able to absorb more force than one would expect from leather."

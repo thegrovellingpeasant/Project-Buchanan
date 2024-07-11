@@ -190,3 +190,27 @@ Art, moral support and vigilant yesmaning by comrade-dagmar
 
 Thanks to CoffeeKat, Penelope Haze, BigDaddySanta and others for code/tweaks/support
 Thanks to Cookyznmlk, The Clunt and Gary (garrrry) for feedback and ideas
+
+
+
+
+2024 Update (New Reno Mapping Team)
+
+
+Special thanks to...
+
+
+Pestarzt for tireless contributions in all fields and the original Reno map
+Gary for an abundance of sprites, a lot of map additions and the beautiful 3d map
+Skubblers for his world class lobby art, neon signs and other sprites
+
+
+The Coding Team: IJustLoveBeingAnOwl, FulminatingGold, Tron117
+Who between them made the traitor code, legal system, prison code and robotics system work
+
+The Dungeon Team: Redtourch, BibiClem
+Contributors behind many away missions, randomized NCRCF mining zones, and Reno sewer spots
+
+
+RegularJoe for letting us piggyback off of DeadSpace13's server for testing for months on end
+Cookyznmlk89, TheCLUNT, ChopChop, Oddherring and Ozzy for various other contributions, ideas and feedback 

@@ -251,6 +251,11 @@
 	path = /obj/item/clothing/under/suit/tuxedo
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
 
+/datum/gear/uniform/hawaiian
+	name = "red hawaiian outfit"
+	path = /obj/item/clothing/under/f13/hawaiian/red
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_SUITS
+
 //dresses
 
 /datum/gear/uniform/dress
@@ -286,6 +291,12 @@
 /datum/gear/uniform/dress/blue
 	name = "blue dress"
 	path = /obj/item/clothing/under/f13/bluedress
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
+	cost = 2
+
+/datum/gear/uniform/dress/striped
+	name = "striped dress"
+	path = /obj/item/clothing/under/stripeddress
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
 	cost = 2
 
@@ -614,6 +625,14 @@
 /datum/gear/uniform/dress/corset
 	name = "corset"
 	path = /obj/item/clothing/under/dress/corset
+
+/datum/gear/uniform/dress/corset
+	name = "sequin dress"
+	path = /obj/item/clothing/under/f13/sequin_dress
+
+/datum/gear/uniform/dress/corset
+	name = "collar dress"
+	path = /obj/item/clothing/under/f13/collar_dress
 
 /datum/gear/uniform/bathrobe
 	name = "bathrobe"
@@ -1102,20 +1121,32 @@
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
 
+/datum/gear/uniform/wasteland/mercharm/female
+	name = "Merc charmer outfit"
+	path = /obj/item/clothing/under/f13/female/merccharm
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
+
 /datum/gear/uniform/wasteland/doctor
 	name = "Doctor fatigues"
 	path = /obj/item/clothing/under/f13/doctor
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
 
+/datum/gear/uniform/wasteland/doctor/female
+	name = "Female doctor fatigues"
+	path = /obj/item/clothing/under/f13/female/doctor
+	cost = 1
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
+
 /datum/gear/uniform/wasteland/brahminskin
-	name = "brahmin skin outfit"
+	name = "Brahmin skin outfit"
 	path = /obj/item/clothing/under/f13/brahminm
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND
 
 /datum/gear/uniform/wasteland/brahminskin/female
-	name = "female brahmin skin outfit"
+	name = "Female brahmin skin outfit"
 	path = /obj/item/clothing/under/f13/female/brahmin
 	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_WASTELAND

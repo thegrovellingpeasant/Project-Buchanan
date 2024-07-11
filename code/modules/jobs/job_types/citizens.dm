@@ -265,8 +265,6 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 
 /datum/job/citizens/f13convict
-
-	title = "Convict"
 	title = "Convict"
 	flag = F13CONVICT
 	total_positions = -1

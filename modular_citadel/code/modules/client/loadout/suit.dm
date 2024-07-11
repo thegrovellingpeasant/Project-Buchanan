@@ -173,6 +173,24 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
+/datum/gear/suit/viperdenim
+	name = "viper denim vest"
+	path = /obj/item/clothing/suit/toggle/armor/f13viper_jacket
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+	cost = 2
+
+/datum/gear/suit/patriotdenim
+	name = "patriot denim vest"
+	path = /obj/item/clothing/suit/toggle/armor/f13patriot_jacket
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+	cost = 2
+
+/datum/gear/suit/bigfootdenim
+	name = "bigfoot denim vest"
+	path = /obj/item/clothing/suit/toggle/armor/f13sasquatch_jacket
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
+	cost = 2
+
 /datum/gear/suit/raincoat
 	name = "raincoat"
 	path = /obj/item/clothing/suit/raincoat
@@ -187,6 +205,12 @@
 
 /datum/gear/suit/brtrenchcoat
 	name = "brown trenchcoat"
+	path = /obj/item/clothing/suit/brtrenchcoat
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_COATS
+	cost = 2
+
+/datum/gear/suit/mordinocoat
+	name = "grey trench coat"
 	path = /obj/item/clothing/suit/brtrenchcoat
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_COATS
 	cost = 2

@@ -3,11 +3,20 @@
 	description = "A chemical used to induce a euphoric high derived from brahmin dung. Fast-acting, powerful, and highly addictive."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 20
-	addiction_threshold = 12.5
+	addiction_threshold = 1
 	ghoulfriendly = TRUE
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
 	..()
+	ADD_TRAIT(M, TRAIT_AUTO_CATCH_ITEM, "jet")
+	ADD_TRAIT(M, TRAIT_HARD_YARDS, "jet")
+	ADD_TRAIT(M, TRAIT_FREERUNNING, "jet")
+	ADD_TRAIT(M, TRAIT_NOHUNGER, "jet")
+	ADD_TRAIT(M, TRAIT_JOLLY, "jet")
+	ADD_TRAIT(M, TRAIT_TECHNOPHREAK, "jet")
+	ADD_TRAIT(M, TRAIT_QUICK_BUILD, "jet")
+	REMOVE_TRAIT(M, TRAIT_DEPRESSION, "jet")
+	REMOVE_TRAIT(M, TRAIT_HEAVY_SLEEPER, "jet")
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
 
@@ -20,6 +29,8 @@
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
+	M.hallucination += 50
+	M.playsound_local(M, 'sound/f13ambience/music/jet.ogg', 50)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
 		step(M, pick(GLOB.cardinals))
 	if(prob(12))
@@ -28,7 +39,7 @@
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD, FACTION_WRIGHTS)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
 				if(FACTION_LEGION)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
@@ -48,13 +59,17 @@
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
+	M.hallucination += 50
 	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
 
 /datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
 	M.Dizzy(5)
+	M.Jitter(5)
 	M.adjustToxLoss(1, 0)
+	M.hallucination += 25
+	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(prob(30))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -65,8 +80,14 @@
 			step(M, pick(GLOB.cardinals))
 	M.adjustToxLoss(3, 0)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
-	M.set_disgust(60)
+	M.set_disgust(10)
 	M.Dizzy(10)
+	M.Jitter(25)
+	REMOVE_TRAIT(M, TRAIT_AUTO_CATCH_ITEM, "jet")
+	REMOVE_TRAIT(M, TRAIT_HARD_YARDS, "jet")
+	REMOVE_TRAIT(M, TRAIT_FREERUNNING, "jet")
+	REMOVE_TRAIT(M, TRAIT_JOLLY, "jet")
+	REMOVE_TRAIT(M, TRAIT_TECHNOPHREAK, "jet")
 	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -76,9 +97,14 @@
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
 	M.adjustToxLoss(5, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 15)
+	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 15)
 	M.set_disgust(100)
 	M.Dizzy(15)
+	M.Jitter(200)
+	ADD_TRAIT(M, TRAIT_DEPRESSION, "jet")
+	ADD_TRAIT(M, TRAIT_HEAVY_SLEEPER, "jet")
+	M.playsound_local(M, 'sound/health/slowbeat.ogg', 50)
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -90,16 +116,29 @@
 	reagent_state = LIQUID
 	color = "#FAFAFA"
 	overdose_threshold = 14
-	addiction_threshold = 9
+	addiction_threshold = 1
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	ghoulfriendly = TRUE
 
 /datum/reagent/drug/turbo/on_mob_add(mob/M)
 	..()
-	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "turbo")
+	ADD_TRAIT(M, TRAIT_POOR_AIM, "turbo")
+	ADD_TRAIT(M, TRAIT_FREERUNNING, "turbo")
+	ADD_TRAIT(M, TRAIT_SPEEDY_STEP, "turbo")
+	ADD_TRAIT(M, TRAIT_SKITTISH, "turbo")
+	ADD_TRAIT(M, TRAIT_HARD_YARDS, "turbo")
+	REMOVE_TRAIT(M, TRAIT_DEPRESSION, "turbo")
+	REMOVE_TRAIT(M, TRAIT_HEAVY_SLEEPER, "turbo")
+	REMOVE_TRAIT(M, TRAIT_CLUMSY, "turbo")
+	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/withdrawal)
+	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
 
 /datum/reagent/drug/turbo/on_mob_delete(mob/M)
-	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
+	REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "turbo")
+	REMOVE_TRAIT(M, TRAIT_POOR_AIM, "turbo")
+	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
+	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/two)
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
@@ -113,7 +152,7 @@
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD, FACTION_WRIGHTS)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
 				if(FACTION_LEGION)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
@@ -136,6 +175,7 @@
 
 /datum/reagent/drug/turbo/addiction_act_stage1(mob/living/M)
 	M.Jitter(5)
+
 	if(prob(20))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -143,6 +183,10 @@
 /datum/reagent/drug/turbo/addiction_act_stage2(mob/living/M)
 	M.Jitter(10)
 	M.Dizzy(10)
+	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/two)
+	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/three)
+	REMOVE_TRAIT(M, TRAIT_FREERUNNING, "turbo")
+	M.playsound_local(M, 'sound/health/slowbeat.ogg', 50)
 	if(prob(30))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -153,6 +197,8 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(15)
 	M.Dizzy(15)
+	REMOVE_TRAIT(M, TRAIT_HARD_YARDS, "turbo")
+	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/three)
 	if(prob(40))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -161,9 +207,16 @@
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 8, i++)
 			step(M, pick(GLOB.cardinals))
-	M.Jitter(20)
+	M.Jitter(200)
 	M.Dizzy(20)
 	M.adjustToxLoss(6, 0)
+	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants/withdrawal)
+	REMOVE_TRAIT(M, TRAIT_SPEEDY_STEP, "turbo")
+	REMOVE_TRAIT(M, TRAIT_SKITTISH, "turbo")
+	ADD_TRAIT(M, TRAIT_DEPRESSION, "turbo")
+	ADD_TRAIT(M, TRAIT_HEAVY_SLEEPER, "turbo")
+	ADD_TRAIT(M, TRAIT_CLUMSY, "turbo")
+	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(prob(50))
 		M.emote(pick("twitch","drool","moan"))
 	..()
@@ -175,7 +228,7 @@
 	reagent_state = LIQUID
 	color = "#FF0000"
 	overdose_threshold = 15
-	addiction_threshold = 12.5
+	addiction_threshold = 1
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
@@ -190,11 +243,12 @@
 	M.AdjustUnconscious(-25, 0)
 	M.adjustStaminaLoss(-5, 0)
 	M.Jitter(2)
+	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD, FACTION_WRIGHTS)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
 				if(FACTION_LEGION)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
@@ -204,14 +258,24 @@
 
 /datum/reagent/drug/psycho/on_mob_add(mob/living/L)
 	..()
-	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
+	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, "psycho")
+	ADD_TRAIT(L, TRAIT_PUSHIMMUNE, "psycho")
+	ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, "psycho")
+	ADD_TRAIT(L, TRAIT_BIG_LEAGUES, "psycho")
+	ADD_TRAIT(L, TRAIT_FEARLESS, "psycho")
+	ADD_TRAIT(L, TRAIT_UNSTABLE, "psycho")
+	ADD_TRAIT(L, TRAIT_MASO, "psycho")
+	REMOVE_TRAIT(L, TRAIT_DEPRESSION, "psycho")
+	REMOVE_TRAIT(L, TRAIT_HEAVY_SLEEPER, "psycho")
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		rage = new()
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 
 /datum/reagent/drug/psycho/on_mob_delete(mob/living/L)
-	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "[type]")
+	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, "psycho")
+	REMOVE_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, "psycho")
+	REMOVE_TRAIT(L, TRAIT_BIG_LEAGUES, "psycho")
 	if(rage)
 		QDEL_NULL(rage)
 	..()
@@ -234,6 +298,8 @@
 	M.hallucination += 10
 	M.Jitter(5)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 1)
+	REMOVE_TRAIT(M, TRAIT_PUSHIMMUNE, "psycho")
+	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(prob(20))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -254,20 +320,30 @@
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(15)
 	M.Dizzy(15)
+	M.losebreath += 10
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
+	REMOVE_TRAIT(M, TRAIT_MASO, "psycho")
 	if(prob(40))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
 	return
 /datum/reagent/drug/psycho/addiction_act_stage4(mob/living/carbon/human/M)
 	M.hallucination += 40
+	M.playsound_local(M, 'sound/health/slowbeat.ogg', 50)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !ismovableatom(M.loc) && !isspaceturf(M.loc))
 		for(var/i = 0, i < 4, i++)
 			step(M, pick(GLOB.cardinals))
 	M.Jitter(50)
 	M.Dizzy(50)
+	M.Unconscious(25)
+	M.losebreath += 10
 	M.adjustToxLoss(5)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 15)
+	M.adjustOrganLoss(ORGAN_SLOT_HEART, 15)
+	REMOVE_TRAIT(M, TRAIT_FEARLESS, "psycho")
+	REMOVE_TRAIT(M, TRAIT_UNSTABLE, "psycho")
+	ADD_TRAIT(M, TRAIT_DEPRESSION, "psycho")
+	ADD_TRAIT(M, TRAIT_HEAVY_SLEEPER, "psycho")
 	if(prob(50))
 		M.emote(pick("twitch","scream","laugh"))
 	..()
@@ -279,7 +355,7 @@
 	color = "#FF9900"
 	reagent_state = SOLID
 	overdose_threshold = 20
-	addiction_threshold = 11
+	addiction_threshold = 1
 	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
@@ -290,17 +366,24 @@
 		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
 		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth += 25
-		M.health += 25
+		ADD_TRAIT(M, TRAIT_QUICKER_CARRY, "buffout")
+		ADD_TRAIT(M, TRAIT_NOSOFTCRIT, "buffout")
+		ADD_TRAIT(M, TRAIT_PUSHIMMUNE, "buffout")
+		ADD_TRAIT(M, TRAIT_CALCIUM_HEALER, "buffout")
+		REMOVE_TRAIT(M, TRAIT_UNSTABLE, "buffout")
+		M.maxHealth += 30
+		M.health += 30
 
 /datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel weaker.</span>")
-		REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
-		M.maxHealth -= 25
-		M.health -= 25
+		REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "buffout")
+		REMOVE_TRAIT(M, TRAIT_QUICKER_CARRY, "buffout")
+		ADD_TRAIT(M, TRAIT_QUICK_CARRY, "buffout")
+		M.maxHealth -= 10
+		M.health -= 10
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -309,7 +392,7 @@
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
 			switch(job.faction)
-				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD)
+				if(FACTION_NCR, FACTION_ENCLAVE, FACTION_BROTHERHOOD, FACTION_WRIGHTS)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "used drugs", /datum/mood_event/used_drugs, name)
 				if(FACTION_LEGION)
 					SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "betrayed caesar", /datum/mood_event/betrayed_caesar, name)
@@ -341,7 +424,10 @@
 /datum/reagent/drug/buffout/addiction_act_stage2(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles feel incredibly sore.</span>")
 	M.adjustBruteLoss(4)
-	if(prob(30))
+	M.maxHealth -= 10
+	M.health -= 10
+	M.playsound_local(M, 'sound/health/slowbeat.ogg', 50)
+	if(prob(10))
 		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding.</span>")
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
@@ -351,9 +437,12 @@
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
 	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
 	M.adjustBruteLoss(7.5)
-	M.maxHealth -= 1.5
-	M.health -= 1.5
-	if(prob(50))
+	M.maxHealth -= 10
+	M.health -= 10
+	REMOVE_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
+	REMOVE_TRAIT(M, TRAIT_QUICK_CARRY, "buffout")
+	REMOVE_TRAIT(M, TRAIT_PUSHIMMUNE, "buffout")
+	if(prob(20))
 		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding. You're not even sure if you can control your arms!</span>")
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
@@ -362,10 +451,12 @@
 
 /datum/reagent/drug/buffout/addiction_act_stage4(mob/living/M)
 	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
-	M.adjustBruteLoss(12.5)
-	M.maxHealth -= 5
-	M.health -= 5
-	if(prob(90))
+	M.adjustBruteLoss(10)
+	M.maxHealth -= 10
+	M.health -= 10
+	ADD_TRAIT(M, TRAIT_UNSTABLE, "buffout")
+	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
+	if(prob(20))
 		to_chat(M, "<span class='danger'>You can't even keep control of your muscles anymore!</span>")
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))

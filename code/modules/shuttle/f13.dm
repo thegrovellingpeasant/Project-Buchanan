@@ -96,7 +96,7 @@
 
 /obj/machinery/computer/shuttle/enclaveelevator
 	name = "US Army elevator controls"
-	desc = "Controls the elevator. Has lots of stars and stripes."
+	desc = "Controls the elevator. Has lots of stars and stripes." 
 	icon_screen = "shuttle"
 	icon_keyboard = "tech_key"
 	light_color = LIGHT_COLOR_CYAN
@@ -115,6 +115,30 @@
 	circuit = /obj/item/circuitboard/computer/intrepid_control
 	shuttleId = "intrepid_elevator"
 	possible_destinations = "intrepid_above;intrepid_surface;intrepid_underground"
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/machinery/computer/shuttle/ghoul_subway
+	name = "subway controls"
+	desc = "Controls for the ghoul infested Second Street subway line."
+	icon_screen = "shuttle"
+	icon_keyboard = "tech_key"
+	light_color = LIGHT_COLOR_CYAN
+	circuit = /obj/item/circuitboard/computer/intrepid_control
+	shuttleId = "ghoul_subway"
+	possible_destinations = "ghoul_base;ghoul_one;ghoul_two"
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+
+/obj/machinery/computer/shuttle/raider_subway
+	name = "subway controls"
+	desc = "Controls for the raider controlled Third Street subway line."
+	icon_screen = "shuttle"
+	icon_keyboard = "tech_key"
+	light_color = LIGHT_COLOR_CYAN
+	circuit = /obj/item/circuitboard/computer/intrepid_control
+	shuttleId = "raider_subway"
+	possible_destinations = "raider_base;raider_one;raider_two"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 

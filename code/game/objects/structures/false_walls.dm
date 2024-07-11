@@ -299,6 +299,36 @@
 	icon_state = "wall"
 	walltype = /turf/closed/wall/rust
 
+/obj/structure/falsewall/gothic
+	name = "gothic wall"
+	desc = "A remnant of the old world."
+	icon = 'icons/turf/walls/gothic_wall.dmi'
+	icon_state = "wall"
+	mineral = /obj/item/stack/rods
+	mineral_amount = 5
+	walltype = /turf/closed/wall/gothic
+	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
+
+/obj/structure/falsewall/gothicrivet
+	name = "gothic wall"
+	desc = "A remnant of the old world."
+	icon = 'icons/turf/walls/gothic_wall.dmi'
+	icon_state = "wall"
+	mineral = /obj/item/stack/rods
+	mineral_amount = 5
+	walltype = /turf/closed/wall/gothic/rivet
+	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
+
+/obj/structure/falsewall/concrete
+	name = "concrete wall"
+	desc = "A pre-War supermart that has been coated with plastic to reduce cracking from overpressure."
+	icon = 'icons/turf/walls/f13superstore.dmi'
+	icon_state = "supermart"
+	mineral = /obj/item/stack/rods
+	mineral_amount = 5
+	walltype = /turf/closed/wall/mineral/concrete
+	canSmoothWith = list(/obj/structure/falsewall/concrete, /turf/closed/wall/mineral/concrete, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth)
+
 /obj/structure/falsewall/abductor
 	name = "poylmer wall" //Fortuna edit: alien alloy -> polymer
 	desc = "A wall with polymer alloy plating."

@@ -278,3 +278,27 @@
 /obj/structure/closet/crate/safe
 	name = "safe"
 	icon_state = "safe"
+
+/obj/structure/closet/crate/mailboxleft
+	name = "mailbox"
+	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
+	icon_state = "leftmailbox"
+	anchored = TRUE
+	density = FALSE
+	mob_storage_capacity = FALSE
+
+/obj/structure/closet/crate/mailboxleft/Initialize()
+	. = ..()
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)
+
+/obj/structure/closet/crate/mailboxright
+	name = "mailbox"
+	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
+	icon_state = "rightmailbox"
+	anchored = TRUE
+	density = FALSE
+	mob_storage_capacity = FALSE
+
+/obj/structure/closet/crate/mailboxright/Initialize()
+	. = ..()
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)

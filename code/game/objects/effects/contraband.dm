@@ -656,6 +656,46 @@
 	desc = "A poster advertising the Vault-Tec Corporation. Vault-Tec: Revolutionizing safety for an uncertain future!"
 	icon_state = "poster51"
 
+/obj/structure/sign/poster/painting/vito
+	name = "Vito Lucas portrait"
+	desc = "A portrait of Bishop made-man and longtime pillar of the community: Vito Lucas, the last of the Old Reno generation of mobsters."
+	icon_state = "vito"
+
+/obj/structure/sign/poster/painting/communist
+	name = "Communist portrait"
+	desc = "A stately portrait of a communist leader, how did this get across the ocean?"
+	icon_state = "communist"
+
+/obj/structure/sign/poster/painting/rider
+	name = "Hoofin' It"
+	desc = "A scene of a forlorn duo, horse and rider in a desperate gallup towards an unknown horizon."
+	icon_state = "rider"
+
+/obj/structure/sign/poster/painting/dogs
+	name = "Dogs at Play"
+	desc = "An idyllic image of dogs in the prairie, made by a prewar artist based in the Texas Commonwealth."
+	icon_state = "dogs"
+
+/obj/structure/sign/poster/painting/scenery
+	name = "Landscape painting"
+	desc = "The autumn leaves are gently falling."
+	icon_state = "scenery"
+
+/obj/structure/sign/poster/painting/horizon
+	name = "das Nebelgemälde"
+	desc = "A romantic painting of a vast but foggy horizon and some castles along the Rhine."
+	icon_state = "horizon"
+
+/obj/structure/sign/poster/painting/nighthawks
+	name = "Nighthawks"
+	desc = "Three guys, one doll, unlimited coffee refills and no door. The perfect spot for loners. Wait, no door?"
+	icon_state = "nighthawks"
+
+/obj/structure/sign/poster/painting/coast
+	name = "Moonlight on Cape Cod Bay"
+	desc = "If you're fond of sand dunes and salty air, quaint little villages here and there, you're sure to fall in love with old Cape Cod."
+	icon_state = "coast"
+
 /obj/structure/sign/poster/contraband/pinup_ride
 	name = "Pin-up - Sweet Ride"
 	desc = "A pin-up of a woman riding a rocket while holding two toy guns."

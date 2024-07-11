@@ -180,6 +180,15 @@
 	icon = smooth_icon
 	. = ..()
 
+/turf/closed/indestructible/f13rusted
+	name = "rusty wall"
+	desc = "A rusty chunk of metal used to separate rooms."
+	icon = 'icons/turf/walls/rusty_wall.dmi'
+	icon_state = "wall"
+	baseturfs = /turf/open/floor/plating
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/brass,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/turf/closed/wall/clockwork,/turf/closed/indestructible/f13vaultrusted,/turf/closed/indestructible/f13rusted)
+
 /turf/closed/indestructible/f13vaultrusted
 	name = "rusty vault wall"
 	desc = "A rusty chunk of metal used to separate rooms."
@@ -187,7 +196,7 @@
 	icon_state = "r_wall"
 	baseturfs = /turf/open/floor/plating
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/brass,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/turf/closed/wall/clockwork,/turf/closed/indestructible/f13vaultrusted)
+	canSmoothWith = list(/turf/closed/wall,/turf/closed/wall/r_wall,/obj/structure/falsewall,/obj/structure/falsewall/brass,/obj/structure/falsewall/reinforced,/turf/closed/wall/rust,/turf/closed/wall/r_wall/rust,/turf/closed/wall/clockwork,/turf/closed/indestructible/f13vaultrusted,/turf/closed/indestructible/f13rusted)
 
 /turf/closed/indestructible/tunnel
 	name = "rusty vault wall"
@@ -206,6 +215,7 @@
 	desc = "A wall made out of metal, really fucking tough metal. They definitely didn't want everything to give away around the door."
 	icon = 'icons/turf/walls/f13vault_reinforced_wall.dmi'
 	icon_state = "vaultwall"
+
 /turf/closed/indestructible/rock/snow
 	name = "mountainside"
 	desc = "An extremely densely-packed rock, sheeted over with centuries worth of ice and snow."

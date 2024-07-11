@@ -308,3 +308,20 @@
 	name = "Ayayayayayayayayirlooms"
 	path = /obj/item/storage/box/large/custom_kit/Oddbomber3768
 	ckeywhitelist = list("oddbomber3768")
+
+/obj/item/storage/box/large/custom_kit/gary
+	name = "Vito's Lockbox"
+	desc = "A few of Don Lucas' most prized possessions."
+	icon_state = "medalbox+b"
+
+/obj/item/storage/box/large/custom_kit/gary/PopulateContents()
+	new /obj/item/lighter/gold(src)
+	new /obj/item/storage/fancy/cigarettes/cigars/sanfran(src)
+	new /obj/item/reagent_containers/food/drinks/bottle/wine(src)
+	new /obj/item/clothing/under/f13/renotracksuit(src)
+	new /obj/item/storage/briefcase/lawyer/family(src)
+
+/datum/gear/donator/kits/gary
+	name = "Vito's Lockbox"
+	path = /obj/item/storage/box/large/custom_kit/gary
+	ckeywhitelist = list("sergs1022")

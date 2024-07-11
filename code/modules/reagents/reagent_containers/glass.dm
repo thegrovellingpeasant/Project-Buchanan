@@ -327,6 +327,19 @@
 	container_HP = 1
 	cached_icon = "wataur"
 
+/obj/item/reagent_containers/glass/beaker/waterbottle/purified
+	desc = "A bottle of purified water."
+	icon_state = "largebottle"
+	custom_materials = list(/datum/material/glass=0)
+	list_reagents = list(/datum/reagent/water/purified = 100)
+	volume = 100
+	amount_per_transfer_from_this = 20
+	possible_transfer_amounts = list(5,10,15,20,25,30,50,100)
+	container_HP = 1
+
+/obj/item/reagent_containers/glass/beaker/waterbottle/purified/empty
+	list_reagents = list()
+
 /obj/item/reagent_containers/glass/get_belt_overlay()
 	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', "bottle")
 

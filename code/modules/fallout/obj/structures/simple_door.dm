@@ -412,11 +412,12 @@
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
 
-
 /obj/structure/simple_door/metal/dirtystore
 	desc = "A metal door with dirty glass, you can't see a thing behind it."
 	icon_state = "dirtystore"
 	door_type = "dirtystore"
+	opacity = FALSE
+	base_opacity = FALSE
 	can_hold_padlock = TRUE
 
 /obj/structure/simple_door/metal/store

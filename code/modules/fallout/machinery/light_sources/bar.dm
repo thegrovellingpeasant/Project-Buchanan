@@ -99,13 +99,12 @@
 	desc = "The Biggest Little City in the World!"
 	light_color = LIGHT_COLOR_YELLOW
 
-
 /obj/machinery/light/sign/shark_club
-	name = "Shark Club sign"
+	name = "The Shark Club"
 	icon_state = "shark_club"
 	base_state = "shark_club"
 	icon = 'icons/fallout/objects/structures/sharkclub.dmi'
-	desc = "A hive of scum and villainy!"
+	desc = "The home of the Bishop Family, and the sole remaining casino in town."
 	light_color = LIGHT_COLOR_YELLOW
 
 /obj/machinery/light/sign/pepgas
@@ -113,5 +112,5 @@
 	icon_state = "pepgas"
 	base_state = "pepgas"
 	icon = 'icons/fallout/objects/structures/pepgas.dmi'
-	desc = "A place of gas; pep's gas, or well, it used to be."
+	desc = "A place to fill up the tank; Pep's gas, or well, it used to be."
 	light_color = LIGHT_COLOR_YELLOW

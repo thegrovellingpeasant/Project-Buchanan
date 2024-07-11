@@ -30,6 +30,7 @@
 //#define CHAV		/datum/mutation/human/chav
 //#define ELVIS		/datum/mutation/human/elvis
 #define WHITELEGLANGUAGE /datum/mutation/human/whiteleg
+#define WRIGHTLANGUAGE /datum/mutation/human/wright
 #define RADIOACTIVE	/datum/mutation/human/radioactive
 #define GLOWY		/datum/mutation/human/glow
 #define ANTIGLOWY	/datum/mutation/human/glow/anti

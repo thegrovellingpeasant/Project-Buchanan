@@ -459,6 +459,14 @@
 	name = "Intrepid Mining Elevator Control (Computer board)"
 	build_path = /obj/machinery/computer/shuttle/intrepid_elevator
 
+/obj/item/circuitboard/computer/ghoulsubway_control
+	name = "Second Street Subway Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/ghoul_subway
+
+/obj/item/circuitboard/computer/raidersubway_control
+	name = "Third Street Subway Control (Computer board)"
+	build_path = /obj/machinery/computer/shuttle/raider_subway
+
 /obj/item/circuitboard/computer/bishop_control
 	name = "Bishop Elevator Control (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/bishopelevator

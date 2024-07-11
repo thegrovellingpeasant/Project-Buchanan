@@ -1926,6 +1926,11 @@
 	icon_state = "tracksuit"
 	item_state = "tracksuit"
 
+/obj/item/clothing/under/f13/renotracksuit
+	name = "reno pride tracksuit"
+	desc = "A tracksuit commemorating the original four families of New Reno."
+	icon_state = "renopride"
+	item_state = "renopride"
 
 //Salvatores
 
