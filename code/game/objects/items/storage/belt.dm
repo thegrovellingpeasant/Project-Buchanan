@@ -878,18 +878,19 @@
 	item_state = "fannypack_pink"
 
 
-/obj/item/storage/belt/sabre
-	name = "sword sheath"
-	desc = "A fine sheath for carrying a sword in style."
-	icon_state = "utilitybelt"
-	item_state = "utility"
+/obj/item/storage/belt/canesword
+	name = "cane"
+	desc = "A cane with gold at it's top, middle, and handle part, and the latter has a hidden compartment for a thin blade."
+	icon_state = "sheathe"
+	item_state = "sheathe"
 	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_NONE
 	content_overlays = TRUE
 	onmob_overlays = TRUE
-	var/list/fitting_swords = list(/obj/item/melee/sabre, /obj/item/melee/baton/stunsword)
-	var/starting_sword = /obj/item/melee/sabre
+	var/list/fitting_swords = list(/obj/item/melee/canesword)
+	var/starting_sword = /obj/item/melee/canesword
 
-/obj/item/storage/belt/sabre/ComponentInitialize()
+/obj/item/storage/belt/canesword/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 1
@@ -898,12 +899,12 @@
 	STR.can_hold = typecacheof(fitting_swords)
 	STR.quickdraw = TRUE
 
-/obj/item/storage/belt/sabre/examine(mob/user)
+/obj/item/storage/belt/canesword/examine(mob/user)
 	. = ..()
 	if(length(contents))
 		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
 
-/obj/item/storage/belt/sabre/PopulateContents()
+/obj/item/storage/belt/canesword/PopulateContents()
 	new starting_sword(src)
 
 /obj/item/storage/belt/sabre/heavy
