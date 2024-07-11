@@ -63,8 +63,6 @@
 	sharpness = SHARP_EDGED
 	attack_verb = list("dueled", "stabbed", "sliced", "torn", "ripped", "diced", "riposted")
 	hitsound = 'sound/weapons/rapierhit.ogg'
-	total_mass = 3.4
-	item_flags = NEEDS_PERMIT | ITEM_CAN_PARRY
 	block_parry_data = /datum/block_parry_data/captain_saber
 
 /obj/item/melee/canesword/Initialize()
