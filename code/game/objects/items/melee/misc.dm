@@ -48,108 +48,67 @@
 	. = ..()
 	AddComponent(/datum/component/butchering, 60, 80) //very imprecise
 
-/obj/item/melee/sabre
-	name = "officer's sabre"
-	desc = "An elegant weapon, its monomolecular edge is capable of cutting through flesh and bone with ease."
-	icon_state = "sabre"
-	item_state = "sabre"
+/obj/item/melee/canesword
+	name = "canesword"
+	desc = "A weapon for a true gentlemen, the blade is crafted with grace and style."
+	icon_state = "canesword"
+	item_state = "canesword"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	flags_1 = CONDUCT_1
 	obj_flags = UNIQUE_RENAME
-	force = 18
-	throwforce = 15
+	force = 34 //this should be a OP ass weapon
 	w_class = WEIGHT_CLASS_BULKY
-	armour_penetration = 0.95
+	armour_penetration = 0.5
 	sharpness = SHARP_EDGED
-	attack_verb = list("slashed", "cut")
+	attack_verb = list("dueled", "stabbed", "sliced", "torn", "ripped", "diced", "riposted")
 	hitsound = 'sound/weapons/rapierhit.ogg'
-	custom_materials = list(/datum/material/iron = 1000)
 	total_mass = 3.4
 	item_flags = NEEDS_PERMIT | ITEM_CAN_PARRY
 	block_parry_data = /datum/block_parry_data/captain_saber
 
-/datum/block_parry_data/captain_saber
-	parry_time_windup = 0.5
-	parry_time_active = 4
-	parry_time_spindown = 1
-	parry_time_perfect = 0.75
-	parry_time_perfect_leeway = 0.75
-	parry_imperfect_falloff_percent = 30
-	parry_efficiency_perfect = 100
-	parry_failed_stagger_duration = 3 SECONDS
-	parry_failed_clickcd_duration = 2 SECONDS
-
-/obj/item/melee/sabre/Initialize()
+/obj/item/melee/canesword/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
 	AddElement(/datum/element/sword_point)
 
-/obj/item/melee/sabre/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
-	if(attack_type & ATTACK_TYPE_PROJECTILE)		// Don't bring a sword to a gunfight.
-		return BLOCK_NONE
-	return ..()
-
-/obj/item/melee/sabre/on_exit_storage(datum/component/storage/S)
-	var/obj/item/storage/belt/sabre/B = S.parent
+/obj/item/melee/canesword/on_exit_storage(datum/component/storage/S)
+	var/obj/item/storage/belt/canesword/B = S.parent
 	if(istype(B))
 		playsound(B, 'sound/items/unsheath.ogg', 25, 1)
 	..()
 
-/obj/item/melee/sabre/on_enter_storage(datum/component/storage/S)
-	var/obj/item/storage/belt/sabre/B = S.parent
+/obj/item/melee/canesword/on_enter_storage(datum/component/storage/S)
+	var/obj/item/storage/belt/canesword/B = S.parent
 	if(istype(B))
 		playsound(B, 'sound/items/sheath.ogg', 25, 1)
 	..()
 
-/obj/item/melee/sabre/get_belt_overlay()
-	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', "sabre")
+/obj/item/melee/canesword/get_belt_overlay()
+	return mutable_appearance('icons/obj/clothing/belt_overlays.dmi', "canesword")
 
-/obj/item/melee/sabre/get_worn_belt_overlay(icon_file)
-	return mutable_appearance(icon_file, "-sabre")
+/obj/item/melee/canesword/get_worn_belt_overlay(icon_file)
+	return mutable_appearance(icon_file, "-canesword")
 
-/obj/item/melee/sabre/suicide_act(mob/living/user)
-	user.visible_message("<span class='suicide'>[user] is trying to cut off all [user.p_their()] limbs with [src]! it looks like [user.p_theyre()] trying to commit suicide!</span>")
-	var/i = 0
-	ADD_TRAIT(src, TRAIT_NODROP, SABRE_SUICIDE_TRAIT)
-	if(iscarbon(user))
-		var/mob/living/carbon/Cuser = user
-		var/obj/item/bodypart/holding_bodypart = Cuser.get_holding_bodypart_of_item(src)
-		var/list/limbs_to_dismember
-		var/list/arms = list()
-		var/list/legs = list()
-		var/obj/item/bodypart/bodypart
 
-		for(bodypart in Cuser.bodyparts)
-			if(bodypart == holding_bodypart)
-				continue
-			if(bodypart.body_part & ARMS)
-				arms += bodypart
-			else if (bodypart.body_part & LEGS)
-				legs += bodypart
 
-		limbs_to_dismember = arms + legs
-		if(holding_bodypart)
-			limbs_to_dismember += holding_bodypart
 
-		var/speedbase = abs((4 SECONDS) / limbs_to_dismember.len)
-		for(bodypart in limbs_to_dismember)
-			i++
-			addtimer(CALLBACK(src, .proc/suicide_dismember, user, bodypart), speedbase * i)
-	addtimer(CALLBACK(src, .proc/manual_suicide, user), (5 SECONDS) * i)
-	return MANUAL_SUICIDE
 
-/obj/item/melee/sabre/proc/suicide_dismember(mob/living/user, obj/item/bodypart/affecting)
-	if(!QDELETED(affecting) && affecting.dismemberable && affecting.owner == user && !QDELETED(user))
-		playsound(user, hitsound, 25, 1)
-		affecting.dismember(BRUTE)
-		user.adjustBruteLoss(20)
 
-/obj/item/melee/sabre/proc/manual_suicide(mob/living/user, originally_nodropped)
-	if(!QDELETED(user))
-		user.adjustBruteLoss(200)
-		user.death(FALSE)
-	REMOVE_TRAIT(src, TRAIT_NODROP, SABRE_SUICIDE_TRAIT)
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
 
 /obj/item/melee/rapier
 	name = "plastitanium rapier"
