@@ -1,4 +1,4 @@
-/*!
+f/*!
 This component makes it possible to make things edible. What this means is that you can take a bite or force someone to take a bite (in the case of items).
 These items take a specific time to eat, and can do most of the things our original food items could.
 Behavior that's still missing from this component that original food items had that should either be put into seperate components or somewhere else:
@@ -158,6 +158,8 @@ Behavior that's still missing from this component that original food items had t
 		var/fraction = min(bite_consumption / owner.reagents.total_volume, 1)
 		owner.reagents.reaction(eater, INGEST, fraction)
 		owner.reagents.trans_to(eater, bite_consumption)
+		var/nutrition_amount = owner.reagents.GetComponent(/datum/reagent/consumable/nutriment)
+		eater.adjustStaminaLoss( nutrition_amount * 2.5, 0)
 		bitecount++
 		On_Consume(eater)
 		checkLiked(fraction, eater)

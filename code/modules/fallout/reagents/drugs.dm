@@ -27,7 +27,7 @@
 		M.confused += 2
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
-	M.adjustStaminaLoss(-20, 0)
+	M.adjustStaminaLoss(-30, 0)
 	M.set_drugginess(20)
 	M.hallucination += 50
 	M.playsound_local(M, 'sound/f13ambience/music/jet.ogg', 50)
@@ -143,6 +143,7 @@
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
+	M.adjustStaminaLoss(-25, 0)
 	if(prob(5))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
 	M.Jitter(2)
@@ -241,7 +242,7 @@
 	M.AdjustStun(-25, 0)
 	M.AdjustKnockdown(-25, 0)
 	M.AdjustUnconscious(-25, 0)
-	M.adjustStaminaLoss(-5, 0)
+	M.adjustStaminaLoss(-15, 0)
 	M.Jitter(2)
 	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(M.mind)
@@ -386,6 +387,7 @@
 		M.health -= 10
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
+	M.adjustStaminaLoss(-15, 0)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(M.mind)
