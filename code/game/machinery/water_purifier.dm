@@ -5,7 +5,6 @@
 	icon_state = "purifier"
 
 	flags_1 = NODECONSTRUCT_1
-	move_resist = INFINITY
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	use_power = NO_POWER_USE
 	density = TRUE
@@ -98,3 +97,10 @@
 	else
 		. += "<span class='notice'>[src] has no reagent container installed.</span>"
 
+/obj/machinery/water_purifier/wrench_act(mob/living/user, obj/item/I)
+	default_unfasten_wrench(user, I, 40)
+	return TRUE
+
+/obj/machinery/water_purifier/unanchored
+	name = "water purifier"
+	anchored = FALSE
