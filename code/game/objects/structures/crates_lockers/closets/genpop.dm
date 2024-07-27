@@ -3,7 +3,7 @@
 	var/default_desc = "It's a secure locker for the storage inmates's personal belongings during their time in prison."
 	name = "prisoner closet"
 	var/default_name = "prisoner closet"
-	req_access = list(ACCESS_BRIG)
+	req_access = list(ACCESS_BRIG, ACCESS_NCR)
 	var/obj/item/card/id/prisoner/registered_id = null
 	icon_state = "prisoner"
 	locked = FALSE
