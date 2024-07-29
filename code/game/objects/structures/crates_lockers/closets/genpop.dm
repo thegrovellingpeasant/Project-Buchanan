@@ -108,7 +108,7 @@
 			locked = TRUE
 			update_icon()
 			registered_id.forceMove(src.loc)
-			new /obj/item/clothing/under/f13/ncrcf(src.loc)
+			//new /obj/item/clothing/under/f13/ncrcf(src.loc)
 		else
 			qdel(registered_id)
 			registered_id = null
