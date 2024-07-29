@@ -5,6 +5,7 @@
 	var/default_name = "prisoner closet"
 	req_one_access = list(ACCESS_BRIG, ACCESS_NCR)
 	var/obj/item/card/id/prisoner/registered_id = null
+	icon = 'icons/fallout/objects/furniture/closet.dmi'
 	icon_state = "gray"
 	locked = FALSE
 	anchored = TRUE
