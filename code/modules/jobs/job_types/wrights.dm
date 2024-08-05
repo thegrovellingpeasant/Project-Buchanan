@@ -100,6 +100,7 @@
 			L.update_label()
 
 	ADD_TRAIT(H, TRAIT_LEADER, src)
+	H.dna.add_mutation(WRIGHTLANGUAGE)
 
 /*--------------------------------------------------------------*/
 
@@ -165,6 +166,7 @@
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
 
 	ADD_TRAIT(H, TRAIT_LEADER, src)
+	H.dna.add_mutation(WRIGHTLANGUAGE)
 
 /*--------------------------------------------------------------*/
 
@@ -175,7 +177,7 @@
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "Wright Capos, the Underboss, and the Wright Boss"
-	description = "You have been made a soldier of the Wright Family. Expect to be assigned to follow the orders of one of the Capos. Do not disturb the boss or the underboss with unnecessary affairs. Remember to follow the core tenets of the Wright family by avoiding drugs and prostitution, and keeping yourself loyal to your superiors whatever the cost."
+	description = "You are the blood, sweat and tears that this family is built upon. While you do not have the responsibilites or nuance of your elders, you are a Wright by birthright. The family depends on you to achieve their goals, and follow the orders from your elders to the letter. Your bosses are your blood, your family, and you must uphold that bond. As the face of the Wrights that most citizens see, it falls on you the most to uphold the values of your family. Abstaining from the use of chems, and prostitution are expected, and enforced with violence if disobeyed. Protect your family's business and interests, and protect your elders with your life."
 	exp_requirements = EXP_TYPE_WRIGHTS
 
 	outfit = /datum/outfit/job/wrights/f13hooligan
@@ -263,6 +265,8 @@
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
 
+	H.dna.add_mutation(WRIGHTLANGUAGE)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13manager
@@ -320,6 +324,8 @@
 		L.registered_name = H.name
 		L.update_label()
 
+	H.dna.add_mutation(WRIGHTLANGUAGE)
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13employee
@@ -329,7 +335,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Store Manager"
-	description = "You are an employee of New Reno Arms, which is under the wing of the Wright Family. Your job consists of manning the storefront, ordering shipments, and unloading cargo.  Remember that you don't personally own the store's goods."
+	description = "You are an employee of New Reno Arms, which is under the wing of the Wright Family. Your job consists of manning the storefront, ordering shipments, and unloading cargo.  Remember that you don't personally own the store's goods. The cargo computer can provide access to illicit contraband if hacked."
 	exp_requirements = EXP_TYPE_WRIGHTS
 
 	outfit = /datum/outfit/job/wrights/f13employee
@@ -426,7 +432,7 @@
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-
+	H.dna.add_mutation(WRIGHTLANGUAGE)
 
 /*--------------------------------------------------------------*/
 

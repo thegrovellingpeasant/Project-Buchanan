@@ -315,6 +315,12 @@
 	icon_state = "greytort"
 	spawn_type = /obj/item/clothing/mask/cigarette/greytort
 
+/obj/item/storage/fancy/cigarettes/cigpack_redding
+	name = "\improper Sac-Town Cigarettes"
+	desc = "From the heart of wildfire country, with the same great taste."
+	icon_state = "robustg"
+	spawn_type = /obj/item/clothing/mask/cigarette/rollie/redding
+
 /obj/item/storage/fancy/rollingpapers
 	name = "rolling paper pack"
 	desc = "A pack of Big Boss brand rolling papers."
@@ -389,6 +395,12 @@
 	desc = "A case of classy Havanian cigars."
 	icon_state = "cohibacase"
 	spawn_type = /obj/item/clothing/mask/cigarette/cigar/havana
+
+/obj/item/storage/fancy/cigarettes/cigars/sanfran
+	name = "\improper San Francisco Sunlights"
+	desc = "A case of premium Californian cigars. Hand rolled in the city by the bay."
+	icon_state = "cohibacase"
+	spawn_type = /obj/item/clothing/mask/cigarette/cigar/sanfran
 
 /*
  * Heart Shaped Box w/ Chocolates

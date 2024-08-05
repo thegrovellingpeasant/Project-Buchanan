@@ -243,6 +243,7 @@
 	desc = "An old set of reinforced combat armor with some parts supplanted with painspike armor. It seems less protective than a mint-condition set of combat armor."
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 30, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20, "wound" = 40)
 	slowdown = 0.05
+	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
 
 /obj/item/clothing/suit/armor/f13/combat/scav

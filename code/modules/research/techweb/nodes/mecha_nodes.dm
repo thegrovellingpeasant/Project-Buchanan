@@ -3,8 +3,8 @@
 
 /datum/techweb_node/mech
 	id = "mecha"
-	display_name = "Mechanical Exosuits"
-	description = "Mechanized exosuits that are several magnitudes stronger and more powerful than the average human."
+	display_name = "Robots"
+	description = "Autonomous robots that are capable of completing complex tasks, whether mental or physical."
 	prereq_ids = list("robotics", "adv_engi")
 	design_ids = list("mecha_tracking", "mechacontrol", "mechapower", "mech_recharger")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -16,6 +16,7 @@
 	description = "Various tools fit for basic mech units"
 	design_ids = list("mech_drill", "mech_mscanner", "mech_extinguisher", "mech_cable_layer", "mech_hydraulic_clamp")
 
+/*
 /datum/techweb_node/ripley
 	id = "mech_ripley"
 	display_name = "EXOSUIT: Ripley"
@@ -31,15 +32,17 @@
 	prereq_ids = list("mecha")
 	design_ids = list("clarke_chassis", "clarke_torso", "clarke_head", "clarke_left_arm", "clarke_right_arm", "clarke_left_tread", "clarke_right_tread", "clarke_main", "clarke_peri")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+*/
 
 /datum/techweb_node/adv_mecha
 	id = "adv_mecha"
-	display_name = "Advanced Exosuits"
-	description = "For when you just aren't Gundam enough."
+	display_name = "Advanced Robots"
+	description = "For when you just need that extra kick."
 	prereq_ids = list("mecha", "adv_robotics")
-	design_ids = list("mech_repair_droid")
+	design_ids = list("robot_repair_eyebot")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
+/*
 /datum/techweb_node/odysseus
 	id = "mecha_odysseus"
 	display_name = "EXOSUIT: Odysseus"
@@ -84,7 +87,6 @@
 	"marauder_peri", "marauder_targ", "marauder_armor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
-/*
 /datum/techweb_node/phazon
 	id = "mecha_phazon"
 	display_name = "EXOSUIT: Phazon"
@@ -93,7 +95,7 @@
 	design_ids = list("phazon_chassis", "phazon_torso", "phazon_head", "phazon_left_arm", "phazon_right_arm", "phazon_left_leg", "phazon_right_leg", "phazon_main",
 	"phazon_peri", "phazon_targ", "phazon_armor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-*/
+
 /datum/techweb_node/adv_mecha_tools
 	id = "adv_mecha_tools"
 	display_name = "Advanced Exosuit Equipment"
@@ -117,6 +119,8 @@
 	prereq_ids = list("adv_mecha", "bluespace_power")
 	design_ids = list(/*"mech_energy_relay",*/ "mech_ccw_armor", "mech_proj_armor", "mech_generator_nuclear")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+*/
 
 /* ## Uncomment it after projectiles don't runtime anymore
 /datum/techweb_node/mech_scattershot
@@ -150,7 +154,6 @@
 	prereq_ids = list("adv_weaponry")
 	design_ids = list("mech_lmg", "mech_lmg_ammo")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-*/
 
 /datum/techweb_node/mech_ion
 	id = "mmech_ion"
@@ -256,3 +259,5 @@
 	prereq_ids = list("adv_mining")
 	design_ids = list("mech_diamond_drill")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+*/

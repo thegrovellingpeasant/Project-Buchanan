@@ -168,7 +168,7 @@
 
 /datum/reagent/medicine/berserker_powder
 	name = "Berserker powder"
-	description = "a combination of psychadelic mushrooms and tribal drugs used by the legion. Induces a trancelike state, allowing them much greater pain resistance. Extremely dangerous, even for those who are trained to use it. It's a really bad idea to use this if you're not initiated in the rites of the berserker. Even if you are, taking it for too long causes extreme symptoms when the trance ends."
+	description = "a combination of psychadelic mushrooms and tribal drugs used by the Legion. Induces a trancelike state, allowing them much greater pain resistance. Extremely dangerous, even for those who are trained to use it. It's a really bad idea to use this if you're not initiated in the rites of the berserker. Even if you are, taking it for too long causes extreme symptoms when the trance ends."
 	reagent_state = SOLID
 	color =  "#7f7add"
 	taste_description = "heaven."
@@ -562,15 +562,21 @@
 	reagent_state = SOLID
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 25
-	addiction_threshold = 15
+	addiction_threshold = 1
 	ghoulfriendly = TRUE
 
 /datum/reagent/medicine/mentat/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>Everything begins to make sense.</span>")
-		ADD_TRAIT(M, TRAIT_CHEMWHIZ	, "mentats")
+		ADD_TRAIT(M, TRAIT_CHEMWHIZ, "mentats")
 		ADD_TRAIT(M, TRAIT_SURGERY_LOW, "mentats")
+		ADD_TRAIT(M, TRAIT_SELF_AWARE, "mentats")
+		ADD_TRAIT(M, TRAIT_EMPATH, "mentats")
+		ADD_TRAIT(M, TRAIT_TECHNOPHREAK, "mentats")
+		ADD_TRAIT(M, TRAIT_JOLLY, "mentats")
+		REMOVE_TRAIT(M, TRAIT_SNOB, "mentats")
+		REMOVE_TRAIT(M, TRAIT_UNSTABLE, "mentats")
 
 /datum/reagent/medicine/mentat/on_mob_delete(mob/living/carbon/human/M)
 	..()
@@ -617,33 +623,44 @@
 
 /datum/reagent/medicine/mentat/addiction_act_stage1(mob/living/M)
 	if(prob(33))
-		M.Jitter(2)
+		M.Jitter(25)
 	..()
 
 /datum/reagent/medicine/mentat/addiction_act_stage2(mob/living/M)
+	REMOVE_TRAIT(M, TRAIT_EMPATH, "mentats")
+	REMOVE_TRAIT(M, TRAIT_JOLLY, "mentats")
 	if(prob(33))
 		. = TRUE
 		M.Dizzy(3)
-		M.Jitter(3)
+		M.Jitter(50)
+		M.blur_eyes(20)
 	..()
 
 /datum/reagent/medicine/mentat/addiction_act_stage3(mob/living/M)
+	REMOVE_TRAIT(M, TRAIT_TECHNOPHREAK, "mentats")
+	M.confused += 10
 	if(prob(33))
 		M.adjustToxLoss(1*REAGENTS_EFFECT_MULTIPLIER)
 //		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
 //		. = TRUE
 		M.Dizzy(4)
-		M.Jitter(4)
+		M.Jitter(25)
 	..()
 
 /datum/reagent/medicine/mentat/addiction_act_stage4(mob/living/M)
+	REMOVE_TRAIT(M, TRAIT_SELF_AWARE, "mentats")
+	ADD_TRAIT(M, TRAIT_SNOB, "mentats")
+	ADD_TRAIT(M, TRAIT_UNSTABLE, "mentats")
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 20)
+	M.Jitter(50)
 	if(prob(33))
 		M.drop_all_held_items()
 		M.adjustToxLoss(2*REAGENTS_EFFECT_MULTIPLIER)
 //		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 4)
 //		. = TRUE
 		M.Dizzy(5)
-		M.Jitter(5)
+		M.blur_eyes(20)
+	
 	..()
 
 // ---------------------------

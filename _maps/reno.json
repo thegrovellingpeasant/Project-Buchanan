@@ -11,8 +11,8 @@
 	"space_ruin_levels":0,
 	"space_empty_levels":0,
 	"shuttles": {
-		"cargo":"cargo_pahrump",
-		"emergency": "emergency_pahrump",
+		"cargo":"cargo_reno",
+		"emergency": "emergency_reno",
 		"ferry": "ferry_fancy"
 	},
 	"traits":[

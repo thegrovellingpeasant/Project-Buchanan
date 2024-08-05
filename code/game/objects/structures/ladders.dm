@@ -452,7 +452,9 @@
 	name = "manhole"
 	desc = "A sturdy metal ladder."
 	icon = 'icons/obj/structures.dmi'
-	icon_state = "manhole_open"
+	icon_state = "manhole_halfopen"
+	pixel_x = -3
+	pixel_y = -4
 	plane = FLOOR_PLANE
 	height = 0
 
