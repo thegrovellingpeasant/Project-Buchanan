@@ -20,6 +20,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
+	faction_head = TRUE
 	title = "Wright Elder"
 	flag = F13WRIGHTSELDER
 	department_flag = WRIGHTS
@@ -58,7 +59,7 @@
 
 /datum/outfit/loadout/aristocrat
 	name = "Aristocrat"
-	suit = /obj/item/clothing/suit/armor/f13/wrights/elder/morningcoat
+//	suit = /obj/item/clothing/suit/armor/f13/wrights/elder/morningcoat
 
 
 /datum/outfit/loadout/sundaybest

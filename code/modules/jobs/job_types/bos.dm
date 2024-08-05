@@ -13,7 +13,6 @@ Main doors: ACCESS_CAPTAIN 20
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_FALLOUT
-
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
 
 /datum/outfit/job/bos
@@ -373,7 +372,7 @@ Star Paladin
 	selection_color = "#95a5a6"
 	exp_type = EXP_TYPE_BROTHERHOOD
 
-	exp_requirements = 1000 
+	exp_requirements = 1000
 
 	loadout_options = list(
 		/datum/outfit/loadout/spaladina, //5mm minigun

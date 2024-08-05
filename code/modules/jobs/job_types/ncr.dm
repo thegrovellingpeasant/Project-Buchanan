@@ -1056,7 +1056,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/binoculars = 1,
 		)
 
-/datum/outfit/loadout/corporalcqc		
+/datum/outfit/loadout/corporalcqc
 	name = "Combat Engineer"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
@@ -1070,7 +1070,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/glasses/welding = 1,
 		)
 
-/datum/outfit/loadout/corporalcommand	
+/datum/outfit/loadout/corporalcommand
 	name = "Combat Medic"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine
