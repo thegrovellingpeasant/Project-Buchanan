@@ -1,10 +1,11 @@
 
 /obj/machinery/computer/prisoner/management
 	name = "prisoner management console"
-	desc = "Used to manage tracking implants placed inside criminals."
-	icon_screen = "explosive"
-	icon_keyboard = "security_key"
-	req_access = list(ACCESS_BRIG)
+	desc = "Used to manage a prisoner's quota for mining."
+	icon_state = "computer"
+	icon_keyboard = "generic_key"
+	icon_screen = "generic"
+	req_one_access = list(ACCESS_BRIG, ACCESS_NCR)
 	var/id = 0
 	var/temp = null
 	var/status = 0
@@ -12,8 +13,7 @@
 	var/stop = 0
 	var/screen = 0 // 0 - No Access Denied, 1 - Access allowed
 	circuit = /obj/item/circuitboard/computer/prisoner
-
-	light_color = LIGHT_COLOR_RED
+	light_color = LIGHT_COLOR_GREEN
 
 /obj/machinery/computer/prisoner/management/ui_interact(mob/user)
 	. = ..()
@@ -28,10 +28,10 @@
 			dat += text("<A href='?src=[REF(src)];id=eject'>[contained_id]</A><br>")
 			dat += text("Collected Points: [contained_id.points]. <A href='?src=[REF(src)];id=reset'>Reset.</A><br>")
 			dat += text("Card goal: [contained_id.goal].  <A href='?src=[REF(src)];id=setgoal'>Set </A><br>")
-			dat += text("Space Law recommends quotas of 100 points per minute they would normally serve in the brig.<BR>")
+			dat += text("NCR Law recommends quotas of 100 points per minute they would normally serve in a Correctional Facility.<BR>")
 		else
 			dat += text("<A href='?src=[REF(src)];id=insert'>Insert Prisoner ID.</A><br>")
-		dat += "<H3>Prisoner Implant Management</H3>"
+		/*dat += "<H3>Prisoner Implant Management</H3>"
 		dat += "<HR>Chemical Implants<BR>"
 		var/turf/Tr = null
 		for(var/obj/item/implant/chem/C in GLOB.tracked_chem_implants)
@@ -63,6 +63,7 @@
 			dat += "ID: [T.imp_in.name] | Location: [loc_display]<BR>"
 			dat += "<A href='?src=[REF(src)];warn=[REF(T)]'>(<font class='bad'><i>Message Holder</i></font>)</A> |<BR>"
 			dat += "********************************<BR>"
+		*/
 		dat += "<HR><A href='?src=[REF(src)];lock=1'>{Log Out}</A>"
 	var/datum/browser/popup = new(user, "computer", "Prisoner Management Console", 400, 500)
 	popup.set_content(dat)
@@ -103,7 +104,7 @@
 						if(num >= 0)
 							num = min(num,1000) //Cap the quota to the equivilent of 10 minutes.
 							contained_id.goal = num
-		else if(href_list["inject1"])
+		/*else if(href_list["inject1"])
 			var/obj/item/implant/I = locate(href_list["inject1"]) in GLOB.tracked_chem_implants
 			if(I && istype(I))
 				I.activate(1)
@@ -132,7 +133,7 @@
 				var/mob/living/R = I.imp_in
 				to_chat(R, "<span class='italics'>You hear a voice in your head saying: '[warning]'</span>")
 				log_directed_talk(usr, R, warning, LOG_SAY, "implant message")
-
+		*/
 		src.add_fingerprint(usr)
 	src.updateUsrDialog()
 	return
