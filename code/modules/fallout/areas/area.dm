@@ -707,13 +707,13 @@
 
 /area/f13/reno_prison
 	name = "prison"
-	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "transparent"
 	ambientmusic = RENO_PRISON_AMBIENCE
 
 /area/f13/reno_prison_yard
 	name = "prison_yard"
-	icon = 'icons/fallout/objects/wendover.dmi' // interstate change because the salt flats are too bright in the mapper, and manually changing every wasteland tile's icon through the map lags things terribly
+	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "transparent"
 	ambientmusic = RENO_PRISON_AMBIENCE
 	outdoors = 1
@@ -734,6 +734,11 @@
 	icon_state = "den"
 	ambientmusic = RENO_VANGRAFF_AMBIENCE
 
+/area/f13/vangraffs_vault
+	name = "Van Graff Vault"
+	icon_state = "den"
+	ambientmusic = RENO_VANGRAFF_AMBIENCE
+
 /area/f13/wrights
 	name = "Wrights"
 	icon_state = "den"
@@ -741,6 +746,11 @@
 
 /area/f13/wrights_armory
 	name = "Wright Armory"
+	icon_state = "den"
+	ambientmusic = RENO_WRIGHT_AMBIENCE
+
+/area/f13/wrights_vault
+	name = "Wright Vault"
 	icon_state = "den"
 	ambientmusic = RENO_WRIGHT_AMBIENCE
 
@@ -756,6 +766,11 @@
 
 /area/f13/reno_sharkclub_armory
 	name = "Shark Club Armory"
+	icon_state = "casino"
+	ambientmusic = SHARKCLUB_AMBIENCE
+
+/area/f13/reno_sharkclub_vault
+	name = "Shark Club Vault"
 	icon_state = "casino"
 	ambientmusic = SHARKCLUB_AMBIENCE
 
@@ -793,3 +808,8 @@
 	name = "BOS"
 	icon_state = "brotherhood"
 	ambientmusic = RENO_BOS_AMBIENCE
+
+/area/f13/heist
+	name = "Heist Crew Penthouse"
+	icon_state = "casino"
+	ambientmusic = SHARKCLUB_AMBIENCE
