@@ -1,9 +1,6 @@
-/////////////////////////////////////
-/* Faction Task Controller         */
-/* Original PR by Fulminating Gold */
-/////////////////////////////////////
-
 /*---------------------------------------------------------------------------------------------*\
+|	> Faction Task Controller			<														|
+|	> Original PR by Fulminating Gold	<														|
 |																								|
 |	Chance of a global task occuring is determined in the global_faction datum.					|
 |	To enable the global task for a faction, the datum path as a string should be added and		|
@@ -22,21 +19,18 @@
 GLOBAL_LIST_INIT(faction_task_probabilities, list(
 	"/datum/job/wrights" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
-		"/datum/faction_task/global_faction/heist" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 50,
 		"/datum/faction_task/individual_faction/assassination" = 50,
 		"/datum/faction_task/individual_player/coupdetat" = 20
 		),
 	"/datum/job/bishops" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
-		"/datum/faction_task/global_faction/heist" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 50,
 		"/datum/faction_task/individual_faction/assassination" = 50,
 		"/datum/faction_task/individual_player/coupdetat" = 20
 		),
 	"/datum/job/vangraffs" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
-		"/datum/faction_task/global_faction/heist" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 50,
 		"/datum/faction_task/individual_faction/assassination" = 50,
 		"/datum/faction_task/individual_player/coupdetat" = 20
@@ -326,7 +320,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /datum/faction_task
 	var/faction						// Job datum the task is assigned to
 	var/name						// Task name
-	var/chance						// Chance of this task being selected for a faction
+	var/chance						// Chance of this task being selected for a faction (Global tasks only)
 	var/mob/list/players = list()	// Players in the faction as a /mob
 	var/task_completed = FALSE		// Task completion status
 
@@ -361,18 +355,18 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	return
 
 
-GLOBAL_LIST_INIT(faction_vault_areas, list(			///////----------------------------------------- Pestarzt, set areas
-	"/datum/job/bishops" = /area/f13/reno_building, \
-	"/datum/job/vangraffs" = /area/f13/vangraffs , \
-	"/datum/job/wrights" = /area/f13/wrights, \
-	"/datum/job/citizen/f13tourist" = /area/f13/reno_building, \
+GLOBAL_LIST_INIT(faction_vault_areas, list(
+	"/datum/job/bishops" = /area/f13/vangraffs_vault, \
+	"/datum/job/vangraffs" = /area/f13/wrights_vault, \
+	"/datum/job/wrights" = /area/f13/reno_sharkclub_vault, \
+	"/datum/job/citizen/f13tourist" = /area/f13/heist, \
 ))
 
 // Can be an item or object
 GLOBAL_LIST_INIT(faction_relics, list(			///////----------------------------------------- Pestarzt, set targets
-	"/datum/job/bishops" = /obj/item/stack/f13Cash/caps, \
-	"/datum/job/vangraffs" = /obj/item/stack/f13Cash/caps , \
-	"/datum/job/wrights" = /obj/item/stack/f13Cash/caps, \
+	"/datum/job/bishops" = /obj/structure/closet/crate/grave/ark, \
+	"/datum/job/vangraffs" = /obj/structure/closet/crate/grave/experimental_crate, \
+	"/datum/job/wrights" = /obj/structure/closet/crate/grave/strangebird, \
 ))
 
 
@@ -439,11 +433,11 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 
 /datum/faction_task/individual_faction/frame
 	name = "Frame"
-	chance = 20
 	var/datum/job/target_faction
 	var/mob/living/carbon/target
-	//vvvvvvvvvvvvvvvvv================================================================================ Pestarzt set area
-	var/prison_area = /area/f13/reno_prison	// Where the target must be by the end of the round to win
+	var/list/prison_area = list(	// Where the target must be by the end of the round to win
+		/area/f13/reno_prison,
+		/area/f13/reno_prison_yard)
 	var/target_chosen = FALSE
 
 /datum/faction_task/individual_faction/frame/New()
@@ -466,8 +460,9 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 
 /datum/faction_task/individual_faction/frame/calculate_score()
 	var/turf/T = get_turf(target)
-	if(target && istype(T.loc, prison_area))
-		return TRUE
+	for(var/A in prison_area)
+		if(target && istype(T.loc, A))
+			return TRUE
 	return FALSE
 
 /datum/faction_task/individual_faction/frame/task_status_msg()
@@ -490,7 +485,6 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 
 /datum/faction_task/individual_faction/assassination
 	name = "Assassination"
-	chance = 20
 	var/target_chosen = FALSE
 	var/datum/job/target_faction
 	var/mob/living/carbon/target
@@ -531,6 +525,38 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 		return "<font color='#097f10'>Your target is dead.</font>"
 	else
 		return "<font color='#bc2621'>The target survived.</font>"
+
+
+
+/* Recruit */
+
+/datum/faction_task/individual_faction/recruit
+	name = "Recruit"
+	var/recruits = 0													// Number of people recruited
+	var/recruit_target = 1												// Number of people to recruit
+	var/datum/job/recruit_faction	= /datum/job/citizens/f13tourist	// Faction to recruit from
+
+/datum/faction_task/individual_faction/recruit/New()
+	..()
+	for(var/mob/living/P in players)
+		var/obj/item/storage/recruit_forms/forms = new /obj/item/storage/recruit_forms(get_turf(P))
+		forms.set_faction(faction, src)
+		P.put_in_active_hand(forms)
+
+/datum/faction_task/individual_faction/recruit/calculate_score()
+	if(recruits >= recruit_target)
+		return TRUE
+	return FALSE
+
+/datum/faction_task/individual_faction/recruit/task_status_msg()
+	return "Recruit [recruit_target] [(recruit_target == 1 ? "person" : "people")] into your faction from the [initial(recruit_faction.faction)]."
+
+/datum/faction_task/individual_faction/recruit/end_round_msg()
+	if(calculate_score())
+		return "<font color='#097f10'>You recruited enough people.</font>"
+	else
+		return "<font color='#bc2621'>You failed to recruit enough people.</font>"
+
 
 
 
@@ -607,7 +633,7 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 /datum/faction_task/individual_player/heist/proc/pick_target()
 	drop_off = GLOB.faction_vault_areas["[faction]"]
 	target_faction = text2path(pick(GLOB.faction_relics))
-	//target = locate(GLOB.faction_relics["[target_faction]"])
+	target = locate(GLOB.faction_relics["[target_faction]"])
 
 /datum/faction_task/individual_player/heist/calculate_score()
 	var/turf/T = get_turf(target)
@@ -616,7 +642,7 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 	return FALSE
 
 /datum/faction_task/individual_player/heist/task_status_msg()
-	return "Steal the relic from the vault of your target ([target_faction])."
+	return "Steal the relic from the vault of your target ([initial(target_faction.faction)])."
 
 /datum/faction_task/individual_player/heist/end_round_msg()
 	if(calculate_score())
@@ -627,10 +653,12 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 
 
 
-////////////////////////////
-/* Read Faction Task Data */
-////////////////////////////
+///////////////////
+/* Miscellaneous */
+///////////////////
 
+
+// Display Task Data to Chat
 /client/proc/read_faction_task_data()
 	set category = "Debug"
 	set name = "Faction Task Data"
@@ -652,7 +680,217 @@ GLOBAL_LIST_INIT(faction_relics, list(			///////--------------------------------
 		for(var/T in GLOB.faction_task_controller.faction_tasks[F])
 			text += "[(text == "" ? "" : ", ")][T]"
 		to_chat(usr, "[F]: [text]")
+
 	to_chat(usr, "-=-=-=-=- Player Tasks -=-=-=-=-")
 	for(var/F in GLOB.faction_task_controller.player_tasks)
 		to_chat(usr, "[F]: [GLOB.faction_task_controller.player_tasks[F]]")
 	to_chat(usr, "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+
+
+
+// Recruit Form
+/obj/item/recruit_form
+	name = "recruitment form"
+	icon = 'icons/obj/bureaucracy.dmi'
+	icon_state = "paper_words"
+	inhand_icon_state = "paper"
+	w_class = WEIGHT_CLASS_TINY
+	throwforce = 0
+	throw_range = 1
+	throw_speed = 1
+	resistance_flags = FLAMMABLE
+	grind_results = list(/datum/reagent/cellulose = 3)
+	var/datum/faction_task/individual_faction/recruit/task
+	var/datum/job/recruiting_faction = null
+	var/todays_date = "September 11th, 2251"	// Roleplay relevant date. Should be static.
+	// Signed information
+	var/form_date = null
+	var/form_name = null
+	var/form_faction_history = null
+	var/form_age = null
+	var/form_availability = null
+	var/form_residence = null
+	var/form_profession = null
+	var/mob/living/carbon/human/signee = null
+	var/mob/living/carbon/human/approved_by = null
+
+/obj/item/recruit_form/recruit_form/New(datum/job/faction/faction, task)
+	. = ..()
+	recruiting_faction = faction
+
+/obj/item/recruit_form/recruit_form/attackby(obj/item/I, mob/user)
+	. = ..()
+
+	// Sign & Approve
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(locate(user) in recruiting_faction.players)
+			if(istype(I, /obj/item/pen))
+				if(!signee)
+					to_chat(P, "<span class='notice'>The document has nobody to approve.</span>")
+				else
+					// Begin Approval
+					user.visible_message(
+						"<span class='notice'>[user] begins to review \the [src] for approval</span>",
+						"<span class='notice'>You begin to review \the [src] for approval. <b>Be sure you have read it first!</b></span>")
+
+					if(do_after(user, 5 SECONDS, target = src))
+
+						// Recruitment Slots Filled Check
+						if(task.recruits >= task.recruit_target)
+							user.visible_message(
+								"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
+								"<span class='notice'>You realize no more people can be recruited so you take \the [I] away from the \the [src].</span>")
+							return
+
+						// Signee In View Check
+						if(!signee || !(locate(signee) in view(7, user)))
+							user.visible_message(
+								"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
+								"<span class='notice'>After realizing the signee isn't present, you take \the [I] away from \the [src].</span>")
+							return
+
+						// Signee Alive Check
+						if(!considered_alive(signee.mind))
+							user.visible_message(
+								"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
+								"<span class='notice'>After realizing the signee isn't alive, you take \the [I] away from \the [src].</span>")
+							return
+
+						// Recruitable Faction Check
+						if(!task.recruit_faction)
+							user.visible_message(
+								"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
+								"<span class='notice'>After reviewing the form and seeing that their faction experience disqualifies them, you take \the [I] away from \the [src].</span>")
+							return
+
+						// Approve
+						user.visible_message(
+							"<span class='notice'>[user] approves \the [src]</span>",
+							"<span class='notice'>You approve \the [src].</span>")
+						approved_by = H
+						approve()
+				return
+		else
+			if(istype(I, /obj/item/pen))
+				user.visible_message(
+					"<span class='notice'>[user] begins to sign \the [src]</span>",
+					"<span class='notice'>You begin to sign \the [src].</span>")
+				if(alert("Signing this form means you abide by faction rules now.", "OOC Rules", "Sign", "Cancel") == "Sign") && do_after(user, 5 SECONDS, target = src))
+					user.visible_message(
+						"<span class='notice'>[user] sign \the [src]</span>",
+						"<span class='notice'>You sign \the [src].</span>")
+
+					form_date = todays_date
+
+					form_name = H.real_name
+
+					form_faction_history = ""
+					for(var/i = 1, i <= length(H.faction), i++)
+						if(i > 1)
+							faction_text += ", "
+						faction_text += H.faction[i]
+
+					form_age = H.age
+
+					if(alert("What do you want to put as your availability?.", "[name]", "Always available", "Custom") == "Custom"))
+						form_availability = input(H, "Sign your residence.", "[name]", "Always Available") as text
+					else
+						form_availability = "Always available"
+
+					if(alert("What do you want to put as your residence?.", "[name]", "None", "Custom") == "Custom"))
+						form_residence = input(H, "Sign your residence.", "[name]", "None") as text
+					else
+						form_residence = "None"
+
+					form_profession = SSjob.GetJob(H.mind.assigned_role).title
+
+					ui_interact(user)
+				return
+	// Ignite
+	if(!(resistance_flags & FIRE_PROOF) && (resistance_flags & FLAMMABLE) && !(resistance_flags & ON_FIRE))
+		var/ignition_message = ignition_effect(src, user)
+		if(ignition_message)
+			if(user.is_holding(src))
+				user.dropItemToGround(src)
+			user.visible_message(
+				"<span class='boldwarning'>[user] lights \the [src] on fire</span>",
+				"<span class='boldwarning'>You light \the [src] on fire.</span>")
+
+/obj/item/recruit_form/recruit_form/proc/approve()
+	signee.faction = task.faction
+	task.recruits++
+	return
+
+/obj/item/recruit_form/examine(mob/user)
+	. = ..()
+	if(!in_range(user, src) && !isobserver(user))
+		. += "<span class='warning'>You're too far away to read it!</span>"
+		return
+	if(!user.can_read(src))
+		return
+	ui_interact(user)
+
+/obj/item/recruit_form/ui_interact(mob/user)
+	. = ..()
+	var/dat = {"
+		<html><head><style>
+		table {
+			border-collapse: collapse;
+		 	width: 100%;
+		}
+		td, th {
+			border: 2px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(1), tr:nth-child(9){
+			background-color: #004d99;
+		}
+		</style>
+		</head>
+		<body>
+		<center><b><h1>Recruitment Form</h1></b></center>
+		<table>
+			<tr><td><center><span style="color:#d9d9d9;"><b>PLEASE COMPLETE ALL INFORMATION REQUESTED<br> IN PRINT EXCEPT SIGNATURE</b></span></center></td></tr>
+			<tr><td><b>Date: [form_date]</b></td></tr>
+			<tr><td><b>Name: [form_name]</b></td></tr>
+			<tr><td><b>Faction History: [form_faction_history]</b></td></tr>
+			<tr><td><b>Age: [form_age]</b></td></tr>
+			<tr><td><b>Availability: [form_availability]</b></td></tr>
+			<tr><td><b>Residence: [form_residence]</b></td></tr>
+			<tr><td><b>Current Profession [form_profession]:</b></td></tr>
+			<tr><td><b><center><span style="color:#d9d9d9;">By signing this signature you agree to the terms of the job and give your loyalty to the company and that failure to comply will result in your proportional punishment as decided by your given superiors.</span></center></b></td></tr>
+			<tr><td><b>Signature: <span style="font-family:cursive"><i>[form_name]<i></span></b></td></tr>
+			<tr><td>After signing please hand this document to an employee of the company for approval. You must be present for them to sign.</td></tr>
+			<tr><td><b>Approved by Signature:</b> <span style="font-family:cursive"><i>[approved_by.real_name]<i></span></td></tr>
+		</table>
+		</body>
+		</html>
+		"}
+	var/datum/browser/popup = new(user, "recruitment_form", "recruitment form")
+	popup.set_content(dat)
+	popup.open()
+
+
+
+// Box of Recruitment Forms
+/obj/item/storage/box/recruit_forms
+	name = "box of recruitment forms"
+	desc = "Contains several scanners and labelers for shipping things. Wrapping Paper not included."
+	illustration = "shipping"
+
+/obj/item/storage/recruit_forms/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/pen=1,
+		/obj/item/recruit_form/form=4,
+		)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/recruit_forms/proc/set_faction(var/datum/job/_faction, var/datum/faction_task/individual_faction/recruit/task)
+	for(var/I in contents)
+		if(istype(I, /obj/item/recruit_form))
+			var/obj/item/recruit_form/form = I
+			form.recruiting_faction = _faction
+			form.task = task
