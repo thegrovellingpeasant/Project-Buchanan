@@ -533,3 +533,87 @@ E/0.33,B4/0.5,A4,E/0.67,D/2,Fn/0.25,Gn,F,E/0.5<br>
 D,C,E/0.5,D/0.5,A/0.25,F#/0.5,G#/0.5,B5,A5<br>
 E/0.33,B4/0.5,A4,E/0.67,D/2,Fn/0.25,Gn,F,E/0.5<br>
 D,C,E/0.5,D/0.5,A/0.3<br><br></center>"}
+
+/obj/item/paper/hubologyad
+	name = "Hubology Pamphlet"
+	desc = "A particularly smarmy cult advertisement."
+	icon = 'icons/obj/library.dmi'
+	icon_state = "partyboy"
+	info = {"<center><B><u> Hubology for the Unaligned </u> </B></center><br><br><br>
+<br>
+Welcome to the Hubology Center, our home and regional HQ. Please, enjoy some complementary refreshments, and attend one of our free seminars.<br><br>
+<br>
+<B>So what is Hubology?</B> Hubology is, in a word, about <i>you</i>. Using a combination of advanced technology and state of the art scientific spiritualism, known as alignments, we aim to help you unlock your fullest potential.<br>
+<br>
+<B>Okay, but really, what is Hubology?</B> It's a religion based on the teachings of the Star Father as revealed to us by the esteemed, pre-war science-fiction novelist, Dick Hubbell. This knowledge, published in such memorable works as Scientific Spiritualism, Battleground Quetzel and Star Father Above, is thought to have advanced the fields of Psychology, Social Engineering and Tax Evasion by as much as 3000 years. Bolstered by these techniques, Hubology has grown into one of the largest religions in the post-deluge world, and is well on its way to restoring the harmony of the primordial universe.<br>
+<br>
+<B>Why is everyone calling each other AHS?</B> Members of Hubology, Aligned Hub Seekers, are given a progressively higher ranking as they travel down the path to enlightenment. This number reflects the knowledge and experience they have gained, and is a reward for their hard work.<br>
+<br><br><br><br><br>
+Ask an AHS about receiving your first alignment, and begin living a fuller, better life, today!"}
+
+/obj/item/paper/hubologyteachings
+	name = "Hubology For Rim Meat"
+	desc = "A primer on Hubology for low level AHS or prospective initiates."
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "holodisk"
+	info = {"<center><u><B>The Elron Bible</B><br></u>
+<br><br><br>
+<B>Welcome!</B><br>
+Welcome to the Hubology Holodisc! Within these electronic pages, you'll find a quick description of our beliefs, including the formerly-repressed teachings of the Hub. This holodisc isn't meant to represent the final word on Hubology - think of it as a primer, and us as your spiritual guardians.<br>
+<br><br><br>
+<B>History</B>
+<br><br><br>
+We were founded back before the Great Deluge by an author and visionary of great promise, a man named Dick Hubbell. He saw the failure of the medicine of that time, and of the failure of religion, and of the failure of government. He knew that the world needed something new...the world needed Hubology. Inspired by music of the time and his own personal experience with extraterrestrial beings, he set out to show us wheels in the sky, to keep them burning, and to understand the Great Wheel of Life.<br>
+<br>
+We call him the Hub, for it is through him that we understand our place in the Wheel - he is our center, and we are his spokes. It is around his teachings that we revolve.
+<br><br>
+With the publication of countless books and journals, the Hub began spreading the word of Hubology - and immediately became a target for his detractors. They called his work "pseudo-science" and "dangerous dribble that can only hurt its adherents." Despite the collected sightings of Extra-Terrestrial Vehicles across the globe, they insisted on quashing the Hub's word. We know that they were simply stupid and misguided, but they were powerful; they included governments and corporations and other such entities, keeping the greatest news of all time from the people of the earth.
+<br><br>
+Hubology was driven underground for a time, marshaling its forces against the attacks of those who envied its simplicity and ease of use for the common man. When at last the Hubologists of that time struck back, they did it in such a way that few could stand against them - they infiltrated the organizations that sought to destroy them and created "television" shows that sought to expose the lies the government had fed the people.
+<br><br>
+This caused a subtle backlash against our religion. The common man found reason to doubt Hubology because of the distorted teachings of the media, and we had to wage a long campaign against those who would call us crackpots. During this time, sadly, the great Hub passed away.
+<br><br>
+Bolstered by the knowledge that The Hub had achieved unity with the Star Father, helping to turn the cosmic wheel in our direction, attaining another level of consciousness, we remained confident in ourselves that ours was the true way. Along the way, we gained adherents, many of whom who simply wanted to believe that there was a place out there that is better than this world. We offer proof of life on other planets, and a philosophy that allows us to understand the way of the universe. People have come to us over the ages, impressed by the rightness of our minds. And the fact that we have survived the Great Deluge unscathed teaches us that the Great Wheel turns toward our teachings!<br><br><br><br>
+<B>Philosophy</B>
+<br><br><br>
+Hubology contains a simple philosophy, culled from the finest religious and philosophical minds of pre-Deluge Earth - we believe that life, the universe, and everything can best be symbolized by a turning wheel. The outer rim of wheel contains those who do not understand our teachings and who do not understand the truth. We call them "rim meat", for the Wheel turns over them and grinds them, and they do not appreciate its workings.
+<br><br>
+Those who practice Hubology are the Spokes of the Wheel. We understand the motion of the Wheel and do our best to facilitate its turning. Those who control a portion of the wheel are called Hubs - and as far as we know, there have been only a few Hubs, enlightened individuals who seek to better the lots of their fellow earthlings. We refer to the founder of Hubology as THE Hub, for he is the one with the most correct teaching.
+<br><br>
+In the practice of our religion, we simply apply scientific techniques developed by the Hub and perfected by his inheritors to align the flawed neurodynes that create disharmony and an asymmetrical wheel. This allows us to purify ourselves and prepare us for self-examination. It is only through self-examination that we are able to succeed, and only through self-examination that we understand our place in the cosmos and on the Great Wheel. It is only through self-examination that we discover ourselves to be worthy of boarding the fiery rings when they meet us on the planet Quetzel.
+<br><br>
+We think of ourselves as a religion combined with the best scientific technique - scientific spirituality is what we call it...and what we hope you'll be calling it before too long!
+<br><br>
+This is our creation story:
+Aeons ago, all lived peacefully and in harmony with one another. Body, mind, and spirit were joined in all creatures, and the technology that existed boggled the imaginations. It was a time of peace, creativity, and alignment - and then the Dark Days came. Thrakazog the Pot Hole began to teach mind-body dualism and the sundering of the spirit, and war arose. The Great War destroyed souls and bodies and scattered their remnants across the universe. The Great Wheel came close to separating from the axle of existence, its spokes broken in the rut Thrakazog had created. A new life had to arise.
+<br><br>
+And arise it did, on the planet Terra, as on other planets across the universe. (We focus mainly on the life that arose on Terra, for while we believe that we will once again heal the sundered spokes of the Wheel with our starry brothers, we must first concentrate on making ourselves useful spokes.) This new life was polluted by the soul-pieces of the dead. This led to hate and misunderstanding, and wars raged across Terra's surface until one day a visionary realized that the only way to create peace, understanding, and enlightenment was to cleanse these soul-pieces from the spirits of humanity. That visionary was The Hub. His cleansing continues today.
+<br><br><br><br>
+<B>Small Glossary</B>
+<br><br><br>
+<u>AHS/Aligned Hub Seeker</u>: The levels of enlightenment are measured by the cleansing of your neurodynes, cleaning out the base negative energy of your meat and converting it to positive mental energy. When you have achieved a strong enough level of zetan energy, you can travel to Quetzel, or you can wait and hope that the Uplifting will come during your lifetime.
+<br><br>
+<u>Alignment</u>: When a neurodyne is polluted and keeps a seeker's Zeta levels down, we "align" the levels to the universal Wheel by running a Zeta Scan on the affected neurodyne, cleansing it of taint. Too much alignment too quickly is harmful for the spirit, however.
+<br><br>
+<u>Enlightenment</u>: Enlightenment is the state achieved past AHS-9 - when the seeker has gained so much knowledge he becomes an integral part of the Great Wheel and leaves this earthly existence behind. Some of the Enlightened remain on Terra to guide the rest of us to a state of grace, to show us how to get behind the Wheel of our own lives.
+<br><br>
+<u>Great Wheel</u>: This refers to the cyclical nature of the universe, space, and time. Everything is a part of the Great Wheel. There are some who can take control of the Wheel - or perhaps they simply understand the direction in which it travels - and we call them gods, prophets, and visionaries. Those who master the Great Wheel are truly enlightened.
+<br><br>
+<u>Neurodyne</u>: Neurodynes are the stations of the spirit. Ancient religions called them "shakras". They can be polluted by soul-pieces and negative energy emanating from oppressives.
+<br><br>
+<u>Oppressives</u>: Oppressives are those individuals who are so full of negative energy and polluted soul-pieces that they drag down those who seek enlightenment by their very presence. They are to be avoided - many of them are so polluted they do not recognize the value to be found in a good cleansing, and they do their best to divert the course of the Great Wheel.
+<br><br>
+<u>Quetzel</u>: The planet to which the Star Father will bring us when we have become Optimized, where we will meet with our starry brethren and join them on their flaming wheels in the sky.
+<br><br>
+<u>Rim Meat</u>: A basic person, one who has not yet been aligned to purify his neurodynes.
+<br><br>
+<u>Star Father</u>: Some would call the Star Father "God". We prefer to think of the Star Father as the universal force from which we draw our energy, and to which we feed our energy in turn - again, a cyclical relationship.
+<br><br>
+<u>Uplifting</u>: The time when the Star Father calls us home to Quetzel, where we meet our extra-terrestrial brethren and move closer to the hub of the Great Wheel. Those who have made an effort to understand and embrace the words of the Hub, no matter their AHS levels, will be invited to join the Star Father in the heavens on planet Quetzel.
+<br><br>
+<u>Zeta Scan</u>: Another word for "alignment", the Zeta Scan helps to purify your neurodynes and clear your spirit. It consists of a machine that runs massive doses of electricity through your skin - this electricity has been carefully formulated, to the exact volt, to the amount of energy needed to drive the negative energy from a neurodyne. By accepting a Zeta Scan, your course is slightly corrected to be more in line with the movement of the Wheel.
+<br><br><br><br></center>
+<B>Bibliography</B>
+<br><br>
+<u>Books by The Hub</u>:
+Scientific Spirituality, Battleground Quetzel, Star Father Above, Collected Shopping Lists, Notes and Musings, How to Sue Your Enemies Effectively, How to Create a Cult, and Future Books to be Written When I'm Dead."}
