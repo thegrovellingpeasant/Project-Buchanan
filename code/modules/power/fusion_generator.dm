@@ -8,7 +8,7 @@
 
 /obj/machinery/power/fusion_generator
 	name = "fusion generator"
-	desc = "It's a high efficiency pre-war fusion generator, able to last for ages provided its fusion core is intact."
+	desc = "It's a high efficiency pre-war fusion generator, able to last for centuries provided its fusion core is intact and remains in the port."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "generator"
 	density = TRUE
@@ -66,6 +66,7 @@
 			if(wiring == GENERATOR_WIRING_INTACT)
 				wiring = GENERATOR_WIRING_DISABLED
 				user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
+				update_icon_state()
 	else
 		to_chat(user, "<span class='warning'>The panel is still on!</span>")
 		return
@@ -80,6 +81,7 @@
 			var/turf/T = get_turf(user)
 			cell.forceMove(T)
 			cell.update_icon()
+			update_icon()
 			return
 	else
 		to_chat(user, "<span class='warning'>The wiring is still in the way!</span>")
@@ -98,3 +100,5 @@
 			user.visible_message(\
 				"[user.name] has inserted the [cell] to [src.name]!",\
 				"<span class='notice'>You insert the [cell].</span>")
+				cell.update_icon()
+				update_icon()
