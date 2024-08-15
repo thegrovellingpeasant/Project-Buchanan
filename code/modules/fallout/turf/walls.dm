@@ -301,7 +301,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	..()
 	icon_state = "rock[rand(1,6)]"
 
-/turf/closed/indestructible/f13/vaultwall //Just like that one game studio that worked on the original game, or that block in Minecraft!
+/turf/closed/indestructible/f13/vaultwall
 	name = "vault wall"
 	desc = "No matter what you do with this rock, there's not even a scratch left on its surface.<br><font color='#7e0707'>You shall not pass!!!</font>"
 	icon = 'icons/turf/walls/f13superstore.dmi'
@@ -313,7 +313,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall)
 	plane = GAME_PLANE
 
-/turf/closed/indestructible/f13/vaultwall/notvaultwall //Just like that one game studio that worked on the original game, or that block in Minecraft!
+/turf/closed/indestructible/f13/vaultwall/notvaultwall
 	name = "wall"
 	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall/notvaultwall)
 
@@ -326,7 +326,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall, /turf/closed/wall/mineral/concrete)
 
-/turf/closed/indestructible/f13/vaultwall/fakeshutter //Just like that one game studio that worked on the original game, or that block in Minecraft!
+/turf/closed/indestructible/f13/vaultwall/fakeshutter
 	name = "shutter"
 	icon = 'icons/obj/doors/shutters.dmi'
 	icon_state = "closed"

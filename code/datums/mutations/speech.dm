@@ -286,3 +286,40 @@
 	/*if(prob(3))
 		message += " Kuna-man!"*/
 	speech_args[SPEECH_MESSAGE] = trim(message)
+
+/datum/mutation/human/wright
+	name = "Wright"
+	desc = "The result of many mouth soapings."
+	quality = MINOR_NEGATIVE
+	locked = TRUE
+	text_gain_indication = "<span class='notice'>If God is with us, who can be against us?</span>"
+	text_lose_indication = "<span class='notice'>You become overwhelmed by doubt.</span>"
+
+/datum/mutation/human/wright/on_acquiring(mob/living/carbon/human/owner)
+	. = ..()
+	if(.)
+		return
+	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+
+/datum/mutation/human/wright/on_losing(mob/living/carbon/human/owner)
+	. = ..()
+	if(.)
+		return
+	UnregisterSignal(owner, COMSIG_MOB_SAY)
+
+
+/datum/mutation/human/wright/proc/handle_speech(datum/source, list/speech_args)
+	var/message = speech_args[SPEECH_MESSAGE]
+	if(speech_args[SPEECH_LANGUAGE] != /datum/language/tribal) 
+		if(message[1] != "*")
+			message = " [message]" 
+			var/list/wright_words = strings("wright_replacement.json", "wright") // "I": "Ah" doesn't work without turning I'm to AH'm, just leave it out of the word replacement file
+			for(var/key in wright_words) 
+				var/value = wright_words[key] 
+				if(islist(value)) 
+					value = pick(value) 
+				message = replacetextEx(message, " [uppertext(key)]", " [uppertext(value)]")
+				message = replacetextEx(message, " [capitalize(key)]", " [capitalize(value)]")
+				message = replacetextEx(message, " [key]", " [value]") 
+
+	speech_args[SPEECH_MESSAGE] = trim(message)

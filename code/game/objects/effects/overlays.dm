@@ -71,6 +71,11 @@
 	name = "curb"
 	icon_state = "corner"
 
+/obj/effect/overlay/curb/reno
+	name = "curb"
+	icon = 'icons/fallout/turfs/reno_sidewalk.dmi'
+	icon_state = "curb"
+
 /obj/effect/overlay/airplanewing
 	name = "wing"
 	icon = 'icons/turf/floors.dmi'

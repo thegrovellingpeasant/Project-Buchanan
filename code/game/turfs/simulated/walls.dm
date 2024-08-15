@@ -29,7 +29,9 @@
 	/obj/structure/falsewall/reinforced,
 	/turf/closed/wall/rust,
 	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/clockwork)
+	/turf/closed/wall/clockwork,
+	/turf/closed/indestructible/f13vaultrusted,
+	/turf/closed/indestructible/f13rusted)
 	smooth = SMOOTH_TRUE
 
 	var/list/dent_decals

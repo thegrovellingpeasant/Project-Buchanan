@@ -89,13 +89,13 @@ obj/dugpit/New(lnk)
 	user.show_message("<span class='notice'>You cover the hole with dirt.</span>", 1)
 	dug = 0
 	if((storedindex >= 4) || ((gravebody || gravecoffin) != null))
-		mypit.icon_state = "mound"
+		mypit.icon_state = "[initial(icon_state)]_mound"
 		update_icon()
 	else if (2 < storedindex < 4)
-		mypit.icon_state = "mound_medium"
+		mypit.icon_state = "[initial(icon_state)]_mound_medium"
 		update_icon()
 	else if (storedindex <= 2)
-		mypit.icon_state = "mound_small"
+		mypit.icon_state = "[initial(icon_state)]_mound_small"
 		update_icon()
 
 /turf/open/indestructible/ground/outside/desert/proc/finishBody()
@@ -216,7 +216,7 @@ obj/dugpit/New(lnk)
 		I.loc = user.loc
 	if (mypit==null)
 		mypit = new/obj/dugpit(src)
-	mypit.icon_state = "pit"
+	mypit.icon_state = "[initial(icon_state)]_pit"
 	mypit.update_icon()
 	mypit.invisibility = 0
 	storedindex = 0
