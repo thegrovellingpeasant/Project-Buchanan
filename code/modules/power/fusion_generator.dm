@@ -8,9 +8,9 @@
 
 /obj/machinery/power/fusion_generator
 	name = "fusion generator"
-	desc = "It's a high efficiency pre-war fusion generator, able to last for centuries provided its fusion core is intact and remains in the port."
-	icon = 'icons/obj/power.dmi'
-	icon_state = "generator"
+	desc = "It's a high efficiency pre-war fusion generator, able to last for centuries provided its fusion core is intact and enabled."
+	icon = 'icons/obj/fusion_generator.dmi'
+	icon_state = "fusion_generator"
 	density = TRUE
 	req_access = null
 	use_power = NO_POWER_USE
@@ -30,6 +30,12 @@
 	cell = new cell_type
 	cell.charge = start_charge * cell.maxcharge / 100 
 	connect_to_network()
+
+/obj/machinery/power/fusion_generator/update_icon_state()
+	if(cell)
+		icon_state = "[initial(icon_state)]_on"
+	else
+		icon_state = "[initial(icon_state)]_off"
 
 /obj/machinery/power/fusion_generator/examine(mob/user)
 	. = ..()
@@ -81,7 +87,6 @@
 			var/turf/T = get_turf(user)
 			cell.forceMove(T)
 			cell.update_icon()
-			update_icon()
 			return
 	else
 		to_chat(user, "<span class='warning'>The wiring is still in the way!</span>")
@@ -100,5 +105,4 @@
 			user.visible_message(\
 				"[user.name] has inserted the [cell] to [src.name]!",\
 				"<span class='notice'>You insert the [cell].</span>")
-				cell.update_icon()
-				update_icon()
+			update_icon_state()
