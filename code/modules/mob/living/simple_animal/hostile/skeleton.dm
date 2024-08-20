@@ -136,3 +136,13 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 25
 	faction = list("hostile","vines","plants","Syndicate","gecko")
+
+/mob/living/simple_animal/hostile/skeleton/maddened_cultist
+	name = "maddened cultist"
+	desc = "This creature doesn't seem to be well, its movements contort in ways that should tear muscle, yet it shambles onward."
+	icon_state = "maddened_cultist"
+	maxHealth = 75
+	health = 75
+	loot = list(/obj/effect/decal/remains/human,
+				/obj/item/clothing/suit/hooded/cultrobes/eldritch,
+				/obj/item/clothing/mask/rat/raven)

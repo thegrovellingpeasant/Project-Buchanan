@@ -23,26 +23,9 @@
 	response_harm_simple = "splat"
 	density = FALSE
 	ventcrawler = VENTCRAWLER_ALWAYS
-	faction = list("hostile")
-	attack_sound = 'sound/effects/reee.ogg'
+	faction = list("neutral")
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/nugget = 1)
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	gold_core_spawnable = HOSTILE_SPAWN
-	var/stepped_sound = 'sound/effects/huuu.ogg'
 
-/mob/living/simple_animal/hostile/retaliate/frog/Initialize()
-	. = ..()
-	if(prob(1))
-		name = "rare frog"
-		desc = "It seems a little smug."
-		icon_state = "rare_frog"
-		icon_living = "rare_frog"
-		icon_dead = "rare_frog_dead"
-		butcher_results = list(/obj/item/reagent_containers/food/snacks/nugget = 5)
-
-/mob/living/simple_animal/hostile/retaliate/frog/Crossed(AM as mob|obj)
-	if(!stat && isliving(AM))
-		var/mob/living/L = AM
-		if(L.mob_size > MOB_SIZE_TINY)
-			playsound(src, stepped_sound, 50, 1)
