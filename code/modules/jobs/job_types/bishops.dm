@@ -408,6 +408,7 @@
 	backpack_contents = list(
 		/obj/item/card/slotmachine = 1,
 		/obj/item/storage/bag/money/small/few = 1,
+		/obj/item/melee/onehanded/club/tireiron = 1
 		)
 /*--------------------------------------------------------------*/
 
