@@ -306,7 +306,7 @@
 			S.burnmod *= 0.5
 			S.coldmod *= 0.5
 		if(2)
-//			new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
+			new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
 		else
 			return
 
@@ -355,7 +355,10 @@
 /obj/structure/closet/crate/grave/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
 	. = ..()
 	if(prob(50))
-		explosion(loc,-1,0,2, flame_range = 6)
+		do_sparks(3, TRUE, src)
+		for(var/i in 1 to 3)
+		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		return ..()
 
 	switch(rand(1,3))
 		if(1)
@@ -372,3 +375,6 @@
 			new /obj/item/stock_parts/cell/ammo/mfc(src)
 		else
 			return
+
+/obj/structure/closet/crate/grave/experimental_crate/proc/self_destruct()
+    explosion(src,5,5,6,6)

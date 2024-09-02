@@ -2381,7 +2381,6 @@
 #include "code\modules\jobs\job_types\followers.dm"
 #include "code\modules\jobs\job_types\LDS.dm"
 #include "code\modules\jobs\job_types\legion.dm"
-#include "code\modules\jobs\job_types\losthillschapter.dm"
 #include "code\modules\jobs\job_types\mordinos.dm"
 #include "code\modules\jobs\job_types\ncr.dm"
 #include "code\modules\jobs\job_types\salvatores.dm"
