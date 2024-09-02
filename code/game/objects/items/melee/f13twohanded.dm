@@ -358,7 +358,7 @@
 // Pool Cue		Keywords: Damage 22/32, Damage bonus Stamina
 /obj/item/twohanded/baseball/poolcue
 	name = "pool cue"
-	desc = "The weapon a angry gambler or a chem fiend."
+	desc = "The weapon of a angry gambler or a chem fiend."
 	icon_state = "poolcue"
 	icon_prefix = "poolcue"
 	attack_verb = list("hustled", "sharked", "poked", "pocketed", "scratched", "chalked")
@@ -433,11 +433,21 @@
 	throw_speed = 2
 	throw_range = 3
 	attack_verb = list("burned", "welded", "cauterized", "melted", "charred")
+	var/fire_stacks = 2 //pray to allah this works
 	hitsound = 'sound/items/welder2.ogg'
 
 /obj/item/twohanded/thermic_lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=60, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=32, icon_wielded="[icon_prefix]2")
+
+/obj/item/twohanded/thermic_lance/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.adjust_fire_stacks(fire_stacks)
+		M.IgniteMob()
+
+
 
 /obj/item/twohanded/thermic_lance/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
@@ -464,7 +474,7 @@
 
 /obj/item/twohanded/broken_thermic_lance
 	name = "broken thermic lance"
-	desc = "A versatile power-welding tool. It seems to have stopped working like it used to, but it can be repaired with the right parts, you look like you could stick your dick in it."
+	desc = "A versatile power-welding tool. It seems to have stopped working like it used to, but it can be repaired with the right parts, HIDDEN BLADE BUT IF IT WAS AWESOME."
 	icon = 'icons/fallout/objects/melee/twohanded.dmi'
 	icon_state = "thermiclance"
 	icon_prefix = "thermiclance"
@@ -482,7 +492,7 @@
 
 /obj/item/twohanded/broken_thermic_lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=25, icon_wielded="[icon_prefix]")
+	AddComponent(/datum/component/two_handed, force_unwielded=5, force_wielded=20, icon_wielded="[icon_prefix]")
 
 /obj/item/twohanded/broken_thermic_lance/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
