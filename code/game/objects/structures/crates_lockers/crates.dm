@@ -110,6 +110,23 @@
 			. += {"<span class='cult'>This is a coffin which your master can use to shield himself from the unforgiving sun.\n
 			You yourself are still human and dont need it. Yet.</span>"} */
 
+/obj/structure/closet/crate/coffin/crypt
+	name = "sandstone tomb"
+	desc = "A proper place for the influential to rot."
+	icon_state = "tomb_sandstone"
+	resistance_flags = FIRE_PROOF
+	can_weld_shut = FALSE
+	breakout_time = 200
+	max_integrity = 70
+	material_drop = /obj/item/stack/sheet/mineral/sandstone
+	material_drop_amount = 5
+
+/obj/structure/closet/crate/coffin/crypt/ominous
+	name = "ominous tomb"
+	desc = "Smooth and ancient, this tomb stirs an unnerving feeling deep within your bones, like a secret best left to rest."
+	icon_state = "tomb_ominous"
+	material_drop = /obj/item/stack/sheet/mineral/abductor
+
 /obj/structure/closet/crate/footlocker
 	desc = "Low metal locker for personal effects."
 	name = "footlocker"

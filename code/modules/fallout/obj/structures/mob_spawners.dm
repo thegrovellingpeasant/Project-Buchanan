@@ -968,6 +968,12 @@
 	icon_state = "lieutenant"
 	mob_types = list(/mob/living/simple_animal/hostile/raider/deserter/lieutenant = 5)
 
+/obj/structure/nest/mob/maddened_cultist
+	name = "Maddened Cultist"
+	icon = 'icons/mob/simple_human.dmi'
+	icon_state = "maddened_cultist"
+	mob_types = list(/mob/living/simple_animal/hostile/skeleton/maddened_cultist = 5)
+
 //Event Nests
 /obj/structure/nest/zombieghoul
 	name = "ravenous ghoul nest"
