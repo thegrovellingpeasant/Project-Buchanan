@@ -371,14 +371,14 @@
 
 /obj/item/projectile/beam/laser/rifle/musket
 	name = "laser bolt"
-	damage = 40
+	damage = 30
 	wound_bonus = 35
-	wound_falloff_tile = -5
+	wound_falloff_tile = -3
 
 /obj/item/projectile/beam/laser/rifle/musket/hitscan
-	damage = 35
-	wound_bonus = 30
-	wound_falloff_tile = -5
+	damage = 25
+	wound_bonus = 25
+	wound_falloff_tile = -3
 	hitscan = TRUE
 
 /obj/item/projectile/beam/laser/rifle/wattz2k
@@ -468,8 +468,8 @@
 /obj/item/projectile/beam/laser/rifle/tribeam
 	name = "tribeam laser" //the tribeam was actually cracked before, fucking 25 damage, 3 "shells" and also hitscan, someone must've been a BOS main
 	damage = 21 
-	wound_bonus = 15
-	wound_falloff_tile = -5
+	wound_bonus = 25
+	wound_falloff_tile = -3
 
 /obj/item/projectile/beam/laser/tribeam/hitscan
 	name = "tribeam laser"
@@ -523,17 +523,17 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 60 //fucc you normies
+	damage = 40
 	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
 	flag = "energy" //checks vs. energy protection
-	wound_bonus = 45 //being hit with plasma is horrific
+	wound_bonus = 60
 	wound_falloff_tile = -5
 	eyeblur = 0
 	is_reflectable = TRUE
 	pixels_per_second =  TILES_TO_PIXELS(10)
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 30 //uhm, sir, 90 damage is already served
+	damage = 25 //uhm, sir, 90 damage is already served
 
 
 /obj/item/projectile/f13plasma/repeater //multiple mobs use this, don't remove it
@@ -561,9 +561,9 @@
 //plasma caster
 /obj/item/projectile/f13plasma/plasmamusket
 	name = "plasma bolt"
-	damage = 50
-	wound_bonus = 35
-	wound_falloff_tile = -5
+	damage = 40
+	wound_bonus = 50
+	wound_falloff_tile = -4
 	pixels_per_second = TILES_TO_PIXELS(50)
 
 //Frank's plasmacaster
@@ -578,24 +578,24 @@
 	//Pistol
 
 /obj/item/projectile/f13plasma/pistol
-	damage = 50
-	wound_bonus = 35
-	wound_falloff_tile = -5
+	damage = 35
+	wound_bonus = 40
+	wound_falloff_tile = -3.5
 
 /obj/item/projectile/f13plasma/pistol/worn
-	damage = 40
-	wound_bonus = 25
-	wound_falloff_tile = -5
+	damage = 30
+	wound_bonus = 35
+	wound_falloff_tile = -3.5
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 55
+	damage = 40
 	wound_bonus = 40
 	wound_falloff_tile = -5
 
 /obj/item/projectile/f13plasma/pistol/alien
 	name = "alien projectile"
 	icon_state = "ion"
-	damage = 110 //this should never be spawned in.
+	damage = 200 //this should never be spawned in.
 	wound_bonus = 100
 	armour_penetration = 1
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
