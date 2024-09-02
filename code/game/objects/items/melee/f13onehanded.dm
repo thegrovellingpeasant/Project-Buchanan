@@ -27,27 +27,6 @@
 // SWORDS //
 ////////////		-block, 34-39 damage
 
-
-/obj/item/melee/onehanded/canesword
-	name = "canesword"
-	desc = "An elegant weapon, made for a gentlemen of the highest degree."
-	icon = 'icons/fallout/objects/melee/melee.dmi'
-	icon_state = "canesword"
-	item_state = "canesword"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	attack_verb = list("dueled", "lashed", "stabbed", "disagreed")
-	obj_flags = UNIQUE_RENAME
-	force = 39
-	throwforce = 15
-	w_class = WEIGHT_CLASS_BULKY
-	block_chance = 50
-	armour_penetration = 0.2
-	wound_bonus = 28
-	bare_wound_bonus = 15
-
-
-
 /obj/item/melee/onehanded/dragonfire
 	name = "Dragonfire Katana"
 	desc = "This used to be a collecters item, now it's a weapon."
@@ -74,8 +53,7 @@
 	desc = "A makeshift machete made of a blade scavenged from various things."
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
-	force = 33
-	block_chance = 10
+	force = 25
 	wound_bonus = 14
 	sharpness = SHARP_EDGED
 
@@ -107,10 +85,10 @@
 	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
 	icon_state = "gladius"
 	item_state = "gladius"
-	force = 37
+	force = 35
 	wound_bonus = 30
 	block_chance = 25
-	block_chance = 10
+	block_chance = 15
 
 /obj/item/melee/onehanded/machete/spatha
 	name = "spatha"
@@ -121,12 +99,12 @@
 	wound_bonus = 30
 	block_chance = 30
 
-/obj/item/melee/onehanded/machete/spatha/longblade
+/obj/item/melee/onehanded/machete/spatha/longblade //I killed a woman and buried her body.
 	name = "forged claymore"
 	desc = "A long one-handed blade sporting lovingly applied wraps and a wonderfully forged and engraved guard. The blade looks to be carefully sharpened."
 	icon_state = "longblade"
 	item_state = "longblade"
-	force = 41
+	force = 38
 	block_chance = 20
 
 /obj/item/melee/onehanded/machete/scrapsabre
@@ -134,7 +112,7 @@
 	desc = "Made from materials found in the wastes, a skilled blacksmith has turned it into a thing of deadly beauty."
 	icon_state = "scrapsabre"
 	item_state = "scrapsabre"
-	force = 35
+	force = 25
 	wound_bonus = 18
 
 /obj/item/throwing_star/spear
@@ -902,7 +880,7 @@ obj/item/melee/unarmed/punchdagger/cyborg
 	icon_state = "entrenching_tool"
 	item_state = "trench"
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 30
+	force = 28
 	throwforce = 15
 	toolspeed = 0.7
 	sharpness = SHARP_EDGED
