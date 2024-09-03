@@ -224,3 +224,13 @@
 	canhear_range = 5
 	channels = list(RADIO_CHANNEL_ENCLAVE = 1)
 
+/obj/item/radio/intercom/prison
+	name = "speaker"
+	icon = 'icons/obj/radio.dmi'
+	icon_state = "intercom_retro"
+	desc = "You see nothing out of the ordinary."
+	freqlock = TRUE
+	frequency = FREQ_NCRCF
+	prison_radio = TRUE
+	canhear_range = 7
+	channels = list(RADIO_CHANNEL_NCRCF = 1)

@@ -46,6 +46,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/wrights/tophat
+	ears = /obj/item/radio/headset/headset_wrightelder
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
 	r_hand = null
@@ -289,6 +290,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/wrights/conductor
+	ears = /obj/item/radio/headset/headset_wrightstuff
 	neck = null
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/wrights/formalcoat/overcoat
@@ -346,6 +348,7 @@
 	id = /obj/item/card/id/reno/papers/worker
 	accessory = null
 	shoes = /obj/item/clothing/shoes/f13/explorer
+	ears = /obj/item/radio/headset/headset_wrightstuff
 	head = null
 	neck = null
 	gloves = null
@@ -393,6 +396,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = null
+	ears = /obj/item/radio/headset/headset_wrightaid
 	mask =  /obj/item/clothing/mask/surgical
 	neck = null
 	gloves = null
@@ -456,6 +460,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/f13/brownie
 	head = null
+	ears = /obj/item/radio/headset/headset_wrightaid
 	mask =  /obj/item/clothing/mask/surgical
 	neck = /obj/item/clothing/neck/stethoscope
 	gloves =  /obj/item/clothing/gloves/color/white
