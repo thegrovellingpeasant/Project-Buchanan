@@ -1,14 +1,13 @@
 /datum/job/wastes
 	department_flag = WASTES
+	selection_color = "#f0ebda"
+	faction = FACTION_WASTES
 	exp_type = EXP_TYPE_WASTES
 	maptype = "reno"
-	selection_color = "#e6e1cf"
-
 
 /datum/job/wastes/f13vagrant
 	title = "Vagrant"
 	flag = F13RENORAIDER
-	faction = FACTION_WASTES
 	total_positions = 5
 	spawn_positions = 5
 	description = "In The Biggest Little City, life isn't so prosperous for those outside of the gangs running the place, and you aren't some tourist, you live here. Make by with whatever means you can, even if it means breaking a few knees. Maybe that's too violent so you'll beg for a handout instead or maybe deceive a few schmucks for their money. And who says you can't do a job for one of the gangs?"
@@ -125,7 +124,6 @@
 /datum/job/wastes/f13tribalmigrant
 	title = "Tribal Migrant"
 	flag = F13TRIBALMIGRANT
-	faction = FACTION_WASTES
 	total_positions = 5
 	spawn_positions = 5
 	description = "You are a member of some tribe that wandered into the area, maybe you'll take a look at the pretty colors in the big village, or scalp someone..."

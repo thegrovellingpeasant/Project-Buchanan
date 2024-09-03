@@ -114,6 +114,18 @@
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
+/datum/crafting_recipe/blackbrick/reinforced
+	name = "Strong black brick"
+	result = /obj/item/stack/sheet/mineral/blackbrick/reinforced
+	time = 150
+	reqs = list(
+		/obj/item/stack/sheet/mineral/blackbrick = 1,
+		/obj/item/stack/sheet/plasteel = 1,
+	    )
+	tools = list(TOOL_FORGE)
+	category = CAT_CRAFTING
+	subcategory = CAT_FORGING
+
 //KNIVES//
 
 /datum/crafting_recipe/melee/forged/cleaver

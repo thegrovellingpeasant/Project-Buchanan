@@ -95,6 +95,7 @@
 #define EXP_TYPE_WRIGHTS		"Wrights"
 #define EXP_TYPE_CITIZENS		"Citizens"
 #define EXP_TYPE_VANGRAFFS		"Van Graffs"
+#define EXP_TYPE_LOSTHILLS		"Lost Hills"
 #define EXP_TYPE_WASTES			"Wastes"
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
