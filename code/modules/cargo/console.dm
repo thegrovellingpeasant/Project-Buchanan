@@ -1,16 +1,18 @@
 /obj/machinery/computer/cargo
 	name = "supply console"
-	desc = "Used to order supplies, approve requests, and control the shuttle."
-	icon_screen = "supply"
+	desc = "Used to order supplies, approve requests, and coordinate with the train."
+	icon_state = "terminal"
+	icon_keyboard = "terminal_key"
+	icon_screen = "terminal_on_alt"
 	circuit = /obj/item/circuitboard/computer/cargo
 
 	var/requestonly = FALSE
 	var/contraband = FALSE
 	var/self_paid = FALSE
-	var/safety_warning = "For safety reasons, the automated supply shuttle \
+	var/safety_warning = "For safety reasons, the Wright Stuff Supply Train \
 		cannot transport live organisms, human remains, classified nuclear weaponry, \
 		homing beacons or machinery housing any form of artificial intelligence."
-	var/blockade_warning = "Bluespace instability detected. Shuttle movement impossible."
+	var/blockade_warning = "The city is under lockdown, nothing in or out."
 	/// radio used by the console to send messages on supply channel
 	var/obj/item/radio/headset/radio
 	/// var that tracks message cooldown
@@ -21,8 +23,8 @@
 
 /obj/machinery/computer/cargo/request
 	name = "supply request console"
-	desc = "Used to request supplies from cargo."
-	icon_screen = "request"
+	desc = "A computer for placing requests with the caravans."
+	icon_screen = "terminal_on_alt"
 	circuit = /obj/item/circuitboard/computer/cargo/request
 	requestonly = TRUE
 

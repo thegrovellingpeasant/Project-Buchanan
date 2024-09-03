@@ -299,3 +299,69 @@
 	cuttable = FALSE
 	density = FALSE
 
+/*
+Electric Fences subtype - for use at NCRCF
+*/
+
+
+/obj/structure/fence/electric_fence
+	name = "electric fence"
+	desc = "A chain-link fence that has the capacity to be electrified, and often is. Don't get too close."
+
+	flags_1 = NODECONSTRUCT_1
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
+
+/obj/structure/fence/electric_fence/end
+	icon_state = "end"
+	cuttable = TRUE
+	hole_visuals = FALSE
+
+/obj/structure/fence/electric_fence/corner
+	icon_state = "corner"
+	cuttable = TRUE
+	hole_visuals = FALSE
+
+/obj/structure/fence/electric_fence/post
+	icon_state = "post"
+	cuttable = FALSE
+
+//LIGHTNING BOLT LIGHTNING BOLT
+//Taken straight from Grille code, has the electrification stuff ported over.
+
+/obj/structure/fence/electric_fence/Bumped(atom/movable/AM)
+	if(!ismob(AM))
+		return
+	var/mob/M = AM
+	shock(M, 70)
+
+/obj/structure/fence/electric_fence/hulk_damage()
+	return 60
+
+/obj/structure/fence/electric_fence/CanPass(atom/movable/mover, border_dir)
+	if(istype(mover) && (mover.pass_flags & PASSGRILLE))
+		return TRUE
+	else
+		if(istype(mover, /obj/item/projectile) && density)
+			return prob(30)
+		else
+			return !density
+
+/obj/structure/fence/electric_fence/proc/shock(mob/user, prb)
+	if(!anchored || broken)		// anchored/broken fence are never connected
+		return FALSE
+	if(!prob(prb))
+		return FALSE
+	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
+		return FALSE
+	var/turf/T = get_turf(src)
+	var/obj/structure/cable/C = T.get_cable_node()
+	if(C)
+		if(electrocute_mob(user, C, src, 1, TRUE))
+			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+			s.set_up(3, 1, src)
+			s.start()
+			throwforce = 20
+			return TRUE
+		else
+			return FALSE
+	return FALSE

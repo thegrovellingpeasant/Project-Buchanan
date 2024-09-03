@@ -13,7 +13,7 @@
 	icon_state = "benotafraid"
 	icon_living = "benotafraid"
 	icon_dead = "benotafraid"
-	speak = list("Be not afraid.","It is their judgement day.")
+	speak = list("Be not afraid.")
 	friendly_verb_continuous = "watches"
 	friendly_verb_simple = "watch"
 	faction = list("boss")
@@ -124,10 +124,8 @@
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_walls(anger_modifier)
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
-
 	for(var/d in GLOB.cardinals)
 		INVOKE_ASYNC(src, .proc/fire_wall, d)
-
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
 		INVOKE_ASYNC(src, .proc/diagonal_shots)
@@ -387,13 +385,14 @@
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/do_death_beep()
-    playsound(src, 'sound/creatures/legion_death_far.ogg', 75, TRUE)
+    playsound(src, 'sound/creatures/legion_death.ogg', 75, TRUE)
     visible_message(span_warning("The Watcher collapses onto the floor, its' impact shaking the ground [src]!"), span_warning("The Watcher collapses onto the floor, its' impact shaking the ground!"))
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/self_destruct()
     explosion(src,5,5,6,6)
 
 /mob/living/simple_animal/hostile/megafauna/watcher/death()
+	playsound(src, 'sound/creatures/legion_death_far.ogg', 75, TRUE)
     do_sparks(3, TRUE, src)
     for(var/i in 1 to 3)
         addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)

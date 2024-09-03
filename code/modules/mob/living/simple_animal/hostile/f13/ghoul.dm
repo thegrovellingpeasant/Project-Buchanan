@@ -239,6 +239,12 @@
 	maxHealth = 150
 	health = 150
 
+
+/mob/living/simple_animal/hostile/ghoul/melee/Aggro()
+	..()
+	summon_backup(15)
+	say(pick("RAHHHHH!!", "SHOULDN'T HAVE MESSED WITH US!!" , "WRONG MOVE, SMOOTHSKIN!!", "NORMIE!!", "GO HOME, WE DON'T WANT YOU!!", "I'VE BEEN DOING THIS SINCE BEFORE YOU WERE BORN!!"))
+
 //Alive Ghoul Ranged
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged
 	name = "ranged ghoul solder"
@@ -283,6 +289,8 @@
 	ranged_cooldown_time = 100
 	projectiletype = /obj/item/projectile/bullet/c9mm/simple
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
+	retreat_distance = 4
+	minimum_distance = 6
 	faction = list("ghoul")
 	melee_damage_lower = 15
 	melee_damage_upper = 20
@@ -420,7 +428,7 @@
 	icon_dead = "raider_ghoul_dead"
 	icon_gib = "syndicate_gib"
 	ranged_cooldown_time = 200
-	projectiletype = /obj/item/projectile/bullet/c4570/knockback
+	projectiletype = /obj/item/projectile/bullet/c4570
 	projectilesound = 'sound/f13weapons/brushgunfire.ogg'
 	loot = list(/obj/item/ammo_box/magazine/internal/shot/tube4570)
 
@@ -459,6 +467,11 @@
 	projectiletype = /obj/item/projectile/beam/laser/musket
 	projectilesound = 'sound/f13weapons/lasmusket_fire.ogg'
 	loot = list(/obj/item/ammo_box/lasmusket)
+
+/mob/living/simple_animal/hostile/ghoul/ranged/Aggro()
+	..()
+	summon_backup(15)
+	say(pick("I SURVIVED THE WAR, KID!!", "NEVER SHOULDA COME HERE!!" , "SMOOTHSKIN!!", "MORE LOOT FOR ME!!", "I'm so sorry about this.", "YOU GOT A STARING PROBLEM?!!"))
 
 /mob/living/simple_animal/hostile/ghoul/wyomingghost
 	name = "ghost soldier"

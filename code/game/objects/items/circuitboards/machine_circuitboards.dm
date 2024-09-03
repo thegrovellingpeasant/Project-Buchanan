@@ -774,6 +774,7 @@
 	req_components = list(
 		/obj/item/stock_parts/micro_laser = 1,
 		/obj/item/stack/sheet/glass = 1)
+		
 /obj/item/circuitboard/machine/chem_master
 	name = "ChemMaster 3000 (Machine Board)"
 	build_path = /obj/machinery/chem_master

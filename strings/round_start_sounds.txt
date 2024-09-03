@@ -1,5 +1,1 @@
-sound/f13/maybe.ogg
-sound/f13/if_i_didnt_care.ogg
-sound/f13/rags_to_riches.ogg
-sound/f13/montego_bay.ogg
-sound/f13/thats_life.ogg
+sound/f13/rags_to_riches_tb.ogg

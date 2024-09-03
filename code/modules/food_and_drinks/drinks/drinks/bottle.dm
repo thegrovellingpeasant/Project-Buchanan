@@ -110,6 +110,16 @@
 /obj/item/reagent_containers/food/drinks/bottle/whiskey/empty
 	list_reagents = null
 
+/obj/item/reagent_containers/food/drinks/bottle/sactown
+	name = "Sac-Town Barrel Aged Whiskey"
+	desc = "A northern California whiskey, known for its famous slogan, 'Do you have the Sac for it?'"
+	icon_state = "sactown"
+	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 100)
+	foodtype = FRUIT | ALCOHOL
+
+/obj/item/reagent_containers/food/drinks/bottle/sactown/empty
+	list_reagents = null
+
 /obj/item/reagent_containers/food/drinks/bottle/vodka
 	name = "Tunguska triple distilled"
 	desc = "Aah, vodka. Prime choice of drink AND fuel by Russians worldwide."
@@ -218,6 +228,26 @@
 /obj/item/reagent_containers/food/drinks/bottle/rum/empty
 	list_reagents = null
 
+/obj/item/reagent_containers/food/drinks/bottle/roentgen
+	name = "Roentgen Rum"
+	desc = "Gecko's classic rum, brewed at The Harp by a team with combined centuries of experience. Unleash your inner ghoul with Roentgen Rum."
+	icon_state = "roentgenrum"
+	list_reagents = list(/datum/reagent/consumable/ethanol/rum = 20, /datum/reagent/consumable/ethanol/grog = 60, /datum/reagent/consumable/ethanol/jakejuice = 15, /datum/reagent/radium = 5)
+	foodtype = FRUIT | ALCOHOL
+
+/obj/item/reagent_containers/food/drinks/bottle/roentgen/empty
+	list_reagents = null
+
+/obj/item/reagent_containers/food/drinks/bottle/gammagulp
+	name = "Gamma Gulp Beer"
+	desc = "When your skin's lacking that 'special glow'... Choose Gamma Gulp Beer!"
+	icon_state = "gammagulpbeer"
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/green = 20, /datum/reagent/consumable/ethanol/beer = 75, /datum/reagent/radium = 5)
+	foodtype = FRUIT | ALCOHOL
+
+/obj/item/reagent_containers/food/drinks/bottle/gammagulp/empty
+	list_reagents = null
+
 /obj/item/reagent_containers/food/drinks/bottle/holywater
 	name = "flask of holy water"
 	desc = "A flask of the chaplain's holy water."
@@ -288,6 +318,16 @@
 	foodtype = FRUIT | ALCOHOL
 
 /obj/item/reagent_containers/food/drinks/bottle/wine/empty
+	list_reagents = null
+
+/obj/item/reagent_containers/food/drinks/bottle/napa
+	name = "Valley Vino"
+	desc = "A 2267 vintage, grown, fermented and bottled in the Napa Valley between The Shi and Sac-Town."
+	icon_state = "napavalley"
+	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 100)
+	foodtype = FRUIT | ALCOHOL
+
+/obj/item/reagent_containers/food/drinks/bottle/napa/empty
 	list_reagents = null
 
 /obj/item/reagent_containers/food/drinks/bottle/absinthe
@@ -454,16 +494,16 @@
 	desc = "A bottle of rotgut. Its owner has applied some street wisdom to cleverly disguise it as a brown paper bag."
 	icon_state = "hoochbottle"
 	list_reagents = list(/datum/reagent/consumable/ethanol/hooch = 100)
-
+	
 /obj/item/reagent_containers/food/drinks/bottle/hooch/empty
 	list_reagents = null
-
+	
 /obj/item/reagent_containers/food/drinks/bottle/amaretto
 	name = "Luini Amaretto"
 	desc = "A gentle and syrup-like drink, tastes of almonds and apricots."
 	icon_state = "disaronno"
 	list_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 100)
-
+	
 /obj/item/reagent_containers/food/drinks/bottle/amaretto/empty
 	list_reagents = null
 

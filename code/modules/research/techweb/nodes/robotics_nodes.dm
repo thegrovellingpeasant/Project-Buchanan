@@ -43,10 +43,10 @@
 
 /datum/techweb_node/posibrain
 	id = "posibrain"
-	display_name = "Positronic Brain"
+	display_name = "Personality Computational Matrix"
 	description = "Applied usage of neural technology allowing for autonomous AI units based on special metallic cubes with conductive and processing circuits."
 	prereq_ids = list("neural_programming")
-	design_ids = list("mmi_posi")
+	design_ids = list("robot_posi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /datum/techweb_node/cyborg_upg_util

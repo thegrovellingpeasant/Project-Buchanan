@@ -342,6 +342,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/cigarette/rollie/mindbreaker
 	list_reagents = list(/datum/reagent/toxin/mindbreaker = 35, /datum/reagent/toxin/lipolicide = 15)
 
+/obj/item/clothing/mask/cigarette/rollie/redding
+	list_reagents = list(/datum/reagent/drug/nicotine = 25, /datum/reagent/gold = 3, /datum/reagent/medicine/mine_salve = 2)
+	smoketime = 300
+
 /obj/item/cigbutt/roach
 	name = "roach"
 	desc = "A manky old roach, or for non-stoners, a used rollup."
@@ -392,6 +396,15 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigar3off"
 	icon_on = "cigar3on"
 	icon_off = "cigar3off"
+	smoketime = 4500
+	chem_volume = 75
+
+/obj/item/clothing/mask/cigarette/cigar/sanfran
+	name = "San Francisco Sunlight"
+	desc = "A hand rolled cigar made from sun-kissed California tobacco."
+	icon_state = "cigar2off"
+	icon_on = "cigar2on"
+	icon_off = "cigar2off"
 	smoketime = 4500
 	chem_volume = 75
 
