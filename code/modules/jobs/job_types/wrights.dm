@@ -55,6 +55,8 @@
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/storage/bag/money/small/large = 1,
+		/obj/item/gun/ballistic/revolver/revolver44 = 1,
+		/obj/item/ammo_box/m44 = 2
 		)
 
 /datum/outfit/loadout/aristocrat
@@ -408,7 +410,9 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/few = 1)
+		/obj/item/storage/bag/money/small/few = 1,
+		/obj/item/gun/ballistic/revolver/thatgun = 1,
+		/obj/item/ammo_box/a556/sport/improvised = 1)
 
 /datum/outfit/job/wrights/f13clinicsupervisor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -472,7 +476,9 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/meager = 1)
+		/obj/item/storage/bag/money/small/meager = 1,
+		/obj/item/gun/ballistic/revolver/detective = 1,
+		/obj/item/ammo_box/c38 = 1)
 
 /datum/outfit/job/wrights/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

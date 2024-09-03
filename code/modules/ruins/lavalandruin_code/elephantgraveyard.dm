@@ -276,3 +276,105 @@
 	name = "important looking Note"
 	desc = "This note is well written, and seems to have been put here so you'd find it."
 	info = "If you find this... you don't need to know who I am.<BR><BR>You need to leave this place. I dunno what shit they did to me out here, but I don't think I'm going to be making it out of here.<BR><BR>This place... it wears down your psyche. The other researchers out here laughed it off but... They were the first to go.<BR><BR>One by one they started turning on each other. The more they found out, the more they started fighting and arguing...<BR>As I speak now, I had to... I wound up having to put most of my men down. I know what I had to do, and I know there's no way left for me to live with myself.<BR> If anyone ever finds this, just don't touch the graves.<BR><BR>DO NOT. TOUCH. THE GRAVES. Don't be a dumbass, like we all were."
+
+
+/obj/structure/closet/crate/grave/ark
+	name = "Ark of the Convenent"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchorable = FALSE
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = /obj/item/crowbar
+	var/shock_per_touch = 0
+	var/shock_type = /datum/chemical_reaction/reagent_explosion/teslium_lightning
+
+/obj/structure/closet/crate/grave/ark/tool_interact(obj/item/S, mob/living/carbon/user)
+	. = ..()
+
+	if(prob(50))
+		tesla_zap(user, 4, 8000, ZAP_MOB_DAMAGE | ZAP_OBJ_DAMAGE | ZAP_MOB_STUN)
+		playsound(user, 'sound/machines/defib_zap.ogg', 50, TRUE)
+
+	switch(rand(1,2))
+		if(1)
+			//Instrinct Resistance
+			to_chat(user, "<span class='notice'>You feel robust.</span>")
+			var/datum/species/S// = user.dna.species
+			S.brutemod *= 0.5
+			S.burnmod *= 0.5
+			S.coldmod *= 0.5
+		if(2)
+			new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
+		else
+			return
+
+
+/obj/structure/closet/crate/grave/strangebird
+	name = "Strange Bird"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchorable = FALSE
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = /obj/item/crowbar
+
+/obj/structure/closet/crate/grave/strangebird/tool_interact(obj/item/S, mob/living/carbon/user)
+	. = ..()
+	if(prob(50))
+		explosion(loc,-1,0,2, flame_range = 6)
+
+	switch(rand(1,3))
+		if(1)
+			new /obj/item/gun/ballistic/automatic/smg/tommygun(src)
+			new /obj/item/ammo_box/magazine/tommygunm45(src)
+			new /obj/item/ammo_box/magazine/tommygunm45(src)
+		if(2)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+		if(3)
+			new /obj/item/gun/ballistic/shotgun/automatic/combat/neostead(src)
+			new /obj/item/ammo_box/shotgun/incendiary(src)
+			new /obj/item/ammo_box/shotgun/trainshot(src)
+		else
+			return
+
+/obj/structure/closet/crate/grave/experimental_crate
+	name = "Experimental Crate"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchorable = FALSE
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = /obj/item/crowbar
+
+/obj/structure/closet/crate/grave/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
+	. = ..()
+	if(prob(50))
+		do_sparks(3, TRUE, src)
+		for(var/i in 1 to 3)
+		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		return ..()
+
+	switch(rand(1,3))
+		if(1)
+			new /obj/item/clothing/suit/armor/f13/power_armor/advanced(src)
+			new /obj/item/clothing/head/helmet/f13/power_armor/advanced(src)
+			new /obj/item/book/granter/trait/pa_wear(src)
+		if(2)
+			new /obj/item/reagent_containers/glass/bottle/FEV_solution(src)
+			new /obj/item/reagent_containers/glass/bottle/FEV_solution/two(src)
+
+		if(3)
+			new /obj/item/gun/energy/laser/aer14(src)
+			new /obj/item/stock_parts/cell/ammo/mfc(src)
+			new /obj/item/stock_parts/cell/ammo/mfc(src)
+		else
+			return
+
+/obj/structure/closet/crate/grave/experimental_crate/proc/self_destruct()
+    explosion(src,5,5,6,6)

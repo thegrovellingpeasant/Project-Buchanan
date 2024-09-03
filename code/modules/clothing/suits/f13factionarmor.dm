@@ -1122,6 +1122,12 @@
 //RPD//
 ///////
 
+/obj/item/clothing/suit/armor/f13/civilians/judgerobe
+	name = "judge's robe"
+	desc = "This robe commands authority."
+	icon_state = "judge"
+	item_state = "judge"
+
 /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
 	name = "NCR police coat"
 	desc = "A repurposed oldworld police coat."

@@ -309,7 +309,7 @@ GLOBAL_LIST_INIT(citizens_positions, list(
 ))
 
 GLOBAL_LIST_INIT(wastes_positions, list(
-	"Reno Raider",
+	"Vagrant",
 	"Tribal Migrant",
 ))
 
@@ -339,8 +339,8 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WRIGHTS = list("jobs" = wrights_positions, "color" = "#B3875E"),
 	EXP_TYPE_VANGRAFFS = list("jobs" = vangraffs_positions, "color" = "#4da34e"),
 	EXP_TYPE_CITIZENS = list("jobs" = citizens_positions, "color" = "#ffeeaa"),
-	EXP_TYPE_WASTES = list("jobs" = wastes_positions, "color" = "#e6e1cf"),
-	EXP_TYPE_BROTHERHOOD = list("jobs" = losthills_positions, "color" = "#e6e1cf"),
+	EXP_TYPE_WASTES = list("jobs" = wastes_positions, "color" = "#f0ebda"),
+	EXP_TYPE_LOSTHILLS = list("jobs" = losthills_positions, "color" = "#e6e1cf"),
 
 ))
 
@@ -355,7 +355,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions | wendover_positions | usps_positions | lds_positions | whitelegs_positions | eighties_positions | salvatores_positions | mordinos_positions | bishops_positions | wrights_positions | vangraffs_positions | citizens_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions | wendover_positions | usps_positions | lds_positions | whitelegs_positions | eighties_positions | salvatores_positions | mordinos_positions | bishops_positions | wrights_positions | vangraffs_positions | citizens_positions | wastes_positions | losthills_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Raider")),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
@@ -382,7 +382,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_VANGRAFFS = list("titles" = vangraffs_positions),
 	EXP_TYPE_CITIZENS = list("titles" = citizens_positions),
 	EXP_TYPE_WASTES = list("titles" = wastes_positions),
-	EXP_TYPE_BROTHERHOOD = list("titles" = losthills_positions),
+	EXP_TYPE_LOSTHILLS = list("titles" = losthills_positions),
 
 	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
 	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
