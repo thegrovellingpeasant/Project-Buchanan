@@ -124,10 +124,8 @@
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_walls(anger_modifier)
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
-
 	for(var/d in GLOB.cardinals)
 		INVOKE_ASYNC(src, .proc/fire_wall, d)
-	
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
 		INVOKE_ASYNC(src, .proc/diagonal_shots)
