@@ -305,6 +305,8 @@ Electric Fences subtype - for use at NCRCF
 
 
 /obj/structure/fence/electric_fence
+	icon = 'icons/fallout/structures/fences.dmi'
+	icon_state = "straight"
 	name = "electric fence"
 	desc = "A chain-link fence that has the capacity to be electrified, and often is. Don't get too close."
 
