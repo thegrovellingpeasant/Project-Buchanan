@@ -295,7 +295,7 @@
 /obj/structure/closet/crate/safe
 	name = "safe"
 	icon_state = "safe"
-
+  
 /obj/structure/closet/crate/mailboxleft
 	name = "mailbox"
 	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."

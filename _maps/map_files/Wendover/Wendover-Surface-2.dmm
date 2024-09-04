@@ -13672,7 +13672,6 @@
 	},
 /area/f13/wasteland)
 "dRH" = (
-/obj/item/clothing/suit/armored/light/tribal/cloak,
 /obj/structure/closet/crate/wicker,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -51887,9 +51886,6 @@
 /area/f13/wasteland)
 "oyd" = (
 /obj/structure/table,
-/obj/item/clothing/suit/armored/light/tribal/simple{
-	pixel_y = 11
-	},
 /obj/item/ammo_casing/caseless/arrow/ash{
 	pixel_y = 9
 	},
