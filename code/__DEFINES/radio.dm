@@ -50,8 +50,8 @@
 #define RADIO_TOKEN_VAULT ":v"
 
 #define RADIO_CHANNEL_NCR "NCR"
-#define RADIO_KEY_NCR "w"
-#define RADIO_TOKEN_NCR ":w"
+#define RADIO_KEY_NCR "n"
+#define RADIO_TOKEN_NCR ":n"
 
 #define RADIO_CHANNEL_RANGER "Police"
 #define RADIO_KEY_RANGER "j"
@@ -141,8 +141,8 @@
 #define RADIO_TOKEN_NRPD ":p"
 
 #define RADIO_CHANNEL_NCRCF "NCRCF"
-#define RADIO_KEY_NCRCF "n"
-#define RADIO_TOKEN_NCRCF ":n"
+#define RADIO_KEY_NCRCF "w"
+#define RADIO_TOKEN_NCRCF ":w"
 
 #define RADIO_CHANNEL_GOVERNMENT "Government"
 #define RADIO_KEY_GOVERNMENT "g"

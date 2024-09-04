@@ -46,6 +46,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/wrights/tophat
+	ears = /obj/item/radio/headset/headset_wrightelder
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
 	r_hand = null
@@ -54,6 +55,8 @@
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/storage/bag/money/small/large = 1,
+		/obj/item/gun/ballistic/revolver/revolver44 = 1,
+		/obj/item/ammo_box/m44 = 2
 		)
 
 /datum/outfit/loadout/aristocrat
@@ -289,6 +292,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/wrights/conductor
+	ears = /obj/item/radio/headset/headset_wrightstuff
 	neck = null
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/wrights/formalcoat/overcoat
@@ -346,6 +350,7 @@
 	id = /obj/item/card/id/reno/papers/worker
 	accessory = null
 	shoes = /obj/item/clothing/shoes/f13/explorer
+	ears = /obj/item/radio/headset/headset_wrightstuff
 	head = null
 	neck = null
 	gloves = null
@@ -393,6 +398,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = null
+	ears = /obj/item/radio/headset/headset_wrightaid
 	mask =  /obj/item/clothing/mask/surgical
 	neck = null
 	gloves = null
@@ -404,7 +410,9 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/few = 1)
+		/obj/item/storage/bag/money/small/few = 1,
+		/obj/item/gun/ballistic/revolver/thatgun = 1,
+		/obj/item/ammo_box/a556/sport/improvised = 1)
 
 /datum/outfit/job/wrights/f13clinicsupervisor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -456,6 +464,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/f13/brownie
 	head = null
+	ears = /obj/item/radio/headset/headset_wrightaid
 	mask =  /obj/item/clothing/mask/surgical
 	neck = /obj/item/clothing/neck/stethoscope
 	gloves =  /obj/item/clothing/gloves/color/white
@@ -467,7 +476,9 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/healthanalyzer = 1,
-		/obj/item/storage/bag/money/small/meager = 1)
+		/obj/item/storage/bag/money/small/meager = 1,
+		/obj/item/gun/ballistic/revolver/detective = 1,
+		/obj/item/ammo_box/c38 = 1)
 
 /datum/outfit/job/wrights/f13practitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
