@@ -14,8 +14,10 @@
 	density = TRUE
 	bound_width = 64
 	req_access = null
-	use_power = IDLE_POWER_USE
-	var/start_charge = 95
+	use_power = NO_POWER_USE
+	idle_power_usage = 0
+	active_power_usage = 0
+	var/start_charge = 100
 	var/area/area
 	var/opened = GENERATOR_COVER_CLOSED
 	var/wiring = GENERATOR_WIRING_INTACT
@@ -32,7 +34,6 @@
 	connect_to_network()
 
 /obj/machinery/power/fusion_generator/process()
-	. = ..()
 	var/lastused_light = 0
 	var/lastused_equip = 0
 	var/lastused_environ = 0
@@ -48,7 +49,12 @@
 	lastused_total = lastused_light + lastused_equip + lastused_environ
 	var/cur_used = lastused_total
 	if(cell)
-		cell.use(GLOB.CELLRATE * cur_used)
+		var/cell_use = cell.use(GLOB.CELLRATE * cur_used)
+		add_avail(cell_use)
+		add_load(cell_use)
+		avail(cell_use)
+		surplus()
+	..()
 
 /obj/machinery/power/fusion_generator/update_icon_state()
 	if(cell)
@@ -67,8 +73,12 @@
 			else
 				. += "The generator lacks an energy cell!"
 	else
-		. += "The cover to the fusion core pod is closed and intact."
-	
+		. += "The cover to the fusion core pod is closed and intact,"
+		if(cell)
+			. += " and the [cell] remains intact in the generator."
+		else
+			. += " but there is no visible cell in the generator."
+
 /obj/machinery/power/fusion_generator/crowbar_act(mob/user, obj/item/I)
 	. = TRUE
 	if(opened == GENERATOR_COVER_CLOSED)
@@ -124,7 +134,7 @@
 
 /obj/machinery/power/fusion_generator/attackby(obj/item/I, mob/living/user, params)
 
-	if	(istype(I, /obj/item/stock_parts/cell) && (opened && wiring))
+	if(istype(I, /obj/item/stock_parts/cell) && (opened && wiring))
 		if(cell)
 			to_chat(user, "<span class='warning'>There is a power cell already installed!</span>")
 			return
