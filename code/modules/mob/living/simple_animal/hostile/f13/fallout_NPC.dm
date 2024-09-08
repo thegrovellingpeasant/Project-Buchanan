@@ -283,7 +283,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/bs)
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/beam/laser/pistol/hitscan
+	projectiletype = /obj/item/projectile/beam/laser/pistol/aer7
 	projectilesound = 'sound/f13weapons/aep7fire.ogg'
 
 /mob/living/simple_animal/hostile/bs/paladin
@@ -299,7 +299,7 @@
 	health = 600
 	healable = 1
 	ranged = 1
-	projectiletype = /obj/item/projectile/beam/laser/lasgun/hitscan
+	projectiletype = /obj/item/projectile/beam/laser/rifle/aer9
 	projectilesound = 'sound/f13weapons/aer9fire.ogg'
 
 /obj/effect/mob_spawn/human/corpse/bs/paladin
