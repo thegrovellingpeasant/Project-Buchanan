@@ -616,10 +616,6 @@
 	w_class = WEIGHT_CLASS_TINY
 	remarks = list()
 
-/obj/item/book/granter/crafting_recipe/blueprint/r82
-	name = "r82 heavy service rifle blueprint"
-	crafting_recipe_types = list(/datum/crafting_recipe/R82)
-
 /obj/item/book/granter/crafting_recipe/blueprint/marksman
 	name = "marksman carbine blueprint"
 	crafting_recipe_types = list(/datum/crafting_recipe/marksmancarbine)
@@ -655,10 +651,6 @@
 /obj/item/book/granter/crafting_recipe/blueprint/plasmapistol
 	name = "plasma pistol blueprint"
 	crafting_recipe_types = list(/datum/crafting_recipe/plasmapistol)
-
-/obj/item/book/granter/crafting_recipe/blueprint/lightplasmapistol
-	name = "light plasma pistol blueprint"
-	crafting_recipe_types = list(/datum/crafting_recipe/lightplasmapistol)
 
 /obj/item/book/granter/crafting_recipe/blueprint/uzi
 	name = "mini uzi blueprint"
