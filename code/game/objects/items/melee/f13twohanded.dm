@@ -114,7 +114,7 @@
 
 /obj/item/twohanded/fireaxe/bmprsword/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=30, force_wielded=45, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=30, force_wielded=39, icon_wielded="[icon_prefix]2")
 
 
 ////////////
@@ -433,7 +433,7 @@
 	throw_speed = 2
 	throw_range = 3
 	attack_verb = list("burned", "welded", "cauterized", "melted", "charred")
-	var/fire_stacks = 2 //pray to allah this works
+	var/fire_stacks = 3 //pray to allah this works
 	hitsound = 'sound/items/welder2.ogg'
 
 /obj/item/twohanded/thermic_lance/ComponentInitialize()
