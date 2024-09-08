@@ -732,10 +732,6 @@
 	name = "ppsh-41 blueprint"
 	crafting_recipe_types = list(/datum/crafting_recipe/pps)
 
-/obj/item/book/granter/crafting_recipe/blueprint/commando
-	name = "commando carbine blueprint"
-	crafting_recipe_types = list(/datum/crafting_recipe/commando)
-
 /obj/item/book/granter/crafting_recipe/blueprint/trapper
 	name = "guide to minelaying"
 	crafting_recipe_types = list(/datum/crafting_recipe/explosive/shrapnelmine, /datum/crafting_recipe/explosive/explomine, /datum/crafting_recipe/explosive/stingmine, /datum/crafting_recipe/explosive/pulsemine, /datum/crafting_recipe/explosive/stunmine)
