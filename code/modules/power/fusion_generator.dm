@@ -69,9 +69,11 @@
 		if(wiring)
 			. += "The wiring has been mangled and tampered with!"
 			if(cell)
-				. += "The [cell] remains intact in the generator."
+				. += "The [cell] remains intact in the generator, but needs to be unscrewed out."
 			else
 				. += "The generator lacks an energy cell!"
+		else
+			. += "Wiring is connected to the [cell], however."
 	else
 		. += "The cover to the fusion core pod is closed and intact,"
 		if(cell)

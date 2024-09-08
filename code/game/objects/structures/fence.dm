@@ -308,7 +308,7 @@ Electric Fences subtype - for use at NCRCF
 	icon_state = "straight"
 	name = "electric fence"
 	desc = "A chain-link fence that has the capacity to be electrified, and often is. Don't get too close."
-	var/obj/machinery/power/fusion_generator/ncrcf/generator = null
+	var/obj/machinery/power/fusion_generator/ncrcf/fusion_generator = null
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
 
@@ -326,15 +326,18 @@ Electric Fences subtype - for use at NCRCF
 	icon_state = "post"
 	cuttable = FALSE
 
-/obj/structure/fence/Initialize()
+/obj/structure/fence/electric_fence/Initialize()
 	. = ..()
-	generator = locate()
+	locate_generator()
 	update_cut_status()
+
+/obj/structure/fence/electric_fence/proc/locate_generator()
+	fusion_generator = locate()
 
 /obj/structure/fence/electric_fence/examine(mob/user)
 	. = ..()
-	if(generator.get_cell())
-		. += "<span class='info'>The wires seem to be currently powered by an unknown source and cannot be cut safely.</span>"
+	if(fusion_generator.get_cell())
+		. += "<span class='info'>The wires seem to be currently powered by a nearby generator and cannot be cut safely while its operational.</span>"
 	else
 		. += "<span class='info'>The wires seem to be unpowered and can be safely cut by tools.</span>"
 
@@ -377,10 +380,10 @@ Electric Fences subtype - for use at NCRCF
 			return TRUE
 		else
 			return FALSE*/
-	if(generator)
-		if(!generator.get_cell())
+	if(fusion_generator)
+		if(!fusion_generator.get_cell())
 			return FALSE
-		if(electrocute_mob(user, generator.get_cell(), src, 0.2, TRUE))
+		if(electrocute_mob(user, fusion_generator.get_cell(), src, 0.2, TRUE))
 			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 			s.set_up(3, 1, src)
 			s.start()
