@@ -146,3 +146,7 @@
 				"[user.name] has inserted the [cell] to [src.name]!",\
 				"<span class='notice'>You insert the [cell].</span>")
 			update_icon_state()
+
+/obj/machinery/power/fusion_generator/ncrcf
+	name = "fusion generator"
+	desc = "It's a high efficiency pre-war fusion generator, refurbished by NCR engineers and scientists in order to provide power for the New Reno NCR Correctional Facility."
