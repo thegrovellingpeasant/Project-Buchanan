@@ -488,4 +488,4 @@
 	retreat_distance = null
 	minimum_distance = 1
 	projectilesound = 'sound/weapons/laser.ogg'
-	projectiletype = /obj/item/projectile/beam/laser/lasgun
+	projectiletype = /obj/item/projectile/beam/laser/rifle/aer14
