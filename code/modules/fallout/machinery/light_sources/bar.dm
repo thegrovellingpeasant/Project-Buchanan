@@ -97,6 +97,7 @@
 	base_state = "reno_sign"
 	icon = 'icons/fallout/objects/structures/reno.dmi'
 	desc = "The Biggest Little City in the World!"
+	brightness = 0
 	light_color = LIGHT_COLOR_YELLOW
 
 /obj/machinery/light/sign/shark_club
@@ -105,6 +106,7 @@
 	base_state = "shark_club"
 	icon = 'icons/fallout/objects/structures/sharkclub.dmi'
 	desc = "The home of the Bishop Family, and the sole remaining casino in town."
+	brightness = 0
 	light_color = LIGHT_COLOR_YELLOW
 
 /obj/machinery/light/sign/pepgas
@@ -113,4 +115,5 @@
 	base_state = "pepgas"
 	icon = 'icons/fallout/objects/structures/pepgas.dmi'
 	desc = "A place to fill up the tank; Pep's gas, or well, it used to be."
+	brightness = 0
 	light_color = LIGHT_COLOR_YELLOW
