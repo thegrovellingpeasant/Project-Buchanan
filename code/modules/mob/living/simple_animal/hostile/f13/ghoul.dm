@@ -456,7 +456,7 @@
 	icon_dead = "vault_ghoul_dead"
 	icon_gib = "syndicate_gib"
 	ranged_cooldown_time = 140
-	projectiletype = /obj/item/projectile/beam/laser/musket
+	/obj/item/projectile/beam/laser/rifle/musket
 	projectilesound = 'sound/f13weapons/lasmusket_fire.ogg'
 	loot = list(/obj/item/ammo_box/lasmusket)
 
