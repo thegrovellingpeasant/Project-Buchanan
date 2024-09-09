@@ -8,11 +8,16 @@
 	integrity_failure = 0.5
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	buildable_sign = FALSE
+	light_system = MOVABLE_LIGHT
+	light_range = 24
+	light_color = "#a8a582"
+	light_on = FALSE
 	var/list/barsigns=list()
 	var/panel_open = FALSE
 
 /obj/structure/sign/barsign/Initialize()
 	. = ..()
+	GLOB.barsigns += src
 
 //filling the barsigns list
 	for(var/bartype in subtypesof(/datum/barsign))
@@ -226,6 +231,10 @@
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "girlsgirlsgirls"
 	desc = "A very warm welcome to town."
+	light_system = MOVABLE_LIGHT
+	light_range = 30
+	light_color = "#a8a582"
+	light_on = FALSE
 
 /obj/structure/sign/reno/barsign/booze
 	name = "Booze sign"
