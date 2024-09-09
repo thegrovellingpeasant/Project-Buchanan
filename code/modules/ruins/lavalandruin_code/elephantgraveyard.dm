@@ -280,13 +280,14 @@
 
 /obj/structure/closet/crate/grave/ark
 	name = "Ark of the Convenent"
+	desc = "It looks like it could be opened with the right crowbar..."
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchorable = FALSE
 	locked = TRUE
 	breakout_time = 900
-	cutting_tool = /obj/item/crowbar
+	cutting_tool = /obj/item/crowbar/abductor/heist
 	var/shock_per_touch = 0
 	var/shock_type = /datum/chemical_reaction/reagent_explosion/teslium_lightning
 
@@ -313,18 +314,22 @@
 
 /obj/structure/closet/crate/grave/strangebird
 	name = "Strange Bird"
+	desc = "It looks like it could be opened with the right crowbar..."
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchorable = FALSE
 	locked = TRUE
 	breakout_time = 900
-	cutting_tool = /obj/item/crowbar
+	cutting_tool = /obj/item/crowbar/abductor/heist
 
 /obj/structure/closet/crate/grave/strangebird/tool_interact(obj/item/S, mob/living/carbon/user)
 	. = ..()
 	if(prob(50))
-		explosion(loc,-1,0,2, flame_range = 6)
+		do_sparks(3, TRUE, src)
+		for(var/i in 1 to 3)
+		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		return ..()
 
 	switch(rand(1,3))
 		if(1)
@@ -342,15 +347,19 @@
 		else
 			return
 
+/obj/structure/closet/crate/grave/strangebird/proc/self_destruct()
+    explosion(src,5,5,6,6)
+
 /obj/structure/closet/crate/grave/experimental_crate
 	name = "Experimental Crate"
+	desc = "It looks like it could be opened with the right crowbar..."
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchorable = FALSE
 	locked = TRUE
 	breakout_time = 900
-	cutting_tool = /obj/item/crowbar
+	cutting_tool = /obj/item/crowbar/abductor/heist
 
 /obj/structure/closet/crate/grave/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
 	. = ..()
