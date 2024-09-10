@@ -9,7 +9,7 @@
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	buildable_sign = FALSE
 	light_system = MOVABLE_LIGHT
-	light_range = 24
+	light_range = 20
 	light_color = "#a8a582"
 	light_on = FALSE
 	var/list/barsigns=list()
