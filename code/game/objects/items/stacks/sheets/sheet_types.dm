@@ -151,6 +151,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/metal
 	grind_results = list(/datum/reagent/iron = 20)
 	point_value = 2
+	sentence_value = 0.10
 	tableVariant = /obj/structure/table
 	material_type = /datum/material/iron
 
@@ -187,6 +188,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/lead
 	grind_results = list(/datum/reagent/lead = 20)
 	point_value = 2
+	sentence_value = 0.15
 	//tableVariant = /obj/structure/table
 	material_type = /datum/material/lead
 
