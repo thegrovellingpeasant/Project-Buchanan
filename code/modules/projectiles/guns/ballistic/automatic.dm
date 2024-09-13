@@ -210,7 +210,7 @@
 	can_unsuppress = FALSE
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 1.75
+	autofire_shot_delay = 1.7
 	spread = 16
 	burst_shot_delay = 1.5
 	suppressed = 1
@@ -229,7 +229,7 @@
 	is_automatic = TRUE
 	automatic = 1
 	slowdown = 0.3
-	autofire_shot_delay = 2.75
+	autofire_shot_delay = 2.8
 	spread = 9
 	recoil = 0.35
 	can_attachments = TRUE
@@ -377,10 +377,9 @@
 	automatic = 1
 	slowdown = 0.2
 	autofire_shot_delay = 2
-	spread = 16
+	spread = 18
 	can_suppress = TRUE
 	can_attachments = TRUE
-	spread = 10
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 29
 	suppressor_y_offset = 16
@@ -422,7 +421,7 @@
 	slowdown = 0.2
 	autofire_shot_delay = 2.5
 	spread = 12
-	fire_delay = 3.5
+	fire_delay = 3
 	recoil = 0.1
 	can_attachments = TRUE
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -443,7 +442,7 @@
 	automatic = 1
 	autofire_shot_delay = 2.25
 	burst_shot_delay = 2.75
-	fire_delay = 3.75
+	fire_delay = 3.5
 	extra_damage = 25
 	spread = 15
 	recoil = 0.5
@@ -466,7 +465,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	slowdown = 0.2
 	burst_size = 1
-	fire_delay = 3
+	fire_delay = 2.0
 	spread = 14
 	is_automatic = TRUE
 	automatic = 1
@@ -494,7 +493,7 @@
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	spread = 6
-	fire_delay = 3.5
+	fire_delay = 2.5
 	slowdown = 0.2
 	is_automatic = TRUE
 	automatic = 1
@@ -518,7 +517,7 @@
 	mag_type = /obj/item/ammo_box/magazine/pps9mm
 	spread = 20
 	slowdown = 0.2
-	fire_delay = 6
+	fire_delay = 4.5
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2.25
@@ -624,7 +623,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	spread = 3 //foregrip
-	fire_delay = 1
+	fire_delay = 3.5
 	can_bayonet = TRUE
 	knife_x_offset = 25
 	knife_y_offset = 12
@@ -645,7 +644,7 @@
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	fire_delay = 3.5
+	fire_delay = 2.5
 	burst_size = 1
 	spread = 0
 	can_bayonet = FALSE
@@ -669,7 +668,7 @@
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	slowdown = 0.2
-	fire_delay = 4
+	fire_delay = 2.5
 	burst_size = 1
 	spread = 0
 	can_scope = FALSE
@@ -731,7 +730,7 @@
 	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	slowdown = 0.3
-	fire_delay = 1
+	fire_delay = 3.5
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -750,7 +749,6 @@
 	icon_state = "alr15"
 	item_state = "alr15"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 1
 	burst_size = 2
 	spread = 1
 	can_attachments = FALSE
@@ -784,7 +782,7 @@
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
+	fire_delay = 3.5
 	slowdown = 0.4
 	burst_size = 1
 	spread = 1
