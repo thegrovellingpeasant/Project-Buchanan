@@ -40,7 +40,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
 	damage = 30
-	wound_bonus = 29
+	wound_bonus = 30
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
