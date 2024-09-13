@@ -84,8 +84,8 @@
 	item_state = "xbow"
 	icon_prefix = "xbow"
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/xbow
-	extra_speed = 400
-
+	fire_delay = 3.5
+	extra_damage = 5
 
 //Regular Bow
 /obj/item/gun/ballistic/bow/tribal
@@ -96,6 +96,8 @@
 	icon_prefix = "tribalbow"
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 10
+	fire_delay = 3
+	extra_damage = 5
 
 
 //Bone Bow
@@ -107,7 +109,8 @@
 	icon_prefix = "ashenbow"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/claw
-	fire_delay = 2
+	fire_delay = 6
+	extra_damage = 15
 
 //Sturdy Bow
 /obj/item/gun/ballistic/bow/sturdy
@@ -118,6 +121,8 @@
 	icon_prefix = "bow"
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/sturdy
+	fire_delay = 4
+	extra_damage = 10
 
 //Silver Bow
 /obj/item/gun/ballistic/bow/silver
@@ -128,7 +133,8 @@
 	icon_prefix = "pipebow"
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/silver
-	fire_delay = 1.5
+	fire_delay = 3.5
+	extra_damage = 5
 
 //Crossbow
 /obj/item/gun/ballistic/bow/crossbow
@@ -138,8 +144,10 @@
 	item_state = "crossbow"
 	icon_prefix = "crossbow"
 	force = 10
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/cross
-	fire_delay = 1.5
+	fire_delay = 3.5
+	extra_damage = 5
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
