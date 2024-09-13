@@ -209,7 +209,7 @@
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = /obj/item/gun/ballistic/shotgun/police
+	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
 	backpack_contents = list(
@@ -535,11 +535,12 @@
 
 /datum/outfit/loadout/mercenary
 	name = "mercenary"
-	suit = /obj/item/clothing/suit/armor/f13/metalarmor
-	head = /obj/item/clothing/head/helmet/blueshirt
+	suit = /obj/item/clothing/suit/armored/light/leather
+	head = /obj/item/clothing/head/f13/stormchaser
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/hunting = 1,
-		/obj/item/ammo_box/shotgun/buck = 2)
+		/obj/item/gun/ballistic/rifle/hunting = 1,
+		/obj/item/ammo_box/a308 = 3,
+		obj/item/melee/onehanded/knife/throwing = 1)
 
 
 //------- EXTRA -------//
