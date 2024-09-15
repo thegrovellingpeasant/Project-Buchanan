@@ -7,7 +7,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 /datum/supply_pack/crimsoncaravan
-	group = "Happy Trails Caravan"
+	group = "Crimson Caravan"
 
 /datum/supply_pack/crimsoncaravan/trader
 	name = "Leather Armor"
@@ -47,7 +47,7 @@
 /datum/supply_pack/crimsoncaravan/metal
 	name = "Metal Shipment"
 	desc = "50 iron sheets, suited for various industrial or personal projects."
-	cost = 60
+	cost = 175
 	contains = list(/obj/item/stack/sheet/mineral/wood/fifty)
 	crate_name = "metal shipment"
 	crate_type = /obj/structure/closet/crate/large
@@ -55,7 +55,7 @@
 /datum/supply_pack/crimsoncaravan/glass
 	name = "Glass Shipment"
 	desc = "50 sheets of glass. 100% salvaged materials. See through a glass, but dimly."
-	cost = 60
+	cost = 150
 	contains = list(/obj/item/stack/sheet/mineral/wood/fifty)
 	crate_name = "glass shipment"
 	crate_type = /obj/structure/closet/crate/large
