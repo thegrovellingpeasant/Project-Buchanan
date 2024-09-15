@@ -541,3 +541,10 @@
 	canhear_range = 5
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/radio/prison
+	name = "inmate radio"
+	canhear_range = 5
+	w_class = WEIGHT_CLASS_NORMAL
+	freqlock = TRUE
+	frequency = FREQ_NCRCF
+

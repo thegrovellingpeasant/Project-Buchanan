@@ -45,9 +45,14 @@
 	channels = list(RADIO_CHANNEL_ENGINEERING = 1)
 
 /obj/item/encryptionkey/headset_med
-	name = "medical radio encryption key"
+	name = "followers radio encryption key"
 	icon_state = "med_cypherkey"
 	channels = list(RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_TOWN = 1)
+
+/obj/item/encryptionkey/headset_wright_clinic
+	name = "clinic radio encryption key"
+	icon_state = "med_cypherkey"
+	channels = list(RADIO_CHANNEL_MEDICAL = 1)
 
 /obj/item/encryptionkey/headset_sci
 	name = "science radio encryption key"
@@ -108,7 +113,7 @@
 /obj/item/encryptionkey/headset_mining
 	name = "mining radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list(RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SCIENCE = 1)
+	channels = list(RADIO_CHANNEL_SUPPLY = 1)
 
 /obj/item/encryptionkey/headset_service
 	name = "service radio encryption key"
@@ -293,6 +298,12 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_WRIGHTS = 1)
 
+/obj/item/encryptionkey/headset_wrights_elder
+	name = "Wrights radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Wright channel, use :w."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_WRIGHTS = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_MEDICAL = 1)
+
 /obj/item/encryptionkey/headset_vangraffs
 	name = "Van Graffs radio encryption key"
 	desc = "An encryption key for a radio headset. To access the Van Graff channel, use :w."
@@ -307,9 +318,9 @@
 
 /obj/item/encryptionkey/headset_ncrcf
 	name = "NCRCF radio encryption key"
-	desc = "An encryption key for a radio headset. To access the NCRCF channel, use :w."
+	desc = "An encryption key for a radio headset. To access the NCR channel, use :n. To access the NCRCF channel, use :w."
 	icon_state = "cypherkey"
-	channels = list(RADIO_CHANNEL_NCRCF = 1)
+	channels = list(RADIO_CHANNEL_NCR = 1, RADIO_CHANNEL_NCRCF = 1)
 
 /obj/item/encryptionkey/headset_government
 	name = "Government radio encryption key"

@@ -96,7 +96,7 @@
 /datum/supply_pack/happytrails/wood
 	name = "Lumber Delivery"
 	desc = "50 wood planks. Furnish your home, or build one from scratch!"
-	cost = 60
+	cost = 120
 	contains = list(/obj/item/stack/sheet/mineral/wood/fifty)
 	crate_name = "Lumber Delivery"
 	crate_type = /obj/structure/closet/crate/large

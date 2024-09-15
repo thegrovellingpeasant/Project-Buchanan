@@ -124,10 +124,8 @@
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_walls(anger_modifier)
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
-
 	for(var/d in GLOB.cardinals)
 		INVOKE_ASYNC(src, .proc/fire_wall, d)
-	
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
 		INVOKE_ASYNC(src, .proc/diagonal_shots)
@@ -394,9 +392,9 @@
     explosion(src,5,5,6,6)
 
 /mob/living/simple_animal/hostile/megafauna/watcher/death()
-	playsound(src, 'sound/creatures/legion_death_far.ogg', 75, TRUE)
-    do_sparks(3, TRUE, src)
-    for(var/i in 1 to 3)
-        addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
-    addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
-    return ..()
+	playsound(src, "sound/creatures/legion_death_far.ogg", 75, TRUE)
+	do_sparks(3, TRUE, src)
+	for(var/i in 1 to 3)
+		addtimer(CALLBACK(src, .proc/do_death_beep), i*i SECONDS)
+	addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+	return ..()
