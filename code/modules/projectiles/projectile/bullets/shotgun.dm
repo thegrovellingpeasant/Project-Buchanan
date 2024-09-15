@@ -41,14 +41,14 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 8
-	range = 10
+	damage = 12
+	range = 5
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
 	. = ..()
 	if(iscarbon(target))
 		var/mob/living/carbon/M = target
-		M.adjust_fire_stacks(4)
+		M.adjust_fire_stacks(5)
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/shotgun_stunslug
