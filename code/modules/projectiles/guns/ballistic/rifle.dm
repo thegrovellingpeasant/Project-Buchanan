@@ -99,7 +99,7 @@
 	can_scope = TRUE
 	scope_state = "scope_long"
 	fire_delay = 3
-	slowdown = 0.2
+	slowdown = 0.3
 	scope_x_offset = 5
 	scope_y_offset = 13
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
@@ -125,6 +125,7 @@
 	desc = "A lever action rifle chambered in .44 Magnum."
 	icon_state = "trailcarbine"
 	item_state = "trailcarbine"
+	fire_delay = 5
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 
@@ -136,8 +137,9 @@
 	icon_state = "brushgun"
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	fire_delay = 3
-	recoil = 0.15
+	fire_delay = 6
+	slowdown = 0.3
+	recoil = 0.4
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 
 
@@ -155,7 +157,6 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 4
-	spread = 0
 	force = 18
 	can_scope = TRUE
 	scope_state = "scope_long"
@@ -195,7 +196,7 @@
 //Paciencia								Keywords: UNIQUE, .308, Bolt-action, 5 rounds internal, Scoped
 /obj/item/gun/ballistic/rifle/hunting/paciencia
 	name = "Paciencia"
-	desc = "A modified .308 hunting rifle with a reduced magazine but an augmented receiver. A Mexican flag is wrapped around the stock. You only have three shots- make them count."
+	desc = "A modified .308 hunting rifle with a reduced magazine but an augmented receiver. A Mexican flag is wrapped around the stock. You only have three shots- make them count." //should make this 50.
 	icon_state = "paciencia"
 	item_state = "paciencia"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/paciencia
@@ -224,7 +225,7 @@
 	icon_state = "enfield2"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	fire_delay = 1
+	fire_delay = 3
 	force = 16
 	can_scope = TRUE
 	scope_state = "scope_mosin"
@@ -236,7 +237,6 @@
 	knife_y_offset = 21
 	pump_sound = 'sound/weapons/boltpump.ogg'
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
-	pump_stam_cost = 15
 
 /obj/item/gun/ballistic/rifle/mosin
 	name = "Mosin-Nagant m38"
@@ -244,8 +244,6 @@
 	icon_state = "mosin"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 37
-	extra_speed = 600
 	fire_delay = 3
 	force = 18
 	can_scope = TRUE
