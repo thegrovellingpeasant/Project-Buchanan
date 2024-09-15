@@ -47,7 +47,7 @@
 	select_name = "alien projectile"
 	icon_state = "ion"
 	fire_sound = 'sound/f13weapons/plasma_pistol.ogg'
-	e_cost = 1 //nah you good.
+	e_cost = 500 //god will take the chosen to his heaven, while the sinners like yourself will be casted down to hell in a agonizing, rightious way.
 
 /obj/item/ammo_casing/energy/plasma/miner
 	projectile_type = /obj/item/projectile/f13plasma/repeater/mining
