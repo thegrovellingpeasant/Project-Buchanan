@@ -138,7 +138,7 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	fire_delay = 6
-	slowdown = 0.3
+	slowdown = 0.4
 	recoil = 0.4
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 
