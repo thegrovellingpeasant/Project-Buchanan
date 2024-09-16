@@ -383,7 +383,7 @@ Electric Fences subtype - for use at NCRCF
 	if(fusion_generator)
 		if(!fusion_generator.get_cell())
 			return FALSE
-		if(electrocute_mob(user, fusion_generator.get_cell(), src, 0.2, TRUE))
+		if(electrocute_mob(user, fusion_generator.get_cell(), src, 1, TRUE))
 			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 			s.set_up(3, 1, src)
 			s.start()

@@ -522,4 +522,5 @@
 	maxcharge = 15000
 	custom_materials = list(/datum/material/glass=100)
 	rating = 50
-	chargerate = 5000
+	chargerate = 1750
+	self_recharge = 1 
