@@ -110,7 +110,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	novariants = TRUE
 	grind_results = list(/datum/reagent/carbon = 20)
 	point_value = 25
-	sentence_value = 0.45
+	sentence_value = 0.50
 	merge_type = /obj/item/stack/sheet/mineral/diamond
 	material_type = /datum/material/diamond
 	walltype = /turf/closed/wall/mineral/diamond
@@ -141,6 +141,7 @@ GLOBAL_LIST_INIT(diamond_recipes, list ( \
 	novariants = TRUE
 	grind_results = list(/datum/reagent/uranium = 20)
 	point_value = 20
+	sentence_value = 0.45
 	merge_type = /obj/item/stack/sheet/mineral/uranium
 	material_type = /datum/material/uranium
 	walltype = /turf/closed/wall/mineral/uranium
@@ -216,6 +217,7 @@ GLOBAL_LIST_INIT(plasma_recipes, list ( \
 	custom_materials = list(/datum/material/gold=MINERAL_MATERIAL_AMOUNT)
 	grind_results = list(/datum/reagent/gold = 20)
 	point_value = 20
+	sentence_value = 0.35
 	merge_type = /obj/item/stack/sheet/mineral/gold
 	material_type = /datum/material/gold
 	walltype = /turf/closed/wall/mineral/gold
