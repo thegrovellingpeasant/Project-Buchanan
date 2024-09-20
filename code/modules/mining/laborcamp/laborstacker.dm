@@ -83,7 +83,18 @@ GLOBAL_LIST(labor_sheet_values)
 				. = TRUE
 			else
 				to_chat(usr, "<span class='alert'>No valid id for point transfer detected.</span>")
-		if("move_shuttle")
+		if("claim_sentence")
+			var/mob/M = usr
+			var/obj/item/card/id/I = M.get_idcard(TRUE)
+			if(istype(I, /obj/item/card/id/prisoner))
+				var/obj/item/card/id/prisoner/P = I
+				P.sentence -= stacking_machine.sentence
+				stacking_machine.sentence = 0
+				to_chat(usr, "<span class='notice'>Sentence reduced.</span>")
+				. = TRUE
+			else
+				to_chat(usr, "<span class='alert'>No valid id for point transfer detected.</span>")
+		/*if("move_shuttle")
 			if(!alone_in_area(get_area(src), usr))
 				to_chat(usr, "<span class='alert'>Prisoners are only allowed to be released while alone.</span>")
 			else
@@ -99,10 +110,10 @@ GLOBAL_LIST(labor_sheet_values)
 							Radio.set_frequency(FREQ_SECURITY)
 							Radio.talk_into(src, "A prisoner has returned to the station. Minerals and Prisoner ID card ready for retrieval.", FREQ_SECURITY)
 						to_chat(usr, "<span class='notice'>Shuttle received message and will be sent shortly.</span>")
-						. = TRUE
+						. = TRUE*/
 
 /obj/machinery/mineral/labor_claim_console/proc/locate_stacking_machine()
-	stacking_machine = locate(/obj/machinery/mineral/stacking_machine, get_step(src, machinedir))
+	stacking_machine = locate()
 	if(stacking_machine)
 		stacking_machine.CONSOLE = src
 	else
@@ -118,9 +129,11 @@ GLOBAL_LIST(labor_sheet_values)
 /obj/machinery/mineral/stacking_machine/laborstacker
 	force_connect = TRUE
 	var/points = 0 //The unclaimed value of ore stacked.
+	var/sentence = 0.0 // the sentence that turning in ore will remove.
 	//damage_deflection = 21
 /obj/machinery/mineral/stacking_machine/laborstacker/process_sheet(obj/item/stack/sheet/inp)
 	points += inp.point_value * inp.amount
+	sentence = inp.sentence_value * inp.amount
 	..()
 
 /obj/machinery/mineral/stacking_machine/laborstacker/attackby(obj/item/I, mob/living/user)
@@ -148,6 +161,7 @@ GLOBAL_LIST(labor_sheet_values)
 			to_chat(user, "<span class='notice'><B>ID: [prisoner_id.registered_name]</B></span>")
 			to_chat(user, "<span class='notice'>Points Collected:[prisoner_id.points]</span>")
 			to_chat(user, "<span class='notice'>Point Quota: [prisoner_id.goal]</span>")
+			to_chat(user, "<span class='notice'>Remaining Sentence:[prisoner_id.sentence]</span>")
 			to_chat(user, "<span class='notice'>Collect points by bringing smelted minerals to the Labor Shuttle stacking machine. Reach your quota to earn your release.</span>")
 		else
 			to_chat(user, "<span class='warning'>Error: Invalid ID</span>")

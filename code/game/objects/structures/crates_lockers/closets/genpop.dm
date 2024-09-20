@@ -3,9 +3,10 @@
 	var/default_desc = "It's a secure locker for the storage inmates's personal belongings during their time in prison."
 	name = "prisoner closet"
 	var/default_name = "prisoner closet"
-	req_access = list(ACCESS_BRIG)
+	req_one_access = list(ACCESS_BRIG, ACCESS_NCR)
 	var/obj/item/card/id/prisoner/registered_id = null
-	icon_state = "prisoner"
+	icon = 'icons/fallout/objects/furniture/closet.dmi'
+	icon_state = "gray"
 	locked = FALSE
 	anchored = TRUE
 	opened = TRUE
@@ -107,7 +108,7 @@
 			locked = TRUE
 			update_icon()
 			registered_id.forceMove(src.loc)
-			new /obj/item/clothing/under/rank/prisoner(src.loc)
+			//new /obj/item/clothing/under/f13/ncrcf(src.loc)
 		else
 			qdel(registered_id)
 			registered_id = null

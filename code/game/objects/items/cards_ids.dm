@@ -624,8 +624,8 @@
 /obj/item/card/id/prisoner
 	name = "prisoner ID card"
 	desc = "You are a number, you are not a free man."
-	icon_state = "orange"
-	item_state = "orange-id"
+	icon_state = "doctor"
+	item_state = "card-doctor"
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	assignment = "Prisoner"
@@ -640,7 +640,7 @@
 
 /obj/item/card/id/prisoner/GetAccess()
 	if((sentence && world.time >= sentence) || (goal && points >= goal))
-		access = list(ACCESS_LEAVE_GENPOP)
+		to_chat(FREQ_NCRCF, "<span class='boldnotice'>A notification</span><span class='notice'> buzzes: A prisoner has served their sentence, please facilitate the departure of: [registered_name].</span>")
 	return ..()
 
 /obj/item/card/id/prisoner/process()

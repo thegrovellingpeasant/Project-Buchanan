@@ -35058,6 +35058,11 @@
 /obj/structure/closet/crate/trashcart,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/reno_building)
+"tBB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/secure_closet/genpop,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/reno_building)
 "tBF" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/f13,
@@ -46474,7 +46479,7 @@ kzF
 aVY
 lgV
 kzF
-nQo
+tBB
 nQo
 dFi
 qkP

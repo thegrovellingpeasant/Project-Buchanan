@@ -11,6 +11,7 @@ export const LaborClaimConsole = (props, context) => {
     ores,
     status_info,
     unclaimed_points,
+    unclaimed_sentence
   } = data;
   return (
     <Window
@@ -40,6 +41,16 @@ export const LaborClaimConsole = (props, context) => {
                   onClick={() => act('claim_points')} />
               )}>
               {unclaimed_points}
+            </LabeledList.Item>
+            <LabeledList.Item
+              label="Unclaimed sentence reduction"
+              buttons={(
+                <Button
+                  content="Claim Sentence Reduction"
+                  disabled={!unclaimed_sentence}
+                  onClick={() => act('claim_sentence')} />
+              )}>
+              {unclaimed_sentence}
             </LabeledList.Item>
           </LabeledList>
         </Section>
