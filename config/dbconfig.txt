@@ -13,7 +13,7 @@ ADDRESS localhost
 PORT 3306
 
 ## Database for all SQL functions, not just feedback.
-FEEDBACK_DATABASE reno
+FEEDBACK_DATABASE interstate80
 
 ## Prefix to be added to the name of every table, older databases will require this be set to erro_
 ## Note, this does not change the table names in the database, you will have to do that yourself.
@@ -27,7 +27,7 @@ FEEDBACK_TABLEPREFIX
 FEEDBACK_LOGIN root
 
 ## Password used to access the database.
-FEEDBACK_PASSWORD password
+FEEDBACK_PASSWORD E45srk8Sjufn3zQ
 
 ## Time in seconds for asynchronous queries to timeout
 ## Set to 0 for infinite
