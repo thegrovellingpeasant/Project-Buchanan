@@ -1998,7 +1998,16 @@ obj/effect/spawner/bundle/f13/combat_rifle
 				/obj/item/cartridge/medical,
 				/obj/item/cartridge/signal,
 				/obj/item/cartridge/chemistry,
-				/obj/item/cartridge/curator
+				/obj/item/cartridge/curator,
+				/obj/effect/spawner/lootdrop/f13/robotics/light,
+				/obj/effect/spawner/lootdrop/f13/robotics/medium,
+				/obj/effect/spawner/lootdrop/f13/robotics/heavy,
+				/obj/effect/spawner/lootdrop/f13/robotics/utility,
+				/obj/effect/spawner/lootdrop/f13/robotics/ammo,
+				/obj/effect/spawner/lootdrop/f13/robotics/protectron,
+				/obj/effect/spawner/lootdrop/f13/robotics/gutsy,
+				/obj/effect/spawner/lootdrop/f13/robotics/assaultron,
+				/obj/effect/spawner/lootdrop/f13/robotics/sentry
 				)
 
 /obj/effect/spawner/lootdrop/f13/crafting/Initialize(mapload) //on mapload, pick how many shit to spawn
@@ -2384,3 +2393,138 @@ obj/effect/spawner/bundle/f13/combat_rifle
 			/obj/item/storage/box/ration/ranger_lunch,
 			/obj/item/storage/box/ration/ranger_dinner,
 			)
+
+/obj/effect/spawner/lootdrop/f13/robotics 
+	name = "robotics spawners"
+	loot = list(
+				/obj/effect/spawner/lootdrop/f13/robotics/light,
+				/obj/effect/spawner/lootdrop/f13/robotics/medium,
+				/obj/effect/spawner/lootdrop/f13/robotics/heavy,
+				/obj/effect/spawner/lootdrop/f13/robotics/utility,
+				/obj/effect/spawner/lootdrop/f13/robotics/ammo,
+				/obj/effect/spawner/lootdrop/f13/robotics/protectron,
+				/obj/effect/spawner/lootdrop/f13/robotics/gutsy,
+				/obj/effect/spawner/lootdrop/f13/robotics/assaultron,
+				/obj/effect/spawner/lootdrop/f13/robotics/sentry
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/light
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/pistol,
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/plasma/pistol,
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/pistol,
+				/obj/item/mecha_parts/mecha_equipment/weapon/melee/saw,
+				/obj/item/mecha_parts/mecha_equipment/weapon/melee/hammer
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/medium
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/sniper,
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/rifle,
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/plasma,
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower/light
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/heavy
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/minigun,
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/minigun,
+				/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/caster,
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/f13,
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamethrower,
+				/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/grenade_launcher
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/utility
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp/f13,
+				/obj/item/mecha_parts/mecha_equipment/medical/mechmedbeam/f13,
+				/obj/item/mecha_parts/mecha_equipment/drill/f13,
+				/obj/item/mecha_parts/mecha_equipment/drill/diamonddrill/f13,
+				/obj/item/mecha_parts/mecha_equipment/mining_scanner/f13,
+				/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster/f13,
+				/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster/f13,
+				/obj/item/mecha_parts/mecha_equipment/repair_droid/f13,
+				/obj/item/mecha_parts/mecha_equipment/extinguisher/f13,
+				/obj/item/mecha_parts/mecha_equipment/rcd/f13
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/ammo
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_ammo/flamethrower,
+				/obj/item/mecha_ammo/flamethrower/large,
+				/obj/item/mecha_ammo/pistol,
+				/obj/item/mecha_ammo/minigun,
+				/obj/item/mecha_ammo/rockets,
+				/obj/item/mecha_ammo/grenades
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/protectron
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/chassis/f13/protectron,
+				/obj/item/mecha_parts/part/f13/protectron_head,
+				/obj/item/mecha_parts/part/f13/protectron_torso,
+				/obj/item/mecha_parts/part/f13/protectron_left_arm,
+				/obj/item/mecha_parts/part/f13/protectron_right_arm,
+				/obj/item/mecha_parts/part/f13/protectron_left_leg,
+				/obj/item/mecha_parts/part/f13/protectron_right_leg,
+				/obj/item/circuitboard/mecha/protectron/peripherals,
+				/obj/item/circuitboard/mecha/protectron/targeting,
+				/obj/item/circuitboard/mecha/protectron/main
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/gutsy
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/chassis/f13/gutsy,
+				/obj/item/mecha_parts/part/f13/gutsy_head,
+				/obj/item/mecha_parts/part/f13/gutsy_torso,
+				/obj/item/mecha_parts/part/f13/gutsy_left_arm,
+				/obj/item/mecha_parts/part/f13/gutsy_right_arm,
+				/obj/item/mecha_parts/part/f13/gutsy_left_leg,
+				/obj/item/mecha_parts/part/f13/gutsy_right_leg,
+				/obj/item/circuitboard/mecha/gutsy/peripherals,
+				/obj/item/circuitboard/mecha/gutsy/targeting,
+				/obj/item/circuitboard/mecha/gutsy/main
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/assaultron
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/chassis/f13/assaultron,
+				/obj/item/mecha_parts/part/f13/assaultron_head,
+				/obj/item/mecha_parts/part/f13/assaultron_torso,
+				/obj/item/mecha_parts/part/f13/assaultron_left_arm,
+				/obj/item/mecha_parts/part/f13/assaultron_right_arm,
+				/obj/item/mecha_parts/part/f13/assaultron_left_leg,
+				/obj/item/mecha_parts/part/f13/assaultron_right_leg,
+				/obj/item/mecha_parts/part/f13/assaultron_armor,
+				/obj/item/circuitboard/mecha/assaultron/peripherals,
+				/obj/item/circuitboard/mecha/assaultron/targeting,
+				/obj/item/circuitboard/mecha/assaultron/main
+				)
+
+/obj/effect/spawner/lootdrop/f13/robotics/sentry
+	name = "robotics spawners"
+	loot = list(
+				/obj/item/mecha_parts/chassis/f13/sentry,
+				/obj/item/mecha_parts/part/f13/sentry_head,
+				/obj/item/mecha_parts/part/f13/sentry_torso,
+				/obj/item/mecha_parts/part/f13/sentry_left_arm,
+				/obj/item/mecha_parts/part/f13/sentry_right_arm,
+				/obj/item/mecha_parts/part/f13/sentry_left_leg,
+				/obj/item/mecha_parts/part/f13/sentry_right_leg,
+				/obj/item/mecha_parts/part/f13/sentry_armor,
+				/obj/item/circuitboard/mecha/sentry/peripherals,
+				/obj/item/circuitboard/mecha/sentry/targeting,
+				/obj/item/circuitboard/mecha/sentry/main
+				)
+
+
+

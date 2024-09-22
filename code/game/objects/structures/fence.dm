@@ -303,11 +303,12 @@
 Electric Fences subtype - for use at NCRCF
 */
 
-
 /obj/structure/fence/electric_fence
+	icon = 'icons/fallout/structures/fences.dmi'
+	icon_state = "straight"
 	name = "electric fence"
 	desc = "A chain-link fence that has the capacity to be electrified, and often is. Don't get too close."
-
+	var/obj/machinery/power/fusion_generator/ncrcf/fusion_generator = null
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
 
@@ -324,6 +325,21 @@ Electric Fences subtype - for use at NCRCF
 /obj/structure/fence/electric_fence/post
 	icon_state = "post"
 	cuttable = FALSE
+
+/obj/structure/fence/electric_fence/Initialize()
+	. = ..()
+	locate_generator()
+	update_cut_status()
+
+/obj/structure/fence/electric_fence/proc/locate_generator()
+	fusion_generator = locate()
+
+/obj/structure/fence/electric_fence/examine(mob/user)
+	. = ..()
+	if(fusion_generator.get_cell())
+		. += "<span class='info'>The wires seem to be currently powered by a nearby generator and cannot be cut safely while its operational.</span>"
+	else
+		. += "<span class='info'>The wires seem to be unpowered and can be safely cut by tools.</span>"
 
 //LIGHTNING BOLT LIGHTNING BOLT
 //Taken straight from Grille code, has the electrification stuff ported over.
@@ -353,10 +369,21 @@ Electric Fences subtype - for use at NCRCF
 		return FALSE
 	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
 		return FALSE
-	var/turf/T = get_turf(src)
-	var/obj/structure/cable/C = T.get_cable_node()
-	if(C)
+	//var/turf/T = get_turf(src)
+	//var/obj/structure/cable/C = T.get_cable_node()
+	/*if(C)
 		if(electrocute_mob(user, C, src, 1, TRUE))
+			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+			s.set_up(3, 1, src)
+			s.start()
+			throwforce = 20
+			return TRUE
+		else
+			return FALSE*/
+	if(fusion_generator)
+		if(!fusion_generator.get_cell())
+			return FALSE
+		if(electrocute_mob(user, fusion_generator.get_cell(), src, 1, TRUE))
 			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 			s.set_up(3, 1, src)
 			s.start()

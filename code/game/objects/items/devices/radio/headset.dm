@@ -274,7 +274,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 //FALLOUT
 /obj/item/radio/headset/headset_overseer
 	name = "\proper the overseer's radio headset"
-	desc = "This is used by the vault overseer.\nChannels are as follows: :v - vault, :c - command, :s - security, :e - engineering, :m - medical, :n - science."
+	desc = "This is used by the vault overseer.\nChannels are as follows: :v - vault, :c - command, :s - security, :e - engineering, :m - medical, :w - science."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_overseer
 
@@ -475,32 +475,52 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot2 = new /obj/item/encryptionkey/headset_cent
 
 /obj/item/radio/headset/headset_bishops
-	name = "den radio headset"
+	name = "Bishops radio headset"
 	desc = "This is used by the Bishops. \nTo access the Bishop channel, use :b."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_bishops
 
 /obj/item/radio/headset/headset_wrights
-	name = "den radio headset"
+	name = "Wrights radio headset"
 	desc = "This is used by the Wrights. \nTo access the Wright channel, use :w."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_wrights
 
+/obj/item/radio/headset/headset_wrightelder
+	name = "Wrights Elder radio headset"
+	desc = "This is used by the Wrights Elder. \nTo access the Wright channel, use :w. \nTo access the shop channel, use :u. \nTo access the clinic channel, use :m."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_wrights_elder
+
+/obj/item/radio/headset/headset_wrightaid
+	name = "Wright Doctor radio headset"
+	desc = "This is used by the Wrights. \nTo access the Wright channel, use :w. \nTo access the shop channel, use :u."
+	icon_state = "med_headset"
+	keyslot = new /obj/item/encryptionkey/headset_wrights
+	keyslot2 = new /obj/item/encryptionkey/headset_wright_clinic
+
+/obj/item/radio/headset/headset_wrightstuff
+	name = "Wright Stuff radio headset"
+	desc = "This is used by the Wrights. \nTo access the Wright channel, use :w. \nTo access the clinic channel, use :m."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_wrights
+	keyslot2 = new /obj/item/encryptionkey/headset_cargo
+
 /obj/item/radio/headset/headset_vangraffs
-	name = "den radio headset"
+	name = "Van Graffs radio headset"
 	desc = "This is used by the Van Graffs. \nTo access the Van Graff channel, use :v."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_vangraffs
 
 /obj/item/radio/headset/headset_nrpd
-	name = "den radio headset"
+	name = "NRPD radio headset"
 	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :p."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_nrpd
 
 /obj/item/radio/headset/headset_ncrcf
-	name = "den radio headset"
-	desc = "This is used by the NCRCF. \nTo access the NCRCF channel, use :n."
+	name = "NCRCF radio headset"
+	desc = "This is used by the NCRCF. \nTo access the NCR channel, use :n. \nTo access the NCRCF channel, use :w."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ncrcf
 
@@ -513,7 +533,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_government_ncrcf
 	name = "NCR government headset"
-	desc = "This is used by the NCR Command. \nTo access the NCRCF channel, use :n. \nTo access the Government channel, use :g."
+	desc = "This is used by the NCR Command. \nTo access the NCR channel, use :n.\nTo access the NCRCF channel, use :w. \nTo access the Government channel, use :g."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ncrcf
 	keyslot2 = new /obj/item/encryptionkey/headset_government

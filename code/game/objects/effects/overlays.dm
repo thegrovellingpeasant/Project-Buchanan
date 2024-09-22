@@ -623,3 +623,11 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	plane = WALL_PLANE
 	layer = ABOVE_WINDOW_LAYER
+
+/obj/effect/overlay/gothicwall
+	name = "gothic wall"
+	icon = 'icons/turf/walls/gothic_wall.dmi'
+	icon_state = "wall_facade"
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = WALL_PLANE
+	layer = ABOVE_OBJ_LAYER

@@ -517,9 +517,10 @@
 /obj/item/stock_parts/cell/fusion
 	name = "fusion core"
 	desc = "A pre-war F.C; a long-term nuclear battery that used by the military and some companies for incredibly high power storage."
-	icon = 'icons/fallout/objects/powercells.dmi'
+	icon = 'icons/obj/power.dmi'
 	icon_state = "fusioncore"
 	maxcharge = 15000
 	custom_materials = list(/datum/material/glass=100)
 	rating = 50
-	chargerate = 15000
+	chargerate = 1750
+	self_recharge = 1 
