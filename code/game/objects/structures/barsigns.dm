@@ -282,10 +282,10 @@
 	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
 
 /obj/structure/sign/reno/barsign/oh
-	name = "Shark Club sign"
+	name = "O.H."
 	icon = 'icons/obj/renosigns.dmi'
-	icon_state = "sharkclub"
-	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
+	icon_state = "oh"
+	desc = "A tropical themed sort of sign."
 
 /obj/structure/sign/reno/barsign/oh/New()
 	..()

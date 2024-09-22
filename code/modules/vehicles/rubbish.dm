@@ -152,10 +152,12 @@
 /obj/structure/car/rubbish10
 	icon_state = "rubbish_lights10"
 	layer = ABOVE_MOB_LAYER
+	icon_state = "rubbish10"
 
 /obj/structure/car/rubbish11
 	icon_state = "rubbish_lights11"
 	layer = ABOVE_MOB_LAYER
+	icon_state = "rubbish11"
 
 /obj/structure/car/derelict
 	icon = 'icons/fallout/vehicles/medium_vehicles.dmi'
