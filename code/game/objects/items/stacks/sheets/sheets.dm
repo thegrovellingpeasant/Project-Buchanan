@@ -18,6 +18,8 @@
 	var/shard_type
 	///What type of wall does this sheet spawn
 	var/walltype
+	///what sentence reduction does this sheet bring
+	var/sentence_value = 0
 
 /obj/item/stack/sheet/Initialize(mapload, new_amount, merge)
 	. = ..()
