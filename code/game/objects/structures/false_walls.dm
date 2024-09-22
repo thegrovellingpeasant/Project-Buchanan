@@ -307,7 +307,7 @@
 	mineral = /obj/item/stack/rods
 	mineral_amount = 5
 	walltype = /turf/closed/wall/gothic
-	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/r_wall/gothic/rivet)
+	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
 
 /obj/structure/falsewall/gothicrivet
 	name = "gothic wall"
@@ -316,8 +316,8 @@
 	icon_state = "wall"
 	mineral = /obj/item/stack/rods
 	mineral_amount = 5
-	walltype = /turf/closed/wall/r_wall/gothic/rivet
-	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/r_wall/gothic/rivet)
+	walltype = /turf/closed/wall/gothic/rivet
+	canSmoothWith = list(/obj/structure/falsewall/gothic, /obj/structure/falsewall/gothicrivet, /turf/closed/wall/gothic, /turf/closed/wall/gothic/rivet)
 
 /obj/structure/falsewall/concrete
 	name = "concrete wall"
