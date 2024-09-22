@@ -316,7 +316,7 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/greytort
 
 /obj/item/storage/fancy/cigarettes/cigpack_redding
-	name = "\improper Sac-Town Cigarettes"
+	name = "\improper Redding Handrolls"
 	desc = "From the heart of wildfire country, with the same great taste."
 	icon_state = "robustg"
 	spawn_type = /obj/item/clothing/mask/cigarette/rollie/redding
