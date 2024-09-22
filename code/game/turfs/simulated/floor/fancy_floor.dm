@@ -95,6 +95,10 @@
 	floor_tile = /obj/item/stack/tile/wood/wood_diagonal
 	broken_states = list("diagonal_wood-broken", "diagonal_wood-broken2", "diagonal_wood-broken3")
 
+/turf/open/floor/wood/wood_diagonal/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/grass
 	name = "grass patch"
 	desc = "You can't tell if this is real grass or just cheap plastic imitation."
@@ -282,7 +286,7 @@
 	icon = 'icons/turf/floors/carpet_black.dmi'
 	floor_tile = /obj/item/stack/tile/carpet/black
 	smooth = SMOOTH_MORE
-	canSmoothWith = list(/turf/open/floor/carpet/black, /turf/open/floor/carpet/blackred, /turf/open/floor/carpet/monochrome, /turf/open/floor/carpet/black/nosmooth/lit, /turf/open/floor/carpet/black/nosmooth, /turf/open/floor/carpet/black/lit)
+	canSmoothWith = list(/turf/open/floor/carpet/black, /turf/open/floor/carpet/blackred, /turf/open/floor/carpet/monochrome, /turf/open/floor/carpet/black/lit/nosmooth, /turf/open/floor/carpet/black/nosmooth, /turf/open/floor/carpet/black/lit)
 
 /turf/open/floor/carpet/black/lit
 	name = "carpet"
@@ -292,7 +296,7 @@
 	name = "carpet"
 	smooth = SMOOTH_FALSE
 
-/turf/open/floor/carpet/black/nosmooth/lit
+/turf/open/floor/carpet/black/lit/nosmooth
 	name = "carpet"
 	smooth = SMOOTH_FALSE
 	sunlight_state = SUNLIGHT_SOURCE
@@ -303,6 +307,10 @@
 	floor_tile = /obj/item/stack/tile/carpet/arcade
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/arcade/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/blackred
 	icon = 'icons/turf/floors/carpet_blackred.dmi'
@@ -341,9 +349,18 @@
 	floor_tile = /obj/item/stack/tile/carpet/green
 	canSmoothWith = list(/turf/open/floor/carpet/green, /turf/open/floor/carpet/green/airless)
 
+/turf/open/floor/carpet/green/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/carpet/green/nosmooth
 	name = "carpet"
 	smooth = SMOOTH_FALSE
+
+/turf/open/floor/carpet/green/lit/nosmooth
+	name = "carpet"
+	smooth = SMOOTH_FALSE
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/orange
 	icon = 'icons/turf/floors/carpet_orange.dmi'
@@ -375,13 +392,17 @@
 /turf/open/floor/carpet/royalblack
 	icon = 'icons/turf/floors/carpet_royalblack.dmi'
 	floor_tile = /obj/item/stack/tile/carpet/royalblack
-	canSmoothWith = list(/turf/open/floor/carpet/royalblack, /turf/open/floor/carpet/royalblack/airless, /turf/open/floor/carpet/royalblack/nosmooth, /turf/open/floor/carpet/royalblack/nosmooth/lit)
+	canSmoothWith = list(/turf/open/floor/carpet/royalblack, /turf/open/floor/carpet/royalblack/airless, /turf/open/floor/carpet/royalblack/nosmooth, /turf/open/floor/carpet/royalblack/lit/nosmooth)
+
+/turf/open/floor/carpet/royalblack/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/royalblack/nosmooth
 	name = "carpet"
 	smooth = SMOOTH_FALSE
 
-/turf/open/floor/carpet/royalblack/nosmooth/lit
+/turf/open/floor/carpet/royalblack/lit/nosmooth
 	name = "carpet"
 	sunlight_state = SUNLIGHT_SOURCE
 
@@ -401,6 +422,10 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
+/turf/open/floor/carpet/brown/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/carpet/reno/blue
 	name = "carpet"
 	icon = 'icons/fallout/turfs/floors.dmi'
@@ -408,6 +433,10 @@
 	floor_tile = /obj/item/stack/tile/carpet/reno/blue
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/reno/blue/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/reno/green
 	name = "carpet"
@@ -417,13 +446,21 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
-/turf/open/floor/carpet/reno/burgandy // nice typo pestarzt
+/turf/open/floor/carpet/reno/green/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/carpet/reno/burgundy
 	name = "carpet"
 	icon = 'icons/fallout/turfs/floors.dmi'
-	icon_state = "tile-carpet_burgandy"
-	floor_tile = /obj/item/stack/tile/carpet/reno/burgandy
+	icon_state = "tile-carpet_burgundy"
+	floor_tile = /obj/item/stack/tile/carpet/reno/burgundy
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/reno/burgundy/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/reno/pattern1
 	name = "carpet"
@@ -433,6 +470,10 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
+/turf/open/floor/carpet/reno/pattern1/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/carpet/reno/pattern2
 	name = "carpet"
 	icon = 'icons/fallout/turfs/floors.dmi'
@@ -440,6 +481,10 @@
 	floor_tile = /obj/item/stack/tile/carpet/reno/pattern2
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/reno/pattern2/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/reno/evil
 	name = "carpet"
@@ -449,6 +494,10 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
+/turf/open/floor/carpet/reno/evil/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/carpet/reno/evil2
 	name = "carpet"
 	icon = 'icons/fallout/turfs/floors.dmi'
@@ -456,6 +505,10 @@
 	floor_tile = /obj/item/stack/tile/carpet/reno/pattern2
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/reno/evil2/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/reno/evil3
 	name = "carpet"
@@ -465,6 +518,10 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
+/turf/open/floor/carpet/reno/evil3/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/carpet/reno/evil4
 	name = "carpet"
 	icon = 'icons/fallout/turfs/floors.dmi'
@@ -472,6 +529,10 @@
 	floor_tile = /obj/item/stack/tile/carpet/reno/pattern2
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
+
+/turf/open/floor/carpet/reno/evil4/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/carpet/reno/evil5
 	name = "carpet"
@@ -481,8 +542,16 @@
 	smooth = SMOOTH_FALSE
 	canSmoothWith = list()
 
+/turf/open/floor/carpet/reno/evil5/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/wood/f13/carpet_brown
 	icon_state = "tile-carpet_brown"
+
+/turf/open/floor/wood/f13/carpet_brown/lit
+	name = "carpet"
+	sunlight_state = SUNLIGHT_SOURCE
 
 //*****Airless versions of all of the above.*****
 /turf/open/floor/carpet/airless

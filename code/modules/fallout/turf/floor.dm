@@ -49,14 +49,43 @@
 /turf/open/floor/f13/green
 	icon_state = "hydrofloor"
 
+/turf/open/floor/f13/green/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/f13/blue
 	icon_state = "darkdirty"
+
+/turf/open/floor/f13/blue/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/f13/red
 	icon_state = "reddirtyfull"
 
+/turf/open/floor/f13/red/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/f13/yellow
 	icon_state = "yellowdirtyfull"
+
+/turf/open/floor/f13/yellow/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/f13/dark
+	name = "floor"
+	icon_state = "darkyellowfull"
+
+/turf/open/floor/f13/dark/lit 
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/f13/rusty
+	icon_state = "floorrusty"
+
+/turf/open/floor/f13/rusty/lit 
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/f13/paintwall
 	name = "paint wall"
