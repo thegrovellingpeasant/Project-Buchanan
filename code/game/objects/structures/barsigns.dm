@@ -251,6 +251,68 @@
 	icon_state = "Interstate80"
 	desc = "An old Interstate 80 sign, marking the city's placement on the famous road."
 
+/obj/structure/sign/reno/barsign/dames
+	name = "Dames sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "dames"
+	desc = "There's probably women somewhere here..."
+
+/obj/structure/sign/reno/barsign/beer
+	name = "Beer sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "beer"
+	desc = "Drink up!"
+
+/obj/structure/sign/reno/barsign/desperado
+	name = "desperado"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "desperado"
+	desc = "The Desperado was one of the major points of power in New Reno and stayed as such under new management."
+
+/obj/structure/sign/reno/barsign/varos
+	name = "varo's sign"
+	icon = 'icons/obj/barsigns.dmi'
+	icon_state = "varos"
+	desc = "A postwar sign made, however it's not so shabby."
+
+/obj/structure/sign/reno/barsign/sharkclub2
+	name = "Shark Club sign"
+	icon = 'icons/obj/renosigns.dmi'
+	icon_state = "sharkclub"
+	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
+
+/obj/structure/sign/reno/barsign/oh
+	name = "Shark Club sign"
+	icon = 'icons/obj/renosigns.dmi'
+	icon_state = "sharkclub"
+	desc = "The Shark Club is a casino located in New Reno on Second Street, owned by the Bishop family. It is the largest casino in New Reno."
+
+/obj/structure/sign/reno/barsign/oh/New()
+	..()
+	icon_state = pick("oh","oh2")
+
+/obj/structure/sign/reno/barsign/xxx
+	name = "XXX sign"
+	icon = 'icons/obj/renosigns.dmi'
+	icon_state = "xxx"
+	desc = "A sign advertising things of a dubious, illict nature."
+
+/obj/structure/sign/reno/barsign/heart
+	name = "Crude Lady sign"
+	icon = 'icons/obj/renosigns.dmi'
+	icon_state = "heart1"
+	desc = "An indecent sign."
+
+/obj/structure/sign/reno/barsign/heart/New()
+	..()
+	icon_state = pick("heart1","heart2")
+
+/obj/structure/sign/reno/barsign/pointed1
+	name = "worn out poster"
+	icon = 'icons/obj/renosigns.dmi'
+	icon_state = "pointed1"
+	desc = "Looks like the ink has been coming off."
+
 //Code below is to define useless variables for datums. It errors without these
 
 

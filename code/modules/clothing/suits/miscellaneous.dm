@@ -390,7 +390,7 @@
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 20)
 
 
 /obj/item/clothing/suit/jacket/flannel
@@ -424,7 +424,7 @@
 	item_state = "hostrench"
 	resistance_flags = NONE
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 20)
 
 /obj/item/clothing/suit/jacket/leather/overcoat
 	name = "leather overcoat"
@@ -432,7 +432,7 @@
 	icon_state = "leathercoat"
 	cold_protection = CHEST|GROIN|ARMS|LEGS
 	mutantrace_variation = STYLE_DIGITIGRADE
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 25)
 
 
 /obj/item/clothing/suit/jacket/puffer
@@ -517,7 +517,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/head/hooded/winterhood
@@ -529,7 +529,7 @@
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR|HIDEEARS
 	rad_flags = RAD_NO_CONTAMINATE
-	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/hooded/wintercoat/centcom
 	name = "centcom winter coat"
@@ -551,7 +551,7 @@
 	desc = "A luxurious winter coat, stuffed with the down of the endangered Uka bird and trimmed with genuine sable. The fabric is an indulgently soft micro-fiber, and the deep ultramarine color is only one that could be achieved with minute amounts of crystalline bluespace dust woven into the thread between the plectrums. Extremely lavish, and extremely durable. The tiny flakes of protective material make it nothing short of extremely light lamellar armor."
 	icon_state = "coatcaptain"
 	item_state = "coatcaptain"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/captain
 
 /obj/item/clothing/suit/hooded/wintercoat/captain/Initialize()
@@ -561,7 +561,7 @@
 /obj/item/clothing/head/hooded/winterhood/captain
 	desc = "A blue and yellow hood attached to a heavy winter jacket."
 	icon_state = "winterhood_captain"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/wintercoat/hop
 	name = "head of personnel's winter coat"
@@ -579,7 +579,7 @@
 	desc = "A red, armor-padded winter coat. It glitters with a mild ablative coating and a robust air of authority.  The zipper tab is a pair of jingly little handcuffs that get annoying after the first ten seconds."
 	icon_state = "coatsecurity"
 	item_state = "coatsecurity"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security
 
 /obj/item/clothing/suit/hooded/wintercoat/security/Initialize()
@@ -589,7 +589,7 @@
 /obj/item/clothing/head/hooded/winterhood/security
 	desc = "A red, armor-padded winter hood."
 	icon_state = "winterhood_security"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 
 /obj/item/clothing/suit/hooded/wintercoat/hos
@@ -597,7 +597,7 @@
 	desc = "A red, armor-padded winter coat, lovingly woven with a Kevlar interleave and reinforced with semi-ablative polymers and a silver azide fill material. The zipper tab looks like a tiny replica of Beepsky."
 	icon_state = "coathos"
 	item_state = "coathos"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/hos
 
 /obj/item/clothing/suit/hooded/wintercoat/hos/Initialize()
@@ -607,7 +607,7 @@
 /obj/item/clothing/head/hooded/winterhood/hos
 	desc = "A red, armor-padded winter hood, lovingly woven with a Kevlar interleave. Definitely not bulletproof, especially not the part where your face goes."
 	icon_state = "winterhood_hos"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/wintercoat/medical
 	name = "medical winter coat"
@@ -822,7 +822,7 @@
 	desc = "A brass-plated button up winter coat. Instead of a zipper tab, it has a brass cog with a tiny red gemstone inset."
 	icon_state = "coatratvar"
 	item_state = "coatratvar"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/ratvar
 	var/real = TRUE
 
@@ -832,7 +832,7 @@
 	light_range = 3
 	light_power = 1
 	light_color = "#B18B25" //clockwork slab background top color
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar/equipped(mob/living/user,slot)
 	..()
@@ -851,7 +851,7 @@
 	desc = "A somber button-up in tones of grey entropy and a wicked crimson zipper. When pulled all the way up, the zipper looks like a bloody gash. The zipper pull looks like a single drop of blood."
 	icon_state = "coatnarsie"
 	item_state = "coatnarsie"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/narsie
 	var/real = TRUE
 
@@ -870,7 +870,7 @@
 /obj/item/clothing/head/hooded/winterhood/narsie
 	desc = "A black winter hood full of whispering secrets that only She shall ever know."
 	icon_state = "winterhood_narsie"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar/fake
 	name = "brass winter coat"
@@ -891,7 +891,7 @@
 	desc = "The one coat to rule them all. Extremely durable while providing the utmost comfort."
 	icon_state = "coatdurathread"
 	item_state = "coatdurathread"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/durathread
 
@@ -902,7 +902,7 @@
 /obj/item/clothing/head/hooded/winterhood/durathread
 	desc = "The one coat to rule them all. Extremely durable while providing the utmost comfort."
 	icon_state = "winterhood_durathread"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/spookyghost
 	name = "spooky ghost"
@@ -941,7 +941,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
 	resistance_flags = NONE
-	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = -10)
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = -10, "wound" = 30)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/assu_suit
@@ -1009,7 +1009,7 @@
 	desc = "An outfit used by traditional japanese warriors."
 	icon_state = "samurai"
 	item_state = "samurai"
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 30, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 40)
 
 
 /obj/item/clothing/suit/bomber
@@ -1017,7 +1017,7 @@
 	desc = "It looks like someone dragged this out of a muddy lake."
 	icon_state = "bomberalt"
 	item_state = "bomberalt"
-	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 25)
 
 /*
  * Robes : project buchanan addition

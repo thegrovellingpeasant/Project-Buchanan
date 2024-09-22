@@ -17,6 +17,19 @@
 	rangeroverlay = mutable_appearance(icon, "[icon_state]overlay", ABOVE_ALL_MOB_LAYER)
 	add_overlay(rangeroverlay)
 
+/obj/structure/statue_tandi
+	name = "President Tandi statue"
+	desc = "Born in the year 2145AD, our beloved second president, succeeding her father President Aradesh."
+	icon = 'icons/fallout/objects/structures/tandi.dmi'
+	icon_state = "tandi"
+	bound_width = 32
+	bound_height = 32
+	pixel_x = -19
+	anchored = TRUE
+	density = TRUE
+	layer = VISIBLE_FROM_ABOVE_LAYER
+	resistance_flags = INDESTRUCTIBLE
+
 //Fallout 13 rubish decoration
 
 /obj/structure/car
@@ -126,6 +139,22 @@
 
 /obj/structure/car/rubbish8
 	icon_state = "notsorubbish"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/car/rubbish9_1
+	icon_state = "rubbish_lights"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/car/rubbish9_2
+	icon_state = "rubbish_lights2"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/car/rubbish10
+	icon_state = "rubbish_lights10"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/car/rubbish11
+	icon_state = "rubbish_lights11"
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/car/derelict

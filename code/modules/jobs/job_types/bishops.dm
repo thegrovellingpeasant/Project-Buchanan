@@ -279,8 +279,8 @@
 	title = "Bishop Made Man"
 	flag = F13MADEMAN
 	department_flag = BISHOPS
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "Capos and the Bishop Boss"
 	description = "You have become a made man of the Bishop Family. Expect to be assigned to follow the orders of one of the Capos, be it helping in the casino, extorting businesses, protecting your superiors during a meeting, and so on. Do not disturb the boss with unnecessary affairs."
 	selection_color = "#8CA2BD"
@@ -408,7 +408,8 @@
 	backpack_contents = list(
 		/obj/item/card/slotmachine = 1,
 		/obj/item/storage/bag/money/small/few = 1,
-		/obj/item/melee/onehanded/club/tireiron = 1
+		/obj/item/gun/ballistic/revolver/detective = 1,
+		/obj/item/ammo_box/c38 = 1
 		)
 /*--------------------------------------------------------------*/
 

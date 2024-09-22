@@ -298,13 +298,13 @@ GLOBAL_LIST_INIT(vangraffs_positions, list(
 ))
 
 GLOBAL_LIST_INIT(citizens_positions, list(
-	"Judge",
-	"NRPD Chief",
-	"NRPD Officer",
 	"NCRCF Warden",
 	"NCRCF Guard",
 	"NCRCF Physician",
 	"Convict",
+	"Judge",
+	"NRPD Chief",
+	"NRPD Officer",
 	"Tourist",
 ))
 

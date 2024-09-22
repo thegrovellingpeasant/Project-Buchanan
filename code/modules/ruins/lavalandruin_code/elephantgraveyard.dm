@@ -291,7 +291,7 @@
 	var/shock_per_touch = 0
 	var/shock_type = /datum/chemical_reaction/reagent_explosion/teslium_lightning
 
-/obj/structure/closet/crate/grave/ark/tool_interact(obj/item/S, mob/living/carbon/user)
+/obj/structure/closet/crate/grave/ark/tool_interact(obj/item/I, mob/living/carbon/user)
 	. = ..()
 
 	if(prob(50))
@@ -307,7 +307,7 @@
 			S.burnmod *= 0.5
 			S.coldmod *= 0.5
 		if(2)
-			new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
+		//	new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
 		else
 			return
 

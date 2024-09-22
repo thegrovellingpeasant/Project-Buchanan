@@ -15,7 +15,7 @@
 	growing_icon = 'icons/obj/hydroponics/growing_mushrooms.dmi'
 	icon_dead = "towercap-dead"
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
-	mutatelist = list(/obj/item/seeds/tower/steel)
+	mutatelist = null
 	reagents_add = list(/datum/reagent/cellulose = 0.05, /datum/reagent/oxygen = 0.05)
 
 /obj/item/seeds/tower/steel

@@ -21,15 +21,15 @@
 
 /obj/item/clothing/suit/toggle/labcoat/fieldscribe
 	name = "fieldscribe suit"
-	desc = "A suit that protects against the weather, and looks stylish, but not much else."
+	desc = "A heavy-duty coat and chestrig fitted with tons of pockets. Ballistic weave and ceramic inserts are included to substantially increase Field Scribe survival rates."
 	icon_state = "fieldscribe"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 30)
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
-	desc = "A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
+	desc = "A heavy-duty coat and chestrig fitted with tons of pockets. Ballistic weave and ceramic inserts are included to substantially increase Field Scribe survival rates."
 	icon_state = "scribecoat"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 30)
 
 /obj/item/clothing/suit/cyborg_suit
 	name = "cyborg suit"
@@ -237,7 +237,7 @@
 	icon_state = "hubologist"
 	item_state = "wcoat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	
+
 /obj/item/clothing/suit/f13/sexymaid
 	name = "sexy maid outfit"
 	desc = "A maid outfit that shows just a little more skin than needed for cleaning duties."
