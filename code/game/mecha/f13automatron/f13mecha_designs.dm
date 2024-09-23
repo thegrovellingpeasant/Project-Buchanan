@@ -42,7 +42,7 @@
 	id = "protectron_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/f13/protectron
-	materials = list(/datum/material/iron=20000)
+	materials = list(/datum/material/iron=15000,/datum/material/uranium=4000)
 	construction_time = 100
 	category = list("Protectron")
 
@@ -60,7 +60,7 @@
 	id = "protectron_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/protectron_torso
-	materials = list(/datum/material/iron=20000, /datum/material/glass=7500)
+	materials = list(/datum/material/iron=15000,/datum/material/glass=5000,/datum/material/uranium=6000)
 	construction_time = 200
 	category = list("Protectron")
 
@@ -69,7 +69,7 @@
 	id = "protectron_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/protectron_left_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=75000)
 	construction_time = 150
 	category = list("Protectron")
 
@@ -78,7 +78,7 @@
 	id = "protectron_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/protectron_right_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=75000)
 	construction_time = 150
 	category = list("Protectron")
 
@@ -87,7 +87,7 @@
 	id = "protectron_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/protectron_left_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=75000)
 	construction_time = 150
 	category = list("Protectron")
 
@@ -96,7 +96,7 @@
 	id = "protectron_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/protectron_right_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=7500)
 	construction_time = 150
 	category = list("Protectron")
 
@@ -133,7 +133,7 @@
 	id = "gutsy_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/f13/gutsy
-	materials = list(/datum/material/iron=20000)
+	materials = list(/datum/material/iron=15000,/datum/material/uranium=12000,/datum/material/silver=4000)
 	construction_time = 100
 	category = list("Gutsy Mk II")
 
@@ -142,7 +142,7 @@
 	id = "gutsy_head"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_head
-	materials = list(/datum/material/iron=10000,/datum/material/glass=5000)
+	materials = list(/datum/material/iron=10000,/datum/material/glass=5000,/datum/material/silver=4000)
 	construction_time = 200
 	category = list("Gutsy Mk II")
 
@@ -151,7 +151,7 @@
 	id = "gutsy_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_torso
-	materials = list(/datum/material/iron=20000, /datum/material/glass=7500)
+	materials = list(/datum/material/iron=15000,/datum/material/glass=5000,/datum/material/uranium=8000,/datum/material/gold=4000)
 	construction_time = 200
 	category = list("Gutsy Mk II")
 
@@ -160,7 +160,7 @@
 	id = "gutsy_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_left_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=10000)
 	construction_time = 150
 	category = list("Gutsy Mk II")
 
@@ -169,7 +169,7 @@
 	id = "gutsy_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_right_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=10000)
 	construction_time = 150
 	category = list("Gutsy Mk II")
 
@@ -178,7 +178,7 @@
 	id = "gutsy_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_left_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=10000)
 	construction_time = 150
 	category = list("Gutsy Mk II")
 
@@ -187,7 +187,7 @@
 	id = "gutsy_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/gutsy_right_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=10000)
 	construction_time = 150
 	category = list("Gutsy Mk II")
 
@@ -224,7 +224,7 @@
 	id = "assaultron_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/f13/assaultron
-	materials = list(/datum/material/iron=20000)
+	materials = list(/datum/material/iron=20000,/datum/material/uranium=10000,/datum/material/gold=6000,/datum/material/titanium=10000)
 	construction_time = 100
 	category = list("Assaultron")
 
@@ -233,7 +233,7 @@
 	id = "assaultron_head"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_head
-	materials = list(/datum/material/iron=10000,/datum/material/glass=5000)
+	materials = list(/datum/material/iron=10000,/datum/material/glass=2500,/datum/material/silver=2000)
 	construction_time = 200
 	category = list("Assaultron")
 
@@ -242,7 +242,7 @@
 	id = "assaultron_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_torso
-	materials = list(/datum/material/iron=20000, /datum/material/glass=7500)
+	materials = list(/datum/material/iron=20000,/datum/material/glass=7500,/datum/material/titanium=20000,/datum/material/gold=14000,/datum/material/uranium=10000)
 	construction_time = 200
 	category = list("Assaultron")
 
@@ -251,7 +251,7 @@
 	id = "assaultron_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_left_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=12500)
 	construction_time = 150
 	category = list("Assaultron")
 
@@ -260,7 +260,7 @@
 	id = "assaultron_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_right_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=12500)
 	construction_time = 150
 	category = list("Assaultron")
 
@@ -269,7 +269,7 @@
 	id = "assaultron_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_left_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=12500)
 	construction_time = 150
 	category = list("Assaultron")
 
@@ -278,7 +278,7 @@
 	id = "assaultron_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_right_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=12500)
 	construction_time = 150
 	category = list("Assaultron")
 
@@ -287,7 +287,7 @@
 	id = "assaultron_armor"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/assaultron_armor
-	materials = list(/datum/material/iron=15000,/datum/material/diamond=10000,/datum/material/titanium=10000)
+	materials = list(/datum/material/iron=12500,/datum/material/diamond=10000,/datum/material/titanium=10000)
 	construction_time = 600
 	category = list("Assaultron")
 
@@ -324,7 +324,7 @@
 	id = "sentry_chassis"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/f13/sentry
-	materials = list(/datum/material/iron=20000)
+	materials = list(/datum/material/iron=25000,/datum/material/uranium=10000,/datum/material/titanium=15000,/datum/material/diamond=4000,/datum/material/silver=10000,/datum/material/gold=20000)
 	construction_time = 100
 	category = list("Sentry Bot")
 
@@ -333,7 +333,7 @@
 	id = "sentry_head"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_head
-	materials = list(/datum/material/iron=10000,/datum/material/glass=5000)
+	materials = list(/datum/material/iron=15000,/datum/material/glass=75000)
 	construction_time = 200
 	category = list("Sentry Bot")
 
@@ -342,7 +342,7 @@
 	id = "sentry_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_torso
-	materials = list(/datum/material/iron=20000, /datum/material/glass=7500)
+	materials = list(/datum/material/iron=25000, /datum/material/glass=12500,/datum/material/uranium=30000,/datum/material/diamond=6000,/datum/material/silver=10000,/datum/material/gold=30000)
 	construction_time = 200
 	category = list("Sentry Bot")
 
@@ -351,7 +351,7 @@
 	id = "sentry_left_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_left_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=16250)
 	construction_time = 150
 	category = list("Sentry Bot")
 
@@ -360,7 +360,7 @@
 	id = "sentry_right_arm"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_right_arm
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=16250)
 	construction_time = 150
 	category = list("Sentry Bot")
 
@@ -369,7 +369,7 @@
 	id = "sentry_left_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_left_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=16250)
 	construction_time = 150
 	category = list("Sentry Bot")
 
@@ -378,7 +378,7 @@
 	id = "sentry_right_leg"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/f13/sentry_right_leg
-	materials = list(/datum/material/iron=15000)
+	materials = list(/datum/material/iron=16250)
 	construction_time = 150
 	category = list("Sentry Bot")
 
