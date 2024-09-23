@@ -210,7 +210,7 @@
 	mineralChance = 25
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 35, /turf/closed/mineral/diamond = 30, /turf/closed/mineral/gold = 45, /turf/closed/mineral/titanium = 45,
-		/turf/closed/mineral/silver = 50, /turf/closed/mineral/plasma = 50, /turf/closed/mineral/bscrystal = 1)
+		/turf/closed/mineral/silver = 50, /turf/closed/mineral/plasma = 50)
 
 /turf/closed/mineral/random/high_chance/volcanic
 	environment_type = "basalt"

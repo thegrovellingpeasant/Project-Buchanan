@@ -337,13 +337,13 @@
 	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
 	merge_type = /obj/item/stack/tile/carpet/reno/blue
 
-/obj/item/stack/tile/carpet/reno/burgandy
+/obj/item/stack/tile/carpet/reno/burgundy
 	name = "burgandy carpet"
-	icon_state = "tile-carpet_burgandy"
-	item_state = "tile-carpet_burgandy"
-	turf_type = /turf/open/floor/carpet/reno/burgandy
+	icon_state = "tile-carpet_burgundy"
+	item_state = "tile-carpet_burgundy"
+	turf_type = /turf/open/floor/carpet/reno/burgundy
 	tableVariant = /obj/structure/table/wood/fancy/red //placeholder
-	merge_type = /obj/item/stack/tile/carpet/reno/burgandy
+	merge_type = /obj/item/stack/tile/carpet/reno/burgundy
 
 /obj/item/stack/tile/carpet/reno/pattern1
 	name = "white pattern carpet"
