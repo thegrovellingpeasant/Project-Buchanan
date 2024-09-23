@@ -71,6 +71,8 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Judge",
 	"NCRCF Warden",
 	"BOS Paladin",
+	"Bishop Boss",
+	"Wright Elder",
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
