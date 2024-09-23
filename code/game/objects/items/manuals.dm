@@ -318,297 +318,296 @@
 	title = "Civil Code"
 	dat = {"<html>
 
-<body style="background-color: rgb(255, 251, 242);">
-    <p><br></p>
-    <table style="width: 100%; border-collapse: collapse; border: 1px solid rgb(0, 0, 0);">
-        <tbody>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">Code</td>
-                <td style="width: 28.8621%; background-color: rgb(222, 197, 157); border: 1px solid rgb(0, 0, 0);">1XX Minor</td>
-                <td style="width: 33.1491%; background-color: rgb(169, 121, 70); border: 1px solid rgb(0, 0, 0);">2XX Major</td>
-                <td style="width: 30.1656%; background-color: rgb(123, 71, 60); border: 1px solid rgb(0, 0, 0);">3XX Capital</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">01</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Vandalism</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Assault</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Murder</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">02</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Trespassing</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Armed Assault</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Membership in a Terrorist Organization</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">03</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Indecent Exposure</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Attempted Murder</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Slavery</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">04</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Resisting Arrest</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Manslaughter</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Insurrection</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">05</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Tax Evasion</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Theft</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Embezzlement</td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">06</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Discrimination</td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Chemical Possession</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">07</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Voter Fraud</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">08</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Breaking &amp; Entering</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">09</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Prison Escape</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">10</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Chemical Trafficking</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">11</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Rioting</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">12</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Inciting a Riot</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.637%; border: 1px solid rgb(0, 0, 0);">13</td>
-                <td style="width: 28.8621%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 33.1491%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Trespassing on Government Property</td>
-                <td style="width: 30.1656%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-        </tbody>
-    </table>
-    <p><br></p>
-    <p><span style="font-size: 24px;">I. MINOR OFFENSES</span></p>
-    <p>MINOR OFFENSES ARE ACTIONS THAT DISRUPT THE PEACE AND ORDER OF SOCIETY BUT ARE CONSIDERED LESS SEVERE.</p>
-    <p><br></p>
-    <table style="width: 100%; border-collapse: collapse; border: 1px solid rgb(0, 0, 0);">
-        <tbody>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(222, 197, 157); border: 1px solid rgb(0, 0, 0);">Code</td>
-                <td style="width: 22.3464%; background-color: rgb(222, 197, 157); border: 1px solid rgb(0, 0, 0);">Crime</td>
-                <td style="width: 44.8692%; background-color: rgb(222, 197, 157); border: 1px solid rgb(0, 0, 0);"><br></td>
-                <td style="width: 25%; background-color: rgb(222, 197, 157); border: 1px solid rgb(0, 0, 0);">Penalty<br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">101</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Vandalism</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Willful destruction or defacement of public or private property without causing significant harm or danger.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">102</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Trespassing</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Unauthorized entry onto private property without causing harm or posing a significant threat.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">103</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Indecent Exposure</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Displaying one&apos;s body in public, causing offense but without physical harm.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">104</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Resisting Arrest</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Non-violently resisting or evading lawful arrest.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">105</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Tax Evasion</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Willfully evading taxes owed to the Republic without significant harm or fraud.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.635%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">106</td>
-                <td style="width: 22.3464%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Discrimination</td>
-                <td style="width: 44.8692%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);">Discrimination on those based on mutation, sex, or religion, resulting in minor harm or inconvenience.<br></td>
-                <td style="width: 25%; background-color: rgb(251, 218, 164); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-        </tbody>
-    </table>
-    <p><br></p>
-    <p><span style="font-size: 24px;">II. MAJOR OFFENSES</span></p>
-    <p>MAJOR OFFENSES ARE ACTIONS THAT CAUSE SIGNIFICANT HARM OR DANGER TO INDIVIDUALS OR SOCIETY.</p>
-    <p><br></p>
-    <table style="width: 100%; border-collapse: collapse; border: 1px solid rgb(0, 0, 0);">
-        <tbody>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(169, 121, 70); border: 1px solid rgb(0, 0, 0);">Code</td>
-                <td style="width: 22.775%; background-color: rgb(169, 121, 70); border: 1px solid rgb(0, 0, 0);">Crime</td>
-                <td style="width: 44.4988%; background-color: rgb(169, 121, 70); border: 1px solid rgb(0, 0, 0);">Description</td>
-                <td style="width: 25%; background-color: rgb(169, 121, 70); border: 1px solid rgb(0, 0, 0);">Penalty<br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">201</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Assault</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Physically harming another person, causing injury or substantial pain.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">202</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Assault with a Deadly Weapon</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Committing assault with a weapon or any object that poses a significant threat to life or well-being.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">203</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Attempted Murder<br></td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Intentionally attempting to kill another person but failing to do so.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">204</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Manslaughter</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Unintentionally causing the death of another person due to recklessness or negligence.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">205</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Theft</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Unauthorized taking of another&apos;s property, causing substantial financial loss or harm.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">206</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Chemical Possession</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Unauthorized possession of controlled substances without intent to distribute.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">207</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Voter Fraud</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Manipulating or attempting to manipulate the electoral process, undermining the integrity of the Republic&apos;s democracy.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">208</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Breaking &amp; Entering<br></td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Illegally entering a structure with the intent to commit a crime, causing substantial harm or danger.<br></td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">209</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Prison Escape</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Aiding or participating in the escape of incarcerated individuals.</td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">210</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Chemical Trafficking</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Illegally manufacturing, distributing, or trafficking controlled substances.</td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">211</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Rioting</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Participating in a violent disturbance of the peace, causing significant harm to individuals or property.</td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">212</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Inciting a Riot</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Encouraging others to engage in rioting, causing significant harm to individuals and property.</td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5788%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">213</td>
-                <td style="width: 22.775%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Trespassing on Government Property</td>
-                <td style="width: 44.4988%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);">Unauthorized entry onto government property with the intent to disrupt its operations and security.</td>
-                <td style="width: 25%; background-color: rgb(247, 179, 106); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-        </tbody>
-    </table>
-    <p><br></p>
-    <p><span style="font-size: 24px;">III. CAPITAL OFFENSES</span></p>
-    <p>CAPITAL OFFENSES ARE ACTIONS THAT POSE A GRAVE THREAT TO LIFE, LIBERTY, OR THE STABILITY OF THE REPUBLIC.</p>
-    <p><br></p>
-    <table style="width: 100%; border-collapse: collapse; border: 1px solid rgb(0, 0, 0);">
-        <tbody>
-            <tr>
-                <td style="width: 7.5729%; border: 1px solid rgb(0, 0, 0); background-color: rgb(123, 71, 60);">Code</td>
-                <td style="width: 22.6723%; border: 1px solid rgb(0, 0, 0); background-color: rgb(123, 71, 60);">Crime</td>
-                <td style="width: 44.553%; border: 1px solid rgb(0, 0, 0); background-color: rgb(123, 71, 60);">Description</td>
-                <td style="width: 25%; border: 1px solid rgb(0, 0, 0); background-color: rgb(123, 71, 60);">Penalty</td>
-            </tr>
-            <tr>
-                <td style="width: 7.5729%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">301</td>
-                <td style="width: 22.6723%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Murder</td>
-                <td style="width: 44.553%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Intentionally causing the death of an individual with malice aforethought.</td>
-                <td style="width: 25%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5729%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">302</td>
-                <td style="width: 22.6723%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Membership in a Terrorist Organization</td>
-                <td style="width: 44.553%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Joining or actively supporting organizations that threaten the security and well-being of the Republic.</td>
-                <td style="width: 25%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5729%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">303</td>
-                <td style="width: 22.6723%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Slavery</td>
-                <td style="width: 44.553%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Engaging in human trafficking or keeping individuals in bondage.</td>
-                <td style="width: 25%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5729%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">304</td>
-                <td style="width: 22.6723%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Insurrection</td>
-                <td style="width: 44.553%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Engaging in acts of armed rebellion against the Republic, seeking to overthrow the government.</td>
-                <td style="width: 25%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-            <tr>
-                <td style="width: 7.5729%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">305</td>
-                <td style="width: 22.6723%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Embezzlement</td>
-                <td style="width: 44.553%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);">Misappropriating government funds entrusted to one&apos;s care for personal gain.</td>
-                <td style="width: 25%; background-color: rgb(156, 98, 81); border: 1px solid rgb(0, 0, 0);"><br></td>
-            </tr>
-        </tbody>
-    </table>
-    <p><br></p>
-    <p><span style="font-size: 24px;">PROCESSES OF COURT</span></p>
-    <p><br></p>
-    <p>All citizens of the Republic have a right to a quick and speedy trial. All citizens have the right to an attorney, if they do not have one, one is to be provided. &nbsp;</p>
-    <p>In order to safeguard the Republic, law and order must be maintained with the blind eye of justice will bearing full authority.</p>
-    <p><br></p>
-    <p>I. The defendant and the rest of the attendants are to be brought in and seated.&nbsp;</p>
-    <p>II. The judge is to read out the defendant&apos;s crimes. If a judge is not available, a provisional one may temporarily assume the position.&nbsp;</p>
-    <p>III. The defendant&apos;s plea is given.&nbsp;</p>
-    <p>IV. The prosecution presents their statement and evidence.</p>
-    <p>V. The defense presents their statement alongside evidence.</p>
-    <p>VI. A verdict is given following an examination of the statements and evidence.&nbsp;</p>
-</body>
+<p>&nbsp;</p>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #000000;">
+<tbody>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">Code</td>
+<td style="width: 28.8621%; background-color: #dec59d; border: 1px solid #000000;">1XX Minor</td>
+<td style="width: 33.1491%; background-color: #a97946; border: 1px solid #000000;">2XX Major</td>
+<td style="width: 30.1656%; background-color: #7b473c; border: 1px solid #000000;">3XX Capital</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">01</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Vandalism</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Assault</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">Murder</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">02</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Trespassing</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Armed Assault</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">Membership in a Terrorist Organization</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">03</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Indecent Exposure</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Attempted Murder</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">Slavery</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">04</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Resisting Arrest</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Manslaughter</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">Insurrection</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">05</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Tax Evasion</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Theft</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">Embezzlement</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">06</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">Discrimination</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Chemical Possession</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">07</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Voter Fraud</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">08</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Breaking &amp; Entering</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">09</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Prison Escape</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">10</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Chemical Trafficking</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">11</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Rioting</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">12</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Inciting a Riot</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 7.637%; border: 1px solid #000000;">13</td>
+<td style="width: 28.8621%; background-color: #fbdaa4; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 33.1491%; background-color: #f7b36a; border: 1px solid #000000;">Trespassing on Government Property</td>
+<td style="width: 30.1656%; background-color: #9c6251; border: 1px solid #000000;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;">I. MINOR OFFENSES</span></p>
+<p>MINOR OFFENSES ARE ACTIONS THAT DISRUPT THE PEACE AND ORDER OF SOCIETY BUT ARE CONSIDERED LESS SEVERE.</p>
+<p>&nbsp;</p>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #000000;">
+<tbody>
+<tr>
+<td style="width: 7.635%; background-color: #dec59d; border: 1px solid #000000;">Code</td>
+<td style="width: 22.3464%; background-color: #dec59d; border: 1px solid #000000;">Crime</td>
+<td style="width: 44.8692%; background-color: #dec59d; border: 1px solid #000000;">&nbsp;</td>
+<td style="width: 25%; background-color: #dec59d; border: 1px solid #000000;">Penalty</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">101</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Vandalism</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Willful destruction or defacement of public or private property without causing significant harm or danger.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">20 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">102</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Trespassing</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Unauthorized entry onto private property without causing harm or posing a significant threat.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">15 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">103</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Indecent Exposure</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Displaying one's body in public, causing offense but without physical harm.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">15 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">104</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Resisting Arrest</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Non-violently resisting or evading lawful arrest.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">15 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">105</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Tax Evasion</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Willfully evading taxes owed to the Republic without significant harm or fraud.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">20 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.635%; background-color: #fbdaa4; border: 1px solid #000000;">106</td>
+<td style="width: 22.3464%; background-color: #fbdaa4; border: 1px solid #000000;">Discrimination</td>
+<td style="width: 44.8692%; background-color: #fbdaa4; border: 1px solid #000000;">Discrimination on those based on mutation, sex, or religion, resulting in minor harm or inconvenience.</td>
+<td style="width: 25%; background-color: #fbdaa4; border: 1px solid #000000;">15 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;">II. MAJOR OFFENSES</span></p>
+<p>MAJOR OFFENSES ARE ACTIONS THAT CAUSE SIGNIFICANT HARM OR DANGER TO INDIVIDUALS OR SOCIETY.</p>
+<p>&nbsp;</p>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #000000;">
+<tbody>
+<tr>
+<td style="width: 7.5788%; background-color: #a97946; border: 1px solid #000000;">Code</td>
+<td style="width: 22.775%; background-color: #a97946; border: 1px solid #000000;">Crime</td>
+<td style="width: 44.4988%; background-color: #a97946; border: 1px solid #000000;">Description</td>
+<td style="width: 25%; background-color: #a97946; border: 1px solid #000000;">Penalty</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">201</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Assault</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Physically harming another person, causing injury or substantial pain.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">30 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">202</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Assault with a Deadly Weapon</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Committing assault with a weapon or any object that poses a significant threat to life or well-being.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">50 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">203</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Attempted Murder</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Intentionally attempting to kill another person but failing to do so.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">60 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">204</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Manslaughter</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Unintentionally causing the death of another person due to recklessness or negligence.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">60 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">205</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Theft</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Unauthorized taking of another's property, causing substantial financial loss or harm.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">30 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">206</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Chemical Possession</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Unauthorized possession of controlled substances without intent to distribute.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">30 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">207</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Voter Fraud</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Manipulating or attempting to manipulate the electoral process, undermining the integrity of the Republic's democracy.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">45 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">208</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Breaking &amp; Entering</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Illegally entering a structure with the intent to commit a crime, causing substantial harm or danger.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">45 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">209</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Prison Escape</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Aiding or participating in the escape of incarcerated individuals.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">30 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">210</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Chemical Trafficking</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Illegally manufacturing, distributing, or trafficking controlled substances.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">60 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">211</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Rioting</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Participating in a violent disturbance of the peace, causing significant harm to individuals or property.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">45 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">212</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Inciting a Riot</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Encouraging others to engage in rioting, causing significant harm to individuals and property.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">60 minutes</td>
+</tr>
+<tr>
+<td style="width: 7.5788%; background-color: #f7b36a; border: 1px solid #000000;">213</td>
+<td style="width: 22.775%; background-color: #f7b36a; border: 1px solid #000000;">Trespassing on Government Property</td>
+<td style="width: 44.4988%; background-color: #f7b36a; border: 1px solid #000000;">Unauthorized entry onto government property with the intent to disrupt its operations and security.</td>
+<td style="width: 25%; background-color: #f7b36a; border: 1px solid #000000;">45 minutes</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;">III. CAPITAL OFFENSES</span></p>
+<p>CAPITAL OFFENSES ARE ACTIONS THAT POSE A GRAVE THREAT TO LIFE, LIBERTY, OR THE STABILITY OF THE REPUBLIC.</p>
+<p>&nbsp;</p>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #000000;">
+<tbody>
+<tr>
+<td style="width: 7.5729%; border: 1px solid #000000; background-color: #7b473c;">Code</td>
+<td style="width: 22.6723%; border: 1px solid #000000; background-color: #7b473c;">Crime</td>
+<td style="width: 44.553%; border: 1px solid #000000; background-color: #7b473c;">Description</td>
+<td style="width: 25%; border: 1px solid #000000; background-color: #7b473c;">Penalty</td>
+</tr>
+<tr>
+<td style="width: 7.5729%; background-color: #9c6251; border: 1px solid #000000;">301</td>
+<td style="width: 22.6723%; background-color: #9c6251; border: 1px solid #000000;">Murder</td>
+<td style="width: 44.553%; background-color: #9c6251; border: 1px solid #000000;">Intentionally causing the death of an individual with malice aforethought.</td>
+<td style="width: 25%; background-color: #9c6251; border: 1px solid #000000;">Life in prison</td>
+</tr>
+<tr>
+<td style="width: 7.5729%; background-color: #9c6251; border: 1px solid #000000;">302</td>
+<td style="width: 22.6723%; background-color: #9c6251; border: 1px solid #000000;">Membership in a Terrorist Organization</td>
+<td style="width: 44.553%; background-color: #9c6251; border: 1px solid #000000;">Joining or actively supporting organizations that threaten the security and well-being of the Republic.</td>
+<td style="width: 25%; background-color: #9c6251; border: 1px solid #000000;">20 years</td>
+</tr>
+<tr>
+<td style="width: 7.5729%; background-color: #9c6251; border: 1px solid #000000;">303</td>
+<td style="width: 22.6723%; background-color: #9c6251; border: 1px solid #000000;">Slavery</td>
+<td style="width: 44.553%; background-color: #9c6251; border: 1px solid #000000;">Engaging in human trafficking or keeping individuals in bondage.</td>
+<td style="width: 25%; background-color: #9c6251; border: 1px solid #000000;">Life in prison</td>
+</tr>
+<tr>
+<td style="width: 7.5729%; background-color: #9c6251; border: 1px solid #000000;">304</td>
+<td style="width: 22.6723%; background-color: #9c6251; border: 1px solid #000000;">Insurrection</td>
+<td style="width: 44.553%; background-color: #9c6251; border: 1px solid #000000;">Engaging in acts of armed rebellion against the Republic, seeking to overthrow the government.</td>
+<td style="width: 25%; background-color: #9c6251; border: 1px solid #000000;">Life in prison</td>
+</tr>
+<tr>
+<td style="width: 7.5729%; background-color: #9c6251; border: 1px solid #000000;">305</td>
+<td style="width: 22.6723%; background-color: #9c6251; border: 1px solid #000000;">Embezzlement</td>
+<td style="width: 44.553%; background-color: #9c6251; border: 1px solid #000000;">Misappropriating government funds entrusted to one's care for personal gain.</td>
+<td style="width: 25%; background-color: #9c6251; border: 1px solid #000000;">10 years</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;">PROCESSES OF COURT</span></p>
+<p>&nbsp;</p>
+<p>All citizens of the Republic have a right to a quick and speedy trial. All citizens have the right to an attorney, if they do not have one, one is to be provided. &nbsp;</p>
+<p>In order to safeguard the Republic, law and order must be maintained with the blind eye of justice will bearing full authority.</p>
+<p>&nbsp;</p>
+<p>I. The defendant and the rest of the attendants are to be brought in and seated.&nbsp;</p>
+<p>II. The judge is to read out the defendant's crimes. If a judge is not available, a provisional one may temporarily assume the position.&nbsp;</p>
+<p>III. The defendant's plea is given.&nbsp;</p>
+<p>IV. The prosecution presents their statement and evidence.</p>
+<p>V. The defense presents their statement alongside evidence.</p>
+<p>VI. A verdict is given following an examination of the statements and evidence.&nbsp;</p>
+			</html>
 
-</html>"}
+			"}
 
 // Wiki books that are linked to the configured wiki link.
 
