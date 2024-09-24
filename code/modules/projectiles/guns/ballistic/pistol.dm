@@ -22,6 +22,9 @@
 	force = 12 //Pistol whip
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	spread = 2
+	fire_delay = 1.5
+	recoil = 0.05
+	slowdown = 0.05
 	burst_size = 1
 	fire_delay = 0
 	select = FALSE
@@ -61,6 +64,9 @@
 	can_suppress = FALSE
 	can_unsuppress = FALSE
 	suppressed = 1
+	spread = 0
+	recoil = 0
+	slowdown = 0
 	fire_sound = 'sound/f13weapons/22pistol.ogg'
 
 
@@ -71,8 +77,6 @@
 	icon_state = "n99"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	slowdown = 0.1
-	fire_delay = 1
-	recoil = 0.05
 	can_attachments = TRUE
 	can_automatic = TRUE
 	suppressor_state = "n99_suppressor"
@@ -86,6 +90,7 @@
 	desc = "A modified N99 pistol with an accurate two-round-burst and a blue Vault-Tec finish, a status symbol for some Overseers."
 	icon_state = "executive"
 	burst_size = 2
+	extra_damage = 4
 	semi_auto = FALSE
 	can_automatic = FALSE
 
@@ -94,6 +99,7 @@
 	name = "\improper Crusader pistol"
 	desc = "A large-framed N99 pistol emblazoned with the colors and insignia of the Brotherhood of Steel. It feels heavy in your hand."
 	force = 18
+	extra_damage = 4
 	icon_state = "crusader"
 	item_state = "crusader"
 	can_attachments = FALSE
@@ -106,10 +112,8 @@
 	desc = "Chinese military sidearm at the time of the Great War. The ones around are old and worn, but somewhat popular due to the long barrel and rechambered in 10mm after the original ammo ran dry decades ago."
 	icon_state = "chinapistol"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
-	fire_delay = 1
 	slowdown = 0.1
-	recoil = 0.1
-	spread = 3
+	extra_damage = 2
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 
@@ -136,11 +140,9 @@
 	icon_state = "mk23"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
 	fire_delay = 2
-	slowdown = 0.07
-	extra_damage = 34
-	spread = 1
 	can_flashlight = TRUE
 	gunlight_state = "flight"
+	recoil = 0.1
 	flight_x_offset = 16
 	flight_y_offset = 13
 	suppressor_state = "pistol_suppressor"
@@ -153,8 +155,8 @@
 	name = "plated Browning Hi-power" //isn't this benny's gun, why is it in, sprite is good tho
 	desc = "An ornately-decorated pre-war Browning Hi-power 9mm pistol with pearl grips and a polished nickel finish. The firing mechanism has been upgraded, so for anyone on the receiving end, it must seem like an eighteen-karat run of bad luck."
 	icon_state = "maria"
-	fire_delay = 2
-	slowdown = 0.1
+	slowdown = 0
+	extra_damage = 10
 
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
@@ -165,7 +167,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_LIGHT
 	mag_type = /obj/item/ammo_box/magazine/m9mm
-	slowdown = 0.1
 	can_attachments = TRUE
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 30
@@ -180,8 +181,6 @@
 	icon_state = "beretta"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	weapon_weight = WEAPON_LIGHT
-	slowdown = 0.1
-	spread = 1
 	can_attachments = TRUE
 	can_suppress = "pistol_suppressor"
 	suppressor_x_offset = 30
@@ -189,7 +188,7 @@
 	fire_sound = 'sound/f13weapons/9mm.ogg'
 
 //Beretta M93R							Keywords: 9mm, Automatic, 15 round magazine
-/obj/item/gun/ballistic/automatic/pistol/beretta/automatic
+/obj/item/gun/ballistic/automatic/pistol/beretta/automatic //does this gun even spawn normally
 	name = "Beretta M93R"
 	desc = "A rare select fire variant of the M93R."
 	icon_state = "m93r"
@@ -210,7 +209,7 @@
 	switch(select)
 		if(0)
 			select += 1
-			burst_size = 2
+			burst_size = 1
 			spread = 9
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
@@ -234,8 +233,6 @@
 	icon_state = "m1911"
 	item_state = "pistolchrome"
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 2
-	slowdown = 0.1
 	mag_type = /obj/item/ammo_box/magazine/m45
 	recoil = 0.15
 	can_attachments = TRUE
@@ -250,8 +247,7 @@
 	desc = "A well-maintained stainless-steel frame 1911, with genuine wooden grips."
 	icon_state = "m1911_custom"
 	recoil = 0.05
-	fire_delay = 2
-	slowdown = 0.1
+	fire_delay = 1
 
 /////////////////
 //HEAVY PISTOLS//
@@ -265,10 +261,10 @@
 	icon_state = "deagle"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m44
-	fire_delay = 3
+	fire_delay = 2
 	force = 15
 	recoil = 0.2
-	slowdown = 0.2
+	slowdown = 0.15
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
@@ -291,9 +287,9 @@
 	icon_state = "automag"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/automag
-	fire_delay = 4
+	fire_delay = 2
 	recoil = 0.2
-	slowdown = 0.2
+	slowdown = 0.15
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
@@ -306,9 +302,10 @@
 	icon_state = "pistol14"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
 	force = 15
-	fire_delay = 5
+	spread = 6
+	fire_delay = 2
 	recoil = 0.25
-	slowdown = 0.2
+	slowdown = 0.15
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
@@ -318,7 +315,10 @@
 	desc = "A Swiss SIG-Sauer 14mm handgun, this one is a compact model for concealed carry."
 	icon_state = "pistol14_compact"
 	w_class = WEIGHT_CLASS_SMALL
-	spread = 5
+	spread = 6
+	fire_delay = 2
+	recoil = 0.4
+	slowdown = 0.05
 
 //Little Devil							Keywords: UNIQUE, 14mm, Semi-auto, Short barrel, 7 Rounds, Heavy. Special modifiers: damage +4, penetration +0.05, spread -3
 /obj/item/gun/ballistic/automatic/pistol/pistol14/lildevil
@@ -326,7 +326,7 @@
 	desc = "A Swiss SIG-Sauer 14mm handgun, this one is a finely tuned custom firearm from the Gunrunners."
 	icon_state = "lildev"
 	w_class = WEIGHT_CLASS_SMALL
-	fire_delay = 4
+	extra_damage = 8
 
 
 /////////////////////////////////
