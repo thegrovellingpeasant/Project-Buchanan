@@ -609,6 +609,38 @@
 
 			"}
 
+/obj/item/book/manual/temperanceunion
+	name = "The Only Hope for New Reno"
+	icon_state ="book1"
+	author = "Ethyl Wright"
+	title = "The Only Hope for New Reno"
+	dat = {"<html>
+
+<p>&nbsp;</p>
+<h2>The Only Hope for New Reno</h2>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Attention, citizens of New Reno!</strong></td>
+<td><strong>Founded By Concerned Citizens.</strong></td>
+<td><strong>You Can Become the Change</strong></td>
+</tr>
+<tr>
+<td>Are you tired of the chaos and debauchery that plagues our streets? Do you yearn for a safer, more wholesome community? Look no further! Join us at the New Reno Temperance Union, where we're dedicated to bringing order and sobriety to our beloved city. In a world where vice runs rampant, it's time to take a stand. Together, we can create a haven free from the temptations that lead to ruin. Whether you're a concerned parent, a weary traveler, or simply someone who believes in the power of change, we welcome you with open arms.</td>
+<td>
+<p>On the mean streets of New Reno, the origins of the Temperance Union trace back to a time when the city's streets were ruled by lawlessness and excess. Faced with rampant crime, addiction, and moral decay, a duo of concerned citizens came together to combat the vices plaguing their community. Inspired by the ideals of sobriety, order, and righteousness, they founded the Temperance Union as a beacon of hope in the darkness. What began as a modest gathering of like-minded individuals soon blossomed into a movement, drawing support from all corners of New Reno. Their mission: to reclaim their city from the clutches of vice and build a better future for generations to come. With unwavering dedication and a steadfast belief in their cause, the members of the Temperance Union continue to strive towards their vision of a cleaner, safer New Reno.</p>
+</td>
+<td>Temperance Union members harbor a deep-seated distrust in the effectiveness of conventional law enforcement. They've witnessed firsthand the corruption and incompetence that plagues the city's official authorities, leaving them disillusioned with the notion of relying solely on the existing system. Instead, they advocate for grassroots efforts and community-driven initiatives to address the root causes of crime and addiction. Through education, outreach programs, and local support networks, they believe they can achieve more meaningful and lasting change than the traditional methods of enforcement ever could. In their eyes, true justice is not merely punitive but transformative, seeking to heal the wounds of society rather than merely punishing its symptoms. Thus, they stand as a testament to the power of ordinary people coming together to make a difference, even in the most dire of circumstances.</td>
+</tr>
+</tbody>
+</table>
+<p class="s1">&nbsp;</p>
+<p class="s2">&nbsp;</p>
+			</html>
+
+			"}
+
 // Wiki books that are linked to the configured wiki link.
 
 // A book that links to the wiki
