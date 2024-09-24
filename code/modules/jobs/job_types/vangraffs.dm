@@ -44,7 +44,7 @@
 	jobtype = /datum/job/vangraffs/f13branchmanager
 
 	accessory = null
-	shoes = /obj/item/clothing/shoes/f13/diesel
+	shoes = /obj/item/clothing/shoes/laceup
 	head = null
 	id = /obj/item/card/id/reno/vangraffs/business/management
 	glasses = null
@@ -64,10 +64,10 @@
 	if(visualsOnly)
 		return
 	if(H.gender == FEMALE)
-		uniform = /obj/item/clothing/under/f13/female/merccharm
+		uniform = /obj/item/clothing/under/suit/modeusformalwear
 
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/merccharm
+		uniform = /obj/item/clothing/under/suit/lawyerblackalt
 
 	if(H.skin_tone == "african1")
 		return
@@ -204,8 +204,8 @@
 	name = "Van Graff Weapon Smith"
 	jobtype = /datum/job/vangraffs/f13weaponsmith
 
+	uniform = /obj/item/clothing/under/f13/merccharm
 	accessory = null
-	shoes = /obj/item/clothing/shoes/workboots/mining
 	head = null
 	glasses = /obj/item/clothing/glasses/welding
 	neck = null
@@ -215,22 +215,21 @@
 	suit_store = null
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/few = 1,
+		/obj/item/gun/energy/laser/wattz = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1
 		)
 
-/datum/outfit/job/vangraffs/f13weaponsmith/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/vangraffs/f13weaponsmith/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
+	if(visualsOnly)
+		return
+	if(H.gender == FEMALE)
+		uniform = /obj/item/clothing/under/f13/female/merccharm
+		shoes = /obj/item/clothing/shoes/f13/diesel/alt
 
-	r_hand = pick(
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
-		/obj/item/book/granter/crafting_recipe/blueprint/aer9,
-		/obj/item/book/granter/crafting_recipe/blueprint/lightplasmapistol,
-		/obj/item/book/granter/crafting_recipe/blueprint/plasmarifle)
-
-	uniform = pick(
-		/obj/item/clothing/under/f13/roving,
-		/obj/item/clothing/under/f13/caravaneer,
-		/obj/item/clothing/under/f13/merchant,
-		/obj/item/clothing/under/f13/shiny)
+	if(H.gender == MALE)
+		uniform = /obj/item/clothing/under/f13/merccharm
+		shoes = /obj/item/clothing/shoes/f13/diesel
 
 /datum/outfit/job/vangraffs/f13weaponsmith/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -240,6 +239,11 @@
 	if(SSticker.mode.objs_generated && SSticker.mode.name == "mobsters")
 		H.mind.special_role = ROLE_MOBSTER
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.vgraffteam)
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AEP7)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/AER9)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/lightplasmapistol)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmarifle)
 
 /*--------------------------------------------------------------*/
 
@@ -265,6 +269,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/medium = 1)
 

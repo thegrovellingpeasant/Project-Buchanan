@@ -50,7 +50,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_utility.dmi'
 	icon_state = "overalls_farmer"
 	item_state = "overalls_farmer"
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 30)
 	allowed = list(/obj/item/hatchet, /obj/item/scythe, /obj/item/cultivator, /obj/item/shovel)
 
 /obj/item/clothing/suit/f13/vest
@@ -71,7 +71,7 @@
 	desc = "A brown vest, typically worn by wannabe cowboys and prospectors. It has a few pockets for tiny items."
 	icon_state = "cowboybvest"
 	item_state = "lb_suit"
-	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 30)
 	body_parts_covered = CHEST|GROIN|LEGS
 
 /obj/item/clothing/suit/f13/westender
@@ -117,7 +117,7 @@
 	desc = "A Main Force Patrol leather jacket.<br>Offbeat."
 	icon_state = "mfp"
 	item_state = "hostrench"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/f13/mfp/raider
 	name = "offbeat jacket"
@@ -131,7 +131,7 @@
 	desc = "A blue leather coat with the number 21 on the back.<br><i>If war doesn't change, men must change, and so must their symbols.</i><br><i>Even if there is nothing at all, know what you follow.</i>"
 	icon_state = "courier"
 	item_state = "suit-command"
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 30)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/suit/f13/veteran
@@ -139,14 +139,14 @@
 	desc = " A blue leather coat adorned with war medals.<br>This type of outfit is common for professional mercenaries and bounty hunters."
 	icon_state = "veteran"
 	item_state = "suit-command"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/suit/f13/duster
 	name = "duster"
 	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunter."
 	icon_state = "duster"
 	item_state = "det_suit"
-	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 /obj/item/clothing/suit/f13/sheriff
@@ -154,7 +154,7 @@
 	desc = "A long brown leather overcoat.<br>A powerful accessory of a respectful sheriff, bringer of justice."
 	icon_state = "sheriff"
 	item_state = "det_suit"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
@@ -170,7 +170,7 @@
 	icon_state = "autumn"
 	item_state = "autumn"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 
@@ -180,7 +180,7 @@
 	icon_state = "hubologist"
 	item_state = "wcoat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/suit/f13/sexymaid
 	name = "sexy maid outfit"
@@ -246,14 +246,14 @@
 	desc = "A red leather jacket, with the word \"Warriors\" sewn above the white wings on the back."
 	icon_state = "warriors"
 	item_state = "owl"
-	armor = list("melee" = 5, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 16, "bio" = 0, "rad" = 10, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 16, "bio" = 0, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 20)
 
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer
 	name = "wanderer jacket"
 	desc = "A zipped-up hoodie made of tanned leather."
 	icon_state = "wanderer"
 	item_state = "owl"
-	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 16, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 20)
 
 
 ///////////////////////
@@ -269,7 +269,7 @@
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 30)
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
@@ -284,7 +284,7 @@
 	icon_state = "khan_jacket_armored"
 	item_state = "khan_jacket_armored"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 15,  "energy" = 10, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 35)
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
@@ -299,7 +299,7 @@
 	icon_state = "khan_heavy"
 	item_state = "khan_heavy"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 20, "energy" = 20, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 20, "energy" = 20, "bomb" = 35, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0, "wound" = 35)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	slowdown = 0.3
 
@@ -403,7 +403,7 @@
 	name = "grey armored parka"
 	desc = "A staunch, practical parka made out of a wind-breaking jacket, reinforced with metal plates."
 	icon_state = "armorgrey"
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0, "wound" = 25)
 	hoodtype = /obj/item/clothing/head/hooded/parkahood/grey
 
 /obj/item/clothing/head/hooded/parkahood/grey
@@ -411,7 +411,7 @@
 	desc = "A protective & concealing parka hood."
 	icon_state = "armorhoodgrey"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0, "wound" = 25)
 
 
 /obj/item/clothing/suit/hooded/cloak/goliath/tatteredred
@@ -420,7 +420,7 @@
 	icon_state = "goliath_cloak"
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath/tattered
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0, "wound" = 25)
 
 
 
@@ -428,7 +428,7 @@
 	name = "tattered red cloak hood"
 	desc = "A tattered hood, better than nothing in the waste."
 	icon_state = "golhood"
-	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0, "wound" = 25)
 
 /obj/item/clothing/suit/hooded/cloak/drake //SS13 item, obviously
 	name = "drake armour"
@@ -439,7 +439,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/hooded/cloakhood/drake
 	name = "drake helm"
@@ -448,7 +448,7 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/hooded/cloak/hhunter
 	name = "Razorclaw armour"
@@ -459,7 +459,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	slowdown = 0.3
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/hooded/cloakhood/hhunter
 	name = "Razorclaw helm"
@@ -467,7 +467,7 @@
 	icon_state = "rchelmet"
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 16, "bio" = 10, "rad" = 10, "fire" = 0, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/f13/jamrock
 	name = "disco-ass blazer"
@@ -485,7 +485,7 @@
 	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/hooded/cloakhood/shunter
 	name = "Quickclaw hood"
@@ -493,4 +493,4 @@
 	icon_state = "birdhood"
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)

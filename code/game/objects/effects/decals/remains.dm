@@ -76,6 +76,26 @@
 	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
 	debris_result = list(/obj/item/stack/sheet/hay/five)
 
+/obj/effect/decal/remains/bottles
+	name = "pile of bottles"
+	desc = "Someone's evening fun."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "bottles1"
+	drop_amount = 2
+	plane = GAME_PLANE
+	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
+	debris_result = list(/obj/item/reagent_containers/food/drinks/beer)
+
+/obj/effect/decal/remains/cans
+	name = "pile of cans"
+	desc = "Someone's evening fun."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "cans1"
+	drop_amount = 1
+	plane = GAME_PLANE
+	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
+	debris_result = list(/obj/item/reagent_containers/food/drinks/soda_cans/sodawater)
+
 /obj/effect/decal/remains/nest
 	name = "animal nest"
 	desc = "There seems to be some eggs inside."

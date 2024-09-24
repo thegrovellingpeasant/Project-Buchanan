@@ -71,6 +71,8 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Judge",
 	"NCRCF Warden",
 	"BOS Paladin",
+	"Bishop Boss",
+	"Wright Elder",
 	))
 
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
@@ -298,13 +300,13 @@ GLOBAL_LIST_INIT(vangraffs_positions, list(
 ))
 
 GLOBAL_LIST_INIT(citizens_positions, list(
-	"Judge",
-	"NRPD Chief",
-	"NRPD Officer",
 	"NCRCF Warden",
 	"NCRCF Guard",
 	"NCRCF Physician",
 	"Convict",
+	"Judge",
+	"NRPD Chief",
+	"NRPD Officer",
 	"Tourist",
 ))
 

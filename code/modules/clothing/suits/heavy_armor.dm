@@ -11,14 +11,14 @@
 	desc = "A suit of welded, fused metal plates. Bulky, but with great protection."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 20, "acid" = 20)
+	armor = list("melee" = 30, "bullet" = 10, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 20, "acid" = 20, "wound" = 40)
 	slowdown = 0.3
 
 /obj/item/clothing/suit/armored/heavy/recycled_power
 	name = "recycled power armor"
 	desc = "Taking pieces off from a wrecked power armor will at least give you thick plating, but don't expect too much of this shot up, piecemeal armor.."
 	icon_state = "recycled_power"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 35, "bio" = 5, "rad" = 15, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 35, "bio" = 5, "rad" = 15, "fire" = 15, "acid" = 5, "wound" = 45)
 	slowdown = 0.5
 
 /obj/item/clothing/suit/armored/heavy/riotpolice
@@ -26,7 +26,7 @@
 	icon_state = "bulletproof_heavy"
 	item_state = "bulletproof_heavy"
 	desc = "Heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("melee" = 35, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 45, "bio" = 35, "rad" = 10, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 45, "bio" = 35, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 40)
 	slowdown = 0.3
 
 //Recipe bone armor + metal and leather
@@ -35,7 +35,7 @@
 	desc = "Thick layers of leather and bone, with metal reinforcements, surely this will make the wearer tough and uncaring for claws and blades."
 	icon_state = "tribal_heavy"
 	item_state = "tribal_heavy"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 40, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 40, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 	slowdown = 0.3
 	allowed = list(/obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 

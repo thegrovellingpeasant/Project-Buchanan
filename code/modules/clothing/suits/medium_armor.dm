@@ -11,7 +11,7 @@
 	desc = "Large bulletproof vest with ballistic plates."
 	icon_state = "vest_armor"
 	item_state = "vest_armor"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 50)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 	strip_delay = 70
 
 /obj/item/clothing/suit/armored/medium/vestchinese
@@ -19,7 +19,7 @@
 	desc = "An uncommon suit of pre-war Chinese armor. It's a very basic and straightforward piece of armor that covers the front of the user."
 	icon_state = "vest_chicom"
 	item_state = "vest_chicom"
-	armor = list("melee" = 20, "bullet" = 30, "laser" = 5, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 5, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10, "wound" = 30)
 
 // Plated medium armor
 /obj/item/clothing/suit/armored/medium/scrapchest
@@ -28,7 +28,7 @@
 	icon_state = "metal_chestplate"
 	item_state = "metal_chestplate"
 	siemens_coefficient = 1.3
-	armor = list("melee" = 20, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0, "wound" = 30)
 	slowdown = 0.125
 
 /obj/item/clothing/suit/armored/medium/scrapchest/reinforced
@@ -36,7 +36,7 @@
 	desc = "Various metal bits welded together to form a crude chestplate, with extra bits of metal top of the first layer. Heavy."
 	icon_state = "metal_chestplate2"
 	item_state = "metal_chestplate2"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 30, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 30, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/armored/medium/motorball
 	name = "motorball suit"
