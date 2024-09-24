@@ -319,11 +319,13 @@
 /turf/open/floor/plasteel/barber
 	icon_state = "barber"
 
-/turf/open/floor/plasteel/hydrofloor
-	icon_state = "hydrofloor"
-
 /turf/open/floor/plasteel/freezer
 	icon_state = "freezerfloor"
+
+/turf/open/floor/plasteel/freezer/lit
+	name = "floor"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/plasteel/freezer/airless
 	initial_gas_mix = "TEMP=2.7"
 
@@ -338,6 +340,14 @@
 
 /turf/open/floor/plasteel/grimy/lit
 	icon_state = "grimy"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/plasteel/casino
+	icon = 'icons/fallout/turfs/floors.dmi'
+	icon_state = "casino"
+
+/turf/open/floor/plasteel/casino/lit
+	icon_state = "casino"
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/cafeteria

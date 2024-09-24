@@ -51,7 +51,7 @@
 	return ..()
 
 
-/turf/closed/mineral/attackby(obj/item/pickaxe/I, mob/user, params)
+/turf/closed/mineral/attackby(obj/item/pickaxe/I, mob/living/user, params)
 	if(indestructible) //fortuna edit. RNG rocks that dont budge
 		return
 	var/stored_dir = user.dir
@@ -68,7 +68,7 @@
 			return
 		last_act = world.time
 		to_chat(user, "<span class='notice'>You start picking...</span>")
-
+		
 		if(I.use_tool(src, user, 40, volume=50))
 			var/range = I.digrange //Store the current digrange so people don't cheese digspeed swapping for faster mining
 			var/list/dug_tiles = list()
@@ -79,6 +79,7 @@
 							M.gets_drilled(user)
 							dug_tiles += M
 				to_chat(user, "<span class='notice'>You finish cutting into the rock.</span>")
+				user.adjustStaminaLoss(15,0)
 				if(!(src in dug_tiles))
 					gets_drilled(user)
 				SSblackbox.record_feedback("tally", "pick_used_mining", 1, I.type)
@@ -210,7 +211,7 @@
 	mineralChance = 25
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 35, /turf/closed/mineral/diamond = 30, /turf/closed/mineral/gold = 45, /turf/closed/mineral/titanium = 45,
-		/turf/closed/mineral/silver = 50, /turf/closed/mineral/plasma = 50, /turf/closed/mineral/bscrystal = 1)
+		/turf/closed/mineral/silver = 50, /turf/closed/mineral/plasma = 50)
 
 /turf/closed/mineral/random/high_chance/volcanic
 	environment_type = "basalt"

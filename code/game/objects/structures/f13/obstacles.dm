@@ -13,15 +13,6 @@
 
 /obj/structure/handrail/g_central/Initialize() //window hack to make collision work
 	. = ..()
-	switch(dir)
-		if(NORTH)
-			pixel_y = 23
-		if(SOUTH)
-			pixel_y = -16
-		if(EAST)
-			pixel_x = 20
-		if(WEST)
-			pixel_x = -20
 	var/obj/structure/window/W = new /obj/structure/window(get_turf(src))
 	W.alpha = 0
 	W.anchored = 1

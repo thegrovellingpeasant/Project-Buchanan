@@ -27,7 +27,7 @@
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
 	gold_core_spawnable = HOSTILE_SPAWN
-	faction = list("hostile")
+	faction = list("hostile", "ghoul")
 	decompose = TRUE
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul = 2,
@@ -164,7 +164,7 @@
 	response_disarm_simple = "pushes aside"
 	response_harm_simple = "growl"
 	move_to_delay = 4
-	faction = list("scorched", "hostile")
+	faction = list("scorched", "hostile", "ghoul")
 	death_sound = null
 	melee_damage_upper = 20
 	aggro_vision_range = 10
@@ -226,6 +226,7 @@
 	icon_living = "retro_ghoul"
 	icon_dead = "retro_ghoul_d"
 	icon_gib = "syndicate_gib"
+	faction = list("ghoul", "raider")
 	maxHealth = 125
 	health = 125
 
@@ -236,6 +237,7 @@
 	icon_living = "angry_ghoul"
 	icon_dead = "angry_ghoul_d"
 	icon_gib = "syndicate_gib"
+	faction = list("ghoul", "raider")
 	maxHealth = 150
 	health = 150
 
@@ -264,7 +266,6 @@
 	ranged_cooldown_time = 200
 	projectiletype = /obj/item/projectile/bullet/c9mm/simple
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	faction = list("scorched", "hostile")
 	melee_damage_lower = 15
 	melee_damage_upper = 20
 	aggro_vision_range = 10
