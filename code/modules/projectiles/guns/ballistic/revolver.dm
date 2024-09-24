@@ -7,8 +7,10 @@
 	desc = "should not exist."
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
-	fire_delay = 4.5
-	spread = 1
+	fire_delay = 3.5 /assume that all revolvers are single action
+	recoil = 0.2
+	slowdown = 0.2
+	spread = 6
 	force = 12 // Pistol whip
 	casing_ejector = FALSE
 	spawnwithmagazine = TRUE
@@ -134,8 +136,11 @@
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	force = 10
+	fire_delay = 2
 	slowdown = 0.1
 	spread = 4
+	recoil = 0.05
+	slowdown = 0.05
 	obj_flags = UNIQUE_RENAME
 	var/list/safe_calibers
 
@@ -149,7 +154,7 @@
 	icon_state = "mateba"
 	item_state = "mateba"
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
-	slowdown = 0.2
+	slowdown = 1
 
 //S&W 45						Keywords: .45, Single action, 7 rounds cylinder, Long barrel
 /obj/item/gun/ballistic/revolver/revolver45
@@ -158,9 +163,8 @@
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
-	slowdown = 0.2
-	fire_delay = 4.5
-	spread = 1
+	recoil = 0.15
+	slowdown = 0.1
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 
 
@@ -179,40 +183,37 @@
 	item_state = "357colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	slowdown = 0.2
-	fire_delay = 4.5
-	spread = 0
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 
 //Lucky							Keywords: UNIQUE, .357, Double action, 6 rounds cylinder, Block chance, Fire delay -1
 /obj/item/gun/ballistic/revolver/colt357/lucky
 	name = "Lucky" //if there was a unique gun that I wanted to keep it would be this one.
-	desc = "Just holding this gun makes you feel like an ace. This revolver was handmade from pieces of other guns in some workshop after the war. A one-of-a-kind gun, it was someone's lucky gun for many a year, it's in good condition and hasn't changed hands often."
+	desc = "Just holding this gun makes you feel like an ace. This revolver was handmade from pieces of other guns in some workshop after the war. A one-of-a-kind gun, it doesn't have any kick to it. It was someone's lucky gun for many a year, it's in good condition and hasn't changed hands often."
 	icon_state = "lucky37"
 	item_state = "lucky"
-	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 10
-	fire_delay = 2.5
-	block_chance = 20
+	recoil = 0
+	fire_delay = 2
+	block_chance = 25
 
 //Brass Revolver							Keywords: DEN, .357, Double action, 6 rounds cylinder, Fire delay -1
-/obj/item/gun/ballistic/revolver/colt357/brassgun
+/obj/item/gun/ballistic/revolver/colt357/brassgun //doesn't spawn normally
 	name = "Brass Gun"
 	desc = "The revolver here appears to be made out of number of Sequoia's once held by a Vet Ranger. It doesn't have the punch as it once did."
 	icon_state = "lucky"
 	item_state = "lucky"
-	w_class = WEIGHT_CLASS_SMALL
-	slowdown = 0.2
+	slowdown = 1
 	fire_delay = 3
 
 //Police revolver					Keywords: .357, Double action, 6 rounds cylinder, Pocket Pistol
 /obj/item/gun/ballistic/revolver/police
 	name = "police revolver"
-	desc = "Pre-war double action police revolver chambered in .357 magnum."
+	desc = "Pre-war police revolver chambered in .357 magnum."
 	icon_state = "police"
 	slowdown = 0.1
+	recoil = 0.25
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_SMALL
-	spread = 2
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 
 
@@ -228,9 +229,9 @@
 	item_state = "model29"
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	recoil = 0.1
-	slowdown = 0.2
 	can_scope = FALSE
+	recoil = 0.2
+	slowdown = 0.25
 	scope_state = "revolver_scope"
 	scope_x_offset = 6
 	scope_y_offset = 24
@@ -241,20 +242,7 @@
 	item_state = "44magnum"
 	icon_state = "mysterious_m29"
 	can_scope = FALSE
-	extra_damage = 38
-
-
-//Peacekeeper					 Keywords: OASIS, .44, Double action, 6 rounds cylinder, Extra Firemode
-/obj/item/gun/ballistic/revolver/m29/peacekeeper
-	name = "Peacekeeper"
-	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for measured powerful shots, or fanning for a flurry of inaccurate shots."
-	item_state = "m29peace"
-	icon_state = "m29peace"
-	automatic = 1
-	slowdown = 0.2
-	autofire_shot_delay = 2.5
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	can_scope = FALSE
+	recoil = 0.1
 
 //.44 Snubnose						Keywords: .44, Double action, 6 rounds cylinder, Short barrel
 /obj/item/gun/ballistic/revolver/m29/snub
@@ -263,7 +251,10 @@
 	icon_state = "m29_snub"
 	w_class = WEIGHT_CLASS_SMALL
 	slowdown = 0.1
+	recoil = 0.3 
 	spread = 8
+
+
 
 
 //.44 single action		 			Keywords: .44, Single action, 6 rounds cylinder, Long barrel
@@ -273,10 +264,26 @@
 	item_state = "44colt"
 	icon_state = "44colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	fire_delay = 4.5
 	slowdown = 0.2
 	spread = 0
 	fire_sound = 'sound/f13weapons/44revolver.ogg'
+
+
+
+
+//Peacekeeper					 Keywords: OASIS, .44, Double action, 6 rounds cylinder, Extra Firemode
+/obj/item/gun/ballistic/revolver/m29/peacekeeper //doesn't spawn
+	name = "Peacekeeper"
+	desc = "When you don't just need excessive force, but crave it. This .44 has a special hammer mechanism, allowing for measured powerful shots, or fanning for a flurry of inaccurate shots."
+	item_state = "m29peace"
+	icon_state = "m29peace"
+	automatic = 1
+	slowdown = 1
+	autofire_shot_delay = 2.5
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	can_scope = FALSE
+
+
 
 
 //Desert Ranger revolver			Keywords: .44, Single action, 6 rounds cylinder,
@@ -284,7 +291,7 @@
 	name = "desert ranger revolver"
 	desc = "I hadn't noticed, but there on his hip, was a really spiffy looking iron..."
 	fire_delay = 4
-	slowdown = 0.2
+	slowdown = 0.25
 
 
 //////////////////////
@@ -294,12 +301,13 @@
 //Sequioa					Keywords: NCR, .45-70, 6 rounds cylinder, Double action, Heavy
 /obj/item/gun/ballistic/revolver/sequoia
 	name = "ranger sequoia"
-	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' "
+	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers. ///holyyap
 	icon_state = "sequoia"
 	item_state = "sequoia"
 	weapon_weight = WEAPON_MEDIUM
+	spread = 5
 	recoil = 0.3
-	fire_delay = 1
+	fire_delay = 4
 	slowdown = 0.3
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
@@ -327,7 +335,8 @@
 	icon_state = "hunting_revolver"
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
-	recoil = 0.1
+	fire_delay = 4
+	recoil = 0.3
 	can_scope = TRUE
 	scope_state = "revolver_scope"
 	slowdown = 0.3
@@ -338,9 +347,8 @@
 
 /obj/item/gun/ballistic/revolver/hunting/klatue
 	name = "degraded hunting revolver"
-	desc = "A scoped double action revolver chambered in 45-70. This one is very worn."
-	extra_damage = 34
-	extra_penetration = 0
+	desc = "A scoped double action revolver chambered in 45-70. This one is very worn."	
+	recoil = 0.45 //comically amount of recoil
 
 /////////////////////
 // WEIRD REVOLVERS //
@@ -355,21 +363,19 @@
 	icon_state = "peacemaker"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger
 	slowdown = 0.2
-	fire_delay = 4.5
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
-	spread = 0 //Your reward for the slower fire rate is less spread anddd
 
 
 //.223 Pistol					Keywords: .223, Double action, 5 rounds internal, Short barrel
 /obj/item/gun/ballistic/revolver/thatgun
 	name = ".223 pistol"
-	desc = "A strange pistol firing rifle ammunition, possibly damaging the users wrist and with poor accuracy."
+	desc = "A strange pistol firing rifle ammunition."
 	icon_state = "thatgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 	weapon_weight = WEAPON_MEDIUM
-	slowdown = 0.2
+	slowdown = 0.25
 	spread = 4
-	recoil = 0.5
+	recoil = 0.2
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
 
