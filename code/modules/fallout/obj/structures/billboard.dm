@@ -62,6 +62,12 @@
 	..()
 	icon_state = "cola_shop"
 
+/obj/structure/billboard/guns
+	name = "gun billboard"
+	desc = "A cobbled together billboard pointing eastward. It has a bulletin board section."
+	icon_state = "guns"
+	icon = 'icons/fallout/objects/structures/guns.dmi'
+
 //Taken from removed F13billboards.dm
 /obj/structure/billboard/den
 	name = "\improper The Den sign"

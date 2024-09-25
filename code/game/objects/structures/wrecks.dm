@@ -338,6 +338,20 @@
 	bound_width = 32
 	bound_height = 32
 
+/obj/structure/wreck/trash/sidebeams
+	name = "industrial garbage"
+	desc = "A piece of the fading oldworld."
+	icon = 'icons/obj/sidebeams.dmi'
+	icon_state = "beam1"
+	density = FALSE
+
+/obj/structure/wreck/trash/tallbeams
+	name = "industrial garbage"
+	desc = "A piece of the fading oldworld."
+	icon = 'icons/obj/tallbeams.dmi'
+	icon_state = "beam1"
+	density = FALSE
+
 /obj/structure/wreck/trash/machinepile
 	name = "Broken Machinery"
 	desc = "Looks like broken machinery."

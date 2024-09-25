@@ -5,132 +5,6 @@
 	maptype = "reno"
 	selection_color = "#ffeeaa"
 
-/datum/job/citizens/f13judge
-	title = "Judge"
-	flag = F13JUDGE
-	total_positions = 1
-	spawn_positions = 1
-	description = "You are a great arbiter, and the only one in this shithole! Your word is law, and you give definitive unquestionable conclusions to matters that are too complex for your average NCR citizen. In your stead the NRPD Chief and officers of the army may extraordinarily hold your position."
-	supervisors = "NCR law"
-	selection_color = "#dece90"
-	outfit = /datum/outfit/job/citizens/f13judge
-	access = list(ACCESS_NRPD)
-	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
-
-
-/datum/outfit/job/citizens/f13judge/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	. = ..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_LEADER, src)
-
-/datum/outfit/job/citizens/f13judge
-	name = "Judge"
-	jobtype = /datum/job/citizens/f13judge
-	id = /obj/item/card/id/dogtag/sheriff
-	ears = /obj/item/radio/headset/headset_government_nrpd
-	uniform	= /obj/item/clothing/under/suit/lawyerblackalt
-	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/armor/f13/civilians/judgerobe
-	backpack = /obj/item/storage/backpack/satchel/leather
-	satchel = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(
-		/obj/item/megaphone = 1,
-		/obj/item/pen/fountain = 1,
-		/obj/item/pen/fourcolor = 1,
-		/obj/item/storage/bag/money/small/big = 1,
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/m44 = 2
-		)
-
-/datum/job/citizens/f13rpdpolicechief
-	title = "NRPD Chief"
-	flag = F13RPDPOLICECHIEF
-	total_positions = 1
-	spawn_positions = 1
-	description = "Reno is a borderline lawless city, 'human sewage', as it's often said, washes into Reno on a near daily basis; it's not rare to see the results of dealings gone wrong, chem fueled violent bums, and the escalated situations with the gangs. And you're the one who's supposed to deal with this, the Chief of the Reno Police Department. Corruption isn't out of the window, especially considering it was the Bishops who funded the department. Your duties are to organize your men to keep the peace, prevent gang wars from breaking out, and enforcing NCR common law."
-	supervisors = "NCR common law and the mayor"
-	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
-	access = list(ACCESS_NRPD)
-	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
-
-
-/datum/outfit/job/citizens/f13rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	. = ..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
-
-/datum/outfit/job/citizens/f13rpdpolicechief
-	name = "Police Chief"
-	jobtype = /datum/job/citizens/f13rpdpolicechief
-	id = /obj/item/card/id/dogtag/sheriff
-	ears = /obj/item/radio/headset/headset_government_nrpd
-	uniform	= /obj/item/clothing/under/f13/ncr/police
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	neck = /obj/item/storage/belt/holster/legholster
-	gloves = /obj/item/clothing/gloves/fingerless
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
-	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/rubber = 2,
-		/obj/item/ammo_box/magazine/d12g/empty = 2,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/melee/classic_baton/police = 1,
-		/obj/item/reagent_containers/spray/pepper = 1,
-		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/small/medium = 1
-		)
-
-/datum/job/citizens/f13rpdofficer
-	title = "NRPD Officer"
-	flag = F13RPDOFFICER
-	total_positions = 5
-	spawn_positions = 5
-	description = "You are an officer of the Reno Police Department. Uphold NCR common law, follow the orders of the Chief of Police, and keep the situation in the streets from getting too bloody."
-	supervisors = "NCR common law and the mayor"
-	outfit = /datum/outfit/job/citizens/f13rpdofficer
-	access = list(ACCESS_NRPD)
-	minimal_access = list(ACCESS_NRPD)
-
-
-/datum/outfit/job/citizens/f13rpdofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	. = ..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-
-/datum/outfit/job/citizens/f13rpdofficer
-	name = "Police Officer"
-	jobtype = /datum/job/citizens/f13rpdofficer
-	id = /obj/item/card/id/dogtag/deputy
-	ears = /obj/item/radio/headset/headset_nrpd
-	uniform	= /obj/item/clothing/under/f13/ncr/police
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	neck = /obj/item/storage/belt/holster/legholster
-	gloves = /obj/item/clothing/gloves/fingerless
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
-	suit_store = /obj/item/gun/ballistic/shotgun/police
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/rubber = 2,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/melee/classic_baton/police = 1,
-		/obj/item/reagent_containers/spray/pepper = 1,
-		/obj/item/gun/energy/laser/complianceregulator = 1,
-		/obj/item/storage/bag/money/small/meager = 1
-		)
-
 /datum/job/citizens/f13ncrcfwarden
 	title = "NCRCF Warden"
 	flag = F13NCRCFWARDEN
@@ -209,7 +83,7 @@
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = /obj/item/gun/ballistic/shotgun/police
+	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
 	backpack_contents = list(
@@ -354,6 +228,133 @@
 	name = "Raider"
 	mask = /obj/item/clothing/mask/bandana/skull
 	glasses = /obj/item/clothing/glasses/legiongoggles
+
+
+/datum/job/citizens/f13judge
+	title = "Judge"
+	flag = F13JUDGE
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are a great arbiter, and the only one in this shithole! Your word is law, and you give definitive unquestionable conclusions to matters that are too complex for your average NCR citizen. In your stead the NRPD Chief and officers of the army may extraordinarily hold your position."
+	supervisors = "NCR law"
+	selection_color = "#dece90"
+	outfit = /datum/outfit/job/citizens/f13judge
+	access = list(ACCESS_NRPD)
+	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
+
+
+/datum/outfit/job/citizens/f13judge/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_LEADER, src)
+
+/datum/outfit/job/citizens/f13judge
+	name = "Judge"
+	jobtype = /datum/job/citizens/f13judge
+	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
+	uniform	= /obj/item/clothing/under/suit/lawyerblackalt
+	shoes = /obj/item/clothing/shoes/laceup
+	suit = /obj/item/clothing/suit/armor/f13/civilians/judgerobe
+	backpack = /obj/item/storage/backpack/satchel/leather
+	satchel = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/megaphone = 1,
+		/obj/item/pen/fountain = 1,
+		/obj/item/pen/fourcolor = 1,
+		/obj/item/storage/bag/money/small/big = 1,
+		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
+		/obj/item/ammo_box/magazine/m44 = 2
+		)
+
+/datum/job/citizens/f13rpdpolicechief
+	title = "NRPD Chief"
+	flag = F13RPDPOLICECHIEF
+	total_positions = 1
+	spawn_positions = 1
+	description = "Reno is a borderline lawless city, 'human sewage', as it's often said, washes into Reno on a near daily basis; it's not rare to see the results of dealings gone wrong, chem fueled violent bums, and the escalated situations with the gangs. And you're the one who's supposed to deal with this, the Chief of the Reno Police Department. Corruption isn't out of the window, especially considering it was the Bishops who funded the department. Your duties are to organize your men to keep the peace, prevent gang wars from breaking out, and enforcing NCR common law."
+	supervisors = "NCR common law and the mayor"
+	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
+	access = list(ACCESS_NRPD)
+	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
+
+
+/datum/outfit/job/citizens/f13rpdpolicechief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+
+/datum/outfit/job/citizens/f13rpdpolicechief
+	name = "Police Chief"
+	jobtype = /datum/job/citizens/f13rpdpolicechief
+	id = /obj/item/card/id/dogtag/sheriff
+	ears = /obj/item/radio/headset/headset_government_nrpd
+	uniform	= /obj/item/clothing/under/f13/ncr/police
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_chief
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/rubber = 2,
+		/obj/item/ammo_box/magazine/d12g/empty = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/medium = 1
+		)
+
+/datum/job/citizens/f13rpdofficer
+	title = "NRPD Officer"
+	flag = F13RPDOFFICER
+	total_positions = 8
+	spawn_positions = 5
+	description = "You are an officer of the Reno Police Department. Uphold NCR common law, follow the orders of the Chief of Police, and keep the situation in the streets from getting too bloody."
+	supervisors = "NCR common law and the mayor"
+	outfit = /datum/outfit/job/citizens/f13rpdofficer
+	access = list(ACCESS_NRPD)
+	minimal_access = list(ACCESS_NRPD)
+
+
+/datum/outfit/job/citizens/f13rpdofficer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+/datum/outfit/job/citizens/f13rpdofficer
+	name = "Police Officer"
+	jobtype = /datum/job/citizens/f13rpdofficer
+	id = /obj/item/card/id/dogtag/deputy
+	ears = /obj/item/radio/headset/headset_nrpd
+	uniform	= /obj/item/clothing/under/f13/ncr/police
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/f13/civilians/ncr_police_helmet
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	neck = /obj/item/storage/belt/holster/legholster
+	gloves = /obj/item/clothing/gloves/fingerless
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit_store = /obj/item/gun/ballistic/shotgun/police
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/rubber = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
+		/obj/item/storage/bag/money/small/meager = 1
+		)
 
 /datum/job/citizens/f13tourist
 	title = "Tourist"
@@ -535,12 +536,12 @@
 
 /datum/outfit/loadout/mercenary
 	name = "mercenary"
-	suit = /obj/item/clothing/suit/armor/f13/metalarmor
-	head = /obj/item/clothing/head/helmet/blueshirt
+	suit = /obj/item/clothing/suit/armored/light/leather
+	head = /obj/item/clothing/head/f13/stormchaser
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/hunting = 1,
-		/obj/item/ammo_box/shotgun/buck = 2)
-
+		/obj/item/gun/ballistic/rifle/hunting = 1,
+		/obj/item/ammo_box/a308 = 3,
+		/obj/item/melee/onehanded/knife/throwing = 1)
 
 //------- EXTRA -------//
 

@@ -176,8 +176,8 @@
 	title = "Wright Hooligan"
 	flag = F13WRIGHTHOOLIGAN
 	department_flag = WRIGHTS
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 10
+	spawn_positions = 7
 	supervisors = "Wright Capos, the Underboss, and the Wright Boss"
 	description = "You are the blood, sweat and tears that this family is built upon. While you do not have the responsibilites or nuance of your elders, you are a Wright by birthright. The family depends on you to achieve their goals, and follow the orders from your elders to the letter. Your bosses are your blood, your family, and you must uphold that bond. As the face of the Wrights that most citizens see, it falls on you the most to uphold the values of your family. Abstaining from the use of chems, and prostitution are expected, and enforced with violence if disobeyed. Protect your family's business and interests, and protect your elders with your life."
 	exp_requirements = EXP_TYPE_WRIGHTS

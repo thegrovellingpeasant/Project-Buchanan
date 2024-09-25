@@ -13,49 +13,49 @@
 	permeability_coefficient = 0.9
 	heat_protection = CHEST | GROIN
 	cold_protection = CHEST | GROIN
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/armored/light/duster/lonesome
 	name = "lonesome duster"
 	desc = "A blue leather coat with the number 21 on the back.<br><i>If war doesn't change, men must change, and so must their symbols.</i><br><i>Even if there is nothing at all, know what you follow.</i>"
 	icon_state = "duster_courier"
 	item_state = "duster_courier"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 5, "rad" = 15, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/armored/light/duster/autumn //Based of Colonel Autumn's uniform.
 	name = "tan trenchcoat"
 	desc = "A heavy-duty tan trenchcoat typically worn by pre-War generals."
 	icon_state = "duster_autumn"
 	item_state = "duster_autumn"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/armored/light/duster/battlecoat
 	name = "battlecoat"
 	desc = "A heavy padded coat that distributes heat efficiently, designed to protect pre-War bomber pilots from anti-aircraft lasers."
 	icon_state = "maxson_battlecoat"
 	item_state = "maxson_battlecoat"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 25, "bomb" = 10, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 25, "bomb" = 10, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/armored/light/duster/vet
 	name = "merc veteran coat"
 	desc = "A blue leather coat with its sleeves cut off, adorned with war medals.<br>This type of outfit is common for professional mercenaries and bounty hunters."
 	icon_state = "duster_vet"
 	item_state = "duster_vet"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 5, "wound" = 30)
 
 /obj/item/clothing/suit/armored/light/duster/brahmin
 	name = "brahmin leather duster"
 	desc = "A duster made from tanned brahmin hide. It has a thick waxy surface from the processing, making it surprisingly laser resistant."
 	icon_state = "duster_brahmin"
 	item_state = "duster_brahmin"
-	armor = list("melee" = 14, "bullet" = 14, "laser" = 25, "energy" = 20, "bomb" = 10, "bio" = 5, "rad" = 0, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 14, "bullet" = 14, "laser" = 25, "energy" = 20, "bomb" = 10, "bio" = 5, "rad" = 0, "fire" = 25, "acid" = 5, "wound" = 25)
 
 /obj/item/clothing/suit/armored/light/duster/desperado
 	name = "desperado's duster"
 	desc = "A dyed brahmin hide duster, with a thick waxy surface, making it less vulnerable to lasers and energy based weapons."
 	icon_state = "duster_lawman"
 	item_state = "duster_lawman"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 25)
 
 
 

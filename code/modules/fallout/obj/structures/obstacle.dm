@@ -79,7 +79,7 @@
 	return ..()
 
 /obj/structure/obstacle/barbedwire/proc/shock(mob/user, prb) 	// war crime mode, if you can find an electrical generator
-	
+
 	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
 		return FALSE
 	var/turf/T = get_turf(src)
@@ -252,6 +252,93 @@
 	name = "smashed optical machine"
 	desc = "A very broken, strange machine"
 	icon_state = "junk_disco"
+
+
+///SKUBBLER STUFF
+
+/obj/structure/junk/small/coilroll1
+	name = "coil roll"
+	icon_state = "coilroll1"
+	desc = "An empty coil roll. It looks heavy."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/coilroll2
+	name = "coil roll"
+	icon_state = "coilroll2"
+	desc = "An empty coil roll. It looks heavy."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/coilroll3
+	name = "coil roll"
+	icon_state = "coilroll3"
+	desc = "An empty coil roll. It looks heavy."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/coilroll4
+	name = "coil roll"
+	icon_state = "coilroll4"
+	desc = "An empty coil roll. It looks heavy."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/severedtire
+	name = "severed tire"
+	icon_state = "severedtire"
+	desc = "Another piece of garbage."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/trashcan
+	name = "trashcan"
+	icon_state = "trashcan"
+	desc = "It's garbage day."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/spring
+	name = "spring"
+	icon_state = "spring"
+	desc = "A car part."
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/sign1
+	name = "sign"
+	icon_state = "sign1"
+	desc = "It has a doctor's handwriting. What gibberish."
+	anchored = FALSE
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/sign2
+	name = "sign"
+	icon_state = "sign2"
+	desc = "It's pointing towards something."
+	anchored = FALSE
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/pipes1
+	name = "industrial pipes"
+	icon_state = "pipes1"
+	desc = "A heap of old pipes."
+	density = FALSE
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/pipes2
+	name = "industrial pipes"
+	icon_state = "pipes2"
+	desc = "A heap of old pipes."
+	density = FALSE
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/pipes3
+	name = "industrial pipes"
+	icon_state = "pipes3"
+	desc = "A heap of old pipes."
+	density = FALSE
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/junk/small/wheel
+	name = "wheel"
+	icon_state = "wheel"
+	desc = "Wheel get back to you with something better."
+	density = FALSE
+	icon = 'icons/obj/structures.dmi'
 
 //Junk overlays
 /obj/effect/overlay/junk

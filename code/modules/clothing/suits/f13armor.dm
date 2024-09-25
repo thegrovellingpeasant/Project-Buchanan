@@ -22,7 +22,7 @@
 	icon_state = "leather_jacket"
 	item_state = "leather_jacket"
 	desc = "A black, heavy leather jacket. Looks like it has spare pockets."
-	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 20)
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 	slowdown = 0.025 //token slowdown
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
@@ -94,7 +94,7 @@
 	icon_state = "leather_armor_2"
 	item_state = "leather_armor_2"
 	desc = "An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 12, "energy" = 12, "bomb" = 20, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35, "wound" = 35)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 12, "energy" = 12, "bomb" = 20, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35, "wound" = 30)
 	slowdown = 0.08
 
 
@@ -204,7 +204,7 @@
 	desc = "A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
 	icon_state = "armoralt"
 	item_state = "armoralt"
-	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/combat/chinese
 	name = "chinese combat armor"
@@ -802,7 +802,7 @@
 	desc = "an ornate suit worn by Mexican gunfighters in the Old West, padded with leather for extra protection."
 	icon_state = "vaquero"
 	item_state = "vaquero"
-	armor = list("melee" = 10, "bullet" = 20,"laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 20,"laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
 	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/armor/light/wastewar
@@ -812,7 +812,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "wastewar"
 	item_state = "wastewar"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 35)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 30)
 	slowdown = 0.07
 
 /obj/item/clothing/suit/armor/f13/slam
@@ -820,7 +820,7 @@
 	desc = "Crude armor that appears to employ a tire of some kind as the shoulder pad. What appears to be a quilt is tied around the waist.<br>Come on and slam and turn your foes to jam!"
 	icon_state = "slam"
 	item_state = "slam"
-	armor = list("melee" = 15, "bullet" = 20,"laser" = 20, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 15, "bullet" = 20,"laser" = 20, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 30)
 	flags_inv = HIDEJUMPSUIT
 	strip_delay = 40
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
@@ -831,7 +831,7 @@
 	desc = "A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future."
 	icon_state = "maxson_battlecoat"
 	item_state = "maxson_battlecoat"
-	armor = list("melee" = 20, "bullet" = 10,"laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30, "wound" = 35)
+	armor = list("melee" = 20, "bullet" = 10,"laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30, "wound" = 30)
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
@@ -842,7 +842,7 @@
 	desc = "For deliveries in cold desert nights."
 	icon_state = "postalbomber"
 	item_state = "postalbomber"
-	armor = list("melee" = 15, "bullet" = 10,"laser" = 5, "energy" = 5, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30, "wound" = 35)
+	armor = list("melee" = 15, "bullet" = 10,"laser" = 5, "energy" = 5, "bomb" = 30, "bio" = 0, "rad" = 30, "fire" = 30, "acid" = 30, "wound" = 30)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/armor/f13/battlecoat/vault
@@ -870,7 +870,7 @@
 	desc = "A duster fashioned with tanned brahmin hide. It appears to be more durable than a normal duster. The leather is laser resistant."
 	icon_state = "brahmin_leather_duster"
 	item_state = "brahmin_leather_duster"
-	armor = list("melee" = 10, "bullet" = 5, "laser" = 20, "energy" = 20, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 10, "bullet" = 5, "laser" = 20, "energy" = 20, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/armor/f13/rustedcowboy
@@ -878,7 +878,7 @@
 	desc = " A weather treated leather cowboy outfit.  Yeehaw Pard'!"
 	icon_state = "rusted_cowboy"
 	item_state = "rusted_cowboy"
-	armor = list("melee" = 10, "bullet" = 20,"laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 20,"laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 25)
 
 //Inherited from SS13
 /obj/item/clothing/suit/armor/bulletproof
@@ -887,7 +887,7 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 50)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 	strip_delay = 70
 	equip_delay_other = 50
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
@@ -899,7 +899,7 @@
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 30, "bullet" = 5, "laser" = 0, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 45)
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 0, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 30)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 //Custom/Patreon/Donor - A lot of this likely needs putting in the graveyard
@@ -941,7 +941,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	name = "outlaw coat"
 	desc = "An ugly looking combat duster"
 	icon_state = "harperduster"
-	armor = list("melee" = 25, "bullet" = 50, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 25)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 30)
 	slowdown = 0.07
 
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris
@@ -960,7 +960,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "shank_follower"
 	item_state = "shank_follower"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 25, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 25, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 30)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/shankduster/Initialize()
@@ -972,7 +972,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A thicker than average duster worn by rangers out in the field. This one has been dyed black and appears to be a little more heavily armoured."
 	icon_state = "duster_recon_custom"
 	item_state = "duster_recon_custom"
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/legion/palacent/custom_excess
 	name = "Champion of Kanab's Armor"
@@ -985,7 +985,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A resistant, tan greatcoat, typically worn by pre-War Generals."
 	icon_state = "soldier"
 	item_state = "soldier"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 20)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
@@ -1031,7 +1031,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	icon_state = "usmc_riot_gear"
 	item_state = "usmc_riot_gear"
-	armor = list("melee" = 20, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 30)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/herbertranger/Initialize() //HQ parts reinforcement, just like raider gear
@@ -1044,7 +1044,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	icon_state = "marlowsuit"
 	item_state = "marlowsuit"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 10, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 10, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 30)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/marlowsuit/Initialize()
@@ -1086,28 +1086,28 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "The armor of those true to the Division."
 	icon_state = "atomzealot"
 	item_state = "atomzealot"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/atomwitch
 	name = "atomic seer robes"
 	desc = "The robes worn by female seers of the Division."
 	icon_state = "atomwitch"
 	item_state = "atomwitch"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/harbingermantle
 	name = "Harbinger's Mantle"
 	desc = "An eerie, silken cloth that seems to be dripping with a thick mist. It is in truth a high-tech stealth device that allows for psionic amplification. The capacitors and manipulators in it utilise quantum technology and are highly volatile."
 	icon_state = "scloak"
 	item_state = "scloak"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 30)
 
 /obj/item/clothing/suit/armor/f13/ghostechoe
 	name = "tattered peace coat"
 	desc = "An old coat belonging to a Desert Ranger once. It has been stripped of most useful protection, and has seen better days. A crude peace symbol has been painted on the back in white."
 	icon_state = "ghostechoe"
 	item_state = "ghostechoe"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 10, "wound" = 30)
 
 
 //Mutants
@@ -1117,21 +1117,21 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
 	icon_state = "mutie_poncho"
 	item_state = "mutie_poncho"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 5, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 20)
 
 /obj/item/clothing/suit/armor/f13/mutant/metal
 	name = "mutant armour"
 	desc = "An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
 	name = "mutant armour"
 	desc = "An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 40, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 40, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 //TRIBALS
 
@@ -1140,7 +1140,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."
 	icon_state = "tribal"
 	item_state = "tribal"
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 15, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 15, "energy" = 15, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 30)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/f13/tribal/light
@@ -1152,7 +1152,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 /obj/item/clothing/suit/f13/tribal/heavy
 	name = "heavy tribal armor"
 	desc = "A heavy suit of armour made of brahmin and gecko hides. It seems rather heavy."
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 40, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 40, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 	slowdown = 0.3
 
 /obj/item/clothing/suit/f13/tribal/ncr
@@ -1218,7 +1218,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "white_legs_bone_heavy"
 	item_state = "white_legs_bone_heavy"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 45)
 
 /obj/item/clothing/suit/f13/tribal/light/eighties
 	name = "80s light armour"
@@ -1240,7 +1240,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80sarmor"
 	item_state = "80sarmor"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 35, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 /obj/item/clothing/suit/f13/tribal/eighties/green
 	name = "80s armour"
@@ -1248,7 +1248,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	icon_state = "80sgreen"
 	item_state = "80sgreen"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 35, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 40)
 
 /obj/item/clothing/suit/f13/tribal/heavy/eighties
 	name = "80s heavy armour"
