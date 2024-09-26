@@ -13,7 +13,7 @@ GLOBAL_LIST(topic_status_cache)
 /world/New()
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
-		call(debug_server, "auxtools_init")()
+		LIBCALL("debug_server.dll", "auxtools_init")() //! FIXME515 hacky solution till auxtools and sdmm come out with support ~Tsuru
 		enable_debugging()
 	AUXTOOLS_CHECK(AUXMOS)
 #ifdef EXTOOLS_REFERENCE_TRACKING
