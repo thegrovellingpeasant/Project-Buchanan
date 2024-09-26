@@ -140,7 +140,7 @@
 
 /proc/edit_message(message_id, browse)
 	if(!SSdbcore.Connect())
-		to_chat(usr, "<span class='danger'>Failed to establish database connection.</span>")
+		to_chat(usr, "<span class='danger'>Failed to establish database connection.</span>", handle_whitespace = TRUE)
 		return
 	message_id = text2num(message_id)
 	if(!message_id)
