@@ -308,7 +308,7 @@
 /turf/open/floor/wood/f13/reno
 	name = "wood planks"
 	desc = "Rotting wooden flooring."
-	icon = 'icons/fallout/turfs/housereno.dmi'
+	icon = 'icons/fallout/turfs/reno.dmi'
 	sunlight_state = TRUE
 
 /turf/open/floor/wood/f13/reno/ruinedcornerendbr	//WHAT THE FUCK IS THIS
