@@ -1071,9 +1071,9 @@
 			if(!axe.wielded)
 				to_chat(user, "<span class='warning'>You need to be wielding \the [axe] to do that!</span>")
 				return
-			INVOKE_ASYNC(src, (density ? .proc/open : .proc/close), 2)
+			INVOKE_ASYNC(src, (density ? PROC_REF(open) : PROC_REF(close)), 2)
 		else
-			INVOKE_ASYNC(src, (density ? .proc/open : .proc/close), 2)
+			INVOKE_ASYNC(src, (density ? PROC_REF(open) : PROC_REF(close)), 2)
 
 	if(istype(I, /obj/item/crowbar/power))
 		if(hasPower() && isElectrified())
