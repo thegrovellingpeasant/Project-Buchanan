@@ -52,8 +52,8 @@ window "mainwindow"
 		type = MAIN
 		pos = 0,0
 		size = 640x440
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Fallout 13: Interstate 80"
@@ -74,16 +74,16 @@ window "mainwindow"
 		type = BROWSER
 		pos = 0,0
 		size = 200x200
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		is-visible = false
 		saved-params = ""
 	elem "tooltip"
 		type = BROWSER
 		pos = 0,0
 		size = 999x999
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		is-visible = false
 		saved-params = ""
 
@@ -92,8 +92,7 @@ window "mapwindow"
 		type = MAIN
 		pos = 0,0
 		size = 1024x1024
-				anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
 		anchor2 = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
@@ -115,8 +114,8 @@ window "infowindow"
 		type = MAIN
 		pos = 0,0
 		size = 640x480
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
 	elem "info"
@@ -189,8 +188,8 @@ window "outputwindow"
 		type = MAIN
 		pos = 0,0
 		size = 640x480
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
 	elem "input"
@@ -238,8 +237,8 @@ window "popupwindow"
 		type = MAIN
 		pos = 281,0
 		size = 120x120
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
@@ -250,8 +249,8 @@ window "preferences_window"
 		type = MAIN
 		pos = 281,0
 		size = 1280x1000
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
@@ -276,8 +275,8 @@ window "statwindow"
 		type = MAIN
 		pos = 372,0
 		size = 640x480
-		anchor1 = -1,-1
-		anchor2 = -1,-1
+		anchor1 = none
+		anchor2 = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
 	elem "statbrowser"
