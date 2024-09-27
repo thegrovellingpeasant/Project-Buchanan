@@ -64,7 +64,7 @@
 			
 /mob/living/simple_animal/hostile/megafauna/frank/Initialize()
 	. = ..()
-	for(var/mob/living/simple_animal/hostile/megafauna/captainfrank/B in GLOB.mob_list)
+	for(var/mob/living/simple_animal/hostile/megafauna/frank/B in GLOB.mob_list)
 		if(B != src)
 			return INITIALIZE_HINT_QDEL //There can be only one
 
@@ -144,7 +144,7 @@ mob/living/simple_animal/hostile/megafauna/frank/do_attack_animation(atom/A, vis
 	if(!isnum(set_angle) && (!marker || marker == loc))
 		return
 	var/turf/startloc = get_turf(src)
-	var/obj/item/projectile/P = new /obj/item/projectile/f13plasma/plasmacaster/frank(startloc)
+	var/obj/item/projectile/P = new /obj/item/projectile/f13plasma/frank(startloc)
 	P.preparePixelProjectile(marker, startloc)
 	P.firer = src
 	if(target)
