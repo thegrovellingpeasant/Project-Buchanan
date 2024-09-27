@@ -603,7 +603,7 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull/lit
-	icon_state = "whitebluedirtyfull"
+	icon_state = "bluedirtysolid"
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/blue/side/lit
@@ -639,10 +639,10 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess
-	icon_state = "redbluedirtyfull"
+	icon_state = "redbluefull"
 
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit
-	icon_state = "whitebluedirtychess2"
+	icon_state = "redbluefull"
 	sunlight_state = SUNLIGHT_SOURCE
 
 	/* GREEN TILES */
@@ -651,7 +651,7 @@
 	icon_state = "greendirtyfull"
 
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull
-	icon_state = "whitegreendirtyfull"
+	icon_state = "greendirtysolid"
 
 /turf/open/floor/plasteel/f13/vault_floor/green/side
 	icon_state = "greendirty"
@@ -672,7 +672,7 @@
 	icon_state = "whitegreendirtycorner"
 
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess
-	icon_state = "whitegreendirtychess"
+	icon_state = "whitegreenchessdirty"
 
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/whitegreenchess2
 	icon_state = "whitegreendirtychess2"
@@ -682,7 +682,7 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull/lit
-	icon_state = "whitegreendirtyfull"
+	icon_state = "greendirtysolid"
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/green/side/lit
@@ -710,7 +710,7 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit
-	icon_state = "whitegreendirtychess"
+	icon_state = "whitegreenchessdirty"
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/whitegreenchess2/lit
@@ -795,7 +795,7 @@
 	icon_state = "purplefull"
 
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull
-	icon_state = "whitepurplefull"
+	icon_state = "purpledirtysolid"
 
 /turf/open/floor/plasteel/f13/vault_floor/purple/side
 	icon_state = "purple"
@@ -826,7 +826,7 @@
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull/lit
-	icon_state = "whitepurpledirtyfull"
+	icon_state = "purpledirtysolid"
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/plasteel/f13/vault_floor/purple/side/lit

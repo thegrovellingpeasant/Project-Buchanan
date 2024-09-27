@@ -94,6 +94,14 @@ SUBSYSTEM_DEF(nightcycle)
 			for(var/obj/structure/lamp_post/lamp as anything in GLOB.lamppost)
 				lamp.icon_state = "[initial(lamp.icon_state)]"
 				lamp.set_light_on(FALSE)
+			for(var/obj/structure/sign/barsign/sign as anything in GLOB.barsigns)
+				sign.set_light_on(FALSE)
+			var/obj/machinery/light/sign/shark_club/sc = locate()
+			var/obj/machinery/light/sign/pepgas/pg = locate()
+			var/obj/machinery/light/sign/reno_sign/rs = locate()
+			sc.brightness = 0
+			pg.brightness = 0
+			rs.brightness = 0
 		if (DAYTIME)
 			message_admins("Transitioning into midday...")
 			current_sun_color = daytime_sun_color
@@ -109,6 +117,14 @@ SUBSYSTEM_DEF(nightcycle)
 			for(var/obj/structure/lamp_post/lamp as anything in GLOB.lamppost)
 				lamp.icon_state = "[initial(lamp.icon_state)]-on"
 				lamp.set_light_on(TRUE)
+			for(var/obj/structure/sign/barsign/sign as anything in GLOB.barsigns)
+				sign.set_light_on(TRUE)
+			var/obj/machinery/light/sign/shark_club/sc = locate()
+			var/obj/machinery/light/sign/pepgas/pg = locate()
+			var/obj/machinery/light/sign/reno_sign/rs = locate()
+			sc.brightness = 12
+			pg.brightness = 12
+			rs.brightness = 12
 		if(NIGHTTIME)
 			message_admins("Transitioning into late night...")
 			current_sun_color = nighttime_sun_color

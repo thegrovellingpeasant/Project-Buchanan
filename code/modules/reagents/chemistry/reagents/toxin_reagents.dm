@@ -475,6 +475,12 @@
 	pH = 4.2
 	value = REAGENT_VALUE_VERY_COMMON
 
+/datum/reagent/toxin/coffeepowder/on_mob_life(mob/living/carbon/M)
+	M.adjustStaminaLoss(-1*(REM * data), 0)
+	data = max(data - 1, 5)
+	..()
+	. = 1
+
 /datum/reagent/toxin/teapowder
 	name = "Ground Tea Leaves"
 	description = "Finely shredded tea leaves, used for making tea."

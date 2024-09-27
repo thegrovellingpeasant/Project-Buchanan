@@ -28,42 +28,42 @@
 // Materials. Selling raw can lead to a big payout but takes a lot of work for miners to get a lot. Best to craft art/rnd gear
 
 /datum/export/material/diamond
-	cost = 250
+	cost = 15
 	material_id = /datum/material/diamond
 	message = "cm3 of diamonds"
 
 /datum/export/material/plasma
-	cost = 100
+	cost = 4
 	material_id = /datum/material/plasma
 	message = "cm3 of plasma"
 
 /datum/export/material/uranium
-	cost = 50
+	cost = 11
 	material_id = /datum/material/uranium
 	message = "cm3 of uranium"
 
 /datum/export/material/gold
-	cost = 60
+	cost = 8
 	material_id = /datum/material/gold
 	message = "cm3 of gold"
 
 /datum/export/material/silver
-	cost = 25
+	cost = 6
 	material_id = /datum/material/silver
 	message = "cm3 of silver"
 
 /datum/export/material/titanium
-	cost = 60
+	cost = 9
 	material_id = /datum/material/titanium
 	message = "cm3 of titanium"
 
 /datum/export/material/plastic
-	cost = 5
+	cost = 2
 	material_id = /datum/material/plastic
 	message = "cm3 of plastic"
 
 /datum/export/material/metal
-	cost = 3
+	cost = 2
 	message = "cm3 of metal"
 	material_id = /datum/material/iron
 	export_types = list(
@@ -71,7 +71,7 @@
 		/obj/item/stack/rods, /obj/item/stack/ore, /obj/item/coin)
 
 /datum/export/material/glass
-	cost = 3
+	cost = 2
 	message = "cm3 of glass"
 	material_id = /datum/material/glass
 	export_types = list(/obj/item/stack/sheet/glass, /obj/item/stack/ore,

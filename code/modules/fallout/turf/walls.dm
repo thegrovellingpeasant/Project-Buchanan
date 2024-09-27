@@ -324,7 +324,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	icon_state = "supermart"
 	icon_type_smooth = "supermart"
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall, /turf/closed/wall/mineral/concrete)
+	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall, /turf/closed/wall/mineral/concrete, /turf/closed/indestructible/f13/supermart)
 
 /turf/closed/indestructible/f13/vaultwall/fakeshutter
 	name = "shutter"
