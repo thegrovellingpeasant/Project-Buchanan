@@ -7,7 +7,7 @@
 	desc = "should not exist."
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
-	fire_delay = 3.5 /assume that all revolvers are single action
+	fire_delay = 3.5 ///assume that all revolvers are single action
 	recoil = 0.2
 	slowdown = 0.2
 	spread = 6
@@ -301,7 +301,7 @@
 //Sequioa					Keywords: NCR, .45-70, 6 rounds cylinder, Double action, Heavy
 /obj/item/gun/ballistic/revolver/sequoia
 	name = "ranger sequoia"
-	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers. ///holyyap
+	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers." ///holyyap
 	icon_state = "sequoia"
 	item_state = "sequoia"
 	weapon_weight = WEAPON_MEDIUM
