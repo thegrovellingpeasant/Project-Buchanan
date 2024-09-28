@@ -1,11 +1,11 @@
 
-//////////////////
-//PLASMA WEAPONS//
-//////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// GOD WILL SMITE DOWN THE WICKED, HE WILL BATHE IN THEIR BLOOD AND REJOICE AS THE PIGS WEEP FOR FORGIVENESS //
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol
-	name ="plasma pistol"
+	name ="plasma pistol" 
 	slowdown = 0.1
 	item_state = "plasma-pistol"
 	icon_state = "plasma-pistol"
@@ -29,6 +29,7 @@
 	desc = "Glock 86 Plasma Pistol. Designed by the Gaston Glock artificial intelligence. Shoots a small bolt of superheated plasma. Powered by a small energy cell."
 	item_state = "plasma-pistol"
 	icon_state = "glock86"
+	slowdown = 0.1
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
@@ -59,6 +60,33 @@
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 
 
+//Plasma carbine
+/obj/item/gun/energy/laser/plasma/carbine
+	name ="plasma carbine"
+	item_state = "plasma"
+	icon_state = "plasmacarbine"
+	desc = "A burst-fire energy weapon that fires a steady stream of toroidal plasma towards an unlucky target."
+	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	extra_damage = -100
+	burst_size = 2
+	burst_shot_delay = 1.5
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	can_scope = TRUE
+	scope_state = "plasma_scope"
+	scope_x_offset = 13
+	scope_y_offset = 16
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+
+/obj/item/gun/energy/laser/plasma/carbine/enable_burst()
+	. = ..()
+	spread = 15
+
+/obj/item/gun/energy/laser/plasma/carbine/disable_burst()
+	. = ..()
+	spread = 0
+
+
 //Multiplas rifle
 /obj/item/gun/energy/laser/plasma/scatter
 	name = "multiplas rifle"
@@ -87,7 +115,7 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
 	sharpness = SHARP_EDGED
 	max_reach = 2
-	force = 20
+	force = 30 //still not as OP as most melee weapons
 	burst_size = 5
 	burst_shot_delay = 0.5
 	fire_delay = 10
