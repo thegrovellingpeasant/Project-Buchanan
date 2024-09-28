@@ -88,6 +88,9 @@ GLOBAL_LIST(labor_sheet_values)
 			var/obj/item/card/id/I = M.get_idcard(TRUE)
 			if(istype(I, /obj/item/card/id/prisoner))
 				var/obj/item/card/id/prisoner/P = I
+				if( !P.sentence )
+					to_chat(usr, "<span class='notice'>Your sentence is either permanent, or has already been served.</span>")
+					return
 				P.sentence -= stacking_machine.sentence
 				stacking_machine.sentence = 0
 				to_chat(usr, "<span class='notice'>Sentence reduced.</span>")
