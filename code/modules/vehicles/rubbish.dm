@@ -149,14 +149,18 @@
 	layer = ABOVE_MOB_LAYER
 
 /obj/structure/car/rubbish10
-	icon_state = "rubbish_lights10"
-	layer = ABOVE_MOB_LAYER
+	icon = 'icons/fallout/objects/structures/car_light.dmi'
 	icon_state = "rubbish10"
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/car/rubbish11
-	icon_state = "rubbish_lights11"
-	layer = ABOVE_MOB_LAYER
 	icon_state = "rubbish11"
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/car/rubbish_lights
+	icon = 'icons/fallout/objects/structures/car_light.dmi'
+	icon_state = "rubbish_lights"
+	layer = ABOVE_MOB_LAYER
 
 /obj/structure/car/derelict
 	icon = 'icons/fallout/vehicles/medium_vehicles.dmi'

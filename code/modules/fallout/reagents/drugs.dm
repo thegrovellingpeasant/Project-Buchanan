@@ -17,6 +17,7 @@
 	ADD_TRAIT(M, TRAIT_QUICK_BUILD, "jet")
 	REMOVE_TRAIT(M, TRAIT_DEPRESSION, "jet")
 	REMOVE_TRAIT(M, TRAIT_HEAVY_SLEEPER, "jet")
+	M.playsound_local(M, 'sound/f13ambience/music/jet.ogg', 50)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
 
@@ -30,7 +31,6 @@
 	M.adjustStaminaLoss(-30, 0)
 	M.set_drugginess(20)
 	M.hallucination += 50
-	M.playsound_local(M, 'sound/f13ambience/music/jet.ogg', 50)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
 		step(M, pick(GLOB.cardinals))
 	if(prob(12))

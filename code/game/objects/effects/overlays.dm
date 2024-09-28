@@ -556,8 +556,8 @@
 
 /obj/effect/overlay/graveldiagonal
 	name = "gravel"
-	icon = 'icons/fallout/objects/wendover.dmi'
-	icon_state = "graveldirt"
+	icon = 'icons/fallout/turfs/gravel.dmi'
+	icon_state = "siding"
 	plane = FLOOR_PLANE
 	layer = VISIBLE_FROM_ABOVE_LAYER
 

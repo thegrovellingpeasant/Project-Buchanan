@@ -347,7 +347,7 @@
 /turf/open/floor/carpet/green
 	icon = 'icons/turf/floors/carpet_green.dmi'
 	floor_tile = /obj/item/stack/tile/carpet/green
-	canSmoothWith = list(/turf/open/floor/carpet/green, /turf/open/floor/carpet/green/airless)
+	canSmoothWith = list(/turf/open/floor/carpet/green, /turf/open/floor/carpet/green/airless, /turf/open/floor/carpet/green/lit)
 
 /turf/open/floor/carpet/green/lit
 	name = "carpet"
@@ -392,7 +392,7 @@
 /turf/open/floor/carpet/royalblack
 	icon = 'icons/turf/floors/carpet_royalblack.dmi'
 	floor_tile = /obj/item/stack/tile/carpet/royalblack
-	canSmoothWith = list(/turf/open/floor/carpet/royalblack, /turf/open/floor/carpet/royalblack/airless, /turf/open/floor/carpet/royalblack/nosmooth, /turf/open/floor/carpet/royalblack/lit/nosmooth)
+	canSmoothWith = list(/turf/open/floor/carpet/royalblack, /turf/open/floor/carpet/royalblack/airless, /turf/open/floor/carpet/royalblack/nosmooth, /turf/open/floor/carpet/royalblack/lit)
 
 /turf/open/floor/carpet/royalblack/lit
 	name = "carpet"
