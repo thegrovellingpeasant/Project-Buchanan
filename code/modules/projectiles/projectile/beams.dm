@@ -129,7 +129,7 @@
 /obj/item/projectile/beam/disabler
 	name = "disabler beam"
 	icon_state = "omnilaser"
-	damage = 28 // Citadel change for balance from 36
+	damage = 36 // Citadel change for balance from 36
 	damage_type = STAMINA
 	flag = "energy"
 	hitsound = 'sound/weapons/tap.ogg'
@@ -326,6 +326,7 @@
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
 	damage = 33
+	armour_penetration = 0.3 //mostly just to allow scratch damage, so you arent SOL just mostly fucced
 
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"

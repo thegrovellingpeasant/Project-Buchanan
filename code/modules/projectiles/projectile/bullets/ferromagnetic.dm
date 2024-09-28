@@ -11,7 +11,7 @@
 	icon_state = "magjectile-nl" //nl stands for non-lethal
 	damage = 2
 	armour_penetration = 0.2
-	stamina = 20
+	stamina = 35
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/bullet/magnetic/weak

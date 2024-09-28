@@ -41,7 +41,7 @@
 	can_charge = FALSE
 	desc = "An energy-based laser gun that draws power from the Handy's internal energy cell directly. So this is what freedom looks like?"
 	fire_delay = 1
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
 	icon_state = "laser"
 	item_state = "laser-rifle9"
 	selfcharge = EGUN_SELFCHARGE_BORG
@@ -211,7 +211,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
@@ -222,7 +222,7 @@
 	icon_state = "magnetowattz"
 	fire_delay = 0
 	item_state = "laser-pistol"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto)
 
 /obj/item/gun/energy/laser/wattz/recharger
 	name = "Recharger Pistol"
@@ -234,7 +234,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger)
 	cell_type = /obj/item/stock_parts/cell/ammo/breeder
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
@@ -248,7 +248,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	fire_delay = 0
 	can_scope = FALSE
@@ -303,7 +303,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/solar/hitscan) //27 dmg, .15 AP
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/solar) //27 dmg, .15 AP
 	cell_type = /obj/item/stock_parts/cell/ammo/ec //16 shots, self-charges
 	can_charge = 0
 	selfcharge = 1 //selfcharging adds 100 a shot
@@ -370,7 +370,7 @@
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
 	fire_delay = 1
-	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	zoomable = TRUE
 	zoom_amt = 10
@@ -386,7 +386,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
-	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/extended/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/extended)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	zoomable = TRUE
 	zoom_amt = 10
@@ -401,7 +401,7 @@
 	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. Fast firing, but not very powerful."
 	icon_state = "laser"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	fire_delay = 1
 	scope_state = "AEP7_scope"
@@ -437,7 +437,7 @@
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
 	fire_delay = 3
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 
@@ -448,7 +448,7 @@
 	desc = "A cutting-edge, pre-war laser rifle. Its focusing crystal array is housed in gold alloy, making it difficult to maintain."
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	fire_delay = 1.5
 	scope_state = "AEP7_scope"
@@ -463,7 +463,7 @@
 	desc = "A bleeding-edge, pre-war laser rifle. Extremely powerful, but eats MFCs like nothing else."
 	icon_state = "aer14"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	fire_delay = 1.5
 	scope_state = "AEP7_scope"
@@ -480,7 +480,7 @@
 	item_state = "laer"
 	fire_delay = 3
 	burst_size = 1
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/laerequip.ogg'
 
@@ -496,7 +496,7 @@
 	automatic = 1
 	autofire_shot_delay = 2
 	spread = 14
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
 
@@ -650,7 +650,7 @@
 	fire_delay = 1
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/laser.ogg'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
 	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	var/obj/item/minigunpack/ammo_pack
