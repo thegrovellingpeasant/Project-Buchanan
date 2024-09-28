@@ -19,7 +19,7 @@
 	dir = 1;
 	pixel_x = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aG" = (
 /obj/structure/barricade/tentleathercorner{
@@ -27,7 +27,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "aL" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -36,7 +36,7 @@
 	plane = -4;
 	pixel_x = -2
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "bu" = (
 /obj/item/reagent_containers/food/drinks/bottle/hcider,
@@ -51,7 +51,7 @@
 /area/f13/building)
 "bx" = (
 /obj/machinery/workbench,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "by" = (
 /obj/structure/barricade/bars,
@@ -77,13 +77,13 @@
 /obj/structure/barricade/tentleathercorner{
 	opacity = 0
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "ch" = (
 /obj/structure/nest/mob/raider/firefighter{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "co" = (
 /obj/structure/nest/mob/raider/biker,
@@ -108,26 +108,26 @@
 /obj/structure/barricade/tentleathercorner{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "di" = (
 /obj/structure/barricade/tentleatheredge{
 	dir = 1;
 	pixel_y = -4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "dj" = (
 /obj/structure/nest/mob/brahmin{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "du" = (
 /obj/effect/decal/remains/hay{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "dx" = (
 /obj/structure/simple_door/wood,
@@ -142,7 +142,7 @@
 /obj/structure/nest/mob/raider/sulphite{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "dT" = (
 /obj/structure/closet/crate/large,
@@ -169,7 +169,7 @@
 "ew" = (
 /obj/structure/chair/wood/modern,
 /obj/structure/nest/mob/raider/biker,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ey" = (
 /turf/closed/indestructible/f13/matrix,
@@ -178,7 +178,7 @@
 /obj/item/stack/rods,
 /obj/item/stack/rods,
 /obj/item/stack/sheet/mineral/wood/five,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "eK" = (
 /obj/structure/rack/shelf_metal,
@@ -191,16 +191,16 @@
 	faction = list("raider");
 	name = "repaired turret"
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "eU" = (
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "fb" = (
 /obj/structure/obstacle/barbedwire/end{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ff" = (
 /obj/structure/barricade/wooden,
@@ -211,11 +211,11 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "fj" = (
 /obj/structure/barricade/tentleatheredge,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "fx" = (
 /obj/docking_port/stationary{
@@ -231,7 +231,7 @@
 /obj/structure/nest/mob/raider/ranged{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "fP" = (
 /obj/structure/closet/crate/large,
@@ -245,7 +245,7 @@
 /area/centcom/evac)
 "fS" = (
 /obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "fX" = (
 /turf/closed/indestructible/riveted,
@@ -265,7 +265,7 @@
 /obj/structure/obstacle/barbedwire/end{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gp" = (
 /obj/structure/chair/stool/f13stool,
@@ -285,7 +285,7 @@
 /obj/structure/nest/mob/raider/biker{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gu" = (
 /turf/closed/indestructible/splashscreen,
@@ -294,7 +294,7 @@
 /obj/structure/obstacle/barbedwire{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gV" = (
 /turf/closed/indestructible/fakedoor{
@@ -379,7 +379,7 @@
 "ib" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "ie" = (
 /obj/structure/bed/mattress,
@@ -396,7 +396,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "ii" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -1309,7 +1309,7 @@
 /area/f13/caves)
 "kS" = (
 /obj/structure/barricade/wooden,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kT" = (
 /obj/structure/sign/warning/nosmoking,
@@ -1353,7 +1353,7 @@
 /area/centcom/evac)
 "ld" = (
 /obj/structure/fence,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "ln" = (
 /obj/machinery/firealarm{
@@ -1578,7 +1578,7 @@
 /area/centcom/evac)
 "lZ" = (
 /obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "mb" = (
 /obj/machinery/computer/shuttle/labor,
@@ -1782,7 +1782,7 @@
 	dir = 4;
 	layer = 4.3
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "mT" = (
 /obj/machinery/door/airlock/centcom{
@@ -2729,7 +2729,7 @@
 /obj/effect/decal/remains/hay{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "pu" = (
 /obj/machinery/door/airlock/centcom{
@@ -3225,7 +3225,7 @@
 "rd" = (
 /obj/item/stack/sheet/mineral/wood/five,
 /obj/item/stack/rods,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "rg" = (
 /obj/structure/simple_door/metal/barred,
@@ -4072,7 +4072,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "tY" = (
 /obj/structure/table/wood,
@@ -4567,7 +4567,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "vo" = (
 /obj/item/storage/firstaid/toxin,
@@ -4847,11 +4847,11 @@
 /obj/structure/nest/mob/raider/biker{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "wo" = (
 /obj/structure/table/wood/bar,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "wq" = (
 /obj/structure/window/reinforced{
@@ -5024,7 +5024,7 @@
 /area/centcom/evac)
 "wQ" = (
 /obj/structure/obstacle/barbedwire/end,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "wR" = (
 /turf/open/floor/plasteel/whitegreen/corner{
@@ -5048,7 +5048,7 @@
 	opacity = 0;
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "wZ" = (
 /turf/open/floor/plasteel/whitered/corner{
@@ -5136,7 +5136,7 @@
 "xx" = (
 /obj/structure/table/wood/bar,
 /obj/item/binoculars,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "xy" = (
 /obj/structure/chair/stool/f13stool,
@@ -5250,7 +5250,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "yt" = (
 /turf/closed/mineral/random/low_chance,
@@ -5315,7 +5315,7 @@
 /area/centcom/evac)
 "zl" = (
 /obj/structure/table/wood/settler,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "zm" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -5382,7 +5382,7 @@
 	plane = -4;
 	pixel_y = -1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "zM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5502,7 +5502,7 @@
 /obj/structure/nest/mob/raider/biker{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "AC" = (
 /obj/effect/turf_decal/delivery,
@@ -5985,7 +5985,7 @@
 /obj/structure/nest/mob/raider/baseball{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "CZ" = (
 /obj/structure/barricade/sandbags,
@@ -6108,14 +6108,14 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "Ea" = (
 /obj/machinery/door/unpowered/fence{
 	req_access_txt = "123";
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Eg" = (
 /obj/machinery/light/small/broken{
@@ -6137,7 +6137,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Em" = (
 /obj/structure/table,
@@ -6290,7 +6290,7 @@
 	dir = 1;
 	pixel_y = 3
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "FK" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -6321,7 +6321,7 @@
 	pixel_x = -16;
 	density = 0
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "FT" = (
 /obj/structure/barricade/tentleatheredge{
@@ -6446,7 +6446,7 @@
 	id = "emergency_away";
 	name = "CentCom Emergency Shuttle Dock"
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "GZ" = (
 /obj/machinery/light,
@@ -6483,7 +6483,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Hq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6522,7 +6522,7 @@
 /obj/structure/nest/mob/raider/sulphiteranged{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "HJ" = (
 /obj/structure/table/reinforced,
@@ -6561,11 +6561,11 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/three)
 "HX" = (
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Ib" = (
 /obj/structure/simple_door/tentflap_leather,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Id" = (
 /obj/machinery/computer/security/telescreen,
@@ -6593,7 +6593,7 @@
 /obj/structure/nest/mob/raider{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Io" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7408,13 +7408,13 @@
 /obj/structure/nest/mob/raider/baseball{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Ms" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Mz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7436,7 +7436,7 @@
 	dir = 4;
 	layer = 2.91
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "MH" = (
 /obj/structure/ladder/unbreakable/binary/unlinked,
@@ -7469,7 +7469,7 @@
 	dir = 4;
 	pixel_x = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Nu" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -7507,7 +7507,7 @@
 	dir = 4;
 	pixel_x = 2
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "NT" = (
 /obj/structure/barricade/sandbags,
@@ -7535,7 +7535,7 @@
 /obj/structure/barricade/tentleathercorner{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Oa" = (
 /obj/effect/turf_decal{
@@ -7566,7 +7566,7 @@
 	icon_state = "junker_boss";
 	mob_types = list(/mob/living/simple_animal/hostile/raider/junker/boss=5)
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Ox" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
@@ -7608,7 +7608,7 @@
 	icon_state = "beartrap1";
 	armed = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Pj" = (
 /obj/structure/barricade/tentleatheredge,
@@ -7638,7 +7638,7 @@
 /obj/structure/nest/mob/raider{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "PN" = (
 /obj/structure/nest/mob/raider/biker{
@@ -7650,7 +7650,7 @@
 /obj/structure/chair/wood/normal{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Qa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7661,13 +7661,13 @@
 /obj/structure/fluff/rails{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Qh" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Qm" = (
 /obj/singularity/wizard/mapped,
@@ -7707,7 +7707,7 @@
 /area/centcom/evac)
 "Qy" = (
 /obj/item/stack/sheet/mineral/wood/five,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Qz" = (
 /turf/open/indestructible/ground/inside/mountain,
@@ -7742,7 +7742,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "QQ" = (
 /obj/structure/bed/mattress{
@@ -7761,7 +7761,7 @@
 /obj/structure/nest/mob/raider/baseball{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "QX" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -7789,7 +7789,7 @@
 /area/centcom/supplypod/loading/one)
 "Rc" = (
 /obj/structure/closet/crate/trashcart,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "Rd" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -7871,7 +7871,7 @@
 /obj/structure/nest/mob/raider/biker{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Sb" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -8090,13 +8090,13 @@
 	dir = 8;
 	pixel_y = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Td" = (
 /obj/structure/nest/mob/raider/ranged{
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Te" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -8143,7 +8143,7 @@
 /obj/structure/nest/mob/brahmin{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "TF" = (
 /obj/structure/barricade/tentleatheredge{
@@ -8154,7 +8154,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "TI" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
@@ -8188,7 +8188,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/building)
 "Us" = (
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "Ut" = (
 /turf/closed/indestructible/fakedoor{
@@ -8232,7 +8232,7 @@
 	icon_state = "rails-l";
 	plane = -15
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Vx" = (
 /obj/effect/turf_decal,
@@ -8265,7 +8265,7 @@
 	dir = 1;
 	pixel_x = 6
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "VK" = (
 /obj/effect/turf_decal/vg_decals/numbers/four,
@@ -8328,7 +8328,7 @@
 /obj/structure/simple_door/tentflap_leather{
 	pixel_y = -4
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "Wd" = (
 /obj/structure/nest/mob/raider/sulphiteranged{
@@ -8395,7 +8395,7 @@
 /obj/structure/nest/mob/raider/tribal{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "WF" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8467,7 +8467,7 @@
 /obj/structure/nest/mob/raider/sulphiteranged{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Xz" = (
 /obj/machinery/light/small,
@@ -8493,11 +8493,11 @@
 	pixel_y = 4;
 	pixel_x = 5
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Yg" = (
 /obj/structure/table/wood,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Yk" = (
 /obj/structure/barricade/tentleathercorner{
@@ -8514,7 +8514,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Yv" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -8578,7 +8578,7 @@
 /area/centcom/supplypod/loading/one)
 "YQ" = (
 /obj/structure/campfire,
-/turf/open/indestructible/ground/outside/lifelessdesert,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "YY" = (
 /obj/effect/decal/cleanable/dirt,

@@ -1767,11 +1767,15 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Brotherhood of Steel Foyer"
 
 /area/shuttle/ghoul_elevator
-	name = "Ghoul Subway"
+	name = "Ghoul Elevator"
 	ambientsounds = WASTELAND_AMBIENCE
 
 /area/shuttle/raider_elevator
-	name = "Raider Subway"
+	name = "Raider Elevator"
+	ambientsounds = WASTELAND_AMBIENCE
+
+/area/shuttle/cargo_reno
+	name = "Cargo Reno"
 	ambientsounds = WASTELAND_AMBIENCE
 
 /area/f13/underground/cave/vault

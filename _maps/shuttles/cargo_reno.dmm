@@ -34,8 +34,10 @@
 /obj/structure/railing{
 	layer = 4.25
 	},
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk"
+	},
 /area/shuttle/supply)
 "gu" = (
 /obj/structure/chair/comfy/black{
@@ -45,19 +47,16 @@
 	dir = 10
 	},
 /area/shuttle/supply)
-"gw" = (
-/obj/structure/railing{
-	layer = 4.25
-	},
-/turf/template_noop,
-/area/template_noop)
 "mw" = (
-/obj/structure/lattice/catwalk,
 /obj/machinery/conveyor{
 	dir = 4;
 	id = "wrightstuff"
 	},
-/turf/open/floor/plating/tunnel/rail/north,
+/turf/open/floor/plating/tunnel/rail/north{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_subway_rail";
+	dir = 4
+	},
 /area/shuttle/supply)
 "mE" = (
 /obj/structure/chair/comfy/black,
@@ -75,8 +74,14 @@
 	},
 /area/shuttle/supply)
 "nb" = (
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/tunnel,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk";
+	dir = 1
+	},
 /area/shuttle/supply)
 "oy" = (
 /obj/structure/window/fulltile/ruins,
@@ -382,7 +387,7 @@ TC
 cu
 "}
 (9,1,1) = {"
-gw
+aS
 nb
 mw
 fU

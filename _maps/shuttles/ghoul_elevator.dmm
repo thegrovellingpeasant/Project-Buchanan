@@ -126,8 +126,10 @@
 /obj/structure/railing{
 	layer = 4.25
 	},
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/tunnel,
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk"
+	},
 /area/shuttle/ghoul_elevator)
 "pH" = (
 /obj/structure/chair/f13foldupchair,
@@ -415,12 +417,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side,
 /area/shuttle/ghoul_elevator)
-"Oe" = (
-/obj/structure/railing{
-	layer = 4.25
-	},
-/turf/template_noop,
-/area/template_noop)
 "PF" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "splatter2"
@@ -449,8 +445,14 @@
 	},
 /area/shuttle/ghoul_elevator)
 "QW" = (
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/tunnel,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk";
+	dir = 1
+	},
 /area/shuttle/ghoul_elevator)
 "Rh" = (
 /obj/structure/nest/mob/ghoulreaver,
@@ -529,8 +531,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side,
 /area/shuttle/ghoul_elevator)
 "WF" = (
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/tunnel/rail/north,
+/turf/open/floor/plating/tunnel/rail/north{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_subway_rail";
+	dir = 4
+	},
 /area/shuttle/ghoul_elevator)
 "WP" = (
 /obj/item/trash/can,
@@ -654,7 +659,7 @@ yD
 gk
 "}
 (12,1,1) = {"
-Oe
+zW
 QW
 WF
 nH
@@ -738,7 +743,7 @@ yD
 xW
 "}
 (24,1,1) = {"
-Oe
+zW
 QW
 WF
 nH
@@ -822,7 +827,7 @@ yD
 Tk
 "}
 (36,1,1) = {"
-Oe
+zW
 QW
 WF
 nH
