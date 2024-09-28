@@ -296,7 +296,8 @@
 	wound_falloff_tile = -3.5
 	hitscan = TRUE
 
-/obj/item/projectile/beam/laser/pistol/wattz
+/obj/item/projectile/beam/laser/wattz2k
+	name = "laser bolt"
 	damage = 20
 	wound_bonus = 15
 	wound_falloff_tile = -3.5
@@ -412,11 +413,14 @@
 	wound_falloff_tile = -5
 	hitscan = TRUE
 
-/obj/item/projectile/beam/laser/rifle/aer12
+/obj/item/projectile/beam/laser/rifle/aer12 
 	name = "laser beam"
 	damage = 35
 	wound_bonus = 30
 	wound_falloff_tile = -5
+	icon_state = "xray"
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
+	light_color = LIGHT_COLOR_GREEN
 
 /obj/item/projectile/beam/laser/rifle/aer12/hitscan
 	name = "laser beam"
