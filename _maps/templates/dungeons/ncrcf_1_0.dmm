@@ -1,0 +1,1784 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ak" = (
+/obj/structure/sign/poster/prewar/protectron{
+	pixel_y = 32
+	},
+/obj/structure/nest/mob/protectron,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"av" = (
+/obj/structure/sign/poster/contraband/hacking_guide{
+	pixel_x = -32
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"bj" = (
+/obj/structure/table/reinforced,
+/obj/item/kirbyplants/random{
+	pixel_y = 8;
+	name = "fake plant"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"bx" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/wood,
+/area/f13/caves)
+"co" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"eH" = (
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/item/stock_parts/cell/ammo/ec,
+/obj/item/stock_parts/cell/ammo/mfc,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"eM" = (
+/obj/structure/nest/mob/robobrain{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"fA" = (
+/obj/structure/fence/pole_b,
+/obj/structure/nest/mob/protectron{
+	dir = 4;
+	pixel_y = 6;
+	pixel_x = -10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"gz" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"hi" = (
+/obj/machinery/computer/terminal{
+	icon_state = "computer_R";
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"hn" = (
+/obj/structure/decoration/vent{
+	icon_state = "drain";
+	icon = 'icons/obj/machines/pool.dmi';
+	name = "drain";
+	pixel_x = -25
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"hG" = (
+/obj/structure/lamp_post/floodlight,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"ib" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ip" = (
+/obj/effect/overlay/curb/north,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"iA" = (
+/obj/effect/overlay/curb/north,
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"jf" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"jg" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 24;
+	icon = 'icons/obj/machines/mining_machines.dmi';
+	icon_state = "console";
+	name = "terminal";
+	density = 0
+	},
+/obj/structure/bed/abductor,
+/obj/structure/nest/mob/robobrain{
+	pixel_x = -4;
+	pixel_y = 2;
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 4
+	},
+/area/f13/caves)
+"kC" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mV" = (
+/obj/structure/chair/stool,
+/turf/open/floor/wood,
+/area/f13/caves)
+"nk" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"ox" = (
+/obj/machinery/computer/terminal{
+	icon_state = "computer_L";
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"oF" = (
+/obj/effect/decal/remains/human,
+/obj/item/ammo_box/a308{
+	pixel_y = -8
+	},
+/obj/item/clothing/under/f13/ncrcf{
+	pixel_x = -9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pj" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/turf/open/floor/wood,
+/area/f13/caves)
+"qd" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"qf" = (
+/obj/structure/table/wood/junk,
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 10
+	},
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"ro" = (
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
+"rw" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_low{
+	pixel_y = 6;
+	pixel_x = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"sF" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("hostile","supermutant");
+	name = "defense system"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"sT" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/wood,
+/area/f13/caves)
+"sX" = (
+/obj/effect/decal/remains/bottles,
+/turf/open/floor/wood,
+/area/f13/caves)
+"tQ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uE" = (
+/obj/effect/decal/remains/bottles{
+	icon_state = "bottles3"
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"uP" = (
+/obj/structure/closet/crate/large,
+/obj/item/stack/sheet/metal/twenty,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vs" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"vB" = (
+/obj/structure/fluff/rails,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vV" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_low{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"wi" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wm" = (
+/obj/structure/bed/mattress,
+/obj/item/storage/fancy/cigarettes/cigpack_bigboss,
+/turf/open/floor/wood,
+/area/f13/caves)
+"wn" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xd" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"yf" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_y = 6;
+	pixel_x = -1
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"yo" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"yG" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"zH" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/wood,
+/area/f13/caves)
+"AA" = (
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"AN" = (
+/turf/open/floor/wood,
+/area/f13/caves)
+"Be" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/beer{
+	name = "Wright beer";
+	desc = "A cheap, popular beer in a reused bottle. It has the Wright logo on it.";
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"BD" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Dd" = (
+/obj/structure/nest/mob/robobrain{
+	pixel_x = -4;
+	pixel_y = 2;
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery/white,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"Dv" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"DA" = (
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"DK" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/wood,
+/area/f13/caves)
+"Ew" = (
+/obj/machinery/door/airlock/vault,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"Ez" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"EB" = (
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"Ft" = (
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/caves)
+"Gl" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"GZ" = (
+/obj/structure/sign/poster/prewar/protectron{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"HB" = (
+/obj/structure/floodlight_frame,
+/turf/open/floor/wood,
+/area/f13/caves)
+"HI" = (
+/obj/structure/sign/reno/barsign/xxx{
+	pixel_x = -28
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"Ik" = (
+/obj/effect/overlay/curb/north,
+/obj/machinery/mech_bay_recharge_port,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"JQ" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -2;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Lb" = (
+/obj/structure/nest/mob/robobrain{
+	pixel_x = -4;
+	pixel_y = 2;
+	dir = 8
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"Lg" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Lo" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -2;
+	plane = -15
+	},
+/obj/item/pickaxe,
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"LN" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 24;
+	icon = 'icons/obj/machines/mining_machines.dmi';
+	icon_state = "console";
+	name = "terminal";
+	density = 0
+	},
+/obj/structure/bed/abductor,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 4
+	},
+/area/f13/caves)
+"Mk" = (
+/obj/effect/turf_decal/delivery/white,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"MW" = (
+/obj/machinery/computer/terminal{
+	icon_state = "lunar";
+	icon_keyboard = null;
+	icon_screen = null
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"OI" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"OQ" = (
+/obj/structure/chair/sofa/right{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"Pm" = (
+/obj/structure/closet/crate/hydroponics{
+	name = "military crate";
+	desc = "An olive green crate.";
+	pixel_y = 5
+	},
+/obj/item/ammo_box/a308,
+/obj/item/ammo_box/a308,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"PC" = (
+/obj/effect/overlay/curb/east{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"Qi" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QJ" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"QV" = (
+/turf/closed/wall/r_wall,
+/area/f13/caves)
+"Ry" = (
+/obj/structure/nest/mob/robobrain{
+	pixel_x = -4;
+	pixel_y = 2;
+	dir = 4
+	},
+/obj/structure/sign/poster/prewar/protectron{
+	pixel_y = 32
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"RE" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/open/floor/wood,
+/area/f13/caves)
+"Sy" = (
+/turf/closed/wall/f13/wood,
+/area/f13/caves)
+"ST" = (
+/obj/structure/nest/mob/robobrain{
+	pixel_x = -4;
+	pixel_y = 2;
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"Tt" = (
+/obj/machinery/computer/terminal{
+	dir = 8;
+	layer = 3.7;
+	pixel_y = 2
+	},
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"TA" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"TE" = (
+/obj/structure/simple_door/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"TQ" = (
+/obj/machinery/computer/terminal{
+	icon = 'icons/obj/machines/research.dmi';
+	icon_state = "tdoppler";
+	desc = null;
+	name = "tachyon-doppler research array"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"UY" = (
+/obj/structure/table/round,
+/obj/item/restraints/handcuffs/fake/kinky,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"Vk" = (
+/obj/structure/fluff/rails{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"VC" = (
+/obj/structure/railing/dancing_pole/top,
+/obj/effect/overlay/curb/north,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"We" = (
+/obj/structure/sign/poster/prewar/poster62{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"Wi" = (
+/obj/machinery/workbench,
+/turf/open/floor/wood,
+/area/f13/caves)
+"XN" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	pixel_y = 6;
+	pixel_x = -3
+	},
+/turf/open/floor/wood,
+/area/f13/caves)
+"Ym" = (
+/obj/effect/overlay/curb/north,
+/obj/machinery/recharge_station,
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
+"YE" = (
+/obj/structure/bed/dogbed,
+/turf/open/floor/wood,
+/area/f13/caves)
+"ZL" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 4
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(2,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+Sy
+xd
+vB
+BD
+TA
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(3,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+Sy
+xd
+vB
+BD
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(4,1,1) = {"
+xd
+ro
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+vB
+DA
+Sy
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+"}
+(5,1,1) = {"
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+xd
+xd
+TA
+BD
+vB
+wn
+Sy
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+"}
+(6,1,1) = {"
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+BD
+JQ
+BD
+Sy
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+"}
+(7,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+BD
+JQ
+BD
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(8,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+Sy
+Sy
+Sy
+xd
+xd
+xd
+Sy
+xd
+xd
+xd
+BD
+BD
+TA
+xd
+Sy
+Sy
+TA
+xd
+xd
+xd
+TA
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(9,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+wi
+DA
+xd
+xd
+Sy
+xd
+xd
+xd
+BD
+BD
+xd
+Vk
+Vk
+Vk
+xd
+xd
+xd
+BD
+BD
+Sy
+xd
+xd
+xd
+xd
+xd
+"}
+(10,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+Sy
+DK
+sT
+BD
+DK
+xd
+xd
+xd
+xd
+xd
+DA
+BD
+xd
+xd
+BD
+Gl
+xd
+xd
+BD
+BD
+wn
+Sy
+xd
+xd
+xd
+xd
+xd
+"}
+(11,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+Sy
+QJ
+AN
+xd
+zH
+AN
+xd
+TA
+xd
+xd
+BD
+BD
+xd
+xd
+xd
+Sy
+xd
+xd
+BD
+vB
+BD
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(12,1,1) = {"
+xd
+xd
+ro
+ro
+ro
+Sy
+Wi
+AN
+xd
+xd
+AN
+xd
+TE
+AN
+mV
+uE
+AN
+HB
+xd
+xd
+xd
+xd
+xd
+xd
+vB
+BD
+xd
+ro
+ro
+xd
+xd
+xd
+"}
+(13,1,1) = {"
+xd
+xd
+ro
+ro
+ro
+xd
+qf
+AN
+AN
+AN
+AN
+xd
+Sy
+We
+XN
+yf
+sX
+AN
+AN
+bx
+xd
+xd
+Sy
+ib
+vB
+BD
+TA
+ro
+ro
+xd
+xd
+xd
+"}
+(14,1,1) = {"
+xd
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+YE
+wm
+sT
+xd
+Sy
+mV
+Be
+pj
+AN
+AN
+AN
+Sy
+xd
+xd
+TA
+BD
+vB
+BD
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(15,1,1) = {"
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+Sy
+Sy
+Sy
+xd
+xd
+xd
+AN
+OQ
+co
+Ez
+AN
+RE
+Sy
+xd
+xd
+Sy
+BD
+Lg
+Gl
+BD
+ro
+ro
+xd
+xd
+xd
+"}
+(16,1,1) = {"
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+TA
+BD
+Sy
+Sy
+Sy
+Sy
+xd
+xd
+xd
+Pm
+Lg
+BD
+BD
+ro
+ro
+xd
+xd
+xd
+"}
+(17,1,1) = {"
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+TA
+uP
+vB
+BD
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(18,1,1) = {"
+xd
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+vB
+BD
+ro
+xd
+ro
+xd
+xd
+xd
+"}
+(19,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+oF
+vB
+BD
+TA
+xd
+xd
+xd
+xd
+xd
+"}
+(20,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+xd
+xd
+xd
+ro
+ro
+xd
+xd
+xd
+BD
+Qi
+vB
+BD
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(21,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+QV
+Ry
+Dv
+eH
+QV
+ak
+Dv
+UY
+QV
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+BD
+BD
+vB
+BD
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(22,1,1) = {"
+xd
+ro
+xd
+xd
+xd
+QV
+jg
+ZL
+ZL
+QV
+LN
+ZL
+ZL
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+xd
+xd
+xd
+kC
+Lo
+BD
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(23,1,1) = {"
+xd
+xd
+ro
+xd
+xd
+QV
+QV
+QV
+jf
+QV
+QV
+QV
+jf
+QV
+GZ
+hn
+gz
+Ym
+av
+QV
+ro
+ro
+ro
+BD
+BD
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(24,1,1) = {"
+xd
+ro
+ro
+xd
+xd
+QV
+bj
+nk
+EB
+Mk
+HI
+Dd
+EB
+vs
+VC
+fA
+yG
+Ik
+EB
+QV
+ro
+ro
+ro
+BD
+BD
+tQ
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(25,1,1) = {"
+xd
+ro
+ro
+xd
+xd
+QV
+yo
+nk
+EB
+vs
+qd
+nk
+EB
+vs
+iA
+vV
+rw
+ip
+EB
+QV
+ro
+ro
+ro
+BD
+BD
+BD
+BD
+ro
+ro
+xd
+xd
+xd
+"}
+(26,1,1) = {"
+xd
+ro
+ro
+xd
+xd
+QV
+QV
+Dv
+EB
+Dv
+Dv
+Dv
+EB
+Dv
+PC
+PC
+PC
+Dv
+EB
+QV
+QV
+QV
+QV
+OI
+OI
+OI
+BD
+ro
+ro
+xd
+xd
+xd
+"}
+(27,1,1) = {"
+xd
+ro
+ro
+ro
+xd
+QV
+TQ
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+EB
+QV
+Ft
+Ft
+QV
+gz
+sF
+OI
+ro
+ro
+ro
+xd
+xd
+xd
+"}
+(28,1,1) = {"
+xd
+ro
+ro
+ro
+xd
+QV
+ox
+ST
+qd
+eM
+qd
+qd
+qd
+qd
+Lb
+AA
+Lb
+qd
+EB
+Ew
+Ft
+Ft
+Ew
+gz
+gz
+gz
+ro
+ro
+xd
+xd
+xd
+xd
+"}
+(29,1,1) = {"
+xd
+ro
+ro
+xd
+xd
+QV
+hi
+vs
+MW
+Tt
+Tt
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+hG
+gz
+gz
+ro
+xd
+xd
+xd
+xd
+xd
+"}
+(30,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+xd
+xd
+xd
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(31,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(32,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+ro
+ro
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(33,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+ro
+ro
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}
+(34,1,1) = {"
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+xd
+"}

@@ -1,0 +1,685 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"b" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"c" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	dir = 8;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"d" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"e" = (
+/obj/item/melee/onehanded/slavewhip,
+/obj/structure/closet/crate/leftfootlocker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"f" = (
+/obj/item/salvage/high,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"h" = (
+/obj/structure/nest/mob/scorpion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"i" = (
+/obj/structure/nest/mob/scorpionblue{
+	dir = 8
+	},
+/obj/structure/fluff/rails{
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"j" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/caves)
+"k" = (
+/obj/structure/fluff/rails{
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"l" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/trash/f13/electronic/toaster{
+	pixel_y = 8;
+	layer = 4.25
+	},
+/obj/item/ammo_box/a308,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/fluff/rails{
+	plane = -15
+	},
+/obj/structure/closet/crate/miningcar{
+	name = "Minecart";
+	desc = "A minecart";
+	layer = 2.91
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"n" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress4";
+	pixel_y = -2
+	},
+/obj/item/flashlight/lantern,
+/obj/item/clothing/suit/curator,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"p" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/turf/open/indestructible/ground/outside/graveldirt,
+/area/f13/caves)
+"r" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"s" = (
+/obj/structure/junk/small/tv{
+	icon = 'icons/fallout/objects/decorations.dmi';
+	icon_state = "television";
+	density = 1
+	},
+/obj/structure/table/wood/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"t" = (
+/turf/open/water,
+/area/f13/caves)
+"u" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/fedora/curator{
+	pixel_y = 7
+	},
+/obj/item/clothing/under/rank/curator/treasure_hunter{
+	pixel_x = 10;
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"v" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water,
+/area/f13/caves)
+"w" = (
+/obj/structure/car/rubbish6{
+	name = "rusted junk";
+	icon_state = "junk_micro";
+	icon = 'icons/fallout/objects/furniture/junk.dmi';
+	desc = null
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"z" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -2;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"A" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"B" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"C" = (
+/obj/structure/fluff/rails,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter6"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"E" = (
+/obj/structure/barricade/wooden{
+	opacity = 1
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"F" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"G" = (
+/obj/structure/nest/mob/scorpionblue{
+	dir = 8
+	},
+/obj/structure/fluff/rails,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"H" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/overlay/gravel/edge{
+	dir = 4;
+	name = "slope"
+	},
+/turf/open/water,
+/area/f13/caves)
+"I" = (
+/obj/item/clothing/shoes/f13/explorer,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"J" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"K" = (
+/obj/effect/decal/remains/nest{
+	icon = 'icons/mob/nest_new.dmi';
+	icon_state = "hole";
+	name = "small tunnel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/nest/mob/scorpionblue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"O" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"P" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Q" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/water,
+/area/f13/caves)
+"R" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"S" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water,
+/area/f13/caves)
+"T" = (
+/obj/structure/nest/mob/scorpion{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"U" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b1";
+	pixel_y = -3;
+	pixel_x = -12;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/obj/structure/nest/mob/scorpionblack{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Y" = (
+/obj/structure/nest/mob/scorpionblack{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Z" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+B
+B
+y
+y
+y
+B
+B
+B
+B
+B
+B
+B
+B
+"}
+(2,1,1) = {"
+B
+B
+B
+B
+B
+B
+B
+B
+B
+a
+B
+B
+B
+"}
+(3,1,1) = {"
+B
+b
+a
+B
+B
+B
+E
+B
+X
+K
+a
+B
+B
+"}
+(4,1,1) = {"
+W
+a
+a
+a
+B
+B
+s
+a
+Z
+a
+O
+B
+B
+"}
+(5,1,1) = {"
+B
+B
+a
+J
+B
+E
+w
+p
+U
+O
+O
+O
+B
+"}
+(6,1,1) = {"
+B
+B
+h
+a
+a
+B
+a
+a
+k
+J
+O
+O
+B
+"}
+(7,1,1) = {"
+B
+B
+B
+a
+a
+a
+a
+B
+m
+a
+E
+O
+B
+"}
+(8,1,1) = {"
+B
+B
+B
+B
+B
+Y
+J
+a
+k
+a
+B
+B
+B
+"}
+(9,1,1) = {"
+B
+B
+B
+O
+O
+E
+l
+a
+z
+F
+B
+B
+B
+"}
+(10,1,1) = {"
+B
+B
+O
+O
+O
+O
+O
+P
+c
+a
+f
+B
+B
+"}
+(11,1,1) = {"
+B
+B
+O
+O
+e
+r
+d
+R
+B
+a
+n
+B
+B
+"}
+(12,1,1) = {"
+B
+B
+B
+O
+u
+I
+O
+b
+C
+D
+E
+O
+B
+"}
+(13,1,1) = {"
+B
+B
+j
+O
+O
+V
+O
+a
+G
+O
+O
+O
+O
+"}
+(14,1,1) = {"
+B
+B
+q
+q
+O
+O
+O
+K
+Z
+O
+O
+O
+O
+"}
+(15,1,1) = {"
+B
+B
+q
+j
+q
+O
+O
+O
+O
+O
+a
+O
+B
+"}
+(16,1,1) = {"
+B
+B
+H
+a
+B
+O
+O
+O
+O
+K
+a
+B
+B
+"}
+(17,1,1) = {"
+B
+t
+S
+a
+Q
+B
+O
+O
+E
+Z
+a
+B
+B
+"}
+(18,1,1) = {"
+B
+B
+a
+L
+Q
+B
+O
+B
+B
+i
+J
+B
+B
+"}
+(19,1,1) = {"
+B
+B
+a
+v
+t
+B
+B
+B
+a
+z
+B
+B
+B
+"}
+(20,1,1) = {"
+A
+J
+a
+a
+B
+B
+y
+B
+b
+a
+a
+B
+B
+"}
+(21,1,1) = {"
+A
+A
+a
+a
+B
+B
+y
+B
+B
+B
+a
+E
+B
+"}
+(22,1,1) = {"
+A
+A
+a
+a
+J
+B
+B
+B
+B
+B
+a
+B
+B
+"}
+(23,1,1) = {"
+A
+A
+A
+a
+T
+a
+a
+B
+a
+a
+a
+B
+B
+"}
+(24,1,1) = {"
+A
+A
+A
+B
+a
+B
+a
+a
+X
+a
+B
+B
+B
+"}
+(25,1,1) = {"
+A
+A
+A
+B
+B
+a
+a
+a
+a
+B
+B
+B
+B
+"}
+(26,1,1) = {"
+A
+A
+A
+B
+B
+a
+B
+B
+B
+B
+B
+B
+B
+"}

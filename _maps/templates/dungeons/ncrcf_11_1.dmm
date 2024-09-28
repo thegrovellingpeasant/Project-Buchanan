@@ -1,0 +1,1532 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aN" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"bm" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -13;
+	layer = 4.1;
+	plane = -4
+	},
+/obj/effect/decal/remains/human{
+	plane = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"bv" = (
+/obj/structure/closet/crate/wicker{
+	opened = 1
+	},
+/obj/item/clothing/under/f13/female/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bQ" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"bX" = (
+/obj/structure/stone_tile/block{
+	dir = 8;
+	layer = 2
+	},
+/obj/structure/stone_tile/block{
+	dir = 4;
+	plane = -14
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cB" = (
+/obj/structure/nest/mob/fireant{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"dC" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/cleanable/ash/large{
+	pixel_y = 17
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"ec" = (
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/obj/structure/stone_tile/block{
+	dir = 8;
+	layer = 2;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"es" = (
+/obj/structure/stone_tile/block,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"eu" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -2;
+	pixel_x = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"ew" = (
+/obj/structure/stone_tile/block,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 15;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eF" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eK" = (
+/obj/structure/stone_tile/slab,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"eQ" = (
+/obj/structure/statue/bone/megalith{
+	dir = 8;
+	desc = null;
+	pixel_x = 9
+	},
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"gH" = (
+/obj/structure/closet/crate/large,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gW" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"il" = (
+/obj/structure/stone_tile/slab,
+/obj/structure/nest/mob/raider/tribal,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"iK" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"jh" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/cleanable/ash/large{
+	pixel_y = 17
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"jE" = (
+/obj/structure/nest/mob/fireant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"ko" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/trap/fire/vent,
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"lm" = (
+/obj/structure/stone_tile/block{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"lX" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -13;
+	pixel_x = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"mK" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/remains/human{
+	pixel_y = -13;
+	layer = 4.1;
+	plane = -4
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"nt" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	color = "#4a3931"
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia{
+	pixel_y = -16;
+	layer = 2.99;
+	pixel_x = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"nK" = (
+/obj/structure/stone_tile/cracked,
+/obj/structure/stone_tile/center{
+	layer = 2.05
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 1
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 4
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oJ" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	color = "#4a3931";
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier1{
+	loot = list(/obj/item/clothing/suit/armor/f13/tribe_heavy_armor,/obj/item/clothing/suit/armored/heavy/wardenplate,/obj/item/clothing/suit/f13/tribal/heavy/bone,/obj/item/clothing/suit/f13/tribal/heavy/westernwayfarer);
+	name = "tribal armor";
+	pixel_x = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"oQ" = (
+/obj/structure/nest/mob/raider/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oY" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"rA" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"rN" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"tV" = (
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"tX" = (
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"um" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/cleanable/ash/large{
+	pixel_y = 17
+	},
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -13;
+	pixel_x = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"vI" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"wh" = (
+/obj/structure/stone_tile/block,
+/obj/effect/decal/remains/skulls{
+	pixel_y = 32
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"wG" = (
+/obj/structure/trap/fire/vent,
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"wK" = (
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"wZ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/cleanable/ash/large{
+	pixel_y = 17;
+	pixel_x = -6
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"xw" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"yC" = (
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"za" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	color = "#4a3931";
+	dir = 4
+	},
+/obj/item/storage/belt/mining/primitive,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"zv" = (
+/obj/structure/nest/mob/raider/tribal{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zG" = (
+/obj/structure/stone_tile/surrounding,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"An" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/decoration/vent{
+	plane = -14;
+	icon_state = "ventrusty"
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"AA" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"AK" = (
+/obj/item/candle/tribal_torch,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"Ce" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	color = "#4a3931"
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = 9;
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"CG" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CV" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"EJ" = (
+/obj/structure/nest/mob/raider/tribal{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fi" = (
+/obj/effect/spawner/lootdrop/ammo/tribaldungeon,
+/obj/structure/stone_tile/slab/cracked,
+/obj/effect/decal/cleanable/ash/large{
+	plane = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"FG" = (
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"GS" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"Jf" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Ka" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = 2;
+	pixel_x = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"Ks" = (
+/obj/structure/stone_tile/slab,
+/obj/item/salvage/high{
+	icon_state = "robobrain_d";
+	icon = 'icons/fallout/mobs/robots/wasterobots.dmi';
+	desc = null;
+	name = "destroyed robobrain"
+	},
+/obj/item/clothing/head/crown{
+	pixel_y = 13
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"LY" = (
+/obj/structure/stone_tile/block{
+	dir = 8
+	},
+/obj/structure/statue/bone/megalith{
+	dir = 4;
+	pixel_x = -9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"Ms" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ML" = (
+/obj/structure/stone_tile/block{
+	dir = 8;
+	layer = 2;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"MR" = (
+/obj/structure/closet/crate/wicker{
+	opened = 1
+	},
+/obj/item/clothing/under/f13/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Nf" = (
+/obj/structure/trap/fire/vent,
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -13;
+	pixel_x = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"NR" = (
+/obj/structure/stone_tile/block{
+	dir = 8;
+	layer = 2;
+	pixel_x = 1
+	},
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"On" = (
+/obj/structure/nest/mob/fireant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Pp" = (
+/obj/item/candle/tribal_torch,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"PT" = (
+/obj/structure/nest/mob/fireant{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"QR" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"Sn" = (
+/obj/structure/necropolis_gate,
+/obj/structure/stone_tile/slab{
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Uf" = (
+/obj/structure/statue/bone/megalith{
+	dir = 4;
+	pixel_x = -9
+	},
+/obj/structure/stone_tile/block{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"Ww" = (
+/obj/structure/stone_tile/slab,
+/obj/effect/overlay/curb/west{
+	plane = -4;
+	layer = 2.09;
+	color = "#4a3931"
+	},
+/obj/item/reagent_containers/pill/patch/bitterdrink{
+	pixel_y = -13;
+	pixel_x = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"WH" = (
+/obj/structure/stone_tile/cracked,
+/obj/structure/stone_tile/center{
+	layer = 2.05
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 1
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 4
+	},
+/obj/structure/stone_tile/burnt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/katana/cursed,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XH" = (
+/obj/structure/stone_tile/block{
+	dir = 4
+	},
+/obj/structure/statue/bone/megalith{
+	dir = 8;
+	desc = null;
+	pixel_x = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"YJ" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"Zt" = (
+/obj/structure/decoration/vent{
+	plane = -14;
+	icon_state = "ventrusty"
+	},
+/turf/open/floor/f13{
+	icon_state = "plating"
+	},
+/area/f13/caves)
+"ZG" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 1
+	},
+/obj/item/warpaint_bowl,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZK" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"ZW" = (
+/obj/structure/barricade/wooden{
+	opacity = 1
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+rN
+rN
+PT
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+ZK
+iK
+iK
+iK
+iK
+bQ
+iK
+"}
+(2,1,1) = {"
+iK
+iK
+iK
+iK
+iK
+ZK
+ZK
+ZK
+ZK
+ZK
+iK
+iK
+iK
+vI
+vI
+aN
+vI
+vI
+vI
+vI
+Jf
+Jf
+iK
+iK
+ZK
+ZK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+bQ
+iK
+"}
+(3,1,1) = {"
+iK
+iK
+iK
+iK
+iK
+ZK
+iK
+ZK
+ZK
+iK
+iK
+iK
+iK
+iK
+vI
+vI
+vI
+vI
+vI
+vI
+rN
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+ZK
+iK
+bQ
+bQ
+bQ
+"}
+(4,1,1) = {"
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+ZK
+ZK
+iK
+iK
+iK
+iK
+vI
+jE
+vI
+vI
+aN
+rN
+Jf
+Jf
+ZK
+ZK
+iK
+ZK
+ZK
+iK
+iK
+iK
+ZK
+bQ
+bQ
+iK
+ZK
+"}
+(5,1,1) = {"
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+Jf
+Jf
+rN
+rN
+rN
+Jf
+rN
+Jf
+Jf
+iK
+iK
+iK
+iK
+ZK
+ZK
+ZK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+"}
+(6,1,1) = {"
+xw
+xw
+xw
+xw
+xw
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+"}
+(7,1,1) = {"
+xw
+Ww
+nt
+Ce
+xw
+xw
+xw
+xw
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+"}
+(8,1,1) = {"
+xw
+gW
+gW
+gW
+gW
+nK
+NR
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+iK
+MR
+eF
+iK
+iK
+iK
+rN
+eF
+"}
+(9,1,1) = {"
+xw
+QR
+AK
+Pp
+AK
+gW
+NR
+gW
+xw
+xw
+xw
+eK
+eK
+tV
+wG
+um
+wG
+xw
+XH
+xw
+tV
+XH
+xw
+tV
+eQ
+nK
+xw
+iK
+CG
+eF
+zv
+iK
+iK
+eF
+eF
+"}
+(10,1,1) = {"
+xw
+AK
+oY
+eK
+eK
+AK
+NR
+gW
+xw
+xw
+es
+eK
+eK
+gW
+eu
+Zt
+Zt
+Zt
+Zt
+wG
+dC
+wG
+wG
+dC
+wZ
+tX
+xw
+ew
+eF
+eF
+bX
+eF
+eF
+eF
+eF
+"}
+(11,1,1) = {"
+xw
+oY
+zG
+eK
+il
+ML
+NR
+NR
+NR
+xw
+wh
+eK
+eK
+GS
+wG
+Zt
+wG
+dC
+Zt
+wG
+wG
+Zt
+Zt
+Zt
+ko
+wK
+xw
+oQ
+eF
+eF
+bX
+eF
+eF
+Ms
+iK
+"}
+(12,1,1) = {"
+xw
+oY
+Ks
+Fi
+eK
+ec
+ec
+ec
+ec
+rA
+es
+eK
+eK
+bm
+wG
+Zt
+wG
+Zt
+Zt
+wG
+dC
+Zt
+wG
+Zt
+An
+gW
+Sn
+eF
+bX
+bX
+bX
+bX
+eF
+ZG
+iK
+"}
+(13,1,1) = {"
+xw
+eK
+zG
+eK
+il
+FG
+NR
+NR
+NR
+xw
+wh
+eK
+eK
+lX
+wG
+Zt
+wG
+Zt
+wG
+wG
+Zt
+Zt
+wG
+dC
+jh
+wK
+xw
+oQ
+eF
+eF
+bX
+eF
+eF
+iK
+iK
+"}
+(14,1,1) = {"
+xw
+AK
+eK
+eK
+eK
+Pp
+NR
+yC
+xw
+xw
+es
+eK
+eK
+gW
+Zt
+Zt
+Ka
+Zt
+Zt
+Zt
+Zt
+wG
+mK
+wG
+wZ
+tX
+xw
+ew
+eF
+eF
+bX
+EJ
+iK
+iK
+iK
+"}
+(15,1,1) = {"
+xw
+QR
+Pp
+Pp
+Pp
+QR
+NR
+gW
+xw
+xw
+xw
+eK
+eK
+lm
+wG
+Nf
+wG
+xw
+Uf
+xw
+lm
+LY
+xw
+lm
+LY
+nK
+xw
+iK
+iK
+bv
+CG
+iK
+iK
+Jf
+iK
+"}
+(16,1,1) = {"
+xw
+gW
+gW
+gW
+gW
+WH
+NR
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+iK
+rN
+eF
+iK
+iK
+Jf
+Jf
+Jf
+"}
+(17,1,1) = {"
+xw
+oJ
+za
+oJ
+xw
+xw
+xw
+xw
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+Jf
+Jf
+rN
+Jf
+"}
+(18,1,1) = {"
+xw
+xw
+xw
+xw
+xw
+Jf
+Jf
+Jf
+Jf
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+Jf
+Jf
+rN
+vI
+iK
+"}
+(19,1,1) = {"
+Jf
+Jf
+Jf
+Jf
+Jf
+Jf
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+iK
+iK
+iK
+iK
+iK
+aN
+vI
+iK
+iK
+iK
+iK
+Jf
+Jf
+rN
+vI
+aN
+iK
+"}
+(20,1,1) = {"
+ZK
+ZK
+ZK
+ZK
+iK
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+vI
+On
+vI
+vI
+vI
+ZK
+ZK
+iK
+Jf
+Jf
+aN
+vI
+vI
+vI
+aN
+iK
+Jf
+Jf
+Jf
+Jf
+vI
+cB
+vI
+iK
+"}
+(21,1,1) = {"
+ZK
+ZK
+ZK
+iK
+YJ
+YJ
+YJ
+eF
+ZW
+iK
+vI
+vI
+vI
+vI
+vI
+vI
+Jf
+Jf
+iK
+Jf
+rN
+vI
+On
+vI
+vI
+vI
+vI
+rN
+Jf
+Jf
+rN
+vI
+aN
+aN
+iK
+"}
+(22,1,1) = {"
+ZK
+ZK
+ZK
+iK
+YJ
+eF
+CV
+eF
+eF
+vI
+vI
+vI
+vI
+vI
+vI
+vI
+rN
+Jf
+Jf
+Jf
+rN
+vI
+vI
+vI
+jE
+vI
+vI
+rN
+Jf
+Jf
+rN
+vI
+vI
+iK
+iK
+"}
+(23,1,1) = {"
+ZK
+ZK
+ZK
+ZK
+YJ
+gH
+eF
+iK
+eF
+AA
+ZK
+ZK
+ZK
+vI
+vI
+vI
+rN
+Jf
+Jf
+Jf
+rN
+vI
+vI
+vI
+vI
+vI
+vI
+rN
+Jf
+Jf
+rN
+vI
+aN
+iK
+iK
+"}
+(24,1,1) = {"
+ZK
+ZK
+ZK
+iK
+YJ
+YJ
+YJ
+iK
+iK
+ZW
+ZK
+ZK
+ZK
+ZK
+jE
+vI
+rN
+Jf
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+Jf
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+"}
+(25,1,1) = {"
+ZK
+ZK
+ZK
+ZK
+ZK
+ZK
+iK
+iK
+ZK
+iK
+iK
+iK
+ZK
+ZK
+ZK
+ZK
+Jf
+Jf
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+iK
+"}

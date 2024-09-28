@@ -1,0 +1,3008 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/medical/ancientfirstaid{
+	pixel_y = 16
+	},
+/obj/item/storage/medical/ancientfirstaid{
+	pixel_y = -2;
+	pixel_x = -5
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"am" = (
+/obj/structure/bed/oldalt{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"ap" = (
+/obj/structure/nest/mob/ghoul{
+	dir = 4
+	},
+/obj/structure/chair/wood/worn{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"be" = (
+/obj/structure/mirelurkegg{
+	pixel_y = -4;
+	pixel_x = -18
+	},
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"bq" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"bs" = (
+/obj/effect/overlay/curb,
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 8;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 1
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.26;
+	pixel_y = 24
+	},
+/obj/structure/flora/grass/jungle{
+	layer = 2;
+	plane = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"bE" = (
+/obj/structure/table/wood/settler,
+/obj/item/clothing/under/f13/batter{
+	pixel_y = 4;
+	pixel_x = -6
+	},
+/obj/item/clothing/under/f13/batter{
+	pixel_y = -2;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"bF" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
+"bS" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"bZ" = (
+/obj/structure/chair/f13foldupchair{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+"cF" = (
+/obj/structure/sign/poster/prewar/poster75{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"cS" = (
+/obj/structure/mirelurkegg{
+	pixel_y = -10;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"dc" = (
+/obj/item/reagent_containers/hypospray/medipen/psycho{
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"di" = (
+/obj/structure/table/wood,
+/obj/item/toy/syndicateballoon,
+/obj/item/reagent_containers/food/snacks/store/cake/birthday{
+	pixel_y = -12
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ds" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"dx" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dz" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"dM" = (
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"dR" = (
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"er" = (
+/obj/effect/overlay/curb,
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"et" = (
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"eu" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north,
+/area/f13/caves)
+"eD" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "robco";
+	name = "treadmill"
+	},
+/obj/structure/railing,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"eV" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"fc" = (
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = 9
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"fH" = (
+/obj/effect/overlay/curb,
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 4.29
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	plane = -5;
+	pixel_x = -7
+	},
+/obj/structure/flora/rock/jungle{
+	pixel_x = 1
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"fS" = (
+/obj/machinery/washing_machine{
+	desc = "Dries wet clothing to hinder wrinkles.";
+	name = "laundry dryer"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"gi" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/rock/jungle{
+	pixel_x = 8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"gk" = (
+/obj/structure/table/wood/settler,
+/obj/item/clothing/under/f13/chaplain{
+	pixel_y = 4
+	},
+/obj/item/clothing/accessory/crossnecklace{
+	pixel_x = 7
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"go" = (
+/obj/item/twohanded/baseball/poolcue,
+/obj/structure/table/snooker{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"gy" = (
+/obj/structure/bed/oldalt{
+	pixel_y = 5;
+	pixel_x = 6
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"gz" = (
+/obj/item/twohanded/sledgehammer/simple,
+/obj/structure/table/wood,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"gX" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 8
+	},
+/area/f13/caves)
+"hd" = (
+/obj/structure/table/snooker{
+	dir = 1
+	},
+/obj/item/toy/beach_ball/holoball/dodgeball{
+	icon = 'icons/obj/clothing/hats.dmi';
+	icon_state = "cueball";
+	color = "ec992a";
+	pixel_y = 22;
+	pixel_x = 1;
+	desc = null;
+	name = "orange pool ball"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"hh" = (
+/obj/structure/table/snooker,
+/obj/item/toy/beach_ball/holoball/dodgeball{
+	icon = 'icons/obj/clothing/hats.dmi';
+	icon_state = "cueball";
+	pixel_x = -12;
+	pixel_y = -19;
+	name = "cueball"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"hi" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"hj" = (
+/obj/structure/pool/ladder/invisible,
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"hx" = (
+/obj/item/reagent_containers/pill/patch/jet,
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"hC" = (
+/obj/structure/chair/folding{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+"hE" = (
+/obj/item/reagent_containers/pill/patch/jet{
+	pixel_y = 1;
+	pixel_x = -23
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation{
+	pixel_x = 10;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"hM" = (
+/turf/closed/wall/f13/wood/house/shack{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain;
+	name = "basement wall"
+	},
+/area/f13/caves)
+"hR" = (
+/obj/structure/bed/oldalt,
+/obj/structure/nest/mob/ghoulcozy{
+	name = "sleeping ghoul";
+	desc = "This feral beast seems to be rather docile best not to wake it.";
+	radius = 2;
+	pixel_y = 2
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"iB" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 10;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 2
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"iF" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"iK" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/sign/poster/prewar/poster71{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/stage_b,
+/area/f13/caves)
+"iN" = (
+/obj/machinery/computer/arcade/battle,
+/obj/machinery/light/small{
+	dir = 1;
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"jo" = (
+/turf/open/floor/wood/f13/stage_b,
+/area/f13/caves)
+"jY" = (
+/obj/structure/railing{
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"kg" = (
+/obj/effect/overlay/gravel/edge/corner{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/machinery/washing_machine{
+	desc = "Dries wet clothing to hinder wrinkles.";
+	name = "laundry dryer"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"ku" = (
+/obj/structure/railing/handrail/rusty,
+/obj/structure/mirelurkegg{
+	pixel_y = 2;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"ky" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 8;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 9
+	},
+/obj/structure/flora/grass/jungle{
+	layer = 2;
+	plane = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"kB" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"kG" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/obj/structure/sign/poster/prewar/poster62{
+	pixel_x = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"kK" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"li" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/ncr_k_ration,
+/obj/effect/spawner/lootdrop/f13/ncr_k_ration{
+	pixel_y = 6
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"lr" = (
+/obj/effect/mob_spawn/human/corpse/raider/ranged/biker,
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"lv" = (
+/obj/structure/table/wood,
+/obj/item/toy/cattoy{
+	pixel_y = 14
+	},
+/obj/item/candle/infinite,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"lC" = (
+/obj/effect/spawner/lootdrop/trash{
+	pixel_x = -6;
+	pixel_y = -7
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"lN" = (
+/obj/structure/chair/stool/retro/black{
+	pixel_y = 16
+	},
+/obj/item/trash/f13/electronic/toaster{
+	icon_state = "micstand";
+	icon = 'icons/fallout/machines/radio.dmi';
+	desc = "Sadly your dreams of rocking on are shattered like this mic.";
+	name = "broken mic";
+	layer = 4;
+	anchored = 1
+	},
+/obj/item/instrument/eguitar{
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/turf/open/floor/wood/f13/stage_b,
+/area/f13/caves)
+"lS" = (
+/obj/machinery/light/small,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"mo" = (
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"mr" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/food/snacks/cannedpeaches/maint,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"ms" = (
+/obj/structure/nest/mob/ghoul{
+	dir = 8
+	},
+/obj/structure/chair/f13foldupchair{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"mU" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.93;
+	pixel_x = -3
+	},
+/obj/structure/flora/junglebush/c{
+	pixel_y = 10;
+	pixel_x = -8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"nc" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"ng" = (
+/obj/item/storage/pill_bottle/chem_tin/buffout{
+	pixel_x = -12;
+	pixel_y = 14
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"np" = (
+/obj/structure/mirelurkegg{
+	pixel_y = 9;
+	pixel_x = -13
+	},
+/obj/item/reagent_containers/hypospray/medipen/medx{
+	pixel_x = 13
+	},
+/obj/item/gun/ballistic/automatic/combat{
+	pixel_y = 2;
+	pixel_x = 9
+	},
+/obj/item/ammo_box/magazine/tommygunm45/stick{
+	pixel_x = 9;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"ny" = (
+/obj/structure/table/wood,
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1;
+	pixel_y = 11
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"nB" = (
+/obj/effect/overlay/curb,
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 4.29
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.29;
+	pixel_y = -4
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	layer = 4.29;
+	pixel_y = -4
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	plane = -5
+	},
+/obj/structure/railing/wood{
+	pixel_y = -13;
+	plane = -5
+	},
+/obj/structure/ladder/unbreakable/ropeunder{
+	height = 1;
+	pixel_x = -14;
+	pixel_y = -32;
+	desc = "As you look up the manhole the rope was sent down lays closed mocking your want for freedom."
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"nO" = (
+/obj/structure/table/snooker{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"of" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/trash{
+	pixel_y = 7
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"os" = (
+/obj/structure/table/wood,
+/obj/structure/sign/poster/contraband/atmosia_independence{
+	pixel_y = 32
+	},
+/obj/item/candle/infinite{
+	pixel_y = 14;
+	pixel_x = -7
+	},
+/obj/item/candle/infinite{
+	pixel_y = 14;
+	pixel_x = 7
+	},
+/obj/item/clothing/head/bowler,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ot" = (
+/obj/effect/overlay/curb,
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 10;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 2
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.26;
+	pixel_y = 24
+	},
+/obj/structure/flora/grass/jungle{
+	layer = 2;
+	plane = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"oy" = (
+/obj/item/ammo_casing/shotgun/buckshot/test,
+/obj/item/ammo_casing/shotgun/buckshot/test{
+	pixel_x = 9;
+	pixel_y = -8
+	},
+/obj/item/ammo_casing/shotgun/buckshot/test{
+	pixel_x = -10;
+	pixel_y = -15
+	},
+/obj/item/gun/ballistic/revolver/caravan_shotgun{
+	pixel_x = -10
+	},
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"pj" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel"
+	},
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pp" = (
+/obj/structure/girder/reinforced,
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pz" = (
+/obj/machinery/light/small{
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"pD" = (
+/obj/structure/railing/handrail/rusty,
+/obj/structure/mirelurkegg{
+	pixel_y = 2;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"pZ" = (
+/obj/effect/overlay/curb,
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_x = 4
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"rr" = (
+/obj/structure/railing/handrail/rusty,
+/obj/item/reagent_containers/pill/patch/jet{
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"rK" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449"
+	},
+/area/f13/caves)
+"rU" = (
+/obj/structure/girder/displaced,
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rZ" = (
+/obj/structure/mirelurkegg{
+	pixel_y = 9;
+	pixel_x = -13
+	},
+/obj/structure/nest/spawner/mirelurk/eggs,
+/obj/structure/mirelurkegg{
+	pixel_y = -10;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"st" = (
+/obj/item/storage/backpack/duffelbag,
+/obj/item/reagent_containers/pill/patch/jet{
+	pixel_y = 5;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"sy" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken"
+	},
+/area/f13/caves)
+"sY" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/junglebush/c{
+	pixel_y = 10;
+	pixel_x = -8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"ti" = (
+/obj/structure/flora/rock/jungle{
+	pixel_y = 5;
+	pixel_x = 2
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"tj" = (
+/obj/structure/table/snooker{
+	dir = 10
+	},
+/obj/item/toy/eightball{
+	pixel_x = -13;
+	pixel_y = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"tM" = (
+/obj/machinery/light/invisible,
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon_state = "mega_mirelurk";
+	icon = 'icons/fallout/mobs/megafauna/64x64megafauna.dmi';
+	name = "Mirelurk Queen";
+	desc = "A towering mirelurk, completely covered in moss and sewage. As the mother of all mirelurks in the region, it is best to tread carefully around this beast, lest you end up as her children's food.";
+	color = null;
+	dir = 8;
+	mob_types = list(/mob/living/simple_animal/hostile/megafauna/mirelurkqueen=5);
+	layer = 4
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"tQ" = (
+/obj/structure/chair/folding{
+	dir = 1
+	},
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+"uc" = (
+/obj/structure/mirelurkegg{
+	pixel_y = -10;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"ui" = (
+/obj/structure/girder/displaced,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uy" = (
+/obj/structure/table/wood,
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1;
+	pixel_y = 11;
+	pixel_x = 11;
+	layer = 3.1
+	},
+/obj/item/handsaw{
+	pixel_y = 15
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"uz" = (
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"uR" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 9;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 11
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"uS" = (
+/obj/structure/nest/spawner/mirelurk/huntermuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurkhunter";
+	color = null
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"uX" = (
+/obj/structure/flora/rock/jungle{
+	pixel_y = -3
+	},
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"vg" = (
+/obj/structure/closet/crate/wicker{
+	pixel_y = 14
+	},
+/obj/item/clothing/under/f13/picnicdress50s,
+/obj/item/clothing/under/f13/housewifedress50s,
+/obj/item/clothing/under/f13/pinkdress,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"vk" = (
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"vs" = (
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"wr" = (
+/obj/structure/chair/stool/retro/black,
+/obj/item/instrument/accordion,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"wD" = (
+/obj/structure/table/wood,
+/obj/item/a_gift{
+	contents = list(/obj/item/book/granter/trait/bigleagues)
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"wF" = (
+/obj/structure/girder/reinforced,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wS" = (
+/obj/effect/overlay/curb,
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_y = -6
+	},
+/obj/structure/flora/grass/saltlakesparse{
+	pixel_y = 1
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"xo" = (
+/obj/structure/table/wood,
+/obj/item/toy/balloon,
+/obj/item/toy/gun,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"xu" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"ye" = (
+/obj/structure/junk/small/bed2{
+	pixel_y = 1;
+	pixel_x = -2
+	},
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = 1;
+	name = "sleeping bag";
+	color = "#4257fc";
+	layer = 4;
+	pixel_y = 4;
+	pixel_x = -2
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"yj" = (
+/obj/structure/nest/mob/supermutant/melee{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"yl" = (
+/obj/structure/chair/stool/retro/black{
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/item/glasswork/blowing_rod{
+	desc = "A stick to drum with.";
+	name = "drumstick";
+	pixel_x = 12;
+	pixel_y = 18
+	},
+/obj/item/glasswork/blowing_rod{
+	desc = "A stick to drum with.";
+	name = "drumstick";
+	pixel_x = 17;
+	pixel_y = 18
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"yo" = (
+/obj/structure/mirelurkegg{
+	pixel_y = -4;
+	pixel_x = -18
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"yN" = (
+/obj/effect/spawner/lootdrop/trash{
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"yP" = (
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"yQ" = (
+/obj/structure/railing/handrail/rusty,
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"yV" = (
+/obj/structure/pool/ladder/invisible,
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"zc" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Am" = (
+/obj/structure/table/wood,
+/obj/structure/anvil/obtainable/basic{
+	pixel_x = -2;
+	pixel_y = -24
+	},
+/obj/item/weldingtool/hugetank{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"AL" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "robco";
+	name = "treadmill"
+	},
+/obj/structure/railing,
+/obj/machinery/light/small{
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"AN" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"AV" = (
+/obj/structure/railing/handrail/rusty,
+/obj/effect/mob_spawn/human/corpse/raider/baseball,
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"Be" = (
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"BI" = (
+/obj/structure/flora/rock/jungle{
+	pixel_x = -30;
+	pixel_y = -28
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"BK" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 4.29
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	plane = -5;
+	pixel_x = -8
+	},
+/obj/structure/flora/junglebush,
+/turf/open/pool/pond,
+/area/f13/caves)
+"BQ" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/pool/pond,
+/area/f13/caves)
+"Cl" = (
+/obj/effect/overlay/gravel/edge,
+/obj/machinery/washing_machine,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Co" = (
+/obj/item/oar{
+	pixel_x = -19;
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"Cq" = (
+/obj/structure/mirelurkegg{
+	pixel_y = 9;
+	pixel_x = -13
+	},
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Cu" = (
+/obj/structure/girder/displaced,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CA" = (
+/obj/structure/girder,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CI" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/obj/structure/nest/mob/ghoulsoldier{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"CM" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 4
+	},
+/area/f13/caves)
+"Di" = (
+/obj/effect/mob_spawn/human/corpse/raiderbossalt,
+/obj/item/ammo_casing/shotgun/buckshot/test{
+	pixel_x = 9;
+	pixel_y = -8
+	},
+/obj/item/storage/backpack/satchel/old{
+	pixel_y = -13;
+	pixel_x = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Dt" = (
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Dv" = (
+/obj/effect/overlay/curb,
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/saltlakesparse{
+	icon_state = "fullgrass_3";
+	pixel_y = 1;
+	pixel_x = -8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"DM" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/obj/structure/mirelurkegg{
+	pixel_y = -10;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"DT" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
+"Ef" = (
+/obj/structure/punching_bag{
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ei" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Es" = (
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+"Eu" = (
+/obj/structure/table/wood,
+/obj/item/clothing/neck/apron/labor,
+/obj/item/clothing/head/welding/f13/skull{
+	pixel_y = 9
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"EF" = (
+/obj/effect/overlay/gravel/edge/corner{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/item/melee/onehanded/club/fryingpan,
+/obj/structure/table/wood/poker,
+/obj/effect/overlay/junk/oldpipes{
+	dir = 4;
+	pixel_y = 16;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"EP" = (
+/obj/structure/table,
+/obj/item/instrument/harmonica,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Fi" = (
+/obj/structure/flora/grass/saltlakesparse{
+	pixel_y = 1
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"FY" = (
+/obj/item/melee/unarmed/brass/spiked,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Gl" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation{
+	pixel_x = -12;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Gp" = (
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"Gq" = (
+/obj/item/instrument/banjo{
+	pixel_y = 16;
+	pixel_x = 16
+	},
+/obj/structure/chair/stool/retro/black{
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/sign/poster/prewar/poster94{
+	pixel_x = -32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Gr" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/obj/structure/mirelurkegg{
+	pixel_y = -10;
+	pixel_x = 3
+	},
+/obj/structure/mirelurkegg{
+	pixel_y = -4;
+	pixel_x = -18
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"GC" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"GM" = (
+/obj/structure/girder,
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hr" = (
+/obj/structure/junk/arcade,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ht" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Hz" = (
+/obj/structure/table/wood,
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1;
+	pixel_y = 11;
+	pixel_x = -11;
+	layer = 2.9
+	},
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"HB" = (
+/obj/structure/weightlifter,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"HJ" = (
+/obj/structure/mirelurkegg{
+	pixel_y = -4;
+	pixel_x = -18
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"HN" = (
+/obj/machinery/light/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"HQ" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ih" = (
+/obj/item/ammo_casing/shotgun/buckshot/test,
+/obj/structure/railing/wood/post{
+	pixel_y = 28;
+	pixel_x = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Ik" = (
+/obj/item/ammo_box/shotgun/slug{
+	pixel_y = 11;
+	pixel_x = 4
+	},
+/obj/structure/nest/spawner/mirelurk/huntermuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurkhunter";
+	color = null;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Iv" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_x = -16
+	},
+/obj/structure/flora/grass/jungle{
+	layer = 2;
+	plane = -15
+	},
+/obj/machinery/light/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"Ix" = (
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/obj/structure/sign/poster/prewar/poster80{
+	pixel_y = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"IJ" = (
+/obj/structure/chair/wood/worn{
+	pixel_y = 3
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"IM" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans{
+	pixel_y = 12;
+	pixel_x = 6
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"IR" = (
+/obj/effect/spawner/lootdrop/trash{
+	pixel_y = 7
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"JA" = (
+/obj/structure/nest/mob/ghoul{
+	dir = 4
+	},
+/obj/structure/chair/f13foldupchair{
+	dir = 4;
+	pixel_x = 6
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"JR" = (
+/obj/structure/junk/small/bed2{
+	pixel_y = 10
+	},
+/obj/structure/bed{
+	dir = 1;
+	layer = 2.89
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"JY" = (
+/obj/effect/overlay/curb,
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/rock/jungle{
+	pixel_x = 1
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"Km" = (
+/obj/structure/table/wood,
+/obj/item/latexballon,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Kz" = (
+/obj/effect/spawner/lootdrop/trash{
+	pixel_x = -6;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"KD" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"La" = (
+/obj/machinery/computer/arcade/orion_trail,
+/obj/structure/sign/reno/barsign/booze{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Li" = (
+/obj/structure/railing{
+	pixel_y = -4
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "robco";
+	pixel_y = -10;
+	pixel_x = -13
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Lu" = (
+/obj/structure/sign/poster/prewar/poster65{
+	pixel_y = 32;
+	pixel_x = 15
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"LC" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor3-broken"
+	},
+/area/f13/caves)
+"LQ" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpak{
+	pixel_y = -8;
+	pixel_x = -14
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"LS" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel"
+	},
+/obj/structure/table/wood/poker,
+/obj/item/melee/onehanded/club/fryingpan,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"LV" = (
+/obj/item/storage/backpack/duffelbag,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Ml" = (
+/obj/structure/nest/mob/misterhandy,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Mr" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Mv" = (
+/obj/effect/overlay/gravel/edge,
+/obj/structure/tires,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"My" = (
+/obj/machinery/workbench,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"MJ" = (
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 4.29
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.29
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_y = 5;
+	plane = -5;
+	pixel_x = -8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"Nf" = (
+/obj/effect/mob_spawn/human/corpse/raider/baseball,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Nh" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ND" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"NH" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 15;
+	layer = 4.29;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"NN" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 1;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 32;
+	pixel_x = 16
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 5;
+	pixel_x = -3;
+	layer = 4.29
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.29
+	},
+/obj/structure/railing/handrail/rusty{
+	pixel_y = -1;
+	layer = 4.29
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.26;
+	pixel_y = 24
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	plane = -5
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"Oe" = (
+/obj/structure/sign/poster/prewar/poster70{
+	pixel_x = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ol" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken";
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"OC" = (
+/obj/structure/railing/handrail/rusty,
+/obj/structure/mirelurkegg{
+	pixel_y = 9;
+	pixel_x = -13
+	},
+/obj/structure/mirelurkegg{
+	pixel_y = 7;
+	pixel_x = 7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"OF" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/twohanded/baseball/poolcue,
+/obj/item/twohanded/baseball/poolcue{
+	pixel_y = 5;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"OP" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"Pr" = (
+/obj/structure/fermenting_barrel{
+	icon = 'icons/obj/atmospherics/pipes/pressure_tank.dmi';
+	icon_state = "grey_map";
+	name = "water heater";
+	anchored = 1;
+	desc = "A pre-war device used to heat up water for the convience of those who doomed the world."
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Px" = (
+/turf/open/pool/pond,
+/area/f13/caves)
+"PC" = (
+/obj/effect/overlay/gravel/edge/corner{
+	dir = 1;
+	pixel_y = 2
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"PJ" = (
+/obj/structure/chair/wood/worn{
+	dir = 4;
+	pixel_y = 16
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"PZ" = (
+/obj/machinery/washing_machine,
+/obj/item/clothing/under/f13/bluedress,
+/obj/machinery/light/small{
+	dir = 1;
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Qc" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/rock/jungle{
+	pixel_x = 8
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"Qs" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 8;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 18
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Qw" = (
+/obj/item/twohanded/baseball/spiked{
+	pixel_x = 17
+	},
+/obj/item/reagent_containers/pill/patch/jet{
+	pixel_y = 12;
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/caves)
+"QL" = (
+/obj/effect/overlay/gravel/edge,
+/obj/structure/table/wood/poker,
+/obj/item/toy/beach_ball/holoball/dodgeball{
+	icon = 'icons/obj/clothing/hats.dmi';
+	icon_state = "cueball";
+	pixel_y = 23;
+	pixel_x = -25;
+	desc = null;
+	name = "ping pong ball"
+	},
+/obj/effect/overlay/junk/oldpipes{
+	dir = 4;
+	pixel_y = 16;
+	pixel_x = -3
+	},
+/obj/structure/sign/poster/prewar/poster82{
+	pixel_x = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ri" = (
+/obj/structure/chair/wood/worn{
+	pixel_y = 3
+	},
+/obj/structure/nest/mob/ghoulsoldier,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Rz" = (
+/obj/structure/lattice/catwalk{
+	icon_state = "walkway";
+	dir = 9;
+	desc = null;
+	name = "rickety bridge";
+	smooth = 0;
+	pixel_y = 11
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.26;
+	pixel_y = 24
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"RA" = (
+/obj/structure/flora/grass/jungle{
+	layer = 2.69;
+	pixel_x = -2
+	},
+/obj/structure/flora/grass/saltlakesparse{
+	pixel_y = 1
+	},
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"RC" = (
+/obj/structure/table/wood,
+/obj/item/a_gift{
+	contents = list(/obj/item/twohanded/baseball/louisville,/obj/item/toy/beach_ball/holoball/baseball);
+	pixel_x = 10;
+	pixel_y = 9
+	},
+/obj/item/candle/infinite,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"RG" = (
+/obj/structure/nest/mob/ghoularmless{
+	dir = 4;
+	pixel_y = -16
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"RT" = (
+/obj/structure/wreck/trash/two_barrels{
+	pixel_y = -7;
+	pixel_x = -6
+	},
+/obj/item/flashlight/lamp/bananalamp{
+	pixel_y = 13;
+	pixel_x = -3
+	},
+/obj/structure/sign/poster/prewar/poster80{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"RV" = (
+/obj/structure/sign/poster/prewar/vault_tec{
+	pixel_y = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Sv" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	dir = 2
+	},
+/area/f13/caves)
+"SO" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/structure/table/wood/poker,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"ST" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans{
+	pixel_y = 12
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Tc" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"TH" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor1-broken";
+	sunlight_state = 1
+	},
+/area/f13/caves)
+"TS" = (
+/obj/structure/mirelurkegg{
+	pixel_y = 2;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Uj" = (
+/obj/structure/flora/rock/jungle{
+	pixel_y = -1;
+	pixel_x = 5
+	},
+/obj/structure/pool/ladder/invisible,
+/turf/open/pool/pond,
+/area/f13/caves)
+"Up" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Ur" = (
+/obj/structure/nest/mob/supermutant/ranged{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"UJ" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"US" = (
+/obj/item/clothing/gloves/boxing{
+	pixel_y = 4
+	},
+/obj/structure/table,
+/obj/item/storage/pill_bottle/chem_tin/buffout{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/machinery/light/small{
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Vd" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Ve" = (
+/obj/structure/chair/stool/retro/black,
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+"Vm" = (
+/obj/structure/junk/small/bed2,
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/obj/structure/nest/mob/ghoulcozy{
+	name = "sleeping ghoul";
+	desc = "This feral beast seems to be rather docile best not to wake it.";
+	radius = 2;
+	pixel_y = 11
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Vv" = (
+/obj/structure/nest/mob/ghoul{
+	dir = 8
+	},
+/obj/structure/chair/folding{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"VM" = (
+/obj/structure/junk/small/bed2,
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = 1;
+	name = "sleeping bag";
+	color = "#4257fc";
+	layer = 4;
+	pixel_y = 3
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"VS" = (
+/obj/item/toy/balloon,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"WN" = (
+/obj/structure/stacklifter,
+/obj/machinery/light/small{
+	dir = 1;
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"WS" = (
+/obj/structure/girder,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WV" = (
+/obj/structure/chair/stool/retro/black,
+/obj/item/instrument/trombone,
+/obj/structure/sign/poster/prewar/poster79{
+	pixel_y = 13;
+	pixel_x = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Xu" = (
+/obj/effect/overlay/curb,
+/obj/structure/pool/ladder/invisible,
+/obj/structure/flora/grass/saltlakesparse{
+	icon_state = "fullgrass_3";
+	pixel_y = 1;
+	pixel_x = 10
+	},
+/turf/open/pool/pond,
+/area/f13/caves)
+"XJ" = (
+/obj/structure/campfire/barrel,
+/obj/item/reagent_containers/food/snacks/kebab/human{
+	pixel_y = 17
+	},
+/obj/item/reagent_containers/food/snacks/kebab/human{
+	pixel_y = 10;
+	pixel_x = -1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"YH" = (
+/obj/effect/mob_spawn/human/corpse/charredskeleton{
+	name = "skeletal remains";
+	suit = "/obj/item/clothing/suit/armor/f13/combat";
+	shoes = "/obj/item/clothing/shoes/combat";
+	uniform = "/obj/item/clothing/under/f13/bdu";
+	head = "/obj/item/clothing/head/helmet/f13/combat";
+	gloves = "/obj/item/clothing/gloves/combat"
+	},
+/obj/item/card/id/dogtag{
+	name = "dogtag"
+	},
+/obj/item/ammo_box/magazine/tommygunm45/stick,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Zk" = (
+/obj/structure/table/snooker{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"ZI" = (
+/obj/structure/dresser,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ZY" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
+/obj/effect/spawner/lootdrop/prison_loot_toilet,
+/obj/item/storage/backpack/TrashPack,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ZZ" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/caves)
+
+(1,1,1) = {"
+hM
+hM
+ui
+WS
+WS
+hM
+hM
+kB
+kB
+kB
+kB
+dx
+dx
+dx
+dx
+kB
+kB
+kB
+GC
+GC
+GC
+GC
+GC
+GC
+GC
+"}
+(2,1,1) = {"
+hM
+Gq
+wr
+jo
+rK
+Es
+Es
+hM
+kB
+kB
+kB
+dx
+dx
+dx
+kB
+kB
+kB
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+hM
+"}
+(3,1,1) = {"
+hM
+Lu
+KD
+jo
+bZ
+bZ
+Es
+hM
+Gp
+kB
+kB
+RA
+uX
+Uj
+kB
+kB
+Gp
+hM
+ae
+KD
+dR
+KD
+Ei
+hR
+hM
+"}
+(4,1,1) = {"
+hM
+iK
+KD
+lN
+bZ
+bZ
+Es
+hM
+Gp
+DM
+yQ
+wS
+fc
+sY
+uc
+TS
+Gp
+hM
+KD
+KD
+hM
+ZI
+KD
+sy
+hM
+"}
+(5,1,1) = {"
+hM
+yl
+jo
+jo
+hC
+Ve
+CM
+kB
+Gp
+Cq
+ku
+er
+Px
+ds
+uc
+TS
+Gp
+hM
+li
+LC
+hM
+os
+KD
+JR
+hM
+"}
+(6,1,1) = {"
+hM
+RT
+WV
+jo
+ZZ
+tQ
+kB
+kB
+wF
+eV
+yQ
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+KD
+KD
+hM
+of
+TH
+KD
+hM
+"}
+(7,1,1) = {"
+hM
+hM
+hM
+hM
+ui
+WS
+kB
+kB
+wF
+eV
+uz
+er
+HN
+mo
+Dt
+eV
+Gp
+hM
+bS
+ZY
+hM
+KD
+ND
+Vm
+hM
+"}
+(8,1,1) = {"
+GC
+GC
+GC
+GC
+dx
+dx
+dx
+dx
+ui
+eV
+ku
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+hM
+hM
+hM
+dR
+hM
+hM
+hM
+"}
+(9,1,1) = {"
+hM
+hM
+hM
+WS
+ui
+WS
+hM
+hM
+Gp
+eV
+yQ
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+KD
+Ei
+KD
+TH
+Ei
+KD
+hM
+"}
+(10,1,1) = {"
+hM
+OF
+nc
+nc
+nc
+nc
+nc
+hM
+Gp
+eV
+yQ
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+LC
+KD
+RG
+PJ
+VS
+TH
+hM
+"}
+(11,1,1) = {"
+hM
+La
+nc
+nc
+Zk
+go
+pz
+hM
+Gp
+eV
+uz
+er
+HN
+mo
+Dt
+eV
+Gp
+hM
+cF
+IJ
+di
+lv
+AN
+KD
+hM
+"}
+(12,1,1) = {"
+hM
+iN
+nc
+nc
+hh
+hd
+nc
+hM
+Gp
+dz
+yQ
+er
+Px
+ds
+Vd
+eV
+Gp
+hM
+KD
+IJ
+RC
+xo
+CI
+KD
+hM
+"}
+(13,1,1) = {"
+kB
+Hr
+hi
+nc
+tj
+nO
+nc
+hM
+Gp
+eV
+uz
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+KD
+Ri
+wD
+Km
+Ol
+KD
+hM
+"}
+(14,1,1) = {"
+kB
+kB
+eu
+nc
+nc
+nc
+pz
+hM
+Gp
+eV
+yQ
+er
+Px
+mo
+Dt
+eV
+Gp
+WS
+KD
+LC
+kG
+KD
+KD
+KD
+hM
+"}
+(15,1,1) = {"
+kB
+kB
+hM
+hM
+hM
+hM
+ui
+hM
+Gp
+eV
+yQ
+er
+Px
+mo
+Dt
+eV
+Gp
+hM
+hM
+hM
+hM
+hM
+WS
+ui
+kB
+"}
+(16,1,1) = {"
+kB
+kB
+kB
+dx
+dx
+dx
+dx
+GC
+Gp
+eV
+yQ
+JY
+Qc
+gi
+Dt
+eV
+Gp
+dx
+dx
+dx
+dx
+dx
+dx
+dx
+kB
+"}
+(17,1,1) = {"
+kB
+kB
+hM
+ui
+WS
+hM
+hM
+hM
+wF
+eV
+NH
+bs
+iB
+uR
+Qs
+Tc
+Gp
+ui
+hM
+hM
+hM
+hM
+hM
+kB
+kB
+"}
+(18,1,1) = {"
+kB
+kB
+hM
+JA
+ap
+vs
+am
+hM
+wF
+be
+pD
+nB
+Iv
+NN
+uc
+eV
+Gp
+ui
+Up
+DT
+vs
+Eu
+Am
+gz
+hM
+"}
+(19,1,1) = {"
+hM
+gX
+hM
+zc
+EP
+lC
+gy
+hM
+Gp
+eV
+NH
+ot
+ky
+Rz
+Qs
+eV
+Gp
+hM
+My
+Ur
+vs
+vs
+yj
+vs
+hM
+"}
+(20,1,1) = {"
+hM
+et
+hM
+ms
+Vv
+vs
+lS
+hM
+Gp
+HJ
+yQ
+fH
+BK
+MJ
+Mr
+eV
+WS
+hM
+RV
+vs
+vs
+UJ
+bF
+vs
+hM
+"}
+(21,1,1) = {"
+hM
+Ix
+kK
+UJ
+vs
+IR
+ye
+hM
+Gp
+eV
+yQ
+Dv
+BI
+ds
+Dt
+eV
+wF
+hM
+uy
+vs
+OP
+XJ
+hM
+et
+kB
+"}
+(22,1,1) = {"
+hM
+ST
+IM
+mr
+vs
+OP
+VM
+hM
+Gp
+eV
+yQ
+er
+Px
+ds
+Gr
+eV
+Gp
+hM
+ny
+bq
+vs
+UJ
+kB
+kB
+kB
+"}
+(23,1,1) = {"
+hM
+hM
+hM
+hM
+WS
+ui
+hM
+hM
+wF
+Gl
+AV
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+Hz
+vs
+vs
+kB
+kB
+kB
+kB
+"}
+(24,1,1) = {"
+GC
+GC
+dx
+dx
+dx
+dx
+dx
+GC
+wF
+eV
+Co
+er
+Px
+ds
+Dt
+eV
+Gp
+hM
+hM
+ui
+WS
+hM
+kB
+kB
+kB
+"}
+(25,1,1) = {"
+hM
+hM
+ui
+WS
+WS
+hM
+hM
+hM
+wF
+uS
+hx
+er
+HN
+mo
+Dt
+eV
+Gp
+GC
+dx
+dx
+dx
+dx
+dx
+dx
+kB
+"}
+(26,1,1) = {"
+hM
+Pr
+nc
+nc
+nc
+Li
+eD
+hM
+Gp
+st
+rr
+er
+Px
+hj
+Di
+Ik
+Gp
+hM
+hM
+hM
+hM
+hM
+ui
+WS
+kB
+"}
+(27,1,1) = {"
+hM
+WN
+nc
+nc
+nc
+jY
+AL
+hM
+Gp
+eV
+Qw
+er
+Be
+yV
+oy
+Ih
+Gp
+hM
+kg
+nc
+nc
+nc
+iF
+nc
+hM
+"}
+(28,1,1) = {"
+hM
+ng
+nc
+nc
+nc
+nc
+nc
+hM
+Gp
+hE
+lr
+er
+Be
+xu
+vk
+dM
+Gp
+CA
+Cl
+nc
+iF
+iF
+yN
+nc
+hM
+"}
+(29,1,1) = {"
+hM
+HB
+nc
+nc
+nc
+Ef
+nc
+hM
+Gp
+cS
+dc
+er
+tM
+mo
+Dt
+FY
+pp
+CA
+Mv
+nc
+Kz
+nc
+hM
+hM
+hM
+"}
+(30,1,1) = {"
+hM
+vg
+nc
+nc
+nc
+Oe
+US
+hM
+Gp
+np
+yQ
+Xu
+Px
+ds
+LQ
+Nf
+pp
+Cu
+HQ
+PC
+nc
+nc
+Sv
+kB
+hM
+"}
+(31,1,1) = {"
+hM
+fS
+nc
+bE
+nc
+hM
+hM
+kB
+Gp
+YH
+OC
+pZ
+Fi
+ds
+yo
+TS
+rU
+Nh
+Nh
+SO
+EF
+nc
+kB
+kB
+kB
+"}
+(32,1,1) = {"
+hM
+PZ
+Ml
+gk
+nc
+Sv
+kB
+kB
+Gp
+kB
+kB
+yP
+yP
+mU
+rZ
+LV
+Gp
+GM
+pj
+LS
+QL
+nc
+Ht
+Pr
+kB
+"}
+(33,1,1) = {"
+hM
+hM
+hM
+hM
+hM
+hM
+kB
+kB
+kB
+kB
+kB
+kB
+BQ
+ti
+kB
+kB
+kB
+hM
+hM
+hM
+hM
+hM
+hM
+kB
+kB
+"}

@@ -99,6 +99,18 @@
 	else
 		icon_state = "single"
 
+/obj/structure/fermenting_barrel/prison
+	name = "Wine Toilet"
+	desc = "A broken toilet repurposed for sweet, sweet booze."
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "toilet00"
+
+/obj/structure/fermenting_barrel/prison/update_icon_state()
+	if(open)
+		icon_state = "toilet10"
+	else
+		icon_state = "toilet00"
+
 //////////
 // LOOM //
 //////////

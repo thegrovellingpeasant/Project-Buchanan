@@ -1,0 +1,935 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"av" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"aL" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/bottle/gammagulp{
+	pixel_y = 14;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/gammagulp{
+	pixel_y = 12;
+	pixel_x = -6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/ghoul_elevator)
+"cb" = (
+/obj/structure/chair/left,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"cp" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5";
+	layer = 2.91;
+	pixel_y = 1
+	},
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/ghoul_elevator)
+"cy" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5";
+	layer = 2.91;
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"ex" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor4"
+	},
+/obj/item/melee/bokken,
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"eT" = (
+/obj/structure/table/optable,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/ghoul_elevator)
+"fM" = (
+/obj/structure/chair/middle,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"gk" = (
+/turf/closed/wall/rust,
+/area/shuttle/ghoul_elevator)
+"hh" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/ghoul_elevator)
+"hn" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	layer = 2.91;
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"io" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/machinery/light{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"iE" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"ks" = (
+/obj/machinery/door/airlock/wood,
+/obj/structure/barricade,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"mj" = (
+/obj/item/twohanded/baseball/poolcue,
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"ml" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/mailman/usps,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/ghoul_elevator)
+"nw" = (
+/obj/structure/chair/stool/retro/tan,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/ghoul_elevator)
+"nH" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
+/area/shuttle/ghoul_elevator)
+"pH" = (
+/obj/structure/chair/f13foldupchair,
+/obj/structure/nest/mob/ghoulgarand,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"qK" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/drinks/bottle/absinthe{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"qL" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 8
+	},
+/area/shuttle/ghoul_elevator)
+"rD" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/ghoul_elevator)
+"rG" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"sz" = (
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"ua" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/ghoul_elevator)
+"ue" = (
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"uk" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6"
+	},
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"um" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 8
+	},
+/area/shuttle/ghoul_elevator)
+"uC" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/ghoul_elevator)
+"uQ" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter6"
+	},
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"vx" = (
+/obj/structure/nest/mob/ghoulslave,
+/obj/structure/chair/right,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"wv" = (
+/obj/item/trash/f13/rotten,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/ghoul_elevator)
+"wL" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"xf" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"xW" = (
+/obj/effect/decal/remains/skulls,
+/turf/closed/wall/rust,
+/area/shuttle/ghoul_elevator)
+"yb" = (
+/obj/structure/chair/left,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"yj" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/ghoul_elevator)
+"yu" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"yD" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"zk" = (
+/obj/structure/campfire,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/ghoul_elevator)
+"zm" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"zQ" = (
+/obj/structure/table/wood/junk,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"zR" = (
+/obj/structure/chair/middle{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"zW" = (
+/turf/template_noop,
+/area/template_noop)
+"zZ" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"CN" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"Fd" = (
+/obj/item/trash/energybar,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"Fn" = (
+/obj/structure/nest/mob/ghoulharmless,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"FP" = (
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"FY" = (
+/obj/structure/barricade/bars{
+	layer = 2.84
+	},
+/obj/structure/table/wood/settler,
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/shuttle/ghoul_elevator)
+"Gb" = (
+/obj/structure/chair/comfy/teal{
+	color = "#71b3d9";
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/ghoul_elevator)
+"Ge" = (
+/obj/structure/campfire/barrel,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"Gu" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/ghoul_elevator)
+"JA" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"Ka" = (
+/obj/structure/table/round,
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_y = 10
+	},
+/obj/item/storage/belt/medical,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"Kn" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/shuttle/ghoul_subway{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/ghoul_elevator)
+"Kr" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"KB" = (
+/obj/machinery/door/unpowered/celldoor,
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"KR" = (
+/obj/structure/chair/stool/bar,
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/ghoul_elevator)
+"MD" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"MY" = (
+/obj/structure/nest/mob/ghoulmelee{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4
+	},
+/area/shuttle/ghoul_elevator)
+"Nh" = (
+/obj/structure/bookshelf,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
+/obj/item/storage/book/bible,
+/obj/item/book/manual/civilcode,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"Np" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"Oe" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/template_noop,
+/area/template_noop)
+"PF" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter2"
+	},
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"PV" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress4"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/ghoul_elevator)
+"Qb" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/drinks/bottle/roentgen{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/ghoul_elevator)
+"Qv" = (
+/obj/structure/chair/stool/retro/tan,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/ghoul_elevator)
+"QW" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
+/area/shuttle/ghoul_elevator)
+"Rh" = (
+/obj/structure/nest/mob/ghoulreaver,
+/obj/structure/chair/right,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/ghoul_elevator)
+"Rj" = (
+/obj/structure/window/fulltile/ruins,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"RY" = (
+/obj/structure/barricade/bars{
+	icon_state = "house0-broken";
+	icon = 'icons/fallout/turfs/walls/house.dmi';
+	layer = 2.91
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"SI" = (
+/obj/machinery/grill,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"Tk" = (
+/obj/structure/sign/warning/nosmoking,
+/turf/closed/wall/rust,
+/area/shuttle/ghoul_elevator)
+"Uf" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4
+	},
+/area/shuttle/ghoul_elevator)
+"Un" = (
+/obj/structure/chair/left{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"UO" = (
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/snacks/hotdog{
+	pixel_y = 5;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/snacks/hotdog{
+	pixel_y = 1;
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/food/condiment/mustardbottle{
+	pixel_y = 8;
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"UW" = (
+/obj/item/storage/pill_bottle/chem_tin/buffout,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"Vu" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"Wd" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/ghoul_elevator)
+"WF" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel/rail/north,
+/area/shuttle/ghoul_elevator)
+"WP" = (
+/obj/item/trash/can,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/ghoul_elevator)
+"WS" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"Xn" = (
+/obj/item/handsaw,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/ghoul_elevator)
+"XH" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7"
+	},
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+"YJ" = (
+/obj/docking_port/mobile/elevator{
+	dir = 4;
+	height = 51;
+	width = 5;
+	dwidth = 5;
+	id = "ghoul_elevator";
+	name = "Ghoul Subway";
+	preferred_direction = 4;
+	dheight = 49
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/ghoul_elevator)
+"YK" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "itemblood"
+	},
+/turf/open/floor/plating/dirt,
+/area/shuttle/ghoul_elevator)
+
+(1,1,1) = {"
+gk
+yD
+ks
+Vu
+gk
+"}
+(2,1,1) = {"
+Rj
+PV
+um
+ua
+Rj
+"}
+(3,1,1) = {"
+Rj
+UW
+hh
+hn
+Rj
+"}
+(4,1,1) = {"
+zm
+Kr
+hh
+Wd
+yu
+"}
+(5,1,1) = {"
+Rj
+Fn
+hh
+Wd
+av
+"}
+(6,1,1) = {"
+iE
+cy
+hh
+Ge
+av
+"}
+(7,1,1) = {"
+iE
+Nh
+hh
+Wd
+xf
+"}
+(8,1,1) = {"
+zm
+Kr
+hh
+sz
+yu
+"}
+(9,1,1) = {"
+xf
+Kr
+hh
+Np
+Rj
+"}
+(10,1,1) = {"
+xf
+yj
+Uf
+Xn
+Rj
+"}
+(11,1,1) = {"
+gk
+yD
+JA
+yD
+gk
+"}
+(12,1,1) = {"
+Oe
+QW
+WF
+nH
+zW
+"}
+(13,1,1) = {"
+gk
+io
+JA
+Vu
+gk
+"}
+(14,1,1) = {"
+WS
+wv
+um
+Gu
+Rj
+"}
+(15,1,1) = {"
+CN
+MD
+hh
+Fd
+Rj
+"}
+(16,1,1) = {"
+zm
+Kr
+hh
+Wd
+yu
+"}
+(17,1,1) = {"
+av
+vx
+hh
+Un
+CN
+"}
+(18,1,1) = {"
+av
+fM
+zk
+zR
+zZ
+"}
+(19,1,1) = {"
+av
+cb
+hh
+FP
+rG
+"}
+(20,1,1) = {"
+zm
+Kr
+hh
+Wd
+yu
+"}
+(21,1,1) = {"
+Rj
+WP
+hh
+qK
+xf
+"}
+(22,1,1) = {"
+Rj
+cp
+Uf
+Qv
+xf
+"}
+(23,1,1) = {"
+gk
+io
+JA
+yD
+xW
+"}
+(24,1,1) = {"
+Oe
+QW
+WF
+nH
+zW
+"}
+(25,1,1) = {"
+gk
+yD
+JA
+Vu
+gk
+"}
+(26,1,1) = {"
+Rj
+Rh
+um
+nw
+Rj
+"}
+(27,1,1) = {"
+Rj
+yb
+hh
+zQ
+Rj
+"}
+(28,1,1) = {"
+zm
+Kr
+hh
+Wd
+yu
+"}
+(29,1,1) = {"
+iE
+SI
+hh
+Un
+Rj
+"}
+(30,1,1) = {"
+Rj
+pH
+hh
+zR
+iE
+"}
+(31,1,1) = {"
+iE
+UO
+hh
+FP
+iE
+"}
+(32,1,1) = {"
+zm
+Kr
+hh
+Wd
+yu
+"}
+(33,1,1) = {"
+iE
+Ka
+hh
+Un
+Rj
+"}
+(34,1,1) = {"
+Rj
+eT
+MY
+KR
+Rj
+"}
+(35,1,1) = {"
+gk
+io
+JA
+yD
+Tk
+"}
+(36,1,1) = {"
+Oe
+QW
+WF
+nH
+zW
+"}
+(37,1,1) = {"
+xW
+RY
+KB
+RY
+xW
+"}
+(38,1,1) = {"
+FY
+ue
+ue
+ue
+FY
+"}
+(39,1,1) = {"
+FY
+ue
+ex
+XH
+FY
+"}
+(40,1,1) = {"
+FY
+ue
+ue
+ue
+FY
+"}
+(41,1,1) = {"
+FY
+uk
+ue
+wL
+FY
+"}
+(42,1,1) = {"
+FY
+ue
+ue
+ue
+FY
+"}
+(43,1,1) = {"
+FY
+ue
+YK
+ue
+FY
+"}
+(44,1,1) = {"
+FY
+ue
+ue
+uQ
+FY
+"}
+(45,1,1) = {"
+FY
+PF
+mj
+ue
+FY
+"}
+(46,1,1) = {"
+FY
+ue
+ue
+ue
+FY
+"}
+(47,1,1) = {"
+xW
+uC
+qL
+rD
+xW
+"}
+(48,1,1) = {"
+gk
+hh
+hh
+hh
+gk
+"}
+(49,1,1) = {"
+iE
+Qb
+Gb
+hh
+YJ
+"}
+(50,1,1) = {"
+gk
+aL
+Kn
+ml
+gk
+"}
+(51,1,1) = {"
+xW
+gk
+yD
+gk
+xW
+"}

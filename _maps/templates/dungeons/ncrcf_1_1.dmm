@@ -1,0 +1,1764 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aL" = (
+/obj/structure/closet/locker,
+/obj/item/clothing/under/f13/mechanic,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"aP" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"aR" = (
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"bw" = (
+/obj/structure/closet/crate/medical{
+	name = "medical crate - anesthetics"
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"by" = (
+/turf/open/indestructible/ground/outside/roaddirt/dark,
+/area/f13/caves)
+"cP" = (
+/obj/machinery/computer/terminal{
+	icon_state = "computer_L"
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"cT" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/water,
+/area/f13/caves)
+"eX" = (
+/obj/structure/nest/mob/protectron{
+	dir = 4
+	},
+/obj/item/stack/ore/iron,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fe" = (
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ff" = (
+/obj/structure/nest/mob/protectron{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"fh" = (
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder{
+	pixel_x = -19;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gR" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"hq" = (
+/turf/open/indestructible/ground/outside/roaddirt{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"hC" = (
+/obj/effect/decal/remains/nest{
+	icon = 'icons/mob/nest_new.dmi';
+	icon_state = "hole";
+	name = "small tunnel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hI" = (
+/obj/structure/closet/crate/large,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"lb" = (
+/obj/structure/simple_door/bunker/glass,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"lL" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"lO" = (
+/obj/machinery/computer/terminal{
+	icon_state = "computer_R";
+	pixel_x = -3
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"my" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"mF" = (
+/obj/item/stack/sheet/bone,
+/obj/item/stack/sheet/bone{
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ov" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/rifle/hobo/lasmusket,
+/obj/item/ammo_box/lasmusket,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"oD" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/cash_ncr_med,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"oL" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"pg" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"px" = (
+/obj/structure/chair/wood/normal{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pU" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"qh" = (
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"qE" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/water,
+/area/f13/caves)
+"ra" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 11;
+	pixel_y = -5
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/item/stack/sheet/bone,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/ammo_box/a308,
+/obj/item/twohanded/fireaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ru" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"rE" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sF" = (
+/obj/item/clothing/head/jester,
+/obj/item/clothing/under/jester{
+	pixel_y = -10;
+	pixel_x = 14
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = -1
+	},
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"vi" = (
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/structure/closet/fridge,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"wM" = (
+/obj/structure/nest/mob/sentrybot,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"xt" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"yb" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"yo" = (
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zc" = (
+/obj/effect/overlay/curb,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"AX" = (
+/obj/structure/closet/crate/large,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/iron,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Ba" = (
+/turf/open/indestructible/ground/outside/roaddirt/dark/north,
+/area/f13/caves)
+"Bm" = (
+/obj/structure/chair/f13chair2{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Bw" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	icon_state = "firegekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"BA" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 8
+	},
+/area/f13/caves)
+"BB" = (
+/obj/machinery/computer/terminal{
+	dir = 1;
+	pixel_y = 3;
+	termtag = "Security"
+	},
+/obj/structure/table/wood/settler,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"BD" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"BX" = (
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cd" = (
+/obj/item/stack/sheet/bone{
+	pixel_y = -5;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cr" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"Cz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water,
+/area/f13/caves)
+"CN" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 8
+	},
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CY" = (
+/obj/structure/nest/mob/deathclaw{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Db" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"Ec" = (
+/obj/structure/closet/locker,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Eg" = (
+/turf/open/floor/wood/f13/stage_b/outdoors,
+/area/f13/caves)
+"El" = (
+/obj/effect/overlay/curb,
+/obj/structure/glowshroom,
+/turf/open/water,
+/area/f13/caves)
+"Es" = (
+/obj/structure/nest/mob/protectron,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Fh" = (
+/obj/structure/nest/mob/gecko,
+/turf/open/floor/wood/f13/stage_b/outdoors,
+/area/f13/caves)
+"FT" = (
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"FX" = (
+/obj/structure/closet/crate/large,
+/obj/item/stack/ore/gold,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Ht" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/water,
+/area/f13/caves)
+"HU" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Im" = (
+/turf/open/water,
+/area/f13/caves)
+"Iz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/water,
+/area/f13/caves)
+"IP" = (
+/obj/item/stack/sheet/bone{
+	pixel_y = 24;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Jl" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/caves)
+"Jr" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water,
+/area/f13/caves)
+"Jv" = (
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/indestructible/ground/outside/roaddirt{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"KP" = (
+/obj/structure/table,
+/obj/item/hemostat,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"KS" = (
+/obj/item/reagent_containers/pill/patch/healingpowder{
+	pixel_y = 17;
+	pixel_x = -11
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Pb" = (
+/obj/item/stack/ore/iron,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Pf" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Pn" = (
+/obj/structure/table/optable,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"PR" = (
+/obj/structure/fluff/railing,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"PX" = (
+/obj/structure/glowshroom,
+/turf/open/water,
+/area/f13/caves)
+"Qa" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"QE" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QT" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water,
+/area/f13/caves)
+"Sn" = (
+/obj/structure/chair/f13chair2{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Sv" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/caves)
+"SS" = (
+/obj/effect/overlay/curb,
+/turf/open/water,
+/area/f13/caves)
+"Td" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Tm" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"VQ" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Wt" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 6;
+	layer = 2.81;
+	plane = -4;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/item/stack/sheet/bone{
+	pixel_y = 24;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WH" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo{
+	pixel_y = 14
+	},
+/turf/open/indestructible/ground/outside/roaddirt/dark/north,
+/area/f13/caves)
+"WI" = (
+/obj/structure/closet/crate/large,
+/obj/item/ammo_box/lasmusket,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"WX" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Xl" = (
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"Xn" = (
+/obj/effect/decal/remains/human,
+/obj/item/stack/sheet/bone{
+	pixel_x = -22
+	},
+/obj/item/stack/sheet/bone{
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XN" = (
+/obj/structure/nest/mob/protectron,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Ya" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"Yx" = (
+/obj/structure/nest/mob/protectron{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Zq" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 3;
+	layer = 3.1
+	},
+/obj/structure/table,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/caves)
+"Zs" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Sv
+Cr
+Cr
+zc
+Cr
+Cr
+Cr
+Cr
+Sv
+lL
+lL
+"}
+(2,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Sv
+Cr
+Jl
+zc
+Cr
+Im
+WX
+pg
+Sv
+lL
+lL
+"}
+(3,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Sv
+pg
+Jl
+El
+Im
+cT
+WX
+pg
+Sv
+lL
+lL
+"}
+(4,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Sv
+pg
+Jl
+SS
+Im
+Im
+Xl
+pg
+Sv
+lL
+lL
+"}
+(5,1,1) = {"
+lL
+lL
+lL
+lL
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Tm
+Tm
+Tm
+Tm
+Sv
+pg
+Jl
+SS
+Ht
+Im
+Xl
+pg
+Sv
+lL
+lL
+"}
+(6,1,1) = {"
+lL
+lL
+Td
+Td
+Td
+lL
+Td
+lL
+lL
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+lL
+Tm
+yb
+FT
+FT
+Sv
+pg
+Jl
+SS
+Im
+Im
+WX
+pg
+Sv
+lL
+lL
+"}
+(7,1,1) = {"
+lL
+Td
+HU
+lL
+Td
+Td
+lL
+lL
+lL
+Tm
+cP
+FT
+PR
+Cr
+Cr
+Tm
+lL
+Tm
+oD
+FT
+FT
+lb
+XN
+Jl
+SS
+cT
+Im
+Xl
+pg
+Pb
+lL
+lL
+"}
+(8,1,1) = {"
+lL
+Td
+Td
+Cd
+Td
+Td
+Td
+lL
+lL
+Tm
+lO
+FT
+Cr
+Cr
+BA
+Tm
+lL
+Tm
+hI
+FT
+FT
+Sv
+pg
+Jl
+SS
+Im
+PX
+Xl
+pg
+Td
+eX
+lL
+"}
+(9,1,1) = {"
+lL
+Td
+yo
+mF
+Td
+Td
+HU
+lL
+lL
+Tm
+Zq
+FT
+PR
+BA
+BA
+Tm
+Tm
+Tm
+AX
+FT
+FT
+Sv
+pg
+Jl
+SS
+Im
+cT
+Xl
+pg
+Sv
+lL
+lL
+"}
+(10,1,1) = {"
+lL
+lL
+Td
+Td
+IP
+lL
+lL
+lL
+lL
+Tm
+Zq
+ff
+FT
+FT
+FT
+Tm
+Sn
+Sn
+FT
+FT
+FT
+Sv
+Cr
+Cr
+SS
+Im
+Cr
+Db
+Cr
+Sv
+lL
+lL
+"}
+(11,1,1) = {"
+lL
+lL
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+Tm
+oL
+FT
+FT
+Yx
+FT
+Tm
+pU
+pU
+FT
+ff
+FT
+Sv
+Cr
+Cr
+Cr
+Cr
+Cr
+Cr
+Cr
+Sv
+lL
+lL
+"}
+(12,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Tm
+oL
+FT
+FT
+ov
+ru
+Tm
+Bm
+Bm
+FT
+FT
+FT
+Sv
+pg
+Cr
+Ba
+hq
+by
+Cr
+pg
+Sv
+lL
+lL
+"}
+(13,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Tm
+Tm
+Pf
+bh
+Tm
+Tm
+Tm
+Tm
+Tm
+vi
+FT
+FT
+Sv
+VQ
+Jl
+Ba
+hq
+by
+Xl
+pg
+Sv
+lL
+lL
+"}
+(14,1,1) = {"
+lL
+lL
+HU
+Td
+Td
+lL
+lL
+lL
+lL
+Tm
+bw
+FT
+FT
+bh
+aL
+FT
+WI
+Tm
+Tm
+FT
+FT
+Sv
+pg
+Jl
+Ba
+hq
+by
+gR
+pg
+Sv
+lL
+lL
+"}
+(15,1,1) = {"
+lL
+lL
+Td
+QE
+Td
+Td
+lL
+lL
+lL
+Tm
+xt
+wM
+FT
+bh
+Ec
+FT
+FT
+FT
+Pf
+FT
+FT
+Sv
+pg
+Jl
+WH
+Jv
+by
+Xl
+pg
+Sv
+lL
+lL
+"}
+(16,1,1) = {"
+lL
+lL
+fh
+KS
+Td
+Td
+Td
+lL
+lL
+Tm
+KP
+FT
+FT
+bh
+FX
+FT
+FT
+FT
+Pf
+FT
+FT
+Sv
+pg
+Jl
+Ba
+hq
+by
+Xl
+pg
+Sv
+lL
+lL
+"}
+(17,1,1) = {"
+lL
+Td
+Td
+Td
+HU
+Td
+lL
+lL
+lL
+Tm
+Pn
+FT
+FT
+Pf
+FT
+FT
+Es
+BB
+Tm
+Tm
+Tm
+Sv
+Cr
+Cr
+Ba
+hq
+by
+gR
+Cr
+Sv
+lL
+lL
+"}
+(18,1,1) = {"
+lL
+yo
+Td
+lL
+Td
+Td
+Td
+lL
+lL
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+Tm
+lL
+lL
+lL
+Cr
+Cr
+Cr
+Cr
+lL
+lL
+Cr
+Cr
+lL
+lL
+"}
+(19,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+Td
+Td
+Zs
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(20,1,1) = {"
+lL
+lL
+lL
+lL
+Ya
+Ya
+Ya
+Ya
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Qa
+Qa
+lL
+lL
+lL
+lL
+"}
+(21,1,1) = {"
+lL
+lL
+lL
+lL
+Ya
+sF
+BD
+Fh
+Td
+px
+lL
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+lL
+lL
+Td
+Td
+lL
+lL
+lL
+lL
+Qa
+Qa
+lL
+lL
+lL
+"}
+(22,1,1) = {"
+lL
+lL
+lL
+lL
+Ya
+qh
+BD
+Eg
+Td
+px
+lL
+Td
+Td
+lL
+lL
+my
+my
+my
+my
+HU
+Td
+rE
+ra
+Wt
+BX
+aR
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(23,1,1) = {"
+lL
+lL
+lL
+lL
+Ya
+Ya
+Ya
+Ya
+fe
+Td
+QE
+Td
+lL
+lL
+lL
+my
+my
+my
+my
+Td
+Td
+lL
+Xn
+Td
+BX
+BX
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(24,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+HU
+Td
+Td
+Td
+HU
+lL
+my
+my
+my
+my
+my
+Td
+Td
+Td
+Td
+Td
+Td
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+"}
+(25,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Bw
+lL
+Td
+Td
+Td
+lL
+lL
+my
+my
+my
+my
+my
+Td
+Td
+CY
+lL
+Td
+aP
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+"}
+(26,1,1) = {"
+lL
+lL
+lL
+Jr
+Td
+Td
+lL
+Td
+Td
+Td
+Td
+BX
+BX
+lL
+my
+my
+my
+my
+Td
+Td
+Td
+Td
+Td
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(27,1,1) = {"
+lL
+lL
+Im
+Im
+Cz
+Td
+Td
+Td
+Td
+Td
+lL
+CN
+BX
+lL
+my
+my
+my
+Td
+Td
+my
+my
+Td
+Td
+my
+my
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(28,1,1) = {"
+lL
+lL
+lL
+Im
+Im
+QT
+Cz
+Td
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+lL
+Td
+aP
+Td
+my
+my
+my
+my
+my
+my
+lL
+lL
+lL
+lL
+lL
+lL
+"}
+(29,1,1) = {"
+lL
+Td
+qE
+Im
+Im
+Im
+Im
+lL
+lL
+lL
+lL
+my
+my
+my
+my
+lL
+lL
+lL
+Td
+HU
+Td
+my
+my
+my
+my
+my
+my
+my
+my
+lL
+lL
+lL
+"}
+(30,1,1) = {"
+lL
+HU
+Iz
+Im
+lL
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+my
+lL
+lL
+Td
+lL
+Td
+Td
+BX
+BX
+lL
+my
+my
+my
+my
+my
+my
+lL
+lL
+lL
+"}
+(31,1,1) = {"
+lL
+hC
+Td
+lL
+lL
+lL
+my
+my
+my
+my
+my
+my
+lL
+lL
+lL
+Td
+Td
+lL
+lL
+Td
+BX
+BX
+lL
+my
+my
+my
+my
+lL
+lL
+lL
+lL
+lL
+"}
+(32,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+my
+lL
+lL
+lL
+lL
+lL
+lL
+Td
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+my
+my
+my
+lL
+lL
+lL
+Qa
+Qa
+lL
+"}
+(33,1,1) = {"
+lL
+lL
+lL
+lL
+my
+my
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Td
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+my
+my
+lL
+lL
+Qa
+Qa
+Qa
+lL
+"}
+(34,1,1) = {"
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+Td
+Td
+Td
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+lL
+"}

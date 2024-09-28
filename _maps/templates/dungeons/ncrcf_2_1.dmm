@@ -1,0 +1,765 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"c" = (
+/obj/effect/decal/remains/human,
+/obj/item/reagent_containers/pill/patch/jet{
+	pixel_x = -13
+	},
+/obj/item/clothing/head/helmet/f13/raider/psychotic{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"d" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	pixel_y = 6
+	},
+/obj/structure/nest/mob/aphid,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"e" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"h" = (
+/obj/effect/decal/remains/human{
+	plane = -4
+	},
+/obj/item/ammo_box/a308{
+	pixel_x = -14
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"i" = (
+/obj/structure/glowshroom,
+/obj/structure/nest/mob/giantant{
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"j" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"l" = (
+/obj/item/grown/log/tree{
+	icon_state = "timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"m" = (
+/obj/item/ammo_box/a308,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"o" = (
+/obj/item/reagent_containers/food/snacks/f13/giantantegg,
+/obj/effect/decal/cleanable/dirt/dust{
+	icon_state = "eggs";
+	desc = null;
+	name = "egg clutch"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"p" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"r" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"s" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"t" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"v" = (
+/obj/structure/nest/mob/giantant{
+	dir = 1;
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"x" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi'
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"E" = (
+/obj/effect/decal/cleanable/dirt/dust{
+	icon_state = "eggs";
+	desc = null;
+	name = "egg clutch"
+	},
+/obj/item/reagent_containers/food/snacks/f13/giantantegg,
+/obj/structure/nest/mob/queenant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"F" = (
+/obj/item/grown/log/tree{
+	icon_state = "brushwood";
+	icon = 'icons/fallout/flora/flora.dmi';
+	pixel_y = null;
+	pixel_x = 2;
+	name = "wood rods"
+	},
+/obj/item/reagent_containers/food/snacks/grown/mushroom/chanterelle,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"G" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"I" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"L" = (
+/obj/structure/nest/mob/giantant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"N" = (
+/obj/item/reagent_containers/hypospray/medipen/psycho,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"P" = (
+/obj/structure/nest/mob/giantant{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"S" = (
+/obj/effect/decal/remains/human,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super{
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"T" = (
+/obj/structure/nest/mob/giantant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"U" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/cleanable/dirt/dust{
+	icon_state = "eggs";
+	desc = null;
+	name = "egg clutch"
+	},
+/obj/item/reagent_containers/food/snacks/f13/giantantegg,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+j
+j
+j
+j
+j
+j
+j
+"}
+(2,1,1) = {"
+j
+j
+j
+G
+G
+j
+j
+j
+j
+j
+j
+j
+j
+j
+"}
+(3,1,1) = {"
+j
+j
+G
+j
+j
+j
+p
+p
+Y
+Y
+j
+j
+j
+j
+"}
+(4,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+Y
+Y
+E
+o
+j
+j
+j
+"}
+(5,1,1) = {"
+t
+j
+j
+j
+j
+I
+m
+Y
+Y
+Y
+Y
+j
+j
+j
+"}
+(6,1,1) = {"
+G
+t
+j
+j
+L
+h
+I
+Y
+Y
+Y
+Y
+I
+j
+j
+"}
+(7,1,1) = {"
+j
+t
+t
+j
+j
+U
+s
+I
+Y
+Y
+I
+U
+j
+j
+"}
+(8,1,1) = {"
+G
+j
+j
+j
+j
+j
+r
+I
+I
+I
+j
+j
+j
+j
+"}
+(9,1,1) = {"
+j
+j
+j
+j
+j
+j
+I
+I
+I
+l
+x
+j
+j
+j
+"}
+(10,1,1) = {"
+G
+j
+j
+j
+j
+j
+P
+I
+I
+I
+d
+j
+j
+j
+"}
+(11,1,1) = {"
+j
+j
+j
+j
+I
+I
+I
+I
+U
+I
+l
+j
+j
+j
+"}
+(12,1,1) = {"
+j
+j
+j
+L
+I
+I
+I
+I
+I
+I
+j
+I
+j
+j
+"}
+(13,1,1) = {"
+j
+j
+j
+j
+I
+j
+j
+S
+I
+I
+v
+I
+j
+j
+"}
+(14,1,1) = {"
+j
+j
+j
+j
+I
+I
+j
+I
+s
+I
+F
+j
+j
+j
+"}
+(15,1,1) = {"
+j
+j
+j
+j
+I
+I
+j
+I
+I
+j
+j
+j
+j
+j
+"}
+(16,1,1) = {"
+j
+j
+j
+j
+U
+I
+j
+x
+I
+j
+j
+j
+j
+j
+"}
+(17,1,1) = {"
+j
+j
+j
+j
+I
+I
+j
+I
+I
+j
+G
+j
+j
+j
+"}
+(18,1,1) = {"
+j
+j
+j
+I
+I
+I
+j
+I
+U
+j
+j
+G
+j
+j
+"}
+(19,1,1) = {"
+j
+j
+L
+I
+s
+e
+e
+e
+a
+a
+j
+j
+G
+j
+"}
+(20,1,1) = {"
+j
+j
+j
+j
+I
+a
+a
+a
+a
+a
+a
+j
+j
+j
+"}
+(21,1,1) = {"
+j
+j
+j
+j
+a
+a
+a
+e
+e
+a
+j
+j
+G
+j
+"}
+(22,1,1) = {"
+j
+j
+j
+j
+a
+a
+T
+I
+I
+j
+j
+j
+j
+j
+"}
+(23,1,1) = {"
+j
+j
+j
+j
+j
+j
+U
+P
+I
+j
+j
+j
+j
+G
+"}
+(24,1,1) = {"
+j
+j
+j
+j
+j
+j
+I
+s
+I
+I
+j
+j
+j
+G
+"}
+(25,1,1) = {"
+j
+j
+j
+j
+j
+j
+I
+I
+I
+c
+j
+j
+j
+j
+"}
+(26,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+j
+j
+I
+N
+j
+j
+j
+"}
+(27,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+I
+I
+I
+U
+j
+j
+j
+"}
+(28,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+I
+I
+j
+I
+j
+j
+j
+"}
+(29,1,1) = {"
+j
+j
+t
+t
+j
+j
+I
+I
+P
+I
+I
+I
+j
+j
+"}
+(30,1,1) = {"
+G
+G
+t
+j
+j
+j
+j
+i
+I
+I
+s
+I
+j
+j
+"}
+(31,1,1) = {"
+t
+t
+j
+j
+j
+j
+a
+e
+e
+e
+a
+U
+j
+j
+"}
+(32,1,1) = {"
+j
+j
+j
+j
+j
+a
+a
+a
+a
+a
+a
+a
+j
+j
+"}
+(33,1,1) = {"
+j
+j
+j
+j
+j
+j
+a
+a
+a
+a
+a
+a
+a
+j
+"}
+(34,1,1) = {"
+j
+j
+j
+j
+j
+j
+j
+j
+j
+a
+a
+a
+j
+j
+"}

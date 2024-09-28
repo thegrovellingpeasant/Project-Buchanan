@@ -1,0 +1,1612 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bp" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"bu" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"bw" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cr" = (
+/obj/item/cultivator/rake,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cE" = (
+/obj/structure/flora/junglebush/c,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"dg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/junglebush/large,
+/turf/open/water/cavern,
+/area/f13/caves)
+"dD" = (
+/obj/effect/spawner/lootdrop/f13/blueprintVHigh,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dG" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"ei" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/structure/flora/grass/whitelegvine,
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	pixel_x = -29;
+	pixel_y = 10
+	},
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	pixel_x = -31;
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gj" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gz" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hd" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ho" = (
+/obj/structure/flora/junglebush/large,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"ix" = (
+/obj/structure/lamp_post/floodlight,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"iL" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"iZ" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"jy" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	pixel_y = 32;
+	name = "vines"
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"jD" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/cavern,
+/area/f13/caves)
+"jY" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"kI" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"kO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/junglebush/b,
+/turf/open/water/cavern,
+/area/f13/caves)
+"kS" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"mf" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/water/cavern,
+/area/f13/caves)
+"mB" = (
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"nZ" = (
+/obj/structure/nest/mob/geckofire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"pB" = (
+/obj/item/blanket/rug,
+/obj/item/clothing/head/helmet/skull/bone,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pD" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/junglebush,
+/turf/open/water/cavern,
+/area/f13/caves)
+"qa" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ra" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"sb" = (
+/obj/item/clothing/head/scarecrow_hat{
+	pixel_y = 8
+	},
+/obj/structure/table/wood/junk,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sZ" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"uy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"uR" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/obj/item/reagent_containers/food/drinks/trophy/turquoise,
+/obj/structure/flora/rock/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"uX" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uZ" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"vm" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = -1;
+	layer = 2.81;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vD" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/structure/flora/grass/whitelegvine,
+/obj/structure/nest/mob/geckofire{
+	dir = 8;
+	pixel_x = 26;
+	pixel_y = 18
+	},
+/obj/structure/nest/mob/geckofire{
+	dir = 8;
+	pixel_x = 29
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vH" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vX" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"wi" = (
+/obj/item/reagent_containers/food/snacks/meat/steak{
+	pixel_y = 11
+	},
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wk" = (
+/obj/effect/decal/remains/human,
+/obj/item/flashlight/flare/torch{
+	pixel_x = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wT" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"xk" = (
+/obj/item/shovel/trench,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xy" = (
+/obj/structure/nest/mob/raider/tribal{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yB" = (
+/obj/structure/closet/crate/wicker,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yR" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"yV" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/stack/sheet/bone,
+/obj/item/stack/sheet/bone{
+	pixel_y = 10;
+	pixel_x = -18
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zh" = (
+/obj/structure/headpike/bone,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zG" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"zP" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/structure/flora/grass/whitelegvine,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Aj" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Ao" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ay" = (
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
+"AE" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cd" = (
+/obj/structure/flora/junglebush,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"CU" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Dp" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"ER" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/cavern,
+/area/f13/caves)
+"EZ" = (
+/obj/structure/nest/mob/raider/tribal,
+/obj/item/blanket/rug/blue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fr" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Fv" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Gy" = (
+/obj/structure/nest/mob/raider/tribal{
+	dir = 4
+	},
+/obj/item/blanket/rug/blue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Gz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.11;
+	name = "vines";
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Hq" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hz" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ir" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"IY" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Jg" = (
+/obj/structure/nest/mob/gecko{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Jt" = (
+/obj/machinery/smartfridge/bottlerack/seedbin,
+/obj/item/seeds/xander,
+/obj/item/seeds/xander,
+/obj/item/seeds/poppy/broc,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JB" = (
+/obj/structure/closet/crate/wicker,
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder/berserker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JV" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Kw" = (
+/obj/item/blanket/rug/blue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"LW" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"MY" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Nz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/junglebush/c,
+/turf/open/water/cavern,
+/area/f13/caves)
+"NB" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"OO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/junglebush/large,
+/turf/open/water/cavern,
+/area/f13/caves)
+"Pt" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"QK" = (
+/obj/structure/legion_extractor,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QQ" = (
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"RB" = (
+/obj/effect/decal/remains/skulls{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"RY" = (
+/obj/item/blanket/ruined,
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Sn" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Uh" = (
+/turf/open/water/cavern,
+/area/f13/caves)
+"Uj" = (
+/obj/structure/flora/junglebush/b,
+/turf/open/water/cavern,
+/area/f13/caves)
+"Ul" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/junglebush/b,
+/turf/open/water/cavern,
+/area/f13/caves)
+"UH" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"UV" = (
+/obj/structure/flora/junglebush,
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	pixel_y = -32;
+	name = "vines"
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Wg" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WS" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/water/cavern,
+/area/f13/caves)
+"Xz" = (
+/obj/machinery/hydroponics/soil/pot,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XV" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Yy" = (
+/obj/effect/decal/remains/cloth{
+	pixel_x = -32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"YZ" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZN" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_x = -32
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/junglebush,
+/turf/open/water/cavern,
+/area/f13/caves)
+"ZZ" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+
+(1,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(2,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(3,1,1) = {"
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Jt
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(4,1,1) = {"
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Xz
+cr
+qa
+Xz
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(5,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Xz
+qa
+yV
+qa
+Xz
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+"}
+(6,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+sb
+qa
+ix
+qa
+Xz
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+"}
+(7,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+qa
+qa
+xk
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+"}
+(8,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+qa
+qa
+QK
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+"}
+(9,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Ao
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+qa
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(10,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+JV
+qa
+YZ
+YZ
+Ay
+Ay
+Dp
+Dp
+ei
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+gj
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(11,1,1) = {"
+Dp
+Dp
+jy
+Uj
+jD
+jD
+xd
+OO
+Cd
+Cd
+uZ
+CU
+YZ
+YZ
+NB
+Ay
+Ay
+Ay
+Ay
+ZN
+Dp
+YZ
+ZN
+gj
+YZ
+ZN
+YZ
+dg
+bp
+Gz
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(12,1,1) = {"
+Dp
+ZZ
+Uh
+sZ
+sZ
+mf
+Uh
+Uj
+Pt
+oJ
+Pt
+uy
+MY
+Wg
+wT
+gj
+Ay
+Ay
+yR
+ZO
+Ir
+uy
+Fr
+xd
+MY
+Wg
+zG
+Uj
+ra
+LW
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(13,1,1) = {"
+Dp
+Aj
+bu
+Dp
+uR
+UV
+Dp
+Dp
+vH
+qa
+qa
+ER
+sZ
+kO
+MY
+qa
+Ay
+dG
+WS
+Uj
+Uh
+cE
+iL
+sZ
+sZ
+Fr
+IY
+UH
+wT
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(14,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Dp
+Hz
+uX
+LW
+vX
+jY
+sZ
+Fr
+Uh
+Uh
+iZ
+Uh
+Sn
+Dp
+Dp
+ho
+iL
+bu
+Dp
+Dp
+uX
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(15,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+iL
+pD
+Pt
+Nz
+iL
+iL
+kI
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+zP
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(16,1,1) = {"
+Dp
+Ay
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+LW
+qa
+Hq
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+zh
+qa
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}
+(17,1,1) = {"
+Ay
+Ay
+Dp
+Dp
+Dp
+wT
+nZ
+QQ
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+vD
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+kS
+RB
+qa
+qa
+JB
+kS
+kS
+Dp
+Dp
+"}
+(18,1,1) = {"
+Ay
+Ay
+Ay
+Dp
+Dp
+QQ
+AE
+RY
+RY
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+qa
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Ay
+Dp
+kS
+qa
+qa
+qa
+qa
+Yy
+kS
+Dp
+Dp
+"}
+(19,1,1) = {"
+Ay
+Ay
+Ay
+Dp
+QQ
+RY
+qa
+qa
+qa
+YZ
+YZ
+Dp
+Dp
+Dp
+YZ
+qa
+NB
+Dp
+YZ
+bw
+Dp
+Dp
+qa
+kS
+kS
+Dp
+kS
+kS
+pB
+xy
+qa
+yB
+kS
+Dp
+Ay
+"}
+(20,1,1) = {"
+Ay
+Ay
+Ay
+Dp
+AE
+qa
+dD
+AE
+Jg
+wT
+qa
+YZ
+bw
+YZ
+qa
+qa
+qa
+YZ
+qa
+qa
+Dp
+qa
+Gy
+qa
+kS
+Dp
+Dp
+kS
+mB
+qa
+kS
+kS
+kS
+Dp
+Ay
+"}
+(21,1,1) = {"
+Dp
+Ay
+Dp
+Dp
+Dp
+RY
+QQ
+Dp
+Dp
+Dp
+QQ
+QQ
+qa
+qa
+wk
+qa
+qa
+XV
+Ul
+Dp
+Dp
+EZ
+wi
+Kw
+Dp
+Dp
+Dp
+kS
+mB
+qa
+kS
+Dp
+Dp
+Ay
+Ay
+"}
+(22,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+QQ
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+LW
+Fv
+zG
+kO
+Fr
+Dp
+Dp
+Dp
+gz
+qa
+wT
+qa
+qa
+qa
+qa
+qa
+qa
+vm
+Dp
+Dp
+Dp
+Ay
+Ay
+"}
+(23,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+iL
+Dp
+Ay
+Ay
+Dp
+Dp
+qa
+hd
+qa
+vm
+qa
+Dp
+vm
+qa
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+"}
+(24,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+Ay
+Dp
+kS
+kS
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Ay
+"}
+(25,1,1) = {"
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Ay
+Ay
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+Dp
+"}

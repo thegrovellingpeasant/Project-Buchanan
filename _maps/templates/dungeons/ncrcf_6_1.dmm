@@ -1,0 +1,397 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"d" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"f" = (
+/obj/structure/chair/stool,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"i" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"j" = (
+/obj/item/pickaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"k" = (
+/obj/structure/chair/stool,
+/obj/structure/nest/mob/raider/tribal{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"l" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/noticeboard,
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"n" = (
+/obj/structure/closet/crate/footchest,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5";
+	layer = 2.91;
+	pixel_y = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"t" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"u" = (
+/obj/effect/decal/cleanable/crayon,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"w" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"x" = (
+/obj/structure/table/wood/settler,
+/obj/item/restraints/handcuffs/sinew,
+/obj/item/gun/ballistic/rifle/mosin{
+	pixel_x = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/obj/structure/table/wood/settler,
+/obj/item/assembly/signaler,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"z" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/obj/structure/nest/mob/raider/tribal{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"A" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/obj/structure/nest/mob/raider/tribal{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"E" = (
+/obj/structure/bed/mattress{
+	dir = 1;
+	icon_state = "mattress4";
+	pixel_y = 3
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"G" = (
+/obj/structure/table/wood{
+	icon = 'icons/obj/hand_of_god_structures.dmi';
+	icon_state = "sacrificealtarbase";
+	pixel_y = 6;
+	desc = null;
+	name = "altar";
+	smooth = 0
+	},
+/obj/item/kitchen/knife/butcher{
+	pixel_y = 9
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"L" = (
+/obj/structure/chair/sofa/left{
+	dir = 4;
+	name = "bug infested sofa"
+	},
+/obj/structure/nest/mob/raider/tribal{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"N" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"O" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"P" = (
+/obj/structure/chair/sofa/right{
+	dir = 4;
+	name = "bug infested sofa"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Q" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"R" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"U" = (
+/obj/effect/overlay/curb/north,
+/obj/effect/overlay/curb{
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/structure/table/wood/settler,
+/obj/item/electropack/shockcollar{
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/structure/obstacle/old_locked_door,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Z" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/f13/ncrcfjacket{
+	pixel_y = 7;
+	pixel_x = -8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+w
+w
+w
+w
+w
+w
+w
+a
+a
+"}
+(3,1,1) = {"
+w
+q
+Z
+w
+t
+E
+w
+a
+a
+"}
+(4,1,1) = {"
+w
+t
+Q
+w
+Q
+Y
+w
+a
+a
+"}
+(5,1,1) = {"
+w
+R
+N
+w
+N
+R
+w
+a
+a
+"}
+(6,1,1) = {"
+a
+A
+A
+l
+A
+A
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+W
+a
+y
+A
+A
+a
+a
+i
+"}
+(8,1,1) = {"
+a
+n
+a
+x
+V
+A
+A
+a
+i
+"}
+(9,1,1) = {"
+a
+w
+w
+m
+w
+w
+A
+a
+a
+"}
+(10,1,1) = {"
+a
+w
+f
+k
+d
+O
+U
+A
+a
+"}
+(11,1,1) = {"
+a
+w
+Q
+Q
+Q
+Q
+U
+A
+a
+"}
+(12,1,1) = {"
+a
+w
+D
+O
+L
+P
+U
+a
+a
+"}
+(13,1,1) = {"
+a
+w
+Q
+Q
+Q
+Q
+U
+A
+a
+"}
+(14,1,1) = {"
+a
+w
+Q
+u
+Q
+u
+U
+A
+j
+"}
+(15,1,1) = {"
+a
+w
+Q
+Q
+G
+Q
+U
+A
+a
+"}
+(16,1,1) = {"
+a
+w
+Q
+u
+z
+u
+U
+a
+a
+"}
+(17,1,1) = {"
+a
+w
+w
+w
+w
+w
+a
+a
+a
+"}
+(18,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+i
+"}

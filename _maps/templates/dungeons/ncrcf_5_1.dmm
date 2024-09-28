@@ -1,0 +1,860 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"b" = (
+/obj/structure/closet/locker,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"c" = (
+/obj/structure/table/rolling,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"d" = (
+/obj/structure/simple_door/metal/iron,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"e" = (
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = -17
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"g" = (
+/obj/structure/nest/mob/gecko{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"h" = (
+/obj/effect/decal/remains/human{
+	layer = 2.11;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/pizzabox);
+	icon_state = "trash_pile2";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 1
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"i" = (
+/obj/structure/closet/crate/bin/trash_fallout,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"j" = (
+/obj/item/trash/f13/rotten,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/contraband/pinup_pink{
+	pixel_y = 32
+	},
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"k" = (
+/obj/effect/decal/cleanable/blood/gibs/human/limb,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"l" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"m" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"n" = (
+/obj/structure/table/rolling,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"o" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"p" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"r" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"s" = (
+/obj/structure/nest/mob/gecko,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"t" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress3"
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/item/restraints/handcuffs,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"u" = (
+/obj/effect/decal/cleanable/blood{
+	layer = 2.7
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"v" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"w" = (
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"x" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"y" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"z" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"A" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"B" = (
+/obj/structure/grille/broken,
+/obj/item/stack/rods/ten,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"C" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7"
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"D" = (
+/obj/structure/bed/mattress,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"E" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 1
+	},
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"F" = (
+/obj/structure/nest/mob/yaoguai,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"G" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"I" = (
+/turf/closed/wall/mineral/brick,
+/area/f13/caves)
+"J" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"K" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	color = "#A47449";
+	name = "wooden stairs"
+	},
+/area/f13/caves)
+"L" = (
+/obj/effect/decal/remains/human{
+	layer = 3.01;
+	plane = -4;
+	debris_result = list(/obj/item/instrument/guitar,/obj/structure/chair/comfy);
+	icon_state = "junk_pile3";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 9
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"M" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"O" = (
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"P" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"Q" = (
+/obj/item/stack/sheet/metal/ten,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"R" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/mob/yaoguai{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"T" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"U" = (
+/obj/structure/closet/locker,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+"V" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	icon_state = "firegekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Y" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"Z" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	layer = 2.91;
+	pixel_y = 1
+	},
+/turf/open/floor/f13{
+	dir = 6;
+	icon_state = "darkyellowfull"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+X
+r
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+X
+X
+W
+X
+X
+X
+X
+p
+X
+X
+a
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+X
+X
+s
+X
+a
+a
+X
+X
+X
+a
+r
+X
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+X
+X
+X
+X
+r
+X
+X
+X
+X
+X
+a
+a
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+a
+a
+X
+X
+X
+W
+g
+a
+a
+a
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+a
+X
+a
+a
+a
+a
+a
+a
+G
+a
+G
+a
+a
+"}
+(8,1,1) = {"
+a
+a
+a
+X
+X
+X
+X
+a
+X
+r
+a
+G
+a
+a
+a
+a
+a
+"}
+(9,1,1) = {"
+a
+a
+a
+a
+X
+X
+r
+X
+a
+a
+a
+a
+a
+a
+X
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+a
+a
+p
+X
+X
+a
+a
+a
+a
+a
+X
+r
+X
+a
+a
+"}
+(11,1,1) = {"
+a
+a
+a
+a
+X
+W
+X
+s
+X
+r
+a
+a
+X
+X
+X
+a
+a
+"}
+(12,1,1) = {"
+a
+a
+a
+X
+X
+X
+a
+X
+X
+X
+a
+a
+X
+a
+p
+a
+a
+"}
+(13,1,1) = {"
+a
+a
+a
+r
+X
+X
+a
+a
+a
+a
+a
+X
+X
+a
+X
+a
+a
+"}
+(14,1,1) = {"
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+a
+X
+X
+X
+X
+a
+a
+"}
+(15,1,1) = {"
+I
+U
+y
+I
+c
+w
+B
+O
+O
+I
+a
+a
+a
+g
+X
+X
+a
+"}
+(16,1,1) = {"
+I
+b
+l
+I
+n
+F
+P
+O
+v
+I
+a
+a
+X
+X
+X
+X
+a
+"}
+(17,1,1) = {"
+I
+E
+O
+I
+O
+O
+J
+O
+O
+I
+a
+X
+W
+X
+r
+a
+a
+"}
+(18,1,1) = {"
+I
+I
+d
+I
+I
+Q
+I
+I
+I
+I
+a
+X
+a
+a
+a
+a
+a
+"}
+(19,1,1) = {"
+I
+j
+l
+x
+l
+T
+l
+h
+t
+I
+a
+X
+X
+a
+a
+G
+a
+"}
+(20,1,1) = {"
+I
+Y
+q
+O
+C
+R
+x
+l
+x
+I
+a
+X
+X
+V
+a
+a
+a
+"}
+(21,1,1) = {"
+I
+Y
+Y
+e
+D
+u
+O
+k
+L
+I
+a
+X
+X
+a
+a
+a
+a
+"}
+(22,1,1) = {"
+I
+Y
+K
+M
+o
+z
+A
+Z
+i
+I
+a
+a
+X
+r
+a
+G
+a
+"}
+(23,1,1) = {"
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+a
+a
+a
+a
+a
+a
+a
+"}
+(24,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+G
+a
+a
+a
+m
+"}
+(25,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+G
+m
+m
+"}

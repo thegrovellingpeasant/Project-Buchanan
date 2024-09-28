@@ -1,0 +1,671 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"b" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"c" = (
+/obj/structure/nest/spawner/molerat,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"d" = (
+/obj/structure/nest/mob/molerat{
+	dir = 4;
+	pixel_y = 18
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"e" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"f" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"g" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor3-broken"
+	},
+/area/f13/caves)
+"h" = (
+/obj/structure/closet/crate/large,
+/obj/item/ammo_box/a308,
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"i" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/caves)
+"j" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"k" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"l" = (
+/obj/machinery/light/small/broken,
+/obj/structure/nest/mob/ghoul{
+	dir = 4;
+	layer = 3.01
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken"
+	},
+/area/f13/caves)
+"m" = (
+/obj/structure/bed/mattress{
+	dir = 1;
+	icon_state = "mattress4"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"n" = (
+/obj/structure/closet/crate/wicker,
+/obj/item/blanket/rug/blue,
+/obj/item/ammo_box/a308,
+/obj/item/ammo_box/a308,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"o" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/bottle/brown/greenwine{
+	pixel_y = 10;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/greenwine{
+	pixel_y = 10;
+	pixel_x = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"p" = (
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"q" = (
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"r" = (
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"s" = (
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"t" = (
+/obj/structure/railing{
+	dir = 4;
+	color = "#7a5647"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"u" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor1-broken"
+	},
+/area/f13/caves)
+"v" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"w" = (
+/obj/structure/table/reinforced,
+/obj/machinery/workbench/bottler{
+	pixel_y = 5
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"x" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"y" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"z" = (
+/obj/machinery/computer/terminal{
+	dir = 1;
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"A" = (
+/obj/structure/closet/crate/large,
+/obj/item/ammo_box/a308,
+/obj/item/ammo_box/a308,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"B" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"C" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"D" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"E" = (
+/obj/structure/nest/mob/molerat{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"F" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	pixel_y = 8;
+	pixel_x = -10
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	pixel_y = 8;
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/darkbrown{
+	pixel_x = 10;
+	pixel_y = 9
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"G" = (
+/obj/machinery/computer/terminal,
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"H" = (
+/obj/structure/nest/mob/ghoulcozy,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	color = "#A47449";
+	name = "wooden stairs"
+	},
+/area/f13/caves)
+"I" = (
+/obj/structure/nest/mob/ghoulcozy,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"J" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 24;
+	icon = 'icons/obj/machines/mining_machines.dmi';
+	icon_state = "console";
+	name = "terminal";
+	density = 0
+	},
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoul,
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"K" = (
+/obj/structure/nest/mob/molerat{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/closet/crate/large,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"M" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"N" = (
+/obj/item/chair/stool/retro/tan,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"P" = (
+/obj/item/blanket/ruined,
+/obj/structure/nest/mob/molerat,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Q" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	color = "#A47449";
+	name = "wooden stairs"
+	},
+/area/f13/caves)
+"R" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"S" = (
+/obj/structure/railing{
+	dir = 4;
+	color = "#7a5647"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+"T" = (
+/obj/machinery/smartfridge/bottlerack,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"U" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 1;
+	pixel_y = 15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/obj/structure/closet/crate/leftfootlocker,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Y" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor2-broken"
+	},
+/area/f13/caves)
+"Z" = (
+/obj/structure/fermenting_barrel{
+	icon = 'icons/obj/atmospherics/pipes/pressure_tank.dmi';
+	icon_state = "grey_map";
+	name = "Mixing Vat";
+	anchored = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+"}
+(2,1,1) = {"
+k
+R
+R
+R
+R
+R
+R
+R
+r
+r
+R
+R
+"}
+(3,1,1) = {"
+k
+R
+R
+R
+y
+y
+y
+y
+E
+r
+R
+R
+"}
+(4,1,1) = {"
+k
+R
+R
+y
+f
+y
+y
+R
+y
+y
+y
+R
+"}
+(5,1,1) = {"
+R
+R
+R
+N
+j
+d
+m
+R
+y
+D
+R
+R
+"}
+(6,1,1) = {"
+R
+R
+r
+D
+y
+y
+y
+y
+y
+R
+y
+R
+"}
+(7,1,1) = {"
+R
+P
+r
+R
+c
+y
+n
+R
+r
+R
+R
+R
+"}
+(8,1,1) = {"
+R
+r
+r
+R
+M
+U
+y
+K
+r
+r
+R
+R
+"}
+(9,1,1) = {"
+R
+R
+y
+y
+y
+y
+y
+y
+R
+R
+R
+R
+"}
+(10,1,1) = {"
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+R
+"}
+(11,1,1) = {"
+R
+R
+i
+i
+i
+i
+i
+B
+B
+i
+i
+R
+"}
+(12,1,1) = {"
+R
+R
+i
+I
+a
+p
+C
+Y
+x
+L
+i
+R
+"}
+(13,1,1) = {"
+R
+R
+i
+Z
+p
+z
+i
+w
+x
+l
+i
+R
+"}
+(14,1,1) = {"
+R
+R
+i
+G
+p
+Z
+i
+F
+x
+h
+i
+R
+"}
+(15,1,1) = {"
+R
+R
+i
+Z
+p
+z
+i
+o
+x
+W
+i
+R
+"}
+(16,1,1) = {"
+R
+R
+i
+G
+p
+Z
+i
+T
+u
+x
+i
+R
+"}
+(17,1,1) = {"
+R
+y
+i
+Z
+p
+z
+i
+T
+s
+x
+i
+R
+"}
+(18,1,1) = {"
+R
+y
+i
+G
+p
+Z
+i
+T
+x
+x
+i
+R
+"}
+(19,1,1) = {"
+R
+y
+i
+J
+S
+S
+t
+x
+x
+x
+i
+R
+"}
+(20,1,1) = {"
+R
+y
+i
+i
+b
+b
+Q
+g
+x
+x
+i
+R
+"}
+(21,1,1) = {"
+k
+R
+R
+i
+b
+Q
+H
+q
+A
+v
+i
+R
+"}
+(22,1,1) = {"
+R
+R
+R
+i
+i
+i
+i
+i
+i
+i
+i
+R
+"}
+(23,1,1) = {"
+R
+R
+R
+y
+c
+y
+d
+y
+j
+R
+e
+e
+"}
+(24,1,1) = {"
+R
+R
+R
+y
+y
+D
+y
+y
+R
+R
+e
+e
+"}
+(25,1,1) = {"
+R
+R
+D
+y
+E
+y
+R
+R
+R
+e
+e
+e
+"}
+(26,1,1) = {"
+R
+R
+R
+R
+R
+R
+R
+R
+R
+e
+e
+e
+"}

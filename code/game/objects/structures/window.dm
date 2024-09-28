@@ -932,6 +932,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	canSmoothWith = null
 	smooth = SMOOTH_TRUE
 	fulltile = TRUE
+	plane = WALL_PLANE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	dir = FULLTILE_WINDOW_DIR
 	max_integrity = 100
@@ -950,6 +951,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	canSmoothWith = null
 	smooth = SMOOTH_FALSE
 	fulltile = TRUE
+	plane = WALL_PLANE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	dir = FULLTILE_WINDOW_DIR
 	max_integrity = 100
@@ -965,6 +967,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 	canSmoothWith = null
 	smooth = SMOOTH_FALSE
 	fulltile = TRUE
+	plane = WALL_PLANE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	dir = FULLTILE_WINDOW_DIR
 	max_integrity = 100

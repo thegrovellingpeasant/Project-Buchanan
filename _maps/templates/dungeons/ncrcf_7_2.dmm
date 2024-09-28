@@ -1,0 +1,669 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"b" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13,
+/area/f13/caves)
+"e" = (
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/mob/venushumantrap/weak{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"f" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"g" = (
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"h" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"i" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_y = -13;
+	pixel_x = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"j" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"k" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	icon_state = "lab";
+	icon_keyboard = "lab_key";
+	icon_screen = "lab_on"
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"l" = (
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_y = -13;
+	pixel_x = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"m" = (
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/stamp{
+	name = "Stamp"
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"n" = (
+/obj/structure/table/reinforced,
+/obj/item/salvage/high{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "id_key_off";
+	pixel_y = 9;
+	layer = 2.99
+	},
+/obj/machinery/computer/security/telescreen{
+	name = "Telescreen";
+	pixel_y = 23;
+	network = list("toxins")
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"o" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"p" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/open/floor/f13,
+/area/f13/caves)
+"r" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/caves)
+"t" = (
+/obj/structure/debris/v1,
+/turf/open/floor/f13,
+/area/f13/caves)
+"u" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/structure/table/reinforced,
+/obj/machinery/computer/security/telescreen{
+	name = "Telescreen";
+	pixel_y = 23;
+	network = list("toxins")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"v" = (
+/obj/structure/car/junk/computer{
+	desc = null
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"w" = (
+/obj/structure/nest/mob/venushumantrap/weak{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"x" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/f13,
+/area/f13/caves)
+"y" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"z" = (
+/obj/structure/chair/office/dark{
+	name = "office chair";
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"C" = (
+/obj/structure/table,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/pen,
+/turf/open/floor/f13,
+/area/f13/caves)
+"D" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/structure/debris/v1,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"E" = (
+/obj/structure/chair/office/dark{
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"F" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13,
+/area/f13/caves)
+"G" = (
+/obj/structure/nest/mob/venushumantrap/weak{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"H" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	icon_state = "terminal_broken";
+	dir = 8;
+	density = 0;
+	name = "Water purifier control"
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"I" = (
+/obj/machinery/computer/terminal{
+	icon_state = "computer_R";
+	pixel_x = -3
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"J" = (
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/caves)
+"K" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/closet/locker,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13,
+/area/f13/caves)
+"M" = (
+/turf/open/floor/f13,
+/area/f13/caves)
+"N" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"O" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"P" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Q" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"R" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"S" = (
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/structure/chair/office/dark{
+	name = "office chair";
+	dir = 4
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"T" = (
+/obj/structure/flora/grass/whitelegvine,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
+"U" = (
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"V" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"W" = (
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_y = -13;
+	pixel_x = 0
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13,
+/area/f13/caves)
+"Z" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+
+(1,1,1) = {"
+P
+P
+P
+P
+P
+P
+Z
+Z
+Z
+P
+P
+P
+"}
+(2,1,1) = {"
+P
+P
+Z
+Z
+P
+P
+P
+P
+Z
+Z
+Z
+P
+"}
+(3,1,1) = {"
+P
+Z
+P
+P
+P
+y
+y
+P
+y
+P
+Z
+P
+"}
+(4,1,1) = {"
+P
+Z
+P
+y
+y
+K
+y
+W
+y
+P
+P
+P
+"}
+(5,1,1) = {"
+Z
+Z
+Z
+K
+o
+y
+o
+y
+y
+y
+P
+P
+"}
+(6,1,1) = {"
+Z
+Z
+Z
+U
+U
+R
+j
+j
+o
+y
+P
+P
+"}
+(7,1,1) = {"
+Z
+Z
+Z
+X
+u
+Y
+p
+p
+K
+y
+P
+P
+"}
+(8,1,1) = {"
+Z
+Z
+P
+f
+n
+z
+Q
+L
+y
+P
+Z
+Z
+"}
+(9,1,1) = {"
+Z
+Z
+P
+J
+m
+Q
+M
+t
+J
+Z
+Z
+Z
+"}
+(10,1,1) = {"
+Z
+Z
+P
+U
+x
+E
+M
+M
+D
+Z
+Z
+Z
+"}
+(11,1,1) = {"
+Z
+Z
+P
+X
+p
+k
+T
+p
+j
+P
+Z
+Z
+"}
+(12,1,1) = {"
+Z
+Z
+U
+j
+X
+h
+Q
+j
+j
+P
+Z
+P
+"}
+(13,1,1) = {"
+Z
+Z
+U
+p
+I
+Y
+l
+G
+U
+P
+Z
+Z
+"}
+(14,1,1) = {"
+P
+Z
+P
+v
+e
+F
+V
+V
+J
+y
+P
+Z
+"}
+(15,1,1) = {"
+P
+Z
+P
+y
+y
+V
+V
+V
+X
+K
+P
+P
+"}
+(16,1,1) = {"
+P
+Z
+Z
+P
+P
+o
+Y
+p
+X
+o
+P
+P
+"}
+(17,1,1) = {"
+P
+Z
+P
+P
+P
+K
+Y
+T
+r
+y
+y
+P
+"}
+(18,1,1) = {"
+P
+Z
+P
+N
+g
+V
+Q
+S
+X
+y
+y
+P
+"}
+(19,1,1) = {"
+P
+Z
+j
+p
+i
+Q
+H
+C
+f
+y
+y
+P
+"}
+(20,1,1) = {"
+Z
+Z
+X
+p
+M
+Y
+b
+a
+j
+y
+P
+P
+"}
+(21,1,1) = {"
+Z
+P
+J
+J
+y
+w
+y
+j
+j
+K
+P
+Z
+"}
+(22,1,1) = {"
+Z
+P
+P
+P
+y
+K
+o
+y
+o
+O
+P
+Z
+"}
+(23,1,1) = {"
+Z
+P
+P
+P
+P
+y
+y
+y
+O
+y
+Z
+Z
+"}
+(24,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+P
+P
+y
+y
+P
+Z
+P
+"}
+(25,1,1) = {"
+P
+P
+Z
+P
+Z
+Z
+P
+P
+P
+P
+Z
+P
+"}
+(26,1,1) = {"
+P
+P
+P
+P
+P
+Z
+Z
+Z
+Z
+Z
+P
+P
+"}

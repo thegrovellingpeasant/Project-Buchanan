@@ -1,0 +1,340 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"b" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/item/clothing/suit/armor/f13/ncrcfjacket{
+	pixel_y = 7;
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"g" = (
+/obj/structure/nest/mob/yaoguai{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"j" = (
+/obj/item/ammo_box/a762box,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"l" = (
+/obj/structure/nest/mob/yaoguai{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"p" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"w" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/item/gun/ballistic/rifle/mosin{
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"C" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"E" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"I" = (
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"M" = (
+/obj/item/pickaxe/drill,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"R" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"S" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"U" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/item/clothing/under/f13/ncrcf{
+	pixel_x = -9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+E
+U
+U
+U
+U
+E
+a
+a
+a
+E
+E
+E
+E
+"}
+(2,1,1) = {"
+U
+U
+I
+U
+U
+U
+E
+a
+a
+a
+E
+E
+E
+"}
+(3,1,1) = {"
+U
+I
+a
+R
+U
+U
+U
+E
+I
+a
+a
+E
+E
+"}
+(4,1,1) = {"
+U
+b
+a
+a
+a
+U
+U
+U
+E
+a
+a
+a
+E
+"}
+(5,1,1) = {"
+U
+a
+g
+a
+a
+I
+U
+U
+E
+a
+S
+I
+E
+"}
+(6,1,1) = {"
+U
+a
+a
+a
+a
+a
+U
+U
+E
+a
+a
+E
+E
+"}
+(7,1,1) = {"
+U
+a
+M
+a
+a
+S
+U
+E
+a
+a
+Y
+I
+E
+"}
+(8,1,1) = {"
+C
+a
+a
+l
+w
+U
+E
+a
+a
+a
+a
+a
+E
+"}
+(9,1,1) = {"
+E
+a
+a
+a
+a
+U
+E
+j
+a
+a
+a
+a
+E
+"}
+(10,1,1) = {"
+E
+a
+a
+a
+a
+U
+E
+a
+a
+a
+a
+a
+E
+"}
+(11,1,1) = {"
+U
+a
+a
+a
+a
+U
+E
+a
+a
+a
+a
+p
+E
+"}
+(12,1,1) = {"
+U
+U
+I
+a
+a
+E
+a
+a
+w
+a
+p
+p
+p
+"}
+(13,1,1) = {"
+U
+U
+U
+a
+a
+a
+a
+a
+a
+p
+p
+p
+p
+"}
+(14,1,1) = {"
+E
+U
+U
+U
+U
+a
+a
+I
+p
+p
+p
+p
+p
+"}
+(15,1,1) = {"
+E
+E
+E
+U
+U
+U
+U
+U
+U
+p
+p
+p
+p
+"}
+(16,1,1) = {"
+E
+E
+E
+E
+E
+U
+U
+U
+E
+p
+E
+p
+E
+"}

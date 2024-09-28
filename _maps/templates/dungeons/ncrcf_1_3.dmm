@@ -1,0 +1,2855 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 11
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ar" = (
+/obj/item/clipboard{
+	pixel_y = 5
+	},
+/obj/structure/table/rolling,
+/obj/item/paper{
+	pixel_y = 4
+	},
+/obj/item/pen/blue{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"aG" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"aP" = (
+/obj/structure/simple_door/metal,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"aW" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"aY" = (
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ba" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/poster/random_contraband,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"bg" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"bh" = (
+/obj/structure/table,
+/obj/item/detective_scanner{
+	pixel_y = 1;
+	pixel_x = 12
+	},
+/obj/item/clothing/gloves/color/latex/nitrile,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"bo" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/pill/happiness,
+/obj/item/reagent_containers/pill/happiness{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/pill/happiness{
+	pixel_x = 8;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/pill/happiness{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"bs" = (
+/obj/structure/punching_bag,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"bx" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"bE" = (
+/turf/closed/wall/mineral/concrete/blastproof/moresmooth{
+	plane = -15
+	},
+/area/f13/caves)
+"bX" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ck" = (
+/obj/structure/table,
+/obj/item/clipboard,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"cu" = (
+/obj/machinery/light{
+	dir = 1;
+	layer = 4.19
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"cO" = (
+/obj/structure/bed/oldalt,
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"cV" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"cZ" = (
+/obj/item/wallframe/button{
+	pixel_y = 32;
+	anchored = 1
+	},
+/obj/structure/chair/folding{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"dt" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"dS" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dU" = (
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = 11
+	},
+/obj/machinery/light{
+	dir = 1;
+	layer = 4.19
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"er" = (
+/obj/structure/simple_door/metal,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"eX" = (
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_y = 10
+	},
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_x = 15
+	},
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"fs" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fB" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"fE" = (
+/obj/structure/simple_door/glass,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"fO" = (
+/obj/structure/decoration/cells{
+	pixel_y = -2;
+	pixel_x = 31;
+	dir = 8
+	},
+/obj/structure/simple_door/tent,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"fW" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
+	},
+/obj/item/ammo_box/c38box{
+	pixel_y = 10;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"gs" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"gM" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/item/ammo_casing/c38,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"hd" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 11;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = -8
+	},
+/obj/item/melee/onehanded/knife/bone,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"hM" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 11;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/snacks/burger/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ic" = (
+/obj/structure/chair/wood,
+/obj/structure/nest/mob/ghoularmless,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"ig" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/barricade/bars,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ja" = (
+/obj/structure/chair/wood,
+/obj/structure/nest/mob/ghoulsoldier{
+	name = "ghoul prisoner"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"jb" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	dir = 1;
+	icon = 'icons/obj/chairs.dmi';
+	layer = 2
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"jc" = (
+/obj/structure/campfire,
+/obj/item/storage/box/matches{
+	pixel_x = -5;
+	pixel_y = 13
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jC" = (
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = 11
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"jF" = (
+/obj/structure/decoration/cells{
+	pixel_y = 30;
+	pixel_x = -1;
+	dir = 8
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"jS" = (
+/obj/structure/closet/crate/leftfootlocker{
+	pixel_y = -3;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+	pixel_y = 9;
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+	pixel_y = 12;
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+	pixel_y = 7;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"kk" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	name = "rusted shutters";
+	desc = "A set of ancient, rusted-over roller shutters. These will probably never close again";
+	id = "ERROR"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"kx" = (
+/obj/structure/nest/mob/ghoularmored,
+/obj/structure/chair/folding,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"lx" = (
+/obj/structure/closet/fridge/meat,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ly" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"lQ" = (
+/obj/structure/railing/corner,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"lV" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 5;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 11;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = -8
+	},
+/obj/item/clothing/accessory/skullcodpiece,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"mx" = (
+/obj/item/storage/box/evidence,
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"mB" = (
+/obj/structure/bed/oldalt,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"mK" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"nw" = (
+/obj/structure/table,
+/obj/item/camera_film{
+	layer = 3.01
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"nZ" = (
+/turf/closed/wall/mineral/concrete/blastproof/moresmooth{
+	plane = -15;
+	icon = 'icons/turf/walls/f13composite.dmi';
+	icon_state = "ruins";
+	name = "ruins";
+	desc = "All what has left from the good old days."
+	},
+/area/f13/caves)
+"ob" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowbottom";
+	layer = 3.99
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ow" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"oT" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"pB" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/bed/oldalt,
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"qn" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qv" = (
+/obj/structure/table,
+/obj/item/storage/book/bible{
+	pixel_x = -7
+	},
+/obj/item/clothing/accessory/crossnecklace{
+	pixel_x = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"qM" = (
+/obj/item/gavelhammer,
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"qS" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"rq" = (
+/obj/structure/dresser{
+	pixel_y = 3
+	},
+/obj/item/clothing/head/f13/police/lieutenant{
+	pixel_y = 10;
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ry" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"rz" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"rS" = (
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"sH" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/light/dim,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"sI" = (
+/obj/structure/junk/small/bed2,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"td" = (
+/obj/structure/table,
+/obj/item/clothing/suit/f13/police/lieutenant,
+/obj/item/ammo_box/c38,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"tg" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrcf_frontdesk"
+	},
+/turf/closed/wall/mineral/concrete/blastproof/moresmooth{
+	plane = -15
+	},
+/area/f13/caves)
+"tG" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"uk" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowtop"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"uB" = (
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"uG" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"uJ" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"uK" = (
+/obj/structure/table,
+/obj/item/reagent_containers/pill/patch/jet,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"uN" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"uO" = (
+/obj/structure/decoration/cells{
+	pixel_y = 30;
+	pixel_x = -1;
+	dir = 8
+	},
+/obj/machinery/light/dim{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"uU" = (
+/obj/machinery/light/dim{
+	dir = 4;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"vq" = (
+/obj/structure/chair/wood,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"vA" = (
+/obj/structure/nest/mob/ghoulbrush{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"vK" = (
+/obj/structure/falsewall/brick,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"vY" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wA" = (
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_x = 14
+	},
+/obj/item/stack/f13Cash/caps/onezerozero,
+/obj/item/stack/f13Cash/caps/fourzero,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"wK" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 11;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = -8
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/obj/item/toy/cards/deck{
+	pixel_y = 9
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"wR" = (
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/east{
+	dir = 1
+	},
+/area/f13/caves)
+"wW" = (
+/obj/structure/nest/mob/molerat{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"xk" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"xE" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"xJ" = (
+/obj/structure/junk/small/bed,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"xP" = (
+/obj/structure/nest/mob/ghoulglowing{
+	icon_state = "glowinghoul_dead";
+	radius = 3
+	},
+/obj/machinery/light{
+	dir = 1;
+	layer = 4.19
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"xV" = (
+/obj/structure/table,
+/obj/item/clothing/mask/cigarette/greytort{
+	pixel_y = 5
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_greytort{
+	pixel_x = 10
+	},
+/obj/item/lighter{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"yH" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/melee/unarmed/maceglove,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"yK" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"yO" = (
+/obj/structure/nest/mob/ghoulreaver{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"yW" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowbottom"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"yY" = (
+/obj/structure/falsewall/concrete,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"za" = (
+/obj/structure/bonfire/prelit,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zp" = (
+/obj/structure/nest/mob/ghoulreaver{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zw" = (
+/obj/structure/rack/shelf_metal,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/obj/item/stack/spacecash/c1000{
+	name = "Pre-war cash"
+	},
+/obj/item/stack/spacecash/c1000{
+	name = "Pre-war cash"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zC" = (
+/obj/item/gun/ballistic/revolver/police,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zG" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zO" = (
+/obj/structure/bed/oldalt,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"zQ" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Av" = (
+/obj/structure/bed/oldalt,
+/obj/structure/nest/mob/ghoulcozy,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Aw" = (
+/obj/structure/girder,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Ax" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"AH" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 5;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"AP" = (
+/obj/structure/campfire/barrel{
+	pixel_x = 3;
+	pixel_y = 6
+	},
+/obj/item/clothing/head/helmet/skull{
+	pixel_y = 17;
+	pixel_x = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"AZ" = (
+/obj/structure/chair/bench{
+	icon_state = "bench_center";
+	icon = 'icons/obj/chairs.dmi';
+	dir = 4
+	},
+/obj/machinery/light/dim{
+	dir = 8;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Bk" = (
+/obj/structure/bed/oldalt,
+/obj/structure/showcase/machinery/tv{
+	name = "Tv";
+	desc = "Seems someone was a good snitch";
+	density = 0;
+	icon = 'icons/fallout/objects/decorations.dmi'
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Bm" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"By" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/light/dim{
+	dir = 8;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Bz" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"BK" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"BO" = (
+/obj/structure/barricade/bars,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"BW" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/roof/stairs/east{
+	dir = 1
+	},
+/area/f13/caves)
+"Cn" = (
+/obj/structure/fermenting_barrel{
+	icon = 'icons/fallout/objects/furniture/junk.dmi';
+	icon_state = "junk_toilet";
+	desc = "A broken toilet repurposed for sweet sweet booze.";
+	name = "Wine Toilet"
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Cw" = (
+/obj/structure/simple_door/tent,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Cz" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"CK" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/kebab/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"CW" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Da" = (
+/obj/structure/table,
+/obj/item/toy/cards/deck{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Dh" = (
+/obj/structure/table,
+/obj/item/taperecorder,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"DQ" = (
+/obj/structure/nest/mob/ghoularmless,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Er" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/obj/structure/nest/mob/ghoulsoldier{
+	name = "ghoul prisoner";
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"EJ" = (
+/obj/structure/simple_door/dirtyglass,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"EO" = (
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.25
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/roof/stairs/east{
+	dir = 2
+	},
+/area/f13/caves)
+"Fw" = (
+/obj/item/reagent_containers/syringe/lethal/execution,
+/obj/structure/table,
+/obj/item/restraints/handcuffs{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"FN" = (
+/obj/structure/junk/small/bed2,
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Ga" = (
+/obj/structure/kitchenspike,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Ge" = (
+/obj/structure/nest/mob/ghoularmored{
+	desc = "One of the wardens last loyal men";
+	name = "armored ghoul officer";
+	dir = 4
+	},
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Gh" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Gm" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"GV" = (
+/obj/structure/table,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/glasses/sunglasses/blindfold{
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Hk" = (
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	pixel_y = -32
+	},
+/obj/structure/barricade/wooden/strong,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Hw" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"If" = (
+/obj/structure/bed/oldalt,
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/obj/structure/nest/mob/ghoulcozy{
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"IA" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 4;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	},
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"IX" = (
+/obj/effect/spawner/structure/window/reinforced{
+	layer = 3.6
+	},
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Ja" = (
+/obj/structure/table,
+/obj/item/camera/detective,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Jj" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/item/clothing/under/f13/religion/priest,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Jo" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/hypospray/medipen/psycho{
+	pixel_y = 3;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Js" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/poster/random_contraband,
+/obj/item/poster/random_contraband,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"JH" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"JV" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoularmored{
+	desc = "One of the wardens last loyal men";
+	name = "armored ghoul officer";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Kb" = (
+/obj/structure/table/wood/junk,
+/obj/item/storage/fancy/heart_box{
+	pixel_y = 8
+	},
+/obj/item/card/id/prisoner{
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ke" = (
+/obj/structure/barricade/bars,
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Kf" = (
+/obj/structure/bed/oldalt{
+	pixel_y = 9
+	},
+/obj/structure/bed{
+	dir = 1;
+	layer = 2.89
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Kh" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/melee/unarmed/sappers,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Ki" = (
+/obj/structure/table,
+/obj/machinery/processor/chopping_block{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Kq" = (
+/obj/structure/junk/small/bed2,
+/obj/item/reagent_containers/spray/cyborg_lube{
+	pixel_y = -5;
+	pixel_x = -9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"KC" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/spacecash/c1000{
+	name = "Pre-war cash"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"KQ" = (
+/obj/effect/overlay/junk/curtain,
+/obj/structure/table,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"KT" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	icon = 'icons/obj/chairs.dmi';
+	layer = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Le" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Lr" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"LA" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/curtain{
+	color = "#5c131b";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"LN" = (
+/obj/machinery/light/dim{
+	dir = 8;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"LS" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	icon_state = "nukacola";
+	desc = "A lovely brew made locally sourced";
+	name = "Toilet wine";
+	pixel_y = 11;
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi';
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/snacks/kebab/human{
+	pixel_y = 13;
+	pixel_x = 21
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Mg" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Mi" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Ml" = (
+/obj/structure/table/optable{
+	name = "execution table";
+	desc = "Used for the execution of prisoners."
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Mm" = (
+/obj/structure/barricade/wooden/strong,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag{
+	layer = 5
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Mv" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 31;
+	layer = 4.29;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"MO" = (
+/obj/item/wallframe/button{
+	pixel_x = 33;
+	anchored = 1
+	},
+/obj/structure/chair/folding{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"MW" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Ne" = (
+/obj/structure/barricade/wooden/strong,
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Nl" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/decoration/cells{
+	pixel_y = 30;
+	pixel_x = -1;
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Np" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Nt" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 13;
+	layer = 4.28
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NG" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"NU" = (
+/obj/item/bodypart/l_leg,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"NZ" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/light/dim{
+	dir = 4;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Oa" = (
+/obj/structure/nest/mob/molerat{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Os" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"OG" = (
+/obj/structure/junk/small/bed2,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"OR" = (
+/turf/closed/wall/mineral/brick,
+/area/f13/caves)
+"Pi" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Pl" = (
+/obj/structure/nest/mob/molerat{
+	name = "Snuffles"
+	},
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Po" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"PB" = (
+/obj/structure/falsewall/brick,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"PE" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"PF" = (
+/obj/structure/junk/small/bed2,
+/obj/item/melee/onehanded/knife/bone{
+	pixel_x = 13;
+	pixel_y = -7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"PR" = (
+/obj/effect/decal/remains/skulls{
+	pixel_y = 32
+	},
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Qd" = (
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Qk" = (
+/obj/item/melee/onehanded/club/tireiron,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Qx" = (
+/obj/structure/girder,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"QR" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"QX" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Rj" = (
+/obj/structure/decoration/cells{
+	pixel_y = -34;
+	pixel_x = -1;
+	dir = 8
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Rm" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/pill_bottle/chem_tin/buffout{
+	pixel_x = -6;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/hypospray/medipen/psycho{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"RA" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/pill/lsd,
+/obj/item/reagent_containers/pill/lsd{
+	pixel_y = 7;
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"RG" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4;
+	opacity = 0
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/poster/random_contraband,
+/obj/item/poster/random_contraband,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"RL" = (
+/obj/structure/chair/wood,
+/obj/structure/nest/mob/ghoulmelee,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"RY" = (
+/obj/structure/railing{
+	dir = 8;
+	layer = 4.25
+	},
+/obj/structure/debris/v2,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"SV" = (
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/obj/structure/barricade/bars,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Tb" = (
+/obj/item/clothing/under/rank/prisoner,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"TK" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/light/dim{
+	dir = 4;
+	layer = 3
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"TM" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Us" = (
+/obj/structure/nest/mob/molerat{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Uy" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/melee/unarmed/brass/spiked,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Vb" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Vg" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/obj/machinery/light/small,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"Vv" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Vy" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"VG" = (
+/obj/structure/simple_door/metal/barred{
+	name = "inmate & riot control equipment"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"VO" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Wj" = (
+/obj/structure/nest/mob/ghoul,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Wm" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoulsoldier{
+	name = "ghoul prisoner";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"WY" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"XL" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/poster/random_contraband,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"XP" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Yh" = (
+/obj/item/clothing/gloves/boxing,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Ys" = (
+/obj/structure/nest/mob/molerat{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Yt" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"Yz" = (
+/obj/structure/barricade/bars,
+/obj/effect/spawner/structure/window/reinforced{
+	layer = 3.6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"YJ" = (
+/obj/structure/nest/mob/molerat{
+	name = "Snuffles"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"YP" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"YU" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"Za" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Zh" = (
+/obj/structure/closet/crate/bin/trashbin,
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"Zr" = (
+/obj/structure/rack/shelf_metal,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 8;
+	opacity = 0
+	},
+/obj/item/stack/spacecash/c1000{
+	name = "Pre-war cash"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ZI" = (
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"ZN" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"ZS" = (
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/card/id/prisoner,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZU" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
+	},
+/obj/structure/nest/mob/ghoulsoldier{
+	name = "ghoul prisoner";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"ZY" = (
+/obj/machinery/light/broken,
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
+
+(1,1,1) = {"
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+ly
+aY
+Kb
+ZN
+"}
+(2,1,1) = {"
+bE
+aW
+aW
+aW
+BW
+By
+cV
+Qd
+Qd
+LN
+Qd
+IX
+rS
+cV
+cV
+Qd
+Po
+Qd
+Qd
+Qd
+cV
+qS
+Vv
+Qd
+Qd
+Qd
+dt
+bE
+qn
+Ax
+Ax
+jc
+"}
+(3,1,1) = {"
+bE
+aW
+lQ
+ZI
+wR
+Yt
+rS
+Vv
+Vv
+Qd
+Qd
+kk
+rS
+Yt
+vA
+Qd
+xV
+cV
+Vv
+Vv
+cV
+Vv
+rS
+rS
+Vv
+Ge
+JV
+bE
+Oa
+qn
+Ax
+ZS
+"}
+(4,1,1) = {"
+bE
+aW
+Vg
+bE
+Nl
+TK
+Yt
+Vv
+cV
+NZ
+Qd
+IX
+MO
+xk
+xk
+rS
+rS
+xk
+Vv
+Vv
+Vv
+Qd
+Qd
+Qd
+kx
+Da
+Gh
+bE
+ZN
+Ax
+aY
+ZN
+"}
+(5,1,1) = {"
+bE
+aW
+uN
+EO
+RY
+bE
+uO
+Vv
+sH
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+PE
+PE
+bE
+bE
+bE
+bE
+ZN
+Ax
+Ax
+ZN
+"}
+(6,1,1) = {"
+bE
+aW
+aW
+aW
+aW
+bE
+rS
+Qd
+Qd
+bE
+rS
+Lr
+ow
+Bz
+JH
+Vy
+OR
+Vv
+bE
+jC
+Qd
+TM
+Qd
+Qd
+TM
+Uy
+Np
+bE
+ZN
+Tb
+Ax
+ZN
+"}
+(7,1,1) = {"
+bE
+tg
+bE
+bE
+bE
+bE
+Yz
+kk
+Yz
+bE
+bE
+yY
+bE
+bE
+bE
+Le
+OR
+rS
+bE
+dU
+Qd
+Gm
+Qd
+Qd
+Gm
+Qd
+Pi
+bE
+ZN
+ZN
+VO
+ZN
+"}
+(8,1,1) = {"
+bE
+Av
+Qd
+Qd
+bg
+bE
+cZ
+Qd
+Hk
+bE
+fW
+gM
+vq
+td
+bE
+tG
+PB
+rS
+bE
+af
+Qd
+TM
+Qd
+Qd
+TM
+yH
+Kh
+bE
+ZN
+ZN
+Ax
+ZN
+"}
+(9,1,1) = {"
+bE
+Kq
+DQ
+Qd
+rS
+Cw
+Qd
+Qd
+Hw
+er
+rq
+zC
+Qd
+zO
+bE
+tG
+OR
+Vv
+bE
+Jo
+bo
+SV
+Qd
+Qd
+BO
+zw
+Zr
+bE
+ZN
+ZN
+Ax
+ZN
+"}
+(10,1,1) = {"
+bE
+bE
+bE
+Mm
+Mm
+Ne
+Qd
+Qd
+zQ
+bE
+bE
+bE
+bE
+bE
+bE
+rz
+OR
+PB
+bE
+xP
+Qd
+Vb
+Qd
+Qd
+Gm
+Qd
+Pi
+bE
+ZN
+aY
+Ax
+ZN
+"}
+(11,1,1) = {"
+bE
+Ki
+ck
+lx
+Ga
+rS
+Qd
+rS
+rS
+rS
+oT
+uG
+Qd
+If
+bE
+tG
+OR
+Vv
+bE
+RA
+Rm
+ig
+ar
+Qd
+BK
+KC
+KC
+bE
+ZN
+Ax
+Ax
+ZN
+"}
+(12,1,1) = {"
+bE
+qM
+Qd
+Qd
+rS
+rS
+Os
+Wm
+aG
+rS
+Ne
+rS
+Qd
+FN
+bE
+yK
+vK
+Mi
+bE
+XL
+Js
+TM
+Qd
+Qd
+Qd
+Qd
+cO
+bE
+ZN
+Ax
+ZN
+ZN
+"}
+(13,1,1) = {"
+bE
+bE
+rS
+rS
+rS
+rS
+hd
+lV
+LS
+rS
+Ne
+Ne
+oT
+bE
+bE
+Vv
+OR
+Le
+bE
+cu
+Qd
+Gm
+Qd
+Qd
+Qd
+Qd
+WY
+bE
+Ax
+Ax
+ZN
+ZN
+"}
+(14,1,1) = {"
+bE
+Qd
+Qd
+QR
+rS
+ic
+CK
+za
+uK
+MW
+Ne
+jS
+Qd
+AP
+bE
+Vv
+OR
+NU
+bE
+RG
+ba
+BK
+LA
+LA
+BK
+bx
+pB
+bE
+Ax
+ZN
+ZN
+ZN
+"}
+(15,1,1) = {"
+bE
+Bk
+Qd
+QR
+rS
+ja
+AH
+za
+mK
+rS
+Ne
+Cn
+Qd
+wA
+bE
+rS
+OR
+Vv
+bE
+bX
+NG
+Qd
+Qd
+Qd
+Qd
+Dh
+Gh
+bE
+aY
+Ax
+ZN
+ZN
+"}
+(16,1,1) = {"
+bE
+bE
+PR
+rS
+rS
+rS
+Gh
+hM
+Gh
+MW
+Ne
+Ne
+oT
+bE
+bE
+Vv
+OR
+Vv
+rS
+Qd
+zp
+Qd
+Qd
+Qd
+Qd
+Qd
+YP
+bE
+ry
+fs
+ry
+ry
+"}
+(17,1,1) = {"
+bE
+Qd
+Qd
+Qd
+Qd
+rS
+Qd
+Er
+rS
+rS
+Ne
+Qd
+Qd
+Kf
+bE
+Qx
+OR
+Vv
+rS
+yO
+Qd
+Qd
+Qd
+Qd
+Qd
+Wj
+bh
+bE
+ry
+Ax
+ry
+Ax
+"}
+(18,1,1) = {"
+bE
+zO
+Qd
+Za
+Qd
+Qd
+Qd
+Qd
+Qd
+rS
+Cz
+Za
+Qd
+FN
+bE
+Vv
+Qx
+Vv
+bE
+XP
+bX
+Qd
+Qd
+Qd
+nw
+Ja
+mx
+bE
+ry
+Nt
+Ax
+Ax
+"}
+(19,1,1) = {"
+bE
+bE
+bE
+bE
+bE
+bE
+jF
+Cz
+Rj
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+ry
+uJ
+Mv
+Ax
+"}
+(20,1,1) = {"
+bE
+Zh
+Qd
+Qd
+Qd
+Cw
+Qd
+Qd
+Qd
+nZ
+nZ
+nZ
+rS
+Vv
+Ax
+Bm
+Vv
+YJ
+rS
+Vv
+gs
+Vv
+Qd
+EJ
+Qd
+LN
+Qd
+bE
+ry
+vY
+Ax
+ZN
+"}
+(21,1,1) = {"
+bE
+eX
+Qd
+Qd
+rS
+fO
+Vv
+Qd
+Vv
+nZ
+nZ
+Vv
+Qd
+rS
+Vv
+dS
+Vv
+rS
+Vv
+Ax
+Ax
+Ax
+Ys
+bE
+Qd
+Jj
+Qd
+bE
+ry
+Ax
+Ax
+ZN
+"}
+(22,1,1) = {"
+bE
+rS
+rS
+Mg
+bE
+bE
+Vv
+Vv
+nZ
+bE
+nZ
+rS
+rS
+bE
+bE
+bE
+bE
+bE
+bE
+Vv
+Ax
+Ax
+Vv
+bE
+Ke
+Ke
+VG
+bE
+Ax
+Ax
+ZN
+ZN
+"}
+(23,1,1) = {"
+bE
+PF
+Qd
+Qd
+Qd
+nZ
+nZ
+nZ
+nZ
+nZ
+Qd
+Vv
+wW
+xE
+rS
+rS
+OR
+Vv
+bE
+rS
+Vv
+Vv
+rS
+bE
+Os
+Qd
+Qd
+bE
+Ax
+Ax
+Ax
+ZN
+"}
+(24,1,1) = {"
+bE
+Ga
+Qd
+Qd
+Qd
+bE
+nZ
+nZ
+nZ
+bE
+sI
+Qd
+Qd
+Qd
+Vv
+rS
+OR
+rS
+bE
+bE
+EJ
+fE
+bE
+bE
+qv
+uU
+xJ
+bE
+Ax
+Ax
+Ax
+Ax
+"}
+(25,1,1) = {"
+bE
+bE
+bE
+QX
+rS
+bE
+nZ
+fB
+nZ
+bE
+bE
+bE
+bE
+bE
+bE
+Vv
+OR
+rS
+bE
+Qd
+Qd
+Qd
+Qd
+bE
+bE
+bE
+bE
+bE
+Ax
+Ax
+Ax
+Ax
+"}
+(26,1,1) = {"
+bE
+Qd
+Qd
+Qd
+Qd
+aP
+Qd
+Qd
+Qd
+Qd
+Qd
+Qd
+Vv
+OG
+bE
+Vv
+OR
+rS
+bE
+Qd
+Qd
+Qd
+Qd
+bE
+KT
+AZ
+jb
+rS
+Ax
+Ax
+ZN
+ZN
+"}
+(27,1,1) = {"
+bE
+rS
+QR
+Qd
+zG
+bE
+Qd
+Qd
+rS
+bE
+zG
+Qd
+RL
+IA
+bE
+Vv
+OR
+Aw
+bE
+uB
+Qd
+Qd
+Qd
+EJ
+Qd
+Qd
+Vv
+rS
+Ax
+Ax
+Ax
+ZN
+"}
+(28,1,1) = {"
+bE
+bE
+KQ
+KQ
+bE
+bE
+nZ
+nZ
+nZ
+bE
+bE
+nZ
+rS
+rS
+bE
+YU
+PB
+CW
+bE
+Qd
+Qd
+Qd
+Qd
+bE
+Qd
+Qd
+Qd
+bE
+ZN
+ZN
+Ax
+ZN
+"}
+(29,1,1) = {"
+bE
+bs
+Qd
+Qd
+Qd
+nZ
+nZ
+nZ
+nZ
+nZ
+nZ
+nZ
+Vv
+Qd
+bE
+Qk
+OR
+rS
+bE
+Qd
+Qd
+Qd
+Qd
+bE
+uk
+ob
+yW
+bE
+ZN
+ZN
+Ax
+ZN
+"}
+(30,1,1) = {"
+bE
+Qd
+Qd
+Yh
+Qd
+bE
+Qd
+Vv
+nZ
+bE
+ZU
+Qd
+Vv
+sI
+bE
+Qx
+OR
+rS
+bE
+Qd
+Qd
+Qd
+Qd
+fE
+Qd
+Qd
+Qd
+bE
+ZN
+Ax
+Ax
+ZN
+"}
+(31,1,1) = {"
+bE
+bE
+QX
+rS
+rS
+rS
+Qd
+rS
+nZ
+bE
+wK
+MW
+rS
+rS
+bE
+Vv
+OR
+rS
+bE
+Vv
+rS
+Qd
+rS
+bE
+Qd
+Qd
+Qd
+bE
+Ax
+Ax
+Ax
+ZN
+"}
+(32,1,1) = {"
+bE
+Qd
+Yh
+Qd
+Qd
+rS
+Qd
+nZ
+nZ
+nZ
+Er
+Vv
+Vv
+Vv
+rS
+rS
+Vv
+Vv
+bE
+Pl
+Vv
+Vv
+ZY
+bE
+Qd
+Ml
+Fw
+bE
+Ax
+Ax
+Ax
+ZN
+"}
+(33,1,1) = {"
+bE
+Qd
+Qd
+Qd
+Qd
+rS
+Qd
+Vv
+nZ
+bE
+zG
+Vv
+rS
+Vv
+rS
+mB
+OR
+Vv
+bE
+Ax
+Ax
+Us
+Vv
+bE
+Qd
+uU
+GV
+bE
+ZN
+Ax
+Ax
+ZN
+"}
+(34,1,1) = {"
+bE
+bE
+bE
+bE
+bE
+bE
+Vv
+Ax
+Vv
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+ZN
+aY
+Ax
+bE
+bE
+bE
+bE
+bE
+bE
+ZN
+ZN
+Oa
+ZN
+"}

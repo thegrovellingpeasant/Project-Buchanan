@@ -19,15 +19,14 @@
 
 /obj/structure/statue_tandi
 	name = "President Tandi statue"
-	desc = "Born in the year 2145AD, our beloved second president, succeeding her father President Aradesh."
+	desc = "The NCR's greatest President, whose time in office saw Shady Sands go from backwater to empire."
 	icon = 'icons/fallout/objects/structures/tandi.dmi'
-	icon_state = "tandi"
+	icon_state = "tandi1"
 	bound_width = 32
 	bound_height = 32
-	pixel_x = -19
 	anchored = TRUE
 	density = TRUE
-	layer = VISIBLE_FROM_ABOVE_LAYER
+	layer = WALL_OBJ_LAYER
 	resistance_flags = INDESTRUCTIBLE
 
 //Fallout 13 rubish decoration

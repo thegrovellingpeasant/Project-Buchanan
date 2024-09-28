@@ -124,8 +124,8 @@
 	icon_screen = "shuttle"
 	icon_keyboard = "tech_key"
 	light_color = LIGHT_COLOR_CYAN
-	circuit = /obj/item/circuitboard/computer/intrepid_control
-	shuttleId = "ghoul_subway"
+	circuit = /obj/item/circuitboard/computer/ghoulsubway_control
+	shuttleId = "ghoul_elevator"
 	possible_destinations = "ghoul_base;ghoul_one;ghoul_two"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -136,8 +136,8 @@
 	icon_screen = "shuttle"
 	icon_keyboard = "tech_key"
 	light_color = LIGHT_COLOR_CYAN
-	circuit = /obj/item/circuitboard/computer/intrepid_control
-	shuttleId = "raider_subway"
+	circuit = /obj/item/circuitboard/computer/raidersubway_control
+	shuttleId = "raider_elevator"
 	possible_destinations = "raider_base;raider_one;raider_two"
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF

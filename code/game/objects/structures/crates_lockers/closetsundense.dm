@@ -679,3 +679,28 @@
 	name = "fridge"
 	desc = "Old fridge without power."
 	icon_state = "fridger"
+
+/obj/structure/closetundense/crate/mailboxleft
+	name = "mailbox"
+	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "leftmailbox"
+	anchored = TRUE
+	density = FALSE
+	mob_storage_capacity = FALSE
+
+/obj/structure/closetundense/crate/mailboxleft/Initialize()
+	. = ..()
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)
+
+/obj/structure/closetundense/crate/mailboxright
+	name = "mailbox"
+	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
+	icon_state = "rightmailbox"
+	anchored = TRUE
+	density = FALSE
+	mob_storage_capacity = FALSE
+
+/obj/structure/closetundense/crate/mailboxright/Initialize()
+	. = ..()
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)

@@ -145,6 +145,7 @@
 
 /obj/effect/overlay/painting/graffiti
 	name = "graffiti"
+	layer = WALL_PLANE
 
 /obj/effect/overlay/whitelegpainting
 	name = "painting"

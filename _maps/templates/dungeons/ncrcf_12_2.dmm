@@ -1,0 +1,1675 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"aO" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/nest/mob/ghoulglowing,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"bS" = (
+/obj/structure/reagent_dispensers/barrel,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ci" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"cr" = (
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_y = -13;
+	pixel_x = 0
+	},
+/turf/open/water,
+/area/f13/caves)
+"cE" = (
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"dn" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"dB" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ex" = (
+/obj/structure/reagent_dispensers/barrel/three,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"eN" = (
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 7;
+	pixel_x = -21
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"fC" = (
+/obj/structure/wreck/trash/halftire,
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"fV" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg1"
+	},
+/area/f13/caves)
+"gy" = (
+/obj/structure/reagent_dispensers/barrel/four{
+	pixel_x = 10
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"gL" = (
+/turf/open/water,
+/area/f13/caves)
+"gQ" = (
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hw" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hG" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"iH" = (
+/obj/structure/reagent_dispensers/barrel/dangerous{
+	pixel_x = -7
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"jb" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"kX" = (
+/obj/structure/reagent_dispensers/barrel/two,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"lb" = (
+/obj/structure/reagent_dispensers/barrel/dangerous{
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ld" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"lj" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ln" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/item/stack/sheet/mineral/uranium,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"lW" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"mD" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mQ" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/water,
+/area/f13/caves)
+"nV" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"og" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/caves)
+"on" = (
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_y = -13;
+	pixel_x = 0
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oI" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"pE" = (
+/obj/structure/reagent_dispensers/barrel,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"qs" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"qE" = (
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rf" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"rh" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"rA" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/water,
+/area/f13/caves)
+"rD" = (
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 7;
+	pixel_x = -21
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rI" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"se" = (
+/obj/structure/reagent_dispensers/barrel/old,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"sQ" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/water,
+/area/f13/caves)
+"tj" = (
+/obj/structure/reagent_dispensers/barrel{
+	pixel_x = 7
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"tr" = (
+/obj/structure/wreck/trash/two_barrels{
+	pixel_y = 5
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"tE" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"tZ" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uM" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"va" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"vB" = (
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"vZ" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xQ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"ys" = (
+/obj/structure/reagent_dispensers/barrel/four{
+	pixel_x = 10;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"yz" = (
+/obj/structure/reagent_dispensers/barrel/three{
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"yN" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Ak" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Aq" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"AX" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"BX" = (
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Cf" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Ct" = (
+/obj/structure/debris/v1,
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"CX" = (
+/obj/structure/wreck/trash/three_barrels{
+	pixel_x = 9
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"DM" = (
+/obj/structure/closet/radiation,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"DZ" = (
+/obj/structure/reagent_dispensers/barrel/four{
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ES" = (
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/water,
+/area/f13/caves)
+"Fr" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"FO" = (
+/obj/structure/reagent_dispensers/barrel/dangerous{
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"FX" = (
+/obj/structure/simple_door/metal/iron,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Hb" = (
+/obj/structure/reagent_dispensers/barrel/old{
+	pixel_y = -9
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"HD" = (
+/obj/structure/wreck/trash/bus_door,
+/turf/open/water,
+/area/f13/caves)
+"Ie" = (
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Ik" = (
+/obj/structure/reagent_dispensers/barrel/two{
+	pixel_x = -10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"Iu" = (
+/obj/structure/reagent_dispensers/barrel/old{
+	pixel_y = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"JX" = (
+/obj/structure/reagent_dispensers/barrel/four,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"KD" = (
+/obj/structure/reagent_dispensers/barrel/two,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/water,
+/area/f13/caves)
+"KG" = (
+/obj/structure/reagent_dispensers/barrel/two{
+	pixel_y = 10
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"KX" = (
+/obj/structure/closet/radiation,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Mz" = (
+/obj/structure/reagent_dispensers/barrel/old,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"No" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Nz" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 7;
+	pixel_x = -21
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Od" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Ou" = (
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Oy" = (
+/obj/item/stack/sheet/mineral/uranium,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"OL" = (
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"QP" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Rn" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/structure/nest/mob/ghoulglowing{
+	dir = 4
+	},
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"RL" = (
+/obj/structure/reagent_dispensers/barrel/two{
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"RS" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"SO" = (
+/obj/structure/reagent_dispensers/barrel/three{
+	pixel_y = -1;
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"SU" = (
+/obj/structure/sign/warning/radiation,
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"Th" = (
+/obj/structure/nest/mob/ghoulglowing{
+	icon_state = "glowinghoul_dead";
+	pixel_y = -7;
+	radius = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"TT" = (
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"Va" = (
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"VH" = (
+/obj/structure/wreck/trash/two_barrels,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Wn" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Wr" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"XG" = (
+/obj/structure/closet/radiation,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"Ye" = (
+/obj/structure/simple_door/metal/iron,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Yk" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/greenglow,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Yx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"YN" = (
+/obj/structure/reagent_dispensers/barrel/two,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Zh" = (
+/obj/structure/reagent_dispensers/barrel/three,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/cleanable/greenglow,
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ZC" = (
+/obj/item/storage/trash_stack,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"ZF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ZI" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"ZS" = (
+/obj/structure/wreck/trash/halftire,
+/turf/open/water,
+/area/f13/caves)
+
+(1,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(2,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+hw
+Wn
+Wn
+"}
+(3,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+rh
+rh
+rh
+rh
+rh
+rh
+ZI
+Wn
+Wn
+Wn
+Wn
+Wn
+hw
+hw
+Wn
+Wn
+"}
+(4,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+rh
+rh
+rh
+rh
+rh
+Wn
+rh
+AX
+OL
+ZI
+AX
+AX
+AX
+AX
+Wr
+gL
+gL
+Wn
+"}
+(5,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+rh
+rh
+rh
+Wn
+Wn
+Wn
+hw
+hw
+AX
+Nz
+WW
+AX
+KX
+ci
+XG
+gL
+cr
+hw
+Wn
+"}
+(6,1,1) = {"
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+rh
+rh
+hw
+Wn
+hw
+hw
+Wr
+gL
+AX
+WW
+Fr
+SU
+KX
+ci
+DM
+gL
+gL
+hw
+Wn
+"}
+(7,1,1) = {"
+Wn
+rf
+Wn
+Wn
+Wn
+rh
+rh
+Wn
+Wr
+hw
+hw
+hw
+on
+gL
+AX
+dB
+ci
+ci
+ci
+ci
+gL
+mQ
+hw
+Wn
+Wn
+"}
+(8,1,1) = {"
+Wn
+rf
+rf
+Wn
+rf
+rf
+rf
+rf
+hw
+hw
+Wn
+hG
+hw
+gL
+AX
+dB
+OL
+AX
+AX
+gL
+gL
+hG
+hw
+Wn
+Wn
+"}
+(9,1,1) = {"
+Wn
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+Wn
+hw
+hw
+Wr
+gL
+gL
+Fr
+WW
+WW
+hG
+Wr
+gL
+hw
+hw
+Wn
+Wn
+Wn
+"}
+(10,1,1) = {"
+Wn
+rf
+rf
+rf
+rf
+Wn
+Wn
+rf
+rf
+Wn
+Wn
+Aq
+gL
+ZS
+Fr
+ZI
+hw
+hw
+gL
+gL
+vZ
+Wn
+Wn
+Wn
+Wn
+"}
+(11,1,1) = {"
+Wn
+rf
+rf
+AX
+AX
+AX
+AX
+ci
+ci
+AX
+AX
+hw
+gL
+gL
+AX
+Ct
+hw
+cr
+gL
+hw
+hw
+Wn
+Wn
+Wn
+Wn
+"}
+(12,1,1) = {"
+rf
+rf
+rf
+AX
+JX
+tE
+pE
+YN
+Va
+fC
+Ie
+gL
+mQ
+ES
+AX
+OL
+hw
+gL
+hw
+hw
+Wn
+rf
+rf
+Wn
+Wn
+"}
+(13,1,1) = {"
+rf
+rf
+rf
+AX
+kX
+tj
+lb
+Rn
+rI
+OL
+Yk
+gL
+gL
+gL
+AX
+hw
+hG
+gL
+hG
+hw
+rf
+rf
+rf
+rf
+Wn
+"}
+(14,1,1) = {"
+rf
+rf
+rf
+AX
+jb
+ys
+ln
+aO
+QP
+eN
+gL
+rA
+gL
+ES
+Ye
+hw
+gL
+gL
+hG
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(15,1,1) = {"
+rf
+rf
+rf
+AX
+CX
+Va
+RS
+Oy
+OL
+ES
+sQ
+gL
+gL
+hw
+SU
+gL
+gL
+Wr
+Wn
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(16,1,1) = {"
+rf
+rf
+rf
+AX
+bS
+kX
+nV
+Ie
+lj
+OL
+gL
+ES
+gL
+ES
+gL
+gL
+hw
+hw
+Wn
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(17,1,1) = {"
+rf
+rf
+rf
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+SU
+gL
+HD
+gL
+Wr
+hw
+WW
+AX
+Wn
+rf
+rf
+rf
+rf
+rf
+Wn
+"}
+(18,1,1) = {"
+rf
+rf
+rf
+AX
+Yk
+JX
+Od
+ZC
+vB
+hw
+qE
+hw
+ES
+mQ
+hw
+Ie
+WW
+AX
+Wn
+rf
+rf
+rf
+rf
+rf
+Wn
+"}
+(19,1,1) = {"
+rf
+rf
+rf
+AX
+DZ
+iH
+Hb
+kX
+qE
+hw
+gL
+gL
+gL
+hw
+AX
+uM
+yN
+og
+rf
+rf
+rf
+rf
+rf
+Wn
+Wn
+"}
+(20,1,1) = {"
+Wn
+rf
+Wn
+AX
+gy
+Mz
+OL
+tZ
+hG
+KD
+ES
+hw
+hw
+ZI
+FX
+OL
+WW
+og
+rf
+rf
+rf
+rf
+Wn
+Wn
+Wn
+"}
+(21,1,1) = {"
+Wn
+Wn
+hw
+AX
+va
+BX
+rD
+gQ
+mQ
+gL
+hw
+qE
+Va
+VH
+AX
+lW
+OL
+AX
+Wn
+rf
+rf
+rf
+rf
+rf
+Wn
+"}
+(22,1,1) = {"
+Wn
+Wn
+hw
+xQ
+kX
+Wr
+hw
+sQ
+gL
+hw
+hw
+Va
+yz
+tr
+AX
+dB
+OL
+gL
+hw
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(23,1,1) = {"
+Wn
+hw
+Wr
+AX
+AX
+hw
+gL
+ES
+hw
+Wr
+AX
+AX
+AX
+AX
+AX
+cE
+hw
+gL
+hw
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(24,1,1) = {"
+Wn
+hw
+hw
+AX
+mD
+gL
+gL
+hw
+hw
+oI
+ZF
+oI
+fV
+OL
+og
+eN
+hw
+gL
+hG
+Wn
+rf
+rf
+rf
+rf
+Wn
+"}
+(25,1,1) = {"
+Wn
+vZ
+hG
+af
+mQ
+gL
+hw
+ZI
+WW
+ZF
+ex
+se
+ld
+Ak
+AX
+hw
+cr
+gL
+Wr
+hw
+Wn
+Wn
+rf
+rf
+Wn
+"}
+(26,1,1) = {"
+Wn
+hw
+hG
+gL
+gL
+hG
+Yx
+No
+Fr
+qs
+FO
+Ou
+Iu
+Th
+Ye
+gL
+gL
+gL
+gL
+hw
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(27,1,1) = {"
+Wn
+gL
+gL
+ZS
+gL
+dn
+RL
+Va
+Ik
+TT
+Zh
+OL
+Cf
+hw
+hw
+gL
+gL
+mQ
+gL
+gL
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(28,1,1) = {"
+rf
+gL
+hw
+hw
+hw
+YN
+Ie
+SO
+YN
+KG
+ZI
+Yk
+hw
+rD
+AX
+hw
+gL
+gL
+mQ
+hw
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(29,1,1) = {"
+rf
+gL
+Wr
+hw
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+AX
+gL
+mQ
+gL
+gL
+hw
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(30,1,1) = {"
+Wn
+hw
+hw
+vZ
+hw
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+Wr
+gL
+gL
+hw
+hw
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(31,1,1) = {"
+rf
+rf
+rf
+hw
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+Wn
+Wn
+hw
+hw
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(32,1,1) = {"
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+"}
+(33,1,1) = {"
+Wn
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+Wn
+"}

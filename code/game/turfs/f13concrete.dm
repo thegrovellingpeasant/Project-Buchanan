@@ -167,7 +167,7 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	explosion_block = 2
 	smooth = SMOOTH_TRUE
 	sheet_type = /obj/item/stack/sheet/mineral/concrete
-	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth, /turf/closed/wall/mineral/concrete/blastproof/storewall, /turf/closed/indestructible/f13/supermart)
+	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth, /turf/closed/wall/mineral/concrete/blastproof/storewall, /turf/closed/indestructible/f13/supermart, /obj/structure/falsewall/concrete)
 
 /turf/closed/wall/mineral/concrete/blastproof
 	name = "fortified supermart wall"

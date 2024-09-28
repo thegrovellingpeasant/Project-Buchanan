@@ -417,7 +417,7 @@
 	icon_state = "evaporationpond1"
 	dir = NORTHWEST
 
-/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft
+/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft 
 	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "evaporationpond3"
 	dir = WEST
@@ -524,9 +524,9 @@
 						)
 
 /turf/open/indestructible/ground/outside/desert/reno
-    icon = 'icons/fallout/turfs/reno.dmi'
-    icon_state = "reno"
-    slowdown = 0.6
+	icon = 'icons/fallout/turfs/reno.dmi'
+	icon_state = "reno"
+	slowdown = 0.6
 
 //For sculpting with more precision, the random picking does not work very well. Slowdown 0.5 instead of 1. No random armor or gunpowder or titanium. Use directions for control. - Pebbles
 /turf/open/indestructible/ground/outside/desert/sonora
@@ -553,30 +553,30 @@
 	slowdown = 0.4
 
 /turf/open/indestructible/ground/outside/desert/Initialize()
-    . = ..()
-    if(prob(2))
-        var/obj/derp = pickweight(loots)
-        salvage = new derp()
-    if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
-        plantGrass()
-    if(icon_state == "wasteland")
-        icon_state = "wasteland[rand(1,61)]"
-    if(icon_state == "reno")
-        icon_state = "reno[rand(1,34)]"
-    for(var/direction in GLOB.cardinals)
-        var/turf/turf_to_check = get_step(src, direction)
-        if(istype(turf_to_check, /turf/open/water))
-            var/obj/effect/overlay/desert_side/DS = new /obj/effect/overlay/desert_side(src)
-            switch(direction)
-                if(NORTH)
-                    DS.pixel_y = 32
-                if(SOUTH)
-                    DS.pixel_y = -32
-                if(EAST)
-                    DS.pixel_x = 32
-                if(WEST)
-                    DS.pixel_x = -32
-            DS.dir = dir = turn(direction, 180)
+	. = ..()
+	if(prob(2))
+		var/obj/derp = pickweight(loots)
+		salvage = new derp()
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		plantGrass()
+	if(icon_state == "wasteland")
+		icon_state = "wasteland[rand(1,61)]"
+	if(icon_state == "reno")
+		icon_state = "reno[rand(1,34)]"
+	for(var/direction in GLOB.cardinals)
+		var/turf/turf_to_check = get_step(src, direction)
+		if(istype(turf_to_check, /turf/open/water))
+			var/obj/effect/overlay/desert_side/DS = new /obj/effect/overlay/desert_side(src)
+			switch(direction)
+				if(NORTH)
+					DS.pixel_y = 32
+				if(SOUTH)
+					DS.pixel_y = -32
+				if(EAST)
+					DS.pixel_x = 32
+				if(WEST)
+					DS.pixel_x = -32
+			DS.dir = dir = turn(direction, 180)
 
 /obj/effect/overlay/desert_side
 	name = "desert"
@@ -972,7 +972,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/right/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
-
+	
 /turf/open/indestructible/ground/outside/sidewalk/top/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
@@ -1138,8 +1138,13 @@
 	icon_state = "riverwater"
 
 /turf/open/indestructible/ground/outside/water/cavern
+	name = "water"
 	icon_state = "riverwater"
 	sunlight_state = NO_SUNLIGHT
+
+/turf/open/indestructible/ground/outside/water/cavern/noslowdown
+	name = "water"
+	slowdown = FALSE
 
 /turf/open/indestructible/ground/outside/water/sewer
 	name = "canal"
@@ -1463,7 +1468,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southwest
 	dir = SOUTHWEST
@@ -1490,7 +1495,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southwest
 	dir = SOUTHWEST
@@ -1517,7 +1522,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southwest
 	dir = SOUTHWEST
@@ -1544,7 +1549,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southwest
 	dir = SOUTHWEST
@@ -1572,7 +1577,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southwest
 	dir = SOUTHWEST
@@ -1600,7 +1605,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southwest
 	dir = SOUTHWEST
@@ -1628,7 +1633,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southwest
 	dir = SOUTHWEST
@@ -1655,7 +1660,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southwest
 	dir = SOUTHWEST
@@ -1682,7 +1687,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southwest
 	dir = SOUTHWEST
@@ -1709,7 +1714,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southwest
 	dir = SOUTHWEST
@@ -1736,7 +1741,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southeast
-	dir = SOUTHEAST
+	dir = SOUTHEAST	
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southwest
 	dir = SOUTHWEST
@@ -2044,6 +2049,69 @@
 	name = "desert"
 	dir = WEST
 
+/turf/open/indestructible/ground/outside/reno_sidewalk
+	name = "\proper sidewalk"
+	icon_state = "sidewalk"
+	icon = 'icons/fallout/turfs/reno_sidewalk.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+//	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/innerhorizontal
+	icon_state = "horizontaloutermain0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/innervertical
+	icon_state = "verticaloutermain0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/left
+	icon_state = "verticalleftborderleft0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/right
+	icon_state = "verticalrightborderright0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/top
+	icon_state = "horizontaltopbordertop0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/bottom
+	icon_state = "horizontalbottomborderbottom0"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged
+	icon_state = "verticaloutermain1"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/heavy
+	icon_state = "verticaloutermain2"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/top
+	icon_state = "verticaloutermain2top"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/bottom
+	icon_state = "verticaloutermain2bottom"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/horlight
+	icon_state = "horizontaloutermain1"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/horheavy
+	icon_state = "horizontaloutermain2"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/horright
+	icon_state = "horizontaloutermain2right"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/damaged/horleft
+	icon_state = "horizontaloutermain2left"
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/wastelandedge
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "dirtyroad"
+	dir = NORTH
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/wastelandedge/left
+	dir = SOUTH
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/wastelandedge/bottom
+	dir = WEST
+
+/turf/open/indestructible/ground/outside/reno_sidewalk/wastelandedge/top
+	dir = EAST
 
 /turf/open/indestructible/ground/outside/reno_road
 	name = "\proper road"
@@ -2053,10 +2121,62 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
 
-/turf/open/indestructible/ground/outside/reno_sidewalk
-	name = "\proper sidewalk"
-	icon_state = "sidewalk"
-	icon = 'icons/fallout/turfs/reno_sidewalk.dmi'
-	footstep = FOOTSTEP_ROAD
-	barefootstep = FOOTSTEP_HARD_BAREFOOT
+/turf/open/indestructible/ground/outside/reno_road/horizontaltopborder
+	icon_state = "horizontaltopborderbottom0"
 
+/turf/open/indestructible/ground/outside/reno_road/horizontalbottomborder
+	icon_state = "horizontalbottombordertop0"
+
+/turf/open/indestructible/ground/outside/reno_road/verticalleftborder
+	icon_state = "verticalleftborderright0"
+
+/turf/open/indestructible/ground/outside/reno_road/verticalrightborder
+	icon_state = "verticalrightborderleft0"
+
+/turf/open/indestructible/ground/outside/reno_road/hor
+	icon_state = "horizontalinnermain0"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedhor
+	icon_state = "horizontalinnermain1"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedhor/heavy
+	icon_state = "horizontalinnermain2"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedhor/severe
+	icon_state = "horizontalinnermain3"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedhor/right
+	icon_state = "horizontalinnermain2right"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedhor/left
+	icon_state = "horizontalinnermain2left"
+
+/turf/open/indestructible/ground/outside/reno_road/vert
+	icon_state = "verticalinnermain0"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedvert
+	icon_state = "verticalinnermain1"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedvert/heavy
+	icon_state = "verticalinnermain2"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedvert/top
+	icon_state = "verticalinnermain2top"
+
+/turf/open/indestructible/ground/outside/reno_road/damagedvert/bottom
+	icon_state = "verticalinnermain2bottom"
+
+/turf/open/indestructible/ground/outside/reno_road/stripyroad
+	icon = 'icons/fallout/objects/wendover.dmi'
+	icon_state = "wendoverblvd"
+	dir = SOUTHEAST
+
+/turf/open/indestructible/ground/outside/reno_road/stripyroad/thick
+	icon_state = "doubleyellow2"
+	dir = WEST
+
+/turf/open/indestructible/ground/outside/reno_road/stripyroad/horizontal
+	dir = NORTHWEST
+
+/turf/open/indestructible/ground/outside/reno_road/stripyroad/horizontalthick
+	dir = NORTHEAST

@@ -1,0 +1,1471 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"al" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"aS" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"bh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/booth{
+	icon_state = "booth_north_west"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"bH" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/simple_door/metal/fence/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"bW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/snacks/kebab/rat/double,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"cf" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"cu" = (
+/turf/closed/wall/rust,
+/area/shuttle/raider_elevator)
+"cF" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"cR" = (
+/obj/item/shard,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"cU" = (
+/obj/structure/nest/mob/raider/boss,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 5
+	},
+/area/shuttle/raider_elevator)
+"dr" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/middle,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"dI" = (
+/obj/effect/decal/cleanable/glass,
+/obj/item/shard,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"eC" = (
+/obj/structure/nest/mob/raider/firefighter{
+	dir = 4;
+	layer = 2.91
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"eK" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"fv" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/wooden/planks,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"fw" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"fz" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/mob_spawn/human/corpse,
+/obj/structure/chair/left,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"fQ" = (
+/obj/effect/decal/remains/skulls,
+/turf/closed/wall/rust,
+/area/shuttle/raider_elevator)
+"fU" = (
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"gl" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/syringe{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"gw" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"gF" = (
+/obj/structure/chair/booth{
+	icon_state = "booth_north_west"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 10
+	},
+/area/shuttle/raider_elevator)
+"hy" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/snacks/icecreamsandwich{
+	pixel_x = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"hE" = (
+/obj/structure/chair/comfy/teal{
+	color = "#71b3d9";
+	dir = 8
+	},
+/obj/structure/nest/mob/raider/baseball{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"iC" = (
+/obj/structure/table/wood/junk,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"iE" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"jh" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"kM" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"lh" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"mb" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"mw" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"mE" = (
+/obj/structure/table/reinforced,
+/obj/item/locked_box/misc/money/all/high{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 9
+	},
+/area/shuttle/raider_elevator)
+"mH" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"mV" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"nb" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/melee/unarmed/yaoguaigauntlet,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"ng" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"ni" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/cash_ncr_med{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 10
+	},
+/area/shuttle/raider_elevator)
+"oc" = (
+/obj/structure/window/fulltile/ruins,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"oe" = (
+/obj/effect/decal/cleanable/glass,
+/obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_y = 32
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"oi" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/right,
+/obj/structure/nest/mob/raider/baseball,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"ot" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"oy" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/template_noop,
+/area/template_noop)
+"oB" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/drinks/bottle/brown/greenwine{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"oI" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/left,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"pc" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/wooden/planks,
+/obj/item/reagent_containers/food/snacks/meat/slab/meatproduct,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"pI" = (
+/obj/structure/chair/f13chair1,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"pZ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_y = 6;
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"qU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/snacks/icecream{
+	pixel_y = 12;
+	pixel_x = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"rt" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"rK" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 9
+	},
+/area/shuttle/raider_elevator)
+"sD" = (
+/obj/structure/nest/mob/raider/sulphite{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"tK" = (
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 6
+	},
+/area/shuttle/raider_elevator)
+"ui" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"ux" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"uC" = (
+/obj/structure/nest/mob/yaoguai{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 9
+	},
+/area/shuttle/raider_elevator)
+"uG" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"vj" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"vn" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"vq" = (
+/obj/structure/chair/middle{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"wS" = (
+/obj/structure/chair/right,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 9
+	},
+/area/shuttle/raider_elevator)
+"xu" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 10
+	},
+/area/shuttle/raider_elevator)
+"xz" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/shard,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"xA" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/nest/mob/raider/ranged{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"zF" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"At" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"AN" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Be" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Bg" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"Bx" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel/rail/north,
+/area/shuttle/raider_elevator)
+"BL" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"BP" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"BQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/snacks/kebab,
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukavictory{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"Cr" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/closed/wall/rust,
+/area/shuttle/raider_elevator)
+"CE" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"DU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"DV" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/barricade/bars,
+/obj/structure/table/wood/settler,
+/obj/structure/curtain{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"EU" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"Ft" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/machinery/light{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"FJ" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"FP" = (
+/obj/structure/table/reinforced,
+/obj/item/kitchen/knife/butcher,
+/obj/item/clothing/head/chefhat{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"HE" = (
+/obj/structure/chair/f13foldupchair{
+	dir = 8
+	},
+/obj/structure/nest/mob/raider{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"HF" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/stool/retro,
+/obj/structure/nest/mob/raider,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"HJ" = (
+/obj/machinery/door/airlock/wood,
+/obj/docking_port/mobile/elevator{
+	dir = 8;
+	height = 51;
+	width = 5;
+	dwidth = 1;
+	id = "raider_elevator";
+	name = "Raider Subway";
+	preferred_direction = 8;
+	dheight = 44
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"HQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"Ic" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/bottle/nukashine{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Iq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"Jq" = (
+/obj/machinery/microwave/stove,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 5
+	},
+/area/shuttle/raider_elevator)
+"JV" = (
+/turf/template_noop,
+/area/template_noop)
+"Ku" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"Ky" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/left{
+	dir = 8
+	},
+/obj/structure/nest/mob/raider/sulphiteranged{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"KC" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"KU" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"LR" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"LU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 8
+	},
+/area/shuttle/raider_elevator)
+"Mp" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"Ms" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/structure/sign/poster/contraband/have_a_puff{
+	pixel_y = 32
+	},
+/obj/item/reagent_containers/pill/patch/jet,
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/snacks/icecreamsandwich,
+/obj/item/reagent_containers/food/snacks/icecreamsandwich,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"MU" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/nest/mob/raider/firefighter{
+	dir = 1;
+	layer = 2;
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"Nv" = (
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 5
+	},
+/area/shuttle/raider_elevator)
+"NA" = (
+/obj/structure/chair/f13chair1{
+	dir = 4
+	},
+/obj/structure/nest/mob/raider/sulphiteranged{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 10
+	},
+/area/shuttle/raider_elevator)
+"NU" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"NW" = (
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Oq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/right{
+	dir = 8
+	},
+/obj/structure/nest/mob/raider/ranged{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Ot" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/cash_random_med{
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"OA" = (
+/obj/structure/chair/left,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 5
+	},
+/area/shuttle/raider_elevator)
+"PW" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
+/area/shuttle/raider_elevator)
+"QJ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Rz" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/chair/middle{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"RA" = (
+/obj/machinery/icecream_vat,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 5
+	},
+/area/shuttle/raider_elevator)
+"RW" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/machinery/light{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Sf" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Sh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/nest/mob/yaoguai{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side,
+/area/shuttle/raider_elevator)
+"Sx" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/barricade/wooden/planks,
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	pixel_y = -1;
+	opacity = 1;
+	open = 0;
+	layer = 4.01
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"SE" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/tunnel,
+/area/shuttle/raider_elevator)
+"SH" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty"
+	},
+/area/shuttle/raider_elevator)
+"SN" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"TC" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Uh" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 6
+	},
+/area/shuttle/raider_elevator)
+"UE" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/shuttle/raider_subway{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/raider_elevator)
+"VS" = (
+/obj/item/shard,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"WH" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"WQ" = (
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 6
+	},
+/area/shuttle/raider_elevator)
+"Xe" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+"Xh" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 10
+	},
+/area/shuttle/raider_elevator)
+"Xr" = (
+/obj/structure/window/fulltile/ruins,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Xz" = (
+/obj/structure/chair/right,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 1
+	},
+/area/shuttle/raider_elevator)
+"Yu" = (
+/obj/effect/decal/cleanable/glass,
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"Zz" = (
+/obj/item/shard,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/raider_elevator)
+"ZA" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/purple/side{
+	icon_state = "purpledirty";
+	dir = 4
+	},
+/area/shuttle/raider_elevator)
+
+(1,1,1) = {"
+fQ
+cu
+eK
+cu
+fQ
+"}
+(2,1,1) = {"
+cu
+mE
+UE
+ni
+cu
+"}
+(3,1,1) = {"
+gw
+oB
+hE
+Ot
+gw
+"}
+(4,1,1) = {"
+cu
+cU
+mV
+WQ
+cu
+"}
+(5,1,1) = {"
+fQ
+cu
+ZA
+cu
+fQ
+"}
+(6,1,1) = {"
+vn
+wS
+LU
+gF
+vn
+"}
+(7,1,1) = {"
+vn
+oI
+CE
+HQ
+Xr
+"}
+(8,1,1) = {"
+ot
+ux
+CE
+Mp
+HJ
+"}
+(9,1,1) = {"
+gw
+oi
+mV
+bh
+aS
+"}
+(10,1,1) = {"
+jh
+dr
+mV
+Rz
+aS
+"}
+(11,1,1) = {"
+gw
+oI
+mV
+rt
+gw
+"}
+(12,1,1) = {"
+Bg
+NW
+mV
+fU
+iE
+"}
+(13,1,1) = {"
+oc
+Xz
+MU
+bh
+vn
+"}
+(14,1,1) = {"
+gw
+OA
+WH
+tK
+vn
+"}
+(15,1,1) = {"
+cu
+RW
+lh
+al
+cu
+"}
+(16,1,1) = {"
+oy
+PW
+Bx
+SE
+JV
+"}
+(17,1,1) = {"
+cu
+al
+ZA
+TC
+cu
+"}
+(18,1,1) = {"
+gw
+wS
+LU
+NA
+xz
+"}
+(19,1,1) = {"
+Xr
+fz
+HF
+BQ
+SN
+"}
+(20,1,1) = {"
+Bg
+ux
+CE
+Mp
+bH
+"}
+(21,1,1) = {"
+jh
+oi
+CE
+ui
+pZ
+"}
+(22,1,1) = {"
+Xr
+dr
+bW
+ui
+Ic
+"}
+(23,1,1) = {"
+Xr
+oI
+CE
+Mp
+Be
+"}
+(24,1,1) = {"
+Bg
+BP
+DU
+zF
+fw
+"}
+(25,1,1) = {"
+gw
+FP
+mV
+ui
+mb
+"}
+(26,1,1) = {"
+Xr
+Jq
+sD
+WQ
+Yu
+"}
+(27,1,1) = {"
+cu
+oe
+Iq
+dI
+cu
+"}
+(28,1,1) = {"
+oy
+PW
+Bx
+SE
+JV
+"}
+(29,1,1) = {"
+cu
+RW
+KU
+TC
+cu
+"}
+(30,1,1) = {"
+pc
+uC
+cf
+Xh
+vn
+"}
+(31,1,1) = {"
+vn
+Sf
+CE
+EU
+fv
+"}
+(32,1,1) = {"
+Bg
+NW
+mw
+uG
+QJ
+"}
+(33,1,1) = {"
+vn
+nb
+mw
+fU
+mH
+"}
+(34,1,1) = {"
+vn
+KC
+kM
+EU
+jh
+"}
+(35,1,1) = {"
+vn
+NU
+CE
+SH
+vn
+"}
+(36,1,1) = {"
+Bg
+NU
+mw
+EU
+QJ
+"}
+(37,1,1) = {"
+vn
+AN
+mw
+Sh
+fv
+"}
+(38,1,1) = {"
+vn
+Nv
+Xe
+Uh
+fv
+"}
+(39,1,1) = {"
+cu
+Ft
+At
+LR
+Cr
+"}
+(40,1,1) = {"
+oy
+PW
+Bx
+SE
+JV
+"}
+(41,1,1) = {"
+Cr
+LR
+ng
+vj
+Cr
+"}
+(42,1,1) = {"
+fv
+rK
+Ku
+xu
+Be
+"}
+(43,1,1) = {"
+vn
+Oq
+vq
+Ky
+Be
+"}
+(44,1,1) = {"
+Bg
+ux
+CE
+Mp
+cR
+"}
+(45,1,1) = {"
+vn
+pI
+mV
+bh
+Be
+"}
+(46,1,1) = {"
+fv
+hy
+mV
+Rz
+VS
+"}
+(47,1,1) = {"
+fv
+HE
+mV
+rt
+Zz
+"}
+(48,1,1) = {"
+Sx
+NW
+eC
+fU
+BL
+"}
+(49,1,1) = {"
+DV
+gl
+qU
+ui
+cF
+"}
+(50,1,1) = {"
+DV
+RA
+xA
+WQ
+cF
+"}
+(51,1,1) = {"
+Cr
+Ms
+FJ
+iC
+cu
+"}

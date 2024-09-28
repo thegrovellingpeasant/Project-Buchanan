@@ -1,0 +1,1266 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ay" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cw" = (
+/obj/machinery/disposal/deliveryChute,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/caves)
+"dF" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eC" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = -32
+	},
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet2"
+	},
+/area/f13/caves)
+"gl" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"gK" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water/cavern,
+/area/f13/caves)
+"hV" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/nest/mob/venushumantrap,
+/turf/open/water/cavern,
+/area/f13/caves)
+"km" = (
+/obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/blueprintVHigh,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"lb" = (
+/obj/structure/campfire/stove,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"lk" = (
+/obj/structure/nest/mob/venushumantrap,
+/obj/structure/chair/stool/retro,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/caves)
+"nU" = (
+/obj/machinery/workbench,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"nX" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ov" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"oY" = (
+/obj/structure/table/wood/poker,
+/obj/item/stack/f13Cash/ncr{
+	pixel_y = 4
+	},
+/obj/item/clothing/mask/cigarette/cigar/ncr,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet11"
+	},
+/area/f13/caves)
+"qz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"qR" = (
+/turf/open/floor/wood/f13/carpet,
+/area/f13/caves)
+"rf" = (
+/obj/structure/flora/junglebush/large,
+/turf/open/water/cavern,
+/area/f13/caves)
+"ty" = (
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_x = -10
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uc" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water/cavern,
+/area/f13/caves)
+"uq" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vj" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/helmet/f13/raider/eyebot{
+	pixel_y = 5
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"vI" = (
+/obj/item/salvage/low,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vL" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"ws" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wG" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"zb" = (
+/turf/open/water/cavern,
+/area/f13/caves)
+"Ds" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ep" = (
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet1"
+	},
+/area/f13/caves)
+"EI" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"EO" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"EX" = (
+/obj/structure/simple_door/room/dirty,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Fl" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "toy_Nuka_truck";
+	pixel_y = -14;
+	pixel_x = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fw" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"FD" = (
+/obj/structure/closet/crate/freezer,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Gy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water/cavern,
+/area/f13/caves)
+"GP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"GS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"Hf" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Hv" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"HT" = (
+/obj/structure/table/wood/settler,
+/obj/item/flashlight/lamp/green,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Jp" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_y = -32
+	},
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet11"
+	},
+/area/f13/caves)
+"JM" = (
+/obj/structure/nest/mob/venushumantrap,
+/obj/structure/chair/stool/retro,
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet15"
+	},
+/area/f13/caves)
+"LE" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck,
+/obj/item/stack/f13Cash/ncr/onezero{
+	pixel_y = 6
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/caves)
+"MY" = (
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/caves)
+"Og" = (
+/obj/structure/flora/junglebush/c,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Op" = (
+/obj/effect/decal/remains/bottles,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"OK" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"OU" = (
+/obj/structure/nest/mob/venushumantrap,
+/turf/open/water/cavern,
+/area/f13/caves)
+"Pk" = (
+/obj/machinery/light/small,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Py" = (
+/obj/structure/flora/junglebush/b,
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/caves)
+"Qn" = (
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QT" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/junglebush/large,
+/turf/open/water/cavern,
+/area/f13/caves)
+"Ro" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"RL" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/glass/bowl{
+	pixel_y = 5
+	},
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"SI" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Light2";
+	layer = 4.26;
+	name = "vines";
+	pixel_y = 32
+	},
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Tl" = (
+/obj/structure/table/wood/settler,
+/obj/item/screwdriver,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"TU" = (
+/obj/structure/closet/locker,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"UW" = (
+/obj/structure/simple_door/room/dirty,
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"Vg" = (
+/obj/structure/flora/grass/whitelegvine{
+	pixel_y = -32
+	},
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Med1";
+	layer = 4.26;
+	name = "vines";
+	pixel_x = 32
+	},
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/caves)
+"Vs" = (
+/obj/structure/sign/poster/painting/scenery{
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/caves)
+"VC" = (
+/obj/machinery/light/small,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/caves)
+"VH" = (
+/obj/structure/flora/junglebush,
+/turf/open/water/cavern,
+/area/f13/caves)
+"VZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water/cavern,
+/area/f13/caves)
+"WD" = (
+/obj/structure/flora/grass/whitelegvine{
+	icon_state = "Light2";
+	layer = 4.26;
+	name = "vines";
+	pixel_y = 32
+	},
+/turf/open/floor/wood/f13/carpet{
+	icon_state = "torncarpet3"
+	},
+/area/f13/caves)
+"Xe" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/water/cavern,
+/area/f13/caves)
+"YK" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"YY" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/nest/mob/venushumantrap,
+/turf/open/water/cavern,
+/area/f13/caves)
+"ZW" = (
+/obj/structure/closet/locker,
+/obj/item/stack/ore/blackpowder/five,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+
+(1,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(2,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(3,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+nX
+nX
+nX
+nX
+Hf
+Hf
+Hf
+"}
+(4,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+uc
+ay
+nX
+uq
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+wG
+wG
+Fl
+dF
+Hf
+Hf
+Hf
+Hf
+"}
+(5,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+vL
+nX
+GP
+Ro
+Hf
+Hf
+Hf
+Hf
+nX
+wG
+cw
+vI
+dF
+nX
+nX
+Hf
+Hf
+"}
+(6,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+rf
+hV
+zb
+uc
+nX
+Hf
+Hf
+Hf
+nX
+wG
+wG
+ty
+nX
+nX
+Hf
+Hf
+Hf
+"}
+(7,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+uc
+Qn
+Hf
+Hf
+Hf
+nX
+Hf
+nX
+nX
+Hf
+nX
+nX
+Hf
+Hf
+"}
+(8,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+Hv
+Hf
+Hf
+Hf
+Hf
+nX
+nX
+nX
+Hf
+nX
+nX
+nX
+Hf
+Hf
+"}
+(9,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+uc
+nX
+Hf
+Hf
+Hf
+Hf
+nX
+nX
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(10,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Ro
+uc
+Qn
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(11,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+zb
+zb
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(12,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+YY
+zb
+zb
+Xe
+uc
+uq
+Hf
+Hf
+Hf
+Hf
+EI
+EI
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(13,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+Hv
+zb
+zb
+uc
+nX
+Hf
+Hf
+Hf
+Hf
+WD
+VC
+EI
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(14,1,1) = {"
+Hf
+Hf
+Hf
+EO
+Hf
+zb
+gK
+nX
+qz
+zb
+Hf
+Hf
+Hf
+Hf
+EI
+Vs
+MY
+JM
+MY
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(15,1,1) = {"
+Hf
+Hf
+zb
+OU
+zb
+uc
+Qn
+nX
+qz
+zb
+Hf
+Hf
+Hf
+Ds
+Qn
+qR
+LE
+oY
+Jp
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(16,1,1) = {"
+Hf
+Hf
+zb
+Hf
+Hf
+Hf
+nX
+nX
+qz
+GS
+nX
+nX
+OK
+nX
+nX
+nX
+lk
+Ep
+eC
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(17,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+uq
+Qn
+Gy
+nX
+nX
+ay
+Hf
+Hf
+Hf
+SI
+Og
+Py
+Vg
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(18,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+nX
+uq
+qz
+vL
+nX
+Hf
+Hf
+Hf
+Hf
+Hf
+ws
+Hf
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(19,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+EO
+Hf
+Hf
+Hf
+Hf
+EI
+EX
+EX
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(20,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+zb
+zb
+Hf
+Hf
+Hf
+Hf
+EI
+Hf
+YK
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(21,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+zb
+GS
+nX
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(22,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+EO
+uc
+nX
+nX
+Hf
+Hf
+EI
+EI
+YK
+Pk
+EI
+EI
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(23,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+uc
+nX
+Hf
+Hf
+Hf
+EI
+lb
+YK
+YK
+YK
+vj
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(24,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+zb
+VZ
+Hf
+Hf
+Hf
+EI
+RL
+YK
+YK
+YK
+YK
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(25,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+nX
+QT
+zb
+OU
+EI
+EI
+EI
+ov
+YK
+Hf
+Hf
+YK
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(26,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+ay
+nX
+qz
+VH
+Hf
+Hf
+Hf
+FD
+YK
+YK
+Hf
+YK
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(27,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+ZW
+Op
+YK
+Hf
+YK
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(28,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+EI
+Hf
+Hf
+Hf
+Hf
+EI
+TU
+YK
+YK
+Fw
+HT
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(29,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+EI
+Hf
+Hf
+Hf
+Hf
+UW
+YK
+gl
+nU
+km
+Tl
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(30,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+EI
+EI
+EI
+Hf
+EI
+EI
+EI
+EI
+EI
+EI
+EI
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(31,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(32,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}
+(33,1,1) = {"
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+Hf
+"}

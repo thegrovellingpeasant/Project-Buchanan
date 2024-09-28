@@ -1,0 +1,486 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"b" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"c" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"f" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"g" = (
+/obj/structure/barricade/bars,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-9";
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"h" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"i" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"j" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/processor/chopping_block{
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"k" = (
+/obj/structure/barricade/wooden,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"l" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/obj/structure/nest/mob/protectron{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/obj/structure/simple_door/repaired,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"n" = (
+/obj/structure/simple_door/metal/barred/lowerlayer,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"o" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
+	icon_state = "skulls";
+	name = "skulls"
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"q" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"r" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/obj/structure/nest/mob/robobrain{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"s" = (
+/obj/structure/closet/anchored,
+/obj/item/clothing/suit/hooded/robes/hubology,
+/obj/item/clothing/suit/hooded/robes/hubology,
+/obj/item/clothing/head/hooded/robes/hubology,
+/obj/item/clothing/head/hooded/robes/hubology,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"u" = (
+/obj/structure/barricade/bars,
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"v" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"w" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/machinery/workbench,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"x" = (
+/obj/structure/fermenting_barrel,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"z" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"A" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"B" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "6-8";
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"E" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"F" = (
+/obj/structure/bed/mattress{
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"G" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"H" = (
+/obj/structure/noticeboard{
+	pixel_y = 33
+	},
+/obj/item/paper/hubologyad,
+/obj/item/paper/hubologyteachings,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"I" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/e_chair{
+	icon = 'icons/obj/chairs.dmi';
+	desc = "A chair with a weird helmet attached to it.";
+	name = "zeta scanner"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-5";
+	layer = 3;
+	pixel_y = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"K" = (
+/obj/structure/sign/poster/contraband/pinup_bed{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/junk/ladder{
+	layer = 2.1;
+	pixel_y = 23
+	},
+/obj/structure/debris/v3,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"M" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"N" = (
+/obj/structure/table/wood/junk,
+/obj/item/stack/f13Cash/random/ncr/low{
+	pixel_y = 9
+	},
+/obj/item/stack/f13Cash/random/ncr/low{
+	pixel_y = 3;
+	pixel_x = -9
+	},
+/obj/item/stack/f13Cash/random/ncr/low{
+	pixel_y = 3;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"O" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/reagentgrinder,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"P" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Q" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"S" = (
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"T" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"U" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/sign/poster/contraband/punch_shit{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/structure/barricade/bars,
+/obj/structure/decoration/rag,
+/obj/structure/cable/yellow{
+	icon_state = "1-6";
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Y" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/computer/terminal/grognak,
+/obj/structure/cable/yellow{
+	icon_state = "1-8";
+	layer = 3;
+	pixel_x = 14;
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+y
+y
+y
+y
+y
+y
+y
+y
+y
+"}
+(2,1,1) = {"
+y
+y
+y
+y
+y
+y
+y
+y
+y
+"}
+(3,1,1) = {"
+y
+k
+h
+a
+a
+a
+k
+y
+y
+"}
+(4,1,1) = {"
+y
+a
+I
+Q
+u
+i
+v
+k
+y
+"}
+(5,1,1) = {"
+y
+a
+B
+Q
+n
+P
+P
+D
+y
+"}
+(6,1,1) = {"
+a
+a
+A
+g
+V
+Y
+P
+a
+y
+"}
+(7,1,1) = {"
+a
+Q
+m
+Q
+Q
+E
+r
+a
+y
+"}
+(8,1,1) = {"
+a
+K
+a
+s
+E
+P
+N
+G
+y
+"}
+(9,1,1) = {"
+a
+U
+a
+a
+a
+P
+l
+h
+y
+"}
+(10,1,1) = {"
+a
+H
+Q
+S
+a
+i
+Q
+A
+y
+"}
+(11,1,1) = {"
+a
+L
+X
+w
+a
+f
+P
+a
+y
+"}
+(12,1,1) = {"
+a
+X
+Q
+k
+D
+c
+b
+a
+y
+"}
+(13,1,1) = {"
+a
+k
+o
+A
+x
+E
+b
+a
+y
+"}
+(14,1,1) = {"
+y
+M
+T
+z
+E
+E
+h
+k
+y
+"}
+(15,1,1) = {"
+y
+q
+F
+z
+O
+j
+D
+y
+y
+"}
+(16,1,1) = {"
+y
+k
+a
+a
+o
+a
+k
+y
+y
+"}
+(17,1,1) = {"
+y
+y
+y
+y
+y
+y
+y
+y
+y
+"}
+(18,1,1) = {"
+y
+y
+y
+y
+y
+y
+y
+y
+y
+"}
