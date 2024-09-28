@@ -72,8 +72,7 @@
 	slowdown = 0.1
 	mag_type = /obj/item/ammo_box/magazine/zipgun
 	force = 16
-	extra_damage = 27 //unrealistically high to make up for low capacity and explode in your hands, roughly where the old 9mm used to be
-
+	extra_damage = 0
 	spread = 8
 	fire_delay = 4
 	burst_size = 1
@@ -94,7 +93,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvisedpipe
 	force = 20
 	fire_delay = 0.25
-	extra_damage = 33
+	extra_damage = 0
 	spread = 2
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
@@ -118,7 +117,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised10mm
 	force = 20
 	fire_delay = 0.25
-	extra_damage = 28
+	extra_damage = 0
 	spread = 7
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
@@ -145,7 +144,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/improvised
 	force = 26 //Good club
 	fire_delay = 0.5
-	extra_damage = 2
+	extra_damage = 0
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 
 /obj/item/gun/ballistic/revolver/single_shotgun/update_icon_state()
@@ -164,7 +163,7 @@
 	force = 24
 	fire_delay = 0.5
 	spread = 4
-	extra_damage = 32
+	extra_damage = 0
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
 
@@ -181,7 +180,7 @@
 	force = 24
 	fire_delay = 0.25
 	spread = 5
-	extra_damage = 32
+	extra_damage = 0
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
 
@@ -198,11 +197,14 @@
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/autopipe
 	force = 20
-	extra_damage = 25 //a lot less than the .357 magnum, because OP
+	extra_damage = 0
 	extra_penetration = 0.05 //long barrel
-	burst_size = 4
+	burst_size = 1
+	is_automatic = TRUE
+	automatic = 1
+	autofire_shot_delay = 3
 	fire_delay = 6
-	burst_shot_delay = 6
+	burst_shot_delay = 2.5
 	spread = 15
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 

@@ -39,28 +39,28 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
-	damage = 0
-	wound_bonus = 15
-	bare_wound_bonus = -18
+	damage = 38
+	wound_bonus = 17
+	bare_wound_bonus = 17
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
-	damage = 29
+	damage = 38
 	armour_penetration = 0.21
-	wound_bonus = 15
-	bare_wound_bonus = -16
+	wound_bonus = 17
+	bare_wound_bonus = 17
 	var/extra_speed = 200
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
-	damage = -4
-	wound_bonus = 18
-	bare_wound_bonus = -18
+	damage = 30
+	wound_bonus = 17
+	bare_wound_bonus = 17
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
-	damage = -21
-	stamina = 30
+	damage = 17
+	stamina = 35
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -68,9 +68,9 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556/microshrapnel
 	name = "5.56 microshrapnel bullet"
-	damage = -5
-	wound_bonus = 15
-	bare_wound_bonus = 15
+	damage = 10
+	wound_bonus = 20
+	bare_wound_bonus = 20
 	wound_falloff_tile = 0.5
 	embed_falloff_tile = 0.5
 	embedding = list(embed_chance=5, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.5, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a556/microshrapnel)
@@ -85,11 +85,11 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556/simple //for simple mobs, separate to allow balancing
 	name = "5.56 bullet"
-	damage = 25
+	damage = 38
 
 /obj/item/projectile/bullet/a556/ap/simple //for simple mobs, separate to allow balancing
 	name = "5.56 bullet"
-	damage = 19
+	damage = 30
 	armour_penetration = 0.1
 
 ////////////////////
@@ -98,15 +98,15 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 0
-	wound_bonus = 18
-	bare_wound_bonus = -20
+	damage = 45
+	wound_bonus = 25
+	bare_wound_bonus = 25
 
 /obj/item/projectile/bullet/a762/simple
 	name = "7.62 FMJ bullet"
-	damage = 25
-	wound_bonus = 18
-	bare_wound_bonus = -20
+	damage = 45
+	wound_bonus = 25
+	bare_wound_bonus = 25
 
 
 //.308 Winchester
@@ -116,8 +116,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
-	damage = -30
-	stamina = 30
+	damage = 15
+	stamina = 38
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -138,9 +138,9 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a762/microshrapnel
 	name = "7.62 microshrapnel bullet"
-	damage = -7
-	wound_bonus = 15
-	bare_wound_bonus = 15
+	damage = 32
+	wound_bonus = 20
+	bare_wound_bonus = 20
 	wound_falloff_tile = 0.5
 	embed_falloff_tile = 0.5
 	embedding = list(embed_chance=12, fall_chance=1, jostle_chance=1, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.3, pain_mult=5, jostle_pain_mult=6, rip_time=10, embed_chance_turf_mod=100, projectile_payload = /obj/item/shrapnel/bullet/a762/microshrapnel)
@@ -150,12 +150,12 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 0
+	damage = 60
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
 
 /obj/item/projectile/bullet/a50MG/incendiary
-	damage = -10
+	damage = 40
 	var/fire_stacks = 4
 	zone_accuracy_factor = 100
 
@@ -175,7 +175,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a50MG/rubber
 	name = ".50 rubber bullet"
-	damage = -50
+	damage = 20
 	stamina = 80
 	armour_penetration = 0
 	sharpness = SHARP_NONE
@@ -220,8 +220,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
 	damage = 0
-	wound_bonus = 10
-	bare_wound_bonus = -10
+	wound_bonus = 15
+	bare_wound_bonus = 15
 
 /obj/item/projectile/bullet/a473/rubber
 	name = "4.73 polyurethane bullet"
@@ -234,7 +234,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/incendiary
 	name = "4.73 tracer bullet"
-	damage = -8
+	damage = 27
 	armour_penetration = 0.1
 	var/fire_stacks = 3
 	zone_accuracy_factor = 100
@@ -265,7 +265,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/explosive
 	name = "4.73 explosive bullet"
-	damage = 0
+	damage = 20
 
 /obj/item/projectile/bullet/a473/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -276,7 +276,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/shock
 	name = "4.73mm shock bullet"
-	wound_bonus = 0
+	wound_bonus = 20
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/a473/shock/on_hit(atom/target, blocked = FALSE)
@@ -294,19 +294,19 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 //////////////////////////
 
 /obj/item/projectile/bullet/m5mm  //for rifles// one of the only bullets to have integral AP
-	damage = 0
+	damage = 7
 	wound_bonus = 10
-	bare_wound_bonus = -10
+	bare_wound_bonus = 10
 	var/extra_speed = 200
 
 /obj/item/projectile/bullet/m5mm/simple //for simple mobs, separate to allow balancing
 	name = "5mm bullet"
-	damage = 19
+	damage = 7
 	armour_penetration = 0.19
 
 /obj/item/projectile/bullet/m5mm/shock
 	name = "5mm shock bullet"
-	damage = -6 //about -30% damage
+	damage = 5
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -334,7 +334,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/c2mm/blender //welcome to pain town
 	name = "2mm blender projectile"
-	damage = -20
+	damage = 35
 	hitscan = TRUE
 	pass_flags = PASSTABLE
 	armour_penetration = 1

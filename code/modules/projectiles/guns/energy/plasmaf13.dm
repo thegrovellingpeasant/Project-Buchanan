@@ -78,7 +78,7 @@
 	desc = "A burst-fire energy weapon that fires a steady stream of toroidal plasma towards an unlucky target."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	extra_damage = 15
+	extra_damage = 0
 	burst_size = 2
 	burst_shot_delay = 1.5
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -103,7 +103,7 @@
 	item_state = "multiplas"
 	icon_state = "multiplas"
 	fire_delay = 3
-	extra_damage = 15
+	extra_damage = 0
 	desc = "A modified A3-20 plasma caster built by REPCONN equipped with a multicasting kit that creates multiple weaker clots."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/scatter)

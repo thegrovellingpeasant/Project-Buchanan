@@ -1,6 +1,6 @@
 /obj/item/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
-	damage = 50
+	damage = 40
 	stamina = 10 //all shotguns deal a very slight amount of stamina damage from the impact
 	sharpness = SHARP_POINTY
 	wound_bonus = 26
@@ -20,7 +20,7 @@
 /obj/item/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
 	damage = 10
-	stamina = 60
+	stamina = 70
 	wound_bonus = 20
 	sharpness = SHARP_NONE
 	embedding = null
@@ -40,7 +40,7 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 12 //slight damage on impact
+	damage = 20 //slight damage on impact
 	range = 10
 
 /obj/item/projectile/incendiary/flamethrower/robot
@@ -122,15 +122,15 @@
 /obj/item/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
 	damage = 11
-	wound_bonus = 5
-	bare_wound_bonus = 5
+	wound_bonus = 7
+	bare_wound_bonus = 7
 	wound_falloff_tile = -2.5 // low damage + additional dropoff will already curb wounding potential anything past point blank
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubbershot pellet"
 	damage = 2
-	stamina = 10
+	stamina = 11
 	sharpness = SHARP_NONE
 	embedding = null
 	is_reflectable = TRUE
@@ -190,7 +190,7 @@
 
 /obj/item/projectile/bullet/pellet/magnum_buckshot
 	name = "magnum buckshot pellet"
-	damage = 15
+	damage = 13
 	armour_penetration = 0.15
 	wound_bonus = 10
 	bare_wound_bonus = 10

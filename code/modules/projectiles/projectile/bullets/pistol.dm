@@ -37,20 +37,20 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c22
 	name = ".22lr bullet"
-	damage = 0
+	damage = 5
 	wound_bonus = 6
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
-	damage = 0
-	stamina = 22
+	damage = 1
+	stamina = 25
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c22/shock
 	name = ".22lr shock bullet"
-	damage = -4 //about -25% damage
+	damage = 1 //about -25% damage
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -64,23 +64,23 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c38
 	name = ".38 bullet"
-	damage = 0
+	damage = 25
 	wound_bonus = 10
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
-	damage = -28
-	stamina = 32
+	damage = 20
+	stamina = 35
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c38/improv
-	damage = -3
+	damage = 18
 
 /obj/item/projectile/bullet/c38/acid
 	name = ".38 acid-tipped bullet"
-	damage = -5
+	damage = 20
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -101,7 +101,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c38/incendiary
 	name = ".38 incendiary bullet"
-	damage = -5
+	damage = 21
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c38/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -119,7 +119,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
-	damage = 0
+	damage = 20
 	wound_bonus = 10
 	is_reflectable = TRUE
 
@@ -130,14 +130,14 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm/rubber
 	name = "9mm rubber bullet"
-	damage = -15
+	damage = 12
 	stamina = 25
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c9mm/acid
 	name = "9mm acid-tipped bullet"
-	damage = -5
+	damage = 23
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -157,7 +157,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c9mm/incendiary
 	name = "9mm incendiary bullet"
-	damage = -5
+	damage = 22
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c9mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -168,7 +168,7 @@ Uranium, Contaminated
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/c9mm/improv
-	damage = -3
+	damage = 15
 
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
 	name = "9mm bullet"
@@ -181,26 +181,26 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
-	damage = 0
+	damage = 25
 	wound_bonus = 11
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
-	damage = 20
+	damage = 25
 	armour_penetration = 0.1
 	wound_bonus = 11
 
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
-	damage = -15
+	damage = 5
 	stamina = 26
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c10mm/incendiary
 	name = "10mm incendiary bullet"
-	damage = -5
+	damage = 5
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c10mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -217,7 +217,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c45
 	name = ".45 FMJ bullet"
-	damage = 0
+	damage = 27
 	wound_bonus = 15
 	is_reflectable = TRUE
 
@@ -233,14 +233,14 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c45/rubber
 	name = ".45 rubber bullet"
-	damage = -28
+	damage = 10
 	stamina = 45
 	sharpness = SHARP_NONE
 	wound_bonus = 0
 
 /obj/item/projectile/bullet/c45/incendiary
 	name = ".45 incendiary bullet"
-	damage = -5
+	damage = 22
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c45/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -256,14 +256,14 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357
 	name = ".357 FMJ bullet"
-	damage = 0
-	wound_bonus = 12
-	bare_wound_bonus = -14
+	damage = 32
+	wound_bonus = 15
+	bare_wound_bonus = 15
 
 // 3 ricochets, more than enough to kill anything that moves
 /obj/item/projectile/bullet/a357/ricochet
 	name = ".357 ricochet bullet"
-	damage = 0
+	damage = 25
 	ricochets_max = 3
 	ricochet_chance = 140
 	ricochet_auto_aim_angle = 50
@@ -272,7 +272,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/acid
 	name = ".357 acid-tipped bullet"
-	damage = -5
+	damage = 27
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -291,7 +291,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/incendiary
 	name = ".357 incendiary bullet"
-	damage = -5
+	damage = 27
 	var/fire_stacks = 2
 
 /obj/item/projectile/bullet/a357/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -303,16 +303,16 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/a357/improv
 	name = "poor .357 bullet"
-	damage = -5
+	damage = 23
 ////////////////
 // .44 MAGNUM //
 ////////////////		- Higher power round
 
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
-	damage = 0
-	wound_bonus = 15
-	bare_wound_bonus = -20
+	damage = 36
+	wound_bonus = 17
+	bare_wound_bonus = 17
 
 
 /obj/item/projectile/bullet/m44/simple //for simple mobs, separate to allow balancing
@@ -322,7 +322,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/m44/incendiary
 	name = ".44 incendiary bullet"
-	damage = -5
+	damage = 31
 	var/fire_stacks = 2
 
 /obj/item/projectile/bullet/m44/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -338,12 +338,12 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
-	damage = 0
-	wound_bonus = 18
-	bare_wound_bonus = -24
+	damage = 40
+	wound_bonus = 23
+	bare_wound_bonus = 23
 
 /obj/item/projectile/bullet/c4570/explosive
-	damage = -15
+	damage = 30
 	pixels_per_second = TILES_TO_PIXELS(500)
 	name = ".45-70 explosive bullet"
 
@@ -353,7 +353,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c4570/acid
 	name = ".45-70 acid-tipped bullet"
-	damage = -10
+	damage = 15
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	var/acid_type = /datum/reagent/toxin/acid/fluacid
@@ -372,7 +372,7 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/c4570/knockback
 	name = ".45-70 ultradense bullet"
-	damage = -15
+	damage = 20
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 	pixels_per_second = TILES_TO_PIXELS(500)
@@ -391,13 +391,13 @@ Uranium, Contaminated
 
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
-	damage = 0
+	damage = 50
 	wound_bonus = 25
 	bare_wound_bonus = -28
 
 /obj/item/projectile/bullet/mm14/contam
 	name = "14mm contaiminated bullet"
-	damage = -10
+	damage = 25
 	var/smoke_radius = 1
 
 /obj/item/projectile/bullet/mm14/contam/Initialize()
@@ -451,7 +451,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/needle
 	name = "needle"
 	icon_state = "cbbolt"
-	damage = 0
+	damage = 15
 	armour_penetration = 0.8 //rare AP pistol ammo
 	var/piercing = FALSE
 
