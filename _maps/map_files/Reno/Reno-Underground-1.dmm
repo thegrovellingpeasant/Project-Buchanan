@@ -99,6 +99,8 @@
 "acK" = (
 /obj/item/card/id/gold,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -278,6 +280,8 @@
 	icon = 'icons/turf/floors/glass.dmi'
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -300,7 +304,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "akc" = (
 /obj/structure/barricade/sandbags,
@@ -328,6 +335,8 @@
 /obj/structure/barricade/wooden,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -410,7 +419,10 @@
 /area/f13/reno_subway)
 "anV" = (
 /obj/structure/nest/mob/ghoul,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "aoe" = (
 /obj/structure/bed/old{
@@ -632,7 +644,10 @@
 	dir = 4;
 	name = "slope"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "asV" = (
 /obj/effect/decal/cleanable/blood{
@@ -820,6 +835,8 @@
 	layer = 3
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -832,7 +849,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/reno_sewers)
 "azh" = (
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "azt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1313,6 +1333,8 @@
 	icon = 'icons/turf/floors/glass.dmi'
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -1341,7 +1363,10 @@
 	pixel_y = -3;
 	layer = 3.21
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "aOP" = (
 /obj/structure/curtain{
@@ -1360,7 +1385,10 @@
 	dir = 8
 	},
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "aPq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1398,7 +1426,10 @@
 /area/f13/reno_sewers)
 "aRC" = (
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "aSc" = (
 /obj/effect/decal/cleanable/flour{
@@ -1536,6 +1567,8 @@
 "aWh" = (
 /obj/structure/anvil,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -1692,12 +1725,17 @@
 	name = "corrugated fencing"
 	},
 /obj/effect/decal/remains/skulls,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bcA" = (
 /obj/structure/simple_door/bunker/glass,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -1828,7 +1866,10 @@
 	pixel_y = -4;
 	color = "#9c9c9c"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bgo" = (
 /obj/machinery/door/window/brigdoor/westleft,
@@ -1852,6 +1893,8 @@
 "bhA" = (
 /obj/item/storage/bag/money,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -1876,7 +1919,10 @@
 	pixel_y = 32;
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "bif" = (
 /obj/structure/railing/corrugated{
@@ -2011,7 +2057,10 @@
 /area/f13/reno_sewers)
 "bmF" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bmJ" = (
 /obj/structure/chair/sofa/left{
@@ -2053,6 +2102,8 @@
 "bnR" = (
 /obj/item/clothing/head/collectable/petehat/gang,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -2234,7 +2285,8 @@
 "buB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/decoration/vent{
-	icon_state = "ventorange"
+	icon_state = "ventorange";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/reno_sewers)
@@ -2499,7 +2551,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bEs" = (
 /obj/structure/safe{
@@ -2513,6 +2568,8 @@
 	layer = 4.25
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -2608,7 +2665,10 @@
 	dir = 4;
 	pixel_x = 13
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bIE" = (
 /obj/structure/chair/sofa/corp/left{
@@ -2638,7 +2698,10 @@
 	dir = 1
 	},
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "bJC" = (
 /obj/structure/simple_door/bunker,
@@ -2696,7 +2759,10 @@
 	pixel_x = -6;
 	pixel_y = -5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bLD" = (
 /obj/effect/decal/cleanable/blood/gibs,
@@ -2781,6 +2847,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -3100,6 +3168,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -3136,7 +3206,10 @@
 /area/f13/reno_subway)
 "bZc" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "bZm" = (
 /obj/structure/window/reinforced{
@@ -3154,7 +3227,10 @@
 	pixel_y = -10;
 	layer = 4.5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bZM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3172,7 +3248,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "bZW" = (
 /obj/structure/closet/crate,
@@ -3220,7 +3299,13 @@
 	pixel_y = 27;
 	pixel_x = -23
 	},
-/turf/open/indestructible/ground/outside/water/sewer,
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "cbt" = (
 /obj/structure/bonfire,
@@ -3331,6 +3416,8 @@
 	dir = 8
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -3496,7 +3583,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "ckW" = (
 /obj/structure/nest/mob/geckofire,
@@ -3527,7 +3617,10 @@
 	pixel_y = 32;
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "clP" = (
 /obj/effect/spawner/lootdrop/trash{
@@ -3581,7 +3674,10 @@
 /area/f13/reno_subway)
 "cnC" = (
 /obj/structure/nest/mob/venushumantrap,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "cnL" = (
 /obj/item/stack/sheet/metal,
@@ -3744,7 +3840,8 @@
 	dir = 8
 	},
 /obj/structure/decoration/vent{
-	icon_state = "ventorange"
+	icon_state = "ventorange";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/reno_sewers)
@@ -3801,7 +3898,10 @@
 	plane = -5;
 	layer = 2.439
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "cvO" = (
 /obj/machinery/sleeper,
@@ -3888,7 +3988,10 @@
 	name = "vines";
 	pixel_x = 32
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "cxZ" = (
 /obj/structure/table/reinforced,
@@ -3903,6 +4006,8 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -3947,7 +4052,10 @@
 "cyQ" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "cyS" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4018,6 +4126,8 @@
 	pixel_y = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -4377,6 +4487,8 @@
 	smooth = 0
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -4447,7 +4559,10 @@
 /area/f13/reno_prewarbunker)
 "cKY" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "cLl" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -4684,6 +4799,8 @@
 	pixel_z = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -4988,7 +5105,10 @@
 /area/f13/reno_sewers)
 "cYI" = (
 /obj/structure/glowshroom,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "cZH" = (
 /obj/structure/chair/right{
@@ -5056,7 +5176,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "dcn" = (
 /obj/machinery/vending/nukacolavend,
@@ -5552,7 +5675,10 @@
 /area/f13/reno_sewers)
 "dri" = (
 /obj/structure/junk/machinery,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "drK" = (
 /obj/effect/landmark/map_load_mark/dungeons/ncrcf8,
@@ -5608,7 +5734,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "duq" = (
 /obj/structure/glowshroom,
@@ -5712,7 +5841,10 @@
 /area/f13/reno_prewarbunker)
 "dxr" = (
 /obj/structure/wreck/trash/engine,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dxK" = (
 /obj/structure/stairs/east,
@@ -5910,7 +6042,10 @@
 	dir = 4;
 	pixel_y = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dDK" = (
 /obj/structure/table/wood,
@@ -5934,7 +6069,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dEc" = (
 /obj/effect/overlay/gravel/edge{
@@ -6117,11 +6255,17 @@
 	dir = 8;
 	pixel_x = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dHb" = (
 /obj/structure/glowshroom,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dHs" = (
 /obj/machinery/chem_heater,
@@ -6168,7 +6312,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "dIV" = (
 /obj/structure/table/wood/ruined/bench,
@@ -6219,7 +6366,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dKw" = (
 /obj/structure/handrail/g_central{
@@ -6227,7 +6377,10 @@
 	layer = 4.5
 	},
 /obj/structure/glowshroom,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dKC" = (
 /turf/open/indestructible/ground/inside/mountain,
@@ -6260,7 +6413,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dLm" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -6436,10 +6592,17 @@
 /turf/open/floor/carpet/black,
 /area/f13/reno_prewarbunker)
 "dQi" = (
-/obj/structure/railing{
-	pixel_y = -3
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
 	},
-/turf/open/indestructible/ground/outside/water/sewer,
+/obj/effect/overlay/curb{
+	color = "#9c9c9c";
+	pixel_x = -1
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "dQD" = (
 /obj/structure/junk/small/disco,
@@ -6548,7 +6711,10 @@
 /area/f13/raiders)
 "dUw" = (
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "dUG" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -6630,7 +6796,10 @@
 	name = "vines";
 	pixel_x = 32
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "dWL" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
@@ -7234,6 +7403,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -7283,7 +7454,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "emG" = (
 /obj/structure/lattice/catwalk{
@@ -7403,7 +7577,8 @@
 /area/f13/reno_prewarbunker)
 "eql" = (
 /obj/structure/decoration/vent{
-	pixel_y = -33
+	pixel_y = -33;
+	plane = -14
 	},
 /obj/effect/decal/remains/human{
 	pixel_x = 2;
@@ -7438,6 +7613,8 @@
 	pixel_y = -3
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -7921,7 +8098,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "eFt" = (
 /obj/structure/chair/wood/modern{
@@ -8203,6 +8383,8 @@
 	},
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -8245,6 +8427,8 @@
 	icon = 'icons/turf/floors/glass.dmi'
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -8336,7 +8520,10 @@
 /area/f13/raiders)
 "ePZ" = (
 /obj/item/lighter/gold,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "eQd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8434,6 +8621,8 @@
 "eSK" = (
 /obj/item/card/id/reno/salvatores/ring/don,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -8553,7 +8742,10 @@
 /area/f13/reno_subway)
 "eYQ" = (
 /obj/structure/simple_door/metal/barred,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "eZf" = (
 /turf/open/floor/f13/dark,
@@ -8629,7 +8821,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "fbK" = (
 /obj/machinery/microwave/stove,
@@ -8797,7 +8992,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "ffK" = (
 /obj/structure/chair/office/light{
@@ -8811,7 +9009,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fgn" = (
 /obj/effect/decal/remains/human{
@@ -9079,7 +9280,8 @@
 	icon_state = "drain";
 	icon = 'icons/obj/machines/pool.dmi';
 	name = "drain";
-	pixel_x = -1
+	pixel_x = -1;
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_subway)
@@ -9167,6 +9369,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -9216,7 +9420,10 @@
 /area/f13/reno_prewarbunker)
 "fsj" = (
 /obj/effect/decal/remains/deadeyebot,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fsk" = (
 /obj/machinery/light/small,
@@ -9343,7 +9550,13 @@
 	name = "water pump";
 	layer = 2.89
 	},
-/turf/open/indestructible/ground/outside/water/sewer,
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fxH" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
@@ -9424,7 +9637,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fzn" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -9461,6 +9677,8 @@
 	name = "Pimp Turtleneck"
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -9571,6 +9789,8 @@
 "fDd" = (
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -9662,7 +9882,10 @@
 "fFP" = (
 /obj/structure/nest/spawner/mirelurk/eggs,
 /obj/structure/mirelurkegg,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fGj" = (
 /obj/effect/overlay/painting/graffiti{
@@ -9686,7 +9909,10 @@
 /obj/effect/spawner/lootdrop/f13/crafting{
 	pixel_x = -3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fHk" = (
 /obj/effect/overlay/curb/north{
@@ -9753,6 +9979,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -9769,7 +9997,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "fJA" = (
 /obj/structure/sign/poster/contraband/hacking_guide,
@@ -9893,6 +10124,8 @@
 	pixel_x = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -10350,7 +10583,10 @@
 	name = "water drain";
 	pixel_x = 32
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "gbp" = (
 /obj/machinery/light{
@@ -10473,7 +10709,10 @@
 	name = "water drain";
 	pixel_x = -32
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "geQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10746,7 +10985,10 @@
 	layer = 2.79
 	},
 /obj/item/storage/trash_stack,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "gnS" = (
 /obj/structure/railing{
@@ -10832,6 +11074,8 @@
 	icon = 'icons/turf/floors/glass.dmi'
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -11089,7 +11333,10 @@
 /area/f13/reno_subway)
 "gwM" = (
 /obj/structure/mirelurkegg,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "gwN" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -11187,6 +11434,8 @@
 	pixel_y = -3
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -11371,7 +11620,10 @@
 	pixel_x = -16;
 	pixel_y = -12
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "gDf" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -11605,6 +11857,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/nest/mob/aphid,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -11639,6 +11893,8 @@
 /area/f13/reno_sewers)
 "gLt" = (
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -11952,7 +12208,10 @@
 /obj/structure/glowshroom{
 	pixel_y = -6
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "gVz" = (
 /obj/structure/table,
@@ -12039,6 +12298,8 @@
 "gXJ" = (
 /obj/item/clothing/mask/pig,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -12268,7 +12529,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "heV" = (
 /obj/machinery/light/small{
@@ -12411,7 +12675,10 @@
 "hjw" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/mirelurk,
 /obj/effect/decal/cleanable/blood,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "hjW" = (
 /obj/structure/reagent_dispensers/rainwater_tank{
@@ -12501,7 +12768,10 @@
 /obj/structure/railing{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "hng" = (
 /obj/item/chair/wood,
@@ -12513,6 +12783,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -12594,7 +12866,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "hoX" = (
 /obj/structure/flora/grass/whitelegvine{
@@ -12603,7 +12878,10 @@
 	pixel_y = 32;
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "hoZ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12666,6 +12944,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/simple_door/metal/barred,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -12773,7 +13053,10 @@
 /area/f13/reno_subway)
 "hsV" = (
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "hta" = (
 /obj/structure/nest/mob/deserter{
@@ -13371,6 +13654,18 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_tribal)
+"hKF" = (
+/obj/structure/railing{
+	pixel_y = -3
+	},
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
+/area/f13/reno_sewers)
 "hKI" = (
 /obj/structure/table/wood/junk,
 /obj/effect/decal/cleanable/dirt,
@@ -13710,6 +14005,8 @@
 	pixel_w = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -13805,6 +14102,8 @@
 	pixel_w = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -14484,7 +14783,10 @@
 /area/f13/reno_subway)
 "iqC" = (
 /obj/effect/overlay/gravel/edge,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "iqK" = (
 /turf/open/floor/wood/f13/housewoodbroken,
@@ -14511,7 +14813,10 @@
 "isi" = (
 /obj/structure/mirelurkegg,
 /obj/structure/nest/spawner/mirelurk/eggs,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "isR" = (
 /obj/machinery/computer/shuttle/raider_subway{
@@ -14655,7 +14960,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "iyQ" = (
 /obj/structure/chair/office/dark{
@@ -14882,7 +15190,10 @@
 	dir = 1;
 	pixel_y = -4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "iGl" = (
 /obj/structure/debris/v3,
@@ -14915,6 +15226,8 @@
 	},
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -14934,6 +15247,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -15055,7 +15370,8 @@
 	icon_state = "drain";
 	icon = 'icons/obj/machines/pool.dmi';
 	name = "drain";
-	pixel_x = -17
+	pixel_x = -17;
+	plane = -15
 	},
 /obj/effect/overlay/curb{
 	name = "foundation";
@@ -15544,7 +15860,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "iYR" = (
 /obj/structure/simple_door/bunker,
@@ -15769,7 +16088,10 @@
 	pixel_x = -7;
 	pixel_y = 9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jhE" = (
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
@@ -15797,6 +16119,8 @@
 	smooth = 0
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -15886,7 +16210,10 @@
 	icon_state = "corrugatedfence";
 	name = "corrugated fencing"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jls" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -15934,7 +16261,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jmk" = (
 /obj/machinery/door/poddoor/shutters{
@@ -16297,7 +16627,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jzq" = (
 /obj/structure/table/reinforced,
@@ -16528,7 +16861,10 @@
 	icon_state = "gravel_corner";
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jMf" = (
 /obj/structure/chair/f13foldupchair{
@@ -16616,7 +16952,10 @@
 	},
 /obj/item/trash/waffles,
 /obj/structure/wreck/trash/bus_door,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "jOA" = (
 /obj/structure/table,
@@ -16743,6 +17082,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -16861,6 +17202,8 @@
 	armor = list("melee"=22,"bullet"=11,"laser"=60,"energy"=15,"bomb"=20,"bio"=0,"rad"=0,"fire"=150,"acid"=50)
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -16982,6 +17325,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/nest/spawner/mirelurk/huntermuck,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -17273,7 +17618,10 @@
 /obj/effect/overlay/gravel/edge{
 	pixel_y = 3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kiO" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/side{
@@ -17407,6 +17755,8 @@
 	pixel_x = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -17422,7 +17772,10 @@
 /area/f13/reno_subway)
 "kot" = (
 /obj/effect/overlay/gravel/edge,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "koH" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -17562,6 +17915,8 @@
 "ksi" = (
 /obj/item/clothing/under/dress/wedding/blue,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -17686,6 +18041,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -17731,7 +18088,8 @@
 /area/f13/reno_sewers)
 "kyu" = (
 /obj/structure/decoration/vent{
-	icon_state = "ventrusty"
+	icon_state = "ventrusty";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/reno_sewers)
@@ -17787,7 +18145,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kAQ" = (
 /obj/structure/chair/stool,
@@ -17896,7 +18257,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kEN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18050,7 +18414,10 @@
 	icon_state = "gravel_edge_left";
 	pixel_y = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kIP" = (
 /obj/structure/table/wood/settler,
@@ -18146,7 +18513,10 @@
 /area/f13/reno_prewarbunker)
 "kKR" = (
 /obj/structure/nest/spawner/mirelurk/mirelurkmuck,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kLo" = (
 /obj/effect/overlay/gravel/edge{
@@ -18154,7 +18524,10 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "kLZ" = (
 /obj/effect/decal/remains/human{
@@ -18370,6 +18743,8 @@
 	pixel_x = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -18489,7 +18864,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "kVe" = (
 /obj/effect/decal/remains/human{
@@ -19162,7 +19540,10 @@
 	layer = 4.25
 	},
 /obj/structure/barricade/bars,
-/turf/open/indestructible/ground/outside/water/sewer,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "llI" = (
 /obj/structure/barricade/wooden,
@@ -19620,7 +20001,10 @@
 "lza" = (
 /obj/structure/flora/rock/jungle,
 /obj/effect/spawner/lootdrop/f13/medical/vault/meds,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "lzH" = (
 /turf/open/floor/plating/tunnel/rail/east,
@@ -19658,7 +20042,10 @@
 	dir = 1;
 	layer = 4.08
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "lAr" = (
 /obj/effect/spawner/lootdrop/grille_or_trash,
@@ -19703,7 +20090,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "lBM" = (
 /obj/structure/wreck/trash/machinepile,
@@ -19901,7 +20291,10 @@
 /obj/structure/car/rubbish7{
 	layer = 4.08
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "lGt" = (
 /obj/item/paper_bin{
@@ -19928,6 +20321,8 @@
 "lGY" = (
 /obj/item/gun/ballistic/revolver/m29,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -19977,13 +20372,18 @@
 	},
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
 "lHX" = (
 /obj/structure/tires/two,
 /obj/item/melee/onehanded/club/tireiron,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "lHZ" = (
 /obj/structure/simple_door/metal/fence,
@@ -20059,7 +20459,10 @@
 	icon_state = "g_handrail_ns";
 	pixel_y = -9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "lKB" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -20361,7 +20764,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "lTF" = (
 /turf/open/floor/plating/tunnel/rail/north,
@@ -20482,7 +20888,10 @@
 	pixel_y = -3
 	},
 /obj/structure/glowshroom,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "lXy" = (
 /obj/structure/wreck/trash/two_barrels,
@@ -20538,6 +20947,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -20621,7 +21032,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mba" = (
 /obj/effect/overlay/canopy{
@@ -20637,7 +21051,10 @@
 "mbl" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/nest/mob/dogalpha,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mbo" = (
 /obj/machinery/door/airlock/wood,
@@ -20911,7 +21328,10 @@
 /area/f13/raiders)
 "mij" = (
 /obj/structure/plasticflaps/narrowcrevice,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "mik" = (
 /obj/structure/flora/tree/jungle/small,
@@ -21074,7 +21494,10 @@
 	pixel_y = -10;
 	layer = 4.25
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mng" = (
 /obj/effect/overlay/canopy{
@@ -21184,7 +21607,10 @@
 "mpb" = (
 /obj/structure/lattice/catwalk,
 /obj/item/kitchen/knife,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mpk" = (
 /obj/item/ammo_casing,
@@ -21296,7 +21722,10 @@
 	dir = 8;
 	pixel_x = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mtM" = (
 /obj/effect/decal/remains/human,
@@ -21424,7 +21853,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "myA" = (
 /obj/structure/chair/f13chair1{
@@ -21695,6 +22127,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -21922,7 +22356,10 @@
 	name = "water pump";
 	layer = 2.89
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "mRb" = (
 /obj/machinery/light/small{
@@ -22034,7 +22471,10 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/remains/deadeyebot,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "mUt" = (
 /obj/machinery/pool/drain,
@@ -22387,7 +22827,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nhC" = (
 /obj/structure/nest/mob/ghoulslave,
@@ -22435,7 +22878,10 @@
 /obj/effect/overlay/gravel/edge{
 	pixel_y = 3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "njm" = (
 /obj/effect/decal/cleanable/dirt{
@@ -22507,7 +22953,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nkE" = (
 /obj/structure/barricade/bars,
@@ -22569,7 +23018,10 @@
 /area/f13/reno_sewers)
 "nox" = (
 /obj/item/chair/stool/retro/tan,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "noW" = (
 /obj/structure/obstacle/barbedwire/end{
@@ -22643,7 +23095,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/reno_sewers)
 "npW" = (
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_yakuza)
 "nqb" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -22685,6 +23140,8 @@
 	smooth = 0
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -22781,6 +23238,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -22802,7 +23261,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nuc" = (
 /obj/structure/chair/sofa/left{
@@ -23047,7 +23509,10 @@
 	icon_state = "g_handrail_ns";
 	pixel_y = -9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nzH" = (
 /obj/structure/chair/bench{
@@ -23206,7 +23671,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nEP" = (
 /obj/machinery/light/small,
@@ -23243,7 +23711,10 @@
 /area/f13/reno_prewarbunker)
 "nFZ" = (
 /obj/structure/junk/small/bed,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nGx" = (
 /obj/structure/chair/comfy/beige,
@@ -23338,6 +23809,8 @@
 /obj/structure/barricade/wooden/planks,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -23590,7 +24063,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "nRl" = (
 /obj/effect/decal/cleanable/blood/xtracks,
@@ -24017,6 +24493,8 @@
 /obj/structure/nest/mob/ghoulfiend,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -24080,7 +24558,8 @@
 /area/f13/reno_sewers)
 "olY" = (
 /obj/structure/decoration/vent{
-	pixel_y = -33
+	pixel_y = -33;
+	plane = -14
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/plating{
@@ -24168,6 +24647,8 @@
 	plane = -4
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -24306,6 +24787,8 @@
 	layer = 4.1
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -24822,7 +25305,10 @@
 	pixel_x = -23;
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "oIq" = (
 /obj/machinery/light/small{
@@ -25182,7 +25668,8 @@
 "oRM" = (
 /obj/structure/closet/locker,
 /obj/structure/decoration/vent{
-	pixel_y = -33
+	pixel_y = -33;
+	plane = -14
 	},
 /obj/item/flashlight/seclite,
 /obj/item/melee/classic_baton/telescopic,
@@ -25205,7 +25692,10 @@
 "oSn" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/planks,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "oSC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25526,7 +26016,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pbX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25660,7 +26153,10 @@
 	pixel_y = 14;
 	pixel_x = -3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pfa" = (
 /obj/effect/spawner/lootdrop/trash{
@@ -25682,7 +26178,10 @@
 	dir = 4;
 	name = "slope"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pfv" = (
 /obj/structure/railing/corner{
@@ -25718,7 +26217,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "pgS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25729,7 +26231,10 @@
 /area/f13/reno_subway)
 "phl" = (
 /obj/structure/nest/mob/venushumantrap,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "php" = (
 /obj/structure/campfire/barrel{
@@ -25857,7 +26362,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pkl" = (
 /obj/structure/table,
@@ -25990,7 +26498,10 @@
 /area/f13/reno_sharkclub)
 "poj" = (
 /obj/structure/junk/small/table,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "poz" = (
 /obj/effect/turf_decal/bot_white,
@@ -26311,7 +26822,10 @@
 	pixel_x = 23;
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pzH" = (
 /obj/machinery/chem_master/advanced,
@@ -26455,7 +26969,10 @@
 /obj/effect/overlay/gravel/edge{
 	icon_state = "gravel_edge_left"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "pDm" = (
 /obj/structure/chair/office/dark,
@@ -26733,7 +27250,10 @@
 	pixel_y = -1;
 	pixel_x = 0
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "pJF" = (
 /obj/structure/table/wood/junk,
@@ -26904,7 +27424,10 @@
 /area/f13/reno_subway)
 "pOa" = (
 /obj/structure/nest/spawner/mirelurk/huntermuck,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pOc" = (
 /obj/effect/decal/cleanable/dirt{
@@ -27081,6 +27604,8 @@
 	smooth = 0
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -27107,7 +27632,10 @@
 	pixel_y = -10;
 	layer = 4.01
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pSd" = (
 /obj/structure/bed/mattress{
@@ -27125,7 +27653,10 @@
 	dir = 8;
 	pixel_x = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "pTn" = (
 /obj/effect/overlay/canopy{
@@ -27242,6 +27773,8 @@
 	pixel_z = 6
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -27270,7 +27803,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "pXc" = (
 /obj/structure/fence{
@@ -27407,7 +27943,10 @@
 /area/f13/raiders)
 "qaR" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qaS" = (
 /obj/structure/table,
@@ -27466,7 +28005,10 @@
 /area/f13/reno_sewers)
 "qdS" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "qed" = (
 /obj/structure/barricade/sandbags,
@@ -27574,7 +28116,10 @@
 	layer = 4.25
 	},
 /obj/structure/barricade/bars,
-/turf/open/indestructible/ground/outside/water/sewer,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qgv" = (
 /obj/effect/overlay/curb/north{
@@ -27592,7 +28137,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qgH" = (
 /obj/structure/chair/wood/worn{
@@ -28024,6 +28572,8 @@
 	icon = 'icons/turf/floors/glass.dmi'
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -28136,12 +28686,17 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qyd" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/nest/mob/supermutant/melee/mutcastle,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -28167,7 +28722,10 @@
 	color = "#7c131b";
 	pixel_y = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qyy" = (
 /obj/machinery/door/unpowered/secure_steeldoor,
@@ -28208,7 +28766,10 @@
 	icon = 'icons/fallout/trash.dmi';
 	icon_state = "engine"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "qAB" = (
 /obj/machinery/computer/terminal{
@@ -28325,7 +28886,10 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qGg" = (
 /obj/structure/chair/comfy/black{
@@ -28399,7 +28963,13 @@
 	pixel_x = 23;
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/water/sewer,
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qIs" = (
 /obj/structure/nest/mob/raider/tribal{
@@ -28552,7 +29122,10 @@
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qMr" = (
 /obj/structure/simple_door/metal/barred,
@@ -28692,7 +29265,10 @@
 	dir = 9
 	},
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "qPR" = (
 /obj/effect/decal/cleanable/dirt{
@@ -28740,7 +29316,8 @@
 /area/f13/raiders)
 "qRS" = (
 /obj/structure/decoration/vent{
-	icon_state = "ventorange"
+	icon_state = "ventorange";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/reno_sewers)
@@ -28772,7 +29349,10 @@
 /obj/structure/wreck/trash/sidebeams{
 	icon_state = "beam2"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "qTk" = (
 /obj/effect/decal/cleanable/dirt{
@@ -28999,7 +29579,10 @@
 	dir = 10
 	},
 /obj/item/weldingtool/basic,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "rcr" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -29063,13 +29646,19 @@
 /obj/item/storage/book/bible{
 	pixel_y = 7
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rdX" = (
 /obj/item/reagent_containers/glass/bucket{
 	pixel_y = 10
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rea" = (
 /obj/structure/nest/mob/supermutant/melee/mutcastle{
@@ -29380,7 +29969,10 @@
 /area/f13/raiders)
 "rnb" = (
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rne" = (
 /obj/structure/obstacle/barbedwire/end{
@@ -29479,6 +30071,8 @@
 /obj/structure/table/wood/poker,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -29567,7 +30161,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rsm" = (
 /obj/structure/closetundense/locker/medcabinet{
@@ -29649,6 +30246,8 @@
 	},
 /obj/machinery/light,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -29699,7 +30298,10 @@
 	pixel_x = -20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "ryi" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -29751,12 +30353,17 @@
 /area/f13/reno_sewers)
 "rAw" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rAz" = (
 /obj/structure/barricade/bars,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -29907,7 +30514,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rEO" = (
 /obj/machinery/door/poddoor/shutters{
@@ -29954,7 +30564,10 @@
 /area/f13/reno_sewers)
 "rFC" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "rFK" = (
 /obj/structure/rack/shelf_metal,
@@ -30092,7 +30705,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rIv" = (
 /obj/structure/barricade/sandbags,
@@ -30165,7 +30781,10 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rJW" = (
 /obj/effect/overlay/painting/graffiti{
@@ -30191,7 +30810,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "rKR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -30316,7 +30938,10 @@
 	name = "vines"
 	},
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "rOl" = (
 /obj/structure/chair/office/dark,
@@ -30355,6 +30980,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -30619,7 +31246,10 @@
 	dir = 4;
 	pixel_y = -2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "rYh" = (
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
@@ -30978,7 +31608,10 @@
 "siF" = (
 /obj/structure/lattice/catwalk,
 /obj/item/melee/onehanded/knife/survival,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "sjd" = (
 /obj/structure/table/reinforced,
@@ -31057,7 +31690,8 @@
 /area/f13/reno_sharkclub)
 "smA" = (
 /obj/structure/decoration/vent{
-	icon_state = "ventred"
+	icon_state = "ventred";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/reno_sewers)
@@ -31167,7 +31801,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "soU" = (
 /obj/machinery/chem_dispenser/fullupgrade,
@@ -31245,7 +31882,10 @@
 	pixel_y = -13;
 	pixel_x = 0
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_yakuza)
 "srC" = (
 /obj/structure/barricade/sandbags,
@@ -31363,7 +32003,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "stq" = (
 /obj/item/cigbutt,
@@ -31627,7 +32270,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "sBE" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -31780,7 +32426,10 @@
 /obj/structure/car/rubbish2{
 	layer = 3.12
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "sGl" = (
 /obj/structure/chair/stool/f13stool,
@@ -31812,7 +32461,10 @@
 	},
 /obj/item/trash/f13/tin_large,
 /obj/item/trash/f13/mre,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "sHP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -32210,7 +32862,10 @@
 /area/f13/reno_sewers)
 "sTF" = (
 /obj/structure/nest/spawner/mirelurk/eggs,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "sTG" = (
 /obj/effect/overlay/curb/east{
@@ -32435,7 +33090,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "taP" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -32471,7 +33129,10 @@
 /obj/item/fishy/lobster{
 	pixel_x = -6
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tbc" = (
 /obj/structure/lattice/catwalk{
@@ -32482,6 +33143,8 @@
 	smooth = 0
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -32779,7 +33442,8 @@
 	icon_state = "drain";
 	icon = 'icons/obj/machines/pool.dmi';
 	name = "drain";
-	pixel_x = -17
+	pixel_x = -17;
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "warning";
@@ -32855,7 +33519,10 @@
 	pixel_y = -10;
 	layer = 4.25
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tmx" = (
 /obj/structure/chair/sofa/luxury/right{
@@ -32934,7 +33601,10 @@
 /obj/effect/overlay/gravel/edge{
 	icon_state = "gravel_edge_left"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tqm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -33060,7 +33730,10 @@
 /area/f13/reno_prewarbunker)
 "ttK" = (
 /obj/item/stack/sheet/animalhide/chitin/mirelurk,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tuf" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -33501,7 +34174,10 @@
 	plane = -5;
 	layer = 2.439
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "tGI" = (
 /obj/structure/closet/crate,
@@ -33636,7 +34312,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tKu" = (
 /turf/open/floor/plasteel/f13/vault_floor/yellow/white/whiteyellowchess,
@@ -33704,7 +34383,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tLw" = (
 /obj/effect/decal/cleanable/dirt{
@@ -34063,7 +34745,10 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "tWE" = (
 /obj/effect/overlay/curb/north,
@@ -34496,6 +35181,8 @@
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -34817,7 +35504,10 @@
 	icon_state = "g_handrail_ns";
 	pixel_x = 11
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "uqT" = (
 /obj/machinery/light/fo13colored/Aqua{
@@ -35306,7 +35996,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "uHk" = (
 /obj/structure/railing{
@@ -35584,7 +36277,10 @@
 	icon_state = "g_handrail_ns";
 	pixel_y = -10
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "uRF" = (
 /obj/effect/decal/cleanable/dirt,
@@ -35606,6 +36302,8 @@
 	name = "Pimpin' Jacket"
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -35633,7 +36331,10 @@
 /area/f13/reno_prewarbunker)
 "uSw" = (
 /obj/structure/wreck/trash/two_barrels,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "uSA" = (
 /obj/effect/decal/cleanable/dirt{
@@ -36225,7 +36926,10 @@
 	icon_state = "corrugatedfence";
 	name = "corrugated fencing"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "voa" = (
 /obj/structure/stairs/east{
@@ -36463,7 +37167,10 @@
 	pixel_x = 20;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vtN" = (
 /obj/structure/closet/locker,
@@ -36687,12 +37394,18 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "vAl" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/barricade/sandbags,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vAs" = (
 /obj/machinery/porta_turret/syndicate{
@@ -36787,13 +37500,19 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vDn" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "vDr" = (
 /obj/structure/rack/shelf_metal,
@@ -36961,7 +37680,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vIw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -37194,7 +37916,10 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vQR" = (
 /obj/effect/decal/cleanable/blood{
@@ -37369,7 +38094,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vVC" = (
 /obj/structure/chair/sofa/luxury/right{
@@ -37393,6 +38121,8 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -37458,7 +38188,10 @@
 	color = "#9c9c9c";
 	pixel_x = -1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "vXN" = (
 /obj/structure/table/reinforced,
@@ -37509,7 +38242,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_subway)
 "vZA" = (
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "vZU" = (
 /obj/structure/nest/mob/dog{
@@ -37618,7 +38354,10 @@
 /obj/structure/car/rubbish3{
 	layer = 3.3
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "weo" = (
 /obj/structure/car/junk/computer{
@@ -37923,7 +38662,10 @@
 	pixel_y = -32;
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "wlZ" = (
 /obj/structure/glowshroom,
@@ -37934,7 +38676,10 @@
 	name = "vines"
 	},
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "wme" = (
 /obj/item/radio/wendoverreceiver{
@@ -38135,6 +38880,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/barricade/sandbags,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -38147,7 +38894,10 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "wtQ" = (
 /turf/open/floor/plating/tunnel,
@@ -38300,6 +39050,8 @@
 "wyw" = (
 /obj/structure/simple_door/bunker/glass,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -38635,7 +39387,10 @@
 	icon_state = "gravel_edge_left"
 	},
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_tribal)
 "wKn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -38777,6 +39532,8 @@
 "wNB" = (
 /obj/structure/nest/spawner/mirelurk/mirelurkmuck,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -38896,7 +39653,10 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "wRK" = (
 /obj/structure/nest/mob/raider/sulphiteranged,
@@ -39082,7 +39842,10 @@
 	pixel_y = -14;
 	pixel_x = -13
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_wasteland)
 "wWy" = (
 /obj/machinery/vending/boozeomat{
@@ -39236,6 +39999,8 @@
 /obj/structure/barricade/wooden/planks,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -39517,6 +40282,15 @@
 /obj/structure/decoration/fire,
 /turf/closed/wall/mineral/concrete,
 /area/f13/reno_sewers)
+"xlI" = (
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
+/area/f13/reno_sewers)
 "xlT" = (
 /obj/structure/table/reinforced,
 /obj/item/wrench,
@@ -39568,7 +40342,10 @@
 /turf/open/floor/f13/green,
 /area/f13/reno_subway)
 "xmu" = (
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xmP" = (
 /obj/structure/debris/v2,
@@ -39863,7 +40640,10 @@
 /area/f13/reno_sewers)
 "xvt" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_yakuza)
 "xvz" = (
 /obj/item/storage/bag/trash,
@@ -39876,7 +40656,10 @@
 	layer = 4.5;
 	icon_state = "g_handrail_ns"
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xwb" = (
 /obj/structure/closet/crate/large,
@@ -40017,7 +40800,10 @@
 "xAk" = (
 /obj/structure/chair/folding,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xAp" = (
 /obj/structure/curtain{
@@ -40126,7 +40912,10 @@
 /area/f13/reno_prewarbunker)
 "xDi" = (
 /obj/structure/wreck/trash/machinepiletwo,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xDl" = (
 /obj/structure/table/booth,
@@ -40155,7 +40944,10 @@
 	icon_state = "gravel_corner";
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xET" = (
 /obj/structure/railing{
@@ -40262,6 +41054,8 @@
 	dir = 4
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -40508,6 +41302,8 @@
 /obj/structure/table/wood/poker,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -40626,7 +41422,10 @@
 "xTF" = (
 /obj/structure/barricade/wooden,
 /obj/structure/table/wood/settler,
-/turf/open/water,
+/turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh"
+	},
 /area/f13/reno_sewers)
 "xTP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -40680,6 +41479,8 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -41009,6 +41810,8 @@
 	layer = 4.25
 	},
 /turf/open/water{
+	icon = 'icons/fallout/turfs/ground.dmi';
+	icon_state = "riverwateruhh";
 	slowdown = 0
 	},
 /area/f13/reno_sewers)
@@ -42519,7 +43322,7 @@ kiC
 kiC
 mds
 mds
-xmu
+xlI
 fDd
 kwG
 mHP
@@ -42669,7 +43472,7 @@ lNv
 lNv
 lNv
 kiC
-xmu
+xlI
 xmu
 xmu
 jRN
@@ -42822,7 +43625,7 @@ wtQ
 wtQ
 kiC
 kiC
-xmu
+xlI
 xmu
 fDd
 mxg
@@ -43891,7 +44694,7 @@ igM
 iIb
 dTJ
 xhx
-iOa
+aRC
 uFw
 uFw
 uFw
@@ -44647,7 +45450,7 @@ wtQ
 mzF
 inC
 eLk
-dQi
+hKF
 yfR
 xmu
 uFw
@@ -45559,7 +46362,7 @@ wtQ
 jSn
 inC
 eLk
-dQi
+hKF
 yfR
 xmu
 uFw
@@ -47991,7 +48794,7 @@ wtQ
 gtf
 vnw
 oxv
-dQi
+hKF
 yfR
 xmu
 uFw
@@ -48143,7 +48946,7 @@ wtQ
 gtf
 vnw
 aqO
-dQi
+hKF
 yfR
 xmu
 uFw
@@ -48751,7 +49554,7 @@ wtQ
 nKB
 inC
 eLk
-dQi
+hKF
 yfR
 xmu
 uFw
