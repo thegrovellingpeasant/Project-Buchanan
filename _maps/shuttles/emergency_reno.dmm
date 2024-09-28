@@ -92,17 +92,10 @@
 	},
 /area/shuttle/escape)
 "em" = (
-/obj/structure/chair/pew/right{
-	dir = 4;
-	mouse_opacity = 0;
-	layer = 4;
-	icon_state = "minipewend";
-	pixel_y = 12
-	},
-/obj/structure/chair/pew/left{
+/obj/structure/chair/pew{
 	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
 	sunlight_state = 1
 	},
 /area/shuttle/escape)
@@ -184,21 +177,6 @@
 	sunlight_state = 1
 	},
 /area/shuttle/escape)
-"is" = (
-/obj/structure/chair/pew/right{
-	dir = 4;
-	icon_state = "minipewend";
-	layer = 4.25;
-	mouse_opacity = 0;
-	pixel_y = 12
-	},
-/obj/structure/chair/pew/left{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
-	sunlight_state = 1
-	},
-/area/shuttle/escape)
 "iH" = (
 /obj/machinery/door/airlock/wood,
 /obj/structure/barricade/wooden/planks,
@@ -258,12 +236,6 @@
 	dir = 4
 	},
 /area/shuttle/escape)
-"oo" = (
-/obj/structure/railing{
-	layer = 4.25
-	},
-/turf/template_noop,
-/area/template_noop)
 "pS" = (
 /obj/structure/statue/wood/headstonewood{
 	desc = null;
@@ -284,13 +256,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/shuttle/escape)
 "qW" = (
-/obj/structure/chair/pew/right{
-	dir = 4;
-	icon_state = "minipewend";
-	layer = 4;
-	mouse_opacity = 0;
-	pixel_y = 12
-	},
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
@@ -424,6 +389,9 @@
 /area/shuttle/escape)
 "zH" = (
 /obj/structure/lattice/catwalk,
+/obj/structure/railing{
+	dir = 1
+	},
 /turf/open/floor/plating/tunnel/lit,
 /area/shuttle/escape)
 "AK" = (
@@ -811,13 +779,6 @@
 /area/shuttle/escape)
 "YR" = (
 /obj/structure/chair/pew/right{
-	dir = 4;
-	icon_state = "minipewend";
-	layer = 4.25;
-	mouse_opacity = 0;
-	pixel_y = 12
-	},
-/obj/structure/chair/pew/left{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/side{
@@ -942,7 +903,7 @@ if
 BT
 "}
 (12,1,1) = {"
-oo
+PQ
 zH
 rO
 Ra
@@ -1026,7 +987,7 @@ XT
 BT
 "}
 (24,1,1) = {"
-oo
+PQ
 zH
 rO
 HL
@@ -1063,21 +1024,21 @@ WU
 (29,1,1) = {"
 jV
 YR
-OW
-is
+em
+qW
 jV
 "}
 (30,1,1) = {"
 jV
 YR
-OW
 em
+qW
 jV
 "}
 (31,1,1) = {"
 jV
 YR
-OW
+em
 qW
 sX
 "}
@@ -1110,7 +1071,7 @@ Bb
 BT
 "}
 (36,1,1) = {"
-oo
+PQ
 zH
 rO
 HL
