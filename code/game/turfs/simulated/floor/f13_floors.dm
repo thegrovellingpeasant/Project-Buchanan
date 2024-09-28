@@ -101,6 +101,12 @@
 		qdel(turfPlant)
 	. =  ..()
 
+/turf/open/floor/plating/lit
+	name = "plating"
+	icon_state = "plating"
+	sunlight_state = SUNLIGHT_SOURCE
+	color = "#800000"
+
 /turf/open/floor/plating/f13/outside/road
 	name = "\proper road"
 	desc = "A stretch of road."
@@ -309,7 +315,7 @@
 	name = "wood planks"
 	desc = "Rotting wooden flooring."
 	icon = 'icons/fallout/turfs/housereno.dmi'
-	sunlight_state = TRUE
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/wood/f13/reno/ruinedcornerendbr	//WHAT THE FUCK IS THIS
 	name = "wood planks"
@@ -980,7 +986,7 @@
 	icon_normal = "bcircuit2"
 
 /turf/open/floor/circuit/f13_blue/off
-	icon_state = "bcircuitoff2"
+	icon_state = "bcircuit2off"
 	on = FALSE
 
 /turf/open/floor/circuit/f13_green
@@ -991,7 +997,7 @@
 	floor_tile = /obj/item/stack/tile/circuit/green
 
 /turf/open/floor/circuit/f13_green/off
-	icon_state = "gcircuitoff2"
+	icon_state = "gcircuit2off"
 	on = FALSE
 
 /turf/open/floor/circuit/f13_red
@@ -1002,7 +1008,7 @@
 	floor_tile = /obj/item/stack/tile/circuit/red
 
 /turf/open/floor/circuit/f13_red/off
-	icon_state = "rcircuitoff1"
+	icon_state = "rcircuit1off"
 	on = FALSE
 
 /turf/open/water/ice //ice is water, ok?

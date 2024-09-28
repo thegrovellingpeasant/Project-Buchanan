@@ -163,6 +163,15 @@
 	name = "river"
 	icon_state = "riverwater_motion"
 
+turf/open/water/cavern/sewer
+	name = "river"
+	icon = 'icons/fallout/turfs/ground.dmi'
+	icon_state = "riverwateruhh"
+
+turf/open/water/cavern/sewer/no_slowdown
+	name = "river"
+	slowdown = FALSE
+
 /turf/open/water/shore
 	name = "shore"
 	desc = "Shallow water."

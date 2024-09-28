@@ -352,7 +352,7 @@
 			playsound(src,'sound/machines/door_close.ogg',40,1)
 			flick("dirtyglassclosing", src)
 
-/obj/machinery/door/unpowered/latterdaysaints
+/obj/machinery/door/unpowered/latterdaysaints // a door with transparency for a specific part of the map's visuals
 	name = "temple door"
 	desc = "Door with a built-in lock. Can't be padlocked."
 	icon_state = "houseclean"
@@ -367,6 +367,28 @@
 		icon_state = "housecleanopen"
 
 /obj/machinery/door/unpowered/latterdaysaints/do_animate(animation)
+	switch(animation)
+		if("opening")
+			playsound(src,'sound/machines/door_open.ogg',40,1)
+			flick("housecleanopening", src)
+		if("closing")
+			playsound(src,'sound/machines/door_close.ogg',40,1)
+			flick("housecleanclosing", src)
+
+/obj/machinery/door/unpowered/house
+	name = "white door"
+	desc = "Door with a built-in lock. Can't be padlocked."
+	icon_state = "houseclean"
+	assemblytype = /obj/item/stack/sheet/mineral/wood/five
+	explosion_block = TRUE
+
+/obj/machinery/door/unpowered/house/update_icon()
+	if(density)
+		icon_state = "houseclean"
+	else
+		icon_state = "housecleanopen"
+
+/obj/machinery/door/unpowered/house/do_animate(animation)
 	switch(animation)
 		if("opening")
 			playsound(src,'sound/machines/door_open.ogg',40,1)
