@@ -71,8 +71,6 @@ SUBSYSTEM_DEF(overlays)
 		var/cached_appearance = cached_icon["[iconstate]"]
 		if (cached_appearance)
 			return cached_appearance
-	if(stringbro.icon == null)
-		return
 	stringbro.icon = icon
 	stringbro.icon_state = iconstate
 	if (!cached_icon) //not using the macro to save an associated lookup
