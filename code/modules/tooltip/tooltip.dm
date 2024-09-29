@@ -121,5 +121,3 @@ Notes:
 	if(istype(user))
 		if(user.client && user.client.tooltips)
 			user.client.tooltips.hide()
-
-
