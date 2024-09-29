@@ -131,7 +131,7 @@
 				H.CloseWings()
 			else
 				H.OpenWings()
-			addtimer(CALLBACK(H, open ? TYPE_PROC_REF(/mob/living/carbon/human, OpenWings : /mob/living/carbon/human.proc/CloseWings)), wing_time)
+			addtimer(CALLBACK(H, open ? TYPE_PROC_REF(/mob/living/carbon/human, OpenWings : /mob/living/carbon/humanPROC_REF(CloseWings))), wing_time)
 
 /datum/emote/living/flap/aflap
 	key = "aflap"
