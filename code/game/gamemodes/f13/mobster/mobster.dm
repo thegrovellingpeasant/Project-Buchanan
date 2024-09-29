@@ -65,7 +65,7 @@
 	return ..()
 
 /datum/game_mode/mobster/post_setup()
-	addtimer(CALLBACK(src, /datum/game_mode/mobster/.proc/generate_objectives), 5 MINUTES)	//Mob objectives are generated a little bit into the round to allow for
-	addtimer(CALLBACK(src, /datum/game_mode/mobster/.proc/generate_teams), 6 MINUTES)		//a viable pool to pick from for certain objectives
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum/game_mode/mobster, generate_objectives)), 5 MINUTES)	//Mob objectives are generated a little bit into the round to allow for
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum/game_mode/mobster, generate_teams)), 6 MINUTES)		//a viable pool to pick from for certain objectives
 
 	return ..()

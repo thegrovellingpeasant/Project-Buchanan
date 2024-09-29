@@ -19,13 +19,14 @@ GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 /proc/auxtools_atmos_init()
 
 /datum/gas_mixture/New(volume)
-	if (!isnull(volume))
+	/*if (!isnull(volume))
 		initial_volume = volume
 	AUXTOOLS_CHECK(AUXMOS)
 	if(!GLOB.auxtools_atmos_initialized && auxtools_atmos_init())
 		GLOB.auxtools_atmos_initialized = TRUE
 	__gasmixture_register()
-	reaction_results = new
+	reaction_results = new*/
+	return
 
 /datum/gas_mixture/vv_edit_var(var_name, var_value)
 	if(var_name == NAMEOF(src, _extools_pointer_gasmixture))

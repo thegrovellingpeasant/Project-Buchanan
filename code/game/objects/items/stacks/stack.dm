@@ -393,7 +393,7 @@
 	else
 		transfer = min(transfer, S.max_amount - S.amount)
 	if(pulledby)
-		INVOKE_ASYNC(pulledby, /atom/movable.proc/start_pulling, S)
+		INVOKE_ASYNC(pulledby, TYPE_PROC_REF(/atom/movable, start_pulling), S)
 	S.copy_evidences(src)
 	use(transfer, TRUE)
 	S.add(transfer)

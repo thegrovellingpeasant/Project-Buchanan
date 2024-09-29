@@ -116,7 +116,7 @@ GLOBAL_LIST(labor_sheet_values)
 						. = TRUE*/
 
 /obj/machinery/mineral/labor_claim_console/proc/locate_stacking_machine()
-	stacking_machine = locate()
+	stacking_machine = locate(/obj/machinery/mineral/stacking_machine/laborstacker)
 	if(stacking_machine)
 		stacking_machine.CONSOLE = src
 	else
