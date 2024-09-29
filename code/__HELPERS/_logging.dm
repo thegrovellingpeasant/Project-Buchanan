@@ -119,10 +119,6 @@
 	if (CONFIG_GET(flag/log_emote))
 		WRITE_LOG(GLOB.world_game_log, "EMOTE: [text]")
 
-/proc/log_subtler(text)
-	if (CONFIG_GET(flag/log_emote))
-		WRITE_LOG(GLOB.world_game_log, "EMOTE (SUBTLER): [text]")
-
 /proc/log_prayer(text)
 	if (CONFIG_GET(flag/log_prayer))
 		WRITE_LOG(GLOB.world_game_log, "PRAY: [text]")
@@ -138,6 +134,9 @@
 
 /proc/log_paper(text)
 	WRITE_LOG(GLOB.world_paper_log, "PAPER: [text]")
+
+/proc/log_validball(text)
+	WRITE_LOG(GLOB.world_job_debug_log, "VALIDBALL: [text]")
 
 /proc/log_telecomms(text)
 	if (CONFIG_GET(flag/log_telecomms))
