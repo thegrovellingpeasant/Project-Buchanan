@@ -63,7 +63,7 @@
 		uniform = /obj/item/clothing/under/f13/female/whitelegs
 
 	if(H.gender == MALE)
-		uniform = /obj/item/clothing/under/f13/whitelegs 
+		uniform = /obj/item/clothing/under/f13/whitelegs
 
 /datum/outfit/job/whitelegs/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -86,7 +86,7 @@
 	H.warpaint = "whitelegs-[H.gender]"
 	H.warpaint_color = "#FFFFFF"
 	H.update_body()
-	
+
 /datum/job/whitelegs/f13warchief
 	title = "War Chief"
 	flag = F13WARCHIEF
@@ -120,7 +120,7 @@
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-/datum/outfit/job/whitelegs/f13warchief	
+/datum/outfit/job/whitelegs/f13warchief
 	name = "War Chief"
 	jobtype = /datum/job/whitelegs/f13warchief
 	suit = /obj/item/clothing/suit/f13/tribal/heavy/whitelegs
@@ -228,7 +228,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/mirelurk_shield)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/akoiah_armor)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/whitelegs/gecko_helmet)
-	
+
 /datum/outfit/job/whitelegs/f13sapper
 	name = "Sapper"
 	jobtype = /datum/job/whitelegs/f13sapper

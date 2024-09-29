@@ -20,6 +20,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
+	faction_head = TRUE
 	title = "Wright Elder"
 	flag = F13WRIGHTSELDER
 	department_flag = WRIGHTS
