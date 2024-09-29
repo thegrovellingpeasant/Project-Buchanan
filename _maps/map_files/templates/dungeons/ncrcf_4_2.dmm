@@ -2,23 +2,23 @@
 "a" = (
 /obj/structure/lattice/catwalk,
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "b" = (
 /obj/structure/wreck/trash/one_barrel,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "c" = (
 /turf/closed/wall/f13/tunnel,
-/area/space)
+/area/f13/caves)
 "d" = (
 /obj/structure/railing/handrail/rusty,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "e" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "f" = (
 /obj/effect/decal/remains/human{
 	icon_state = "remainslarva"
@@ -27,14 +27,14 @@
 	color = "000000"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "g" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "h" = (
 /obj/effect/decal/remains/human{
 	pixel_x = -7;
@@ -49,38 +49,38 @@
 	layer = 2.51
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "i" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "j" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "k" = (
 /obj/structure/railing/handrail/rusty,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "l" = (
 /obj/structure/decoration/vent/rusty,
 /turf/closed/wall/f13/tunnel,
-/area/space)
+/area/f13/caves)
 "m" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating{
 	name = "plating";
 	icon_state = "platingdmg3"
 	},
-/area/space)
+/area/f13/caves)
 "n" = (
 /obj/structure/wreck/trash/two_tire,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "p" = (
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
@@ -88,42 +88,42 @@
 	pixel_y = 32
 	},
 /turf/closed/mineral/random/low_chance_prison,
-/area/space)
+/area/f13/caves)
 "q" = (
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "r" = (
 /obj/structure/wreck/trash/halftire,
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "s" = (
 /obj/structure/railing/handrail/rusty,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "t" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "u" = (
 /turf/closed/mineral/random/low_chance_prison,
-/area/space)
+/area/f13/caves)
 "v" = (
 /obj/structure/wreck/trash/five_tires,
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "w" = (
 /obj/structure/railing/handrail/rusty,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "x" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "y" = (
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "z" = (
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
@@ -134,7 +134,7 @@
 	color = "000000"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "A" = (
 /obj/effect/decal/remains/human{
 	pixel_x = -7;
@@ -144,10 +144,10 @@
 	color = "000000"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "B" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "D" = (
 /obj/effect/decal/remains/human{
 	pixel_y = 6;
@@ -156,11 +156,11 @@
 	pixel_x = 1
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "E" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "F" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -168,20 +168,20 @@
 /obj/structure/wreck/trash/brokenvendor,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "G" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "H" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "I" = (
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
@@ -189,25 +189,25 @@
 	pixel_x = 32
 	},
 /turf/closed/mineral/random/low_chance_prison,
-/area/space)
+/area/f13/caves)
 "J" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "K" = (
 /obj/structure/wreck/trash/secway,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "L" = (
 /obj/structure/wreck/trash/bus_door,
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "M" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "N" = (
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
@@ -215,51 +215,51 @@
 	pixel_y = 32
 	},
 /turf/closed/mineral/random/low_chance_prison,
-/area/space)
+/area/f13/caves)
 "O" = (
 /obj/structure/railing/handrail/rusty,
 /turf/open/water,
-/area/space)
+/area/f13/caves)
 "P" = (
 /obj/structure/railing/handrail/rusty,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "R" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "S" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /obj/structure/wreck/trash/one_tire,
 /turf/open/floor/f13/lit,
-/area/space)
+/area/f13/caves)
 "T" = (
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "U" = (
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "X" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/space)
+/area/f13/caves)
 "Z" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
 /obj/structure/decoration/vent/rusty,
 /turf/closed/wall/f13/tunnel,
-/area/space)
+/area/f13/caves)
 
 (1,1,1) = {"
 u

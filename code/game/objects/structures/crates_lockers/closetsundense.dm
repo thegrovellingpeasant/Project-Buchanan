@@ -696,6 +696,7 @@
 /obj/structure/closetundense/crate/mailboxright
 	name = "mailbox"
 	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
+	icon = 'icons/obj/crates.dmi'
 	icon_state = "rightmailbox"
 	anchored = TRUE
 	density = FALSE
