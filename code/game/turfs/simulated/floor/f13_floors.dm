@@ -232,7 +232,7 @@
 
 /turf/open/floor/wood/f13/maple/lit
 	name = "floor"
-	sunlight_state = SUNLIGHT_SOURCE	
+	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/wood/f13/carpet
 	icon_state = "carpet"
@@ -1009,7 +1009,7 @@
 	name = "ice floor"
 	icon = 'icons/turf/ice.dmi'
 	icon_state = "ice_floor"
-	
+
 // Rooftops, enjoy - Asterix
 
 /turf/open/floor/plating/f13/outside/roof

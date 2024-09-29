@@ -4,8 +4,8 @@
 	if(gender_override)
 		gender = gender_override
 	else
-		gender = MALE
-	underwear = "Boxers"
+		gender = pick(MALE,FEMALE)
+	underwear = random_underwear(gender)
 	undie_color = random_clothing_dye()
 	undershirt = "Shirt - Short Sleeved"
 	shirt_color = random_clothing_dye()
@@ -17,8 +17,8 @@
 	facial_hair_style = random_facial_hair_style(gender)
 	hair_color = random_hair_shade()
 	facial_hair_color = random_hair_shade()
-	left_eye_color = random_eye_color()
-	right_eye_color = random_eye_color()
+	left_eye_color = "#c68c53"
+	right_eye_color = "#c68c53"
 	age = (rand(20, 25))
 
 

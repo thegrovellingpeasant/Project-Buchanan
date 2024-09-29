@@ -298,7 +298,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/fingerless
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
@@ -488,7 +488,7 @@
 		/obj/item/pen = 1,
 		/obj/item/paper = 1,
 		/obj/item/camera = 1,
-		/obj/item/gun/energy/disabler = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/wallframe/newscaster = 1,
 		/obj/item/storage/bag/money/small/few = 1)
