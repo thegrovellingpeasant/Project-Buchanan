@@ -1,0 +1,1506 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"av" = (
+/obj/structure/table/reinforced,
+/obj/item/trash/f13/rotten,
+/obj/item/trash/f13/rotten{
+	pixel_y = 3
+	},
+/obj/item/trash/f13/rotten{
+	pixel_y = 6
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"aE" = (
+/obj/structure/table/reinforced,
+/obj/item/trash/f13/c_ration_1{
+	pixel_y = 6;
+	pixel_x = 9
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"cC" = (
+/obj/item/reagent_containers/food/drinks/bottle/blazaam{
+	list_reagents = list(/datum/reagent/medicine/polypyr=15);
+	name = "Hair dye";
+	desc = null;
+	icon_state = "blazaambottlestatic";
+	pixel_y = 10;
+	pixel_x = 9
+	},
+/obj/item/lipstick/random{
+	pixel_x = 2;
+	pixel_y = 8
+	},
+/obj/structure/table/wood/greyscale,
+/obj/effect/overlay/junk/mirror{
+	pixel_x = 32
+	},
+/obj/machinery/light/small,
+/obj/item/book/granter/trait/trekking,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"dg" = (
+/obj/structure/bed/old,
+/obj/structure/nest/mob/ghoulglowing{
+	icon_state = "glowinghoul_dead";
+	radius = 3
+	},
+/obj/structure/decoration/clock/old{
+	pixel_y = 30;
+	name = "old clock";
+	pixel_x = -1
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	pixel_y = -15
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"dh" = (
+/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"dA" = (
+/obj/structure/ladder/unbreakable/vanilla{
+	pixel_y = 21
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"eL" = (
+/obj/effect/overlay/concretebase{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 2.1;
+	pixel_y = 1;
+	plane = -3.9
+	},
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"eO" = (
+/obj/effect/overlay/concretebase{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 2.1;
+	pixel_y = 1;
+	plane = -3.9
+	},
+/obj/structure/ladder/unbreakable/vanilla{
+	pixel_y = 21
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"fl" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/medical/ancientfirstaid,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"gc" = (
+/obj/item/broken_bottle,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"gU" = (
+/obj/effect/overlay/concretebase{
+	dir = 8;
+	layer = 2.3
+	},
+/obj/structure/railing{
+	dir = 8;
+	layer = 2.1;
+	pixel_y = 1;
+	plane = -3.9
+	},
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"he" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hm" = (
+/obj/effect/turf_decal/plaque{
+	name = "stairs";
+	icon = 'icons/obj/stairs.dmi';
+	icon_state = "stairs";
+	plane = -15;
+	layer = 2.14;
+	dir = 4;
+	color = "#faf0b9";
+	pixel_y = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"hq" = (
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/structure/stone_tile/cracked{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"hu" = (
+/turf/open/floor/wood/f13/oakbroken,
+/area/f13/caves)
+"ij" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"iB" = (
+/obj/structure/bed/old{
+	pixel_y = 11
+	},
+/obj/structure/bed/old,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"jB" = (
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"jL" = (
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"kh" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.1;
+	pixel_y = 1;
+	plane = -3.9
+	},
+/obj/structure/chair/wood,
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"kp" = (
+/obj/machinery/light/small,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"kv" = (
+/obj/structure/decoration/hatch{
+	dir = 4;
+	name = "water drain";
+	pixel_x = -32
+	},
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"lt" = (
+/obj/structure/decoration/hatch{
+	dir = 8;
+	name = "water drain";
+	pixel_x = 32
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"mt" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mW" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"no" = (
+/turf/open/indestructible/ground/outside/gravel{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 4;
+	name = "cave";
+	sunlight_state = 0;
+	barefootstep = "hardbarefoot";
+	clawfootstep = "hardclaw";
+	footstep = "floor"
+	},
+/area/f13/caves)
+"nV" = (
+/obj/structure/decoration/hatch{
+	dir = 8;
+	name = "water drain";
+	pixel_x = 32
+	},
+/obj/structure/decoration/hatch{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"ow" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/trash/f13/c_ration_1{
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/food/drinks/trophy/gold_cup{
+	icon = 'icons/fallout/objects/guns/ammo.dmi';
+	icon_state = "jerrycan";
+	name = "jerrycan";
+	pixel_y = -2;
+	pixel_x = 7
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"oT" = (
+/obj/effect/overlay/junk/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 4
+	},
+/obj/item/storage/medical/ancientfirstaid{
+	pixel_y = 16
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"oZ" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"qa" = (
+/turf/open/indestructible/ground/outside/gravel{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 1;
+	name = "cave";
+	sunlight_state = 0;
+	barefootstep = "hardbarefoot";
+	clawfootstep = "hardclaw";
+	footstep = "floor"
+	},
+/area/f13/caves)
+"qr" = (
+/turf/closed/wall/f13/wood/house/shack{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain;
+	name = "basement wall"
+	},
+/area/f13/caves)
+"qA" = (
+/obj/structure/dresser,
+/obj/item/clothing/gloves/f13/baseball{
+	pixel_y = 12
+	},
+/turf/open/floor/wood/f13/stage_l,
+/area/f13/caves)
+"qV" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
+"rm" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"rw" = (
+/obj/structure/table/wood/greyscale,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/floor/wood/f13/stage_l,
+/area/f13/caves)
+"rD" = (
+/obj/structure/table/wood/greyscale,
+/obj/item/clothing/head/sombrero{
+	pixel_y = 10
+	},
+/obj/item/trash/f13/electronic/toaster{
+	icon_state = "plantpot";
+	icon = 'icons/fallout/farming/farming_structures.dmi';
+	desc = "A growing pot.";
+	name = "growing pot";
+	pixel_y = 5;
+	layer = 2.9;
+	anchored = 1;
+	pixel_x = 1
+	},
+/obj/structure/flora/wasteplant/wild_feracactus{
+	pixel_y = 10;
+	name = "Estevan"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"sk" = (
+/obj/structure/stone_tile/surrounding_tile,
+/turf/open/indestructible/ground/outside/gravel{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 1;
+	name = "cave";
+	sunlight_state = 0;
+	barefootstep = "hardbarefoot";
+	clawfootstep = "hardclaw";
+	footstep = "floor"
+	},
+/area/f13/caves)
+"sG" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoulmarksman{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"tw" = (
+/obj/item/reagent_containers/food/drinks/trophy/gold_cup{
+	icon = 'icons/fallout/objects/guns/ammo.dmi';
+	icon_state = "jerrycan";
+	name = "jerrycan";
+	pixel_y = -2;
+	pixel_x = 7
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"tV" = (
+/obj/effect/overlay/concretebase{
+	dir = 5;
+	pixel_y = -18;
+	layer = 2.4
+	},
+/obj/effect/turf_decal/plaque{
+	name = "stairs";
+	icon = 'icons/obj/stairs.dmi';
+	icon_state = "stairs";
+	plane = -15;
+	layer = 2.14;
+	dir = 4;
+	color = "#faf0b9";
+	pixel_y = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"vA" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_x = 10;
+	pixel_y = 5
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"wq" = (
+/obj/structure/table/wood/poker,
+/obj/item/tape{
+	pixel_y = -4
+	},
+/obj/structure/showcase/machinery/tv{
+	name = "Tv";
+	desc = "Seems someone was a good snitch";
+	pixel_y = 7;
+	density = 0;
+	icon = 'icons/fallout/objects/decorations.dmi'
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"wQ" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/ncr_c_ration,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"wT" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/structure/mirror{
+	pixel_x = 25;
+	pixel_y = 2
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"xm" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant";
+	pixel_y = 14
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"xu" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/trash/f13/c_ration_3{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/trash/f13/k_ration,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"xW" = (
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"xZ" = (
+/obj/structure/nest/mob/ghouldesperado{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oakbroken2,
+/area/f13/caves)
+"zi" = (
+/obj/machinery/microwave{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/machinery/reagentgrinder{
+	pixel_y = -10;
+	pixel_x = -6
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"zv" = (
+/obj/structure/simple_door/tent,
+/obj/structure/barricade/wooden/planks,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zJ" = (
+/obj/item/reagent_containers/rag/towel{
+	pixel_y = 8;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"zW" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"As" = (
+/obj/effect/overlay/junk/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 4
+	},
+/obj/effect/overlay/junk/curtain,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"AR" = (
+/obj/structure/stone_tile/cracked{
+	dir = 1
+	},
+/obj/structure/stone_tile/cracked,
+/obj/structure/stone_tile/center{
+	pixel_x = 7;
+	pixel_y = -7
+	},
+/obj/structure/stone_tile/burnt{
+	pixel_x = 16
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "rock";
+	icon = 'icons/fallout/turfs/mining.dmi';
+	layer = 5;
+	pixel_x = -32;
+	plane = -4;
+	name = null
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"AZ" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"BT" = (
+/obj/effect/overlay/concretebase{
+	dir = 4;
+	pixel_y = -6
+	},
+/obj/structure/railing{
+	dir = 5;
+	pixel_y = 1;
+	layer = 4.1
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Eo" = (
+/obj/item/reagent_containers/food/drinks/trophy/gold_cup{
+	icon = 'icons/fallout/objects/guns/ammo.dmi';
+	icon_state = "jerrycan";
+	name = "jerrycan";
+	pixel_y = 18;
+	pixel_x = 4
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	pixel_y = -15
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"ER" = (
+/obj/item/storage/bag/easterbasket{
+	name = "Basket"
+	},
+/obj/item/reagent_containers/food/snacks/grown/mushroom/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fw" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.11
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 2.1;
+	pixel_y = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"FJ" = (
+/obj/structure/flora/wasteplant/wild_fungus{
+	pixel_x = -11;
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/outside/gravel{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 4;
+	name = "cave";
+	sunlight_state = 0;
+	barefootstep = "hardbarefoot";
+	clawfootstep = "hardclaw";
+	footstep = "floor"
+	},
+/area/f13/caves)
+"GF" = (
+/obj/effect/overlay/concretebase{
+	pixel_y = -8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/caves)
+"GX" = (
+/obj/structure/flora/wasteplant/wild_fungus{
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hf" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"HF" = (
+/obj/structure/flora/wasteplant/wild_fungus{
+	pixel_x = -11;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"HG" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/trash/f13/c_ration_3{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 15;
+	pixel_x = 1;
+	layer = 2.81
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Iz" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Jose";
+	pixel_y = 14
+	},
+/obj/item/clothing/head/sombrero/green{
+	pixel_y = 13
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"IE" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = -15
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Jj" = (
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 8;
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Jk" = (
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Jq" = (
+/obj/structure/closet/crate/wicker{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/food/snacks/grown/mushroom/glowshroom{
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/food/snacks/grown/mushroom/glowshroom{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JC" = (
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_y = 24;
+	pixel_x = 5
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Kd" = (
+/obj/structure/decoration/clock/old{
+	pixel_y = 30;
+	name = "old clock";
+	pixel_x = -1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Kh" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"KK" = (
+/obj/structure/table/wood/poker{
+	plane = -4.1
+	},
+/obj/item/stack/f13Cash/caps/fourzero{
+	pixel_x = -8
+	},
+/obj/item/stack/f13Cash/caps/fivezero{
+	pixel_y = 7;
+	pixel_x = 5
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"KS" = (
+/obj/structure/decoration/hatch{
+	pixel_y = 32
+	},
+/obj/structure/nest/mob/ghoulsoldier,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"La" = (
+/obj/structure/stone_tile/center{
+	pixel_x = 7;
+	pixel_y = -7
+	},
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/structure/stone_tile/cracked{
+	dir = 1
+	},
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 4;
+	pixel_y = 16;
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"ME" = (
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"MV" = (
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"MZ" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Ng" = (
+/obj/machinery/power/fusion_generator,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"NI" = (
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/structure/stone_tile/surrounding_tile,
+/obj/structure/stone_tile/cracked{
+	dir = 1
+	},
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"NK" = (
+/obj/structure/nest/mob/ghoulsoldier{
+	name = "ghoul prisoner";
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"Pg" = (
+/obj/structure/decoration/hatch{
+	dir = 4;
+	name = "water drain";
+	pixel_x = -32
+	},
+/obj/item/chair/wood/modern,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"Po" = (
+/obj/effect/overlay/concretebase{
+	pixel_y = -8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Qj" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QJ" = (
+/turf/open/floor/wood/f13/stage_l,
+/area/f13/caves)
+"QK" = (
+/obj/item/tape{
+	pixel_y = 7;
+	pixel_x = -6
+	},
+/obj/structure/table/wood/poker,
+/obj/item/tape{
+	pixel_y = -1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"QV" = (
+/obj/structure/decoration/hatch{
+	dir = 4;
+	name = "water drain";
+	pixel_x = -32
+	},
+/obj/item/trash/f13/tin_large,
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"QW" = (
+/obj/structure/table/wood/poker{
+	plane = -4.1
+	},
+/obj/item/toy/cards/deck{
+	pixel_y = 9
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"QZ" = (
+/obj/effect/overlay/concretebase{
+	icon_state = "concreteextra2";
+	layer = 4.1;
+	pixel_y = 14
+	},
+/obj/effect/overlay/concretebase{
+	dir = 8;
+	layer = 2.3;
+	pixel_y = -3
+	},
+/obj/structure/railing{
+	dir = 9;
+	layer = 2.1;
+	pixel_y = 1;
+	plane = -3.8
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Ro" = (
+/obj/structure/simple_door/wood,
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Sx" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"SD" = (
+/obj/structure/table/wood/poker{
+	plane = -4.1
+	},
+/obj/item/stack/f13Cash/caps/fourzero{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Un" = (
+/obj/structure/stone_tile/cracked{
+	dir = 1
+	},
+/obj/structure/stone_tile/surrounding_tile,
+/obj/structure/stone_tile/surrounding_tile{
+	dir = 4
+	},
+/obj/structure/stone_tile/center/cracked{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"Vl" = (
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oakbroken,
+/area/f13/caves)
+"Vr" = (
+/obj/effect/turf_decal/plaque{
+	name = "stairs";
+	icon = 'icons/obj/stairs.dmi';
+	icon_state = "stairs";
+	plane = -15;
+	layer = 2.14;
+	dir = 1;
+	color = "#faf0b9";
+	pixel_y = -24
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
+"XX" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"Zo" = (
+/obj/structure/decoration/clock/old{
+	pixel_y = 30;
+	name = "old clock";
+	pixel_x = -1
+	},
+/obj/structure/table/wood/greyscale,
+/obj/machinery/computer/terminal{
+	pixel_y = 5
+	},
+/obj/item/clothing/head/sombrero/shamebrero{
+	desc = "Once it's on, it never comes off."ddd;
+	pixel_y = 15
+	},
+/turf/open/floor/wood/f13/oakbroken2,
+/area/f13/caves)
+"Zv" = (
+/obj/effect/overlay/junk/toilet{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ZK" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.11
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 2.1;
+	pixel_y = 1
+	},
+/obj/structure/ladder/unbreakable/vanilla{
+	pixel_y = 21
+	},
+/turf/open/floor/f13/wood,
+/area/f13/caves)
+"ZS" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+Pg
+QV
+kv
+oZ
+oZ
+oZ
+oZ
+"}
+(2,1,1) = {"
+oZ
+qr
+qr
+qr
+qr
+oZ
+oZ
+gc
+ME
+ME
+oZ
+oZ
+oZ
+oZ
+"}
+(3,1,1) = {"
+qr
+qr
+dg
+jB
+qr
+qr
+oZ
+Jj
+ME
+qa
+oZ
+oZ
+oZ
+oZ
+"}
+(4,1,1) = {"
+qr
+fl
+qV
+jB
+wQ
+qr
+oZ
+mt
+ME
+Hf
+oZ
+oZ
+oZ
+oZ
+"}
+(5,1,1) = {"
+qr
+HG
+jB
+jB
+ow
+qr
+oZ
+Hf
+ME
+Hf
+oZ
+oZ
+oZ
+oZ
+"}
+(6,1,1) = {"
+qr
+Ng
+jB
+jB
+kp
+qr
+Hf
+jL
+qa
+mt
+oZ
+oZ
+oZ
+oZ
+"}
+(7,1,1) = {"
+qr
+jB
+jB
+mW
+jB
+zv
+Hf
+ME
+Hf
+qr
+qr
+qr
+qr
+oZ
+"}
+(8,1,1) = {"
+qr
+dA
+jB
+jB
+jB
+qr
+Hf
+La
+qr
+qr
+dh
+As
+qr
+qr
+"}
+(9,1,1) = {"
+qr
+qr
+vA
+wT
+qr
+qr
+xW
+NI
+qr
+Iz
+jB
+jB
+tw
+qr
+"}
+(10,1,1) = {"
+oZ
+qr
+qr
+qr
+qr
+he
+hq
+sk
+qr
+jB
+qV
+QZ
+gU
+qr
+"}
+(11,1,1) = {"
+Hf
+Hf
+oZ
+oZ
+oZ
+Hf
+ME
+Hf
+qr
+ij
+GF
+kh
+KK
+qr
+"}
+(12,1,1) = {"
+HF
+FJ
+Hf
+Hf
+Hf
+jL
+ME
+Hf
+Sx
+jB
+Vr
+MV
+QW
+qr
+"}
+(13,1,1) = {"
+Jj
+ME
+ME
+no
+jL
+ME
+qa
+Hf
+qr
+ZS
+Po
+kh
+SD
+qr
+"}
+(14,1,1) = {"
+GX
+Jj
+qa
+Jj
+qa
+ME
+Hf
+mt
+qr
+eO
+tV
+BT
+eL
+qr
+"}
+(15,1,1) = {"
+Jq
+ER
+oZ
+Hf
+GX
+Un
+Hf
+oZ
+qr
+rw
+QJ
+QJ
+QJ
+qr
+"}
+(16,1,1) = {"
+oZ
+oZ
+oZ
+mt
+jL
+ME
+Hf
+oZ
+qr
+Zo
+Vl
+MZ
+xZ
+qr
+"}
+(17,1,1) = {"
+oZ
+oZ
+oZ
+Hf
+ME
+qa
+Hf
+oZ
+qr
+rD
+IE
+MZ
+iB
+qr
+"}
+(18,1,1) = {"
+oZ
+oZ
+oZ
+Hf
+ME
+Hf
+he
+oZ
+qr
+qr
+qr
+qr
+qr
+qr
+"}
+(19,1,1) = {"
+oZ
+oZ
+mt
+Hf
+ME
+Hf
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+"}
+(20,1,1) = {"
+oZ
+oZ
+Hf
+Hf
+ME
+Hf
+oZ
+qr
+qr
+qr
+qr
+oZ
+oZ
+oZ
+"}
+(21,1,1) = {"
+oZ
+oZ
+Hf
+Hf
+ME
+Hf
+qr
+qr
+Eo
+xu
+qr
+qr
+oZ
+oZ
+"}
+(22,1,1) = {"
+oZ
+oZ
+oZ
+Hf
+ME
+mt
+qr
+xm
+jB
+jB
+zi
+qr
+qr
+oZ
+"}
+(23,1,1) = {"
+oZ
+oZ
+oZ
+Hf
+ME
+Hf
+qr
+JC
+Kh
+jB
+av
+aE
+qr
+oZ
+"}
+(24,1,1) = {"
+rm
+oZ
+oZ
+mt
+AR
+Hf
+Ro
+jB
+jB
+jB
+jB
+NK
+qr
+oZ
+"}
+(25,1,1) = {"
+rm
+rm
+Hf
+Hf
+ME
+Hf
+qr
+QK
+qV
+XX
+jB
+jB
+qr
+oZ
+"}
+(26,1,1) = {"
+oZ
+Qj
+Hf
+Hf
+ME
+mt
+qr
+wq
+jB
+Jk
+jB
+jB
+qr
+oZ
+"}
+(27,1,1) = {"
+rm
+rm
+oZ
+Sx
+zW
+Sx
+qr
+qr
+ij
+jB
+jB
+kp
+qr
+oZ
+"}
+(28,1,1) = {"
+rm
+oZ
+oZ
+Hf
+ME
+Hf
+qr
+qr
+qr
+ZK
+hm
+Fw
+qr
+oZ
+"}
+(29,1,1) = {"
+oZ
+oZ
+mt
+jL
+ME
+Hf
+qr
+oT
+qr
+qA
+QJ
+QJ
+qr
+oZ
+"}
+(30,1,1) = {"
+rm
+mt
+zJ
+ME
+ME
+Hf
+qr
+AZ
+Ro
+MZ
+hu
+sG
+qr
+oZ
+"}
+(31,1,1) = {"
+rm
+rm
+KS
+ME
+ME
+Hf
+qr
+Zv
+qr
+Kd
+iB
+cC
+qr
+oZ
+"}
+(32,1,1) = {"
+rm
+rm
+nV
+lt
+qa
+mt
+qr
+qr
+qr
+qr
+qr
+qr
+qr
+oZ
+"}
+(33,1,1) = {"
+rm
+rm
+rm
+rm
+mt
+Hf
+Hf
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+"}
+(34,1,1) = {"
+rm
+rm
+rm
+rm
+rm
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+oZ
+"}

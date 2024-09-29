@@ -1,0 +1,2516 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ae" = (
+/obj/structure/table/wood,
+/obj/item/candle/infinite{
+	pixel_x = 8;
+	light_on = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ag" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"aG" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 1
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"bb" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = -11;
+	pixel_y = 11
+	},
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"bO" = (
+/obj/structure/closet/crate/wicker{
+	opened = 1
+	},
+/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bW" = (
+/obj/structure/table/wood,
+/obj/item/storage/backpack/cultpack,
+/obj/item/candle/infinite{
+	pixel_x = 8;
+	light_on = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bX" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/structure/nest/mob/scorpion{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"cf" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"cp" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration3";
+	dir = 4;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ex" = (
+/obj/structure/stone_tile/burnt{
+	dir = 4
+	},
+/obj/structure/stone_tile/surrounding_tile,
+/obj/structure/stone_tile/cracked{
+	dir = 8
+	},
+/obj/structure/stone_tile{
+	dir = 1
+	},
+/obj/effect/mob_spawn/human/corpse/charredskeleton{
+	gloves = /obj/item/clothing/gloves/f13/handwraps;
+	head = /obj/item/clothing/head/hooded/robes;
+	mask = /obj/item/clothing/mask/rat/raven;
+	shoes = /obj/item/clothing/shoes/f13/rag;
+	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch;
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"fc" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 4
+	},
+/obj/structure/stone_tile/block/cracked{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fh" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"fs" = (
+/obj/structure/table/wood,
+/obj/item/warpaint_bowl{
+	desc = "A small ceramic bowl, used for the mixing of inks for tattoos.";
+	name = "Ink bowl"
+	},
+/obj/item/melee/onehanded/knife/ritualdagger{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gq" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gu" = (
+/obj/structure/flora/ausbushes/sparsegrass{
+	pixel_x = 17;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 8;
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"gx" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"gV" = (
+/obj/structure/closet/crate/wicker{
+	opened = 1
+	},
+/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ho" = (
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"hF" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/bowl,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"id" = (
+/turf/closed/wall/f13/tentwall,
+/area/f13/caves)
+"iP" = (
+/obj/structure/stone_tile/block/cracked,
+/obj/structure/stone_tile/block/burnt{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jj" = (
+/obj/structure/stone_tile/block/cracked,
+/obj/structure/stone_tile/block/cracked{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"jI" = (
+/obj/structure/chair/wood/worn{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jP" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jT" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration3";
+	dir = 4;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/obj/effect/decal/cleanable/cobweb/cobweb2{
+	plane = -4;
+	layer = 3.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"km" = (
+/obj/effect/clockwork/overlay/floor/bloodcult,
+/obj/structure/fluff/big_chain{
+	pixel_y = 14
+	},
+/turf/open/chasm,
+/area/f13/caves)
+"ks" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration3";
+	dir = 4;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/obj/effect/mob_spawn/human/corpse/charredskeleton{
+	gloves = /obj/item/clothing/gloves/f13/handwraps;
+	head = /obj/item/clothing/head/hooded/robes;
+	mask = /obj/item/clothing/mask/rat/raven;
+	shoes = /obj/item/clothing/shoes/f13/rag;
+	suit = /obj/item/clothing/suit/hooded/robes;
+	uniform = /obj/item/clothing/under/f13/raiderrags
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ky" = (
+/obj/structure/simple_door/tent,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ll" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/structure/nest/mob/scorpionblack{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"lq" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ma" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mi" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"mt" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = 9;
+	layer = 2.81;
+	pixel_x = -9
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"my" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"mD" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"nf" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ny" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"of" = (
+/obj/structure/chair/wood/worn,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oB" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"oG" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/nest/mob/scorpionblack{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"pS" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"pW" = (
+/obj/structure/nest/mob/scorpionblue{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pZ" = (
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	dir = 8;
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"qF" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = 17;
+	layer = 2.81;
+	pixel_x = -15
+	},
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = -1;
+	layer = 2.81;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qM" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"qR" = (
+/obj/structure/table/wood,
+/obj/item/candle/infinite{
+	pixel_x = 8;
+	light_on = 1
+	},
+/obj/item/clothing/head/helmet/skull{
+	pixel_y = 4;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qS" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration4";
+	dir = 8;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rb" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rG" = (
+/obj/structure/statue/bone/rib{
+	dir = 4;
+	name = "megalith";
+	color = "#00ffee";
+	layer = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ss" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"sE" = (
+/obj/structure/stone_tile/slab,
+/obj/item/trash/f13/electronic/toaster{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominousopen";
+	desc = "Smooth and ancient, this tomb stirs an unnerving feeling deep within your bones, like a secret best left to rest.";
+	density = 1;
+	anchored = 1;
+	name = "ominous tomb"
+	},
+/obj/structure/nest/mob/maddened_cultist{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominous";
+	name = "ominous tomb"
+	},
+/obj/item/reagent_containers/pill/patch/healingpowder/berserker,
+/obj/item/melee/unarmed/yaoguaigauntlet,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"sY" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"tq" = (
+/obj/structure/stone_tile/block,
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ub" = (
+/obj/structure/table/wood,
+/obj/item/candle/infinite{
+	pixel_x = -8;
+	pixel_y = 13;
+	light_on = 1
+	},
+/obj/structure/decoration/rag{
+	pixel_y = -23;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ud" = (
+/obj/structure/nest/mob/scorpionblue,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"wa" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"wP" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"wS" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"xy" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xD" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 1
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"xQ" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"xW" = (
+/obj/effect/clockwork/overlay/floor/bloodcult,
+/obj/structure/fluff/big_chain{
+	pixel_y = 14;
+	plane = -3
+	},
+/turf/open/chasm,
+/area/f13/caves)
+"xY" = (
+/obj/structure/stone_tile/block{
+	dir = 8;
+	layer = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yD" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yT" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left"
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/stone_tile/surrounding/cracked,
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune5center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"zd" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration4";
+	dir = 8;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zi" = (
+/obj/structure/stone_tile/slab,
+/obj/structure/necropolis_gate{
+	name = "the gate"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"zm" = (
+/obj/structure/table/wood,
+/obj/item/candle/infinite{
+	pixel_x = 8;
+	pixel_y = 13;
+	light_on = 1
+	},
+/obj/item/clothing/head/helmet/skull/bone{
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zn" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ao" = (
+/obj/structure/nest/mob/scorpionblue{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Bm" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Bt" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"By" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"BH" = (
+/obj/structure/statue/bone/rib{
+	dir = 4;
+	name = "megalith";
+	color = "#00ffee"
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"BK" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"Ce" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Cs" = (
+/obj/structure/stone_tile/slab/burnt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CW" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Dz" = (
+/obj/item/blanket{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tribaldecoration3";
+	dir = 4;
+	layer = 2.7;
+	name = "rug";
+	plane = -15
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"DR" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/item/candle/infinite{
+	pixel_x = -8;
+	light_on = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ev" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"FA" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 8
+	},
+/obj/structure/stone_tile/block/cracked{
+	dir = 4
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Gq" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Hm" = (
+/obj/item/chair/wood/modern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hr" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ij" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/item/candle/infinite{
+	pixel_x = 8;
+	pixel_y = 13;
+	light_on = 1
+	},
+/obj/structure/decoration/rag{
+	pixel_y = -23;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Il" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"It" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"IO" = (
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/obj/structure/stone_tile/block,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"IP" = (
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"IT" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"IY" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 8
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Kb" = (
+/obj/structure/stone_tile/block/cracked,
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Kn" = (
+/obj/structure/stone_tile/block{
+	dir = 4;
+	plane = -14
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ko" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = -1;
+	layer = 2.81;
+	pixel_x = -2
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"KN" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"KX" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"LA" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"LC" = (
+/obj/structure/stone_tile/slab,
+/obj/item/trash/f13/electronic/toaster{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominousopen";
+	desc = "Smooth and ancient, this tomb stirs an unnerving feeling deep within your bones, like a secret best left to rest.";
+	density = 1;
+	anchored = 1;
+	name = "ominous tomb"
+	},
+/obj/structure/nest/mob/maddened_cultist{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominous";
+	name = "ominous tomb"
+	},
+/obj/effect/spawner/lootdrop/ammo/tribaldungeon,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"LW" = (
+/obj/effect/clockwork/overlay/floor/bloodcult,
+/turf/open/chasm,
+/area/f13/caves)
+"Mj" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"MG" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"MN" = (
+/obj/structure/stone_tile/slab,
+/obj/item/trash/f13/electronic/toaster{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominousopen";
+	desc = "Smooth and ancient, this tomb stirs an unnerving feeling deep within your bones, like a secret best left to rest.";
+	density = 1;
+	anchored = 1;
+	name = "ominous tomb"
+	},
+/obj/structure/nest/mob/maddened_cultist{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominous";
+	name = "ominous tomb"
+	},
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"MY" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune6inner";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	color = "#360402"
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune2center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Nn" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/chair/wood/worn{
+	pixel_y = 3
+	},
+/obj/item/fishingrod,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NA" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NB" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ok" = (
+/turf/open/chasm,
+/area/f13/caves)
+"Om" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/obj/effect/overlay/gravel/edge,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"On" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 8
+	},
+/obj/structure/stone_tile/block{
+	dir = 4;
+	plane = -14
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Or" = (
+/obj/structure/stone_tile/center{
+	pixel_y = -9;
+	pixel_x = -7
+	},
+/obj/structure/stone_tile/center{
+	pixel_y = -9;
+	pixel_x = 8
+	},
+/obj/structure/table/wood/settler{
+	desc = "A bloodstained altar dedicated to unknown entity.";
+	icon = 'icons/obj/cult.dmi';
+	icon_state = "talismanaltar";
+	name = "altar";
+	pixel_y = 12
+	},
+/obj/item/book{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "tome";
+	pixel_y = 14
+	},
+/obj/item/melee/onehanded/knife/ritualdagger{
+	pixel_y = 20
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ow" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"OE" = (
+/obj/structure/table/wood,
+/obj/item/melee/onehanded/knife/ritualdagger{
+	pixel_y = 20
+	},
+/obj/item/warpaint_bowl{
+	desc = "A small ceramic bowl, used for the mixing of inks for tattoos.";
+	name = "Ink bowl"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Py" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"PQ" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Qa" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Qb" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Qk" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Qt" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Rl" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/obj/effect/decal/cleanable/cobweb/cobweb2{
+	plane = -4;
+	layer = 3.25
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Rs" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/stone_tile/surrounding,
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune5words";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune2center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"RK" = (
+/turf/open/indestructible/ground/outside/water{
+	icon_state = "cavernfloor";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"SK" = (
+/obj/structure/stone_tile/block/cracked{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"SW" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"To" = (
+/obj/structure/stone_tile/slab,
+/obj/item/sharpener/cult{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/structure/table/bronze,
+/obj/item/melee/cultblade/dagger,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"TN" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune5words";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune4center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_y = 1;
+	pixel_x = -1;
+	color = "#360402"
+	},
+/obj/structure/stone_tile/surrounding,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Ul" = (
+/obj/structure/table/wood,
+/obj/item/clothing/accessory/skullcodpiece{
+	pixel_y = -16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Us" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"UD" = (
+/obj/structure/simple_door/tent,
+/obj/structure/stone_tile/slab,
+/obj/effect/mob_spawn/human/corpse{
+	armor = "/obj/item/clothing/suit/hooded/robes";
+	head = "/obj/item/clothing/head/hooded/robes";
+	shoes = "/obj/item/clothing/shoes/f13/rag"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Vz" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Wh" = (
+/obj/structure/table/wood,
+/obj/structure/decoration/rag{
+	pixel_y = -23;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Wz" = (
+/obj/structure/chair/wood/worn{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WI" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/outside/water/cavern,
+/area/f13/caves)
+"XD" = (
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/floor/plating/f13/inside/gravel,
+/area/f13/caves)
+"XF" = (
+/obj/structure/stone_tile/slab,
+/obj/item/trash/f13/electronic/toaster{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominousopen";
+	desc = "Smooth and ancient, this tomb stirs an unnerving feeling deep within your bones, like a secret best left to rest.";
+	density = 1;
+	anchored = 1;
+	name = "ominous tomb"
+	},
+/obj/structure/nest/mob/maddened_cultist{
+	icon = 'icons/obj/crates.dmi';
+	icon_state = "tomb_ominous";
+	name = "ominous tomb"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"XG" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	layer = 2.89;
+	plane = -15
+	},
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	pixel_y = 17;
+	layer = 2.81;
+	pixel_x = -15
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XI" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/stone_tile/surrounding,
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune5words";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune5center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 1;
+	color = "#360402"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Yb" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 8
+	},
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	name = "rune";
+	icon_state = "rune4center";
+	icon = 'icons/effects/cult_effects.dmi';
+	layer = 3;
+	plane = -4;
+	pixel_y = 1;
+	pixel_x = -1;
+	color = "#360402"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Yp" = (
+/turf/closed/wall/f13/tentwall{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"Yq" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"YF" = (
+/obj/effect/clockwork/overlay/floor/bloodcult,
+/obj/structure/fluff/drake_statue,
+/turf/open/chasm,
+/area/f13/caves)
+"YI" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/obj/structure/spacevine{
+	name = "vines"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"YK" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Zl" = (
+/obj/structure/stone_tile/block/burnt{
+	dir = 1
+	},
+/obj/structure/stone_tile/block/cracked,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+Us
+Us
+Us
+YK
+YK
+YK
+YK
+YK
+Us
+Us
+Us
+YK
+YK
+YK
+YK
+Us
+Us
+Us
+YK
+"}
+(2,1,1) = {"
+YK
+YK
+YK
+YK
+YK
+YK
+my
+my
+my
+my
+my
+my
+my
+YK
+YK
+Us
+Us
+YK
+YK
+Yp
+Yp
+Yp
+Yp
+Yp
+Us
+Us
+Us
+Us
+YK
+YK
+Us
+Us
+Us
+Us
+Us
+"}
+(3,1,1) = {"
+YK
+YK
+YK
+my
+my
+my
+my
+my
+Us
+Us
+Us
+Us
+Us
+YK
+Us
+Us
+YK
+YK
+Yp
+BH
+zm
+fs
+qR
+rG
+Yp
+Us
+Us
+Us
+YK
+YK
+Us
+Us
+Us
+Us
+Us
+"}
+(4,1,1) = {"
+YK
+YK
+my
+my
+my
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+YK
+YK
+YK
+Yp
+IY
+xY
+jP
+xY
+xY
+Yp
+YK
+Us
+Us
+YK
+Us
+Us
+Us
+Us
+Us
+Us
+"}
+(5,1,1) = {"
+YK
+my
+my
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+YK
+Yp
+zd
+Dz
+fc
+ks
+qS
+Yp
+YK
+Us
+Us
+YK
+YK
+YK
+YK
+Us
+Us
+Us
+"}
+(6,1,1) = {"
+YK
+my
+YK
+Us
+Us
+Us
+Us
+BK
+Qb
+xD
+wS
+Om
+oG
+Il
+mi
+Us
+Us
+Us
+Yp
+Dz
+zd
+iP
+qS
+Dz
+Yp
+YK
+Us
+Us
+YK
+Us
+YK
+YK
+YK
+Us
+Us
+"}
+(7,1,1) = {"
+my
+my
+Us
+Us
+Us
+mi
+SW
+MG
+ud
+wa
+yT
+Gq
+IP
+IP
+Ev
+mi
+Us
+Us
+Us
+Yp
+ks
+Cs
+Dz
+Yp
+YK
+YK
+Us
+Us
+Us
+Us
+YK
+YK
+YK
+Us
+Us
+"}
+(8,1,1) = {"
+my
+my
+Us
+Us
+Us
+XD
+Il
+TN
+MG
+IP
+LA
+IP
+IP
+Rs
+Il
+Il
+mi
+Us
+Us
+Yp
+qS
+sY
+qS
+Yp
+YK
+my
+Us
+Us
+YK
+YK
+YK
+YK
+YK
+Us
+Us
+"}
+(9,1,1) = {"
+my
+YK
+Us
+Us
+NB
+YI
+XD
+Il
+Ow
+Ok
+Ok
+Ok
+nf
+IP
+MG
+gx
+xQ
+Us
+Us
+Yp
+jT
+sY
+cp
+Yp
+YK
+my
+Us
+my
+YK
+YK
+YK
+YK
+YK
+YK
+Us
+"}
+(10,1,1) = {"
+my
+YK
+Us
+MN
+Qa
+It
+YI
+XD
+Ok
+Ok
+Ok
+Ok
+Ok
+IP
+pS
+Qt
+ss
+ss
+mi
+Us
+id
+UD
+Yp
+my
+my
+Us
+Us
+my
+YK
+YK
+pZ
+ho
+WI
+YK
+YK
+"}
+(11,1,1) = {"
+my
+YK
+Us
+LC
+mD
+Qa
+zn
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+ny
+Yq
+ss
+wP
+Us
+Us
+NA
+yD
+yD
+my
+my
+Us
+Us
+my
+YK
+Py
+rb
+gu
+ho
+WI
+YK
+"}
+(12,1,1) = {"
+my
+Us
+Us
+XF
+Kb
+Qa
+Ok
+Ok
+Ok
+km
+LW
+xW
+Ok
+Ok
+Ok
+Qa
+SK
+FA
+tq
+Us
+yD
+yD
+yD
+my
+my
+Us
+Us
+YK
+YK
+IT
+Ao
+yD
+gu
+ho
+WI
+"}
+(13,1,1) = {"
+my
+Us
+Us
+To
+IO
+mD
+Ok
+Ok
+Ok
+LW
+YF
+LW
+Ok
+Ok
+Ok
+Or
+ex
+mD
+Zl
+zi
+yD
+yD
+yD
+my
+my
+Us
+my
+YK
+Py
+yD
+yD
+yD
+Nn
+ho
+ho
+"}
+(14,1,1) = {"
+my
+YK
+Us
+sE
+jj
+Yq
+Ok
+Ok
+Ok
+km
+LW
+xW
+Ok
+Ok
+Ok
+Qa
+Kn
+On
+Kb
+Us
+yD
+yD
+my
+my
+Us
+Us
+my
+YK
+yD
+yD
+yD
+yD
+bb
+ho
+ho
+"}
+(15,1,1) = {"
+my
+my
+Us
+XF
+mD
+Bm
+Ce
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+lq
+Qa
+Qa
+Qk
+Us
+Us
+ma
+yD
+my
+Us
+Us
+my
+my
+my
+yD
+Wz
+Wz
+rb
+ho
+ho
+YK
+"}
+(16,1,1) = {"
+my
+my
+Us
+XF
+Qa
+Mj
+Hr
+Il
+Ok
+Ok
+Ok
+Ok
+Ok
+IP
+cf
+lq
+Yq
+ss
+mi
+Us
+yD
+yD
+my
+my
+my
+my
+my
+my
+of
+ae
+Ij
+Hm
+ho
+YK
+YK
+"}
+(17,1,1) = {"
+my
+my
+Us
+Us
+Rl
+Hr
+Il
+IP
+By
+Ok
+Ok
+Ok
+PQ
+Il
+Il
+ll
+aG
+mi
+Us
+Us
+IT
+yD
+my
+my
+my
+my
+my
+Py
+Hm
+Ul
+Wh
+gq
+YK
+YK
+YK
+"}
+(18,1,1) = {"
+my
+my
+my
+Us
+Us
+XD
+Il
+MY
+Il
+IP
+bX
+MG
+IP
+Yb
+Il
+Il
+mi
+Us
+Us
+Us
+Yp
+ky
+Yp
+Yp
+Yp
+Yp
+YK
+IT
+of
+DR
+ub
+gq
+ho
+YK
+YK
+"}
+(19,1,1) = {"
+YK
+my
+my
+my
+Us
+Us
+Vz
+IP
+Il
+qM
+XI
+CW
+Il
+IP
+fh
+Us
+Us
+Us
+Us
+Yp
+gV
+yD
+yD
+ae
+OE
+ae
+Yp
+yD
+yD
+jI
+jI
+xy
+ho
+ho
+YK
+"}
+(20,1,1) = {"
+YK
+my
+my
+my
+Us
+Us
+Us
+Il
+KN
+Bt
+KX
+ab
+YI
+Il
+mi
+Us
+Us
+Us
+Yp
+gV
+yD
+yD
+yD
+qS
+yD
+yD
+Yp
+yD
+yD
+yD
+yD
+yD
+ho
+ho
+YK
+"}
+(21,1,1) = {"
+YK
+YK
+my
+my
+my
+Us
+Us
+Us
+mi
+mi
+oB
+mi
+Us
+Us
+Us
+Us
+Us
+YK
+Yp
+bO
+qF
+yD
+cp
+ag
+cp
+yD
+ky
+yD
+yD
+yD
+pW
+rb
+ho
+ho
+YK
+"}
+(22,1,1) = {"
+YK
+YK
+my
+my
+my
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+Us
+YK
+YK
+YK
+YK
+YK
+Yp
+Ko
+Ko
+yD
+yD
+qS
+yD
+hF
+Yp
+yD
+yD
+yD
+yD
+RK
+ho
+ho
+YK
+"}
+(23,1,1) = {"
+YK
+YK
+YK
+my
+my
+my
+my
+my
+YK
+YK
+my
+my
+Us
+my
+my
+my
+YK
+YK
+Yp
+XG
+XG
+mt
+yD
+yD
+Hm
+bW
+Yp
+yD
+yD
+xy
+bb
+ho
+ho
+YK
+YK
+"}
+(24,1,1) = {"
+YK
+YK
+YK
+YK
+my
+my
+my
+my
+my
+my
+my
+my
+my
+my
+my
+my
+YK
+YK
+YK
+Yp
+Yp
+Yp
+Yp
+Yp
+Yp
+Yp
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+"}
+(25,1,1) = {"
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+my
+my
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+YK
+"}

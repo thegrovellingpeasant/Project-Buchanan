@@ -1,0 +1,1366 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bq" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bv" = (
+/obj/item/throwing_star/spear,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cf" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"cs" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"dv" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"dy" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dH" = (
+/obj/structure/nest/mob/yaoguai,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dR" = (
+/obj/structure/nest/mob/scorpion{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dX" = (
+/obj/structure/nest/mob/scorpion,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fb" = (
+/turf/closed/wall/f13/ruins{
+	name = "boulder";
+	desc = "A very large rock, you think you might be able to push it up a mountain if you really put your back into it."
+	},
+/area/f13/caves)
+"fO" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 8;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fT" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"fY" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/caves)
+"gr" = (
+/obj/structure/nest/mob/scorpion{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gx" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"gL" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"hk" = (
+/obj/structure/closet/crate/hydroponics{
+	name = "military crate";
+	desc = "An olive green crate.";
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder,
+/obj/item/reagent_containers/pill/patch/healingpowder/berserker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ii" = (
+/obj/item/blanket/rug,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ji" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"jC" = (
+/obj/structure/table/wood/settler,
+/obj/item/ammo_casing/caseless/arrow/burning,
+/obj/item/ammo_casing/caseless/arrow/poison,
+/obj/item/gun/ballistic/bow/tribal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jD" = (
+/turf/open/water,
+/area/f13/caves)
+"lb" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"md" = (
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#3d3228";
+	icon_state = "closed";
+	alpha = 255;
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mf" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"mJ" = (
+/obj/effect/overlay/curb,
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/f13/caves)
+"nb" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"nl" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"nS" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"ol" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water,
+/area/f13/caves)
+"op" = (
+/obj/structure/table/wood/settler,
+/obj/item/storage/backpack/spearquiver,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ox" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pw" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
+	},
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket";
+	pixel_y = -10;
+	pixel_x = -10
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"py" = (
+/obj/structure/closet/crate/wicker,
+/obj/item/clothing/mask/rat/tribal,
+/obj/item/clothing/head/helmet/f13/fiend,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ri" = (
+/obj/effect/decal/remains/nest{
+	icon = 'icons/mob/nest_new.dmi';
+	icon_state = "hole";
+	name = "small tunnel"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rR" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 4;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sI" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"sX" = (
+/obj/effect/decal/cleanable/blood/gibs/human/limb,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"tl" = (
+/obj/effect/decal/cleanable/blood{
+	layer = 2.7
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"tp" = (
+/turf/open/indestructible/ground/outside/sidewalk/bottom/dark,
+/area/f13/caves)
+"tR" = (
+/obj/structure/wreck/trash/two_barrels,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vs" = (
+/obj/effect/overlay/curb,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"vE" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"wU" = (
+/obj/item/trash/f13/cram_large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xg" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yZ" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/caves)
+"zd" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zg" = (
+/obj/item/trash/tray,
+/obj/item/trash/f13/rotten,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zi" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"zq" = (
+/obj/structure/simple_door/bunker,
+/obj/structure/lattice/catwalk,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"AR" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cm" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"Cu" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cz" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/curtain{
+	color = "#3d3228";
+	icon_state = "closed";
+	alpha = 255;
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water,
+/area/f13/caves)
+"El" = (
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Ep" = (
+/obj/structure/nest/mob/scorpionblack,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fw" = (
+/obj/structure/nest/mob/yaoguai{
+	icon = 'icons/fallout/mobs/megafauna/96x96megafauna.dmi';
+	icon_state = "mega_bear";
+	pixel_x = -32;
+	mob_types = list(/mob/living/simple_animal/hostile/megafauna/yaoguai = 5)
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"FM" = (
+/obj/structure/junk/micro,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Gk" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"Gt" = (
+/obj/structure/lattice/catwalk,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"GL" = (
+/obj/structure/grille/broken,
+/obj/item/stack/rods/ten,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"GW" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"HW" = (
+/obj/structure/junk/locker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ID" = (
+/obj/structure/nest/mob/yaoguai{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JU" = (
+/obj/structure/junk/small/bed,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"My" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"MX" = (
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"No" = (
+/obj/structure/curtain{
+	color = "#3d3228";
+	icon_state = "closed";
+	alpha = 255;
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NG" = (
+/obj/effect/decal/remains/human{
+	plane = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"On" = (
+/obj/structure/kitchenspike,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"OS" = (
+/obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Pb" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Qd" = (
+/obj/effect/overlay/curb,
+/turf/open/water,
+/area/f13/caves)
+"Ql" = (
+/obj/item/twohanded/spear/bonespear,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Qv" = (
+/obj/structure/table/wood/settler,
+/obj/item/trash/f13/rotten,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"RD" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/caves)
+"RN" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Si" = (
+/obj/item/blanket/rug/blue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"St" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"UV" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/caves)
+"VI" = (
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/f13/caves)
+"Wj" = (
+/obj/structure/nest/mob/yaoguai{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WE" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XO" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XZ" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"Zm" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/caves)
+"ZC" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/caves)
+
+(1,1,1) = {"
+RN
+XZ
+XZ
+XZ
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+sI
+sI
+sI
+sI
+RN
+RN
+RN
+RN
+XZ
+RN
+RN
+RN
+RN
+RN
+"}
+(2,1,1) = {"
+RN
+RN
+XZ
+RN
+RN
+RN
+lb
+lb
+lb
+RN
+RN
+sI
+sI
+sI
+RN
+lb
+lb
+lb
+RN
+XZ
+XZ
+XZ
+RN
+RN
+RN
+"}
+(3,1,1) = {"
+RN
+RN
+RN
+RN
+RN
+lb
+lb
+dX
+lb
+lb
+lb
+RN
+sI
+sI
+RN
+dR
+nl
+lb
+RN
+RN
+RN
+XZ
+XZ
+RN
+RN
+"}
+(4,1,1) = {"
+lb
+lb
+lb
+lb
+lb
+lb
+RN
+RN
+lb
+lb
+lb
+lb
+RN
+RN
+lb
+lb
+lb
+lb
+lb
+RN
+RN
+RN
+RN
+RN
+RN
+"}
+(5,1,1) = {"
+RN
+lb
+lb
+lb
+nl
+lb
+RN
+RN
+RN
+ri
+lb
+lb
+lb
+ox
+Ep
+lb
+lb
+lb
+lb
+lb
+RN
+RN
+RN
+RN
+RN
+"}
+(6,1,1) = {"
+RN
+RN
+RN
+lb
+dR
+lb
+RN
+RN
+RN
+lb
+lb
+lb
+lb
+RN
+RN
+RN
+lb
+lb
+lb
+lb
+RN
+UV
+UV
+UV
+UV
+"}
+(7,1,1) = {"
+RN
+RN
+RN
+lb
+lb
+lb
+RN
+RN
+lb
+gr
+nl
+RN
+RN
+sI
+sI
+RN
+lb
+gr
+lb
+RN
+UV
+UV
+My
+My
+My
+"}
+(8,1,1) = {"
+RN
+RN
+RN
+ol
+CU
+lb
+lb
+lb
+lb
+lb
+lb
+RN
+sI
+sI
+sI
+sI
+lb
+nl
+lb
+UV
+UV
+My
+jD
+jD
+My
+"}
+(9,1,1) = {"
+RN
+RN
+RN
+jD
+jD
+ol
+CU
+lb
+RN
+lb
+lb
+RN
+sI
+sI
+sI
+RN
+lb
+lb
+UV
+UV
+My
+jD
+jD
+jD
+My
+"}
+(10,1,1) = {"
+RN
+sI
+RN
+RN
+jD
+jD
+jD
+RN
+RN
+RN
+sI
+sI
+sI
+sI
+RN
+RN
+RN
+UV
+UV
+My
+jD
+jD
+jD
+My
+My
+"}
+(11,1,1) = {"
+sI
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+sI
+sI
+sI
+sI
+sI
+RN
+RN
+UV
+UV
+My
+jD
+jD
+My
+My
+My
+My
+"}
+(12,1,1) = {"
+RN
+RN
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+UV
+UV
+My
+My
+jD
+My
+My
+My
+My
+My
+"}
+(13,1,1) = {"
+RN
+RN
+mf
+lb
+Wj
+lb
+mf
+lb
+lb
+lb
+mf
+tR
+JU
+FM
+mf
+UV
+gx
+yZ
+Qd
+jD
+jD
+cs
+gx
+UV
+UV
+"}
+(14,1,1) = {"
+RN
+RN
+mf
+lb
+lb
+lb
+mf
+lb
+lb
+lb
+mf
+HW
+zg
+Cu
+mf
+UV
+vE
+yZ
+Qd
+jD
+jD
+tp
+vE
+UV
+RN
+"}
+(15,1,1) = {"
+RN
+RN
+mf
+md
+Cz
+GL
+mf
+md
+Cz
+GL
+mf
+wU
+ID
+UV
+UV
+UV
+dv
+Zm
+Qd
+jD
+jD
+tp
+gx
+UV
+RN
+"}
+(16,1,1) = {"
+mf
+mf
+lb
+lb
+lb
+lb
+fO
+lb
+lb
+zd
+lb
+lb
+lb
+UV
+Cm
+UV
+gx
+Zm
+Qd
+jD
+jD
+cs
+gx
+UV
+RN
+"}
+(17,1,1) = {"
+lb
+fb
+lb
+lb
+lb
+lb
+AR
+lb
+lb
+lb
+lb
+sX
+bq
+zq
+Gt
+zq
+fT
+yZ
+mJ
+VI
+VI
+cs
+El
+UV
+RN
+"}
+(18,1,1) = {"
+mf
+mf
+lb
+tl
+lb
+rR
+lb
+bv
+lb
+lb
+rR
+lb
+lb
+UV
+nS
+UV
+gx
+Zm
+Qd
+jD
+jD
+tp
+gx
+UV
+RN
+"}
+(19,1,1) = {"
+RN
+RN
+mf
+mf
+GL
+mf
+On
+lb
+lb
+jC
+mf
+cf
+lb
+UV
+UV
+UV
+dv
+Zm
+Qd
+jD
+jD
+tp
+vE
+UV
+RN
+"}
+(20,1,1) = {"
+RN
+RN
+mf
+lb
+lb
+mf
+On
+lb
+lb
+Qv
+mf
+lb
+lb
+lb
+mf
+UV
+RD
+ZC
+Qd
+jD
+jD
+cs
+gx
+UV
+RN
+"}
+(21,1,1) = {"
+RN
+RN
+mf
+lb
+lb
+mf
+mf
+dy
+OS
+MX
+mf
+cf
+lb
+lb
+mf
+UV
+gx
+ZC
+Qd
+jD
+jD
+cs
+gx
+UV
+RN
+"}
+(22,1,1) = {"
+RN
+RN
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+WE
+lb
+cf
+mf
+UV
+Gk
+yZ
+Qd
+jD
+jD
+gL
+gx
+UV
+RN
+"}
+(23,1,1) = {"
+RN
+RN
+mf
+lb
+hk
+nb
+lb
+lb
+dH
+lb
+lb
+lb
+lb
+GW
+mf
+UV
+ji
+yZ
+Qd
+jD
+jD
+tp
+Gk
+UV
+RN
+"}
+(24,1,1) = {"
+RN
+RN
+mf
+lb
+py
+nb
+lb
+Si
+Si
+Si
+lb
+Wj
+NG
+lb
+mf
+UV
+gx
+fY
+Qd
+jD
+jD
+cs
+Gk
+UV
+RN
+"}
+(25,1,1) = {"
+RN
+RN
+mf
+No
+nb
+lb
+lb
+op
+MX
+MX
+lb
+lb
+Pb
+lb
+mf
+UV
+gx
+yZ
+Qd
+jD
+jD
+cs
+Gk
+UV
+RN
+"}
+(26,1,1) = {"
+RN
+RN
+mf
+lb
+lb
+sX
+lb
+Si
+Si
+Si
+lb
+lb
+ii
+lb
+mf
+UV
+gx
+ZC
+Qd
+jD
+jD
+tp
+gx
+UV
+RN
+"}
+(27,1,1) = {"
+RN
+RN
+mf
+lb
+lb
+lb
+lb
+lb
+Fw
+lb
+lb
+ii
+XO
+ii
+mf
+UV
+vE
+ZC
+Qd
+jD
+jD
+tp
+My
+UV
+RN
+"}
+(28,1,1) = {"
+RN
+RN
+mf
+pw
+xg
+lb
+lb
+lb
+lb
+St
+lb
+Ql
+ii
+lb
+mf
+UV
+My
+yZ
+vs
+My
+My
+zi
+My
+UV
+RN
+"}
+(29,1,1) = {"
+RN
+RN
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+mf
+UV
+My
+My
+My
+My
+My
+My
+My
+UV
+RN
+"}
+(30,1,1) = {"
+RN
+XZ
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+sI
+sI
+sI
+RN
+RN
+RN
+UV
+My
+My
+My
+My
+My
+My
+My
+UV
+RN
+"}
+(31,1,1) = {"
+RN
+RN
+XZ
+XZ
+sI
+sI
+sI
+sI
+RN
+sI
+sI
+sI
+sI
+sI
+RN
+UV
+My
+My
+My
+My
+My
+My
+My
+UV
+RN
+"}
+(32,1,1) = {"
+RN
+RN
+RN
+XZ
+XZ
+sI
+sI
+sI
+sI
+sI
+sI
+sI
+sI
+sI
+sI
+UV
+My
+My
+My
+My
+My
+My
+My
+UV
+RN
+"}
+(33,1,1) = {"
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+RN
+sI
+sI
+sI
+sI
+RN
+RN
+UV
+My
+My
+My
+My
+My
+My
+My
+UV
+RN
+"}

@@ -1,0 +1,1137 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"b" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"c" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"d" = (
+/obj/item/gun/ballistic/rifle/hunting,
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = 6
+	},
+/obj/item/clothing/suit/armor/f13/ncrcfjacket{
+	pixel_y = 7;
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"e" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"i" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"k" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"l" = (
+/obj/item/ammo_box/a308,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 15;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"o" = (
+/obj/item/stack/sheet/metal/ten,
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"u" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"w" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"x" = (
+/obj/structure/closet/crate/grave,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/rods/ten,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"z" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"A" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/machinery/workbench,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"C" = (
+/obj/structure/fluff/rails{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/item/shovel,
+/obj/structure/closet/crate/footchest,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"E" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"G" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	dir = 8;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"I" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"K" = (
+/obj/structure/fluff/rails,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/item/blanket/rug,
+/obj/item/reagent_containers/food/drinks/flask/teapot,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"M" = (
+/turf/closed/wall/mineral/sandstone,
+/area/f13/caves)
+"N" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"O" = (
+/obj/structure/fluff/rails,
+/obj/structure/closet/crate/miningcar,
+/obj/item/stack/ore/uranium{
+	pixel_y = 4;
+	pixel_x = 4
+	},
+/obj/item/stack/ore/uranium{
+	pixel_y = 4;
+	pixel_x = 4
+	},
+/obj/item/stack/ore/uranium{
+	pixel_y = -7;
+	pixel_x = 4
+	},
+/obj/item/stack/ore/iron,
+/obj/item/stack/ore/gold{
+	pixel_x = -5;
+	pixel_y = -2
+	},
+/obj/item/stack/ore/silver{
+	pixel_y = -5;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Q" = (
+/turf/closed/mineral/random/high_chance,
+/area/f13/caves)
+"S" = (
+/turf/closed/wall/f13/wood,
+/area/f13/caves)
+"T" = (
+/obj/structure/closet/crate/footchest,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/obj/item/reagent_containers/food/drinks/beer{
+	name = "Wright beer";
+	desc = "A cheap, popular beer in a reused bottle. It has the Wright logo on it.";
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+b
+V
+b
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+a
+a
+V
+b
+N
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+S
+b
+G
+b
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+S
+X
+K
+b
+b
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+b
+Q
+Q
+a
+a
+a
+N
+a
+a
+S
+S
+N
+a
+a
+a
+a
+b
+N
+a
+S
+S
+b
+b
+Q
+N
+Q
+S
+S
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+b
+b
+b
+a
+S
+e
+b
+a
+a
+a
+b
+b
+b
+b
+b
+q
+b
+b
+b
+b
+b
+e
+b
+b
+a
+a
+"}
+(8,1,1) = {"
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+C
+C
+C
+C
+C
+C
+C
+b
+a
+b
+C
+C
+C
+C
+C
+C
+w
+c
+C
+C
+C
+C
+C
+b
+a
+a
+"}
+(9,1,1) = {"
+Q
+Q
+a
+a
+b
+Q
+Q
+a
+a
+b
+b
+b
+b
+b
+b
+b
+b
+a
+a
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+b
+Q
+a
+"}
+(10,1,1) = {"
+Q
+Q
+a
+a
+b
+b
+a
+a
+a
+a
+z
+b
+b
+b
+b
+S
+S
+a
+a
+a
+o
+y
+b
+E
+S
+a
+b
+b
+b
+a
+N
+b
+Q
+Q
+a
+"}
+(11,1,1) = {"
+Q
+Q
+Q
+S
+m
+V
+b
+a
+a
+a
+S
+S
+N
+b
+b
+a
+a
+a
+a
+a
+a
+N
+a
+S
+S
+a
+a
+S
+S
+a
+a
+Q
+Q
+Q
+Q
+"}
+(12,1,1) = {"
+Q
+Q
+Q
+S
+b
+K
+b
+a
+a
+Q
+Q
+a
+a
+b
+b
+b
+q
+a
+a
+a
+a
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+"}
+(13,1,1) = {"
+Q
+Q
+Q
+S
+b
+K
+b
+N
+a
+Q
+Q
+a
+A
+b
+I
+b
+b
+b
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+"}
+(14,1,1) = {"
+Q
+Q
+Q
+N
+b
+K
+b
+a
+a
+Q
+Q
+d
+b
+b
+b
+q
+b
+b
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+Q
+Q
+Q
+a
+a
+a
+a
+a
+"}
+(15,1,1) = {"
+Q
+Q
+Q
+a
+b
+V
+b
+b
+a
+a
+a
+l
+b
+T
+b
+a
+a
+a
+a
+a
+Q
+Q
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(16,1,1) = {"
+Q
+Q
+S
+b
+b
+V
+b
+b
+S
+a
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(17,1,1) = {"
+a
+a
+S
+u
+b
+G
+i
+S
+S
+Q
+Q
+Q
+Q
+a
+M
+M
+M
+b
+L
+b
+M
+M
+a
+M
+M
+M
+q
+b
+a
+a
+a
+a
+a
+a
+a
+"}
+(18,1,1) = {"
+a
+a
+a
+a
+b
+O
+b
+a
+Q
+Q
+Q
+Q
+Q
+M
+M
+u
+q
+b
+b
+b
+k
+a
+a
+k
+k
+k
+k
+k
+k
+a
+a
+a
+a
+a
+a
+"}
+(19,1,1) = {"
+a
+a
+a
+a
+b
+K
+b
+N
+a
+Q
+Q
+Q
+Q
+M
+k
+k
+b
+W
+b
+b
+k
+k
+a
+k
+k
+k
+k
+k
+a
+a
+a
+Q
+Q
+Q
+a
+"}
+(20,1,1) = {"
+a
+a
+a
+N
+b
+K
+b
+a
+a
+Q
+Q
+Q
+a
+M
+x
+k
+k
+k
+b
+q
+M
+M
+M
+a
+a
+a
+M
+M
+M
+a
+Q
+Q
+Q
+Q
+a
+"}
+(21,1,1) = {"
+a
+a
+a
+a
+b
+K
+b
+a
+a
+a
+a
+a
+a
+M
+k
+k
+b
+b
+b
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+a
+"}
+(22,1,1) = {"
+a
+a
+S
+b
+b
+V
+b
+b
+S
+a
+Q
+Q
+a
+M
+M
+u
+b
+b
+b
+a
+a
+a
+Q
+Q
+Q
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+a
+"}
+(23,1,1) = {"
+a
+a
+S
+m
+b
+K
+b
+b
+S
+Q
+Q
+Q
+Q
+Q
+M
+M
+M
+a
+D
+a
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+a
+"}
+(24,1,1) = {"
+a
+a
+b
+b
+b
+K
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+Q
+Q
+Q
+a
+"}
+(25,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+Q
+Q
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+a
+"}

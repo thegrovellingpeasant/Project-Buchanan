@@ -1,0 +1,801 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"c" = (
+/obj/structure/bed{
+	dir = 1;
+	layer = 2.89
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"d" = (
+/obj/structure/simple_door/metal,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"e" = (
+/obj/structure/closet/locker/oldstyle,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"f" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"g" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"h" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"i" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"j" = (
+/obj/machinery/shower{
+	dir = 8
+	},
+/obj/structure/decoration/vent/rusty,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"k" = (
+/obj/structure/sink/greyscale{
+	dir = 8;
+	pixel_x = -13;
+	pixel_y = 4
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"l" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/bed{
+	dir = 1;
+	layer = 2.89
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"n" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"o" = (
+/obj/structure/junk/small/bed,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"q" = (
+/obj/structure/simple_door/metal,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"r" = (
+/obj/structure/toilet{
+	pixel_y = 13
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"s" = (
+/obj/structure/simple_door/metal/iron,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"t" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"u" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"v" = (
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"w" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"x" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/obj/machinery/shower{
+	dir = 8
+	},
+/obj/structure/decoration/vent/rusty,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"z" = (
+/obj/machinery/microwave/stove,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"A" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"B" = (
+/obj/structure/toilet{
+	pixel_y = 13
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"C" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"D" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/structure/closet/locker/oldstyle,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"E" = (
+/obj/structure/bed{
+	dir = 1;
+	layer = 2.89
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"H" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"I" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"K" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/chair/f13chair2{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"M" = (
+/obj/structure/chair/f13chair2,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"N" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"O" = (
+/obj/structure/closet/locker/oldstyle,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"P" = (
+/obj/structure/closet/locker/oldstyle,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"Q" = (
+/obj/structure/debris/v1,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"S" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"T" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"U" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"V" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/caves)
+"W" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"X" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"Y" = (
+/obj/structure/sink/greyscale{
+	dir = 8;
+	pixel_x = -13;
+	pixel_y = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+"}
+(2,1,1) = {"
+N
+N
+N
+N
+N
+N
+K
+K
+N
+N
+N
+N
+N
+N
+N
+N
+N
+"}
+(3,1,1) = {"
+N
+N
+N
+N
+K
+l
+K
+K
+K
+K
+N
+N
+N
+N
+K
+N
+N
+"}
+(4,1,1) = {"
+N
+N
+N
+V
+w
+V
+V
+V
+w
+w
+V
+V
+V
+K
+K
+K
+N
+"}
+(5,1,1) = {"
+N
+N
+N
+V
+i
+v
+t
+w
+v
+C
+n
+A
+h
+K
+K
+l
+N
+"}
+(6,1,1) = {"
+N
+N
+N
+V
+g
+w
+v
+W
+W
+H
+W
+S
+v
+v
+K
+N
+N
+"}
+(7,1,1) = {"
+N
+N
+N
+V
+e
+v
+V
+V
+V
+V
+V
+V
+w
+V
+V
+N
+N
+"}
+(8,1,1) = {"
+N
+N
+K
+V
+P
+n
+V
+c
+c
+P
+e
+V
+r
+k
+V
+N
+N
+"}
+(9,1,1) = {"
+N
+K
+K
+w
+v
+n
+s
+W
+v
+L
+v
+q
+t
+C
+V
+N
+N
+"}
+(10,1,1) = {"
+N
+K
+K
+w
+C
+t
+V
+z
+W
+a
+a
+V
+e
+y
+V
+N
+N
+"}
+(11,1,1) = {"
+N
+T
+K
+V
+e
+v
+V
+V
+V
+w
+V
+V
+V
+V
+V
+N
+N
+"}
+(12,1,1) = {"
+N
+T
+T
+V
+O
+w
+w
+E
+c
+e
+e
+V
+B
+Y
+V
+N
+N
+"}
+(13,1,1) = {"
+N
+T
+T
+V
+Q
+v
+s
+W
+t
+n
+W
+q
+n
+C
+V
+N
+N
+"}
+(14,1,1) = {"
+N
+T
+T
+V
+v
+W
+V
+z
+M
+X
+f
+V
+e
+j
+V
+N
+N
+"}
+(15,1,1) = {"
+N
+T
+T
+V
+O
+v
+V
+V
+V
+V
+V
+V
+w
+w
+V
+N
+N
+"}
+(16,1,1) = {"
+N
+T
+T
+V
+U
+v
+V
+m
+K
+T
+T
+V
+K
+V
+K
+K
+N
+"}
+(17,1,1) = {"
+N
+T
+T
+V
+S
+t
+s
+v
+K
+K
+T
+d
+K
+K
+K
+N
+N
+"}
+(18,1,1) = {"
+N
+T
+T
+V
+I
+v
+V
+x
+K
+K
+T
+K
+K
+T
+V
+N
+N
+"}
+(19,1,1) = {"
+N
+T
+K
+V
+e
+t
+V
+V
+V
+T
+T
+V
+T
+T
+V
+N
+N
+"}
+(20,1,1) = {"
+N
+K
+K
+w
+D
+H
+V
+o
+K
+T
+T
+T
+T
+T
+T
+N
+N
+"}
+(21,1,1) = {"
+N
+N
+N
+V
+Q
+W
+w
+f
+K
+K
+T
+T
+K
+K
+T
+N
+N
+"}
+(22,1,1) = {"
+N
+N
+N
+V
+w
+h
+V
+u
+K
+K
+T
+T
+K
+K
+V
+N
+N
+"}
+(23,1,1) = {"
+N
+N
+N
+V
+V
+V
+V
+V
+l
+V
+T
+V
+T
+K
+V
+N
+N
+"}
+(24,1,1) = {"
+N
+N
+N
+N
+N
+N
+N
+K
+K
+K
+T
+T
+T
+N
+N
+N
+N
+"}
+(25,1,1) = {"
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+N
+"}

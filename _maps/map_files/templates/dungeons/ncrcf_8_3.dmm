@@ -1,0 +1,762 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"b" = (
+/obj/structure/nest/mob/giantant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"c" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_containers/food/snacks/f13/canned/ncr/yaoguai_meatballs,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"d" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"g" = (
+/obj/item/storage/backpack/satchel/med{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/glass/bottle/morphine{
+	pixel_x = 11;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/hypospray/medipen/morphine{
+	pixel_y = -7;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/hypospray/medipen/morphine,
+/obj/item/reagent_containers/hypospray/medipen/morphine{
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"i" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"j" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.01;
+	pixel_y = -9;
+	pixel_x = 3
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"l" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"p" = (
+/obj/structure/nest/mob/giantant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"q" = (
+/obj/structure/nest/mob/aphid{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"r" = (
+/obj/structure/nest/mob/fireant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"t" = (
+/obj/structure/closet/crate/coffin/meatcoffin,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"u" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/pizzabox/meat,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"v" = (
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"w" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.01;
+	pixel_y = -9;
+	pixel_x = 3
+	},
+/obj/effect/decal/remains/human{
+	debris_result = list(/obj/item/clothing/suit/overalls);
+	drop_amount = 1;
+	pixel_y = -1;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"x" = (
+/obj/structure/nest/mob/giantant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"z" = (
+/obj/item/grown/log/tree{
+	icon_state = "timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15;
+	pixel_y = 13
+	},
+/obj/item/chair/wood/normal,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"A" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.01;
+	pixel_y = -9;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"B" = (
+/obj/item/grown/log/tree{
+	icon_state = "timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15;
+	pixel_y = 13
+	},
+/obj/item/grown/log/tree{
+	pixel_y = -8;
+	pixel_x = -4
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"C" = (
+/obj/structure/nest/mob/giantant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"D" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi'
+	},
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1;
+	pixel_y = 14;
+	pixel_x = 10
+	},
+/obj/item/grown/log/tree{
+	pixel_y = 12;
+	pixel_x = -3
+	},
+/obj/structure/flora/wasteplant/wild_fungus{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"F" = (
+/obj/structure/nest/mob/giantant{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"H" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"J" = (
+/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit,
+/obj/item/chair/wood,
+/obj/item/clothing/head/helmet/skull{
+	pixel_y = 17;
+	pixel_x = 5
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"K" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/nest/mob/fireant,
+/obj/item/storage/box/ingredients/carnivore,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"M" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"N" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15
+	},
+/obj/item/grown/log/tree{
+	icon_state = "timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15;
+	pixel_y = 13
+	},
+/obj/structure/flora/wasteplant/wild_fungus{
+	layer = 3
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"O" = (
+/obj/structure/nest/mob/aphid,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"R" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15
+	},
+/obj/structure/glowshroom,
+/obj/item/grown/log/tree{
+	icon_state = "timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15;
+	pixel_y = 13
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"U" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1
+	},
+/obj/item/grown/log/tree{
+	icon_state = "tree_timber";
+	icon = 'icons/fallout/flora/flora.dmi';
+	plane = -15;
+	pixel_y = 12
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/obj/structure/glowshroom{
+	layer = 3;
+	pixel_y = 4;
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"W" = (
+/obj/structure/nest/mob/giantant{
+	pixel_y = -13
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"X" = (
+/obj/item/grown/log/tree{
+	icon_state = "brushwood";
+	icon = 'icons/fallout/flora/flora.dmi';
+	pixel_y = null;
+	pixel_x = 2;
+	name = "wood rods"
+	},
+/obj/item/grown/log/tree{
+	icon_state = "brushwood";
+	icon = 'icons/fallout/flora/flora.dmi';
+	pixel_y = -3;
+	pixel_x = 13;
+	name = "wood rods"
+	},
+/obj/structure/flora/wasteplant/wild_fungus{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Z" = (
+/obj/item/grown/log/tree{
+	icon_state = "tree_log";
+	icon = 'icons/fallout/flora/flora.dmi';
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+M
+M
+M
+a
+a
+a
+a
+a
+H
+M
+a
+"}
+(3,1,1) = {"
+a
+M
+M
+M
+M
+a
+H
+H
+H
+H
+H
+H
+M
+"}
+(4,1,1) = {"
+a
+M
+M
+M
+M
+H
+H
+d
+d
+d
+H
+M
+M
+"}
+(5,1,1) = {"
+M
+M
+M
+a
+a
+a
+l
+l
+Y
+R
+Z
+M
+a
+"}
+(6,1,1) = {"
+M
+M
+a
+a
+J
+w
+p
+l
+q
+l
+X
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+j
+l
+l
+l
+l
+l
+z
+D
+a
+"}
+(8,1,1) = {"
+a
+a
+H
+H
+d
+l
+l
+l
+l
+b
+O
+N
+a
+"}
+(9,1,1) = {"
+a
+H
+d
+H
+H
+d
+l
+i
+l
+B
+U
+H
+H
+"}
+(10,1,1) = {"
+a
+l
+l
+d
+H
+H
+d
+A
+H
+H
+H
+H
+a
+"}
+(11,1,1) = {"
+v
+l
+l
+l
+d
+H
+H
+H
+H
+H
+M
+M
+a
+"}
+(12,1,1) = {"
+l
+l
+l
+l
+H
+H
+a
+a
+a
+a
+M
+M
+M
+"}
+(13,1,1) = {"
+l
+l
+l
+a
+M
+M
+a
+C
+l
+M
+M
+M
+M
+"}
+(14,1,1) = {"
+a
+l
+l
+a
+M
+M
+M
+a
+l
+M
+M
+M
+F
+"}
+(15,1,1) = {"
+a
+a
+l
+v
+a
+M
+M
+l
+l
+v
+a
+l
+l
+"}
+(16,1,1) = {"
+a
+l
+l
+l
+a
+a
+v
+l
+l
+l
+l
+l
+a
+"}
+(17,1,1) = {"
+v
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+a
+a
+"}
+(18,1,1) = {"
+a
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+v
+a
+"}
+(19,1,1) = {"
+M
+M
+a
+v
+l
+l
+a
+a
+a
+v
+l
+l
+a
+"}
+(20,1,1) = {"
+M
+M
+a
+M
+M
+M
+M
+F
+a
+a
+l
+l
+a
+"}
+(21,1,1) = {"
+O
+v
+l
+l
+l
+l
+a
+l
+l
+l
+l
+l
+a
+"}
+(22,1,1) = {"
+l
+W
+g
+M
+M
+l
+l
+l
+M
+M
+l
+l
+a
+"}
+(23,1,1) = {"
+d
+M
+a
+M
+M
+x
+M
+M
+M
+M
+l
+l
+a
+"}
+(24,1,1) = {"
+M
+M
+l
+c
+M
+a
+M
+M
+v
+l
+l
+l
+a
+"}
+(25,1,1) = {"
+K
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+a
+"}
+(26,1,1) = {"
+t
+l
+l
+u
+r
+l
+l
+l
+l
+v
+a
+a
+a
+"}

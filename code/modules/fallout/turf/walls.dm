@@ -166,7 +166,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 	//	disasemblable = 0
 	girder_type = 0
 	sheet_type = null
-	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall,)
+	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth, /turf/closed/wall/mineral/concrete/blastproof/storewall, /turf/closed/indestructible/f13/supermart, /obj/structure/falsewall/concrete, /turf/closed/indestructible/f13/vaultwall/notvaultwall, /turf/closed/indestructible/f13/vaultwall, /turf/closed/indestructible/f13/supermart)
 
 /turf/closed/wall/f13/tunnel
 	name = "utility tunnel wall"
@@ -315,7 +315,7 @@ turf/closed/wall/f13/wood/house/update_damage_overlay()
 
 /turf/closed/indestructible/f13/vaultwall/notvaultwall
 	name = "wall"
-	canSmoothWith = list(/turf/closed/indestructible/f13/vaultwall/notvaultwall)
+	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth, /turf/closed/wall/mineral/concrete/blastproof/storewall, /turf/closed/indestructible/f13/supermart, /obj/structure/falsewall/concrete, /turf/closed/indestructible/f13/vaultwall/notvaultwall, /turf/closed/indestructible/f13/vaultwall, /turf/closed/indestructible/f13/supermart)
 
 /turf/closed/indestructible/f13/supermart
 	name = "concrete wall"

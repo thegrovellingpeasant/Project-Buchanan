@@ -1,0 +1,1275 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/structure/barricade/bars,
+/obj/effect/decal/remains/cloth,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"am" = (
+/obj/machinery/shower{
+	dir = 4;
+	name = "decontamination arch"
+	},
+/obj/structure/decoration/vent/rusty,
+/obj/structure/nest/mob/raider/biker{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"av" = (
+/obj/structure/chair/f13chair2,
+/obj/structure/nest/mob/raider/baseball,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"aF" = (
+/obj/structure/closet/crate,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bJ" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"bS" = (
+/obj/effect/overlay/gravel/edge,
+/obj/structure/chair/wood/modern,
+/obj/structure/nest/mob/raider/boss,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"cI" = (
+/obj/structure/barricade/wooden,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"cM" = (
+/obj/structure/reagent_dispensers/barrel/two,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"dd" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eu" = (
+/obj/structure/barricade/bars,
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eC" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	pixel_x = -11;
+	pixel_y = 2
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"fN" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	layer = 2.91;
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"fU" = (
+/obj/structure/sink/greyscale{
+	dir = 4;
+	pixel_x = 13;
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gr" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	layer = 2.91;
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gB" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/obj/structure/nest/mob/raider/baseball{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"gO" = (
+/obj/structure/closet/crate/trashcart/moneywish,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hB" = (
+/obj/structure/table/reinforced,
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/effect/spawner/lootdrop/cig_packs,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"hX" = (
+/obj/structure/simple_door/wood,
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"iM" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/item/storage/box/drinkingglasses,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"iW" = (
+/obj/structure/chair/comfy{
+	dir = 1;
+	color = "#FF7100"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jg" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/structure/nest/mob/ghoulcozy{
+	name = "sleeping ghoul";
+	desc = "This feral beast seems to be rather docile best not to wake it.";
+	radius = 2;
+	pixel_y = 5;
+	pixel_x = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jy" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left"
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"jG" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"jY" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress1";
+	layer = 2.91;
+	pixel_y = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"kk" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/remains/cloth,
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"kN" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"kY" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"kZ" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"lm" = (
+/obj/structure/simple_door/metal/barred/lowerlayer,
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"lp" = (
+/obj/structure/table/wood,
+/obj/machinery/processor/chopping_block{
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"lt" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ne" = (
+/obj/structure/table/wood/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"nF" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbear1"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oO" = (
+/obj/structure/toilet{
+	pixel_y = 13
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"pj" = (
+/obj/structure/simple_door/metal/barred/lowerlayer,
+/obj/structure/decoration/rag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"py" = (
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"pL" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"pT" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/obj/structure/nest/mob/raider/baseball{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qB" = (
+/obj/structure/chair/bench{
+	icon_state = "bench_center"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rA" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"sA" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/effect/overlay/gravel/edge,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"sN" = (
+/obj/effect/decal/cleanable/blood/gibs/human,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbear1"
+	},
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"tc" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/remains/cloth,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"uh" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skulls";
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"uI" = (
+/obj/structure/table/wood,
+/obj/machinery/reagentgrinder,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vP" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"vQ" = (
+/obj/structure/bookcase,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vS" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress4"
+	},
+/obj/structure/nest/mob/ghoulcozy{
+	name = "sleeping ghoul";
+	desc = "This feral beast seems to be rather docile best not to wake it.";
+	radius = 2;
+	pixel_y = 5;
+	pixel_x = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wk" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wz" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/effect/spawner/lootdrop/food,
+/obj/effect/spawner/lootdrop/food,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wN" = (
+/obj/machinery/shower{
+	dir = 4;
+	name = "decontamination arch"
+	},
+/obj/structure/decoration/vent/rusty,
+/obj/structure/nest/mob/raider{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wW" = (
+/obj/structure/barricade/bars,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yg" = (
+/obj/structure/closet/crate/wicker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yx" = (
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yP" = (
+/obj/structure/decoration/rag,
+/turf/closed/wall/f13/wood{
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/caves)
+"zC" = (
+/obj/effect/decal/cleanable/blood/gibs/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zI" = (
+/obj/structure/barricade/bars,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zN" = (
+/obj/structure/junk/cabinet,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Bs" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/obj/effect/decal/cleanable/blood/gibs/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Bu" = (
+/obj/structure/table/wood/settler,
+/obj/item/melee/onehanded/slavewhip,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"BM" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Cs" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/innards,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Dc" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Dr" = (
+/obj/structure/closet/crate/leftfootlocker,
+/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Dx" = (
+/obj/structure/nest/mob/raider/sulphite,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"DP" = (
+/obj/structure/chair/folding{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"DV" = (
+/obj/structure/closet/crate/bin/trashbin,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"En" = (
+/obj/effect/decal/cleanable/blood/innards,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"FA" = (
+/obj/effect/overlay/gravel/edge,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"FE" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"FZ" = (
+/obj/structure/junk/small/bed,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/obj/structure/nest/mob/ghoulcozy{
+	name = "sleeping ghoul";
+	desc = "This feral beast seems to be rather docile best not to wake it.";
+	radius = 2;
+	pixel_y = 5;
+	pixel_x = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Gp" = (
+/obj/structure/table/wood/settler,
+/obj/item/twohanded/chainsaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hs" = (
+/obj/structure/table/wood/settler,
+/obj/item/kitchen/knife/butcher,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Hv" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
+	icon_state = "skulls";
+	name = "skulls"
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"HT" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ig" = (
+/obj/effect/decal/cleanable/blood/gibs/human/body,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ix" = (
+/obj/structure/bookcase,
+/obj/structure/bookcase,
+/obj/item/book/manual/civilcode,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Jz" = (
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"JD" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JG" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"KZ" = (
+/obj/structure/barricade/bars,
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Lr" = (
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
+	},
+/obj/structure/nest/mob/raider{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"LZ" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4;
+	name = "slope"
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"Mq" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"MP" = (
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"MU" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Nd" = (
+/obj/structure/reagent_dispensers/barrel/three,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Nv" = (
+/obj/machinery/grill,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"PG" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"PV" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbear1"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Qz" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"QA" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 10
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"RY" = (
+/obj/structure/fermenting_barrel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"SC" = (
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ty" = (
+/obj/structure/closet/crate/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"TJ" = (
+/obj/effect/decal/cleanable/blood/gibs/human,
+/obj/effect/decal/cleanable/blood/gibs/human/body,
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Up" = (
+/obj/structure/bookcase,
+/obj/item/storage/book/bible,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Uw" = (
+/obj/structure/barricade/wooden,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"UK" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/remains/cloth,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"UT" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"UW" = (
+/obj/structure/fermenting_barrel{
+	icon_state = "rainwater_tank";
+	name = "Empty Vat";
+	layer = 2.48;
+	plane = -6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ve" = (
+/obj/structure/table/wood/junk,
+/obj/effect/spawner/lootdrop/cig_packs,
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"VZ" = (
+/obj/item/reagent_containers/glass/bucket/plastic,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Wi" = (
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Wo" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WG" = (
+/obj/machinery/gibber,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"WL" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/floor/carpet/red,
+/area/f13/caves)
+"XF" = (
+/obj/structure/nest/mob/raider/sulphiteranged{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Yh" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/decoration/rag,
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"Zk" = (
+/obj/structure/simple_door/metal/barred/lowerlayer,
+/obj/structure/decoration/rag{
+	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
+	icon_state = "skulls";
+	name = "skulls"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZK" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 8;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZW" = (
+/obj/structure/simple_door/metal/barred/lowerlayer,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZZ" = (
+/obj/structure/bed/mattress{
+	layer = 2.91;
+	pixel_y = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+cI
+cI
+cI
+cI
+jG
+jG
+"}
+(2,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+cI
+rA
+am
+wN
+Mq
+jG
+jG
+"}
+(3,1,1) = {"
+jG
+py
+py
+py
+Mq
+cI
+cI
+py
+oO
+py
+HT
+bJ
+jG
+jG
+"}
+(4,1,1) = {"
+cI
+py
+Wo
+Wo
+zI
+FZ
+tc
+cI
+HT
+py
+Wo
+Mq
+jG
+jG
+"}
+(5,1,1) = {"
+Mq
+vS
+dd
+Wo
+eu
+PV
+Wo
+rA
+fU
+ZK
+Wo
+Mq
+jG
+jG
+"}
+(6,1,1) = {"
+bJ
+VZ
+Wo
+Wo
+zI
+MU
+Wo
+cI
+py
+pj
+cI
+cI
+jG
+jG
+"}
+(7,1,1) = {"
+UT
+zI
+zI
+pj
+wW
+Zk
+zI
+py
+wk
+Wo
+Nd
+cI
+jG
+jG
+"}
+(8,1,1) = {"
+cI
+JG
+Wo
+nF
+Wo
+Wo
+JG
+uh
+RY
+Wo
+Wo
+UT
+jG
+jG
+"}
+(9,1,1) = {"
+rA
+yx
+Dx
+Bs
+sN
+Wo
+Wo
+hX
+Wo
+Wo
+Wo
+tc
+jG
+jG
+"}
+(10,1,1) = {"
+Hv
+Bu
+Wo
+dd
+Wo
+Wo
+Gp
+yP
+py
+Wo
+JG
+cI
+jG
+jG
+"}
+(11,1,1) = {"
+tc
+zI
+zI
+ab
+zI
+Wo
+Hs
+bJ
+yg
+Wo
+fN
+cI
+jG
+jG
+"}
+(12,1,1) = {"
+cI
+JD
+Wo
+Wo
+ZW
+XF
+yx
+UK
+Wo
+Wo
+qB
+rA
+jG
+jG
+"}
+(13,1,1) = {"
+cI
+cI
+jg
+Wo
+zI
+JG
+py
+cI
+cM
+Wo
+qB
+Hv
+jG
+jG
+"}
+(14,1,1) = {"
+jG
+cI
+cI
+Uw
+cI
+Mq
+py
+UT
+DV
+Wo
+gr
+cI
+cI
+jG
+"}
+(15,1,1) = {"
+jG
+jG
+jG
+Mq
+cI
+Nd
+cM
+ZK
+Wo
+Wo
+Wo
+vQ
+tc
+jG
+"}
+(16,1,1) = {"
+jG
+jG
+jG
+rA
+wz
+Wo
+WL
+gB
+kZ
+vP
+Wo
+Ix
+UT
+jG
+"}
+(17,1,1) = {"
+jG
+jG
+jG
+py
+iM
+Wo
+bS
+Ve
+jy
+kY
+Wo
+Up
+cI
+jG
+"}
+(18,1,1) = {"
+jG
+jG
+jG
+kk
+Dc
+Wo
+FA
+PG
+py
+sA
+Wo
+iW
+yP
+jG
+"}
+(19,1,1) = {"
+jG
+jG
+jG
+uh
+kN
+Wo
+FA
+MP
+LZ
+Jz
+Wo
+JG
+Yh
+jG
+"}
+(20,1,1) = {"
+jG
+jG
+jG
+UT
+JG
+Wo
+QA
+MP
+av
+hB
+Wo
+yx
+yP
+jG
+"}
+(21,1,1) = {"
+jG
+jG
+jG
+cI
+ne
+Wo
+Wo
+QA
+jy
+DP
+Wo
+yx
+py
+jG
+"}
+(22,1,1) = {"
+jG
+jG
+jG
+py
+py
+gO
+Wo
+JG
+Wo
+Wo
+Wo
+yx
+tc
+jG
+"}
+(23,1,1) = {"
+jG
+jG
+cI
+py
+pL
+Hv
+hX
+cI
+KZ
+lm
+Mq
+cI
+cI
+jG
+"}
+(24,1,1) = {"
+jG
+cI
+tc
+JG
+Wo
+Wo
+Wo
+py
+Wo
+Wo
+Mq
+jG
+jG
+jG
+"}
+(25,1,1) = {"
+jG
+cI
+lt
+zC
+lp
+uI
+SC
+rA
+Wo
+Wo
+UT
+jG
+jG
+jG
+"}
+(26,1,1) = {"
+jG
+rA
+WG
+Qz
+Wo
+Lr
+zC
+cI
+Dr
+Wo
+cI
+py
+py
+jG
+"}
+(27,1,1) = {"
+jG
+cI
+Cs
+Ig
+TJ
+Wo
+Nv
+eC
+jY
+Wo
+ZZ
+lt
+Hv
+cI
+"}
+(28,1,1) = {"
+jG
+UT
+FE
+Wi
+En
+BM
+DV
+UT
+zN
+Wo
+Wo
+Wo
+ZZ
+cI
+"}
+(29,1,1) = {"
+jG
+cI
+cI
+UW
+fU
+Ty
+rA
+py
+JG
+Wo
+Wo
+aF
+cM
+UT
+"}
+(30,1,1) = {"
+jG
+jG
+cI
+cI
+Hv
+yP
+py
+py
+tc
+ZZ
+pT
+jY
+cI
+cI
+"}
+(31,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+cI
+py
+py
+py
+py
+jG
+"}
+(32,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+"}
+(33,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+"}
+(34,1,1) = {"
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+jG
+"}

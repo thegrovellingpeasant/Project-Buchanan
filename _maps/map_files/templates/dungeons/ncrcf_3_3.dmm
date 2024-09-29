@@ -1,0 +1,674 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"b" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"g" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"h" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 3;
+	layer = 4.29;
+	pixel_x = 11
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"j" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"l" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = -1;
+	layer = 4.3
+	},
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	pixel_x = 17;
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"o" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = -1;
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"r" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"s" = (
+/obj/structure/glowshroom/glowcap,
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = 5
+	},
+/obj/structure/flora/wasteplant/wild_fungus{
+	pixel_x = -4
+	},
+/obj/structure/glowshroom{
+	pixel_y = 2;
+	pixel_x = -3
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"t" = (
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"u" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = 10
+	},
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"v" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = 10
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"w" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"x" = (
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"y" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/obj/structure/glowshroom{
+	pixel_y = 2;
+	pixel_x = -3
+	},
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"z" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = 10
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"B" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = 10
+	},
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"E" = (
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"F" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"H" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva";
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"I" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"J" = (
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"K" = (
+/obj/structure/nest/mob/giantant{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"M" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 4;
+	layer = 4.29;
+	pixel_x = -14
+	},
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"N" = (
+/obj/structure/nest/mob/fireant{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"O" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = -1;
+	layer = 4.3
+	},
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"P" = (
+/obj/structure/nest/mob/fireant,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Q" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"S" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_x = -4;
+	layer = 4.27
+	},
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 4;
+	layer = 4.29;
+	pixel_x = -14
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"T" = (
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"U" = (
+/obj/structure/nest/mob/giantant{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel";
+	icon = 'icons/turf/floors/junglechasm.dmi';
+	icon_state = "smooth"
+	},
+/area/f13/caves)
+"V" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = -1;
+	layer = 4.3
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"W" = (
+/obj/structure/glowshroom/glowcap,
+/obj/structure/glowshroom{
+	pixel_y = 2;
+	pixel_x = -3
+	},
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva";
+	pixel_y = 12
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/indestructible/ground/inside/subway{
+	name = "ant tunnel"
+	},
+/area/f13/caves)
+"Y" = (
+/obj/structure/simple_door/tentflap_cloth{
+	pixel_y = -4
+	},
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15;
+	pixel_x = 16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Z" = (
+/obj/structure/simple_door/tentflap_cloth{
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+I
+I
+I
+w
+w
+I
+I
+I
+I
+a
+a
+a
+w
+w
+I
+I
+I
+I
+w
+w
+w
+I
+I
+I
+I
+I
+I
+I
+t
+K
+I
+I
+I
+I
+I
+w
+w
+w
+w
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+g
+T
+w
+w
+w
+g
+I
+I
+a
+a
+g
+a
+w
+w
+I
+I
+I
+w
+w
+w
+w
+w
+I
+g
+I
+I
+I
+t
+t
+I
+I
+I
+g
+w
+w
+w
+w
+w
+a
+a
+r
+r
+a
+"}
+(3,1,1) = {"
+T
+w
+w
+w
+I
+I
+I
+m
+x
+J
+F
+w
+w
+I
+I
+g
+w
+w
+w
+w
+w
+m
+Y
+u
+M
+l
+x
+x
+x
+x
+u
+M
+O
+w
+w
+Q
+h
+Q
+I
+s
+t
+t
+r
+"}
+(4,1,1) = {"
+w
+w
+w
+I
+I
+I
+w
+w
+w
+j
+w
+w
+I
+I
+I
+w
+w
+w
+w
+w
+w
+w
+Z
+Q
+h
+Q
+w
+w
+w
+w
+w
+w
+w
+w
+w
+B
+I
+V
+I
+P
+t
+y
+t
+"}
+(5,1,1) = {"
+g
+w
+w
+w
+w
+w
+w
+g
+a
+g
+w
+w
+z
+S
+o
+w
+Q
+h
+Q
+w
+w
+w
+E
+B
+I
+V
+w
+w
+w
+w
+w
+w
+w
+w
+w
+t
+t
+t
+t
+H
+t
+t
+W
+"}
+(6,1,1) = {"
+I
+I
+T
+w
+w
+w
+I
+I
+a
+a
+a
+I
+I
+w
+w
+w
+v
+g
+V
+w
+w
+w
+I
+I
+I
+t
+t
+I
+I
+I
+I
+t
+I
+I
+I
+I
+b
+t
+a
+r
+N
+r
+a
+"}
+(7,1,1) = {"
+I
+I
+g
+w
+w
+g
+I
+I
+I
+a
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+U
+t
+I
+I
+I
+I
+I
+t
+U
+I
+I
+I
+I
+a
+a
+a
+a
+a
+I
+"}

@@ -1,0 +1,342 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/weather/dirt{
+	layer = 2.61;
+	plane = -4;
+	pixel_y = -1
+	},
+/turf/open/water,
+/area/f13/caves)
+"i" = (
+/obj/effect/turf_decal/weather/dirt{
+	layer = 2.61;
+	plane = -4;
+	pixel_y = -1
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water,
+/area/f13/caves)
+"j" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/caves)
+"p" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck,
+/turf/open/water,
+/area/f13/caves)
+"q" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/water,
+/area/f13/caves)
+"r" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"t" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439;
+	pixel_y = 3
+	},
+/turf/open/water,
+/area/f13/caves)
+"w" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water,
+/area/f13/caves)
+"x" = (
+/obj/structure/flora/rock/pile/largejungle,
+/obj/item/reagent_containers/food/drinks/trophy,
+/turf/open/water,
+/area/f13/caves)
+"y" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"z" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water,
+/area/f13/caves)
+"E" = (
+/obj/effect/turf_decal/weather/dirt{
+	layer = 2.61;
+	plane = -4;
+	pixel_y = -1
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water,
+/area/f13/caves)
+"F" = (
+/obj/structure/glowshroom,
+/turf/open/water,
+/area/f13/caves)
+"J" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"N" = (
+/turf/open/water,
+/area/f13/caves)
+"Q" = (
+/obj/structure/nest/spawner/mirelurk/huntermuck,
+/turf/open/water,
+/area/f13/caves)
+"T" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/structure/mirelurkegg,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+r
+r
+r
+z
+z
+z
+r
+r
+r
+r
+r
+r
+r
+"}
+(2,1,1) = {"
+r
+r
+r
+z
+z
+T
+z
+z
+z
+z
+r
+r
+r
+"}
+(3,1,1) = {"
+r
+r
+q
+D
+D
+z
+V
+i
+z
+z
+r
+r
+y
+"}
+(4,1,1) = {"
+r
+z
+t
+N
+F
+D
+D
+E
+z
+r
+r
+r
+y
+"}
+(5,1,1) = {"
+r
+z
+t
+Q
+N
+N
+Q
+a
+z
+r
+r
+r
+r
+"}
+(6,1,1) = {"
+r
+J
+t
+N
+N
+N
+N
+a
+z
+z
+r
+r
+r
+"}
+(7,1,1) = {"
+r
+z
+t
+F
+N
+x
+N
+a
+z
+z
+r
+r
+y
+"}
+(8,1,1) = {"
+r
+z
+t
+N
+N
+N
+N
+w
+z
+T
+r
+y
+y
+"}
+(9,1,1) = {"
+r
+r
+N
+q
+F
+p
+a
+V
+z
+z
+r
+r
+y
+"}
+(10,1,1) = {"
+r
+r
+j
+j
+j
+j
+w
+z
+z
+z
+r
+r
+r
+"}
+(11,1,1) = {"
+r
+r
+z
+z
+z
+T
+z
+z
+z
+r
+r
+r
+r
+"}
+(12,1,1) = {"
+r
+r
+z
+z
+r
+z
+z
+r
+r
+r
+r
+r
+r
+"}
+(13,1,1) = {"
+r
+r
+r
+z
+r
+r
+z
+r
+r
+r
+r
+r
+r
+"}
+(14,1,1) = {"
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+"}
+(15,1,1) = {"
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+"}
+(16,1,1) = {"
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+r
+"}

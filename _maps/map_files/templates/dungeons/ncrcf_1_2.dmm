@@ -1,0 +1,4397 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aA" = (
+/obj/structure/junk/small/bed,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"aH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/road/horizontaltopborder{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"aI" = (
+/obj/structure/barricade/tentleathercorner{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"aK" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/tunnel)
+"aO" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 4;
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"aW" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"aZ" = (
+/obj/effect/overlay/gravel/edge,
+/turf/open/water,
+/area/f13/tunnel)
+"bc" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded"
+	},
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/tunnel)
+"bE" = (
+/obj/effect/overlay/gravel/edge{
+	pixel_y = 3
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"bG" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"bK" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"bQ" = (
+/obj/effect/decal/cleanable/oil/slippery{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "brahminshit";
+	name = "brahmin shit";
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"bR" = (
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"bT" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"bW" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 8;
+	pixel_x = -7
+	},
+/obj/structure/car/rubbish7{
+	dir = 1;
+	layer = 4.08
+	},
+/obj/structure/wreck/trash/bus_door,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ce" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 4;
+	pixel_x = -7
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"cg" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"ch" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	icon_state = "innercornerpieceright";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"cq" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/indestructible/ground/outside/road/horizontaltopborder{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ct" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"cx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"cy" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 8;
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"cz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"cF" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"cI" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/bottom/dark,
+/area/f13/tunnel)
+"cO" = (
+/obj/effect/decal/marking,
+/obj/structure/wreck/trash/secway,
+/obj/structure/wreck/trash/bus_door,
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"df" = (
+/obj/structure/sign/poster/prewar/rxcola3,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"dh" = (
+/obj/structure/barricade/tentleathercorner{
+	opacity = 0;
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ds" = (
+/obj/effect/decal/marking,
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"dK" = (
+/obj/structure/wreck/trash/machinepile,
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jetrocks";
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"dN" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"dO" = (
+/obj/structure/car/rubbish1,
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"dU" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/closed/wall/f13/tunnel,
+/area/f13/reno_building)
+"dW" = (
+/obj/structure/table/wood/greyscale/varnished,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ee" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"eh" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"ej" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy/dark,
+/area/f13/tunnel)
+"en" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 10
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"ev" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 1;
+	pixel_y = -7
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ex" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"eA" = (
+/obj/effect/decal/marking,
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"eR" = (
+/obj/structure/simple_door/tentflap_cloth,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"eU" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"fc" = (
+/turf/closed/wall/f13/tunnel,
+/area/f13/reno_building)
+"fD" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"fJ" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"fO" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"gc" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"gg" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"gh" = (
+/obj/structure/car/rubbish2,
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"gk" = (
+/obj/structure/wreck/trash/two_tire,
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"gC" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/wreck/trash/secway,
+/turf/open/water,
+/area/f13/tunnel)
+"gJ" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"gP" = (
+/obj/item/chair/stool/retro/tan,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"hc" = (
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"hj" = (
+/obj/structure/junk/small/disco,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"hn" = (
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"hw" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 4;
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"hL" = (
+/obj/effect/decal/marking,
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"hT" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ia" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"ic" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ij" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"iv" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"iF" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"iK" = (
+/obj/structure/table,
+/obj/item/trash/plate{
+	pixel_y = 5
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"iR" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"iW" = (
+/obj/structure/debris/v1,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"jb" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"jh" = (
+/turf/open/indestructible/ground/outside/road/damagedhor/heavy{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"jJ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"jK" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"jN" = (
+/obj/structure/simple_door/house,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"jV" = (
+/obj/effect/overlay/gravel/edge{
+	pixel_y = 3
+	},
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"kp" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"ks" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horheavy,
+/area/f13/tunnel)
+"kE" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"kG" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"kL" = (
+/obj/machinery/jukebox,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"kN" = (
+/obj/structure/sign/warning/nosmoking/circle,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/tunnel)
+"kO" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"kT" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"kU" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"kW" = (
+/obj/structure/window/fulltile/store{
+	layer = 3.1
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"kZ" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 8;
+	pixel_x = -7
+	},
+/obj/structure/chair/stool{
+	dir = 8;
+	icon_state = "bench"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lo" = (
+/obj/structure/junk/small/table,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"lp" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/wreck/trash/four_barrels,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lt" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ly" = (
+/obj/effect/decal/marking,
+/obj/structure/junk/small/tv{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lD" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lM" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"lN" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleatheredge{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lR" = (
+/obj/effect/decal/fakelattice,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/tunnel)
+"lU" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"lV" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "toohard";
+	pixel_y = 32
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"ma" = (
+/obj/machinery/light{
+	dir = 1;
+	layer = 4.19
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"mc" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"mi" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/right/dark,
+/area/f13/tunnel)
+"ml" = (
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"mN" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"mO" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"mS" = (
+/obj/effect/decal/marking,
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"nf" = (
+/obj/structure/table,
+/obj/item/trash/plate,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"nh" = (
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/water,
+/area/f13/tunnel)
+"ns" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2;
+	pixel_x = 2
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/reno_building)
+"nu" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"nw" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 1;
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"nA" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"nB" = (
+/obj/structure/wreck/trash/two_tire,
+/obj/structure/wreck/trash/bus_door,
+/turf/open/water,
+/area/f13/tunnel)
+"nM" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/barricade/tentleatheredge{
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"nV" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	pixel_x = -2;
+	dir = 8
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"nZ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"od" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/bottom,
+/area/f13/tunnel)
+"os" = (
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"ow" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"oA" = (
+/obj/structure/wreck/car/bike{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"oC" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowleft"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"oJ" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/dark,
+/area/f13/tunnel)
+"oN" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"oS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/wreck/car/bike{
+	pixel_x = -23;
+	bound_width = 32
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"oV" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"po" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"pE" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"pF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"pU" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"qc" = (
+/obj/effect/overlay/gravel/edge{
+	pixel_y = 3
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/simple_door/metal/ventilation,
+/turf/open/water,
+/area/f13/reno_building)
+"qg" = (
+/obj/structure/barricade/tentleathercorner,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"qm" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleatheredge{
+	dir = 4;
+	pixel_x = 5
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"qt" = (
+/obj/structure/chair/stool{
+	dir = 4;
+	icon_state = "bench"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"qB" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 6
+	},
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"qC" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"qY" = (
+/obj/effect/overlay/gravel/edge{
+	pixel_y = 3
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 10
+	},
+/turf/open/water,
+/area/f13/reno_building)
+"rj" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/reno_building)
+"ro" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"rr" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"rt" = (
+/obj/structure/car/rubbish2,
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ru" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 4;
+	layer = 4.28;
+	opacity = 0
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"rz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"rZ" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 1;
+	pixel_y = -7
+	},
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"si" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"sl" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"sn" = (
+/obj/structure/table/wood/crate,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/reno_building)
+"sp" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 4;
+	pixel_x = -7
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/simple_door/tentflap_leather{
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"sw" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 8;
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"sA" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/right{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"sG" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"sY" = (
+/obj/effect/overlay/gravel/edge{
+	pixel_y = 3
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"tb" = (
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"to" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"tq" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"tw" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/machinery/light/broken{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"tx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"tE" = (
+/obj/structure/wreck/trash/one_tire,
+/obj/structure/wreck/trash/autoshaft,
+/obj/structure/wreck/trash/engine{
+	pixel_x = 13
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"tF" = (
+/obj/structure/debris/v1,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"tH" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"tM" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/wreck/trash/halftire,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"tY" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"up" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"ut" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"uu" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"uv" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/right{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"uB" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"uG" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"uJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/chair/stool,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"uR" = (
+/obj/structure/cargocrate,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"uY" = (
+/turf/open/water,
+/area/f13/tunnel)
+"va" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2;
+	pixel_x = 2
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/reno_building)
+"vh" = (
+/obj/structure/barricade/tentleatheredge{
+	dir = 1;
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"vo" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 1
+	},
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"vL" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "fly";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"vP" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"vR" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"vT" = (
+/obj/structure/wreck/trash/four_barrels,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"wk" = (
+/obj/structure/wreck/trash/halftire,
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"wv" = (
+/obj/machinery/door/unpowered/employeedoor,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"wK" = (
+/obj/structure/car/rubbish3,
+/turf/open/water,
+/area/f13/tunnel)
+"wL" = (
+/obj/structure/barricade/tentclothedge{
+	opacity = 0;
+	density = 0;
+	icon_state = "morecloth_edge";
+	layer = 5.01;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"wN" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/heavy{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"wR" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 7;
+	pixel_x = -21
+	},
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/right/dark,
+/area/f13/tunnel)
+"wU" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_building)
+"wY" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xg" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xh" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"xm" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "bishop3";
+	pixel_y = -32
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"xr" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/computer/terminal,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/reno_building)
+"xs" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/right/dark,
+/area/f13/tunnel)
+"xt" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xy" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xG" = (
+/obj/structure/wreck/trash/secway,
+/obj/structure/wreck/trash/autoshaft,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xL" = (
+/obj/effect/decal/marking,
+/obj/structure/wreck/trash/bus_door,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xT" = (
+/obj/structure/cargocrate,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"xW" = (
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/tunnel)
+"yh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ym" = (
+/obj/structure/table/wood/junk,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"yI" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 5
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"yM" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"yN" = (
+/obj/structure/barricade/tentleatheredge{
+	name = "hide tent";
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"yS" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"yX" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ze" = (
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"zm" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"zo" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"zr" = (
+/obj/structure/barricade/tentclothcorner{
+	opacity = 0;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"zU" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"zW" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"zX" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ad" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 1;
+	pixel_y = -7
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Aj" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/structure/junk/small/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ar" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"As" = (
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"AD" = (
+/obj/structure/car/rubbish2,
+/obj/structure/wreck/trash/five_tires,
+/turf/open/water,
+/area/f13/tunnel)
+"AG" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"AN" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ba" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/wreck/trash/one_tire,
+/obj/item/crowbar,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Bc" = (
+/obj/effect/decal/marking,
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Bh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Bm" = (
+/obj/effect/decal/fakelattice,
+/obj/item/storage/trash_stack,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Bt" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/structure/wreck/trash/four_barrels,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Bu" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowright"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"By" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"BC" = (
+/obj/structure/wreck/bus/rusted,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"BH" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/reno_building)
+"BN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"BQ" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"BW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"Cm" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Cn" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/bottom/dark,
+/area/f13/tunnel)
+"CA" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/reno_building)
+"CC" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"CD" = (
+/obj/effect/decal/marking,
+/obj/structure/wreck/trash/engine{
+	pixel_x = 13
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"CE" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"CM" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/item/chair/stool/retro/black,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"De" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"DG" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/reno_building)
+"DI" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"DZ" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 1;
+	pixel_y = -7
+	},
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Eb" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/machinery/light,
+/turf/open/water,
+/area/f13/tunnel)
+"Ef" = (
+/obj/structure/wreck/trash/bus_door,
+/turf/open/water,
+/area/f13/tunnel)
+"Ep" = (
+/obj/structure/wreck/car/bike{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Er" = (
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ex" = (
+/obj/structure/decoration/vent/rusty,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"EG" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"EP" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"EV" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 4;
+	icon_state = "outerbordercorner";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"EW" = (
+/obj/effect/decal/cleanable/oil/slippery{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "brahminshit";
+	name = "shit"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Fa" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Fg" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"FO" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"FS" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/obj/effect/decal/remains/human{
+	layer = 2.11;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/pizzabox);
+	icon_state = "trash_pile2";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 12
+	},
+/obj/machinery/light/broken{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"FU" = (
+/obj/structure/wreck/trash/engine{
+	pixel_x = 13
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"FX" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"FZ" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Gc" = (
+/obj/machinery/light,
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"Gl" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	icon_state = "innercornerpieceleft";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"GL" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Hc" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"Hd" = (
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/pizzabox);
+	icon_state = "trash_pile2";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile"
+	},
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 7;
+	pixel_x = -21
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Hh" = (
+/obj/structure/sign/poster/prewar/vault_tec,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"HF" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/armor/tier2,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"HH" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/structure/barricade/tentleatheredge,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"If" = (
+/obj/structure/barricade/tentclothedge{
+	dir = 8;
+	opacity = 0;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"In" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2;
+	pixel_x = 2
+	},
+/turf/open/water,
+/area/f13/reno_building)
+"Is" = (
+/obj/structure/wreck/trash/brokenvendor,
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "fuk";
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"IC" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"JG" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "outerbordercorner";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ka" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ke" = (
+/obj/effect/decal/marking,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/tunnel)
+"Ks" = (
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"KD" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 1;
+	opacity = 0
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"KH" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"KP" = (
+/obj/effect/decal/fakelattice,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"KY" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleatheredge{
+	dir = 4;
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"La" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Lq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Lw" = (
+/obj/structure/junk/small/table,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"Lz" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"LF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"LN" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "fly";
+	pixel_y = 32
+	},
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"LW" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Me" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Mg" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"My" = (
+/obj/structure/barricade/tentleatheredge{
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Mz" = (
+/obj/effect/decal/remains/human{
+	layer = 2.11;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/pizzabox);
+	icon_state = "trash_pile2";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 12
+	},
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"MF" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleathercorner{
+	dir = 4;
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"MG" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0;
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"MJ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horright,
+/area/f13/tunnel)
+"MV" = (
+/obj/structure/wreck/trash/two_barrels,
+/turf/open/water,
+/area/f13/tunnel)
+"Nb" = (
+/obj/machinery/light,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Nn" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Nu" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"Nx" = (
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/tunnel)
+"Ny" = (
+/obj/effect/decal/marking,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Nz" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/tunnel)
+"Ob" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"Ok" = (
+/obj/structure/car/rubbish7{
+	layer = 4.08
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ol" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Om" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/obj/structure/wreck/trash/two_tire,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ov" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"Ox" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/top{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"OX" = (
+/obj/effect/decal/cleanable/oil/slippery{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "brahminshit";
+	name = "brahmin shit";
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Pb" = (
+/obj/machinery/light,
+/turf/open/indestructible/ground/outside/road/damagedhor/right{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Pe" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "outerturn";
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Pi" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top,
+/area/f13/tunnel)
+"Px" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/cleanable/oil,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"PC" = (
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/tunnel)
+"PD" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"PP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/barricade/tentleatheredge{
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"PS" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"PV" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 14;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Qd" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Qg" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/effect/decal/marking,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Qh" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Qw" = (
+/turf/open/indestructible/ground/outside/sidewalk/right/dark,
+/area/f13/tunnel)
+"QA" = (
+/obj/structure/bonfire,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"QI" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"QP" = (
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"QR" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Rj" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"Rn" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Rq" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/marking{
+	icon_state = "dottedhorizontalcorroded";
+	pixel_y = 20
+	},
+/obj/structure/barricade/tentleatheredge,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Rt" = (
+/obj/structure/car/rubbish7{
+	dir = 1;
+	layer = 4.08
+	},
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Rx" = (
+/obj/structure/car/rubbish7{
+	layer = 4.08
+	},
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"RC" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"RH" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"RN" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jet4";
+	pixel_x = 32
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"RO" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"RR" = (
+/obj/structure/barricade/tentclothcorner,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Sc" = (
+/turf/open/indestructible/ground/outside/road/horizontaltopborder{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Sj" = (
+/obj/structure/wreck/trash/one_barrel,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Sk" = (
+/obj/structure/wreck/trash/engine{
+	pixel_y = 10
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "killers";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"Sp" = (
+/obj/structure/simple_door/metal/ventilation,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"Su" = (
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -4
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "bishop3";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Sv" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/tunnel)
+"SD" = (
+/obj/effect/decal/fakelattice,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"SH" = (
+/obj/effect/decal/marking,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4;
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"SQ" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ST" = (
+/obj/structure/wreck/trash/autoshaft,
+/turf/open/indestructible/ground/outside/sidewalk/bottom,
+/area/f13/tunnel)
+"Th" = (
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Tk" = (
+/obj/effect/decal/marking,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/heavy{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Tt" = (
+/obj/structure/barricade/tentclothedge{
+	dir = 4;
+	opacity = 0;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Tx" = (
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ty" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"TB" = (
+/obj/effect/overlay/gravel/edge,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/right{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"TG" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"TP" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"TV" = (
+/obj/effect/decal/fakelattice,
+/obj/effect/decal/fakelattice,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Us" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/severe{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Ux" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 4;
+	pixel_x = -7
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Uy" = (
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"UQ" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"UV" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"UX" = (
+/obj/effect/decal/cleanable/oil/slippery{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "brahminshit";
+	name = "brahmin shit";
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Vd" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Vg" = (
+/obj/structure/sign/poster/prewar/protectron,
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "basement wall";
+	baseturfs = /turf/open/indestructible/ground/inside/mountain
+	},
+/area/f13/reno_building)
+"Vs" = (
+/obj/structure/barricade/tentleathercorner{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"VK" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"VT" = (
+/obj/structure/wreck/trash/one_tire,
+/obj/structure/wreck/trash/autoshaft,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"VW" = (
+/obj/effect/overlay/gravel/edge,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor/left{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"VY" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "mrjarvis";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Wc" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"We" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/bottom/dark,
+/area/f13/tunnel)
+"Wj" = (
+/obj/structure/wreck/trash/bus_door,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Wp" = (
+/obj/effect/decal/marking,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/junk/small/bed,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Wu" = (
+/obj/structure/junk/small/tv{
+	pixel_y = 5
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"Wv" = (
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"WP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/table/wood/junk,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/tunnel)
+"Xc" = (
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Xd" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/reno_building)
+"Xf" = (
+/turf/open/indestructible/ground/outside/road/damagedhor/right{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Xn" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"XE" = (
+/obj/effect/decal/marking,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"XJ" = (
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"XW" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	dir = 1
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"Yp" = (
+/obj/structure/chair/sofa/left{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/tunnel)
+"Yt" = (
+/obj/structure/junk/small/tv{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"YN" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"YO" = (
+/obj/effect/decal/marking,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Zh" = (
+/obj/effect/turf_decal/arrows/white{
+	dir = 8;
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/road/damagedhor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Zj" = (
+/obj/item/clothing/suit/armor/f13/plates,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/reno_building)
+"Zl" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_y = -2
+	},
+/turf/open/water,
+/area/f13/tunnel)
+"Zq" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/reno_building)
+"Zr" = (
+/obj/effect/decal/fakelattice,
+/obj/structure/cargocrate,
+/turf/open/indestructible/ground/outside/ruins{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"Zs" = (
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/tunnel)
+"Zx" = (
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/indestructible/ground/outside/road/vert{
+	sunlight_state = 0
+	},
+/area/f13/reno_building)
+"ZE" = (
+/obj/effect/decal/marking,
+/obj/structure/barricade/tentleathercorner{
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ZG" = (
+/obj/structure/simple_door/tentflap_leather{
+	pixel_x = 4
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ZK" = (
+/obj/effect/decal/marking,
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road/hor{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+"ZL" = (
+/obj/machinery/door/unpowered/employeedoor,
+/turf/open/floor/f13{
+	icon_state = "neutralrustychess"
+	},
+/area/f13/reno_building)
+"ZN" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6";
+	pixel_x = -28
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/top{
+	sunlight_state = 0
+	},
+/area/f13/tunnel)
+
+(1,1,1) = {"
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Fg
+uu
+Fg
+Fg
+Fg
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+"}
+(2,1,1) = {"
+Ar
+fc
+De
+De
+fc
+De
+fc
+hn
+hn
+CA
+CA
+hn
+CA
+De
+hn
+wv
+hn
+CA
+CA
+hn
+hn
+CA
+CA
+CA
+hn
+CA
+hn
+CA
+hn
+hn
+Ar
+Ar
+"}
+(3,1,1) = {"
+Ar
+fc
+Wv
+Wv
+Zq
+FO
+Wv
+Sp
+Zs
+oA
+Zs
+oJ
+We
+oJ
+ej
+Cn
+uR
+qB
+uB
+Zs
+Zs
+hn
+kU
+De
+CE
+eU
+gg
+De
+lo
+hn
+Ar
+Ar
+"}
+(4,1,1) = {"
+Ar
+fc
+wU
+dU
+Zq
+fc
+fc
+hn
+Sk
+Zs
+ZN
+cI
+Zs
+oN
+cx
+Zs
+Zs
+uR
+Zs
+Ox
+Cn
+ZL
+Uy
+CE
+CE
+De
+Uy
+Uy
+Uy
+hn
+Ar
+Ar
+"}
+(5,1,1) = {"
+Ar
+fc
+Zq
+CA
+hn
+hn
+hn
+hn
+PC
+hc
+hc
+kp
+EV
+Ty
+Zs
+mc
+JG
+hc
+hc
+hc
+kO
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+jN
+CA
+Ar
+Ar
+"}
+(6,1,1) = {"
+Ar
+De
+Wv
+CA
+XJ
+Rt
+Vd
+xy
+DZ
+Xc
+ij
+Xc
+ST
+BW
+Sv
+ia
+xW
+Sc
+Th
+Lq
+ev
+Ks
+dO
+Ks
+gh
+hn
+dK
+Lw
+Uy
+CA
+Ar
+Ar
+"}
+(7,1,1) = {"
+Ar
+fc
+Wv
+hn
+VY
+XJ
+XJ
+La
+ev
+zm
+KP
+cz
+od
+MJ
+ks
+QI
+aK
+cq
+uv
+Xn
+ev
+Ks
+Ks
+FX
+Ks
+hn
+IC
+CE
+Uy
+CA
+Ar
+Ar
+"}
+(8,1,1) = {"
+Ar
+fc
+pU
+hn
+XJ
+Rx
+xy
+XJ
+rZ
+Xc
+rz
+KP
+KP
+bK
+Yp
+Hc
+xW
+Sc
+Me
+bT
+Ad
+Ks
+Ks
+xh
+Zx
+hn
+FS
+Uy
+Mz
+CA
+Ar
+Ar
+"}
+(9,1,1) = {"
+Ar
+fc
+FO
+CA
+Nx
+Nz
+Nz
+kN
+Qd
+oV
+lt
+KP
+bR
+KP
+WP
+fJ
+Pi
+aH
+KP
+yM
+EW
+hn
+LN
+hn
+hn
+Vg
+vo
+De
+De
+CA
+Ar
+Ar
+"}
+(10,1,1) = {"
+Ar
+fc
+iF
+CA
+sl
+wk
+Th
+Th
+Wj
+vP
+KP
+KP
+bR
+Wc
+Sv
+EP
+KP
+bR
+KP
+bR
+cz
+Xc
+Xc
+tE
+vT
+hn
+Uy
+As
+Uy
+CA
+Ar
+Ar
+"}
+(11,1,1) = {"
+Ar
+fc
+iF
+hn
+KD
+Tt
+Tt
+Tt
+ru
+Xc
+uJ
+pF
+hw
+hc
+jJ
+mO
+Pe
+KP
+dh
+nM
+nM
+PP
+My
+Vs
+Sj
+hn
+hn
+df
+jN
+hn
+Ar
+Ar
+"}
+(12,1,1) = {"
+Ar
+De
+Zq
+Ex
+fO
+ly
+zX
+XE
+eR
+OX
+qt
+QA
+Qg
+Lq
+XE
+ZK
+CD
+Bh
+MG
+ow
+ym
+Wp
+Px
+vR
+XE
+hn
+tF
+os
+De
+hn
+Ar
+Ar
+"}
+(13,1,1) = {"
+Ar
+De
+DG
+hn
+Su
+GL
+dW
+HF
+wL
+Zh
+kZ
+Xc
+iR
+Tx
+tq
+cF
+Xc
+YN
+sp
+Ux
+tY
+Xc
+GL
+Ol
+bT
+Hh
+Uy
+nf
+De
+tb
+Ar
+Ar
+"}
+(14,1,1) = {"
+Ar
+iW
+wU
+hn
+zr
+If
+If
+If
+RR
+ze
+yX
+to
+FZ
+Xf
+Xn
+sA
+rr
+YN
+aI
+yN
+yN
+yN
+yN
+qg
+Xn
+oC
+Uy
+zW
+Uy
+tb
+Ar
+Ar
+"}
+(15,1,1) = {"
+Ar
+fc
+Wv
+CA
+cO
+hL
+XE
+Ke
+vL
+VT
+yX
+Nb
+bc
+KY
+qm
+MF
+Ke
+lU
+xg
+nw
+kT
+Ke
+xL
+XE
+XE
+kW
+po
+os
+CE
+CA
+Ar
+Ar
+"}
+(16,1,1) = {"
+Ar
+fc
+wU
+CA
+Xc
+dN
+to
+Me
+Me
+Me
+BC
+Xc
+HH
+jb
+PS
+vh
+Sj
+RO
+uG
+Qh
+UV
+yS
+aW
+FU
+Tx
+Bu
+po
+po
+Ob
+tb
+Ar
+Ar
+"}
+(17,1,1) = {"
+Ar
+fc
+bQ
+CA
+ma
+Xc
+DI
+bR
+KP
+KP
+cz
+Xc
+HH
+GL
+Xc
+ZG
+Ba
+gc
+nV
+yI
+VW
+Xc
+jK
+Ep
+Pb
+CA
+kL
+De
+po
+CA
+Ar
+Ar
+"}
+(18,1,1) = {"
+Ar
+fc
+Xd
+hn
+eA
+ds
+bR
+KP
+KP
+bR
+KP
+wY
+Rq
+LW
+By
+vh
+mS
+en
+sG
+PD
+TB
+XE
+XE
+SH
+Bc
+CA
+kE
+cg
+gP
+CA
+Ar
+Ar
+"}
+(19,1,1) = {"
+Ar
+De
+Wv
+Ex
+Xc
+aW
+lD
+KP
+bR
+KP
+LF
+Xc
+HH
+tH
+Th
+vh
+Bt
+Cm
+Rn
+Cm
+Lz
+EG
+VK
+Mg
+uG
+hn
+gg
+os
+TP
+CA
+Ar
+Ar
+"}
+(20,1,1) = {"
+Ar
+De
+iF
+hn
+Xc
+jK
+xt
+pF
+pF
+pF
+Xc
+OX
+HH
+aA
+QP
+vh
+Xc
+rt
+Xc
+Aj
+RO
+Zl
+up
+up
+nu
+CA
+tw
+bG
+CM
+hj
+Ar
+Ar
+"}
+(21,1,1) = {"
+Ar
+fc
+wU
+CA
+PV
+XE
+zX
+Ke
+Xc
+Xc
+Xc
+Nb
+bc
+lN
+lN
+ZE
+Ke
+Xc
+Hd
+Om
+XW
+Nx
+bE
+uY
+nu
+oC
+kG
+iK
+Uy
+CA
+Ar
+Ar
+"}
+(22,1,1) = {"
+Ar
+fc
+iF
+SD
+Wj
+Ep
+Th
+Lq
+Tx
+Xc
+Wj
+Xc
+nA
+QR
+Xn
+ml
+nZ
+Xc
+si
+RO
+aZ
+up
+uY
+uY
+gC
+kW
+tx
+os
+xm
+hn
+Ar
+Ar
+"}
+(23,1,1) = {"
+Ar
+De
+pE
+CA
+ma
+ro
+zo
+Nn
+Ka
+cy
+bW
+Xc
+iR
+sA
+Lq
+ic
+UX
+Xc
+ce
+gc
+Ov
+wK
+uY
+uY
+nu
+Bu
+TP
+tx
+Uy
+hn
+Ar
+Ar
+"}
+(24,1,1) = {"
+Ar
+fc
+Wv
+CA
+Ny
+YO
+LW
+mN
+Lq
+Xc
+Xc
+xG
+hT
+Tk
+Lq
+Xc
+LW
+Xc
+wN
+aZ
+uY
+AD
+uY
+uY
+nu
+hn
+Is
+De
+Uy
+hn
+Ar
+Ar
+"}
+(25,1,1) = {"
+Ar
+fc
+iF
+CA
+lp
+SQ
+wY
+ut
+RC
+Xc
+Ok
+sl
+gJ
+mi
+mi
+mi
+sw
+Gl
+Us
+aZ
+uY
+uY
+uY
+uY
+nu
+hn
+Wu
+Uy
+lo
+hn
+Ar
+Ar
+"}
+(26,1,1) = {"
+Ar
+rj
+rj
+tb
+KP
+KP
+BN
+yh
+ee
+Xc
+Xc
+Xc
+aO
+Gc
+Nx
+ct
+AN
+ch
+Fa
+aZ
+uY
+sG
+nB
+nh
+Eb
+hn
+hn
+jN
+hn
+hn
+Ar
+Ar
+"}
+(27,1,1) = {"
+Ar
+rj
+rj
+SD
+xT
+Er
+KP
+lR
+KP
+qC
+Xc
+gk
+jh
+Xc
+Xc
+bT
+ex
+VK
+RO
+aZ
+nu
+Nx
+bE
+MV
+nu
+hn
+Uy
+Uy
+Uy
+hn
+Ar
+Ar
+"}
+(28,1,1) = {"
+Ar
+rj
+rj
+CA
+bR
+Zr
+bR
+KP
+KP
+TG
+Yt
+Xc
+Th
+CC
+Tx
+UQ
+tM
+gc
+up
+iv
+uY
+up
+uY
+uY
+nu
+CA
+Uy
+De
+Uy
+hn
+Ar
+Ar
+"}
+(29,1,1) = {"
+Ar
+rj
+fD
+tb
+KP
+KP
+TV
+KP
+bR
+KP
+oS
+Xc
+jh
+Xc
+KH
+aW
+zU
+bE
+Ef
+uY
+uY
+uY
+uY
+uY
+nu
+De
+De
+De
+Uy
+hn
+Ar
+Ar
+"}
+(30,1,1) = {"
+Ar
+xr
+rj
+tb
+KP
+KP
+KP
+bR
+KP
+KP
+Bm
+wR
+Qw
+Qw
+Qw
+Qw
+xs
+sY
+sG
+RN
+sG
+sG
+uY
+sG
+PD
+hn
+lV
+Uy
+Nu
+hn
+Ar
+Ar
+"}
+(31,1,1) = {"
+Ar
+rj
+Wv
+SD
+Rj
+CA
+CA
+tb
+CA
+hn
+CA
+hn
+tb
+Ex
+hn
+hn
+CA
+hn
+CA
+hn
+Ex
+hn
+qc
+hn
+CA
+hn
+hn
+Sp
+hn
+hn
+Ar
+Ar
+"}
+(32,1,1) = {"
+Ar
+sn
+rj
+Wv
+rj
+rj
+fD
+fD
+eh
+lM
+AG
+wU
+Wv
+AG
+lM
+lM
+Zq
+wU
+BQ
+qY
+va
+va
+In
+va
+ns
+jV
+wU
+Zq
+fc
+Ar
+Ar
+Ar
+"}
+(33,1,1) = {"
+Ar
+sn
+sn
+rj
+rj
+rj
+rj
+BH
+fc
+rj
+fc
+fc
+fc
+Zj
+De
+De
+fc
+fc
+dU
+RH
+RH
+fc
+fc
+RH
+RH
+fc
+fc
+De
+fc
+Ar
+Ar
+Ar
+"}
+(34,1,1) = {"
+Ar
+Ar
+Ar
+Fg
+Fg
+Ar
+Fg
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+"}

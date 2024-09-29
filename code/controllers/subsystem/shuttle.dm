@@ -461,21 +461,21 @@ SUBSYSTEM_DEF(shuttle)
 		[transit_height] in height. The travel dir is [travel_dir]."
 */
 
-	var/transit_path = /turf/open/space/transit
-	var/border_path = /turf/open/space/transit/border
+	var/transit_path = /turf/closed/indestructible/rock/smoothing
+	var/border_path = /turf/closed/indestructible/rock/smoothing
 	switch(travel_dir)
 		if(NORTH)
-			transit_path = /turf/open/floor/fakespace/dense
-			border_path = /turf/open/floor/fakespace/dense
+			transit_path = /turf/closed/indestructible/rock/smoothing
+			border_path = /turf/closed/indestructible/rock/smoothing
 		if(SOUTH)
-			transit_path = /turf/open/space/transit/south
-			border_path = /turf/open/space/transit/border/south
+			transit_path = /turf/closed/indestructible/rock/smoothing
+			border_path = /turf/closed/indestructible/rock/smoothing
 		if(EAST)
-			transit_path = /turf/open/space/transit/east
-			border_path = /turf/open/space/transit/border/east
+			transit_path = /turf/closed/indestructible/rock/smoothing
+			border_path = /turf/closed/indestructible/rock/smoothing
 		if(WEST)
-			transit_path = /turf/open/space/transit/west
-			border_path = /turf/open/space/transit/border/west
+			transit_path = /turf/closed/indestructible/rock/smoothing
+			border_path = /turf/closed/indestructible/rock/smoothing
 
 	var/datum/turf_reservation/proposal = SSmapping.RequestBlockReservation(transit_width, transit_height, null, /datum/turf_reservation/transit, transit_path, border_path)
 

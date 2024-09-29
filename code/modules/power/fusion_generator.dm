@@ -29,6 +29,7 @@
 
 /obj/machinery/power/fusion_generator/Initialize(mapload)
 	. = ..()
+	area = get_base_area(src)
 	cell = new cell_type
 	cell.charge = start_charge * cell.maxcharge / 100
 	connect_to_network()

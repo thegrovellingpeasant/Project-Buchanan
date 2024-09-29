@@ -327,7 +327,7 @@
 	mineral = /obj/item/stack/rods
 	mineral_amount = 5
 	walltype = /turf/closed/wall/mineral/concrete
-	canSmoothWith = list(/obj/structure/falsewall/concrete, /turf/closed/wall/mineral/concrete, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth)
+	canSmoothWith = list(/obj/structure/falsewall/concrete, /turf/closed/wall/mineral/concrete, /turf/closed/wall/mineral/concrete/blastproof, /turf/closed/wall/mineral/concrete/blastproof/moresmooth, /turf/closed/indestructible/f13/supermart)
 
 /obj/structure/falsewall/abductor
 	name = "poylmer wall" //Fortuna edit: alien alloy -> polymer

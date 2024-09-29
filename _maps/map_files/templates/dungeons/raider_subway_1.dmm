@@ -1,0 +1,6913 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/structure/chair/office/dark{
+	dir = 8;
+	layer = 3.1
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"ai" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innermaincornerinner";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi';
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"am" = (
+/obj/structure/nest/mob/gecko{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ar" = (
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
+	},
+/obj/item/blanket/ruined,
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"aJ" = (
+/obj/machinery/door/poddoor/shutters/store,
+/turf/open/indestructible/ground/outside/sidewalkdirt,
+/area/f13/subway)
+"aK" = (
+/obj/effect/overlay/shoreline/south,
+/turf/open/water/shore/north,
+/area/f13/reno_wasteland)
+"aO" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright0"
+	},
+/area/f13/reno_wasteland)
+"aV" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/reno_wasteland)
+"bb" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2left"
+	},
+/area/f13/reno_wasteland)
+"bh" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outermaincornerinner";
+	dir = 4
+	},
+/area/f13/reno_wasteland)
+"bk" = (
+/obj/effect/overlay/curb/west{
+	layer = 2.11;
+	pixel_x = -1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"bm" = (
+/obj/effect/overlay/curb/west{
+	layer = 2.11;
+	pixel_x = -1
+	},
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/armor/tier2,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"bo" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/snacks/f13/mre,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"br" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"bs" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+"bt" = (
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"bw" = (
+/obj/machinery/turnstile{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"bx" = (
+/obj/structure/simple_door/bunker/glass,
+/turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
+/area/f13/subway)
+"by" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/f13/ncr/standard{
+	pixel_y = 10
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"bK" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outermaincornerinner";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"bL" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2right"
+	},
+/area/f13/reno_wasteland)
+"bM" = (
+/obj/structure/sink/greyscale{
+	dir = 4;
+	pixel_x = 13
+	},
+/obj/structure/mirror{
+	pixel_x = 25;
+	pixel_y = 2
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"bR" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"bV" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"cb" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"cg" = (
+/obj/effect/overlay/junk/urinal{
+	pixel_y = 27
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"cj" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"cl" = (
+/obj/effect/overlay/curb/west{
+	layer = 2.11;
+	pixel_x = -1
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"cq" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"cr" = (
+/obj/structure/urinal{
+	pixel_y = 26
+	},
+/obj/structure/nest/mob/radroach{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"cx" = (
+/turf/open/water/shore/west,
+/area/f13/reno_wasteland)
+"cJ" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"cR" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit{
+	color = "#800000"
+	},
+/area/f13/building)
+"cZ" = (
+/obj/structure/table,
+/obj/machinery/reagentgrinder,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"dd" = (
+/obj/structure/table/wood,
+/obj/structure/junk/small/tv,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"dn" = (
+/obj/effect/overlay/gravel/edge/corner{
+	pixel_x = 8
+	},
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_2";
+	pixel_x = -4;
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"dw" = (
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"dA" = (
+/obj/structure/table,
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/card/id/dogtag/ncrtrooper/escape,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"dG" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"dI" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	name = "stairs"
+	},
+/area/f13/subway)
+"dK" = (
+/obj/structure/chair/left{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"dL" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"dP" = (
+/turf/closed/mineral/random/low_chance/underground,
+/area/f13/subway)
+"dV" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/north,
+/area/f13/subway)
+"ee" = (
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 5;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ei" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"ej" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"eo" = (
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"eu" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ev" = (
+/obj/structure/car,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"eA" = (
+/turf/open/floor/plating/tunnel/rail,
+/area/f13/subway)
+"eC" = (
+/obj/effect/decal/cleanable/blood{
+	plane = -4;
+	layer = 3.7;
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"eI" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"eM" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"eP" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"eR" = (
+/obj/structure/tires/five{
+	icon_state = "tirestacks";
+	dir = 8;
+	pixel_y = 16;
+	layer = 2.8;
+	density = 0
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"eT" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"eU" = (
+/obj/item/chair/stool/retro/backed,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"eZ" = (
+/turf/closed/wall/f13/wood/interior,
+/area/f13/subway)
+"fc" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"fe" = (
+/obj/structure/barricade/tentclothcorner{
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"fg" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"fm" = (
+/turf/open/water/shore/southeast,
+/area/f13/reno_wasteland)
+"fo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"fw" = (
+/obj/effect/overlay/shoreline/east,
+/obj/effect/overlay/shoreline/south,
+/turf/open/water/shore{
+	icon_state = "watersedgecorners"
+	},
+/area/f13/reno_wasteland)
+"fF" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt,
+/area/f13/reno_wasteland)
+"fG" = (
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"fL" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/reno_wasteland)
+"fM" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"fR" = (
+/obj/item/ammo_casing,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"fU" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft2bottom"
+	},
+/area/f13/reno_wasteland)
+"fZ" = (
+/obj/structure/flora/tree/tall,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"gi" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalleftborderleftbottom"
+	},
+/area/f13/reno_wasteland)
+"gq" = (
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"gr" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2bottom"
+	},
+/area/f13/reno_wasteland)
+"gG" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"gX" = (
+/obj/structure/table/booth,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"hk" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8;
+	layer = 2.1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"hl" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"hn" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/f13/ncr/ncr_cap,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"hr" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 8;
+	termtag = "Secret"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+"ht" = (
+/obj/structure/obstacle/barbedwire/end{
+	pixel_x = -10
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"hx" = (
+/obj/structure/table/reinforced{
+	smooth = 0;
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "RV2";
+	pixel_y = 6;
+	density = 0
+	},
+/obj/machinery/door/window{
+	dir = 1
+	},
+/obj/structure/window/spawner,
+/obj/item/reagent_containers/food/snacks/badrecipe{
+	icon = 'icons/obj/food/donut.dmi';
+	icon_state = "jelly_beige";
+	desc = "Goes great with a mug of hot coco.";
+	pixel_x = 8;
+	name = "caramel jelly donut"
+	},
+/obj/item/reagent_containers/food/snacks/badrecipe{
+	pixel_x = -7;
+	pixel_y = 7;
+	icon = 'icons/obj/food/donut.dmi';
+	icon_state = "donut";
+	desc = "Goes great with a cuppa joe.";
+	name = "donut"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"hC" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"hP" = (
+/turf/open/water/watersedge/northeast,
+/area/f13/reno_wasteland)
+"hR" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.11;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"hW" = (
+/obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr,
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"hX" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"hY" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"ik" = (
+/obj/effect/decal/cleanable/blood/gibs/human,
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"iv" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"iz" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"iD" = (
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/closed/indestructible/f13/vaultwall/notvaultwall{
+	icon = 'icons/obj/wood_window.dmi';
+	name = "window";
+	icon_state = "housewindow";
+	smooth = 0;
+	icon_type_smooth = null;
+	opacity = 0
+	},
+/area/f13/subway)
+"iE" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 4.11
+	},
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/open/water/deep,
+/area/f13/building)
+"iI" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_2";
+	pixel_x = -4;
+	pixel_y = 12
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"iJ" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"iO" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"iR" = (
+/obj/structure/car/rubbish2{
+	layer = 5.1
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/reno_wasteland)
+"iW" = (
+/obj/structure/filingcabinet,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"iX" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	icon_state = "advanced_destroyed"
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"jd" = (
+/obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	icon_state = "lab"
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"jg" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"jt" = (
+/obj/structure/nest/mob/gecko,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"ju" = (
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"jz" = (
+/obj/machinery/light/broken,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"jA" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/water/deep,
+/area/f13/reno_wasteland)
+"jI" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"jL" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"jM" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/reno_wasteland)
+"jO" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"jQ" = (
+/obj/structure/obstacle/barbedwire{
+	pixel_x = 8
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom2"
+	},
+/area/f13/reno_wasteland)
+"jV" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
+/area/f13/reno_wasteland)
+"jZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"kh" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	icon_state = "mega_gekko";
+	icon = 'icons/fallout/mobs/megafauna/64x64megafauna.dmi';
+	desc = "A monstrous fire gekko which towers over its' prey. It is incredibly dangerous, slaughtering numerous hunters who would try to fashion it's hide.";
+	name = "Giant Gecko";
+	mob_types = list(/mob/living/simple_animal/hostile/megafauna/firegecko=5)
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"kj" = (
+/obj/item/fishingrod{
+	pixel_x = 10;
+	pixel_y = -6
+	},
+/obj/effect/decal/remains/human,
+/obj/structure/chair/comfy/plywood{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"kk" = (
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 1;
+	layer = 4.31;
+	pixel_x = -17;
+	pixel_y = -5
+	},
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_4";
+	layer = 5;
+	pixel_y = 21;
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"kn" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/reno_wasteland)
+"kp" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 1;
+	pixel_y = 6;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"kr" = (
+/turf/open/indestructible/ground/outside/road{
+	dir = 8;
+	icon_state = "horizontaltopborderbottom2right"
+	},
+/area/f13/reno_wasteland)
+"kv" = (
+/obj/structure/table/reinforced{
+	smooth = 0;
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "RV2";
+	pixel_y = 6;
+	density = 0
+	},
+/obj/machinery/door/window,
+/obj/structure/window/spawner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"kC" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/trash/f13/c_ration_2,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"kD" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalleftborderleft2bottom"
+	},
+/area/f13/reno_wasteland)
+"kM" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2left"
+	},
+/area/f13/reno_wasteland)
+"kN" = (
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"kT" = (
+/obj/structure/chair/sofa/right{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"kW" = (
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/obj/structure/closetundense/locker/medcabinet{
+	pixel_y = 25
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"lb" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2bottom"
+	},
+/area/f13/reno_wasteland)
+"lc" = (
+/obj/structure/barricade/tentclothedge,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"le" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "outerbordercorner"
+	},
+/area/f13/reno_wasteland)
+"lh" = (
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"lp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"lv" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/papersack,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"lA" = (
+/obj/structure/table/rolling,
+/obj/item/storage/belt/utility/full{
+	pixel_y = 6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"lG" = (
+/obj/structure/pool/ladder/invisible,
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/water/deep,
+/area/f13/reno_wasteland)
+"lK" = (
+/turf/closed/indestructible/rock,
+/area/f13/underground/cave)
+"lM" = (
+/obj/effect/overlay/junk/mirror{
+	pixel_x = 26;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/effect/overlay/junk/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"lQ" = (
+/obj/structure/table/round,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"lV" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"mb" = (
+/obj/effect/overlay/curb/north,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"mj" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"mk" = (
+/obj/structure/wreck/trash/brokenvendor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"ml" = (
+/obj/structure/simple_door,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"mp" = (
+/obj/structure/chair/comfy/purple{
+	dir = 4;
+	pixel_x = -6
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"mv" = (
+/obj/structure/wreck/bus/blue{
+	layer = 4.51;
+	icon_state = "blue_upper";
+	pixel_y = -32;
+	bound_height = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"mJ" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"mL" = (
+/obj/structure/car/rubbish2,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"mN" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/railing/corner{
+	layer = 4.25;
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"mO" = (
+/obj/structure/table/wood,
+/obj/item/stack/sheet/cardboard/twenty{
+	pixel_y = 2;
+	pixel_x = 1
+	},
+/obj/item/hand_labeler{
+	pixel_y = 5;
+	pixel_x = 3
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"mT" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left";
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"mY" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 6;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"mZ" = (
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"nd" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"ne" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2"
+	},
+/area/f13/reno_wasteland)
+"nh" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/water/watersedge/east,
+/area/f13/reno_wasteland)
+"nl" = (
+/obj/structure/mirelurkegg,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"nm" = (
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ns" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom2left"
+	},
+/area/f13/reno_wasteland)
+"nv" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 9
+	},
+/area/f13/reno_wasteland)
+"nD" = (
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"nE" = (
+/turf/closed/mineral/random/low_chance/underground,
+/area/f13/underground/cave)
+"nH" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"nK" = (
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+"nM" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 1;
+	pixel_x = 9;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"nN" = (
+/turf/open/water/shore/southwest{
+	depth = 0;
+	icon_state = "blendedsouthwest2"
+	},
+/area/f13/reno_wasteland)
+"nP" = (
+/turf/open/water/deep,
+/area/f13/reno_wasteland)
+"nR" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"nS" = (
+/obj/structure/wreck/bus/orange/alt{
+	layer = 2.1;
+	bound_height = 160
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt,
+/area/f13/reno_wasteland)
+"nU" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"nW" = (
+/obj/structure/table/reinforced{
+	smooth = 0;
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "RV2";
+	pixel_y = 6;
+	density = 0
+	},
+/obj/machinery/door/window{
+	dir = 1
+	},
+/obj/structure/window/spawner,
+/obj/item/reagent_containers/food/snacks/badrecipe{
+	icon = 'icons/obj/food/burgerbread.dmi';
+	icon_state = "bread";
+	desc = "Some plain old bread.";
+	name = "bread"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"nY" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/snacks/burger/crab,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"oa" = (
+/turf/open/water/deep,
+/area/f13/building)
+"og" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"oh" = (
+/turf/closed/wall/r_wall/gothic/rivet,
+/area/f13/building)
+"om" = (
+/turf/closed/wall/f13,
+/area/f13/subway)
+"oo" = (
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"oy" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"oz" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2"
+	},
+/area/f13/reno_wasteland)
+"oD" = (
+/obj/machinery/microwave/stove,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"oI" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"oN" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"oU" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"oW" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowhorizontal"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"oX" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"oZ" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"pb" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	pixel_x = -11
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"pf" = (
+/obj/structure/table/wood/greyscale/varnished,
+/obj/item/folder,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"pz" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"pB" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/papersack{
+	pixel_y = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"pE" = (
+/obj/structure/table/booth,
+/obj/effect/spawner/lootdrop/f13/cash_legion_med,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"pM" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_wasteland)
+"pQ" = (
+/obj/structure/bed/mattress,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"qm" = (
+/obj/structure/simple_door/bunker,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"qt" = (
+/obj/machinery/processor,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"qx" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -1;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/reno_wasteland)
+"qG" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"qP" = (
+/obj/structure/table/wood/greyscale/varnished,
+/obj/item/paper_bin,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"qT" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermaintop";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"rf" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalleftborderleft2"
+	},
+/area/f13/reno_wasteland)
+"rg" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy,
+/area/f13/reno_wasteland)
+"rj" = (
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"rm" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	dir = 1;
+	icon = 'icons/obj/chairs.dmi';
+	pixel_y = 3
+	},
+/obj/item/trash/raisins,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"rD" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"rN" = (
+/obj/structure/window/spawner{
+	dir = 4
+	},
+/obj/structure/nest/mob/gecko{
+	dir = 1
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"rY" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"sa" = (
+/obj/structure/sink/puddle{
+	pixel_y = 2;
+	layer = 2.1
+	},
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -1;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "hole";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"so" = (
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"ss" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
+/area/f13/building)
+"sx" = (
+/obj/structure/lattice/catwalk,
+/obj/effect/overlay/curb,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"sB" = (
+/obj/structure/girder/displaced,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit{
+	color = "#800000"
+	},
+/area/f13/building)
+"sT" = (
+/turf/closed/wall/gothic,
+/area/f13/building)
+"sU" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"sX" = (
+/obj/structure/closet/crate/bin/trash_fallout,
+/obj/item/bodypart/head,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"sZ" = (
+/obj/structure/chair/left{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"th" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"tn" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"to" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"tt" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/building)
+"tI" = (
+/obj/effect/decal/cleanable/glass,
+/obj/structure/barricade/wooden,
+/obj/effect/decal/remains/skulls{
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"tL" = (
+/obj/structure/barricade/wooden{
+	icon = 'icons/fallout/structures/fences.dmi';
+	icon_state = "straight_wood";
+	pixel_y = -16;
+	layer = 4.53;
+	density = 0
+	},
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"tQ" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/reno_wasteland)
+"tY" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 8;
+	pixel_x = -3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"tZ" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukacherry{
+	pixel_y = 5
+	},
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"ue" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "outerborder"
+	},
+/area/f13/reno_wasteland)
+"ui" = (
+/obj/structure/table/wood,
+/obj/structure/junk/small/tv{
+	icon = 'icons/fallout/objects/decorations.dmi';
+	icon_state = "television";
+	density = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"ur" = (
+/obj/structure/lattice/catwalk,
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"us" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowtop"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit{
+	color = "#800000"
+	},
+/area/f13/building)
+"uy" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"uC" = (
+/obj/machinery/deepfryer,
+/obj/effect/decal/remains/human{
+	plane = -4;
+	color = "#8B4000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"uD" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 4;
+	doc_content_1 = "I'd like to report a crime happening at your house, Officer Mack. Your house is about to burn for the crimes you committed against the People's Republic of China! I hope your sleeping family wakes up in time.. GLORY TO CHINA.";
+	doc_title_1 = "Crime Report.";
+	pixel_y = -3;
+	anchored = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"uF" = (
+/obj/structure/junk/micro,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"uG" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_x = 5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"uX" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"uZ" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"vn" = (
+/obj/structure/table/booth,
+/obj/item/radio{
+	icon_state = "gannets_machine31";
+	name = "radio";
+	canhear_range = 7;
+	frequency = 1387;
+	layer = 2.8;
+	icon = 'icons/fallout/machines/radio.dmi';
+	anchored = 1;
+	density = 1;
+	freerange = 1;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"vo" = (
+/obj/effect/overlay/bus{
+	icon_state = "orangeburied";
+	name = null;
+	pixel_y = -192;
+	layer = 4.9;
+	dir = 1;
+	pixel_x = -32
+	},
+/obj/structure/barricade/bars,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"vq" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"vu" = (
+/obj/item/clothing/shoes/jackboots/fast,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"vB" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_wasteland)
+"vF" = (
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"vG" = (
+/obj/structure/obstacle/barbedwire{
+	pixel_x = 8
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/reno_wasteland)
+"vK" = (
+/obj/machinery/vending/snack/teal,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"vN" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy,
+/area/f13/reno_wasteland)
+"vP" = (
+/obj/structure/obstacle/barbedwire/end{
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/reno_wasteland)
+"wk" = (
+/obj/effect/overlay/gravel/edge/south,
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"wn" = (
+/obj/structure/chair/stool/retro/backed,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"ws" = (
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"wt" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "innermaincornerouter";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"wx" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"wJ" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/fishing/lobster_deluxe,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"wL" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"wN" = (
+/obj/structure/table/booth,
+/obj/effect/spawner/lootdrop/cig_packs,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"wV" = (
+/obj/structure/railing/corner{
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/west{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"wY" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks,
+/obj/structure/sign/poster/contraband/eat{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"xe" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"xi" = (
+/obj/effect/overlay/gravel/edge/south,
+/obj/effect/overlay/gravel/edge/south{
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"xl" = (
+/obj/item/ammo_casing,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"xm" = (
+/turf/open/indestructible/ground/outside/dirthole,
+/area/f13/reno_wasteland)
+"xt" = (
+/obj/structure/flora/rock/jungle{
+	pixel_x = -12;
+	pixel_y = -8
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"xu" = (
+/obj/structure/closet/fridge,
+/obj/structure/window/spawner{
+	dir = 1;
+	pixel_y = 5
+	},
+/obj/structure/window/spawner{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"xv" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"xA" = (
+/obj/structure/table_frame,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"xH" = (
+/obj/structure/window/gothic3/fulltile,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"xJ" = (
+/obj/structure/sign/poster/contraband/red_rum{
+	pixel_x = -32
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"xR" = (
+/obj/structure/mirelurkegg,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outercornermisc";
+	dir = 4
+	},
+/area/f13/reno_wasteland)
+"xS" = (
+/obj/machinery/computer/terminal{
+	icon_state = "lab"
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"xY" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"xZ" = (
+/obj/item/blanket/ruined,
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ya" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/hardhat{
+	pixel_y = 13;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/subway)
+"yc" = (
+/obj/structure/junk/small/bed,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"yn" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom2left"
+	},
+/area/f13/reno_wasteland)
+"yo" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"yv" = (
+/obj/item/storage/secure/safe{
+	pixel_y = 22;
+	name = "mailbox"
+	},
+/obj/item/storage/secure/safe{
+	pixel_y = 34;
+	name = "mailbox"
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"yE" = (
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"yG" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon = 'icons/fallout/mobs/animals/mirelurks.dmi';
+	icon_state = "mirelurk";
+	color = null;
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"yJ" = (
+/obj/structure/railing{
+	pixel_x = -3;
+	layer = 4.25
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"yL" = (
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"yO" = (
+/obj/structure/window/gothic/fulltile,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"yQ" = (
+/obj/structure/table_frame,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"yR" = (
+/obj/structure/window/spawner{
+	dir = 8
+	},
+/turf/closed/wall/gothic,
+/area/f13/building)
+"yY" = (
+/obj/effect/spawner/lootdrop/f13/cash_legion_med,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"za" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop1"
+	},
+/area/f13/reno_wasteland)
+"zb" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2right"
+	},
+/area/f13/reno_wasteland)
+"zo" = (
+/obj/structure/car/rubbish3,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"zv" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"zy" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"zH" = (
+/obj/structure/urinal{
+	pixel_y = 26
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"zV" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/reno_wasteland)
+"zX" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 6
+	},
+/area/f13/reno_wasteland)
+"Ab" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 8;
+	icon_state = "outerborder"
+	},
+/area/f13/subway)
+"Ag" = (
+/obj/item/flag/ncr,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"As" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright1"
+	},
+/area/f13/reno_wasteland)
+"Az" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 1;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"AB" = (
+/turf/open/water/shore/north,
+/area/f13/reno_wasteland)
+"AD" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"AF" = (
+/obj/structure/window/gothic3/fulltile,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"AI" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"AQ" = (
+/obj/structure/table/reinforced{
+	smooth = 0;
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "RV2";
+	pixel_y = 6;
+	density = 0
+	},
+/obj/machinery/door/window{
+	dir = 1
+	},
+/obj/structure/window/spawner,
+/obj/item/reagent_containers/food/snacks/badrecipe{
+	icon = 'icons/obj/food/piecake.dmi';
+	icon_state = "plaincake_slice";
+	desc = "Just a slice of cake, it is enough for everyone.";
+	name = "plain cake slice";
+	pixel_x = 2
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"AT" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outercornermisc"
+	},
+/area/f13/reno_wasteland)
+"AU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"Bj" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Bk" = (
+/obj/structure/obstacle/barbedwire,
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"Bq" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 5
+	},
+/area/f13/reno_wasteland)
+"Bs" = (
+/obj/structure/closet/crate/bin/trashbin,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Bv" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright0"
+	},
+/area/f13/reno_wasteland)
+"BK" = (
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"BO" = (
+/obj/structure/closet/crate/large{
+	icon_state = "largecrateopen";
+	opened = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"BQ" = (
+/turf/closed/indestructible/f13/vaultwall/notvaultwall{
+	icon = 'icons/obj/wood_window.dmi';
+	name = "window";
+	icon_state = "housewindow";
+	smooth = 0;
+	icon_type_smooth = null
+	},
+/area/f13/building)
+"BV" = (
+/obj/structure/table/booth,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/salvage/high{
+	icon_state = "radio_mic3";
+	pixel_y = 9;
+	name = "microphone";
+	icon = 'icons/fallout/machines/radio.dmi';
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Cd" = (
+/obj/effect/overlay/shoreline,
+/obj/effect/overlay/shoreline/south,
+/obj/effect/overlay/shoreline/west,
+/turf/open/water/shore,
+/area/f13/reno_wasteland)
+"Ch" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Cl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood{
+	pixel_x = 6
+	},
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"Co" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop3"
+	},
+/area/f13/reno_wasteland)
+"Cu" = (
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Cx" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight,
+/area/f13/reno_wasteland)
+"CC" = (
+/obj/structure/statue/diamond/indestructible/oldworldstatue{
+	pixel_x = 17;
+	pixel_y = 16
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"CD" = (
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 8;
+	layer = 3.9;
+	pixel_x = -17
+	},
+/obj/effect/overlay/graveloffset{
+	pixel_x = 8
+	},
+/obj/effect/decal/remains/nest{
+	pixel_y = 1;
+	name = "Canada Goose nest";
+	layer = 4.32;
+	icon_state = "reno_pit";
+	pixel_x = -12
+	},
+/obj/item/reagent_containers/food/snacks/egg/yellow{
+	layer = 4.34;
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/egg/yellow{
+	layer = 4.33;
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/snacks/egg/yellow{
+	layer = 4.34;
+	pixel_x = -18;
+	pixel_y = 6
+	},
+/obj/effect/overlay/graveloffset{
+	pixel_x = -8
+	},
+/obj/structure/nest/spawner/goose,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"CE" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -1;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"CH" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"CI" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/storage/box/drinkingglasses,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Db" = (
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Dn" = (
+/obj/effect/overlay/gravel/edge/south,
+/obj/effect/overlay/gravel/edge/south{
+	pixel_x = 8
+	},
+/obj/structure/flora/rock/jungle{
+	pixel_x = -12;
+	pixel_y = -8
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"Dv" = (
+/obj/structure/bed/pod,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"DD" = (
+/obj/item/chair/stool/retro/backed,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"DL" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalrightborderrighttop"
+	},
+/area/f13/reno_wasteland)
+"DP" = (
+/turf/closed/indestructible/f13/vaultwall/fakeshutter,
+/area/f13/building)
+"DT" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"DX" = (
+/obj/structure/chair/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"DY" = (
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	alpha = 245;
+	opacity = 1;
+	layer = 4.01;
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"Ed" = (
+/obj/machinery/turnstile{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+"Ei" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom2"
+	},
+/area/f13/reno_wasteland)
+"Eq" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermainbottom";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"Er" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 8
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"Et" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outercornermisc";
+	dir = 4
+	},
+/area/f13/reno_wasteland)
+"Ex" = (
+/obj/structure/barricade/tentclothedge{
+	dir = 8;
+	pixel_x = -2
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"Ey" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"ED" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2"
+	},
+/area/f13/reno_wasteland)
+"EH" = (
+/obj/structure/car/rubbish4,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"EJ" = (
+/obj/effect/overlay/graveloffset{
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"EN" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outercorner"
+	},
+/area/f13/reno_wasteland)
+"EO" = (
+/obj/structure/table/reinforced{
+	smooth = 0;
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "RV2";
+	pixel_y = 6;
+	density = 0
+	},
+/obj/machinery/door/window,
+/obj/structure/window/spawner{
+	dir = 1
+	},
+/obj/item/reagent_containers/food/snacks/snowcones/nuka,
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"EP" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/subway)
+"ER" = (
+/obj/structure/table/round,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"EU" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft2"
+	},
+/area/f13/reno_wasteland)
+"Fa" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 4
+	},
+/area/f13/reno_wasteland)
+"Fb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Fk" = (
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"Fu" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"FA" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8;
+	pixel_y = -1;
+	layer = 2.79
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"FB" = (
+/obj/structure/chair/right{
+	dir = 8
+	},
+/obj/item/clothing/under/f13/exile,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"FK" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/reno_wasteland)
+"FP" = (
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"FS" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/reno_wasteland)
+"FX" = (
+/obj/effect/overlay/curb/north,
+/obj/structure/chair/comfy/brown{
+	color = "#db4d4d";
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"FZ" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Gk" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	icon = 'icons/obj/chairs.dmi'
+	},
+/obj/item/book/granter,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Gw" = (
+/obj/structure/railing{
+	anchored = 0;
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Gx" = (
+/obj/item/ammo_casing/a50MG,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/reno_wasteland)
+"Gz" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"GA" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"GC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"GO" = (
+/obj/structure/closet/crate/bin/trash_fallout,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"GP" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"GS" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"GT" = (
+/obj/structure/window/spawner{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 6;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"GU" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/open/water/deep,
+/area/f13/building)
+"GW" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/building)
+"He" = (
+/obj/item/paper/crumpled{
+	pixel_x = 10;
+	pixel_y = 9
+	},
+/obj/effect/overlay/junk/toilet{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"Hk" = (
+/turf/open/water/watersedge/east,
+/area/f13/reno_wasteland)
+"Ho" = (
+/obj/structure/closet/fridge,
+/obj/structure/window/spawner{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"Hq" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Ht" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"HB" = (
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	dir = 4;
+	layer = 3.9;
+	pixel_x = -17
+	},
+/obj/effect/overlay/graveloffset{
+	pixel_x = -8
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"HD" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden{
+	icon = 'icons/fallout/structures/fences.dmi';
+	icon_state = "straight_wood";
+	pixel_y = -16;
+	layer = 4.53;
+	density = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"HY" = (
+/turf/closed/indestructible/f13/supermart,
+/area/f13/building)
+"Ik" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/packageWrap,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Is" = (
+/obj/item/picket_sign,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"IA" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright0"
+	},
+/area/f13/reno_wasteland)
+"IB" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/obj/item/storage/toolbox/mechanical/old,
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"IJ" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"IL" = (
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -2
+	},
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"IN" = (
+/obj/structure/chair/office/dark,
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"IQ" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavementcorner";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"IV" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plasteel/f13/vault_floor/plating/curb,
+/area/f13/subway)
+"IY" = (
+/obj/structure/table/round,
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Jb" = (
+/obj/effect/overlay/shoreline,
+/turf/open/water/shore,
+/area/f13/reno_wasteland)
+"Jf" = (
+/obj/effect/decal/remains/skulls{
+	layer = 10;
+	pixel_y = -17
+	},
+/obj/item/clothing/mask/bandana/skull{
+	layer = 4.32;
+	pixel_y = 15
+	},
+/obj/item/clothing/accessory/skullcodpiece{
+	layer = 4.33;
+	pixel_y = 21;
+	pixel_x = -1
+	},
+/obj/item/clothing/head/helmet/f13/deathskull{
+	layer = 4.34;
+	pixel_y = 28
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Ji" = (
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"Jl" = (
+/obj/structure/barricade/tentclothedge{
+	pixel_y = -2
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"Jn" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/west{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"Ju" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/armor/tier1,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Jy" = (
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"JB" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowbottom"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"JC" = (
+/turf/closed/indestructible/f13/vaultwall/notvaultwall,
+/area/f13/building)
+"JG" = (
+/obj/structure/table/booth,
+/obj/item/clothing/suit/armor/f13/exile/ncrexile,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"JJ" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"JO" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"JP" = (
+/obj/structure/obstacle/barbedwire/end,
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"JR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"JW" = (
+/turf/open/indestructible/ground/outside/road/damagedhor/left,
+/area/f13/reno_wasteland)
+"JX" = (
+/obj/structure/chair/left{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"JZ" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Kb" = (
+/obj/structure/railing{
+	dir = 1;
+	layer = 4.11
+	},
+/turf/open/water/deep,
+/area/f13/building)
+"Kf" = (
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"Kq" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Ks" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"Kx" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"KA" = (
+/obj/structure/table/reinforced,
+/obj/structure/junk/small/tv{
+	icon = 'icons/fallout/objects/decorations.dmi';
+	icon_state = "television";
+	pixel_y = 3;
+	density = 1
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"KK" = (
+/obj/structure/junk/small/bed2,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"KP" = (
+/obj/structure/billboard/cola,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"KS" = (
+/obj/structure/nest/spawner/mirelurk/mirelurkmuck{
+	icon_state = "mega_mirelurk";
+	icon = 'icons/fallout/mobs/megafauna/64x64megafauna.dmi';
+	name = "Mirelurk Queen";
+	desc = "A towering mirelurk, completely covered in moss and sewage. As the mother of all mirelurks in the region, it is best to tread carefully around this beast, lest you end up as her children's food.";
+	color = null;
+	dir = 8;
+	mob_types = list(/mob/living/simple_animal/hostile/megafauna/mirelurkqueen=5)
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"KU" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/ballistic/automatic/service,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"KX" = (
+/obj/item/chair/stool/retro/backed,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Ld" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	height = 51;
+	id = "raider_one";
+	name = "Idlewild Station";
+	width = 5;
+	dheight = 44;
+	dwidth = 1
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"Le" = (
+/turf/closed/indestructible/f13/supermart,
+/area/f13/subway)
+"Lf" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy,
+/area/f13/reno_wasteland)
+"Lt" = (
+/obj/structure/chair/right{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Lv" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Lx" = (
+/obj/structure/barricade/tentclothcorner,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"Lz" = (
+/obj/structure/chair/sofa{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"LA" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"LC" = (
+/obj/structure/table/wood/settler,
+/obj/item/newspaper,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"LH" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/space/basic,
+/area/f13/building)
+"LP" = (
+/obj/structure/table/booth,
+/obj/item/clothing/shoes/f13/military/ncr,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"LR" = (
+/obj/structure/chair/right,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Mb" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/reno_wasteland)
+"Mh" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/horlight/dark,
+/area/f13/reno_tribal)
+"Mt" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleftbottom";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"MB" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	icon_state = "advanced";
+	pixel_x = 3
+	},
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"MH" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 2
+	},
+/obj/structure/nest/mob/geckofire{
+	icon_state = "firegekko_dead";
+	layer = 3;
+	pixel_x = 3
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"MI" = (
+/obj/effect/overlay/shoreline/west,
+/obj/effect/overlay/shoreline/south,
+/turf/open/water/shore{
+	icon_state = "watersedgecorners";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"MM" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2"
+	},
+/area/f13/reno_wasteland)
+"MY" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/reno_wasteland)
+"Na" = (
+/turf/open/indestructible/ground/outside/sidewalk/left/dark,
+/area/f13/subway)
+"Nm" = (
+/turf/open/water/shore/east,
+/area/f13/reno_wasteland)
+"Np" = (
+/obj/machinery/vending/dinnerware,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Ns" = (
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"NA" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"NC" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/f13/exile/ncrexile,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"NJ" = (
+/obj/structure/pool/ladder/invisible,
+/turf/open/water/deep,
+/area/f13/reno_wasteland)
+"NM" = (
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"NP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"NQ" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"NR" = (
+/obj/machinery/photocopier,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"NU" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 4;
+	name = "stairs"
+	},
+/area/f13/subway)
+"NX" = (
+/obj/structure/table/wood,
+/obj/structure/barricade/sandbags,
+/obj/item/gun/ballistic/revolver/hobo/piperifle{
+	pixel_y = 22;
+	pixel_x = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"Og" = (
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"Oj" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"Ol" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"OG" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outercornermisc";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"OH" = (
+/obj/structure/closet/fridge,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"OJ" = (
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"OK" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain1"
+	},
+/area/f13/reno_wasteland)
+"OO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"OS" = (
+/obj/structure/bed/wooden,
+/obj/structure/nest/mob/geckofire{
+	icon_state = "firegekko_dead";
+	layer = 3;
+	pixel_x = 3
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"OT" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"OU" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderrightbottom";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"OW" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowbottom"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit{
+	color = "#800000"
+	},
+/area/f13/building)
+"Pb" = (
+/obj/structure/chair/stool/retro/backed,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"Pg" = (
+/obj/effect/overlay/shoreline,
+/obj/effect/overlay/shoreline/west,
+/turf/open/water/shore,
+/area/f13/reno_wasteland)
+"Px" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"PB" = (
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
+	},
+/area/f13/building)
+"PD" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	pixel_y = -7;
+	layer = 2.1
+	},
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"PF" = (
+/obj/effect/overlay/gravel/edge/west{
+	dir = 4;
+	pixel_x = 8
+	},
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_x = 9
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"PG" = (
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"PI" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/under/f13/exile,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"PJ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"PK" = (
+/obj/structure/tires/five{
+	resistance_flags = 115;
+	layer = 2.91
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/reno_wasteland)
+"PP" = (
+/obj/structure/sign/poster/contraband/kudzu{
+	pixel_x = -32
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"PU" = (
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"PV" = (
+/obj/structure/closet/fridge,
+/obj/structure/window/spawner{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/structure/nest/mob/ghoulfrozen{
+	dir = 8;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/f13/building)
+"Qc" = (
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"Qd" = (
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Qg" = (
+/obj/item/kitchen/knife{
+	pixel_x = 5
+	},
+/obj/structure/table,
+/obj/item/kitchen/rollingpin{
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Qn" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"Qx" = (
+/turf/closed/indestructible/f13/vaultwall/notvaultwall{
+	icon = 'icons/obj/wood_window.dmi';
+	name = "window";
+	icon_state = "housewindowbroken";
+	smooth = 0;
+	icon_type_smooth = null
+	},
+/area/f13/building)
+"Qz" = (
+/obj/structure/barricade/tentclothcorner{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"QC" = (
+/obj/structure/table,
+/obj/item/clothing/head/beret/ncr/ncr_recon/worn,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"QE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"QH" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	icon = 'icons/obj/chairs.dmi'
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"QR" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "floormark";
+	dir = 8
+	},
+/area/f13/subway)
+"QT" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	icon = 'icons/obj/chairs.dmi'
+	},
+/obj/item/ticket_machine_ticket{
+	desc = "A subway ticket; this one seems a bit faded."
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"QU" = (
+/obj/structure/chair/sofa/left{
+	dir = 4
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Ra" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticaloutermainbottom"
+	},
+/area/f13/reno_wasteland)
+"Rb" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/sheet/paperframes/fifty,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"Rh" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalleftborderlefttop"
+	},
+/area/f13/reno_wasteland)
+"Ri" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticaloutermaintop"
+	},
+/area/f13/reno_wasteland)
+"Rm" = (
+/obj/structure/obstacle/barbedwire/end{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"Rr" = (
+/obj/structure/chair/right{
+	dir = 8
+	},
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"RF" = (
+/obj/structure/bed/old,
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"RQ" = (
+/obj/structure/car/rubbish1,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom2"
+	},
+/area/f13/reno_wasteland)
+"RR" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"RT" = (
+/obj/structure/decoration/clock/old{
+	pixel_x = -32;
+	pixel_y = -3;
+	name = "old clock"
+	},
+/obj/item/trash/f13/porknbeans,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"RV" = (
+/turf/closed/wall/f13,
+/area/f13/building)
+"Si" = (
+/turf/open/indestructible/ground/outside/roof/stairs/south,
+/area/f13/subway)
+"Sl" = (
+/obj/item/storage/secure/safe{
+	pixel_y = 22;
+	name = "mailbox"
+	},
+/obj/item/storage/secure/safe{
+	pixel_y = 34;
+	name = "mailbox"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"Sx" = (
+/obj/effect/decal/cleanable/glass,
+/obj/structure/barricade/wooden,
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"SC" = (
+/obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"SH" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13{
+	icon_state = "darkbluecorner";
+	sunlight_state = 1
+	},
+/area/f13/building)
+"SL" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"SQ" = (
+/obj/structure/chair/sofa/left{
+	name = "bug infested sofa"
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"ST" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"SU" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 4
+	},
+/area/f13/reno_wasteland)
+"SW" = (
+/obj/structure/rack,
+/obj/item/ticket_machine_ticket{
+	desc = "A subway ticket; this one seems a bit faded."
+	},
+/obj/item/ticket_machine_ticket{
+	desc = "A subway ticket; this one seems a bit faded."
+	},
+/obj/item/ticket_machine_ticket{
+	desc = "A subway ticket; this one seems a bit faded."
+	},
+/obj/item/ticket_machine_ticket{
+	desc = "A subway ticket; this one seems a bit faded."
+	},
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/subway)
+"SZ" = (
+/obj/structure/table/reinforced,
+/obj/structure/junk/small/tv,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"Tb" = (
+/obj/structure/car/rubbish3,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalrightborderright2"
+	},
+/area/f13/reno_wasteland)
+"Tc" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/food/drinks/bottle/roentgen{
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"Ti" = (
+/obj/structure/chair/office/dark{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Tn" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowright"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/building)
+"Tp" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Tw" = (
+/obj/structure/statue/diamond/indestructible/artdecofountain{
+	layer = 4.31;
+	pixel_x = -17;
+	pixel_y = -5
+	},
+/obj/item/clothing/head/scarecrow_hat{
+	layer = 4.32;
+	pixel_x = 14;
+	pixel_y = 26
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Tz" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/poster/random_contraband,
+/obj/item/poster/random_contraband,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"TR" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"TS" = (
+/obj/item/stack/sheet/mineral/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/damaged/heavy,
+/area/f13/reno_wasteland)
+"TT" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/grimy/lit,
+/area/f13/subway)
+"TV" = (
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"TY" = (
+/obj/structure/debris/v1,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit{
+	color = "#800000"
+	},
+/area/f13/building)
+"Ua" = (
+/obj/structure/nest/mob/gecko,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtfull_dark"
+	},
+/area/f13/reno_wasteland)
+"Ub" = (
+/obj/structure/chair/sofa/corner{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"Uj" = (
+/obj/machinery/turnstile{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Un" = (
+/obj/machinery/vending/nukacolavend,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"Uy" = (
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 10
+	},
+/area/f13/reno_wasteland)
+"UA" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"UC" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"UJ" = (
+/obj/structure/curtain{
+	color = "#b8a482";
+	pixel_y = -1
+	},
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"UQ" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	name = "stairs";
+	sunlight_state = 1
+	},
+/area/f13/subway)
+"UR" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalleftborderleft2top"
+	},
+/area/f13/reno_wasteland)
+"UX" = (
+/obj/structure/chair/bench{
+	icon_state = "bench";
+	dir = 1;
+	icon = 'icons/obj/chairs.dmi';
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Vb" = (
+/obj/structure/table/wood,
+/obj/item/stack/packageWrap,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Vi" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"Vm" = (
+/obj/structure/barricade/bars,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Vn" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/subway)
+"Vo" = (
+/obj/structure/noticeboard{
+	pixel_y = 33;
+	pixel_x = 5
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	sunlight_state = 0
+	},
+/area/f13/subway)
+"Vy" = (
+/obj/structure/closet/crate/trashcart,
+/turf/open/indestructible/ground/outside/sidewalk/damaged,
+/area/f13/reno_wasteland)
+"VC" = (
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	alpha = 245;
+	opacity = 1;
+	layer = 4.01;
+	pixel_x = -7
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_tribal)
+"VD" = (
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"VG" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom2"
+	},
+/area/f13/reno_wasteland)
+"VK" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"VL" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright2"
+	},
+/area/f13/reno_wasteland)
+"VO" = (
+/obj/structure/chair/left,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/shoes/f13/military/ncr,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"VR" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "verticalrightborderrightbottom"
+	},
+/area/f13/reno_wasteland)
+"VX" = (
+/obj/structure/closet/crate/trashcart,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Wj" = (
+/obj/effect/overlay/shoreline/south,
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/water/shore/north,
+/area/f13/reno_wasteland)
+"Ws" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/packageWrap,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"WD" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"WF" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/reno_wasteland)
+"WL" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	pixel_y = -7;
+	layer = 2.1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"WR" = (
+/turf/open/floor/f13{
+	icon_state = "blackcorner";
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"WT" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/effect/overlay/junk/toilet{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/subway)
+"WX" = (
+/obj/structure/chair/wood/worn{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Xf" = (
+/turf/open/water/shore/northwest,
+/area/f13/reno_wasteland)
+"Xi" = (
+/obj/structure/table/wood,
+/obj/item/paper/pamphlet{
+	desc = "a trashy prewar comic book";
+	name = "prewar comic book"
+	},
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Xn" = (
+/obj/structure/car/motoryclevert,
+/obj/structure/obstacle/barbedwire/end{
+	dir = 8;
+	layer = 2.1
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1";
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+	},
+/area/f13/reno_wasteland)
+"Xw" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
+	},
+/area/f13/reno_wasteland)
+"XB" = (
+/obj/structure/wreck/bus/blue{
+	layer = 2.1
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/reno_wasteland)
+"XC" = (
+/obj/structure/table/booth,
+/obj/item/ammo_box/magazine/m556/rifle/assault,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"XG" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"XH" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"XP" = (
+/obj/structure/chair/comfy/brown{
+	color = "#db4d4d";
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/evil/lit,
+/area/f13/building)
+"XQ" = (
+/obj/structure/table/wood,
+/obj/item/paper/pamphlet{
+	info = "<center><b>FIND YOUR CAREER IN THE U.S. ARMY</b></center><b><center>BENEFITS FOR YOU NOW.SECURITY FOR YOUR FUTURE.</center></b>___<center> LEARN HOW TO JOIN:</center><b>MEETING WITH A RECRUITER:</b> The first step for eligible recruits who want to find out more is to sit down with a recruiter. Recruiters are the most qualified people to help you find out what's the most appropiate way to serve your country.<b>REQUIRED DOCUMENTS:</b> Your local recruiter will help identify what documents are required for enlistment and will also help you get replacements or copies of any documents that will be needed.<b>ACADEMIC EVALUATION:</b> After speaking to a recruiter, your next step will be to take the Armed Services Occupational Aptitude Test (A.S.O.A.T.). The A.S.O.A.T. is a multiple-choice test designed to pinpoint your strengths and identify which Military Occupational Specialty (M.O.S.) or Army job best suits you.<b>PHYSICAL FITNESS EVALUATION:</b> Your recruiter will help you schedule an appointment at the nearest Military Entrance Processing Station (M.E.P.S.). At M.E.P.S. they will determine if you are qualified to serve and what jobs best fit you. This is also where you will take your physical examination.<b>ARMY CAREERS:</b> The Army offers over 150 different careers in a wide variety of categories. The key to your career path is your A.S.O.A.T. score, which helps to identify the Army jobs that fit you the best.<b>PREP FOR BASIC COMBAT TRAINING:</b> Now that you have taken the A.S.O.A.T., passed your physical and chosen a career path, you are ready to move on to the important training necessary to becoming a Soldier: Basic Combat Training.<center> ENLISTMENT BONUSES: </center><b>EDUCATION:</b> Earn full tuition for 4+ years & merit-based scholarships.<b>VACATIONS:</b> 30 days paid annual vacation.<b>HEALTHCARE:</b> Free healthcare for full-time Soldiers, reduced premiums for Army Reserve and Army National Guard.<b>VA LOAN:</b> Purchase a home with 0% down.<b>STIPEND:</b> Money for books, meals, and other living expenses.<b>HOUSING:</b> Paid rent and utilities.___Fill out this form and we’ll put you in touch with a recruiter who can answer questions and offer opportunities in the U.S. Army:First Name: Last Name: Age: Phone: City: State: Postal Code:";
+	name = "us recruitment pamphlet"
+	},
+/turf/open/floor/f13{
+	sunlight_state = 1
+	},
+/area/f13/building)
+"XS" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/trash/f13/bubblegum,
+/turf/open/floor/f13/green/lit,
+/area/f13/building)
+"XU" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"XV" = (
+/obj/structure/sign/plaques/kiddie{
+	desc = "A faded sign listing all the less-than-healthy fast foods that were sold here before the war";
+	name = "fast food menu"
+	},
+/turf/closed/wall/f13/store{
+	desc = "A pre-War wall made of solid concrete.";
+	name = "concrete wall"
+	},
+/area/f13/building)
+"XW" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "horizontaloutermainleft"
+	},
+/area/f13/reno_wasteland)
+"XZ" = (
+/obj/effect/decal/remains/cloth{
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"Yd" = (
+/obj/structure/sign/poster/contraband/robust_softdrinks{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"Yg" = (
+/obj/item/storage/secure/safe{
+	pixel_y = 22;
+	name = "mailbox"
+	},
+/obj/item/storage/secure/safe{
+	pixel_y = 34;
+	name = "mailbox"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"Yj" = (
+/obj/item/blanket/ruined,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 6;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Yk" = (
+/obj/structure/campfire/barrel{
+	icon_state = "smoke";
+	icon = 'icons/effects/96x96.dmi';
+	pixel_x = -32;
+	desc = null;
+	name = "smoke"
+	},
+/turf/closed/indestructible/f13/supermart,
+/area/f13/building)
+"Yt" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2right"
+	},
+/area/f13/reno_wasteland)
+"Yv" = (
+/obj/structure/chair/right{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"YA" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/underground/cave)
+"YF" = (
+/obj/structure/statue/diamond/indestructible/artdecofountain/center{
+	dir = 1;
+	layer = 4.31;
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement";
+	dir = 1
+	},
+/area/f13/reno_wasteland)
+"YY" = (
+/obj/structure/table/reinforced,
+/obj/item/paper/crumpled,
+/turf/open/floor/f13/green/lit,
+/area/f13/subway)
+"YZ" = (
+/obj/structure/obstacle/barbedwire{
+	pixel_x = 15
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom0"
+	},
+/area/f13/reno_wasteland)
+"Za" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2/lit,
+/area/f13/building)
+"Zb" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.11;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/subway)
+"Zh" = (
+/obj/structure/table,
+/obj/item/clothing/neck/apron/chef,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Zi" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Zk" = (
+/obj/structure/obstacle/barbedwire{
+	pixel_x = 13
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
+	},
+/area/f13/reno_wasteland)
+"Zp" = (
+/obj/structure/nest/spawner/mirelurk/eggs,
+/turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
+/area/f13/building)
+"Zt" = (
+/obj/effect/overlay/gravel/edge/corner{
+	dir = 1;
+	pixel_x = -7
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/indestructible/ground/outside/sidewalkdirt{
+	icon_state = "outerpavement"
+	},
+/area/f13/reno_wasteland)
+"Zy" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"Zz" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/subway)
+"ZE" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi';
+	icon_state = "outermaincornerinner";
+	dir = 8
+	},
+/area/f13/reno_wasteland)
+"ZF" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "black";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/building)
+"ZM" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal,
+/area/f13/reno_wasteland)
+
+(1,1,1) = {"
+YA
+YA
+YA
+YA
+lK
+lK
+lK
+lK
+YA
+YA
+YA
+YA
+YA
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+lK
+YA
+YA
+YA
+YA
+YA
+YA
+"}
+(2,1,1) = {"
+YA
+YA
+YA
+lK
+lK
+YA
+YA
+lK
+lK
+YA
+YA
+YA
+lK
+lK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+lK
+lK
+lK
+lK
+YA
+YA
+YA
+"}
+(3,1,1) = {"
+YA
+YA
+lK
+lK
+YA
+YA
+YA
+YA
+lK
+lK
+lK
+lK
+lK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+lK
+lK
+YA
+YA
+"}
+(4,1,1) = {"
+YA
+lK
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+JC
+JC
+BQ
+BQ
+BQ
+BQ
+JC
+JC
+JC
+JC
+Qx
+BQ
+BQ
+BQ
+JC
+RV
+RV
+RV
+tt
+tt
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+lK
+"}
+(5,1,1) = {"
+YA
+lK
+HY
+jA
+nP
+jA
+NJ
+Wj
+DL
+vN
+IL
+vu
+nH
+nH
+nH
+lc
+Og
+Og
+Og
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+mj
+Ji
+zv
+Co
+VG
+ED
+za
+XU
+Og
+Yk
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+HY
+lK
+"}
+(6,1,1) = {"
+lK
+lK
+HY
+nP
+nP
+NJ
+NJ
+aK
+OG
+bh
+Jl
+uG
+nH
+nH
+Mh
+lc
+Og
+Og
+Og
+dw
+Og
+Og
+dw
+dw
+dw
+dw
+mj
+Ji
+zv
+zb
+VG
+zV
+za
+oZ
+Og
+BQ
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+HY
+lK
+"}
+(7,1,1) = {"
+lK
+YA
+HY
+jA
+nP
+NJ
+Xf
+fw
+nl
+Ri
+Jl
+BK
+nH
+nH
+nH
+lc
+Og
+Og
+Og
+Og
+dw
+dw
+dw
+eT
+Og
+dw
+mj
+Ji
+zv
+MY
+VG
+zV
+za
+oZ
+Og
+BQ
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+HY
+lK
+"}
+(8,1,1) = {"
+lK
+YA
+HY
+jA
+NJ
+NJ
+aK
+nl
+nl
+Ri
+Qz
+Ex
+nH
+nH
+Ex
+Lx
+Og
+Og
+Og
+dw
+Og
+dw
+Pb
+Ns
+KX
+dw
+Bq
+SU
+zX
+iR
+VG
+zV
+oX
+oZ
+Og
+BQ
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+HY
+lK
+"}
+(9,1,1) = {"
+lK
+YA
+HY
+nP
+NJ
+Xf
+fw
+Ji
+AT
+bK
+pM
+tY
+DY
+VC
+fe
+pM
+vB
+vB
+vB
+vB
+pM
+ZM
+ZM
+ZM
+Og
+dw
+fF
+fF
+nS
+MY
+VG
+FS
+oX
+oZ
+Og
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+lK
+"}
+(10,1,1) = {"
+lK
+YA
+HY
+jA
+NJ
+aK
+nl
+EN
+bK
+pM
+pM
+pM
+pM
+pM
+pM
+PB
+us
+OW
+cR
+TY
+PB
+Vm
+vo
+Vm
+dw
+dw
+nv
+yo
+Uy
+vP
+jQ
+vG
+Zk
+YZ
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+lK
+"}
+(11,1,1) = {"
+lK
+YA
+HY
+lG
+NJ
+aK
+nl
+Ri
+dw
+Lf
+TS
+nU
+PB
+PB
+PB
+PB
+Za
+oU
+oU
+oU
+bR
+dw
+dw
+dw
+dw
+dw
+mj
+Ji
+zv
+kM
+Ei
+OK
+oX
+oZ
+kp
+Og
+Og
+Og
+Og
+Og
+Og
+Vy
+Vy
+sT
+Ub
+qG
+mp
+rj
+MH
+oN
+rj
+sT
+lK
+"}
+(12,1,1) = {"
+lK
+YA
+HY
+nh
+Hk
+fw
+AT
+bK
+rg
+PB
+cb
+PB
+PB
+sB
+sZ
+Lt
+oU
+oU
+oU
+oU
+oW
+dw
+Og
+Og
+dw
+dw
+mj
+GA
+zv
+ne
+kr
+WF
+SL
+XH
+eP
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+SQ
+iO
+wL
+oN
+rj
+RF
+KK
+sT
+lK
+"}
+(13,1,1) = {"
+lK
+YA
+DP
+xR
+nl
+AT
+bK
+dw
+rg
+PB
+yQ
+NC
+PI
+PB
+LP
+gX
+oU
+oU
+sZ
+Lt
+Tn
+dw
+Pb
+ER
+DD
+dw
+mj
+Ji
+zv
+Co
+Ht
+GP
+oX
+oZ
+Og
+yO
+lv
+QE
+hl
+ST
+ST
+JR
+XQ
+Xi
+mb
+oN
+rj
+oN
+rj
+rj
+rj
+sT
+lK
+"}
+(14,1,1) = {"
+lK
+YA
+DP
+ZE
+XW
+bK
+dw
+rg
+rg
+PB
+NP
+lh
+NA
+PB
+Rr
+JX
+oU
+xl
+XC
+JG
+PB
+PB
+dw
+Vi
+Og
+dw
+mj
+fZ
+zv
+zb
+Ht
+GP
+oX
+oZ
+Og
+yO
+SH
+Qd
+to
+hr
+nK
+RR
+am
+FP
+FX
+XP
+rj
+rj
+KK
+OS
+Dv
+sT
+lK
+"}
+(15,1,1) = {"
+lK
+YA
+DP
+dw
+dw
+rg
+rg
+rg
+dw
+PB
+uC
+lh
+jz
+XV
+oU
+oU
+oU
+Fb
+FB
+JX
+cb
+Ag
+dw
+dw
+dw
+dw
+mj
+Ji
+zv
+MY
+Ht
+GP
+oX
+oZ
+Og
+yO
+pB
+nm
+to
+NQ
+NQ
+ik
+VD
+VD
+cl
+bk
+bk
+cl
+cl
+cl
+bm
+sT
+lK
+"}
+(16,1,1) = {"
+lK
+YA
+oh
+dw
+rg
+xm
+rg
+dw
+dw
+PB
+Np
+lh
+lh
+KU
+yY
+oU
+mJ
+oU
+oU
+xl
+cb
+dw
+dw
+UA
+nU
+dw
+Bq
+SU
+zX
+MY
+Ht
+GP
+oX
+oZ
+Og
+sT
+Kx
+OO
+eM
+Kb
+oa
+og
+Qn
+Ey
+DT
+DT
+NM
+iX
+Er
+Db
+uX
+sT
+lK
+"}
+(17,1,1) = {"
+lK
+YA
+DP
+dw
+rg
+rg
+rg
+rg
+dw
+PB
+oD
+lh
+Zp
+hn
+oU
+oU
+IY
+eU
+oU
+oU
+ss
+dw
+dw
+dw
+nU
+dw
+fF
+fF
+fF
+Co
+Ht
+GP
+oX
+oZ
+Og
+sT
+oy
+nm
+to
+iE
+GU
+og
+Gz
+Tz
+hX
+Gz
+NM
+SZ
+KA
+Db
+oo
+sT
+lK
+"}
+(18,1,1) = {"
+lK
+YA
+DP
+dw
+dw
+dw
+rg
+rg
+rg
+PB
+SC
+lh
+lh
+xA
+oU
+oU
+JZ
+oU
+oU
+oU
+bR
+dw
+dw
+nU
+nU
+dw
+nv
+yo
+Uy
+zb
+Ht
+GP
+oX
+oZ
+Og
+yO
+Qd
+OO
+to
+TV
+TV
+Jy
+PU
+PU
+PU
+PU
+PU
+PU
+ZF
+PJ
+oo
+sT
+lK
+"}
+(19,1,1) = {"
+lK
+YA
+DP
+dw
+dw
+dw
+jV
+Cx
+Cx
+PB
+qt
+lh
+Zh
+PB
+wY
+xl
+oU
+oU
+sZ
+Lt
+Tn
+UA
+dw
+wn
+lQ
+iI
+xt
+mT
+Zt
+MY
+Ht
+JW
+oX
+ns
+Og
+yO
+nm
+QE
+to
+bs
+GW
+yL
+eu
+eI
+VD
+eu
+VD
+VD
+eu
+nD
+wx
+sT
+lK
+"}
+(20,1,1) = {"
+lK
+YA
+oh
+oh
+oh
+oh
+oh
+ht
+Az
+PB
+uF
+lh
+wJ
+PB
+CI
+oU
+eC
+oU
+pE
+wN
+PB
+PB
+dw
+dw
+Px
+Tw
+YF
+HB
+xi
+MY
+VG
+zV
+oX
+oZ
+Og
+yO
+OO
+jg
+to
+xY
+xY
+oo
+Ey
+Rb
+fc
+DT
+ei
+DT
+XS
+Db
+oo
+sT
+lK
+"}
+(21,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+oh
+dw
+dw
+PB
+QC
+lh
+Qg
+PB
+Bs
+oU
+xl
+Za
+Yv
+JX
+bR
+dw
+dw
+Kq
+dw
+Jf
+mj
+EJ
+wk
+MY
+RQ
+FS
+oX
+oZ
+Og
+sT
+Ed
+Ed
+sT
+sT
+sT
+Gw
+Ey
+DT
+kC
+DT
+NM
+fc
+DT
+Db
+uX
+sT
+lK
+"}
+(22,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+oh
+dw
+dw
+nY
+Ti
+NP
+lh
+PB
+kN
+oU
+oU
+oU
+oU
+oU
+fR
+dw
+Og
+uy
+dw
+kk
+mj
+CD
+Dn
+MY
+VG
+FS
+oX
+oZ
+Og
+xH
+AI
+Jy
+PP
+xJ
+Lv
+Zy
+Zy
+PU
+PU
+PU
+PU
+PU
+PU
+WR
+oo
+sT
+lK
+"}
+(23,1,1) = {"
+lK
+YA
+oh
+FP
+tt
+FP
+oh
+dw
+dw
+Tn
+cZ
+dA
+lh
+Zi
+oU
+JJ
+LR
+vn
+dK
+oU
+Tn
+dw
+wn
+bo
+KX
+iI
+mj
+PF
+dn
+bb
+VG
+FK
+oX
+oZ
+Og
+LH
+FP
+JR
+JR
+yL
+xe
+VD
+sU
+VD
+VD
+CH
+VD
+nD
+FP
+JR
+Fu
+sT
+lK
+"}
+(24,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+DP
+Og
+dw
+PB
+PB
+PB
+PB
+PB
+JJ
+Za
+VO
+BV
+DX
+JJ
+PB
+XZ
+dw
+Vi
+Og
+dw
+Bq
+SU
+zX
+MM
+kr
+GP
+oX
+oZ
+Og
+LH
+FP
+JR
+eu
+mY
+sT
+OH
+OH
+jt
+OH
+OH
+rN
+Db
+RR
+yL
+GT
+sT
+lK
+"}
+(25,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+DP
+Og
+Og
+dw
+dw
+dw
+dw
+PB
+PB
+PB
+cb
+JB
+PB
+PB
+PB
+dw
+dw
+Kq
+nU
+cj
+fF
+fF
+fF
+Co
+VK
+kh
+fM
+oZ
+Og
+sT
+LH
+LH
+AF
+sT
+sT
+sT
+sT
+sT
+sT
+sT
+EO
+Db
+JR
+oo
+AQ
+sT
+lK
+"}
+(26,1,1) = {"
+lK
+YA
+oh
+tt
+FP
+tt
+DP
+CC
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+XG
+dw
+dw
+dw
+by
+nU
+dw
+nv
+yo
+Uy
+Yt
+Ht
+GP
+oX
+oZ
+Og
+Og
+Og
+Og
+Og
+nE
+nE
+nE
+nE
+nE
+nE
+sT
+kv
+Db
+cq
+ar
+nW
+sT
+lK
+"}
+(27,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+oh
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+nU
+dw
+Kq
+nU
+dw
+dw
+dw
+nU
+nU
+nU
+cj
+mj
+Ji
+zv
+MY
+Ht
+GP
+oX
+oZ
+Og
+Og
+Og
+Og
+nR
+nR
+nR
+nR
+nR
+nR
+nE
+sT
+kv
+ee
+xZ
+Yj
+hx
+sT
+lK
+"}
+(28,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+FP
+DP
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+dw
+nU
+nU
+nU
+nU
+dw
+dw
+dw
+cj
+cj
+dw
+cj
+mj
+Ua
+zv
+MY
+Ht
+GP
+oX
+oZ
+Og
+Og
+Og
+Og
+UQ
+dI
+uZ
+zo
+Yd
+nR
+nE
+sT
+yR
+xu
+Ho
+PV
+yR
+sT
+lK
+"}
+(29,1,1) = {"
+lK
+YA
+oh
+tt
+tt
+tt
+DP
+JP
+Bk
+Bk
+Bk
+nM
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+yo
+IQ
+KP
+zv
+Co
+Ht
+KS
+oX
+oZ
+Og
+Og
+Og
+Og
+UQ
+dI
+uZ
+uZ
+uZ
+nR
+nE
+nE
+sT
+sT
+sT
+sT
+sT
+sT
+lK
+"}
+(30,1,1) = {"
+lK
+lK
+oh
+tt
+tt
+tt
+DP
+Ji
+hY
+Ji
+jO
+Ji
+Ji
+Ji
+Ji
+Ji
+GA
+Cd
+Ji
+Ji
+Ji
+Ji
+Ji
+Ji
+Ji
+Ji
+Ji
+Ji
+zv
+bL
+ej
+GP
+yG
+oZ
+Og
+Og
+Og
+Og
+UQ
+dI
+uZ
+uZ
+uZ
+nR
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+lK
+"}
+(31,1,1) = {"
+YA
+lK
+oh
+DP
+DP
+DP
+oh
+SU
+SU
+SU
+SU
+Fa
+SU
+Et
+Ji
+pb
+Pg
+Nm
+MI
+kj
+Ji
+EN
+SU
+SU
+SU
+SU
+SU
+SU
+zX
+MY
+hW
+GP
+oX
+yn
+Og
+Og
+Og
+Og
+nR
+nR
+NU
+NU
+NU
+nR
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+lK
+"}
+(32,1,1) = {"
+YA
+YA
+tt
+WD
+th
+th
+th
+th
+mv
+XB
+EH
+CE
+rf
+gi
+Ji
+Pg
+fm
+NJ
+AB
+MI
+so
+Rh
+rf
+kD
+UR
+th
+th
+th
+th
+ue
+Ht
+cJ
+gG
+ns
+Og
+Og
+Og
+Og
+Og
+nR
+NU
+NU
+NU
+nR
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+nE
+lK
+"}
+(33,1,1) = {"
+YA
+YA
+RV
+IA
+aO
+aO
+aO
+aO
+aO
+aO
+aO
+Xn
+Rm
+OU
+Ji
+Jb
+NJ
+NJ
+NJ
+aK
+Ji
+qT
+iJ
+VL
+As
+gr
+aO
+aO
+aO
+aO
+dL
+GP
+oX
+ns
+Og
+nR
+nR
+nR
+nR
+nR
+uZ
+uZ
+uZ
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nE
+lK
+"}
+(34,1,1) = {"
+YA
+YA
+RV
+iv
+dL
+dL
+dL
+dL
+dL
+dL
+dL
+mL
+sa
+Eq
+Ji
+hP
+nN
+NJ
+NJ
+aK
+Ji
+qT
+rD
+oz
+tQ
+dL
+dL
+dL
+TR
+TR
+dL
+ev
+oX
+ns
+Og
+nR
+iW
+vF
+SW
+nR
+uZ
+uZ
+uZ
+nR
+dP
+nR
+cg
+PG
+ml
+He
+nR
+nE
+lK
+"}
+(35,1,1) = {"
+YA
+YA
+RV
+jM
+Xw
+Xw
+Xw
+Xw
+Xw
+Xw
+PK
+JO
+FA
+Mt
+Ji
+GA
+hP
+cx
+cx
+fw
+wt
+ai
+JO
+EU
+fU
+Xw
+Xw
+Gx
+Mb
+Xw
+Xw
+Xw
+Xw
+ns
+Og
+nR
+iW
+vF
+IN
+dG
+QR
+uZ
+uZ
+nR
+dP
+nR
+zH
+PG
+eZ
+eZ
+nR
+nE
+lK
+"}
+(36,1,1) = {"
+YA
+YA
+HY
+fL
+kn
+kn
+kn
+kn
+kn
+kn
+kn
+Tb
+qx
+kn
+VR
+Ji
+GA
+hP
+fw
+Ji
+DL
+kn
+kn
+kn
+kn
+kn
+kn
+lb
+aV
+Bv
+aV
+aV
+aV
+le
+Og
+nR
+vF
+vF
+vF
+dG
+QR
+PD
+uZ
+nR
+dP
+nR
+cg
+PG
+ml
+WT
+nR
+nE
+lK
+"}
+(37,1,1) = {"
+YA
+YA
+HY
+Le
+Le
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+hk
+Og
+Ra
+Ji
+Ji
+Ji
+Ji
+EN
+bK
+Og
+Og
+Og
+Og
+Og
+Og
+Og
+eP
+Og
+Is
+Og
+Og
+Og
+Og
+nR
+NR
+tZ
+vF
+nR
+uZ
+WL
+uZ
+nR
+dP
+nR
+cr
+PG
+eZ
+eZ
+nR
+nE
+lK
+"}
+(38,1,1) = {"
+YA
+YA
+HY
+EP
+nR
+nR
+iD
+iD
+iD
+nR
+eR
+Og
+Og
+Og
+ZE
+Et
+Ji
+Ji
+Ji
+Ri
+Og
+Tc
+kT
+Lz
+zy
+iz
+nR
+Sx
+lV
+lV
+nR
+nR
+jL
+nR
+nR
+nR
+nR
+nR
+Oj
+nR
+Uj
+Ch
+bw
+nR
+nR
+nR
+kW
+PG
+ws
+sX
+nR
+nE
+lK
+"}
+(39,1,1) = {"
+YA
+YA
+HY
+EP
+nR
+IB
+xv
+xv
+OJ
+nR
+qm
+nR
+EP
+EP
+tI
+Vn
+Kf
+nR
+aJ
+aJ
+aJ
+nR
+nR
+nR
+nR
+nR
+nR
+FZ
+Tp
+LC
+QU
+Bj
+jZ
+nR
+nE
+nE
+nE
+nR
+Qc
+uZ
+uZ
+uZ
+uZ
+vK
+Un
+nR
+lM
+bM
+PG
+PG
+nR
+nE
+lK
+"}
+(40,1,1) = {"
+YA
+lK
+HY
+EP
+nR
+br
+Si
+Si
+OJ
+OJ
+OJ
+nR
+Fk
+EP
+ui
+NX
+yE
+nR
+fg
+fg
+fg
+nR
+Ik
+YY
+rY
+nR
+RT
+AD
+jZ
+mZ
+mZ
+pz
+mZ
+nR
+nR
+nR
+nR
+nR
+hR
+hR
+uZ
+uZ
+uZ
+hR
+hR
+nR
+nR
+nR
+Zz
+nR
+nR
+nE
+lK
+"}
+(41,1,1) = {"
+YA
+lK
+HY
+EP
+nR
+wV
+nR
+nR
+nR
+LA
+gq
+nR
+dd
+bV
+jI
+Ol
+TT
+nR
+fg
+fg
+fg
+nR
+nd
+GC
+Ws
+nR
+jZ
+jZ
+mZ
+mZ
+mZ
+jZ
+jZ
+nR
+yc
+VX
+HD
+IJ
+GO
+yJ
+NU
+NU
+NU
+Hq
+oI
+oI
+oI
+oI
+oI
+nR
+nE
+nE
+lK
+"}
+(42,1,1) = {"
+YA
+lK
+HY
+EP
+nR
+Jn
+lA
+br
+nR
+nR
+nR
+nR
+GS
+fo
+AU
+yE
+yE
+nR
+BO
+fg
+fg
+nR
+mZ
+mZ
+pz
+nR
+eo
+nR
+vq
+uD
+nR
+mZ
+mZ
+nR
+oI
+oI
+HD
+oI
+oI
+yJ
+NU
+NU
+NU
+Hq
+oI
+oI
+oI
+oI
+Cu
+nR
+nE
+nE
+lK
+"}
+(43,1,1) = {"
+YA
+lK
+HY
+EP
+nR
+Jn
+sx
+br
+ur
+Na
+Na
+nR
+EP
+Ol
+yE
+yE
+AU
+nR
+Vo
+fg
+fg
+nR
+jZ
+hC
+mZ
+UJ
+jZ
+mZ
+ad
+mZ
+nR
+yv
+OT
+nR
+oI
+mk
+tL
+QH
+rm
+yJ
+NU
+NU
+NU
+Hq
+Gk
+UX
+oI
+QH
+UX
+nR
+nE
+nE
+lK
+"}
+(44,1,1) = {"
+YA
+lK
+HY
+EP
+nR
+mN
+dV
+br
+br
+br
+br
+nR
+EP
+EP
+pQ
+Cl
+EP
+nR
+Ks
+fg
+fg
+bt
+jZ
+mZ
+jZ
+UJ
+jZ
+mZ
+jZ
+jZ
+nR
+Yg
+mZ
+nR
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+fG
+oI
+oI
+oI
+oI
+nR
+nE
+nE
+lK
+"}
+(45,1,1) = {"
+YA
+YA
+HY
+EP
+nR
+nR
+nR
+nR
+nR
+Ab
+IV
+nR
+EP
+EP
+MB
+xS
+EP
+nR
+Ks
+fg
+Ks
+nR
+qP
+pf
+jZ
+nR
+jd
+mZ
+nd
+jZ
+tn
+mZ
+Ju
+nR
+QH
+UX
+oI
+QT
+UX
+oI
+UC
+UC
+UC
+oI
+QH
+UX
+oI
+QH
+UX
+nR
+nE
+nE
+lK
+"}
+(46,1,1) = {"
+YA
+lK
+HY
+EP
+EP
+EP
+EP
+EP
+nR
+nR
+bx
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+mO
+Vb
+lp
+mZ
+nR
+Sl
+nd
+nR
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+WX
+oI
+oI
+oI
+oI
+oI
+oI
+oI
+nR
+nE
+nE
+lK
+"}
+(47,1,1) = {"
+Le
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+ya
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Le
+Le
+Le
+Le
+"}
+(48,1,1) = {"
+om
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+om
+"}
+(49,1,1) = {"
+om
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+om
+"}
+(50,1,1) = {"
+om
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+om
+"}
+(51,1,1) = {"
+om
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+om
+"}
+(52,1,1) = {"
+om
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+Ld
+ju
+ju
+ju
+ju
+ju
+ju
+ju
+om
+"}
+(53,1,1) = {"
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+"}

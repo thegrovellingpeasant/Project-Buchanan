@@ -99,6 +99,54 @@
 	else
 		icon_state = "single"
 
+/obj/structure/fermenting_barrel/tank
+	name = "Empty Tank"
+	desc = "A large tank used in the brewing of alcohol."
+	icon = 'icons/fallout/farming/farming_structures.dmi'
+	icon_state = "rainwater_tank"
+
+/obj/structure/fermenting_barrel/tank/update_icon_state()
+	if(open)
+		icon_state = "rainwater_tank"
+	else
+		icon_state = "rainwater_tank"
+
+/obj/structure/fermenting_barrel/vat
+	name = "Mixing Vat"
+	desc = "A large tank used in the brewing of alcohol."
+	icon = 'icons/obj/atmospherics/pipes/pressure_tank.dmi'
+	icon_state = "grey_map"
+
+/obj/structure/fermenting_barrel/vat/update_icon_state()
+	if(open)
+		icon_state = "grey_map"
+	else
+		icon_state = "grey_map"
+
+/obj/structure/fermenting_barrel/drum
+	name = "Empty Drum"
+	desc = "A large tank used in the brewing of alcohol."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "vat"
+
+/obj/structure/fermenting_barrel/drum/update_icon_state()
+	if(open)
+		icon_state = "vat"
+	else
+		icon_state = "vat"
+
+/obj/structure/fermenting_barrel/prison
+	name = "Wine Toilet"
+	desc = "A broken toilet repurposed for sweet, sweet booze."
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "toilet00"
+
+/obj/structure/fermenting_barrel/prison/update_icon_state()
+	if(open)
+		icon_state = "toilet10"
+	else
+		icon_state = "toilet00"
+
 //////////
 // LOOM //
 //////////

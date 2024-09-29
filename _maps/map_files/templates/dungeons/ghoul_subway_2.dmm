@@ -1,0 +1,5809 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"am" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ar" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/item/reagent_containers/food/snacks/grown/fungus,
+/obj/structure/nest/mob/radroach,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"aJ" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/northeast,
+/area/f13/underground/cave)
+"aK" = (
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"aO" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"aV" = (
+/obj/structure/pondlily_small,
+/turf/open/water/watersedge/north,
+/area/f13/subway)
+"bk" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"bm" = (
+/obj/structure/barricade/tentleathercorner{
+	opacity = 0;
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"br" = (
+/obj/structure/campfire,
+/turf/open/floor/f13/wood,
+/area/f13/underground/cave)
+"bs" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/junglebush,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"bw" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"bx" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/pondlily_big{
+	layer = 3
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"bK" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"bL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"bM" = (
+/obj/effect/overlay/curb/east{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	dir = 8;
+	pixel_y = -2;
+	pixel_x = -1
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = -16;
+	pixel_y = 16;
+	plane = -3
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = 6;
+	pixel_y = 16;
+	plane = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 1
+	},
+/area/f13/subway)
+"bR" = (
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/pamphlet{
+	name = "New Reno Experience"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"cb" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/fo13colored/Red{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"cg" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/obj/structure/flora/grass/drygrass/eight,
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"cl" = (
+/obj/item/stack/sheet/mineral/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"cq" = (
+/obj/structure/railing/corner{
+	layer = 4.25
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"cJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"cR" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
+/area/f13/reno_wasteland)
+"cZ" = (
+/obj/structure/table/wood/fancy/royalblack,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"dw" = (
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"dA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"dG" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"dI" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"dK" = (
+/obj/structure/railing/corrugated/five{
+	dir = 4
+	},
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"dL" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"dP" = (
+/obj/structure/debris/v4,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"ei" = (
+/obj/structure/debris/v3,
+/obj/structure/debris/v2,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleslab"
+	},
+/area/f13/reno_wasteland)
+"ej" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleslab"
+	},
+/area/f13/reno_wasteland)
+"eu" = (
+/obj/structure/railing/corrugated/five{
+	pixel_y = -10
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"eA" = (
+/obj/structure/nest/mob/gecko{
+	icon_state = "gekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"eI" = (
+/obj/structure/window/fulltile/store,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"eP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"eZ" = (
+/turf/open/floor/plating/tunnel/rail/north,
+/area/f13/subway)
+"fc" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"fe" = (
+/obj/structure/barricade/wooden,
+/obj/structure/debris/v2,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"fg" = (
+/obj/structure/nest/mob/gecko{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"fo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"fw" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"fF" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop"
+	},
+/area/f13/reno_wasteland)
+"fM" = (
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/obj/item/blanket/ruined,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"fZ" = (
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"hl" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"hn" = (
+/obj/structure/junk/small/bed2,
+/obj/structure/bed{
+	pixel_y = 12;
+	dir = 4
+	},
+/obj/item/paper/pamphlet{
+	name = "prewar comic book"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"hr" = (
+/obj/structure/table/wood/fancy/monochrome,
+/obj/item/paper/pamphlet{
+	desc = "a trashy prewar comic book";
+	name = "prewar comic book"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ht" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"hC" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/underground/cave)
+"hR" = (
+/obj/machinery/autolathe,
+/obj/effect/overlay/curb/north{
+	pixel_y = 2
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = 16
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"hX" = (
+/obj/structure/railing/corrugated/five{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"ik" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15;
+	name = "sleeping bag";
+	color = "#4257fc"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"iv" = (
+/obj/structure/flora/grass/wasteland,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"iz" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "maskblood"
+	},
+/obj/structure/debris/v3,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"iD" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"iE" = (
+/obj/structure/barricade/tentleathercorner{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"iR" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "maskblood"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"iW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"jd" = (
+/obj/structure/nest/spawner/radroach,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"jg" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"ju" = (
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"jA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "itemblood"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"jL" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"jO" = (
+/obj/structure/railing{
+	layer = 3.9;
+	pixel_y = -1
+	},
+/obj/structure/table,
+/obj/item/stack/crafting/electronicparts{
+	pixel_x = 2;
+	pixel_y = 1
+	},
+/obj/effect/decal/remains/robot{
+	plane = -4;
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/item/stack/cable_coil/cut/white,
+/obj/item/screwdriver{
+	pixel_y = 8
+	},
+/obj/item/stack/cable_coil/cut/red{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"jQ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/pondlily_small{
+	layer = 3
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"jV" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"jZ" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/subway)
+"kh" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/subway)
+"kn" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/nest/mob/gecko{
+	dir = 8
+	},
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"kr" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/reno_wasteland)
+"kv" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "ltrails_2"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"kC" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/closed/wall/mineral/concrete,
+/area/f13/underground/cave)
+"kM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/wall/f13/wood,
+/area/f13/subway)
+"kN" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"lb" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"lc" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/item/cultivator/rake,
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"lh" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "ltrails_2"
+	},
+/obj/structure/debris/v4,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"lp" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/west,
+/area/f13/underground/cave)
+"lv" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"lK" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/water/watersedge/west,
+/area/f13/subway)
+"lV" = (
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"mb" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"mj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 4
+	},
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"mk" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/rack/shelf_wood,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ml" = (
+/obj/structure/debris/v1,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop"
+	},
+/area/f13/reno_wasteland)
+"mJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/junglebush/b,
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"mN" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"mO" = (
+/obj/structure/barricade/tentleathercorner{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"mY" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"mZ" = (
+/turf/open/water/watersedge/west,
+/area/f13/underground/cave)
+"nd" = (
+/obj/item/stack/sheet/mineral/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ne" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"nl" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"nm" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ns" = (
+/obj/effect/overlay/curb/east{
+	dir = 1
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 16;
+	plane = -3;
+	pixel_x = -6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"nv" = (
+/obj/structure/table/wood,
+/obj/item/folder,
+/obj/item/pen,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"nE" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"nH" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"nK" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"nM" = (
+/obj/structure/debris/v3,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop"
+	},
+/area/f13/reno_wasteland)
+"nP" = (
+/obj/structure/table,
+/obj/structure/railing{
+	pixel_y = -6;
+	pixel_x = -2
+	},
+/obj/structure/fluff/paper/stack{
+	pixel_y = 2;
+	pixel_x = 5
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
+/obj/item/crowbar{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"nR" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"nS" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -6
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = 6;
+	layer = 2.81;
+	plane = -4;
+	pixel_x = 1
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = -12;
+	pixel_y = -5
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib3"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"nU" = (
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_x = 1
+	},
+/obj/effect/overlay/curb/east,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"nW" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"nY" = (
+/obj/structure/flora/grass/wasteland,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"og" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"oh" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"om" = (
+/obj/effect/overlay/curb/east{
+	dir = 8;
+	pixel_y = -1;
+	pixel_x = -1
+	},
+/obj/structure/railing{
+	dir = 8;
+	pixel_y = -2;
+	pixel_x = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 1
+	},
+/area/f13/subway)
+"oo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"oy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"oD" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"oI" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"oN" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/sheet/glass{
+	pixel_x = 2;
+	pixel_y = -7
+	},
+/obj/item/stack/sheet/glass,
+/obj/item/stack/sheet/glass{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"oU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = -3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"oW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"oX" = (
+/obj/item/blanket/ruined,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"oZ" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15;
+	name = "sleeping bag";
+	color = "#4257fc"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"pf" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"pz" = (
+/obj/structure/bed{
+	pixel_y = 14
+	},
+/obj/structure/junk/small/bed2,
+/obj/item/binoculars,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"pB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"pQ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"qG" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"rg" = (
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/underground/cave)
+"rj" = (
+/obj/structure/railing/corrugated{
+	icon_state = "corrugatedfenceNE";
+	pixel_y = -10;
+	dir = 5;
+	plane = -15;
+	layer = 2.1
+	},
+/obj/structure/railing/corrugated/five{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"rN" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"sa" = (
+/obj/structure/table,
+/obj/item/stack/sheet/leatherstrips{
+	pixel_y = -2
+	},
+/obj/item/stack/sheet/leatherstrips{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/stack/sheet/leatherstrips{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"sT" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"sX" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"sZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"th" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/grass/jungle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"tn" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/underground/cave)
+"to" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"tt" = (
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"tI" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"tY" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.91;
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_y = -2;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 1
+	},
+/area/f13/subway)
+"tZ" = (
+/obj/structure/railing/corner{
+	layer = 4.25
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/fo13colored/Red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"ue" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"ur" = (
+/obj/structure/simple_door/metal/store,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"uy" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/west,
+/area/f13/underground/cave)
+"uF" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"uG" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"uX" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"uZ" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/subway)
+"vo" = (
+/obj/effect/overlay/curb/east{
+	layer = 2.91;
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_y = -2;
+	pixel_x = 1
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = -8;
+	pixel_y = 16;
+	plane = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 1
+	},
+/area/f13/subway)
+"vB" = (
+/obj/structure/railing/corrugated/five{
+	pixel_y = -10
+	},
+/obj/effect/decal/remains/cloth{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"vF" = (
+/obj/structure/bonfire,
+/obj/item/stack/rods,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"vG" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/water/watersedge/north,
+/area/f13/underground/cave)
+"wx" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/obj/structure/flora/grass/wasteland,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"wV" = (
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"wY" = (
+/obj/structure/debris/v3,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"xe" = (
+/obj/structure/simple_door/tentflap_leather,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"xu" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"xv" = (
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"xA" = (
+/obj/structure/flora/junglebush,
+/turf/open/water/watersedge/southeast,
+/area/f13/underground/cave)
+"xH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"xJ" = (
+/obj/structure/table/wood/fancy,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"xS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/table/wood,
+/obj/item/clothing/neck/mantle/gecko,
+/obj/item/clothing/head/helmet/f13/wayfarer/whitelegs/gecko,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/underground/cave)
+"xY" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"xZ" = (
+/obj/structure/chair/wood/modern{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ya" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"yc" = (
+/obj/structure/wreck/trash/four_barrels,
+/obj/structure/wreck/trash/two_barrels{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"yn" = (
+/obj/machinery/turnstile,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "floormark";
+	dir = 8
+	},
+/area/f13/subway)
+"yo" = (
+/obj/structure/debris/v4,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop"
+	},
+/area/f13/reno_wasteland)
+"yv" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/campfire/barrel,
+/turf/open/floor/f13/wood,
+/area/f13/underground/cave)
+"yE" = (
+/obj/structure/nest/mob/gecko{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"yJ" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/underground/cave)
+"yL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"yO" = (
+/obj/structure/barricade/tentleatheredge,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"yQ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"za" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/obj/structure/flora/grass/drygrass/eight,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"zb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"zv" = (
+/obj/structure/table/wood,
+/obj/item/trash/f13/c_ration_1{
+	pixel_y = 9;
+	pixel_x = 7
+	},
+/obj/item/kitchen/fork{
+	pixel_x = -10;
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"zH" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"zV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"zW" = (
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"zX" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -7
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/effect/decal/remains/human{
+	layer = 3.3;
+	plane = -4;
+	pixel_x = 6
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ab" = (
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"Az" = (
+/obj/structure/simple_door/tentflap_leather,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"AF" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0;
+	icon_state = "tent0";
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"AQ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/nest/mob/gecko{
+	dir = 4
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"AT" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/floor/f13/wood,
+/area/f13/underground/cave)
+"Bj" = (
+/obj/structure/railing/corner{
+	pixel_x = -2;
+	pixel_y = -2;
+	layer = 4.25
+	},
+/obj/structure/railing/corner{
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"Bk" = (
+/obj/item/stack/sheet/metal{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/stack/sheet/metal{
+	pixel_x = -2;
+	pixel_y = 8
+	},
+/obj/item/stack/sheet/metal{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/structure/wreck/trash/engine,
+/obj/item/screwdriver{
+	pixel_y = -2;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"Bq" = (
+/obj/structure/bed{
+	pixel_y = 14
+	},
+/obj/structure/bed/old,
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/pamphlet{
+	name = "prewar comic book"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Bs" = (
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_x = 1
+	},
+/obj/effect/overlay/curb/east,
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = 16
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 1
+	},
+/area/f13/subway)
+"BQ" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0;
+	icon_state = "tent0";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"BV" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Ch" = (
+/obj/effect/overlay/curb/east{
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"Cl" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/watersedge,
+/area/f13/underground/cave)
+"Co" = (
+/obj/structure/bed{
+	layer = 2.88;
+	dir = 1
+	},
+/obj/structure/junk/small/bed{
+	pixel_y = 8
+	},
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Cu" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Cx" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"CE" = (
+/obj/item/blanket/ruined,
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"CI" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = -3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"Db" = (
+/turf/open/floor/plating/tunnel/curb,
+/area/f13/subway)
+"DP" = (
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/subway)
+"DT" = (
+/obj/structure/railing/corrugated/five{
+	dir = 4;
+	pixel_y = 12
+	},
+/obj/structure/railing/corrugated{
+	icon_state = "corrugatedfenceNW";
+	dir = 9;
+	layer = 2.1;
+	pixel_y = -10;
+	plane = -15
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"DX" = (
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = -1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"Ed" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"Ei" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"Er" = (
+/obj/structure/railing{
+	layer = 3.9;
+	pixel_y = -1
+	},
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"Et" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"Ex" = (
+/obj/structure/flora/grass/wasteland,
+/turf/open/water/watersedge/east,
+/area/f13/subway)
+"Ey" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"ED" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"EH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"EN" = (
+/turf/closed/indestructible/f13/matrix,
+/area/f13/subway)
+"EO" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib3"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"EP" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	plane = -15;
+	name = "sleeping bag";
+	color = "#4257fc"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Fo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/turf/open/water/watersedge/southwest,
+/area/f13/underground/cave)
+"FA" = (
+/obj/effect/decal/remains/cloth,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"FK" = (
+/obj/machinery/turnstile{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon = 'icons/fallout/turfs/floors.dmi';
+	icon_state = "floormark";
+	dir = 8
+	},
+/area/f13/subway)
+"FP" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"FS" = (
+/turf/open/water/watersedge/north,
+/area/f13/underground/cave)
+"FX" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor2"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"FZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"Go" = (
+/obj/item/fishy/salmon,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Gx" = (
+/turf/open/water/watersedge/northwest,
+/area/f13/subway)
+"Gz" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"GA" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"GC" = (
+/obj/effect/decal/cleanable/blood{
+	pixel_x = 6
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"GO" = (
+/obj/machinery/workbench,
+/obj/effect/overlay/curb/north{
+	pixel_y = 2
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"GP" = (
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/blanket/ruined,
+/turf/open/floor/f13{
+	icon_state = "floordirty"
+	},
+/area/f13/subway)
+"GS" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"GT" = (
+/obj/structure/barricade/sandbags,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"GU" = (
+/obj/structure/barricade/tentleatheredge{
+	name = "hide tent";
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"GW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Hk" = (
+/turf/closed/indestructible/rock,
+/area/f13/underground/cave)
+"Ho" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor2"
+	},
+/obj/effect/decal/remains/human,
+/turf/open/water/watersedge/north,
+/area/f13/underground/cave)
+"Hq" = (
+/obj/structure/rack/shelf_metal,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Ht" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"HD" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/paint/red{
+	name = ""Infamous" red paint can"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"HY" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"Ik" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/shore/west,
+/area/f13/underground/cave)
+"Is" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/nest/spawner/radroach,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"IA" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/pill_bottle/chem_tin/buffout,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"IB" = (
+/obj/structure/table,
+/obj/item/screwdriver{
+	pixel_y = 18
+	},
+/obj/item/light/bulb/broken{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/obj/item/light/bulb/broken{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/light/tube/broken{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/obj/item/light/tube/broken{
+	pixel_x = 8
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"IJ" = (
+/obj/structure/railing{
+	layer = 3.9;
+	pixel_y = -1
+	},
+/obj/structure/table,
+/obj/item/stack/crafting/electronicparts{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/item/stack/sheet/metal{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/effect/decal/remains/deadeyebot{
+	plane = -4;
+	pixel_y = 8;
+	pixel_x = 5
+	},
+/obj/item/wrench{
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"IL" = (
+/obj/structure/flora/grass/whitelegvine,
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"IN" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"IV" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Ji" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"Jl" = (
+/obj/structure/debris/v3,
+/turf/open/floor/plating/astplate,
+/area/f13/reno_wasteland)
+"Jn" = (
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_y = 10
+	},
+/obj/structure/railing{
+	layer = 4.26;
+	pixel_y = -1
+	},
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"Jy" = (
+/obj/structure/barricade/tentleathercorner{
+	opacity = 0;
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JB" = (
+/obj/machinery/autolathe/ammo,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/fo13colored/Red,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JC" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JG" = (
+/obj/structure/table/wood,
+/obj/item/trash/f13/k_ration{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/trash/f13/c_ration_3{
+	pixel_x = -4;
+	pixel_y = -3
+	},
+/obj/item/kitchen/fork{
+	pixel_y = 2;
+	pixel_x = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JP" = (
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JR" = (
+/obj/structure/barricade/tentleatheredge{
+	dir = 1;
+	pixel_y = -4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"JW" = (
+/turf/closed/wall/f13/wood,
+/area/f13/subway)
+"JX" = (
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"Kb" = (
+/obj/structure/simple_door/tentflap_leather{
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Kf" = (
+/obj/structure/pondlily_big{
+	layer = 3
+	},
+/turf/open/water/watersedge/southeast,
+/area/f13/subway)
+"Ks" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"KA" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"KK" = (
+/obj/structure/railing{
+	layer = 4.25;
+	pixel_y = -1
+	},
+/obj/structure/simple_door/metal/ventilation,
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"KP" = (
+/turf/open/floor/plating/astplate,
+/area/f13/reno_wasteland)
+"Le" = (
+/turf/closed/indestructible/f13/supermart,
+/area/f13/subway)
+"Lf" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Lt" = (
+/obj/structure/railing/corner{
+	layer = 4.25;
+	dir = 8;
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"Lv" = (
+/obj/structure/barricade/tentleathercorner{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Lx" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/water/watersedge/southeast,
+/area/f13/subway)
+"LC" = (
+/obj/structure/bed/old,
+/obj/structure/junk/small/bed{
+	pixel_y = 8
+	},
+/obj/item/folder,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"LH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib3"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"MB" = (
+/obj/structure/table/wood,
+/obj/item/trash/f13/c_ration_3{
+	pixel_x = -2;
+	pixel_y = -6
+	},
+/obj/item/trash/f13/c_ration_2{
+	pixel_x = 2;
+	pixel_y = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"MM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowleft"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"MY" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"Na" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Np" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ns" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"NA" = (
+/obj/effect/turf_decal/weather/dirt,
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"NJ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter6"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"NM" = (
+/obj/structure/bed{
+	pixel_y = 14
+	},
+/obj/structure/bed/old,
+/obj/effect/spawner/lootdrop/trash,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"NP" = (
+/obj/structure/flora/grass/jungle,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"NQ" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubblepillar"
+	},
+/area/f13/reno_wasteland)
+"NR" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"NU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Og" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Oj" = (
+/obj/structure/table,
+/obj/effect/overlay/curb/north{
+	pixel_y = 2
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = 8
+	},
+/obj/item/storage/trash_stack{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/storage/trash_stack{
+	pixel_y = 12;
+	pixel_x = -6
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"Ol" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/grass/drygrass/eight,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"OH" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"OJ" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/flora/wasteplant/wild_fungus,
+/obj/structure/nest/mob/radroach{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"OK" = (
+/obj/structure/nest/mob/radroach,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"OO" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"OT" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/junglebush/c,
+/turf/open/water/shore/west,
+/area/f13/underground/cave)
+"OW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Pb" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0;
+	dir = 4;
+	pixel_x = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"PB" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"PG" = (
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"PP" = (
+/obj/structure/barricade/tentleatheredge{
+	opacity = 0;
+	dir = 4;
+	pixel_x = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"PU" = (
+/obj/structure/simple_door/metal/store{
+	icon_state = "brokenstore"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Qc" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/overlay/curb/north{
+	pixel_y = 2
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5;
+	pixel_x = 24
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_y = 14;
+	layer = 5
+	},
+/obj/item/stack/crafting/metalparts,
+/obj/item/stack/crafting/metalparts{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/stack/crafting/metalparts{
+	pixel_x = -5;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Qd" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Qg" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Qn" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Qz" = (
+/obj/structure/nest/mob/radroach{
+	dir = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"QC" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"QE" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"QH" = (
+/obj/structure/flora/rock/jungle,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"QR" = (
+/obj/effect/decal/remains/skulls{
+	pixel_y = 6
+	},
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"QU" = (
+/obj/machinery/smartfridge/bottlerack/seedbin/primitive,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Rb" = (
+/obj/structure/window/fulltile/store,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Ri" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/paper/pamphlet{
+	name = "us recruitment pamphlet"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"RQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"RR" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"RT" = (
+/obj/effect/decal/remains/cloth,
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"RV" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Si" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Sl" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/junglebush,
+/turf/open/water/watersedge/west,
+/area/f13/underground/cave)
+"Sx" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"SH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/underground/cave)
+"SL" = (
+/turf/open/water/watersedge/southwest,
+/area/f13/underground/cave)
+"ST" = (
+/obj/structure/table/wood/fancy/monochrome,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"SU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/junglebush,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"SW" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"SZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/railing/corner{
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Tb" = (
+/obj/effect/overlay/curb/east{
+	dir = 1
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = -18;
+	pixel_y = 16;
+	plane = -3
+	},
+/obj/effect/decal/remains/skulls{
+	pixel_x = 4;
+	pixel_y = 16;
+	plane = -3
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Ti" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/pondlily_small,
+/turf/open/water/shore/west,
+/area/f13/underground/cave)
+"Tn" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Tp" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Tz" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowleft"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"TT" = (
+/obj/structure/table,
+/obj/item/stack/crafting/goodparts{
+	pixel_y = -2;
+	pixel_x = 8
+	},
+/obj/item/stack/crafting/goodparts{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/item/crowbar{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"TV" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter6"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/subway)
+"TY" = (
+/obj/structure/barricade/tentleathercorner,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Ua" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowright"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"Ub" = (
+/obj/structure/nest/mob/geckofire{
+	dir = 4;
+	icon_state = "firegekko_dead"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Uj" = (
+/obj/structure/railing{
+	pixel_y = -3;
+	pixel_x = -2;
+	layer = 4.25
+	},
+/obj/effect/overlay/curb/east{
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	icon_state = "rampdowntop";
+	dir = 4
+	},
+/area/f13/subway)
+"Uy" = (
+/obj/structure/debris/v2,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
+	},
+/area/f13/reno_wasteland)
+"UC" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"UX" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 4
+	},
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Vb" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/rock/jungle,
+/turf/open/water/shore,
+/area/f13/underground/cave)
+"Vm" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Vo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/watersedge/south,
+/area/f13/underground/cave)
+"Vy" = (
+/obj/structure/railing/corrugated/five{
+	pixel_y = -10
+	},
+/obj/effect/decal/remains/cloth{
+	pixel_y = -10
+	},
+/obj/structure/debris/v3,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"VC" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"VD" = (
+/obj/structure/rack/shelf_metal,
+/obj/machinery/light/broken,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"VG" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "ltrails_2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"VK" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/grass/wasteland,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"VO" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"VX" = (
+/obj/machinery/autolathe,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/subway)
+"Ws" = (
+/obj/machinery/smartfridge/bottlerack/grownbin,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"WD" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/watersedge/east,
+/area/f13/underground/cave)
+"WL" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "coatblood"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"WR" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"WX" = (
+/turf/open/water/watersedge/southeast,
+/area/f13/underground/cave)
+"Xf" = (
+/obj/structure/flora/grass/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/nest/mob/radroach{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Xi" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowright"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Xw" = (
+/obj/machinery/hydroponics/soil/flat/dark,
+/obj/item/reagent_containers/food/snacks/grown/fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"XH" = (
+/obj/structure/table/wood,
+/obj/item/documents,
+/obj/item/pen{
+	pixel_y = 10
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"XP" = (
+/obj/structure/debris/v1,
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubblepillar"
+	},
+/area/f13/reno_wasteland)
+"XQ" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"XU" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"XV" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"XW" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superlow,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"XZ" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"Yg" = (
+/turf/open/floor/f13/wood,
+/area/f13/underground/cave)
+"Yj" = (
+/obj/structure/railing/corrugated/five{
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"Yk" = (
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.25;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
+	},
+/area/f13/subway)
+"Yv" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib3"
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "itemblood"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"YA" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/underground/cave)
+"YH" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 5;
+	height = 51;
+	id = "ghoul_two";
+	name = "Shamrock Lane Station";
+	width = 5;
+	dheight = 49
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"YY" = (
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"YZ" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/subway)
+"Za" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"Zb" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439
+	},
+/obj/structure/flora/rock/jungle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/subway)
+"Zz" = (
+/obj/structure/barricade/tentleathercorner{
+	name = "hide tent"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/subway)
+"ZF" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "itemblood"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken"
+	},
+/area/f13/subway)
+"ZM" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/water/shore,
+/area/f13/underground/cave)
+
+(1,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Le
+EN
+EN
+EN
+EN
+EN
+Le
+"}
+(2,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(3,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+jV
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(4,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+jV
+jV
+Na
+RV
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(5,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(6,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+YA
+Na
+Na
+YA
+YA
+Na
+jV
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(7,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+RV
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(8,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+wV
+CE
+zX
+iR
+VG
+Ho
+dA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(9,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+wV
+wV
+nS
+Yv
+Na
+FS
+oh
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+nR
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(10,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+oD
+Na
+YA
+Na
+vG
+YA
+YA
+YA
+YA
+Na
+jV
+Na
+YA
+YA
+YA
+YA
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(11,1,1) = {"
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+nR
+nd
+Na
+jV
+nR
+nR
+nR
+YA
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(12,1,1) = {"
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+nR
+nR
+nR
+YA
+nR
+nR
+Pb
+Lv
+UX
+oW
+EH
+mO
+PP
+nR
+nR
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(13,1,1) = {"
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+LC
+hn
+Co
+nR
+nR
+nR
+JC
+pB
+cZ
+nm
+QE
+hl
+ST
+nm
+WR
+nR
+nR
+mb
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(14,1,1) = {"
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+pf
+fZ
+nm
+zb
+Ht
+nR
+am
+RR
+RQ
+cZ
+RQ
+fZ
+to
+hr
+nK
+RR
+am
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(15,1,1) = {"
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nm
+Qz
+fZ
+RQ
+nm
+nR
+Hq
+zb
+tt
+yO
+pB
+nm
+JX
+JR
+MY
+ik
+VD
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(16,1,1) = {"
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Bq
+NM
+pz
+fZ
+MY
+nR
+nR
+oZ
+nm
+Az
+fZ
+zb
+fZ
+Kb
+fZ
+nR
+nR
+nR
+dK
+DT
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(17,1,1) = {"
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+JW
+JW
+JW
+pB
+nm
+nK
+nR
+nR
+GU
+TY
+oy
+pB
+nm
+iE
+GU
+nR
+Gz
+Tz
+bk
+eu
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(18,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nv
+aK
+JW
+JW
+kM
+nm
+fZ
+fZ
+XU
+Sx
+Qd
+OO
+ZF
+nK
+TV
+NJ
+xu
+Rb
+dP
+Vy
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(19,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+bR
+aK
+OK
+MY
+JW
+JW
+JW
+Vm
+QC
+cJ
+GC
+nm
+nm
+bs
+GW
+lV
+oo
+eI
+bk
+eu
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(20,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+JG
+xZ
+jg
+nm
+RQ
+zV
+RQ
+fZ
+pB
+nm
+jd
+jg
+fZ
+jg
+xY
+oo
+nm
+Rb
+fc
+Yj
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(21,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+mj
+Ed
+Lf
+Lf
+RQ
+nR
+tt
+fZ
+MY
+RQ
+nm
+nm
+zb
+fZ
+nm
+nm
+nm
+ur
+fc
+eu
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(22,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+MB
+zv
+XH
+nR
+nR
+nR
+nR
+nR
+xH
+MY
+Jy
+PP
+xJ
+Lv
+nK
+nm
+PU
+oI
+vB
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(23,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+nR
+nR
+nR
+nR
+uZ
+FK
+uG
+LH
+FP
+JR
+Za
+yL
+xe
+zb
+nm
+Rb
+wY
+bk
+rN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(24,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+Jl
+XP
+dw
+kr
+kh
+uZ
+FK
+uG
+jA
+VO
+JR
+JC
+pB
+BQ
+Lv
+nm
+Rb
+bk
+OH
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(25,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+ml
+cR
+fF
+NQ
+kr
+kh
+DP
+nR
+nR
+VC
+hl
+bm
+AF
+nm
+Qn
+ED
+zb
+eI
+sT
+OH
+EO
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(26,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Uy
+yo
+Uy
+dw
+cl
+GP
+fM
+MM
+bL
+zb
+fo
+BV
+JR
+EP
+nE
+ED
+nm
+Rb
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(27,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nM
+cR
+yo
+dw
+kr
+GP
+oX
+Ua
+nW
+zb
+OW
+xu
+bm
+GU
+GU
+Zz
+nm
+eI
+lh
+iz
+kv
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(28,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+fF
+ei
+fF
+ej
+kr
+kh
+DP
+nR
+nR
+ht
+nm
+Zb
+Sx
+Si
+fZ
+fZ
+fZ
+Rb
+WL
+mY
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(29,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+KP
+cR
+ej
+kr
+kh
+uZ
+yn
+uG
+FX
+Og
+QE
+IA
+Xf
+tI
+fZ
+pB
+Rb
+sT
+GT
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(30,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Ji
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+IL
+IL
+nR
+nR
+uZ
+yn
+uG
+XW
+pB
+RQ
+dI
+QE
+Qd
+jg
+nm
+eI
+HY
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(31,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+SU
+UC
+Et
+UC
+dA
+YA
+YA
+nR
+IL
+Ex
+Kf
+cg
+IL
+nR
+nR
+nR
+nR
+jg
+tt
+nm
+pB
+fZ
+zb
+pB
+NU
+PU
+fc
+vB
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(32,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+bx
+nH
+Na
+yE
+Na
+aJ
+UC
+sZ
+bK
+Lx
+th
+ar
+ue
+GA
+RT
+SZ
+vo
+tY
+fZ
+nK
+Cu
+fZ
+RQ
+nm
+nm
+nm
+YY
+oI
+eu
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(33,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+aO
+xv
+Na
+YA
+YA
+Na
+Na
+Na
+nd
+Ol
+iD
+za
+Xw
+KA
+VK
+CI
+Tb
+nm
+pB
+eP
+hl
+fZ
+MY
+NP
+Tn
+MY
+Rb
+fe
+Yj
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(34,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+dL
+fw
+YA
+YA
+YA
+YA
+YA
+YA
+kC
+Xw
+lc
+iD
+GA
+eP
+uF
+oU
+ns
+nm
+fZ
+iW
+vF
+SW
+JP
+jg
+nY
+QH
+eI
+bk
+Vy
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(35,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+ya
+nH
+Na
+YA
+YA
+YA
+YA
+YA
+kC
+OJ
+Xw
+Gx
+lK
+iW
+nl
+Lt
+bM
+om
+ne
+Ri
+Ns
+IN
+dG
+fZ
+og
+hl
+Rb
+dP
+eu
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(36,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+kn
+zW
+jV
+YA
+YA
+YA
+YA
+nR
+wx
+lb
+aV
+eP
+YZ
+nm
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+nR
+QR
+nR
+iv
+Xi
+bk
+vB
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(37,1,1) = {"
+YA
+YA
+YA
+Hk
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+PB
+nd
+Na
+Na
+Na
+YA
+YA
+nR
+Qg
+GA
+eP
+uF
+Is
+nR
+RT
+Cx
+lv
+qG
+NR
+tZ
+Bs
+nU
+Bj
+nR
+nR
+nR
+hX
+rj
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(38,1,1) = {"
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+jV
+Na
+eA
+Na
+YA
+nR
+IV
+Sx
+lV
+yQ
+MY
+nR
+jL
+cq
+Yk
+Yk
+XV
+KK
+Oj
+nP
+Uj
+Ch
+bw
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(39,1,1) = {"
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+nR
+mk
+FZ
+Tp
+fZ
+QU
+nR
+cb
+DX
+zH
+TT
+sX
+Er
+Qc
+JX
+XQ
+fZ
+sa
+nR
+mb
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(40,1,1) = {"
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+jV
+YA
+nR
+RT
+nm
+Ws
+RQ
+RT
+nR
+nR
+Jn
+Bk
+Ab
+mN
+jO
+hR
+yL
+oN
+IB
+FA
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(41,1,1) = {"
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+nd
+Na
+YA
+YA
+nR
+nR
+nR
+nR
+nR
+jZ
+nR
+RT
+yc
+VX
+HD
+IJ
+GO
+nm
+JB
+nR
+nR
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(42,1,1) = {"
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+yJ
+yJ
+yJ
+yJ
+yJ
+yJ
+yJ
+yJ
+yJ
+YA
+nR
+oI
+HY
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(43,1,1) = {"
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Vo
+Go
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+hC
+yv
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+bk
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(44,1,1) = {"
+YA
+Hk
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Ks
+fg
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+xS
+br
+Yg
+rg
+zW
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Cl
+Na
+bk
+kN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(45,1,1) = {"
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+ZM
+xA
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+AT
+tn
+SH
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Ti
+UC
+WX
+jV
+Na
+uX
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(46,1,1) = {"
+YA
+YA
+YA
+YA
+Hk
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Ei
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Vb
+lp
+mZ
+lp
+Sl
+uy
+SL
+Na
+YA
+YA
+YA
+YA
+Ik
+sZ
+WX
+Na
+Na
+jV
+Na
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(47,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+ya
+SL
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+SU
+PG
+WD
+NA
+YA
+YA
+mJ
+Na
+YA
+YA
+YA
+YA
+Ks
+Na
+eA
+Na
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(48,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+dL
+lp
+Fo
+YA
+YA
+AQ
+pQ
+YA
+Ey
+WX
+Na
+Ub
+Na
+YA
+YA
+GS
+mZ
+dA
+YA
+YA
+OT
+WX
+Na
+Np
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(49,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+GS
+PG
+PG
+UC
+sZ
+PG
+PG
+sZ
+WX
+Na
+zW
+Na
+YA
+YA
+YA
+YA
+jQ
+WD
+UC
+sZ
+WX
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(50,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+eA
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+Np
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+YH
+Le
+"}
+(51,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(52,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(53,1,1) = {"
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Le
+EN
+EN
+EN
+EN
+EN
+Le
+"}

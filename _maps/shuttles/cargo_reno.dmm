@@ -1,0 +1,472 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aG" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4
+	},
+/area/shuttle/supply)
+"aS" = (
+/turf/template_noop,
+/area/template_noop)
+"cf" = (
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/supply)
+"cu" = (
+/turf/closed/wall/rust,
+/area/shuttle/supply)
+"eK" = (
+/obj/machinery/door/airlock/wood,
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"fQ" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/decoration/rag{
+	icon_state = "skin"
+	},
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"fU" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk"
+	},
+/area/shuttle/supply)
+"gu" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/supply)
+"mw" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plating/tunnel/rail/north{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_subway_rail";
+	dir = 4
+	},
+/area/shuttle/supply)
+"mE" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/supply)
+"mV" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4
+	},
+/area/shuttle/supply)
+"nb" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk";
+	dir = 1
+	},
+/area/shuttle/supply)
+"oy" = (
+/obj/structure/window/fulltile/ruins,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"pd" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9
+	},
+/area/shuttle/supply)
+"pY" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/postwar,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/supply)
+"pZ" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"rx" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 8
+	},
+/area/shuttle/supply)
+"rK" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"ui" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/book/bible{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/supply)
+"ux" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/snacks/pizzabread,
+/obj/item/reagent_containers/food/drinks/bottle/wine{
+	pixel_y = -1;
+	pixel_x = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/supply)
+"uB" = (
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"vn" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"xu" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"Bg" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"BG" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"Cr" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"CE" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4
+	},
+/area/shuttle/supply)
+"Eu" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/supply)
+"EP" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"EU" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"Ht" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"HJ" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"Ix" = (
+/obj/machinery/conveyor{
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"JZ" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/supply)
+"KU" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"NU" = (
+/obj/structure/sign/warning/nosmoking,
+/turf/closed/wall/rust,
+/area/shuttle/supply)
+"Ot" = (
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 8
+	},
+/area/shuttle/supply)
+"RW" = (
+/obj/machinery/light/floor,
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"Sa" = (
+/obj/machinery/conveyor/inverted{
+	dir = 9;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/shuttle/supply)
+"Sf" = (
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5
+	},
+/area/shuttle/supply)
+"SE" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6
+	},
+/area/shuttle/supply)
+"SH" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10
+	},
+/area/shuttle/supply)
+"TC" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+"TM" = (
+/obj/machinery/conveyor{
+	dir = 9;
+	id = "wrightstuff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1
+	},
+/area/shuttle/supply)
+"Uh" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"UG" = (
+/obj/machinery/door/airlock/wood,
+/obj/docking_port/mobile/supply{
+	width = 5;
+	dwidth = 1;
+	dheight = 15;
+	height = 20;
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"VE" = (
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	id = "wrightstuff";
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side,
+/area/shuttle/supply)
+"Xe" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/decoration/rag,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/shuttle/supply)
+
+(1,1,1) = {"
+cu
+TC
+eK
+EU
+cu
+"}
+(2,1,1) = {"
+KU
+mE
+Ot
+gu
+oy
+"}
+(3,1,1) = {"
+uB
+Ix
+Sa
+Uh
+HJ
+"}
+(4,1,1) = {"
+Cr
+Ht
+Eu
+Uh
+Xe
+"}
+(5,1,1) = {"
+Cr
+Ht
+Eu
+Uh
+fQ
+"}
+(6,1,1) = {"
+Bg
+pZ
+Eu
+Uh
+HJ
+"}
+(7,1,1) = {"
+oy
+Sf
+aG
+pY
+BG
+"}
+(8,1,1) = {"
+cu
+TC
+RW
+TC
+cu
+"}
+(9,1,1) = {"
+aS
+nb
+mw
+fU
+aS
+"}
+(10,1,1) = {"
+cu
+TC
+RW
+EU
+cu
+"}
+(11,1,1) = {"
+oy
+pd
+rx
+SH
+oy
+"}
+(12,1,1) = {"
+VE
+TM
+cf
+Uh
+HJ
+"}
+(13,1,1) = {"
+vn
+EP
+cf
+Uh
+oy
+"}
+(14,1,1) = {"
+vn
+EP
+cf
+Uh
+vn
+"}
+(15,1,1) = {"
+UG
+pZ
+cf
+Uh
+HJ
+"}
+(16,1,1) = {"
+oy
+JZ
+CE
+SE
+oy
+"}
+(17,1,1) = {"
+cu
+TC
+eK
+TC
+cu
+"}
+(18,1,1) = {"
+vn
+rK
+cf
+xu
+vn
+"}
+(19,1,1) = {"
+NU
+ux
+mV
+ui
+cu
+"}
+(20,1,1) = {"
+cu
+cu
+TC
+cu
+cu
+"}

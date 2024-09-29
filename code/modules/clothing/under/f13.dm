@@ -1955,7 +1955,7 @@
 //Mordinos
 
 /obj/item/clothing/under/f13/mordinos/boss
-	name = "stylish uuit"
+	name = "stylish suit"
 	desc = "A charcoal suit with a red shirt and black tie."
 	icon_state = "mordino_boss"
 	item_state = "mordino_boss"

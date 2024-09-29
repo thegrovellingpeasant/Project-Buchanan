@@ -356,7 +356,7 @@ commented out pending rework*/
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 3,
 		/obj/item/restraints/legcuffs/bola/tactical = 1,
 		)
-		
+
 /datum/outfit/loadout/decvetwolf
 	name = "Princeps"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
@@ -543,7 +543,7 @@ commented out pending rework*/
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/melee/onehanded/machete = 1,
 		)
-		
+
 /datum/outfit/loadout/recdecredemption
 	name = "Triarius"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
@@ -987,7 +987,7 @@ commented out pending rework*/
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 	mapexclude = list("standard")
-	
+
 	loadout_options = list(	//ALL: Machete
 		/datum/outfit/loadout/recruittribal,	// Fire Axe, Bola, Trekking
 		/datum/outfit/loadout/recruitlegion,	// .357 Revolver, 2 x prefilled Molotovs

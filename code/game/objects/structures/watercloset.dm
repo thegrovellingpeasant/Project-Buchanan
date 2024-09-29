@@ -821,3 +821,18 @@
 	desc = "Contains less than 1% mercury."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "fancy_open"
+
+/obj/structure/curtain/stage/update_icon_state()
+	if(!open)
+		icon_state = "fancy_closed"
+		layer = WALL_OBJ_LAYER
+		density = FALSE
+		open = FALSE
+		set_opacity(TRUE)
+
+	else
+		icon_state = "fancy_open"
+		layer = SIGN_LAYER
+		density = FALSE
+		open = TRUE
+		set_opacity(FALSE)

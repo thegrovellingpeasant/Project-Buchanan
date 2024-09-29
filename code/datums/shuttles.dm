@@ -194,6 +194,14 @@
 	port_id = "intrepid"
 	can_be_bought = FALSE
 
+/datum/map_template/shuttle/raider
+	port_id = "raider"
+	can_be_bought = FALSE
+
+/datum/map_template/shuttle/ghoul
+	port_id = "ghoul"
+	can_be_bought = FALSE
+
 // Shuttles start here:
 
 /datum/map_template/shuttle/emergency/backup
@@ -458,6 +466,10 @@
 	suffix = "pahrump"
 	name = "supply train (Pahrump)"
 
+/datum/map_template/shuttle/cargo/reno
+	suffix = "reno"
+	name = "supply train (Reno)"
+
 /datum/map_template/shuttle/emergency/delta
 	suffix = "delta"
 	name = "Delta Station Emergency Shuttle"
@@ -648,6 +660,16 @@
 	name = "Intrepid Elevator"
 	port_id = "intrepid"
 
+/datum/map_template/shuttle/raider_elevator
+	suffix = "elevator"
+	name = "Raider Subway"
+	port_id = "raider"
+
+/datum/map_template/shuttle/ghoul_elevator
+	suffix = "elevator"
+	name = "Ghoul Subway"
+	port_id = "ghoul"
+
 /datum/map_template/shuttle/emergency/pahrump
 	suffix = "pahrump"
 	name = "Pahrump train"
@@ -660,6 +682,12 @@
 	credit_cost = 2000
 	description = "A plane that flies back and forth to Salt Lake City."
 
+/datum/map_template/shuttle/emergency/reno
+	suffix = "reno"
+	name = "Reno train"
+	credit_cost = 2000
+	description = "A weekly passenger train connecting New Reno to the rest of the Republic."
+
 /datum/map_template/shuttle/bosbase/base
 	suffix = "base"
 	name = "brotherhood of steel (base)"
@@ -668,9 +696,3 @@
 	suffix = "elevator"
 	name = "Enclave elevator"
 	port_id = "enclave"
-
-/datum/map_template/shuttle/emergency/reno
-	suffix = "reno"
-	name = "Reno train"
-	credit_cost = 2000
-	description = "A train to return the occupants back to New California."

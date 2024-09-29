@@ -1,0 +1,206 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/indestructible/rock,
+/area/f13/caves)
+"V" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+
+(1,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(2,1,1) = {"
+V
+V
+V
+a
+a
+a
+a
+V
+V
+"}
+(3,1,1) = {"
+V
+V
+a
+a
+a
+a
+a
+a
+V
+"}
+(4,1,1) = {"
+V
+a
+a
+a
+V
+V
+V
+V
+V
+"}
+(5,1,1) = {"
+V
+a
+a
+V
+V
+a
+V
+V
+V
+"}
+(6,1,1) = {"
+V
+a
+a
+V
+a
+a
+V
+V
+V
+"}
+(7,1,1) = {"
+V
+a
+V
+V
+V
+V
+V
+V
+V
+"}
+(8,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(9,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(10,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(11,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(12,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(13,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(14,1,1) = {"
+V
+V
+V
+a
+V
+a
+V
+V
+V
+"}
+(15,1,1) = {"
+V
+V
+V
+a
+a
+a
+a
+V
+V
+"}
+(16,1,1) = {"
+V
+V
+V
+a
+a
+a
+a
+a
+V
+"}
+(17,1,1) = {"
+V
+V
+V
+V
+V
+V
+a
+a
+V
+"}
+(18,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}

@@ -78,7 +78,7 @@
 	icon_state = "pvtgutsyprisoner"
 	desc = "A next-gen cyborg developed by General Atomic International. This one has has a penchant for getting himself in trouble."
 	faction = list("neutral","silicon","dog","hostile","pirate","wastebot","wolf","plants","turret","enclave","ghoul","cazador","supermutant","gecko","slime","radscorpion","skeleton","carp","bs","bighorner")
-	speak = list("Welcome to my little commissary. What can I get for ya?","I've got your back, mate, we've all got to down 'ere.","Innocent? I find that hard to believe.","You bring me some of the good stuff, I'll get us both some caps for it.","You be good and I moight give you some dynamite I got from an old coot.")
+	speak = list("Welcome to my little commissary. What can I get for ya?","I've got your back, mate, we've all got to down 'ere.","Innocent? I find that hard to believe.","You bring me some of the good stuff, I'll get us both some caps for it.","You didn't get it from me.")
 	speak_chance = 25
 	wander = FALSE
 	dir = WEST
@@ -208,6 +208,10 @@
 	obj_damage = 300
 	health = 300
 	maxHealth = 300
+
+/mob/living/simple_animal/hostile/handy/robobrain/raider //NSB + Raider Bunker specific
+	name = "robobrain"
+	faction = list("raider")
 
 /mob/living/simple_animal/hostile/handy/robobrain/secretary
 	name = "SCR3-T3R1"

@@ -1,0 +1,2353 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aw" = (
+/obj/structure/bed{
+	layer = 2.88;
+	dir = 4
+	},
+/obj/item/bedsheet/brown{
+	layer = 2.89;
+	dir = 8;
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"aM" = (
+/obj/structure/table/wood,
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/item/storage/box/dice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"aU" = (
+/obj/machinery/deepfryer,
+/obj/structure/fence/wooden{
+	pixel_x = 17
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bp" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"bC" = (
+/obj/item/reagent_containers/glass/bucket/plastic{
+	list_reagents = list(/datum/reagent/water=150);
+	pixel_y = -1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sink/puddle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"bH" = (
+/obj/structure/railing/handrail{
+	dir = 6;
+	pixel_y = -1
+	},
+/obj/item/clothing/gloves/boxing,
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"co" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/obj/structure/railing/wood{
+	pixel_y = -10;
+	layer = 4.24
+	},
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"cI" = (
+/obj/structure/table/optable{
+	icon = 'icons/fallout/objects/structures/junk_table.dmi';
+	icon_state = "bar";
+	pixel_x = -2
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"cX" = (
+/obj/structure/closet/crate/freezer/blood/fake,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/obj/item/reagent_containers/blood,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"dx" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/caves)
+"dI" = (
+/obj/item/sign_backing{
+	anchored = 1
+	},
+/obj/item/crusher_trophy/legion_skull{
+	pixel_x = 2;
+	anchored = 1;
+	desc = "A skull smoking how interesting.";
+	name = "Dapper skull"
+	},
+/obj/item/clothing/head/bowler{
+	pixel_y = 9;
+	pixel_x = 2;
+	anchored = 1
+	},
+/obj/item/clothing/mask/cigarette/greytort{
+	pixel_y = 2;
+	pixel_x = -3;
+	anchored = 1;
+	icon_state = "cigon"
+	},
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"dY" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	pixel_x = 2;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	pixel_y = -5
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"el" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"eT" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"fc" = (
+/obj/structure/railing/handrail{
+	dir = 4;
+	layer = 3.88;
+	pixel_y = -1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"hh" = (
+/obj/machinery/mineral/stacking_machine/laborstacker,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"hl" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	layer = 4.27;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hN" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.26;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"hU" = (
+/obj/machinery/iv_drip{
+	pixel_x = 16;
+	anchored = 1
+	},
+/obj/structure/table/wood,
+/obj/item/stack/sticky_tape{
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/obj/item/stack/packageWrap,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ic" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 17;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/obj/structure/railing/wood{
+	pixel_y = -4
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"iq" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_firearms,
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"iL" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/f13/inside/gravel{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"iM" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = -16;
+	pixel_x = -2;
+	layer = 4.26
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"jt" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_accessories,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_edge_left"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"jL" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.26
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"jM" = (
+/obj/structure/rack/shelf_metal,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = -32;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood2";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken"
+	},
+/area/f13/caves)
+"jP" = (
+/obj/structure/table/wood/ruined,
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jR" = (
+/obj/structure/bed{
+	layer = 2.88;
+	dir = 4
+	},
+/obj/item/bedsheet/brown{
+	dir = 8;
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"jU" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"km" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 20;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -14;
+	layer = 4.28
+	},
+/obj/structure/closet/crate/leftfootlocker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ku" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = 32;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/turf/open/floor/wood/f13/stage_b,
+/area/f13/caves)
+"kw" = (
+/obj/machinery/iv_drip{
+	pixel_x = -16;
+	anchored = 1
+	},
+/obj/item/stack/packageWrap{
+	pixel_y = 8
+	},
+/obj/structure/table/wood,
+/obj/item/stack/sticky_tape{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/stack/sticky_tape{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/stack/packageWrap{
+	pixel_y = 8
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"la" = (
+/obj/structure/table/wood,
+/obj/item/shard{
+	pixel_y = 6;
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/screwdriver/crude{
+	pixel_y = -2
+	},
+/obj/item/hatchet/cutterblade{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/f13/stage_tr,
+/area/f13/caves)
+"mB" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "mining_internal1"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"mH" = (
+/obj/item/sign_backing{
+	anchored = 1
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_greytort{
+	pixel_x = -4;
+	pixel_y = -7;
+	anchored = 1
+	},
+/obj/item/clothing/mask/cigarette/greytort{
+	pixel_y = 12;
+	pixel_x = 6;
+	anchored = 1;
+	icon_state = "cigon"
+	},
+/obj/item/lighter/greyscale{
+	icon_state = "lighter-on";
+	pixel_y = -6;
+	pixel_x = 3;
+	anchored = 1
+	},
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"nh" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "mining_internal1"
+	},
+/obj/structure/barricade/bars{
+	max_integrity = 99999;
+	name = "strong metal bars";
+	obj_integrity = 99999
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"nk" = (
+/obj/structure/railing/handrail{
+	pixel_y = -1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"nl" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 13;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/structure/closet/crate/wooden,
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.28;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"nL" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_recreation,
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"nP" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 13;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/structure/closet/athletic_mixed,
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ob" = (
+/obj/effect/overlay/curb,
+/obj/effect/overlay/curb{
+	pixel_y = -3
+	},
+/obj/structure/chair/stool,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ou" = (
+/obj/structure/railing{
+	color = "#A47449";
+	pixel_y = -1;
+	layer = 4.25
+	},
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 4;
+	layer = 4.29;
+	pixel_x = -14
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ov" = (
+/obj/structure/chair/sofa/corp/corner{
+	dir = 1
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"oO" = (
+/obj/structure/table,
+/obj/effect/overlay/junk/curtain,
+/obj/structure/barricade/bars,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"ph" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 3;
+	layer = 4.29;
+	pixel_x = 11
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/item/toy/cards/deck,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qm" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"qx" = (
+/obj/structure/table/roulette,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"qJ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/mineral/labor_claim_console{
+	icon_state = "terminal";
+	icon = 'icons/obj/computer.dmi';
+	dir = 8;
+	pixel_y = -1
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"qK" = (
+/obj/structure/table/optable{
+	icon = 'icons/fallout/objects/structures/junk_table.dmi';
+	icon_state = "bar";
+	pixel_x = 3
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"qL" = (
+/obj/item/chair/stool,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rk" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 3;
+	layer = 4.29;
+	pixel_x = 11
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/rifle/mosin,
+/obj/item/gun/ballistic/rifle/mosin,
+/obj/item/gun/ballistic/rifle/mosin,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"rn" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/obj/structure/chair/stool/retro/tan,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sb" = (
+/obj/structure/table,
+/obj/structure/bedsheetbin/towel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sn" = (
+/obj/structure/stairs/east{
+	color = "#faf0b9";
+	max_integrity = 99999
+	},
+/obj/structure/railing/wood{
+	pixel_y = -7
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"sF" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 31;
+	layer = 4.29;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sH" = (
+/turf/open/floor/wood/f13/stage_br,
+/area/f13/caves)
+"sM" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 13;
+	layer = 4.28
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.26;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sZ" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -17
+	},
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"td" = (
+/obj/structure/railing{
+	color = "#A47449";
+	pixel_y = -1;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"tg" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 13;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ty" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 13;
+	layer = 4.28;
+	pixel_y = 31
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/structure/table/wood,
+/obj/item/storage/bag/casings{
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"us" = (
+/obj/structure/table/wood,
+/obj/item/screwdriver/crude{
+	pixel_y = 14
+	},
+/obj/item/wirecutters/crude{
+	pixel_y = 3
+	},
+/obj/item/pen{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/turf/open/floor/wood/f13/stage_t,
+/area/f13/caves)
+"vb" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"vv" = (
+/obj/structure/closet/athletic_mixed,
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	layer = 4.28;
+	pixel_y = -9
+	},
+/obj/effect/spawner/lootdrop/cig_packs,
+/obj/item/storage/box/matches,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"vL" = (
+/obj/structure/chair/stool/retro/tan,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wv" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"wS" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 4;
+	layer = 4.29;
+	pixel_x = -14
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"xF" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood2";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood1";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = 32;
+	plane = -4;
+	name = null
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = 32;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/obj/machinery/jukebox,
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"xT" = (
+/obj/structure/railing/corner{
+	dir = 8;
+	color = "#A47449";
+	layer = 4.25
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yc" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.29
+	},
+/obj/structure/chair/stool/retro/backed{
+	dir = 4;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"yu" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.28
+	},
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"yL" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.24
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"yM" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_recreation,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"yO" = (
+/turf/open/floor/plating/f13/inside/gravel{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"yX" = (
+/obj/structure/table/wood/ruined,
+/obj/machinery/processor/chopping_block{
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zb" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 15;
+	pixel_x = 2;
+	layer = 4.27
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"zm" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 7;
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zt" = (
+/obj/structure/curtain{
+	icon = 'icons/fallout/structures/doors.dmi';
+	pixel_y = 2;
+	color = null;
+	alpha = 235
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"zC" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.28
+	},
+/obj/structure/curtain{
+	icon = 'icons/fallout/structures/doors.dmi';
+	pixel_y = 2;
+	color = null;
+	alpha = 235
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Aj" = (
+/obj/structure/railing/handrail{
+	dir = 9;
+	pixel_y = 21
+	},
+/obj/structure/railing/handrail{
+	dir = 8;
+	layer = 3.88;
+	pixel_y = -1
+	},
+/obj/item/clothing/gloves/boxing/yellow,
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"As" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	pixel_x = 3;
+	layer = 4.26
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Au" = (
+/obj/item/bedsheet/brown{
+	dir = 8;
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/obj/structure/bed{
+	layer = 2.88;
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Bn" = (
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Br" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"Bx" = (
+/obj/structure/table/wood,
+/obj/item/stack/packageWrap,
+/obj/item/stack/packageWrap{
+	pixel_y = -3
+	},
+/obj/item/lighter/greyscale{
+	pixel_x = 10;
+	pixel_y = 7
+	},
+/obj/item/storage/box/matches{
+	pixel_x = -10;
+	pixel_y = 14
+	},
+/turf/open/floor/wood/f13/stage_t,
+/area/f13/caves)
+"Bz" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 15;
+	layer = 4.26;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"BS" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/flashlight/lamp/green{
+	pixel_x = -8;
+	pixel_y = 14
+	},
+/obj/item/salvage/high{
+	icon_state = "luck";
+	pixel_y = 20;
+	pixel_x = 10;
+	name = "Lucky Bobblehead";
+	desc = "A pre-war figurine that watches over those who delve into the mines."
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"CD" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"CG" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"De" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Dj" = (
+/obj/machinery/conveyor{
+	id = "mining_internal"
+	},
+/obj/machinery/mineral/processing_unit,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Dv" = (
+/obj/structure/railing/wood{
+	pixel_y = -10;
+	layer = 4.24
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"DA" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood2";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"DB" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"DG" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 14;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28;
+	pixel_y = -1
+	},
+/obj/effect/overlay/curb{
+	pixel_x = 1
+	},
+/obj/structure/table/wood/crate,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"El" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"EI" = (
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"EO" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fb" = (
+/obj/structure/railing/handrail{
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Fl" = (
+/obj/effect/spawner/structure/window/reinforced/indestructable,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"FO" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Ge" = (
+/turf/closed/indestructible/f13vaultrusted,
+/area/f13/caves)
+"Hl" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/f13/inside/gravel{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Ho" = (
+/obj/structure/railing/wood{
+	pixel_y = 15;
+	layer = 3
+	},
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"Hu" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"HR" = (
+/obj/structure/table/rolling,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"HT" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"HW" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Jm" = (
+/obj/structure/railing/wood{
+	pixel_y = -4
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"JE" = (
+/obj/effect/overlay/junk/curtain,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"JK" = (
+/obj/structure/simple_door/metal,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"JO" = (
+/obj/machinery/conveyor{
+	id = "mining_internal"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"JQ" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/conveyor{
+	dir = 6;
+	id = "mining_internal1"
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Kj" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Le" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Lw" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = -15;
+	pixel_x = -12
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"LD" = (
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"LZ" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 5;
+	pixel_x = 3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	pixel_y = -12;
+	layer = 4.24
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Mu" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 31;
+	layer = 4.29
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = 14;
+	pixel_y = 32;
+	layer = 4.26
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Mx" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"My" = (
+/obj/structure/railing{
+	dir = 8;
+	color = "#A47449";
+	layer = 2.89;
+	pixel_x = -1
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.27;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 2;
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"MF" = (
+/obj/structure/railing/handrail{
+	dir = 10;
+	pixel_y = -1
+	},
+/obj/item/clothing/gloves/boxing/blue,
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Nd" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -1;
+	layer = 4.29
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NK" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 4;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"NN" = (
+/turf/open/floor/wood/f13/stage_bl,
+/area/f13/caves)
+"Ox" = (
+/obj/item/radio/wendoverreceiver{
+	icon_state = "large_radio_on";
+	pixel_y = 34;
+	anchored = 1;
+	plane = -3
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"OJ" = (
+/obj/structure/nest/mob/privategutsy{
+	icon_state = "pvtgutsyprisoner";
+	mob_types = list(/mob/living/simple_animal/hostile/handy/contraband=5);
+	name = "Mr. 'andy";
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor3-broken"
+	},
+/area/f13/caves)
+"OP" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"OR" = (
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 3;
+	layer = 4.29;
+	pixel_x = 11
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"OT" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"OX" = (
+/obj/structure/railing/handrail{
+	dir = 8;
+	layer = 3.88;
+	pixel_y = -1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Pu" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = -1;
+	layer = 4.3
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"PH" = (
+/obj/machinery/mineral/wasteland_trader/renobuyer{
+	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
+	},
+/obj/effect/overlay/gravel/edge,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"PI" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -3;
+	layer = 4.27
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/item/storage/box/drinkingglasses,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"PL" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood1";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = 32;
+	plane = -4;
+	name = null
+	},
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor4-broken"
+	},
+/area/f13/caves)
+"PW" = (
+/turf/closed/mineral/random/low_chance/underground/abovemob,
+/area/f13/caves)
+"Qd" = (
+/obj/structure/table/wood,
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/item/reagent_containers/food/drinks/mug,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Qg" = (
+/obj/structure/closet/fridge,
+/obj/structure/fence/wooden{
+	dir = 1;
+	icon_state = "post_wood";
+	pixel_x = -14
+	},
+/obj/item/clothing/neck/apron/housewife,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/knife,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Qt" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.28
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	layer = 4.28
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Qv" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/railing/wood{
+	pixel_y = 15;
+	layer = 2.89
+	},
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Re" = (
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor1-broken"
+	},
+/area/f13/caves)
+"RE" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood1";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = -32;
+	plane = -4;
+	name = null
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = -32;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"RM" = (
+/obj/machinery/conveyor{
+	id = "mining_internal"
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"RT" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"RX" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/f13/inside/gravel{
+	sunlight_state = 0
+	},
+/area/f13/caves)
+"Sy" = (
+/obj/structure/simple_door/bunker/glass,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"SC" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -16;
+	layer = 4.28
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/punching_bag,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"SG" = (
+/obj/machinery/mineral/wasteland_trader/renobuyer{
+	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
+	},
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner"
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ST" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining_internal";
+	name = "mining conveyor";
+	pixel_y = 23
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/mineral/processing_unit_console{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "terminal";
+	dir = 8;
+	pixel_y = 5;
+	desc = "Break this and the warden will have your ass."
+	},
+/obj/machinery/mineral/stacking_unit_console{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "terminal";
+	dir = 8;
+	pixel_y = -9;
+	pixel_x = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"SY" = (
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant";
+	pixel_x = -7
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Th" = (
+/obj/structure/table/reinforced,
+/obj/machinery/mineral/labor_points_checker{
+	icon_state = "terminal";
+	icon = 'icons/obj/computer.dmi';
+	dir = 1;
+	pixel_y = 7;
+	pixel_x = 5
+	},
+/obj/item/match{
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Tl" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/rack/shelf_metal,
+/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Tu" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"TE" = (
+/obj/effect/overlay/curb,
+/obj/effect/overlay/curb{
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"TT" = (
+/obj/machinery/conveyor_switch/oneway{
+	id = "mining_internal1";
+	name = "mining conveyor";
+	pixel_y = 23
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"Ug" = (
+/obj/structure/railing/handrail{
+	dir = 5;
+	pixel_y = 21
+	},
+/obj/structure/railing/handrail{
+	dir = 4;
+	layer = 3.88;
+	pixel_y = -1
+	},
+/obj/item/clothing/gloves/boxing/green,
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Uo" = (
+/turf/open/floor/wood/f13/oak,
+/area/f13/caves)
+"Ur" = (
+/obj/structure/table/wood,
+/obj/item/kitchen/fork{
+	pixel_x = 17
+	},
+/obj/item/stack/cable_coil/random/five{
+	pixel_x = 7;
+	pixel_y = -4
+	},
+/obj/item/stack/cable_coil/random/five{
+	pixel_x = 5
+	},
+/obj/item/stack/sticky_tape{
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/turf/open/floor/wood/f13/stage_t,
+/area/f13/caves)
+"Uu" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 14;
+	pixel_y = 26
+	},
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	pixel_y = 27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Uy" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"UB" = (
+/obj/effect/overlay/gravel/edge{
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Vi" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/wood/f13/oak{
+	icon_state = "oakfloor3-broken"
+	},
+/area/f13/caves)
+"VB" = (
+/obj/structure/weightmachine/stacklifter,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Wd" = (
+/obj/structure/railing/handrail{
+	dir = 8;
+	layer = 3.88;
+	pixel_y = -1;
+	density = 0
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Wx" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_expedition,
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"WK" = (
+/obj/structure/railing/handrail{
+	dir = 4;
+	layer = 3.88;
+	density = 0;
+	pixel_y = -1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"WY" = (
+/obj/structure/railing/wood{
+	dir = 4;
+	pixel_y = 8;
+	layer = 4.29;
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"XO" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -17
+	},
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.28
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"XR" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 15;
+	layer = 4.26;
+	pixel_y = 26
+	},
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	layer = 4.28;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#faf0b9"
+	},
+/area/f13/caves)
+"Yd" = (
+/obj/structure/closet/crate/miningcar,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Yp" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_firearms,
+/obj/effect/overlay/gravel/edge{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"Yq" = (
+/obj/structure/chair/stool/retro,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"YP" = (
+/obj/machinery/mineral/wasteland_vendor/reno/prison_accessories,
+/obj/effect/overlay/gravel/edge{
+	dir = 9
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
+"ZC" = (
+/obj/structure/chair/stool,
+/obj/item/reagent_containers/glass/bucket/plastic{
+	list_reagents = list(/datum/reagent/water=150);
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/glass/rag,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZM" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "wood";
+	icon = 'icons/fallout/turfs/walls/wood_crafted.dmi';
+	layer = 5;
+	pixel_x = -32;
+	plane = -4;
+	pixel_y = 32;
+	name = null
+	},
+/turf/open/floor/wood/f13/stage_b,
+/area/f13/caves)
+"ZT" = (
+/obj/machinery/microwave/stove,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+Le
+Mx
+Mx
+Mx
+sZ
+Au
+jR
+aw
+aw
+Hu
+us
+cX
+hU
+Ho
+"}
+(2,1,1) = {"
+Le
+Le
+bC
+zt
+zb
+JE
+JE
+JE
+JE
+Hu
+Bx
+Uo
+qK
+Ho
+"}
+(3,1,1) = {"
+Mx
+Le
+XO
+Bz
+zC
+CD
+CD
+CD
+CD
+ou
+Ur
+Uo
+cI
+Ho
+"}
+(4,1,1) = {"
+Le
+Le
+ZC
+zt
+ic
+vL
+CD
+CD
+CD
+td
+la
+Uo
+kw
+Ho
+"}
+(5,1,1) = {"
+Le
+Mx
+Mx
+Mx
+jL
+ty
+rn
+CD
+FO
+xT
+My
+bp
+Ho
+Br
+"}
+(6,1,1) = {"
+Le
+Mx
+Le
+Le
+Le
+Le
+Qt
+CD
+Ho
+Le
+Le
+Le
+Br
+Mx
+"}
+(7,1,1) = {"
+Le
+As
+dY
+PI
+vv
+LZ
+tg
+CD
+EO
+ov
+eT
+Mx
+Mx
+Mx
+"}
+(8,1,1) = {"
+sZ
+Uo
+XR
+CD
+CD
+wS
+CD
+CD
+zm
+el
+eT
+Mx
+Mx
+Mx
+"}
+(9,1,1) = {"
+RT
+sn
+DG
+CD
+CD
+CD
+CD
+CD
+CD
+CD
+eT
+Le
+Mx
+Mx
+"}
+(10,1,1) = {"
+yL
+km
+Yd
+CD
+CD
+CD
+CD
+CD
+CD
+CD
+yc
+eT
+Mx
+Mx
+"}
+(11,1,1) = {"
+Jm
+nl
+jP
+CD
+qL
+Aj
+Wd
+OX
+MF
+TE
+qx
+eT
+Mx
+Mx
+"}
+(12,1,1) = {"
+Le
+yu
+Qg
+CD
+Fb
+Bn
+Bn
+Bn
+nk
+TE
+Lw
+qm
+Mx
+Mx
+"}
+(13,1,1) = {"
+Mx
+RT
+ZT
+CD
+Fb
+Bn
+EI
+Bn
+nk
+TE
+CG
+eT
+Br
+Mx
+"}
+(14,1,1) = {"
+Mx
+RT
+yX
+CD
+Fb
+Bn
+Bn
+Bn
+nk
+TE
+CD
+Nd
+PW
+Mx
+"}
+(15,1,1) = {"
+Le
+RT
+aU
+CD
+CD
+Ug
+fc
+WK
+bH
+ob
+CD
+WY
+PW
+Br
+"}
+(16,1,1) = {"
+Jm
+SC
+CD
+CD
+CD
+CD
+CD
+CD
+CD
+CD
+CD
+eT
+Br
+Br
+"}
+(17,1,1) = {"
+CD
+hN
+CD
+CD
+CD
+Yq
+NK
+CG
+WY
+CD
+OT
+Br
+Br
+Br
+"}
+(18,1,1) = {"
+CD
+hl
+CD
+CD
+CD
+aM
+ph
+Qd
+dx
+Sy
+Ge
+Ge
+Ge
+Br
+"}
+(19,1,1) = {"
+jL
+sb
+VB
+CD
+CD
+eT
+Ge
+Ge
+Ge
+Ox
+De
+SY
+Ge
+Br
+"}
+(20,1,1) = {"
+Jm
+nP
+sM
+CD
+CD
+eT
+Ge
+HR
+De
+LD
+Tu
+Th
+Ge
+Br
+"}
+(21,1,1) = {"
+Le
+Le
+RT
+sF
+CD
+Uy
+dx
+mB
+TT
+ST
+qJ
+BS
+Ge
+Br
+"}
+(22,1,1) = {"
+Le
+Jm
+jU
+CD
+CD
+CD
+dx
+nh
+Fl
+Fl
+Fl
+Fl
+Ge
+Br
+"}
+(23,1,1) = {"
+Jm
+jU
+CD
+CD
+CD
+WY
+dx
+JQ
+Dj
+JO
+RM
+hh
+Ge
+Br
+"}
+(24,1,1) = {"
+CD
+Kj
+CD
+CD
+CD
+eT
+Ge
+Ge
+Ge
+Ge
+Ge
+Ge
+Ge
+Br
+"}
+(25,1,1) = {"
+CD
+OP
+CD
+CD
+CD
+eT
+Br
+Le
+Qv
+HW
+Tl
+eT
+Br
+Br
+"}
+(26,1,1) = {"
+yL
+OP
+hl
+CD
+CD
+Uy
+Uy
+Uy
+CD
+CD
+CD
+Uy
+Uy
+DB
+"}
+(27,1,1) = {"
+iM
+Jm
+Mu
+CD
+WY
+CD
+CD
+WY
+WY
+OR
+CD
+CD
+CD
+vb
+"}
+(28,1,1) = {"
+Dv
+Uu
+WY
+WY
+co
+rk
+El
+eT
+Br
+Pu
+mH
+JK
+dI
+Le
+"}
+(29,1,1) = {"
+Le
+Le
+Br
+Br
+Br
+Br
+Br
+Br
+Wx
+Hu
+YP
+yO
+PH
+Le
+"}
+(30,1,1) = {"
+Le
+Hu
+RE
+Vi
+ZM
+Wx
+Hu
+jt
+HT
+RX
+yO
+iL
+Hu
+Le
+"}
+(31,1,1) = {"
+Le
+jM
+Uo
+oO
+Re
+NN
+RX
+yO
+yO
+yO
+Hl
+UB
+SG
+Le
+"}
+(32,1,1) = {"
+Le
+DA
+OJ
+oO
+Uo
+sH
+yO
+Hl
+yO
+iq
+Hu
+yM
+Br
+Le
+"}
+(33,1,1) = {"
+Le
+xF
+PL
+oO
+ku
+wv
+Yp
+Hu
+nL
+Br
+Br
+Br
+Br
+Le
+"}
+(34,1,1) = {"
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Le
+Br
+Br
+Br
+Br
+Br
+Le
+"}

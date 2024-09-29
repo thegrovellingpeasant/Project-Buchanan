@@ -105,6 +105,10 @@
 	//If this job is needed to load, then this the flag that keeps it to load.
 	var/loadalways = FALSE
 
+	var/has_faction_task = TRUE		// Whether this job is assigned its faction's task.
+	var/has_player_task = TRUE		// Whether this job is assigned its faction's task.
+	var/faction_head = FALSE
+
 
 /datum/job/proc/after_spawn(mob/living/spawner, mob/client_holder, latejoin = FALSE)
 	SHOULD_CALL_PARENT(TRUE)

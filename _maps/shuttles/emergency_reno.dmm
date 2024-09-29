@@ -1,887 +1,1125 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aE" = (
-/obj/structure/chair/comfy/modern{
-	dir = 8
+/obj/structure/table/reinforced,
+/obj/structure/fluff/railing{
+	dir = 8;
+	layer = 2.91
 	},
-/turf/open/floor/carpet/blue,
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"aK" = (
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "aO" = (
-/obj/structure/toilet{
-	pixel_y = -1
-	},
-/obj/structure/sink{
+/obj/structure/railing{
 	dir = 8;
-	pixel_x = -16
+	color = "#A47449"
 	},
-/obj/structure/mirror{
-	pixel_x = -32
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1;
+	sunlight_state = 1
 	},
-/obj/machinery/light/floor{
-	pixel_y = 8;
-	invisibility = 100
+/area/shuttle/escape)
+"bV" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
 	},
-/turf/open/floor/plasteel/solarpanel,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 4
+	},
+/area/shuttle/escape)
+"bW" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "cK" = (
-/obj/machinery/door/airlock/alarmlock,
-/obj/docking_port/mobile/emergency{
-	dheight = 20;
-	height = 27;
-	width = 19;
+/obj/structure/sign/warning/nosmoking,
+/turf/closed/wall/rust,
+/area/shuttle/escape)
+"cM" = (
+/obj/structure/target_stake,
+/obj/item/target{
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi';
+	icon_state = "bs_knight";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 10
+	},
+/area/shuttle/escape)
+"cP" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"dv" = (
+/obj/machinery/door/airlock/wood,
+/obj/structure/barricade/wooden/planks,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"eh" = (
+/obj/structure/table/reinforced,
+/obj/structure/fluff/railing{
 	dir = 8;
-	dwidth = 8;
+	layer = 2.91
+	},
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
+/obj/item/storage/box/drinkingglasses,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"em" = (
+/obj/structure/chair/pew{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"eW" = (
+/obj/machinery/computer/emergency_shuttle{
+	dir = 8;
+	pixel_x = 7
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 4;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"eY" = (
+/obj/structure/chair/stool/retro/backed,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 5
+	},
+/area/shuttle/escape)
+"gi" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull/lit,
+/area/shuttle/escape)
+"gl" = (
+/obj/structure/chair/sofa/corp/corner,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 5
+	},
+/area/shuttle/escape)
+"gn" = (
+/obj/structure/railing{
+	layer = 4.25;
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"gV" = (
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.25;
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 6;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"gW" = (
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/cig_packs{
+	pixel_y = 6
+	},
+/obj/item/storage/box/matches{
+	pixel_y = 6;
+	pixel_x = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"hG" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"if" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/machinery/light{
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"iH" = (
+/obj/machinery/door/airlock/wood,
+/obj/structure/barricade/wooden/planks,
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"iJ" = (
+/obj/structure/chair/wood/wings{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"jE" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/machinery/light{
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"jV" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/shuttle/escape)
+"jW" = (
+/obj/structure/chair/sofa/corp/right,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"ln" = (
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"mp" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"mA" = (
+/obj/structure/chair/sofa/corp{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 4
+	},
+/area/shuttle/escape)
+"pS" = (
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_y = 12;
+	layer = 3.21
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 9
+	},
+/area/shuttle/escape)
+"qR" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/sign/reno/barsign/sharkclub,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/shuttle/escape)
+"qW" = (
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"ru" = (
+/obj/structure/table/wood{
+	icon = 'icons/obj/hand_of_god_structures.dmi';
+	icon_state = "convertaltar";
+	desc = null;
+	name = "altar";
+	smooth = 0
+	},
+/obj/effect/overlay/cross{
+	pixel_y = 13;
+	layer = 3.3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 5;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"ry" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull/lit,
+/area/shuttle/escape)
+"rO" = (
+/turf/open/floor/plating/tunnel/rail/north{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_train_rail";
+	dir = 4
+	},
+/area/shuttle/escape)
+"sd" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/storage/book/bible/booze,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"sX" = (
+/obj/structure/window/fulltile/ruins,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/shuttle/escape)
+"tA" = (
+/obj/structure/table/reinforced,
+/obj/item/gavelblock{
+	pixel_y = 6
+	},
+/obj/item/gavelhammer,
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 6;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"tI" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"tO" = (
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"tS" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"vp" = (
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.25;
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"wO" = (
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"ya" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	icon_state = "wineglass";
+	list_reagents = list(/datum/reagent/consumable/ethanol/wine=50);
+	pixel_y = 8;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass{
+	icon_state = "wineglass";
+	list_reagents = list(/datum/reagent/consumable/ethanol/wine=50);
+	pixel_y = 4;
+	pixel_x = -4
+	},
+/obj/machinery/vending/boozeomat{
+	pixel_y = 32;
+	density = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"yj" = (
+/obj/structure/chair/sofa/corp/corner{
+	dir = 8;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 6
+	},
+/area/shuttle/escape)
+"zv" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/fancy/donut_box,
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 5;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"zH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk";
+	dir = 1
+	},
+/area/shuttle/escape)
+"AK" = (
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"AR" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	layer = 3.2;
+	pixel_y = 7;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Bb" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"BT" = (
+/turf/closed/wall/rust,
+/area/shuttle/escape)
+"CH" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"CY" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/chess/blackbishop,
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"DB" = (
+/obj/structure/target_stake,
+/obj/item/target{
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi';
+	icon_state = "vault_dweller_sec";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 9
+	},
+/area/shuttle/escape)
+"Er" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"EH" = (
+/obj/structure/chair/stool/retro/backed{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Ft" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken";
+	layer = 2.89
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/shuttle/escape)
+"FG" = (
+/obj/structure/chair/stool/retro/backed,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"Gf" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Gz" = (
+/obj/structure/table/wood,
+/obj/structure/closet/crate/leftfootlocker{
+	pixel_y = 8
+	},
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 10;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Hn" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/shuttle/escape)
+"HX" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Ig" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"IC" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"IL" = (
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"IV" = (
+/obj/structure/table/roulette,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 8
+	},
+/area/shuttle/escape)
+"Js" = (
+/obj/machinery/door/airlock/wood,
+/obj/docking_port/mobile/emergency{
+	dwidth = 5;
+	height = 41;
+	width = 5;
+	dheight = 39;
 	id = "emergency_transit";
 	name = "Vault emergency shuttle"
 	},
-/turf/open/floor/carpet/blue,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/shuttle/escape)
-"cM" = (
-/obj/structure/lattice/catwalk/wing/three,
-/turf/template_noop,
-/area/shuttle/escape)
-"eW" = (
-/obj/structure/chair/comfy/modern{
-	dir = 8
+"JG" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
 	},
-/obj/machinery/light/floor,
-/turf/open/floor/carpet/blue,
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/shuttle/escape)
-"eY" = (
-/obj/machinery/computer{
-	dir = 4;
-	pixel_x = -6
-	},
-/obj/machinery/light/floor,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"gi" = (
-/obj/structure/railing{
-	dir = 4;
-	pixel_x = 4
-	},
-/obj/structure/railing{
-	dir = 8;
-	pixel_x = -1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"hG" = (
-/obj/effect/overlay/airplanewing{
-	pixel_x = 0
-	},
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/escape)
-"if" = (
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"is" = (
-/obj/structure/chair/comfy/modern{
-	dir = 8
-	},
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
-	},
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"jV" = (
-/obj/structure/lattice/catwalk/wing/twelve,
-/turf/template_noop,
-/area/shuttle/escape)
-"ln" = (
-/obj/structure/chair/comfy/shuttle{
-	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
-	dir = 8;
-	name = "prewar lounge chair"
-	},
-/mob/living/simple_animal/hostile/handy/robobrain/hercules,
-/obj/item/clothing/head/helmet/f13/aviationcap{
-	pixel_y = -1;
-	layer = 4.1;
-	icon = 'icons/mob/clothing/head.dmi';
-	dir = 8;
-	icon_state = "aviationcapup";
-	pixel_x = -1
-	},
-/obj/item/clothing/neck/scarf/cptpatriot{
-	layer = 4.05;
-	icon = 'icons/mob/clothing/neck.dmi';
-	pixel_y = -1;
-	pixel_x = -3;
-	icon_state = "scarf"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"mA" = (
-/obj/structure/lattice/catwalk/wing/seven,
-/turf/template_noop,
-/area/shuttle/escape)
-"oo" = (
-/obj/structure/lattice/catwalk/wing/one,
-/obj/effect/overlay/airplanewing/bottom,
-/turf/template_noop,
-/area/shuttle/escape)
-"rO" = (
-/obj/machinery/door/airlock/survival_pod/glass,
-/obj/machinery/light/floor{
-	invisibility = 100
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"sX" = (
-/obj/structure/lattice/catwalk/wing/flat,
-/turf/template_noop,
-/area/shuttle/escape)
-"tf" = (
-/obj/structure/chair/comfy/shuttle{
-	desc = "A comfortable, secure seat. It has a futuristic vouge feel.";
-	dir = 8;
-	name = "prewar lounge chair"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"tA" = (
-/obj/structure/curtain{
-	color = "#4e638a";
-	alpha = 225
-	},
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"tO" = (
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/escape)
-"tS" = (
-/obj/structure/curtain{
-	color = "#4e638a";
-	alpha = 225
-	},
-/obj/machinery/light/floor{
-	invisibility = 100
-	},
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"wO" = (
-/obj/structure/window/shuttle,
-/obj/structure/curtain{
-	color = "#4e638a";
-	alpha = 225
-	},
-/turf/closed/wall/mineral/titanium/transparentundense,
-/area/shuttle/escape)
-"zv" = (
-/obj/machinery/door/airlock/survival_pod,
-/turf/open/floor/plasteel/solarpanel,
-/area/shuttle/escape)
-"zH" = (
-/obj/structure/table/greyscale,
-/obj/machinery/light/floor{
-	alpha = 0
-	},
-/obj/item/radio/wendoverreceiver,
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"Bb" = (
-/obj/structure/lattice/catwalk/wing/fifteen,
-/turf/template_noop,
-/area/shuttle/escape)
-"BT" = (
-/turf/template_noop,
-/area/shuttle/escape)
-"CH" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/shuttle/escape)
-"CY" = (
-/obj/structure/closet/secure_closet/freezer/cream_pie{
-	locked = 0
-	},
-/turf/open/floor/carpet/blue,
-/area/shuttle/escape)
-"Er" = (
-/obj/effect/overlay/airplanewing,
-/obj/structure/lattice/catwalk/wing,
-/turf/template_noop,
-/area/shuttle/escape)
-"EH" = (
-/obj/structure/table/greyscale,
-/obj/machinery/light/floor{
-	alpha = 0
-	},
-/turf/open/floor/plating,
-/area/shuttle/escape)
-"FG" = (
-/obj/structure/lattice/catwalk/wing/thirteen,
-/turf/template_noop,
-/area/shuttle/escape)
-"Gz" = (
-/obj/structure/lattice/catwalk/wing/four,
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/escape)
-"HL" = (
-/obj/structure/chair/comfy/shuttle{
+"Ko" = (
+/obj/item/target{
+	icon = 'icons/fallout/mobs/humans/fallout_npc.dmi';
+	icon_state = "tribal_raider";
 	dir = 4
 	},
-/turf/open/floor/carpet/blue,
+/obj/structure/target_stake,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 8
+	},
 /area/shuttle/escape)
-"IC" = (
-/obj/structure/lattice/catwalk/wing/fourteen,
-/obj/effect/overlay/airplanewing/bottom,
-/turf/template_noop,
+"Ku" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbroken"
+	},
+/obj/structure/sign/reno/barsign/sharkclub{
+	pixel_x = -16;
+	plane = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/shuttle/escape)
-"Js" = (
-/turf/closed/wall/mineral/titanium/transparent,
+"Lu" = (
+/obj/effect/overlay/junk/curtain,
+/obj/machinery/turnstile,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 1
+	},
 /area/shuttle/escape)
-"Nk" = (
-/obj/structure/lattice/catwalk/wing,
-/obj/effect/overlay/airplanewing,
-/turf/template_noop,
+"Nm" = (
+/obj/structure/chair/sofa/corp/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 6
+	},
+/area/shuttle/escape)
+"Nt" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/structure/chess/blackbishop,
+/obj/machinery/light{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "NA" = (
-/obj/structure/lattice/catwalk/wing/four,
-/turf/template_noop,
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "NM" = (
-/obj/structure/window/shuttle,
-/turf/closed/wall/mineral/titanium/transparentundense,
+/obj/structure/table/reinforced,
+/obj/structure/fluff/railing{
+	dir = 8;
+	layer = 2.91
+	},
+/obj/structure/barricade/sandbags{
+	pixel_y = 6
+	},
+/obj/effect/spawner/lootdrop/f13/alcoholspawner,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "NQ" = (
-/obj/structure/lattice/catwalk/wing/two,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
+/obj/structure/chair/stool/retro/backed{
+	dir = 1
 	},
-/turf/template_noop,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 10
+	},
 /area/shuttle/escape)
 "OW" = (
-/obj/structure/lattice/catwalk/wing/eleven,
-/turf/template_noop,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "Pm" = (
-/obj/structure/lattice/catwalk/wing/two,
-/turf/template_noop,
+/obj/structure/railing/corner{
+	layer = 4.25;
+	pixel_x = -1;
+	color = "#A47449"
+	},
+/obj/structure/railing/corner{
+	layer = 4.25;
+	dir = 1;
+	pixel_y = -23;
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 4;
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "PQ" = (
 /turf/template_noop,
 /area/template_noop)
-"RY" = (
-/obj/structure/lattice/catwalk/wing/flat,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
+"QR" = (
+/obj/item/toy/cards/deck{
+	pixel_y = 6;
+	pixel_x = -2
 	},
-/turf/template_noop,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
-"SD" = (
-/turf/closed/wall/mineral/titanium/selectivesmooth,
+"Ra" = (
+/obj/structure/railing{
+	layer = 4.25
+	},
+/turf/open/floor/plating/tunnel{
+	icon = 'icons/obj/rails.dmi';
+	icon_state = "reno_catwalk"
+	},
+/area/shuttle/escape)
+"SE" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"SJ" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/newspaper{
+	name = "Getting It Wright"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 9;
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"SY" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"Up" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"VQ" = (
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "WF" = (
-/obj/structure/sign/warning/nosmoking/circle,
-/turf/closed/wall/mineral/titanium,
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "WU" = (
-/obj/structure/lattice/catwalk/wing/one,
-/obj/effect/overlay/airplanewing/bottom,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1;
+	sunlight_state = 1
 	},
-/turf/template_noop,
 /area/shuttle/escape)
 "WY" = (
-/obj/structure/chair/comfy/shuttle,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
+/area/shuttle/escape)
+"XT" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/obj/structure/chess/whitebishop,
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"XW" = (
+/obj/machinery/jukebox{
+	pixel_y = 12;
+	layer = 3.21;
+	density = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	sunlight_state = 1;
+	dir = 1
+	},
 /area/shuttle/escape)
 "Yt" = (
-/obj/machinery/door/airlock/external/glass,
-/turf/closed/wall/mineral/titanium/transparentundense{
-	icon_state = "airplaneflat"
+/obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 8;
+	sunlight_state = 1
 	},
 /area/shuttle/escape)
 "YR" = (
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/side{
+	dir = 1;
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 "YZ" = (
-/obj/structure/chair/comfy/modern{
-	dir = 8
+/obj/machinery/door/airlock/wood,
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1;
+	dir = 1
 	},
-/obj/machinery/light/floor{
-	pixel_x = 1;
-	invisibility = 100;
-	alpha = 100
+/area/shuttle/escape)
+"ZK" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/plasteel/f13/vault_floor/red/side{
+	dir = 1;
+	sunlight_state = 1
 	},
-/turf/open/floor/carpet/blue,
+/area/shuttle/escape)
+"ZT" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 1;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	sunlight_state = 1
+	},
+/area/shuttle/escape)
+"ZZ" = (
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 10;
+	layer = 3.2;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
+	sunlight_state = 1
+	},
 /area/shuttle/escape)
 
 (1,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-Js
-Js
-Js
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+BT
+SY
+iH
+bW
+BT
 "}
 (2,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-Js
-eY
-Js
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Hn
+DB
+Ko
+cM
+Hn
 "}
 (3,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-tf
-YR
+Hn
+IL
+OW
 ln
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Hn
 "}
 (4,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-NM
-YR
-YR
-gi
-NM
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+dv
+IL
+OW
+ln
+Lu
 "}
 (5,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-WY
-YR
-CH
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Hn
+IL
+OW
+ln
+JG
 "}
 (6,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-tO
-rO
-tO
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+JG
+IL
+OW
+ln
+JG
 "}
 (7,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-CY
-if
-HL
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+jV
+eh
+NM
+aE
+sX
 "}
 (8,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-zH
-if
-if
-cK
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+WF
+IL
+OW
+ln
+YZ
 "}
 (9,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-cM
-tO
-WF
-tA
-tO
-tO
-BT
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+jV
+jW
+gW
+ZT
+jV
 "}
 (10,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-cM
-Pm
-tO
-aE
-if
-aE
-tO
-oo
-BT
-PQ
-PQ
-PQ
-PQ
-PQ
+sX
+gl
+mA
+yj
+sX
 "}
 (11,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-cM
-Pm
-sX
-wO
-aE
-if
-aE
-wO
-sX
-oo
 BT
-PQ
-PQ
-PQ
-PQ
+Up
+hG
+if
+BT
 "}
 (12,1,1) = {"
 PQ
-PQ
-PQ
-cM
-Pm
-RY
-sX
-tO
-aE
-if
-aE
-tO
-sX
-RY
-oo
-BT
-PQ
-PQ
+zH
+rO
+Ra
 PQ
 "}
 (13,1,1) = {"
-PQ
-PQ
-cM
-Pm
-sX
-sX
-Er
-wO
-is
-if
-YZ
-wO
-FG
-sX
-sX
-oo
 BT
-PQ
-PQ
+XT
+SE
+CY
+BT
 "}
 (14,1,1) = {"
-PQ
-cM
-Pm
 sX
+eY
+IV
+NQ
 sX
-Er
-BT
-tO
-aE
-if
-aE
-tO
-NA
-FG
-sX
-sX
-oo
-BT
-PQ
 "}
 (15,1,1) = {"
-cM
-Pm
-RY
-Er
-OW
-BT
-PQ
-wO
-aE
-if
-aE
-wO
-PQ
-NA
-OW
+sX
 FG
-RY
-oo
-BT
+QR
+EH
+sX
 "}
 (16,1,1) = {"
-Bb
-Er
-OW
-BT
-PQ
-PQ
-PQ
+Gf
 tO
-aE
-if
-aE
-tO
-PQ
-PQ
-PQ
-NA
 OW
-FG
+wO
 IC
 "}
 (17,1,1) = {"
-mA
-BT
-PQ
-PQ
-PQ
-PQ
-PQ
-wO
-YZ
-if
-YZ
-wO
-PQ
-PQ
-PQ
-PQ
-PQ
+sX
+mp
+OW
 NA
 jV
 "}
 (18,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-aE
-if
-aE
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Ft
+ya
+OW
+AR
+Ku
 "}
 (19,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-wO
-eW
-if
-aE
-wO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+jV
+WY
+OW
+cP
+sX
 "}
 (20,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Gf
 tO
-aE
-if
-if
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+OW
+wO
+IC
 "}
 (21,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-SD
-SD
-tS
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+sX
+XW
+ZZ
+Ig
+qR
 "}
 (22,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-tO
-aO
-zv
-if
-tO
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+sX
+pS
+bV
+Nm
+sX
 "}
 (23,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-cM
-tO
-SD
-SD
-if
-tO
 BT
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
+Nt
+SE
+XT
+BT
 "}
 (24,1,1) = {"
 PQ
-PQ
-PQ
-PQ
-PQ
-cM
-Pm
-Yt
-if
-if
-if
-tO
-oo
-BT
-PQ
-PQ
-PQ
-PQ
+zH
+rO
+Ra
 PQ
 "}
 (25,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-cM
-NQ
-Nk
-hG
-tO
-EH
-tO
-Gz
-FG
-WU
 BT
-PQ
-PQ
-PQ
-PQ
+Bb
+tI
+jE
+BT
 "}
 (26,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-Bb
-Nk
-BT
-PQ
-tO
-tO
-tO
-PQ
-NA
-FG
-IC
-PQ
-PQ
-PQ
-PQ
+jV
+SJ
+Yt
+Gz
+sX
 "}
 (27,1,1) = {"
-PQ
-PQ
-PQ
-PQ
-mA
-BT
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-PQ
-NA
 jV
+sd
+iJ
+VQ
+jV
+"}
+(28,1,1) = {"
+tS
+CH
+OW
+VQ
+WU
+"}
+(29,1,1) = {"
+jV
+YR
+em
+qW
+jV
+"}
+(30,1,1) = {"
+jV
+YR
+em
+qW
+jV
+"}
+(31,1,1) = {"
+jV
+YR
+em
+qW
+sX
+"}
+(32,1,1) = {"
+tS
+CH
+OW
+VQ
+WU
+"}
+(33,1,1) = {"
+jV
+aO
+vp
+gn
+jV
+"}
+(34,1,1) = {"
+sX
+ru
+Pm
+gV
+sX
+"}
+(35,1,1) = {"
+BT
+Bb
+tI
+Bb
+BT
+"}
+(36,1,1) = {"
 PQ
+zH
+rO
+Ra
 PQ
-PQ
-PQ
+"}
+(37,1,1) = {"
+BT
+gi
+ry
+gi
+BT
+"}
+(38,1,1) = {"
+BT
+ZK
+OW
+HX
+BT
+"}
+(39,1,1) = {"
+jV
+AK
+Er
+aK
+Js
+"}
+(40,1,1) = {"
+cK
+zv
+eW
+tA
+BT
+"}
+(41,1,1) = {"
+BT
+BT
+gi
+BT
+BT
 "}

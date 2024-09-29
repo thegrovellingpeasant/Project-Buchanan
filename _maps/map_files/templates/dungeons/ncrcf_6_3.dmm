@@ -1,0 +1,475 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/wood,
+/area/f13/caves)
+"c" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"d" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"f" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	dir = 8;
+	pixel_y = -16;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"g" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"h" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"i" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"j" = (
+/obj/structure/railing/wood{
+	pixel_y = 15
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"l" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-r";
+	dir = 8;
+	pixel_y = -16;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"m" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"n" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = 8;
+	plane = -15;
+	pixel_x = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"o" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"p" = (
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.26
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"r" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	layer = 4.27;
+	pixel_y = 32
+	},
+/obj/structure/closet/crate/miningcar{
+	name = "Minecart";
+	desc = "A minecart";
+	layer = 2.91
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"s" = (
+/obj/structure/railing/wood/post{
+	pixel_x = 16;
+	layer = 4.27;
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"t" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"u" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.26
+	},
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"w" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = 8;
+	plane = -15;
+	pixel_x = 27
+	},
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"x" = (
+/obj/structure/fluff/rails{
+	plane = -15;
+	pixel_y = -16
+	},
+/obj/structure/nest/mob/yaoguai,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"B" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.01;
+	pixel_y = -9;
+	pixel_x = 3
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"D" = (
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	layer = 4.26;
+	pixel_y = 30
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"H" = (
+/obj/structure/railing/wood{
+	dir = 8;
+	pixel_y = 8;
+	pixel_x = -2;
+	layer = 4.27
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"I" = (
+/obj/structure/railing/wood{
+	pixel_y = -4;
+	layer = 4.26
+	},
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"J" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -2;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/obj/structure/fluff/rails{
+	plane = -15;
+	pixel_y = -16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"N" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"P" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/obj/structure/glowshroom{
+	layer = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"S" = (
+/turf/closed/mineral/random/high_chance_prison,
+/area/f13/caves)
+"U" = (
+/obj/effect/decal/remains/human{
+	layer = 3.6;
+	plane = -4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"V" = (
+/obj/structure/fluff/rails{
+	plane = -15;
+	pixel_y = -16
+	},
+/obj/item/pickaxe/titanium,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"X" = (
+/turf/closed/indestructible/rock/smoothing,
+/area/f13/caves)
+"Y" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+i
+q
+D
+f
+o
+H
+i
+i
+i
+"}
+(2,1,1) = {"
+i
+q
+o
+L
+o
+o
+i
+i
+i
+"}
+(3,1,1) = {"
+i
+q
+o
+L
+o
+o
+i
+i
+i
+"}
+(4,1,1) = {"
+i
+q
+o
+l
+o
+o
+i
+i
+i
+"}
+(5,1,1) = {"
+i
+q
+s
+o
+n
+a
+i
+i
+i
+"}
+(6,1,1) = {"
+i
+i
+a
+o
+J
+o
+g
+j
+i
+"}
+(7,1,1) = {"
+i
+i
+q
+D
+f
+o
+o
+j
+i
+"}
+(8,1,1) = {"
+i
+i
+q
+p
+L
+o
+o
+j
+i
+"}
+(9,1,1) = {"
+i
+i
+q
+o
+l
+o
+o
+j
+i
+"}
+(10,1,1) = {"
+i
+X
+X
+S
+S
+S
+o
+j
+i
+"}
+(11,1,1) = {"
+X
+X
+a
+S
+w
+X
+X
+X
+X
+"}
+(12,1,1) = {"
+X
+I
+h
+o
+N
+a
+X
+X
+i
+"}
+(13,1,1) = {"
+X
+I
+B
+f
+c
+S
+X
+X
+i
+"}
+(14,1,1) = {"
+X
+u
+m
+L
+N
+S
+S
+X
+X
+"}
+(15,1,1) = {"
+X
+u
+Y
+x
+o
+S
+S
+S
+X
+"}
+(16,1,1) = {"
+X
+u
+B
+L
+t
+d
+S
+X
+X
+"}
+(17,1,1) = {"
+X
+I
+P
+V
+U
+S
+S
+X
+i
+"}
+(18,1,1) = {"
+X
+I
+r
+l
+o
+S
+X
+X
+i
+"}

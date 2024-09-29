@@ -338,7 +338,7 @@
 	merge_type = /obj/item/stack/tile/carpet/reno/blue
 
 /obj/item/stack/tile/carpet/reno/burgundy
-	name = "burgandy carpet"
+	name = "burgundy carpet"
 	icon_state = "tile-carpet_burgundy"
 	item_state = "tile-carpet_burgundy"
 	turf_type = /turf/open/floor/carpet/reno/burgundy

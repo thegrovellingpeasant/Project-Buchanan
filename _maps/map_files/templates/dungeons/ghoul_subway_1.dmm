@@ -1,0 +1,4446 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"au" = (
+/obj/structure/bed/old,
+/obj/item/bedsheet/brown,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"ay" = (
+/obj/structure/chair/stool/retro,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"aB" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/underground/cave)
+"aN" = (
+/obj/structure/nest/mob/ghoulmerc,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"be" = (
+/obj/structure/chair/f13chair1{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"bk" = (
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"bm" = (
+/obj/structure/campfire,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"br" = (
+/obj/structure/curtain{
+	color = "#942c2c";
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"bw" = (
+/obj/structure/nest/mob/deathclaw{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"bJ" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"bO" = (
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"bP" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaltopbordertop1"
+	},
+/area/f13/subway)
+"bQ" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"cf" = (
+/obj/structure/chair/wood/fancy/dark,
+/obj/structure/nest/mob/maddened_cultist,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"cJ" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"cV" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/snacks/grown/soybeans{
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"cX" = (
+/obj/structure/nest/mob/ghoulgarand,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"dl" = (
+/obj/structure/kitchenspike,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain3"
+	},
+/area/f13/subway)
+"dp" = (
+/obj/structure/nest/mob/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"dN" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "weapon_parts_1"
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"dO" = (
+/obj/structure/fluff/rails{
+	pixel_y = -5;
+	plane = -15
+	},
+/obj/structure/closet/crate/miningcar{
+	name = "Minecart";
+	desc = "A minecart";
+	layer = 2.91
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ef" = (
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/underground/cave)
+"ej" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaltopbordertop1"
+	},
+/area/f13/subway)
+"eu" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"eI" = (
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.1
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 6
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 13
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -15
+	},
+/obj/item/stack/sheet/bone,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"eJ" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck{
+	pixel_y = 5
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"eP" = (
+/turf/closed/mineral/random/high_chance,
+/area/f13/underground/cave)
+"eX" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/f13Cash/ncr/fivezero,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"eZ" = (
+/turf/open/floor/plating/tunnel/rail/north,
+/area/f13/subway)
+"fw" = (
+/obj/structure/table/wood/settler,
+/obj/item/flashlight/lantern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"fF" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	dir = 8;
+	pixel_y = -5;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"fM" = (
+/obj/effect/decal/cleanable/blood/gibs/human/limb,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"fZ" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"gb" = (
+/obj/structure/table/wood/settler,
+/obj/item/trash/f13/porknbeans,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"gB" = (
+/obj/structure/chair/stool,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"gE" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"gF" = (
+/obj/structure/simple_door/wood,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"gI" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoulgarandalt{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"gO" = (
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"hj" = (
+/obj/item/broken_bottle,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"hn" = (
+/obj/structure/bookcase,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"hP" = (
+/obj/item/salvage/low,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ie" = (
+/obj/structure/chair/stool/retro/black,
+/obj/structure/nest/mob/ghoularmless{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"io" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain3"
+	},
+/area/f13/subway)
+"iv" = (
+/obj/structure/bed/mattress,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"iz" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"iM" = (
+/obj/item/salvage/high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"jg" = (
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"jq" = (
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"ju" = (
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"jE" = (
+/obj/item/reagent_containers/food/drinks/beer{
+	name = "Wright beer";
+	desc = "A cheap, popular beer in a reused bottle. It has the Wright logo on it.";
+	pixel_x = -1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"jV" = (
+/obj/structure/table/wood/settler,
+/obj/item/melee/onehanded/knife/bowie,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"kj" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ko" = (
+/obj/structure/table/roulette,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"kJ" = (
+/obj/structure/obstacle/old_locked_door,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"kK" = (
+/obj/structure/disposaloutlet,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"kP" = (
+/obj/item/trash/f13/porknbeans,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"le" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaltopbordertop2right"
+	},
+/area/f13/subway)
+"lv" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -14;
+	pixel_x = -2
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = 4;
+	pixel_x = -14;
+	layer = 2.99
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"lD" = (
+/obj/structure/chair/stool/f13stool,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"lG" = (
+/obj/machinery/ore_silo,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"lX" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439;
+	pixel_y = 3
+	},
+/obj/structure/table/wood/settler,
+/obj/structure/junk/small/coilroll3{
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2left"
+	},
+/area/f13/subway)
+"lZ" = (
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"mI" = (
+/obj/structure/nest/mob/molerat{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"nd" = (
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"nl" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"nm" = (
+/obj/structure/nest/mob/molerat{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"nx" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"nQ" = (
+/obj/structure/rack,
+/obj/item/reagent_containers/food/snacks/meatsalted,
+/obj/item/reagent_containers/food/snacks/meatsalted{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"nR" = (
+/turf/closed/wall/mineral/concrete,
+/area/f13/subway)
+"oc" = (
+/obj/effect/temp_visual/cult/rune_spawn,
+/obj/effect/temp_visual/cult/rune_spawn/rune1/center,
+/obj/effect/temp_visual/cult/rune_spawn/rune1,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"od" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439;
+	pixel_y = 3
+	},
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"ow" = (
+/obj/structure/nest/mob/ghouldesperado{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"oR" = (
+/obj/item/reagent_containers/food/drinks/bottle/vodka/empty,
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/underground/cave)
+"pf" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5";
+	layer = 2.91;
+	pixel_y = 1
+	},
+/obj/structure/nest/mob/ghoulslave{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"pX" = (
+/obj/structure/nest/mob/ghoulmerc{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"qi" = (
+/obj/effect/decal/remains/cans{
+	icon_state = "cans3"
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"qo" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/grenade/f13/dynamite,
+/obj/item/grenade/f13/dynamite,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"qX" = (
+/obj/item/blanket/ruined,
+/obj/effect/decal/cleanable/blood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"rh" = (
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "weapon_parts_1"
+	},
+/obj/item/salvage/high{
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi';
+	icon_state = "protectron_k_d"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ri" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/grenade/f13/dynamite,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"rB" = (
+/obj/item/pickaxe,
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"sb" = (
+/obj/structure/nest/mob/ghoulslave{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"se" = (
+/obj/structure/chair/stool/f13stool,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"sE" = (
+/obj/structure/chair/stool,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/underground/cave)
+"sO" = (
+/obj/structure/bed/mattress{
+	dir = 4;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"sZ" = (
+/obj/effect/decal/cleanable/blood{
+	layer = 2.7
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"tb" = (
+/obj/structure/sink/puddle,
+/obj/item/clothing/shoes/workboots/mining{
+	pixel_x = 8;
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"tg" = (
+/obj/effect/decal/cleanable/blood{
+	plane = -4;
+	layer = 3.7;
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"tv" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "sensor_module"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"tK" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"tY" = (
+/obj/effect/decal/cleanable/blood/gibs/human/body,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ue" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/remains/human{
+	pixel_y = 7
+	},
+/obj/effect/decal/remains/human{
+	plane = -4;
+	pixel_y = -14;
+	pixel_x = -2
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = 3;
+	pixel_x = -16
+	},
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 13
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"up" = (
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"ur" = (
+/obj/structure/closet/crate/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"uy" = (
+/obj/item/storage/bag/ore/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"uN" = (
+/obj/structure/chair/stool/retro/tan,
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"vm" = (
+/obj/structure/table/wood/settler,
+/obj/item/instrument/guitar{
+	layer = 3.01
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"vB" = (
+/obj/structure/closet/crate/wooden,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"vH" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"wg" = (
+/obj/structure/dresser,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"wp" = (
+/obj/structure/bed/old,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"ws" = (
+/obj/structure/table/wood/poker,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"wK" = (
+/obj/structure/junk/small/sign2,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"wV" = (
+/obj/item/blanket/ruined,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"xm" = (
+/obj/structure/glowshroom,
+/obj/item/salvage/low,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"xG" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/f13Cash/caps/onezero{
+	pixel_y = 7
+	},
+/obj/item/stack/f13Cash/ncr/onezero,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"xJ" = (
+/obj/structure/glowshroom,
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"xX" = (
+/obj/structure/nest/mob/ghoulgarandalt{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"xZ" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "coatblood"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ym" = (
+/obj/structure/table,
+/obj/item/salvage/low{
+	pixel_y = 11
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"yp" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/stack/sheet/animalhide/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ys" = (
+/obj/structure/chair/stool/f13stool,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"yw" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/obj/structure/nest/mob/ghoulfiend{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"yI" = (
+/obj/structure/chair/stool/f13stool,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"yL" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"yO" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress2";
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"zb" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"zi" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"zj" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"zG" = (
+/obj/structure/junk/small/trashcan,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2right"
+	},
+/area/f13/subway)
+"zN" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"AO" = (
+/obj/structure/nest/mob/ghoulslave{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Bf" = (
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"BB" = (
+/obj/structure/chair/booth{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"BK" = (
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"Cg" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 5;
+	height = 51;
+	id = "ghoul_one";
+	name = "Tintown";
+	width = 5;
+	dheight = 49
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/subway)
+"Cz" = (
+/obj/machinery/light{
+	dir = 1;
+	layer = 3.7;
+	plane = -14
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2"
+	},
+/area/f13/subway)
+"CE" = (
+/obj/item/blanket/ruined,
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"CF" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/blueprintMid,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"CQ" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Db" = (
+/turf/open/floor/plating/tunnel/curb,
+/area/f13/subway)
+"Dc" = (
+/obj/structure/chair/stool/f13stool,
+/obj/structure/nest/mob/ghoulslave{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"DX" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/obj/structure/nest/mob/ghoulslave{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Es" = (
+/obj/item/reagent_containers/glass/bucket/wood{
+	list_reagents = list(/datum/reagent/water=120)
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"EB" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/obj/structure/nest/mob/ghoulreaver{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"ED" = (
+/obj/machinery/mineral/ore_redemption,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"EM" = (
+/obj/item/blanket/ruined,
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"EN" = (
+/turf/closed/indestructible/f13/matrix,
+/area/f13/subway)
+"EP" = (
+/obj/structure/glowshroom/glowcap,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"EW" = (
+/obj/structure/nest/mob/maddened_cultist,
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"FB" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/f13Cash/caps/onezero,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"FK" = (
+/obj/structure/bed/mattress{
+	dir = 1;
+	icon_state = "mattress4";
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Gj" = (
+/obj/structure/barricade/wooden,
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Gy" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"GC" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Hk" = (
+/obj/structure/nest/mob/deathclaw{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Hw" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaltopbordertop2"
+	},
+/area/f13/subway)
+"HF" = (
+/obj/structure/table/wood/settler,
+/obj/item/flashlight/lantern{
+	pixel_y = 10;
+	pixel_x = -3
+	},
+/obj/item/flashlight/lantern{
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"Ig" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2"
+	},
+/area/f13/subway)
+"Ik" = (
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/underground/cave)
+"IU" = (
+/turf/closed/wall/f13/wood,
+/area/f13/underground/cave)
+"IV" = (
+/obj/structure/table/wood{
+	icon = 'icons/obj/hand_of_god_structures.dmi';
+	icon_state = "convertaltar";
+	desc = null;
+	name = "altar";
+	pixel_y = 2;
+	smooth = 0
+	},
+/obj/effect/mob_spawn/human/corpse/ncr{
+	uniform = /obj/item/clothing/under/f13/caravaneer;
+	shoes = /obj/item/clothing/shoes/workboots/mining;
+	short_desc = "The victim of an unfortunate detour.";
+	suit = -1;
+	head = /obj/item/clothing/head/f13/stormchaser;
+	belt = /obj/item/storage/belt/mining/primitive;
+	name = "dead caravaneer"
+	},
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"Jn" = (
+/obj/machinery/porta_turret/syndicate{
+	faction = list("skeleton");
+	name = "repaired turret"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"JE" = (
+/obj/structure/chair/stool/retro,
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"JG" = (
+/obj/structure/glowshroom/glowcap,
+/obj/structure/nest/mob/ghoulcozy,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"JR" = (
+/obj/item/pickaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"JX" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ks" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 9
+	},
+/obj/structure/nest/mob/ghoulfiend{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Kw" = (
+/obj/structure/table/wood/greyscale/red,
+/obj/item/flashlight/lantern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"KR" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain1"
+	},
+/area/f13/subway)
+"Le" = (
+/turf/closed/indestructible/f13/supermart,
+/area/f13/subway)
+"Lf" = (
+/obj/structure/fluff/rails{
+	pixel_y = -5;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ll" = (
+/obj/structure/sign/reno/barsign/booze,
+/turf/closed/wall/f13/wood,
+/area/f13/underground/cave)
+"Lv" = (
+/obj/item/crafting/lunchbox,
+/obj/structure/closet/crate/wooden,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Lx" = (
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"LZ" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -2;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ms" = (
+/obj/structure/chair/stool/retro/black,
+/obj/structure/nest/mob/ghoulmelee,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Na" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"NJ" = (
+/turf/closed/indestructible/rock,
+/area/f13/underground/cave)
+"NZ" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"Od" = (
+/obj/structure/nest/mob/ghoulofficer,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Os" = (
+/obj/structure/junk/small/table,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ox" = (
+/obj/machinery/light/broken{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain1"
+	},
+/area/f13/subway)
+"OH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1;
+	plane = -5;
+	layer = 2.439;
+	pixel_y = 3
+	},
+/obj/structure/junk/small/pipes2,
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"OI" = (
+/obj/structure/chair/stool/f13stool,
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"OK" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"OP" = (
+/obj/structure/table,
+/obj/item/circular_saw{
+	pixel_y = 9
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"OT" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Pa" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/snacks/f13/canned/porknbeans{
+	pixel_y = 8
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Pj" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Pq" = (
+/obj/structure/nest/mob/ghoulmarksman,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2"
+	},
+/area/f13/subway)
+"Py" = (
+/obj/structure/table/wood/greyscale/red,
+/obj/item/book/granter/trait,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"PB" = (
+/obj/structure/chair/stool,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"PJ" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaltopbordertop2left"
+	},
+/area/f13/subway)
+"PK" = (
+/obj/structure/junk/small/spring,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"PN" = (
+/obj/structure/chair/wood/modern{
+	dir = 4
+	},
+/obj/structure/nest/mob/ghoulslave{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"PP" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 13
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"PU" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Qc" = (
+/obj/item/stack/sheet/bone,
+/obj/item/stack/sheet/bone{
+	pixel_y = -9
+	},
+/obj/effect/spawner/lootdrop/f13/armor/tier1,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Qd" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/sheet/animalhide/gecko,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Ql" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Qw" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jet";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"Qz" = (
+/obj/item/storage/box/matches,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"QC" = (
+/obj/structure/nest/mob/molerat{
+	dir = 8;
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"QE" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"QN" = (
+/obj/machinery/autolathe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Rb" = (
+/obj/structure/table/wood/settler,
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Rg" = (
+/obj/structure/fluff/rails{
+	pixel_y = -5;
+	plane = -15
+	},
+/obj/item/salvage/high{
+	icon_state = "holodisk"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"RT" = (
+/obj/item/stack/sheet/bone{
+	pixel_y = -9
+	},
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"RV" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Sc" = (
+/obj/structure/nest/mob/molerat{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Sx" = (
+/obj/machinery/smartfridge/drying_rack,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"SA" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"SE" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"SG" = (
+/obj/structure/curtain{
+	color = "#942c2c";
+	pixel_y = -1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"SH" = (
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "toaster"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"SJ" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-b2";
+	pixel_y = -4;
+	plane = -15
+	},
+/obj/structure/nest/mob/ghoulslave{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"SO" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	plane = -4;
+	pixel_x = -1;
+	pixel_y = 32
+	},
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 1;
+	pixel_y = 16;
+	layer = 4.25
+	},
+/turf/open/floor/carpet/red,
+/area/f13/underground/cave)
+"Tb" = (
+/obj/item/stack/sheet/bone{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Tg" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/underground/cave)
+"To" = (
+/obj/structure/barricade/wooden,
+/obj/structure/curtain{
+	color = "#363636";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/obj/structure/lamp_post/floodlight,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Tu" = (
+/turf/open/floor/wood/f13/oakbase,
+/area/f13/underground/cave)
+"TB" = (
+/obj/machinery/workbench,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"TI" = (
+/obj/structure/table/wood/junk,
+/obj/item/dice/d6{
+	pixel_y = 7
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"TO" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Uh" = (
+/obj/structure/bed/old{
+	icon_state = "bedroll_unrolled";
+	layer = 2.89;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Up" = (
+/obj/structure/campfire{
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"UC" = (
+/obj/structure/bed/old,
+/obj/structure/nest/mob/ghoulcozy,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"UD" = (
+/obj/machinery/light{
+	dir = 1;
+	layer = 3.7;
+	plane = -14
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"UO" = (
+/obj/structure/closet/crate/footchest,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"UU" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	light_color = "#c0c7d0";
+	layer = 4.3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Vg" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark{
+	icon_state = "horizontaloutermain2"
+	},
+/area/f13/subway)
+"Vk" = (
+/obj/structure/table/wood/junk,
+/obj/item/dice/d6{
+	pixel_y = 7
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"Vt" = (
+/obj/structure/bookcase,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Vz" = (
+/obj/structure/chair/stool,
+/obj/structure/nest/mob/ghoulharmless{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"VB" = (
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/obj/structure/table/reinforced,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"VU" = (
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"VY" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 8;
+	layer = 4.1
+	},
+/obj/item/pickaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Wp" = (
+/obj/structure/destructible/tribal_torch/wall{
+	dir = 4;
+	layer = 4.1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Wy" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/light/broken{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
+/area/f13/subway)
+"WU" = (
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"WX" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 6
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"WY" = (
+/obj/structure/glowshroom/glowcap,
+/obj/structure/nest/mob/ghoulslave,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Xf" = (
+/obj/structure/table/wood/settler,
+/obj/item/stack/sheet/animalhide/brahmin,
+/obj/item/stack/sheet/animalhide/brahmin,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Xv" = (
+/obj/structure/destructible/tribal_torch/wall/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Xw" = (
+/obj/item/stack/sheet/bone,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"XQ" = (
+/obj/structure/glowshroom/glowcap,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"XS" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/f13/underground/cave)
+"XT" = (
+/obj/machinery/vending/boozeomat/syndicate_access,
+/turf/closed/mineral/random/low_chance,
+/area/f13/underground/cave)
+"XV" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"XZ" = (
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+"YA" = (
+/turf/closed/mineral/random/low_chance,
+/area/f13/underground/cave)
+"YB" = (
+/obj/structure/destructible/tribal_torch/wall,
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"YV" = (
+/obj/structure/nest/mob/maddened_cultist{
+	dir = 8
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"Za" = (
+/obj/structure/simple_door/wood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
+"ZN" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/sidewalk/top/dark,
+/area/f13/subway)
+
+(1,1,1) = {"
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+Le
+EN
+EN
+EN
+EN
+EN
+Le
+"}
+(2,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+IU
+IU
+YA
+OK
+XT
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(3,1,1) = {"
+NJ
+YA
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+wg
+Lx
+bJ
+eX
+FB
+xG
+OK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(4,1,1) = {"
+NJ
+YA
+eP
+YA
+YA
+YA
+YA
+OK
+IU
+IU
+IU
+YA
+YA
+eP
+eP
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+IU
+dN
+Lx
+Lx
+Lx
+BK
+BK
+BK
+Lx
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(5,1,1) = {"
+NJ
+YA
+YA
+YA
+IU
+IU
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+IU
+au
+Lx
+Lx
+Lx
+BK
+gI
+BK
+Lx
+YA
+YA
+Sc
+Lx
+YA
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(6,1,1) = {"
+NJ
+YA
+YA
+YA
+Vt
+Na
+Na
+Na
+EP
+Na
+Na
+Na
+YA
+YA
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+IU
+IU
+kJ
+IU
+VB
+VB
+OK
+YA
+Na
+EP
+Lx
+Lx
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(7,1,1) = {"
+NJ
+YA
+YA
+OK
+Vt
+Na
+Na
+YA
+Na
+YV
+Na
+EP
+Na
+YA
+YA
+YA
+YA
+YA
+Na
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+YA
+YA
+Ll
+OK
+Ms
+ko
+ie
+Na
+UU
+Lx
+Lx
+Lx
+gF
+Lx
+cX
+PB
+mI
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(8,1,1) = {"
+NJ
+YA
+hn
+sO
+EP
+Na
+YA
+eP
+eP
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+fZ
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+IU
+Na
+Lx
+Lx
+JE
+Na
+EP
+PB
+Lx
+Lx
+gE
+se
+eJ
+CQ
+Lx
+YA
+nR
+UD
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(9,1,1) = {"
+NJ
+YA
+OK
+Na
+Na
+Py
+IU
+eP
+eP
+OK
+Na
+Na
+YA
+Na
+gO
+OK
+YA
+YA
+YA
+Na
+YA
+YA
+wV
+wV
+YA
+YA
+YA
+Na
+br
+EP
+Lx
+Lx
+Lx
+Na
+ys
+Vk
+OK
+YA
+gE
+EP
+Vz
+Lx
+Lx
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(10,1,1) = {"
+NJ
+IU
+Lx
+bO
+cf
+Kw
+IU
+nx
+IU
+IU
+YA
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+YA
+Na
+lG
+fZ
+qX
+wV
+Tg
+Tg
+Na
+Na
+IU
+VU
+Dc
+YA
+hP
+Na
+To
+YA
+YA
+YA
+YA
+YA
+YA
+Lx
+eP
+eP
+nR
+bk
+ej
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(11,1,1) = {"
+NJ
+IU
+oc
+bm
+Na
+Na
+Na
+Na
+Na
+sO
+YA
+Na
+Na
+Na
+Na
+Na
+yL
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+yp
+YA
+Na
+ac
+IU
+IU
+YA
+YA
+EP
+Na
+YA
+YA
+nd
+GC
+YA
+YA
+YA
+eP
+eP
+eP
+nR
+nl
+ej
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(12,1,1) = {"
+NJ
+IU
+Lx
+bO
+Na
+Na
+EP
+Na
+Na
+OK
+IU
+Na
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+SE
+Na
+Na
+Na
+Na
+Na
+XV
+Na
+ac
+YA
+YA
+OK
+lZ
+Na
+Na
+YA
+Lv
+Na
+sb
+Na
+yL
+YA
+YA
+YA
+YA
+nR
+nl
+ej
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(13,1,1) = {"
+NJ
+YA
+YA
+OK
+Na
+Na
+Na
+Na
+Na
+YA
+IU
+Na
+Na
+YA
+YA
+Na
+Na
+YA
+Jn
+SE
+fZ
+Na
+Na
+Na
+YA
+YA
+Na
+fF
+YA
+YA
+IU
+ri
+Na
+PU
+YA
+YA
+yL
+QE
+Na
+YA
+YA
+YA
+YA
+YA
+nR
+bk
+NZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(14,1,1) = {"
+NJ
+IU
+Vt
+Na
+lD
+Na
+OK
+UO
+Na
+Na
+Na
+Na
+YA
+OK
+EP
+Na
+YA
+OK
+SE
+SE
+Na
+yL
+Na
+fZ
+Tg
+Tg
+OK
+Lf
+YA
+YA
+IU
+IU
+IU
+br
+YA
+tv
+Na
+AO
+Na
+YA
+YA
+Na
+PU
+YA
+nR
+up
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(15,1,1) = {"
+NJ
+IU
+tK
+zN
+ws
+Na
+IU
+Vt
+Na
+Na
+Na
+Na
+IU
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+lZ
+lZ
+eP
+eP
+eP
+Lf
+YA
+QN
+Na
+Na
+br
+Lx
+YA
+YA
+yO
+Qz
+Na
+JR
+YA
+Na
+YA
+YA
+nR
+HF
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(16,1,1) = {"
+NJ
+YA
+EP
+OI
+Na
+iv
+IU
+Vt
+Na
+Na
+EP
+IU
+IU
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+LZ
+YA
+IU
+OP
+TO
+Ql
+Lx
+xX
+YA
+YA
+Na
+Na
+Na
+XV
+Na
+Na
+YA
+nR
+rB
+ZN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(17,1,1) = {"
+NJ
+YA
+YA
+IU
+IU
+YA
+IU
+IU
+IU
+OK
+YA
+eP
+eP
+YA
+YV
+Na
+yL
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+eP
+eP
+eP
+LZ
+pX
+IU
+IU
+IU
+IU
+Lx
+Lx
+Lx
+XV
+Na
+yL
+Na
+YA
+Na
+Na
+YA
+nR
+KR
+ZN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(18,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+YA
+YA
+Na
+YV
+EP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+EP
+SH
+Rg
+Na
+Na
+Na
+kP
+Na
+Na
+Na
+xm
+YA
+YA
+YA
+YA
+YA
+Na
+YA
+YA
+nR
+Ox
+PK
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(19,1,1) = {"
+NJ
+YA
+YA
+OK
+fZ
+Na
+IU
+bO
+bO
+IU
+IU
+OK
+eP
+yL
+Na
+Na
+OK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+kK
+iM
+dO
+OK
+PN
+EP
+Lx
+To
+Gj
+br
+YA
+YA
+eP
+YA
+YA
+YA
+Na
+ur
+YA
+nR
+jq
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(20,1,1) = {"
+NJ
+YA
+YA
+Na
+bO
+bO
+bJ
+ay
+zj
+ef
+aB
+Lx
+bO
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+YA
+YA
+rh
+Lf
+IU
+gb
+vm
+Lx
+Gj
+Na
+Lx
+YA
+YA
+eP
+YA
+YA
+RV
+Na
+Na
+yL
+nR
+Qw
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(21,1,1) = {"
+NJ
+IU
+OK
+IU
+SO
+BK
+Lx
+yI
+jE
+WU
+Lx
+Lx
+bO
+Na
+Na
+hj
+YA
+YA
+YA
+YA
+YA
+eP
+YA
+eP
+YA
+TB
+Na
+Lf
+IU
+cV
+Pa
+Lx
+br
+fZ
+wp
+IU
+YA
+YA
+YA
+FK
+Za
+Na
+Na
+ur
+nR
+eu
+PJ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(22,1,1) = {"
+NJ
+IU
+bQ
+bO
+EW
+IV
+tg
+Lx
+Lx
+Lx
+Lx
+Tu
+bO
+Na
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+ym
+Na
+Na
+OK
+DX
+EB
+Lx
+Gj
+UC
+IU
+IU
+YA
+YA
+RV
+xJ
+RV
+Na
+Na
+PU
+nR
+vB
+le
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(23,1,1) = {"
+NJ
+IU
+CF
+bO
+BK
+SA
+Lx
+sE
+BB
+be
+Lx
+Lx
+OK
+Na
+Na
+YA
+YA
+YA
+YA
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+OK
+ac
+SG
+Lx
+Lx
+Lx
+eP
+eP
+eP
+YA
+YA
+pf
+Za
+yL
+Na
+zb
+yL
+Na
+wK
+OH
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(24,1,1) = {"
+NJ
+IU
+OK
+OK
+Lx
+Lx
+Lx
+be
+XS
+gB
+zi
+IU
+YA
+fZ
+Na
+YA
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+PU
+Na
+Na
+OK
+YA
+OK
+Es
+eP
+eP
+eP
+YA
+YA
+RV
+RV
+PU
+Na
+Na
+Na
+Na
+fZ
+od
+qi
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(25,1,1) = {"
+NJ
+YA
+YA
+YA
+Tu
+Lx
+Lx
+Lx
+Lx
+Lx
+oR
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+eP
+YA
+YA
+YA
+aN
+Na
+Na
+YA
+YA
+eP
+eP
+YA
+YA
+OK
+fZ
+Na
+Na
+Na
+Od
+ED
+Na
+Na
+Os
+lX
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(26,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+Ik
+vH
+YA
+OK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+eP
+YA
+YA
+YA
+YA
+EP
+Lf
+OK
+YA
+YA
+Na
+EP
+Bf
+Bf
+kj
+Na
+Na
+EP
+Na
+Na
+Na
+Na
+se
+Ig
+ZN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(27,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+fZ
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+ac
+Na
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+tb
+Na
+yL
+Na
+PU
+Na
+Na
+Na
+Ig
+uN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(28,1,1) = {"
+NJ
+YA
+YA
+eP
+eP
+iv
+Na
+Xv
+IU
+eP
+eP
+eP
+eP
+YA
+YA
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+YA
+YA
+Na
+Na
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+fZ
+Sx
+Na
+Na
+Na
+Na
+Rb
+nR
+Pq
+Up
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(29,1,1) = {"
+NJ
+YA
+YA
+eP
+eP
+eP
+Na
+iv
+YA
+eP
+eP
+eP
+eP
+YA
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+RV
+Xf
+Na
+fZ
+Na
+fw
+nR
+zG
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(30,1,1) = {"
+NJ
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+EP
+YA
+YA
+YA
+Na
+Na
+WY
+Lf
+Na
+YA
+eP
+eP
+YA
+YA
+jV
+Qd
+RV
+Za
+RV
+nR
+dl
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(31,1,1) = {"
+NJ
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+PU
+Na
+Tb
+Na
+Na
+YA
+eP
+YA
+YA
+Na
+SJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+RV
+Na
+Na
+nR
+nQ
+ZN
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(32,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+EP
+Na
+Na
+ue
+Na
+Na
+YA
+eP
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+RV
+YA
+iv
+EP
+nR
+Wy
+PJ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(33,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+Na
+Na
+Na
+eI
+uy
+Na
+YA
+eP
+YA
+YA
+OK
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+bk
+bP
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(34,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+Na
+fZ
+YA
+YA
+YA
+wV
+wV
+Na
+Na
+Na
+Na
+YA
+eP
+YA
+YA
+Na
+Na
+YA
+EP
+Na
+Na
+YA
+Na
+YA
+YA
+YA
+YA
+YA
+nR
+nl
+ej
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(35,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+fZ
+Na
+Na
+Na
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+EM
+wV
+Na
+Na
+Na
+Na
+Xw
+eP
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+OK
+YA
+YA
+YA
+YA
+nR
+bk
+le
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(36,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+eP
+eP
+YA
+Na
+Na
+YA
+YA
+YA
+Na
+xZ
+EP
+YA
+Na
+Na
+eP
+Na
+Na
+nm
+YA
+YA
+YA
+YA
+OK
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(37,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+Na
+YA
+YA
+eP
+eP
+YA
+QC
+Na
+Na
+fZ
+YA
+YA
+YA
+YA
+PU
+Na
+Hk
+eP
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+Na
+PU
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(38,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+Na
+Na
+Na
+YA
+eP
+eP
+YA
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+XV
+Na
+Na
+Na
+OK
+YA
+YA
+YA
+YA
+nR
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(39,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+Na
+Na
+fZ
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+Na
+Na
+JX
+YA
+YA
+eP
+eP
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(40,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+Qc
+Na
+QC
+YA
+YA
+Na
+YA
+YA
+YA
+YA
+eP
+eP
+YA
+nR
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(41,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+YA
+Na
+Na
+YA
+YA
+YA
+Na
+EP
+Na
+Xw
+PU
+YA
+YA
+YA
+YA
+YA
+RT
+YA
+YA
+YA
+Na
+YA
+YA
+YA
+YA
+eP
+eP
+nR
+nR
+Hw
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(42,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+fZ
+Na
+YA
+YA
+wV
+CE
+Na
+lv
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+XQ
+Na
+Na
+YA
+IU
+IU
+YA
+YA
+nR
+Vg
+Hw
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(43,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+wV
+wV
+Na
+Na
+Na
+JX
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+OK
+qo
+Na
+Na
+Na
+YB
+IU
+YA
+YA
+nR
+Cz
+Hw
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(44,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+jg
+YA
+Na
+Na
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+tY
+Na
+Na
+PU
+Na
+Na
+YA
+YA
+EP
+Na
+YA
+YA
+IU
+IU
+Pj
+Na
+Na
+TI
+Na
+IU
+YA
+YA
+nR
+io
+Hw
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(45,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+fZ
+Na
+YA
+YA
+YA
+Na
+Na
+bw
+YA
+eP
+eP
+YA
+cJ
+Xw
+Na
+iz
+Na
+Na
+Na
+Na
+YA
+Na
+Na
+YA
+YA
+IU
+lZ
+dp
+Na
+Na
+ow
+Na
+Na
+YA
+YA
+nR
+bk
+le
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(46,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+eP
+eP
+YA
+PU
+Na
+Na
+Na
+Na
+EP
+Na
+Na
+Na
+Na
+Na
+Na
+Na
+VY
+Na
+Na
+se
+Na
+Na
+sZ
+EP
+YA
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(47,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+eP
+eP
+YA
+EP
+Na
+Na
+Na
+Xw
+fM
+YA
+Na
+Na
+YA
+YA
+Na
+YA
+JG
+Na
+Na
+nx
+Na
+Ks
+WX
+YA
+YA
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(48,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+PP
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+fM
+wV
+CE
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+yw
+OT
+WX
+Na
+OK
+YA
+YA
+nR
+UD
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(49,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+Gy
+EM
+wV
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+Na
+Wp
+Uh
+YA
+YA
+YA
+nR
+bk
+XZ
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(50,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+eP
+eP
+YA
+YA
+lZ
+Na
+Na
+IU
+IU
+YA
+YA
+YA
+nR
+nR
+XZ
+Db
+ju
+eZ
+ju
+Cg
+Le
+"}
+(51,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+Na
+Na
+Na
+Na
+Na
+XV
+Na
+Na
+fZ
+Na
+Na
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+OK
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(52,1,1) = {"
+NJ
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+eP
+eP
+eP
+eP
+eP
+eP
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+YA
+nR
+Db
+ju
+eZ
+ju
+ju
+Le
+"}
+(53,1,1) = {"
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+NJ
+Le
+EN
+EN
+EN
+EN
+EN
+Le
+"}

@@ -1,0 +1,637 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/f13/caves)
+"b" = (
+/obj/structure/wreck/trash/one_barrel,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"c" = (
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"d" = (
+/obj/structure/railing/handrail/rusty,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"e" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"f" = (
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"g" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"h" = (
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jetrocks";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"i" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"j" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"k" = (
+/obj/structure/railing/handrail/rusty,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"l" = (
+/obj/structure/decoration/vent/rusty,
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"m" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"n" = (
+/obj/structure/wreck/trash/two_tire,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"p" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "mrjarvis";
+	pixel_y = 32
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"q" = (
+/turf/open/water,
+/area/f13/caves)
+"r" = (
+/obj/structure/wreck/trash/halftire,
+/turf/open/water,
+/area/f13/caves)
+"s" = (
+/obj/structure/railing/handrail/rusty,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"t" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"u" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"v" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/water,
+/area/f13/caves)
+"w" = (
+/obj/structure/railing/handrail/rusty,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"x" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"y" = (
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"z" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "fly";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"A" = (
+/obj/effect/decal/remains/human{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"B" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"D" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 6;
+	layer = 2.81;
+	plane = -4;
+	pixel_x = 1
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"E" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"F" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/wreck/trash/brokenvendor,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"G" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"H" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"I" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jet4";
+	pixel_x = 32
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"J" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"K" = (
+/obj/structure/wreck/trash/secway,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"L" = (
+/obj/structure/wreck/trash/bus_door,
+/turf/open/water,
+/area/f13/caves)
+"M" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/three_barrels,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"N" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "bishop3";
+	pixel_y = 32
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"O" = (
+/obj/structure/railing/handrail/rusty,
+/turf/open/water,
+/area/f13/caves)
+"P" = (
+/obj/structure/railing/handrail/rusty,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"R" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"S" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/wreck/trash/one_tire,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"T" = (
+/obj/item/storage/trash_stack,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"U" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"X" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/structure/wreck/trash/two_barrels,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"Z" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/decoration/vent/rusty,
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+
+(1,1,1) = {"
+u
+u
+u
+u
+u
+u
+u
+u
+u
+"}
+(2,1,1) = {"
+u
+u
+u
+u
+u
+u
+u
+u
+u
+"}
+(3,1,1) = {"
+u
+u
+c
+p
+u
+u
+u
+u
+u
+"}
+(4,1,1) = {"
+u
+u
+c
+u
+u
+u
+u
+u
+u
+"}
+(5,1,1) = {"
+u
+u
+F
+R
+u
+u
+u
+u
+u
+"}
+(6,1,1) = {"
+u
+u
+c
+E
+u
+u
+u
+u
+u
+"}
+(7,1,1) = {"
+u
+u
+H
+s
+L
+u
+u
+u
+u
+"}
+(8,1,1) = {"
+u
+u
+Z
+s
+q
+u
+u
+u
+u
+"}
+(9,1,1) = {"
+u
+u
+X
+m
+O
+J
+u
+u
+u
+"}
+(10,1,1) = {"
+u
+u
+M
+H
+O
+j
+u
+u
+u
+"}
+(11,1,1) = {"
+u
+u
+c
+B
+a
+x
+u
+u
+u
+"}
+(12,1,1) = {"
+u
+u
+c
+h
+a
+R
+c
+u
+u
+"}
+(13,1,1) = {"
+u
+u
+c
+E
+O
+y
+c
+u
+u
+"}
+(14,1,1) = {"
+u
+u
+T
+w
+q
+D
+K
+u
+u
+"}
+(15,1,1) = {"
+u
+u
+c
+s
+v
+B
+e
+u
+u
+"}
+(16,1,1) = {"
+u
+u
+n
+k
+q
+E
+B
+u
+u
+"}
+(17,1,1) = {"
+u
+u
+B
+H
+q
+S
+c
+u
+u
+"}
+(18,1,1) = {"
+u
+u
+c
+z
+O
+j
+u
+u
+u
+"}
+(19,1,1) = {"
+u
+u
+c
+m
+q
+u
+u
+u
+u
+"}
+(20,1,1) = {"
+u
+u
+U
+s
+q
+u
+u
+u
+u
+"}
+(21,1,1) = {"
+u
+u
+l
+i
+a
+u
+u
+u
+u
+"}
+(22,1,1) = {"
+u
+u
+u
+f
+a
+y
+I
+u
+u
+"}
+(23,1,1) = {"
+u
+u
+u
+x
+q
+B
+c
+u
+u
+"}
+(24,1,1) = {"
+u
+u
+u
+g
+O
+A
+b
+u
+u
+"}
+(25,1,1) = {"
+u
+u
+u
+P
+O
+B
+c
+u
+u
+"}
+(26,1,1) = {"
+u
+u
+u
+d
+q
+H
+c
+u
+u
+"}
+(27,1,1) = {"
+u
+u
+u
+u
+r
+B
+m
+u
+u
+"}
+(28,1,1) = {"
+u
+u
+u
+u
+q
+i
+c
+N
+u
+"}
+(29,1,1) = {"
+u
+u
+u
+u
+u
+t
+c
+u
+u
+"}
+(30,1,1) = {"
+u
+u
+u
+u
+u
+G
+c
+u
+u
+"}
+(31,1,1) = {"
+u
+u
+u
+u
+u
+u
+c
+u
+u
+"}
+(32,1,1) = {"
+u
+u
+u
+u
+u
+u
+c
+u
+u
+"}
+(33,1,1) = {"
+u
+u
+u
+u
+u
+u
+u
+u
+u
+"}
+(34,1,1) = {"
+u
+u
+u
+u
+u
+u
+u
+u
+u
+"}

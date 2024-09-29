@@ -1,0 +1,625 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"b" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 7
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"c" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "yakuza2";
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"d" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"g" = (
+/obj/structure/decoration/vent/rusty,
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"h" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "fly";
+	pixel_y = 32
+	},
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"i" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"j" = (
+/obj/structure/wreck/trash/one_barrel,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"k" = (
+/obj/structure/lattice/catwalk,
+/turf/open/water,
+/area/f13/caves)
+"l" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"m" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"n" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/structure/wreck/trash/secway,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"p" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"q" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"r" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"s" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "jet4";
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"t" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/wreck/trash/four_barrels,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"u" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "sex";
+	pixel_x = 32
+	},
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"v" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/structure/wreck/trash/three_barrels,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"w" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"x" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"y" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"z" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"A" = (
+/obj/structure/wreck/trash/one_tire,
+/turf/open/water,
+/area/f13/caves)
+"B" = (
+/obj/structure/wreck/trash/two_tire,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"C" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"D" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"E" = (
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
+"F" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"G" = (
+/obj/effect/decal/remains/human{
+	icon_state = "remainslarva"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"H" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/water,
+/area/f13/caves)
+"I" = (
+/obj/structure/wreck/trash/four_barrels,
+/turf/open/water,
+/area/f13/caves)
+"J" = (
+/obj/effect/decal/remains/human{
+	layer = 2.1;
+	plane = -4;
+	debris_result = list(/obj/item/storage/bag/trash,/obj/item/stamp/rd);
+	icon_state = "trash_pile1";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_y = 4;
+	pixel_x = -1
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"K" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"L" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 8
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "sex";
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"M" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"N" = (
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"O" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"P" = (
+/obj/structure/wreck/trash/two_tire,
+/turf/open/water,
+/area/f13/caves)
+"Q" = (
+/turf/open/water,
+/area/f13/caves)
+"R" = (
+/obj/structure/wreck/trash/engine,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"S" = (
+/obj/effect/decal/remains/human{
+	layer = 2.2;
+	plane = -4;
+	debris_result = list(/obj/item/stack/sheet/cardboard/twenty);
+	icon_state = "boxfort";
+	icon = 'icons/fallout/trash.dmi';
+	name = "trash pile";
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"T" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"U" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"V" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"W" = (
+/turf/open/floor/f13/lit,
+/area/f13/caves)
+"X" = (
+/obj/structure/wreck/trash/two_tire,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"Y" = (
+/obj/structure/spider/stickyweb,
+/turf/open/water,
+/area/f13/caves)
+"Z" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.51
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+u
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+E
+S
+E
+g
+E
+l
+v
+l
+E
+D
+w
+X
+q
+w
+g
+E
+h
+E
+E
+E
+E
+t
+w
+E
+c
+g
+E
+E
+l
+K
+E
+g
+E
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+a
+a
+a
+w
+j
+M
+F
+T
+R
+F
+F
+N
+O
+G
+w
+a
+a
+a
+U
+W
+i
+V
+d
+b
+N
+w
+D
+D
+F
+z
+T
+D
+q
+i
+x
+U
+B
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+Q
+Q
+A
+Q
+Q
+Q
+k
+k
+H
+Q
+Q
+Q
+Q
+a
+a
+a
+a
+a
+a
+a
+Y
+Q
+Q
+k
+Q
+Q
+I
+Q
+P
+Q
+k
+k
+Q
+Q
+Q
+a
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+n
+l
+W
+s
+O
+w
+O
+O
+W
+J
+W
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+x
+m
+m
+L
+p
+N
+X
+C
+O
+y
+a
+a
+a
+a
+a
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+E
+E
+E
+Z
+E
+w
+r
+M
+E
+E
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+E
+E
+w
+E
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}

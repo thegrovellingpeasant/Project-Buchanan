@@ -57,7 +57,7 @@
 	icon_state = "secgearcrate"
 
 /obj/structure/closet/crate/secure/hydroponics
-	desc = "A crate with a lock on it, painted in the scheme of the station's botanists."
+	desc = "An olive green crate with a locking mechanism."
 	name = "secure hydroponics crate"
 	icon_state = "hydrosecurecrate"
 

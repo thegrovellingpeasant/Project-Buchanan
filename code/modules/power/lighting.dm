@@ -978,7 +978,7 @@
 		light_color = "#FFDDCC"
 		bulb_colour = "#FFF6ED"
 
-/obj/machinery/ight/ncr
+/obj/machinery/light/ncr
 	name = "Security light fixture"
 	desc = "A refitted security light fixture, which will a menacing red when the NCR garrison declare martial law."
 

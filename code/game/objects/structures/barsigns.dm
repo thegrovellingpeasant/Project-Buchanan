@@ -185,10 +185,10 @@
 	desc = "A large glowing weight, this place has been known for its game show fights."
 
 /obj/structure/sign/reno/barsign/liquor
-	name = "liquo store sign"
+	name = "liquor store sign"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "liquor"
-	desc = "A sinner's drink establishment, or it was at least."
+	desc = "The most convenient way of stocking up on booze, or it was at least."
 
 /obj/structure/sign/reno/barsign/train
 	name = "Train station"

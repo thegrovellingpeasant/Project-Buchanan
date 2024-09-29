@@ -757,6 +757,28 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Ranger's Guide to the Wasteland",	/obj/item/book/granter/trait/trekking,							600)
 		)
 
+/obj/machinery/mineral/wasteland_vendor/casinomoney
+	name = "Chip Exchange"
+	icon_state = "trade_idle"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("10 NCR dollars",					/obj/item/stack/f13Cash/ncr/onezero,							4),
+		new /datum/data/wasteland_equipment("100 NCR dollars",					/obj/item/stack/f13Cash/ncr/onezerozero,						40),
+		new /datum/data/wasteland_equipment("500 NCR dollars",					/obj/item/stack/f13Cash/ncr/fivezerozero,						200),
+		new /datum/data/wasteland_equipment("50 Chips",							/obj/item/stack/f13Cash/chips/fivezero,							10),
+		new /datum/data/wasteland_equipment("100 Chips",						/obj/item/stack/f13Cash/chips/onezerozero,						20),
+		new /datum/data/wasteland_equipment("250 Chips",						/obj/item/stack/f13Cash/chips/twofivezero,						60),
+		new /datum/data/wasteland_equipment("1000 Chips",						/obj/item/stack/f13Cash/chips/onezerozerozero,					200)
+		)
+	highpop_list = list(
+		new /datum/data/wasteland_equipment("10 NCR dollars",					/obj/item/stack/f13Cash/ncr/onezero,							4),
+		new /datum/data/wasteland_equipment("100 NCR dollars",					/obj/item/stack/f13Cash/ncr/onezerozero,						40),
+		new /datum/data/wasteland_equipment("500 NCR dollars",					/obj/item/stack/f13Cash/ncr/fivezerozero,						200),
+		new /datum/data/wasteland_equipment("50 Chips",							/obj/item/stack/f13Cash/chips/fivezero,							10),
+		new /datum/data/wasteland_equipment("100 Chips",						/obj/item/stack/f13Cash/chips/onezerozero,						20),
+		new /datum/data/wasteland_equipment("250 Chips",						/obj/item/stack/f13Cash/chips/twofivezero,						60),
+		new /datum/data/wasteland_equipment("1000 Chips",						/obj/item/stack/f13Cash/chips/onezerozerozero,					200)
+		)
+
 /obj/machinery/mineral/wasteland_vendor/general
 	name = "Wasteland Vending Machine - General"
 	icon_state = "generic_idle"
@@ -1380,7 +1402,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Fedora",						/obj/item/clothing/head/fedora,										10),
 		new /datum/data/wasteland_equipment("French Beret",					/obj/item/clothing/head/frenchberet,								10),
 		new /datum/data/wasteland_equipment("Cowboy Hat",					/obj/item/clothing/head/cowboyhat,									10)
-	)
+		)
 
 /datum/data/wasteland_equipment
 	var/equipment_name = "generic"

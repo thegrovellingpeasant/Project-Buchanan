@@ -281,6 +281,8 @@
 /obj/structure/closet/crate/grave/ark
 	name = "Ark of the Convenent"
 	desc = "It looks like it could be opened with the right crowbar..."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "ark"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
@@ -315,6 +317,8 @@
 /obj/structure/closet/crate/grave/strangebird
 	name = "Strange Bird"
 	desc = "It looks like it could be opened with the right crowbar..."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "bird"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
@@ -353,6 +357,8 @@
 /obj/structure/closet/crate/grave/experimental_crate
 	name = "Experimental Crate"
 	desc = "It looks like it could be opened with the right crowbar..."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "prototype"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5

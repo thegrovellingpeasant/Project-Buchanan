@@ -1,0 +1,444 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/low_chance_prison,
+/area/f13/caves)
+"b" = (
+/obj/structure/table/wood/settler,
+/obj/item/flashlight/lantern,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"c" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"d" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"e" = (
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15
+	},
+/obj/structure/plasticflaps/narrowcrevice,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"g" = (
+/obj/structure/glowshroom,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"h" = (
+/obj/structure/rack/shelf_wood,
+/obj/item/flashlight/flare{
+	pixel_y = -6
+	},
+/obj/item/flashlight/flare,
+/obj/item/flashlight/flare{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"i" = (
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"k" = (
+/obj/structure/chair/wood/worn{
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"l" = (
+/obj/structure/closet/crate/miningcar{
+	name = "Minecart";
+	desc = "A minecart";
+	layer = 2.91
+	},
+/obj/item/pickaxe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"q" = (
+/obj/structure/plasticflaps/narrowcrevice,
+/obj/structure/fluff/rails{
+	dir = 4;
+	plane = -15
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"r" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"u" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-r";
+	plane = -15;
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"w" = (
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"L" = (
+/turf/closed/indestructible/rock/smoothing/abovemob,
+/area/f13/caves)
+"M" = (
+/obj/structure/barricade/wooden{
+	opacity = 1
+	},
+/obj/structure/barricade/bars{
+	layer = 3.01
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"T" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/drinks/flask/teapot{
+	desc = null;
+	volume = 100;
+	pixel_y = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"U" = (
+/obj/structure/chair/wood/worn{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"W" = (
+/obj/structure/fluff/rails{
+	icon_state = "rails-l";
+	plane = -15;
+	pixel_x = -1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Y" = (
+/obj/structure/flora/wasteplant/wild_fungus,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+w
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+d
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+a
+M
+a
+b
+T
+w
+g
+a
+"}
+(3,1,1) = {"
+a
+w
+w
+w
+a
+a
+w
+g
+w
+w
+w
+w
+w
+w
+w
+g
+w
+w
+w
+a
+a
+a
+g
+w
+w
+a
+a
+a
+Y
+a
+a
+a
+w
+g
+w
+w
+w
+w
+w
+w
+w
+a
+a
+"}
+(4,1,1) = {"
+a
+w
+r
+i
+e
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+W
+a
+a
+a
+a
+r
+i
+i
+i
+i
+i
+i
+q
+i
+i
+i
+i
+i
+i
+i
+u
+k
+w
+w
+a
+a
+"}
+(5,1,1) = {"
+a
+w
+w
+a
+a
+a
+w
+w
+w
+w
+w
+g
+w
+w
+w
+a
+a
+w
+a
+a
+a
+a
+a
+w
+w
+w
+g
+w
+w
+a
+a
+a
+a
+a
+a
+l
+w
+w
+c
+U
+w
+a
+a
+"}
+(6,1,1) = {"
+a
+d
+a
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+M
+a
+a
+a
+M
+a
+a
+a
+M
+a
+a
+M
+a
+a
+a
+a
+a
+a
+a
+M
+a
+a
+h
+w
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+L
+L
+L
+a
+a
+a
+a
+a
+a
+w
+a
+a
+"}

@@ -477,6 +477,13 @@
 	name = "ruined table"
 	icon_state = "junk_bench"
 
+/obj/structure/table/wood/crate
+	name = "improvised table"
+	desc = "Do not apply fire to this. Rumour says it burns easily."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "largecrate"
+	smooth = SMOOTH_FALSE
+
 /obj/structure/table/wood/poker/narsie_act()
 	..(FALSE)
 
