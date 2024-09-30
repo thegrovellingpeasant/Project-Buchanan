@@ -513,8 +513,10 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
 
 /datum/faction_task/individual_faction/assassination/proc/pick_target()
-	var/datum/faction_task/FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
-	if(length(FT.players) > 0)
+	var/datum/faction_task/FT = null
+	if(GLOB.faction_task_controller.faction_tasks.Find("[target_faction]"))
+		FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
+	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
 		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
