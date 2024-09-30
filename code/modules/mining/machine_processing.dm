@@ -67,7 +67,7 @@
 
 /obj/machinery/mineral/processing_unit_console/Initialize()
 	. = ..()
-	machine = locate(/obj/machinery/mineral/processing_unit, get_step(src, machinedir))
+	machine = locate(/obj/machinery/mineral/processing_unit)
 	if (machine)
 		machine.CONSOLE = src
 	else
