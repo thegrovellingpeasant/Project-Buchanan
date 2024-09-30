@@ -23,6 +23,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/bishops/f13boss
+	faction_head = TRUE
 	title = "Bishop Boss"
 	flag = F13BISHOPSBOSS
 	department_flag = BISHOPS

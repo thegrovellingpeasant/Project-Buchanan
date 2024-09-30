@@ -51,7 +51,6 @@
 "bH" = (
 /obj/structure/railing/handrail{
 	dir = 6;
-	layer = 4.1;
 	pixel_y = -1
 	},
 /obj/item/clothing/gloves/boxing,
@@ -354,16 +353,17 @@
 /area/f13/caves)
 "la" = (
 /obj/structure/table/wood,
+/obj/item/shard{
+	pixel_y = 6;
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/spray/cleaner,
 /obj/item/screwdriver/crude{
 	pixel_y = -2
 	},
 /obj/item/hatchet/cutterblade{
 	pixel_x = 7;
 	pixel_y = 6
-	},
-/obj/item/shard{
-	pixel_y = 6;
-	pixel_x = -4
 	},
 /turf/open/floor/wood/f13/stage_tr,
 /area/f13/caves)
@@ -666,6 +666,9 @@
 	pixel_x = 1
 	},
 /obj/structure/table/wood,
+/obj/item/storage/bag/casings{
+	pixel_y = 6
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "us" = (
@@ -872,8 +875,7 @@
 "Aj" = (
 /obj/structure/railing/handrail{
 	dir = 9;
-	pixel_y = 21;
-	layer = 3.9
+	pixel_y = 21
 	},
 /obj/structure/railing/handrail{
 	dir = 8;
@@ -1240,7 +1242,6 @@
 "MF" = (
 /obj/structure/railing/handrail{
 	dir = 10;
-	layer = 4.1;
 	pixel_y = -1
 	},
 /obj/item/clothing/gloves/boxing/blue,
@@ -1753,6 +1754,8 @@
 /area/f13/caves)
 "Yd" = (
 /obj/structure/closet/crate/miningcar,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Yp" = (

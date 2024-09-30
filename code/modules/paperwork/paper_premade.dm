@@ -538,7 +538,7 @@ D,C,E/0.5,D/0.5,A/0.3<br><br></center>"}
 	name = "Hubology Pamphlet"
 	desc = "A particularly smarmy cult advertisement."
 	icon = 'icons/obj/library.dmi'
-	icon_state = "partyboy"
+	icon_state = "alcoholaddiction"
 	info = {"<center><B><u> Hubology for the Unaligned </u> </B></center><br><br><br>
 <br>
 Welcome to the Hubology Center, our home and regional HQ. Please, enjoy some complementary refreshments, and attend one of our free seminars.<br><br>
@@ -617,3 +617,73 @@ And arise it did, on the planet Terra, as on other planets across the universe. 
 <br><br>
 <u>Books by The Hub</u>:
 Scientific Spirituality, Battleground Quetzel, Star Father Above, Collected Shopping Lists, Notes and Musings, How to Sue Your Enemies Effectively, How to Create a Cult, and Future Books to be Written When I'm Dead."}
+
+/obj/item/paper/censorship
+	name = "Notice from the New California Republic"
+	icon_state = "paper_words"
+	info = {"<center><br>
+Notice from the New California Republic (NCR)
+        <br>
+To All Citizens of New Reno
+        <br>
+—----------------------------------------------------------------------------------------------------------------------------
+        <br>
+The New California Republic, under legal code 4F-01012, prohibits the production of indecent films or photographs within its territory. This directive is aimed at maintaining the moral and ethical standards upheld by the NCR government.
+        <br>
+Effective immediately, this prohibition extends to the operations of the film studio known as Golden Globes, located within New Reno. Any production deemed to be in violation of NCR legal standards will be subject to immediate legal action and penalties.
+        <br>
+Needless to say, this decree applies to all other standing and future film studios operating within NCR territory. We want to emphasize our commitment to protecting the values and integrity of our society.
+        <br>
+We urge all citizens to report any suspected violations to NCR authorities for swift investigation and enforcement.
+        <br><br>
+Thank you for your attention to this matter.</center>
+        <br>
+Sincerely,
+        <br>
+Joseph Beck
+        <br>
+NCR Representative
+        <br>
+        <br>
+        <br>"}
+
+/obj/item/paper/temperanceunion
+	name = "Temperance Union Pamphlet"
+	icon = 'icons/obj/library.dmi'
+	icon_state = "partyboy"
+	info = {"		<br>
+<center>Attention, citizens of New Reno!</center>
+        <br>
+        <br>
+        <br>
+Are you tired of the chaos and debauchery that plagues our streets? Do you yearn for a safer, more wholesome community? Look no further! Join us at the New Reno Temperance Union, where we're dedicated to bringing order and sobriety to our beloved city.
+        <br>
+In a world where vice runs rampant, it's time to take a stand. Together, we can create a haven free from the temptations that lead to ruin. Whether you're a concerned parent, a weary traveler, or simply someone who believes in the power of change, we welcome you with open arms.
+        <br>
+        <br>
+        <br>
+        <br>
+<center>Founded By Concerned Citizens.</center>
+        <br>
+        <br>
+        <br>
+On the mean streets of New Reno, the origins of the Temperance Union trace back to a time when the city's streets were ruled by lawlessness and excess. Faced with rampant crime, addiction, and moral decay, a duo of concerned citizens came together to combat the vices plaguing their community. Inspired by the ideals of sobriety, order, and righteousness, they founded the Temperance Union as a beacon of hope in the darkness. 
+        <br>
+        <br>
+What began as a modest gathering of like-minded individuals soon blossomed into a movement, drawing support from all corners of New Reno. Their mission: to reclaim their city from the clutches of vice and build a better future for generations to come. With unwavering dedication and a steadfast belief in their cause, the members of the Temperance Union continue to strive towards their vision of a cleaner, safer New Reno.
+        <br>
+        <br>
+        <br>
+        <br>
+<center>You Can Become the Change</center>
+        <br>
+        <br>
+        <br>
+Temperance Union members harbor a deep-seated distrust in the effectiveness of conventional law enforcement. They've witnessed firsthand the corruption and incompetence that plagues the city's official authorities, leaving them disillusioned with the notion of relying solely on the existing system. Instead, they advocate for grassroots efforts and community-driven initiatives to address the root causes of crime and addiction. Through education, outreach programs, and local support networks, they believe they can achieve more meaningful and lasting change than the traditional methods of enforcement ever could. In their eyes, true justice is not merely punitive but transformative, seeking to heal the wounds of society rather than merely punishing its symptoms. Thus, they stand as a testament to the power of ordinary people coming together to make a difference, even in the most dire of circumstances.
+        <br>
+        <br>
+        <br>
+        <br>
+<center>The Only Hope for New Reno</center>
+<center>The Temperance Union</center>
+		<br>"}
