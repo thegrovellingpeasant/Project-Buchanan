@@ -30,6 +30,8 @@
 	description = "You are the head of the Wright family. Although small, the Wrights are a proud and prosperous family, and it falls onto you to ensure that all the members keep the core tenets of your organization by avoiding both the consumption and distribution of chems and prostitution. To compensate, you have in your power the monopoly to the local production of alcohol and access to most of the cheap guns in the area. Assign soldiers to your capos. Allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business. Talk to your underboss to help you coordinate the affairs of the gang. You are the most proper and correct family in New Reno: Be polite, don't act like a thug, and keep bums and vagrants away from your territory."
 	selection_color = "#A27954"
 	exp_requirements = EXP_TYPE_WRIGHTS
+	exp_requirements = 540
+	access = list(ACCESS_RENO_CLINIC, ACCESS_WRIGHTS, ACCESS_NRA)
 
 	outfit = /datum/outfit/job/wrights/f13elder
 
@@ -116,6 +118,8 @@
 	supervisors = "Wright Elder"
 	description = "You have proven your worth as an earner for the Wright Family and, as such, it has been trusted to you to lead a small band of soldiers for the boss. You are the mediator between the head of the family and said soldiers, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the soldiers not be assigned to you by the Boss or the Underboss, the decision will fall unto you and the other capos. Assert the core tenets of the Wright family to your subordinates by making them avoid drugs and prostitution, and enforce loyalty as well among the ranks. Remember that you are also bound by these tenets; treason against your superiors is out of the question. Follow the orders of your superiors, protect the family premises and its rackets on the streets of New Reno."
 	exp_requirements = EXP_TYPE_WRIGHTS
+	exp_requirements = 180
+	access = list(ACCESS_RENO_CLINIC, ACCESS_WRIGHTS, ACCESS_NRA)
 
 	outfit = /datum/outfit/job/wrights/f13enforcer
 
@@ -281,6 +285,8 @@
 	supervisors = "Wright Elder"
 	description = "You are a trusted member of the family that has been placed in charge of the Wright family's trade racket. Manage your workers, pull in profits, and keep the family well funded."
 	exp_requirements = EXP_TYPE_WRIGHTS
+	exp_requirements = 360
+	access = list(ACCESS_WRIGHTS, ACCESS_NRA)
 
 	outfit = /datum/outfit/job/wrights/f13manager
 
@@ -341,6 +347,7 @@
 	supervisors = "the Store Manager"
 	description = "You are an employee of New Reno Arms, which is under the wing of the Wright Family. Your job consists of manning the storefront, ordering shipments, and unloading cargo.  Remember that you don't personally own the store's goods. The cargo computer can provide access to illicit contraband if hacked."
 	exp_requirements = EXP_TYPE_WRIGHTS
+	access = list(ACCESS_NRA)
 
 	outfit = /datum/outfit/job/wrights/f13employee
 
@@ -387,6 +394,8 @@
 	supervisors = "Wright Enforcers"
 	description = "You are the clinic supervisor, although you may not be a member of the family you report to them and they are entitled to a share of the clinic's earnings. Your duties are to manage the staff of the clinic, charge as necessary, and help the people of New Reno. Though be weary of the fact that the Wrights would not take kindly to you aiding their enemies."
 	exp_requirements = EXP_TYPE_WRIGHTS
+	exp_requirements = 360
+	access = list(ACCESS_RENO_CLINIC, ACCESS_WRIGHTS)
 
 	outfit = /datum/outfit/job/wrights/f13clinicsupervisor
 
