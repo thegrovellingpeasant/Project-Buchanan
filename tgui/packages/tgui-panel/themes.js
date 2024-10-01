@@ -51,6 +51,8 @@ export const setClientTheme = name => {
       'rules.text-color': '#000000',
       'wiki.background-color': 'none',
       'wiki.text-color': '#000000',
+      'tgwiki.background-color': 'none',
+      'tgwiki.text-color': '#000000',
       'forum.background-color': 'none',
       'forum.text-color': '#000000',
       'github.background-color': 'none',
