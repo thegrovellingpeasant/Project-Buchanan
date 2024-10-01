@@ -52,7 +52,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	var/list/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
 	var/list/global_tasks = list()			// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
 	var/ticks_elapsed = 0
-	var/mob/living/list/players = list()	// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
+	var/mob/living/players[] = list()	// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
 
 /datum/faction_task_controller/New()
 	. = ..()
@@ -308,9 +308,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		for(var/FT in faction_tasks[F])
 			var/datum/faction_task/task_datum = FT
 			task_datum.round_end()
-	for(var/P in players)
-		if(P != null && isliving(P))
-			end_message(P)
+	for(var/mob/living/L in players)
+		if(L != null && istype(L))
+			end_message(L)
 
 
 
@@ -322,11 +322,11 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 //////////////////
 
 /datum/faction_task
-	var/faction						// Job datum the task is assigned to
-	var/name						// Task name
-	var/chance						// Chance of this task being selected for a faction (Global tasks only)
-	var/mob/list/players = list()	// Players in the faction as a /mob
-	var/task_completed = FALSE		// Task completion status
+	var/faction							// Job datum the task is assigned to
+	var/name							// Task name
+	var/chance							// Chance of this task being selected for a faction (Global tasks only)
+	var/mob/living/players[] = list()	// Players in the faction as a /mob
+	var/task_completed = FALSE			// Task completion status
 
 /datum/faction_task/New(_faction)
 	faction = _faction
@@ -513,8 +513,10 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
 
 /datum/faction_task/individual_faction/assassination/proc/pick_target()
-	var/datum/faction_task/FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
-	if(length(FT.players) > 0)
+	var/datum/faction_task/FT = null
+	if(GLOB.faction_task_controller.faction_tasks.Find("[target_faction]"))
+		FT = GLOB.faction_task_controller.faction_tasks["[target_faction]"][1]
+	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
 		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
@@ -587,7 +589,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	var/max_players = 0
 	var/overlapping_faction_task = TRUE
 
-/datum/faction_task/individual_player/add_player(var/mob/user)
+/datum/faction_task/individual_player/add_player(var/mob/living/user)
 	if(prob(player_chance) && length(players) < max_players)
 		return ..()
 
