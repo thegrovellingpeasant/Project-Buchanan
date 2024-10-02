@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/wendover.json"
+	var/config_filename = "_maps/reno.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -16,9 +16,9 @@
 
 
 	// Config actually from the JSON - should default to Box
-	var/map_name = "Wendover"
-	var/map_path = "map_files/Wendover"
-	var/map_file = list("Dungeons.dmm","Wendover-Underground-1.dmm","Wendover-Surface-2.dmm","Wendover-Above-3.dmm")
+	var/map_name = "Reno"
+	var/map_path = "map_files/Reno"
+	var/map_file = list("Dungeons.dmm","Reno-Underground-1.dmm","Reno-Surface-2.dmm","Reno-Above-3.dmm","Reno-Sky-4.dmm")
 	var/list/added_jobs = list()     //Overrides the "none" faction using job name
 	var/list/removed_jobs = list()   //Removes the "none" faction using job name - can also use #all# (case sensitive)
 
@@ -44,9 +44,9 @@
 
 	var/allow_custom_shuttles = TRUE
 	var/shuttles = list(
-		"cargo" = "cargo_pahrump",
+		"cargo" = "cargo_reno",
 		"ferry" = "ferry_fancy",
-		"emergency" = "emergency_wendover")
+		"emergency" = "emergency_reno")
 
 	var/year_offset = 540 //The offset of ingame year from the actual IRL year. You know you want to make a map that takes place in the 90's. Don't lie.
 
