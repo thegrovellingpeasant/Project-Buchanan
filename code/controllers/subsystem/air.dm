@@ -103,13 +103,13 @@ SUBSYSTEM_DEF(air)
 	return ..()
 
 /datum/controller/subsystem/air/Initialize(timeofday)
-	map_loading = FALSE
+	/*map_loading = FALSE
 	setup_allturfs()
 	setup_atmos_machinery()
 	setup_pipenets()
 	gas_reactions = init_gas_reactions()
 	should_do_equalization = CONFIG_GET(flag/atmos_equalize_enabled)
-	auxtools_update_reactions()
+	auxtools_update_reactions()*/
 	return ..()
 
 /datum/controller/subsystem/air/proc/extools_update_ssair()

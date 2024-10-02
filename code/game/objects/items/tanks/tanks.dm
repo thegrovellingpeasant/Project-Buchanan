@@ -264,13 +264,15 @@
 /obj/item/tank/proc/remove_air_volume(volume_to_return)
 	if(!air_contents)
 		return null
-
+	/*
 	var/tank_pressure = air_contents.return_pressure()
 	var/actual_distribute_pressure = clamp(tank_pressure, 0, distribute_pressure)
 
 	var/moles_needed = actual_distribute_pressure*volume_to_return/(R_IDEAL_GAS_EQUATION*air_contents.return_temperature())
 
 	return remove_air(moles_needed)
+	*/
+	return
 
 /obj/item/tank/process()
 	//Allow for reactions

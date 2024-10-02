@@ -15,7 +15,7 @@ GLOBAL_LIST(topic_status_cache)
 	if (debug_server)
 		LIBCALL(debug_server, "auxtools_init")()
 		enable_debugging()
-	AUXTOOLS_CHECK(AUXMOS)
+	//AUXTOOLS_CHECK(AUXMOS)
 #ifdef EXTOOLS_REFERENCE_TRACKING
 	enable_reference_tracking()
 #endif
@@ -85,11 +85,11 @@ GLOBAL_LIST(topic_status_cache)
 	CONFIG_SET(number/round_end_countdown, 0)
 	var/datum/callback/cb
 #ifdef UNIT_TESTS
-	cb = CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(RunUnitTests))
+	cb = CALLBACK(GLOBAL_PROC,GLOBAL_PROC_REF(RunUnitTests))
 #else
 	cb = VARSET_CALLBACK(SSticker, force_ending, TRUE)
 #endif
-	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(_addtimer), cb, 10 SECONDS))
+	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC,GLOBAL_PROC_REF(_addtimer), cb, 10 SECONDS))
 
 /world/proc/SetupLogs()
 	var/override_dir = params[OVERRIDE_LOG_DIRECTORY_PARAMETER]
@@ -274,12 +274,12 @@ GLOBAL_LIST(topic_status_cache)
 
 	log_world("World rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+	//AUXTOOLS_SHUTDOWN(AUXMOS)
 	..()
 
 /world/Del()
 	shutdown_logging() // makes sure the thread is closed before end, else we terminate
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+	//_SHUTDOWN(AUXMOS)
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
 		LIBCALL(debug_server, "auxtools_shutdown")()
