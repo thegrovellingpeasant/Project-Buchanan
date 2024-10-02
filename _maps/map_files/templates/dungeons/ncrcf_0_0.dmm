@@ -599,7 +599,7 @@
 /obj/structure/railing/wood{
 	pixel_y = -7
 	},
-/turf/closed/mineral/random/low_chance_prison,
+/turf/open/floor/wood/f13/oak,
 /area/f13/caves)
 "sF" = (
 /obj/item/flashlight/lantern{
@@ -1525,7 +1525,8 @@
 /obj/machinery/conveyor_switch/oneway{
 	id = "mining_internal";
 	name = "mining conveyor";
-	pixel_y = 23
+	pixel_y = 28;
+	pixel_x = -8
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/mineral/processing_unit_console{
@@ -1606,7 +1607,8 @@
 /obj/machinery/conveyor_switch/oneway{
 	id = "mining_internal1";
 	name = "mining conveyor";
-	pixel_y = 23
+	pixel_y = 11;
+	pixel_x = 3
 	},
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
