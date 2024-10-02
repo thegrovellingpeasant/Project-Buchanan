@@ -12,7 +12,7 @@
 			SIGNAL_ADDTRAIT(TRAIT_MOBILITY_NOUSE),
 			SIGNAL_REMOVETRAIT(TRAIT_MOBILITY_NOUSE),
 			),
-		.proc/update_mobility
+		PROC_REF(update_mobility)
 		)
 
 //Stuff like mobility flag updates, resting updates, etc.
