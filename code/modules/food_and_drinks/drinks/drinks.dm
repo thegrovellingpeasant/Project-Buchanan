@@ -536,10 +536,28 @@
 	desc = "A kettle for boiling and pouring water for tea."
 	icon = 'icons/fallout/trash.dmi'
 	icon_state = "teapot"
-	custom_materials = list(/datum/material/iron=250)
+	custom_materials = list(/datum/material/glass=250)
 	volume = 60
 	isGlass = FALSE
 	custom_price = PRICE_ABOVE_NORMAL
+
+/obj/item/reagent_containers/food/drinks/flask/teapot/white
+	name = "white teapot"
+	desc = "A teapot for brewing tea."
+	icon = 'icons/obj/drinks.dmi'
+	icon_state = "teapot"
+
+/obj/item/reagent_containers/food/drinks/flask/teapot/stripes
+	name = "striped teapot"
+	desc = "A teapot for brewing tea."
+	icon = 'icons/obj/drinks.dmi'
+	icon_state = "teapot_stripes"
+
+/obj/item/reagent_containers/food/drinks/flask/teapot/dots
+	name = "dotted teapot"
+	desc = "A teapot for brewing tea."
+	icon = 'icons/obj/drinks.dmi'
+	icon_state = "teapot_dots"
 
 
 //////////////////////////soda_cans////////////////////////////////////////////////////
