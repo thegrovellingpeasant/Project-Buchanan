@@ -242,7 +242,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 	// Spawn Message
 	if(player_assigned)
-		addtimer(CALLBACK(src, .proc/spawn_message, L), max(30, 300 - ticks_elapsed*2) SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(spawn_message), L), max(30, 300 - ticks_elapsed*2) SECONDS)
 
 
 ////////////////////
@@ -459,7 +459,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	. = ..()
 	while(!target_faction || "[target_faction]" == "[faction]")
 		target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_faction/frame/proc/pick_target()
 	var/datum/faction_task/FT = null
@@ -468,7 +468,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(pick_target)), 30 SECONDS)
 		return
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
@@ -510,7 +510,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	..()
 	while(!target_faction || "[target_faction]" == "[faction]")
 		target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_faction/assassination/proc/pick_target()
 	var/datum/faction_task/FT = null
@@ -519,7 +519,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(pick_target)), 30 SECONDS)
 		return
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
@@ -646,7 +646,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 
 /datum/faction_task/individual_player/heist/New()
 	..()
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_player/heist/proc/pick_target()
 	drop_off = GLOB.faction_vault_areas["[faction]"]
