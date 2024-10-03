@@ -82,8 +82,8 @@
 	name = "tea cup"
 	desc = "In sixteen-hundred-seven, we sailed the open seas..."
 	icon_state = "teacup_empty"
-	gulp_size = 15
-	amount_per_transfer_from_this = 15
+	gulp_size = 5
+	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = list()
 	volume = 15
 	custom_materials = list(/datum/material/glass=100)
@@ -92,13 +92,8 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/teacup/on_reagent_change(changetype)
 	cut_overlays()
 
-	if (gulp_size < 15)
-		gulp_size = 15
-	else
-		gulp_size = max(round(reagents.total_volume / 15), 15)
-
 	if (reagents.reagent_list.len > 0)
-		icon_state = "tea cup"
+		icon_state = "teacup"
 		name = "tea cup"
 		desc = "In sixteen-hundred-seven, we sailed the open seas..."
 
@@ -115,11 +110,6 @@
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/teacup/striped/on_reagent_change(changetype)
 	cut_overlays()
-
-	if (gulp_size < 15)
-		gulp_size = 15
-	else
-		gulp_size = max(round(reagents.total_volume / 15), 15)
 
 	if (reagents.reagent_list.len > 0)
 		icon_state = "teacup_stripes"
@@ -139,11 +129,6 @@
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/teacup/dotted/on_reagent_change(changetype)
 	cut_overlays()
-
-	if (gulp_size < 15)
-		gulp_size = 15
-	else
-		gulp_size = max(round(reagents.total_volume / 15), 15)
 
 	if (reagents.reagent_list.len > 0)
 		icon_state = "teacup_dots"

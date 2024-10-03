@@ -392,7 +392,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Wright Enforcers"
-	description = "You are the clinic supervisor, although you may not be a member of the family you report to them and they are entitled to a share of the clinic's earnings. Your duties are to manage the staff of the clinic, charge as necessary, and help the people of New Reno. Though be weary of the fact that the Wrights would not take kindly to you aiding their enemies."
+	description = "You are the clinic supervisor, a member of the Wright family rewarded with a special position managing a potentially lucrative clinic in the old hotel which some rumors floating about it. Your duties are to manage the staff of the clinic, charge as necessary, and help the people of New Reno. Though be weary of the fact that the family may not take well to you aiding their enemies."
 	exp_requirements = EXP_TYPE_WRIGHTS
 	exp_requirements = 360
 	access = list(ACCESS_RENO_CLINIC, ACCESS_WRIGHTS)
