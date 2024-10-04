@@ -20,7 +20,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ad" = (
 /obj/structure/chair/sofa/luxury,
 /obj/machinery/light/fo13colored/Red{
@@ -37,7 +37,7 @@
 	pixel_y = 17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "af" = (
 /obj/item/reagent_containers/food/snacks/gumball{
 	name = "golf ball";
@@ -53,7 +53,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ai" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/paper/crumpled{
@@ -78,14 +78,14 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "al" = (
 /obj/structure/window/gothic/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "penthouse"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "am" = (
 /obj/structure/table/rolling,
 /obj/item/kirbyplants/dead{
@@ -103,13 +103,13 @@
 	pixel_x = -5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "an" = (
 /obj/structure/nest/mob/ghoulglowing{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ao" = (
 /obj/structure/barricade/tentleatheredge{
 	opacity = 0;
@@ -122,13 +122,13 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ar" = (
 /obj/structure/window/bronze{
 	layer = 4.25
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "au" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
@@ -152,19 +152,22 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "aD" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
-/turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/obj/item/stack/sheet/bone,
+/obj/item/stack/sheet/bone,
+/obj/item/stack/sheet/bone,
+/obj/item/clothing/under/rank/prisoner/skirt,
+/obj/item/card/id/prisoner/one,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_prison)
 "aE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/window/eastleft{
-	opacity = 1
-	},
+/obj/machinery/door/window/eastleft,
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
@@ -185,16 +188,14 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "aI" = (
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_wasteland)
 "aJ" = (
-/obj/structure/window/fulltile/store{
-	icon_state = "storewindowtop"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/obj/structure/table/glass,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/reno_prison)
 "aK" = (
 /obj/effect/overlay/junk/oldpipes/end{
 	dir = 4;
@@ -203,7 +204,16 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"aL" = (
+/obj/structure/pool/ladder{
+	dir = 1;
+	pixel_y = -21
+	},
+/turf/open/pool{
+	sunlight_state = 1
+	},
+/area/f13/reno_streets)
 "aM" = (
 /obj/structure/window/fulltile/store,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -232,7 +242,7 @@
 	},
 /obj/item/lighter/gold,
 /turf/open/floor/carpet/red,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "aV" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
@@ -254,7 +264,7 @@
 	name = "office chair"
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bg" = (
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/glass/mortar,
@@ -263,13 +273,13 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bh" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bi" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowleft"
@@ -301,14 +311,14 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bp" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bw" = (
 /obj/structure/table/reinforced/brass,
 /turf/open/floor/carpet/royalblack,
@@ -342,7 +352,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bH" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowright"
@@ -367,16 +377,32 @@
 	sunlight_state = 1
 	},
 /area/f13/enclave)
+"bK" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	dir = 4;
+	termtag = "Public";
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "bL" = (
 /turf/open/floor/carpet/brown/lit,
 /area/f13/raiders)
+"bM" = (
+/obj/structure/chair/bench{
+	icon_state = "bench_r";
+	dir = 4;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/reno_prison)
 "bQ" = (
-/obj/machinery/light{
-	light_color = "#706891";
+/obj/machinery/light/ncr{
 	pixel_x = 16
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bS" = (
 /obj/structure/nest/mob/deathclaw{
 	icon_state = "deathclaw_sleep"
@@ -400,13 +426,11 @@
 	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bW" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/obj/structure/window/reinforced/tinted/frosted,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
 "bX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/overlay/junk/oldpipes{
@@ -421,7 +445,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "bZ" = (
 /obj/structure/table/abductor,
 /obj/item/paper_bin,
@@ -430,16 +454,20 @@
 	sunlight_state = 1
 	},
 /area/f13/enclave)
+"ca" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_prison)
 "cd" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
 "ce" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/obj/effect/turf_decal/delivery/white,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "ci" = (
 /turf/open/pool{
 	sunlight_state = 1
@@ -464,11 +492,11 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "co" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "cp" = (
 /obj/structure/closet/crate/leftfootlocker{
 	pixel_y = -3;
@@ -476,7 +504,7 @@
 	},
 /obj/item/reagent_containers/food/snacks/f13/fancylads,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "cr" = (
 /obj/structure/table/wood/settler,
 /obj/item/binoculars,
@@ -496,11 +524,11 @@
 /obj/item/clothing/shoes/f13/military/ncr,
 /obj/item/clothing/under/f13/ncr,
 /obj/item/clothing/head/f13/ncr/ncr_cap,
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "cu" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -584,7 +612,7 @@
 	id = "2nd-3rd"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "cL" = (
 /obj/structure/statue/silver{
 	icon_state = "def_radar-off";
@@ -622,7 +650,7 @@
 	color = "#5c131b"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "cU" = (
 /obj/item/kirbyplants/dead{
 	desc = "It doesn't look very healthy...";
@@ -633,9 +661,9 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "cX" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1
 	},
 /obj/structure/table/wood{
@@ -643,8 +671,12 @@
 	icon_state = "table";
 	color = "#665240"
 	},
+/obj/item/radio/wendoverreceiver{
+	pixel_y = 1;
+	pixel_x = -2
+	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "da" = (
 /obj/structure/nest/mob/ghoularmless{
 	name = "ghoul prisoner";
@@ -655,7 +687,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "db" = (
 /obj/item/radio/loudspeaker{
 	icon_state = "gannets_machine21";
@@ -675,10 +707,15 @@
 	pixel_x = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dd" = (
+/obj/structure/displaycase{
+	start_showpiece_type = /obj/item/clothing/head/helmet/f13/legion/prime/decan;
+	desc = "A display case for a object of the wardens career before being moved to this position.";
+	name = "Warden's trophy"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "de" = (
 /obj/structure/table/bronze,
 /obj/structure/table/bronze,
@@ -719,7 +756,7 @@
 	desc = "Seems someone was a good snitch"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "do" = (
 /obj/structure/chair/comfy/modern{
 	dir = 4
@@ -738,15 +775,15 @@
 	pixel_x = -6
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dq" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/cigbutt/cigarbutt,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "dt" = (
 /turf/open/floor/plasteel/elevatorshaft,
-/area/f13/reno_caves)
+/area/f13/heist)
 "dy" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
@@ -757,7 +794,7 @@
 	layer = 4.25
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dC" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
@@ -768,7 +805,7 @@
 "dD" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/gothic,
@@ -779,7 +816,7 @@
 	mob_types = list(15001452683973962705=5)
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dH" = (
 /obj/item/cane/cletuspoggcane,
 /obj/effect/decal/cleanable/blood/gibs/human,
@@ -787,7 +824,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dI" = (
 /obj/machinery/light{
 	dir = 8;
@@ -810,7 +847,7 @@
 	pixel_y = -10
 	},
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "dK" = (
 /obj/structure/junk/jukebox,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
@@ -818,7 +855,14 @@
 "dL" = (
 /obj/structure/falsewall/concrete,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"dN" = (
+/obj/structure/sign/poster/prewar/poster70{
+	pixel_y = 32
+	},
+/obj/structure/chair/pew/right,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "dO" = (
 /obj/structure/window{
 	dir = 1;
@@ -833,7 +877,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dP" = (
 /obj/structure/chair/office/dark{
 	name = "prop";
@@ -848,7 +892,7 @@
 /obj/structure/rack/shelf_metal,
 /obj/item/shield/riot/bullet_proof,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dS" = (
 /obj/structure/chair/f13chair1{
 	dir = 8
@@ -859,7 +903,7 @@
 /obj/structure/table/glass,
 /obj/item/paper_bin,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "dU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/food/condiment/ketchup,
@@ -944,7 +988,7 @@
 /obj/structure/table/wood/greyscale/varnished,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "en" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/theater)
@@ -957,10 +1001,10 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "es" = (
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/enclave)
 "eu" = (
 /obj/structure/dresser,
@@ -988,9 +1032,9 @@
 /obj/structure/chair/wood/worn{
 	dir = 8
 	},
-/obj/machinery/light,
+/obj/machinery/light/ncr,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "eA" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -1024,9 +1068,9 @@
 /area/f13/raiders)
 "eH" = (
 /obj/item/twohanded/required/kirbyplants/random,
-/obj/machinery/light,
+/obj/machinery/light/ncr,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "eL" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/paper{
@@ -1081,7 +1125,7 @@
 /obj/item/stack/medical/bruise_pack,
 /obj/item/stack/medical/bruise_pack,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "eY" = (
 /obj/structure/window{
 	dir = 1
@@ -1094,7 +1138,7 @@
 	pixel_x = -2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fa" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer{
@@ -1114,7 +1158,7 @@
 "fc" = (
 /obj/machinery/light/invisible,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fd" = (
 /obj/structure/simple_door/house{
 	icon_state = "room"
@@ -1124,7 +1168,7 @@
 "fe" = (
 /obj/structure/girder,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fg" = (
 /turf/open/floor/plating/f13/outside/roof/wood,
 /area/f13/reno_wasteland)
@@ -1176,7 +1220,7 @@
 /obj/structure/cable/white,
 /obj/machinery/power/deck_relay,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fo" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/floor/lit,
@@ -1189,7 +1233,7 @@
 	smooth = 0;
 	pixel_y = -8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/raider_mall)
 "fs" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1204,7 +1248,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fu" = (
 /obj/structure/window/fulltile/ruins,
 /obj/structure/curtain/stage{
@@ -1212,13 +1256,13 @@
 	name = "curtain"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fz" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,
-/area/f13/reno_caves)
+/area/f13/heist)
 "fA" = (
 /obj/machinery/button/door{
 	pixel_x = -26;
@@ -1247,7 +1291,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "fF" = (
 /obj/structure/chair/office/dark{
 	name = "prop";
@@ -1263,13 +1307,8 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raider_mall)
 "fK" = (
-/obj/structure/displaycase{
-	start_showpiece_type = /obj/item/clothing/head/helmet/f13/legion/venator;
-	desc = "A display case for a object of the wardens career before being moved to this position.";
-	name = "Warden's trophy"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "fL" = (
 /obj/structure/railing{
 	dir = 10;
@@ -1289,7 +1328,7 @@
 	pixel_x = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "fP" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/f13{
@@ -1368,7 +1407,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gd" = (
 /obj/structure/simple_door/room/dirty,
 /turf/open/floor/wood/f13/oak/lit,
@@ -1401,43 +1440,53 @@
 /area/f13/raider_mall)
 "gk" = (
 /turf/closed/wall/mineral/brick,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"gl" = (
+/obj/structure/statue/bone/megalith,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "gm" = (
 /obj/structure/sign/poster/ncr/keep_to_myself{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gn" = (
-/obj/structure/window/gothic3/fulltile,
-/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace/air,
+/area/f13/reno_prison)
 "gp" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/chair/bench{
+	icon_state = "bench_r";
+	dir = 1;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gq" = (
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "gr" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gs" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gt" = (
 /turf/open/floor/plasteel/stairs/medium,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"gw" = (
+/obj/item/twohanded/required/kirbyplants/random,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_prison)
 "gy" = (
 /obj/structure/lattice,
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "gz" = (
 /obj/structure/chair/f13chair1{
 	dir = 8
@@ -1473,6 +1522,12 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/raiders)
+"gH" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/theater)
 "gI" = (
 /turf/open/floor/carpet/red,
 /area/f13/reno_sharkclub)
@@ -1484,7 +1539,7 @@
 "gN" = (
 /obj/structure/chair/wood/fancy,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "gP" = (
 /obj/structure/chair/sofa/right{
 	color = "#800000";
@@ -1511,6 +1566,13 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
+"gU" = (
+/obj/effect/turf_decal/delivery,
+/obj/structure/statue/diamond/indestructible/ufo/top{
+	desc = "This is just a playset.....right?"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "gV" = (
 /obj/effect/overlay/curb,
 /obj/effect/overlay/curb/north{
@@ -1521,7 +1583,7 @@
 	},
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "gW" = (
 /obj/structure/pool/ladder{
 	dir = 8;
@@ -1529,7 +1591,7 @@
 	pixel_x = 1
 	},
 /turf/open/pool,
-/area/f13/reno_caves)
+/area/f13/heist)
 "gX" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/theater)
@@ -1577,7 +1639,7 @@
 	pixel_x = 3
 	},
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "hd" = (
 /obj/effect/decal/cleanable/glass,
 /obj/structure/barricade/wooden,
@@ -1586,14 +1648,25 @@
 "he" = (
 /obj/structure/dresser,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
+"hg" = (
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#D11F1F"
+	},
+/obj/effect/overlay/curb/north,
+/obj/effect/overlay/curb{
+	pixel_y = -5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "hh" = (
 /obj/structure/railing{
 	layer = 3.3;
 	dir = 5
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hi" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -1601,12 +1674,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/lit,
 /area/f13/reno_wasteland)
 "hj" = (
-/obj/structure/lattice/catwalk{
-	icon = 'icons/fallout/turfs/ground.dmi';
-	icon_state = "housebase";
-	name = "foundation";
-	smooth = 0
-	},
 /obj/structure/nest/mob/brahmin{
 	dir = 8
 	},
@@ -1623,20 +1690,20 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hl" = (
 /obj/structure/bed/oldalt,
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hm" = (
 /obj/structure/debris/v2{
 	layer = 4
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ho" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -1679,7 +1746,7 @@
 	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hB" = (
 /obj/structure/nest/mob/ghoul{
 	dir = 4;
@@ -1688,14 +1755,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/farmhousesouth)
 "hC" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1
 	},
 /obj/structure/sign/poster/ncr/democracy{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hD" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -1755,14 +1822,14 @@
 	pixel_y = 3
 	},
 /obj/structure/table,
-/obj/machinery/computer/terminal{
+/obj/machinery/computer/judge_terminal/laptop{
 	dir = 8;
-	layer = 3.7;
+	pixel_y = 4;
 	pixel_x = -1;
-	pixel_y = 4
+	layer = 3.3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hO" = (
 /obj/machinery/light{
 	dir = 8
@@ -1778,10 +1845,10 @@
 	icon_state = "cobweb2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hR" = (
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "hT" = (
 /obj/structure/statue/diamond/indestructible/artdecowinged{
 	dir = 4;
@@ -1882,7 +1949,7 @@
 /obj/structure/table/wood,
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "id" = (
 /obj/structure/table/wood{
 	icon = 'icons/obj/smooth_structures/table_greyscale.dmi';
@@ -1893,8 +1960,12 @@
 	pixel_y = 11;
 	pixel_x = -5
 	},
+/obj/item/stack/ore/silver{
+	pixel_x = 12;
+	pixel_y = 2
+	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ie" = (
 /turf/open/transparent/openspace/air,
 /area/f13/raiders)
@@ -1908,7 +1979,7 @@
 "il" = (
 /obj/effect/overlay/junk/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "im" = (
 /obj/item/clothing/suit/space/eva{
 	layer = 3.09;
@@ -1941,16 +2012,11 @@
 "io" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "is" = (
-/obj/structure/curtain{
-	color = "#4B5320";
-	pixel_x = -32
-	},
-/turf/open/transparent/glass{
-	sunlight_state = 1
-	},
-/area/f13/enclave)
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "it" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/chefhat{
@@ -1968,7 +2034,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iw" = (
 /obj/effect/overlay/curb,
 /obj/effect/overlay/curb/north{
@@ -1978,7 +2044,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "iy" = (
 /obj/structure/barricade/bars,
 /turf/open/floor/f13/dark/lit,
@@ -1988,7 +2054,7 @@
 	layer = 4.25
 	},
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "iA" = (
 /obj/structure/table/reinforced,
 /obj/item/kitchen/rollingpin{
@@ -2014,20 +2080,31 @@
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iE" = (
 /obj/item/candle/infinite{
 	pixel_y = -9;
 	pixel_x = -5
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iF" = (
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"iG" = (
+/obj/structure/table/wood/crate,
+/obj/item/clothing/under/f13/chinese,
+/obj/item/clothing/under/f13/chinese/officer,
+/obj/item/clothing/head/f13/chinese,
+/obj/item/clothing/head/f13/chinese/officer,
+/obj/item/clothing/suit/armored/medium/vestchinese{
+	armor = list("melee"=15,"bullet"=15,"laser"=5,"energy"=5,"bomb"=25,"bio"=0,"rad"=0,"fire"=0,"acid"=-10,"wound"=30)
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "iI" = (
 /turf/open/floor/f13{
 	icon_state = "darkbluecorner";
@@ -2049,24 +2126,24 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "iP" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/ammo_box/c38box,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iQ" = (
 /obj/structure/table/wood,
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iS" = (
 /obj/structure/urinal{
 	pixel_y = 32;
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "iT" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated{
 	pixel_x = null;
@@ -2077,11 +2154,11 @@
 /turf/open/indestructible/ground/outside/roof/stairs/north{
 	color = "#A47449"
 	},
-/area/f13/reno_caves)
+/area/f13/heist)
 "iX" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ja" = (
 /obj/structure/bed{
 	dir = 1
@@ -2090,13 +2167,13 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jb" = (
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jd" = (
 /turf/open/floor/wood/f13/oakbroken/lit,
 /area/f13/farmhousesouth)
@@ -2107,6 +2184,10 @@
 	sunlight_state = 1
 	},
 /area/f13/raider_mall)
+"jh" = (
+/obj/structure/statue/sandstone/mars,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "jk" = (
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace/air,
@@ -2120,6 +2201,12 @@
 /obj/structure/pool/Rboard,
 /turf/open/floor/plasteel/f13,
 /area/f13/reno_streets)
+"js" = (
+/obj/item/radio/intercom/prison{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/reno_prison)
 "jt" = (
 /obj/structure/dresser,
 /obj/machinery/light{
@@ -2135,14 +2222,14 @@
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jv" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 4;
 	pixel_y = -3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jw" = (
 /obj/structure/railing{
 	layer = 3.3;
@@ -2161,16 +2248,16 @@
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jC" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jD" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
@@ -2208,6 +2295,10 @@
 "jK" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite/lit,
 /area/f13/theater)
+"jN" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/theater)
 "jO" = (
 /obj/effect/overlay/curb/north,
 /obj/effect/overlay/curb{
@@ -2221,7 +2312,7 @@
 /area/f13/reno_sharkclub)
 "jQ" = (
 /turf/open/floor/carpet/green,
-/area/f13/reno_caves)
+/area/f13/heist)
 "jR" = (
 /obj/structure/girder,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -2231,29 +2322,34 @@
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleplate"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "jT" = (
-/obj/machinery/light,
+/obj/machinery/light/ncr,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ka" = (
 /obj/structure/curtain{
 	color = "#5c131b"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/reno_caves)
+/area/f13/heist)
 "kc" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/crafting/goodparts/five,
 /obj/item/stack/crafting/metalparts/five,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kf" = (
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/reno_west_building)
 "kk" = (
-/turf/closed/indestructible/f13/supermart,
-/area/f13/reno_wasteland)
+/obj/structure/chess/blackbishop,
+/obj/effect/overlay/curb/east,
+/obj/effect/overlay/curb/north,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/heist)
 "kl" = (
 /obj/machinery/light{
 	dir = 1
@@ -2291,7 +2387,15 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"kv" = (
+/obj/structure/noticeboard{
+	desc = "A board with a number of iron hooks upon it.";
+	name = "wall rack";
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "kw" = (
 /obj/structure/statue/diamond/indestructible/oldworldstatue{
 	dir = 4;
@@ -2306,11 +2410,11 @@
 /obj/structure/sign/poster/ncr/irradiated_food{
 	pixel_x = 32
 	},
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ky" = (
 /obj/structure/table/abductor,
 /obj/item/paper/pamphlet{
@@ -2327,14 +2431,14 @@
 /obj/effect/decal/cleanable/blood/gibs/human,
 /obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kC" = (
 /obj/structure/window{
 	dir = 8;
 	pixel_x = -2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kD" = (
 /obj/structure/sign/poster/prewar/protectron{
 	pixel_y = 32
@@ -2342,16 +2446,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "kE" = (
-/obj/structure/curtain{
-	color = "#4e638a";
-	open = 0;
-	icon_state = "closed";
-	opacity = 1;
-	layer = 4.01;
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/obj/structure/lamp_post/floodlight,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "kF" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/armor/riot/chaplain/witchhunter,
@@ -2370,7 +2467,7 @@
 /obj/item/clothing/shoes/f13/military/ncr,
 /obj/item/clothing/under/f13/ncr/ncr_officer,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
@@ -2396,7 +2493,7 @@
 "kM" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kN" = (
 /obj/structure/filingcabinet{
 	pixel_x = -12
@@ -2408,11 +2505,11 @@
 	pixel_x = 10
 	},
 /obj/item/folder/yellow,
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kP" = (
 /obj/item/cardboard_cutout{
 	pixel_y = 20
@@ -2437,7 +2534,7 @@
 "kQ" = (
 /obj/structure/chair/stool/retro,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "kR" = (
 /obj/structure/barricade/tentleathercorner{
 	opacity = 0;
@@ -2453,18 +2550,16 @@
 "kT" = (
 /obj/item/bedsheet/blue,
 /obj/structure/bed,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/effect/landmark/start/f13/civilians/ncrcfwarden,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kX" = (
 /obj/structure/bed{
 	layer = 2.88;
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "kY" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/reno_caves)
@@ -2477,7 +2572,7 @@
 "la" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "lb" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 4
@@ -2517,7 +2612,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "ll" = (
 /obj/item/blanket/ruined{
 	pixel_x = -1
@@ -2535,7 +2630,7 @@
 /obj/machinery/light/small,
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ls" = (
 /obj/structure/table/wood,
 /obj/structure/closet/crate/wicker,
@@ -2556,13 +2651,19 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "lC" = (
-/obj/effect/landmark/start/f13/civilians/ncrcfwarden,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "lD" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"lF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite/lit,
+/area/f13/theater)
 "lH" = (
 /obj/structure/curtain/stage,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -2578,7 +2679,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "lM" = (
 /obj/structure/table/wood/settler,
 /obj/item/flashlight/lamp/green{
@@ -2607,11 +2708,14 @@
 	dir = 4
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "lP" = (
 /obj/structure/table/glass,
+/obj/item/book/manual/civilcode{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "lS" = (
 /obj/item/toy/crayon/spraycan,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -2625,23 +2729,30 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "lX" = (
-/obj/structure/sign/poster/ncr/keep_to_myself{
-	pixel_y = 32
+/obj/machinery/light{
+	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/theater)
 "lY" = (
+/obj/machinery/light/ncr{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"lZ" = (
+/obj/structure/statue/wood/whitelegtotem,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "mb" = (
 /obj/machinery/iv_drip/telescopic,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mc" = (
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/farmhousesouth)
@@ -2673,7 +2784,7 @@
 	layer = 3
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -2714,13 +2825,13 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquantum,
 /obj/structure/closet/fridge,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "mu" = (
 /obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mv" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
 	icon_state = "rampdowntop";
@@ -2733,7 +2844,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -2752,16 +2863,21 @@
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/table/wood/ruined,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/raiders)
+"mH" = (
+/obj/structure/table/wood/crate,
+/obj/item/book/codex_gigas,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "mJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mK" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck,
@@ -2772,17 +2888,17 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "mO" = (
 /obj/structure/table/wood/poker,
 /obj/item/gun/ballistic/automatic/smg/american180,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "mR" = (
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace/air,
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "mV" = (
 /obj/structure/railing/casino,
 /turf/open/floor/carpet/reno/evil2,
@@ -2817,7 +2933,7 @@
 "nd" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ne" = (
 /obj/machinery/light{
 	dir = 4
@@ -2852,10 +2968,10 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nm" = (
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nn" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/storage/fancy/cigarettes/cigars,
@@ -2863,7 +2979,7 @@
 	pixel_x = 26
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "nq" = (
 /obj/structure/window/gothic/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -2896,7 +3012,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "nu" = (
 /obj/item/chair,
 /turf/open/floor/wood/f13/oak/lit,
@@ -2931,7 +3047,7 @@
 "nD" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nF" = (
 /obj/structure/chair/sofa/left{
 	color = "#f06262"
@@ -2948,49 +3064,44 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nH" = (
-/obj/machinery/light,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/obj/structure/noticeboard{
+	desc = "A board with a number of iron hooks upon it.";
+	name = "wall rack";
+	pixel_y = 32
+	},
+/obj/item/gun/ballistic/automatic/smg/tommygun/whitelegs{
+	pixel_y = 29;
+	anchored = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "nJ" = (
 /obj/machinery/light,
 /turf/open/transparent/openspace/air,
 /area/f13/raider_mall)
 "nL" = (
-/turf/closed/indestructible/rock{
-	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
-	icon_state = "supermart";
-	icon_type_smooth = "supermart";
-	name = "supermart wall";
-	smooth = 1;
-	plane = -14
-	},
-/area/f13/reno_wasteland)
+/turf/closed/indestructible/f13/supermart,
+/area/f13/reno_prison)
 "nP" = (
-/obj/structure/railing{
-	dir = 8
+/obj/structure/lattice,
+/obj/item/radio/intercom/prison{
+	pixel_x = 32
 	},
-/obj/structure/nest/mob/raider{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/raiders)
+/turf/open/transparent/openspace/air,
+/area/f13/reno_prison)
 "nT" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
-/obj/item/stack/sheet/bone,
-/obj/item/clothing/under/rank/prisoner,
-/obj/item/card/id/prisoner/seven,
-/turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_prison)
 "nU" = (
 /obj/structure/closet/crate/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nV" = (
 /obj/structure/statue/diamond/overlayable/motherofcombustionleft{
 	name = "Old Statue";
@@ -3002,7 +3113,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/rd/royal_cape,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "nZ" = (
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/reno_building)
@@ -3049,11 +3160,15 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "om" = (
 /obj/item/pen,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/theater)
+"on" = (
+/obj/structure/window/plasma/reinforced/spawner,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "oo" = (
 /obj/structure/barricade/sandbags,
 /obj/structure/table/wood/settler,
@@ -3106,7 +3221,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "oy" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak/lit,
@@ -3116,13 +3231,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "oB" = (
 /obj/structure/toilet/secret/prison{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "oE" = (
 /obj/structure/chair/sofa/luxury/left{
 	dir = 8
@@ -3136,7 +3251,7 @@
 	},
 /obj/effect/overlay/curb,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "oG" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/condiment/flour,
@@ -3145,6 +3260,15 @@
 /area/f13/farmhousesouth)
 "oH" = (
 /turf/closed/wall/f13/wood/interior,
+/area/f13/raiders)
+"oL" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/nest/mob/raider{
+	dir = 4
+	},
+/turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "oM" = (
 /obj/structure/closet/fridge,
@@ -3166,8 +3290,14 @@
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
 "oT" = (
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack"
+	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "oU" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -3219,26 +3349,25 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "pe" = (
 /obj/structure/bookcase,
 /obj/item/storage/book/bible,
 /obj/item/book/random,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "pf" = (
-/obj/machinery/light{
-	light_color = "#706891";
+/obj/machinery/light/ncr{
 	pixel_x = 16
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "pi" = (
 /obj/structure/chair/sofa/luxury/left{
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "pl" = (
 /obj/structure/chair/wood/modern,
 /turf/open/floor/wood/f13/carpet/lit,
@@ -3281,7 +3410,7 @@
 "pw" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "py" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -3302,7 +3431,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "pE" = (
 /obj/item/trash/tray,
 /obj/effect/decal/cleanable/dirt,
@@ -3335,7 +3464,7 @@
 	icon_state = "coatrack"
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "pM" = (
 /obj/structure/chair/office/dark{
 	name = "western backdrop";
@@ -3675,18 +3804,16 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qb" = (
-/obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qd" = (
-/obj/machinery/light{
-	dir = 8;
-	layer = 2.89
+/obj/machinery/light/ncr{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qe" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3719,7 +3846,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "qj" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -3736,18 +3863,18 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "qm" = (
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
 /turf/open/floor/plasteel/stairs/right,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qp" = (
 /obj/structure/table/glass,
 /obj/item/pen{
 	pixel_x = -6;
-	pixel_y = -7
+	pixel_y = 2
 	},
 /obj/item/pen{
 	pixel_x = -5;
@@ -3760,7 +3887,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qq" = (
 /obj/structure/filingcabinet,
 /obj/structure/filingcabinet{
@@ -3769,14 +3896,12 @@
 /obj/structure/filingcabinet{
 	pixel_x = 11
 	},
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1;
-	light_color = "#706891";
-	layer = 3;
-	pixel_x = -16
+	pixel_x = 16
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qs" = (
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/planks,
@@ -3785,7 +3910,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qt" = (
 /obj/item/trash/f13/k_ration,
 /obj/machinery/light/small{
@@ -3793,7 +3918,7 @@
 	light_color = "red"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qu" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/weldingtool/basic,
@@ -3801,7 +3926,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "qw" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/plating/tunnel,
@@ -3848,7 +3973,7 @@
 	},
 /area/f13/raider_mall)
 "qJ" = (
-/obj/machinery/door/unpowered/latterdaysaints{
+/obj/machinery/door/unpowered/house{
 	req_one_access_txt = "162";
 	name = "suite 2"
 	},
@@ -3942,7 +4067,14 @@
 	pixel_x = 14
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"qZ" = (
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#D11F1F"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "rb" = (
 /obj/structure/railing{
 	layer = 4.25;
@@ -3955,7 +4087,7 @@
 /area/f13/farmhousesouth)
 "rd" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "re" = (
 /obj/structure/table/abductor,
 /obj/item/clothing/head/f13/army/officer{
@@ -3986,7 +4118,7 @@
 	icon_state = "newboard_mess4"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rl" = (
 /obj/structure/table/wood/poker,
 /obj/item/card/id/reno/bishops/key/suite1{
@@ -3999,7 +4131,7 @@
 /turf/closed/wall/f13/ruins{
 	name = "damaged concrete"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rn" = (
 /obj/structure/chair/f13chair1{
 	dir = 4;
@@ -4053,22 +4185,17 @@
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rB" = (
-/obj/machinery/light{
-	plane = -14;
-	pixel_x = 16
+/obj/structure/table/reinforced,
+/obj/item/statuebust{
+	pixel_y = 10
 	},
-/obj/structure/displaycase{
-	start_showpiece_type = /obj/item/clothing/head/helmet/f13/legion/prime/decan;
-	desc = "A display case for a object of the wardens career before being moved to this position.";
-	name = "Warden's trophy"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "rE" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rH" = (
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/reno_west_building)
@@ -4081,16 +4208,16 @@
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rM" = (
 /obj/structure/closet/crate/freezer/blood/anchored,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rN" = (
 /obj/structure/table/glass,
 /obj/item/book/manual/ncr/jobguide,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin/trashbin,
@@ -4103,7 +4230,7 @@
 "rQ" = (
 /obj/item/chair/wood/modern,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rR" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
@@ -4117,7 +4244,7 @@
 	icon_state = "cobweb2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "rV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
@@ -4176,7 +4303,7 @@
 	pixel_y = -7
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sf" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -4188,7 +4315,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "si" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -4219,16 +4346,16 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "sm" = (
 /obj/structure/chair/wood/fancy{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "sn" = (
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "so" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/carpet/brown/lit,
@@ -4260,21 +4387,20 @@
 "su" = (
 /obj/item/chair/folding,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sv" = (
-/obj/structure/simple_door/metal/ventilation,
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
 /obj/structure/simple_door/metal/ventilation,
-/turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_prison)
 "sw" = (
 /obj/structure/chair/sofa/luxury{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sx" = (
 /obj/structure/girder,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -4301,13 +4427,13 @@
 /area/f13/reno_west_building)
 "sE" = (
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "sH" = (
 /obj/structure/nest/mob/ghoulreaver{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sL" = (
 /obj/structure/table/wood/fancy,
 /obj/structure/mirror{
@@ -4329,7 +4455,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sO" = (
 /obj/item/tank/internals/anesthetic,
 /obj/structure/table/reinforced,
@@ -4338,14 +4464,14 @@
 	pixel_y = 15
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sP" = (
 /obj/structure/railing{
 	layer = 4.25;
 	dir = 1
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sR" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/cable_coil/thirty,
@@ -4353,7 +4479,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sU" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -4372,7 +4498,7 @@
 	dir = 1
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "sX" = (
 /obj/structure/closet/crate/footlocker{
 	pixel_x = 6;
@@ -4383,7 +4509,7 @@
 /obj/item/stack/crafting/electronicparts/three,
 /obj/item/stack/crafting/electronicparts/three,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ta" = (
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
@@ -4416,7 +4542,7 @@
 	color = "#A47449";
 	dir = 8
 	},
-/area/f13/reno_caves)
+/area/f13/heist)
 "tg" = (
 /obj/structure/decoration/vent{
 	icon_state = "drain";
@@ -4429,7 +4555,7 @@
 /obj/item/soap,
 /obj/structure/window/reinforced/tinted/frosted,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "th" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/reno/burgundy/lit,
@@ -4476,7 +4602,7 @@
 	pixel_x = -7
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "tr" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
@@ -4493,7 +4619,14 @@
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
+"tw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/painting/library{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/theater)
 "tx" = (
 /obj/structure/table/reinforced,
 /obj/item/book/manual/chef_recipes,
@@ -4527,7 +4660,7 @@
 /turf/open/floor/carpet/reno/burgundy/lit,
 /area/f13/enclave)
 "tC" = (
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
 "tD" = (
 /turf/open/floor/f13{
@@ -4545,7 +4678,7 @@
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "tK" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/snacks/f13/dandyapples,
@@ -4578,7 +4711,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "tS" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
@@ -4588,7 +4721,7 @@
 	icon_state = "cobweb2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "tY" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/paper_bin{
@@ -4621,7 +4754,7 @@
 "ua" = (
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ub" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4";
@@ -4649,7 +4782,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ue" = (
 /obj/structure/decoration/cells{
 	pixel_x = 31;
@@ -4657,7 +4790,7 @@
 	dir = 1
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "uf" = (
 /obj/effect/overlay/curb/corner{
 	dir = 8;
@@ -4711,14 +4844,14 @@
 /area/f13/raiders)
 "uq" = (
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "ur" = (
 /obj/machinery/button/door{
 	pixel_y = 25;
 	id = "penthouse"
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "uw" = (
 /obj/item/reagent_containers/spray/cleaner{
 	icon_state = "alienblaster";
@@ -4735,12 +4868,27 @@
 	sunlight_state = 1
 	},
 /area/f13/enclave)
+"ux" = (
+/obj/structure/table/reinforced,
+/obj/item/candle/infinite{
+	pixel_y = 6;
+	pixel_x = -10
+	},
+/obj/item/candle/infinite{
+	pixel_y = 6;
+	pixel_x = 11
+	},
+/obj/item/storage/book/bible{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "uz" = (
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "uB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
@@ -4770,11 +4918,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
 /area/f13/raiders)
 "uH" = (
-/obj/structure/chair/comfy/green{
-	dir = 4
+/obj/structure/chair/bench{
+	icon_state = "bench_r";
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "uI" = (
 /obj/effect/overlay/curb/west,
 /obj/machinery/light{
@@ -4836,7 +4985,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "uZ" = (
 /obj/structure/table/wood,
 /obj/item/stack/sticky_tape{
@@ -4866,7 +5015,7 @@
 	pixel_x = 7
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "va" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -4939,7 +5088,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/black,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "vq" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
@@ -4949,7 +5098,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "vs" = (
 /obj/structure/table/round,
 /obj/machinery/computer/arcade/orion_trail{
@@ -4970,7 +5119,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "vu" = (
 /obj/structure/railing{
 	dir = 1;
@@ -5006,7 +5155,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "vz" = (
 /turf/closed/wall/rust,
 /area/f13/farmhousesouth)
@@ -5029,11 +5178,11 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "vE" = (
 /obj/structure/simple_door/bunker/glass,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/reno_caves)
+/area/f13/heist)
 "vG" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -5042,12 +5191,18 @@
 /area/f13/theater)
 "vJ" = (
 /obj/structure/girder,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
 "vL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/raiders)
+"vM" = (
+/obj/structure/bookcase,
+/obj/item/book/random,
+/obj/item/book/manual/civilcode,
+/turf/open/floor/wood/f13/oak,
+/area/f13/reno_prison)
 "vO" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
@@ -5060,6 +5215,16 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/reno_sharkclub)
+"vS" = (
+/obj/machinery/computer/terminal{
+	pixel_y = 24;
+	icon = 'icons/obj/machines/mining_machines.dmi';
+	icon_state = "console";
+	name = "terminal";
+	density = 0
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "vT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy/lit,
@@ -5094,7 +5259,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "vX" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -5103,7 +5268,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "vY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/transparent/openspace/air,
@@ -5141,13 +5306,13 @@
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wg" = (
 /obj/effect/overlay/junk/oldpipes{
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wh" = (
 /turf/open/floor/wood/f13/stage_br{
 	sunlight_state = 1
@@ -5182,8 +5347,7 @@
 "wr" = (
 /obj/structure/table/wood/greyscale/red,
 /turf/open/floor/wood/f13/stage_b{
-	sunlight_state = 1;
-	color = "#800000"
+	sunlight_state = 1
 	},
 /area/f13/enclave)
 "wt" = (
@@ -5204,20 +5368,20 @@
 /obj/item/clothing/shoes/f13/military/ncr,
 /obj/item/clothing/under/f13/ncr,
 /obj/item/clothing/head/f13/ncr/ncr_cap,
-/obj/machinery/light,
+/obj/machinery/light/ncr,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wx" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wz" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -5240,21 +5404,21 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wG" = (
 /obj/effect/overlay/junk/urinal{
 	pixel_y = 27
 	},
 /obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wH" = (
 /turf/open/transparent/openspace/air,
 /area/f13/theater)
 "wK" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wM" = (
 /obj/structure/table/wood/fancy/red,
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
@@ -5273,7 +5437,7 @@
 	pixel_x = -7
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wU" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -5288,13 +5452,16 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wW" = (
 /obj/structure/railing{
 	dir = 9
 	},
+/obj/item/radio/intercom/prison{
+	pixel_y = 32
+	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "wX" = (
 /obj/structure/table/wood/fancy,
 /turf/open/floor/carpet/reno/evil2,
@@ -5320,14 +5487,14 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "xd" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount{
 	pixel_y = 29
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xf" = (
 /obj/structure/debris/v2{
 	layer = 4
@@ -5335,7 +5502,7 @@
 /obj/structure/simple_door/glass,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xh" = (
 /obj/structure/table/wood/fancy,
 /obj/item/toy/cards/deck{
@@ -5359,7 +5526,7 @@
 "xo" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/civilcode{
-	pixel_x = 11;
+	pixel_x = 10;
 	pixel_y = -12;
 	layer = 1;
 	anchored = 1
@@ -5375,17 +5542,17 @@
 	pixel_x = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xp" = (
 /obj/structure/closet/locker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xt" = (
 /obj/structure/chair/sofa/luxury/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/lit,
@@ -5400,7 +5567,7 @@
 /obj/item/reagent_containers/hypospray/medipen/psycho,
 /obj/item/reagent_containers/hypospray/medipen/psycho,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "xw" = (
 /obj/structure/chair/wood/fancy{
 	dir = 8
@@ -5410,7 +5577,7 @@
 "xz" = (
 /obj/structure/nest/mob/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xA" = (
 /turf/open/floor/carpet/black/lit,
 /area/f13/farmhousesouth)
@@ -5423,7 +5590,7 @@
 	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xD" = (
 /obj/structure/lattice,
 /obj/structure/fence/wooden{
@@ -5431,7 +5598,7 @@
 	pixel_y = -32
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xE" = (
 /obj/structure/lattice/catwalk{
 	icon = 'icons/fallout/turfs/ground.dmi';
@@ -5485,13 +5652,13 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "xP" = (
 /obj/structure/chair/wood/normal{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xR" = (
 /obj/structure/sign/poster/prewar/poster82{
 	pixel_x = 32
@@ -5517,7 +5684,7 @@
 	dir = 5
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "xW" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowright"
@@ -5532,19 +5699,26 @@
 	pixel_x = 6
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ya" = (
 /obj/structure/bed/wooden{
 	dir = 4
 	},
 /turf/open/floor/carpet/red/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "yb" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_wasteland)
+"yd" = (
+/obj/structure/toilet{
+	dir = 4;
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/reno_prison)
 "yg" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -5557,7 +5731,7 @@
 "yh" = (
 /obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yj" = (
 /obj/structure/chair/f13chair1{
 	dir = 4
@@ -5606,7 +5780,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yz" = (
 /obj/effect/decal/remains/human{
 	layer = 2.2;
@@ -5622,15 +5796,18 @@
 "yB" = (
 /obj/structure/bodycontainer/morgue,
 /obj/structure/window/reinforced/tinted/frosted,
+/obj/item/stack/sheet/bone,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/card/id/prisoner/three,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yC" = (
 /obj/item/ammo_casing/c38,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yD" = (
 /obj/effect/decal/cleanable/blood{
 	plane = -14;
@@ -5641,36 +5818,39 @@
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_west_building)
+"yE" = (
+/obj/item/gun/energy/laser/plasma/pistol/alien{
+	anchored = 1;
+	desc = "This weapon is unlike any other you've ever seen before, and appears to be made out of metals not usually found on Earth. It has a tag on it 'property of head scribe'"
+	},
+/turf/closed/wall/gothic,
+/area/f13/heist)
 "yH" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 8
+	},
 /obj/structure/window/reinforced/tinted/frosted,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/obj/item/stack/sheet/bone,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/card/id/prisoner/seven,
+/turf/open/floor/plating/tunnel,
+/area/f13/reno_prison)
 "yI" = (
-/obj/structure/barricade/bars,
-/obj/structure/curtain{
-	color = "#363636";
-	icon_state = "closed";
-	open = 0;
-	alpha = 245;
-	opacity = 1;
-	layer = 4.01
+/obj/structure/musician/piano/unanchored{
+	icon_state = "piano"
 	},
-/obj/structure/fence/wooden{
-	pixel_x = 10;
-	pixel_y = -32
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/turf/open/floor/plating/tunnel,
+/area/f13/theater)
 "yK" = (
 /obj/structure/chair/stool,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "yL" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yM" = (
 /obj/effect/overlay/curb/west,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -5681,7 +5861,7 @@
 	},
 /obj/structure/table/rolling,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yQ" = (
 /obj/item/candle/infinite{
 	pixel_y = -1;
@@ -5691,7 +5871,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "yS" = (
 /obj/structure/railing/casino{
 	dir = 4;
@@ -5745,7 +5925,7 @@
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/twohanded/baseball,
 /turf/open/floor/carpet/red,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "zr" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip1";
@@ -5765,6 +5945,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/arcade/lit,
 /area/f13/enclave)
+"zu" = (
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 11
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "zv" = (
 /turf/open/pool{
 	sunlight_state = 1
@@ -5773,7 +5963,7 @@
 "zx" = (
 /obj/structure/simple_door/house{
 	name = "mayor's office";
-	req_access_txt = "165"
+	req_one_access_txt = "165"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bishop_boss_doors";
@@ -5804,7 +5994,7 @@
 	name = "Stamp"
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "zF" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -5815,7 +6005,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "zJ" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/plasteel/grimy/lit,
@@ -5824,7 +6014,7 @@
 /obj/structure/table/glass,
 /obj/item/clothing/mask/cigarette/pipe,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "zS" = (
 /obj/structure/chair/wood/fancy,
 /turf/open/floor/carpet/reno/evil2,
@@ -5837,9 +6027,8 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "zV" = (
-/obj/structure/window/gothic/fulltile,
-/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/turf/open/transparent/openspace/air,
+/area/f13/reno_prison)
 "zW" = (
 /obj/structure/junk/small/bed2,
 /obj/structure/junk/small/bed{
@@ -5850,7 +6039,7 @@
 	pixel_x = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "zY" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck{
@@ -5877,7 +6066,7 @@
 	dir = 5
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ab" = (
 /obj/machinery/microwave/stove,
 /obj/effect/decal/cleanable/dirt,
@@ -5898,7 +6087,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ad" = (
 /obj/item/chair/greyscale{
 	color = "#bbbcbd"
@@ -5922,19 +6111,23 @@
 	pixel_x = 7;
 	pixel_y = 5
 	},
+/obj/item/book/manual/civilcode{
+	pixel_y = 5;
+	pixel_x = -10
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Af" = (
 /obj/structure/bookcase,
 /obj/item/book/random,
 /obj/item/book/random,
 /obj/item/book/random,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ai" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Aj" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/reagent_containers/food/drinks/drinkingglass{
@@ -5952,14 +6145,14 @@
 	pixel_x = 6
 	},
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Ak" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/item/reagent_containers/food/drinks/bottle/brown/wine,
 /obj/item/reagent_containers/food/drinks/bottle/brown/wine,
 /obj/item/reagent_containers/food/drinks/bottle/wine,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Al" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/trash,
@@ -5975,7 +6168,7 @@
 "Ar" = (
 /obj/item/trash/f13/fancylads,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "As" = (
 /obj/structure/window/gothic2/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -5992,7 +6185,7 @@
 	},
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Av" = (
 /obj/structure/bed{
 	dir = 1;
@@ -6001,12 +6194,12 @@
 /obj/item/bedsheet/brown{
 	dir = 8
 	},
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 8
 	},
 /obj/effect/landmark/start/f13/civilians/ncrcfphysician,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ay" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -6019,20 +6212,26 @@
 	pixel_y = 13
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AB" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plasteel/stairs/left,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AC" = (
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"AD" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
 "AF" = (
 /obj/effect/decal/waste{
 	icon_state = "goo12"
@@ -6059,12 +6258,12 @@
 "AK" = (
 /obj/machinery/autolathe/ammo/unlocked,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "AL" = (
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth{
 	plane = -15
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/cardboard_cutout{
@@ -6083,8 +6282,7 @@
 	pixel_y = 20
 	},
 /turf/open/floor/wood/f13/stage_r{
-	sunlight_state = 1;
-	color = "#800000"
+	sunlight_state = 1
 	},
 /area/f13/enclave)
 "AN" = (
@@ -6099,7 +6297,7 @@
 /obj/structure/simple_door/glass,
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AP" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -6110,19 +6308,36 @@
 	pixel_y = 15
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AQ" = (
 /obj/structure/statue/sandstone/venus,
 /obj/machinery/light,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "AR" = (
 /obj/item/trash/f13/porknbeans,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "AT" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"AU" = (
+/obj/structure/bed,
+/obj/item/bedsheet/brown,
+/obj/structure/bed{
+	pixel_y = 14
+	},
+/obj/item/bedsheet/brown{
+	pixel_y = 15
+	},
+/obj/structure/decoration/rag{
+	icon_state = "flag_ncr";
+	name = "NCR banner";
+	plane = -14;
+	pixel_y = 30
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/reno_prison)
 "AY" = (
 /obj/structure/railing{
 	dir = 1
@@ -6176,7 +6391,7 @@
 /obj/item/melee/onehanded/knife/cosmicdirty,
 /obj/item/clothing/mask/bandana,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Bh" = (
 /turf/open/floor/wood/f13/stage_tl,
 /area/f13/reno_west_building)
@@ -6187,7 +6402,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Bj" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "bishop_boss_doors";
@@ -6195,7 +6410,7 @@
 	},
 /obj/structure/simple_door/house{
 	name = "mayor's office";
-	req_access_txt = "165"
+	req_one_access_txt = "165"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -6224,16 +6439,13 @@
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Br" = (
-/obj/structure/toilet{
+/obj/machinery/light/ncr,
+/obj/machinery/door/window/northright{
 	dir = 4;
-	pixel_x = -3
-	},
-/obj/machinery/light{
-	light_color = "#706891";
-	pixel_x = 16
+	opacity = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Bt" = (
 /obj/structure/rack/shelf_metal,
 /obj/machinery/light{
@@ -6265,7 +6477,7 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BA" = (
 /obj/structure/window/fulltile/ruins{
 	icon_state = "ruinswindowvertical"
@@ -6274,7 +6486,7 @@
 	color = "#845f58"
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BB" = (
 /obj/structure/bed/oldalt,
 /obj/effect/decal/cleanable/dirt,
@@ -6300,13 +6512,13 @@
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BF" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BH" = (
 /obj/structure/chair/comfy/plywood{
 	dir = 4;
@@ -6324,7 +6536,7 @@
 	name = "Warden's trophy"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BK" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/clothing/suit/armored/heavy/riotpolice,
@@ -6336,7 +6548,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "BL" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/green,
 /area/f13/reno_wasteland)
@@ -6374,6 +6586,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oakbroken/lit,
 /area/f13/raiders)
+"BT" = (
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "BW" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -6407,14 +6626,14 @@
 	opacity = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cc" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 4;
 	pixel_y = -3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cd" = (
 /obj/structure/table/glass,
 /obj/item/storage/fancy/cigarettes/cigpack_greytort,
@@ -6423,7 +6642,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ce" = (
 /obj/machinery/light{
 	dir = 4;
@@ -6462,7 +6681,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ch" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 8
@@ -6491,10 +6710,13 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cn" = (
-/turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Co" = (
 /obj/structure/chair/office/dark{
 	name = "prop";
@@ -6521,7 +6743,7 @@
 	pixel_x = -9
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cq" = (
 /obj/structure/table/round,
 /obj/item/reagent_containers/glass/bucket{
@@ -6538,20 +6760,20 @@
 "Cu" = (
 /obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cv" = (
 /obj/machinery/light{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Cw" = (
 /obj/structure/nest/mob/ghoulsoldier{
 	name = "ghoul prisoner";
 	mob_types = list(17513151632359332839=5)
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cx" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/wrench/basic,
@@ -6560,7 +6782,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cy" = (
 /obj/item/melee/onehanded/club/ncrflag{
 	pixel_x = -4;
@@ -6568,7 +6790,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Cz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood{
@@ -6580,8 +6802,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "CB" = (
-/turf/closed/wall/gothic,
-/area/f13/reno_wasteland)
+/obj/item/radio/intercom/prison{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/reno_prison)
 "CF" = (
 /obj/structure/bed/mattress{
 	dir = 4
@@ -6594,7 +6819,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "CJ" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
@@ -6646,7 +6871,7 @@
 "CO" = (
 /obj/structure/chair/office,
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "CP" = (
 /obj/structure/obstacle/old_locked_door{
 	layer = 3.06
@@ -6674,11 +6899,11 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "CW" = (
 /obj/structure/chair/stool,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "CX" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowvertical"
@@ -6698,7 +6923,7 @@
 "CZ" = (
 /obj/machinery/light/small/broken,
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Da" = (
 /obj/structure/window/gothic/fulltile,
 /turf/open/floor/carpet/reno/evil2,
@@ -6709,7 +6934,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "De" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -6721,15 +6946,14 @@
 /area/f13/raider_mall)
 "Dh" = (
 /obj/machinery/door/airlock/vault,
-/obj/item/crowbar/abductor/heist,
 /turf/open/floor/plasteel/elevatorshaft,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Di" = (
 /obj/structure/chair/sofa/right{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Dj" = (
 /obj/machinery/power/apc{
 	plane = 1;
@@ -6737,7 +6961,7 @@
 	},
 /obj/structure/cable/white,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Dl" = (
 /obj/machinery/vending/clothing,
 /turf/open/floor/plating/tunnel,
@@ -6750,23 +6974,23 @@
 	pixel_y = 33
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ds" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleplate"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Dt" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Du" = (
 /obj/structure/simple_door/glass,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Dw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -6778,7 +7002,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Dz" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/stack/ore/blackpowder/fifty,
@@ -6788,7 +7012,7 @@
 	},
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "DE" = (
 /obj/structure/table/wood/junk,
 /obj/item/megaphone{
@@ -6821,10 +7045,24 @@
 	icon = 'icons/fallout/machines/radio.dmi'
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
+"DJ" = (
+/obj/structure/table/wood/crate,
+/obj/item/book{
+	name = "Communist Manifesto"
+	},
+/obj/item/book{
+	name = "The Prince"
+	},
+/obj/structure/sign/poster/painting/communist{
+	pixel_y = 32;
+	plane = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "DK" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
 "DM" = (
 /obj/structure/window/fulltile/store{
@@ -6845,7 +7083,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "DQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/stool/retro,
@@ -6857,7 +7095,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "DT" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/seclite,
@@ -6886,12 +7124,6 @@
 	icon_state = "table";
 	color = "#665240"
 	},
-/obj/machinery/computer/security{
-	icon_state = "terminal";
-	network = list("auxbase");
-	pixel_x = 18;
-	pixel_y = 2
-	},
 /obj/machinery/radioterminal/ncr{
 	pixel_y = 4
 	},
@@ -6899,7 +7131,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Eg" = (
 /obj/structure/table/round,
 /turf/open/floor/carpet/brown/lit,
@@ -6911,14 +7143,19 @@
 	color = "#665240"
 	},
 /obj/item/stamp/denied,
+/obj/machinery/computer/security/vault{
+	pixel_y = 2;
+	pixel_x = -14;
+	network = list("labor")
+	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ej" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
 	},
 /turf/open/floor/carpet/green,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Ek" = (
 /obj/structure/simple_door/metal{
 	icon_state = "secure_steel"
@@ -6927,13 +7164,13 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "El" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Em" = (
 /obj/structure/table/wood/settler,
 /obj/structure/barricade/wooden,
@@ -6955,7 +7192,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Es" = (
 /turf/open/floor/f13{
 	icon_state = "darkyellowcorner";
@@ -6968,7 +7205,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Eu" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor4"
@@ -6980,7 +7217,7 @@
 	color = "#845f58"
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ez" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
@@ -7008,7 +7245,7 @@
 	},
 /obj/item/folder/syndicate/blue,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ED" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/plasteel/f13,
@@ -7041,7 +7278,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "EL" = (
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raider_mall)
@@ -7062,7 +7299,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ER" = (
 /obj/structure/decoration/vent{
 	icon_state = "drain";
@@ -7074,7 +7311,7 @@
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "EU" = (
 /turf/open/transparent/openspace/air,
 /area/f13/farmhousesouth)
@@ -7086,7 +7323,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "EZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak/lit,
@@ -7102,6 +7339,12 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_wasteland)
+"Fe" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/theater)
 "Ff" = (
 /turf/closed/mineral/random/low_chance,
 /turf/open/transparent/openspace/air,
@@ -7126,7 +7369,7 @@
 	pixel_y = 32
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Fj" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -7155,7 +7398,7 @@
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Fq" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowright"
@@ -7175,9 +7418,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_west_building)
 "Fs" = (
-/obj/item/pet_carrier,
+/obj/structure/bed/dogbed,
+/obj/item/toy/cattoy{
+	pixel_y = 17;
+	pixel_x = 4
+	},
+/obj/structure/nest/mob/cat{
+	mob_types = list(/mob/living/simple_animal/pet/cat/kitten=5);
+	icon_state = "kitten";
+	dir = 1;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ft" = (
 /obj/effect/overlay/curb,
 /obj/effect/overlay/curb/north{
@@ -7191,7 +7444,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Fu" = (
 /obj/structure/window/bronze{
 	layer = 4.25
@@ -7203,7 +7456,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Fx" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/machinery/computer/terminal{
@@ -7217,7 +7470,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Fy" = (
 /obj/machinery/light/small/built,
 /obj/effect/overlay/junk/oldpipes/vent{
@@ -7226,7 +7479,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FC" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
@@ -7234,20 +7487,20 @@
 	},
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FG" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 8
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FH" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FI" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/lit,
 /area/f13/reno_wasteland)
@@ -7270,6 +7523,10 @@
 /area/f13/raiders)
 "FM" = (
 /obj/machinery/photocopier,
+/obj/structure/decoration/sign{
+	icon_state = "photo_moon";
+	pixel_x = 32
+	},
 /turf/open/transparent/glass{
 	sunlight_state = 1
 	},
@@ -7284,7 +7541,7 @@
 /area/f13/farmhousesouth)
 "FQ" = (
 /turf/open/pool,
-/area/f13/reno_caves)
+/area/f13/heist)
 "FR" = (
 /obj/structure/chair/wood/fancy{
 	dir = 8
@@ -7300,18 +7557,11 @@
 	pixel_y = -32
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "FV" = (
-/turf/closed/indestructible/rock{
-	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
-	icon_state = "supermart";
-	icon_type_smooth = "supermart";
-	name = "supermart wall";
-	smooth = 1;
-	plane = -14
-	},
-/area/f13/reno_caves)
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "FX" = (
 /obj/structure/window{
 	dir = 1;
@@ -7320,11 +7570,11 @@
 /obj/structure/table,
 /obj/item/storage/briefcase/lawyer/family,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FY" = (
 /obj/structure/bed,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "FZ" = (
 /obj/structure/simple_door/metal,
 /turf/open/floor/wood/f13/carpet/lit,
@@ -7351,20 +7601,20 @@
 	density = 0
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Gc" = (
 /obj/structure/chair/sofa/luxury/left{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ge" = (
 /obj/item/melee/onehanded/knife/bowie,
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Gh" = (
 /turf/open/floor/carpet/red/lit,
 /area/f13/reno_west_building)
@@ -7384,7 +7634,7 @@
 	layer = 3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Gn" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -7395,7 +7645,7 @@
 	pixel_x = -7
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Gp" = (
 /obj/structure/noticeboard{
 	pixel_y = 32
@@ -7411,7 +7661,7 @@
 	name = "curtain"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Gr" = (
 /obj/structure/chair/sofa/right{
 	dir = 1
@@ -7426,7 +7676,7 @@
 /obj/effect/overlay/curb,
 /obj/structure/chair/sofa/luxury/ottoman,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Gx" = (
 /obj/item/radio/intercom/retro{
 	pixel_y = 29;
@@ -7440,15 +7690,12 @@
 "Gy" = (
 /obj/structure/bodycontainer/morgue,
 /obj/structure/window/reinforced/tinted/frosted,
-/obj/item/stack/sheet/bone,
-/obj/item/clothing/under/rank/prisoner,
-/obj/item/card/id/prisoner/three,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "GA" = (
 /obj/structure/debris/v2,
 /turf/open/indestructible/ground/outside/ruins,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "GB" = (
 /obj/effect/overlay/curb/corner{
 	dir = 1
@@ -7462,7 +7709,7 @@
 	name = "shit";
 	dir = 8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
 "GI" = (
 /obj/effect/decal/remains/human,
@@ -7507,7 +7754,7 @@
 	pixel_y = -7
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "GM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood/settler,
@@ -7534,13 +7781,14 @@
 	dir = 8;
 	pixel_x = -2
 	},
-/obj/machinery/computer/terminal{
+/obj/machinery/computer/judge_terminal/laptop{
 	dir = 4;
-	termtag = "Public";
-	pixel_y = 4
+	pixel_y = 4;
+	layer = 3.3;
+	pixel_x = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "GV" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
@@ -7568,7 +7816,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Hb" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/ncr_k_ration,
@@ -7583,6 +7831,12 @@
 	},
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
+"Hd" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/theater)
 "Hg" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -7593,7 +7847,7 @@
 "Hj" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Hm" = (
 /obj/machinery/light{
 	dir = 4
@@ -7615,7 +7869,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Hp" = (
 /turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_sharkclub)
@@ -7655,7 +7909,7 @@
 	pixel_x = -7
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Hz" = (
 /obj/effect/overlay/junk/sink{
 	pixel_y = 17
@@ -7667,16 +7921,16 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "HA" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 4
 	},
 /obj/effect/landmark/start/f13/civilians/ncrcfphysician,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "HG" = (
 /obj/structure/chair/sofa/luxury/corner,
 /turf/open/floor/carpet/reno/evil2,
@@ -7700,7 +7954,7 @@
 	layer = 3.3
 	},
 /turf/open/floor/carpet/green,
-/area/f13/reno_caves)
+/area/f13/heist)
 "HJ" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/raiders)
@@ -7728,7 +7982,11 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"HT" = (
+/obj/structure/spirit_board,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "HW" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/wendoverreceiver{
@@ -7772,7 +8030,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "HZ" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -7783,7 +8041,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ib" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/rust,
@@ -7795,6 +8053,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_west_building)
+"Ig" = (
+/obj/structure/statue/bone/skull,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Ij" = (
 /obj/structure/nest/mob/deathclaw{
 	icon_state = "deathclaw_sleep"
@@ -7870,7 +8132,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ix" = (
 /obj/structure/lattice/catwalk{
 	icon = 'icons/fallout/turfs/ground.dmi';
@@ -7942,18 +8204,18 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "IN" = (
 /obj/machinery/vending/cola,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "IP" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 8;
 	anchored = 1
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "IU" = (
 /obj/structure/chair/sofa/luxury/corner,
 /turf/open/floor/wood/wood_diagonal,
@@ -7968,7 +8230,12 @@
 	opacity = 0
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"IY" = (
+/obj/structure/table/reinforced,
+/obj/item/crowbar/abductor/heist,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Jb" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/orange{
@@ -8000,10 +8267,21 @@
 "Jh" = (
 /obj/machinery/autolathe,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Jk" = (
 /turf/closed/wall/mineral/stonewall,
 /area/f13/reno_west_building)
+"Jl" = (
+/obj/machinery/computer/terminal{
+	dir = 8;
+	layer = 3;
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "comm_server";
+	desc = "A piece of equipment used to spy on the citizens.";
+	name = "database"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Jm" = (
 /obj/structure/nest/mob/bighorner{
 	dir = 4
@@ -8034,7 +8312,7 @@
 	pixel_y = -17
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Jp" = (
 /obj/structure/railing{
 	dir = 4;
@@ -8059,10 +8337,11 @@
 	name = "Warden's trophy"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Jv" = (
-/obj/structure/simple_door/house{
-	name = "mayor's suite"
+/obj/machinery/door/unpowered/house{
+	req_one_access_txt = "165";
+	name = "room B5"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -8108,13 +8387,28 @@
 /obj/item/folder/yellow,
 /obj/item/folder/yellow,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"JD" = (
+/obj/structure/table/reinforced,
+/obj/item/candle/infinite{
+	pixel_y = 6;
+	pixel_x = -10
+	},
+/obj/item/candle/infinite{
+	pixel_y = 6;
+	pixel_x = 11
+	},
+/obj/item/reagent_containers/food/drinks/bottle/holywater{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "JE" = (
 /obj/machinery/smartfridge/bottlerack,
 /obj/item/reagent_containers/food/drinks/bottle/champagne,
 /obj/item/reagent_containers/food/drinks/bottle/champagne,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "JF" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -8127,7 +8421,7 @@
 	dir = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "JH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/rust,
@@ -8137,7 +8431,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "JK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -8177,7 +8471,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "JW" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 1
@@ -8187,11 +8481,11 @@
 	opacity = 0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "JX" = (
 /obj/structure/bed,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "JZ" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_west_building)
@@ -8204,12 +8498,12 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Kb" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ke" = (
 /turf/open/floor/wood/f13/stage_tr,
 /area/f13/reno_west_building)
@@ -8235,7 +8529,7 @@
 /obj/item/pen,
 /obj/item/pen/fourcolor,
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Kj" = (
 /obj/structure/window/gothic2/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -8245,6 +8539,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_sharkclub)
+"Kl" = (
+/obj/structure/sign/poster/painting/vito{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Km" = (
 /obj/machinery/light{
 	dir = 4
@@ -8268,7 +8568,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Ko" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -8276,7 +8576,7 @@
 "Kp" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Kr" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/clothing/mask/cigarette/cigar{
@@ -8285,14 +8585,14 @@
 	},
 /obj/item/clothing/mask/cigarette/cigar,
 /turf/open/floor/carpet/red,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "Ks" = (
 /obj/machinery/light/small{
 	dir = 4;
 	light_color = "red"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Kt" = (
 /obj/structure/statue/wood{
 	icon = 'icons/fallout/objects/furniture/stationary.dmi';
@@ -8325,7 +8625,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Kx" = (
 /obj/structure/barricade/tentleatheredge{
 	opacity = 0;
@@ -8370,7 +8670,7 @@
 	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "KG" = (
 /obj/structure/window/spawner/west,
 /turf/open/floor/f13{
@@ -8385,7 +8685,7 @@
 	name = "curtain"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "KJ" = (
 /obj/effect/overlay/curb/east,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -8401,14 +8701,12 @@
 /turf/open/transparent/openspace/air,
 /area/f13/raiders)
 "KR" = (
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891";
-	layer = 3
+/obj/machinery/light/ncr{
+	dir = 1
 	},
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "KS" = (
 /obj/item/kirbyplants/dead{
 	desc = "It doesn't look very healthy...";
@@ -8419,7 +8717,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "KT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/left{
@@ -8448,7 +8746,7 @@
 /obj/item/clothing/under/f13/ncr,
 /obj/item/clothing/head/f13/ncr/ncr_cap,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ld" = (
 /obj/structure/railing{
 	dir = 5
@@ -8472,7 +8770,7 @@
 	opacity = 0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Lj" = (
 /obj/structure/barricade/tentleatheredge{
 	opacity = 0;
@@ -8499,7 +8797,7 @@
 /area/f13/reno_sharkclub)
 "Lo" = (
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Lp" = (
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_west_building)
@@ -8509,6 +8807,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/enclave)
+"Lr" = (
+/obj/structure/table/reinforced,
+/obj/item/documents{
+	pixel_y = 6
+	},
+/obj/structure/decoration/vent/rusty{
+	pixel_y = 31
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Lt" = (
 /turf/open/floor/plating/f13/outside/roof,
 /area/f13/reno_wasteland)
@@ -8521,11 +8829,11 @@
 	name = "curtain"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Lw" = (
 /obj/structure/dresser,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ly" = (
 /obj/structure/window/gothic2/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -8547,7 +8855,7 @@
 	pixel_x = 7
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "LB" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -8583,7 +8891,7 @@
 /obj/item/stack/sheet/cloth/five,
 /obj/item/stack/sheet/cloth/five,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LK" = (
 /obj/structure/chair/wood/worn{
 	dir = 4
@@ -8596,12 +8904,12 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "LM" = (
-/obj/structure/pool/ladder{
-	dir = 1;
-	pixel_y = 11
+/obj/effect/turf_decal/delivery,
+/obj/structure/statue/diamond/indestructible/ufo{
+	desc = "This is just a playset.....right?"
 	},
-/turf/open/floor/plasteel/f13,
-/area/f13/reno_streets)
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "LO" = (
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
 /area/f13/raiders)
@@ -8611,29 +8919,29 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LS" = (
 /obj/structure/window/fulltile/store,
 /obj/structure/curtain{
 	color = "#845f58"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LV" = (
 /obj/effect/decal/cleanable/blood/gibs/human,
 /obj/structure/nest/mob/ghoul{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LW" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LX" = (
 /obj/structure/rack/shelf_metal,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "LZ" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
@@ -8642,7 +8950,7 @@
 "Mb" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Me" = (
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
@@ -8675,7 +8983,7 @@
 /area/f13/raiders)
 "Mn" = (
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Mo" = (
 /obj/structure/table/abductor,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquartz{
@@ -8693,7 +9001,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Mr" = (
 /obj/structure/nest/mob/ghoul{
 	dir = 8;
@@ -8711,7 +9019,7 @@
 	opacity = 0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Mu" = (
 /obj/item/shard,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -8751,7 +9059,7 @@
 	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "MA" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
@@ -8767,6 +9075,10 @@
 /obj/structure/closet/locker/fridge,
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
+"MH" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/theater)
 "MI" = (
 /obj/machinery/chem_master,
 /turf/open/floor/plasteel/grimy/lit,
@@ -8782,13 +9094,19 @@
 /obj/item/stack/crafting/electronicparts/five,
 /obj/item/stack/crafting/electronicparts/five,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "MT" = (
 /turf/open/floor/plating/f13/outside/roof/red,
 /area/f13/reno_wasteland)
 "MU" = (
-/turf/open/floor/plasteel/f13/vault_floor/darkrusty,
-/area/f13/reno_wasteland)
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowvertical"
+	},
+/obj/structure/curtain{
+	color = "#4B5320"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/enclave)
 "MV" = (
 /turf/closed/indestructible/rock,
 /area/f13/reno_wasteland)
@@ -8800,6 +9118,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_sharkclub)
+"Nb" = (
+/obj/structure/chair/pew/right,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Nc" = (
 /obj/structure/chair/sofa/luxury/corner{
 	dir = 8
@@ -8824,10 +9146,10 @@
 	},
 /obj/item/reagent_containers/food/drinks/bottle/napa{
 	pixel_y = 10;
-	pixel_x = -10
+	pixel_x = -9
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ni" = (
 /obj/structure/table,
 /obj/effect/decal/remains/human{
@@ -8854,7 +9176,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Nm" = (
 /obj/machinery/pool/drain,
 /turf/open/pool{
@@ -8893,7 +9215,7 @@
 "Nv" = (
 /obj/structure/window,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Nw" = (
 /obj/structure/nest/mob/raider/sulphite{
 	dir = 1
@@ -8912,7 +9234,7 @@
 	},
 /obj/machinery/light/small,
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Nz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -8942,7 +9264,7 @@
 /area/f13/reno_sharkclub)
 "NI" = (
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "NP" = (
 /obj/structure/barricade/tentleathercorner{
 	opacity = 0;
@@ -8970,7 +9292,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "NW" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -9001,7 +9323,20 @@
 "Ob" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"Oc" = (
+/obj/item/cardboard_cutout,
+/obj/item/clothing/under/suit/checkered{
+	icon = 'icons/mob/clothing/uniform.dmi'
+	},
+/obj/item/clothing/shoes/laceup{
+	icon = 'icons/mob/clothing/feet.dmi'
+	},
+/obj/item/clothing/head/fedora{
+	icon = 'icons/mob/clothing/head.dmi'
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Od" = (
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhousesouth)
@@ -9019,7 +9354,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Oj" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -9038,7 +9373,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Om" = (
 /obj/structure/chair/stool/retro,
 /turf/open/floor/wood/f13/oak/lit,
@@ -9104,20 +9439,28 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "Ox" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Oz" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/theater)
 "OB" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/table,
+/obj/structure/window{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/machinery/computer/judge_terminal/laptop{
+	dir = 4;
+	pixel_y = 4;
+	pixel_x = 1;
+	layer = 3.3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "OD" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/clothing/mask/cigarette/cigar/ncr{
@@ -9170,7 +9513,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "OR" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -9184,11 +9527,11 @@
 	pixel_y = -6
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "OY" = (
 /obj/effect/landmark/start/f13/civilians/ncrcfguard,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Pa" = (
 /obj/structure/filingcabinet{
 	pixel_x = -12
@@ -9200,11 +9543,11 @@
 	pixel_x = 10
 	},
 /obj/item/folder/yellow,
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Pc" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 4
@@ -9258,7 +9601,7 @@
 "Pm" = (
 /obj/structure/nest/mob/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Po" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/key{
@@ -9270,7 +9613,7 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Pr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/random{
@@ -9283,13 +9626,13 @@
 /area/f13/raiders)
 "Ps" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Pu" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/f13/military/ncr,
 /obj/item/clothing/under/f13/ncr,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Pv" = (
 /obj/structure/chair/sofa/luxury/corner{
 	dir = 4
@@ -9299,7 +9642,7 @@
 	},
 /obj/effect/overlay/curb,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Px" = (
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
@@ -9327,17 +9670,17 @@
 /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
 /obj/item/clothing/head/beret/ncr_codresscap,
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PA" = (
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PC" = (
 /obj/structure/window/gothic/fulltile,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "PD" = (
 /obj/structure/simple_door/bunker/glass{
 	req_access_txt = "165";
@@ -9354,7 +9697,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PH" = (
 /obj/structure/sign/directions/security,
 /obj/structure/sign/directions/medical{
@@ -9362,7 +9705,7 @@
 	pixel_y = 6
 	},
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PJ" = (
 /turf/open/floor/f13{
 	icon_state = "darkblue";
@@ -9375,7 +9718,7 @@
 	},
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PO" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/red,
 /area/f13/reno_wasteland)
@@ -9387,7 +9730,7 @@
 	},
 /obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "PS" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -9404,7 +9747,7 @@
 /area/f13/raiders)
 "PT" = (
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "PV" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/kirbyplants/random{
@@ -9430,7 +9773,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Qa" = (
 /obj/machinery/light/small/broken{
 	dir = 8
@@ -9439,7 +9782,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Qd" = (
 /turf/open/transparent/openspace/air,
 /area/f13/reno_caves)
@@ -9461,9 +9804,9 @@
 "Qj" = (
 /obj/item/clothing/under/pants/f13/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Qk" = (
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/enclave)
 "Ql" = (
 /obj/structure/barricade/tentclothcorner{
@@ -9480,14 +9823,14 @@
 	pixel_x = 11
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Qn" = (
 /obj/structure/bed{
 	layer = 2.88;
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Qo" = (
 /obj/structure/table/wood/fancy/purple,
 /obj/item/reagent_containers/food/drinks/bottle/champagne{
@@ -9495,7 +9838,7 @@
 	layer = 3.5
 	},
 /turf/open/floor/carpet/green,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Qq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/arcade/lit,
@@ -9528,7 +9871,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "Qz" = (
 /obj/structure/chair/f13chair1{
 	dir = 8;
@@ -9538,17 +9881,8 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/raiders)
 "QA" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 8
-	},
-/obj/structure/window/reinforced/tinted/frosted,
-/obj/item/stack/sheet/bone,
-/obj/item/stack/sheet/bone,
-/obj/item/stack/sheet/bone,
-/obj/item/clothing/under/rank/prisoner/skirt,
-/obj/item/card/id/prisoner/one,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/darkrusty,
+/area/f13/reno_prison)
 "QB" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -9593,7 +9927,7 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "QJ" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/paper_bin,
@@ -9613,7 +9947,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "QM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/brown/lit,
@@ -9630,23 +9964,28 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "QQ" = (
 /obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
-"QU" = (
-/obj/structure/statue/wood/headstonewood{
-	desc = null;
-	name = "coat rack";
-	icon = 'icons/fallout/objects/wendover.dmi';
-	icon_state = "coatrack";
-	pixel_y = 1;
-	pixel_x = -12;
-	dir = 1
+"QS" = (
+/obj/structure/displaycase{
+	start_showpiece_type = /obj/item/clothing/head/helmet/f13/legion/venator;
+	desc = "A display case for a object of the wardens career before being moved to this position.";
+	name = "Warden's trophy"
 	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
+"QU" = (
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"QX" = (
+/obj/structure/statue/uranium/nuke,
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/window/plasma/reinforced/spawner/west,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "QY" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
@@ -9667,10 +10006,11 @@
 	icon = 'icons/fallout/objects/bureaucracy.dmi';
 	icon_state = "folder_secret";
 	name = "Reports Folder";
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 3
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Rc" = (
 /obj/structure/chair/sofa/luxury/ottoman,
 /turf/open/floor/wood/wood_diagonal,
@@ -9694,18 +10034,17 @@
 /turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "Rm" = (
-/obj/machinery/light{
-	dir = 4;
-	layer = 2.89
+/obj/machinery/light/ncr{
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Rn" = (
 /obj/structure/chair/wood/fancy{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Ro" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
@@ -9714,7 +10053,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Rq" = (
 /obj/effect/overlay/junk/sink{
 	pixel_y = 17
@@ -9723,7 +10062,7 @@
 	pixel_y = 30
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Rr" = (
 /obj/structure/window/gothic2/fulltile,
 /obj/structure/curtain{
@@ -9737,7 +10076,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Rt" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
 	icon_state = "rampdowntop";
@@ -9750,6 +10089,14 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raider_mall)
+"Rx" = (
+/obj/structure/table/wood{
+	icon = 'icons/obj/smooth_structures/table_greyscale.dmi';
+	icon_state = "table";
+	color = "#665240"
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/reno_prison)
 "Rz" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/storage/fancy/cigarettes{
@@ -9760,7 +10107,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RA" = (
 /obj/item/candle/infinite{
 	pixel_y = -9;
@@ -9770,7 +10117,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RB" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 1
@@ -9791,7 +10138,7 @@
 /obj/structure/table/glass,
 /obj/item/folder/red,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RF" = (
 /obj/structure/table/wood,
 /obj/structure/barricade/wooden,
@@ -9799,7 +10146,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RG" = (
 /obj/structure/barricade/bars,
 /turf/open/floor/f13{
@@ -9820,28 +10167,28 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RL" = (
 /obj/structure/cable/white{
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RM" = (
 /turf/open/floor/carpet/red/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "RO" = (
 /obj/structure/chair{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RQ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RR" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/toy/poolnoodle/blue{
@@ -9972,6 +10319,9 @@
 	name = "toy mace"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/anvil/obtainable/basic{
+	anchored = 0
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/theater)
 "RT" = (
@@ -9982,7 +10332,7 @@
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/helmet/skull/bone,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "RV" = (
 /obj/structure/chair/f13chair2,
 /turf/open/floor/wood/f13/oak/lit,
@@ -10033,7 +10383,7 @@
 	dir = 4
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Se" = (
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/reno_east_building)
@@ -10045,7 +10395,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Sk" = (
 /obj/structure/table/wood/settler,
 /obj/item/assembly/signaler{
@@ -10058,18 +10408,20 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/raiders)
 "Sm" = (
-/obj/machinery/light{
+/obj/machinery/light/ncr{
 	dir = 1;
-	light_color = "#706891";
+	layer = 2.1
+	},
+/obj/item/flag/ncr{
 	layer = 3
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Sn" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/surgical,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Sp" = (
 /obj/item/trash/f13/blamco,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -10081,14 +10433,11 @@
 "Sr" = (
 /obj/structure/window/gothic3/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_caves)
+/area/f13/heist)
 "St" = (
-/obj/machinery/light{
-	light_color = "#706891"
-	},
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/machinery/light/ncr,
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Sv" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -10137,7 +10486,11 @@
 "SD" = (
 /obj/structure/window/gothic/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_caves)
+/area/f13/heist)
+"SE" = (
+/obj/machinery/light/ncr,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/reno_prison)
 "SF" = (
 /obj/item/trash/f13/bubblegum,
 /turf/open/floor/carpet/brown/lit,
@@ -10148,7 +10501,6 @@
 /area/f13/raider_mall)
 "SI" = (
 /turf/open/floor/wood/f13/stage_bl{
-	name = "chancel";
 	sunlight_state = 1
 	},
 /area/f13/enclave)
@@ -10189,7 +10541,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "SP" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/belt/medical/surgery_belt_adv,
@@ -10198,7 +10550,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "SQ" = (
 /obj/structure/table/wood/fancy,
 /obj/item/candle{
@@ -10223,15 +10575,33 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
+"SV" = (
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 11
+	},
+/obj/structure/decoration/rag{
+	icon_state = "flag_ncr";
+	name = "NCR banner";
+	plane = -14;
+	pixel_y = 30;
+	pixel_x = 16
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
 "SX" = (
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Te" = (
-/obj/structure/simple_door/house{
-	name = "VIP lounge"
+/obj/machinery/door/unpowered/house{
+	req_one_access_txt = "165";
+	name = "room B5"
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -10257,7 +10627,7 @@
 /area/f13/raider_mall)
 "Tl" = (
 /turf/closed/wall/f13/wood/interior,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Tn" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/medical/suture/five,
@@ -10267,7 +10637,7 @@
 	},
 /obj/item/reagent_containers/hypospray/medipen/medx,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "To" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark/start/f13/bishops/wife,
@@ -10283,21 +10653,21 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Tr" = (
 /obj/structure/window/gothic/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Ts" = (
 /obj/item/storage/secure/safe{
 	pixel_x = -27
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Tx" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/raider_mall)
 "Ty" = (
 /obj/structure/table/reinforced,
@@ -10371,7 +10741,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "TN" = (
 /obj/structure/table/wood/settler,
 /obj/item/ammo_casing/a357{
@@ -10472,11 +10842,11 @@
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Up" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Uq" = (
 /turf/open/floor/wood/f13/oakbroken4/lit,
 /area/f13/theater)
@@ -10518,7 +10888,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UA" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -10530,21 +10900,21 @@
 	pixel_x = -6
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UC" = (
 /obj/structure/window/bronze{
 	dir = 8
 	},
 /turf/open/pool,
-/area/f13/reno_caves)
+/area/f13/heist)
 "UD" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UE" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UG" = (
 /obj/structure/table/wood/junk,
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
@@ -10558,7 +10928,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UI" = (
 /obj/machinery/microwave/stove/fancy,
 /turf/open/floor/plasteel/grimy/lit,
@@ -10566,7 +10936,7 @@
 "UJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/enclave)
 "UM" = (
 /obj/item/card/id/rusted/rustedmedallion{
@@ -10574,7 +10944,7 @@
 	},
 /obj/structure/table/wood/fancy/royalblack,
 /turf/open/floor/wood/wood_diagonal,
-/area/f13/reno_caves)
+/area/f13/heist)
 "UN" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/brown,
@@ -10598,7 +10968,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UT" = (
 /obj/structure/chair/comfy/plywood{
 	dir = 4;
@@ -10613,7 +10983,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "UZ" = (
 /obj/structure/table/round,
 /obj/item/candle{
@@ -10668,14 +11038,21 @@
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/crowbar,
 /turf/open/floor/carpet/black,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Vj" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /obj/item/stack/medical/gauze,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"Vk" = (
+/obj/structure/chess/blackbishop,
+/obj/effect/overlay/curb/east,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/heist)
 "Vl" = (
 /obj/item/paper/crumpled{
 	pixel_y = 4;
@@ -10696,12 +11073,23 @@
 	pixel_y = -4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Vp" = (
 /obj/structure/table/round,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/brown/lit,
 /area/f13/raiders)
+"Vq" = (
+/obj/structure/sign/poster/ncr/keep_to_myself{
+	pixel_y = 32
+	},
+/obj/structure/chair/bench{
+	icon_state = "bench_r";
+	dir = 8;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/reno_prison)
 "Vs" = (
 /obj/item/soap/deluxe,
 /obj/machinery/shower{
@@ -10709,13 +11097,13 @@
 	layer = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Vu" = (
 /obj/structure/chair/comfy/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Vw" = (
 /obj/structure/nest/mob/raider/firefighter{
 	dir = 4;
@@ -10731,12 +11119,12 @@
 /area/f13/raiders)
 "Vy" = (
 /turf/closed/wall/gothic,
-/area/f13/reno_caves)
+/area/f13/heist)
 "VB" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/reagent_containers/hypospray/medipen/medx,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "VC" = (
 /turf/open/floor/wood/f13/carpet{
 	icon_state = "torncarpet9";
@@ -10748,7 +11136,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "VG" = (
 /obj/structure/railing{
 	dir = 8
@@ -10758,7 +11146,7 @@
 "VI" = (
 /obj/item/reagent_containers/food/snacks/deadmouse,
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "VL" = (
 /obj/structure/lattice/catwalk{
 	icon_state = "walkway";
@@ -10769,7 +11157,7 @@
 	dir = 5
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "VN" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck{
@@ -10802,14 +11190,14 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/turf/open/floor/plating/tunnel,
+/area/f13/reno_prison)
 "VU" = (
 /turf/open/indestructible/ground/outside/roof/stairs/north{
 	color = "#A47449";
 	dir = 2
 	},
-/area/f13/reno_caves)
+/area/f13/heist)
 "VV" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
@@ -10823,7 +11211,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "VZ" = (
 /obj/machinery/jukebox,
 /obj/effect/decal/cleanable/dirt,
@@ -10857,7 +11245,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Wi" = (
 /obj/machinery/light/fo13colored/Red{
 	dir = 8
@@ -10889,6 +11277,13 @@
 	sunlight_state = 1
 	},
 /area/f13/enclave)
+"Wn" = (
+/obj/structure/statue/diamond/overlayable/motherofcombustionright{
+	name = "Old Statue";
+	desc = "A strange statue with a faded description."
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Wo" = (
 /obj/effect/decal/remains/human{
 	pixel_y = -6;
@@ -10929,10 +11324,10 @@
 /obj/item/clothing/under/suit/charcoal,
 /obj/item/clothing/shoes/laceup,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "WG" = (
 /obj/structure/window/gothic/fulltile,
-/turf/open/floor/plating,
+/turf/open/floor/plating/lit,
 /area/f13/raider_mall)
 "WH" = (
 /obj/structure/table/reinforced,
@@ -11004,7 +11399,7 @@
 	},
 /obj/effect/overlay/curb,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "WY" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/ammo_box/c38{
@@ -11017,7 +11412,7 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Xa" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/civilcode{
@@ -11046,6 +11441,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
+"Xd" = (
+/obj/structure/chair/pew/left,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Xf" = (
 /obj/structure/table/wood/settler,
 /obj/effect/decal/remains/human{
@@ -11089,13 +11488,13 @@
 	pixel_y = -7
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Xk" = (
 /obj/structure/railing{
 	layer = 3.9
 	},
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Xl" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars,
@@ -11110,10 +11509,9 @@
 	},
 /obj/effect/overlay/curb,
 /turf/open/floor/carpet/red,
-/area/f13/reno_wasteland)
+/area/f13/heist)
 "Xn" = (
 /obj/machinery/computer/security/wooden_tv{
-	network = list("thunderdome");
 	icon = 'icons/fallout/objects/decorations.dmi';
 	name = "television";
 	icon_screen = null;
@@ -11121,7 +11519,7 @@
 	},
 /obj/structure/table/wood/greyscale/varnished,
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Xo" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/under/misc/poly_tanktop/female{
@@ -11144,7 +11542,7 @@
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Xw" = (
 /obj/structure/railing{
 	layer = 4.25
@@ -11156,7 +11554,7 @@
 "Xz" = (
 /obj/item/broken_bottle,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "XA" = (
 /obj/structure/chair/wood/worn{
 	dir = 4
@@ -11188,20 +11586,20 @@
 	pixel_x = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "XG" = (
 /obj/item/flag/ncr{
 	density = 0;
 	pixel_y = 23
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "XH" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "XI" = (
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
@@ -11227,7 +11625,7 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "XP" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -11283,7 +11681,7 @@
 "XX" = (
 /obj/structure/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "XZ" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/brown,
@@ -11299,7 +11697,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Yb" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /obj/item/stack/sheet/animalhide/human{
@@ -11314,7 +11712,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Yc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/bus/rusted/segmented10{
@@ -11340,11 +11738,11 @@
 	anchored = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Yf" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/wood_diagonal/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Yg" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood/f13/oakbroken3/lit,
@@ -11361,7 +11759,7 @@
 	color = "#5c131b"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Ym" = (
 /obj/structure/sign/poster/prewar/poster81{
 	pixel_x = -32
@@ -11402,7 +11800,7 @@
 "Yz" = (
 /obj/effect/overlay/junk/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "YB" = (
 /obj/structure/table/wood/fancy,
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
@@ -11414,7 +11812,7 @@
 "YD" = (
 /obj/structure/lattice,
 /turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "YF" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/storage/box/lights/bulbs,
@@ -11423,7 +11821,7 @@
 	icon_state = "darkrusty";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "YG" = (
 /obj/structure/window/fulltile/store,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -11450,7 +11848,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/oak,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "YP" = (
 /obj/structure/closet/crate/leftfootlocker{
 	pixel_y = -3;
@@ -11464,7 +11862,7 @@
 /obj/item/stack/crafting/goodparts/five,
 /obj/item/stack/crafting/electronicparts/three,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "YR" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
@@ -11475,13 +11873,17 @@
 /area/f13/reno_sharkclub)
 "YT" = (
 /obj/item/twohanded/required/kirbyplants/random,
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891";
-	layer = 3
+/obj/machinery/light/ncr{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"YY" = (
+/obj/structure/chair/office{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/heist)
 "Ze" = (
 /obj/effect/overlay/junk/sink{
 	pixel_y = 17
@@ -11493,7 +11895,7 @@
 	icon_state = "darkrustysolid";
 	name = "grimy tile"
 	},
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Zf" = (
 /obj/item/toy/poolnoodle/red,
 /obj/item/toy/poolnoodle/blue{
@@ -11530,7 +11932,7 @@
 	name = "ghoul prisoner"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "Zl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11539,7 +11941,7 @@
 /turf/open/floor/wood/f13/oakbroken/lit,
 /area/f13/raiders)
 "Zm" = (
-/obj/machinery/door/unpowered/latterdaysaints{
+/obj/machinery/door/unpowered/house{
 	req_one_access_txt = "161";
 	name = "suite 1"
 	},
@@ -11571,7 +11973,7 @@
 	},
 /obj/effect/overlay/curb,
 /turf/open/floor/carpet/red,
-/area/f13/reno_caves)
+/area/f13/heist)
 "Zu" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 1
@@ -11581,7 +11983,13 @@
 	opacity = 0
 	},
 /turf/open/floor/plating/tunnel,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
+"Zv" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/theater)
 "Zw" = (
 /obj/structure/chair/wood/modern,
 /turf/open/floor/carpet/red/lit,
@@ -11656,7 +12064,7 @@
 "ZF" = (
 /obj/structure/window/gothic3/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
-/area/f13/reno_caves)
+/area/f13/heist)
 "ZG" = (
 /obj/structure/dresser,
 /turf/open/floor/wood/f13/carpet/lit,
@@ -11668,7 +12076,7 @@
 	pixel_y = -19
 	},
 /turf/open/floor/carpet/royalblack,
-/area/f13/reno_caves)
+/area/f13/heist)
 "ZJ" = (
 /obj/structure/table/round,
 /obj/item/storage/book/bible,
@@ -11692,7 +12100,7 @@
 /obj/structure/simple_door/glass,
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/reno_wasteland)
+/area/f13/reno_prison)
 "ZS" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/carpet/brown/lit,
@@ -11712,34 +12120,34 @@ MV
 MV
 MV
 MV
-MV
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
-kk
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
+nL
 nb
 nb
 nb
@@ -11864,19 +12272,19 @@ MV
 MV
 MV
 MV
-MV
 NI
-OB
-yH
-yB
+AD
+bW
 Gy
 yB
-yB
+Gy
+Gy
+QA
 EQ
 rd
 rd
 hR
-MU
+QA
 uz
 hR
 gr
@@ -11891,7 +12299,7 @@ PY
 BK
 dR
 nU
-NI
+nL
 kY
 Ff
 kY
@@ -12017,19 +12425,19 @@ NI
 NI
 NI
 NI
-NI
 hR
-dd
+fK
 hR
-dd
-dd
+fK
+fK
 hR
+QA
 JG
-MU
+QA
 hR
 hR
 gr
-MU
+QA
 rd
 rd
 gt
@@ -12043,7 +12451,7 @@ EX
 QK
 EX
 yC
-NI
+nL
 kY
 eP
 eP
@@ -12166,10 +12574,10 @@ kf
 (4,1,1) = {"
 MV
 NI
-eP
+zV
 Xk
 NI
-NI
+ca
 bW
 yH
 nT
@@ -12177,12 +12585,12 @@ VS
 aD
 QA
 AC
-MU
+QA
 rd
 gr
 rd
 ft
-MU
+QA
 rd
 qm
 hR
@@ -12195,7 +12603,7 @@ AT
 Wf
 AT
 EX
-NI
+nL
 kY
 eP
 eP
@@ -12347,7 +12755,7 @@ AT
 WY
 iP
 OV
-NI
+nL
 eP
 eP
 eP
@@ -12497,9 +12905,9 @@ rm
 AT
 AT
 MP
+nL
 NI
-NI
-NI
+nL
 eP
 eP
 eP
@@ -12649,7 +13057,7 @@ rm
 Cu
 yP
 kc
-NI
+nL
 eP
 eP
 eP
@@ -12772,7 +13180,7 @@ lp
 kf
 "}
 (8,1,1) = {"
-kk
+nL
 NI
 NI
 NI
@@ -12801,7 +13209,7 @@ NI
 NI
 NI
 NI
-NI
+nL
 eP
 eP
 eP
@@ -12924,7 +13332,7 @@ lp
 kf
 "}
 (9,1,1) = {"
-kk
+nL
 RL
 sv
 HY
@@ -12953,7 +13361,7 @@ NI
 wf
 PN
 JW
-NI
+nL
 eP
 eP
 eP
@@ -13076,7 +13484,7 @@ lp
 kf
 "}
 (10,1,1) = {"
-kk
+nL
 aK
 NI
 NI
@@ -13085,7 +13493,7 @@ NI
 NI
 mR
 wW
-eP
+zV
 dA
 Sd
 ue
@@ -13105,7 +13513,7 @@ NI
 bh
 iu
 Zu
-NI
+nL
 eP
 eP
 eP
@@ -13228,17 +13636,17 @@ lp
 kf
 "}
 (11,1,1) = {"
-kk
+nL
 gb
 NI
 DP
 Cl
 rE
-yI
-vC
+My
+gn
 sP
-eP
-eP
+zV
+zV
 xU
 bV
 rE
@@ -13249,7 +13657,7 @@ Cg
 hl
 Iu
 NI
-rE
+js
 gr
 bh
 bh
@@ -13257,7 +13665,7 @@ rm
 Ze
 rE
 Zu
-NI
+nL
 eP
 eP
 eP
@@ -13380,7 +13788,7 @@ lp
 kf
 "}
 (12,1,1) = {"
-kk
+nL
 UU
 NI
 rE
@@ -13388,9 +13796,9 @@ Xz
 bh
 My
 dp
-eP
+zV
 NI
-eP
+zV
 Gn
 At
 RO
@@ -13409,7 +13817,7 @@ rm
 Rq
 rE
 hR
-NI
+nL
 eP
 eP
 eP
@@ -13532,7 +13940,7 @@ lp
 kf
 "}
 (13,1,1) = {"
-kk
+nL
 NV
 gr
 rE
@@ -13540,9 +13948,9 @@ bh
 bh
 My
 UA
-eP
-eP
-eP
+zV
+zV
+zV
 VL
 At
 mJ
@@ -13561,7 +13969,7 @@ rm
 NI
 AO
 NI
-NI
+nL
 eP
 eP
 eP
@@ -13684,7 +14092,7 @@ lp
 kf
 "}
 (14,1,1) = {"
-kk
+nL
 UU
 gr
 rE
@@ -13692,9 +14100,9 @@ bh
 bh
 bV
 Aa
-eP
-eP
-eP
+zV
+zV
+zV
 zF
 At
 ja
@@ -13713,7 +14121,7 @@ NI
 cU
 bh
 El
-NI
+nL
 eP
 eP
 eP
@@ -13836,7 +14244,7 @@ lp
 kf
 "}
 (15,1,1) = {"
-kk
+nL
 UU
 gr
 gr
@@ -13844,9 +14252,9 @@ gr
 io
 NI
 sW
-eP
-eP
-eP
+zV
+zV
+zV
 HZ
 Fi
 NI
@@ -13865,7 +14273,7 @@ Du
 bh
 gr
 la
-NI
+nL
 eP
 eP
 eP
@@ -13988,7 +14396,7 @@ lp
 kf
 "}
 (16,1,1) = {"
-kk
+nL
 gb
 wg
 rE
@@ -13996,9 +14404,9 @@ bh
 gr
 My
 wN
-eP
-eP
-eP
+zV
+zV
+zV
 xD
 bV
 zW
@@ -14017,7 +14425,7 @@ Du
 dG
 bh
 la
-NI
+nL
 eP
 eP
 eP
@@ -14140,17 +14548,17 @@ lp
 kf
 "}
 (17,1,1) = {"
-kk
+nL
 UU
 gr
 bh
 bh
 rE
-yI
+My
 sf
-eP
+zV
 NI
-eP
+zV
 YD
 My
 PR
@@ -14169,7 +14577,7 @@ NI
 KS
 hR
 rQ
-NI
+nL
 eP
 eP
 eP
@@ -14292,17 +14700,17 @@ lp
 kf
 "}
 (18,1,1) = {"
-kk
+nL
 NV
 NI
 LP
 HS
 rE
 My
-vC
+gn
 sP
-eP
-eP
+zV
+zV
 YD
 My
 kA
@@ -14321,7 +14729,7 @@ rm
 NI
 ZN
 NI
-NI
+nL
 eP
 eP
 eP
@@ -14444,17 +14852,17 @@ lp
 kf
 "}
 (19,1,1) = {"
-kk
+nL
 UU
 NI
 eV
 Vj
 rE
 bV
-vC
+gn
 sP
-eP
-eP
+zV
+zV
 YD
 My
 hQ
@@ -14473,7 +14881,7 @@ NI
 Rq
 bh
 bh
-NI
+nL
 eP
 eP
 eP
@@ -14596,7 +15004,7 @@ lp
 kf
 "}
 (20,1,1) = {"
-kk
+nL
 fe
 NI
 NI
@@ -14605,8 +15013,8 @@ NI
 NI
 Dt
 sP
-eP
-eP
+zV
+zV
 CZ
 NI
 NI
@@ -14625,7 +15033,7 @@ rm
 Hz
 nk
 IW
-NI
+nL
 eP
 eP
 eP
@@ -14748,18 +15156,18 @@ lp
 kf
 "}
 (21,1,1) = {"
-kk
+nL
 UU
 NI
 am
 Cl
 rE
 bV
-vC
+gn
 sP
-eP
-eP
-eP
+zV
+zV
+zV
 My
 mB
 vD
@@ -14777,7 +15185,7 @@ rm
 wG
 Cw
 Lh
-NI
+nL
 eP
 eP
 eP
@@ -14900,7 +15308,7 @@ lp
 kf
 "}
 (22,1,1) = {"
-kk
+nL
 gb
 NI
 Mq
@@ -14908,9 +15316,9 @@ Ar
 JJ
 My
 YD
-eP
+zV
 NI
-eP
+zV
 YD
 My
 bh
@@ -14929,7 +15337,7 @@ rm
 GL
 Ge
 Ms
-NI
+nL
 eP
 eP
 eP
@@ -15052,17 +15460,17 @@ lp
 kf
 "}
 (23,1,1) = {"
-kk
+nL
 NV
 NI
 dm
 Zk
 Di
 My
-vC
-eP
-eP
-eP
+gn
+zV
+zV
+zV
 YD
 My
 an
@@ -15080,8 +15488,8 @@ rE
 rm
 rm
 NI
-NI
-NI
+nL
+nL
 eP
 eP
 eP
@@ -15204,17 +15612,17 @@ lp
 kf
 "}
 (24,1,1) = {"
-kk
+nL
 UU
 NI
 nX
 rE
 cp
 My
-vC
+gn
 sP
-eP
-eP
+zV
+zV
 YD
 bV
 rE
@@ -15225,14 +15633,14 @@ sN
 yQ
 gr
 NI
-hR
+CB
 hR
 bh
 gr
 NI
 Cx
 EK
-NI
+nL
 eP
 eP
 eP
@@ -15356,7 +15764,7 @@ lp
 kf
 "}
 (25,1,1) = {"
-kk
+nL
 aH
 NI
 NI
@@ -15364,9 +15772,9 @@ gr
 gr
 NI
 gy
-eP
-eP
-eP
+zV
+zV
+zV
 CZ
 NI
 gr
@@ -15384,7 +15792,7 @@ Ob
 NI
 hR
 Kb
-NI
+nL
 eP
 eP
 eP
@@ -15454,7 +15862,7 @@ BW
 Ay
 Ay
 wC
-Ay
+oL
 Py
 Jn
 XP
@@ -15508,7 +15916,7 @@ lp
 kf
 "}
 (26,1,1) = {"
-kk
+nL
 UU
 NI
 Dc
@@ -15516,9 +15924,9 @@ Pm
 gr
 bV
 YD
-eP
-eP
-eP
+zV
+zV
+zV
 YD
 My
 ok
@@ -15536,7 +15944,7 @@ LW
 NI
 hR
 qu
-NI
+nL
 eP
 eP
 eP
@@ -15660,18 +16068,18 @@ lp
 kf
 "}
 (27,1,1) = {"
-kk
+nL
 UU
 NI
 Bf
 gr
 gr
 My
-vC
+gn
 sP
 NI
-eP
-eP
+zV
+zV
 My
 gr
 oz
@@ -15688,7 +16096,7 @@ gr
 Ek
 hR
 YF
-NI
+nL
 eP
 eP
 eP
@@ -15812,18 +16220,18 @@ lp
 kf
 "}
 (28,1,1) = {"
-kk
+nL
 XO
 NI
 gr
 gr
 gr
 My
-vC
+gn
 sP
-eP
-eP
-eP
+zV
+zV
+zV
 hA
 mJ
 gr
@@ -15840,7 +16248,7 @@ io
 NI
 hR
 wE
-NI
+nL
 eP
 eP
 eP
@@ -15964,18 +16372,18 @@ lp
 kf
 "}
 (29,1,1) = {"
-kk
+nL
 gb
 NI
 DP
 Ks
 xz
 My
-vC
+gn
 hh
-eP
-eP
-eP
+zV
+zV
+zV
 bV
 tW
 bo
@@ -15992,7 +16400,7 @@ jS
 NI
 hR
 nD
-NI
+nL
 eP
 eP
 eP
@@ -16116,7 +16524,7 @@ lp
 kf
 "}
 (30,1,1) = {"
-kk
+nL
 Gm
 NI
 NI
@@ -16124,8 +16532,8 @@ NI
 NI
 NI
 Dt
-eP
-YD
+zV
+nP
 YD
 CZ
 Ai
@@ -16144,7 +16552,7 @@ hm
 NI
 sR
 SN
-NI
+nL
 eP
 eP
 eP
@@ -16268,7 +16676,7 @@ lp
 kf
 "}
 (31,1,1) = {"
-kk
+nL
 UU
 Qa
 Dj
@@ -16293,10 +16701,10 @@ NI
 NI
 ZN
 xf
-NI
-NI
-NI
-NI
+nL
+nL
+nL
+nL
 NI
 NI
 NI
@@ -16369,7 +16777,7 @@ aY
 wB
 In
 ui
-nP
+ui
 ui
 Fq
 eP
@@ -16426,13 +16834,13 @@ AL
 AL
 AL
 CT
-dd
-dd
+fK
+fK
 eH
 AL
 tP
 uH
-uH
+gp
 AL
 NI
 ER
@@ -16447,11 +16855,11 @@ rd
 rd
 NI
 rk
-dd
+fK
 Cy
 qd
 Cy
-dd
+QS
 BI
 NI
 eP
@@ -16574,37 +16982,37 @@ kf
 (33,1,1) = {"
 nL
 KR
-dd
-dd
-dd
-dd
-dd
-dd
-dd
+fK
+fK
+fK
+fK
+fK
+fK
+fK
 iX
 rd
 rd
 rd
 rd
 NI
-ce
+qb
+qb
+qb
 lY
-lY
-ce
-lY
-lY
-ce
+qb
+qb
+qb
 NI
 rd
 rd
 NI
-dd
-dd
-dd
+fK
+fK
+fK
 pD
-dd
-dd
-dd
+fK
+fK
+fK
 Yj
 eP
 eP
@@ -16726,12 +17134,12 @@ kf
 (34,1,1) = {"
 nL
 ua
-dd
+fK
 eY
-GQ
+OB
 dO
 kC
-dd
+fK
 Up
 AL
 rd
@@ -16752,11 +17160,11 @@ rd
 NI
 jC
 nd
-lP
+aJ
 EB
-lP
+aJ
 PA
-dd
+fK
 Yj
 eP
 eP
@@ -16878,13 +17286,13 @@ kf
 (35,1,1) = {"
 nL
 JC
-dd
-dd
+fK
+fK
 nG
 FX
 lV
-dd
-dd
+fK
+fK
 AL
 AL
 Sm
@@ -16892,8 +17300,8 @@ rd
 rd
 NI
 iS
-lY
-lY
+qb
+qb
 NI
 PE
 NI
@@ -16908,7 +17316,7 @@ RE
 rd
 Ae
 PA
-dd
+fK
 Yj
 eP
 eP
@@ -17030,37 +17438,37 @@ kf
 (36,1,1) = {"
 nL
 JC
-dd
+fK
 eY
 ud
 dO
 kC
-dd
+fK
 bQ
 AL
-eP
+zV
 rd
 rd
 rd
 NI
 Dp
-lY
+qb
 qb
 NI
 pw
 NI
 pw
 NI
-Sm
-nH
+rd
+rd
 NI
 hk
 nd
-lP
+aJ
 rd
 rN
 PA
-rB
+fK
 NI
 eP
 eP
@@ -17182,26 +17590,26 @@ kf
 (37,1,1) = {"
 nL
 qq
-dd
-dd
+fK
+fK
 nG
 hN
 lV
-dd
-dd
+fK
+fK
 AL
-eP
+zV
 rd
 rd
 rd
 NI
 Dp
+qb
+qb
 lY
-lY
-lY
-lY
-ce
-lY
+qb
+qb
+qb
 NI
 rd
 rd
@@ -17333,14 +17741,14 @@ kf
 "}
 (38,1,1) = {"
 nL
-Qm
-dd
+SV
+fK
 eY
 GQ
 dO
 kC
-dd
-dd
+fK
+fK
 AL
 AL
 Sm
@@ -17356,7 +17764,7 @@ NI
 NI
 NI
 rd
-rd
+SE
 NI
 XG
 nd
@@ -17364,7 +17772,7 @@ lP
 rd
 zK
 PA
-dd
+fK
 Yj
 eP
 eP
@@ -17486,27 +17894,27 @@ kf
 (39,1,1) = {"
 nL
 Qm
-dd
+fK
 dc
 Ok
 Bx
 QH
-dd
-dd
+fK
+fK
 AL
-AL
+bM
 rd
 rd
 rd
-gp
 rd
 rd
 rd
-gp
 rd
 rd
 rd
-gp
+rd
+rd
+rd
 rd
 rd
 NI
@@ -17516,7 +17924,7 @@ sc
 dT
 qp
 PA
-dd
+fK
 Yj
 eP
 eP
@@ -17638,16 +18046,16 @@ kf
 (40,1,1) = {"
 nL
 wK
-dd
-dd
-dd
-dd
-dd
-dd
-dd
+fK
+fK
+fK
+fK
+fK
+fK
+fK
 AL
-AL
-lX
+Vq
+Ox
 rd
 rd
 rd
@@ -17662,13 +18070,13 @@ rd
 rd
 rd
 iX
-dd
-dd
-dd
-dd
-dd
-dd
-dd
+fK
+fK
+fK
+fK
+fK
+fK
+fK
 Yj
 eP
 eP
@@ -17790,12 +18198,12 @@ kf
 (41,1,1) = {"
 nL
 YT
-dd
-dd
-dd
-dd
-dd
-dd
+fK
+fK
+fK
+fK
+fK
+fK
 jT
 AL
 AL
@@ -17814,11 +18222,11 @@ Ox
 rd
 rd
 iX
-dd
-dd
-dd
+fK
+fK
+fK
 Rm
-dd
+fK
 dd
 Jt
 NI
@@ -17950,7 +18358,7 @@ co
 AL
 AL
 AL
-AL
+yd
 AL
 BA
 BA
@@ -18096,32 +18504,32 @@ nL
 kN
 DR
 Ts
-oT
 QU
-oT
+QU
+QU
 AL
 Vs
 Nv
 Br
 AL
 Lw
-Cn
-Cn
+lC
+lC
 FG
 Fs
 NI
 VE
-Cn
-Cn
-Cn
-Cn
+lC
+lC
+lC
+lC
 NI
-Cn
-Cn
+lC
+lC
 Dy
 NI
 Af
-Cn
+lC
 Ey
 Av
 Pu
@@ -18246,37 +18654,37 @@ kf
 (44,1,1) = {"
 nL
 zD
-oT
+Rx
 id
-oT
-oT
-oT
+xP
+QU
+gw
 AL
 Cb
 US
-lY
+qb
 AL
 Pz
-Cn
-Cn
-Cn
-Af
+lC
+lC
+lC
+vM
 NI
 ct
-Cn
+lC
 Lb
-Cn
+lC
 wu
 NI
 SX
-Cn
+lC
 wz
 NI
 Ka
-Cn
+lC
 Ey
-Cn
-Cn
+lC
+lC
 LS
 eP
 eP
@@ -18401,27 +18809,27 @@ Ef
 CO
 Rb
 xP
-oT
+QU
 St
 AL
-lY
-lY
-lY
+qb
+qb
+qb
 gs
-Cn
-Cn
-Cn
-Cn
+lC
+lC
+lC
+lC
 Ka
 NI
-AP
+AU
 OY
 AP
 OY
 AP
 NI
 yL
-Cn
+lC
 ez
 NI
 cX
@@ -18553,34 +18961,34 @@ Eh
 xX
 Ki
 xP
-oT
-oT
+QU
+gw
 AL
-lY
-lY
+qb
+qb
 pf
 nL
 kJ
-Cn
-Cn
+lC
+lC
 bb
 En
 NI
 ct
-Cn
+lC
 Lb
-Cn
+lC
 wu
 NI
 YN
-Cn
-Cn
+lC
+lC
 gs
-Cn
-Cn
+lC
+lC
 Ey
-Cn
-Cn
+lC
+lC
 LS
 eP
 eP
@@ -18702,20 +19110,20 @@ kf
 (47,1,1) = {"
 nL
 Pa
-oT
-oT
-oT
-oT
+QU
+QU
+QU
+QU
 oT
 AL
 Dp
-kE
-kE
+qb
+qb
 nL
 kT
 lC
-Cn
-Cn
+lC
+lC
 pe
 NI
 AP
@@ -18724,12 +19132,12 @@ AP
 OY
 AP
 NI
-Cn
-Cn
-Cn
+lC
+lC
+lC
 NI
 Lw
-Cn
+lC
 Ey
 HA
 Pu
@@ -18861,8 +19269,8 @@ KI
 KI
 AL
 AL
-aJ
-aJ
+xB
+xB
 AL
 AL
 xB
@@ -19004,7 +19412,7 @@ lp
 kf
 "}
 (49,1,1) = {"
-FV
+nL
 AL
 ab
 nm
@@ -19156,7 +19564,7 @@ lp
 kf
 "}
 (50,1,1) = {"
-FV
+nL
 AL
 TM
 nm
@@ -19308,7 +19716,7 @@ lp
 kf
 "}
 (51,1,1) = {"
-FV
+nL
 AL
 Ga
 BD
@@ -19460,7 +19868,7 @@ lp
 kf
 "}
 (52,1,1) = {"
-FV
+nL
 AL
 AL
 AL
@@ -22541,11 +22949,11 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
+eP
+eP
+eP
+eP
+eP
 eP
 eP
 eP
@@ -23301,11 +23709,11 @@ eP
 eP
 eP
 eP
-eP
-eP
-eP
-eP
-eP
+lp
+lp
+lp
+lp
+lp
 eP
 eP
 eP
@@ -34005,8 +34413,8 @@ zv
 zv
 zv
 zv
-zv
-LM
+aL
+el
 We
 Vb
 cy
@@ -41050,13 +41458,13 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Vy
+Vy
+Vy
+Vy
+Vy
+Vy
 kY
 kY
 kY
@@ -41202,13 +41610,13 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Vk
+hg
+ce
+Kl
+kk
+Vy
 kY
 kY
 kY
@@ -41354,13 +41762,13 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+nH
+uq
+uq
+uq
+FV
+Vy
 kY
 kY
 kY
@@ -41506,13 +41914,13 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Oc
+uq
+uq
+uq
+Ps
+Vy
 kY
 kY
 kY
@@ -41657,15 +42065,15 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Vy
+Vy
+tf
+tf
+tf
+Vy
+Vy
+Vy
 kY
 kY
 kY
@@ -41809,19 +42217,19 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+rB
+IY
+Ps
+Ps
+Ps
+Ps
+Wn
+Vy
+Vy
+Vy
+Vy
+Vy
 kY
 kY
 kY
@@ -41957,23 +42365,23 @@ Se
 "}
 (200,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Vy
+Vy
+Vy
+Vy
+BT
+YY
+Ps
+Ps
+Ps
+Ps
+kE
+Vy
+Xd
+qZ
+Ps
+Vy
 kY
 kY
 kY
@@ -42109,23 +42517,23 @@ Se
 "}
 (201,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+bK
+Jl
+Jl
+Vy
+Lr
+Ps
+Ps
+kE
+Ps
+Ps
+HT
+Vy
+Nb
+Ps
+ux
+Vy
 kY
 kY
 kY
@@ -42261,23 +42669,23 @@ Se
 "}
 (202,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+vS
+Ps
+FV
+Vy
+zu
+Ps
+Ps
+gU
+LM
+Ps
+Ps
+VU
+Ps
+Ps
+ce
+Vy
 kY
 kY
 kY
@@ -42413,23 +42821,23 @@ Se
 "}
 (203,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+ce
+Ps
+Ps
+iU
+Ps
+Ps
+Ps
+is
+is
+on
+QX
+Vy
+Xd
+Ps
+JD
+Vy
 kY
 kY
 kY
@@ -42565,23 +42973,23 @@ Se
 "}
 (204,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+yE
+kv
+Ps
+Ps
+Vy
+kE
+Ps
+Ps
+is
+is
+Ps
+gl
+Vy
+dN
+Cn
+Ps
+Vy
 kY
 kY
 Qd
@@ -42717,23 +43125,23 @@ Se
 "}
 (205,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Ps
+Cn
+Ps
+Vy
+jh
+Ps
+Ps
+kE
+Ps
+Ps
+iG
+Vy
+Vy
+Vy
+Vy
+Vy
 kY
 kY
 Qd
@@ -42869,19 +43277,19 @@ Se
 "}
 (206,1,1) = {"
 nb
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Vy
+Vy
+Vy
+Vy
+DJ
+Ps
+Ps
+Ps
+Ps
+Ps
+lZ
+Vy
 kY
 kY
 kY
@@ -43025,15 +43433,15 @@ kY
 kY
 kY
 kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
-kY
+Vy
+Ig
+Ps
+Ps
+Ps
+Ps
+Ps
+mH
+Vy
 kY
 kY
 kY
@@ -44966,11 +45374,11 @@ ro
 ro
 qw
 Dl
-gX
+yI
 kI
 Oz
-wH
-wH
+Hd
+Hd
 Oa
 II
 Oa
@@ -45120,7 +45528,7 @@ mY
 gX
 sM
 kI
-Ee
+tw
 Oz
 Ee
 Ee
@@ -45170,7 +45578,7 @@ Ft
 WX
 sE
 Vu
-zV
+Tr
 eP
 eP
 eP
@@ -45266,7 +45674,7 @@ eP
 Oa
 Gx
 Qf
-gX
+gH
 Qf
 sM
 gX
@@ -45322,7 +45730,7 @@ gV
 Gv
 sE
 zq
-zV
+Tr
 eP
 eP
 eP
@@ -45428,7 +45836,7 @@ dP
 hs
 Oa
 yt
-Oz
+MH
 Oa
 KA
 jK
@@ -45474,7 +45882,7 @@ wZ
 Xm
 Kr
 aU
-zV
+Tr
 eP
 eP
 eP
@@ -45610,11 +46018,11 @@ kY
 kY
 kY
 Vy
-gn
-CB
-gn
-CB
-gn
+ZF
+Vy
+ZF
+Vy
+ZF
 Vy
 Vy
 Sr
@@ -45622,11 +46030,11 @@ Vy
 Sr
 Vy
 ZF
-CB
-zV
-zV
-zV
-CB
+Vy
+Tr
+Tr
+Tr
+Vy
 eP
 eP
 eP
@@ -45735,7 +46143,7 @@ Oz
 pM
 Oa
 XQ
-dV
+lF
 HL
 tx
 Oa
@@ -45854,8 +46262,8 @@ eP
 eP
 EW
 EW
-TI
-TI
+MU
+MU
 EW
 EW
 bx
@@ -46006,8 +46414,8 @@ eP
 eP
 EW
 Wm
-is
-is
+Wm
+Wm
 Ym
 Wm
 Wm
@@ -46024,7 +46432,7 @@ eP
 eP
 eP
 Oa
-wH
+Fe
 jk
 wH
 wH
@@ -46033,12 +46441,12 @@ wH
 wH
 wH
 wH
-en
+jN
 Oa
 qA
 pm
 pB
-pm
+Zv
 dW
 Qr
 ID
@@ -46637,7 +47045,7 @@ jk
 jk
 jk
 jk
-en
+lX
 dC
 en
 fF

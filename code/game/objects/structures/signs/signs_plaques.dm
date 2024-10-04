@@ -47,3 +47,18 @@
 	desc = "Under the painting a plaque reads: 'While the meat grinder may not have spared you, fear not. Not one part of you has gone to waste... You were delicious.'"
 	icon_state = "monkey_painting"
 	custom_materials = list(/datum/material/wood = 2000) //The same as /obj/structure/sign/picture_frame
+
+/obj/structure/sign/plaques/wrights
+	name = "Wright Stuff Export Price List"
+	desc = {"<center>Wright Stuff Ore Exports<br>
+Price Per Sheet
+<br><br><br><br>
+Diamond: 15<br>
+Gold: 8<br>
+Iron: 2<br>
+Plasma: 4<br>
+Silver: 6<br>
+Titanium: 9<br>
+Uranium: 11<br><br><br><br>
+For our list of imports, see our computer at the front.</center>"}
+	icon_state = "kiddieplaque"

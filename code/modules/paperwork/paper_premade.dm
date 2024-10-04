@@ -687,3 +687,21 @@ Temperance Union members harbor a deep-seated distrust in the effectiveness of c
 <center>The Only Hope for New Reno</center>
 <center>The Temperance Union</center>
 		<br>"}
+
+/obj/item/paper/vangraffs
+	name = "To The New Robotics Contractor"
+	desc = "If you're reading this it means Chop Van Graff failed to properly update her instructional note."
+	icon_state = "paper_words"
+	info = "ChopChop please."
+
+/obj/item/paper/wrights
+	name = "Wright Export Contract"
+	desc = "If you're reading this it means Chop Wright failed to do her chores and must be sternly corrected."
+	icon_state = "paper_words"
+	info = "ChopChop please."
+
+/obj/item/paper/ncrcf
+	name = "Instructions for the NCRCF"
+	desc = "If you're reading this it means the first girlboss senator has failed utterly. - Kimball and the Boys."
+	icon_state = "paper_words"
+	info = "ChopChop please."

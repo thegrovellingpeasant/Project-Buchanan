@@ -286,7 +286,9 @@
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
@@ -315,14 +317,16 @@
 
 
 /obj/structure/closet/crate/grave/strangebird
-	name = "Strange Bird"
+	name = "The Bird"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "bird"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
@@ -362,7 +366,9 @@
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
