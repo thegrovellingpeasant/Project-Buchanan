@@ -302,30 +302,12 @@ GLOBAL_LIST_INIT(skin_tones, list(
 GLOBAL_LIST_INIT(nonstandard_skin_tones, list("orange"))
 
 
-/proc/random_hair_shade()
-	return pick(GLOB.hair_shade)
-
-//ordered by amount of tan. Keep the nonstandard skin tones last.
-GLOBAL_LIST_INIT(hair_shade, list(
-	"hair1" = "#f1dfaa",
-	"hair2" = "#e1c777",
-	"hair3" = "#e69138",
-	"hair4" = "#a1703d",
-	"hair5" = "#8c6235",
-	"hair6" = "#6b4b29",
-	"hair7" = "#573d21",
-	"hair8" = "#3b2916",
-	"hair9" = "#332816",
-	"hair10"= "#202020",
-	"hair11"= "#070707",
-	))
-
 /proc/random_dark_shade()
 	return random_string(3, GLOB.hex_muted3)
-/*
+
 /proc/random_hair_shade()
 	return random_string(3, GLOB.hex_muted2)
-*/
+
 /proc/random_clothing_dye()
 	return random_string(3, GLOB.hex_muted)
 
