@@ -1397,9 +1397,9 @@
 /obj/structure/simple_door/tent,
 /obj/structure/stone_tile/slab,
 /obj/effect/mob_spawn/human/corpse{
-	armor = "/obj/item/clothing/suit/hooded/robes";
-	head = "/obj/item/clothing/head/hooded/robes";
-	shoes = "/obj/item/clothing/shoes/f13/rag"
+	armor = /obj/item/clothing/suit/hooded/robes;
+	head = /obj/item/clothing/head/hooded/robes;
+	shoes = /obj/item/clothing/shoes/f13/rag
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
