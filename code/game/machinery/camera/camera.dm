@@ -57,7 +57,7 @@
 	c_tag = "New Reno"
 	network = list("nrpd")
 
-/obj/machinery/camera/preset/nrpd
+/obj/machinery/camera/preset/goldenglobes
 	name = "security camera"
 	c_tag = "Golden Globes"
 	network = list("goldenglobes")
