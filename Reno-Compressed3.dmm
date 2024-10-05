@@ -100622,7 +100622,7 @@
 	uniform = /obj/item/clothing/under/syndicate/brotherhood;
 	shoes = /obj/item/clothing/shoes/jackboots;
 	short_desc = "The victim of an unfortunate detour.";
-	suit = /obj/item/clothing/fieldscribe;
+	suit = /obj/item/clothing/suit/toggle/labcoat/fieldscribe;
 	head = /obj/item/clothing/head/f13/stormchaser;
 	belt = /obj/item/storage/belt/mining/primitive;
 	name = "dead scribe";
@@ -101409,7 +101409,7 @@
 /obj/structure/displaycase/trophy{
 	pixel_y = 10;
 	name = "rapier display case";
-	chance_initial_contents = /obj/item/storage/belt/sabre/rapier
+	start_showpiece_type = /obj/item/storage/belt/sabre/rapier
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';

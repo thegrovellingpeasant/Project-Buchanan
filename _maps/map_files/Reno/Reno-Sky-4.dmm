@@ -11289,7 +11289,7 @@
 /obj/structure/displaycase/trophy{
 	pixel_y = 10;
 	name = "rapier display case";
-	chance_initial_contents = /obj/item/storage/belt/sabre/rapier
+	start_showpiece_type = /obj/item/storage/belt/sabre/rapier
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';

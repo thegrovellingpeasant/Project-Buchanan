@@ -19787,7 +19787,7 @@
 	uniform = /obj/item/clothing/under/syndicate/brotherhood;
 	shoes = /obj/item/clothing/shoes/jackboots;
 	short_desc = "The victim of an unfortunate detour.";
-	suit = /obj/item/clothing/fieldscribe;
+	suit = /obj/item/clothing/suit/toggle/labcoat/fieldscribe;
 	head = /obj/item/clothing/head/f13/stormchaser;
 	belt = /obj/item/storage/belt/mining/primitive;
 	name = "dead scribe";
