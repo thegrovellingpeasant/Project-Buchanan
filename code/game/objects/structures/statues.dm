@@ -531,6 +531,13 @@
 	desc = "A statue dedicated to Legion's God of War."
 	icon_state = "marsred"
 
+/obj/structure/statue/justice
+	name = "Justicia and Clemencia"
+	desc = "The Sisters of Justice who hold the scales that many fates hang onto."
+	icon = "icons/fallout/objects/structures/justice_statue.dmi"
+	icon_state = "justice"
+	pixel_x = -7
+
 //Wood
 
 /obj/structure/statue/wood

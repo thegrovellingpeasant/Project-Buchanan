@@ -19,14 +19,6 @@
 //	step_sounds = list("human" = "woodfootsteps")
 	broken_states = list("housewood1-broken", "housewood2-broken", "housewood3-broken", "housewood4-broken")
 
-/turf/open/floor/f13/wood/New()
-	..()
-	if(prob(5))
-		broken = TRUE
-		icon_state = pick(broken_states)
-	else
-		icon_state = "housewood[rand(1,4)]"
-
 /turf/open/floor/f13/wood/make_plating()
 	return ChangeTurf(/turf/open/floor/plating/wooden)
 
