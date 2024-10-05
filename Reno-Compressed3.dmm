@@ -2501,7 +2501,7 @@
 /area/f13/reno_building)
 "axK" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "axL" = (
 /obj/structure/girder,
@@ -2956,7 +2956,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "aBE" = (
 /obj/structure/fence/handrail{
@@ -4121,7 +4121,7 @@
 /area/f13/reno_east_building)
 "aLX" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/bar)
 "aMj" = (
 /obj/structure/simple_door/house,
@@ -15097,7 +15097,8 @@
 	density = 0;
 	name = "Water purifier control"
 	},
-/turf/open/floor/wood/f13/housewoodbroken4{
+/turf/open/floor/wood/f13/housewoodbroken{
+	icon_state = "torncarpet11";
 	sunlight_state = 1
 	},
 /area/f13/reno_building)
@@ -16153,7 +16154,7 @@
 /area/f13/reno_streets)
 "cRH" = (
 /obj/structure/simple_door/repaired,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "cRL" = (
 /obj/structure/destructible/tribal_torch/lit,
@@ -18076,7 +18077,7 @@
 /area/f13/reno_prison)
 "dhU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/bar)
 "dhV" = (
 /turf/closed/wall/f13/store,
@@ -18418,9 +18419,6 @@
 	icon_state = "verticalinnermain3"
 	},
 /area/f13/reno_streets)
-"dkE" = (
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
-/area/f13/reno_building)
 "dkH" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/newspaper,
@@ -18932,7 +18930,8 @@
 	pixel_x = 2;
 	pixel_y = -4
 	},
-/turf/open/floor/wood/f13/housewoodbroken4{
+/turf/open/floor/wood/f13/housewoodbroken{
+	icon_state = "torncarpet11";
 	sunlight_state = 1
 	},
 /area/f13/reno_building)
@@ -22062,7 +22061,7 @@
 /area/f13/reno_hotel)
 "dSJ" = (
 /obj/structure/table/snooker,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "dSK" = (
 /obj/structure/nest/mob/dog{
@@ -23177,7 +23176,7 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "eep" = (
 /obj/structure/barricade/sandbags,
@@ -23379,7 +23378,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "egp" = (
 /obj/effect/overlay/stair{
@@ -25049,7 +25048,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_east_building)
 "euO" = (
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/bar)
 "euS" = (
 /obj/structure/bed/roller,
@@ -26895,7 +26894,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "eNb" = (
 /obj/structure/table/reinforced,
@@ -30589,7 +30588,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/shack)
 "fxn" = (
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "fxq" = (
 /obj/effect/decal/cleanable/dirt{
@@ -31532,7 +31531,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "fGH" = (
 /turf/open/floor/plasteel/f13/vault_floor/darkrusty,
@@ -33060,16 +33059,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_subway)
 "fUy" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.51
+/turf/open/floor/wood/f13/housewoodbroken{
+	icon_state = "torncarpet11";
+	sunlight_state = 1
 	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.51
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.51
-	},
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
 /area/f13/reno_building)
 "fUA" = (
 /obj/effect/turf_decal/bot_white,
@@ -33684,9 +33677,7 @@
 /area/f13/reno_sewers)
 "fYY" = (
 /obj/machinery/computer/security/wooden_tv/public,
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "fZe" = (
 /obj/structure/table/wood/junk,
@@ -34073,7 +34064,7 @@
 /obj/machinery/light/small/broken,
 /obj/item/reagent_containers/food/drinks/bottle/brown/lightbrown,
 /obj/structure/closet/locker,
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "gcK" = (
 /obj/structure/ladder/unbreakable/manholeopen{
@@ -37011,7 +37002,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "gCu" = (
 /obj/effect/turf_decal/arrows,
@@ -38313,7 +38304,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "gOq" = (
 /obj/effect/overlay/junk/toilet{
@@ -40253,7 +40244,7 @@
 "hff" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "hfg" = (
 /obj/machinery/hydroponics/soil/pot,
@@ -47706,7 +47697,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/bar)
 "ixT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -49714,9 +49705,7 @@
 "iPr" = (
 /obj/structure/table/wood/poker,
 /obj/item/newspaper,
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "iPs" = (
 /obj/structure/junk/small/bed2,
@@ -49938,7 +49927,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "iQM" = (
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/bar)
 "iQU" = (
 /obj/structure/table/reinforced,
@@ -51669,7 +51658,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "jhG" = (
 /obj/structure/statue/sandstone/mars,
@@ -52206,10 +52195,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess,
 /area/f13/reno_sewers)
-"jlL" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
-/area/f13/bar)
 "jlN" = (
 /obj/structure/obstacle/barbedwire/end{
 	dir = 8;
@@ -64810,7 +64795,7 @@
 	layer = 2.51
 	},
 /obj/item/storage/trash_stack,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "lAW" = (
 /obj/structure/table/roulette,
@@ -66515,7 +66500,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "lQf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -67070,7 +67055,7 @@
 "lUL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/toy/crayon/spraycan,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "lUM" = (
 /obj/machinery/light{
@@ -70213,7 +70198,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "mzl" = (
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "mzp" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
@@ -71529,7 +71514,7 @@
 	smooth = 0;
 	layer = 2.91
 	},
-/turf/open/transparent/openspace/air,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "mKl" = (
 /obj/machinery/photocopier,
@@ -75454,7 +75439,7 @@
 	dir = 1;
 	pixel_y = 15
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "nyd" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -75881,7 +75866,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "nBW" = (
 /obj/structure/legion_extractor,
@@ -76617,7 +76602,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "nIM" = (
 /obj/structure/table/wood/settler,
@@ -78488,9 +78473,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/reno_subway)
 "nZr" = (
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "nZt" = (
 /obj/structure/table,
@@ -80870,9 +80853,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_prison)
-"owO" = (
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
-/area/f13/bar)
 "owT" = (
 /obj/effect/turf_decal/arrows/white{
 	dir = 4;
@@ -82322,7 +82302,7 @@
 /area/f13/farmhousesouth)
 "oKD" = (
 /obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "oKK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -85995,7 +85975,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "pvc" = (
 /obj/structure/chair/office/dark{
@@ -86163,7 +86143,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "pwt" = (
 /obj/structure/nest/mob/raider/tribal{
@@ -100301,10 +100281,6 @@
 /obj/structure/table/wood/junk,
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess,
 /area/f13/reno_sewers)
-"rYq" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
-/area/f13/reno_building)
 "rYv" = (
 /obj/effect/overlay/canopy{
 	name = "awning";
@@ -105873,7 +105849,7 @@
 /area/f13/wrights)
 "sYg" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "sYi" = (
 /obj/structure/rack/shelf_metal,
@@ -106182,10 +106158,8 @@
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
 "taX" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.51
-	},
-/turf/open/floor/wood/f13/housewoodbroken4/lit,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "tbd" = (
 /obj/structure/table,
@@ -107799,7 +107773,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken3/lit,
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "tqG" = (
 /obj/structure/barricade/wooden/planks,
@@ -108130,7 +108104,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "ttx" = (
 /obj/machinery/hydroponics/soil,
@@ -110413,7 +110387,7 @@
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "tOG" = (
 /obj/structure/chair/bench{
@@ -120493,7 +120467,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
 	},
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "vFz" = (
 /obj/structure/bed/old{
@@ -123776,7 +123750,7 @@
 "wlf" = (
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/f13/housewoodbroken/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/bar)
 "wlg" = (
 /obj/structure/fence/corner{
@@ -124074,7 +124048,7 @@
 "wnO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/metal/fifty,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken/lit,
 /area/f13/reno_building)
 "wnP" = (
 /obj/structure/table/reinforced,
@@ -125278,7 +125252,7 @@
 /area/f13/bar)
 "wza" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/housewoodbroken2/lit,
+/turf/open/floor/wood/housewoodbroken2/lit,
 /area/f13/reno_building)
 "wzd" = (
 /obj/structure/filingcabinet,
@@ -179982,7 +179956,7 @@ vYv
 vGd
 xFe
 xqH
-owO
+iQM
 cSw
 vYv
 uzR
@@ -180886,7 +180860,7 @@ lTM
 caE
 stq
 vYv
-owO
+iQM
 cSw
 ptk
 cSw
@@ -182713,7 +182687,7 @@ vYv
 qxV
 wzJ
 ptk
-jlL
+axK
 uZY
 cSw
 vYv
@@ -184907,7 +184881,7 @@ fIo
 adp
 sCZ
 oTw
-nZr
+fUy
 dpS
 cIu
 adp
@@ -185019,7 +184993,7 @@ plq
 fSp
 qwb
 qwb
-wza
+taX
 caY
 bHA
 bHA
@@ -185478,7 +185452,7 @@ bHA
 qVh
 qwb
 dse
-rYq
+qwb
 xOJ
 qwb
 cRH
@@ -185931,7 +185905,7 @@ ibh
 qwb
 tJC
 fBs
-wza
+taX
 eTh
 bHA
 bHA
@@ -196303,12 +196277,12 @@ egk
 ryV
 fJQ
 gyn
-dkE
+fxn
 eek
 nBN
 nkT
 nkT
-eMW
+ttv
 lCF
 blY
 vDw
@@ -196456,7 +196430,7 @@ hpQ
 mpC
 cuv
 pJc
-taX
+tqA
 rUB
 gCo
 lLt
@@ -197675,7 +197649,7 @@ cbr
 cbr
 egk
 rUB
-fUy
+gOj
 puX
 cbr
 ufm

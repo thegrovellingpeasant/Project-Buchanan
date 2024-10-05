@@ -13404,9 +13404,7 @@
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "ngv" = (
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "nhu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18946,9 +18944,7 @@
 /area/f13/clinic)
 "siW" = (
 /obj/machinery/computer/security/wooden_tv/public,
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken3/lit,
 /area/f13/reno_building)
 "sji" = (
 /turf/open/floor/wood/f13/oakbroken4/lit,
@@ -23542,9 +23538,7 @@
 "wLr" = (
 /obj/structure/table/wood/poker,
 /obj/item/newspaper,
-/turf/open/floor/wood/f13/housewoodbroken4{
-	sunlight_state = 1
-	},
+/turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
 "wLx" = (
 /obj/structure/table/greyscale{

@@ -2341,7 +2341,7 @@
 	dir = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "btF" = (
 /obj/structure/fireplace/potbelly{
@@ -3678,7 +3678,7 @@
 /turf/open/floor/wood/f13/housewoodbroken3,
 /area/f13/building)
 "cmu" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1;
 	pixel_x = -5
 	},
@@ -4571,7 +4571,6 @@
 "cPB" = (
 /obj/structure/wreck/bus/blue/alt{
 	bound_height = 160;
-	bound_width = 64;
 	layer = 2.1;
 	pixel_x = 3
 	},
@@ -8140,8 +8139,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/nest/mob/supermutant/nightkinranged{
-	dir = 8;
-	layer = 4
+	dir = 8
 	},
 /turf/open/floor/plasteel/showroomfloor/lit,
 /area/f13/building)
@@ -10221,7 +10219,7 @@
 /area/f13/potashwarehouse)
 "guc" = (
 /obj/structure/simple_door/metal/store,
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "guf" = (
 /obj/structure/bed/mattress{
@@ -14119,13 +14117,12 @@
 /turf/open/transparent/openspace/air,
 /area/f13/potashwarehouse)
 "iYz" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/sofa/corp/right{
 	dir = 1;
 	pixel_x = -5;
-	pixel_y = 1;
-	layer = 3.01
+	pixel_y = 1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "iZK" = (
 /obj/item/stack/sheet/mineral/wood/five,
@@ -15827,7 +15824,7 @@
 	pixel_y = 1;
 	layer = 2.1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "keW" = (
 /obj/structure/chair/sofa{
@@ -20825,7 +20822,7 @@
 	pixel_y = 1;
 	layer = 2.1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "ntT" = (
 /obj/structure/fence{
@@ -23756,7 +23753,7 @@
 	dir = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "pmt" = (
 /obj/effect/overlay/gravel/edge/corner{
@@ -24313,7 +24310,7 @@
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /obj/item/clothing/shoes/laceup,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey{
-	name = "SacTown Barrel-Aged Whiskey";
+	name = "Sac-Town Barrel-Aged Whiskey";
 	desc = "Known for their famous slogan, 'Do you have the Sac for it?'"
 	},
 /obj/item/reagent_containers/food/drinks/bottle/brown/wine{
@@ -25178,7 +25175,7 @@
 	},
 /area/f13/wasteland)
 "qfQ" = (
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "qgf" = (
 /obj/structure/railing{
@@ -26244,7 +26241,7 @@
 /obj/structure/chair/sofa/corp{
 	dir = 4
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "qKV" = (
 /obj/structure/curtain{
@@ -37045,7 +37042,7 @@
 	pixel_y = 1;
 	layer = 2.1
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "xbH" = (
 /obj/structure/railing{
@@ -37794,7 +37791,7 @@
 	pixel_x = -23;
 	pixel_y = -4
 	},
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "xwZ" = (
 /obj/structure/window/reinforced/fulltile/airport,
@@ -38582,7 +38579,7 @@
 	dir = 4
 	},
 /obj/machinery/light/floor,
-/turf/open/floor/carpet/royalblack/nosmooth/lit,
+/turf/open/floor/carpet/royalblack/lit,
 /area/f13/building)
 "xVK" = (
 /obj/structure/table,
@@ -38681,8 +38678,7 @@
 /obj/structure/nest/mob/supermutant/ranged/mutcastle{
 	dir = 4;
 	pixel_x = -11;
-	pixel_y = -3;
-	layer = 4
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel/f13{
 	name = "floor"

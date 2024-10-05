@@ -207,6 +207,26 @@
 	icon_state = "housewood4-broken"
 	sunlight_state = SUNLIGHT_SOURCE
 
+/turf/open/floor/wood/housewoodbroken/lit
+	name = "floor"
+	icon_state = "housewood21-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/wood/housewoodbroken2/lit
+	name = "floor"
+	icon_state = "housewood22-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/wood/housewoodbroken3/lit
+	name = "floor"
+	icon_state = "housewood23-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+
+/turf/open/floor/wood/housewoodbroken4/lit
+	name = "floor"
+	icon_state = "housewood24-broken"
+	sunlight_state = SUNLIGHT_SOURCE
+
 /turf/open/floor/wood/f13/oakbroken/lit
 	icon_state = "oakfloor1-broken"
 	sunlight_state = SUNLIGHT_SOURCE

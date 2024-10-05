@@ -2510,8 +2510,7 @@
 "czP" = (
 /obj/structure/glowshroom,
 /obj/structure/nest/mob/deathclaw{
-	icon_state = "deathclaw_sleep";
-	layer = 4
+	icon_state = "deathclaw_sleep"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -5908,7 +5907,7 @@
 	color = "#734d39"
 	},
 /obj/item/reagent_containers/food/drinks/beer{
-	pixel_y = 5;
+	pixel_y = 3;
 	pixel_x = -4;
 	layer = 3.51
 	},
@@ -11454,7 +11453,7 @@
 "kqB" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled{
-	pixel_y = 10;
+	pixel_y = 7;
 	pixel_x = 1;
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey=40,/datum/reagent/consumable/ethanol/vermouth=20);
 	layer = 3.01;
@@ -13259,8 +13258,7 @@
 /area/f13/caves)
 "maF" = (
 /obj/structure/nest/mob/deathclaw{
-	dir = 8;
-	layer = 4
+	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -18856,8 +18854,7 @@
 "qBJ" = (
 /obj/item/blanket/ruined,
 /obj/structure/nest/mob/deathclaw{
-	icon_state = "deathclaw_sleep";
-	layer = 4
+	icon_state = "deathclaw_sleep"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -19603,7 +19600,6 @@
 /obj/item/stack/rods/ten,
 /obj/structure/nest/mob/nightstalker{
 	dir = 8;
-	layer = 4;
 	pixel_x = -12
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -20023,9 +20019,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rvv" = (
-/obj/structure/nest/mob/molerat/civilwar{
-	layer = 4
-	},
+/obj/structure/nest/mob/molerat/civilwar,
 /obj/item/bedsheet{
 	icon = 'icons/obj/items_and_weapons.dmi';
 	icon_state = "pile_bandages";
@@ -22963,7 +22957,7 @@
 	color = "#734d39"
 	},
 /obj/item/reagent_containers/food/drinks/beer{
-	pixel_y = 5;
+	pixel_y = 4;
 	pixel_x = 4;
 	layer = 3.51
 	},
@@ -25603,9 +25597,7 @@
 	icon_state = "tracks";
 	dir = 5
 	},
-/obj/structure/nest/mob/deathclaw{
-	layer = 4
-	},
+/obj/structure/nest/mob/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wgM" = (
@@ -26335,8 +26327,7 @@
 /area/f13/vault)
 "wNJ" = (
 /obj/structure/nest/mob/deathclaw{
-	icon_state = "deathclaw_sleep";
-	layer = 4
+	icon_state = "deathclaw_sleep"
 	},
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
@@ -27598,8 +27589,7 @@
 /area/f13/enclave)
 "xQF" = (
 /obj/structure/nest/mob/gecko{
-	dir = 4;
-	layer = 4
+	dir = 4
 	},
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
@@ -27760,7 +27750,8 @@
 	},
 /obj/structure/nest/mob/ghoulglowing{
 	dir = 8;
-	layer = 4.01
+	layer = 4.01;
+	icon_state = "glowinghoul_dead"
 	},
 /turf/open/floor/carpet/royalblue,
 /area/f13/vault)
