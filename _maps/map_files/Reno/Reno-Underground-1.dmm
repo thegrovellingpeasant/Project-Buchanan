@@ -374,15 +374,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/raiders)
 "ams" = (
-/obj/effect/overlay/curb/west{
-	color = "#9c9c9c"
-	},
 /obj/effect/overlay/curb/north{
 	color = "#9c9c9c";
-	pixel_y = 4;
-	pixel_x = -1
+	pixel_y = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/yellow/corner,
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/turf/open/water/cavern/sewer,
 /area/f13/reno_sewers)
 "amu" = (
 /obj/effect/spawner/lootdrop/grille_or_trash{
@@ -606,6 +605,21 @@
 /obj/item/book/granter/trait/chemistry,
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -2
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -2
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -2
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -2
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -2
 	},
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/reno_sharkclub)
@@ -4252,6 +4266,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_building)
+"cFL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/bag/chemistry{
+	pixel_y = 36
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/reno_sharkclub)
 "cFW" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
 	icon_state = "rampdowntop"
@@ -4444,6 +4465,10 @@
 	},
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/camera/motion{
+	c_tag = "sewer_entrance";
+	network = list("vault")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prewarbunker)
@@ -13887,7 +13912,10 @@
 "hVx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
-/obj/item/clothing/head/helmet/f13/bishops/fedora2,
+/obj/item/clothing/head/helmet/f13/bishops/fedora2{
+	pixel_y = 8
+	},
+/obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "hVE" = (
@@ -14006,11 +14034,11 @@
 /obj/structure/table,
 /obj/item/lighter/greyscale{
 	pixel_y = 2;
-	pixel_x = 8
+	pixel_x = 6
 	},
 /obj/item/reagent_containers/food/drinks/bottle/whiskey/empty{
-	pixel_x = -6;
-	pixel_y = 6
+	pixel_x = -9;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/reno_sharkclub)
@@ -16201,6 +16229,16 @@
 /obj/structure/nest/mob/radroach,
 /turf/open/indestructible/ground/outside/sidewalk/innervertical/dark,
 /area/f13/reno_sewers)
+"jnQ" = (
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/obj/effect/overlay/curb/north{
+	color = "#9c9c9c";
+	pixel_y = 4
+	},
+/turf/open/water/cavern/sewer,
+/area/f13/reno_sewers)
 "joq" = (
 /obj/structure/table/booth,
 /obj/machinery/conveyor_switch/oneway{
@@ -17318,13 +17356,16 @@
 "kcM" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer{
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 7
 	},
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer{
-	pixel_x = 2
+	pixel_x = 2;
+	pixel_y = 13
 	},
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer{
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/reno_sharkclub)
@@ -19287,8 +19328,7 @@
 "lhJ" = (
 /obj/effect/overlay/curb/north{
 	color = "#9c9c9c";
-	pixel_y = 4;
-	pixel_x = -1
+	pixel_y = 4
 	},
 /obj/effect/overlay/curb/west{
 	color = "#9c9c9c"
@@ -22275,8 +22315,10 @@
 /turf/open/water/cavern/sewer,
 /area/f13/reno_sewers)
 "mRb" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/machinery/computer/security/wooden_tv/public{
+	pixel_x = 2;
+	pixel_y = 30;
+	density = 0
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -22939,7 +22981,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_sewers)
 "nox" = (
-/obj/item/chair/stool/retro/tan,
+/obj/effect/overlay/curb/north{
+	color = "#9c9c9c";
+	pixel_y = 4
+	},
+/obj/effect/overlay/curb{
+	color = "#9c9c9c"
+	},
+/obj/structure/handrail/g_central{
+	dir = 1;
+	pixel_y = 23;
+	layer = 4.5;
+	icon_state = "g_handrail_ns"
+	},
 /turf/open/water/cavern/sewer,
 /area/f13/reno_sewers)
 "noO" = (
@@ -23640,6 +23694,14 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_y = 4
+	},
+/obj/item/rollingpaper{
+	pixel_x = -12;
+	pixel_y = 5
+	},
+/obj/item/storage/fancy/rollingpapers{
+	pixel_y = 4;
+	pixel_x = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
@@ -26922,6 +26984,11 @@
 	},
 /obj/structure/barricade/sandbags,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/motion{
+	c_tag = "sewer_entrance";
+	network = list("vault");
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor{
 	icon_state = "warningcorner";
 	icon = 'icons/fallout/turfs/floors.dmi';
@@ -26948,6 +27015,11 @@
 /obj/structure/railing/corner{
 	layer = 4.25;
 	dir = 8
+	},
+/obj/machinery/camera/motion{
+	c_tag = "sewer_entrance";
+	network = list("vault");
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prewarbunker)
@@ -29878,6 +29950,10 @@
 /area/f13/reno_sewers)
 "rmH" = (
 /obj/structure/rack,
+/obj/machinery/computer/security/wooden_tv/public{
+	pixel_x = 2;
+	pixel_y = 1
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "rmX" = (
@@ -31033,6 +31109,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/green,
 /area/f13/reno_subway)
+"rUm" = (
+/obj/item/chair/stool/retro/tan{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	dir = 1
+	},
+/area/f13/reno_sewers)
 "rUn" = (
 /obj/effect/overlay/rockfloor_side{
 	dir = 1
@@ -31178,11 +31262,6 @@
 /area/f13/reno_sewers)
 "rZG" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/glasses/sunglasses,
-/obj/machinery/light/fo13colored/Aqua{
-	name = "aqua light";
-	dir = 1
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "rZJ" = (
@@ -31930,6 +32009,11 @@
 /obj/machinery/reagentgrinder{
 	pixel_y = 2
 	},
+/obj/machinery/light/fo13colored/Aqua{
+	name = "aqua light";
+	dir = 1;
+	pixel_x = 16
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "suY" = (
@@ -32460,12 +32544,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/reno_subway)
 "sLs" = (
-/obj/structure/closet/locker,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/rollingpaper,
-/obj/item/rollingpaper,
-/obj/item/rollingpaper,
-/obj/item/storage/fancy/cigarettes/cigpack_cannabis,
+/obj/machinery/mineral/wasteland_vendor/reno/pharmacy_chem{
+	pixel_x = -1
+	},
+/obj/structure/noticeboard{
+	pixel_y = 32
+	},
+/obj/item/paper/bishops,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "sLx" = (
@@ -32857,6 +32943,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_subway)
+"sXM" = (
+/obj/machinery/camera/motion{
+	c_tag = "sewer_entrance";
+	network = list("vault")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prewarbunker)
 "sXQ" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal,
@@ -34087,6 +34180,13 @@
 	name = "plating"
 	},
 /area/f13/reno_subway)
+"tGO" = (
+/obj/machinery/camera/motion{
+	c_tag = "sewer_entrance";
+	network = list("vault")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/yellow/white/whiteyellowchess,
+/area/f13/reno_prewarbunker)
 "tGT" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.51
@@ -34796,7 +34896,8 @@
 "ubp" = (
 /obj/machinery/camera/motion{
 	dir = 4;
-	pixel_y = -3
+	pixel_y = -3;
+	network = list("vault")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prewarbunker)
@@ -38608,6 +38709,33 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/f13/reno_prewarbunker)
+"wlP" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "scb__drug_desk";
+	name = "desk"
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/obj/item/storage/box/papersack{
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/reno_sharkclub)
 "wlV" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -39253,8 +39381,7 @@
 "wGN" = (
 /obj/effect/overlay/curb/north{
 	color = "#9c9c9c";
-	pixel_y = 4;
-	pixel_x = -1
+	pixel_y = 4
 	},
 /obj/effect/overlay/curb/west{
 	color = "#9c9c9c"
@@ -39831,6 +39958,10 @@
 	pixel_x = -7;
 	id = "scb__drug_desk";
 	name = "desk"
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_cannabis{
+	pixel_y = 3;
+	pixel_x = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
@@ -42834,7 +42965,7 @@ ldX
 ldX
 sgI
 fPo
-tLo
+jnQ
 xmu
 wNj
 fDd
@@ -46178,7 +46309,7 @@ ldX
 ldX
 ldX
 wKI
-qgv
+nox
 xmu
 wNj
 fDd
@@ -46750,7 +46881,7 @@ srC
 srC
 ldX
 fPo
-soS
+ams
 xmu
 hoP
 fAN
@@ -47089,9 +47220,9 @@ uFw
 uFw
 mCP
 xRc
-vhg
+rUm
 tLo
-nox
+xmu
 wNj
 fDd
 uFw
@@ -49522,7 +49653,7 @@ pIL
 lWF
 ldX
 fPo
-tLo
+jnQ
 xmu
 wNj
 fDd
@@ -53589,7 +53720,7 @@ vFA
 abk
 ldX
 fPo
-soS
+ams
 xmu
 kBU
 bBQ
@@ -61226,7 +61357,7 @@ yfH
 eQA
 eQA
 iQH
-tLo
+jnQ
 xmu
 kBU
 lhJ
@@ -61344,7 +61475,7 @@ jRr
 tLo
 xmu
 kBU
-ams
+cxx
 lEp
 lEp
 lEp
@@ -65004,7 +65135,7 @@ wzJ
 sSq
 wzJ
 wzJ
-vYb
+wlP
 vYb
 vYb
 wzJ
@@ -65460,7 +65591,7 @@ sTI
 sTI
 wzJ
 rZG
-goS
+cFL
 hVx
 goS
 huL
@@ -74977,7 +75108,7 @@ akJ
 sTI
 sTI
 vlf
-tKu
+tGO
 tKu
 kUo
 roN
@@ -75608,7 +75739,7 @@ ltw
 vlf
 vXB
 etX
-azR
+sXM
 rBL
 eVG
 aMN

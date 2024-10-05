@@ -204,7 +204,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "iL" = (
-/obj/machinery/light/small,
+/obj/item/paper/bishops,
+/obj/structure/noticeboard{
+	pixel_y = -30
+	},
 /turf/open/floor/plating/f13/inside/gravel{
 	sunlight_state = 0
 	},
@@ -256,6 +259,8 @@
 	pixel_y = 32;
 	name = null
 	},
+/obj/item/radio/prison,
+/obj/item/radio/prison,
 /obj/item/radio/prison,
 /turf/open/floor/wood/f13/oak{
 	icon_state = "oakfloor4-broken"
@@ -1021,6 +1026,12 @@
 	name = null
 	},
 /obj/item/storage/medical/ancientfirstaid,
+/obj/structure/noticeboard{
+	pixel_y = 32;
+	plane = -4;
+	layer = 5.01
+	},
+/obj/item/paper/bishops,
 /turf/open/floor/wood/f13/oak,
 /area/f13/caves)
 "DB" = (

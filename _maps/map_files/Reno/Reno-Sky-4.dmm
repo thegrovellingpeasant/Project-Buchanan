@@ -111,12 +111,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "ao" = (
-/obj/structure/barricade/tentleatheredge{
-	opacity = 0;
-	dir = 4
-	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/water/deep,
+/area/f13/reno_sharkclub)
 "ap" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
@@ -174,6 +170,18 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/human,
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess/lit,
 /area/f13/raiders)
+"aF" = (
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable_1tileendtable"
+	},
+/obj/item/gun/ballistic/rifle/hunting/paciencia,
+/obj/item/ammo_casing{
+	pixel_y = -7;
+	pixel_x = 6
+	},
+/turf/open/floor/carpet/green,
+/area/f13/reno_sharkclub)
 "aG" = (
 /obj/item/blanket/ruined{
 	pixel_y = -11
@@ -190,7 +198,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_prison)
 "aI" = (
-/turf/open/floor/wood/f13/oak/lit,
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
 /area/f13/reno_wasteland)
 "aJ" = (
 /obj/structure/table/glass,
@@ -244,10 +252,13 @@
 /turf/open/floor/carpet/red,
 /area/f13/heist)
 "aV" = (
-/obj/structure/chair/wood/fancy/dark{
+/obj/structure/chair/sofa/luxury/right{
 	dir = 8
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "aW" = (
 /obj/structure/table/wood/fancy,
@@ -545,14 +556,27 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_wasteland)
+"cw" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/obj/machinery/camera/preset/ncrcf{
+	dir = 9;
+	c_tag = "C Block East";
+	pixel_y = -9
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/reno_prison)
 "cy" = (
 /turf/open/floor/plasteel/f13,
 /area/f13/reno_sharkclub)
 "cz" = (
 /obj/structure/chair/wood/fancy{
-	dir = 4
+	icon_state = "darkchair";
+	anchored = 0
 	},
-/turf/open/floor/plasteel/casino,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "cA" = (
 /obj/structure/window/gothic/fulltile,
@@ -593,6 +617,17 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
+"cF" = (
+/obj/structure/closet/crate/wicker{
+	pixel_y = 14
+	},
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable";
+	dir = 1
+	},
+/turf/open/floor/carpet/reno/pattern1,
+/area/f13/reno_sharkclub)
 "cH" = (
 /obj/structure/chair/sofa/right{
 	color = "#f06262";
@@ -1181,6 +1216,7 @@
 /obj/machinery/light/fo13colored/Red{
 	dir = 1
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
 "fj" = (
@@ -1264,16 +1300,12 @@
 /turf/open/floor/carpet/green,
 /area/f13/heist)
 "fA" = (
-/obj/machinery/button/door{
-	pixel_x = -26;
-	id = "bishop_room_windows";
-	name = "windows"
+/obj/structure/curtain{
+	color = '#6d2375';
+	anchored = 0
 	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
-	icon_state = "rampdowntop";
-	dir = 1;
-	name = "stairs"
-	},
+/obj/structure/dresser,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "fC" = (
 /obj/structure/table/wood/greyscale/varnished,
@@ -1383,6 +1415,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
+"fX" = (
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable";
+	dir = 8
+	},
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "fY" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -1723,11 +1763,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/theater)
 "hv" = (
-/obj/effect/overlay/curb/west,
-/turf/open/floor/f13{
-	icon_state = "darkbluecorner";
-	dir = 4
+/obj/structure/railing/corner{
+	dir = 4;
+	color = '#9a4a3b'
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
 "hw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1814,8 +1854,12 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "hM" = (
-/turf/closed/indestructible/f13vaultrusted,
-/area/f13/reno_wasteland)
+/obj/structure/decoration/clock/active{
+	pixel_y = 33;
+	pixel_x = 1
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "hN" = (
 /obj/structure/window{
 	dir = 1;
@@ -1897,23 +1941,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/lit,
 /area/f13/reno_wasteland)
 "hX" = (
-/obj/structure/bed/wooden{
-	dir = 4
+/obj/structure/table/wood/fancy/black,
+/obj/item/kirbyplants{
+	icon_state = "plant-15";
+	pixel_y = 12;
+	layer = 4.2
 	},
-/obj/item/bedsheet/rd{
-	pixel_y = 15;
-	dir = 8
-	},
-/obj/item/bedsheet/rd{
-	pixel_y = 3;
-	dir = 8
-	},
-/obj/structure/bed/wooden{
-	dir = 4;
-	pixel_y = 11;
-	layer = 2.8
-	},
-/turf/open/floor/carpet/purple,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "hY" = (
 /obj/structure/chair/wood/fancy{
@@ -1974,7 +2008,45 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite/lit,
 /area/f13/theater)
 "ij" = (
-/turf/open/floor/plasteel/casino,
+/obj/structure/closet/fridge,
+/obj/item/storage/fancy/heart_box,
+/obj/item/reagent_containers/food/drinks/bottle/champagne{
+	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
+	name = "20,000 Cap Bottle";
+	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
+	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne{
+	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
+	name = "20,000 Cap Bottle";
+	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
+	},
+/obj/item/reagent_containers/food/snacks/f13/sugarbombs,
+/obj/item/reagent_containers/food/snacks/f13/sugarbombs,
+/obj/item/reagent_containers/food/snacks/f13/sugarbombs,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/food/drinks/bottle/brown/green{
+	name = "Madre Verde hot sauce bottle";
+	list_reagents = list(/datum/reagent/consumable/capsaicin=300);
+	desc = "A fancy looking bottle of hot sauce with a busty woman on it, she is holding a basket of chilji's. Supposedly made in Madre Verde's own kitchen."
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/green{
+	name = "Madre Verde hot sauce bottle";
+	list_reagents = list(/datum/reagent/consumable/capsaicin=300);
+	desc = "A fancy looking bottle of hot sauce with a busty woman on it, she is holding a basket of chilji's. Supposedly made in Madre Verde's own kitchen."
+	},
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/snacks/fishing/lobster_deluxe,
+/obj/item/reagent_containers/food/snacks/fishing/lobster_deluxe,
+/obj/item/reagent_containers/food/snacks/enchiladas,
+/obj/item/reagent_containers/food/snacks/enchiladas,
+/obj/item/reagent_containers/food/snacks/f13/canned/ncr/crackers,
+/obj/item/reagent_containers/food/snacks/f13/canned/ncr/crackers,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/storage/pill_bottle/antirad_plus,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "il" = (
 /obj/effect/overlay/junk/curtain,
@@ -2208,11 +2280,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "jt" = (
-/obj/structure/dresser,
-/obj/machinery/light{
-	dir = 1
+/obj/item/kirbyplants{
+	icon_state = "plant-05";
+	pixel_y = 12
 	},
-/turf/open/floor/plasteel/casino,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "ju" = (
 /obj/machinery/light/small/broken{
@@ -2351,9 +2423,26 @@
 	},
 /area/f13/heist)
 "kl" = (
-/obj/machinery/light{
-	dir = 1
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable"
 	},
+/obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/happiness,
+/obj/item/melee/onehanded/knife/survival,
+/obj/structure/closetundense/locker/medcabinet{
+	pixel_y = 25;
+	density = 0;
+	anchored = 1
+	},
+/obj/item/reagent_containers/hypospray/medipen/morphine,
+/obj/item/reagent_containers/pill/morphine,
+/obj/item/reagent_containers/pill/morphine,
+/obj/item/reagent_containers/glass/bottle/ethanol,
+/obj/item/storage/pill_bottle/antirad_plus,
+/obj/item/storage/pill_bottle/charcoal,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "km" = (
@@ -2364,6 +2453,16 @@
 /obj/structure/grille,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/farmhousesouth)
+"ko" = (
+/obj/structure/chair/sofa/luxury/corner{
+	dir = 8
+	},
+/obj/structure/railing{
+	color = '#9a4a3b';
+	layer = 4.25
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "ks" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -2536,11 +2635,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/heist)
 "kR" = (
-/obj/structure/barricade/tentleathercorner{
-	opacity = 0;
-	dir = 4
-	},
-/turf/open/transparent/openspace/air,
+/turf/open/floor/plating/f13/outside/roof/metal/verdigris,
 /area/f13/reno_wasteland)
 "kS" = (
 /obj/item/toy/poolnoodle/blue,
@@ -2794,11 +2889,11 @@
 	},
 /area/f13/raider_mall)
 "ml" = (
-/turf/open/floor/f13{
-	icon_state = "darkblue";
+/obj/structure/railing{
 	dir = 1;
-	sunlight_state = 1
+	color = '#9a4a3b'
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
 "mm" = (
 /obj/structure/chair/sofa/corp/corner{
@@ -2833,12 +2928,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "mv" = (
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
-	icon_state = "rampdowntop";
-	dir = 1;
-	name = "stairs"
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#363636"
 	},
-/area/f13/reno_sharkclub)
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/reno_prison)
 "my" = (
 /obj/structure/nest/mob/radroach{
 	dir = 4
@@ -2869,6 +2964,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/raiders)
+"mG" = (
+/obj/structure/chair/sofa/luxury/ottoman,
+/obj/item/storage/briefcase/lawyer/family,
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "mH" = (
 /obj/structure/table/wood/crate,
 /obj/item/book/codex_gigas,
@@ -2894,13 +2994,22 @@
 /obj/item/gun/ballistic/automatic/smg/american180,
 /turf/open/floor/carpet/red,
 /area/f13/heist)
+"mQ" = (
+/obj/structure/railing/corner{
+	color = '#9a4a3b';
+	layer = 4.25
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "mR" = (
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace/air,
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
 /area/f13/reno_prison)
 "mV" = (
-/obj/structure/railing/casino,
+/obj/structure/railing/casino{
+	layer = 4.25
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
 "mX" = (
@@ -2918,7 +3027,12 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/theater)
 "na" = (
-/turf/open/floor/carpet/purple,
+/obj/structure/chair/wood/fancy{
+	icon_state = "darkchair";
+	dir = 8;
+	anchored = 0
+	},
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "nb" = (
 /turf/closed/indestructible/rock,
@@ -2938,7 +3052,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/wood/f13/old,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "nf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2988,7 +3102,8 @@
 	id = "bishop_office_windows"
 	},
 /obj/structure/curtain{
-	color = "#4e638a"
+	color = "#5c131b";
+	layer = 4.1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_sharkclub)
@@ -3166,9 +3281,11 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/theater)
 "on" = (
-/obj/structure/window/plasma/reinforced/spawner,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/heist)
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/turf/open/pool,
+/area/f13/reno_sharkclub)
 "oo" = (
 /obj/structure/barricade/sandbags,
 /obj/structure/table/wood/settler,
@@ -3185,25 +3302,33 @@
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
 "ot" = (
-/obj/effect/overlay/curb/north,
-/obj/structure/closet/fridge,
-/obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/drinks/soda_cans/cola{
-	name = "canned nuka cola";
-	list_reagents = list(/datum/reagent/consumable/nuka_cola=25,/datum/reagent/radium=5)
+/obj/effect/overlay/curb/north{
+	pixel_y = 4
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/cola{
-	name = "canned nuka cola";
-	list_reagents = list(/datum/reagent/consumable/nuka_cola=25,/datum/reagent/radium=5)
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable"
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/cola{
-	name = "canned nuka cola";
-	list_reagents = list(/datum/reagent/consumable/nuka_cola=25,/datum/reagent/radium=5)
+/obj/item/clothing/mask/fakemoustache/italian,
+/obj/item/clothing/head/wig{
+	icon_state = "hair_cia";
+	color = "#443d30";
+	name = "toupee";
+	hair_style = "CIA"
 	},
-/obj/machinery/light{
-	dir = 4
+/obj/item/reagent_containers/food/drinks/flask/gold{
+	icon = 'icons/obj/drinks.dmi';
+	name = "Gold Plated Flask";
+	pixel_y = 2;
+	pixel_x = 6
 	},
-/turf/open/floor/plasteel/casino,
+/obj/structure/mirror{
+	icon = 'icons/obj/wood_window.dmi';
+	icon_state = "storewindowtop";
+	pixel_x = 32;
+	plane = -14
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "ov" = (
 /obj/structure/bookshelf{
@@ -3717,10 +3842,26 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/theater)
 "pN" = (
-/obj/structure/chair/sofa/luxury/right{
-	dir = 1
+/obj/structure/chair/comfy/modern{
+	icon_state = "salonchair";
+	dir = 4;
+	layer = 4.1;
+	icon = 'icons/obj/statuelarge.dmi';
+	name = "salon chair";
+	can_buckle = 0
 	},
-/turf/open/floor/carpet/purple,
+/obj/structure/chair/comfy/modern{
+	icon_state = "salonchairalt";
+	dir = 1;
+	pixel_x = -1;
+	can_buckle = 0;
+	name = "salon chair"
+	},
+/obj/item/storage/backpack/satchel/enclave{
+	name = "purse"
+	},
+/obj/effect/landmark/start/f13/bishops/wife,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "pP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4033,19 +4174,34 @@
 /area/f13/reno_sharkclub)
 "qR" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/item/pen{
-	pixel_x = -5
+/obj/item/folder/red{
+	pixel_x = -2
+	},
+/obj/item/stamp/law,
+/obj/item/pen/fourcolor{
+	pixel_y = 6;
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/filled{
+	icon_state = "patronglass";
+	name = "patron";
+	list_reagents = list(/datum/reagent/consumable/ethanol/patron=50);
+	pixel_y = -5;
+	pixel_x = 9
 	},
 /obj/item/pen/fountain/captain{
-	pixel_y = 4
+	name = "Bedazzled Fountain Pen";
+	pixel_y = 9
 	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "qS" = (
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
-	icon_state = "rampdowntop";
-	dir = 4
+/obj/structure/window/reinforced/tinted{
+	dir = 4;
+	pixel_x = 3;
+	opacity = 0
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "qT" = (
 /obj/effect/overlay/curb/north,
@@ -4065,6 +4221,11 @@
 "qY" = (
 /obj/structure/closet/crate/bin/trashbin{
 	pixel_x = 14
+	},
+/obj/machinery/camera/preset/ncrcf{
+	dir = 6;
+	pixel_x = -19;
+	c_tag = "Third Floor"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_prison)
@@ -4120,12 +4281,18 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prison)
 "rl" = (
-/obj/structure/table/wood/poker,
-/obj/item/card/id/reno/bishops/key/suite1{
-	pixel_y = 7
+/obj/structure/bed/wooden{
+	layer = 2.89;
+	pixel_y = 11
 	},
-/obj/item/card/id/reno/bishops/key/suite2,
-/turf/open/floor/plasteel/casino,
+/obj/structure/bed/wooden{
+	dir = 8
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 11
+	},
+/obj/item/bedsheet/rd,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "rm" = (
 /turf/closed/wall/f13/ruins{
@@ -4151,7 +4318,9 @@
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
 	},
-/obj/structure/railing/casino,
+/obj/structure/railing/casino{
+	layer = 4.25
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
 "rt" = (
@@ -4190,6 +4359,10 @@
 /obj/structure/table/reinforced,
 /obj/item/statuebust{
 	pixel_y = 10
+	},
+/obj/item/clothing/head/soft/hatmar{
+	pixel_y = 21;
+	pixel_x = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
@@ -4266,16 +4439,32 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "rZ" = (
-/obj/structure/table/wood/greyscale/varnished,
-/obj/item/kirbyplants/random{
-	pixel_y = 8
+/obj/item/reagent_containers/food/drinks/bottle/patron{
+	pixel_y = 7;
+	layer = 4.03;
+	pixel_x = -15
 	},
-/obj/item/reagent_containers/food/drinks/bottle/whiskey{
-	name = "SacTown Barrel-Aged Whiskey";
-	desc = "Known for their famous slogan, 'Do you have the Sac for it?'";
-	pixel_y = 14;
-	pixel_x = -18
+/obj/item/reagent_containers/food/drinks/bottle/vermouth{
+	pixel_y = 11;
+	pixel_x = -10;
+	layer = 4.01
 	},
+/obj/item/reagent_containers/food/drinks/bottle/gin{
+	pixel_y = 13;
+	pixel_x = 3;
+	layer = 4.01
+	},
+/obj/item/reagent_containers/food/drinks/bottle/cognac{
+	layer = 4.02;
+	pixel_y = 4;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/amaretto{
+	pixel_y = 5;
+	pixel_x = 8;
+	layer = 4.02
+	},
+/obj/structure/table/abductor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "sa" = (
@@ -4531,9 +4720,8 @@
 	},
 /area/f13/raider_mall)
 "te" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 1;
-	pixel_x = 4
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhousesouth)
@@ -4607,7 +4795,9 @@
 /obj/structure/chair/wood/fancy/dark{
 	dir = 8
 	},
-/obj/structure/railing/casino,
+/obj/structure/railing/casino{
+	layer = 4.25
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
 "tu" = (
@@ -4669,6 +4859,13 @@
 	sunlight_state = 1
 	},
 /area/f13/raider_mall)
+"tE" = (
+/obj/machinery/pool/filter{
+	pixel_y = -24;
+	pixel_x = 10
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "tI" = (
 /obj/structure/nest/mob/ghoulsoldier{
 	name = "ghoul prisoner";
@@ -4748,8 +4945,17 @@
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "tZ" = (
-/obj/structure/bed/dogbed,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/table/abductor,
+/obj/item/reagent_containers/food/snacks/marshmallow{
+	pixel_y = 8;
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/snacks/marshmallow,
+/obj/item/stack/rods{
+	icon_state = "rods-1"
+	},
+/obj/item/storage/fancy/cracker_pack,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "ua" = (
 /obj/machinery/photocopier,
@@ -4784,13 +4990,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prison)
 "ue" = (
-/obj/structure/decoration/cells{
-	pixel_x = 31;
-	pixel_y = -2;
-	dir = 1
-	},
-/turf/closed/wall/mineral/concrete/blastproof/moresmooth,
-/area/f13/reno_prison)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/f13/outside/roof/metal,
+/area/f13/reno_wasteland)
 "uf" = (
 /obj/effect/overlay/curb/corner{
 	dir = 8;
@@ -4889,6 +5091,13 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_prison)
+"uA" = (
+/obj/structure/decoration/sign{
+	icon_state = "painting_president";
+	pixel_y = -32
+	},
+/turf/open/floor/carpet/green,
+/area/f13/reno_sharkclub)
 "uB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
@@ -5037,7 +5246,7 @@
 /area/f13/raiders)
 "vd" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/oak/lit,
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
 /area/f13/reno_wasteland)
 "vf" = (
 /obj/structure/window/fulltile/store{
@@ -5055,6 +5264,16 @@
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhousesouth)
+"vi" = (
+/obj/structure/chair/wood/fancy/dark{
+	dir = 4
+	},
+/obj/item/storage/spooky{
+	pixel_x = -32;
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "vj" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -5230,10 +5449,11 @@
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
 "vU" = (
-/obj/structure/chair/wood/fancy/dark{
-	dir = 4
+/obj/item/kirbyplants{
+	icon_state = "pondlily_small";
+	pixel_y = 5
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/water/deep,
 /area/f13/reno_sharkclub)
 "vV" = (
 /obj/structure/window/reinforced/tinted/frosted{
@@ -5510,6 +5730,13 @@
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
+"xj" = (
+/obj/effect/overlay/curb/east{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "xk" = (
 /obj/machinery/washing_machine,
 /obj/structure/sign/poster/prewar/poster80{
@@ -5742,6 +5969,12 @@
 /obj/structure/window/gothic3/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/theater)
+"ym" = (
+/obj/effect/overlay/curb/north{
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/reno/pattern1,
+/area/f13/reno_sharkclub)
 "yo" = (
 /obj/machinery/computer/shuttle/bishopelevator{
 	pixel_x = 32
@@ -5973,7 +6206,9 @@
 /area/f13/reno_sharkclub)
 "zB" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/reagent_containers/food/drinks/bottle/holywater{
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/farmhousesouth)
 "zD" = (
@@ -6163,6 +6398,17 @@
 /area/f13/farmhousesouth)
 "Aq" = (
 /obj/machinery/light,
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable_1tileendtable";
+	dir = 1
+	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne{
+	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
+	name = "20,000 Cap Bottle";
+	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent.";
+	pixel_y = 9
+	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "Ar" = (
@@ -6176,12 +6422,7 @@
 "At" = (
 /obj/structure/barricade/bars,
 /obj/structure/curtain{
-	color = "#363636";
-	icon_state = "closed";
-	open = 0;
-	alpha = 245;
-	opacity = 1;
-	layer = 4.01
+	color = "#363636"
 	},
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -6200,6 +6441,21 @@
 /obj/effect/landmark/start/f13/civilians/ncrcfphysician,
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_prison)
+"Aw" = (
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1;
+	pixel_x = 32
+	},
+/turf/open/pool,
+/area/f13/reno_sharkclub)
+"Ax" = (
+/obj/structure/table/round,
+/obj/item/reagent_containers/glass/rag/towel{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13,
+/area/f13/reno_streets)
 "Ay" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -6435,9 +6691,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_west_building)
 "Bo" = (
-/obj/effect/landmark/start/f13/bishops/capo,
-/turf/open/floor/carpet/reno/evil2,
-/area/f13/reno_sharkclub)
+/obj/structure/simple_door/metal/barred,
+/obj/structure/curtain{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/reno_prison)
 "Br" = (
 /obj/machinery/light/ncr,
 /obj/machinery/door/window/northright{
@@ -6459,7 +6718,25 @@
 /obj/item/phone{
 	pixel_y = -2
 	},
+/obj/item/toy/redbutton{
+	pixel_y = 10;
+	pixel_x = -6
+	},
 /turf/open/floor/carpet/green,
+/area/f13/reno_sharkclub)
+"Bv" = (
+/obj/structure/curtain{
+	color = '#6d2375';
+	anchored = 0
+	},
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/costume/kimono/sakura,
+/obj/item/clothing/head/wig{
+	icon_state = "hair_victory";
+	name = "victory wig";
+	color = "#F6F3aF"
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "Bw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6554,7 +6831,7 @@
 /area/f13/reno_wasteland)
 "BM" = (
 /obj/structure/fireplace,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "BN" = (
 /obj/structure/table/abductor,
@@ -6575,6 +6852,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/reno_wasteland)
+"BP" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 4;
+	pixel_x = 3;
+	opacity = 0
+	},
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/reno_sharkclub)
 "BQ" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
@@ -6759,6 +7045,7 @@
 /area/f13/theater)
 "Cu" = (
 /obj/machinery/workbench,
+/obj/item/wallframe/camera,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_prison)
 "Cv" = (
@@ -6807,6 +7094,17 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_prison)
+"CE" = (
+/obj/structure/chair/sofa/luxury/right{
+	dir = 1;
+	layer = 2.8
+	},
+/obj/structure/railing{
+	color = '#9a4a3b';
+	layer = 4.25
+	},
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "CF" = (
 /obj/structure/bed/mattress{
 	dir = 4
@@ -6926,7 +7224,7 @@
 /area/f13/reno_prison)
 "Da" = (
 /obj/structure/window/gothic/fulltile,
-/turf/open/floor/carpet/reno/evil2,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_sharkclub)
 "Dc" = (
 /obj/structure/junk/small/bed2,
@@ -6966,6 +7264,10 @@
 /obj/machinery/vending/clothing,
 /turf/open/floor/plating/tunnel,
 /area/f13/theater)
+"Dm" = (
+/obj/structure/pool/ladder,
+/turf/open/pool,
+/area/f13/reno_sharkclub)
 "Dp" = (
 /obj/structure/sink{
 	pixel_y = 19
@@ -7146,7 +7448,7 @@
 /obj/machinery/computer/security/vault{
 	pixel_y = 2;
 	pixel_x = -14;
-	network = list("labor")
+	network = list("ncrcf")
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_prison)
@@ -7219,7 +7521,6 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_prison)
 "Ez" = (
-/obj/structure/table/wood/greyscale/varnished,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
 	pixel_y = 11;
 	pixel_x = -5
@@ -7236,6 +7537,7 @@
 	pixel_x = 4;
 	pixel_y = 1
 	},
+/obj/structure/table/abductor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "EB" = (
@@ -7262,9 +7564,18 @@
 	},
 /area/f13/reno_sharkclub)
 "EH" = (
-/obj/structure/chair/stool,
-/obj/effect/landmark/start/f13/bishops/boss,
-/turf/open/floor/plasteel/casino,
+/obj/structure/railing{
+	dir = 1;
+	color = '#9a4a3b'
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-04";
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
 "EI" = (
 /obj/structure/simple_door/metal/store,
@@ -7459,15 +7770,14 @@
 /area/f13/heist)
 "Fx" = (
 /obj/structure/table/wood/greyscale/varnished,
-/obj/machinery/computer/terminal{
-	icon_state = "lab";
-	icon_keyboard = "lab_key";
-	icon_screen = "lab_on";
-	pixel_y = 4
-	},
 /obj/item/reagent_containers/pill/mentat{
 	pixel_y = -5;
 	pixel_x = -8
+	},
+/obj/machinery/computer/security/wooden_tv{
+	icon_state = "lab";
+	icon_screen = null;
+	pixel_y = 4
 	},
 /turf/open/floor/carpet/red,
 /area/f13/heist)
@@ -7543,13 +7853,14 @@
 /turf/open/pool,
 /area/f13/heist)
 "FR" = (
-/obj/structure/chair/wood/fancy{
-	dir = 8
+/obj/structure/curtain{
+	color = '#6d2375';
+	anchored = 0
 	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/casino,
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/costume/kimono/black,
+/obj/item/storage/fancy/heart_box,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "FU" = (
 /obj/machinery/light,
@@ -7562,6 +7873,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
+"FW" = (
+/obj/structure/closet/crate/bin/trashbin{
+	pixel_x = 15
+	},
+/turf/open/floor/carpet/green,
+/area/f13/reno_sharkclub)
 "FX" = (
 /obj/structure/window{
 	dir = 1;
@@ -7908,6 +8225,10 @@
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukacherry{
 	pixel_x = -7
 	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = -3
+	},
 /turf/open/floor/carpet/red,
 /area/f13/heist)
 "Hz" = (
@@ -7958,6 +8279,16 @@
 "HJ" = (
 /turf/closed/wall/f13/wood/house,
 /area/f13/raiders)
+"HK" = (
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable"
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/reno_sharkclub)
 "HL" = (
 /obj/structure/table/reinforced,
 /obj/item/kitchen/knife/butcher,
@@ -8233,7 +8564,10 @@
 /area/f13/reno_prison)
 "IY" = (
 /obj/structure/table/reinforced,
-/obj/item/crowbar/abductor/heist,
+/obj/item/crowbar/abductor/heist{
+	pixel_y = 5;
+	pixel_x = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
 "Jb" = (
@@ -8341,7 +8675,7 @@
 "Jv" = (
 /obj/machinery/door/unpowered/house{
 	req_one_access_txt = "165";
-	name = "room B5"
+	name = "mayor's suite"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -8600,7 +8934,7 @@
 	name = "grandfather clock";
 	desc = "My, would you look at the time."
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Ku" = (
 /obj/docking_port/stationary{
@@ -8627,12 +8961,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "Kx" = (
-/obj/structure/barricade/tentleatheredge{
-	opacity = 0;
-	dir = 8
+/obj/structure/table/round,
+/obj/effect/spawner/lootdrop/f13/alcoholspawner{
+	pixel_y = 5
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13,
+/area/f13/reno_streets)
 "Kz" = (
 /obj/structure/table/reinforced,
 /obj/structure/junk/small/tv{
@@ -8727,10 +9061,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "KU" = (
-/obj/structure/chair/wood/fancy{
-	dir = 8
+/obj/structure/curtain{
+	color = '#6d2375';
+	anchored = 0
 	},
-/turf/open/floor/plasteel/casino,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "KZ" = (
 /obj/item/flag/locust,
@@ -8772,13 +9107,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "Lj" = (
-/obj/structure/barricade/tentleatheredge{
-	opacity = 0;
-	icon_state = "tent0";
-	dir = 1
+/obj/machinery/camera/preset/ncrcf{
+	dir = 9;
+	c_tag = "Briefing Room"
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
 "Lk" = (
 /obj/structure/railing{
 	dir = 1
@@ -8876,13 +9210,11 @@
 /turf/open/transparent/openspace/air,
 /area/f13/farmhousesouth)
 "LE" = (
-/obj/structure/barricade/tentleatheredge{
-	opacity = 0;
-	dir = 1;
-	pixel_y = -2
+/obj/structure/railing/corner{
+	layer = 4.25
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/reno_streets)
 "LG" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_west_building)
@@ -8985,12 +9317,11 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/heist)
 "Mo" = (
-/obj/structure/table/abductor,
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquartz{
-	pixel_y = 8;
-	pixel_x = -7
+/obj/structure/table/rolling,
+/obj/item/reagent_containers/food/snacks/fishing/lobster_deluxe{
+	pixel_y = 8
 	},
-/turf/open/floor/plasteel/casino,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "Mp" = (
 /obj/structure/closet/athletic_mixed,
@@ -9061,11 +9392,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "MA" = (
-/obj/machinery/light,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
-	icon_state = "rampdowntop";
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable";
 	dir = 4
 	},
+/obj/machinery/light,
+/turf/open/floor/wood/wood_diagonal,
 /area/f13/reno_sharkclub)
 "MD" = (
 /obj/structure/junk/small/table,
@@ -9123,11 +9456,28 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
 "Nc" = (
-/obj/structure/chair/sofa/luxury/corner{
-	dir = 8
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable";
+	dir = 1
 	},
-/turf/open/floor/carpet/purple,
+/obj/item/clothing/head/soft/hatmar,
+/obj/structure/mirror{
+	icon = 'icons/obj/wood_window.dmi';
+	icon_state = "storewindowbottom";
+	pixel_x = 32;
+	plane = -14
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
+"Nd" = (
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
+	},
+/obj/item/kirbyplants/random,
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/reno_streets)
 "Nf" = (
 /obj/structure/guncase,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/hobo,
@@ -9255,23 +9605,29 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "NH" = (
-/obj/effect/overlay/curb/west,
-/turf/open/floor/f13{
-	icon_state = "darkblue";
+/obj/structure/railing{
 	dir = 4;
-	sunlight_state = 1
+	color = '#9a4a3b'
 	},
+/obj/item/card/id/reno/bishops/key/suite1{
+	pixel_y = 7
+	},
+/obj/item/card/id/reno/bishops/key/suite2,
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
 "NI" = (
 /turf/closed/wall/mineral/concrete/blastproof/moresmooth,
 /area/f13/reno_prison)
 "NP" = (
-/obj/structure/barricade/tentleathercorner{
-	opacity = 0;
-	dir = 1
+/obj/structure/chair/wood/fancy/dark{
+	dir = 4
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/reno_sharkclub)
 "NR" = (
 /obj/structure/table/wood/fancy,
 /obj/structure/mirror{
@@ -9341,15 +9697,18 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhousesouth)
 "Og" = (
-/obj/machinery/light/fo13colored/Red{
-	dir = 8
+/obj/structure/railing/casino{
+	layer = 4.25
 	},
-/obj/structure/railing/casino,
+/obj/item/kirbyplants/random,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Oh" = (
 /obj/structure/table/wood/fancy/royalblack,
-/obj/item/reagent_containers/food/drinks/flask/vault113,
+/obj/item/reagent_containers/food/drinks/flask/vault113{
+	pixel_y = 5;
+	pixel_x = 1
+	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -9453,11 +9812,11 @@
 	dir = 8;
 	pixel_x = -2
 	},
-/obj/machinery/computer/judge_terminal/laptop{
-	dir = 4;
+/obj/machinery/computer/security/vault{
 	pixel_y = 4;
 	pixel_x = 1;
-	layer = 3.3
+	network = list("ncrcf");
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prison)
@@ -9483,6 +9842,9 @@
 /obj/structure/table/round,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
+"OI" = (
+/turf/open/pool,
+/area/f13/reno_sharkclub)
 "OJ" = (
 /obj/structure/chair/sofa/luxury/right,
 /turf/open/floor/carpet/reno/evil2,
@@ -9552,7 +9914,9 @@
 /obj/structure/chair/wood/fancy/dark{
 	dir = 4
 	},
-/obj/structure/railing/casino,
+/obj/structure/railing/casino{
+	layer = 4.25
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
 "Pg" = (
@@ -9722,6 +10086,11 @@
 "PO" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/red,
 /area/f13/reno_wasteland)
+"PP" = (
+/obj/structure/table/wood,
+/obj/item/wallframe/camera,
+/turf/open/floor/plating/tunnel,
+/area/f13/reno_prison)
 "PR" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 4;
@@ -9757,12 +10126,26 @@
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "PW" = (
-/obj/structure/barricade/tentleathercorner{
-	opacity = 0;
-	dir = 8
+/obj/structure/window/gothic/fulltile,
+/obj/machinery/door/poddoor/shutters/preopen{
+	layer = 3.25;
+	name = "office windows";
+	id = "bishop_office_windows"
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 4.1
+	},
+/obj/structure/decoration/fire{
+	icon_state = "bhole-staple";
+	layer = 3.5;
+	pixel_y = 2;
+	pixel_x = -3;
+	name = "bullet hole";
+	desc = "Seems the office had to shoot at somebody....now we have to replace this window."
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/reno_sharkclub)
 "PY" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/melee/classic_baton/police{
@@ -9793,6 +10176,13 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/theater)
+"Qh" = (
+/obj/structure/railing/corner{
+	color = '#9a4a3b';
+	layer = 4.25
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
+/area/f13/reno_sharkclub)
 "Qi" = (
 /obj/structure/chair/f13chair2,
 /obj/effect/decal/remains/human{
@@ -9900,6 +10290,13 @@
 	},
 /turf/open/floor/carpet/brown/lit,
 /area/f13/raiders)
+"QE" = (
+/obj/machinery/camera/preset/ncrcf{
+	dir = 4;
+	c_tag = "Command Center"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/reno_prison)
 "QF" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -9981,9 +10378,14 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_prison)
 "QX" = (
-/obj/structure/statue/uranium/nuke,
+/obj/structure/statue/uranium/nuke{
+	layer = 3.21
+	},
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
 "QY" = (
@@ -10420,6 +10822,10 @@
 "Sn" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/surgical,
+/obj/machinery/camera/preset/ncrcf{
+	dir = 8;
+	c_tag = "Medical Auxillary"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/reno_prison)
 "Sp" = (
@@ -10639,10 +11045,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "To" = (
-/obj/structure/chair/stool,
-/obj/effect/landmark/start/f13/bishops/wife,
-/obj/machinery/light,
-/turf/open/floor/plasteel/casino,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "Tq" = (
 /obj/structure/bed/oldalt,
@@ -10712,6 +11115,22 @@
 	},
 /obj/structure/table/booth,
 /turf/open/floor/plasteel/f13,
+/area/f13/reno_sharkclub)
+"TD" = (
+/obj/machinery/button/door{
+	pixel_x = -26;
+	id = "bishop_room_windows";
+	name = "windows"
+	},
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable_1tileendtable"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-18";
+	pixel_y = 12
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "TE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10867,6 +11286,18 @@
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Ux" = (
+/obj/structure/displaycase/trophy{
+	pixel_y = 10;
+	name = "rapier display case";
+	chance_initial_contents = /obj/item/storage/belt/sabre/rapier
+	},
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "bartable"
+	},
+/obj/machinery/light/floor{
+	color = '#db7dc3'
+	},
 /obj/structure/statue/diamond/indestructible/oldworldstatue{
 	pixel_x = -15;
 	pixel_y = 18
@@ -10940,7 +11371,8 @@
 /area/f13/enclave)
 "UM" = (
 /obj/item/card/id/rusted/rustedmedallion{
-	pixel_y = 3
+	pixel_y = 7;
+	pixel_x = 1
 	},
 /obj/structure/table/wood/fancy/royalblack,
 /turf/open/floor/wood/wood_diagonal,
@@ -10956,10 +11388,23 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/farmhousesouth)
 "UR" = (
-/obj/structure/chair/sofa/luxury/right{
-	dir = 8
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable_1tilethick"
 	},
-/turf/open/floor/carpet/purple,
+/obj/item/warpaint_bowl{
+	pixel_y = 10
+	},
+/obj/item/clothing/glasses/monocle{
+	pixel_y = -8
+	},
+/obj/structure/mirror{
+	icon = 'icons/obj/wood_window.dmi';
+	icon_state = "storewindowvertical";
+	pixel_x = 32;
+	plane = -14
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "US" = (
 /obj/structure/window,
@@ -11013,8 +11458,27 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/raider_mall)
 "Vf" = (
-/obj/effect/overlay/curb/north,
-/turf/open/floor/plasteel/casino,
+/obj/effect/overlay/curb/north{
+	pixel_y = 4
+	},
+/obj/effect/landmark/start/f13/bishops/boss,
+/obj/structure/chair/comfy/modern{
+	icon_state = "salonchair";
+	dir = 4;
+	layer = 4.1;
+	pixel_x = -1;
+	name = "salon chair";
+	pixel_y = 1;
+	can_buckle = 0
+	},
+/obj/structure/chair/comfy/modern{
+	icon_state = "salonchairalt";
+	dir = 1;
+	pixel_x = -1;
+	can_buckle = 0;
+	name = "salon chair"
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "Vg" = (
 /obj/machinery/smartfridge/bottlerack{
@@ -11159,18 +11623,25 @@
 /turf/open/transparent/openspace/air,
 /area/f13/reno_prison)
 "VN" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/deck{
-	pixel_y = 6
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable"
 	},
-/turf/open/floor/plasteel/casino,
+/obj/item/flashlight/lamp/green{
+	pixel_y = 8
+	},
+/obj/structure/decoration/clock/active{
+	pixel_y = 33;
+	pixel_x = 1
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "VO" = (
-/obj/structure/barricade/tentleathercorner{
-	opacity = 0
+/obj/structure/chair/comfy/plywood{
+	dir = 1
 	},
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13,
+/area/f13/reno_streets)
 "VP" = (
 /obj/item/blanket/ruined{
 	pixel_x = -6;
@@ -11439,7 +11910,7 @@
 	pixel_x = -6;
 	pixel_y = 9
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/water/deep,
 /area/f13/reno_sharkclub)
 "Xd" = (
 /obj/structure/chair/pew/left,
@@ -11534,9 +12005,12 @@
 /turf/closed/wall/mineral/stonewall,
 /area/f13/reno_west_building)
 "Xt" = (
-/obj/structure/table/abductor,
-/obj/item/storage/fancy/cigarettes/cigars/havana,
-/turf/open/floor/plasteel/casino,
+/obj/structure/table/wood{
+	icon = 'icons/fallout/objects/structures/tables.dmi';
+	icon_state = "classictable"
+	},
+/obj/item/flashlight/lamp/green,
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "Xu" = (
 /turf/open/indestructible/ground/outside/ruins{
@@ -11606,12 +12080,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_west_building)
 "XM" = (
-/obj/structure/chair/wood/fancy/dark{
-	dir = 8
+/obj/structure/railing{
+	layer = 4.25
 	},
-/obj/effect/landmark/start/f13/bishops/capo,
-/turf/open/floor/carpet/reno/evil2,
-/area/f13/reno_sharkclub)
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/reno_streets)
 "XO" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -11674,7 +12147,9 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/raiders)
 "XW" = (
-/obj/structure/railing/casino,
+/obj/structure/railing/casino{
+	layer = 4.25
+	},
 /obj/structure/table/round,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_streets)
@@ -11864,12 +12339,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_prison)
 "YR" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
-/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
-/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
-/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
-/turf/open/floor/plasteel/casino,
+/obj/structure/fireplace,
+/obj/structure/fireplace{
+	icon_state = "fireplace_fire4"
+	},
+/obj/structure/fireplace{
+	icon_state = "fireplace_glow"
+	},
+/turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "YT" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -11948,14 +12425,26 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_sharkclub)
 "Zn" = (
-/mob/living/simple_animal/pet/dog/corgi{
-	dir = 4;
-	icon_living = "tippen";
-	icon_state = "tippen";
-	icon_dead = "tippen_dead";
-	icon = 'icons/fallout/mobs/animals/dogs.dmi';
-	name = "Vinny";
-	real_name = "Vinny"
+/obj/structure/bookcase/manuals{
+	icon_state = "book-5";
+	density = 0;
+	pixel_y = 12;
+	anchored = 1
+	},
+/obj/item/custom/leechjar{
+	pixel_y = 35;
+	pixel_x = 4;
+	anchored = 1
+	},
+/obj/item/candle/infinite{
+	pixel_y = 29;
+	pixel_x = -8;
+	icon_state = "candle1_lit";
+	anchored = 1
+	},
+/obj/structure/sign/painting/library_private{
+	persistence_id = "dagmar_private";
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
@@ -12101,6 +12590,13 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
+"ZO" = (
+/obj/structure/chair/wood/fancy{
+	icon_state = "darkchair";
+	anchored = 0
+	},
+/turf/open/floor/wood/wood_diagonal,
+/area/f13/reno_sharkclub)
 "ZS" = (
 /obj/structure/simple_door/metal/store,
 /turf/open/floor/carpet/brown/lit,
@@ -12114,6 +12610,14 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/farmhousesouth)
+"ZY" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/camera/preset/ncrcf{
+	dir = 5;
+	c_tag = "C Block West"
+	},
+/turf/open/transparent/openspace/air,
+/area/f13/reno_prison)
 
 (1,1,1) = {"
 MV
@@ -12510,43 +13014,43 @@ eP
 eP
 eP
 eP
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+eP
+eP
 aI
 aI
 aI
-aI
-aI
-aI
+TU
 aI
 aI
 aI
 aI
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-eP
-eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -12662,43 +13166,43 @@ eP
 eP
 eP
 eP
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+eP
+eP
 aI
 aI
 aI
-aI
-aI
+TU
 aI
 aI
 aI
 aI
 aI
 eP
-eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -12814,43 +13318,43 @@ Je
 lp
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
 eP
 eP
 aI
 aI
 aI
-aI
+TU
 aI
 aI
 vd
 aI
 aI
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -12966,43 +13470,43 @@ Je
 lp
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
+Lt
 eP
 eP
 aI
 aI
 aI
-aI
+TU
 aI
 aI
 vd
 aI
 aI
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13118,43 +13622,43 @@ Je
 Je
 eP
 eP
-aI
-aI
-aI
-aI
+Lt
+Lt
+Lt
+Lt
 RW
-aI
+Lt
+eP
+Lt
+Lt
+Lt
+eP
 eP
 aI
 aI
 aI
-eP
-eP
-aI
-aI
-aI
-aI
+TU
 aI
 aI
 vd
 aI
 aI
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13270,43 +13774,43 @@ Je
 Je
 eP
 eP
-aI
-aI
+Lt
+Lt
 sy
 sy
 RW
 eP
 eP
 eP
-aI
-aI
+Lt
+Lt
 eP
 eP
 aI
 aI
 aI
-aI
+TU
 aI
 aI
 vd
 eP
 aI
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13422,7 +13926,7 @@ Je
 lp
 eP
 eP
-aI
+Lt
 sy
 sy
 sy
@@ -13431,34 +13935,34 @@ eP
 eP
 eP
 eP
-aI
+Lt
 eP
 eP
 aI
 aI
 aI
-aI
+TU
 aI
 aI
 eP
 eP
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13496,7 +14000,7 @@ wW
 zV
 dA
 Sd
-ue
+NI
 NI
 NI
 NI
@@ -13583,34 +14087,34 @@ eP
 eP
 eP
 eP
-aI
+Lt
 eP
 eP
 aI
 vd
 vd
-vd
+ue
 aI
 eP
 eP
 eP
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13642,13 +14146,13 @@ NI
 DP
 Cl
 rE
-My
-gn
+mv
+ZY
 sP
 zV
 zV
 xU
-bV
+Bo
 rE
 Cl
 Po
@@ -13735,34 +14239,34 @@ eP
 eP
 eP
 eP
-aI
+Lt
 eP
 eP
 aI
 aI
 aI
-aI
+TU
 aI
 aI
 eP
 eP
 eP
 eP
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
-aI
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
 eP
 eP
 eP
@@ -13794,7 +14298,7 @@ NI
 rE
 Xz
 bh
-My
+mv
 dp
 zV
 NI
@@ -13946,7 +14450,7 @@ gr
 rE
 bh
 bh
-My
+mv
 UA
 zV
 zV
@@ -14098,7 +14602,7 @@ gr
 rE
 bh
 bh
-bV
+Bo
 Aa
 zV
 zV
@@ -14314,12 +14818,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -14402,7 +14906,7 @@ wg
 rE
 bh
 gr
-My
+mv
 wN
 zV
 zV
@@ -14466,12 +14970,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -14554,7 +15058,7 @@ gr
 bh
 bh
 rE
-My
+mv
 sf
 zV
 NI
@@ -14618,12 +15122,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -14706,7 +15210,7 @@ NI
 LP
 HS
 rE
-My
+mv
 gn
 sP
 zV
@@ -14770,12 +15274,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -14858,7 +15362,7 @@ NI
 eV
 Vj
 rE
-bV
+Bo
 gn
 sP
 zV
@@ -14922,12 +15426,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15025,7 +15529,7 @@ ku
 gk
 kM
 NI
-la
+PP
 FH
 gr
 Ob
@@ -15074,12 +15578,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15226,12 +15730,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15378,12 +15882,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15530,12 +16034,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15682,12 +16186,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15834,12 +16338,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -15986,12 +16490,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16055,12 +16559,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
 eP
 eP
 eP
@@ -16138,12 +16642,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16202,17 +16706,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 eP
 eP
 eP
@@ -16290,12 +16794,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16353,21 +16857,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -16442,12 +16946,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16505,21 +17009,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -16531,7 +17035,7 @@ NI
 NI
 NI
 NI
-Dt
+cw
 zV
 nP
 YD
@@ -16594,12 +17098,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16657,21 +17161,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -16746,12 +17250,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16809,21 +17313,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -16898,12 +17402,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -16961,21 +17465,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -16983,7 +17487,7 @@ kf
 nL
 KR
 fK
-fK
+QE
 fK
 fK
 fK
@@ -17050,12 +17554,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+PO
+PO
+TU
+PO
+PO
+PO
 eP
 eP
 eP
@@ -17113,21 +17617,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -17265,21 +17769,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -17417,21 +17921,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -17569,21 +18073,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -17721,21 +18225,21 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 lp
 kf
 "}
@@ -17874,17 +18378,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
+fg
 eP
 eP
 eP
@@ -18031,12 +18535,12 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
+fg
+fg
+fg
+fg
+fg
+fg
 eP
 eP
 eP
@@ -18223,7 +18727,7 @@ rd
 rd
 iX
 fK
-fK
+Lj
 fK
 Rm
 fK
@@ -18296,32 +18800,32 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -18329,20 +18833,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -18448,32 +18952,32 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -18481,20 +18985,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -18600,32 +19104,32 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -18633,20 +19137,20 @@ eP
 eP
 eP
 eP
-lp
-lp
+we
+we
 GN
 GN
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -18748,36 +19252,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -18785,20 +19289,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -18900,36 +19404,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -18937,20 +19441,20 @@ eP
 eP
 eP
 eP
-lp
-lp
+we
+we
 GN
 GN
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19052,36 +19556,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19089,20 +19593,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19204,36 +19708,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19241,20 +19745,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19356,36 +19860,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19393,20 +19897,20 @@ eP
 eP
 eP
 eP
-lp
-lp
+we
+we
 GN
 GN
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19508,36 +20012,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19545,20 +20049,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19660,36 +20164,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19697,20 +20201,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19812,36 +20316,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -19849,20 +20353,20 @@ eP
 eP
 eP
 eP
-lp
-lp
+we
+we
 GN
 GN
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -19964,36 +20468,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -20001,20 +20505,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 GN
-lp
-lp
-lp
+we
+we
+we
 eP
 lp
 kf
@@ -20116,36 +20620,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -20153,20 +20657,20 @@ eP
 eP
 eP
 eP
-lp
-lp
+we
+we
 GN
 GN
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -20268,36 +20772,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -20305,20 +20809,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -20420,36 +20924,36 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 eP
 eP
 eP
@@ -20457,20 +20961,20 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
+we
 eP
 lp
 kf
@@ -22133,13 +22637,13 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -22285,13 +22789,13 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -22437,13 +22941,13 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -22589,13 +23093,13 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -22720,17 +23224,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -22741,13 +23245,13 @@ Wj
 Tz
 Tz
 Tz
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -22872,17 +23376,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -22893,13 +23397,13 @@ JQ
 sy
 sy
 sy
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -23024,17 +23528,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23045,13 +23549,13 @@ JQ
 sy
 sy
 sy
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -23176,17 +23680,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23197,13 +23701,13 @@ JQ
 sy
 sy
 sy
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -23328,17 +23832,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23349,13 +23853,13 @@ JQ
 sy
 sy
 sy
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -23480,17 +23984,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23501,13 +24005,13 @@ rX
 oh
 oh
 oh
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+BL
+BL
+BL
+TU
+BL
+BL
+BL
 eP
 eP
 eP
@@ -23632,17 +24136,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23784,17 +24288,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -23936,17 +24440,17 @@ eP
 eP
 eP
 eP
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+aI
+aI
+aI
+aI
+aI
+TU
+aI
+aI
+aI
+aI
+aI
 eP
 eP
 eP
@@ -31840,7 +32344,7 @@ nq
 nq
 nq
 nq
-nq
+PW
 nq
 Hp
 Kj
@@ -31992,14 +32496,14 @@ tj
 tj
 tj
 tj
-tj
+aF
 Aq
 Hp
 jt
-ij
-ij
+TD
+cF
 fA
-na
+ZO
 hX
 Ci
 eP
@@ -32140,7 +32644,7 @@ tz
 Ln
 Hp
 Vg
-tj
+FW
 tj
 tY
 Ub
@@ -32148,10 +32652,10 @@ tj
 tj
 Hp
 YR
-ij
-ij
-mv
-na
+To
+To
+KU
+SS
 na
 Ci
 eP
@@ -32297,13 +32801,13 @@ tj
 qR
 NY
 Bu
-tj
+uA
 Hp
 cz
-cz
-ij
-Hp
-qS
+To
+To
+KU
+SS
 MA
 Hp
 eP
@@ -32453,10 +32957,10 @@ tj
 Hp
 VN
 rl
-ij
-ij
-ij
-ij
+Xt
+KU
+SS
+fX
 Ly
 eP
 eP
@@ -32597,7 +33101,7 @@ JN
 Hp
 Hp
 kl
-by
+HK
 by
 by
 by
@@ -32605,9 +33109,9 @@ in
 Hp
 FR
 KU
-ij
-ij
-EH
+Bv
+KU
+SS
 ij
 Hp
 eP
@@ -32736,9 +33240,9 @@ eP
 Hp
 oY
 Uv
-Uv
-Uv
-Uv
+qS
+by
+BP
 Hp
 nV
 tj
@@ -32748,18 +33252,18 @@ JN
 Ln
 Hp
 Kt
-cD
-cD
-cD
-cD
-cD
-cD
+vi
+NP
+SS
+SS
+SS
+SS
 Jv
-ij
-ij
-ij
-ij
-Xt
+xj
+xj
+xj
+SS
+SS
 Mo
 Kj
 eP
@@ -32887,10 +33391,10 @@ eP
 eP
 Rr
 Ea
-Uv
-Uv
-Uv
-Uv
+tE
+on
+Dm
+OI
 Hp
 uI
 yM
@@ -32899,19 +33403,19 @@ JN
 XS
 Mh
 Hp
-by
-vU
-cD
-cD
-cD
-cD
+hM
+Uv
+mQ
+SS
+SS
+SS
 GK
 Hp
 NH
-NH
+Qh
 hv
-Vf
-ij
+ym
+To
 To
 Hp
 eP
@@ -33040,9 +33544,9 @@ eP
 Hp
 CM
 Uv
-Uv
-Uv
-Uv
+on
+OI
+OI
 Hp
 OJ
 UZ
@@ -33052,18 +33556,18 @@ Ll
 bw
 Hp
 BM
-by
-cD
-cD
-cD
-cD
+mG
+CE
+SS
+SS
+SS
 Ez
 Hp
-by
-by
+vU
+ao
 ml
 Vf
-na
+To
 pN
 Kj
 eP
@@ -33192,9 +33696,9 @@ eP
 Rr
 Yv
 Uv
-Uv
-Uv
-Uv
+on
+Aw
+OI
 Hp
 HG
 og
@@ -33205,15 +33709,15 @@ ss
 Hp
 tZ
 aV
-ne
-cD
-cD
+ko
+SS
+SS
 ne
 rZ
 Hp
 Xc
-by
-ml
+ao
+EH
 ot
 UR
 Nc
@@ -33818,7 +34322,7 @@ Uv
 Uv
 Px
 Px
-XM
+Px
 Uv
 Uv
 Oo
@@ -34124,7 +34628,7 @@ zS
 bk
 qC
 Uv
-Bo
+Uv
 Oo
 gA
 Oo
@@ -35316,13 +35820,13 @@ eP
 eP
 eP
 eP
-jw
-Bm
-Bm
-Bm
-Bm
-Bm
-Bm
+MO
+UT
+el
+el
+UT
+el
+LE
 Bm
 Bm
 Bm
@@ -35468,22 +35972,22 @@ eP
 eP
 eP
 eP
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-NP
+MO
+Ax
+VO
+el
 Kx
-Kx
-Kx
-Kx
-kR
+VO
+XM
+eP
+eP
+eP
+eP
+eP
+eP
+eP
+eP
+eP
 eP
 eP
 eP
@@ -35620,6 +36124,13 @@ eP
 eP
 eP
 eP
+jw
+Bm
+Bm
+Bm
+Bm
+Bm
+Nd
 eP
 eP
 eP
@@ -35629,13 +36140,6 @@ eP
 eP
 eP
 eP
-eP
-LE
-Lj
-Lj
-Lj
-Lj
-nh
 eP
 eP
 eP
@@ -35782,12 +36286,12 @@ eP
 eP
 eP
 eP
-LE
-Lj
-Lj
-Lj
-Lj
-nh
+eP
+eP
+eP
+eP
+eP
+eP
 eP
 eP
 eP
@@ -35934,12 +36438,12 @@ eP
 eP
 eP
 eP
-LE
-Lj
-Lj
-Lj
-Lj
-nh
+eP
+eP
+eP
+eP
+eP
+eP
 eP
 eP
 eP
@@ -36086,12 +36590,12 @@ eP
 eP
 eP
 eP
-LE
-Lj
-Lj
-Lj
-Lj
-nh
+eP
+eP
+eP
+eP
+eP
+eP
 eP
 eP
 eP
@@ -36238,15 +36742,15 @@ eP
 eP
 eP
 eP
-PW
-ao
-ao
-ao
-ao
-VO
-ao
-ao
-ao
+eP
+eP
+eP
+eP
+eP
+eP
+eP
+eP
+eP
 we
 eP
 eP
@@ -42831,7 +43335,7 @@ Ps
 Ps
 is
 is
-on
+Ps
 QX
 Vy
 Xd
@@ -49961,7 +50465,7 @@ lT
 lT
 lT
 lT
-hM
+Se
 "}
 (250,1,1) = {"
 nb

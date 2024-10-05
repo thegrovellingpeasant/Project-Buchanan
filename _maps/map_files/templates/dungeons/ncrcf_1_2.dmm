@@ -1454,10 +1454,8 @@
 /area/f13/tunnel)
 "wv" = (
 /obj/machinery/door/unpowered/employeedoor,
-/turf/closed/wall/f13/store{
-	desc = "A pre-War wall made of solid concrete.";
-	name = "basement wall";
-	baseturfs = /turf/open/indestructible/ground/inside/mountain
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating"
 	},
 /area/f13/reno_building)
 "wK" = (

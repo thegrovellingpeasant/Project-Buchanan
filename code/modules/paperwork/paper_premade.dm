@@ -705,3 +705,11 @@ Temperance Union members harbor a deep-seated distrust in the effectiveness of c
 	desc = "If you're reading this it means the first girlboss senator has failed utterly. - Kimball and the Boys."
 	icon_state = "paper_words"
 	info = "ChopChop please."
+
+/obj/item/paper/bishops
+	name = "Word to the Wise Guys"
+	desc = "A note detailing a potentially lucrative deal in the underground chem trade."
+	icon_state = "paper_words"
+	info = {"<center>Money Making Opportunity</center><br><br>
+To anyone interested in making some caps, we've cut a deal with the prison commissary robot to begin moving chems into the prison. Get the chems from our supply in the Shark Club, sneak them in somehow, load up his machine, cash out, and find a way to get the caps out of the prison. Don't screw this up, capisce?<br><br><br>
+<center>- Yours truly and anonymously</center>"}

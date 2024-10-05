@@ -380,8 +380,7 @@
 /area/shuttle/escape)
 "yj" = (
 /obj/structure/chair/sofa/corp/corner{
-	dir = 8;
-	pixel_y = 2
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/side{
 	sunlight_state = 1;
@@ -526,7 +525,7 @@
 	},
 /area/shuttle/escape)
 "Ig" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
@@ -547,7 +546,9 @@
 	},
 /area/shuttle/escape)
 "IV" = (
-/obj/structure/table/roulette,
+/obj/structure/table/roulette{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	sunlight_state = 1;
 	dir = 8
@@ -590,7 +591,8 @@
 	},
 /obj/structure/sign/reno/barsign/sharkclub{
 	pixel_x = -16;
-	plane = -4
+	plane = -4;
+	layer = 4.1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/shuttle/escape)
@@ -812,9 +814,8 @@
 	},
 /area/shuttle/escape)
 "ZT" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 1;
-	pixel_y = 2
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/side{
 	sunlight_state = 1

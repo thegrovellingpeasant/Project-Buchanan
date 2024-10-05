@@ -57,10 +57,10 @@
 	c_tag = "New Reno"
 	network = list("nrpd")
 
-/obj/machinery/camera/preset/goldenglobes
+/obj/machinery/camera/preset/ncrcf
 	name = "security camera"
-	c_tag = "Golden Globes"
-	network = list("goldenglobes")
+	c_tag = "NCR Correctional Facility"
+	network = list("ncrcf")
 
 /obj/machinery/camera/Initialize(mapload, obj/structure/camera_assembly/CA)
 	. = ..()
