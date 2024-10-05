@@ -6,36 +6,38 @@
 /obj/structure/railing{
 	dir = 8;
 	layer = 3.3;
-	pixel_x = -1
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "e" = (
 /obj/structure/railing{
 	pixel_y = -1;
-	layer = 4.25
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "f" = (
 /obj/structure/railing{
 	dir = 10;
-	layer = 4.25
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "g" = (
 /obj/structure/railing/corner{
-	layer = 4.25;
 	dir = 8;
-	pixel_x = -3
+	pixel_x = -3;
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "h" = (
 /obj/structure/railing{
 	layer = 4.25;
-	pixel_y = -10
+	pixel_y = -10;
+	pixel_x = 2;
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -60,7 +62,7 @@
 "q" = (
 /obj/structure/railing{
 	pixel_y = 3;
-	layer = 4.25
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
@@ -70,8 +72,8 @@
 "u" = (
 /obj/structure/railing{
 	dir = 10;
-	layer = 4.25;
-	pixel_y = 3
+	pixel_y = 3;
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
@@ -95,21 +97,25 @@
 /obj/structure/railing{
 	dir = 10;
 	pixel_x = -4;
-	layer = 2.81
+	layer = 2.81;
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "M" = (
 /obj/structure/railing{
 	dir = 5;
-	pixel_x = 4
+	pixel_x = 2;
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
 "N" = (
 /obj/structure/railing{
 	layer = 4.26;
-	pixel_y = -4
+	pixel_y = -4;
+	pixel_x = -2;
+	resistance_flags = 115
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -125,8 +131,8 @@
 /area/f13/caves)
 "R" = (
 /obj/structure/railing/corner{
-	layer = 4.25;
-	dir = 8
+	dir = 8;
+	resistance_flags = 115
 	},
 /turf/open/lava,
 /area/f13/caves)
