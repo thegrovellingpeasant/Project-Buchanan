@@ -8297,6 +8297,15 @@
 "HM" = (
 /turf/closed/wall/gothic,
 /area/f13/raider_mall)
+"HO" = (
+/obj/structure/window/fulltile/ruins{
+	icon_state = "ruinswindowvertical"
+	},
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_prison)
 "HQ" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -18864,14 +18873,14 @@ AL
 AL
 yd
 AL
-BA
-BA
+HO
+HO
 gs
 NI
 NI
 NI
-BA
-BA
+HO
+HO
 gs
 NI
 NI

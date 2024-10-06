@@ -3967,7 +3967,8 @@
 "bIa" = (
 /obj/machinery/light/lampost{
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontalwest0"
@@ -4919,10 +4920,11 @@
 /turf/open/floor/carpet/reno/evil/lit,
 /area/f13/reno_east_building)
 "cfd" = (
-/obj/structure/fence/handrail{
+/obj/structure/railing/handrail{
+	dir = 4;
+	layer = 3.88;
 	density = 0;
-	dir = 1;
-	pixel_y = 18
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -4988,7 +4990,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/reno_building)
 "cgD" = (
-/obj/machinery/light/lampost,
+/obj/machinery/light/lampost{
+	layer = 4.5
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outerpavementalt";
 	dir = 6
@@ -5089,8 +5093,12 @@
 /area/f13/chapel)
 "cjC" = (
 /obj/structure/table/wood/fancy/black,
-/obj/item/reagent_containers/food/snacks/eggplantparm,
-/obj/item/clothing/mask/cigarette/cigar/havana,
+/obj/item/reagent_containers/food/snacks/eggplantparm{
+	pixel_y = 6
+	},
+/obj/item/clothing/mask/cigarette/cigar/havana{
+	pixel_y = 5
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "cjF" = (
@@ -6364,7 +6372,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
-	icon_state = "fly"
+	icon_state = "fly";
+	plane = -15
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/raiders)
@@ -6960,12 +6969,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "cYf" = (
-/obj/machinery/button{
-	id = "gas1";
-	pixel_y = -32;
-	pixel_x = 9
-	},
 /obj/effect/overlay/junk/curtain,
+/obj/machinery/button/door{
+	id = "gas2";
+	pixel_x = 9;
+	pixel_y = -32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_building)
 "cYy" = (
@@ -8602,9 +8611,10 @@
 /turf/open/floor/carpet/lit,
 /area/f13/chapel)
 "dJq" = (
-/obj/structure/fence/handrail_corner{
-	pixel_x = 16;
-	pixel_y = -9
+/obj/structure/railing/handrail{
+	dir = 6;
+	layer = 4.1;
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -9185,7 +9195,8 @@
 "dZh" = (
 /obj/machinery/light/lampost{
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk/bottom,
 /area/f13/reno_wasteland)
@@ -9648,7 +9659,9 @@
 	pixel_x = -4;
 	density = 1
 	},
-/turf/closed/wall/gothic,
+/turf/closed/wall/gothic{
+	opacity = 0
+	},
 /area/f13/reno_sharkclub)
 "eji" = (
 /obj/structure/barricade/wooden,
@@ -13430,7 +13443,7 @@
 	},
 /obj/structure/fence{
 	dir = 8;
-	layer = 2.88
+	layer = 2.89
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -13889,7 +13902,9 @@
 /area/f13/reno_east_building)
 "gaP" = (
 /obj/structure/table,
-/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty/lit,
 /area/f13/vangraffs)
 "gbv" = (
@@ -14798,7 +14813,14 @@
 /area/f13/reno_east_building)
 "gvX" = (
 /obj/structure/table,
-/obj/item/folder/red,
+/obj/item/folder/syndicate{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/item/folder/red{
+	pixel_y = 4;
+	pixel_x = -10
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/vangraffs)
 "gwn" = (
@@ -15327,15 +15349,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
 "gFx" = (
-/obj/structure/fence/handrail{
-	dir = 8;
-	pixel_x = -12
-	},
-/obj/structure/fence/handrail{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = -10
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
 "gFA" = (
@@ -17725,7 +17739,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/car/rubbish3{
 	pixel_x = -2;
-	pixel_y = -32;
+	pixel_y = -24;
 	bound_height = 32;
 	layer = 3
 	},
@@ -18068,7 +18082,8 @@
 "hKZ" = (
 /obj/machinery/light/lampost{
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/dirt/north{
 	icon = 'icons/fallout/turfs/renodirt.dmi'
@@ -18357,7 +18372,7 @@
 	},
 /obj/structure/fence{
 	dir = 8;
-	layer = 2.88
+	layer = 2.89
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -20497,10 +20512,10 @@
 	},
 /area/f13/nrpd)
 "iMG" = (
-/obj/structure/fence/handrail_corner{
-	dir = 1;
-	pixel_x = -12;
-	pixel_y = -9
+/obj/structure/railing/handrail{
+	dir = 10;
+	layer = 4.1;
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -21488,7 +21503,9 @@
 	},
 /area/f13/reno_wasteland)
 "jfJ" = (
-/obj/machinery/light/lampost,
+/obj/machinery/light/lampost{
+	layer = 4.5
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontaleast0"
 	},
@@ -22043,7 +22060,8 @@
 	pixel_y = 25;
 	icon = 'icons/fallout/objects/structures/desperado.dmi';
 	pixel_x = -3;
-	name = "The Desperado"
+	name = "The Desperado";
+	layer = 4.5
 	},
 /turf/open/floor/carpet/red/lit/nosmooth,
 /area/f13/reno_streets)
@@ -22072,8 +22090,9 @@
 	dir = 4;
 	pixel_x = -16;
 	pixel_y = -3;
-	network = list("thunderdome");
-	anchored = 0
+	network = list("goldenglobes");
+	anchored = 0;
+	c_tag = "Reno League Baseball"
 	},
 /turf/open/indestructible/ground/outside/reno_road/horizontaltopborder,
 /area/f13/reno_streets)
@@ -25129,6 +25148,10 @@
 	name = "office chair";
 	dir = 8
 	},
+/obj/structure/sign/painting/library{
+	pixel_x = 32;
+	pixel_y = -16
+	},
 /turf/open/floor/carpet/brown,
 /area/f13/nrpd)
 "kEo" = (
@@ -26770,16 +26793,12 @@
 /turf/open/floor/carpet/red/lit,
 /area/f13/theater)
 "ljK" = (
-/obj/structure/fence/handrail{
-	dir = 1;
-	pixel_y = -9
+/obj/structure/railing/handrail{
+	pixel_y = -1
 	},
-/obj/structure/fence/handrail{
-	dir = 1;
-	pixel_x = 18;
-	pixel_y = -9
+/turf/open/floor/wood/f13/stage_t{
+	sunlight_state = 1
 	},
-/turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
 "ljX" = (
 /turf/open/indestructible/ground/outside/reno_road/horizontalbottomborder{
@@ -30462,7 +30481,13 @@
 /area/f13/enclave)
 "mKn" = (
 /obj/structure/table,
-/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor{
+	pixel_x = 17;
+	pixel_y = 1
+	},
+/obj/item/storage/belt/utility/full{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty/lit,
 /area/f13/vangraffs)
 "mKt" = (
@@ -31036,20 +31061,8 @@
 /turf/open/indestructible/ground/outside/reno_road/verticalrightborder,
 /area/f13/reno_streets)
 "mXE" = (
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 4;
-	layer = 3.1;
-	pixel_x = -16
-	},
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 4;
-	layer = 3.1;
-	pixel_x = -16;
-	pixel_y = 19
-	},
-/turf/open/floor/wood/f13/stage_r{
+/obj/item/chair/stool,
+/turf/open/floor/wood/f13/stage_t{
 	sunlight_state = 1
 	},
 /area/f13/reno_building)
@@ -32812,7 +32825,13 @@
 /area/f13/reno_prison)
 "nMt" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/mug,
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_y = -13;
+	pixel_x = 8
+	},
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/vangraffs)
 "nMw" = (
@@ -32995,10 +33014,15 @@
 /turf/open/floor/carpet/green/lit/nosmooth,
 /area/f13/reno_west_building)
 "nRk" = (
-/obj/structure/fence/handrail_corner{
+/obj/structure/railing/handrail{
+	dir = 5;
+	pixel_y = 21
+	},
+/obj/structure/railing/handrail{
 	dir = 4;
-	pixel_x = 16;
-	pixel_y = 18
+	layer = 3.88;
+	density = 0;
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -33336,17 +33360,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/reno_building)
 "nYc" = (
-/obj/structure/fence/handrail{
-	dir = 8;
-	pixel_x = -12
+/turf/closed/wall/r_wall/gothic/rivet{
+	opacity = 0
 	},
-/obj/structure/fence/handrail{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 27
-	},
-/turf/open/floor/carpet/black/lit,
-/area/f13/reno_building)
+/area/f13/nrpd)
 "nYz" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
@@ -34811,7 +34828,8 @@
 "oER" = (
 /obj/machinery/light/sign/shark_club{
 	icon_state = "shark_club2";
-	pixel_y = 6
+	pixel_y = 6;
+	layer = 4.5
 	},
 /turf/open/floor/carpet/red/lit/nosmooth,
 /area/f13/reno_streets)
@@ -35014,10 +35032,10 @@
 "oLf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/button{
+/obj/machinery/button/door{
 	id = "gas1";
-	pixel_y = -32;
-	pixel_x = -9
+	pixel_x = -9;
+	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_building)
@@ -35403,7 +35421,11 @@
 	},
 /area/f13/reno_wasteland)
 "oWf" = (
-/obj/item/clothing/gloves/boxing,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/gloves/boxing{
+	pixel_y = 9;
+	pixel_x = 6
+	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
 "oWg" = (
@@ -37654,7 +37676,9 @@
 /area/f13/farmhousesouth)
 "pUG" = (
 /obj/structure/car/rubbish3,
-/obj/machinery/light/lampost,
+/obj/machinery/light/lampost{
+	layer = 4.5
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontaleast0"
 	},
@@ -38130,7 +38154,9 @@
 	pixel_x = -4;
 	density = 1
 	},
-/turf/closed/wall/gothic,
+/turf/closed/wall/gothic{
+	opacity = 0
+	},
 /area/f13/nrpd)
 "qcA" = (
 /obj/structure/table/wood,
@@ -38509,7 +38535,9 @@
 /area/f13/reno_wasteland)
 "qlO" = (
 /obj/structure/wreck/trash/engine,
-/obj/machinery/light/lampost,
+/obj/machinery/light/lampost{
+	layer = 4.5
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outerpavementalt";
 	dir = 6
@@ -41600,19 +41628,8 @@
 	},
 /area/f13/reno_east_building)
 "rxP" = (
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 4;
-	layer = 3.1;
-	pixel_x = -16;
-	pixel_y = -10
-	},
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 4;
-	layer = 3.1;
-	pixel_x = -16
-	},
+/obj/structure/chair/stool,
+/obj/item/reagent_containers/glass/rag/towel,
 /turf/open/floor/wood/f13/stage_r{
 	sunlight_state = 1
 	},
@@ -43480,7 +43497,8 @@
 "smR" = (
 /obj/machinery/light/lampost{
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "verticaltop0"
@@ -45683,9 +45701,8 @@
 /turf/open/floor/wood/lit,
 /area/f13/chapel)
 "tmp" = (
-/obj/structure/fence/handrail{
-	dir = 1;
-	pixel_y = -9
+/obj/structure/railing/handrail{
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -45780,10 +45797,15 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
 "toz" = (
-/obj/structure/fence/handrail_corner{
+/obj/structure/railing/handrail{
+	dir = 9;
+	pixel_y = 21;
+	layer = 3.9
+	},
+/obj/structure/railing/handrail{
 	dir = 8;
-	pixel_x = -12;
-	pixel_y = 18
+	layer = 3.88;
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -46808,7 +46830,8 @@
 /obj/machinery/light/sign/pepgas{
 	pixel_x = -25;
 	density = 1;
-	bound_width = 32
+	bound_width = 32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_wasteland)
@@ -47482,16 +47505,10 @@
 /turf/open/indestructible/ground/outside/reno_road/horizontalbottomborder,
 /area/f13/reno_streets)
 "ubh" = (
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 4;
-	layer = 3.1;
-	pixel_x = -16
+/turf/closed/wall/gothic{
+	opacity = 0
 	},
-/turf/open/floor/wood/f13/stage_r{
-	sunlight_state = 1
-	},
-/area/f13/reno_building)
+/area/f13/reno_sharkclub)
 "ubi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -47526,6 +47543,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/reno_prison)
 "ubW" = (
+/obj/item/reagent_containers/glass/bucket/plastic,
 /turf/open/floor/wood/f13/stage_br{
 	sunlight_state = 1
 	},
@@ -48204,10 +48222,6 @@
 /obj/item/radio/intercom/mayorsecretaryintercom{
 	plane = -4
 	},
-/obj/structure/noticeboard/letterbox{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /turf/open/floor/carpet/brown,
 /area/f13/nrpd)
 "utm" = (
@@ -48400,7 +48414,8 @@
 /area/f13/reno_streets)
 "uxL" = (
 /obj/machinery/light/sign/reno_sign{
-	pixel_y = 6
+	pixel_y = 6;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "reno_arch";
@@ -49775,18 +49790,9 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
 "vaJ" = (
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 1;
-	pixel_x = 18;
-	pixel_y = 18
-	},
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 1;
-	pixel_y = 18
-	},
-/turf/open/floor/carpet/black/lit,
+/obj/structure/table/wood/settler,
+/obj/item/clothing/gloves/boxing/green,
+/turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
 "vaS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -49980,17 +49986,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/reno_east_building)
 "vgp" = (
-/obj/structure/fence/handrail{
+/obj/structure/railing/handrail{
+	dir = 4;
+	layer = 3.88;
 	density = 0;
-	dir = 1;
-	pixel_y = 18
+	pixel_y = -1
 	},
-/obj/structure/fence/handrail{
-	density = 0;
-	dir = 1;
-	pixel_x = -14;
-	pixel_y = 18
-	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
 "vgt" = (
@@ -50990,7 +50992,8 @@
 "vBe" = (
 /obj/machinery/light/lampost{
 	dir = 1;
-	pixel_x = -32
+	pixel_x = -32;
+	layer = 4.5
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontaleast0"
@@ -53615,7 +53618,9 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_west_building)
 "wBw" = (
-/obj/machinery/light/lampost,
+/obj/machinery/light/lampost{
+	layer = 4.5
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outerpavementalt"
 	},
@@ -54321,9 +54326,10 @@
 	},
 /area/f13/reno_streets)
 "wPd" = (
-/obj/structure/fence/handrail{
+/obj/structure/railing/handrail{
 	dir = 8;
-	pixel_x = -12
+	layer = 3.88;
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/black/lit,
 /area/f13/reno_building)
@@ -56387,17 +56393,16 @@
 	},
 /area/f13/reno_building)
 "xHZ" = (
-/obj/structure/fence/handrail{
-	dir = 1;
-	pixel_y = -9
+/obj/structure/fence{
+	dir = 8;
+	layer = 2.89
 	},
-/obj/structure/fence/handrail{
+/turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
-	pixel_x = -13;
-	pixel_y = -9
+	icon_state = "midpavement";
+	icon = 'icons/fallout/turfs/reno_sidewalk.dmi'
 	},
-/turf/open/floor/carpet/black/lit,
-/area/f13/reno_building)
+/area/f13/reno_wasteland)
 "xIM" = (
 /obj/effect/spawner/structure/window/hollow/end,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -72051,7 +72056,7 @@ dtL
 vYj
 nes
 dsP
-lYg
+xHZ
 gkm
 taG
 jEZ
@@ -72066,8 +72071,8 @@ ksE
 mqI
 mqI
 lZD
-mqI
-mqI
+nYc
+nYc
 jxU
 jrk
 hpz
@@ -72355,7 +72360,7 @@ dtL
 vYj
 nes
 dsP
-lYg
+xHZ
 gAP
 taG
 taG
@@ -76527,7 +76532,7 @@ vNX
 guh
 dYg
 dYg
-hsS
+vaJ
 hsS
 oWT
 gQp
@@ -77135,12 +77140,12 @@ gQp
 oWT
 gQp
 uVn
-eUD
+mXE
 toz
-nYc
 wPd
 wPd
-gFx
+wPd
+wPd
 iMG
 fMF
 jbq
@@ -77287,13 +77292,13 @@ gQp
 kCC
 gQp
 gQp
-eUD
-vgp
+ljK
 kNE
 kNE
-kNE
+gFx
+gFx
 fHv
-xHZ
+tmp
 fMF
 gQp
 gQp
@@ -77422,8 +77427,8 @@ dMO
 yjq
 dMO
 yjq
-dMO
-nLz
+gfR
+ubh
 vyZ
 oER
 hpz
@@ -77439,10 +77444,10 @@ hsS
 hzO
 gQp
 riQ
-eUD
-cfd
+ljK
 kNE
 kNE
+gFx
 kNE
 kNE
 tmp
@@ -77591,9 +77596,9 @@ mhM
 mhM
 gQp
 uVn
-eUD
-cfd
+ljK
 kNE
+gFx
 kNE
 kNE
 kNE
@@ -77743,13 +77748,13 @@ xvV
 fJZ
 gQp
 gQp
-eUD
-vaJ
+ljK
+kNE
 oWf
 kNE
 kNE
 kNE
-ljK
+tmp
 fMF
 gQp
 bmj
@@ -77897,10 +77902,10 @@ gQp
 riQ
 eUD
 nRk
-kNE
-kNE
-kNE
-kNE
+cfd
+vgp
+vgp
+cfd
 dJq
 fMF
 vaD
@@ -78033,7 +78038,7 @@ wLX
 owh
 owh
 mhr
-dMO
+gfR
 vSh
 jdg
 rZU
@@ -78049,11 +78054,11 @@ xvV
 uVn
 rRL
 cuk
-mXE
-ubh
-ubh
-rxP
 cuk
+cuk
+cuk
+cuk
+rxP
 ubW
 jbq
 gQp

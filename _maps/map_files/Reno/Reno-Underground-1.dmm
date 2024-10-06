@@ -3318,7 +3318,7 @@
 /area/f13/reno_subway)
 "ccT" = (
 /obj/structure/stone_tile/slab,
-/obj/machinery/button{
+/obj/machinery/button/door{
 	pixel_y = -25;
 	id = "bear"
 	},
@@ -9463,10 +9463,6 @@
 	pixel_x = -6;
 	layer = 2.99
 	},
-/obj/item/mmi/posibrain/f13{
-	pixel_x = -8;
-	pixel_y = 8
-	},
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/reno_subway)
 "fxC" = (
@@ -11211,10 +11207,6 @@
 "gvO" = (
 /obj/structure/mirelurkegg,
 /turf/open/floor/plating/dirt/dark,
-/area/f13/reno_sewers)
-"gwl" = (
-/obj/structure/simple_door/bunker/glass,
-/turf/open/indestructible/ground/outside/road,
 /area/f13/reno_sewers)
 "gwm" = (
 /obj/effect/mob_spawn/human/corpse/ncr{
@@ -45105,7 +45097,7 @@ uFw
 uFw
 uFw
 uFw
-gwl
+tTl
 uFw
 mds
 "}

@@ -4759,7 +4759,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "eyr" = (
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
@@ -17498,7 +17498,6 @@
 "pve" = (
 /obj/structure/wreck/bus/blue/alt{
 	bound_height = 160;
-	bound_width = 64;
 	layer = 2.1
 	},
 /obj/effect/overlay/shadow,
@@ -21991,9 +21990,8 @@
 	},
 /area/f13/enclave)
 "tgs" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 1;
-	pixel_x = -5
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
 	},
 /obj/structure/sign/poster/contraband/pinup_couch{
 	pixel_y = -32
@@ -22517,9 +22515,8 @@
 /turf/open/floor/plasteel/cult,
 /area/f13/casinobasement)
 "tFh" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 1;
-	pixel_x = -1
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
 	},
 /turf/open/floor/wood/f13/oakbroken4,
 /area/f13/followers)

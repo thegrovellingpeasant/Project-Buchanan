@@ -23228,7 +23228,6 @@
 "wvk" = (
 /obj/structure/railing{
 	color = "#A47449";
-	layer = 4.25;
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak/lit,
