@@ -332,7 +332,7 @@ Electric Fences subtype - for use at NCRCF
 	update_cut_status()
 
 /obj/structure/fence/electric_fence/proc/locate_generator()
-	fusion_generator = locate()
+	fusion_generator = locate(/obj/machinery/power/fusion_generator/ncrcf)
 
 /obj/structure/fence/electric_fence/examine(mob/user)
 	. = ..()
