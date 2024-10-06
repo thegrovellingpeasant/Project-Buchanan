@@ -279,7 +279,7 @@
 
 
 /obj/structure/closet/crate/grave/ark
-	name = "Ark of the Convenent"
+	name = "The Ark"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "ark"
@@ -359,7 +359,7 @@
     explosion(src,5,5,6,6)
 
 /obj/structure/closet/crate/grave/experimental_crate
-	name = "Experimental Crate"
+	name = "The Prototype"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "prototype"
