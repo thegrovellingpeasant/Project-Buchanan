@@ -39,6 +39,8 @@ GLOBAL_VAR_INIT(cmp_field, "name")
 	return sorttext(b.name, a.name)
 
 /proc/cmp_subsystem_priority(datum/controller/subsystem/a, datum/controller/subsystem/b)
+	if(islist(a) && islist(b))
+		return a[1].priority - b[1].priority
 	return a.priority - b.priority
 
 /proc/cmp_timer(datum/timedevent/a, datum/timedevent/b)
