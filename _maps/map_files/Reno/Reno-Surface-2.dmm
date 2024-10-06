@@ -3741,6 +3741,20 @@
 	},
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
+"bDH" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = -4;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria/lit{
+	icon_state = "bar"
+	},
+/area/f13/wrights)
 "bDM" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
@@ -5873,6 +5887,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/raiders)
+"cBJ" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/f13/wrights)
 "cBY" = (
 /turf/closed/wall/f13/store,
 /area/f13/reno_east_building)
@@ -6405,7 +6425,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/head/helmet/f13/wrights/boater{
-	pixel_y = 14
+	pixel_y = 14;
+	layer = 4.25
 	},
 /turf/open/floor/wood/wood_diagonal,
 /area/f13/wrights)
@@ -8253,7 +8274,7 @@
 /area/f13/reno_tribal)
 "dAU" = (
 /obj/structure/table,
-/obj/item/clothing/head/helmet/f13/wrights/conductor,
+/obj/item/clothing/head/helmet/f13/wrights/flatcap,
 /turf/open/floor/plasteel/casino/lit,
 /area/f13/wrights)
 "dBj" = (
@@ -11549,7 +11570,8 @@
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "classictable_1tilethick"
+	icon_state = "classictable_1tilethick";
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -13872,8 +13894,9 @@
 	},
 /area/f13/reno_streets)
 "fZS" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_x = 32;
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria/lit{
 	icon_state = "bar"
@@ -15058,7 +15081,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/reno_wasteland)
 "gAe" = (
-/obj/structure/closet/locker,
+/obj/structure/closet/firecloset,
+/obj/item/clothing/suit/fire,
+/obj/item/clothing/head/helmet/f13/firefighter,
 /obj/item/clothing/under/f13/wrights/worker1,
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
@@ -17002,13 +17027,11 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_streets)
 "hoh" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/table,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
 	},
-/obj/structure/chair/wood/fancy/christmas{
-	dir = 4
-	},
-/turf/open/floor/wood/wood_diagonal/lit,
+/turf/open/floor/plasteel/casino/lit,
 /area/f13/wrights)
 "hol" = (
 /obj/structure/sign/reno/barsign/newrenoarms{
@@ -20844,6 +20867,13 @@
 /obj/machinery/processor/chopping_block,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/farmhouse)
+"iTe" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
+	},
+/turf/open/floor/f13/rusty/lit,
+/area/f13/wrights)
 "iTF" = (
 /obj/structure/chair/f13foldupchair{
 	dir = 8
@@ -21708,7 +21738,8 @@
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "classictable_1tileendtable"
+	icon_state = "classictable_1tileendtable";
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -22262,6 +22293,12 @@
 	icon_state = "verticalbottom0"
 	},
 /area/f13/reno_streets)
+"juc" = (
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 8
+	},
+/area/f13/wrights)
 "jue" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -24393,7 +24430,8 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/reno_prison)
 "kpo" = (
-/obj/structure/closet/locker,
+/obj/structure/closet/firecloset,
+/obj/item/clothing/suit/fire,
 /obj/item/clothing/under/f13/wrights/worker4,
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
@@ -24831,6 +24869,9 @@
 /obj/structure/window/fulltile/wood,
 /obj/structure/curtain{
 	color = "#845f58"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/wrights)
@@ -26087,7 +26128,8 @@
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "classictable_1tilethick"
+	icon_state = "classictable_1tilethick";
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -26679,6 +26721,9 @@
 /obj/structure/bookcase,
 /obj/item/book,
 /obj/item/book,
+/obj/structure/sign/poster/painting/horizon{
+	pixel_y = 32
+	},
 /turf/open/floor/wood/wood_diagonal,
 /area/f13/wrights)
 "lhO" = (
@@ -26852,6 +26897,16 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood/wood_diagonal,
+/area/f13/wrights)
+"lkX" = (
+/obj/structure/railing{
+	color = "#A47449";
+	layer = 4.25
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 8
+	},
 /area/f13/wrights)
 "lkY" = (
 /obj/effect/overlay/roadmarking{
@@ -27955,9 +28010,6 @@
 /obj/structure/decoration/clock/active{
 	pixel_y = 30;
 	pixel_x = -1
-	},
-/obj/machinery/light{
-	dir = 1
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
@@ -31167,6 +31219,9 @@
 /obj/structure/barricade/bars,
 /obj/structure/curtain{
 	color = "#845f58"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/wrights)
@@ -38502,7 +38557,9 @@
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
 "qll" = (
-/obj/structure/closet/locker,
+/obj/structure/closet/firecloset,
+/obj/item/clothing/suit/fire,
+/obj/item/storage/belt/mining/primitive,
 /obj/item/clothing/under/f13/wrights/worker3,
 /obj/item/clothing/under/f13/wrights/worker1,
 /turf/open/floor/f13/rusty/lit,
@@ -39037,7 +39094,8 @@
 	},
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "classictable_1tileendtable"
+	icon_state = "classictable_1tileendtable";
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -39985,7 +40043,8 @@
 /area/f13/reno_wasteland)
 "qOi" = (
 /obj/structure/sign/poster/painting/scenery{
-	pixel_y = 32
+	pixel_y = 32;
+	pixel_x = 16
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/wrights)
@@ -40557,6 +40616,9 @@
 "rbI" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright2"
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "lockdownwright2"
 	},
@@ -44977,6 +45039,10 @@
 /area/f13/vangraffs)
 "sYm" = (
 /obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/item/clothing/neck/apron/housewife,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria/lit{
 	icon_state = "bar"
 	},
@@ -45721,6 +45787,12 @@
 "tmR" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/farmhousesouth)
+"tmU" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/area/f13/wrights)
 "tmW" = (
 /mob/living/simple_animal/mouse/gray,
 /obj/machinery/light/small/broken{
@@ -47888,6 +47960,16 @@
 /obj/effect/landmark/start/f13/bishops/casinoworker,
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
+"ukp" = (
+/obj/structure/table/reinforced,
+/obj/item/book/manual/chef_recipes{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria/lit{
+	icon_state = "bar"
+	},
+/area/f13/wrights)
 "uks" = (
 /obj/machinery/mineral/wasteland_vendor/reno/materials,
 /turf/open/floor/wood/f13/oak/lit,
@@ -47985,6 +48067,12 @@
 /obj/item/stack/packageWrap,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_east_building)
+"umB" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood/wood_diagonal/lit,
+/area/f13/wrights)
 "umI" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -49208,10 +49296,10 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/ncr)
 "uQk" = (
-/obj/structure/sign/poster/painting/horizon{
-	pixel_y = 32
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
+/turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
 "uQr" = (
 /obj/structure/barricade/tentleathercorner{
@@ -53350,7 +53438,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 1
+	dir = 1;
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -53948,7 +54037,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 1
+	dir = 1;
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -56855,6 +56945,11 @@
 "xRR" = (
 /turf/open/floor/wood/f13/reno/ruinedcornerendtl,
 /area/f13/reno_wasteland)
+"xSi" = (
+/obj/structure/table,
+/obj/item/pda/cargo,
+/turf/open/floor/plasteel/casino/lit,
+/area/f13/wrights)
 "xSn" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/bottle/instacoffee{
@@ -57323,7 +57418,8 @@
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
 "ydU" = (
-/obj/structure/closet/locker,
+/obj/structure/closet/firecloset,
+/obj/item/clothing/suit/fire,
 /obj/item/clothing/under/f13/wrights/worker2,
 /obj/item/clothing/suit/armor/f13/wrights/jacket/worker,
 /turf/open/floor/f13/rusty/lit,
@@ -79671,7 +79767,7 @@ vHF
 ofd
 pMB
 dAU
-tPp
+xSi
 tPp
 nbI
 hyu
@@ -79964,7 +80060,7 @@ lDP
 twC
 pwg
 aEI
-ofd
+tmU
 ofd
 eNa
 aej
@@ -80129,7 +80225,7 @@ hyu
 hyu
 hyu
 tDX
-tPp
+hoh
 amD
 xpc
 jdg
@@ -80426,7 +80522,7 @@ wne
 wne
 woX
 fBq
-hyu
+cBJ
 tNU
 nQi
 bBm
@@ -81485,7 +81581,7 @@ twC
 lDP
 pwg
 wne
-wne
+uQk
 wne
 wne
 ydR
@@ -82402,7 +82498,7 @@ vqw
 aQC
 pwg
 ieh
-ezu
+iTe
 tPq
 maM
 maM
@@ -82876,17 +82972,17 @@ oDW
 fIT
 aBU
 aBU
+naY
+aBU
+aBU
+naY
 aBU
 aBU
 aBU
+naY
 aBU
 aBU
-aBU
-aBU
-aBU
-aBU
-aBU
-aBU
+naY
 aBU
 aBU
 jdg
@@ -83028,16 +83124,16 @@ sdK
 vSh
 aBU
 lOI
-fZS
+bTf
 sYm
 lQl
 hAw
-sYm
+bDH
 aBU
 uGG
 weg
 mIf
-hoh
+mIf
 weg
 weg
 aBU
@@ -83178,15 +83274,15 @@ pqv
 rfZ
 oDW
 vSh
-aBU
+naY
 vuZ
 bTf
 bTf
 bTf
 bTf
-sYm
+ukp
 aBU
-weg
+umB
 nlU
 nFy
 ckR
@@ -83334,7 +83430,7 @@ aBU
 hwL
 bTf
 eaD
-bTf
+fZS
 bTf
 hBQ
 aBU
@@ -83946,8 +84042,8 @@ eRW
 eRW
 aBU
 aBU
-weg
-weg
+juc
+lkX
 pYn
 gAN
 qtc
@@ -84395,7 +84491,7 @@ rfZ
 oDW
 vSh
 kyx
-uQk
+ofd
 ecx
 ecx
 pEz
@@ -85623,7 +85719,7 @@ mRU
 weg
 weg
 oxu
-cVF
+weg
 naY
 jdg
 rZU
@@ -85775,7 +85871,7 @@ aBU
 ejp
 weg
 weg
-weg
+cVF
 aBU
 jdg
 rZU

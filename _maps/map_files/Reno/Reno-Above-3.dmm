@@ -67,7 +67,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tilethick";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled{
 	icon_state = "manhattanglass";
@@ -144,7 +145,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled{
 	icon_state = "fanciulli";
@@ -771,9 +773,9 @@
 "aKu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/glass/bowl/mushroom_bowl{
-	name = "dog bowl";
 	color = "#fa6464";
-	pixel_y = -6
+	pixel_y = -6;
+	name = "bowl"
 	},
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_west_building)
@@ -1123,8 +1125,8 @@
 	},
 /area/f13/reno_prison)
 "bdm" = (
-/obj/structure/closet/crate/grave/ark{
-	dir = 8
+/obj/structure/displaycase{
+	start_showpiece_type = /obj/item/clothing/head/christmashat
 	},
 /turf/open/floor/carpet/red,
 /area/f13/wrights)
@@ -1193,7 +1195,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "classictable_1tileendtable";
-	dir = 1
+	dir = 1;
+	smooth = 0
 	},
 /obj/item/newspaper{
 	pixel_y = 5
@@ -2049,7 +2052,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 4
+	dir = 4;
+	smooth = 0
 	},
 /obj/item/paper_bin/bundlenatural{
 	pixel_y = 5
@@ -2828,6 +2832,12 @@
 /obj/structure/closet/crate/large,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/spawner/lootdrop/f13/crafting,
+/obj/structure/sign/poster/contraband/atmosia_independence{
+	icon = 'icons/fallout/objects/decals.dmi';
+	icon_state = "painting_president";
+	name = "Orville Wright";
+	pixel_y = 32
+	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "cHo" = (
@@ -3810,6 +3820,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
+"dDJ" = (
+/obj/structure/sign/plaques/kiddie/library{
+	pixel_y = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/reno_prison)
 "dEo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4481,7 +4497,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tilethick";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/reagent_containers/rag{
 	pixel_x = -10;
@@ -5325,6 +5342,18 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white/whiteredchess/whiteredchess2/lit,
 /area/f13/farmhousesouth)
+"fjs" = (
+/obj/item/reagent_containers/glass/bowl/mushroom_bowl{
+	color = "#a87634";
+	pixel_y = -6;
+	name = "bowl"
+	},
+/obj/item/candle/infinite{
+	pixel_y = -1;
+	pixel_x = 1
+	},
+/turf/open/floor/carpet/red,
+/area/f13/wrights)
 "fjJ" = (
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_hotel)
@@ -6903,7 +6932,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "classictable_1tileendtable";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/clothing/head/kepi{
 	pixel_y = 3
@@ -7064,9 +7094,13 @@
 /area/f13/reno_prison)
 "gUp" = (
 /obj/structure/table/wood/settler,
-/obj/item/stack/sheet/mineral/diamond,
-/obj/machinery/light{
-	dir = 4
+/obj/item/stack/sheet/mineral/diamond{
+	pixel_y = 11;
+	pixel_x = 3
+	},
+/obj/item/advanced_crafting_components/lenses{
+	pixel_x = -8;
+	pixel_y = -5
 	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
@@ -7092,8 +7126,10 @@
 /area/f13/reno_prison)
 "gVi" = (
 /obj/structure/table/wood/settler,
-/obj/item/newspaper,
-/obj/item/clothing/glasses/regular/protected,
+/obj/item/statuebust{
+	pixel_y = 9;
+	pixel_x = 5
+	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "gVk" = (
@@ -7309,7 +7345,8 @@
 /area/f13/vangraffs)
 "hes" = (
 /obj/machinery/door/unpowered/montegobay{
-	req_one_access_txt = "137"
+	req_one_access_txt = "137";
+	name = "wooden door"
 	},
 /turf/open/floor/wood/f13/lit,
 /area/f13/wrights)
@@ -7593,6 +7630,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/lock_construct{
+	pixel_y = 16
+	},
+/obj/item/key,
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "htS" = (
@@ -8897,7 +8938,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tilethick";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled{
 	icon_state = "goldschlagerglass";
@@ -9442,8 +9484,8 @@
 /area/f13/reno_east_building)
 "jib" = (
 /obj/structure/table/reinforced,
-/obj/item/book{
-	pixel_y = 4
+/obj/effect/spawner/lootdrop/f13/traitbooks{
+	pixel_y = 8
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_building)
@@ -9732,7 +9774,7 @@
 	color = "#A47449";
 	layer = 4.25;
 	dir = 1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
@@ -10276,7 +10318,7 @@
 	color = "#A47449";
 	layer = 4.25;
 	dir = 1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /obj/structure/bookcase,
 /obj/item/book{
@@ -11763,8 +11805,7 @@
 	dir = 4
 	},
 /obj/machinery/light/ncr{
-	dir = 8;
-	pixel_y = -16
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/nrpd)
@@ -12106,7 +12147,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 4
+	dir = 4;
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -12246,6 +12288,12 @@
 "lUK" = (
 /turf/closed/indestructible/f13/vaultwall/notvaultwall,
 /area/f13/reno_east_building)
+"lUS" = (
+/obj/structure/sign/plaques/kiddie/library{
+	pixel_x = 32
+	},
+/turf/open/floor/f13/wood,
+/area/f13/reno_prison)
 "lVh" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/ruins,
@@ -12264,7 +12312,13 @@
 /area/f13/reno_sharkclub)
 "lWm" = (
 /obj/structure/table/wood/settler,
-/obj/item/paper/crumpled,
+/obj/item/newspaper{
+	pixel_y = 11;
+	pixel_x = 4
+	},
+/obj/item/paper/crumpled{
+	pixel_x = -2
+	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "lWp" = (
@@ -12639,12 +12693,14 @@
 /area/f13/reno_sharkclub)
 "msb" = (
 /obj/structure/table/wood/greyscale/red,
-/obj/item/storage/book/bible,
+/obj/item/storage/book/bible{
+	pixel_y = 2
+	},
 /obj/structure/railing{
 	color = "#A47449";
 	layer = 4.25;
 	dir = 1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
@@ -12892,6 +12948,9 @@
 /obj/structure/barricade/bars,
 /obj/structure/curtain{
 	color = "#845f58"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/wrights)
@@ -13369,7 +13428,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "classictable_1tileendtable";
-	dir = 4
+	dir = 4;
+	smooth = 0
 	},
 /obj/machinery/computer/security/wooden_tv{
 	pixel_y = 6;
@@ -14627,7 +14687,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tilethick";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /obj/item/reagent_containers/food/drinks/bottle/sunset{
 	pixel_x = 9;
@@ -15035,7 +15096,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /turf/open/floor/carpet/reno/evil3,
 /area/f13/reno_sharkclub)
@@ -15610,7 +15672,8 @@
 "phN" = (
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "bartable_1tileendtable"
+	icon_state = "bartable_1tileendtable";
+	smooth = 0
 	},
 /obj/item/storage/box/matches,
 /obj/item/storage/fancy/cigarettes/cigpack_bigboss{
@@ -15678,6 +15741,17 @@
 "pkz" = (
 /turf/open/floor/carpet/green/lit,
 /area/f13/chapel)
+"pkT" = (
+/obj/structure/window/fulltile/wood,
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#845f58"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/wrights)
 "plp" = (
 /obj/structure/railing{
 	dir = 4
@@ -15685,7 +15759,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 8
+	dir = 8;
+	smooth = 0
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -15802,6 +15877,21 @@
 	sunlight_state = 1
 	},
 /area/f13/raiders)
+"ppu" = (
+/obj/structure/statue/wood/headstonewood{
+	desc = null;
+	name = "coat rack";
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "coatrack";
+	pixel_y = 3
+	},
+/obj/item/clothing/head/helmet/f13/marlowhat{
+	pixel_y = 15;
+	pixel_x = -1;
+	layer = 4.25
+	},
+/turf/open/floor/wood/f13,
+/area/f13/wrights)
 "ppC" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -15853,7 +15943,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "bartable_1tileendtable";
-	dir = 4
+	dir = 4;
+	smooth = 0
 	},
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
@@ -16858,8 +16949,22 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
 "qpc" = (
-/obj/item/paper/crumpled/muddy/fluff/elephant_graveyard/rnd_notes,
+/obj/item/paper/crumpled/muddy/fluff/elephant_graveyard/rnd_notes{
+	pixel_y = 3;
+	pixel_x = 14
+	},
 /obj/structure/table/wood/settler,
+/obj/item/clothing/glasses/regular/protected{
+	pixel_x = 13
+	},
+/obj/structure/sign/poster/painting/coast{
+	pixel_y = 32;
+	pixel_x = 16
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_y = 4;
+	pixel_x = -2
+	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "qpf" = (
@@ -16944,6 +17049,17 @@
 	},
 /turf/open/floor/pod,
 /area/f13/vangraffs)
+"quD" = (
+/obj/structure/barricade/bars,
+/obj/structure/curtain{
+	color = "#5c131b";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/floor/wood/f13,
+/area/f13/wrights)
 "quW" = (
 /obj/structure/table/wood/junk,
 /obj/item/storage/book/bible{
@@ -17332,7 +17448,7 @@
 	color = "#A47449";
 	layer = 4.25;
 	dir = 1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /obj/structure/railing{
 	dir = 4;
@@ -17691,6 +17807,20 @@
 /obj/effect/overlay/catwalk,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/reno_wasteland)
+"rcG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/unpowered/celldoor{
+	req_one_access_txt = "137"
+	},
+/obj/structure/curtain{
+	color = "#5c131b";
+	icon_state = "closed";
+	open = 0;
+	opacity = 1;
+	layer = 4.01
+	},
+/turf/open/floor/wood/f13,
+/area/f13/wrights)
 "rdn" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -17976,6 +18106,16 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_prison)
+"rqK" = (
+/obj/machinery/door/unpowered/montegobay{
+	req_one_access_txt = "137";
+	name = "wooden door"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright"
+	},
+/turf/open/floor/wood/f13/lit,
+/area/f13/wrights)
 "rqO" = (
 /obj/machinery/light{
 	dir = 1;
@@ -18358,7 +18498,12 @@
 "rIq" = (
 /obj/structure/closet/crate/wooden,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/item/storage/belt/holster/ranger45,
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
+/obj/item/storage/belt/holster/ranger44,
+/obj/item/storage/belt/holster/ranger357,
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "rIC" = (
@@ -18554,7 +18699,8 @@
 "rQt" = (
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
-	icon_state = "bartable_1tileendtable"
+	icon_state = "bartable_1tileendtable";
+	smooth = 0
 	},
 /obj/item/storage/fancy/cigarettes/cigpack_greytort,
 /turf/open/floor/wood/f13,
@@ -18942,6 +19088,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/clinic)
+"siI" = (
+/obj/structure/displaycase{
+	start_showpiece_type = /obj/item/clothing/accessory/crossnecklace
+	},
+/turf/open/floor/carpet/red,
+/area/f13/wrights)
 "siW" = (
 /obj/machinery/computer/security/wooden_tv/public,
 /turf/open/floor/wood/housewoodbroken3/lit,
@@ -20029,7 +20181,7 @@
 	color = "#A47449";
 	layer = 4.25;
 	dir = 1;
-	pixel_y = 5
+	pixel_y = 8
 	},
 /obj/structure/bookcase,
 /obj/item/book{
@@ -20043,11 +20195,15 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/trainstation)
 "twj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 8
+/obj/item/reagent_containers/glass/bowl/mushroom_bowl{
+	color = "#a87634";
+	pixel_y = -6;
+	name = "bowl"
 	},
-/turf/open/floor/wood/f13,
+/obj/item/candle/infinite{
+	pixel_y = -1
+	},
+/turf/open/floor/carpet/red,
 /area/f13/wrights)
 "txd" = (
 /obj/effect/overlay/curb{
@@ -20363,6 +20519,12 @@
 "tKQ" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/drinks/bottle/champagne,
+/obj/structure/sign/poster/contraband/atmosia_independence{
+	name = "Diploma";
+	desc = "A diploma from what passes for an educational institute in the wasteland.";
+	pixel_y = 32;
+	pixel_x = 16
+	},
 /turf/open/floor/wood/f13,
 /area/f13/wrights)
 "tLm" = (
@@ -22287,7 +22449,11 @@
 /area/f13/reno_west_building)
 "vEp" = (
 /obj/machinery/door/unpowered/montegobay{
-	req_one_access_txt = "137"
+	req_one_access_txt = "137";
+	name = "wooden door"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "lockdownwright"
 	},
 /turf/open/floor/wood/f13/maple/lit,
 /area/f13/wrights)
@@ -22578,7 +22744,8 @@
 /obj/structure/table/wood{
 	icon = 'icons/fallout/objects/structures/tables.dmi';
 	icon_state = "classictable_1tileendtable";
-	dir = 1
+	dir = 1;
+	smooth = 0
 	},
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_y = 10
@@ -24670,6 +24837,13 @@
 	sunlight_state = 1
 	},
 /area/f13/reno_prison)
+"xIE" = (
+/obj/structure/closet/crate/grave/ark{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/carpet/red,
+/area/f13/wrights)
 "xJR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -26618,7 +26792,7 @@ xSx
 xSx
 xSx
 uMk
-uGM
+dDJ
 uGM
 uIn
 hzp
@@ -27987,7 +28161,7 @@ reF
 shQ
 uMk
 uqe
-uGM
+lUS
 uGM
 wig
 uMk
@@ -50407,13 +50581,13 @@ bTN
 bTN
 bTN
 owf
-mHp
+pkT
 owf
-mHp
+pkT
 owf
-mHp
+pkT
 owf
-mHp
+pkT
 owf
 hXu
 hXu
@@ -50558,7 +50732,7 @@ bTN
 bTN
 bTN
 bTN
-mHp
+pkT
 aBH
 qoA
 pAO
@@ -50569,9 +50743,9 @@ csF
 owf
 cGT
 vCR
-jOS
+quD
 twj
-tpp
+siI
 hXu
 bTN
 bTN
@@ -50721,9 +50895,9 @@ wkM
 owf
 rIq
 jOS
-tpp
+rcG
 xky
-xky
+xIE
 hXu
 bTN
 bTN
@@ -50870,11 +51044,11 @@ krB
 krB
 krB
 pAO
-hes
+rqK
 tpp
 jOS
-jOS
-xky
+quD
+fjs
 bdm
 hXu
 bTN
@@ -51025,9 +51199,9 @@ wkM
 owf
 tKQ
 jOS
-jOS
-xky
-xky
+quD
+quD
+quD
 hXu
 bTN
 bTN
@@ -51166,7 +51340,7 @@ bTN
 bTN
 bTN
 bTN
-mHp
+pkT
 pIS
 bGq
 pAO
@@ -51179,7 +51353,7 @@ rwE
 jOS
 tpp
 jOS
-jOS
+ppu
 hXu
 bTN
 bTN

@@ -2771,7 +2771,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/raiders)
 "bMo" = (
-/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod{
+	resistance_flags = 115
+	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh";
@@ -14681,7 +14683,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/raiders)
 "ipx" = (
-/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod{
+	resistance_flags = 115
+	},
 /turf/open/water/vrocean,
 /area/f13/reno_sharkclub)
 "iqi" = (
@@ -15619,7 +15623,7 @@
 "iTa" = (
 /obj/structure/table/reinforced/brass,
 /obj/item/storage/box/matches{
-	pixel_y = 5
+	pixel_y = 7
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -17487,7 +17491,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/f13/reno_sewers)
 "kgF" = (
-/obj/structure/window/reinforced/survival_pod,
+/obj/structure/window/reinforced/survival_pod{
+	resistance_flags = 115
+	},
 /obj/item/fishy/clownfish{
 	icon = 'icons/obj/fish/fish.dmi';
 	icon_state = "feesh_small";
@@ -25042,10 +25048,12 @@
 /area/f13/reno_sewers)
 "oAK" = (
 /obj/structure/table/reinforced/brass,
-/obj/item/storage/fancy/cigarettes/cigars/havana,
+/obj/item/storage/fancy/cigarettes/cigars/havana{
+	pixel_y = 5
+	},
 /obj/item/storage/fancy/cigarettes/cigars/cohiba{
-	pixel_x = -4;
-	pixel_y = 8
+	pixel_x = -1;
+	pixel_y = 11
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
@@ -31652,7 +31660,8 @@
 /area/f13/reno_subway)
 "sme" = (
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8
+	dir = 8;
+	resistance_flags = 115
 	},
 /turf/open/water/vrocean,
 /area/f13/reno_sharkclub)
@@ -38813,10 +38822,12 @@
 /area/f13/reno_prewarbunker)
 "wns" = (
 /obj/structure/table/reinforced/brass,
-/obj/item/toy/cards/deck/cas,
+/obj/item/toy/cards/deck/cas{
+	pixel_y = 4
+	},
 /obj/item/toy/cards/deck/cas/black{
-	pixel_y = 4;
-	pixel_x = -4
+	pixel_y = 9;
+	pixel_x = -9
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
