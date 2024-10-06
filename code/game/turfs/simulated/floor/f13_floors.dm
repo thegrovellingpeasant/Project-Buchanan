@@ -105,7 +105,6 @@
 	name = "plating"
 	icon_state = "plating"
 	sunlight_state = SUNLIGHT_SOURCE
-	color = "#800000"
 
 /turf/open/floor/plating/f13/outside/road
 	name = "\proper road"
@@ -147,11 +146,6 @@
 /turf/open/floor/wood/f13
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "housewood1"
-
-	New()
-		..()
-		if(icon_state == "housewood1")
-			icon_state = "housewood[rand(1,4)]"
 
 /turf/open/floor/wood/f13/lit
 	name = "floor"
