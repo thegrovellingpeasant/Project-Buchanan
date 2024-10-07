@@ -186,9 +186,9 @@
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
 	icon_state = "jet4";
-	pixel_x = 32
+	pixel_y = -32
 	},
-/turf/closed/mineral/random/low_chance_prison,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "J" = (
 /obj/effect/decal/cleanable/dirt,
@@ -209,12 +209,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "N" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
 	icon_state = "bishop3";
-	pixel_y = 32
+	pixel_y = -32
 	},
-/turf/closed/mineral/random/low_chance_prison,
+/obj/item/storage/trash_stack,
+/turf/open/floor/f13/lit,
 /area/f13/caves)
 "O" = (
 /obj/structure/railing/handrail/rusty,
@@ -235,7 +239,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/wreck/trash/one_tire,
+/obj/structure/tires,
 /turf/open/floor/f13/lit,
 /area/f13/caves)
 "T" = (
@@ -499,7 +503,7 @@ u
 f
 a
 y
-I
+u
 u
 u
 "}
@@ -509,7 +513,7 @@ u
 u
 x
 q
-B
+I
 c
 u
 u
@@ -564,9 +568,9 @@ u
 u
 u
 q
-i
-c
 N
+c
+u
 u
 "}
 (29,1,1) = {"

@@ -65,16 +65,6 @@
 	desc = "It's a storage unit for fire-fighting supplies."
 	icon_state = "fire"
 
-/obj/structure/closet/firecloset/PopulateContents()
-	..()
-	if (prob(50))
-		new /obj/item/reagent_containers/hypospray/medipen/firelocker(src)
-	new /obj/item/clothing/suit/fire(src)
-	new /obj/item/clothing/mask/gas(src)
-	new /obj/item/tank/internals/oxygen/red(src)
-	new /obj/item/extinguisher(src)
-	new /obj/item/clothing/head/hardhat/red(src)
-
 /obj/structure/closet/firecloset/full/PopulateContents()
 	..()
 	if (prob(50))

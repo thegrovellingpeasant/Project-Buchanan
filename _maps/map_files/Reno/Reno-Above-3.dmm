@@ -6302,7 +6302,7 @@
 /area/f13/reno_west_building)
 "gku" = (
 /obj/structure/table/optable,
-/obj/item/wallframe/defib_mount{
+/obj/machinery/defibrillator_mount{
 	pixel_x = -32
 	},
 /turf/open/floor/f13{
@@ -9760,7 +9760,9 @@
 	},
 /area/f13/reno_west_building)
 "jto" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood{
+	smooth = 0
+	},
 /obj/item/candle/infinite{
 	pixel_y = 6
 	},
@@ -11237,7 +11239,7 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/power/fusion_generator,
+/obj/machinery/power/fusion_generator/ncrcf,
 /obj/structure/cable/white{
 	icon_state = "0-8"
 	},
@@ -13291,7 +13293,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/raiders)
 "mYh" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood{
+	smooth = 0
+	},
 /obj/item/candle/infinite{
 	pixel_y = 6
 	},
@@ -23609,6 +23613,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/farmhousesouth)
+"wFp" = (
+/obj/structure/railing/corner{
+	layer = 4.25
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/reno_prison)
 "wFq" = (
 /obj/structure/simple_door/metal/store{
 	name = "shark club"
@@ -24673,7 +24683,8 @@
 "xyU" = (
 /obj/structure/table,
 /obj/structure/closet/crate/wicker{
-	pixel_y = 14
+	pixel_y = 14;
+	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
@@ -25710,7 +25721,7 @@ uLw
 lst
 xSx
 rPm
-rPm
+wFp
 hZd
 mTU
 rPm

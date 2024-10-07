@@ -164,7 +164,8 @@
 	shoes = pick(
 		/obj/item/clothing/shoes/sneakers/red,
 		/obj/item/clothing/shoes/sneakers/blue,
-		/obj/item/clothing/shoes/f13/brownie)
+		/obj/item/clothing/shoes/f13/brownie,
+		/obj/item/clothing/shoes/laceup)
 
 	r_hand = pick(
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set1,
@@ -430,7 +431,7 @@
 
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	ears = /obj/item/pen
+	ears = /obj/item/radio/headset
 	id = null
 	///l_pocket =
 	shoes = /obj/item/clothing/shoes/f13/brownie

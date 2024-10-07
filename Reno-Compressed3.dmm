@@ -4330,6 +4330,7 @@
 "aOz" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/ten,
+/obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/clinic)
 "aOB" = (
@@ -6685,7 +6686,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/raiders)
 "bkL" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood{
+	smooth = 0
+	},
 /obj/item/candle/infinite{
 	pixel_y = 6
 	},
@@ -12638,7 +12641,9 @@
 /area/f13/reno_east_building)
 "cms" = (
 /obj/structure/table/reinforced,
-/obj/item/melee/classic_baton/police,
+/obj/item/melee/classic_baton/police{
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/reno_sewers)
 "cmv" = (
@@ -28439,8 +28444,7 @@
 /area/f13/reno_wasteland)
 "fbQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/rack/shelf_metal,
-/obj/item/storage/belt/utility/full,
+/obj/machinery/autolathe/ammo,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "darkyellow"
@@ -30943,6 +30947,7 @@
 "fAN" = (
 /obj/structure/closet/firecloset,
 /obj/item/clothing/suit/fire,
+/obj/item/clothing/head/hardhat/red,
 /obj/item/clothing/under/f13/wrights/worker2,
 /obj/item/clothing/suit/armor/f13/wrights/jacket/worker,
 /turf/open/floor/f13/rusty/lit,
@@ -31344,7 +31349,6 @@
 	},
 /area/f13/raiders)
 "fEt" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/curtain{
 	color = "#808080";
@@ -33652,9 +33656,8 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/machinery/computer/security/vault{
-	pixel_y = 4;
-	network = list("ncrcf")
+/obj/item/storage/fancy/donut_box{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_prison)
@@ -46779,6 +46782,7 @@
 /area/f13/reno_prison)
 "imo" = (
 /obj/structure/rack,
+/obj/item/defibrillator/primitive,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/clinic)
 "ims" = (
@@ -52246,7 +52250,7 @@
 	},
 /obj/structure/table,
 /obj/machinery/computer/security{
-	network = list("labor")
+	network = list("ncrcf")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_prison)
@@ -63834,7 +63838,6 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/clinic)
 "lpt" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/curtain{
@@ -69704,7 +69707,7 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/power/fusion_generator,
+/obj/machinery/power/fusion_generator/ncrcf,
 /obj/structure/cable/white{
 	icon_state = "0-8"
 	},
@@ -73705,6 +73708,7 @@
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "darkyellowfull"
@@ -76567,7 +76571,8 @@
 "nGi" = (
 /obj/structure/table,
 /obj/structure/closet/crate/wicker{
-	pixel_y = 14
+	pixel_y = 14;
+	layer = 4.01
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/reno_prison)
@@ -90643,6 +90648,7 @@
 /area/f13/reno_streets)
 "qiu" = (
 /obj/structure/guncase,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/reno_sewers)
 "qiw" = (
@@ -93921,7 +93927,6 @@
 /turf/open/floor/f13/green/lit,
 /area/f13/reno_east_building)
 "qNK" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/curtain{
 	color = "#808080"
@@ -103117,7 +103122,7 @@
 /area/f13/reno_sewers)
 "suE" = (
 /obj/structure/table/optable,
-/obj/item/wallframe/defib_mount{
+/obj/machinery/defibrillator_mount{
 	pixel_x = -32
 	},
 /turf/open/floor/f13{
@@ -115864,6 +115869,7 @@
 "uOa" = (
 /obj/structure/closet/firecloset,
 /obj/item/clothing/suit/fire,
+/obj/item/clothing/head/hardhat/red,
 /obj/item/clothing/under/f13/wrights/worker4,
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
@@ -130299,6 +130305,12 @@
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
+"xsd" = (
+/obj/structure/railing/corner{
+	layer = 4.25
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/reno_prison)
 "xsg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/wood/modern{
@@ -133003,7 +133015,9 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/reno_yakuza)
 "xPc" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood{
+	smooth = 0
+	},
 /obj/item/candle/infinite{
 	pixel_y = 6
 	},
@@ -203254,7 +203268,7 @@ xHI
 xHI
 xHI
 xHI
-xHI
+sjj
 tcx
 yiu
 hXp
@@ -211942,7 +211956,7 @@ coS
 lCk
 gPC
 gAZ
-gAZ
+xsd
 qyO
 ric
 gAZ

@@ -137,7 +137,9 @@
 /turf/open/lava,
 /area/f13/caves)
 "S" = (
-/obj/machinery/door/firedoor/closed,
+/obj/machinery/door/firedoor/closed{
+	opacity = 0
+	},
 /turf/open/floor/f13/lit,
 /area/f13/caves)
 "X" = (
@@ -148,10 +150,6 @@
 /turf/open/indestructible/ground/outside/roof/stairs/east{
 	dir = 8
 	},
-/area/f13/caves)
-"Z" = (
-/obj/structure/debris/v1,
-/turf/closed/mineral/random/low_chance_prison,
 /area/f13/caves)
 
 (1,1,1) = {"
@@ -174,7 +172,7 @@ s
 s
 s
 x
-Z
+P
 P
 x
 s
