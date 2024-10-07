@@ -560,7 +560,7 @@
 		mapjobs = list(EXP_TYPE_WENDOVER, EXP_TYPE_LDS, EXP_TYPE_USPS, EXP_TYPE_NCR, EXP_TYPE_FOLLOWERS, EXP_TYPE_LEGION, EXP_TYPE_WHITELEGS, EXP_TYPE_EIGHTIES, EXP_TYPE_WASTELAND)
 
 	if (SSmaptype.maptype == "reno")
-		mapjobs = list(EXP_TYPE_BISHOPS, EXP_TYPE_VANGRAFFS, EXP_TYPE_WRIGHTS, EXP_TYPE_CITIZENS, EXP_TYPE_LOSTHILLS, FACTION_WASTES)
+		mapjobs = list(EXP_TYPE_CITIZENS, EXP_TYPE_VANGRAFFS, EXP_TYPE_WRIGHTS, EXP_TYPE_BISHOPS, EXP_TYPE_CITIZENS, FACTION_WASTES)
 
 	for(var/category in mapjobs)
 		// position_categories contains category names mapped to available jobs and an appropriate color
