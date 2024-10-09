@@ -1680,8 +1680,7 @@
 /area/f13/nrpd)
 "aMH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/rack/shelf_metal,
-/obj/item/storage/belt/utility/full,
+/obj/machinery/autolathe/ammo,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "darkyellow"
@@ -5400,6 +5399,7 @@
 "cqj" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/ten,
+/obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/clinic)
 "cqF" = (
@@ -14269,6 +14269,7 @@
 /area/f13/reno_streets)
 "gkk" = (
 /obj/structure/rack,
+/obj/item/defibrillator/primitive,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/clinic)
 "gkm" = (
@@ -24432,6 +24433,7 @@
 "kpo" = (
 /obj/structure/closet/firecloset,
 /obj/item/clothing/suit/fire,
+/obj/item/clothing/head/hardhat/red,
 /obj/item/clothing/under/f13/wrights/worker4,
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
@@ -29697,7 +29699,6 @@
 	},
 /area/f13/reno_streets)
 "mru" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/curtain{
 	color = "#808080"
@@ -33682,9 +33683,8 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/machinery/computer/security/vault{
-	pixel_y = 4;
-	network = list("ncrcf")
+/obj/item/storage/fancy/donut_box{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_prison)
@@ -39438,7 +39438,7 @@
 	},
 /obj/structure/table,
 /obj/machinery/computer/security{
-	network = list("labor")
+	network = list("ncrcf")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_prison)
@@ -48015,7 +48015,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/raiders)
 "ulw" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/curtain{
 	color = "#808080";
@@ -48838,6 +48837,7 @@
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/f13{
 	dir = 6;
 	icon_state = "darkyellowfull"
@@ -53370,7 +53370,6 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/reno_building)
 "wvk" = (
-/obj/structure/simple_door/wood,
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/curtain{
@@ -57420,6 +57419,7 @@
 "ydU" = (
 /obj/structure/closet/firecloset,
 /obj/item/clothing/suit/fire,
+/obj/item/clothing/head/hardhat/red,
 /obj/item/clothing/under/f13/wrights/worker2,
 /obj/item/clothing/suit/armor/f13/wrights/jacket/worker,
 /turf/open/floor/f13/rusty/lit,
@@ -87413,7 +87413,7 @@ nqG
 nqG
 nqG
 nqG
-nqG
+kPk
 nXy
 rZU
 pqv

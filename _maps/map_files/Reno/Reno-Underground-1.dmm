@@ -33611,6 +33611,7 @@
 /area/f13/raiders)
 "tqo" = (
 /obj/structure/guncase,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/reno_sewers)
 "tqr" = (
@@ -33868,7 +33869,9 @@
 /area/f13/reno_caves)
 "tyj" = (
 /obj/structure/table/reinforced,
-/obj/item/melee/classic_baton/police,
+/obj/item/melee/classic_baton/police{
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/reno_sewers)
 "tyu" = (

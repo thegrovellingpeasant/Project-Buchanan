@@ -30,13 +30,12 @@
 	jobtype = /datum/job/wastes/f13vagrant
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	ears = null
+	ears = /obj/item/radio/headset
 	l_pocket = /obj/item/storage/bag/money/small/meager
 	id = null
 	shoes = null
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/radio = 1
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
 /datum/outfit/job/wastes/f13vagrant/pre_equip(mob/living/carbon/human/H)
@@ -185,15 +184,15 @@
 	name = "Tribal"
 	jobtype = /datum/job/wastes/f13tribalmigrant
 	id = null
-	ears = null
+	ears = /obj/item/radio/headset
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform = /obj/item/clothing/under/f13/settler
 	box = /obj/item/storage/survivalkit_tribal
 	shoes = /obj/item/clothing/shoes/sandal
 	gloves = /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
+	backpack = /obj/item/storage/backpack/satchel/bone
+	satchel = /obj/item/storage/backpack/satchel/bone
 	backpack_contents = list(
 		/obj/item/warpaint_bowl = 1,
 		/obj/item/melee/onehanded/knife/trench = 1,
@@ -202,7 +201,7 @@
 
 
 /datum/outfit/loadout/nomad_oregon_cannibal
-	name = "Oregeon Cannibal"
+	name = "Oregon Cannibal"
 	uniform = /obj/item/clothing/under/f13/exile/tribal
 	suit = /obj/item/clothing/suit/hooded/tribaloutcast
 	suit_store = /obj/item/twohanded/spear/bonespear

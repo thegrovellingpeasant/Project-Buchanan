@@ -62,7 +62,9 @@
 	},
 /area/f13/caves)
 "dh" = (
-/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/curtain{
+	layer = 4.01
+	},
 /obj/effect/overlay/junk/toilet{
 	dir = 4;
 	layer = 2.9
@@ -322,7 +324,9 @@
 /area/f13/caves)
 "rw" = (
 /obj/structure/table/wood/greyscale,
-/obj/effect/spawner/lootdrop/f13/cash_random_high,
+/obj/effect/spawner/lootdrop/f13/cash_random_high{
+	pixel_y = 3
+	},
 /turf/open/floor/wood/f13/stage_l,
 /area/f13/caves)
 "rD" = (
@@ -403,7 +407,9 @@
 	pixel_x = 10;
 	pixel_y = 5
 	},
-/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/curtain{
+	layer = 4.01
+	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "wq" = (
@@ -411,12 +417,9 @@
 /obj/item/tape{
 	pixel_y = -4
 	},
-/obj/structure/showcase/machinery/tv{
-	name = "Tv";
-	desc = "Seems someone was a good snitch";
-	pixel_y = 7;
-	density = 0;
-	icon = 'icons/fallout/objects/decorations.dmi'
+/obj/machinery/computer/security/wooden_tv/public{
+	pixel_y = 9;
+	pixel_x = 1
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
@@ -500,7 +503,9 @@
 	},
 /area/f13/caves)
 "zW" = (
-/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/curtain{
+	layer = 4.01
+	},
 /turf/open/indestructible/ground/outside/water/cavern,
 /area/f13/caves)
 "As" = (
@@ -509,7 +514,9 @@
 	pixel_x = -12;
 	pixel_y = 4
 	},
-/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/curtain{
+	layer = 4.01
+	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "AR" = (
@@ -523,14 +530,6 @@
 	},
 /obj/structure/stone_tile/burnt{
 	pixel_x = 16
-	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "rock";
-	icon = 'icons/fallout/turfs/mining.dmi';
-	layer = 5;
-	pixel_x = -32;
-	plane = -4;
-	name = null
 	},
 /turf/open/indestructible/ground/outside/water/cavern,
 /area/f13/caves)
@@ -557,7 +556,7 @@
 	icon = 'icons/fallout/objects/guns/ammo.dmi';
 	icon_state = "jerrycan";
 	name = "jerrycan";
-	pixel_y = 18;
+	pixel_y = 13;
 	pixel_x = 4
 	},
 /obj/machinery/light/small{
@@ -692,8 +691,7 @@
 	name = "coat rack";
 	icon = 'icons/fallout/objects/wendover.dmi';
 	icon_state = "coatrack";
-	pixel_y = 24;
-	pixel_x = 5
+	pixel_y = 12
 	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
@@ -715,10 +713,11 @@
 	plane = -4.1
 	},
 /obj/item/stack/f13Cash/caps/fourzero{
-	pixel_x = -8
+	pixel_x = -8;
+	pixel_y = -2
 	},
 /obj/item/stack/f13Cash/caps/fivezero{
-	pixel_y = 7;
+	pixel_y = 2;
 	pixel_x = 5
 	},
 /turf/open/floor/carpet/black,
@@ -861,7 +860,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "Sx" = (
-/obj/effect/overlay/junk/curtain,
+/obj/effect/overlay/junk/curtain{
+	layer = 4.01
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "SD" = (

@@ -708,7 +708,7 @@
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "vv" = (
-/obj/structure/closet/athletic_mixed,
+/obj/structure/closet,
 /obj/structure/railing/wood{
 	dir = 8;
 	pixel_y = 8;
