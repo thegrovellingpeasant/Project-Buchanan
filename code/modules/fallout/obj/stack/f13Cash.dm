@@ -357,10 +357,10 @@
 
 /obj/item/stack/f13Cash/chips
 	name = "Shark Club Chip"
-	singular_name = "Chip"  /* same for denarius, we can pretend the legion can't latin properly */
+	singular_name = "Chip"
 	flavor_desc = "A chip used for gambling at the Shark Club in New Reno."
 	icon = 'icons/obj/economy.dmi'
-	icon_state = "shark" /* 10 points to whoever writes flavour text for each bill */
+	icon_state = "shark"
 	value = CASH_SHRK * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/chips
 

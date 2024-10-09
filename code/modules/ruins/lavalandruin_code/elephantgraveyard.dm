@@ -279,17 +279,20 @@
 
 
 /obj/structure/closet/crate/grave/ark
-	name = "Ark of the Convenent"
+	name = "The Ark"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "ark"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
 	var/shock_per_touch = 0
 	var/shock_type = /datum/chemical_reaction/reagent_explosion/teslium_lightning
 
@@ -315,17 +318,20 @@
 
 
 /obj/structure/closet/crate/grave/strangebird
-	name = "Strange Bird"
+	name = "The Bird"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "bird"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
 
 /obj/structure/closet/crate/grave/strangebird/tool_interact(obj/item/S, mob/living/carbon/user)
 	. = ..()
@@ -355,17 +361,20 @@
     explosion(src,5,5,6,6)
 
 /obj/structure/closet/crate/grave/experimental_crate
-	name = "Experimental Crate"
+	name = "The Prototype"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "prototype"
 	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
+	anchored = FALSE
 	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
 	locked = TRUE
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
 
 /obj/structure/closet/crate/grave/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
 	. = ..()

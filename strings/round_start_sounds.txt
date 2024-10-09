@@ -1,1 +1,3 @@
 sound/f13/rags_to_riches_tb.ogg
+sound/f13/youre_just_in_love.ogg
+sound/f13/style.ogg

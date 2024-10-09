@@ -10,9 +10,6 @@
 	name = "decontamination arch"
 	},
 /obj/structure/decoration/vent/rusty,
-/obj/structure/nest/mob/raider/biker{
-	dir = 8
-	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "av" = (
@@ -22,6 +19,7 @@
 /area/f13/caves)
 "aF" = (
 /obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "bJ" = (
@@ -103,7 +101,15 @@
 /turf/open/floor/carpet/red,
 /area/f13/caves)
 "gO" = (
-/obj/structure/closet/crate/trashcart/moneywish,
+/obj/structure/closet/crate/trashcart,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"gP" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/snacks/soup/longpork_stew{
+	pixel_y = 6
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "hB" = (
@@ -111,7 +117,9 @@
 /obj/effect/overlay/gravel/edge{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/cig_packs,
+/obj/effect/spawner/lootdrop/cig_packs{
+	pixel_y = 6
+	},
 /turf/open/floor/carpet/red,
 /area/f13/caves)
 "hX" = (
@@ -144,7 +152,6 @@
 /obj/structure/nest/mob/ghoulcozy{
 	name = "sleeping ghoul";
 	desc = "This feral beast seems to be rather docile best not to wake it.";
-	radius = 2;
 	pixel_y = 5;
 	pixel_x = 2
 	},
@@ -205,6 +212,7 @@
 /area/f13/caves)
 "lt" = (
 /obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ne" = (
@@ -313,7 +321,6 @@
 /obj/structure/nest/mob/ghoulcozy{
 	name = "sleeping ghoul";
 	desc = "This feral beast seems to be rather docile best not to wake it.";
-	radius = 2;
 	pixel_y = 5;
 	pixel_x = 2
 	},
@@ -329,7 +336,6 @@
 "wz" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/effect/spawner/lootdrop/food,
-/obj/effect/spawner/lootdrop/food,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wN" = (
@@ -340,6 +346,10 @@
 /obj/structure/decoration/vent/rusty,
 /obj/structure/nest/mob/raider{
 	dir = 8
+	},
+/obj/structure/nest/mob/raider/biker{
+	dir = 8;
+	pixel_y = 32
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -409,7 +419,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Dr" = (
-/obj/structure/closet/crate/leftfootlocker,
+/obj/structure/closet/crate/leftfootlocker{
+	anchored = 1
+	},
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -458,7 +470,6 @@
 /obj/structure/nest/mob/ghoulcozy{
 	name = "sleeping ghoul";
 	desc = "This feral beast seems to be rather docile best not to wake it.";
-	radius = 2;
 	pixel_y = 5;
 	pixel_x = 2
 	},
@@ -596,6 +607,22 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/caves)
+"Rn" = (
+/obj/structure/table/wood/settler,
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_y = 11;
+	pixel_x = -12
+	},
+/obj/item/smelling_salts/wayfarer{
+	pixel_y = 4;
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = -8;
+	pixel_y = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "RY" = (
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/inside/mountain,
@@ -608,6 +635,8 @@
 /area/f13/caves)
 "Ty" = (
 /obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/food,
+/obj/effect/spawner/lootdrop/food,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "TJ" = (
@@ -628,6 +657,13 @@
 "Up" = (
 /obj/structure/bookcase,
 /obj/item/storage/book/bible,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"Uq" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/processor/chopping_block{
+	pixel_y = 6
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Uw" = (
@@ -660,7 +696,9 @@
 /area/f13/caves)
 "Ve" = (
 /obj/structure/table/wood/junk,
-/obj/effect/spawner/lootdrop/cig_packs,
+/obj/effect/spawner/lootdrop/cig_packs{
+	pixel_y = 7
+	},
 /turf/open/floor/carpet/red,
 /area/f13/caves)
 "VZ" = (
@@ -715,6 +753,11 @@
 	dir = 8;
 	layer = 4.1
 	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"ZN" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/reagent_containers/food/condiment/flour,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ZW" = (
@@ -1045,7 +1088,7 @@ MP
 av
 hB
 Wo
-yx
+gP
 yP
 jG
 "}
@@ -1061,7 +1104,7 @@ QA
 jy
 DP
 Wo
-yx
+Uq
 py
 jG
 "}
@@ -1077,7 +1120,7 @@ JG
 Wo
 Wo
 Wo
-yx
+Rn
 tc
 jG
 "}
@@ -1116,7 +1159,7 @@ jG
 (25,1,1) = {"
 jG
 cI
-lt
+ZN
 zC
 lp
 uI

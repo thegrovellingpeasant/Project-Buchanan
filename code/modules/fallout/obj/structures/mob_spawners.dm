@@ -670,7 +670,7 @@
 	name = "bighorner"
 	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "bighorner"
-	mob_types = list(/obj/structure/nest/mob/bighorner = 5)
+	mob_types = list(/mob/living/simple_animal/hostile/retaliate/goat/bighorn = 5)
 
 /obj/structure/nest/mob/radstag
 	name = "radstag"

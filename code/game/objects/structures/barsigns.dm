@@ -164,7 +164,7 @@
 	name = "Golden Globes"
 	icon = 'icons/obj/barsigns.dmi'
 	icon_state = "goldenglobes"
-	desc = "A hive of scum and villainy."
+	desc = "Once New Reno's main cultural export, now forced to find new programming in accordance with NCR law."
 
 /obj/structure/sign/reno/barsign/motel
 	name = "motel"

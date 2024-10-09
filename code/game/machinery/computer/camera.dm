@@ -177,12 +177,23 @@
 
 /obj/machinery/computer/security/wooden_tv
 	name = "security camera monitor"
-	desc = "An old TV hooked into the station's camera network."
+	desc = "An old TV hooked into the city's camera network."
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "television"
 	icon_keyboard = null
 	icon_screen = "detective_tv"
 	pass_flags = PASSTABLE
+	network = list("nrpd", "goldenglobes")
+
+/obj/machinery/computer/security/wooden_tv/public
+	name = "television"
+	desc = "An old TV hooked into the local station."
+	icon = 'icons/obj/computer.dmi'
+	icon_state = "television"
+	icon_keyboard = null
+	icon_screen = "detective_tv"
+	pass_flags = PASSTABLE
+	network = list("goldenglobes")
 
 /obj/machinery/computer/security/mining
 	name = "outpost camera console"

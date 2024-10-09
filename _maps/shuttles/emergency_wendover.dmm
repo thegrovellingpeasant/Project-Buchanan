@@ -78,11 +78,7 @@
 /obj/structure/chair/comfy/modern{
 	dir = 8
 	},
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "jV" = (
@@ -124,9 +120,7 @@
 /area/shuttle/escape)
 "rO" = (
 /obj/machinery/door/airlock/survival_pod/glass,
-/obj/machinery/light/floor{
-	invisibility = 100
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/shuttle/escape)
 "sX" = (
@@ -156,9 +150,7 @@
 	color = "#4e638a";
 	alpha = 225
 	},
-/obj/machinery/light/floor{
-	invisibility = 100
-	},
+/obj/machinery/light/invisible,
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
 "wO" = (
@@ -249,11 +241,7 @@
 /area/shuttle/escape)
 "NQ" = (
 /obj/structure/lattice/catwalk/wing/two,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
-	},
+/obj/machinery/light/invisible,
 /turf/template_noop,
 /area/shuttle/escape)
 "OW" = (
@@ -269,11 +257,7 @@
 /area/template_noop)
 "RY" = (
 /obj/structure/lattice/catwalk/wing/flat,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
-	},
+/obj/machinery/light/invisible,
 /turf/template_noop,
 /area/shuttle/escape)
 "SD" = (
@@ -286,11 +270,7 @@
 "WU" = (
 /obj/structure/lattice/catwalk/wing/one,
 /obj/effect/overlay/airplanewing/bottom,
-/obj/machinery/light/floor{
-	pixel_x = 3;
-	invisibility = 100;
-	alpha = 100
-	},
+/obj/machinery/light/invisible,
 /turf/template_noop,
 /area/shuttle/escape)
 "WY" = (

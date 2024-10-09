@@ -537,7 +537,8 @@
 	icon_state = "deathclaw_sleep";
 	mob_types = list(/mob/living/simple_animal/hostile/deathclaw/mother=5);
 	pixel_x = -13;
-	pixel_y = -15
+	pixel_y = -15;
+	color = "#5f685e"
 	},
 /obj/item/salvage/low{
 	pixel_x = 14;

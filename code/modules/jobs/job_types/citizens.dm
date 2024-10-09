@@ -13,6 +13,7 @@
 	description = "You are the Lieutenant in charge of the correctional facility. The convicts will abide by NCR regulation, your guards will obey your every order, and you'll get to have a little fun while the magnifying glass isn't on you. Historically, NCR prisoners have not had the best quality of life!"
 	supervisors = "the captain"
 	selection_color = "#dece90"
+	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
@@ -163,7 +164,8 @@
 	shoes = pick(
 		/obj/item/clothing/shoes/sneakers/red,
 		/obj/item/clothing/shoes/sneakers/blue,
-		/obj/item/clothing/shoes/f13/brownie)
+		/obj/item/clothing/shoes/f13/brownie,
+		/obj/item/clothing/shoes/laceup)
 
 	r_hand = pick(
 		/obj/item/storage/backpack/duffelbag/equipment/contraband/set1,
@@ -238,6 +240,7 @@
 	description = "You are a great arbiter, and the only one in this shithole! Your word is law, and you give definitive unquestionable conclusions to matters that are too complex for your average NCR citizen. In your stead the NRPD Chief and officers of the army may extraordinarily hold your position."
 	supervisors = "NCR law"
 	selection_color = "#dece90"
+	exp_requirements = 540
 	outfit = /datum/outfit/job/citizens/f13judge
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
@@ -275,6 +278,7 @@
 	spawn_positions = 1
 	description = "Reno is a borderline lawless city, 'human sewage', as it's often said, washes into Reno on a near daily basis; it's not rare to see the results of dealings gone wrong, chem fueled violent bums, and the escalated situations with the gangs. And you're the one who's supposed to deal with this, the Chief of the Reno Police Department. Corruption isn't out of the window, especially considering it was the Bishops who funded the department. Your duties are to organize your men to keep the peace, prevent gang wars from breaking out, and enforcing NCR common law."
 	supervisors = "NCR common law and the mayor"
+	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
 	access = list(ACCESS_NRPD)
 	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
@@ -298,7 +302,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/fingerless
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
@@ -427,7 +431,7 @@
 
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	ears = /obj/item/pen
+	ears = /obj/item/radio/headset
 	id = null
 	///l_pocket =
 	shoes = /obj/item/clothing/shoes/f13/brownie
@@ -488,7 +492,7 @@
 		/obj/item/pen = 1,
 		/obj/item/paper = 1,
 		/obj/item/camera = 1,
-		/obj/item/gun/energy/disabler = 1,
+		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/wallframe/newscaster = 1,
 		/obj/item/storage/bag/money/small/few = 1)

@@ -52,6 +52,18 @@
 	light_range = 10
 	start_active = TRUE
 
+/obj/machinery/camera/preset/nrpd
+	name = "security camera"
+	c_tag = "New Reno"
+	network = list("nrpd")
+	view_range = 10
+
+/obj/machinery/camera/preset/ncrcf
+	name = "security camera"
+	c_tag = "NCR Correctional Facility"
+	network = list("ncrcf")
+	view_range = 10
+
 /obj/machinery/camera/Initialize(mapload, obj/structure/camera_assembly/CA)
 	. = ..()
 	for(var/i in network)

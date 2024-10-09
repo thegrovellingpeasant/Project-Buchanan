@@ -629,7 +629,9 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	assignment = "Prisoner"
+	uses_overlays = FALSE
 	access = list(ACCESS_ENTER_GENPOP)
+	
 
 	//Lavaland labor camp
 	var/goal = 0 //How far from freedom?

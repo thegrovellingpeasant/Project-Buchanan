@@ -112,12 +112,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "u" = (
+/obj/structure/railing/handrail/rusty{
+	dir = 4
+	},
 /obj/effect/overlay/painting/graffiti{
 	icon = 'icons/fallout/objects/graffiti.dmi';
 	icon_state = "sex";
-	pixel_x = 32
+	pixel_x = -32
 	},
-/turf/closed/mineral/random/low_chance_prison,
+/turf/open/floor/f13/lit,
 /area/f13/caves)
 "v" = (
 /obj/effect/decal/cleanable/dirt{
@@ -206,6 +209,7 @@
 	pixel_y = 4;
 	pixel_x = -1
 	},
+/obj/item/storage/trash_stack,
 /turf/open/floor/f13/lit,
 /area/f13/caves)
 "K" = (
@@ -245,7 +249,7 @@
 /turf/open/floor/f13/lit,
 /area/f13/caves)
 "P" = (
-/obj/structure/wreck/trash/two_tire,
+/obj/structure/tires,
 /turf/open/water,
 /area/f13/caves)
 "Q" = (
@@ -265,6 +269,7 @@
 	name = "trash pile";
 	pixel_x = 1
 	},
+/obj/item/storage/trash_stack,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "T" = (
@@ -321,7 +326,7 @@ a
 a
 a
 a
-u
+a
 a
 a
 a
@@ -373,7 +378,7 @@ l
 E
 D
 w
-X
+w
 q
 w
 g
@@ -411,7 +416,7 @@ M
 F
 T
 R
-F
+u
 F
 N
 O
