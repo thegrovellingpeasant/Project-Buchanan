@@ -31,7 +31,7 @@
 
 /obj/item/organ/heart/Remove(special = FALSE)
 	if(!special)
-		addtimer(CALLBACK(src, .proc/stop_if_unowned), 12 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(stop_if_unowned)), 12 SECONDS)
 	return ..()
 
 /obj/item/organ/heart/proc/stop_if_unowned()
@@ -44,7 +44,7 @@
 		user.visible_message("<span class='notice'>[user] squeezes [src] to \
 			make it beat again!</span>","<span class='notice'>You squeeze [src] to make it beat again!</span>")
 		Restart()
-		addtimer(CALLBACK(src, .proc/stop_if_unowned), 80)
+		addtimer(CALLBACK(src, PROC_REF(stop_if_unowned)), 80)
 
 /obj/item/organ/heart/proc/Stop()
 	beating = 0
@@ -198,7 +198,7 @@ obj/item/organ/heart/slime
 	if(. & EMP_PROTECT_SELF)
 		return
 	Stop()
-	addtimer(CALLBACK(src, .proc/Restart), 0.2*severity SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(Restart)), 0.2*severity SECONDS)
 	damage += severity
 
 /obj/item/organ/heart/cybernetic/upgraded
@@ -274,4 +274,4 @@ obj/item/organ/heart/cybernetic/upgraded/on_life()
 		owner.heal_overall_damage(15, 15)
 		if(owner.reagents.get_reagent_amount(/datum/reagent/medicine/ephedrine) < 20)
 			owner.reagents.add_reagent(/datum/reagent/medicine/ephedrine, 10)
-	
+

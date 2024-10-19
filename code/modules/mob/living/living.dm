@@ -430,12 +430,12 @@
 		return
 	else
 		src.reset_perspective(T)
-		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_up) //no binos/scops
-		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_up)
-		RegisterSignal(src, COMSIG_LIVING_STATUS_SLEEP, .proc/stop_looking_up)
+		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, PROC_REF(stop_looking_up)) //no binos/scops
+		RegisterSignal(src, COMSIG_MOVABLE_MOVED, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, PROC_REF(stop_looking_up))
+		RegisterSignal(src, COMSIG_LIVING_STATUS_SLEEP, PROC_REF(stop_looking_up))
 
 /mob/living/proc/stop_looking_up()
 	reset_perspective(null)
@@ -847,13 +847,13 @@
 			clear_alert("gravity")
 		else
 			if(has_gravity >= GRAVITY_DAMAGE_TRESHOLD)
-				throw_alert("gravity", /obj/screen/alert/veryhighgravity)
+				throw_alert("gravity", /atom/movable/screen/alert/veryhighgravity)
 			else
-				throw_alert("gravity", /obj/screen/alert/highgravity)
+				throw_alert("gravity", /atom/movable/screen/alert/highgravity)
 	else
-		throw_alert("gravity", /obj/screen/alert/weightless)
+		throw_alert("gravity", /atom/movable/screen/alert/weightless)
 	if(!override && !is_flying())
-		INVOKE_ASYNC(src, /atom/movable.proc/float, !has_gravity)
+		INVOKE_ASYNC(src, TYPE_PROC_REF(/atom/movable, float), !has_gravity)
 
 /mob/living/float(on)
 	if(throwing)
@@ -1138,7 +1138,7 @@
 		visible_message("<span class='warning'>[src] catches fire!</span>", \
 						"<span class='userdanger'>You're set on fire!</span>")
 		new/obj/effect/dummy/lighting_obj/moblight/fire(src)
-		throw_alert("fire", /obj/screen/alert/fire)
+		throw_alert("fire", /atom/movable/screen/alert/fire)
 		update_fire()
 		SEND_SIGNAL(src, COMSIG_LIVING_IGNITED,src)
 		return TRUE

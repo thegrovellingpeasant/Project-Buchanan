@@ -129,7 +129,7 @@
 						if(can_use())
 							GLOB.cameranet.addCamera(src)
 						emped = 0 //Resets the consecutive EMP count
-						addtimer(CALLBACK(src, .proc/cancelCameraAlarm), 100)
+						addtimer(CALLBACK(src, PROC_REF(cancelCameraAlarm)), 100)
 			for(var/i in GLOB.player_list)
 				var/mob/M = i
 				if (M.client.eye == src)
@@ -337,7 +337,7 @@
 		change_msg = "reactivates"
 		triggerCameraAlarm()
 		if(!QDELETED(src)) //We'll be doing it anyway in destroy
-			addtimer(CALLBACK(src, .proc/cancelCameraAlarm), 100)
+			addtimer(CALLBACK(src, PROC_REF(cancelCameraAlarm)), 100)
 	if(displaymessage)
 		if(user)
 			visible_message("<span class='danger'>[user] [change_msg] [src]!</span>")
@@ -419,7 +419,7 @@
 
 /obj/machinery/camera/get_remote_view_fullscreens(mob/user)
 	if(view_range == short_range) //unfocused
-		user.overlay_fullscreen("remote_view", /obj/screen/fullscreen/impaired, 2)
+		user.overlay_fullscreen("remote_view", /atom/movable/screen/fullscreen/impaired, 2)
 
 /obj/machinery/camera/update_remote_sight(mob/living/user)
 	user.see_invisible = SEE_INVISIBLE_LIVING //can't see ghosts through cameras

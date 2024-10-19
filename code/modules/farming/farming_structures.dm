@@ -60,7 +60,7 @@
 			to_chat(user, "<span class='warning'>[I] is stuck to your hand!</span>")
 			return TRUE
 		to_chat(user, "<span class='notice'>You place [I] into [src] to start the fermentation process.</span>")
-		addtimer(CALLBACK(src, .proc/makeWine, fruit), rand(80, 120) * speed_multiplier)
+		addtimer(CALLBACK(src, PROC_REF(makeWine), fruit), rand(80, 120) * speed_multiplier)
 		return TRUE
 	var/obj/item/W = I
 	if(W)
@@ -197,7 +197,7 @@
 // COMPOST BIN //
 /////////////////
 
-// Sprite exists for empty state, just not coded. 
+// Sprite exists for empty state, just not coded.
 /obj/structure/reagent_dispensers/compostbin
 	name = "compost bin"
 	desc = "A smelly structure made of wooden slats where refuse is thrown. Dump unwanted seeds and produce in, pull usable compost out."

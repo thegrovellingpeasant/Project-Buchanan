@@ -71,8 +71,8 @@
 
 		if(!M.incapacitated())
 
-			if(istype(over_object, /obj/screen/inventory/hand))
-				var/obj/screen/inventory/hand/H = over_object
+			if(istype(over_object, /atom/movable/screen/inventory/hand))
+				var/atom/movable/screen/inventory/hand/H = over_object
 				M.putItemFromInventoryInHandIfPossible(src, H.held_index)
 
 /obj/item/rockitlauncher_pack/update_icon_state()
@@ -227,8 +227,8 @@ Possible solution: Only add the minimum weight class of a stack (which is basica
 	var/settings = 1
 
 /obj/item/pneumatic_cannon/rockitlauncher/Initialize()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
 
 	if(istype(loc, /obj/item/rockitlauncher_pack)) //We should spawn inside an ammo pack so let's use that one.
 		ammo_pack = loc

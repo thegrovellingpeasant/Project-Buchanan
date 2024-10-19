@@ -64,7 +64,9 @@ SUBSYSTEM_DEF(overlays)
 		count = 0
 
 /proc/iconstate2appearance(icon, iconstate)
-	var/static/image/stringbro = new()
+	var/static/image/stringbro
+	if(!stringbro)
+		stringbro = new()
 	var/list/icon_states_cache = SSoverlays.overlay_icon_state_caches
 	var/list/cached_icon = icon_states_cache[icon]
 	if (cached_icon)
@@ -81,7 +83,9 @@ SUBSYSTEM_DEF(overlays)
 	return cached_appearance
 
 /proc/icon2appearance(icon)
-	var/static/image/iconbro = new()
+	var/static/image/iconbro
+	if(!iconbro)
+		iconbro = new()
 	var/list/icon_cache = SSoverlays.overlay_icon_cache
 	. = icon_cache[icon]
 	if (!.)

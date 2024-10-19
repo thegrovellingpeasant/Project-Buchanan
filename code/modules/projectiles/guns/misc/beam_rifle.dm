@@ -266,7 +266,7 @@
 		current_user = null
 	if(istype(user))
 		current_user = user
-		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/on_mob_move)
+		RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(on_mob_move))
 
 /obj/item/gun/energy/beam_rifle/onMouseDrag(src_object, over_object, src_location, over_location, params, mob)
 	if(aiming)
@@ -280,7 +280,7 @@
 /obj/item/gun/energy/beam_rifle/onMouseDown(object, location, params, mob/mob)
 	if(istype(mob))
 		set_user(mob)
-	if(istype(object, /obj/screen) && !istype(object, /obj/screen/click_catcher))
+	if(istype(object, /atom/movable/screen) && !istype(object, /atom/movable/screen/click_catcher))
 		return
 	if((object in mob.contents) || (object == mob))
 		return
@@ -288,7 +288,7 @@
 	return ..()
 
 /obj/item/gun/energy/beam_rifle/onMouseUp(object, location, params, mob/M)
-	if(istype(object, /obj/screen) && !istype(object, /obj/screen/click_catcher))
+	if(istype(object, /atom/movable/screen) && !istype(object, /atom/movable/screen/click_catcher))
 		return
 	process_aim()
 	if(fire_check() && can_trigger_gun(M))

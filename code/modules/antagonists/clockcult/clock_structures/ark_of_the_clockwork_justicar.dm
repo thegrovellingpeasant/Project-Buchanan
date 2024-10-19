@@ -35,7 +35,7 @@
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/Initialize()
 	. = ..()
-	INVOKE_ASYNC(src, .proc/spawn_animation)
+	INVOKE_ASYNC(src, PROC_REF(spawn_animation))
 	glow = new(get_turf(src))
 	if(!GLOB.ark_of_the_clockwork_justiciar)
 		GLOB.ark_of_the_clockwork_justiciar = src
@@ -131,7 +131,7 @@
 	recalling = TRUE
 	sound_to_playing_players('sound/machines/clockcult/ark_recall.ogg', 75, FALSE)
 	hierophant_message("<span class='bold large_brass'>The Eminence has initiated a mass recall! You are being transported to the Ark!</span>")
-	addtimer(CALLBACK(src, .proc/mass_recall), 100)
+	addtimer(CALLBACK(src, PROC_REF(mass_recall)), 100)
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/mass_recall()
 	for(var/V in SSticker.mode.servants_of_ratvar)
@@ -141,7 +141,7 @@
 		if(isliving(M.current) && M.current.stat != DEAD)
 			var/turf/t_turf = isAI(M.current) ? get_step(get_step(src, NORTH),NORTH) : get_turf(src) // AI too fat, must make sure it always ends up a 2 tiles north instead of on the ark.
 			do_teleport(M.current, t_turf, channel = TELEPORT_CHANNEL_CULT, forced = TRUE)
-			M.current.overlay_fullscreen("flash", /obj/screen/fullscreen/flash)
+			M.current.overlay_fullscreen("flash", /atom/movable/screen/fullscreen/flash)
 			M.current.clear_fullscreen("flash", 5)
 	playsound(src, 'sound/magic/clockwork/invoke_general.ogg', 50, FALSE)
 	recalls_remaining--
@@ -275,7 +275,7 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 		var/turf/T = get_turf(M)
 		if(is_servant_of_ratvar(M) && (!T || T.z != z))
 			M.forceMove(get_step(src, SOUTH))
-			M.overlay_fullscreen("flash", /obj/screen/fullscreen/flash)
+			M.overlay_fullscreen("flash", /atom/movable/screen/fullscreen/flash)
 			M.clear_fullscreen("flash", 5)
 	progress_in_seconds += GATEWAY_SUMMON_RATE
 	switch(progress_in_seconds)

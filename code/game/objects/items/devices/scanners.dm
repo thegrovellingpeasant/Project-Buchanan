@@ -628,9 +628,9 @@ GENETICS SCANNER
 	var/turf/location = get_turf(user)
 	if(!istype(location))
 		return
-	
+
 	scan_turf(user, location)
-	
+
 /obj/item/analyzer/AltClick(mob/user) //Barometer output for measuring when the next storm happens
 	. = ..()
 
@@ -974,7 +974,7 @@ GENETICS SCANNER
 
 		ready = FALSE
 		icon_state = "[icon_state]_recharging"
-		addtimer(CALLBACK(src, .proc/recharge), cooldown, TIMER_UNIQUE)
+		addtimer(CALLBACK(src, PROC_REF(recharge)), cooldown, TIMER_UNIQUE)
 
 /obj/item/sequence_scanner/proc/recharge()
 	icon_state = initial(icon_state)

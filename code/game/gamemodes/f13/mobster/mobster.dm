@@ -4,7 +4,7 @@
 	var/datum/team/mob_family/bishop/bishopteam
 	var/datum/team/mob_family/wright/wrightteam
 	var/datum/team/mob_family/vangraff/vgraffteam
-	
+
 /datum/game_mode/mobster
 	name = "mobsters"
 	config_tag = "mobster"
@@ -26,11 +26,11 @@
 	for(var/mob/player in GLOB.player_list)
 		if(player.client)
 			players += player
-	
+
 	for(var/mob/player in players)
 		if(player.client)
 			candidates += player.mind
-	
+
 	return candidates
 
 /datum/game_mode/mobster/proc/assign_mob_teams(datum/team/mob_family/mob_team, list/datum/mind/candidates)
@@ -41,7 +41,7 @@
 			mobster.special_role = "mobster"
 			mobster.add_antag_datum(/datum/antagonist/mobster, mob_team)
 			log_game("[key_name(mobster)] has been selected as a mobster for [mob_team.name]")
-	
+
 	return candidates
 
 /datum/game_mode/mobster/proc/generate_objectives()
@@ -65,7 +65,7 @@
 	return ..()
 
 /datum/game_mode/mobster/post_setup()
-	addtimer(CALLBACK(src, /datum/game_mode/mobster/.proc/generate_objectives), 5 MINUTES)	//Mob objectives are generated a little bit into the round to allow for
-	addtimer(CALLBACK(src, /datum/game_mode/mobster/.proc/generate_teams), 6 MINUTES)		//a viable pool to pick from for certain objectives
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum/game_mode/mobster, generate_objectives)), 5 MINUTES)	//Mob objectives are generated a little bit into the round to allow for
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum/game_mode/mobster, generate_teams)), 6 MINUTES)		//a viable pool to pick from for certain objectives
 
 	return ..()

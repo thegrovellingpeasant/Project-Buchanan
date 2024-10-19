@@ -13,9 +13,9 @@
 	// Stuff needed to render the map
 	var/map_name
 	var/const/default_map_size = 15
-	var/obj/screen/cam_screen
-	var/obj/screen/plane_master/lighting/cam_plane_master
-	var/obj/screen/background/cam_background
+	var/atom/movable/screen/cam_screen
+	var/atom/movable/screen/plane_master/lighting/cam_plane_master
+	var/atom/movable/screen/background/cam_background
 
 /obj/machinery/computer/security/Initialize()
 	. = ..()
@@ -286,7 +286,7 @@
 
 /obj/machinery/computer/security/telescreen/entertainment/Initialize()
 	. = ..()
-	RegisterSignal(src, COMSIG_CLICK, .proc/BigClick)
+	RegisterSignal(src, COMSIG_CLICK, PROC_REF(BigClick))
 
 // Bypass clickchain to allow humans to use the telescreen from a distance
 /obj/machinery/computer/security/telescreen/entertainment/proc/BigClick()

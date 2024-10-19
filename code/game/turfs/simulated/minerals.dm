@@ -68,7 +68,7 @@
 			return
 		last_act = world.time
 		to_chat(user, "<span class='notice'>You start picking...</span>")
-		
+
 		if(I.use_tool(src, user, 40, volume=50))
 			var/range = I.digrange //Store the current digrange so people don't cheese digspeed swapping for faster mining
 			var/list/dug_tiles = list()
@@ -98,7 +98,7 @@
 	if(defer_change) // TODO: make the defer change var a var for any changeturf flag
 		flags = CHANGETURF_DEFER_CHANGE
 	ScrapeAway(null, flags)
-	addtimer(CALLBACK(src, .proc/AfterChange), 1, TIMER_UNIQUE)
+	addtimer(CALLBACK(src, PROC_REF(AfterChange)), 1, TIMER_UNIQUE)
 	playsound(src, 'sound/effects/break_stone.ogg', 50, 1) //beautiful destruction
 
 /turf/closed/mineral/attack_animal(mob/living/simple_animal/user)
@@ -841,7 +841,7 @@
 	if(defer_change)
 		flags = CHANGETURF_DEFER_CHANGE
 	ScrapeAway(null, flags)
-	addtimer(CALLBACK(src, .proc/AfterChange), 1, TIMER_UNIQUE)
+	addtimer(CALLBACK(src, PROC_REF(AfterChange)), 1, TIMER_UNIQUE)
 
 
 /turf/closed/mineral/gibtonite/volcanic
@@ -909,7 +909,7 @@
 	if(defer_change) // TODO: make the defer change var a var for any changeturf flag
 		flags = CHANGETURF_DEFER_CHANGE
 	ScrapeAway(flags=flags)
-	addtimer(CALLBACK(src, .proc/AfterChange), 1, TIMER_UNIQUE)
+	addtimer(CALLBACK(src, PROC_REF(AfterChange)), 1, TIMER_UNIQUE)
 	playsound(src, 'sound/effects/break_stone.ogg', 50, TRUE) //beautiful destruction
 //	H.mind.adjust_experience(/datum/skill/mining, 100) //yay!
 

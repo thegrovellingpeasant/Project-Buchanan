@@ -4289,7 +4289,7 @@
 /turf/open/floor/f13,
 /area/f13/wasteland)
 "nZ" = (
-/obj/screen,
+/atom/movable/screen,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "oa" = (
@@ -4309,7 +4309,7 @@
 /turf/open/floor/f13,
 /area/f13/wasteland)
 "od" = (
-/obj/screen,
+/atom/movable/screen,
 /turf/closed/wall/f13/store,
 /area/f13/wasteland)
 "oe" = (

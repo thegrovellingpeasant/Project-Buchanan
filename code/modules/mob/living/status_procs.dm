@@ -618,7 +618,7 @@
 
 /mob/living/proc/become_nearsighted(source)
 	if(!HAS_TRAIT(src, TRAIT_NEARSIGHT))
-		overlay_fullscreen("nearsighted", /obj/screen/fullscreen/impaired, 1)
+		overlay_fullscreen("nearsighted", /atom/movable/screen/fullscreen/impaired, 1)
 	ADD_TRAIT(src, TRAIT_NEARSIGHT, source)
 
 /mob/living/proc/cure_husk(source)
@@ -647,7 +647,7 @@
 	if(stat == DEAD)
 		return
 	if(!silent)
-		INVOKE_ASYNC(src, .proc/emote, "deathgasp")
+		INVOKE_ASYNC(src, PROC_REF(emote), "deathgasp")
 	ADD_TRAIT(src, TRAIT_FAKEDEATH, source)
 	ADD_TRAIT(src, TRAIT_DEATHCOMA, source)
 	tod = STATION_TIME_TIMESTAMP("hh:mm:ss", world.time)

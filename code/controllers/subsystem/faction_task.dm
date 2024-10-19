@@ -48,9 +48,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /datum/faction_task_controller
 	var/list/all_tasks = list()				// Available tasks. ("[cat]" = list([task], ...), ...)
 	var/IFT_total_chance = 0				// Individual faction task total because chances are weights so all factions are tasked.
-	var/list/faction_tasks = list()			// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
-	var/list/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
-	var/list/global_tasks = list()			// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
+	var/list/list/faction_tasks = list()			// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
+	var/list/datum/faction_task/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
+	var/list/datum/faction_task/global_tasks = list()			// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
 	var/ticks_elapsed = 0
 	var/mob/living/players[] = list()	// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
 
@@ -68,9 +68,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 //////////////////////////
 
 /datum/faction_task_controller/process()
-	for(var/F in global_tasks)
+	for(var/datum/faction_task/F as anything in global_tasks)
 		global_tasks[F].update()
-	for(var/F in player_tasks)
+	for(var/datum/faction_task/F as anything in player_tasks)
 		player_tasks[F].update()
 	for(var/F in faction_tasks)
 		for(var/FT in faction_tasks[F])
@@ -159,7 +159,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 			break
 
 //-- Faction Tasks --//
-/datum/faction_task_controller/proc/assign_faction_tasks(var/amount)
+/datum/faction_task_controller/proc/assign_faction_tasks(amount)
 	var/shifted_chance
 	var/r_num
 	var/_amount
@@ -224,8 +224,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	var/player_assigned = FALSE
 
 	// Global Tasks
-	if(global_tasks.Find(faction))
-		if(global_tasks[faction].add_player(L))
+	var/datum/faction_task/global_task = global_tasks[faction]
+	if(global_task)
+		if(global_task.add_player(L))
 			player_assigned = TRUE
 
 	// Faction Tasks
@@ -236,13 +237,15 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 				player_assigned = TRUE
 
 	// Player Tasks
-	if(initial(job.has_player_task) && player_tasks.Find(faction))
-		if(player_tasks[faction].add_player(L))
+	if(initial(job.has_player_task))
+		var/datum/faction_task/player_task = player_tasks[faction]
+		if(player_task && player_task.add_player(L))
+			player_assigned = TRUE
 			player_assigned = TRUE
 
 	// Spawn Message
 	if(player_assigned)
-		addtimer(CALLBACK(src, .proc/spawn_message, L), max(30, 300 - ticks_elapsed*2) SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(spawn_message), L), max(30, 300 - ticks_elapsed*2) SECONDS)
 
 
 ////////////////////
@@ -254,19 +257,19 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 	var/counter = 1
 	var/faction = getFaction(L)
-	if(global_tasks[faction])
-		var/datum/faction_task/task_datum = global_tasks[faction]
-		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+	var/datum/faction_task/global_task = global_tasks[faction]
+	if(global_task)
+		to_chat(L, "<b>\[#[counter] [global_task.name]\]: [global_task.task_status_msg()]</b>")
 		counter++
 	if(faction_tasks[faction])
 		for(var/T in faction_tasks[faction])
 			var/datum/faction_task/task_datum = T
 			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
 			counter++
-	if(player_tasks[faction])
-		var/datum/faction_task/task_datum = player_tasks[faction]
-		if(task_datum.players.Find(L))
-			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.task_status_msg()]</b>")
+	var/datum/faction_task/player_task = player_tasks[faction]
+	if(player_task)
+		if(player_task.players.Find(L))
+			to_chat(L, "<b>\[#[counter] [player_task.name]\]: [player_task.task_status_msg()]</b>")
 			counter++
 
 
@@ -279,19 +282,19 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 	var/counter = 1
 	var/faction = getFaction(L)
-	if(global_tasks[faction])
-		var/datum/faction_task/task_datum = global_tasks[faction]
-		to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+	var/datum/faction_task/global_task = global_tasks[faction]
+	if(global_task)
+		to_chat(L, "<b>\[#[counter] [global_task.name]\]: [global_task.end_round_msg()]</b>")
 		counter++
 	if(faction_tasks[faction])
 		for(var/T in faction_tasks[faction])
 			var/datum/faction_task/task_datum = T
 			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
 			counter++
-	if(player_tasks[faction])
-		var/datum/faction_task/task_datum = player_tasks[faction]
-		if(task_datum.players.Find(L))
-			to_chat(L, "<b>\[#[counter] [task_datum.name]\]: [task_datum.end_round_msg()]</b>")
+	var/datum/faction_task/player_task = player_tasks[faction]
+	if(player_task)
+		if(player_task.players.Find(L))
+			to_chat(L, "<b>\[#[counter] [player_task.name]\]: [player_task.end_round_msg()]</b>")
 			counter++
 
 
@@ -300,9 +303,9 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 ///////////////
 
 /datum/faction_task_controller/proc/round_end()
-	for(var/F in global_tasks)
+	for(var/datum/faction_task/F as anything in global_tasks)
 		global_tasks[F].round_end()
-	for(var/F in player_tasks)
+	for(var/datum/faction_task/F as anything in player_tasks)
 		player_tasks[F].round_end()
 	for(var/F in faction_tasks)
 		for(var/FT in faction_tasks[F])
@@ -418,7 +421,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	var/highest_score = 0
 	var/personal_score = 0
 	var/winning_faction = null
-	for(var/F in GLOB.faction_task_controller.global_tasks)
+	for(var/datum/faction_task/F as anything in GLOB.faction_task_controller.global_tasks)
 		var/score = GLOB.faction_task_controller.global_tasks[F].calculate_score()
 		if(F == "[faction]")
 			personal_score = score
@@ -459,7 +462,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	. = ..()
 	while(!target_faction || "[target_faction]" == "[faction]")
 		target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_faction/frame/proc/pick_target()
 	var/datum/faction_task/FT = null
@@ -468,7 +471,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(pick_target)), 30 SECONDS)
 		return
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
@@ -510,7 +513,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	..()
 	while(!target_faction || "[target_faction]" == "[faction]")
 		target_faction = text2path(pick(GLOB.faction_task_probabilities))
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_faction/assassination/proc/pick_target()
 	var/datum/faction_task/FT = null
@@ -519,7 +522,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	if(FT && length(FT.players) > 0)
 		target = pick(FT.players)
 	if(!target)
-		addtimer(CALLBACK(src, .proc/pick_target), 30 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(pick_target)), 30 SECONDS)
 		return
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
@@ -646,7 +649,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 
 /datum/faction_task/individual_player/heist/New()
 	..()
-	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(pick_target)), 225 SECONDS)
 
 /datum/faction_task/individual_player/heist/proc/pick_target()
 	drop_off = GLOB.faction_vault_areas["[faction]"]
@@ -689,7 +692,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 			var/datum/faction_task/task = T
 			to_chat(usr, "- [initial(task.name)]")
 	to_chat(usr, "-=-=-=-=- Global Tasks -=-=-=-=-")
-	for(var/F in GLOB.faction_task_controller.global_tasks)
+	for(var/datum/faction_task/F as anything in GLOB.faction_task_controller.global_tasks)
 		to_chat(usr, "[F]: [GLOB.faction_task_controller.global_tasks[F]]")
 
 	to_chat(usr, "-=-=-=-=- Faction Tasks -=-=-=-=-")
@@ -700,7 +703,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		to_chat(usr, "[F]: [text]")
 
 	to_chat(usr, "-=-=-=-=- Player Tasks -=-=-=-=-")
-	for(var/F in GLOB.faction_task_controller.player_tasks)
+	for(var/datum/faction_task/F as anything in GLOB.faction_task_controller.player_tasks)
 		to_chat(usr, "[F]: [GLOB.faction_task_controller.player_tasks[F]]")
 	to_chat(usr, "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
 

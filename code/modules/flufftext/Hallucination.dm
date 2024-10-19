@@ -285,7 +285,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		target.client.images |= fakerune
 	target.playsound_local(wall,'sound/effects/meteorimpact.ogg', 150, 1)
 	bubblegum = new(wall, target)
-	addtimer(CALLBACK(src, .proc/bubble_attack, landing), 10)
+	addtimer(CALLBACK(src, PROC_REF(bubble_attack), landing), 10)
 
 /datum/hallucination/oh_yeah/proc/bubble_attack(turf/landing)
 	var/charged = FALSE //only get hit once
@@ -329,10 +329,10 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			for(var/i in 1 to rand(5, 10))
 				target.playsound_local(source, 'sound/weapons/laser.ogg', 25, 1)
 				if(prob(50))
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, 'sound/weapons/sear.ogg', 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, 'sound/weapons/sear.ogg', 25, 1), rand(5,10))
 					hits++
 				else
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, 'sound/weapons/effects/searwall.ogg', 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, 'sound/weapons/effects/searwall.ogg', 25, 1), rand(5,10))
 				sleep(rand(CLICK_CD_RANGE, CLICK_CD_RANGE + 6))
 				if(hits >= 4 && prob(70))
 					target.playsound_local(source, get_sfx("bodyfall"), 25, 1)
@@ -342,10 +342,10 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			for(var/i in 1 to rand(5, 10))
 				target.playsound_local(source, 'sound/weapons/taser2.ogg', 25, 1)
 				if(prob(50))
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, 'sound/weapons/tap.ogg', 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, 'sound/weapons/tap.ogg', 25, 1), rand(5,10))
 					hits++
 				else
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, 'sound/weapons/effects/searwall.ogg', 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, 'sound/weapons/effects/searwall.ogg', 25, 1), rand(5,10))
 				sleep(rand(CLICK_CD_RANGE, CLICK_CD_RANGE + 6))
 				if(hits >= 3 && prob(70))
 					target.playsound_local(source, get_sfx("bodyfall"), 25, 1)
@@ -363,10 +363,10 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			for(var/i in 1 to rand(3, 6))
 				target.playsound_local(source, get_sfx("gunshot"), 25)
 				if(prob(60))
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, 'sound/weapons/pierce.ogg', 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, 'sound/weapons/pierce.ogg', 25, 1), rand(5,10))
 					hits++
 				else
-					addtimer(CALLBACK(target, /mob/.proc/playsound_local, source, "ricochet", 25, 1), rand(5,10))
+					addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, playsound_local), source, "ricochet", 25, 1), rand(5,10))
 				sleep(rand(CLICK_CD_RANGE, CLICK_CD_RANGE + 6))
 				if(hits >= 2 && prob(80))
 					target.playsound_local(source, get_sfx("bodyfall"), 25, 1)
@@ -916,46 +916,46 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 	feedback_details += "Type: [alert_type]"
 	switch(alert_type)
 		if("not_enough_oxy")
-			target.throw_alert(alert_type, /obj/screen/alert/not_enough_oxy, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/not_enough_oxy, override = TRUE)
 		if("not_enough_tox")
-			target.throw_alert(alert_type, /obj/screen/alert/not_enough_tox, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/not_enough_tox, override = TRUE)
 		if("not_enough_co2")
-			target.throw_alert(alert_type, /obj/screen/alert/not_enough_co2, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/not_enough_co2, override = TRUE)
 		if("too_much_oxy")
-			target.throw_alert(alert_type, /obj/screen/alert/too_much_oxy, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/too_much_oxy, override = TRUE)
 		if("too_much_co2")
-			target.throw_alert(alert_type, /obj/screen/alert/too_much_co2, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/too_much_co2, override = TRUE)
 		if("too_much_tox")
-			target.throw_alert(alert_type, /obj/screen/alert/too_much_tox, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/too_much_tox, override = TRUE)
 		if("nutrition")
 			if(prob(50))
-				target.throw_alert(alert_type, /obj/screen/alert/fat, override = TRUE)
+				target.throw_alert(alert_type, /atom/movable/screen/alert/fat, override = TRUE)
 			else
-				target.throw_alert(alert_type, /obj/screen/alert/starving, override = TRUE)
+				target.throw_alert(alert_type, /atom/movable/screen/alert/starving, override = TRUE)
 		if("gravity")
-			target.throw_alert(alert_type, /obj/screen/alert/weightless, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/weightless, override = TRUE)
 		if("fire")
-			target.throw_alert(alert_type, /obj/screen/alert/fire, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/fire, override = TRUE)
 		if("temphot")
 			alert_type = "temp"
-			target.throw_alert(alert_type, /obj/screen/alert/hot, 3, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/hot, 3, override = TRUE)
 		if("tempcold")
 			alert_type = "temp"
-			target.throw_alert(alert_type, /obj/screen/alert/cold, 3, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/cold, 3, override = TRUE)
 		if("pressure")
 			if(prob(50))
-				target.throw_alert(alert_type, /obj/screen/alert/highpressure, 2, override = TRUE)
+				target.throw_alert(alert_type, /atom/movable/screen/alert/highpressure, 2, override = TRUE)
 			else
-				target.throw_alert(alert_type, /obj/screen/alert/lowpressure, 2, override = TRUE)
+				target.throw_alert(alert_type, /atom/movable/screen/alert/lowpressure, 2, override = TRUE)
 		//BEEP BOOP I AM A ROBOT
 		if("newlaw")
-			target.throw_alert(alert_type, /obj/screen/alert/newlaw, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/newlaw, override = TRUE)
 		if("locked")
-			target.throw_alert(alert_type, /obj/screen/alert/locked, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/locked, override = TRUE)
 		if("hacked")
-			target.throw_alert(alert_type, /obj/screen/alert/hacked, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/hacked, override = TRUE)
 		if("charge")
-			target.throw_alert(alert_type, /obj/screen/alert/emptycell, override = TRUE)
+			target.throw_alert(alert_type, /atom/movable/screen/alert/emptycell, override = TRUE)
 	sleep(duration)
 	target.clear_alert(alert_type, clear_override = TRUE)
 	qdel(src)
@@ -1095,7 +1095,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 			return
 		to_chat(target, "<span class='userdanger'>You fall into the chasm!</span>")
 		target.DefaultCombatKnockdown(40)
-		addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, target, "<span class='notice'>It's surprisingly shallow.</span>"), 15)
+		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), target, "<span class='notice'>It's surprisingly shallow.</span>"), 15)
 		QDEL_IN(src, 30)
 
 /obj/effect/hallucination/danger/anomaly
@@ -1163,7 +1163,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 	if(target.client)
 		target.client.images += fire_overlay
 	to_chat(target, "<span class='userdanger'>You're set on fire!</span>")
-	target.throw_alert("fire", /obj/screen/alert/fire, override = TRUE)
+	target.throw_alert("fire", /atom/movable/screen/alert/fire, override = TRUE)
 	sleep(20)
 	for(var/i in 1 to 3)
 		if(target.fire_stacks <= 0)
@@ -1185,7 +1185,7 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 		target.clear_alert("temp", clear_override = TRUE)
 	else
 		target.clear_alert("temp", clear_override = TRUE)
-		target.throw_alert("temp", /obj/screen/alert/hot, stage, override = TRUE)
+		target.throw_alert("temp", /atom/movable/screen/alert/hot, stage, override = TRUE)
 
 /datum/hallucination/fire/proc/clear_fire()
 	if(!active)
@@ -1218,13 +1218,13 @@ GLOBAL_LIST_INIT(hallucination_list, list(
 	if(target.client)
 		target.client.images |= shock_image
 		target.client.images |= electrocution_skeleton_anim
-	addtimer(CALLBACK(src, .proc/reset_shock_animation), 40)
+	addtimer(CALLBACK(src, PROC_REF(reset_shock_animation)), 40)
 	target.playsound_local(get_turf(src), "sparks", 100, 1)
 	target.staminaloss += 50
 	target.Stun(40)
 	target.jitteriness += 1000
 	target.do_jitter_animation(target.jitteriness)
-	addtimer(CALLBACK(src, .proc/shock_drop), 20)
+	addtimer(CALLBACK(src, PROC_REF(shock_drop)), 20)
 
 /datum/hallucination/shock/proc/reset_shock_animation()
 	if(target.client)
