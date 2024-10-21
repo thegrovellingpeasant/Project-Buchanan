@@ -389,8 +389,6 @@ Electric Fences subtype - for use at NCRCF
 
 /obj/structure/fence/electric_fence/attackby(obj/item/W, mob/user)
 	.=..()
-	if(shock(user, 60))
-		return TRUE
 	if(istype(W, /obj/item/wirecutters))
 		if(!cuttable)
 			to_chat(user, "<span class='notice'>This section of the fence can't be cut.</span>")
@@ -398,6 +396,12 @@ Electric Fences subtype - for use at NCRCF
 		if(invulnerable)
 			to_chat(user, "<span class='notice'>This fence is too strong to cut through.</span>")
 			return
+		if(fusion_generator)
+			if(!fusion_generator.get_cell())
+				return
+			else 
+				shock(user, 60)
+				return
 		var/current_stage = hole_size
 
 		user.visible_message("<span class='danger'>\The [user] starts cutting through \the [src] with \the [W].</span>",\
