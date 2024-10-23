@@ -94,7 +94,9 @@ SUBSYSTEM_DEF(overlays)
 		icon_cache[icon] = .
 
 /atom/proc/build_appearance_list(old_overlays)
-	var/static/image/appearance_bro = new()
+	var/static/image/appearance_bro
+	if(!appearance_bro)
+		appearance_bro = new()
 	var/list/new_overlays = list()
 	if (!islist(old_overlays))
 		old_overlays = list(old_overlays)

@@ -11,15 +11,17 @@ GLOBAL_LIST(topic_status_cache)
 //So subsystems globals exist, but are not initialised
 
 /world/New()
-	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
-	if (debug_server)
-		call(debug_server, "auxtools_init")()
-		enable_debugging()
-	AUXTOOLS_CHECK(AUXMOS)
+	init_debugger()
+
 #ifdef EXTOOLS_REFERENCE_TRACKING
 	enable_reference_tracking()
 #endif
+
+	//Early profile for auto-profiler - will be stopped on profiler init if necessary.
+#if DM_BUILD >= 1506
 	world.Profile(PROFILE_START)
+#endif
+
 	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
 
 	GLOB.config_error_log = GLOB.world_manifest_log = GLOB.world_pda_log = GLOB.world_job_debug_log = GLOB.sql_error_log = GLOB.world_href_log = GLOB.world_runtime_log = GLOB.world_attack_log = GLOB.world_game_log = "data/logs/config_error.[GUID()].log" //temporary file used to record errors with loading config, moved to log directory once logging is set bl
@@ -274,16 +276,17 @@ GLOBAL_LIST(topic_status_cache)
 
 	log_world("World rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
+	if (debug_server)
+		call_ext(debug_server, "auxtools_shutdown")()
 	..()
 
 /world/Del()
 	shutdown_logging() // makes sure the thread is closed before end, else we terminate
-	AUXTOOLS_SHUTDOWN(AUXMOS)
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
-		call(debug_server, "auxtools_shutdown")()
-	..()
+		LIBCALL(debug_server, "auxtools_shutdown")()
+	return ..()
 
 /world/proc/update_status()
 
