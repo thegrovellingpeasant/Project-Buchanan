@@ -67,7 +67,6 @@
 	return (length(samples) >= 128)
 
 /datum/instrument/Destroy()
-	SSinstruments.instrument_data -= id
 	for(var/i in songs_using)
 		var/datum/song/S = i
 		S.set_instrument(null)

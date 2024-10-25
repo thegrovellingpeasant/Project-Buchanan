@@ -121,10 +121,6 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	return "[say_mod(input, message_mode)][spanned ? ", \"[spanned]\"" : ""]"
 	// Citadel edit [spanned ? ", \"[spanned]\"" : ""]"
 
-#define ENCODE_HTML_EPHASIS(input, char, html, varname) \
-	var/static/regex/##varname = regex("[char]{2}(.+?)[char]{2}", "g");\
-	input = varname.Replace_char(input, "<[html]>$1</[html]>")
-
 /// Converts specific characters, like +, |, and _ to formatted output.
 /atom/movable/proc/say_emphasis(input)
 	var/static/regex/italics = regex(@"\|((?=\S)[\w\W]*?(?<=\S))\|", "g")
