@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 /datum/faction_task_controller
-	var/list/all_tasks = list()				// Available tasks. ("[cat]" = list([task], ...), ...)
+	var/list/list/all_tasks = list()				// Available tasks. ("[cat]" = list([task], ...), ...)
 	var/IFT_total_chance = 0				// Individual faction task total because chances are weights so all factions are tasked.
 	var/list/list/faction_tasks = list()			// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
 	var/list/datum/faction_task/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)

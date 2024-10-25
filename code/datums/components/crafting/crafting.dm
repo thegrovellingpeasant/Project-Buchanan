@@ -120,7 +120,7 @@
 	if(!isturf(a.loc))
 		return
 	for(var/atom/movable/AM in range(radius_range, a))
-		if(AM.flags_1 & HOLOGRAM_1 || LAZYISIN(blacklist, AM.type))
+		if(AM.flags_1 & HOLOGRAM_1 || LAZYFIND(blacklist, AM.type))
 			continue
 		if(istype(a, /mob/living/carbon/human))
 			var/mob/living/carbon/human/user = a

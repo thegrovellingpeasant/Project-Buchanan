@@ -86,7 +86,7 @@ GLOBAL_LIST_EMPTY(potential_mods_per_skill)
 		L[P] = GLOB.potential_mods_per_skill[P] & (__L + id)\
 	}\
 	if(M.modifier_flags & MODIFIER_SKILL_ORIGIN_DIFF){\
-		LAZYADDASSOC(O, id, "[P]" = G)\
+		LAZYADDASSOCLIST(O, id, "[P]" = G)\
 	}
 
 /datum/mind/proc/add_skill_modifier(id)
