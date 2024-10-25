@@ -103,9 +103,8 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 		// Create Category List
 		all_tasks["[cat_name]"] = list()
 		var/tasks = subtypesof(task_category)
-		for(var/T in tasks)
-			var/datum/faction_task/task = T
-			if(ispath(T, /datum/faction_task/individual_faction))
+		for(var/datum/faction_task/task as anything in tasks)
+			if(ispath(task, /datum/faction_task/individual_faction))
 				IFT_total_chance += initial(task.chance)
 
 			// Add Faction Tasks to Category
@@ -420,20 +419,21 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/global_faction/wealth/end_round_msg()
 	var/highest_score = 0
 	var/personal_score = 0
-	var/winning_faction = null
+	var/winning_faction_name = null
 	for(var/datum/faction_task/F as anything in GLOB.faction_task_controller.global_tasks)
 		var/score = GLOB.faction_task_controller.global_tasks[F].calculate_score()
 		if(F == "[faction]")
 			personal_score = score
 		if(score > highest_score)
 			highest_score = score
-			winning_faction = F
-	if(winning_faction == "[faction]" && highest_score > 0)
+			winning_faction_name = F
+	if(winning_faction_name == "[faction]" && highest_score > 0)
 		return "<font color='#097f10'>Your faction's wealth exceeds all others ($[highest_score]).</font>"
 	else if(highest_score == 0)
 		return "<font color='#c7863e'>You're all cashless losers.</font>"
 	else
-		return "<font color='#bc2621'>Another faction ([initial(text2path(winning_faction).faction)], $[highest_score]) has exceeded yours in wealth ($[personal_score]).</font>"
+		var/datum/faction_task/winning_faction_path = text2path(winning_faction_name)
+		return "<font color='#bc2621'>Another faction ([initial(winning_faction_path.faction)], $[highest_score]) has exceeded yours in wealth ($[personal_score]).</font>"
 
 
 

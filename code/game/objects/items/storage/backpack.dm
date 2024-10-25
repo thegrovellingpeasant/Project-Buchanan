@@ -662,7 +662,7 @@
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/grenade/syndieminibomb(src)
 
-obj/item/storage/backpack/duffelbag/syndie/shredderbundle
+/obj/item/storage/backpack/duffelbag/syndie/shredderbundle
 	desc = "A large duffel bag containing two CX Shredders, some magazines, an elite hardsuit, and a chest rig."
 
 /obj/item/storage/backpack/duffelbag/syndie/shredderbundle/PopulateContents()
@@ -787,4 +787,4 @@ obj/item/storage/backpack/duffelbag/syndie/shredderbundle
 	name = "Scav Backpack"
 	desc = "Not be used outside of Russia"
 	icon_state = "ScavPack"
-	item_state = "ScavPack" 
+	item_state = "ScavPack"

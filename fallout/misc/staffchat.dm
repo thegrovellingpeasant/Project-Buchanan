@@ -56,7 +56,7 @@ GLOBAL_PROTECT(staff)
 	if(!add_or_remove)
 		return
 
-	
+
 	switch(add_or_remove)
 		if("Add")
 			chosen_recipe = input(src, "Enter the recipe name to add to [target.name].", "Search recipes") as null|text
@@ -100,7 +100,7 @@ GLOBAL_PROTECT(staff)
 				to_chat(src, "<span class='warning'>Target does not know any recipes!</span>")
 				return
 
-			
+
 //event coordinator stuff
 /datum/admins/proc/event_panel()
 	if(!check_rights(R_SPAWN))
@@ -153,20 +153,5 @@ GLOBAL_PROTECT(staff)
 		message_admins("[ADMIN_TPMONTY(usr)] tried to use open_event_panel() without perms!")
 		log_admin("INVALID ADMIN PROC ACCESS: [key_name(usr)] tried to use open_event_panel() without perms!")
 		return
-	
+
 	src.holder.event_panel()
-
-//for the client to optionally go fullscreen
-/client/verb/toggle_fullscreenwindow()
-	set category = "Preferences"
-	set name = "Toggle Fullscreen"
-
-	src.is_fullscreen = !src.is_fullscreen
-
-	if(src.is_fullscreen)
-		winset(src, "mainwindow", "is-maximized=false;can-resize=false;titlebar=false;menu=menu")
-		winset(src, "mainwindow.mainvsplit", "pos=0x0")
-	else
-		winset(src, "mainwindow", "is-maximized=false;can-resize=true;titlebar=true;menu=menu")
-		winset(src, "mainwindow.mainvsplit", "pos=3x0")
-	winset(src, "mainwindow", "is-maximized=true")

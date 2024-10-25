@@ -1,5 +1,3 @@
-#ifdef EXTOOLS_BROKE
-
 /datum/gas_mixture
 	var/list/gases = list()
 	var/temperature = 0 //kelvins
