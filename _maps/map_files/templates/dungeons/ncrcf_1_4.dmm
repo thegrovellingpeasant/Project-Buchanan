@@ -209,7 +209,8 @@
 /area/f13/caves)
 "lo" = (
 /obj/structure/closet/cabinet,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /turf/open/floor/f13{
 	icon_state = "freezerfloor";
 	sunlight_state = 1
@@ -328,6 +329,17 @@
 "sH" = (
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"sT" = (
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/structure/closetundense/locker/medcabinet{
+	pixel_x = 26;
+	pixel_y = -5
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor";
+	sunlight_state = 1
+	},
 /area/f13/caves)
 "tO" = (
 /obj/effect/overlay/painting/graffiti{
@@ -560,7 +572,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "HW" = (
-/obj/structure/table/wood/greyscale/nosmooth,
+/obj/structure/table/wood/greyscale,
 /obj/item/reagent_containers/glass/maunamug{
 	pixel_x = -4;
 	pixel_y = 5
@@ -574,7 +586,7 @@
 /turf/open/floor/carpet/red,
 /area/f13/caves)
 "Jt" = (
-/obj/structure/table/wood/greyscale/nosmooth,
+/obj/structure/table/wood/greyscale,
 /obj/item/reagent_containers/food/drinks/flask/teapot{
 	pixel_y = -7
 	},
@@ -980,7 +992,7 @@ or
 or
 MP
 Dh
-dZ
+sT
 dZ
 Vz
 ff

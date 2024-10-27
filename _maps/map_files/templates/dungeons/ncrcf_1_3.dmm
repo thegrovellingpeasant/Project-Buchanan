@@ -115,13 +115,18 @@
 /area/f13/caves)
 "ck" = (
 /obj/structure/table,
-/obj/item/clipboard,
+/obj/item/clipboard{
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "cu" = (
 /obj/machinery/light{
 	dir = 1;
 	layer = 4.19
+	},
+/obj/machinery/camera/preset/ncrcf{
+	c_tag = "Contraband Storage"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
@@ -145,6 +150,13 @@
 	},
 /obj/structure/chair/folding{
 	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/caves)
+"dk" = (
+/obj/machinery/camera/preset/ncrcf{
+	c_tag = "F Block East";
+	pixel_x = 21
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
@@ -276,6 +288,12 @@
 /obj/structure/chair/wood,
 /obj/structure/nest/mob/ghoularmless,
 /turf/open/floor/plating/tunnel,
+/area/f13/caves)
+"if" = (
+/obj/machinery/camera/preset/ncrcf{
+	c_tag = "Lethal Injection Chamber"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "ig" = (
 /obj/structure/window/reinforced/tinted/frosted{
@@ -479,8 +497,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "qM" = (
-/obj/item/gavelhammer,
 /obj/structure/table,
+/obj/item/gavelblock{
+	pixel_y = 3
+	},
+/obj/item/gavelhammer{
+	pixel_x = -1;
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "qS" = (
@@ -634,7 +658,7 @@
 	pixel_x = 14
 	},
 /obj/item/stack/f13Cash/caps/onezerozero,
-/obj/item/stack/f13Cash/caps/fourzero,
+/obj/effect/spawner/lootdrop/f13/cash_ncr_high,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "wK" = (
@@ -807,6 +831,13 @@
 /area/f13/caves)
 "Ax" = (
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"AB" = (
+/obj/machinery/camera/preset/ncrcf{
+	dir = 8;
+	c_tag = "F Block West"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "AH" = (
 /obj/structure/table,
@@ -1303,6 +1334,7 @@
 /area/f13/caves)
 "Np" = (
 /obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/cash_ncr_low,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/caves)
 "Nt" = (
@@ -2280,7 +2312,7 @@ bE
 zO
 Qd
 Za
-Qd
+AB
 Qd
 Qd
 Qd
@@ -2588,7 +2620,7 @@ QR
 Qd
 zG
 bE
-Qd
+dk
 Qd
 rS
 bE
@@ -2669,7 +2701,7 @@ Qk
 OR
 rS
 bE
-Qd
+if
 Qd
 Qd
 Qd

@@ -39,6 +39,12 @@
 	slowdown = 0.3
 	allowed = list(/obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
+/obj/item/clothing/suit/armored/heavy/wardenplate
+	name = "warden plates"
+	desc = "Thick metal breastplate with a decorative skull on the shoulder."
+	icon_state = "wardenplate"
+	armor = list("melee" = 55, "bullet" = 50, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 15, "fire" = 10, "acid" = 10)
+
 //////////////////////////
 // Salvaged Power Armor //
 //////////////////////////

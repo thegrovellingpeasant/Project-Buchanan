@@ -77,6 +77,18 @@
 /turf/open/floor/wood/lit
 	sunlight_state = SUNLIGHT_SOURCE
 
+/turf/open/floor/wood/housewoodbroken
+	icon_state = "housewood21-broken"
+
+/turf/open/floor/wood/housewoodbroken2
+	icon_state = "housewood22-broken"
+
+/turf/open/floor/wood/housewoodbroken3
+	icon_state = "housewood23-broken"
+
+/turf/open/floor/wood/housewoodbroken4
+	icon_state = "housewood24-broken"
+
 /turf/open/floor/wood/wood_large
 	desc = "Stylish dark wood."
 	icon_state = "large_wood"

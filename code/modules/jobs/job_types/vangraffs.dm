@@ -36,7 +36,7 @@
 	supervisors = "the Matriarch"
 	description = "You are the Branch Manager of the Reno Branch of the Van Graffs.  You are a member of the Van Graff family by blood and entrusted with the management of the local operation and its assets. Make sure profits continue to flow in, strike deals with the locals, and further your power in the city."
 	selection_color = "#5bd75b"
-	exp_requirements = EXP_TYPE_VANGRAFFS
+	exp_requirements = 540
 
 	outfit = /datum/outfit/job/vangraffs/f13branchmanager
 
@@ -123,6 +123,7 @@
 	supervisors = "The Branch Manager"
 	description = "By some means or another you were appointed as the head of security for the Reno Branch. You are to manage the team of guards, protect Van Graff property, and follow the Branch Manager's orders to the letter."
 	selection_color = "5bd75b"
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/vangraffs/f13vgenforcer
 /*

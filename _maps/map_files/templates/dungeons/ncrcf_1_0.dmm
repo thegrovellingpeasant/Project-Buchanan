@@ -41,12 +41,28 @@
 	},
 /turf/open/floor/wood,
 /area/f13/caves)
+"dN" = (
+/obj/machinery/light/fo13colored/Pink{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrownfull"
+	},
+/area/f13/caves)
 "eH" = (
 /obj/structure/table/round,
-/obj/effect/spawner/lootdrop/f13/crafting,
-/obj/effect/spawner/lootdrop/f13/crafting,
-/obj/item/stock_parts/cell/ammo/ec,
-/obj/item/stock_parts/cell/ammo/mfc,
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 2
+	},
+/obj/effect/spawner/lootdrop/f13/crafting{
+	pixel_y = 2
+	},
+/obj/item/stock_parts/cell/ammo/mfc{
+	pixel_y = 3
+	},
+/obj/item/stock_parts/cell/ammo/ec{
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "darkbrown";
 	dir = 8;
@@ -87,6 +103,9 @@
 	name = "drain";
 	pixel_x = -25
 	},
+/obj/machinery/light/fo13colored/Pink{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "hG" = (
@@ -110,6 +129,7 @@
 /area/f13/caves)
 "iA" = (
 /obj/effect/overlay/curb/north,
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
@@ -175,6 +195,16 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/wood,
 /area/f13/caves)
+"pw" = (
+/obj/machinery/light/fo13colored/Pink{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 8;
+	sunlight_state = 1
+	},
+/area/f13/caves)
 "qd" = (
 /turf/open/floor/f13{
 	icon_state = "darkbrownfull"
@@ -198,12 +228,17 @@
 	pixel_y = 6;
 	pixel_x = 5
 	},
+/obj/effect/spawner/lootdrop/f13/cash_random_low{
+	pixel_x = -9
+	},
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "sF" = (
 /obj/machinery/porta_turret/syndicate{
 	faction = list("hostile","supermutant");
-	name = "defense system"
+	name = "defense system";
+	max_integrity = 80
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
@@ -243,8 +278,13 @@
 /area/f13/caves)
 "vV" = (
 /obj/effect/spawner/lootdrop/f13/cash_random_low{
-	pixel_x = -8
+	pixel_x = -11
 	},
+/obj/effect/spawner/lootdrop/f13/cash_random_low{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "wi" = (
@@ -259,6 +299,16 @@
 "wn" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"wE" = (
+/obj/machinery/light/fo13colored/Pink{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkbrown";
+	dir = 1;
+	sunlight_state = 1
+	},
 /area/f13/caves)
 "xd" = (
 /turf/closed/mineral/random/low_chance_prison,
@@ -572,7 +622,9 @@
 "UY" = (
 /obj/structure/table/round,
 /obj/item/restraints/handcuffs/fake/kinky,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid{
+	pixel_y = 5
+	},
 /turf/open/floor/f13{
 	icon_state = "darkbrown";
 	dir = 8;
@@ -588,6 +640,11 @@
 "VC" = (
 /obj/structure/railing/dancing_pole/top,
 /obj/effect/overlay/curb/north,
+/obj/effect/spawner/lootdrop/f13/cash_random_low,
+/obj/effect/spawner/lootdrop/f13/cash_random_low{
+	pixel_x = 14;
+	pixel_y = -5
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "We" = (
@@ -1314,11 +1371,11 @@ xd
 xd
 QV
 Ry
-Dv
+pw
 eH
 QV
 ak
-Dv
+pw
 UY
 QV
 xd
@@ -1416,7 +1473,7 @@ xd
 xd
 QV
 bj
-nk
+wE
 EB
 Mk
 HI
@@ -1557,7 +1614,7 @@ qd
 eM
 qd
 qd
-qd
+dN
 qd
 Lb
 AA

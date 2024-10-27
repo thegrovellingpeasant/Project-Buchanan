@@ -1,6 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /obj/structure/table,
+/obj/machinery/reagentgrinder{
+	pixel_y = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"b" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/item/reagent_containers/glass/rag/towel,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -20,6 +30,7 @@
 /area/f13/caves)
 "e" = (
 /obj/structure/closet/locker/oldstyle,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -98,6 +109,13 @@
 /area/f13/caves)
 "o" = (
 /obj/structure/junk/small/bed,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"p" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/item/clothing/suit/toggle/labcoat,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -202,10 +220,8 @@
 /area/f13/caves)
 "D" = (
 /obj/structure/closet/locker/oldstyle,
-/obj/structure/closet/locker/oldstyle,
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
-	},
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "E" = (
 /obj/structure/bed{
@@ -213,6 +229,21 @@
 	layer = 2.89
 	},
 /obj/structure/spider/stickyweb,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"F" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
+/turf/open/floor/plasteel/f13/vault_floor/plating{
+	name = "plating";
+	icon_state = "platingdmg3"
+	},
+/area/f13/caves)
+"G" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/item/clothing/suit/toggle/labcoat/f13/labgoat,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -236,6 +267,13 @@
 	color = "000000"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"J" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
 /area/f13/caves)
 "K" = (
 /turf/open/indestructible/ground/inside/mountain,
@@ -265,10 +303,12 @@
 /area/f13/caves)
 "O" = (
 /obj/structure/closet/locker/oldstyle,
+/obj/item/clothing/suit/toggle/labcoat/f13/labgoat,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/caves)
 "P" = (
 /obj/structure/closet/locker/oldstyle,
+/obj/item/clothing/suit/toggle/labcoat,
 /turf/open/floor/plasteel/f13/vault_floor/plating{
 	name = "plating";
 	icon_state = "platingdmg3"
@@ -277,6 +317,14 @@
 "Q" = (
 /obj/structure/debris/v1,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/caves)
+"R" = (
+/obj/structure/closet/locker/oldstyle,
+/obj/item/reagent_containers/glass/rag/towel,
+/obj/item/soap/deluxe,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
 /area/f13/caves)
 "S" = (
 /obj/structure/spider/stickyweb,
@@ -291,6 +339,7 @@
 "U" = (
 /obj/structure/closet/locker/oldstyle,
 /obj/structure/spider/stickyweb,
+/obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -308,6 +357,9 @@
 /area/f13/caves)
 "X" = (
 /obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/medical/vault/meds{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13/vault_floor/plating{
 	name = "plating";
 	icon_state = "platingdmg3"
@@ -443,7 +495,7 @@ N
 N
 N
 V
-e
+p
 v
 V
 V
@@ -467,7 +519,7 @@ n
 V
 c
 c
-P
+F
 e
 V
 r
@@ -505,10 +557,10 @@ t
 V
 z
 W
-a
+J
 a
 V
-e
+b
 y
 V
 N
@@ -519,7 +571,7 @@ N
 T
 K
 V
-e
+G
 v
 V
 V
@@ -584,7 +636,7 @@ M
 X
 f
 V
-e
+R
 j
 V
 N
@@ -595,7 +647,7 @@ N
 T
 T
 V
-O
+D
 v
 V
 V
@@ -690,7 +742,7 @@ N
 K
 K
 w
-D
+e
 H
 V
 o

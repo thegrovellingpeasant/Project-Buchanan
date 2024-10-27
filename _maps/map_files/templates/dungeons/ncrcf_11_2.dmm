@@ -1,393 +1,1400 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"at" = (
+/obj/structure/railing{
+	dir = 8;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"aB" = (
+/obj/structure/car/totaledbuggy{
+	pixel_x = -16
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
+"aE" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "no1";
+	pixel_x = 32
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"bP" = (
+/obj/structure/railing{
+	dir = 5;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
 "bU" = (
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/effect/decal/remains/human{
+	layer = 3.01;
+	plane = -4
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"cu" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/open/floor/holofloor/wood,
+"cN" = (
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
 /area/f13/caves)
-"cV" = (
-/obj/structure/spider/cocoon,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
-/area/f13/caves)
-"di" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+"cS" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/green,
 /area/f13/caves)
 "dQ" = (
-/obj/structure/spider/cocoon,
-/turf/open/floor/wood/f13/housewoodbroken2,
+/obj/effect/decal/remains/human{
+	plane = -4
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"em" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude,
-/turf/closed/mineral/random/low_chance_prison,
+"ec" = (
+/obj/structure/car/motoryclevert/green{
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/caves)
-"eE" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/low_chance_prison,
+"ef" = (
+/obj/structure/railing{
+	dir = 10;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb,
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"fA" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
 "fL" = (
-/obj/structure/spider/eggcluster,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken,
-/area/f13/caves)
-"gT" = (
-/turf/closed/wall/f13/wood/house/shack{
-	baseturfs = /turf/open/indestructible/ground/inside/mountain;
-	name = "basement wall"
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 4
 	},
+/area/f13/caves)
+"fO" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "killers"
+	},
+/turf/closed/wall/f13/ruins,
+/area/f13/caves)
+"hk" = (
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
 /area/f13/caves)
 "hM" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"hR" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/oakbase,
+"hP" = (
+/obj/structure/railing{
+	dir = 6;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"hZ" = (
-/obj/structure/spider/eggcluster,
-/turf/open/floor/holofloor/wood,
+"iH" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"jJ" = (
+/obj/effect/mob_spawn/human/corpse/raider/ranged/biker,
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 "jM" = (
 /turf/closed/mineral/random/low_chance_prison,
 /area/f13/caves)
+"jW" = (
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
 "kc" = (
-/obj/structure/spider/stickyweb,
-/turf/closed/mineral/random/low_chance_prison,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"ke" = (
-/obj/structure/spider/eggcluster,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken,
+"ky" = (
+/obj/structure/car/rubbish6,
+/obj/structure/railing{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "car_railing";
+	name = "pre-War rubbish";
+	desc = null;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
-"kI" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/low_chance_prison,
+"lk" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/plaque{
+	pixel_y = -3;
+	layer = 3;
+	name = "Harry's Auto Museum"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"lr" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken2,
+"lX" = (
+/obj/structure/car/rubbish6{
+	dir = 4
+	},
+/obj/structure/railing{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "car_railing3";
+	name = "pre-War rubbish";
+	desc = null;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "car_railing4";
+	name = "pre-War rubbish";
+	desc = null;
+	pixel_x = 32;
+	density = 0
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
-"mc" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/open/floor/holofloor/wood,
+"mF" = (
+/obj/structure/railing/corner{
+	dir = 8;
+	color = "#7a5647"
+	},
+/obj/structure/car/rubbish11,
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"nF" = (
-/obj/structure/spider/eggcluster,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+"nb" = (
+/obj/structure/car/totaledbuggy/olive{
+	pixel_x = -16
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/green,
 /area/f13/caves)
-"nV" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken,
+"ns" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/caves)
-"oe" = (
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/indestructible/ground/inside/mountain,
+"nH" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"nO" = (
+/obj/structure/railing{
+	dir = 9;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
 "og" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/closed/mineral/random/low_chance_prison,
+/turf/closed/mineral/random/high_chance_prison,
 /area/f13/caves)
-"pe" = (
-/turf/open/floor/wood/f13/housewoodbroken,
+"ol" = (
+/obj/vehicle/ridden/scooter{
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"pq" = (
-/obj/structure/barricade/wooden,
-/turf/open/floor/holofloor/wood,
+"oz" = (
+/obj/structure/car/rubbish5{
+	dir = 4
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"pH" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
+"qt" = (
+/obj/item/weldingtool,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gibup1r-overlay"
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gibdown1"
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 "qz" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
+"qD" = (
+/obj/structure/wreck/bus/rusted/segmented6{
+	name = "Crashed Semi";
+	layer = 2.1;
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"qQ" = (
+/obj/structure/car/totaledbuggy/dune{
+	dir = 4;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
+"qY" = (
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"qZ" = (
+/obj/effect/decal/remains/cans{
+	icon_state = "cans3"
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 "ra" = (
-/obj/structure/barricade/wooden/planks,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/wood/f13/housewoodbroken,
+/obj/structure/wreck/bus/rusted/segmented5{
+	layer = 2.1;
+	name = "Crashed Semi";
+	density = 0;
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblue,
 /area/f13/caves)
-"sq" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/oakbase,
+"rD" = (
+/obj/item/gun/ballistic/rifle/mosin{
+	pixel_y = 17;
+	pixel_x = 15
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"sr" = (
-/turf/open/floor/wood/f13/housewoodbroken4,
+"si" = (
+/obj/item/melee/onehanded/club/tireiron{
+	pixel_x = 8
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"uk" = (
-/obj/structure/barricade/wooden/planks,
-/turf/open/indestructible/ground/inside/mountain,
+"sj" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 5
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"uI" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude,
-/turf/closed/mineral/random/low_chance_prison,
+"tp" = (
+/obj/structure/wreck/bus/rusted/segmented14{
+	name = "Crashed Semi";
+	pixel_x = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"vm" = (
-/obj/structure/spider/eggcluster,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
+"tq" = (
+/obj/structure/wreck/bus/rusted/segmented4{
+	name = "Crashed Semi";
+	layer = 2.1;
+	density = 0;
+	pixel_x = 8
+	},
+/obj/structure/railing{
+	dir = 8;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"uV" = (
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"vi" = (
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
 "vn" = (
-/turf/closed/mineral/random/high_chance_prison,
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/caves)
-"xo" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden/crude,
-/turf/closed/mineral/random/low_chance_prison,
+"vE" = (
+/obj/structure/car/motoryclevert/light{
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/purple,
+/area/f13/caves)
+"vK" = (
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"wq" = (
+/obj/structure/wreck/bus/rusted/segmented12{
+	name = "Crashed Semi";
+	layer = 3.91;
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"xu" = (
+/obj/effect/decal/remains/bottles,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xw" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken,
+/turf/closed/wall/f13/store/concretewall,
 /area/f13/caves)
-"xx" = (
-/turf/open/floor/wood/f13/housewoodbroken3,
+"yz" = (
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "resistor_3";
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "sensor_module"
+	},
+/obj/item/blanket/ruined,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"yl" = (
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/high_chance_prison,
+"yL" = (
+/obj/structure/nest/mob/deathclaw{
+	icon_state = "deathclaw_sleep";
+	mob_types = list(/mob/living/simple_animal/hostile/deathclaw/mother=5);
+	pixel_x = -13;
+	pixel_y = -15;
+	color = "#5f685e"
+	},
+/obj/item/salvage/low{
+	pixel_x = 14;
+	pixel_y = -20
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "scrap";
+	pixel_y = 9
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "timer"
+	},
+/obj/item/salvage/high{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "id_key_off";
+	pixel_y = 4;
+	dir = 8;
+	pixel_x = 6;
+	layer = 2.99
+	},
+/obj/item/blanket/ruined,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Bm" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/oakbase,
+"yY" = (
+/obj/structure/wreck/bus/rusted/segmented20{
+	name = "Crashed Semi";
+	pixel_x = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Cz" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/open/floor/wood/f13/housewoodbroken,
+"zw" = (
+/obj/machinery/light/invisible,
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = 10;
+	pixel_x = -9
+	},
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = 3;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = 3;
+	pixel_x = 5
+	},
+/obj/item/trash/f13/electronic/toaster{
+	icon_state = "wasteland_pit";
+	icon = 'icons/misc/Pit.dmi';
+	desc = null;
+	name = "nest";
+	pixel_y = -2;
+	layer = 2.9;
+	anchored = 1;
+	pixel_x = -1
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"CE" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/open/indestructible/ground/inside/mountain,
+"zA" = (
+/obj/structure/table{
+	icon = 'icons/obj/vehicles/rustybussegmented.dmi';
+	icon_state = "bus18";
+	pixel_x = 6;
+	name = "crashed semi";
+	smooth = 0
+	},
+/obj/structure/wreck/bus/rusted/segmented2{
+	pixel_y = -9;
+	layer = 2.1;
+	name = "Crashed Semi";
+	density = 0;
+	icon_state = "bus3noshadow";
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblue,
 /area/f13/caves)
-"CT" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/indestructible/ground/inside/mountain,
+"zH" = (
+/obj/structure/railing{
+	dir = 4;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Dg" = (
-/obj/structure/barricade/wooden/crude,
-/obj/structure/barricade/wooden/planks,
-/turf/open/indestructible/ground/inside/mountain,
+"Aj" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Av" = (
+/obj/structure/table{
+	icon = 'icons/obj/vehicles/rustybussegmented.dmi';
+	icon_state = "bus18";
+	pixel_x = 6;
+	name = "crashed semi";
+	smooth = 0
+	},
+/obj/structure/wreck/bus/rusted/segmented2{
+	pixel_y = -9;
+	layer = 2.1;
+	name = "Crashed Semi";
+	density = 0;
+	icon_state = "bus3noshadow";
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"Bb" = (
+/obj/effect/overlay/bus,
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/caves)
+"Cr" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 10
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"CO" = (
+/obj/structure/car/motoryclevert/green{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/caves)
+"CU" = (
+/obj/effect/decal/remains/bottles{
+	icon_state = "bottles2"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Df" = (
+/obj/structure/car/totaledbuggy/hot{
+	dir = 8;
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/green,
 /area/f13/caves)
 "Dj" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/closed/mineral/random/high_chance_prison,
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Dp" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
+"DM" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 5;
+	pixel_x = 12;
+	layer = 2.99
+	},
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.1;
+	debris_result = list(/obj/item/pda);
+	drop_amount = 1
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"DA" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/wood/f13/housewoodbroken,
+"DU" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "itemblood"
+	},
+/obj/item/storage/bag/salvagestorage{
+	pixel_x = 10
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"FC" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden/crude,
-/turf/open/floor/holofloor/wood,
+"Eo" = (
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/royalblack,
 /area/f13/caves)
-"FP" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/floor/holofloor/wood,
+"EF" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb,
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"FU" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/low_chance_prison,
+"Fs" = (
+/obj/item/clothing/head/welding/f13,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Gd" = (
-/turf/closed/wall/f13/wood/house/broken,
+"Fw" = (
+/obj/structure/car/rubbish5,
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
-"HN" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks,
-/turf/open/indestructible/ground/inside/mountain,
+"GT" = (
+/obj/structure/railing/corner{
+	dir = 4;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Ir" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/open/indestructible/ground/inside/mountain,
+"Hp" = (
+/obj/structure/wreck/bus/rusted/segmented13{
+	layer = 3.9;
+	name = "Crashed Semi";
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblue,
 /area/f13/caves)
-"IA" = (
-/obj/structure/spider/eggcluster,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/open/floor/holofloor/wood,
+"HT" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "coatblood";
+	pixel_x = -10;
+	pixel_y = 12
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Jk" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude,
-/turf/open/indestructible/ground/inside/mountain,
+"HX" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/item/reagent_containers/food/snacks/f13/bubblegum/large,
+/obj/structure/junk/small/table,
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"Il" = (
+/obj/structure/wreck/bus/rusted/segmented7{
+	name = "Crashed Semi";
+	layer = 3.9;
+	pixel_x = 7
+	},
+/obj/structure/wreck/bus/rusted/segmented20{
+	pixel_x = 6;
+	name = "Crashed Semi";
+	layer = 3.9
+	},
+/obj/structure/wreck/bus/rusted/segmented11{
+	pixel_x = 21;
+	name = "Crashed Semi";
+	layer = 3.9
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"Io" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/plaque,
+/area/f13/caves)
+"Jg" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/green,
+/area/f13/caves)
+"JO" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -6;
+	pixel_x = 6
+	},
+/obj/item/clothing/suit/armor/f13/ncrcfjacket{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"JR" = (
+/obj/structure/railing/casino{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 6;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
 "JS" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+/turf/closed/wall/f13/ruins,
 /area/f13/caves)
-"Lc" = (
-/obj/structure/spider/cocoon,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+"Kd" = (
+/obj/item/storage/trash_stack,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"LV" = (
-/turf/open/floor/wood/f13/housewoodbroken2,
+"KS" = (
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/open/floor/carpet/green,
 /area/f13/caves)
-"Ms" = (
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/low_chance_prison,
+"LC" = (
+/obj/structure/car/motoryclevert/med{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/obj/effect/overlay/plaque{
+	pixel_y = -3;
+	layer = 4.3;
+	pixel_x = 16;
+	name = "Harry's Auto Museum"
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/caves)
-"MA" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
+"LD" = (
+/obj/effect/decal/remains/cans,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"MH" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken3,
+"Mf" = (
+/obj/structure/car/motoryclevert/green{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
 /area/f13/caves)
-"ML" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken4,
-/area/f13/caves)
-"Nr" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken4,
+"ME" = (
+/obj/structure/car/rubbish6{
+	dir = 1;
+	layer = 2.6;
+	density = 0
+	},
+/obj/structure/railing{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "car_railing2";
+	name = "pre-War rubbish";
+	desc = null;
+	pixel_y = -1
+	},
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/plaque{
+	pixel_y = -3;
+	layer = 4.3;
+	pixel_x = 16;
+	name = "Harry's Auto Museum"
+	},
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
 "NA" = (
-/obj/structure/spider/stickyweb,
-/turf/closed/mineral/random/high_chance_prison,
+/obj/effect/overlay/curb,
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Sc" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken2,
+"NG" = (
+/obj/item/salvage/low{
+	pixel_x = 14;
+	pixel_y = -11
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Sl" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/closed/mineral/random/high_chance_prison,
+"NS" = (
+/obj/machinery/light/invisible,
+/obj/item/salvage/low,
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Om" = (
+/obj/effect/decal/remains/human{
+	pixel_y = 7
+	},
+/obj/effect/decal/remains/human{
+	pixel_x = 11;
+	pixel_y = -5
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Oo" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"Ot" = (
+/obj/structure/wreck/bus/rusted/segmented2{
+	pixel_y = -9;
+	layer = 2.1;
+	name = "Crashed Semi";
+	density = 0;
+	icon_state = "bus3noshadow";
+	pixel_x = 8
+	},
+/obj/structure/table{
+	icon = 'icons/obj/vehicles/rustybussegmented.dmi';
+	icon_state = "bus15";
+	name = "crashed semi";
+	smooth = 0;
+	pixel_x = 6
+	},
+/obj/structure/railing{
+	dir = 8;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblue,
+/area/f13/caves)
+"OR" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	dir = 8
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"OW" = (
+/obj/effect/decal/remains/cans{
+	icon_state = "cans2"
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "yakuza";
+	pixel_y = 32
+	},
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#A47449";
+	dir = 4
+	},
+/area/f13/caves)
+"Pp" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "tracks";
+	pixel_z = 4
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"PD" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	pixel_y = -28
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -23
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/caves)
+"PF" = (
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "busters";
+	pixel_y = -32
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"PT" = (
+/obj/effect/decal/remains/human{
+	pixel_y = -4;
+	pixel_x = -10
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Qc" = (
+/obj/structure/car/motoryclevert/med{
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/purple,
+/area/f13/caves)
+"Qf" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"QV" = (
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"QX" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 4;
+	pixel_x = -26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"Ro" = (
+/obj/structure/wreck/bus/rusted/segmented15{
+	name = "Crashed Semi";
+	pixel_x = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"Sh" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/vehicle/ridden/bicycle{
+	dir = 8
+	},
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"Sj" = (
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
 "Sp" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/item/salvage/low{
+	pixel_y = 11
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "toaster"
+	},
+/obj/item/salvage/high{
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "engine";
+	pixel_y = -7
+	},
+/obj/item/blanket/ruined{
+	pixel_x = -4
+	},
+/obj/effect/overlay/painting/graffiti{
+	icon = 'icons/fallout/objects/graffiti.dmi';
+	icon_state = "toohard";
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 "SI" = (
-/obj/structure/spider/cocoon,
-/obj/structure/spider/stickyweb,
-/turf/open/floor/holofloor/wood,
-/area/f13/caves)
-"SS" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken3,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "racecar";
+	dir = 8;
+	pixel_y = 3
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "vacuum_cleaner";
+	pixel_y = -5;
+	pixel_x = -9
+	},
+/obj/item/blanket/ruined{
+	pixel_x = -6;
+	pixel_y = 7
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 "ST" = (
-/turf/open/floor/holofloor/wood,
+/obj/machinery/light/invisible,
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Ti" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/high_chance_prison,
-/area/f13/caves)
-"Tu" = (
-/obj/structure/barricade/wooden/planks,
-/turf/open/floor/wood/f13/housewoodbroken3,
+"Tf" = (
+/obj/structure/railing{
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb,
+/obj/effect/overlay/plaque{
+	pixel_y = -3;
+	layer = 3;
+	name = "Harry's Auto Museum"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
 "TL" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude,
-/turf/closed/mineral/random/high_chance_prison,
+/turf/open/floor/carpet/orange,
 /area/f13/caves)
-"Vp" = (
-/obj/structure/barricade/wooden/crude,
+"Uj" = (
+/obj/effect/decal/remains/deadeyebot,
+/turf/open/floor/carpet/reno/green,
+/area/f13/caves)
+"Uo" = (
+/obj/machinery/light/invisible,
+/obj/item/salvage/low{
+	icon = 'icons/fallout/vehicles/small_vehicles.dmi';
+	icon_state = "wheel";
+	dir = 4;
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/obj/effect/decal/remains/human{
+	plane = -4;
+	layer = 3.9
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"UV" = (
+/obj/item/ammo_box/a308,
+/obj/item/ammo_box/a308,
+/obj/item/ammo_box/a308,
+/obj/structure/closet/crate/footlocker,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"VG" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13/housewoodbroken4,
+"Vu" = (
+/obj/structure/railing{
+	dir = 10;
+	color = "#7a5647"
+	},
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"VV" = (
-/obj/structure/spider/cocoon,
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/stickyweb,
-/turf/open/indestructible/ground/inside/mountain,
+"VL" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/item/clothing/head/soft/baseball,
+/obj/structure/junk/small/table,
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"WT" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks,
-/turf/open/floor/holofloor/wood,
+"Wd" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "drip1"
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"WU" = (
-/turf/open/floor/wood/f13/oakbase,
+"Wg" = (
+/turf/open/floor/carpet/reno/green,
 /area/f13/caves)
-"Yg" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/turf/closed/mineral/random/high_chance_prison,
+"WL" = (
+/obj/structure/wreck/bus/rusted/segmented4{
+	name = "Crashed Semi";
+	layer = 2.1;
+	density = 0;
+	pixel_x = 8
+	},
+/obj/effect/overlay/curb{
+	dir = 1;
+	pixel_y = -27
+	},
+/turf/open/floor/carpet/royalblue,
 /area/f13/caves)
-"Yh" = (
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/holofloor/wood,
+"WR" = (
+/obj/item/salvage/low,
+/obj/item/blanket/ruined{
+	pixel_x = 4
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"Ym" = (
-/obj/structure/barricade/wooden,
-/turf/open/indestructible/ground/inside/mountain,
+"Yj" = (
+/obj/item/salvage/low{
+	icon = 'icons/fallout/trash.dmi';
+	icon_state = "iron";
+	pixel_y = 6
+	},
+/obj/item/salvage/low{
+	pixel_x = 14
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "switch_2"
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "toy_Nuka_truck";
+	pixel_y = -12;
+	pixel_x = 2
+	},
+/obj/item/salvage/low{
+	icon = 'icons/fallout/objects/crafting/parts.dmi';
+	icon_state = "weapon_parts_1";
+	pixel_y = 10
+	},
+/obj/item/blanket/ruined{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
-"YA" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/barricade/wooden,
-/obj/structure/barricade/wooden/crude/snow,
-/turf/closed/mineral/random/low_chance_prison,
+"Ys" = (
+/obj/machinery/light/invisible,
+/obj/effect/spawner/lootdrop/trash,
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Zf" = (
+/obj/item/salvage/high{
+	pixel_x = 19;
+	pixel_y = 8
+	},
+/turf/open/floor/carpet/black,
+/area/f13/caves)
+"Zw" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#7a5647"
+	},
+/obj/effect/overlay/curb{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/overlay/curb{
+	dir = 1
+	},
+/turf/open/floor/carpet/orange,
+/area/f13/caves)
+"ZU" = (
+/obj/item/salvage/high{
+	icon = 'icons/fallout/mobs/robots/protectrons.dmi';
+	icon_state = "protectron_k_d";
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/obj/item/salvage/high{
+	icon = 'icons/fallout/objects/wendover.dmi';
+	icon_state = "projector";
+	pixel_y = -5;
+	name = "broken projector";
+	pixel_x = -6
+	},
+/turf/open/floor/carpet/black,
 /area/f13/caves)
 
 (1,1,1) = {"
@@ -395,6 +1402,13 @@ jM
 jM
 jM
 jM
+og
+og
+jM
+og
+og
+og
+og
 jM
 jM
 jM
@@ -405,22 +1419,15 @@ jM
 jM
 jM
 jM
+og
+jM
+jM
+og
+og
 jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-gT
-gT
 jM
 jM
 jM
@@ -429,6 +1436,18 @@ jM
 "}
 (2,1,1) = {"
 jM
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
@@ -438,27 +1457,15 @@ jM
 jM
 jM
 jM
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-Gd
-Gd
-kc
-FU
-kc
-Gd
 jM
 jM
 jM
@@ -466,36 +1473,36 @@ jM
 "}
 (3,1,1) = {"
 jM
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
 jM
 jM
 jM
+og
+og
+og
+og
+og
+og
+og
+og
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-kc
-bU
-JS
-CT
-hM
-FU
 jM
 jM
 jM
@@ -503,6 +1510,23 @@ jM
 "}
 (4,1,1) = {"
 jM
+og
+og
+og
+og
+og
+og
+og
+og
+jM
+og
+og
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
@@ -511,29 +1535,12 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-kc
-sr
-Lc
-JS
-hM
-bU
-hM
-ML
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
@@ -542,6 +1549,8 @@ jM
 jM
 jM
 jM
+og
+og
 jM
 jM
 jM
@@ -552,26 +1561,24 @@ jM
 jM
 jM
 jM
-Ms
-Ms
-bU
-bU
-gT
-gT
-gT
-gT
-Ms
-Ms
-Ms
-bU
-qz
-hM
 jM
-kc
-hM
-DA
-xw
 jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+og
+og
+og
+og
+og
 jM
 jM
 "}
@@ -582,732 +1589,732 @@ jM
 jM
 jM
 jM
-kc
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
 og
-kc
-jM
-jM
-kc
-WU
-bU
-Ym
-Ym
-bU
-uk
-HN
-jM
-gT
-jM
-kc
-jM
-uk
-lr
-kc
-kc
-jM
 og
-JS
-Dp
-hM
+og
+og
 jM
 jM
 "}
 (7,1,1) = {"
+JS
+JS
+JS
+xw
+xw
+xw
+xw
+xw
+xw
+JS
+JS
+JS
+JS
+JS
+JS
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
+xw
 jM
 jM
 jM
 jM
 jM
-kc
-bU
-hM
-ST
-Dp
-ke
-ST
-Bm
-bU
-bU
 jM
-hM
-bU
-hM
-kc
-gT
-jM
-jM
-kc
-bU
-qz
 og
-sr
 og
 og
-VV
-bU
-bU
-jM
+og
 jM
 "}
 (8,1,1) = {"
-jM
-jM
-jM
-jM
-Ms
-CE
-Sp
-bU
-bU
-Dp
-cV
-nV
-Dp
-jM
-jM
-jM
-jM
-hM
+JS
+JS
+JS
+Dj
+Wg
+Wg
+CO
+kc
+kc
+Dj
+JS
+JS
+fA
 JS
 kc
-jM
-kc
-kc
-JS
-Dp
-ke
-Dp
-ST
-ST
-kI
-kI
-bU
-kc
+Dj
+Wg
+QV
+Wg
+Wg
+Wg
+Wg
+Wg
+xw
 jM
 jM
+jM
+jM
+jM
+jM
+jM
+og
+og
+og
+og
 "}
 (9,1,1) = {"
-jM
-jM
-jM
-jM
-hM
-bU
-WU
+JS
+JS
 kc
-jM
-SS
-Tu
-Dp
-lr
-jM
-Ms
+vn
+ec
+NA
+PD
 kc
 kc
-hM
-bU
-Lc
-WU
-uk
-bU
-bU
-LV
-xx
-cV
-ra
-ST
-YA
+pH
+nb
+qz
+Df
+CU
+kc
+Dj
+hk
+Eo
+Eo
+Eo
+Eo
+Bb
+NA
+xw
 jM
-hM
+jM
+jM
+jM
+jM
+jM
+jM
+jM
 og
-jM
-jM
+og
+og
 "}
 (10,1,1) = {"
+JS
+kc
+kc
+Dj
+Wg
+Wg
+LC
+kc
+kc
+Jg
+KS
+KS
+cS
+NG
+Zf
+Dj
+cN
+jW
+jW
+jW
+jW
+vK
+NA
+xw
 jM
 jM
 jM
 jM
-bU
-Dp
-VG
-uI
+jM
+jM
+jM
+jM
+jM
 og
-kc
-jM
-ST
-ST
-nV
-WT
-VG
-bU
-bU
-hM
-Dp
-Dp
-jM
-jM
-jM
-jM
-hM
-CE
-Yh
-pq
-qz
-Dp
-bU
-kc
-jM
-jM
+og
 "}
 (11,1,1) = {"
-jM
-jM
-jM
-jM
-bU
-qz
-xw
-ST
-bU
-jM
-kc
-jM
-jM
-bU
-Dp
-Dp
-bU
-Ym
 JS
-Dp
-Dp
+JS
+kc
+vn
+vE
+NA
+PD
+Ys
+kc
+Dj
+vi
+Wg
+lk
+NS
+DU
+Io
+vi
+Wg
+Wg
+Wg
+Wg
+vi
+Wg
+xw
+jM
+jM
+jM
 jM
 og
-kc
-bU
-hM
-NA
-bU
-hM
-bU
-bU
-bU
+jM
+jM
+jM
 jM
 jM
 jM
 "}
 (12,1,1) = {"
-jM
-jM
-jM
-jM
-jM
-pe
-SS
-Dp
-lr
-bU
-hM
-jM
-jM
-jM
-hM
-bU
-jM
-jM
-jM
-nV
-ST
-ST
-Dp
-MA
-ST
-Yg
-NA
-di
 JS
 kc
 kc
+Dj
+Wg
+Wg
+Mf
+Kd
+kc
+pH
+aB
+qz
+qQ
+Fs
+qt
+Dj
+hk
+Eo
+Eo
+Eo
+Eo
+Bb
+NA
+xw
 jM
 jM
+jM
+jM
+jM
+og
+og
+og
+og
 jM
 jM
 "}
 (13,1,1) = {"
-jM
-jM
-jM
+JS
+JS
+PT
 vn
-vn
+Qc
 NA
-vn
-vn
-vn
-Sl
-bU
-CE
-hM
-bU
-bU
-jM
-jM
-Ms
-Ms
-ST
-cV
-xx
-qz
-xw
+ns
+iH
+kc
+Jg
+KS
+KS
+cS
+kc
+OR
 Dj
-yl
-Ti
-vn
+cN
+jW
+jW
+jW
+jW
+vK
 NA
+xw
+jM
+jM
+jM
+jM
+jM
+hM
+hM
 og
-jM
-jM
-jM
+og
 jM
 jM
 "}
 (14,1,1) = {"
-jM
-jM
-gT
-vn
-NA
-NA
-NA
-vn
-vn
-vn
-Ms
-Ir
-bU
-bU
-jM
-jM
-em
+JS
+JS
+JS
+bP
+zH
+zH
+hP
 kc
+kc
+bP
+zH
+zH
+JR
+kc
+OR
+bP
+zH
+zH
+zH
+GT
+Wg
+Wg
+JS
+JS
+jM
+jM
+jM
+jM
 hM
-Dp
-SS
-sq
-cu
-lr
-Dp
-NA
-Sl
-gT
-Gd
-gT
-gT
-jM
-jM
-jM
+hM
+hM
+hM
+og
+og
 jM
 "}
 (15,1,1) = {"
-jM
-jM
-Gd
-NA
-bU
-bU
-vn
-TL
-yl
-vn
-jM
-gT
-Gd
-gT
-kc
-kc
-hM
-bU
 JS
-ST
-FP
-IA
-ST
-pe
-ST
-SS
-vn
-Ms
-Gd
+JS
+WR
+Yj
+Om
+bU
+kc
+kc
+kc
+kc
+LD
+kc
+iH
+kc
+OR
+kc
+kc
+kc
+CU
+bP
+GT
+JS
+JS
+JS
 jM
 jM
 jM
-jM
-jM
+hM
+hM
+hM
+hM
+hM
+og
+og
 jM
 "}
 (16,1,1) = {"
-jM
-jM
-Gd
-Dg
-bU
-bU
 JS
-JS
-NA
-vn
-jM
-jM
-jM
-Gd
-jM
-bU
-bU
-Dp
-qz
-Vp
-kI
-og
+zw
+yL
+yz
+Uo
+DM
 kc
 ST
-ST
+kc
+kc
+kc
+kc
+kc
+kc
+sj
+Aj
+Pp
+Cr
+kc
+kc
+bP
+GT
+Wg
+JS
+jM
 hM
-JS
-kc
-gT
-jM
-jM
-jM
-jM
-jM
+hM
+hM
+hM
+hM
+hM
+hM
+og
+og
 jM
 "}
 (17,1,1) = {"
-jM
-jM
-gT
-hR
-Bm
+JS
+JS
+Sp
+SI
+JO
 dQ
-Dp
-bU
-vn
-vn
-Ms
-Ms
 kc
-gT
 kc
-bU
-bU
-cV
-Sc
-bU
 kc
-jM
+kc
+kc
+kc
+kc
+kc
+kc
+kc
+rD
+sj
+Cr
+kc
+kc
+Wg
+Wg
+hM
+xu
+hM
+hM
+hM
+hM
+hM
+hM
+hM
 og
 og
-Ms
-jM
-bU
-kc
-gT
-jM
-jM
-jM
-jM
-jM
-jM
+og
 "}
 (18,1,1) = {"
-jM
-vn
-yl
-NA
-ML
-hZ
-nV
 JS
-bU
+JS
+ZU
+nO
+at
+at
+Vu
 kc
-YA
-VG
-Dp
-sq
-MA
-bU
-bU
-xx
-JS
-JS
+kc
+nO
+Ot
+tq
+ef
+kc
+kc
+nO
+Vu
+kc
+sj
+Cr
+kc
+Uj
+Wg
+hM
+hM
+hM
+hM
+hM
+hM
+jM
+jM
 jM
 og
-kc
-jM
-kc
-hM
-JS
-jM
-Gd
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
 "}
 (19,1,1) = {"
-vn
-vn
-vn
-yl
-mc
-xw
-SS
-og
-di
-di
-JS
-Dp
-pe
-ST
-MH
-bU
-vn
-vn
 JS
 JS
-hM
+JS
+Dj
+Wg
+Wg
+fA
+iH
+kc
+Dj
+Av
+ra
+EF
+kc
+kc
+Dj
+mF
+Vu
+kc
+jJ
+Wd
+Wg
+Wg
+UV
+jM
+jM
+jM
+jM
+jM
+jM
 jM
 og
-xo
-hM
-nF
-di
 og
-gT
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
 "}
 (20,1,1) = {"
-jM
-vn
-vn
-vn
-vn
-yl
-NA
+JS
+JS
+kc
+QX
+Fw
+qY
+ky
 kc
 kc
+Dj
+zA
+WL
+EF
+kc
+kc
+Dj
+si
+fA
+kc
+HT
+kc
+Dj
+Wg
+xw
 jM
-Dp
-nV
-fL
-qz
-vn
-vn
-NA
-vn
-JS
-WU
-JS
-Nr
-Dp
-LV
-hM
-Jk
-eE
+jM
+jM
+jM
+jM
 og
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
+og
+og
+og
 "}
 (21,1,1) = {"
-jM
-jM
-vn
-vn
-vn
-vn
-gT
-gT
-Gd
-Gd
-cu
-Cz
-ST
-FC
-vn
-NA
-Sl
 JS
-di
-SI
-Dp
+kc
+kc
+Qf
+uV
+TL
+ME
 ST
-pe
-FC
+kc
+Dj
+zA
+ra
+Tf
+ST
+kc
+Dj
+aE
+fA
+kc
+kc
+kc
+Sh
+PF
+xw
+jM
+jM
+jM
+jM
 og
-kI
-Ms
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
+og
+og
+og
 jM
 "}
 (22,1,1) = {"
+JS
+fO
+kc
+Qf
+oz
+TL
+lX
+kc
+kc
+tp
+Il
+WL
+EF
+kc
+kc
+nH
+JS
+JS
+OW
+fL
+fL
+HX
+Wg
+xw
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-gT
-Gd
-gT
-Ym
-bU
-Sc
-ST
-MA
-Dp
-oe
-hM
-xx
-nV
-qz
-ST
 og
 og
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
+og
+og
+og
+og
 jM
 "}
 (23,1,1) = {"
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+JS
+JS
+kc
+Zw
+Sj
+Sj
+Oo
+JS
+qZ
+Ro
+wq
+ra
+EF
+kc
 kc
 JS
-di
-SS
-vm
+JS
+JS
+fL
+fL
+fL
+VL
+ol
 xw
-bU
-hM
+jM
 og
-kc
 og
-kc
-gT
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+og
+og
+og
+og
+og
+og
 jM
 jM
 "}
 (24,1,1) = {"
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+JS
+JS
+JS
+Dj
+Wg
+Wg
+JS
+JS
+JS
+yY
+Hp
+qD
+EF
 kc
-jM
-kc
-kc
-Ms
-Ms
-kc
-kc
-kc
-gT
-gT
-gT
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+JS
+JS
+JS
+JS
+JS
+JS
+JS
+JS
+Wg
+xw
+og
+og
+og
+og
+og
+og
+og
 jM
 jM
 jM
 jM
 "}
 (25,1,1) = {"
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+JS
+JS
+JS
+xw
+xw
+xw
+JS
+JS
+JS
+JS
+xw
+xw
+xw
+JS
+JS
+xw
+xw
+JS
+JS
+xw
+JS
+JS
+xw
+xw
+og
+og
+og
+og
+og
 jM
 jM
 jM

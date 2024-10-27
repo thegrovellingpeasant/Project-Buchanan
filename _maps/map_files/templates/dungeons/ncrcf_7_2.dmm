@@ -10,6 +10,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13,
 /area/f13/caves)
+"c" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/ncr{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/caves)
 "e" = (
 /obj/effect/decal/remains/human{
 	pixel_x = -7;
@@ -82,13 +89,18 @@
 /area/f13/caves)
 "m" = (
 /obj/effect/decal/remains/human{
-	pixel_x = -7;
-	pixel_y = 10
+	pixel_x = -18;
+	pixel_y = 14;
+	plane = -14
 	},
 /obj/structure/table/reinforced,
-/obj/item/paper_bin,
+/obj/item/paper_bin{
+	pixel_y = 4
+	},
 /obj/item/stamp{
-	name = "Stamp"
+	name = "Stamp";
+	pixel_y = 5;
+	pixel_x = -11
 	},
 /turf/open/floor/f13,
 /area/f13/caves)
@@ -102,8 +114,9 @@
 	},
 /obj/machinery/computer/security/telescreen{
 	name = "Telescreen";
-	pixel_y = 23;
-	network = list("toxins")
+	pixel_y = 29;
+	network = list("ncrcf","nrpd","goldenglobes");
+	pixel_x = -1
 	},
 /turf/open/floor/f13,
 /area/f13/caves)
@@ -163,9 +176,16 @@
 	name = "plating"
 	},
 /area/f13/caves)
+"A" = (
+/obj/machinery/sleeper,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "C" = (
 /obj/structure/table,
-/obj/item/storage/pill_bottle/chem_tin/mentats,
+/obj/item/storage/pill_bottle/chem_tin/mentats{
+	pixel_y = 13;
+	pixel_x = 2
+	},
 /obj/item/pen,
 /turf/open/floor/f13,
 /area/f13/caves)
@@ -393,7 +413,7 @@ Z
 Z
 X
 u
-Y
+c
 p
 p
 K
@@ -503,7 +523,7 @@ Z
 P
 Z
 P
-y
+A
 y
 V
 V

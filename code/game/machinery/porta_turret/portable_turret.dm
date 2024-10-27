@@ -26,9 +26,9 @@
 	active_power_usage = 300	//when active, this turret takes up constant 300 Equipment power
 	req_access = list(ACCESS_SECURITY) /// Only people with Security access
 	power_channel = EQUIP	//drains power from the EQUIPMENT channel
-	max_integrity = 160		//the turret's health
+	max_integrity = 100	//the turret's health
 	integrity_failure = 0.5
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 	/// Base turret icon state
 	var/base_icon_state = "standard"
 	/// Scan range of the turret for locating targets

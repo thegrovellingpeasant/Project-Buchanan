@@ -616,7 +616,7 @@ And arise it did, on the planet Terra, as on other planets across the universe. 
 <B>Bibliography</B>
 <br><br>
 <u>Books by The Hub</u>:
-Scientific Spirituality, Battleground Quetzel, Star Father Above, Collected Shopping Lists, Notes and Musings, How to Sue Your Enemies Effectively, How to Create a Cult, and Future Books to be Written When I'm Dead."}
+Scientific Spirituality, Battleground Quetzel, Star Father Above, Collected Shopping Lists, Notes and Musings, How to Sue Your Enemies Effectively, How to Create a Cult, and Future Books to be Written When I'm Dead.<br>"}
 
 /obj/item/paper/censorship
 	name = "Notice from the New California Republic"
@@ -687,3 +687,29 @@ Temperance Union members harbor a deep-seated distrust in the effectiveness of c
 <center>The Only Hope for New Reno</center>
 <center>The Temperance Union</center>
 		<br>"}
+
+/obj/item/paper/vangraffs
+	name = "To The New Robotics Contractor"
+	desc = "If you're reading this it means Chop Van Graff failed to properly update her instructional note."
+	icon_state = "paper_words"
+	info = {"ChopChop please."}
+
+/obj/item/paper/wrights
+	name = "Wright Export Contract"
+	desc = "If you're reading this it means Chop Wright failed to do her chores and must be sternly corrected."
+	icon_state = "paper_words"
+	info = {"ChopChop please."}
+
+/obj/item/paper/ncrcf
+	name = "Instructions for the NCRCF"
+	desc = "If you're reading this it means the first girlboss senator has failed utterly. - Kimball and the Boys."
+	icon_state = "paper_words"
+	info = {"ChopChop please."}
+
+/obj/item/paper/bishops
+	name = "Word to the Wise"
+	desc = "A note detailing a potentially lucrative deal in the underground chem trade."
+	icon_state = "paper_words"
+	info = {"<center>Money Making Opportunity</center><br><br>
+To anyone interested in making some caps, we've cut a deal with the prison commissary robot to begin moving chems into the NCR Correctional Facility. Get the chems from our supply in the Shark Club, sneak them in somehow, load up his machine, cash out, and find a way to get the caps out of the prison. Don't screw this up, capisce?<br><br><br>
+<center>- Yours truly and anonymously</center>"}

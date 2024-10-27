@@ -693,6 +693,9 @@
 	. = ..()
 	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)
 
+/obj/structure/closetundense/crate/mailboxleft/update_icon_state()
+	icon_state = "[initial(icon_state)][opened ? "open" : ""]"
+
 /obj/structure/closetundense/crate/mailboxright
 	name = "mailbox"
 	desc = "Alt-Click to toggle the lever, up means there is mail ready for pickup."
@@ -705,3 +708,6 @@
 /obj/structure/closetundense/crate/mailboxright/Initialize()
 	. = ..()
 	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, null)
+
+/obj/structure/closetundense/crate/mailboxright/update_icon_state()
+	icon_state = "[initial(icon_state)][opened ? "open" : ""]"
