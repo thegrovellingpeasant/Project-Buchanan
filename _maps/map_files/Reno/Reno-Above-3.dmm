@@ -1030,11 +1030,7 @@
 /obj/structure/sign/poster/prewar/poster82{
 	pixel_y = 32
 	},
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
-	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
 /turf/open/floor/f13{
 	icon_state = "floordirtysolid"
 	},
@@ -21039,8 +21035,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/reno_wasteland)
 "ufh" = (
-/obj/structure/closet/crate/grave/experimental_crate,
 /obj/structure/window/plasma/reinforced/spawner/north,
+/obj/structure/closet/crate/mcgruffin/experimental_crate,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/vangraffs)
 "ufy" = (
@@ -24458,12 +24454,13 @@
 "xpz" = (
 /obj/docking_port/stationary{
 	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "bishop_elevator";
-	name = "bishop_elevator";
-	width = 3;
-	dir = 8
+	height = 4;
+	id = "bishop_elevator_down";
+	name = "2nd floor";
+	width = 4;
+	dir = 8;
+	dheight = 3;
+	dwidth = 2
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/reno_sharkclub)

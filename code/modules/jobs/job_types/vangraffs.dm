@@ -54,7 +54,6 @@
 	belt = null
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/storage/bag/money/small/huge = 1,
@@ -158,7 +157,6 @@
 	belt = /obj/item/clothing/gloves/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs/enforcer
 	suit_store = /obj/item/gun/energy/laser/plasma
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/big = 1)
@@ -330,7 +328,6 @@
 	belt = /obj/item/storage/belt/military/assault
 	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs
 	suit_store = /obj/item/gun/energy/laser/aer9
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/few = 1)

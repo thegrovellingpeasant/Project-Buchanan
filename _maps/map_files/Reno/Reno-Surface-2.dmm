@@ -26486,8 +26486,8 @@
 /turf/closed/wall/f13/wood,
 /area/f13/radiation)
 "lcF" = (
-/obj/structure/fence/electric_fence{
-	dir = 4
+/obj/structure/fence{
+	dir = 8
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/reno_prison_yard)

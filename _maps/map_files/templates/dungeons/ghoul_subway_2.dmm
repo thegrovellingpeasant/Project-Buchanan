@@ -2829,12 +2829,12 @@
 "YH" = (
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 5;
 	height = 51;
 	id = "ghoul_two";
 	name = "Shamrock Lane Station";
 	width = 5;
-	dheight = 49
+	dheight = 48;
+	dwidth = 4
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/subway)

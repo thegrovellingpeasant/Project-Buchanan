@@ -52,7 +52,6 @@
 	ears = /obj/item/radio/headset/headset_wrightelder
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
@@ -304,7 +303,6 @@
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/wrights/formalcoat/overcoat
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -364,7 +362,6 @@
 	gloves = null
 	suit = null
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -414,7 +411,6 @@
 	gloves = null
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -480,7 +476,6 @@
 	gloves =  /obj/item/clothing/gloves/color/white
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(

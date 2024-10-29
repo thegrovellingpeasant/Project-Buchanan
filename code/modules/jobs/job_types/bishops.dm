@@ -59,7 +59,6 @@
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
@@ -150,7 +149,6 @@
 	gloves = null
 	suit = null
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
@@ -240,7 +238,6 @@
 	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/blue_trench_coat
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
@@ -326,7 +323,6 @@
 	id = /obj/item/card/id/reno/bishops/ring/soldier
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -410,7 +406,6 @@
 	gloves = /obj/item/clothing/gloves/color/white
 	suit = null
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
@@ -455,7 +450,6 @@
 	gloves = null
 	suit = null
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(

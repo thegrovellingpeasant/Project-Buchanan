@@ -1138,8 +1138,8 @@
 /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
 	name = "NCR police chief coat"
 	desc = "A repurposed oldworld police coat."
-	icon_state = "ahp_suit_chief"
-	item_state = "ahp_suit_chief"
+	icon_state = "ahp_chief"
+	item_state = "ahp_chief"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 40) //up to change
 
 ////////

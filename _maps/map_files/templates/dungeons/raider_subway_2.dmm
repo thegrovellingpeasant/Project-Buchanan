@@ -104,7 +104,7 @@
 	},
 /obj/structure/table/wood/greyscale,
 /turf/open/floor/carpet/reno/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "br" = (
 /turf/open/floor/f13{
 	icon_state = "darkbrown";
@@ -172,7 +172,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "cb" = (
 /obj/structure/window/reinforced{
 	color = "#3e3d42"
@@ -359,7 +359,7 @@
 /obj/item/reagent_containers/food/snacks/f13/blamco/large,
 /obj/item/reagent_containers/food/snacks/f13/fancylads,
 /turf/open/floor/carpet/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "eA" = (
 /obj/structure/simple_door/bunker{
 	req_access_txt = "16"
@@ -473,7 +473,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/carpet/reno/evil,
-/area/f13/underground/cave)
+/area/f13/vault)
 "fw" = (
 /obj/effect/overlay/junk/shower{
 	dir = 4
@@ -708,7 +708,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "ju" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/subway)
@@ -1004,12 +1004,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/vault)
-"mZ" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "rarewhite"
-	},
-/area/f13/underground/cave)
 "nd" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
@@ -1261,7 +1255,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "pf" = (
 /turf/open/floor/f13{
 	icon_state = "darkpurplecorner";
@@ -1479,7 +1473,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "sW" = (
 /obj/structure/bed/wooden{
 	dir = 4
@@ -1493,7 +1487,7 @@
 	pixel_y = 16
 	},
 /turf/open/floor/carpet/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "sX" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/inside/mountain,
@@ -1661,7 +1655,7 @@
 	dir = 6;
 	icon_state = "casino"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "vY" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
@@ -1739,11 +1733,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
 /area/f13/subway)
-"xu" = (
-/turf/open/floor/f13{
-	icon_state = "rarewhite"
-	},
-/area/f13/underground/cave)
 "xv" = (
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid{
 	icon_state = "rampdowntop";
@@ -1926,7 +1915,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/reno/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "zV" = (
 /obj/machinery/computer/terminal{
 	icon_state = "lunar";
@@ -1955,7 +1944,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "Ab" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/open/indestructible/ground/inside/mountain,
@@ -2122,7 +2111,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "Cu" = (
 /obj/machinery/computer/terminal{
 	icon_state = "computer_L";
@@ -2142,7 +2131,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "Cx" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/under/f13/vault{
@@ -2200,7 +2189,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "DP" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -2285,7 +2274,7 @@
 	},
 /obj/structure/table/wood/greyscale,
 /turf/open/floor/carpet/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "EH" = (
 /obj/structure/chair/comfy/brown{
 	color = "#db4d4d";
@@ -2594,7 +2583,7 @@
 	dir = 6;
 	icon_state = "casino"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "HJ" = (
 /obj/structure/table,
 /obj/structure/barricade/sandbags,
@@ -2611,7 +2600,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "HL" = (
 /obj/machinery/light{
 	dir = 8
@@ -2760,7 +2749,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "JB" = (
 /obj/effect/decal/remains/human{
 	pixel_y = 10
@@ -2852,7 +2841,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "Kf" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -3008,7 +2997,7 @@
 	dir = 6;
 	icon_state = "casino"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "MY" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
@@ -3221,12 +3210,6 @@
 	sunlight_state = 1
 	},
 /area/f13/vault)
-"Pb" = (
-/obj/structure/table,
-/turf/open/floor/f13{
-	icon_state = "rarewhite"
-	},
-/area/f13/underground/cave)
 "Pd" = (
 /obj/structure/table,
 /obj/item/paper/pamphlet{
@@ -3438,8 +3421,7 @@
 	id = "raider_two";
 	name = "Unregistered Stop";
 	width = 5;
-	dheight = 44;
-	dwidth = 1
+	dheight = 43
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/subway)
@@ -3475,10 +3457,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/reno/green,
-/area/f13/underground/cave)
-"RB" = (
-/turf/open/floor/carpet/green,
-/area/f13/underground/cave)
+/area/f13/vault)
 "RO" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/f13{
@@ -3611,7 +3590,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "SZ" = (
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
@@ -3726,12 +3705,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/f13/vault)
-"TY" = (
-/obj/structure/table/optable,
-/turf/open/floor/f13{
-	icon_state = "rarewhite"
-	},
-/area/f13/underground/cave)
 "Ua" = (
 /obj/structure/table/reinforced,
 /obj/item/screwdriver{
@@ -3938,7 +3911,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "Wc" = (
 /obj/item/clothing/under/f13/vault,
 /obj/item/clothing/shoes/jackboots,
@@ -3948,7 +3921,7 @@
 	},
 /obj/item/vending_refill/nukacolavend,
 /turf/open/floor/carpet/reno/evil,
-/area/f13/underground/cave)
+/area/f13/vault)
 "Ws" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -4218,7 +4191,7 @@
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
-/area/f13/underground/cave)
+/area/f13/vault)
 "ZR" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/nukaquartz,
@@ -4227,7 +4200,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/carpet/reno/evil,
-/area/f13/underground/cave)
+/area/f13/vault)
 "ZT" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
@@ -5235,8 +5208,8 @@ Le
 (19,1,1) = {"
 tt
 YA
-zX
-zX
+Bk
+Bk
 Bk
 Bk
 Bk
@@ -5290,7 +5263,7 @@ Le
 (20,1,1) = {"
 tt
 YA
-zX
+Bk
 vX
 PP
 PP
@@ -5345,7 +5318,7 @@ Le
 (21,1,1) = {"
 tt
 YA
-zX
+Bk
 MN
 PP
 rn
@@ -5400,7 +5373,7 @@ Le
 (22,1,1) = {"
 tt
 YA
-zX
+Bk
 HF
 PP
 pi
@@ -5455,8 +5428,8 @@ Le
 (23,1,1) = {"
 tt
 YA
-zX
-zX
+Bk
+Bk
 Bk
 Bk
 jV
@@ -5510,7 +5483,7 @@ Le
 (24,1,1) = {"
 tt
 YA
-zX
+Bk
 ft
 Xp
 Dp
@@ -5565,7 +5538,7 @@ Le
 (25,1,1) = {"
 tt
 YA
-zX
+Bk
 ZR
 uG
 uG
@@ -5620,7 +5593,7 @@ Le
 (26,1,1) = {"
 tt
 YA
-zX
+Bk
 Wc
 uG
 Ir
@@ -5675,8 +5648,8 @@ Le
 (27,1,1) = {"
 tt
 YA
-zX
-zX
+Bk
+Bk
 Bk
 Ed
 Bk
@@ -5730,7 +5703,7 @@ Le
 (28,1,1) = {"
 tt
 YA
-zX
+Bk
 sW
 YQ
 TX
@@ -5785,8 +5758,8 @@ Le
 (29,1,1) = {"
 tt
 YA
-zX
-RB
+Bk
+mO
 mO
 mO
 ns
@@ -5840,7 +5813,7 @@ Le
 (30,1,1) = {"
 tt
 YA
-zX
+Bk
 ev
 gL
 mO
@@ -5895,7 +5868,7 @@ Le
 (31,1,1) = {"
 tt
 YA
-zX
+Bk
 EF
 mO
 YV
@@ -5950,8 +5923,8 @@ Le
 (32,1,1) = {"
 tt
 YA
-zX
-zX
+Bk
+Bk
 NU
 jV
 Bk
@@ -6005,7 +5978,7 @@ Le
 (33,1,1) = {"
 tt
 YA
-zX
+Bk
 bn
 ST
 ej
@@ -6060,7 +6033,7 @@ Le
 (34,1,1) = {"
 tt
 YA
-zX
+Bk
 Rz
 Of
 ST
@@ -6115,7 +6088,7 @@ Le
 (35,1,1) = {"
 tt
 YA
-zX
+Bk
 zT
 fT
 ST
@@ -6169,9 +6142,9 @@ Le
 "}
 (36,1,1) = {"
 tt
-zX
-zX
-zX
+Bk
+Bk
+Bk
 Bk
 Bk
 Bk
@@ -6224,7 +6197,7 @@ Le
 "}
 (37,1,1) = {"
 tt
-zX
+Bk
 SY
 zY
 SZ
@@ -6279,8 +6252,8 @@ Le
 "}
 (38,1,1) = {"
 tt
-zX
-mZ
+Bk
+vF
 DK
 HJ
 SZ
@@ -6334,7 +6307,7 @@ Le
 "}
 (39,1,1) = {"
 tt
-zX
+Bk
 Kc
 oZ
 HJ
@@ -6389,9 +6362,9 @@ Le
 "}
 (40,1,1) = {"
 tt
-zX
+Bk
 jo
-xu
+SZ
 SZ
 vF
 vF
@@ -6444,9 +6417,9 @@ Le
 "}
 (41,1,1) = {"
 YA
-zX
+Bk
 HK
-xu
+SZ
 SZ
 ko
 vF
@@ -6499,8 +6472,8 @@ Le
 "}
 (42,1,1) = {"
 YA
-zX
-zX
+Bk
+Bk
 ZP
 Bk
 Bk
@@ -6554,9 +6527,9 @@ Le
 "}
 (43,1,1) = {"
 YA
-zX
+Bk
 Wa
-xu
+SZ
 SZ
 oW
 fR
@@ -6609,9 +6582,9 @@ Le
 "}
 (44,1,1) = {"
 YA
-zX
+Bk
 Co
-mZ
+vF
 vF
 vF
 Bk
@@ -6664,10 +6637,10 @@ Le
 "}
 (45,1,1) = {"
 YA
-zX
-xu
-mZ
-mZ
+Bk
+SZ
+vF
+vF
 IY
 Bk
 pP
@@ -6719,10 +6692,10 @@ Le
 "}
 (46,1,1) = {"
 YA
-zX
+Bk
 Cv
 bS
-xu
+SZ
 ro
 Bk
 OK
@@ -6774,10 +6747,10 @@ Le
 "}
 (47,1,1) = {"
 YA
-zX
-TY
-xu
-xu
+Bk
+Np
+SZ
+SZ
 Np
 Bk
 BI
@@ -6829,10 +6802,10 @@ Le
 "}
 (48,1,1) = {"
 YA
-zX
+Bk
 JA
-xu
-xu
+SZ
+SZ
 AX
 Bk
 ur
@@ -6884,10 +6857,10 @@ Le
 "}
 (49,1,1) = {"
 YA
-zX
-Pb
-mZ
-mZ
+Bk
+ur
+vF
+vF
 Pd
 Bk
 xZ
@@ -6939,10 +6912,10 @@ Le
 "}
 (50,1,1) = {"
 YA
-zX
-mZ
+Bk
+vF
 sU
-xu
+SZ
 SZ
 iv
 Jl
@@ -6994,10 +6967,10 @@ Le
 "}
 (51,1,1) = {"
 YA
-zX
-zX
-zX
-zX
+Bk
+Bk
+Bk
+Bk
 Bk
 Bk
 Bk
@@ -7061,19 +7034,19 @@ YA
 YA
 YA
 YA
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
-zX
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
+Bk
 zX
 YA
 YA

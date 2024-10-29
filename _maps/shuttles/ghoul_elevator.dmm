@@ -565,11 +565,11 @@
 	dir = 4;
 	height = 51;
 	width = 5;
-	dwidth = 5;
+	dwidth = 4;
 	id = "ghoul_elevator";
 	name = "Ghoul Subway";
 	preferred_direction = 4;
-	dheight = 49
+	dheight = 48
 	},
 /obj/effect/overlay/junk/curtain,
 /turf/open/floor/plasteel/f13/vault_floor/plating,

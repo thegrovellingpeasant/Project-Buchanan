@@ -38,7 +38,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
@@ -122,7 +122,6 @@
 	gloves =  /obj/item/clothing/gloves/color/latex
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/labgoat
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -144,7 +143,7 @@
 	flag = F13CONVICT
 	total_positions = -1
 	spawn_positions = -1
-	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg..."
+	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg... TIP: Food, booze, cigarettes, and chems regenerate stamina for mining."
 	supervisors = "the guards"
 	exp_requirements = EXP_TYPE_CITIZENS
 
@@ -515,7 +514,6 @@
 	head = /obj/item/clothing/head/f13/det_hat_alt
 	shoes =  /obj/item/clothing/shoes/laceup
 	r_pocket = /obj/item/flashlight/flare
-	r_hand = /obj/item/storage/backpack/satchel/explorer
 	suit_store = /obj/item/gun/ballistic/revolver/police
 	backpack_contents = list(
 		/obj/item/pda/detective = 1,

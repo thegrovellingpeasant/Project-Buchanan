@@ -12,7 +12,7 @@
 	icon = 'icons/fallout/mobs/megafauna/watcher.dmi'
 	icon_state = "benotafraid"
 	icon_living = "benotafraid"
-	icon_dead = "benotafraid"
+	icon_dead = ""
 	speak = list("Be not afraid.")
 	friendly_verb_continuous = "watches"
 	friendly_verb_simple = "watch"
@@ -27,10 +27,13 @@
 	pixel_x = -16
 	gender = MALE
 	wander = FALSE
-	loot = list(/obj/item/melee/powered/ripper/prewar)
-	decompose = FALSE
+	loot = list(/obj/item/melee/powered/ripper/prewar, /obj/effect/decal/cleanable/blood/gibs, /obj/item/clothing/glasses/godeye)
+	decompose = TRUE
 	can_devour = FALSE
 	stat_attack = UNCONSCIOUS
+	del_on_death = TRUE
+	deathmessage = "The Watcher collapses to the floor and falls apart. Its impact shaking the ground!"
+	deathsound = 'sound/creatures/legion_death.ogg'
 	var/swooping = NONE
 	var/swoop_cooldown = 0
 	var/fire_rain_cooldown = 0
@@ -127,7 +130,7 @@
 
 	for(var/d in GLOB.cardinals)
 		INVOKE_ASYNC(src, .proc/fire_wall, d)
-	
+
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
 		INVOKE_ASYNC(src, .proc/diagonal_shots)
@@ -257,7 +260,7 @@
 	sleep(5)
 	swooping &= ~SWOOP_INVULNERABLE
 	mouse_opacity = initial(mouse_opacity)
-	icon_state = "mega_gekko"
+	icon_state = "benotafraid"
 	playsound(loc, 'sound/effects/meteorimpact.ogg', 200, 1)
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
@@ -351,8 +354,8 @@
 	duration = 5
 
 /obj/effect/temp_visual/watcher_flight
-	icon = 'icons/fallout/mobs/megafauna/64x64megafauna.dmi'
-	icon_state = "mega_gekko"
+	icon = 'icons/fallout/mobs/megafauna/watcher.dmi'
+	icon_state = "swoop"
 	layer = ABOVE_ALL_MOB_LAYER
 	pixel_x = -16
 	duration = 10
@@ -385,18 +388,3 @@
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
 	else
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
-
-/mob/living/simple_animal/hostile/megafauna/watcher/proc/do_death_beep()
-    playsound(src, 'sound/creatures/legion_death.ogg', 75, TRUE)
-    visible_message(span_warning("The Watcher collapses onto the floor, its' impact shaking the ground [src]!"), span_warning("The Watcher collapses onto the floor, its' impact shaking the ground!"))
-
-/mob/living/simple_animal/hostile/megafauna/watcher/proc/self_destruct()
-    explosion(src,5,5,6,6)
-
-/mob/living/simple_animal/hostile/megafauna/watcher/death()
-	playsound(src, 'sound/creatures/legion_death_far.ogg', 75, TRUE)
-	do_sparks(3, TRUE, src)
-	for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/do_death_beep), i*i SECONDS)
-	addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
-	return ..()

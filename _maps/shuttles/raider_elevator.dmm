@@ -694,11 +694,11 @@
 	dir = 8;
 	height = 51;
 	width = 5;
-	dwidth = 1;
 	id = "raider_elevator";
 	name = "Raider Subway";
 	preferred_direction = 8;
-	dheight = 44
+	dheight = 43;
+	dwidth = 0
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/side{
 	icon_state = "purpledirty";

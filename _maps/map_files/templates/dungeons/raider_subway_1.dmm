@@ -2826,8 +2826,8 @@
 	id = "raider_one";
 	name = "Idlewild Station";
 	width = 5;
-	dheight = 44;
-	dwidth = 1
+	dwidth = 4;
+	dheight = 43
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/subway)

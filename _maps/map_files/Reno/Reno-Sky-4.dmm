@@ -9029,13 +9029,14 @@
 "Ku" = (
 /obj/docking_port/stationary{
 	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "bishop_elevator";
-	name = "bishop_elevator";
+	height = 4;
+	id = "bishop_elevator_top";
+	name = "3rd floor";
 	roundstart_template = /datum/map_template/shuttle/bishop_elevator;
-	width = 3;
-	dir = 8
+	width = 4;
+	dir = 8;
+	dheight = 3;
+	dwidth = 2
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/reno_sharkclub)
@@ -11110,10 +11111,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_prison)
 "Te" = (
-/obj/machinery/door/unpowered/house{
-	req_one_access_txt = "165";
-	name = "room B5"
-	},
+/obj/machinery/door/unpowered/house,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Tg" = (
