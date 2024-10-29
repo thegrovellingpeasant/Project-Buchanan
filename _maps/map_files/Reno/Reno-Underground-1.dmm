@@ -35553,7 +35553,8 @@
 	height = 51;
 	width = 5;
 	roundstart_template = /datum/map_template/shuttle/ghoul_elevator;
-	dheight = 48
+	dheight = 48;
+	dwidth = 4
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_subway)
