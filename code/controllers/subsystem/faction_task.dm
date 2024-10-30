@@ -46,13 +46,13 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 
 /datum/faction_task_controller
-	var/list/all_tasks = list()				// Available tasks. ("[cat]" = list([task], ...), ...)
-	var/IFT_total_chance = 0				// Individual faction task total because chances are weights so all factions are tasked.
-	var/list/faction_tasks = list()			// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
-	var/list/player_tasks = list()			// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
-	var/list/global_tasks = list()			// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
+	var/list/datum/faction_task/all_tasks = list()			// Available tasks. ("[cat]" = list([task], ...), ...)
+	var/IFT_total_chance = 0								// Individual faction task total because chances are weights so all factions are tasked.
+	var/list/datum/faction_task/faction_tasks = list()		// Tasks assigned to faction: ("[faction]" = list(/datum/faction_task/individual_faction/[task], ...), ...)
+	var/list/datum/faction_task/player_tasks = list()		// Player tasks assigned to factions: ("[faction]" = /datum/faction_task/individual_player/[task], ...)
+	var/list/datum/faction_task/global_tasks = list()		// Tasks that are shared between multiple factions: ("[faction]" = /datum/faction_task/global_faction/[task], ...)
 	var/ticks_elapsed = 0
-	var/mob/living/players[] = list()	// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
+	var/mob/living/players[] = list()						// List of players with faction: ("[faction]" = list(/mob/living/[player], ...), ...)
 
 /datum/faction_task_controller/New()
 	. = ..()
@@ -430,7 +430,8 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	else if(highest_score == 0)
 		return "<font color='#c7863e'>You're all cashless losers.</font>"
 	else
-		return "<font color='#bc2621'>Another faction ([initial(text2path(winning_faction).faction)], $[highest_score]) has exceeded yours in wealth ($[personal_score]).</font>"
+		var/datum/faction_task/FT = text2path(winning_faction)
+		return "<font color='#bc2621'>Another faction ([initial(FT.faction)], $[highest_score]) has exceeded yours in wealth ($[personal_score]).</font>"
 
 
 
