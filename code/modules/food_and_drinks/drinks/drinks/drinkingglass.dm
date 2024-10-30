@@ -77,6 +77,70 @@
 		desc = "A shot glass - the universal symbol for bad decisions."
 		return
 
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup
+	name = "tea cup"
+	desc = "In sixteen-hundred-seven, we sailed the open seas..."
+	icon_state = "teacup_empty"
+	gulp_size = 5
+	amount_per_transfer_from_this = 5
+	possible_transfer_amounts = list()
+	volume = 15
+	custom_materials = list(/datum/material/glass=100)
+	custom_price = PRICE_CHEAP_AS_FREE
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup/on_reagent_change(changetype)
+	cut_overlays()
+
+	if (reagents.reagent_list.len > 0)
+		icon_state = "teacup"
+		name = "tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+
+	else
+		icon_state = "teacup_empty"
+		name = "tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+		return
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup/striped
+	name = "striped tea cup"
+	desc = "In sixteen-hundred-seven, we sailed the open seas..."
+	icon_state = "teacup_stripes_empty"
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup/striped/on_reagent_change(changetype)
+	cut_overlays()
+
+	if (reagents.reagent_list.len > 0)
+		icon_state = "teacup_stripes"
+		name = "filled tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+
+	else
+		icon_state = "teacup_stripes_empty"
+		name = "striped tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+		return
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup/dotted
+	name = "dotted tea cup"
+	desc = "In sixteen-hundred-seven, we sailed the open seas..."
+	icon_state = "teacup_dots_empty"
+
+/obj/item/reagent_containers/food/drinks/drinkingglass/teacup/dotted/on_reagent_change(changetype)
+	cut_overlays()
+
+	if (reagents.reagent_list.len > 0)
+		icon_state = "teacup_dots"
+		name = "dotted tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+
+	else
+		icon_state = "teacup_dots_empty"
+		name = "dotted tea cup"
+		desc = "In sixteen-hundred-seven, we sailed the open seas..."
+		return
+
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/Initialize()
 	. = ..()
 	on_reagent_change(ADD_REAGENT)

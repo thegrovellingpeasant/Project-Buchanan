@@ -7,10 +7,10 @@
 
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_SUITEONE,
-	ACCESS_SUITETWO)
+	ACCESS_SUITETWO, ACCESS_BISHOPSLAB)
 	minimal_access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_SUITEONE,
-	ACCESS_SUITETWO)
+	ACCESS_SUITETWO, ACCESS_BISHOPSLAB)
 	forbids = "The Bishop family forbids: Due to their diplomatic nature there's little that the Bishop family would not admit nowadays, and the recent growth in numbers is in part because of this very reason. Nevertheless, the general rule ensued to all the members of the family is that they shouldn't act as common thugs, don't destroy property or steal from the casino, and don't pick unnecessary fights with the other gangs."
 	enforces = "The Bishops are an ambitious family; make sure to assert dominance among the other families of New Reno to let them know who is the most powerful gang in town. Make sure the Casino doesn't run short of money, alcohol and entretainment. Wearing the family suit is required, unless acting as an infiltrator."
 	objectivesList = list("Focus on managing the Shark Club casino.", "Extort the small businesses of New Reno to get a cut from their profits, but be weary, the other families may want a cut from them too.")
@@ -33,9 +33,11 @@
 	description = "You are the head of the Bishop family. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with the NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution, if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
+	exp_requirements = 540
+
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_SUITEONE,
-	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT, ACCESS_BISHOPRR)
+	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT)
 
 	outfit = /datum/outfit/job/bishops/f13boss
 
@@ -127,9 +129,12 @@
 	description = "You are the wife of the Boss; how this happened? Who knows, maybe it was a drunken marriage. While you have no real responsibilities you do hold some level of authority, albeit lesser than that of the boss. You may find yourself doing things like micromanaging the casino staff, pestering the boss and the mobsters, and getting thrown off the third story of the Shark Club in an impromptu divorce."
 	selection_color = "#7C93AF"
 	exp_requirements = EXP_TYPE_BISHOPS
+	exp_requirements = 360
+
+
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_SUITEONE,
-	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT, ACCESS_BISHOPRR)
+	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT)
 
 	outfit = /datum/outfit/job/bishops/f13wife
 
@@ -210,9 +215,11 @@
 	description = "You have proven your worth as an earner for the Bishop Family and, as such, it has been trusted to you to lead a small band of made men for the boss. You are the mediator between the head of the family and said made men, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the made men not be assigned to you by the Boss, the decision will fall unto you and the other capos. Help to manage the Casino, make sure there's entertainment for the visitors, follow the instructions of your superior, keep the made men in line."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
+	exp_requirements = 180
+
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_SUITEONE,
-	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT, ACCESS_BISHOPRR)
+	ACCESS_SUITETWO, ACCESS_BISHOPSLAB, ACCESS_BISHOPCOM, ACCESS_BISHOPVAULT)
 
 	outfit = /datum/outfit/job/bishops/f13capo
 
@@ -288,7 +295,7 @@
 	exp_requirements = EXP_TYPE_BISHOPS
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_BISHOPSLAB,
-	ACCESS_BISHOPVAULT, ACCESS_BISHOPRR)
+	ACCESS_BISHOPVAULT)
 
 	outfit = /datum/outfit/job/bishops/f13mademan
 

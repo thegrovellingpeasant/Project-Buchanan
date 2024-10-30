@@ -301,7 +301,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 40
+	damage = 55
 	flag = "energy"
 	eyeblur = 0
 	is_reflectable = TRUE
@@ -458,7 +458,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 25 //fucc you normies
+	damage = 55 //fucc you normies
 	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
 	flag = "energy" //checks vs. energy protection
 	wound_bonus = 45 //being hit with plasma is horrific
@@ -470,7 +470,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 35
+	damage = 40
 	flag = "energy" //checks vs. energy protection
 	wound_bonus = 0 //let's not make the carbine horrifying
 	eyeblur = 0
@@ -481,7 +481,7 @@
 	name = "plasma stream"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 20
+	damage = 40
 	flag = "energy" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = FALSE
@@ -502,18 +502,18 @@
 		M.gets_drilled(firer)
 
 /obj/item/projectile/f13plasma/pistol //Plasma pistol
-	damage = 18
+	damage = 40
 	wound_bonus = 20 //being hit with plasma is horrific
 
 /obj/item/projectile/f13plasma/pistol/worn
-	damage = 16
+	damage = 30
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 20
+	damage = 45
 	wound_bonus = 35 //being hit with plasma is horrific
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 25
+	damage = 35
 
 /obj/item/projectile/beam/laser/rcw //RCW
 	name = "rapidfire beam"
