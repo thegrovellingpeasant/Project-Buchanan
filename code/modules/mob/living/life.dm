@@ -99,12 +99,13 @@
 	if(!loc)
 		return FALSE
 
+/*
 	var/datum/gas_mixture/environment = loc.return_air()
 
 	//Handle temperature/pressure differences between body and environment
 	if(environment)
 		handle_environment(environment)
-
+*/
 	handle_fire()
 
 	handle_gravity()

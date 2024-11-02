@@ -136,7 +136,6 @@
 		window.onload = function() {
 			if(!window.HTMLCanvasElement) {
 				var label = document.getElementById("label-1");
-				label.textContent = "<h1>WARNING! HTMLCanvasElement not found!</h1>"
 				return false
 			}
 			var datas = \[[jointext(datas, ",")]]
@@ -171,7 +170,6 @@
 					var color = "#" + hexify(imagedata.data\[color_idx]) + hexify(imagedata.data\[color_idx+1]) + hexify(imagedata.data\[color_idx+2]);
 					var label = document.getElementById("label-" + (i+1)); //label-String(n)
 
-					label.textContent = data\[color];
 					canvas.title = data\[color];
 				}
 				canvas.onmouseout = function(e){

@@ -278,7 +278,7 @@ GLOBAL_LIST(topic_status_cache)
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
-		call_ext(debug_server, "auxtools_shutdown")()
+		LIBCALL(debug_server, "auxtools_shutdown")()
 	..()
 
 /world/Del()
