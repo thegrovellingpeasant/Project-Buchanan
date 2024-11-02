@@ -13,10 +13,6 @@ GLOBAL_LIST(topic_status_cache)
 /world/New()
 	init_debugger()
 
-#ifdef EXTOOLS_REFERENCE_TRACKING
-	enable_reference_tracking()
-#endif
-
 	//Early profile for auto-profiler - will be stopped on profiler init if necessary.
 #if DM_BUILD >= 1506
 	world.Profile(PROFILE_START)
