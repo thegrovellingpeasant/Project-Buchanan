@@ -1,10 +1,6 @@
 SUBSYSTEM_DEF(air)
 	name = "Atmospherics"
-	init_order = INIT_ORDER_AIR
-	priority = FIRE_PRIORITY_AIR
-	wait = 5
-	flags = SS_BACKGROUND
-	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
+	flags = SS_NO_INIT | SS_NO_FIRE //atmos doesn't run
 
 	var/cost_turfs = 0
 	var/cost_groups = 0
@@ -39,7 +35,7 @@ SUBSYSTEM_DEF(air)
 	//atmos singletons
 	var/list/gas_reactions = list()
 	var/list/atmos_gen
-	var/list/planetary = list() //auxmos already caches static planetary mixes but could be convenient to do so here too
+	var/list/planetary = list() //caches static planetary mixes but could be convenient to do so here too
 	//Special functions lists
 	var/list/turf/open/high_pressure_delta = list()
 

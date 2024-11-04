@@ -28,13 +28,6 @@
 		else
 			to_chat(user, "<span class='danger'>The ground is too heavy!</span>")
 
-/*
-/obj/dugpit/return_air()
-	var/datum/gas_mixture/GM = new
-	GM.temperature = parent.temperature
-	return GM
-*/
-
 /turf/open/indestructible/ground/outside/desert/proc/handle_item_insertion(obj/item/W, mob/usr)
 	if(!istype(W))
 		return
