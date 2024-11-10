@@ -205,8 +205,6 @@
 	//Secondly, we equip the currently selected outfit onto that mannequin
 	selected_datum.equip(mannequin, visualsOnly = TRUE)
 
-	COMPILE_OVERLAYS(mannequin)
-
 	//Now we have our mannequin, photoshoot time!
 	var/list/cached_icons = list()
 	for (var/direction in GLOB.cardinals)

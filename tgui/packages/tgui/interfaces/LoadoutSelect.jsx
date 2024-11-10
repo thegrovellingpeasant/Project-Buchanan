@@ -1,7 +1,7 @@
 import { useBackend } from '../backend';
 import { Button, Flex, Section, Tabs } from '../components';
+import { Image } from '../components/Image';
 import { Window } from '../layouts';
-import { Image } from './Image';
 
 export const LoadoutSelect = (props, context) => {
   const { act, data } = useBackend(context);
@@ -76,8 +76,8 @@ export const LoadoutSelect = (props, context) => {
                 <div>
                   <Image
                     src={`data:image/jpeg;base64,${preview}`}
-                    height="64px"
-                    width="64px"
+                    height="100%"
+                    width="100%"
                     verticalAlign="middle"
                   />
                   <br />

@@ -131,19 +131,19 @@
 	. = list()
 	.["matrixactive"] = matrix_mode
 	.["matrixcolors"] = list(
-			"rr" = color_matrix_last[1],
-			"rg" = color_matrix_last[2],
-			"rb" = color_matrix_last[3],
-			"gr" = color_matrix_last[4],
-			"gg" = color_matrix_last[5],
-			"gb" = color_matrix_last[6],
-			"br" = color_matrix_last[7],
-			"bg" = color_matrix_last[8],
-			"bb" = color_matrix_last[9],
-			"cr" = color_matrix_last[10],
-			"cg" = color_matrix_last[11],
-			"cb" = color_matrix_last[12]
-			)
+		"rr" = color_matrix_last[1],
+		"rg" = color_matrix_last[2],
+		"rb" = color_matrix_last[3],
+		"gr" = color_matrix_last[4],
+		"gg" = color_matrix_last[5],
+		"gb" = color_matrix_last[6],
+		"br" = color_matrix_last[7],
+		"bg" = color_matrix_last[8],
+		"bb" = color_matrix_last[9],
+		"cr" = color_matrix_last[10],
+		"cg" = color_matrix_last[11],
+		"cb" = color_matrix_last[12],
+	)
 	if(temp)
 		.["temp"] = temp
 	if(inserted)

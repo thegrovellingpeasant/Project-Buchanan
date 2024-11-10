@@ -16,9 +16,9 @@
 
 */
 
-//#define TESTING				
+//#define TESTING
 //By using the testing("message") proc you can create debug-feedback for people with this
-								//uncommented, but not visible in the release version) 
+								//uncommented, but not visible in the release version)
 //#define DATUMVAR_DEBUGGING_MODE	//Enables the ability to cache datum vars and retrieve later for debugging which vars changed.
 
 // Comment this out if you are debugging problems that might be obscured by custom error handling in world/Error
@@ -34,7 +34,7 @@
 *
 * * Requires TESTING to be defined to work.
 */
-//#define REFERENCE_TRACKING  
+//#define REFERENCE_TRACKING
 
 //#define REFERENCE_TRACKING_DEBUG
 
@@ -98,10 +98,6 @@
 #ifdef CBT
 #define ALL_MAPS
 #endif
-
-// A reasonable number of maximum overlays an object needs
-// If you think you need more, rethink it
-#define MAX_ATOM_OVERLAYS 100
 
 #if !defined(CBT) && !defined(SPACEMAN_DMM)
 #warn Building with Dream Maker is no longer supported and will result in errors.

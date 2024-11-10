@@ -18,69 +18,43 @@ export const Colormate = (props, context) => {
       <Window.Content overflow="auto">
         {temp ? <NoticeBox>{temp}</NoticeBox> : null}
         {Object.keys(item).length ? (
-          <>
-            <Flex fill>
-              <Section width="50%" height="20%">
-                <center>Item:</center>
-                <img
-                  src={'data:image/jpeg;base64, ' + item.sprite}
-                  width="100%"
-                  height="100%"
-                  style={{
-                    '-ms-interpolation-mode': 'nearest-neighbor',
-                  }}
-                />
-              </Section>
-              <Section width="50%" height="20%">
-                <center>Preview:</center>
-                <img
-                  src={'data:image/jpeg;base64, ' + item.preview}
-                  width="100%"
-                  height="100%"
-                  style={{
-                    '-ms-interpolation-mode': 'nearest-neighbor',
-                  }}
-                />
-              </Section>
-            </Flex>
-            <Section>
-              <Tabs fluid>
-                <Tabs.Tab
-                  key="0"
-                  selected={!matrixactive}
-                  onClick={() =>
-                    act('switch_modes', {
-                      mode: '0',
-                    })
-                  }
-                >
-                  Regular coloring
-                </Tabs.Tab>
-                <Tabs.Tab
-                  key="1"
-                  selected={matrixactive}
-                  onClick={() =>
-                    act('switch_modes', {
-                      mode: '1',
-                    })
-                  }
-                >
-                  Matrixed coloring
-                </Tabs.Tab>
-              </Tabs>
-              {matrixactive ? (
-                <>
-                  <center>Coloring: {item.name}</center>
-                  <ColormateMatrix />
-                </>
-              ) : (
-                <>
-                  <center>Coloring: {item.name}</center>
-                  <ColormateNoMatrix />
-                </>
-              )}
-            </Section>
-          </>
+          <Section>
+            <Tabs fluid>
+              <Tabs.Tab
+                key="0"
+                selected={!matrixactive}
+                onClick={() =>
+                  act('switch_modes', {
+                    mode: '0',
+                  })
+                }
+              >
+                Regular coloring
+              </Tabs.Tab>
+              <Tabs.Tab
+                key="1"
+                selected={matrixactive}
+                onClick={() =>
+                  act('switch_modes', {
+                    mode: '1',
+                  })
+                }
+              >
+                Matrixed coloring
+              </Tabs.Tab>
+            </Tabs>
+            {matrixactive ? (
+              <>
+                <center>Coloring: {item.name}</center>
+                <ColormateMatrix />
+              </>
+            ) : (
+              <>
+                <center>Coloring: {item.name}</center>
+                <ColormateNoMatrix />
+              </>
+            )}
+          </Section>
         ) : (
           <Section>
             <center>No item inserted.</center>
