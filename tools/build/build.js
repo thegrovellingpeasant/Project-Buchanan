@@ -203,6 +203,13 @@ export const DmTarget = new Juke.Target({
     'html/**',
     'icons/**',
     'interface/**',
+    //Custom folders
+    'citadel/**',
+    'desertrose/**',
+    'fallout/**',
+    'honk/**',
+    'modular_citadel/**',
+    //Custom folders end
     `${DME_NAME}.dme`,
     NamedVersionFile,
   ],

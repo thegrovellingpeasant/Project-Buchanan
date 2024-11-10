@@ -43,7 +43,7 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 	switch(var_name)
 		if (NAMEOF(src, vars))
 			return debug_variable(var_name, list(), 0, src)
-	return debug_variable(var_name, vars[var_name], 0, src, display_flags = VV_ALWAYS_CONTRACT_LIST)
+	return debug_variable(var_name, vars[var_name], 0, src)
 
 /datum/controller/global_vars/Initialize()
 	gvars_datum_init_order = list()
@@ -64,7 +64,3 @@ GLOBAL_REAL(GLOB, /datum/controller/global_vars)
 		var/end_tick = world.time
 		if(end_tick - start_tick)
 			warning("Global [replacetext("[I]", "InitGlobal", "")] slept during initialization!")
-
-	// Someone make it so this call isn't necessary
-	make_datum_reference_lists()
-
