@@ -1,3 +1,6 @@
+GLOBAL_VAR(topic_status_lastcache)
+GLOBAL_LIST(topic_status_cache)
+
 // SETUP
 
 /proc/TopicHandlers()

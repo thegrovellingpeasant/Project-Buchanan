@@ -4,9 +4,6 @@ GLOBAL_VAR(restart_counter)
 
 GLOBAL_VAR_INIT(tgs_initialized, FALSE)
 
-GLOBAL_VAR(topic_status_lastcache)
-GLOBAL_LIST(topic_status_cache)
-
 //This happens after the Master subsystem new(s) (it's a global datum)
 //So subsystems globals exist, but are not initialised
 

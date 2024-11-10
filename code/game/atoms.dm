@@ -1216,6 +1216,9 @@
 			return max_grav
 	return SSmapping.level_trait(T.z, ZTRAIT_GRAVITY)
 
+/atom/proc/get_visible_name()
+	return name
+
 /**
  * Causes effects when the atom gets hit by a rust effect from heretics
  *

@@ -93,13 +93,6 @@
 	else
 		remove_filter("ambient_occlusion") // temporarily removed because this map takes place on a white salty hellhole and drop shadows look terrible on nearly flat white, note left here as a reminder
 
-//Reserved to chat messages, so they are still displayed above the field of vision masking.
-/atom/movable/screen/plane_master/chat_messages
-	name = "chat messages plane master"
-	plane = CHAT_PLANE
-	appearance_flags = PLANE_MASTER
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-
 ///Contains all shadow cone masks, whose image overrides are displayed only to their respective owners.
 /atom/movable/screen/plane_master/field_of_vision
 	name = "field of vision mask plane master"

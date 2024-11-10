@@ -55,7 +55,7 @@
 	key = "cough"
 	key_third_person = "coughs"
 	message = "coughs!"
-	emote_type = EMOTE_AUDIBLE
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE | EMOTE_RUNECHAT
 
 /datum/emote/living/cough/can_run_emote(mob/user, status_check = TRUE , intentional)
 	. = ..()
@@ -79,6 +79,7 @@
 	message_monkey = "lets out a faint chimper as it collapses and stops moving..."
 	message_simple =  "stops moving..."
 	stat_allowed = UNCONSCIOUS
+	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE | EMOTE_IMPORTANT
 
 /datum/emote/living/deathgasp/run_emote(mob/user, params)
 	var/mob/living/simple_animal/S = user

@@ -116,36 +116,26 @@
  *
  * Use for atoms performing visible actions
  *
- * message is output to anyone who can see, e.g. "The [src] does something!"
+ * message is output to anyone who can see, e.g. `"The [src] does something!"`
  *
  * Vars:
+ * * message is the message output to anyone who can see.
  * * self_message (optional) is what the src mob sees e.g. "You do something!"
  * * blind_message (optional) is what blind people will hear e.g. "You hear something!"
  * * vision_distance (optional) define how many tiles away the message can be seen.
- * * ignored_mobs (optional) doesn't show any message to any given mob in the list.
- * * target (optional) is the other mob involved with the visible message. For example, the attacker in many combat messages.
- * * target_message (optional) is what the target mob will see e.g. "[src] does something to you!"
+ * * ignored_mobs (optional) doesn't show any message to any mob in this list.
+ * * visible_message_flags (optional) is the type of message being sent.
  */
-/atom/proc/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/atom/proc/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
 	var/turf/T = get_turf(src)
 	if(!T)
 		return
+
+	if(!islist(ignored_mobs))
+		ignored_mobs = list(ignored_mobs)
 	var/list/hearers = get_hearers_in_view(vision_distance, src) //caches the hearers and then removes ignored mobs.
-	if(!length(hearers))
-		return
 	hearers -= ignored_mobs
 
-	if(target_message && target && istype(target) && target.client)
-		hearers -= target
-		//This entire if/else chain could be in two lines but isn't for readabilty's sake.
-		var/msg = target_message
-		if(target.see_invisible<invisibility) //if src is invisible to us,
-			msg = blind_message
-		//the light object is dark and not invisible to us, darkness does not matter if you're directly next to the target
-		else if(T.lighting_object && T.lighting_object.invisibility <= target.see_invisible && T.is_softly_lit() && !in_range(T,target))
-			msg = blind_message
-		if(msg)
-			target.show_message(msg, MSG_VISUAL,blind_message, MSG_AUDIBLE)
 	if(self_message)
 		hearers -= src
 
@@ -156,21 +146,48 @@
 	for(var/mob/M in hearers)
 		if(!M.client)
 			continue
-		//This entire if/else chain could be in two lines but isn't for readabilty's sake.
+
+		//This entire if/else chain could be in two lines but isn't for readibilties sake.
 		var/msg = message
-		if(M.see_invisible<invisibility || (T != loc && T != src))//if src is invisible to us or is inside something (and isn't a turf),
+		var/msg_type = MSG_VISUAL
+
+		if(M.see_invisible < invisibility)//if src is invisible to M
 			msg = blind_message
+			msg_type = MSG_AUDIBLE
+		else if(T != loc && T != src) //if src is inside something and not a turf.
+			if(M != loc) // Only give the blind message to hearers that aren't the location
+				msg = blind_message
+				msg_type = MSG_AUDIBLE
+		else if(T.lighting_object && T.lighting_object.invisibility <= M.see_invisible && T.is_softly_lit() && !in_range(T, M))
+			msg = blind_message
+			msg_type = MSG_AUDIBLE
+		if(!msg)
+			continue
 
 		if(visible_message_flags & EMOTE_MESSAGE && runechat_prefs_check(M, visible_message_flags) && !M.is_blind())
 			M.create_chat_message(src, raw_message = raw_msg, runechat_flags = visible_message_flags)
 
-		M.show_message(msg, MSG_VISUAL, blind_message, MSG_AUDIBLE)
+		M.show_message(msg, msg_type, blind_message, MSG_AUDIBLE)
 
 ///Adds the functionality to self_message.
-/mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
 	. = ..()
-	if(self_message && target != src)
-		show_message(self_message, MSG_VISUAL, blind_message, MSG_AUDIBLE)
+	if(!self_message)
+		return
+	var/raw_self_message = self_message
+	var/self_runechat = FALSE
+	if(visible_message_flags & EMOTE_MESSAGE)
+		self_message = "<span class='emote'><b>[src]</b> [self_message]</span>" // May make more sense as "You do x"
+
+	if(visible_message_flags & ALWAYS_SHOW_SELF_MESSAGE)
+		to_chat(src, self_message)
+		self_runechat = TRUE
+
+	else
+		self_runechat = show_message(self_message, MSG_VISUAL, blind_message, MSG_AUDIBLE)
+
+	if(self_runechat && (visible_message_flags & EMOTE_MESSAGE) && runechat_prefs_check(src, visible_message_flags))
+		create_chat_message(src, raw_message = raw_self_message, runechat_flags = visible_message_flags)
 
 /**
  * Show a message to all mobs in earshot of this atom
@@ -181,16 +198,11 @@
  * * message is the message output to anyone who can hear.
  * * deaf_message (optional) is what deaf people will see.
  * * hearing_distance (optional) is the range, how many tiles away the message can be heard.
- * * ignored_mobs (optional) doesn't show any message to any given mob in the list.
+ * * self_message (optional) is what the src mob hears.
+ * * audible_message_flags (optional) is the type of message being sent.
  */
-/atom/proc/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, ignored_mobs, audible_message_flags = NONE)
-	var/turf/T = get_turf(src)
-	if(!T)
-		return
+/atom/proc/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE)
 	var/list/hearers = get_hearers_in_view(hearing_distance, src)
-	if(!length(hearers))
-		return
-	hearers -= ignored_mobs
 	if(self_message)
 		hearers -= src
 	var/raw_msg = message
@@ -211,12 +223,23 @@
  * * self_message (optional) is what the src mob hears.
  * * deaf_message (optional) is what deaf people will see.
  * * hearing_distance (optional) is the range, how many tiles away the message can be heard.
- * * ignored_mobs (optional) doesn't show any message to any given mob in the list.
  */
-/mob/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, list/ignored_mobs, audible_message_flags = NONE)
+/mob/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE)
 	. = ..()
-	if(self_message)
-		show_message(self_message, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
+	if(!self_message)
+		return
+	var/raw_self_message = self_message
+	var/self_runechat = FALSE
+	if(audible_message_flags & EMOTE_MESSAGE)
+		self_message = "<span class='emote'><b>[src]</b> [self_message]</span>"
+	if(audible_message_flags & ALWAYS_SHOW_SELF_MESSAGE)
+		to_chat(src, self_message)
+		self_runechat = TRUE
+	else
+		self_runechat = show_message(self_message, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
+
+	if(self_runechat && (audible_message_flags & EMOTE_MESSAGE) && runechat_prefs_check(src, audible_message_flags))
+		create_chat_message(src, raw_message = raw_self_message, runechat_flags = audible_message_flags)
 
 
 ///Returns the client runechat visible messages preference according to the message type.
