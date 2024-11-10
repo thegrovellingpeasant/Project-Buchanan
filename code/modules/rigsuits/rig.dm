@@ -522,13 +522,13 @@
 	cell.use(cost*10)
 	return 1
 
-/obj/item/rig/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = TRUE)
+/obj/item/rig/ui_interact(mob/user, datum/tgui/ui)
 	if(!user)
 		return
 
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, ui_key, ((src.loc != user) ? ai_interface_path : interface_path), interface_title, 480, 550)
+		ui = new(user, src, "Hardsuit", name)
 		ui.open()
 		ui.autoupdate = TRUE
 
@@ -848,7 +848,7 @@
 	//		malfunction_delay = max(malfunction_delay, round(30/severity_class))
 
 	//drain some charge
-	if(cell) 
+	if(cell)
 		cell.emp_act(severity_class + 15)
 
 	//possibly damage some modules

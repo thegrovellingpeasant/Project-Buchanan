@@ -223,17 +223,8 @@
 		qdel(src)
 		return
 
-/obj/structure/bonfire/proc/CheckOxygen()
-	if(isopenturf(loc))
-		var/turf/open/O = loc
-		if(O.air)
-			var/datum/gas_mixture/loc_air = O.air
-			if(loc_air.get_moles(GAS_O2) > 13)
-				return TRUE
-	return FALSE
-
 /obj/structure/bonfire/proc/StartBurning()
-	if(!burning && CheckOxygen())
+	if(!burning)
 		icon_state = burn_icon
 		burning = TRUE
 		set_light(6)
@@ -278,9 +269,6 @@
 			new /obj/item/stack/sheet/mineral/coal(loc, 1)
 
 /obj/structure/bonfire/process()
-	if(!CheckOxygen())
-		extinguish()
-		return
 	if(!grill)
 		Burn()
 	else
