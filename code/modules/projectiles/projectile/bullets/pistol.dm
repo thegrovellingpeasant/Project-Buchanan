@@ -38,7 +38,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c22
 	name = ".22lr bullet"
 	damage = 5
-	wound_bonus = 3
+	wound_bonus = 6
 	is_reflectable = TRUE
 
 /obj/item/projectile/bullet/c22/rubber

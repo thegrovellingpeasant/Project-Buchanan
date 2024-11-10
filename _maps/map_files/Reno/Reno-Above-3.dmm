@@ -22957,6 +22957,14 @@
 	},
 /turf/open/floor/carpet/red/lit,
 /area/f13/reno_hotel)
+"vZM" = (
+/obj/item/card/id/reno/papers/worker,
+/obj/item/card/id/reno/papers/worker,
+/obj/item/card/id/reno/papers/worker,
+/obj/structure/closet/crate/footchest,
+/obj/item/card/id/reno/papers/worker,
+/turf/open/floor/wood/f13/lit,
+/area/f13/wrights)
 "vZU" = (
 /obj/structure/closet/fridge,
 /obj/effect/decal/cleanable/dirt,
@@ -46322,7 +46330,7 @@ mot
 xky
 kZp
 aPF
-mot
+vZM
 mot
 qUr
 bTN
