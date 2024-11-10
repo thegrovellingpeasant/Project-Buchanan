@@ -15,27 +15,27 @@ export const Colormate = (props, context) => {
   const { act, data } = useBackend(context);
   const { matrixactive, temp, item = [] } = data;
   return (
-    <Window width="980" height="720" resizable>
+    <Window width="400" height="450" resizable>
       <Window.Content overflow="auto">
         {temp ? <NoticeBox>{temp}</NoticeBox> : null}
-        {Object.keys(item).length ? (
+        {item ? (
           <>
-            <Flex fill>
-              <Section width="50%" height="20%">
+            <Flex>
+              <Section textAlign="center" width="50%" height="20%">
                 <center>Item:</center>
                 <Image
+                  height="70%"
+                  width="70%"
                   src={'data:image/jpeg;base64, ' + item.sprite}
-                  height="64px"
-                  width="64px"
                   verticalAlign="middle"
                 />
               </Section>
-              <Section width="50%" height="20%">
+              <Section textAlign="center" width="50%" height="20%">
                 <center>Preview:</center>
                 <Image
+                  height="70%"
+                  width="70%"
                   src={'data:image/jpeg;base64, ' + item.preview}
-                  height="64px"
-                  width="64px"
                   verticalAlign="middle"
                 />
               </Section>
@@ -71,10 +71,7 @@ export const Colormate = (props, context) => {
                   <ColormateMatrix />
                 </>
               ) : (
-                <>
-                  <center>Coloring: {item.name}</center>
-                  <ColormateNoMatrix />
-                </>
+                <ColormateNoMatrix />
               )}
             </Section>
           </>
@@ -90,40 +87,37 @@ export const Colormate = (props, context) => {
 
 export const ColormateNoMatrix = (props, context) => {
   const { act, data } = useBackend(context);
+  const { item = [] } = data;
   return (
-    <Section>
-      <Flex grow={1} fill>
-        <Flex.Item width="33%">
-          <Button
-            fluid
-            content="Paint"
-            icon="fill"
-            onClick={() => act('paint')}
-          />
-          <Button
-            fluid
-            content="Clear"
-            icon="eraser"
-            onClick={() => act('clear')}
-          />
-          <Button
-            fluid
-            content="Eject"
-            icon="eject"
-            onClick={() => act('drop')}
-          />
-        </Flex.Item>
-        <Flex.Item width="66%">
-          <Button
-            fluid
-            height="100%"
-            content="Select new color"
-            icon="paint-brush"
-            onClick={() => act('choose_color')}
-          />
-        </Flex.Item>
-      </Flex>
-    </Section>
+    <>
+      <Section textAlign="center">Coloring: {item.name}</Section>
+      <Section textAlign="center">
+        <Button
+          width="100%"
+          content="Select new color"
+          icon="paint-brush"
+          onClick={() => act('choose_color')}
+        />
+        <Button
+          width="50%"
+          content="Paint"
+          icon="fill"
+          onClick={() => act('paint')}
+        />
+        <Button
+          width="50%"
+          content="Clear"
+          icon="eraser"
+          onClick={() => act('clear')}
+        />
+        <Button
+          width="50%"
+          content="Eject"
+          icon="eject"
+          onClick={() => act('drop')}
+        />
+      </Section>
+    </>
   );
 };
 
@@ -133,7 +127,7 @@ export const ColormateMatrix = (props, context) => {
   return (
     <Section>
       <Flex>
-        <Flex.Item width="33%">
+        <Flex.Item>
           <Button
             fluid
             content="Paint"
@@ -157,7 +151,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             RR:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.rr}
@@ -172,7 +165,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             GR:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.gr}
@@ -187,7 +179,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             BR:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.br}
@@ -204,7 +195,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             RG:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.rg}
@@ -219,7 +209,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             GG:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.gg}
@@ -234,7 +223,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             BG:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.bg}
@@ -251,7 +239,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             RB:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.rb}
@@ -266,7 +253,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             GB:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.gb}
@@ -281,7 +267,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             BB:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.bb}
@@ -298,7 +283,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             CR:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.cr}
@@ -313,7 +297,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             CG:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.cg}
@@ -328,7 +311,6 @@ export const ColormateMatrix = (props, context) => {
           <Flex.Item>
             CB:{' '}
             <NumberInput
-              width="50px"
               minValue={-1000}
               maxValue={1000}
               value={matrixcolors.cb}
@@ -341,7 +323,7 @@ export const ColormateMatrix = (props, context) => {
             />
           </Flex.Item>
         </Flex.Item>
-        <Flex.Item width="33%">
+        <Flex.Item>
           <Icon name="question-circle" color="blue" /> RG means red will become
           this much green.
           <br />
