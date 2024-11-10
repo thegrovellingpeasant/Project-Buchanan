@@ -222,7 +222,6 @@
 		wright_money += M.amount
 	for(var/obj/item/stack/f13Cash/caps/M in vgraff.contents)
 		vgraff_money += M.amount
-
 	var/richest = max(bishop_money, wright_money, vgraff_money)
 	if(src.team.name == "The Bishops")
 		if(bishop_money == richest)
