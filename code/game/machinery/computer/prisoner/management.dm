@@ -5,7 +5,7 @@
 	icon_state = "computer"
 	icon_keyboard = "generic_key"
 	icon_screen = "generic"
-	req_one_access = list(ACCESS_BRIG, ACCESS_NCR)
+	req_one_access = null
 	var/id = 0
 	var/temp = null
 	var/status = 0
