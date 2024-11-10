@@ -123,7 +123,7 @@
 /obj/machinery/gear_painter/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "Colormate", src.name)
+		ui = new(user, src, "Colormate", name)
 		ui.set_autoupdate(FALSE) //This might be a bit intensive, better to not update it every few ticks
 		ui.open()
 
