@@ -4,26 +4,12 @@ GLOBAL_VAR(restart_counter)
 
 GLOBAL_VAR_INIT(tgs_initialized, FALSE)
 
-/**
- * THIS !!!SINGLE!!! PROC IS WHERE ANY FORM OF INIITIALIZATION THAT CAN'T BE PERFORMED IN SUBSYSTEMS OR WORLD/NEW IS DONE
- * NOWHERE THE FUCK ELSE
- * I DON'T CARE HOW MANY LAYERS OF DEBUG/PROFILE/TRACE WE HAVE, YOU JUST HAVE TO DEAL WITH THIS PROC EXISTING
- * I'M NOT EVEN GOING TO TELL YOU WHERE IT'S CALLED FROM BECAUSE I'M DECLARING THAT FORBIDDEN KNOWLEDGE
- * SO HELP ME GOD IF I FIND ABSTRACTION LAYERS OVER THIS!
- */
-/world/proc/Genesis(tracy_initialized = FALSE)
-	RETURN_TYPE(/datum/controller/master)
-
-	// Init the debugger first so we can debug Master
-	init_debugger()
-
-	// THAT'S IT, WE'RE DONE, THE. FUCKING. END.
-	Master = new
-
 //This happens after the Master subsystem new(s) (it's a global datum)
 //So subsystems globals exist, but are not initialised
 
 /world/New()
+
+	init_debugger()
 
 #if DM_BUILD >= 1506
 	Profile(PROFILE_RESTART)

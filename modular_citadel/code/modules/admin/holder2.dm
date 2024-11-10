@@ -1,5 +1,5 @@
 /datum/admins
-		var/following = null
+	var/following = null
 
 /datum/admins/associate(client/C)
 	..()

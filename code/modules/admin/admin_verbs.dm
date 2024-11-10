@@ -115,7 +115,14 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/roll_dices					//CIT CHANGE - Adds dice verb
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
-GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /datum/admins/proc/spawn_cargo, /datum/admins/proc/spawn_objasmob, /client/proc/respawn_character))
+GLOBAL_LIST_INIT(admin_verbs_spawn, list(
+	/datum/admins/proc/spawn_atom,
+	/datum/admins/proc/podspawn_atom,
+	/datum/admins/proc/spawn_cargo,
+	/datum/admins/proc/spawn_objasmob,
+	/client/proc/respawn_character,
+	/client/proc/open_event_panel,
+))
 GLOBAL_PROTECT(admin_verbs_spawn)
 GLOBAL_LIST_INIT(admin_verbs_server, world.AVerbsServer())
 /world/proc/AVerbsServer()
@@ -289,7 +296,6 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 				add_verb(src, /client/proc/play_web_sound)
 		if(rights & R_SPAWN)
 			add_verb(src, GLOB.admin_verbs_spawn)
-			add_verb(src, GLOB.staff_verbs)
 
 /client/proc/remove_admin_verbs()
 	remove_verb(src, list(

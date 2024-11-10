@@ -240,8 +240,6 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		if(check_rights_for(src, R_DEBUG))
 			debug_tools_allowed = TRUE
 		//END CITADEL EDIT
-		if(check_rights_for(src, R_SPAWN)) //Fortuna edit. Are they lower ranked staff?
-			GLOB.staff |= src
 	else if(GLOB.deadmins[ckey])
 		add_verb(src, /client/proc/readmin)
 		connecting_admin = TRUE
