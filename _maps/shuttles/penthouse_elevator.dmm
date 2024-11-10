@@ -1,0 +1,93 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 4;
+	pixel_x = 3;
+	opacity = 0
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"d" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"g" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/machinery/computer/shuttle/penthouse_elevator{
+	pixel_y = -33
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"k" = (
+/obj/machinery/door/window,
+/obj/docking_port/mobile/elevator{
+	dir = 2;
+	width = 5;
+	dwidth = 2;
+	height = 3;
+	dheight = 2;
+	id = "penthouse_elevator";
+	name = "penthouse elevator"
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"t" = (
+/obj/machinery/door/window,
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"F" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"I" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 4;
+	pixel_x = 3;
+	opacity = 0
+	},
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+"J" = (
+/turf/closed/wall/r_wall/rust,
+/area/shuttle/penthouse_elevator)
+"Y" = (
+/turf/open/floor/plasteel/casino/lit,
+/area/shuttle/penthouse_elevator)
+
+(1,1,1) = {"
+d
+g
+J
+"}
+(2,1,1) = {"
+F
+Y
+t
+"}
+(3,1,1) = {"
+F
+Y
+k
+"}
+(4,1,1) = {"
+F
+Y
+t
+"}
+(5,1,1) = {"
+a
+I
+J
+"}

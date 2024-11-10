@@ -471,6 +471,10 @@
 	name = "Bishop Elevator Control (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/bishopelevator
 
+/obj/item/circuitboard/computer/penthouse_control
+	name = "Bishop Elevator Control (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/penthouse_elevator
+
 //id consoles
 
 /obj/item/circuitboard/computer/card/bishops

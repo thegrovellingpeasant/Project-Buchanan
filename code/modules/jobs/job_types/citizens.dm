@@ -15,7 +15,7 @@
 	selection_color = "#dece90"
 	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
-	access = list(ACCESS_NCR)
+	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 
 

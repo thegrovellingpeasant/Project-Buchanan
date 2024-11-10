@@ -6836,6 +6836,10 @@
 /obj/machinery/light,
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
+"cVH" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/reno_caves)
 "cVK" = (
 /obj/structure/closet,
 /obj/item/clothing/mask/luchador/rudos,
@@ -8589,9 +8593,7 @@
 /turf/open/floor/wood/lit,
 /area/f13/bar)
 "dIN" = (
-/obj/item/stack/sheet/bone,
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/reno_tribal)
 "dJe" = (
 /obj/structure/fence{
@@ -8705,6 +8707,13 @@
 	},
 /area/f13/reno_wasteland)
 "dKK" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "penthouse_ent"
+	},
+/obj/machinery/door/airlock/vault{
+	req_access_txt = "168";
+	name = "mysterious door"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_tribal)
 "dKM" = (
@@ -12388,15 +12397,6 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_tribal)
-"frI" = (
-/obj/machinery/computer/terminal{
-	icon = 'icons/obj/machines/dominator.dmi';
-	icon_state = "dominator";
-	desc = null;
-	name = "control point"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_tribal)
 "frK" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
@@ -15450,15 +15450,6 @@
 /obj/structure/closet/cabinet,
 /turf/open/floor/wood/f13/reno/ruinedcornertr,
 /area/f13/reno_wasteland)
-"gIh" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/terminal{
-	dir = 1;
-	pixel_x = 10;
-	pixel_y = 3
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_tribal)
 "gIB" = (
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/enclave)
@@ -15471,6 +15462,19 @@
 	icon_state = "horizontalinnermain2right"
 	},
 /area/f13/reno_streets)
+"gJl" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	height = 3;
+	id = "penthouse_elevator_down";
+	name = "entrance";
+	width = 5;
+	dheight = 2;
+	dwidth = 2;
+	roundstart_template = /datum/map_template/shuttle/penthouse_elevator
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/reno_tribal)
 "gJr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood/interior,
@@ -19711,7 +19715,7 @@
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
 "iqE" = (
-/turf/closed/wall/gothic,
+/turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_tribal)
 "iqO" = (
 /turf/open/floor/wood/f13/oakbroken3/lit,
@@ -23005,7 +23009,7 @@
 /area/f13/ncr)
 "jJK" = (
 /obj/structure/decoration/rag,
-/turf/closed/wall/gothic,
+/turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_tribal)
 "jJW" = (
 /obj/effect/turf_decal/bot_white,
@@ -24530,9 +24534,6 @@
 	},
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
-"kqA" = (
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/reno_tribal)
 "kqD" = (
 /obj/structure/barricade/wooden,
 /obj/structure/table/wood/settler,
@@ -24573,16 +24574,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_streets)
-"kri" = (
-/obj/structure/table/reinforced,
-/obj/item/folder{
-	pixel_x = -3
-	},
-/obj/item/folder/red{
-	pixel_x = 5
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_tribal)
 "krm" = (
 /obj/item/toy/beach_ball/holoball,
 /obj/effect/overlay/roadmarking{
@@ -24827,15 +24818,6 @@
 /obj/structure/car/rubbish4,
 /turf/open/indestructible/ground/outside/dirt/dark,
 /area/f13/reno_wasteland)
-"kxP" = (
-/obj/structure/decoration/rag{
-	icon_state = "flag_ncr";
-	name = "NCR banner";
-	pixel_x = 32
-	},
-/obj/item/reagent_containers/food/snacks/f13/canned/ncr,
-/turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
-/area/f13/reno_tribal)
 "kye" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/light_construct{
@@ -26970,7 +26952,7 @@
 	},
 /area/f13/reno_streets)
 "llY" = (
-/obj/machinery/door/poddoor/gate{
+/obj/machinery/door/poddoor/gate/preopen{
 	id = "tribalgate"
 	},
 /turf/open/indestructible/ground/inside/mountain,
@@ -34384,6 +34366,16 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
+"otM" = (
+/obj/machinery/door/airlock/vault{
+	req_access_txt = "168";
+	name = "mysterious door"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "penthouse_ent"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/reno_tribal)
 "otT" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/reagent_containers/food/snacks/badrecipe{
@@ -36029,9 +36021,6 @@
 	},
 /turf/open/indestructible/ground/outside/reno_road/hor,
 /area/f13/reno_streets)
-"plh" = (
-/turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
-/area/f13/reno_tribal)
 "pli" = (
 /obj/structure/obstacle/barbedwire/end{
 	dir = 1;
@@ -37555,9 +37544,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/white/whitepurplechess,
 /area/f13/reno_prison)
-"pQw" = (
-/turf/closed/wall/f13/ruins,
-/area/f13/reno_tribal)
 "pQC" = (
 /obj/structure/wreck/trash/five_tires,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
@@ -45184,7 +45170,7 @@
 	pixel_y = -8;
 	pixel_x = -7
 	},
-/turf/closed/wall/gothic,
+/turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_tribal)
 "tbA" = (
 /obj/structure/table/reinforced,
@@ -47950,7 +47936,7 @@
 /area/f13/reno_east_building)
 "uke" = (
 /obj/effect/decal/cleanable/greenglow,
-/turf/closed/wall/gothic,
+/turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_tribal)
 "ukf" = (
 /obj/structure/wreck/trash/five_tires,
@@ -49250,10 +49236,6 @@
 	},
 /turf/open/floor/wood/housewoodbroken4/lit,
 /area/f13/reno_building)
-"uPt" = (
-/obj/structure/chair/office/dark,
-/turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
-/area/f13/reno_tribal)
 "uPw" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -50918,10 +50900,6 @@
 /obj/item/clothing/shoes/laceup,
 /turf/open/floor/carpet/blue/lit,
 /area/f13/reno_east_building)
-"vxM" = (
-/obj/effect/decal/remains/human,
-/turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
-/area/f13/reno_tribal)
 "vyf" = (
 /obj/effect/overlay/curb,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
@@ -90022,7 +90000,7 @@ iqE
 iqE
 uke
 iqE
-dzi
+iqE
 dzi
 kEx
 lLM
@@ -90170,10 +90148,10 @@ gkI
 "}
 (214,1,1) = {"
 qjW
-pQw
-frI
-vxM
-gIh
+iqE
+dIN
+dIN
+dIN
 iqE
 dzi
 dzi
@@ -90185,7 +90163,7 @@ dzi
 dzi
 dzi
 dzi
-yjP
+dzi
 dzi
 dzi
 dzi
@@ -90322,11 +90300,11 @@ gkI
 "}
 (215,1,1) = {"
 qjW
-pQw
-kqA
-uPt
-kri
 iqE
+dIN
+dIN
+dIN
+dKK
 wXy
 dzi
 dzi
@@ -90474,11 +90452,11 @@ gkI
 "}
 (216,1,1) = {"
 qjW
-pQw
-pQw
-dKK
-plh
-dKK
+iqE
+dIN
+dIN
+gJl
+otM
 dbO
 dzi
 dzi
@@ -90626,13 +90604,13 @@ gkI
 "}
 (217,1,1) = {"
 qjW
-pQw
-pQw
-plh
-plh
+iqE
+dIN
+dIN
+dIN
 dKK
 dbO
-dzi
+cVH
 dzi
 dzi
 dzi
@@ -90778,9 +90756,9 @@ gkI
 "}
 (218,1,1) = {"
 qjW
-pQw
-kqA
-kxP
+iqE
+dIN
+dIN
 dIN
 jJK
 rdg

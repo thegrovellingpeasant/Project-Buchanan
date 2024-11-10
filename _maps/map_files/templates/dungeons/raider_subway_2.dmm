@@ -139,6 +139,12 @@
 "bx" = (
 /turf/closed/wall/f13/ruins,
 /area/f13/vault)
+"by" = (
+/mob/living/simple_animal/hostile/megafauna/captainarlem,
+/turf/open/floor/f13/red{
+	icon_state = "redsolid"
+	},
+/area/f13/vault)
 "bG" = (
 /obj/machinery/camera,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
@@ -6876,7 +6882,7 @@ Vb
 Vb
 Vb
 WD
-Vb
+by
 Vb
 sZ
 Vb

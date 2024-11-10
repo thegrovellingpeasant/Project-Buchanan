@@ -22735,9 +22735,9 @@
 	dir = 4;
 	height = 20;
 	id = "supply_home";
-	json_key = "supply";
 	width = 5;
-	dheight = 14
+	dheight = 14;
+	name = "Cargo Bay"
 	},
 /turf/open/floor/plating/tunnel/curb,
 /area/f13/wrights_armory)

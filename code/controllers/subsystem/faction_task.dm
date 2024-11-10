@@ -412,7 +412,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	return total_money
 
 /datum/faction_task/global_faction/wealth/task_status_msg()
-	return "Secure more cash in your faction's vault that any other."
+	return "Secure more cash in your faction's vault than any other."
 
 /datum/faction_task/global_faction/wealth/end_round_msg()
 	var/highest_score = 0
