@@ -7,64 +7,6 @@
 GLOBAL_VAR(restart_counter)
 
 /**
- * WORLD INITIALIZATION
- * THIS IS THE INIT ORDER:
- *
- * BYOND =>
- * - (secret init native) =>
- *   - world.Genesis() =>
- *     - (Start native profiling)
- *     - world.init_debugger()
- *     - Master =>
- *       - config *unloaded
- *       - (all subsystems) PreInit()
- *       - GLOB =>
- *         - make_datum_reference_lists()
- *   - (/static variable inits, reverse declaration order)
- * - (all pre-mapped atoms) /atom/New()
- * - world.New() =>
- *   - config.Load()
- *   - world.InitTgs() =>
- *     - TgsNew() *may sleep
- *     - GLOB.rev_data.load_tgs_info()
- *   - world.ConfigLoaded() =>
- *     - SSdbcore.InitializeRound()
- *     - world.SetupLogs()
- *     - load_admins()
- *     - ...
- *   - Master.Initialize() =>
- *     - (all subsystems) Initialize()
- *     - Master.StartProcessing() =>
- *       - Master.Loop() =>
- *         - Failsafe
- *   - world.RunUnattendedFunctions()
- *
- * Now listen up because I want to make something clear:
- * If something is not in this list it should almost definitely be handled by a subsystem Initialize()ing
- * If whatever it is that needs doing doesn't fit in a subsystem you probably aren't trying hard enough tbhfam
- *
- * GOT IT MEMORIZED?
- * - Dominion/Cyberboss
- *
- * Where to put init shit quick guide:
- * If you need it to happen before the mc is created: world/Genesis.
- * If you need it to happen last: world/New(),
- * Otherwise, in a subsystem preinit or init. Subsystems can set an init priority.
- */
-
-/**
- * THIS !!!SINGLE!!! PROC IS WHERE ANY FORM OF INIITIALIZATION THAT CAN'T BE PERFORMED IN SUBSYSTEMS OR WORLD/NEW IS DONE
- * NOWHERE THE FUCK ELSE
- * I DON'T CARE HOW MANY LAYERS OF DEBUG/PROFILE/TRACE WE HAVE, YOU JUST HAVE TO DEAL WITH THIS PROC EXISTING
- * I'M NOT EVEN GOING TO TELL YOU WHERE IT'S CALLED FROM BECAUSE I'M DECLARING THAT FORBIDDEN KNOWLEDGE
- * SO HELP ME GOD IF I FIND ABSTRACTION LAYERS OVER THIS!
- */
-/world/proc/Genesis()
-	RETURN_TYPE(/datum/controller/master)
-
-	Master = new
-
-/**
  * World creation
  *
  * Here is where a round itself is actually begun and setup.

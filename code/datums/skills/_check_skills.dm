@@ -21,7 +21,7 @@
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "SkillPanel", "[owner.name]'s Skills")
-		ui.set_autoupdate(FALSE) 
+		ui.set_autoupdate(FALSE)
 		ui.open()
 	else if(need_static_data_update)
 		update_static_data(user)
