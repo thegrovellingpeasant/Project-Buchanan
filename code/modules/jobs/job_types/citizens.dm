@@ -551,13 +551,13 @@
 
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set1/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/pill/patch/jet = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set2/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/toy/cards/deck = 1,
 		/obj/item/storage/box/dice = 1,
 		/obj/item/toy/eightball = 1
@@ -565,69 +565,69 @@
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set3/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_bigboss = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set4/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/gun/ballistic/revolver/hobo/knifegun = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set5/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/melee/onehanded/knife/hunting = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set6/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/gun/ballistic/automatic/hobo/zipgun = 1,
 		/obj/item/ammo_box/magazine/zipgun = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set7/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set8/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/hypospray/medipen/medx = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set9/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/toy/crayon/spraycan = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set10/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/pill/patch/turbo = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set11/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set12/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/box/matches = 1,
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set13/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/circuitboard/machine/chem_dispenser = 1,
 		/obj/item/stock_parts/cell/high = 1,
@@ -644,19 +644,19 @@
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set14/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/meager = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set15/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/few = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set16/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/big = 1
 		)
 	generate_items_inside(items_inside, src)

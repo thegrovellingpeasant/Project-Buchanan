@@ -1321,7 +1321,7 @@
 		new /obj/item/reagent_containers/food/snacks/marshmallow(src)
 
 /obj/item/storage/box/material/PopulateContents() 	//less uranium because radioactive
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/stack/sheet/metal/fifty=1,\
 		/obj/item/stack/sheet/glass/fifty=1,\
 		/obj/item/stack/sheet/rglass=50,\
@@ -1347,7 +1347,7 @@
 	icon_state = "syndiebox"
 
 /obj/item/storage/box/debugtools/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/flashlight/emp/debug=1,\
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
@@ -1456,13 +1456,13 @@ list(/obj/item/stack/sheet/metal = 20,
 
 
 /obj/item/storage/backpack/duffelbag/equipment/slotmachine/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/grenade/f13/dynamite = 7
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/slotmachine2/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/stock_parts/cell/ammo/alien = 2,
 		/obj/item/gun/energy/laser/plasma/pistol = 1
 		)
