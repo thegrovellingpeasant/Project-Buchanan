@@ -304,9 +304,7 @@
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_R_ARM || check_zone(M.zone_selected) == BODY_ZONE_L_ARM)
 			M.visible_message( \
-				"<span class='notice'>[M] shakes [src]'s hand.</span>", \
-				"<span class='notice'>You shake [src]'s hand.</span>", target = src,
-				target_message = "<span class='notice'>[M] shakes your hand.</span>")
+				"<span class='notice'>[M] shakes [src]'s hand.</span>")
 
 		else
 			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>")

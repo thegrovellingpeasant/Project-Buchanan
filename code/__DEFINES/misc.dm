@@ -313,12 +313,6 @@ GLOBAL_LIST_INIT(pda_reskins, list(PDA_SKIN_CLASSIC = 'icons/obj/pda.dmi'))
 #define SHELTER_DEPLOY_BAD_AREA "bad area"
 #define SHELTER_DEPLOY_ANCHORED_OBJECTS "anchored objects"
 
-//debug printing macros
-#define debug_world(msg) if (GLOB.Debug2) to_chat(world, "<span class=\"filter_debuglog\">DEBUG: [msg]</span>")
-#define debug_usr(msg) if (GLOB.Debug2&&usr) to_chat(usr, "<span class=\"filter_debuglog\">DEBUG: [msg]</span>")
-#define debug_admins(msg) if (GLOB.Debug2) to_chat(GLOB.admins, "<span class=\"filter_debuglog\">DEBUG: [msg]</span>")
-#define debug_world_log(msg) if (GLOB.Debug2) log_world("DEBUG: [msg]")
-
 #define INCREMENT_TALLY(L, stat) if(L[stat]){L[stat]++}else{L[stat] = 1}
 
 //TODO Move to a pref
@@ -491,9 +485,6 @@ GLOBAL_LIST_INIT(pda_reskins, list(PDA_SKIN_CLASSIC = 'icons/obj/pda.dmi'))
 #define FALL_INTERCEPTED		(1<<0) //Stops the movable from falling further and crashing on the ground
 #define FALL_NO_MESSAGE			(1<<1) //Used to suppress the "[A] falls through [old_turf]" messages where it'd make little sense at all, like going downstairs.
 #define FALL_STOP_INTERCEPTING	(1<<2) //Used in situations where halting the whole "intercept" loop would be better, like supermatter dusting (and thus deleting) the atom.
-
-//Misc text define. Does 4 spaces. Used as a makeshift tabulator.
-#define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 
 #define CRYOMOBS 'icons/obj/cryo_mobs.dmi'
 

@@ -58,8 +58,7 @@
 	if (M.a_intent == INTENT_HELP)
 		if (health > 0)
 			visible_message("<span class='notice'>[M.name] [response_help_continuous] [src].</span>", \
-							"<span class='notice'>[M.name] [response_help_continuous] you.</span>", \
-							target = M, target_message = "<span class='notice'>You [response_help_simple] [src].</span>")
+							"<span class='notice'>[M.name] [response_help_continuous] you.</span>")
 			playsound(loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 
 /mob/living/simple_animal/attack_alien(mob/living/carbon/alien/humanoid/M)

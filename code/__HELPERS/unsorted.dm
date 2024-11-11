@@ -1125,8 +1125,6 @@ rough example of the "cone" made by the 3 dirs checked
 	C.color = flash_color
 	animate(C, color = animate_color, time = flash_time)
 
-#define RANDOM_COLOUR (rgb(rand(0,255),rand(0,255),rand(0,255)))
-
 /proc/random_nukecode()
 	var/val = rand(0, 99999)
 	var/str = "[val]"

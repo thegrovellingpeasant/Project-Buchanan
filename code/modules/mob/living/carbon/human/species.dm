@@ -1618,8 +1618,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			var/obj/item/I = null
 			if(target.pulling)
 				target.visible_message("<span class='warning'>[user] has broken [target]'s grip on [target.pulling]!</span>", \
-					"<span class='warning'>[user] has broken your grip on [target.pulling]!</span>", target = user, \
-					target_message = "<span class='warning'>You have broken [target]'s grip on [target.pulling]!</span>")
+					"<span class='warning'>[user] has broken your grip on [target.pulling]!</span>")
 				target.stop_pulling()
 			else
 				I = target.get_active_held_item()
