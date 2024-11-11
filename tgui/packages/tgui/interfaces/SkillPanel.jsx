@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import { useBackend } from '../backend';
 import { Box, Button, LabeledList, ProgressBar, Section } from '../components';
 import { Window } from '../layouts';
@@ -12,11 +14,11 @@ const skillyellow = {
   fontWeight: 'bold',
 };
 
-export const SkillPanel = (props) => {
-  const { act, data } = useBackend();
+export const SkillPanel = (props, context) => {
+  const { act, data } = useBackend(context);
   const skills = data.skills || [];
   return (
-    <Window title="Manage Skills" width={600} height={500}>
+    <Window title="Manage Skills" width={600} height={500} resizable>
       <Window.Content scrollable>
         <Section title={skills.playername}>
           <LabeledList>
@@ -24,48 +26,57 @@ export const SkillPanel = (props) => {
               <LabeledList.Item key={skill.name} label={skill.name}>
                 <span style={skillyellow}>{skill.desc}</span>
                 <br />
-                <Level skill_lvl_num={skill.lvlnum} skill_lvl={skill.lvl} />
-                <br />
-                Total Experience: [{skill.exp} XP]
+                {!!skill.level_based && (
+                  <>
+                    <Level
+                      skill_lvl_num={skill.lvl_base_num}
+                      skill_lvl={skill.lvl_base}
+                    />
+                    <br />
+                  </>
+                )}
+                Total Experience: [{skill.value_base} XP]
                 <br />
                 XP To Next Level:
-                {skill.exp_req !== 0 ? (
-                  <span>
-                    [{skill.exp_prog} / {skill.exp_req}]
-                  </span>
+                {skill.level_based ? (
+                  <span>{skill.xp_next_lvl_base}</span>
                 ) : (
                   <span style={skillgreen}>[MAXXED]</span>
                 )}
                 <br />
-                Overall Skill Progress: [{skill.exp} / {skill.max_exp}]
-                <ProgressBar value={skill.exp_percent} color="good" />
+                {skill.base_readout}
+                <ProgressBar value={skill.percent_base} color="good" />
                 <br />
-                <Button
-                  content="Adjust Exp"
-                  onClick={() =>
-                    act('adj_exp', {
-                      skill: skill.path,
-                    })
-                  }
-                />
-                <Button
-                  content="Set Exp"
-                  onClick={() =>
-                    act('set_exp', {
-                      skill: skill.path,
-                    })
-                  }
-                />
-                <Button
-                  content="Set Level"
-                  onClick={() =>
-                    act('set_lvl', {
-                      skill: skill.path,
-                    })
-                  }
-                />
-                <br />
-                <br />
+                {!!data.admin && (
+                  <>
+                    <Button
+                      content="Adjust Exp"
+                      onClick={() =>
+                        act('adj_exp', {
+                          skill: skill.path,
+                        })
+                      }
+                    />
+                    <Button
+                      content="Set Exp"
+                      onClick={() =>
+                        act('set_exp', {
+                          skill: skill.path,
+                        })
+                      }
+                    />
+                    <Button
+                      content="Set Level"
+                      onClick={() =>
+                        act('set_lvl', {
+                          skill: skill.path,
+                        })
+                      }
+                    />
+                    <br />
+                    <br />
+                  </>
+                )}
               </LabeledList.Item>
             ))}
           </LabeledList>
@@ -85,5 +96,16 @@ const Level = (props) => {
       </Box>
       ]
     </Box>
+  );
+};
+const XPToNextLevel = (props) => {
+  const { xp_req, xp_prog } = props;
+  if (xp_req === 0) {
+    return <span style={skillgreen}>to next level: MAXXED</span>;
+  }
+  return (
+    <span>
+      XP to next level: [{xp_prog} / {xp_req}]
+    </span>
   );
 };
