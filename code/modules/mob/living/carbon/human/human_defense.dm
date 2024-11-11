@@ -198,15 +198,13 @@
 		if(I && dropItemToGround(I))
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] has disarmed [src]!</span>", \
-					"<span class='userdanger'>[M] has disarmed you!</span>", target = M, \
-					target_message = "<span class='danger'>You have disarmed [src]!</span>")
+					"<span class='userdanger'>[M] has disarmed you!</span>")
 		else
 			playsound(loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 			DefaultCombatKnockdown(M.meleeKnockdownPower)
 			log_combat(M, src, "tackled")
 			visible_message("<span class='danger'>[M] has tackled down [src]!</span>", \
-				"<span class='userdanger'>[M] has tackled you down!</span>", target = M, \
-				target_message = "<span class='danger'>You have tackled down [src]!</span>")
+				"<span class='userdanger'>[M] has tackled you down!</span>")
 
 /mob/living/carbon/human/attack_larva(mob/living/carbon/alien/larva/L)
 	. = ..()

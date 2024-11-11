@@ -174,9 +174,7 @@
 			if(M.powerlevel < 0)
 				M.powerlevel = 0
 
-			visible_message("<span class='danger'>The [M.name] has shocked [src]!</span>", \
-			"<span class='userdanger'>The [M.name] has shocked you!</span>", target = M,
-			target_message = "<span class='danger'>You have shocked [src]!</span>")
+			visible_message("<span class='danger'>The [M.name] has shocked [src]!</span>")
 
 			do_sparks(5, TRUE, src)
 			var/power = M.powerlevel + rand(0,3)
@@ -280,14 +278,12 @@
 				to_chat(M, "<span class='warning'>You need to unbuckle [src] first to do that!")
 				return
 			M.visible_message("<span class='notice'>[M] shakes [src] trying to get [p_them()] up!</span>", \
-							"<span class='notice'>You shake [src] trying to get [p_them()] up!</span>", target = src,
-							target_message = "<span class='notice'>[M] shakes you trying to get you up!</span>")
+							"<span class='notice'>You shake [src] trying to get [p_them()] up!</span>")
 
 		else if(M.zone_selected == BODY_ZONE_PRECISE_MOUTH) // I ADDED BOOP-EH-DEH-NOSEH - Jon
 			M.visible_message( \
 				"<span class='notice'>[M] boops [src]'s nose.</span>", \
-				"<span class='notice'>You boop [src] on the nose.</span>", target = src,
-				target_message = "<span class='notice'>[M] boops your nose.</span>")
+				"<span class='notice'>You boop [src] on the nose.</span>")
 			playsound(src, 'sound/items/Nose_boop.ogg', 50, 0)
 
 		else if(check_zone(M.zone_selected) == BODY_ZONE_HEAD)
@@ -296,8 +292,7 @@
 				S = dna.species
 
 			M.visible_message("<span class='notice'>[M] gives [src] a pat on the head to make [p_them()] feel better!</span>", \
-						"<span class='notice'>You give [src] a pat on the head to make [p_them()] feel better!</span>", target = src,
-						target_message = "<span class='notice'>[M] gives you a pat on the head to make you feel better!</span>")
+						"<span class='notice'>You give [src] a pat on the head to make [p_them()] feel better!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "headpat", /datum/mood_event/headpat)
 			friendly_check = TRUE
 			if(!(client?.prefs.cit_toggles & NO_AUTO_WAG))
@@ -314,9 +309,7 @@
 				target_message = "<span class='notice'>[M] shakes your hand.</span>")
 
 		else
-			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>", \
-						"<span class='notice'>You hug [src] to make [p_them()] feel better!</span>", target = src,\
-						target_message = "<span class='notice'>[M] hugs you to make you feel better!</span>")
+			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>")
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "hug", /datum/mood_event/hug)
 			friendly_check = TRUE
 

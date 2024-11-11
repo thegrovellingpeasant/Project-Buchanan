@@ -1400,8 +1400,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 /datum/species/proc/grab(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(target.check_martial_melee_block())
-		target.visible_message("<span class='warning'>[target] blocks [user]'s grab attempt!</span>", target = user, \
-			target_message = "<span class='warning'>[target] blocks your grab attempt!</span>")
+		target.visible_message("<span class='warning'>[target] blocks [user]'s grab attempt!</span>")
 		return 0
 	if(attacker_style && attacker_style.grab_act(user,target))
 		return 1
@@ -1417,8 +1416,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		to_chat(user, "<span class='warning'>You're too exhausted.</span>") //CITADEL CHANGE - ditto
 		return FALSE //CITADEL CHANGE - ditto
 	if(target.check_martial_melee_block())
-		target.visible_message("<span class='warning'>[target] blocks [user]'s attack!</span>", target = user, \
-			target_message = "<span class='warning'>[target] blocks your attack!</span>")
+		target.visible_message("<span class='warning'>[target] blocks [user]'s attack!</span>")
 		return FALSE
 
 	if(!(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
@@ -1538,8 +1536,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/target_aiming_for_head = target.zone_selected == "head"
 
 	if(target.check_martial_melee_block()) //END EDIT
-		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>", target = user, \
-			target_message = "<span class='warning'>[target] blocks your disarm attempt!</span>")
+		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>")
 		return FALSE
 	if(IS_STAMCRIT(user))
 		to_chat(user, "<span class='warning'>You're too exhausted!</span>")
@@ -1549,9 +1546,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
 
 		target.visible_message(\
-			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_them()]self" : "\the [target]"] in the face!</span>",\
-			"<span class='notice'>[user] slaps you in the face! </span>",\
-			"You hear a slap.", target = user, target_message = "<span class='notice'>You slap [user == target ? "yourself" : "\the [target]"] in the face! </span>")
+			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_them()]self" : "\the [target]"] in the face!</span>")
 		user.do_attack_animation(target, ATTACK_EFFECT_FACE_SLAP)
 		user.adjustStaminaLossBuffered(3)
 		if (!HAS_TRAIT(target, TRAIT_PERMABONER))
@@ -1570,9 +1565,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			stop_wagging_tail(target)
 		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
 		target.visible_message(\
-			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_their()] own" : "\the [target]'s"] ass!</span>",\
-			"<span class='notice'>[user] slaps your ass! </span>",\
-			"You hear a slap.", target = user, target_message = "<span class='notice'>You slap [user == target ? "your own" : "\the [target]'s"] ass! </span>")
+			"<span class='danger'>\The [user] slaps [user == target ? "[user.p_their()] own" : "\the [target]'s"] ass!</span>")
 
 		return FALSE
 
@@ -1581,9 +1574,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		playsound(target.loc, 'sound/weapons/klonk.ogg', 50, 1, -1)
 
 		target.visible_message(\
-			"<span class='danger'>\The [user] bonks [user == target ? "[user.p_them()]self" : "\the [target]"] on the head!</span>",\
-			"<span class='notice'>[user] bonks you on the head! </span>",\
-			"You hear a bonk.", target = user, target_message = "<span class='notice'>You bonk [user == target ? "yourself" : "\the [target]"] on the head! </span>")
+			"<span class='danger'>\The [user] bonks [user == target ? "[user.p_them()]self" : "\the [target]"] on the head!</span>")
 		user.do_attack_animation(target, ATTACK_EFFECT_FACE_SLAP)
 		user.adjustStaminaLossBuffered(3)
 		return FALSE
@@ -1604,9 +1595,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		//var/randomized_zone = ran_zone(user.zone_selected) CIT CHANGE - comments out to prevent compiling errors
 		SEND_SIGNAL(target, COMSIG_HUMAN_DISARM_HIT, user, user.zone_selected)
 		if(target.pulling == user)
-			target.visible_message("<span class='warning'>[user] wrestles out of [target]'s grip!</span>", \
-				"<span class='warning'>[user] wrestles out of your grip!</span>", target = user, \
-				target_message = "<span class='warning'>You wrestle out of [target]'s grip!</span>")
+			target.visible_message("<span class='warning'>[user] wrestles out of [target]'s grip!</span>")
 			target.stop_pulling()
 			playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 			log_combat(user, target, "disarmed out of grab from")
@@ -1635,9 +1624,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			else
 				I = target.get_active_held_item()
 				if(target.dropItemToGround(I))
-					target.visible_message("<span class='danger'>[user] has disarmed [target]!</span>", \
-						"<span class='userdanger'>[user] has disarmed you!</span>", null, COMBAT_MESSAGE_RANGE, null, \
-						user, "<span class='danger'>You have disarmed [target]!</span>")
+					target.visible_message("<span class='danger'>[user] has disarmed [target]!</span>")
 				else
 					I = null
 			playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
@@ -1798,9 +1785,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		attacker_style = M.mind.martial_art
 	if((M != H) && M.a_intent != INTENT_HELP && (H.mob_run_block(M, 0, "[M]", ATTACK_TYPE_UNARMED, 0, M, M.zone_selected, null) & BLOCK_SUCCESS))
 		log_combat(M, H, "attempted to touch")
-		H.visible_message("<span class='warning'>[M] attempted to touch [H]!</span>", \
-			"<span class='warning'>[M] attempted to touch you!</span>", target = M, \
-			target_message = "<span class='warning'>You attempted to touch [H]!</span>")
+		H.visible_message("<span class='warning'>[M] attempted to touch [H]!</span>")
 		return TRUE
 	if(M == H)
 		althelp(M, H, attacker_style)
@@ -1835,9 +1820,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		to_chat(user, "<span class='warning'>You're too exhausted.</span>")
 		return FALSE
 	if(target.check_martial_melee_block())
-		target.visible_message("<span class='warning'>[target] blocks [user]'s shoving attempt!</span>", \
-			"<span class='warning'>You block [user]'s shoving attempt!</span>", target = user, \
-			target_message = "<span class='warning'>[target] blocks your shoving attempt!</span>")
+		target.visible_message("<span class='warning'>[target] blocks [user]'s shoving attempt!</span>")
 		return FALSE
 	if(attacker_style && attacker_style.disarm_act(user,target))
 		return TRUE

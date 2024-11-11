@@ -128,8 +128,7 @@
 					return TRUE
 				ENABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
 				visible_message("<span class='notice'>[src] is attempting to crawl under [L].</span>",
-					"<span class='notice'>You are now attempting to crawl under [L].</span>",
-					target = L, target_message = "<span class='notice'>[src] is attempting to crawl under you.</span>")
+					"<span class='notice'>You are now attempting to crawl under [L].</span>")
 				if(!do_after(src, CRAWLUNDER_DELAY, target = src) || CHECK_MOBILITY(src, MOBILITY_STAND))
 					DISABLE_BITFIELD(combat_flags, COMBAT_FLAG_ATTEMPTING_CRAWL)
 					return TRUE
@@ -281,9 +280,7 @@
 
 	if(AM.pulledby)
 		if(!supress_message)
-			AM.pulledby.visible_message("<span class='danger'>[src] has pulled [AM] from [AM.pulledby]'s grip.</span>",
-				"<span class='danger'>[src] has pulled [AM] from your grip.</span>", target = src,
-				target_message = "<span class='danger'>You have pulled [AM] from [AM.pulledby]'s grip.</span>")
+			AM.pulledby.visible_message("<span class='danger'>[src] has pulled [AM] from [AM.pulledby]'s grip.</span>")
 		log_combat(AM, AM.pulledby, "pulled from", src)
 		AM.pulledby.stop_pulling() //an object can't be pulled by two mobs at once.
 
@@ -299,8 +296,7 @@
 		log_combat(src, M, "grabbed", addition="passive grab")
 		if(!supress_message && !(iscarbon(AM) && HAS_TRAIT(src, TRAIT_STRONG_GRABBER)))
 			visible_message("<span class='warning'>[src] has grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!</span>",
-				"<span class='warning'>You have grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!</span>", target = M,
-				target_message = "<span class='warning'>[src] has grabbed you[(zone_selected == "l_arm" || zone_selected == "r_arm")? " by your hands":" passively"]!</span>")
+				"<span class='warning'>You have grabbed [M][(zone_selected == "l_arm" || zone_selected == "r_arm")? " by [M.p_their()] hands":" passively"]!</span>")
 		if(!iscarbon(src))
 			M.LAssailant = null
 		else
@@ -812,16 +808,12 @@
 	. = ..()
 	if(pulledby.grab_state > GRAB_PASSIVE)
 		if(CHECK_MOBILITY(src, MOBILITY_RESIST) && prob(30/pulledby.grab_state))
-			pulledby.visible_message("<span class='danger'>[src] has broken free of [pulledby]'s grip!</span>",
-				"<span class='danger'>[src] has broken free of your grip!</span>", target = src,
-				target_message = "<span class='danger'>You have broken free of [pulledby]'s grip!</span>")
+			pulledby.visible_message("<span class='danger'>[src] has broken free of [pulledby]'s grip!</span>")
 			pulledby.stop_pulling()
 			return TRUE
 		else if(moving_resist && client) //we resisted by trying to move // this is a horrible system and whoever thought using client instead of mob is okay is not an okay person
 			client.move_delay = world.time + 20
-		pulledby.visible_message("<span class='danger'>[src] resists against [pulledby]'s grip!</span>",
-			"<span class='danger'>[src] resists against your grip!</span>", target = src,
-			target_message = "<span class='danger'>You resist against [pulledby]'s grip!</span>")
+		pulledby.visible_message("<span class='danger'>[src] resists against [pulledby]'s grip!</span>")
 	else
 		pulledby.stop_pulling()
 		return TRUE
@@ -882,9 +874,7 @@
 			strip_mod = g.strip_mod
 			strip_silence = g.strip_silence
 	if(!strip_silence)
-		who.visible_message("<span class='danger'>[src] tries to remove [who]'s [what.name].</span>", \
-					"<span class='userdanger'>[src] tries to remove your [what.name].</span>", target = src,
-					target_message = "<span class='danger'>You try to remove [who]'s [what.name].</span>")
+		who.visible_message("<span class='danger'>[src] tries to remove [who]'s [what.name].</span>")
 		what.add_fingerprint(src)
 		if(ishuman(who))
 			var/mob/living/carbon/human/victim_human = who
@@ -945,9 +935,7 @@
 					var/list/new_entry = list(list(src.name, "tried equipping you with [what]", world.time))
 					LAZYADD(victim_human.afk_thefts, new_entry)
 
-		who.visible_message("<span class='notice'>[src] tries to put [what] on [who].</span>",
-			"<span class='notice'>[src] tries to put [what] on you.</span>", target = src,
-			target_message = "<span class='notice'>You try to put [what] on [who].</span>")
+		who.visible_message("<span class='notice'>[src] tries to put [what] on [who].</span>")
 		if(do_mob(src, who, what.equip_delay_other))
 			if(what && Adjacent(who) && what.mob_can_equip(who, src, final_where, TRUE, TRUE))
 				if(temporarilyRemoveItemFromInventory(what))

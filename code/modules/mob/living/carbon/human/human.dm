@@ -244,18 +244,14 @@
 			if(!istype(head, /obj/item/clothing/head/helmet/space/hardsuit))
 				return
 			var/obj/item/clothing/head/helmet/space/hardsuit/hardsuit_head = head
-			visible_message("<span class='danger'>[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>", \
-								"<span class='userdanger'>[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>", \
-								target = usr, target_message = "<span class='danger'>You try to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>")
+			visible_message("<span class='danger'>[usr] tries to [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>")
 			if(!do_mob(usr, src, hardsuit_head ? head.strip_delay : POCKET_STRIP_DELAY))
 				return
 			if(!istype(wear_suit, /obj/item/clothing/suit/space/hardsuit) || (hardsuit_head ? (!head || head != hardsuit_head) : head))
 				return
 			var/obj/item/clothing/suit/space/hardsuit/hardsuit = wear_suit //This should be an hardsuit given all our checks
 			if(hardsuit.ToggleHelmet(FALSE))
-				visible_message("<span class='danger'>[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet</span>", \
-										"<span class='userdanger'>[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet</span>", \
-										target = usr, target_message = "<span class='danger'>You [hardsuit_head ? "retract" : "extend"] [src]'s helmet.</span>")
+				visible_message("<span class='danger'>[usr] [hardsuit_head ? "retract" : "extend"] [src]'s helmet</span>")
 			return
 		if(href_list["item"])
 			var/slot = text2num(href_list["item"])
