@@ -7,7 +7,7 @@
 #define STICKYBAN_MAX_ADMIN_MATCHES 2
 
 /world/IsBanned(key,address,computer_id,type,real_bans_only=FALSE)
-	var/static/key_cache = list()
+	var/static/list/key_cache = list()
 	if(!real_bans_only)
 		if(key_cache[key] >= REALTIMEOFDAY)
 			return list("reason"="concurrent connection attempts", "desc"="You are attempting to connect too fast. Try again.")
