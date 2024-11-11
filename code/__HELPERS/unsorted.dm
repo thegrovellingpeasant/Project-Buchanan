@@ -1084,21 +1084,6 @@ rough example of the "cone" made by the 3 dirs checked
 	chosen = matches[chosen]
 	return chosen
 
-//gives us the stack trace from CRASH() without ending the current proc.
-/proc/stack_trace(msg)
-	CRASH(msg)
-
-/datum/proc/stack_trace(msg)
-	CRASH(msg)
-
-GLOBAL_REAL_VAR(list/stack_trace_storage)
-/proc/gib_stack_trace()
-	stack_trace_storage = list()
-	stack_trace()
-	stack_trace_storage.Cut(1, min(3,stack_trace_storage.len))
-	. = stack_trace_storage
-	stack_trace_storage = null
-
 //Key thing that stops lag. Cornerstone of performance in ss13, Just sitting here, in unsorted.dm.
 
 //Increases delay as the server gets more overloaded,
@@ -1590,11 +1575,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 //empty string - use TgsTargetBroadcast with admin_only = FALSE
 //other string - use TgsChatBroadcast with the tag that matches config_setting, only works with TGS4, if using TGS3 the above method is used
 /proc/send2chat(message, config_setting)
-	if(config_setting == null)
-		return
-
-	UNTIL(GLOB.tgs_initialized)
-	if(!world.TgsAvailable())
+	if(config_setting == null || !world.TgsAvailable())
 		return
 
 	var/datum/tgs_version/version = world.TgsVersion()

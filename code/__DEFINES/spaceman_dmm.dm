@@ -27,18 +27,3 @@
 	#define VAR_PRIVATE var
 	#define VAR_PROTECTED var
 #endif
-
-/world/proc/init_debugger()
-	var/dll = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
-	if (dll)
-		LIBCALL(dll, "auxtools_init")()
-		enable_debugging()
-
-/proc/auxtools_stack_trace(msg)
-	CRASH(msg)
-
-/proc/auxtools_expr_stub()
-	CRASH("auxtools not loaded")
-
-/proc/enable_debugging(mode, port)
-	CRASH("auxtools not loaded")

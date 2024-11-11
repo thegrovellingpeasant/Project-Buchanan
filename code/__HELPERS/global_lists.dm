@@ -95,6 +95,9 @@
 
 	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(init_ref_coin_values)) //so the current procedure doesn't sleep because of UNTIL()
 
+	initialize_global_loadout_items()
+	reload_custom_roundstart_items_list()//Cit change - loads donator items. Remind me to remove when I port over bay's loadout system
+
 //creates every subtype of prototype (excluding prototype) and adds it to list L.
 //if no list/L is provided, one is created.
 /proc/init_subtypes(prototype, list/L)
