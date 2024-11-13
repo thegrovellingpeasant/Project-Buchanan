@@ -647,6 +647,11 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	var/obj/target
 	var/area/drop_off
 
+/datum/faction_task/individual_player/heist/add_player(mob/living/user)
+	. = ..()
+	var/obj/item/card/id/heister_id = new /obj/item/card/id(get_turf(user))
+	user.put_in_active_hand(heister_id)
+
 /datum/faction_task/individual_player/heist/New()
 	..()
 	addtimer(CALLBACK(src, .proc/pick_target), 225 SECONDS)
