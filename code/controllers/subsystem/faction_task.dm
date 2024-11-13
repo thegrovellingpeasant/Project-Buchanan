@@ -41,6 +41,9 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 	"/datum/job/citizens/f13tourist" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
 		),
+	"/datum/job/wastes/f13vagrant" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+		),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -667,9 +670,6 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		return "<font color='#097f10'>The heist was successful.</font>"
 	else
 		return "<font color='#bc2621'>The heist failed.</font>"
-
-
-
 
 ///////////////////
 /* Miscellaneous */
