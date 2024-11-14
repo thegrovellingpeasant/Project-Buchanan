@@ -878,5 +878,5 @@ To anyone interested in making some caps, we've cut a deal with the prison commi
 	icon_state = "paper_words"
 	info = {"<center>To the crew,</center><br><br>
 	As a reminder: The clubhouse is just northeast of town in the tribal camp. Follow the I-80 east until you find the ruined town, then follow the dirt path north and east until you see the green lady. Head through the gate, the elevator to the penthouse is inside working, we got the placed cleaned up and loaded with supplies for your job. Bring the artifact there, get it open, then kick up your feet with some champagne. I can’t wait to see what’s inside..<br><br><br>
-	<center>- - M. </center><br><br>
-	<center>- P.S. Snitches will be shot- burtn this note! </center>"}
+	<center>- M. </center><br><br>
+	<center>P.S. Snitches will be shot- burn this note! </center>"}
