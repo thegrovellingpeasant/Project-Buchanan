@@ -877,5 +877,5 @@ To anyone interested in making some caps, we've cut a deal with the prison commi
 	desc = "A note given to those who have no qualms about disrupting the gangs of New Reno.."
 	icon_state = "paper_words"
 	info = {"<center>To our esteemed heisters,</center><br><br>
-	You will find our operations by following the big Eighty east, past the prison. Go up the dirt road and enter the 'OH' tiki resort. Look next to that quaint little altar- the elevator will take you down.
-	<center> Yours truly, a benevolent treasure hunter. </center>"}
+	You will find our operations by following the main road, Interstate-Eighty, far east, past the prison. Once you find a dirt-road take it north, and enter the 'OH' tiki resort once you find it. You should be just northwest of town. Look next to that quaint little altar- the elevator will take you down.<br><br><br>
+	<center>- Yours truly, a benevolent treasure hunter. </center>"}
