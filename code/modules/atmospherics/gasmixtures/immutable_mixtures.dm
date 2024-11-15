@@ -35,6 +35,10 @@
 
 /datum/gas_mixture/immutable/atmosphere/populate()
 	..()
-	set_moles(GAS_O2, MOLES_O2STANDARD)
-	set_moles(GAS_N2, MOLES_N2STANDARD)
+	gases[GAS_O2] = MOLES_O2STANDARD
+	gases[GAS_N2] = MOLES_N2STANDARD
 
+/datum/gas_mixture/immutable/atmosphere/set_moles(gas_type, moles)
+	//We do nothing, gasses don't actually change as we don't use Atmos.
+	//This is why we don't use `set_moles` in the populate proc above us.
+	return
