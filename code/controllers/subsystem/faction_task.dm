@@ -204,7 +204,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Get Faction */
 /////////////////
 
-/datum/faction_task_controller/proc/getFaction(var/mob/living/L)
+/datum/faction_task_controller/proc/getFaction(mob/living/L)
 	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
 //	return "/datum/job/[splittext("[job]", "/")[4]]"
 	for(var/F in GLOB.faction_task_probabilities)
@@ -217,7 +217,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Add Player */
 ////////////////
 
-/datum/faction_task_controller/proc/add_player(var/mob/living/L)
+/datum/faction_task_controller/proc/add_player(mob/living/L)
 	var/datum/job/job = SSjob.GetJob(L.mind.assigned_role)
 	var/faction = getFaction(L)
 	var/player_assigned = FALSE
@@ -251,7 +251,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* Spawn Messages */
 ////////////////////
 
-/datum/faction_task_controller/proc/spawn_message(var/mob/living/L)
+/datum/faction_task_controller/proc/spawn_message(mob/living/L)
 	to_chat(L, "<h1><b><font color='#139e3a'>Assigned Tasks:</font></b><h1>")
 
 	var/counter = 1
@@ -276,7 +276,7 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 /* End Round Messages */
 ////////////////////////
 
-/datum/faction_task_controller/proc/end_message(var/mob/living/L)
+/datum/faction_task_controller/proc/end_message(mob/living/L)
 	to_chat(L, "<h1><b><font color='#139e3a'>Task Completion:</font></b><h1>")
 
 	var/counter = 1
@@ -334,13 +334,13 @@ GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
 	faction = _faction
 	..()
 
-/datum/faction_task/proc/add_player(var/mob/living/user)
+/datum/faction_task/proc/add_player(mob/living/user)
 	players.Add(user)
 	if(!GLOB.faction_task_controller.players.Find(user))
 		GLOB.faction_task_controller.players.Add(user)
 	return TRUE
 
-/datum/faction_task/proc/remove_player(var/mob/living/user)
+/datum/faction_task/proc/remove_player(mob/living/user)
 	players.Remove(user)
 	return TRUE
 
@@ -554,15 +554,15 @@ GLOBAL_LIST_INIT(faction_relics, list(
 
 /datum/faction_task/individual_faction/recruit
 	name = "Recruit"
-	var/recruits = 0													// Number of people recruited
-	var/recruit_target = 1												// Number of people to recruit
-	var/datum/job/recruit_faction	= /datum/job/citizens/f13tourist	// Faction to recruit from
+	var/recruits = 0												// Number of people recruited
+	var/recruit_target = 1											// Number of people to recruit
+	var/datum/job/recruit_faction = /datum/job/citizens/f13tourist	// Faction to recruit from
 
 /datum/faction_task/individual_faction/recruit/add_player(mob/living/user)
 	..()
-	var/obj/item/storage/recruit_forms/forms = new /obj/item/storage/recruit_forms(get_turf(user))
+	var/obj/item/storage/box/recruit_forms/forms = new(get_turf(user))
 	forms.set_task(src)
-	user.put_in_active_hand(forms)
+	user.equip_to_slot_if_possible(forms, SLOT_IN_BACKPACK)
 
 /datum/faction_task/individual_faction/recruit/calculate_score()
 	if(recruits >= recruit_target)
@@ -592,7 +592,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	var/max_players = 0
 	var/overlapping_faction_task = TRUE
 
-/datum/faction_task/individual_player/add_player(var/mob/living/user)
+/datum/faction_task/individual_player/add_player(mob/living/user)
 	if(prob(player_chance) && length(players) < max_players)
 		return ..()
 
@@ -883,15 +883,13 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	desc = "Contains several scanners and labelers for shipping things. Wrapping Paper not included."
 	illustration = "shipping"
 
-/obj/item/storage/recruit_forms/PopulateContents()
-	var/static/items_inside = list(
+/obj/item/storage/box/recruit_forms/PopulateContents()
+	var/static/list/items_inside = list(
 		/obj/item/pen=1,
 		/obj/item/recruit_form=4,
-		)
+	)
 	generate_items_inside(items_inside, src)
 
-/obj/item/storage/recruit_forms/proc/set_task(var/datum/faction_task/individual_faction/recruit/task)
-	for(var/I in contents)
-		if(istype(I, /obj/item/recruit_form))
-			var/obj/item/recruit_form/form = I
-			form.task = task
+/obj/item/storage/box/recruit_forms/proc/set_task(datum/faction_task/individual_faction/recruit/task)
+	for(var/obj/item/recruit_form/form in contents)
+		form.task = task
