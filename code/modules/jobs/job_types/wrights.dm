@@ -52,6 +52,7 @@
 	ears = /obj/item/radio/headset/headset_wrightelder
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/crudemedical/formal
+	l_hand = /obj/item/storage/belt/canesword
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
@@ -96,7 +97,7 @@
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.wrightteam)
 	if(H.gender == FEMALE)
 		H.gender = MALE
-		H.real_name = random_unique_name(MALE)
+		H.real_name = random_unique_wright_name(MALE)
 		H.name = H.real_name
 		if(H.wear_id)
 			var/obj/item/card/id/reno/wrights/ring/boss/L = H.wear_id

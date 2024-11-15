@@ -4443,7 +4443,7 @@
 /obj/item/storage/secure/safe{
 	pixel_y = 26
 	},
-/obj/structure/closet/crate/grave/strangebird,
+/obj/structure/closet/crate/mcgruffin/strangebird,
 /turf/open/floor/f13/dark,
 /area/f13/reno_sharkclub_vault)
 "ekk" = (
@@ -24854,10 +24854,10 @@
 	},
 /area/f13/reno_prison)
 "xIE" = (
-/obj/structure/closet/crate/grave/ark{
+/obj/machinery/light/floor,
+/obj/structure/closet/crate/mcgruffin/ark{
 	dir = 8
 	},
-/obj/machinery/light/floor,
 /turf/open/floor/carpet/red,
 /area/f13/wrights)
 "xJR" = (

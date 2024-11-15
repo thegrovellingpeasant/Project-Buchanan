@@ -2062,16 +2062,8 @@
 "ij" = (
 /obj/structure/closet/fridge,
 /obj/item/storage/fancy/heart_box,
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
-	},
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
-	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,

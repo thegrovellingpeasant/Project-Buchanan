@@ -6,19 +6,19 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "au" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/brown,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ay" = (
 /obj/structure/chair/stool/retro,
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "aB" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -26,37 +26,37 @@
 	layer = 4.3
 	},
 /turf/open/floor/wood/f13/oakbase,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "aN" = (
 /obj/structure/nest/mob/ghoulmerc,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "be" = (
 /obj/structure/chair/f13chair1{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "bk" = (
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
 /area/f13/subway)
 "bm" = (
 /obj/structure/campfire,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "br" = (
 /obj/structure/curtain{
 	color = "#942c2c";
 	pixel_y = -1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "bw" = (
 /obj/structure/nest/mob/deathclaw{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "bJ" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -64,10 +64,10 @@
 	layer = 4.3
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "bO" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "bP" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -80,30 +80,30 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "cf" = (
 /obj/structure/chair/wood/fancy/dark,
 /obj/structure/nest/mob/maddened_cultist,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "cJ" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor7"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "cV" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/grown/soybeans{
 	pixel_y = 10
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "cX" = (
 /obj/structure/nest/mob/ghoulgarand,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "dl" = (
 /obj/structure/kitchenspike,
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -113,7 +113,7 @@
 "dp" = (
 /obj/structure/nest/mob/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "dN" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
@@ -123,7 +123,7 @@
 	icon_state = "weapon_parts_1"
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "dO" = (
 /obj/structure/fluff/rails{
 	pixel_y = -5;
@@ -135,13 +135,13 @@
 	layer = 2.91
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ef" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oakbase,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ej" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaltopbordertop1"
@@ -170,22 +170,22 @@
 	},
 /obj/item/stack/sheet/bone,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "eJ" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck{
 	pixel_y = 5
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "eP" = (
 /turf/closed/mineral/random/high_chance,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "eX" = (
 /obj/structure/table/wood/settler,
 /obj/item/stack/f13Cash/ncr/fivezero,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "eZ" = (
 /turf/open/floor/plating/tunnel/rail/north,
 /area/f13/subway)
@@ -193,7 +193,7 @@
 /obj/structure/table/wood/settler,
 /obj/item/flashlight/lantern,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "fF" = (
 /obj/structure/fluff/rails{
 	icon_state = "rails-l";
@@ -202,35 +202,35 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "fM" = (
 /obj/effect/decal/cleanable/blood/gibs/human/limb,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "fZ" = (
 /obj/structure/glowshroom,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gb" = (
 /obj/structure/table/wood/settler,
 /obj/item/trash/f13/porknbeans,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gB" = (
 /obj/structure/chair/stool,
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gE" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gF" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gI" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -239,32 +239,32 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "gO" = (
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "hj" = (
 /obj/item/broken_bottle,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "hn" = (
 /obj/structure/bookcase,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "hP" = (
 /obj/item/salvage/low,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ie" = (
 /obj/structure/chair/stool/retro/black,
 /obj/structure/nest/mob/ghoularmless{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "io" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaloutermain3"
@@ -273,15 +273,15 @@
 "iv" = (
 /obj/structure/bed/mattress,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "iz" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "iM" = (
 /obj/item/salvage/high,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "jg" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /obj/effect/decal/remains/human{
@@ -289,7 +289,7 @@
 	pixel_x = -1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "jq" = (
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
@@ -304,12 +304,12 @@
 	pixel_x = -1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "jV" = (
 /obj/structure/table/wood/settler,
 /obj/item/melee/onehanded/knife/bowie,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "kj" = (
 /obj/structure/fluff/rails{
 	icon_state = "rails-l";
@@ -317,23 +317,23 @@
 	pixel_x = -1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ko" = (
 /obj/structure/table/roulette,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "kJ" = (
 /obj/structure/obstacle/old_locked_door,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "kK" = (
 /obj/structure/disposaloutlet,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "kP" = (
 /obj/item/trash/f13/porknbeans,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "le" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaltopbordertop2right"
@@ -353,18 +353,18 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "lD" = (
 /obj/structure/chair/stool/f13stool,
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "lG" = (
 /obj/machinery/ore_silo,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "lX" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1;
@@ -383,17 +383,17 @@
 "lZ" = (
 /obj/structure/ore_box,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "mI" = (
 /obj/structure/nest/mob/molerat{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "nd" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "nl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
@@ -403,11 +403,11 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "nx" = (
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "nQ" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/food/snacks/meatsalted,
@@ -425,7 +425,7 @@
 /obj/effect/temp_visual/cult/rune_spawn/rune1/center,
 /obj/effect/temp_visual/cult/rune_spawn/rune1,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "od" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1;
@@ -441,11 +441,11 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "oR" = (
 /obj/item/reagent_containers/food/drinks/bottle/vodka/empty,
 /turf/open/floor/wood/f13/oakbase,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "pf" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress5";
@@ -456,13 +456,13 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "pX" = (
 /obj/structure/nest/mob/ghoulmerc{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "qi" = (
 /obj/effect/decal/remains/cans{
 	icon_state = "cans3"
@@ -474,12 +474,12 @@
 /obj/item/grenade/f13/dynamite,
 /obj/item/grenade/f13/dynamite,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "qX" = (
 /obj/item/blanket/ruined,
 /obj/effect/decal/cleanable/blood,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "rh" = (
 /obj/item/salvage/low{
 	icon = 'icons/fallout/objects/crafting/parts.dmi';
@@ -490,12 +490,12 @@
 	icon_state = "protectron_k_d"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ri" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/grenade/f13/dynamite,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "rB" = (
 /obj/item/pickaxe,
 /obj/structure/table/wood/settler,
@@ -506,31 +506,31 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "se" = (
 /obj/structure/chair/stool/f13stool,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "sE" = (
 /obj/structure/chair/stool,
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oakbase,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "sO" = (
 /obj/structure/bed/mattress{
 	dir = 4;
 	pixel_x = -1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "sZ" = (
 /obj/effect/decal/cleanable/blood{
 	layer = 2.7
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "tb" = (
 /obj/structure/sink/puddle,
 /obj/item/clothing/shoes/workboots/mining{
@@ -538,7 +538,7 @@
 	pixel_y = -10
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "tg" = (
 /obj/effect/decal/cleanable/blood{
 	plane = -4;
@@ -547,7 +547,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "tv" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/salvage/low{
@@ -555,16 +555,16 @@
 	icon_state = "sensor_module"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "tK" = (
 /obj/structure/closet/crate/large,
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "tY" = (
 /obj/effect/decal/cleanable/blood/gibs/human/body,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ue" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/remains/human{
@@ -585,7 +585,7 @@
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "up" = (
 /obj/structure/nest/mob/ghoulharmless{
 	dir = 4
@@ -595,11 +595,11 @@
 "ur" = (
 /obj/structure/closet/crate/large,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "uy" = (
 /obj/item/storage/bag/ore/large,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "uN" = (
 /obj/structure/chair/stool/retro/tan,
 /obj/structure/nest/mob/ghoulharmless{
@@ -614,7 +614,7 @@
 	layer = 3.01
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "vB" = (
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -623,32 +623,32 @@
 "vH" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "wg" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "wp" = (
 /obj/structure/bed/old,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ws" = (
 /obj/structure/table/wood/poker,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "wK" = (
 /obj/structure/junk/small/sign2,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "wV" = (
 /obj/item/blanket/ruined,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "xm" = (
 /obj/structure/glowshroom,
 /obj/item/salvage/low,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "xG" = (
 /obj/structure/table/wood/settler,
 /obj/item/stack/f13Cash/caps/onezero{
@@ -656,40 +656,40 @@
 	},
 /obj/item/stack/f13Cash/ncr/onezero,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "xJ" = (
 /obj/structure/glowshroom,
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "xX" = (
 /obj/structure/nest/mob/ghoulgarandalt{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "xZ" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "coatblood"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ym" = (
 /obj/structure/table,
 /obj/item/salvage/low{
 	pixel_y = 11
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "yp" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/stack/sheet/animalhide/deathclaw,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ys" = (
 /obj/structure/chair/stool/f13stool,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "yw" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
@@ -699,39 +699,39 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "yI" = (
 /obj/structure/chair/stool/f13stool,
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "yL" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "yO" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
 	pixel_y = 5
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "zb" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "zi" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "zj" = (
 /obj/structure/chair/wood/worn{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "zG" = (
 /obj/structure/junk/small/trashcan,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -747,29 +747,29 @@
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "AO" = (
 /obj/structure/nest/mob/ghoulslave{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Bf" = (
 /obj/structure/fluff/rails{
 	dir = 4;
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "BB" = (
 /obj/structure/chair/booth{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "BK" = (
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Cg" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -798,17 +798,17 @@
 	icon_state = "deathclaw_sleep"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "CF" = (
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "CQ" = (
 /obj/structure/table/wood/poker,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Db" = (
 /turf/open/floor/plating/tunnel/curb,
 /area/f13/subway)
@@ -818,7 +818,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "DX" = (
 /obj/structure/chair/wood/modern{
 	dir = 8
@@ -827,13 +827,13 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Es" = (
 /obj/item/reagent_containers/glass/bucket/wood{
 	list_reagents = list(/datum/reagent/water=120)
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "EB" = (
 /obj/structure/chair/wood/modern{
 	dir = 8
@@ -843,32 +843,32 @@
 	layer = 3.01
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ED" = (
 /obj/machinery/mineral/ore_redemption,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "EM" = (
 /obj/item/blanket/ruined,
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "EN" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/subway)
 "EP" = (
 /obj/structure/glowshroom/glowcap,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "EW" = (
 /obj/structure/nest/mob/maddened_cultist,
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "FB" = (
 /obj/structure/table/wood/settler,
 /obj/item/stack/f13Cash/caps/onezero,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "FK" = (
 /obj/structure/bed/mattress{
 	dir = 1;
@@ -876,7 +876,7 @@
 	pixel_y = 3
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Gj" = (
 /obj/structure/barricade/wooden,
 /obj/structure/curtain{
@@ -887,23 +887,23 @@
 	layer = 4.01
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Gy" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "GC" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress5"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Hk" = (
 /obj/structure/nest/mob/deathclaw{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Hw" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaltopbordertop2"
@@ -935,10 +935,10 @@
 "Ik" = (
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "IU" = (
 /turf/closed/wall/f13/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "IV" = (
 /obj/structure/table/wood{
 	icon = 'icons/obj/hand_of_god_structures.dmi';
@@ -958,36 +958,36 @@
 	name = "dead caravaneer"
 	},
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Jn" = (
 /obj/machinery/porta_turret/syndicate{
 	faction = list("skeleton");
 	name = "repaired turret"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "JE" = (
 /obj/structure/chair/stool/retro,
 /obj/structure/nest/mob/ghoulharmless{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "JG" = (
 /obj/structure/glowshroom/glowcap,
 /obj/structure/nest/mob/ghoulcozy,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "JR" = (
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "JX" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor6"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Ks" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
@@ -997,12 +997,12 @@
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Kw" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/flashlight/lantern,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "KR" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -1022,20 +1022,20 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Ll" = (
 /obj/structure/sign/reno/barsign/booze,
 /turf/closed/wall/f13/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Lv" = (
 /obj/item/crafting/lunchbox,
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Lx" = (
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "LZ" = (
 /obj/structure/fluff/rails{
 	icon_state = "rails-b2";
@@ -1043,18 +1043,18 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Ms" = (
 /obj/structure/chair/stool/retro/black,
 /obj/structure/nest/mob/ghoulmelee,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Na" = (
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "NJ" = (
 /turf/closed/indestructible/rock,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "NZ" = (
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk/top/dark,
@@ -1062,11 +1062,11 @@
 "Od" = (
 /obj/structure/nest/mob/ghoulofficer,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Os" = (
 /obj/structure/junk/small/table,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Ox" = (
 /obj/machinery/light/broken{
 	dir = 1;
@@ -1092,40 +1092,40 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "OK" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/bars{
 	layer = 3.01
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "OP" = (
 /obj/structure/table,
 /obj/item/circular_saw{
 	pixel_y = 9
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "OT" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
 	pixel_z = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Pa" = (
 /obj/structure/table/wood/settler,
 /obj/item/reagent_containers/food/snacks/f13/canned/porknbeans{
 	pixel_y = 8
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Pj" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Pq" = (
 /obj/structure/nest/mob/ghoulmarksman,
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
@@ -1136,11 +1136,11 @@
 /obj/structure/table/wood/greyscale/red,
 /obj/item/book/granter/trait,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "PB" = (
 /obj/structure/chair/stool,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "PJ" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaltopbordertop2left"
@@ -1158,7 +1158,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "PP" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/effect/decal/remains/human{
@@ -1166,11 +1166,11 @@
 	pixel_x = 13
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "PU" = (
 /obj/structure/flora/wasteplant/wild_fungus,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Qc" = (
 /obj/item/stack/sheet/bone,
 /obj/item/stack/sheet/bone{
@@ -1178,12 +1178,12 @@
 	},
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Qd" = (
 /obj/structure/table/wood/settler,
 /obj/item/stack/sheet/animalhide/gecko,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Ql" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/bars{
@@ -1197,7 +1197,7 @@
 	layer = 4.01
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Qw" = (
 /obj/structure/closet/crate/large,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -1211,27 +1211,27 @@
 "Qz" = (
 /obj/item/storage/box/matches,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "QC" = (
 /obj/structure/nest/mob/molerat{
 	dir = 8;
 	layer = 3.01
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "QE" = (
 /obj/structure/campfire,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "QN" = (
 /obj/machinery/autolathe,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Rb" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/bag/ore,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Rg" = (
 /obj/structure/fluff/rails{
 	pixel_y = -5;
@@ -1241,50 +1241,50 @@
 	icon_state = "holodisk"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "RT" = (
 /obj/item/stack/sheet/bone{
 	pixel_y = -9
 	},
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "RV" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Sc" = (
 /obj/structure/nest/mob/molerat{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Sx" = (
 /obj/machinery/smartfridge/drying_rack,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SA" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SE" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SG" = (
 /obj/structure/curtain{
 	color = "#942c2c";
 	pixel_y = -1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SH" = (
 /obj/item/salvage/low{
 	icon = 'icons/fallout/objects/crafting/parts.dmi';
 	icon_state = "toaster"
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SJ" = (
 /obj/structure/fluff/rails{
 	icon_state = "rails-b2";
@@ -1295,7 +1295,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "SO" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor6";
@@ -1309,17 +1309,17 @@
 	layer = 4.25
 	},
 /turf/open/floor/carpet/red,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Tb" = (
 /obj/item/stack/sheet/bone{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Tg" = (
 /turf/closed/wall/r_wall/rust,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "To" = (
 /obj/structure/barricade/wooden,
 /obj/structure/curtain{
@@ -1331,26 +1331,26 @@
 	},
 /obj/structure/lamp_post/floodlight,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Tu" = (
 /turf/open/floor/wood/f13/oakbase,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "TB" = (
 /obj/machinery/workbench,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "TI" = (
 /obj/structure/table/wood/junk,
 /obj/item/dice/d6{
 	pixel_y = 7
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "TO" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Uh" = (
 /obj/structure/bed/old{
 	icon_state = "bedroll_unrolled";
@@ -1358,7 +1358,7 @@
 	plane = -15
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Up" = (
 /obj/structure/campfire{
 	pixel_y = 4
@@ -1369,7 +1369,7 @@
 /obj/structure/bed/old,
 /obj/structure/nest/mob/ghoulcozy,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "UD" = (
 /obj/machinery/light{
 	dir = 1;
@@ -1383,7 +1383,7 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "UU" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -1391,7 +1391,7 @@
 	layer = 4.3
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Vg" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark{
 	icon_state = "horizontaloutermain2"
@@ -1403,29 +1403,29 @@
 	pixel_y = 7
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Vt" = (
 /obj/structure/bookcase,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Vz" = (
 /obj/structure/chair/stool,
 /obj/structure/nest/mob/ghoulharmless{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "VB" = (
 /obj/structure/barricade/bars{
 	layer = 3.01
 	},
 /obj/structure/table/reinforced,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "VU" = (
 /obj/machinery/computer/slot_machine,
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "VY" = (
 /obj/structure/destructible/tribal_torch/wall{
 	dir = 8;
@@ -1433,14 +1433,14 @@
 	},
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Wp" = (
 /obj/structure/destructible/tribal_torch/wall{
 	dir = 4;
 	layer = 4.1
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Wy" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/light/broken{
@@ -1454,33 +1454,33 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "WX" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "tracks";
 	dir = 6
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "WY" = (
 /obj/structure/glowshroom/glowcap,
 /obj/structure/nest/mob/ghoulslave,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Xf" = (
 /obj/structure/table/wood/settler,
 /obj/item/stack/sheet/animalhide/brahmin,
 /obj/item/stack/sheet/animalhide/brahmin,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Xv" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Xw" = (
 /obj/item/stack/sheet/bone,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "XQ" = (
 /obj/structure/glowshroom/glowcap,
 /obj/structure/barricade/wooden,
@@ -1488,42 +1488,42 @@
 	layer = 3.01
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "XS" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "XT" = (
 /obj/machinery/vending/boozeomat/syndicate_access,
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "XV" = (
 /obj/structure/plasticflaps/narrowcrevice,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "XZ" = (
 /turf/open/indestructible/ground/outside/sidewalk/top/dark,
 /area/f13/subway)
 "YA" = (
 /turf/closed/mineral/random/low_chance,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "YB" = (
 /obj/structure/destructible/tribal_torch/wall,
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "YV" = (
 /obj/structure/nest/mob/maddened_cultist{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "Za" = (
 /obj/structure/simple_door/wood,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
+/area/f13/reno_caves)
 "ZN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/sidewalk/top/dark,

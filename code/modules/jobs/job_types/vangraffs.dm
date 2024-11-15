@@ -7,8 +7,8 @@
 
 	access = list(ACCESS_VANGRAFFS)
 	minimal_access = list(ACCESS_VANGRAFFS)
-	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
-	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
+	forbids = "Van Graff company policy forbids employees from the use of merchandise without authorization from either the Branch Manager or the Branch's Enforcer. The energy weapons store does not deal in ballistic weaponry for the purpose of brand recognition."
+	enforces = "The company expects professional front facing behavior from all its employees. the punishment for violations is typically severe. It's expected that competition is cut out by whatever means necessary, it's just good business after all."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
 
 /datum/outfit/job/vangraffs

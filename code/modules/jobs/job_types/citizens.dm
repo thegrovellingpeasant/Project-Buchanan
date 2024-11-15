@@ -32,7 +32,7 @@
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	belt = /obj/item/storage/belt/military/assault/ncr
-	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	ears = /obj/item/radio/headset/headset_government_ncrcf
 	head = /obj/item/clothing/head/beret/ncr/military_police
 	glasses = /obj/item/clothing/glasses/sunglasses/big
