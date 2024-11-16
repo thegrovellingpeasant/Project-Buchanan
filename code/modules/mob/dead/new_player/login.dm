@@ -4,7 +4,7 @@
 		client.set_db_player_flags()
 	if(CONFIG_GET(flag/use_role_whitelist))
 		client.set_job_whitelist_from_db()
-	
+
 	if(!mind)
 		mind = new /datum/mind(key)
 		mind.active = 1
@@ -42,4 +42,3 @@
 	if(SSticker.current_state < GAME_STATE_SETTING_UP)
 		var/tl = SSticker.GetTimeLeft()
 		to_chat(src, "Please set up your character and select \"Ready\". The game will start [tl > 0 ? "in about [DisplayTimeText(tl)]" : "soon"].")
-	client.nuke_chat()

@@ -39,7 +39,7 @@
 		return
 	switch(eye_damaged)
 		if(BLURRY_VISION_ONE, BLURRY_VISION_TWO)
-			owner.overlay_fullscreen("eye_damage", /obj/screen/fullscreen/impaired, eye_damaged)
+			owner.overlay_fullscreen("eye_damage", /atom/movable/screen/fullscreen/impaired, eye_damaged)
 		if(BLIND_VISION_THREE)
 			owner.become_blind(EYE_DAMAGE)
 	if(ishuman(owner))
@@ -80,15 +80,16 @@
 	if(!.)
 		return
 	var/old_damaged = eye_damaged
-	switch(damage)
-		if(INFINITY to maxHealth)
-			eye_damaged = BLIND_VISION_THREE
-		if(maxHealth to high_threshold)
-			eye_damaged = BLURRY_VISION_TWO
-		if(high_threshold to low_threshold)
-			eye_damaged = BLURRY_VISION_ONE
-		else
-			eye_damaged = FALSE
+
+	if(damage >= maxHealth)
+		eye_damaged = BLIND_VISION_THREE
+	else if(damage >= high_threshold)
+		eye_damaged = BLURRY_VISION_TWO
+	else if(damage >= low_threshold)
+		eye_damaged = BLURRY_VISION_ONE
+	else
+		eye_damaged = FALSE
+
 	if(eye_damaged == old_damaged || !owner)
 		return
 	if(old_damaged == BLIND_VISION_THREE)
@@ -96,7 +97,7 @@
 	else if(eye_damaged == BLIND_VISION_THREE)
 		owner.become_blind(EYE_DAMAGE)
 	if(eye_damaged && eye_damaged != BLIND_VISION_THREE)
-		owner.overlay_fullscreen("eye_damage", /obj/screen/fullscreen/impaired, eye_damaged)
+		owner.overlay_fullscreen("eye_damage", /atom/movable/screen/fullscreen/impaired, eye_damaged)
 	else
 		owner.clear_fullscreen("eye_damage")
 
@@ -316,7 +317,7 @@
 	if(!silent)
 		to_chat(owner, "<span class='warning'>Your [src] clicks and makes a whining noise, before shooting out a beam of light!</span>")
 	active = TRUE
-	RegisterSignal(owner, COMSIG_ATOM_DIR_CHANGE, .proc/update_visuals)
+	RegisterSignal(owner, COMSIG_ATOM_DIR_CHANGE, PROC_REF(update_visuals))
 	cycle_mob_overlay()
 
 /obj/item/organ/eyes/robotic/glow/proc/deactivate(silent = FALSE)

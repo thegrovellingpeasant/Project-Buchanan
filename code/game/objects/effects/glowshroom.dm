@@ -57,7 +57,7 @@
 		G = new G
 		myseed.genes += G
 	set_light(G.glow_range(myseed), G.glow_power(myseed), G.glow_color)
-	//addtimer(CALLBACK(src, .proc/Spread), delay)
+	//addtimer(CALLBACK(src, PROC_REF(Spread)), delay)
 
 //temp disable
 
@@ -105,7 +105,7 @@
 			shrooms_planted++ //if we failed due to generation, don't try to plant one later
 	if(shrooms_planted < myseed.yield) //if we didn't get all possible shrooms planted, try again later
 		myseed.yield -= shrooms_planted
-		addtimer(CALLBACK(src, .proc/Spread), delay)*/
+		addtimer(CALLBACK(src, PROC_REF(Spread)), delay)*/
 
 /obj/structure/glowshroom/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	if(damage_type == BURN && damage_amount)

@@ -135,7 +135,7 @@
 	name = "black beret"
 	desc = "A black beret, perfect for war veterans and dark, brooding, anti-hero mimes."
 	icon_state = "beretblack"
-	
+
 /obj/item/clothing/head/beret/headband
 	name = "red headband"
 	desc = "A red headband fashioned out of some tattered sleeves. The fabric is soaked in sweat, dirt and blood."
@@ -229,7 +229,7 @@
 /obj/item/clothing/head/warden/drill/equipped(mob/M, slot)
 	. = ..()
 	if (slot == SLOT_HEAD)
-		RegisterSignal(M, COMSIG_MOB_SAY, .proc/handle_speech)
+		RegisterSignal(M, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	else
 		UnregisterSignal(M, COMSIG_MOB_SAY)
 

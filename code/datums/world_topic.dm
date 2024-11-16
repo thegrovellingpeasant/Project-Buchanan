@@ -1,3 +1,6 @@
+GLOBAL_VAR(topic_status_lastcache)
+GLOBAL_LIST(topic_status_cache)
+
 // SETUP
 
 /proc/TopicHandlers()
@@ -124,7 +127,7 @@
 	for(var/mob/dead/observer/O in GLOB.player_list)
 		if(O.key == expected_key)
 			if(O.client?.address == addr)
-				new /obj/screen/splash(O.client, TRUE)
+				new /atom/movable/screen/splash(O.client, TRUE)
 			break
 
 /datum/world_topic/adminmsg

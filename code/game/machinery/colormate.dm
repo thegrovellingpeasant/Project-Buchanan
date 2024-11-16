@@ -19,10 +19,10 @@
 	/// Minimum matrix tests that must pass for something to be considered a valid color (see above)
 	var/minimum_matrix_tests = 2
 	var/list/allowed_types = list(
-			/obj/item/clothing,
-			/obj/item/storage/backpack,
-			/obj/item/storage/belt
-			)
+		/obj/item/clothing,
+		/obj/item/storage/backpack,
+		/obj/item/storage/belt,
+	)
 	/// Temporary messages
 	var/temp
 
@@ -111,6 +111,7 @@
 		return
 	if(!inserted)
 		return
+	temp = "Ejected \the [inserted]!"
 	to_chat(usr, "<span class='notice'>You remove [inserted] from [src]")
 	inserted.forceMove(drop_location())
 	var/mob/living/user = usr
@@ -123,7 +124,7 @@
 /obj/machinery/gear_painter/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		ui = new(user, src, "Colormate", src.name)
+		ui = new(user, src, "Colormate", name)
 		ui.set_autoupdate(FALSE) //This might be a bit intensive, better to not update it every few ticks
 		ui.open()
 
@@ -131,19 +132,19 @@
 	. = list()
 	.["matrixactive"] = matrix_mode
 	.["matrixcolors"] = list(
-			"rr" = color_matrix_last[1],
-			"rg" = color_matrix_last[2],
-			"rb" = color_matrix_last[3],
-			"gr" = color_matrix_last[4],
-			"gg" = color_matrix_last[5],
-			"gb" = color_matrix_last[6],
-			"br" = color_matrix_last[7],
-			"bg" = color_matrix_last[8],
-			"bb" = color_matrix_last[9],
-			"cr" = color_matrix_last[10],
-			"cg" = color_matrix_last[11],
-			"cb" = color_matrix_last[12]
-			)
+		"rr" = color_matrix_last[1],
+		"rg" = color_matrix_last[2],
+		"rb" = color_matrix_last[3],
+		"gr" = color_matrix_last[4],
+		"gg" = color_matrix_last[5],
+		"gb" = color_matrix_last[6],
+		"br" = color_matrix_last[7],
+		"bg" = color_matrix_last[8],
+		"bb" = color_matrix_last[9],
+		"cr" = color_matrix_last[10],
+		"cg" = color_matrix_last[11],
+		"cb" = color_matrix_last[12],
+	)
 	if(temp)
 		.["temp"] = temp
 	if(inserted)
@@ -176,7 +177,6 @@
 				temp = "Painted Successfully!"
 				return TRUE
 			if("drop")
-				temp = "Ejected \the [inserted]!"
 				drop_item()
 				return TRUE
 			if("clear")

@@ -11,7 +11,7 @@
 	layer = HIGH_TURF_LAYER
 	var/turf/open/indestructible/ground/outside/desert/parent
 
-obj/dugpit/New(lnk)
+/obj/dugpit/New(lnk)
 	..()
 	parent = lnk
 
@@ -27,13 +27,6 @@ obj/dugpit/New(lnk)
 				parent.gets_dug(null)
 		else
 			to_chat(user, "<span class='danger'>The ground is too heavy!</span>")
-
-/*
-/obj/dugpit/return_air()
-	var/datum/gas_mixture/GM = new
-	GM.temperature = parent.temperature
-	return GM
-*/
 
 /turf/open/indestructible/ground/outside/desert/proc/handle_item_insertion(obj/item/W, mob/usr)
 	if(!istype(W))

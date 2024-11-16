@@ -176,8 +176,7 @@
 		if(!damage)
 			playsound(loc, 'sound/weapons/slashmiss.ogg', 50, 1, -1)
 			visible_message("<span class='danger'>[M] has lunged at [src]!</span>", \
-				"<span class='userdanger'>[M] has lunged at you!</span>", target = M, \
-				target_message = "<span class='danger'>You have lunged at [src]!</span>")
+				"<span class='userdanger'>[M] has lunged at you!</span>")
 			return 0
 		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
 		if(!affecting)
@@ -186,8 +185,7 @@
 
 		playsound(loc, 'sound/weapons/slice.ogg', 25, 1, -1)
 		visible_message("<span class='danger'>[M] has slashed at [src]!</span>", \
-			"<span class='userdanger'>[M] has slashed at you!</span>", target = M, \
-			target_message = "<span class='danger'>You have slashed at [src]!</span>")
+			"<span class='userdanger'>[M] has slashed at you!</span>")
 		log_combat(M, src, "attacked")
 		if(!dismembering_strike(M, M.zone_selected)) //Dismemberment successful
 			return 1
@@ -198,15 +196,13 @@
 		if(I && dropItemToGround(I))
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] has disarmed [src]!</span>", \
-					"<span class='userdanger'>[M] has disarmed you!</span>", target = M, \
-					target_message = "<span class='danger'>You have disarmed [src]!</span>")
+					"<span class='userdanger'>[M] has disarmed you!</span>")
 		else
 			playsound(loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 			DefaultCombatKnockdown(M.meleeKnockdownPower)
 			log_combat(M, src, "tackled")
 			visible_message("<span class='danger'>[M] has tackled down [src]!</span>", \
-				"<span class='userdanger'>[M] has tackled you down!</span>", target = M, \
-				target_message = "<span class='danger'>You have tackled down [src]!</span>")
+				"<span class='userdanger'>[M] has tackled you down!</span>")
 
 /mob/living/carbon/human/attack_larva(mob/living/carbon/alien/larva/L)
 	. = ..()
@@ -289,8 +285,7 @@
 			updatehealth()
 
 		visible_message("<span class='danger'>[M.name] has hit [src]!</span>", \
-						"<span class='userdanger'>[M.name] has hit you!</span>", null, COMBAT_MESSAGE_RANGE, target = M,
-						target_message = "<span class='danger'>You have hit [src]!</span>")
+						"<span class='userdanger'>[M.name] has hit you!</span>")
 		log_combat(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
 
 	else

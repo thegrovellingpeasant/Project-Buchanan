@@ -78,9 +78,15 @@
 #define LINGHIVE_LING 2
 #define LINGHIVE_LINK 3
 
-//whether the emote is visible or audible.
-#define EMOTE_VISIBLE 1
-#define EMOTE_AUDIBLE 2
+// Bitflags for emotes, used in var/emote_type of the emote datum
+/// Is the emote audible
+#define EMOTE_AUDIBLE (1<<0)
+/// Is the emote visible
+#define EMOTE_VISIBLE (1<<1)
+/// Is it an emote that should be shown regardless of blindness/deafness
+#define EMOTE_IMPORTANT (1<<2)
+/// Emote only prints to runechat, not to the chat window
+#define EMOTE_RUNECHAT (1<<3)
 
 //Don't set this very much higher then 1024 unless you like inviting people in to dos your server with message spam
 #define MAX_MESSAGE_LEN			4096		//Citadel edit: What's the WORST that could happen?
@@ -97,5 +103,10 @@
 #define MSG_VISUAL (1<<0)
 #define MSG_AUDIBLE (1<<1)
 
-//Used in visible_message_flags, audible_message_flags and runechat_flags
+// Used in visible_message_flags, audible_message_flags and runechat_flags
+/// Automatically applies emote related spans/fonts/formatting to the message
 #define EMOTE_MESSAGE (1<<0)
+/// By default, self_message will respect the visual / audible component of the message.
+/// Meaning that if the message is visual, and sourced from a blind mob, they will not see it.
+/// This flag skips that behavior, and will always show the self message to the mob.
+#define ALWAYS_SHOW_SELF_MESSAGE (1<<1)

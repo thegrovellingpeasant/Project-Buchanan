@@ -338,7 +338,7 @@
 	if(prob(50))
 		do_sparks(3, TRUE, src)
 		for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(self_destruct)), 2 SECONDS)
 		return ..()
 
 	switch(rand(1,3))
@@ -381,7 +381,7 @@
 	if(prob(50))
 		do_sparks(3, TRUE, src)
 		for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(self_destruct)), 2 SECONDS)
 		return ..()
 
 	switch(rand(1,3))

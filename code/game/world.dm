@@ -1,32 +1,54 @@
 #define RESTART_COUNTER_PATH "data/round_counter.txt"
+/// Force the log directory to be something specific in the data/logs folder
+#define OVERRIDE_LOG_DIRECTORY_PARAMETER "log-directory"
+/// Prevent the master controller from starting automatically
+#define NO_INIT_PARAMETER "no-init"
 
 GLOBAL_VAR(restart_counter)
 
-GLOBAL_VAR_INIT(tgs_initialized, FALSE)
-
-GLOBAL_VAR(topic_status_lastcache)
-GLOBAL_LIST(topic_status_cache)
-
-//This happens after the Master subsystem new(s) (it's a global datum)
-//So subsystems globals exist, but are not initialised
-
+/**
+ * World creation
+ *
+ * Here is where a round itself is actually begun and setup.
+ * * db connection setup
+ * * config loaded from files
+ * * loads admins
+ * * Sets up the dynamic menu system
+ * * and most importantly, calls initialize on the master subsystem, starting the game loop that causes the rest of the game to begin processing and setting up
+ *
+ *
+ * Nothing happens until something moves. ~Albert Einstein
+ *
+ * For clarity, this proc gets triggered later in the initialization pipeline, it is not the first thing to happen, as it might seem.
+ *
+ * Initialization Pipeline:
+ * Global vars are new()'ed, (including config, glob, and the master controller will also new and preinit all subsystems when it gets new()ed)
+ * Compiled in maps are loaded (mainly centcom). all areas/turfs/objs/mobs(ATOMs) in these maps will be new()ed
+ * world/New() (You are here)
+ * Once world/New() returns, client's can connect.
+ * 1 second sleep
+ * Master Controller initialization.
+ * Subsystem initialization.
+ * Non-compiled-in maps are maploaded, all atoms are new()ed
+ * All atoms in both compiled and uncompiled maps are initialized()
+ */
 /world/New()
-	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
-	if (debug_server)
-		call(debug_server, "auxtools_init")()
-		enable_debugging()
-	AUXTOOLS_CHECK(AUXMOS)
-#ifdef EXTOOLS_REFERENCE_TRACKING
-	enable_reference_tracking()
+
+	//Early profile for auto-profiler - will be stopped on profiler init if necessary.
+#if DM_BUILD >= 1506
+	Profile(PROFILE_RESTART)
+	Profile(PROFILE_RESTART, type = "sendmaps")
 #endif
-	world.Profile(PROFILE_START)
-	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
 
-	GLOB.config_error_log = GLOB.world_manifest_log = GLOB.world_pda_log = GLOB.world_job_debug_log = GLOB.sql_error_log = GLOB.world_href_log = GLOB.world_runtime_log = GLOB.world_attack_log = GLOB.world_game_log = "data/logs/config_error.[GUID()].log" //temporary file used to record errors with loading config, moved to log directory once logging is set bl
+	init_debugger()
 
-	log_world("World loaded at [TIME_STAMP("hh:mm:ss", FALSE)]!")
+	log_world("World loaded at [time_stamp()]!")
+
+	SetupExternalRSC()
 
 	make_datum_references_lists()	//initialises global lists for referencing frequently used datums (so that we only ever do it once)
+
+	GLOB.config_error_log = GLOB.world_manifest_log = GLOB.world_pda_log = GLOB.world_job_debug_log = GLOB.sql_error_log = GLOB.world_href_log = GLOB.world_runtime_log = GLOB.world_attack_log = GLOB.world_game_log = GLOB.world_shuttle_log = "data/logs/config_error.[GUID()].log" //temporary file used to record errors with loading config, moved to log directory once logging is set bl
 
 	GLOB.revdata = new
 
@@ -54,7 +76,7 @@ GLOBAL_LIST(topic_status_cache)
 	if(CONFIG_GET(flag/usewhitelist))
 		load_whitelist()
 
-	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
+	GLOB.timezoneOffset = world.timezone * 36000
 
 	if(fexists(RESTART_COUNTER_PATH))
 		GLOB.restart_counter = text2num(trim(file2text(RESTART_COUNTER_PATH)))
@@ -63,20 +85,15 @@ GLOBAL_LIST(topic_status_cache)
 	if(NO_INIT_PARAMETER in params)
 		return
 
-	LoadBans()
-	initialize_global_loadout_items()
-	reload_custom_roundstart_items_list()//Cit change - loads donator items. Remind me to remove when I port over bay's loadout system
-
 	Master.Initialize(10, FALSE, TRUE)
 
-	#ifdef UNIT_TESTS
+#ifdef UNIT_TESTS
 	HandleTestRun()
-	#endif
+#endif
 
 /world/proc/InitTgs()
 	TgsNew(new /datum/tgs_event_handler/impl, TGS_SECURITY_TRUSTED)
 	GLOB.revdata.load_tgs_info()
-	GLOB.tgs_initialized = TRUE
 
 /world/proc/HandleTestRun()
 	//trigger things to run the whole process
@@ -85,11 +102,22 @@ GLOBAL_LIST(topic_status_cache)
 	CONFIG_SET(number/round_end_countdown, 0)
 	var/datum/callback/cb
 #ifdef UNIT_TESTS
-	cb = CALLBACK(GLOBAL_PROC, /proc/RunUnitTests)
+	cb = CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(RunUnitTests))
 #else
 	cb = VARSET_CALLBACK(SSticker, force_ending, TRUE)
 #endif
-	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, /proc/_addtimer, cb, 10 SECONDS))
+	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(_addtimer), cb, 10 SECONDS))
+
+/world/proc/SetupExternalRSC()
+#if (PRELOAD_RSC == 0)
+	GLOB.external_rsc_urls = world.file2list("[global.config.directory]/external_rsc_urls.txt","\n")
+	var/i=1
+	while(i<=GLOB.external_rsc_urls.len)
+		if(GLOB.external_rsc_urls[i])
+			i++
+		else
+			GLOB.external_rsc_urls.Cut(i,i+1)
+#endif
 
 /world/proc/SetupLogs()
 	var/override_dir = params[OVERRIDE_LOG_DIRECTORY_PARAMETER]
@@ -104,7 +132,7 @@ GLOBAL_LIST(topic_status_cache)
 			GLOB.picture_logging_prefix += "R_[GLOB.round_id]_"
 			GLOB.picture_log_directory += "[GLOB.round_id]"
 		else
-			var/timestamp = replacetext(TIME_STAMP("hh:mm:ss", FALSE), ":", ".")
+			var/timestamp = replacetext(time_stamp(), ":", ".")
 			GLOB.log_directory += "[timestamp]"
 			GLOB.picture_log_directory += "[timestamp]"
 			GLOB.picture_logging_prefix += "T_[timestamp]_"
@@ -130,12 +158,12 @@ GLOBAL_LIST(topic_status_cache)
 	GLOB.world_job_debug_log = "[GLOB.log_directory]/job_debug.log"
 	GLOB.world_paper_log = "[GLOB.log_directory]/paper.log"
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
+	GLOB.world_shuttle_log = "[GLOB.log_directory]/shuttle.log"
 	GLOB.subsystem_log = "[GLOB.log_directory]/subsystem.log"
 	GLOB.reagent_log = "[GLOB.log_directory]/reagents.log"
 	GLOB.world_crafting_log = "[GLOB.log_directory]/crafting.log"
 	GLOB.click_log = "[GLOB.log_directory]/click.log"
 	GLOB.world_asset_log = "[GLOB.log_directory]/asset.log"
-
 
 #ifdef UNIT_TESTS
 	GLOB.test_log = "[GLOB.log_directory]/tests.log"
@@ -152,6 +180,7 @@ GLOBAL_LIST(topic_status_cache)
 	start_log(GLOB.world_runtime_log)
 	start_log(GLOB.world_job_debug_log)
 	start_log(GLOB.tgui_log)
+	start_log(GLOB.world_shuttle_log)
 	start_log(GLOB.subsystem_log)
 	start_log(GLOB.reagent_log)
 	start_log(GLOB.world_crafting_log)
@@ -173,14 +202,6 @@ GLOBAL_LIST(topic_status_cache)
 /world/Topic(T, addr, master, key)
 	TGS_TOPIC	//redirect to server tools if necessary
 
-	if(!SSfail2topic)
-		return "Server not initialized."
-	if(SSfail2topic.IsRateLimited(addr))
-		return "Rate limited."
-
-	if(length(T) > CONFIG_GET(number/topic_max_size))
-		return "Payload too large!"
-
 	var/static/list/topic_handlers = TopicHandlers()
 
 	var/list/input = params2list(T)
@@ -197,7 +218,7 @@ GLOBAL_LIST(topic_status_cache)
 		return
 
 	handler = new handler()
-	return handler.TryRun(input, addr)
+	return handler.TryRun(input)
 
 /world/proc/AnnouncePR(announcement, list/payload)
 	var/static/list/PRcounts = list()	//PR id -> number of times announced this round
@@ -246,10 +267,10 @@ GLOBAL_LIST(topic_status_cache)
 
 	TgsReboot()
 
-	#ifdef UNIT_TESTS
+#ifdef UNIT_TESTS
 	FinishTestRun()
 	return
-	#endif
+#endif
 
 	if(TgsAvailable())
 		var/do_hard_reboot
@@ -268,22 +289,24 @@ GLOBAL_LIST(topic_status_cache)
 					do_hard_reboot = FALSE
 
 		if(do_hard_reboot)
-			log_world("World hard rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
+			log_world("World hard rebooted at [time_stamp()]")
 			shutdown_logging() // See comment below.
+			auxcleanup()
 			TgsEndProcess()
 
-	log_world("World rebooted at [TIME_STAMP("hh:mm:ss", FALSE)]")
+	log_world("World rebooted at [time_stamp()]")
 	shutdown_logging() // Past this point, no logging procs can be used, at risk of data loss.
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+	auxcleanup()
 	..()
 
-/world/Del()
-	shutdown_logging() // makes sure the thread is closed before end, else we terminate
-	AUXTOOLS_SHUTDOWN(AUXMOS)
+/world/proc/auxcleanup()
 	var/debug_server = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (debug_server)
-		call(debug_server, "auxtools_shutdown")()
-	..()
+		RUSTG_CALL(debug_server, "auxtools_shutdown")()
+
+/world/Del()
+	auxcleanup()
+	. = ..()
 
 /world/proc/update_status()
 
@@ -357,10 +380,7 @@ GLOBAL_LIST(topic_status_cache)
 	maxz++
 	SSmobs.MaxZChanged()
 	SSidlenpcpool.MaxZChanged()
-	world.refresh_atmos_grid()
 
-/// Auxtools atmos
-/world/proc/refresh_atmos_grid()
 
 /world/proc/change_fps(new_value = 20)
 	if(new_value <= 0)
@@ -384,3 +404,10 @@ GLOBAL_LIST(topic_status_cache)
 
 /world/proc/on_tickrate_change()
 	SStimer?.reset_buckets()
+
+/world/proc/init_debugger()
+	var/dll = world.GetConfig("env", "AUXTOOLS_DEBUG_DLL")
+	if (dll)
+		RUSTG_CALL(dll, "auxtools_init")()
+		enable_debugging()
+

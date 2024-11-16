@@ -1,3 +1,7 @@
+/proc/time_stamp(format = "hh:mm:ss", show_ds)
+	var/time_string = time2text(world.timeofday, format)
+	return show_ds ? "[time_string]:[world.timeofday % 10]" : time_string
+
 /proc/station_time_debug(force_set)
 	if(isnum(force_set))
 		SSticker.gametime_offset = force_set

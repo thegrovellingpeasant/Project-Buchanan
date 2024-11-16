@@ -56,7 +56,7 @@
 	unique_loot = list(/obj/item/clothing/gloves/color/yellow = 5, SCAVENGING_SPAWN_TOM = 1)
 
 /obj/structure/loot_pile/maint/ComponentInitialize()
-	var/static/safe_maint_items
+	var/static/list/safe_maint_items
 	if(!safe_maint_items)
 		safe_maint_items = list()
 		for(var/A in GLOB.maintenance_loot)

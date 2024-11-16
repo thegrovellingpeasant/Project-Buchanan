@@ -100,7 +100,7 @@
 		set_opacity(0)
 	..()
 
-turf/closed/wall/f13/wood/house/update_damage_overlay()
+/turf/closed/wall/f13/wood/house/update_damage_overlay()
 	if(broken)
 		return
 	..()

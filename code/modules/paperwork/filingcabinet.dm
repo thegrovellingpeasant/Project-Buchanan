@@ -210,7 +210,7 @@ GLOBAL_LIST_EMPTY(employmentCabinets)
 	new /obj/item/paper/contract/employment(src, employee)
 
 /obj/structure/filingcabinet/employment/interact(mob/user)
-	if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_EMPLOYMENT_CABINET))
+	if(TIMER_COOLDOWN_RUNNING(src, COOLDOWN_EMPLOYMENT_CABINET))
 		to_chat(user, "<span class='warning'>[src] is jammed, give it a few seconds.</span>")
 		return ..()
 

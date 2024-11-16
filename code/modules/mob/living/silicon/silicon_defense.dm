@@ -17,8 +17,7 @@
 			log_combat(M, src, "attacked")
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] has slashed at [src]!</span>", \
-							"<span class='userdanger'>[M] has slashed at you!</span>", target = M, \
-							target_message = "<span class='danger'>You have slashed at [src]!</span>")
+							"<span class='userdanger'>[M] has slashed at you!</span>")
 			if(prob(8))
 				flash_act(affect_silicon = 1)
 			log_combat(M, src, "attacked")
@@ -27,8 +26,7 @@
 		else
 			playsound(loc, 'sound/weapons/slashmiss.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] take a swipe at [src]!</span>", \
-							"<span class='userdanger'>[M] take a swipe at you!</span>", target = M, \
-							target_message = "<span class='danger'>You take a swipe at [src]!</span>")
+							"<span class='userdanger'>[M] take a swipe at you!</span>")
 
 /mob/living/silicon/attack_animal(mob/living/simple_animal/M)
 	. = ..()
@@ -65,8 +63,7 @@
 		adjustBruteLoss(rand(10, 15))
 		playsound(loc, "punch", 25, 1, -1)
 		visible_message("<span class='danger'>[user] has punched [src]!</span>", \
-				"<span class='userdanger'>[user] has punched you!</span>", target = user, \
-				target_message = "<span class='danger'>You have punched [src]!</span>")
+				"<span class='userdanger'>[user] has punched you!</span>")
 		return TRUE
 	return FALSE
 
@@ -76,9 +73,7 @@
 		return
 	switch(M.a_intent)
 		if (INTENT_HELP)
-			M.visible_message("[M] pets [src].", \
-							"<span class='notice'>You pet [src].</span>", target = src,
-							target_message = "[M] pets you.")
+			M.visible_message("[M] pets [src].","<span class='notice'>You pet [src].</span>")
 		if(INTENT_GRAB)
 			grabbedby(M)
 		else
@@ -139,6 +134,6 @@
 	P.on_hit(src, 0, def_zone)
 	return BULLET_ACT_HIT
 
-/mob/living/silicon/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /obj/screen/fullscreen/flash/static)
+/mob/living/silicon/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash/static)
 	if(affect_silicon)
 		return ..()

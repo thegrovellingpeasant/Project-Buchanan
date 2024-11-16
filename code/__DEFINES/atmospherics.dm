@@ -281,9 +281,21 @@
 	T.pixel_x = (PipingLayer - PIPING_LAYER_DEFAULT) * PIPING_LAYER_P_X;\
 	T.pixel_y = (PipingLayer - PIPING_LAYER_DEFAULT) * PIPING_LAYER_P_Y;
 
-#define QUANTIZE(variable)		(round(variable,0.0000001))/*I feel the need to document what happens here. Basically this is used to catch most rounding errors, however its previous value made it so that
-															once gases got hot enough, most procedures wouldnt occur due to the fact that the mole counts would get rounded away. Thus, we lowered it a few orders of magnititude */
+/**
+ * I feel the need to document what happens here.
+ * Basically this is used to catch most rounding errors,
+ * however its previous value made it so that once gases got hot enough,
+ * most procedures wouldnt occur due to the fact that the mole counts would get rounded away.
+ * Thus, we lowered it a few orders of magnititude.
+ */
+#define QUANTIZE(variable) (round((variable), 0.0000001))
 
+//prefer this to gas_mixture/total_moles in performance critical areas
+#define TOTAL_MOLES(cached_gases, out_var)\
+	out_var = 0;\
+	for(var/total_moles_id in cached_gases){\
+		out_var += cached_gases[total_moles_id];\
+	}
 
 #ifdef TESTING
 GLOBAL_LIST_INIT(atmos_adjacent_savings, list(0,0))

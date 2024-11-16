@@ -275,7 +275,7 @@
 	for(var/i in 1 to 7)
 		new /obj/item/grenade/flashbang(src)
 
-obj/item/storage/box/stingbangs
+/obj/item/storage/box/stingbangs
 	name = "box of stingbangs (WARNING)"
 	desc = "<B>WARNING: These devices are extremely dangerous and can cause severe injuries or death in repeated use.</B>"
 	icon_state = "secbox"
@@ -839,7 +839,7 @@ obj/item/storage/box/stingbangs
 
 /obj/item/storage/box/papersack/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/pen))
-		var/choice = show_radial_menu(user, src , papersack_designs, custom_check = CALLBACK(src, .proc/check_menu, user, W), radius = 36, require_near = TRUE)
+		var/choice = show_radial_menu(user, src , papersack_designs, custom_check = CALLBACK(src, PROC_REF(check_menu), user, W), radius = 36, require_near = TRUE)
 		if(!choice)
 			return FALSE
 		if(icon_state == "paperbag_[choice]")
@@ -1321,7 +1321,7 @@ obj/item/storage/box/stingbangs
 		new /obj/item/reagent_containers/food/snacks/marshmallow(src)
 
 /obj/item/storage/box/material/PopulateContents() 	//less uranium because radioactive
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/stack/sheet/metal/fifty=1,\
 		/obj/item/stack/sheet/glass/fifty=1,\
 		/obj/item/stack/sheet/rglass=50,\
@@ -1347,7 +1347,7 @@ obj/item/storage/box/stingbangs
 	icon_state = "syndiebox"
 
 /obj/item/storage/box/debugtools/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/flashlight/emp/debug=1,\
 		/obj/item/pda=1,\
 		/obj/item/modular_computer/tablet/preset/advanced=1,\
@@ -1456,13 +1456,13 @@ list(/obj/item/stack/sheet/metal = 20,
 
 
 /obj/item/storage/backpack/duffelbag/equipment/slotmachine/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/grenade/f13/dynamite = 7
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/slotmachine2/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/stock_parts/cell/ammo/alien = 2,
 		/obj/item/gun/energy/laser/plasma/pistol = 1
 		)

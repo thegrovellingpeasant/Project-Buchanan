@@ -23,7 +23,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/wacky/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -65,7 +65,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/smile/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -114,7 +114,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/swedish/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -146,7 +146,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/chav/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -205,7 +205,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/elvis/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -260,7 +260,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/whiteleg/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -271,17 +271,17 @@
 
 /datum/mutation/human/whiteleg/proc/handle_speech(datum/source, list/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]
-	if(speech_args[SPEECH_LANGUAGE] != /datum/language/tribal) 
+	if(speech_args[SPEECH_LANGUAGE] != /datum/language/tribal)
 		if(message[1] != "*")
-			message = " [message]" 
+			message = " [message]"
 			var/list/whiteleg_words = strings("whiteleg_replacement.json", "whiteleg") // "I": "Ah" doesn't work without turning I'm to AH'm, just leave it out of the word replacement file
-			for(var/key in whiteleg_words) 
-				var/value = whiteleg_words[key] 
-				if(islist(value)) 
-					value = pick(value) 
+			for(var/key in whiteleg_words)
+				var/value = whiteleg_words[key]
+				if(islist(value))
+					value = pick(value)
 				message = replacetextEx(message, " [uppertext(key)]", " [uppertext(value)]")
 				message = replacetextEx(message, " [capitalize(key)]", " [capitalize(value)]")
-				message = replacetextEx(message, " [key]", " [value]") 
+				message = replacetextEx(message, " [key]", " [value]")
 
 	/*if(prob(3))
 		message += " Kuna-man!"*/
@@ -299,7 +299,7 @@
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(owner, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/mutation/human/wright/on_losing(mob/living/carbon/human/owner)
 	. = ..()
@@ -310,16 +310,16 @@
 
 /datum/mutation/human/wright/proc/handle_speech(datum/source, list/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]
-	if(speech_args[SPEECH_LANGUAGE] != /datum/language/tribal) 
+	if(speech_args[SPEECH_LANGUAGE] != /datum/language/tribal)
 		if(message[1] != "*")
-			message = " [message]" 
+			message = " [message]"
 			var/list/wright_words = strings("wright_replacement.json", "wright") // "I": "Ah" doesn't work without turning I'm to AH'm, just leave it out of the word replacement file
-			for(var/key in wright_words) 
-				var/value = wright_words[key] 
-				if(islist(value)) 
-					value = pick(value) 
+			for(var/key in wright_words)
+				var/value = wright_words[key]
+				if(islist(value))
+					value = pick(value)
 				message = replacetextEx(message, " [uppertext(key)]", " [uppertext(value)]")
 				message = replacetextEx(message, " [capitalize(key)]", " [capitalize(value)]")
-				message = replacetextEx(message, " [key]", " [value]") 
+				message = replacetextEx(message, " [key]", " [value]")
 
 	speech_args[SPEECH_MESSAGE] = trim(message)
