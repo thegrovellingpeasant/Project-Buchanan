@@ -131,7 +131,7 @@
 		return
 	if(listeningTo)
 		UnregisterSignal(listeningTo, COMSIG_MOVABLE_MOVED)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/Pickup_ores)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(Pickup_ores))
 	listeningTo = user
 
 /obj/item/storage/bag/ore/dropped(mob/user)
@@ -408,7 +408,7 @@
 
 /*	Now in tribal mode!*/
 
-obj/item/storage/bag/chemistry/tribal
+/obj/item/storage/bag/chemistry/tribal
 	name = "tribal medicinal bag"
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "tribal_chembag"

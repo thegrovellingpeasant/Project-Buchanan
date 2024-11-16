@@ -1209,7 +1209,7 @@
 	M.apply_effect(2*REM/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
 	M.set_light(2, 15, LIGHT_COLOR_GREEN)
 	..()
-	
+
 /datum/reagent/radium/on_mob_delete(mob/living/carbon/M)
 	M.set_light(0)
 	..()
@@ -2593,7 +2593,7 @@
 /datum/reagent/gravitum/reaction_obj(obj/O, volume)
 	O.AddElement(/datum/element/forced_gravity, 0)
 
-	addtimer(CALLBACK(O, .proc/_RemoveElement, /datum/element/forced_gravity, 0), volume * time_multiplier)
+	addtimer(CALLBACK(O, PROC_REF(_RemoveElement), /datum/element/forced_gravity, 0), volume * time_multiplier)
 
 /datum/reagent/gravitum/on_mob_add(mob/living/L)
 	L.AddElement(/datum/element/forced_gravity, 0) //0 is the gravity, and in this case weightless
@@ -2697,7 +2697,7 @@
 		M.adjustStaminaLoss(-0.25*REM) // the more wounds, the more stamina regen
 	..()
 
-datum/reagent/eldritch
+/datum/reagent/eldritch
 	name = "Eldritch Essence"
 	description = "Strange liquid that defies the laws of physics"
 	taste_description = "Ag'hsj'saje'sh"

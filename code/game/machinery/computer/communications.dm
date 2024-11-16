@@ -58,7 +58,7 @@
 
 	if(!href_list["operation"])
 		return
-	var/obj/item/circuitboard/computer/communications/CM = circuit
+//	var/obj/item/circuitboard/computer/communications/CM = circuit
 	switch(href_list["operation"])
 		// main interface
 		if("main")

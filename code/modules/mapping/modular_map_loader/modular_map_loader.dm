@@ -15,7 +15,7 @@
 
 /obj/modular_map_root/Initialize(mapload)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/load_map)
+	INVOKE_ASYNC(src, PROC_REF(load_map))
 
 /// Randonly selects a map file from the TOML config specified in config_file, loads it, then deletes itself.
 /obj/modular_map_root/proc/load_map()
@@ -62,8 +62,8 @@
 	T = locate(T.x - x_offset, T.y - y_offset, z)
 
 	if(is_above)
-		z++ 
-	
+		z++
+
 	var/old_T = T
 	if(centered)
 		T = locate(T.x - round(((orientation & (NORTH|SOUTH))? width : height) / 2) , T.y - round(((orientation & (NORTH|SOUTH)) ? height : width) / 2) , z) // %180 catches East/West (90,270) rotations on true, North/South (0,180) rotations on false
@@ -138,7 +138,7 @@
 	if(orientation == EAST)
 		x_offset = offset[1] - 4
 		y_offset = offset[2] + 2
-	
+
 	if(!cache)
 		cached_map = null
 

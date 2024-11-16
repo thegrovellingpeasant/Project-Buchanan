@@ -2,13 +2,13 @@
 //it can be changed, but any changes will ultimately be undone before they can have any effect
 
 /datum/gas_mixture/immutable
+	gc_share = TRUE
 	var/initial_temperature = 0
 
 /datum/gas_mixture/immutable/New()
 	..()
 	set_temperature(initial_temperature)
 	populate()
-	mark_immutable()
 
 /datum/gas_mixture/immutable/proc/populate()
 	return
@@ -28,3 +28,17 @@
 /datum/gas_mixture/immutable/cloner/populate()
 	..()
 	set_moles(GAS_N2, MOLES_O2STANDARD + MOLES_N2STANDARD)
+
+//the default air in the atmosphere
+/datum/gas_mixture/immutable/atmosphere
+	initial_temperature = T20C
+
+/datum/gas_mixture/immutable/atmosphere/populate()
+	..()
+	gases[GAS_O2] = MOLES_O2STANDARD
+	gases[GAS_N2] = MOLES_N2STANDARD
+
+/datum/gas_mixture/immutable/atmosphere/set_moles(gas_type, moles)
+	//We do nothing, gasses don't actually change as we don't use Atmos.
+	//This is why we don't use `set_moles` in the populate proc above us.
+	return

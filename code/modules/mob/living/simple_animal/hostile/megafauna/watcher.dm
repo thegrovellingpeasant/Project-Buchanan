@@ -60,7 +60,7 @@
 		return FALSE
 	return ..()
 
-/mob/living/simple_animal/hostile/megafauna/watcher/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/mob/living/simple_animal/hostile/megafauna/watcher/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
 	if(swooping & SWOOP_INVULNERABLE) //to suppress attack messages without overriding every single proc that could send a message saying we got hit
 		return
 	return ..()
@@ -91,16 +91,16 @@
 
 	if(prob(25 + anger_modifier) && !client)
 		if(health < maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack, TRUE, null, 50)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack), TRUE, null, 50)
 		else
 			if(fire_rain_cooldown <= world.time)
 				fire_rain(anger_modifier)
 
 	else if(prob(10+anger_modifier) && !client)
 		if(health > maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack))
 		else
-			INVOKE_ASYNC(src, .proc/triple_swoop)
+			INVOKE_ASYNC(src, PROC_REF(triple_swoop))
 	else
 		fire_walls(anger_modifier)
 
@@ -129,11 +129,11 @@
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
-		INVOKE_ASYNC(src, .proc/fire_wall, d)
+		INVOKE_ASYNC(src, PROC_REF(fire_wall), d)
 
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
-		INVOKE_ASYNC(src, .proc/diagonal_shots)
+		INVOKE_ASYNC(src, PROC_REF(diagonal_shots))
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_wall(dir)
 	var/list/hit_things = list(src)
@@ -319,7 +319,7 @@
 
 /obj/effect/temp_visual/target/Initialize(mapload, list/flame_hit)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/watcher_fall, flame_hit)
+	INVOKE_ASYNC(src, PROC_REF(watcher_fall), flame_hit)
 
 /obj/effect/temp_visual/target/proc/watcher_fall(list/flame_hit)
 	var/turf/T = get_turf(src)
@@ -363,7 +363,7 @@
 
 /obj/effect/temp_visual/watcher_flight/Initialize(mapload, negative)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/flight, negative)
+	INVOKE_ASYNC(src, PROC_REF(flight), negative)
 
 /obj/effect/temp_visual/watcher_flight/proc/flight(negative)
 	if(negative)
@@ -388,3 +388,4 @@
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
 	else
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
+

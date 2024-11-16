@@ -37,8 +37,6 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define CONDUCT_1					(1<<5)
 ///For machines and structures that should not break into parts, eg, holodeck stuff.
 #define NODECONSTRUCT_1				(1<<7)
-///Atom queued to SSoverlay.
-#define OVERLAY_QUEUED_1			(1<<8)
 ///Item has priority to check when entering or leaving.
 #define ON_BORDER_1					(1<<9)
 ///Prevent clicking things below it on the same turf eg. doors/ fulltile windows.
@@ -154,6 +152,10 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define MOBILITY_FLAGS_DEFAULT (MOBILITY_MOVE | MOBILITY_STAND | MOBILITY_PICKUP | MOBILITY_USE | MOBILITY_UI | MOBILITY_STORAGE | MOBILITY_PULL | MOBILITY_RESIST)
 #define MOBILITY_FLAGS_ANY_INTERACTION (MOBILITY_USE | MOBILITY_PICKUP | MOBILITY_UI | MOBILITY_STORAGE)
 
+//alternate appearance flags
+#define AA_TARGET_SEE_APPEARANCE (1<<0)
+#define AA_MATCH_TARGET_OVERLAYS (1<<1)
+
 /// If the thing can reflect light (lasers/energy)
 #define RICOCHET_SHINY			(1<<0)
 /// If the thing can reflect matter (bullets/bomb shrapnel)
@@ -172,7 +174,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 	if(HAS_TRAIT_FROM_ONLY(x, TRAIT_KEEP_TOGETHER, KEEP_TOGETHER_ORIGINAL))\
 		REMOVE_TRAIT(x, TRAIT_KEEP_TOGETHER, KEEP_TOGETHER_ORIGINAL);\
 	else if(!HAS_TRAIT(x, TRAIT_KEEP_TOGETHER))\
-		x.appearance_flags &= ~KEEP_TOGETHER
+	 	x.appearance_flags &= ~KEEP_TOGETHER
 
 /// 33554431 (2^24 - 1) is the maximum value our bitflags can reach.
 #define MAX_BITFLAG_DIGITS 8

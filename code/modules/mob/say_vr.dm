@@ -17,7 +17,7 @@
 		return M.get_top_level_mob()
 	return src
 
-proc/get_top_level_mob(mob/S)
+/proc/get_top_level_mob(mob/S)
 	if(istype(S.loc,/mob)&&S.loc!=S)
 		var/mob/M=S.loc
 		return M.get_top_level_mob()
@@ -167,7 +167,7 @@ proc/get_top_level_mob(mob/S)
 	message = "<b>[user]</b> " + "<i>[user.say_emphasis(message)]</i>"
 
 	if(emote_type == EMOTE_AUDIBLE)
-		user.audible_message(message=message,hearing_distance=1, ignored_mobs = GLOB.dead_mob_list)
+		user.audible_message(message=message,hearing_distance=1)
 	else
 		user.visible_message(message=message,self_message=message,vision_distance=1, ignored_mobs = GLOB.dead_mob_list)
 

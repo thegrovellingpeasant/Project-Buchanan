@@ -76,7 +76,7 @@
 	opacity = TRUE
 /*
 /obj/structure/barricade/wooden
-	name = "wooden barricade" 
+	name = "wooden barricade"
 	desc = "This space is blocked off by a wooden barricade."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "woodenbarricade"
@@ -146,7 +146,7 @@
 
 /obj/structure/barricade/security/Initialize()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/deploy), deploy_time)
+	addtimer(CALLBACK(src, PROC_REF(deploy)), deploy_time)
 
 /obj/structure/barricade/security/proc/deploy()
 	icon_state = "barrier1"

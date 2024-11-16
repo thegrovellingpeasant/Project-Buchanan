@@ -90,7 +90,7 @@
 
 
 	var/multicam_on = FALSE
-	var/obj/screen/movable/pic_in_pic/ai/master_multicam
+	var/atom/movable/screen/movable/pic_in_pic/ai/master_multicam
 	var/list/multicam_screens = list()
 	var/list/all_eyes = list()
 	var/max_multicams = 6
@@ -131,7 +131,7 @@
 
 	create_eye()
 	if(client)
-		INVOKE_ASYNC(src, .proc/apply_pref_name,"ai",client)
+		INVOKE_ASYNC(src, PROC_REF(apply_pref_name),"ai",client)
 
 	set_core_display_icon()
 

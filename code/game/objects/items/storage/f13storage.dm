@@ -159,7 +159,7 @@
 		return
 	if(listeningTo)
 		UnregisterSignal(listeningTo, COMSIG_MOVABLE_MOVED)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/Pickup_casings)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(Pickup_casings))
 	listeningTo = user
 
 
@@ -439,7 +439,7 @@
 // -----------------------------------
 // STIMPAK BOX
 
-/obj/item/storage/box/medicine/stimpaks/stimpaks5 
+/obj/item/storage/box/medicine/stimpaks/stimpaks5
 	name = "box of stimpaks"
 	desc = "A box full of stimpaks."
 

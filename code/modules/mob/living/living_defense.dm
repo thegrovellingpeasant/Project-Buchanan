@@ -227,8 +227,7 @@
 			var/old_grab_state = user.grab_state
 			var/grab_upgrade_time = instant ? 0 : 30
 			visible_message("<span class='danger'>[user] starts to tighten [user.p_their()] grip on [src]!</span>", \
-				"<span class='userdanger'>[user] starts to tighten [user.p_their()] grip on you!</span>", target = user,
-				target_message = "<span class='danger'>You start to tighten your grip on [src]!</span>")
+				"<span class='userdanger'>[user] starts to tighten [user.p_their()] grip on you!</span>")
 			switch(user.grab_state)
 				if(GRAB_AGGRESSIVE)
 					log_combat(user, src, "attempted to neck grab", addition="neck grab")
@@ -244,29 +243,25 @@
 				var/add_log = ""
 				if(HAS_TRAIT(user, TRAIT_PACIFISM))
 					visible_message("<span class='danger'>[user] has firmly gripped [src]!</span>",
-						"<span class='danger'>[user] has firmly gripped you!</span>", target = user,
-						target_message = "<span class='danger'>You have firmly gripped [src]!</span>")
+						"<span class='danger'>[user] has firmly gripped you!</span>")
 					add_log = " (pacifist)"
 				else
 					visible_message("<span class='danger'>[user] has grabbed [src] aggressively!</span>", \
-									"<span class='userdanger'>[user] has grabbed you aggressively!</span>", target = user, \
-									target_message = "<span class='danger'>You have grabbed [src] aggressively!</span>")
+									"<span class='userdanger'>[user] has grabbed you aggressively!</span>")
 					update_mobility()
 				stop_pulling()
 				log_combat(user, src, "grabbed", addition="aggressive grab[add_log]")
 			if(GRAB_NECK)
 				log_combat(user, src, "grabbed", addition="neck grab")
 				visible_message("<span class='danger'>[user] has grabbed [src] by the neck!</span>",\
-								"<span class='userdanger'>[user] has grabbed you by the neck!</span>", target = user, \
-								target_message = "<span class='danger'>You have grabbed [src] by the neck!</span>")
+								"<span class='userdanger'>[user] has grabbed you by the neck!</span>")
 				update_mobility() //we fall down
 				if(!buckled && !density)
 					Move(user.loc)
 			if(GRAB_KILL)
 				log_combat(user, src, "strangled", addition="kill grab")
 				visible_message("<span class='danger'>[user] is strangling [src]!</span>", \
-								"<span class='userdanger'>[user] is strangling you!</span>", target = user, \
-								target_message = "<span class='danger'>You are strangling [src]!</span>")
+								"<span class='userdanger'>[user] is strangling you!</span>")
 				update_mobility() //we fall down
 				if(!buckled && !density)
 					Move(user.loc)
@@ -279,8 +274,7 @@
 	if((user != src) && act_intent != INTENT_HELP && (mob_run_block(user, 0, user.name, ATTACK_TYPE_UNARMED | ATTACK_TYPE_MELEE | ((attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK)? ATTACK_TYPE_PARRY_COUNTERATTACK : NONE), null, user, check_zone(user.zone_selected), null) & BLOCK_SUCCESS))
 		log_combat(user, src, "attempted to touch")
 		visible_message("<span class='warning'>[user] attempted to touch [src]!</span>",
-			"<span class='warning'>[user] attempted to touch you!</span>", target = user,
-			target_message = "<span class='warning'>You attempted to touch [src]!</span>")
+			"<span class='warning'>[user] attempted to touch you!</span>")
 		return TRUE
 
 /mob/living/attack_hulk(mob/living/carbon/human/user, does_attack_animation = FALSE)
@@ -330,9 +324,7 @@
 		return
 	M.DelayNextAction()
 	if(M.melee_damage_upper == 0)
-		M.visible_message("<span class='notice'>\The [M] [M.friendly_verb_continuous] [src]!</span>",
-			"<span class='notice'>You [M.friendly_verb_simple] [src]!</span>", target = src,
-			target_message = "<span class='notice'>\The [M] [M.friendly_verb_continuous] you!</span>")
+		M.visible_message("<span class='notice'>\The [M] [M.friendly_verb_continuous] [src]!</span>")
 		return 0
 	else
 		if(HAS_TRAIT(M, TRAIT_PACIFISM))
@@ -384,8 +376,7 @@
 	switch(L.a_intent)
 		if(INTENT_HELP)
 			visible_message("<span class='notice'>[L.name] rubs its head against [src].</span>",
-				"<span class='notice'>[L.name] rubs its head against you.</span>", target = L, \
-				target_message = "<span class='notice'>You rub your head against [src].</span>")
+				"<span class='notice'>[L.name] rubs its head against you.</span>")
 			return FALSE
 
 		else
@@ -416,8 +407,7 @@
 		if (INTENT_HELP)
 			if(!isalien(src)) //I know it's ugly, but the alien vs alien attack_alien behaviour is a bit different.
 				visible_message("<span class='notice'>[M] caresses [src] with its scythe like arm.</span>",
-					"<span class='notice'>[M] caresses you with its scythe like arm.</span>", target = M,
-					target_message = "<span class='notice'>You caress [src] with your scythe like arm.</span>")
+					"<span class='notice'>[M] caresses you with its scythe like arm.</span>")
 			return FALSE
 		if (INTENT_GRAB)
 			grabbedby(M)
@@ -495,10 +485,10 @@
 		if((GLOB.cult_narsie.souls == GLOB.cult_narsie.soul_goal) && (GLOB.cult_narsie.resolved == FALSE))
 			GLOB.cult_narsie.resolved = TRUE
 			sound_to_playing_players('sound/machines/alarm.ogg')
-			addtimer(CALLBACK(GLOBAL_PROC, .proc/cult_ending_helper, 1), 120)
-			addtimer(CALLBACK(GLOBAL_PROC, .proc/ending_helper), 270)
+			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(cult_ending_helper), 1), 120)
+			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ending_helper)), 270)
 	if(client)
-		INVOKE_ASYNC(GLOBAL_PROC, .proc/makeNewConstruct, /mob/living/simple_animal/hostile/construct/harvester, src, null, TRUE) // must pass keyword args explicitly
+		INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(makeNewConstruct), /mob/living/simple_animal/hostile/construct/harvester, src, null, TRUE) // must pass keyword args explicitly
 	else
 		switch(rand(1, 6))
 			if(1)
@@ -523,10 +513,10 @@
 
 
 //called when the mob receives a bright flash
-/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /obj/screen/fullscreen/flash)
+/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash)
 	if(get_eye_protection() < intensity && (override_blindness_check || !(HAS_TRAIT(src, TRAIT_BLIND))))
 		overlay_fullscreen("flash", type)
-		addtimer(CALLBACK(src, .proc/clear_fullscreen, "flash", 25), 25)
+		addtimer(CALLBACK(src, PROC_REF(clear_fullscreen), "flash", 25), 25)
 		return TRUE
 	return FALSE
 

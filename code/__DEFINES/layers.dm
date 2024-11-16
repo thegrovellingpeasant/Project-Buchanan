@@ -30,8 +30,7 @@
 
 #define FIELD_OF_VISION_VISUAL_PLANE -2 //Yea, FoV does require quite a few planes to work with 513 filters to a decent degree.
 
-#define CHAT_PLANE -1 //We don't want heard messages to be hidden by FoV.
-#define CHAT_LAYER 12.1 //Legacy, it doesn't matter that much because we are displayed above the game plane anyway.
+#define RUNECHAT_PLANE -1 //We don't want heard messages to be hidden by FoV.
 
 #define BLACKNESS_PLANE 0 //To keep from conflicts with SEE_BLACKNESS internals
 

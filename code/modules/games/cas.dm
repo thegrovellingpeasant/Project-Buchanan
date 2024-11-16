@@ -31,15 +31,19 @@
 	decksize = 50
 	card_text_file = "strings/cas_black.txt"
 
+GLOBAL_LIST_INIT(card_decks, list(
+	casblack = world.file2list("strings/cas_black.txt"),
+	caswhite = world.file2list("strings/cas_white.txt")
+))
+
 /obj/item/toy/cards/deck/cas/populate_deck()
-	var/static/list/cards_against_space = list("cas_white" = world.file2list("strings/cas_white.txt"),"cas_black" = world.file2list("strings/cas_black.txt"))
-	allcards = cards_against_space[card_face]
-	var/list/possiblecards = allcards.Copy()
-	if(possiblecards.len < decksize) // sanity check
-		decksize = (possiblecards.len - 1)
+	var/list/cards_against_space = GLOB.card_decks[deckstyle]
+	var/list/possible_cards = cards_against_space.Copy()
+	if(possible_cards.len < decksize) // sanity check
+		decksize = (possible_cards.len - 1)
 	var/list/randomcards = list()
 	for(var/x in 1 to decksize)
-		randomcards += pick_n_take(possiblecards)
+		randomcards += pick_n_take(possible_cards)
 	for(var/x in 1 to randomcards.len)
 		var/cardtext = randomcards[x]
 		var/datum/playingcard/P
