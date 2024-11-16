@@ -152,6 +152,8 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_BISHOPVAULT	166
 #define ACCESS_BISHOPRR		167
 
+#define ACCESS_HEIST		168
+
 
 	//Away Missions or Ruins
 	/*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict

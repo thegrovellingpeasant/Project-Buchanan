@@ -205,3 +205,13 @@
 	if(ishuman(target))
 		addtimer(CALLBACK(src, PROC_REF(do_death_beep)), 1 SECONDS)
 		addtimer(CALLBACK(src, PROC_REF(self_destruct)), 2 SECONDS)
+
+/mob/living/simple_animal/hostile/securitron/sentrybot/mini
+	name = "sentry bot"
+	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick armor plating."
+	icon_state = "sentrybot_mini"
+	icon_living = "sentrybot_mini"
+	icon_dead = "sentrybot_mini_dead"
+	mob_size = MOB_SIZE_SMALL
+	health = 150
+	maxHealth = 150

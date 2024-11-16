@@ -880,12 +880,12 @@
 /obj/item/storage/belt/canesword
 	name = "cane"
 	desc = "A cane with gold at it's top, middle, and handle part, and the latter has a hidden compartment for a thin blade."
-	icon_state = "cane"
+	icon_state = "cane_sword"
 	item_state = "cane_sword"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BELT
+	slot_flags = FALSE
 	content_overlays = FALSE
 	onmob_overlays = FALSE
 	var/list/fitting_swords = list(/obj/item/melee/canesword)

@@ -2,6 +2,7 @@
 	"map_name": "Reno",
 	"map_path": "map_files/Reno",
 	"map_file": [
+		"Dungeons.dmm",
 		"Reno-Underground-1.dmm",
 		"Reno-Surface-2.dmm",
 		"Reno-Above-3.dmm",
@@ -16,6 +17,12 @@
 		"ferry": "ferry_fancy"
 	},
 	"traits":[
+		{
+			"Gravity": true,
+			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
+			"Up": 1,
+			"Linkage" : "Cross"
+		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",

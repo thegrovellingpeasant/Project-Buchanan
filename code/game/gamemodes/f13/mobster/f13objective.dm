@@ -84,7 +84,7 @@
 	if(item)
 		targetinfo = item
 		steal_target = targetinfo.targetitem
-		explanation_text = "One of our informants determined the NameHere family's has a valuable [targetinfo.name]. It'd be good for us if we took it from their possession."
+		explanation_text = "One of our informants determined one of the families has a valuable [targetinfo.name]. It'd be good for us if we took it from their possession."
 		return steal_target
 	else
 		explanation_text = "Free objective"
@@ -222,7 +222,6 @@
 		wright_money += M.amount
 	for(var/obj/item/stack/f13Cash/caps/M in vgraff.contents)
 		vgraff_money += M.amount
-	
 	var/richest = max(bishop_money, wright_money, vgraff_money)
 	if(src.team.name == "The Bishops")
 		if(bishop_money == richest)

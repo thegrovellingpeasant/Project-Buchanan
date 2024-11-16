@@ -2177,10 +2177,10 @@
 	item_state = "chosen"
 
 /obj/item/clothing/under/f13/chosenf
-	name = "tribal outfit"
+	name = "tribal female outfit"
 	desc = "A leather outfit of a style commonly seen worn by tribals."
 	icon_state = "chosen_f"
-	item_state = "chosen"
+	item_state = "chosen_f"
 
 /obj/item/clothing/under/f13/sequin_dress
 	name = "sequin dress"
