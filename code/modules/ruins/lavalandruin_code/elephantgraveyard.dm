@@ -321,7 +321,7 @@
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "prototype"
-	dense_when_open = FALSE
+	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchored = FALSE
@@ -401,7 +401,7 @@
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "bird"
-	dense_when_open = FALSE
+	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchored = FALSE
@@ -454,16 +454,12 @@
 					dump_contents()
 					update_icon()
 					if(lead_tomb == TRUE && first_open == TRUE)
-						switch(rand(1,3))
+						switch(rand(1,2))
 							if(1)
-								user.gain_trauma(/datum/brain_trauma/magic/stalker)
-								to_chat(user, "<span class='boldwarning'>Oh no, no no no, THEY'RE EVERYWHERE! EVERY ONE OF THEM IS EVERYWHERE!</span>")
-								first_open = FALSE
-							if(2)
 								user.gain_trauma(/datum/brain_trauma/special/imaginary_friend)
 								to_chat(user, "<span class='boldwarning'>Where did he come from?</span>")
 								first_open = FALSE
-							if(3)
+							if(2)
 								user.add_client_colour(/datum/client_colour/monochrome)
 								to_chat(user, "<span class='boldwarning'>Made it Ma! Top of the world!!</span>")
 								first_open = FALSE
@@ -490,7 +486,7 @@
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "ark"
-	dense_when_open = FALSE
+	dense_when_open = TRUE
 	material_drop = /obj/item/stack/ore/glass/basalt
 	material_drop_amount = 5
 	anchored = FALSE
