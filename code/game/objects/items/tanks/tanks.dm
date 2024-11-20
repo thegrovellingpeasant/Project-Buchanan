@@ -307,10 +307,6 @@
 
 	else if(pressure > TANK_RUPTURE_PRESSURE || temperature > TANK_MELT_TEMPERATURE)
 		if(integrity <= 0)
-			var/turf/T = get_turf(src)
-			if(!T)
-				return
-			T.assume_air(air_contents)
 			playsound(src.loc, 'sound/effects/spray.ogg', 10, TRUE, -3)
 			qdel(src)
 		else
@@ -318,11 +314,6 @@
 
 	else if(pressure > TANK_LEAK_PRESSURE)
 		if(integrity <= 0)
-			var/turf/T = get_turf(src)
-			if(!T)
-				return
-			var/datum/gas_mixture/leaked_gas = air_contents.remove_ratio(0.25)
-			T.assume_air(leaked_gas)
 		else
 			integrity--
 
