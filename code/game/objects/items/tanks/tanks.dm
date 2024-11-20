@@ -313,8 +313,7 @@
 			integrity--
 
 	else if(pressure > TANK_LEAK_PRESSURE)
-		if(integrity <= 0)
-		else
+		if(integrity > 0)
 			integrity--
 
 	else if(integrity < 3)
