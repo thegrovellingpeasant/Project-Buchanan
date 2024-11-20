@@ -55,6 +55,9 @@
 	perform_exposure()
 	setDir(pick(GLOB.cardinals))
 	air_update_turf()
+	//atmos is disabled, run it on objects instead.
+	if(SSair.flags & SS_NO_FIRE)
+		START_PROCESSING(SSobj, src)
 
 /obj/effect/hotspot/proc/perform_exposure()
 	var/turf/open/location = loc
