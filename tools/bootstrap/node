@@ -8,6 +8,7 @@
 # Otherwise, this script requires a system `node` to be provided.
 set -e
 
+
 # Convenience variables
 Bootstrap="$(dirname "$0")"
 Cache="$Bootstrap/.cache"
