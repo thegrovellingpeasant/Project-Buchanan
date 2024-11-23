@@ -338,9 +338,12 @@
 		if(M.attack_sound)
 			playsound(src, M.attack_sound, 50, 1, 1)
 		M.do_attack_animation(src)
-		visible_message("<span class='danger'>\The [M] [M.attack_verb_continuous] [src]!</span>", \
-						"<span class='userdanger'>\The [M] [M.attack_verb_continuous] you!</span>", null, COMBAT_MESSAGE_RANGE, null,
-						M, "<span class='danger'>You [M.attack_verb_simple] [src]!</span>")
+		visible_message(
+			message = "<span class='danger'>\The [M] [M.attack_verb_continuous] [src]!</span>", \
+			self_message = "<span class='userdanger'>\The [M] [M.attack_verb_continuous] you!</span>",
+			blind_message = null,
+			vision_distance = COMBAT_MESSAGE_RANGE,
+		)
 		log_combat(M, src, "attacked")
 		return damage
 

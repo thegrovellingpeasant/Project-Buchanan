@@ -744,14 +744,16 @@ GLOBAL_LIST_INIT(faction_relics, list(
 			else
 				// Begin Approval
 				user.visible_message(
-					"<span class='notice'>[user] begins to review \the [src] for approval</span>",
-					"<span class='notice'>You begin to review \the [src] for approval. <b>Be sure you have read it first!</b></span>")
+					message = "<span class='notice'>[user] begins to review \the [src] for approval</span>",
+					self_message = "<span class='notice'>You begin to review \the [src] for approval. <b>Be sure you have read it first!</b></span>",
+				)
 				if(do_after(user, 5 SECONDS, target = src))
 					// Recruitment Slots Filled Check
 					if(task.recruits >= task.recruit_target)
 						user.visible_message(
-							"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
-							"<span class='notice'>You realize no more people can be recruited so you take \the [I] away from the \the [src].</span>")
+							message = "<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
+							self_message = "<span class='notice'>You realize no more people can be recruited so you take \the [I] away from the \the [src].</span>",
+						)
 						return
 					// Signee In View Check
 					if(!signee || !(signee in view(7, user)))
