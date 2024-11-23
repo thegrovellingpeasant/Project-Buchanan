@@ -133,7 +133,7 @@
 
 	else if(isliving(hit_atom))
 		var/mob/living/L = hit_atom
-		L.visible_message("<span class='danger'>[src] slams into [L]!</span>", "<span class='userdanger'>[src] slams into you!</span>")
+		L.visible_message(span_danger("[src] slams into [L]!"), span_userdanger("[src] slams into you!"))
 		L.apply_damage(40, BRUTE)
 		playsound(get_turf(L), 'sound/effects/meteorimpact.ogg', 100, 1)
 		shake_camera(L, 4, 3)
@@ -163,7 +163,7 @@
 	animate(pixel_z = 0, time = 1)
 	for(var/mob/living/L in get_hearers_in_view(7, src) - src)
 		shake_camera(L, 30, 1)
-		to_chat(L, "<span class='danger'>The yao guai roars loudly!</span>")
+		to_chat(L, span_danger("The yao guai roars loudly!"))
 	SetRecoveryTime(30, 0)
 	SLEEP_CHECK_DEATH(12)
 	can_move = TRUE

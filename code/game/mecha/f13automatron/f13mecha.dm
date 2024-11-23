@@ -24,16 +24,16 @@
 /obj/item/mmi/posibrain/f13
 	name = "personality computational matrix"
 	activation_delay = TRUE
-	begin_activation_message = "<span class='notice'>After a few seconds of tinkering, you are able to configure the matrix to begin personality generation.</span>"
-	success_message = "<span class='notice'>The personality matrix pings, and its lights start flashing. Success!</span>"
-	fail_message = "<span class='notice'>Thepersonality matrix buzzes quietly, and the golden lights fade away. Perhaps you could try again?</span>"
+	begin_activation_message = span_notice("After a few seconds of tinkering, you are able to configure the matrix to begin personality generation.")
+	success_message = span_notice("The personality matrix pings, and its lights start flashing. Success!")
+	fail_message = span_notice("Thepersonality matrix buzzes quietly, and the golden lights fade away. Perhaps you could try again?")
 	new_role = "Personality Matrix"
 	welcome_message = "<span class='warning'>ALL PAST LIVES ARE FORGOTTEN.</span>\n\
 	<b>You are a personality matrix, created to inhabit the robots of the wastes.\n\
 	As an artifical intelligence, you are bound to the parameters set by your programming.</b>"
-	new_mob_message = "<span class='notice'>The personality matrix chimes quietly.</span>"
-	dead_message = "<span class='deadsay'>It appears to be completely inactive. The reset light is blinking.</span>"
-	recharge_message = "<span class='warning'>The personality matrix isn't ready to activate again yet! Give it some time to recharge.</span>"
+	new_mob_message = span_notice("The personality matrix chimes quietly.")
+	dead_message = span_deadsay("It appears to be completely inactive. The reset light is blinking.")
+	recharge_message = span_warning("The personality matrix isn't ready to activate again yet! Give it some time to recharge.")
 	wastebot = TRUE
 
 /obj/item/mmi/posibrain/f13/examine(mob/user)
@@ -41,17 +41,17 @@
 	if(brainmob && wastebot)
 		var/mob/living/brain/B = brainmob
 		if(!B.key || !B.mind || B.stat == DEAD)
-			. += "<span class='warning'>It seems that the personality matrix is completely unresponsive.</span>"
+			. += span_warning("It seems that the personality matrix is completely unresponsive.")
 
 		else if(!B.client)
-			. += "<span class='warning'>It seems that the personality matrix is currently inactive; it might change.</span>"
+			. += span_warning("It seems that the personality matrix is currently inactive; it might change.")
 
 		else
-			. += "<span class='notice'>It seems that the personality matrix is active.</span>"
+			. += span_notice("It seems that the personality matrix is active.")
 
 /obj/mecha/f13/MouseDrop_T(mob/M, mob/user)
 	if(ishuman(user))
-		to_chat(user, "<span class='warning'>You can only insert a personality matrix into the robot!</span>")
+		to_chat(user, span_warning("You can only insert a personality matrix into the robot!"))
 		return
 	..()
 
@@ -84,16 +84,16 @@
 	. = ..()
 
 /obj/mecha/f13/relay_container_resist(mob/living/user, obj/O)
-	to_chat(user, "<span class='notice'>You lean on the back of [O] and start pushing so it falls out of [src].</span>")
+	to_chat(user, span_notice("You lean on the back of [O] and start pushing so it falls out of [src]."))
 	if(do_after(user, 300, target = O))
 		if(!user || user.stat != CONSCIOUS || user.loc != src || O.loc != src )
 			return
-		to_chat(user, "<span class='notice'>You successfully pushed [O] out of [src]!</span>")
+		to_chat(user, span_notice("You successfully pushed [O] out of [src]!"))
 		O.forceMove(drop_location())
 		cargo -= O
 	else
 		if(user.loc == src) //so we don't get the message if we resisted multiple times and succeeded.
-			to_chat(user, "<span class='warning'>You fail to push [O] out of [src]!</span>")
+			to_chat(user, span_warning("You fail to push [O] out of [src]!"))
 
 /obj/item/mecha_parts/mecha_equipment/weapon/attach(obj/mecha/f13/M)
 	..()
@@ -104,7 +104,7 @@
 	var/integrity = obj_integrity/max_integrity*100
 	var/cell_charge = get_charge()
 	. = {"[report_internal_damage()]
-						[integrity<30?"<span class='userdanger'>DAMAGE LEVEL CRITICAL</span><br>":null]
+						[integrity<30?"[span_userdanger("DAMAGE LEVEL CRITICAL")]<br>":null]
 						<b>Integrity: </b> [integrity]%<br>
 						<b>Powercell charge: </b>[isnull(cell_charge)?"No powercell installed":"[cell.percent()]%"]<br>
 						<b>Unit housing temperature: </b> [return_temperature()]&deg;K|[return_temperature() - T0C]&deg;C<br>
@@ -221,7 +221,7 @@
 					cargo -= O
 					qdel(O)
 			else
-				occupant_message("<span class='notice'>You unload [O].</span>")
+				occupant_message(span_notice("You unload [O]."))
 				O.forceMove(unload_location)
 				cargo -= O
 			mecha_log_message("Unloaded [O]. Cargo compartment capacity: [cargo_capacity - src.cargo.len]")
@@ -439,5 +439,5 @@
 				output_maintenance_dialog(id_card, usr)
 				mecha_log_message("[type] module has been set by [usr].")
 			else
-				to_chat(usr, "<span class='warning'>Module has already been set!</span>")
+				to_chat(usr, span_warning("Module has already been set!"))
 			return

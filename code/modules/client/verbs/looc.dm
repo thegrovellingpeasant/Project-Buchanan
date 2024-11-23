@@ -7,7 +7,7 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 	set category = "OOC"
 
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
-		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return
 
 	if(!mob)
@@ -18,18 +18,18 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 		return
 
 	if(!(prefs.chat_toggles & CHAT_OOC))
-		to_chat(src, "<span class='danger'>You have OOC muted.</span>")
+		to_chat(src, span_danger("You have OOC muted."))
 		return
 	if(jobban_isbanned(mob, "OOC"))
-		to_chat(src, "<span class='danger'>You have been banned from OOC.</span>")
+		to_chat(src, span_danger("You have been banned from OOC."))
 		return
 
 	if(!holder)
 		if(!GLOB.looc_allowed)
-			to_chat(src, "<span class='danger'>LOOC is globally muted</span>")
+			to_chat(src, span_danger("LOOC is globally muted"))
 			return
 		if(prefs.muted & MUTE_OOC)
-			to_chat(src, "<span class='danger'>You cannot use OOC (muted).</span>")
+			to_chat(src, span_danger("You cannot use OOC (muted)."))
 			return
 		if(handle_spam_prevention(msg,MUTE_OOC))
 			return
@@ -38,13 +38,13 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 			log_admin("[key_name(src)] has attempted to advertise in LOOC: [msg]")
 			return
 		//if(mob.stat)
-		//	to_chat(src, "<span class='danger'>You cannot use LOOC while unconscious or dead.</span>")
+		//	to_chat(src, span_danger("You cannot use LOOC while unconscious or dead."))
 		//	return
 		if(isdead(mob))
-			to_chat(src, "<span class='danger'>You cannot use LOOC while ghosting or observing. If you previously died in the round, return to your body to be able to LOOC.</span>")
+			to_chat(src, span_danger("You cannot use LOOC while ghosting or observing. If you previously died in the round, return to your body to be able to LOOC."))
 			return
 		if(HAS_TRAIT(mob, TRAIT_LOOC_MUTE))
-			to_chat(src, "<span class='danger'>You cannot use LOOC right now.</span>")
+			to_chat(src, span_danger("You cannot use LOOC right now."))
 			return
 
 
@@ -65,9 +65,9 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 
 		if(C.prefs.chat_toggles & CHAT_OOC)
 			if(GLOB.LOOC_COLOR)
-				to_chat(C, "<font color='[GLOB.LOOC_COLOR]'><b><span class='prefix'>LOOC:</span> <EM>[src.mob.name]:</EM> <span class='message'>[msg]</span></b></font>")
+				to_chat(C, "<font color='[GLOB.LOOC_COLOR]'><b>[span_prefix("LOOC:")] <EM>[src.mob.name]:</EM> [span_message("[msg]")]</b></font>")
 			else
-				to_chat(C, "<span class='looc'><span class='prefix'>LOOC:</span> <EM>[src.mob.name]:</EM> <span class='message'>[msg]</span></span>")
+				to_chat(C, span_looc("[span_prefix("LOOC:")] <EM>[src.mob.name]:</EM> [span_message("[msg]")]"))
 
 	for(var/client/C in GLOB.admins)
 		if(C.prefs.chat_toggles & CHAT_OOC)
@@ -75,6 +75,6 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 			if (C.mob in heard)
 				prefix = "LOOC"
 			if(GLOB.LOOC_COLOR)
-				to_chat(C, "<font color='[GLOB.LOOC_COLOR]'><b>[ADMIN_FLW(usr)] <span class='prefix'>[prefix]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span></b></font>")
+				to_chat(C, "<font color='[GLOB.LOOC_COLOR]'><b>[ADMIN_FLW(usr)] [span_prefix("[prefix]:")] <EM>[src.key]/[src.mob.name]:</EM> [span_message("[msg]")]</b></font>")
 			else
-				to_chat(C, "<span class='looc'>[ADMIN_FLW(usr)] <span class='prefix'>[prefix]:</span> <EM>[src.key]/[src.mob.name]:</EM> <span class='message'>[msg]</span></span>")
+				to_chat(C, span_looc("[ADMIN_FLW(usr)] [span_prefix("[prefix]:")] <EM>[src.key]/[src.mob.name]:</EM> [span_message("[msg]")]"))

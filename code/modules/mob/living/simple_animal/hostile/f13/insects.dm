@@ -331,7 +331,7 @@
 	if(prob(50))
 		return ..()
 	else
-		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
+		visible_message(span_danger("[src] dodges [Proj]!"))
 		return 0
 
 
@@ -413,7 +413,7 @@
 	if(prob(50))
 		return ..()
 	else
-		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
+		visible_message(span_danger("[src] dodges [Proj]!"))
 		return 0
 
 //////////////

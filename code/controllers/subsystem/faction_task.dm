@@ -476,7 +476,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
 		for(var/P in players)
-			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
+			to_chat(P, span_boldnotice("[task_status_msg()]"))
 
 /datum/faction_task/individual_faction/frame/calculate_score()
 	var/turf/T = get_turf(target)
@@ -527,7 +527,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	target_chosen = TRUE
 	if(GLOB.faction_task_controller.ticks_elapsed > 150)
 		for(var/P in players)
-			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
+			to_chat(P, span_boldnotice("[task_status_msg()]"))
 
 /datum/faction_task/individual_faction/assassination/calculate_score()
 	if(target_chosen && (!target || !considered_alive(target.mind)))
@@ -615,7 +615,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		target_chosen = TRUE
 		target = user
 		for(var/mob/living/P in players)
-			to_chat(P, "<span class='boldnotice'>[task_status_msg()]</span>")
+			to_chat(P, span_boldnotice("[task_status_msg()]"))
 		return FALSE
 	return ..()
 
@@ -740,53 +740,53 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		var/mob/living/carbon/human/H = user
 		if(user in task.players)
 			if(!signee)
-				to_chat(user, "<span class='notice'>The document has nobody to approve.</span>")
+				to_chat(user, span_notice("The document has nobody to approve."))
 			else
 				// Begin Approval
 				user.visible_message(
-					message = "<span class='notice'>[user] begins to review \the [src] for approval</span>",
-					self_message = "<span class='notice'>You begin to review \the [src] for approval. <b>Be sure you have read it first!</b></span>",
+					message = span_notice("[user] begins to review \the [src] for approval"),
+					self_message = span_notice("You begin to review \the [src] for approval. <b>Be sure you have read it first!</b>"),
 				)
 				if(do_after(user, 5 SECONDS, target = src))
 					// Recruitment Slots Filled Check
 					if(task.recruits >= task.recruit_target)
 						user.visible_message(
-							message = "<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
-							self_message = "<span class='notice'>You realize no more people can be recruited so you take \the [I] away from the \the [src].</span>",
+							message = span_notice("[user] removes their pen from \the [src]. Seems something's wrong."),
+							self_message = span_notice("You realize no more people can be recruited so you take \the [I] away from the \the [src]."),
 						)
 						return
 					// Signee In View Check
 					if(!signee || !(signee in view(7, user)))
 						user.visible_message(
-							"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
-							"<span class='notice'>After realizing the signee isn't present, you take \the [I] away from \the [src].</span>")
+							span_notice("[user] removes their pen from \the [src]. Seems something's wrong."),
+							span_notice("After realizing the signee isn't present, you take \the [I] away from \the [src]."))
 						return
 					// Signee Alive Check
 					if(!considered_alive(signee.mind))
 						user.visible_message(
-							"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
-							"<span class='notice'>After realizing the signee isn't alive, you take \the [I] away from \the [src].</span>")
+							span_notice("[user] removes their pen from \the [src]. Seems something's wrong."),
+							span_notice("After realizing the signee isn't alive, you take \the [I] away from \the [src]."))
 						return
 					// Recruitable Faction Check
 					if(!ispath(SSjob.GetJob(H.mind.assigned_role), task.recruit_faction))
 						user.visible_message(
-							"<span class='notice'>[user] removes their pen from \the [src]. Seems something's wrong.</span>",
-							"<span class='notice'>After reviewing the form and seeing that their faction experience disqualifies them, you take \the [I] away from \the [src].</span>")
+							span_notice("[user] removes their pen from \the [src]. Seems something's wrong."),
+							span_notice("After reviewing the form and seeing that their faction experience disqualifies them, you take \the [I] away from \the [src]."))
 						return
 					// Approve
 					user.visible_message(
-						"<span class='notice'>[user] approves \the [src]</span>",
-						"<span class='notice'>You approve \the [src].</span>")
+						span_notice("[user] approves \the [src]"),
+						span_notice("You approve \the [src]."))
 					approved_by = H
 					approve()
 		else
 			user.visible_message(
-				"<span class='notice'>[user] begins to sign \the [src]</span>",
-				"<span class='notice'>You begin to sign \the [src].</span>")
+				span_notice("[user] begins to sign \the [src]"),
+				span_notice("You begin to sign \the [src]."))
 			if(do_after(user, 5 SECONDS, target = src) && alert("Joining the faction means you abide by faction rules.", "OOC Rules", "Sign", "Cancel") == "Sign")
 				user.visible_message(
-					"<span class='notice'>[user] sign \the [src]</span>",
-					"<span class='notice'>You sign \the [src].</span>")
+					span_notice("[user] sign \the [src]"),
+					span_notice("You sign \the [src]."))
 
 				signee = user
 				form_date = todays_date
@@ -816,8 +816,8 @@ GLOBAL_LIST_INIT(faction_relics, list(
 			if(user.is_holding(src))
 				user.dropItemToGround(src)
 			user.visible_message(
-				"<span class='boldwarning'>[user] lights \the [src] on fire</span>",
-				"<span class='boldwarning'>You light \the [src] on fire.</span>")
+				span_boldwarning("[user] lights \the [src] on fire"),
+				span_boldwarning("You light \the [src] on fire."))
 			return
 	return ..()
 
@@ -829,7 +829,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /obj/item/recruit_form/examine(mob/user)
 	. = ..()
 	if(!in_range(user, src) && !isobserver(user))
-		. += "<span class='warning'>You're too far away to read it!</span>"
+		. += span_warning("You're too far away to read it!")
 		return
 	if(!user.can_read(src))
 		return

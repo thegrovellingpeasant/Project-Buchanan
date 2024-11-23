@@ -11,7 +11,7 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(!CHECK_MOBILITY(L, MOBILITY_USE) && !(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
-			to_chat(L, "<span class='warning'>You are unable to swing [src] right now!</span>")
+			to_chat(L, span_warning("You are unable to swing [src] right now!"))
 			return
 		if(min_reach && GET_DIST_EUCLIDEAN(user, target) < min_reach)
 			return
@@ -31,7 +31,7 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(!CHECK_MOBILITY(L, MOBILITY_USE))
-			to_chat(L, "<span class='warning'>You are unable to raise [src] right now!</span>")
+			to_chat(L, span_warning("You are unable to raise [src] right now!"))
 			return
 		if(max_reach >= 2 && has_range_for_melee_attack(target, user))
 			return ranged_melee_attack(target, user, params)
@@ -86,7 +86,7 @@
 	if(item_flags & NOBLUDGEON)
 		return
 	if(force && damtype != STAMINA && HAS_TRAIT(user, TRAIT_PACIFISM))
-		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
+		to_chat(user, span_warning("You don't want to harm other living beings!"))
 		return
 
 	var/bigleagues = 10 //flat additive

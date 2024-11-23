@@ -1,6 +1,6 @@
 # Chat Embedded Components
 
-Have you ever embedded html into tgui chat? Maybe just css stuff like `<span class='alien'> </span>`?
+Have you ever embedded html into tgui chat? Maybe just css stuff like `[span_alien(" ")]`?
 Have you ever wanted to embed tgui components instead? For styling or ease of use of course.
 
 Well we have a system for that! You can pass component information in via html attributes, and it'll be rendered in chat.

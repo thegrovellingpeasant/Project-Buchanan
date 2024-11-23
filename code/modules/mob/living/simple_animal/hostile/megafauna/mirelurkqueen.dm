@@ -108,13 +108,13 @@
 	var/mob/living/L = target
 	L.Paralyze(30)
 	animate(target, pixel_z = 20, time = 10, loop = 1)
-	visible_message("<span class='boldwarning'>[src] grabs [L] with its' claw and lifts them up, squeezing them!</span>")
+	visible_message(span_boldwarning("[src] grabs [L] with its' claw and lifts them up, squeezing them!"))
 	sleep(15)
 	L.apply_damage(20, BRUTE, wound_bonus=WOUND_SLASH)
 	playsound(get_turf(L), 'sound/effects/meteorimpact.ogg', 100, 1)
 	shake_camera(L, 4, 3)
 	shake_camera(src, 2, 3)
-	visible_message("<span class='boldwarning'>[src] slams [L] down!</span>")
+	visible_message(span_boldwarning("[src] slams [L] down!"))
 	var/throwtarget = get_edge_target_turf(target, dir)
 	L.throw_at(throwtarget, 4, 3)
 	L.pixel_z = 0

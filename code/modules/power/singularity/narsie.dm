@@ -29,7 +29,7 @@
 
 /obj/singularity/narsie/large/Initialize()
 	. = ..()
-	send_to_playing_players("<span class='narsie'>NAR'SIE HAS RISEN</span>")
+	send_to_playing_players(span_narsie("NAR'SIE HAS RISEN"))
 	sound_to_playing_players('sound/creatures/narsie_rises.ogg')
 
 	var/area/A = get_area(src)
@@ -130,7 +130,7 @@
 	for(var/mob/living/carbon/M in fov_viewers(consume_range, src))
 		if(M.stat == CONSCIOUS)
 			if(!iscultist(M))
-				to_chat(M, "<span class='cultsmall'>You feel conscious thought crumble away in an instant as you gaze upon [src.name]...</span>")
+				to_chat(M, span_cult_small("You feel conscious thought crumble away in an instant as you gaze upon [src.name]..."))
 				M.apply_effect(60, EFFECT_STUN)
 
 
@@ -186,7 +186,7 @@
 /obj/singularity/narsie/proc/acquire(atom/food)
 	if(food == target)
 		return
-	to_chat(target, "<span class='cultsmall'>NAR'SIE HAS LOST INTEREST IN YOU.</span>")
+	to_chat(target, span_cult_small("NAR'SIE HAS LOST INTEREST IN YOU."))
 	target = food
 	if(ishuman(target))
 		to_chat(target, "<span class ='cult'>NAR'SIE HUNGERS FOR YOUR SOUL.</span>")
