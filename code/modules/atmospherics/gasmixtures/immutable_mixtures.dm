@@ -34,7 +34,6 @@
 	initial_temperature = T20C
 
 /datum/gas_mixture/immutable/atmosphere/populate()
-	..()
 	gases[GAS_O2] = MOLES_O2STANDARD
 	gases[GAS_N2] = MOLES_N2STANDARD
 
@@ -42,3 +41,12 @@
 	//We do nothing, gasses don't actually change as we don't use Atmos.
 	//This is why we don't use `set_moles` in the populate proc above us.
 	return
+
+/datum/gas_mixture/immutable/atmosphere/set_temperature(new_temp)
+	temperature = T20C
+
+/datum/gas_mixture/immutable/atmosphere/set_volume(new_volume)
+	volume = CELL_VOLUME
+
+/datum/gas_mixture/immutable/atmosphere/remove_ratio(ratio)
+	return src

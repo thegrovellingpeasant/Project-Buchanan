@@ -69,7 +69,7 @@
 
 /mob/living/carbon/human/check_breath(datum/gas_mixture/breath)
 
-	var/L = getorganslot(ORGAN_SLOT_LUNGS)
+	var/obj/item/organ/lungs/L = getorganslot(ORGAN_SLOT_LUNGS)
 
 	if(!L)
 		if(health >= crit_threshold)
@@ -94,9 +94,8 @@
 
 		return FALSE
 	else
-		if(istype(L, /obj/item/organ/lungs))
-			var/obj/item/organ/lungs/lun = L
-			lun.check_breath(breath,src)
+		if(istype(L))
+			L.check_breath(breath, src)
 
 /mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
 	dna.species.handle_environment(environment, src)

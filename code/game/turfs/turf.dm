@@ -52,7 +52,11 @@
 
 
 /turf/vv_edit_var(var_name, var_value)
-	var/static/list/banned_edits = list("x", "y", "z")
+	var/static/list/banned_edits = list(
+		NAMEOF_STATIC(src, x),
+		NAMEOF_STATIC(src, y),
+		NAMEOF_STATIC(src, z),
+	)
 	if(var_name in banned_edits)
 		return FALSE
 	switch(var_name)
