@@ -38,7 +38,7 @@
 
 /mob/living/simple_animal/drone/syndrone/Login()
 	..()
-	to_chat(src, "<span class='notice'>You can kill and eat other drones to increase your health!</span>" )
+	to_chat(src, span_notice("You can kill and eat other drones to increase your health!") )
 
 /mob/living/simple_animal/drone/syndrone/badass
 	name = "Badass Syndrone"
@@ -158,9 +158,9 @@
 
 /mob/living/simple_animal/drone/cogscarab/alert_drones(msg, dead_can_hear = FALSE)
 	if(msg == DRONE_NET_CONNECT)
-		msg = "<span class='brass'><i>Hierophant Network:</i> [name] activated.</span>"
+		msg = span_brass("<i>Hierophant Network:</i> [name] activated.")
 	else if(msg == DRONE_NET_DISCONNECT)
-		msg = "<span class='brass'><i>Hierophant Network:</i></span> <span class='alloy'>[name] disabled.</span>"
+		msg = span_brass("<i>Hierophant Network:</i></span> <span class='alloy'>[name] disabled.")
 	..()
 
 /mob/living/simple_animal/drone/attackby(obj/item/I, mob/user)
@@ -171,7 +171,7 @@
 
 /mob/living/simple_animal/drone/cogscarab/try_reactivate(mob/living/user)
 	if(!is_servant_of_ratvar(user))
-		to_chat(user, "<span class='warning'>You fiddle around with [src] to no avail.</span>")
+		to_chat(user, span_warning("You fiddle around with [src] to no avail."))
 	else
 		..()
 

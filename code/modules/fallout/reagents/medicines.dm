@@ -18,7 +18,7 @@
 		if(method in list(INGEST, VAPOR))
 			M.adjustToxLoss(3.75*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //increased from 0.5*reac_volume, which was amusingly low since stimpak heals toxins. now a pill at safe max crits and then heals back up to low health within a few seconds
 			if(show_message)
-				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+				to_chat(M, span_warning("You don't feel so good..."))
 	..()
 
 /datum/reagent/medicine/stimpak/on_mob_add(mob/living/M)
@@ -190,14 +190,14 @@
 /datum/reagent/medicine/berserker_powder/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>The veil breaks, and the heavens spill out! The spirits of Mars float down from the heavens, and the deafining beat of the holy legion's wardrums fills your ears. Their ethereal forms are guiding you in battle!</span>")
+		to_chat(M, span_notice("The veil breaks, and the heavens spill out! The spirits of Mars float down from the heavens, and the deafining beat of the holy legion's wardrums fills your ears. Their ethereal forms are guiding you in battle!"))
 		M.maxHealth += 25
 		M.health += 25
 		ADD_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
 
 /datum/reagent/medicine/berserker_powder/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>The veil comes back, blocking out the heavenly visions. You breathe a sigh of relief...</span>")
+		to_chat(M, span_notice("The veil comes back, blocking out the heavenly visions. You breathe a sigh of relief..."))
 		M.maxHealth -= 25
 		M.health -= 25
 		REMOVE_TRAIT(M, TRAIT_IGNOREDAMAGESLOWDOWN, "[type]")
@@ -206,14 +206,14 @@
 		if(1 to 30)
 			M.confused += 10
 			M.blur_eyes(20)
-			to_chat(M, "<span class='notice'>Your head is pounding. You feel like screaming. The visions beckon you to go further, to split the veil forever and cross over. You know you shouldn't. </span>")
+			to_chat(M, span_notice("Your head is pounding. You feel like screaming. The visions beckon you to go further, to split the veil forever and cross over. You know you shouldn't. "))
 		if(30 to 55)
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
 			M.set_disgust(12)
 			M.adjustStaminaLoss(30*REAGENTS_EFFECT_MULTIPLIER)
-			to_chat(M, "<span class='danger'>Your stomach churns, you vomit, and the blurring of your vision doesn't go away. The visions beckon you further, you're so close.... </span>")
+			to_chat(M, span_danger("Your stomach churns, you vomit, and the blurring of your vision doesn't go away. The visions beckon you further, you're so close.... "))
 		if(55 to INFINITY)
 			M.confused +=40
 			M.blur_eyes(30)
@@ -224,8 +224,8 @@
 			M.Jitter(1000)
 			M.playsound_local(M, 'sound/effects/singlebeat.ogg', 100, 0)
 			M.set_heartattack(TRUE)
-			M.visible_message("<span class='userdanger'>[M] grabs at their throat and vomits violently onto the ground, screaming as they have a seizure! They need medical attention immediately!</span>")
-			to_chat(M, "<span class='userdanger'>The sky splits in half, rays of golden light piercing down towards you. Mars reaches out of the sky above, the holy aura causing you to fall to your knees. He beckoning you to heaven, and you take his hand. Your whole body begins to seize up as you go in a glorious rapture. </span>")
+			M.visible_message(span_userdanger("[M] grabs at their throat and vomits violently onto the ground, screaming as they have a seizure! They need medical attention immediately!"))
+			to_chat(M, span_userdanger("The sky splits in half, rays of golden light piercing down towards you. Mars reaches out of the sky above, the holy aura causing you to fall to your knees. He beckoning you to heaven, and you take his hand. Your whole body begins to seize up as you go in a glorious rapture. "))
 
 /datum/reagent/medicine/berserker/overdose_process(mob/living/M)
 	M.adjustToxLoss(5*REAGENTS_EFFECT_MULTIPLIER)
@@ -301,7 +301,7 @@
 		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(3*reac_volume*REAGENTS_EFFECT_MULTIPLIER) //also increased from 0.5, reduced from 6
 			if(show_message)
-				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
+				to_chat(M, span_warning("You don't feel so good..."))
 	..()
 
 /datum/reagent/medicine/healing_powder/overdose_process(mob/living/M)
@@ -378,27 +378,27 @@
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
+		to_chat(M, span_notice("You feel tougher, able to shrug off pain more easily."))
 		M.maxHealth += 70
 		M.health += 70
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
+		to_chat(M, span_notice("You feel as vulnerable to pain as a normal person."))
 		M.maxHealth -= 70
 		M.health -= 70
 	switch(current_cycle)
 		if(1 to 40)
 			M.confused += 10
 			M.blur_eyes(20)
-			to_chat(M, "<span class='notice'>Your head is pounding. Med-X is hard on the body. </span>")
+			to_chat(M, span_notice("Your head is pounding. Med-X is hard on the body. "))
 		if(41 to 80)
 			M.confused +=20
 			M.blur_eyes(30)
 			M.losebreath += 8
 			M.set_disgust(12)
 			M.adjustStaminaLoss(30*REAGENTS_EFFECT_MULTIPLIER)
-			to_chat(M, "<span class='danger'>Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. </span>")
+			to_chat(M, span_danger("Your stomach churns, your eyes cloud and you're pretty sure you just popped a lung. You shouldn't take so much med-X at once. "))
 		if(81 to 120)
 			M.confused +=40
 			M.blur_eyes(30)
@@ -409,15 +409,15 @@
 			M.vomit(30, 1, 1, 5, 0, 0, 0, 60)
 			M.Jitter(1000)
 			M.playsound_local(M, 'sound/effects/singlebeat.ogg', 100, 0)
-			M.visible_message("<span class='userdanger'>[M] clutches their stomach and vomits violently onto the ground, bloody froth covering their lips!</span>")
-			to_chat(M, "<span class='userdanger'>You throw up everything you've eaten in the past week and some blood to boot. You're pretty sure your heart just stopped for a second, too. </span>")
+			M.visible_message(span_userdanger("[M] clutches their stomach and vomits violently onto the ground, bloody froth covering their lips!"))
+			to_chat(M, span_userdanger("You throw up everything you've eaten in the past week and some blood to boot. You're pretty sure your heart just stopped for a second, too. "))
 		if(121 to INFINITY)
 			M.adjustOrganLoss(ORGAN_SLOT_EYES, 3)
 			M.Unconscious(400)
 			M.Jitter(1000)
 			M.set_heartattack(TRUE)
-			M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
-			to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+			M.visible_message(span_userdanger("[M] clutches at their chest as if their heart stopped!"))
+			to_chat(M, span_danger("Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. "))
 
 	..()
 
@@ -441,9 +441,9 @@
 	M.Jitter(1000)
 	M.drop_all_held_items()
 	M.Dizzy(2)
-	M.visible_message("<span class='userdanger'>[M] suddenly passes out!</span>")
+	M.visible_message(span_userdanger("[M] suddenly passes out!"))
 	if(prob(10))
-		to_chat(M, "<span class='userdanger'>Too much med-x! </span>")
+		to_chat(M, span_userdanger("Too much med-x! "))
 	..()
 
 /datum/reagent/medicine/medx/addiction_act_stage1(mob/living/M)
@@ -568,7 +568,7 @@
 /datum/reagent/medicine/mentat/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>Everything begins to make sense.</span>")
+		to_chat(M, span_notice("Everything begins to make sense."))
 		ADD_TRAIT(M, TRAIT_CHEMWHIZ, "mentats")
 		ADD_TRAIT(M, TRAIT_SURGERY_LOW, "mentats")
 		ADD_TRAIT(M, TRAIT_SELF_AWARE, "mentats")
@@ -581,7 +581,7 @@
 /datum/reagent/medicine/mentat/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>Your IQ returns to room temperature.</span>")
+		to_chat(M, span_notice("Your IQ returns to room temperature."))
 		REMOVE_TRAIT(M, TRAIT_CHEMWHIZ, "mentats")
 		REMOVE_TRAIT(M, TRAIT_SURGERY_LOW, "mentats")
 
@@ -591,26 +591,26 @@
 	if (!eyes)
 		return
 	if(M.getOrganLoss(ORGAN_SLOT_BRAIN) == 0)
-		M.cure_all_traumas(TRAUMA_RESILIENCE_SURGERY)	
+		M.cure_all_traumas(TRAUMA_RESILIENCE_SURGERY)
 /*	if(HAS_TRAIT(M, TRAIT_BLIND, TRAIT_GENERIC))
 		if(prob(20))
-			to_chat(M, "<span class='warning'>Your vision slowly returns...</span>")
+			to_chat(M, span_warning("Your vision slowly returns..."))
 			M.cure_blind(EYE_DAMAGE)
 			M.cure_nearsighted(EYE_DAMAGE)
 			M.blur_eyes(35)
 	else if(HAS_TRAIT(M, TRAIT_NEARSIGHT, TRAIT_GENERIC))
-		to_chat(M, "<span class='warning'>The blackness in your peripheral vision fades.</span>")
+		to_chat(M, span_warning("The blackness in your peripheral vision fades."))
 		M.cure_nearsighted(EYE_DAMAGE)
 		M.blur_eyes(10)*/
 	else if(M.eye_blind || M.eye_blurry)
 		M.set_blindness(0)
 		M.set_blurriness(0)
-		to_chat(M, "<span class='warning'>Your vision slowly returns to normal...</span>")
+		to_chat(M, span_warning("Your vision slowly returns to normal..."))
 //	else if(eyes.eye_damage > 0)
 //		M.adjust_eye_damage(-1)
 //	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -2)
 	if (prob(5))
-		to_chat(M, "<span class='notice'>You feel way more intelligent!</span>")
+		to_chat(M, span_notice("You feel way more intelligent!"))
 	..()
 	. = TRUE
 
@@ -660,7 +660,7 @@
 //		. = TRUE
 		M.Dizzy(5)
 		M.blur_eyes(20)
-	
+
 	..()
 
 // ---------------------------
@@ -680,7 +680,7 @@
 //			M.reagents.remove_reagent(R.id,2)
 	for(var/datum/reagent/R in M.reagents.addiction_list)
 		M.reagents.addiction_list.Remove(R)
-		to_chat(M, "<span class='notice'>You feel like you've gotten over your need for [R.name].</span>")
+		to_chat(M, span_notice("You feel like you've gotten over your need for [R.name]."))
 	M.confused = max(M.confused, 4)
 	if(ishuman(M) && prob(5))
 		var/mob/living/carbon/human/H = M

@@ -420,44 +420,44 @@
 			var/obj/item/stack/sheet/glass/G = I
 			var/obj/item/stack/sheet/rglass/M = I
 			if(W.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a wall...</span>")
+				to_chat(user, span_notice("You start building a wall..."))
 				if(do_after(user, 100, target = src) && W.use(3))
 					var/turf/open/T = loc
 					T.ChangeTurf(/turf/closed/wall/f13/wood)
 					qdel(src)
 					return TRUE
 			if(C.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building an interior wall...</span>")
+				to_chat(user, span_notice("You start building an interior wall..."))
 				if(do_after(user, 100, target = src) && C.use(3))
 					var/turf/open/T = loc
 					T.ChangeTurf(/turf/closed/wall/f13/wood/interior)
 					qdel(src)
 					return TRUE
 			if(L.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a house wall...</span>")
+				to_chat(user, span_notice("You start building a house wall..."))
 				if(do_after(user, 100, target = src) && L.use(3))
 					var/turf/open/T = loc
 					T.ChangeTurf(/turf/closed/wall/f13/wood/house)
 					qdel(src)
 					return TRUE
 			if(G.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a house window...</span>")
+				to_chat(user, span_notice("You start building a house window..."))
 				if(do_after(user, 100, target = src) && G.use(3))
 					var/turf/open/T = loc
 					new /obj/structure/window/fulltile/house(T)
 					qdel(src)
 					return TRUE
 			if(M.amount >= 3)
-				to_chat(user, "<span class='notice'>You start building a wood framed window...</span>")
+				to_chat(user, span_notice("You start building a wood framed window..."))
 				if(do_after(user, 100, target = src) && M.use(3))
 					var/turf/open/T = loc
 					new /obj/structure/window/fulltile/wood(T)
 					qdel(src)
 					return TRUE
 			else
-				to_chat(user, "<span class='warning'>You need atleast 3 materials to build a structure!</span>")
+				to_chat(user, span_warning("You need atleast 3 materials to build a structure!"))
 		else
-			to_chat(user, "<span class='warning'>You can only build the structure on a solid floor!</span>")
+			to_chat(user, span_warning("You can only build the structure on a solid floor!"))
 	else
 		return ..()
 

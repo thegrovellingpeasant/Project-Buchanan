@@ -269,7 +269,7 @@
 	if(src == H.head) //Suit is already equipped
 		return ..()
 	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_HEAD && requires_training)
-		to_chat(user, "<span class='warning'>You don't have the proper training to operate the power armor!</span>")
+		to_chat(user, span_warning("You don't have the proper training to operate the power armor!"))
 		return 0
 	if(slot == SLOT_HEAD)
 		return ..()
@@ -289,43 +289,43 @@
 				// Salvage
 				if(istype(I, /obj/item/screwdriver))
 					if(ishuman(user) && user.wear_suit == src)
-						to_chat(user, "<span class='warning'>You have to take off the helmet before salvaging it.</span>")
+						to_chat(user, span_warning("You have to take off the helmet before salvaging it."))
 						return
-					to_chat(user, "<span class='notice'>You begin unsecuring the cover...</span>")
+					to_chat(user, span_notice("You begin unsecuring the cover..."))
 					if(I.use_tool(src, user, 60, volume=50))
 						salvage_step = 1
-						to_chat(user, "<span class='notice'>You unsecure the cover.</span>")
+						to_chat(user, span_notice("You unsecure the cover."))
 					return
 			if(1)
 				// Salvage
 				if(istype(I, /obj/item/wrench))
 					if(ishuman(user) && user.wear_suit == src)
-						to_chat(user, "<span class='warning'>You have to take off the helmet before salvaging it.</span>")
+						to_chat(user, span_warning("You have to take off the helmet before salvaging it."))
 						return
-					to_chat(user, "<span class='notice'>You begin disconnecting the connection ports...</span>")
+					to_chat(user, span_notice("You begin disconnecting the connection ports..."))
 					if(I.use_tool(src, user, 80, volume=50))
 						salvage_step = 2
-						to_chat(user, "<span class='notice'>You disconnect the connection ports.</span>")
+						to_chat(user, span_notice("You disconnect the connection ports."))
 					return
 				// Fix
 				if(istype(I, /obj/item/screwdriver))
 					if(ishuman(user) && user.wear_suit == src)
-						to_chat(user, "<span class='warning'>You have to take off the helmet before fixing it.</span>")
+						to_chat(user, span_warning("You have to take off the helmet before fixing it."))
 						return
-					to_chat(user, "<span class='notice'>You begin securing the cover...</span>")
+					to_chat(user, span_notice("You begin securing the cover..."))
 					if(I.use_tool(src, user, 60, volume=50))
 						salvage_step = 0
-						to_chat(user, "<span class='notice'>You secure the cover.</span>")
+						to_chat(user, span_notice("You secure the cover."))
 					return
 			if(2)
 				// Salvage
 				if(istype(I, /obj/item/wirecutters))
 					if(ishuman(user) && user.wear_suit == src)
-						to_chat(user, "<span class='warning'>You have to take off the helmet before salvaging it.</span>")
+						to_chat(user, span_warning("You have to take off the helmet before salvaging it."))
 						return
-					to_chat(user, "<span class='notice'>You begin disconnecting wires...</span>")
+					to_chat(user, span_notice("You begin disconnecting wires..."))
 					if(I.use_tool(src, user, 60, volume=70))
-						to_chat(user, "<span class='notice'>You finish salvaging the helmet.</span>")
+						to_chat(user, span_notice("You finish salvaging the helmet."))
 						var/obj/item/ST = new salvaged_type(src)
 						user.put_in_hands(ST)
 						qdel(src)
@@ -333,12 +333,12 @@
 				// Fix
 				if(istype(I, /obj/item/wrench))
 					if(ishuman(user) && user.wear_suit == src)
-						to_chat(user, "<span class='warning'>You have to take off the helmet before fixing it.</span>")
+						to_chat(user, span_warning("You have to take off the helmet before fixing it."))
 						return
-					to_chat(user, "<span class='notice'>You try to anchor connection ports to the frame...</span>")
+					to_chat(user, span_notice("You try to anchor connection ports to the frame..."))
 					if(I.use_tool(src, user, 80, volume=60))
 						salvage_step = 1
-						to_chat(user, "<span class='notice'>You re-connect connection ports.</span>")
+						to_chat(user, span_notice("You re-connect connection ports."))
 					return
 	return ..()
 
@@ -350,11 +350,11 @@
 /obj/item/clothing/head/helmet/f13/power_armor/proc/salvage_hint()
 	switch(salvage_step)
 		if(0)
-			return "<span class='notice'>The metal cover can be <i>screwed</i> open.</span>"
+			return span_notice("The metal cover can be <i>screwed</i> open.")
 		if(1)
-			return "<span class='notice'>The cover is <i>screwed</i> open with connection ports <i>bolted down</i>.</span>"
+			return span_notice("The cover is <i>screwed</i> open with connection ports <i>bolted down</i>.")
 		if(2)
-			return "<span class='warning'>The connections ports have been <i>unanchored</i> and only <i>wires</i> remain.</span>"
+			return span_warning("The connections ports have been <i>unanchored</i> and only <i>wires</i> remain.")
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45b
 	name = "T-45b helmet"

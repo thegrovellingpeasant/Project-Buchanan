@@ -26,7 +26,7 @@
 			else
 				GLOB.news_network.SubmitArticle(title + "<br><br>" + text, "Vault-Tec", "Wasteland Announcements", null)
 
-	announcement += "<br><span class='alert'>[html_encode(text)]</span><br>"
+	announcement += "<br>[span_alert("[html_encode(text)]")]<br>"
 	announcement += "<br>"
 
 	var/s = sound(get_announcer_sound(sound))

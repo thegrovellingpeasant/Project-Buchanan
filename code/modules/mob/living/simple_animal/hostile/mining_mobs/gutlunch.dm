@@ -97,7 +97,7 @@
 	if(is_type_in_typecache(target,wanted_objects)) //we eats
 		udder.generateMilk()
 		regenerate_icons()
-		visible_message("<span class='notice'>[src] slurps up [target].</span>")
+		visible_message(span_notice("[src] slurps up [target]."))
 		qdel(target)
 	return ..()
 
@@ -143,4 +143,3 @@
 		reagents.add_reagent(/datum/reagent/consumable/cream, rand(2, 5))
 	if(prob(45))
 		reagents.add_reagent(/datum/reagent/medicine/salglu_solution, rand(2,5))
-	

@@ -10,7 +10,7 @@ GLOBAL_VAR_INIT(terrorism, FALSE)
 			continue
 		H.make_terrorism()
 
-	send_to_playing_players("<span class='boldannounce'><font size=6>MOTHER RUSSIA ARMS THE MOB!</font></span>")
+	send_to_playing_players(span_boldannounce("<font size=6>MOTHER RUSSIA ARMS THE MOB!</font>"))
 
 /mob/living/carbon/human/proc/make_terrorism()
 	for(var/obj/item/I in held_items)

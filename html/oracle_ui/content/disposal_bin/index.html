@@ -1,10 +1,10 @@
 <div class='display'>
 	<section>
-		<span class='label'>State:</span>
+		[span_label("State:")]
 		<div class='content' id="full_pressure">@{full_pressure}</div>
 	</section>
     <section>
-		<span class='label'>Pressure:</span>
+		[span_label("Pressure:")]
 		<div class='content'>
 			<div class='progressBar' id='per'>
 				<div class='progressFill' style="width: @{per}"></div>
@@ -13,15 +13,15 @@
 		</div>
 	</section>
     <section>
-		<span class='label'>Handle:</span>
+		[span_label("Handle:")]
 		<div class='content' id="flush">@{flush}</div>
 	</section>
 	<section>
-		<span class='label'>Eject:</span>
+		[span_label("Eject:")]
 		<div class='content' id="contents">@{contents}</div>
 	</section>
 	<section>
-		<span class='label'>Compressor:</span>
+		[span_label("Compressor:")]
 		<div class='content' id="pressure_charging">@{pressure_charging}</div>
 	</section>
 </div>

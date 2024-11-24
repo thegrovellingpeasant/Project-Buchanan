@@ -12,7 +12,7 @@
 /obj/item/smelling_salts/examine(mob/user)
 	. = ..()
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>It currently has <b>[charges]</b> uses remaining.</span>"
+		. += span_notice("It currently has <b>[charges]</b> uses remaining.")
 
 /obj/item/smelling_salts/wayfarer
 	icon_state = "smelling_salts_large"
@@ -24,7 +24,7 @@
 	if(in_use)
 		return
 	if(world.time < time_to_use)
-		to_chat(user, "<span class='warning'>They are not ready smell something so pungent yet, I should wait a moment.</span>")
+		to_chat(user, span_warning("They are not ready smell something so pungent yet, I should wait a moment."))
 		return
 	if(!user.IsAdvancedToolUser())
 		to_chat(user, span_warning("You don't know how to use [src]!"))

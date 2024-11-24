@@ -1,2 +1,2 @@
 Badmin
-<span class='adminooc'>Spanmin</span>
+[span_adminooc("Spanmin")]

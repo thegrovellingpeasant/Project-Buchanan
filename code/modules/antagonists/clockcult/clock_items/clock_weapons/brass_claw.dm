@@ -32,7 +32,7 @@
 
 /obj/item/clockwork/brass_claw/examine(mob/user)
 	if(is_servant_of_ratvar(user))
-		clockwork_desc += "\n<span class='brass'>It has </span><span class='inathneq_small'><b>[combo]</span></b><span class='brass'> combo stacks built up against the current target, causing </span><span class='inathneq_small'><b>[min(maximum_combo_damage, combo * damage_per_combo)]</span></b><span class='brass'> bonus damage.</span>"
+		clockwork_desc += "\n[span_brass("It has ")][span_inathneq_small("<b>[combo]")]</b>[span_brass(" combo stacks built up against the current target, causing ")][span_inathneq_small("<b>[min(maximum_combo_damage, combo * damage_per_combo)]")]</b>[span_brass(" bonus damage.")]"
 	. = ..()
 	clockwork_desc = initial(clockwork_desc)
 

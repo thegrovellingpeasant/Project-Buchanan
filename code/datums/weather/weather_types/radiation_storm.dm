@@ -3,9 +3,9 @@
 	desc = "A cloud of intense radiation passes through the area dealing rad damage to those who are unprotected."
 
 	telegraph_duration = 400
-	telegraph_message = "<span class='notice'>The skies slowly turn into a glowing green.</span>"
+	telegraph_message = span_notice("The skies slowly turn into a glowing green.")
 
-	weather_message = "<span class='notice'><i>You feel waves of heat wash over you! Find shelter!</i></span>"
+	weather_message = span_notice("<i>You feel waves of heat wash over you! Find shelter!</i>")
 	weather_overlay = "ash_storm"
 	weather_duration_lower = 600
 	weather_duration_upper = 1500
@@ -13,7 +13,7 @@
 	weather_sound = 'sound/weather/thunder.ogg'
 
 	end_duration = 100
-	end_message = "<span class='notice'>The air seems to be cooling off again, the sky returning to it's normal color.</span>"
+	end_message = span_notice("The air seems to be cooling off again, the sky returning to it's normal color.")
 
 	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
 	protected_areas = list(/area/maintenance, /area/ai_monitored/turret_protected/ai_upload, /area/ai_monitored/turret_protected/ai_upload_foyer,
@@ -21,7 +21,7 @@
 	target_trait = ZTRAIT_STATION
 
 	immunity_type = "rad"
-	
+
 	var/radiation_intensity = 100
 
 /datum/weather/rad_storm/telegraph()

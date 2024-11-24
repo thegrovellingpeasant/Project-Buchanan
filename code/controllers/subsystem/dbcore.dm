@@ -299,7 +299,7 @@ Delayed insert mode was removed in mysql 7 and only works with MyISAM type table
 /datum/db_query/proc/warn_execute(async = FALSE)
 	. = Execute(async)
 	if(!.)
-		to_chat(usr, "<span class='danger'>A SQL error occurred during this operation, check the server logs.</span>")
+		to_chat(usr, span_danger("A SQL error occurred during this operation, check the server logs."))
 
 /datum/db_query/proc/Execute(async = FALSE, log_error = TRUE)
 	Activity("Execute")
@@ -356,7 +356,7 @@ Delayed insert mode was removed in mysql 7 and only works with MyISAM type table
 
 /datum/db_query/proc/NextRow(async)
 	Activity("NextRow")
-	
+
 	if (rows && next_row_to_take <= rows.len)
 		item = rows[next_row_to_take]
 		next_row_to_take++

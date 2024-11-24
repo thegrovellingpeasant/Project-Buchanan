@@ -58,7 +58,7 @@
 			key = C.holder.fakekey
 		assembled += "\t [key][admin_mode? "[show_admin_info(C)]":""] ([round(C.avgping, 1)]ms)"
 	Lines += sortList(assembled)
-	
+
 	for(var/line in Lines)
 		msg += "[line]\n"
 
@@ -127,5 +127,5 @@
 				continue //Don't show afk admins to adminwho
 			if(!C.holder.fakekey)
 				msg += "\t[C] is a [C.holder.rank]\n"
-		msg += "<span class='info'>Adminhelps are also sent to Discord. If no admins are available in game adminhelp anyways and an admin on Discord will see it and respond.</span>"
+		msg += span_info("Adminhelps are also sent to Discord. If no admins are available in game adminhelp anyways and an admin on Discord will see it and respond.")
 	to_chat(src, msg)

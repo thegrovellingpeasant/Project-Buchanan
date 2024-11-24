@@ -19,12 +19,12 @@
 	REMOVE_TRAIT(M, TRAIT_HEAVY_SLEEPER, "jet")
 	M.playsound_local(M, 'sound/f13ambience/music/jet.ogg', 50)
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel an incredible high! You just absolutely love life in this moment!</span>")
+		to_chat(M, span_notice("You feel an incredible high! You just absolutely love life in this moment!"))
 
 /datum/reagent/drug/jet/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You come down from your high. The wild ride is unfortunately over...</span>")
+		to_chat(M, span_notice("You come down from your high. The wild ride is unfortunately over..."))
 		M.confused += 2
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
@@ -48,7 +48,7 @@
 	. = TRUE
 
 /datum/reagent/drug/jet/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
+	to_chat(M, span_userdanger("You start tripping hard!"))
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
 
 /datum/reagent/drug/jet/overdose_process(mob/living/M)
@@ -145,7 +145,7 @@
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
 	M.adjustStaminaLoss(-25, 0)
 	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, span_notice("[high_message]"))
 	M.Jitter(2)
 	if(prob(5))
 		M.emote(pick("twitch", "shiver"))
@@ -168,7 +168,7 @@
 	if(prob(20))
 		M.emote("laugh")
 	if(prob(33))
-		M.visible_message("<span class='danger'>[M]'s hands flip out and flail everywhere!</span>")
+		M.visible_message(span_danger("[M]'s hands flip out and flail everywhere!"))
 		M.drop_all_held_items()
 	..()
 	M.adjustToxLoss(2, 0)
@@ -238,7 +238,7 @@
 /datum/reagent/drug/psycho/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("<br><font color='#FF0000'><b>FUCKING KILL!</b></font>", "<br><font color='#FF0000'><b>RAAAAR!</b></font>", "<br><font color='#FF0000'><b>BRING IT!</b></font>")
 	if(prob(20))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
+		to_chat(M, span_notice("[high_message]"))
 	M.AdjustStun(-25, 0)
 	M.AdjustKnockdown(-25, 0)
 	M.AdjustUnconscious(-25, 0)
@@ -290,8 +290,8 @@
 		M.emote(pick("twitch","scream","laugh"))
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
 	M.set_heartattack(TRUE)
-	M.visible_message("<span class='userdanger'>[M] clutches at their chest as if their heart stopped!</span>")
-	to_chat(M, "<span class='danger'>Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. </span>")
+	M.visible_message(span_userdanger("[M] clutches at their chest as if their heart stopped!"))
+	to_chat(M, span_danger("Your vision goes black and your heart stops beating as the amount of drugs in your system shut down your organs one by one. Say hello to Elvis in the afterlife. "))
 	..()
 	return TRUE
 
@@ -364,7 +364,7 @@
 /datum/reagent/drug/buffout/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel stronger, and like you're able to endure more.</span>")
+		to_chat(M, span_notice("You feel stronger, and like you're able to endure more."))
 		ADD_TRAIT(M, TRAIT_BUFFOUT_BUFF, "buffout")
 		ADD_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		ADD_TRAIT(M, TRAIT_QUICKER_CARRY, "buffout")
@@ -378,7 +378,7 @@
 /datum/reagent/drug/buffout/on_mob_delete(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
-		to_chat(M, "<span class='notice'>You feel weaker.</span>")
+		to_chat(M, span_notice("You feel weaker."))
 		REMOVE_TRAIT(M, TRAIT_PERFECT_ATTACKER, "buffout")
 		REMOVE_TRAIT(M, TRAIT_NOSOFTCRIT, "buffout")
 		REMOVE_TRAIT(M, TRAIT_QUICKER_CARRY, "buffout")
@@ -410,13 +410,13 @@
 	var/datum/disease/D = new /datum/disease/heart_failure
 	M.ForceContractDisease(D)
 	if(prob(33))
-		M.visible_message("<span class='danger'>[M]'s muscles spasm, making them drop what they were holding!</span>")
+		M.visible_message(span_danger("[M]'s muscles spasm, making them drop what they were holding!"))
 		M.drop_all_held_items()
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2)
 	..()
 
 /datum/reagent/drug/buffout/addiction_act_stage1(mob/living/M)
-	to_chat(M, "<span class='notice'>Your muscles ache slightly.</span>")
+	to_chat(M, span_notice("Your muscles ache slightly."))
 	M.adjustBruteLoss(1.5)
 	if(prob(15))
 		M.emote(pick("twitch"))
@@ -424,20 +424,20 @@
 	return
 
 /datum/reagent/drug/buffout/addiction_act_stage2(mob/living/M)
-	to_chat(M, "<span class='notice'>Your muscles feel incredibly sore.</span>")
+	to_chat(M, span_notice("Your muscles feel incredibly sore."))
 	M.adjustBruteLoss(4)
 	M.maxHealth -= 10
 	M.health -= 10
 	M.playsound_local(M, 'sound/health/slowbeat.ogg', 50)
 	if(prob(10))
-		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding.</span>")
+		to_chat(M, span_notice("Your muscles spasm, making you drop what you were holding."))
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	..()
 	return
 
 /datum/reagent/drug/buffout/addiction_act_stage3(mob/living/M)
-	to_chat(M, "<span class='notice'>Your muscles start to hurt badly, and everything feels like it hurts more.</span>")
+	to_chat(M, span_notice("Your muscles start to hurt badly, and everything feels like it hurts more."))
 	M.adjustBruteLoss(7.5)
 	M.maxHealth -= 10
 	M.health -= 10
@@ -445,21 +445,21 @@
 	REMOVE_TRAIT(M, TRAIT_QUICK_CARRY, "buffout")
 	REMOVE_TRAIT(M, TRAIT_PUSHIMMUNE, "buffout")
 	if(prob(20))
-		to_chat(M, "<span class='notice'>Your muscles spasm, making you drop what you were holding. You're not even sure if you can control your arms!</span>")
+		to_chat(M, span_notice("Your muscles spasm, making you drop what you were holding. You're not even sure if you can control your arms!"))
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	..()
 	return
 
 /datum/reagent/drug/buffout/addiction_act_stage4(mob/living/M)
-	to_chat(M, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
+	to_chat(M, span_danger("Your muscles are in incredible pain! When will it stop!?"))
 	M.adjustBruteLoss(10)
 	M.maxHealth -= 10
 	M.health -= 10
 	ADD_TRAIT(M, TRAIT_UNSTABLE, "buffout")
 	M.playsound_local(M, 'sound/health/fastbeat.ogg', 50)
 	if(prob(20))
-		to_chat(M, "<span class='danger'>You can't even keep control of your muscles anymore!</span>")
+		to_chat(M, span_danger("You can't even keep control of your muscles anymore!"))
 		M.drop_all_held_items()
 		M.emote(pick("twitch"))
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(25))

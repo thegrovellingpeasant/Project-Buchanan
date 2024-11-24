@@ -18,7 +18,7 @@
 /datum/action/bloodsucker/fortitude/ActivatePower()
 	var/datum/antagonist/bloodsucker/B = owner.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER)
 	var/mob/living/user = owner
-	to_chat(user, "<span class='notice'>Your flesh, skin, and muscles become as steel.</span>")
+	to_chat(user, span_notice("Your flesh, skin, and muscles become as steel."))
 	// Traits & Effects
 	ADD_TRAIT(user, TRAIT_PIERCEIMMUNE, "fortitude")
 	ADD_TRAIT(user, TRAIT_NODISMEMBER, "fortitude")
@@ -38,16 +38,16 @@
 			var/datum/component/riding/VRD = V.GetComponent(/datum/component/riding)
 			if(VRD)
 				VRD.force_dismount(user)
-				to_chat(user, "<span class='notice'>You trip off the [V], your muscles too heavy for it to support you.</span>")
+				to_chat(user, span_notice("You trip off the [V], your muscles too heavy for it to support you."))
 			else
 				V.unbuckle_mob(user, force = TRUE)
-				to_chat(user, "<span class='notice'>You fall off the [V], your weight making you too heavy to be supported by it.</span>")
+				to_chat(user, span_notice("You fall off the [V], your weight making you too heavy to be supported by it."))
 		// Pay Blood Toll (if awake)
 		if(user.stat == CONSCIOUS)
 			B.AddBloodVolume(-0.5)
 		sleep(20) // Check every few ticks that we haven't disabled this power
 	// Return to Running (if you were before)
-	
+
 /datum/action/bloodsucker/fortitude/DeactivatePower(mob/living/user = owner, mob/living/target)
 	..()
 	// Restore Traits & Effects

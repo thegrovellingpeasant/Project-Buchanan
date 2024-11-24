@@ -30,31 +30,31 @@
 		return
 	var/list/report = list()
 
-	report += "<span class='header'>[name]:</span>"
+	report += span_header("[name]:")
 	report += "The [member_name]s were:"
 	report += printplayerlist(members)
 
 	if(objectives.len)
-		report += "<span class='header'>Team had following objectives:</span>"
+		report += span_header("Team had following objectives:")
 		var/win = TRUE
 		var/objective_count = 1
 		for(var/datum/objective/objective in objectives)
 			if(objective.completable)
 				var/completion = objective.check_completion()
 				if(completion >= 1)
-					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
+					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_greentext("<B>Success!</B>")]"
 				else if(completion <= 0)
-					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_redtext("Fail.")]"
 					win = FALSE
 				else
-					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='yellowtext'>[completion*100]%</span>"
+					report += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_yellowtext("[completion*100]%")]"
 			else
 				report += "<B>Objective #[objective_count]</B>: [objective.explanation_text]"
 			objective_count++
 		if(win)
-			report += "<span class='greentext'>The [name] was successful!</span>"
+			report += span_greentext("The [name] was successful!")
 		else
-			report += "<span class='redtext'>The [name] have failed!</span>"
+			report += span_redtext("The [name] have failed!")
 
 
 	return "<div class='panel redborder'>[report.Join("<br>")]</div>"

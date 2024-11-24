@@ -96,22 +96,22 @@
 					runechat_flags = EMOTE_MESSAGE,
 				)
 			else if(is_important)
-				to_chat(viewer, "<span class='emote'><b>[user]</b> [msg]</span>")
+				to_chat(viewer, span_emote("<b>[user]</b> [msg]"))
 			else if(is_audible && is_visual)
 				viewer.show_message(
-					"<span class='emote'><b>[user]</b> [msg]</span>", MSG_AUDIBLE,
-					"<span class='emote'>You see how <b>[user]</b> [msg]</span>", MSG_VISUAL,
+					span_emote("<b>[user]</b> [msg]"), MSG_AUDIBLE,
+					span_emote("You see how <b>[user]</b> [msg]"), MSG_VISUAL,
 				)
 			else if(is_audible)
-				viewer.show_message("<span class='emote'><b>[user]</b> [msg]</span>", MSG_AUDIBLE)
+				viewer.show_message(span_emote("<b>[user]</b> [msg]"), MSG_AUDIBLE)
 			else if(is_visual)
-				viewer.show_message("<span class='emote'><b>[user]</b> [msg]</span>", MSG_VISUAL)
+				viewer.show_message(span_emote("<b>[user]</b> [msg]"), MSG_VISUAL)
 		return // Early exit so no dchat message
 
 	// The emote has some important information, and should always be shown to the user
 	else if(is_important)
 		for(var/mob/viewer as anything in viewers(user))
-			to_chat(viewer, "<span class='emote'><b>[user]</b> [msg]</span>")
+			to_chat(viewer, span_emote("<b>[user]</b> [msg]"))
 			if(user.runechat_prefs_check(viewer, EMOTE_MESSAGE))
 				viewer.create_chat_message(
 					speaker = user,
@@ -123,7 +123,7 @@
 	else if(is_visual && is_audible)
 		user.audible_message(
 			message = msg,
-			deaf_message = "<span class='emote'>You see how <b>[user]</b> [msg]</span>",
+			deaf_message = span_emote("You see how <b>[user]</b> [msg]"),
 			self_message = msg,
 			audible_message_flags = EMOTE_MESSAGE|ALWAYS_SHOW_SELF_MESSAGE,
 		)
@@ -151,7 +151,7 @@
 				continue
 			if(!(ghost.client.prefs.chat_toggles & CHAT_GHOSTSIGHT))
 				continue
-			to_chat(ghost, "<span class='emote'>[FOLLOW_LINK(ghost, user)] [dchatmsg]</span>")
+			to_chat(ghost, span_emote("[FOLLOW_LINK(ghost, user)] [dchatmsg]"))
 
 	return
 
@@ -175,7 +175,7 @@
 				if(abs(x - ghost.x) < ((text2num(view_range_list[1]) - 1) / 2))
 					if(abs(y - ghost.y) < ((text2num(view_range_list[2]) - 1) / 2))
 						continue
-		ghost.show_message("<span class='emote'>[FOLLOW_LINK(ghost, src)] [message]</span>")
+		ghost.show_message(span_emote("[FOLLOW_LINK(ghost, src)] [message]"))
 
 
 /datum/emote/proc/replace_pronoun(mob/user, message)
@@ -220,22 +220,22 @@
 				return FALSE
 			switch(user.stat)
 				if(SOFT_CRIT)
-					to_chat(user, "<span class='notice'>You cannot [key] while in a critical condition.</span>")
+					to_chat(user, span_notice("You cannot [key] while in a critical condition."))
 				if(UNCONSCIOUS)
-					to_chat(user, "<span class='notice'>You cannot [key] while unconscious.</span>")
+					to_chat(user, span_notice("You cannot [key] while unconscious."))
 				if(DEAD)
-					to_chat(user, "<span class='notice'>You cannot [key] while dead.</span>")
+					to_chat(user, span_notice("You cannot [key] while dead."))
 			return FALSE
 		var/mob/living/L = user
 		if(restraint_check && (istype(L) && !CHECK_MOBILITY(L, MOBILITY_USE)))
 			if(!intentional)
 				return FALSE
-			to_chat(user, "<span class='notice'>You cannot [key] while stunned.</span>")
+			to_chat(user, span_notice("You cannot [key] while stunned."))
 			return FALSE
 		if(restraint_check && user.restrained())
 			if(!intentional)
 				return FALSE
-			to_chat(user, "<span class='notice'>You cannot [key] while restrained.</span>")
+			to_chat(user, span_notice("You cannot [key] while restrained."))
 			return FALSE
 
 	if(isliving(user))

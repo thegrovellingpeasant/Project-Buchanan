@@ -193,11 +193,11 @@ GLOBAL_LIST_EMPTY(allConsoles)
 			dat += "<br><a href='?src=[REF(src)];setScreen=0'><< Back</a><br>"
 
 		if(6)	//sent successfully
-			dat += "<span class='good'>Message sent.</span><br><br>"
+			dat += "[span_good("Message sent.")]<br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 
 		if(7)	//unsuccessful; not sent
-			dat += "<span class='bad'>An error occurred.</span><br><br>"
+			dat += "[span_bad("An error occurred.")]<br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 
 		if(8)	//view messages
@@ -219,8 +219,8 @@ GLOBAL_LIST_EMPTY(allConsoles)
 			dat += "<b>Message for [dpt]:</b> [message] <br><br>"
 			dat += "<div class='notice'>You may authenticate your message now by scanning your ID or your stamp</div> <br>"
 
-			dat += "<b>Validated by:</b> [msgVerified ? "<span class='good'><b>[msgVerified]</b></span>" : "<i>Not Validated</i>"] <br>"
-			dat += "<b>Stamped by:</b> [msgStamped ? "<span class='boldnotice'>[msgStamped]</span>" : "<i>Not Stamped</i>"] <br><br>"
+			dat += "<b>Validated by:</b> [msgVerified ? span_good("<b>[msgVerified]</b>") : "<i>Not Validated</i>"] <br>"
+			dat += "<b>Stamped by:</b> [msgStamped ? span_boldnotice("[msgStamped]") : "<i>Not Stamped</i>"] <br><br>"
 
 			dat += "<a href='?src=[REF(src)];department=[dpt]'>Send Message</a> <br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'><< Discard Message</a> <br>"
@@ -236,7 +236,7 @@ GLOBAL_LIST_EMPTY(allConsoles)
 			if((announceAuth || IsAdminGhost(user)) && message)
 				dat += "<a href='?src=[REF(src)];sendAnnouncement=1'>Announce Message</a> <br>"
 			else
-				dat += "<span class='linkOff'>Announce Message</span> <br>"
+				dat += "[span_linkoff("Announce Message")] <br>"
 			dat += "<br><a href='?src=[REF(src)];setScreen=0'><< Back</a> <br>"
 
 		else	//main menu
@@ -344,9 +344,9 @@ GLOBAL_LIST_EMPTY(allConsoles)
 		var/sending = message
 		sending += "<br>"
 		if(msgVerified)
-			sending += "<span class='good'><b>[msgVerified]</b></span> <br>"
+			sending += "[span_good("<b>[msgVerified]</b>")] <br>"
 		if(msgStamped)
-			sending += "<span class='boldnotice'>[msgStamped]</span> <br>"
+			sending += "[span_boldnotice("[msgStamped]")] <br>"
 		//so you're telling me is you cheated, by making fail happen, then quickly replacing it with 6
 
 		var/workingServer = FALSE
@@ -403,9 +403,9 @@ GLOBAL_LIST_EMPTY(allConsoles)
 		//log to (this)
 		switch(priority)
 			if(HIGH_MESSAGE_PRIORITY)
-				messages += "<span class='bad'>High Priority</span><br><b>To:</b> [dpt]<br>[sending]"
+				messages += "[span_bad("High Priority")]<br><b>To:</b> [dpt]<br>[sending]"
 			if(EXTREME_MESSAGE_PRIORITY)
-				messages += "<span class='bad'>!!!Extreme Priority!!!</span><br><b>To:</b> [dpt]<br>[sending]"
+				messages += "[span_bad("!!!Extreme Priority!!!")]<br><b>To:</b> [dpt]<br>[sending]"
 			else
 				messages += "<b>To:</b> [dpt]<br>[sending]"
 
@@ -481,7 +481,7 @@ GLOBAL_LIST_EMPTY(allConsoles)
 			if(!silent)
 				playsound(src, 'sound/machines/twobeep.ogg', 50, 1)
 				say(title)
-			messages += "<span class='bad'>High Priority</span><br><b>From:</b> [linkedsender]<br>[message]" //the fuck is this not being sent
+			messages += "[span_bad("High Priority")]<br><b>From:</b> [linkedsender]<br>[message]" //the fuck is this not being sent
 
 		if(EXTREME_MESSAGE_PRIORITY)		// Extreme Priority
 			if(newmessagepriority < EXTREME_MESSAGE_PRIORITY)
@@ -490,7 +490,7 @@ GLOBAL_LIST_EMPTY(allConsoles)
 			//we ignore the silent option because this is !!!IMPORTANT!!!
 			playsound(src, 'sound/machines/twobeep.ogg', 50, 1)
 			say(title)
-			messages += "<span class='bad'><b>!!!Extreme Priority!!!</span></b><br><b>From:</b> [linkedsender]<br>[message]"
+			messages += "[span_bad("<b>!!!Extreme Priority!!!")]</b><br><b>From:</b> [linkedsender]<br>[message]"
 
 		else		// Normal priority
 			if(newmessagepriority < NORMAL_MESSAGE_PRIORITY)
@@ -504,10 +504,10 @@ GLOBAL_LIST_EMPTY(allConsoles)
 /obj/machinery/requests_console/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/crowbar))
 		if(open)
-			to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
+			to_chat(user, span_notice("You close the maintenance panel."))
 			open = FALSE
 		else
-			to_chat(user, "<span class='notice'>You open the maintenance panel.</span>")
+			to_chat(user, span_notice("You open the maintenance panel."))
 			open = TRUE
 		update_icon()
 		return
@@ -515,12 +515,12 @@ GLOBAL_LIST_EMPTY(allConsoles)
 		if(open)
 			hackState = !hackState
 			if(hackState)
-				to_chat(user, "<span class='notice'>You modify the wiring.</span>")
+				to_chat(user, span_notice("You modify the wiring."))
 			else
-				to_chat(user, "<span class='notice'>You reset the wiring.</span>")
+				to_chat(user, span_notice("You reset the wiring."))
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>You must open the maintenance panel first!</span>")
+			to_chat(user, span_warning("You must open the maintenance panel first!"))
 		return
 
 	if(istype(O, /obj/item/card/id))
@@ -535,7 +535,7 @@ GLOBAL_LIST_EMPTY(allConsoles)
 				announceAuth = TRUE
 			else
 				announceAuth = FALSE
-				to_chat(user, "<span class='warning'>You are not authorized to send announcements!</span>")
+				to_chat(user, span_warning("You are not authorized to send announcements!"))
 			updateUsrDialog()
 		return
 

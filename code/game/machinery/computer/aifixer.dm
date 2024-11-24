@@ -13,9 +13,9 @@
 /obj/machinery/computer/aifixer/attackby(obj/I, mob/user, params)
 	if(occupier && istype(I, /obj/item/screwdriver))
 		if(stat & (NOPOWER|BROKEN))
-			to_chat(user, "<span class='warning'>The screws on [name]'s screen won't budge.</span>")
+			to_chat(user, span_warning("The screws on [name]'s screen won't budge."))
 		else
-			to_chat(user, "<span class='warning'>The screws on [name]'s screen won't budge and it emits a warning beep.</span>")
+			to_chat(user, span_warning("The screws on [name]'s screen won't budge and it emits a warning beep."))
 	else
 		return ..()
 
@@ -53,7 +53,7 @@
 	switch(action)
 		if("PRG_beginReconstruction")
 			if(occupier?.health < 100)
-				to_chat(usr, "<span class='notice'>Reconstruction in progress. This will take several minutes.</span>")
+				to_chat(usr, span_notice("Reconstruction in progress. This will take several minutes."))
 				playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 25, FALSE)
 				active = TRUE
 				occupier.notify_ghost_cloning("Your core files are being restored!", source = src)
@@ -106,19 +106,19 @@
 		AI.control_disabled = 1
 		AI.radio_enabled = 0
 		to_chat(AI, "You have been uploaded to a stationary terminal. Sadly, there is no remote access from here.")
-		to_chat(user, "<span class='boldnotice'>Transfer successful</span>: [AI.name] ([rand(1000,9999)].exe) installed and executed successfully. Local copy has been removed.")
+		to_chat(user, "[span_boldnotice("Transfer successful")]: [AI.name] ([rand(1000,9999)].exe) installed and executed successfully. Local copy has been removed.")
 		card.AI = null
 		update_icon()
 
 	else //Uploading AI from terminal to card
 		if(occupier && !active)
 			to_chat(occupier, "You have been downloaded to a mobile storage device. Still no remote access.")
-			to_chat(user, "<span class='boldnotice'>Transfer successful</span>: [occupier.name] ([rand(1000,9999)].exe) removed from host terminal and stored within local memory.")
+			to_chat(user, "[span_boldnotice("Transfer successful")]: [occupier.name] ([rand(1000,9999)].exe) removed from host terminal and stored within local memory.")
 			occupier.forceMove(card)
 			card.AI = occupier
 			occupier = null
 			update_icon()
 		else if (active)
-			to_chat(user, "<span class='boldannounce'>ERROR</span>: Reconstruction in progress.")
+			to_chat(user, "[span_boldannounce("ERROR")]: Reconstruction in progress.")
 		else if (!occupier)
-			to_chat(user, "<span class='boldannounce'>ERROR</span>: Unable to locate artificial intelligence.")
+			to_chat(user, "[span_boldannounce("ERROR")]: Unable to locate artificial intelligence.")

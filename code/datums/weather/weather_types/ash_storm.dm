@@ -3,16 +3,16 @@
 	name = "ash storm"
 	desc = "An intense atmospheric storm lifts ash off of the planet's surface and billows it down across the area, dealing intense fire damage to the unprotected."
 
-	telegraph_message = "<span class='boldwarning'>An eerie moan rises on the wind. Sheets of burning ash blacken the horizon. Seek shelter.</span>"
+	telegraph_message = span_boldwarning("An eerie moan rises on the wind. Sheets of burning ash blacken the horizon. Seek shelter.")
 	telegraph_duration = 300
 	telegraph_overlay = "light_ash"
 
-	weather_message = "<span class='userdanger'><i>Smoldering clouds of scorching ash billow down around you! Get inside!</i></span>"
+	weather_message = span_userdanger("<i>Smoldering clouds of scorching ash billow down around you! Get inside!</i>")
 	weather_duration_lower = 600
 	weather_duration_upper = 1200
 	weather_overlay = "ash_storm"
 
-	end_message = "<span class='boldannounce'>The shrieking wind whips away the last of the ash and falls to its usual murmur. It should be safe to go outside now.</span>"
+	end_message = span_boldannounce("The shrieking wind whips away the last of the ash and falls to its usual murmur. It should be safe to go outside now.")
 	end_duration = 300
 	end_overlay = "light_ash"
 
@@ -105,32 +105,32 @@
 	name = "sandstorm"
 	desc = "A passing sand storm blankets the area in harmless sands."
 	probability = 15
-	
-	telegraph_message = "<span class='userdanger'>Sandstorm is coming to the area, decreasing overall visibility outside.</span>"
-	
-	weather_message = "<span class='boldannounce'>Sand waft down around you like grotesque snow. The sandstorm is here...</span>"
-	
-	end_message = "<span class='boldannounce'>The sandstorm slows, stops. Another layer of sand to the ground beneath your feet.</span>"
+
+	telegraph_message = span_userdanger("Sandstorm is coming to the area, decreasing overall visibility outside.")
+
+	weather_message = span_boldannounce("Sand waft down around you like grotesque snow. The sandstorm is here...")
+
+	end_message = span_boldannounce("The sandstorm slows, stops. Another layer of sand to the ground beneath your feet.")
 	end_sound = null
-	
+
 	aesthetic = TRUE
-	
+
 	target_trait = ZTRAIT_STATION
 
 /datum/weather/ash_storm/dust_event
 	name = "toxic cloud"
 	desc = "A mysterious red cloud, incredibly dangerous to most living things."
 
-	telegraph_message = "<span class='boldwarning'>On the horizon, a thick red cloud can be seen approaching the area. It is unlike anything you've ever seen before. Seek shelter, lest you want to find out what's in store for yourself.</span>"
+	telegraph_message = span_boldwarning("On the horizon, a thick red cloud can be seen approaching the area. It is unlike anything you've ever seen before. Seek shelter, lest you want to find out what's in store for yourself.")
 	telegraph_duration = 3000
 	telegraph_overlay = "light_ash"
 
-	weather_message = "<span class='userdanger'><i>The red cloud is here, and it is incredibly dangerous to be in! Get inside!</i></span>"
+	weather_message = span_userdanger("<i>The red cloud is here, and it is incredibly dangerous to be in! Get inside!</i>")
 	weather_duration_lower = 108000 //Three hours. Lasts the whole round, basically
 	weather_duration_upper = 108000
 	weather_overlay = "ash_storm"
 
-	end_message = "<span class='boldannounce'>The cloud has passed over the region. It should be safe to go outside now.</span>"
+	end_message = span_boldannounce("The cloud has passed over the region. It should be safe to go outside now.")
 	end_duration = 3000
 	end_overlay = "light_ash"
 

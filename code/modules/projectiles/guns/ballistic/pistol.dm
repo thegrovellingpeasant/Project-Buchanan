@@ -199,14 +199,14 @@
 			spread = 9
 			recoil = 0.1
 			weapon_weight = WEAPON_HEAVY
-			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
+			to_chat(user, span_notice("You switch to automatic fire."))
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 1
 			recoil = 0
 			weapon_weight = WEAPON_MEDIUM
-			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
+			to_chat(user, span_notice("You switch to semi-auto."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
 	return

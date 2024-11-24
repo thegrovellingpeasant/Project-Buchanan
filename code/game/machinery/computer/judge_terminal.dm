@@ -45,7 +45,7 @@
 	if(isliving(user))
 		playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
 	if(src.z > 6)
-		to_chat(user, "<span class='boldannounce'>Unable to establish a connection</span>: \black You're too far away from the station!")
+		to_chat(user, "[span_boldannounce("Unable to establish a connection")]: \black You're too far away from the station!")
 		return
 	var/dat
 
@@ -325,7 +325,7 @@ What a mess.*/
 					rank = I.assignment
 					screen = 1
 				else
-					to_chat(usr, "<span class='danger'>Unauthorized Access.</span>")
+					to_chat(usr, span_danger("Unauthorized Access."))
 				playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
 
 //RECORD FUNCTIONS
@@ -541,7 +541,7 @@ What a mess.*/
 				M.fields["cdi_d"]		= "No diseases have been diagnosed at the moment."
 				M.fields["notes"]		= "No notes."
 				GLOB.data_core.medical += M
-				
+
 
 
 //FIELD FUNCTIONS
@@ -595,7 +595,7 @@ What a mess.*/
 								return
 							active1.fields["species"] = t1
 					if("remaining_sentence")
-						
+
 					if("show_photo_front")
 						if(active1.fields["photo_front"])
 							if(istype(active1.fields["photo_front"], /obj/item/photo))

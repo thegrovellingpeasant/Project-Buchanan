@@ -31,25 +31,25 @@
 /mob/living/silicon/pai/on_attack_hand(mob/living/carbon/human/user)
 	switch(user.a_intent)
 		if(INTENT_HELP)
-			visible_message("<span class='notice'>[user] gently pats [src] on the head, eliciting an off-putting buzzing from its holographic field.</span>",
-				"<span class='notice'>[user] gently pats you on the head, eliciting an off-putting buzzing from your holographic field.</span>")
+			visible_message(span_notice("[user] gently pats [src] on the head, eliciting an off-putting buzzing from its holographic field."),
+				span_notice("[user] gently pats you on the head, eliciting an off-putting buzzing from your holographic field."))
 		if(INTENT_DISARM)
-			visible_message("<span class='notice'>[user] boops [src] on the head!</span>",
-				"<span class='notice'>[user] boops you on the head!</span>")
+			visible_message(span_notice("[user] boops [src] on the head!"),
+				span_notice("[user] boops you on the head!"))
 		if(INTENT_HARM)
 			user.do_attack_animation(src)
 			if (user.name == master)
-				visible_message("<span class='notice'>Responding to its master's touch, [src] disengages its holochassis emitter, rapidly losing coherence.</span>")
+				visible_message(span_notice("Responding to its master's touch, [src] disengages its holochassis emitter, rapidly losing coherence."))
 				fold_in()
 				if(user.put_in_hands(card))
-					user.visible_message("<span class='notice'>[user] promptly scoops up [user.p_their()] pAI's card.</span>",
-						"<span class='notice'>You promptly scoops up your pAI's card.</span>")
+					user.visible_message(span_notice("[user] promptly scoops up [user.p_their()] pAI's card."),
+						span_notice("You promptly scoops up your pAI's card."))
 			else
 				if(HAS_TRAIT(user, TRAIT_PACIFISM))
-					to_chat(user, "<span class='notice'>You don't want to hurt [src]!</span>")
+					to_chat(user, span_notice("You don't want to hurt [src]!"))
 					return
-				visible_message("<span class='danger'>[user] stomps on [src]!.</span>",
-					"<span class='userdanger'>[user] stomps on you!.</span>")
+				visible_message(span_danger("[user] stomps on [src]!."),
+					span_userdanger("[user] stomps on you!."))
 				take_holo_damage(2)
 		else
 			grabbedby(user)
@@ -57,15 +57,15 @@
 /mob/living/silicon/pai/bullet_act(obj/item/projectile/P, def_zone)
 	if(P.stun)
 		fold_in(force = TRUE)
-		visible_message("<span class='warning'>The electrically-charged projectile disrupts [src]'s holomatrix, forcing [src] to fold in!</span>")
+		visible_message(span_warning("The electrically-charged projectile disrupts [src]'s holomatrix, forcing [src] to fold in!"))
 	. = ..()
 	return BULLET_ACT_FORCE_PIERCE
 
 /mob/living/silicon/pai/stripPanelUnequip(obj/item/what, mob/who, where) //prevents stripping
-	to_chat(src, "<span class='warning'>Your holochassis stutters and warps intensely as you attempt to interact with the object, forcing you to cease lest the field fail.</span>")
+	to_chat(src, span_warning("Your holochassis stutters and warps intensely as you attempt to interact with the object, forcing you to cease lest the field fail."))
 
 /mob/living/silicon/pai/stripPanelEquip(obj/item/what, mob/who, where) //prevents stripping
-	to_chat(src, "<span class='warning'>Your holochassis stutters and warps intensely as you attempt to interact with the object, forcing you to cease lest the field fail.</span>")
+	to_chat(src, span_warning("Your holochassis stutters and warps intensely as you attempt to interact with the object, forcing you to cease lest the field fail."))
 
 /mob/living/silicon/pai/IgniteMob(mob/living/silicon/pai/P)
 	return FALSE //No we're not flammable
@@ -75,7 +75,7 @@
 	if(emitterhealth < 0)
 		fold_in(force = TRUE)
 	if(amount > 0)
-		to_chat(src, "<span class='userdanger'>The impact degrades your holochassis!</span>")
+		to_chat(src, span_userdanger("The impact degrades your holochassis!"))
 	return amount
 
 /mob/living/silicon/pai/adjustBruteLoss(amount, updating_health = TRUE, forced = FALSE)
