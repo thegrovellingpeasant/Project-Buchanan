@@ -91,17 +91,14 @@
 //Lets check that the assigned parent is a mob with a job
 /datum/component/loadout_selector/Initialize()
 	var/mob/living/L = parent
-	if (istype(L))
-		var/datum/job/J = L.GetJob()
-		if (J && LAZYLEN(J.loadout_options))
-			for (var/a in J.loadout_options) //Copy the options from the job
-				var/datum/outfit/o = a
-				loadout_options[initial(o.name)] = a
-				data_names.Add(initial(o.name))
-			return ..()
-
-	//If they don't have a job they cant use this
-	return COMPONENT_INCOMPATIBLE
+	if(!istype(L))
+		return COMPONENT_INCOMPATIBLE
+	var/datum/job/J = L.GetJob()
+	if(!J || !LAZYLEN(J.loadout_options))
+		return COMPONENT_INCOMPATIBLE
+	for(var/datum/outfit/o as anything in J.loadout_options) //Copy the options from the job
+		loadout_options[initial(o.name)] = o
+		data_names.Add(initial(o.name))
 
 //This completes loadout selection, spawns the selected outfit and cleans things up
 /datum/component/loadout_selector/proc/finish()
@@ -128,7 +125,11 @@
 		ui = new(user, src, "LoadoutSelect", "Loadout Select")
 		ui.set_autoupdate(FALSE)
 		ui.open()
-		ui.send_asset(get_asset_datum(/datum/asset/spritesheet/loadout))
+
+/datum/component/loadout_selector/ui_assets(mob/user)
+	return list(
+		get_asset_datum(/datum/asset/spritesheet/loadout),
+	)
 
 /datum/component/loadout_selector/ui_data(mob/user)
 	var/list/data = list()
