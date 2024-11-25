@@ -132,8 +132,17 @@
 	return T.zPassOut(src, direction, destination) && destination.zPassIn(src, direction, T)
 
 /atom/movable/vv_edit_var(var_name, var_value)
-	var/static/list/banned_edits = list("step_x", "step_y", "step_size")
-	var/static/list/careful_edits = list("bound_x", "bound_y", "bound_width", "bound_height")
+	var/static/list/banned_edits = list(
+		NAMEOF_STATIC(src, step_x),
+		NAMEOF_STATIC(src, step_y),
+		NAMEOF_STATIC(src, step_size),
+	)
+	var/static/list/careful_edits = list(
+		NAMEOF_STATIC(src, bound_x),
+		NAMEOF_STATIC(src, bound_y),
+		NAMEOF_STATIC(src, bound_width),
+		NAMEOF_STATIC(src, bound_height),
+	)
 	if(var_name in banned_edits)
 		return FALSE	//PLEASE no.
 	if((var_name in careful_edits) && (var_value % world.icon_size) != 0)
