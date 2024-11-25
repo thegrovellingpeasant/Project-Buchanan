@@ -13,7 +13,7 @@
 		else if (query != null)
 			src << link(wikiurltg)
 	else
-		to_chat(src, "<span class='danger'>The wiki URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The wiki URL is not set in the server configuration."))
 	return
 
 /client/verb/wiki()
@@ -26,7 +26,7 @@
 			return
 		src << link(wikiurl)
 	else
-		to_chat(src, "<span class='danger'>The Wiki URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The Wiki URL is not set in the server configuration."))
 	return
 
 /client/verb/discord()
@@ -39,7 +39,7 @@
 			return
 		src << link(discordurl)
 	else
-		to_chat(src, "<span class='danger'>The discord URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The discord URL is not set in the server configuration."))
 	return
 
 /client/verb/patreon()
@@ -52,7 +52,7 @@
 			return
 		src << link(patreonurl)
 	else
-		to_chat(src, "<span class='danger'>The patreon URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The patreon URL is not set in the server configuration."))
 	return
 
 /client/verb/rules()
@@ -63,7 +63,7 @@
 	switch(alert("Where would you like to see the rules?", null, "Discord (external link)", "View here", "Cancel"))
 		if("Discord (external link)")
 			if(!rulesurl)
-				to_chat(src, "<span class='danger'>The rules URL is not set in the server configuration.</span>")
+				to_chat(src, span_danger("The rules URL is not set in the server configuration."))
 				return
 			src << link(rulesurl)
 		if("View here")
@@ -79,7 +79,7 @@
 			return
 		src << link(githuburl)
 	else
-		to_chat(src, "<span class='danger'>The Github URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The Github URL is not set in the server configuration."))
 	return
 
 /client/verb/reportissue()
@@ -88,7 +88,7 @@
 	set hidden = 1
 	var/githuburl = CONFIG_GET(string/githuburl)
 	if(!githuburl)
-		to_chat(src, "<span class='danger'>The Github URL is not set in the server configuration.</span>")
+		to_chat(src, span_danger("The Github URL is not set in the server configuration."))
 		return
 	var/message = "This will open the Github issue reporter in your browser. Are you sure?"
 	if(GLOB.revdata.testmerge.len)

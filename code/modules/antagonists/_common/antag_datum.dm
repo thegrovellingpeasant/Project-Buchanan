@@ -88,7 +88,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 		if(removing) // They're a clown becoming an antag, remove clumsy
 			H.dna.remove_mutation(CLOWNMUT)
 			if(!silent && message)
-				to_chat(H, "<span class='boldnotice'>[message]</span>")
+				to_chat(H, span_boldnotice("[message]"))
 		else
 			H.dna.add_mutation(CLOWNMUT) // We're removing their antag status, add back clumsy
 
@@ -170,7 +170,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 			var/datum/quirk/Q = q
 			if(!(SSquirks.quirk_name_by_path(Q.type) in my_quirks))
 				if(initial(Q.antag_removal_text))
-					to_chat(L, "<span class='boldannounce'>[initial(Q.antag_removal_text)]</span>")
+					to_chat(L, span_boldannounce("[initial(Q.antag_removal_text)]"))
 				L.remove_quirk(Q.type)
 
 //Returns the team antagonist belongs to if any.
@@ -203,7 +203,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 
 //Displayed at the start of roundend_category section, default to roundend_category header
 /datum/antagonist/proc/roundend_report_header()
-	return 	"<span class='header'>The [roundend_category] were:</span><br>"
+	return 	"[span_header("The [roundend_category] were:")]<br>"
 
 //Displayed at the end of roundend_category section
 /datum/antagonist/proc/roundend_report_footer()

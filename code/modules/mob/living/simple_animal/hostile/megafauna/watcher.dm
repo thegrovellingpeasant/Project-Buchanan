@@ -107,7 +107,7 @@
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_rain(anger_modifier)
 	if(!target)
 		return
-	target.visible_message("<span class='boldwarning'>Prepares a barrage of fire!</span>")
+	target.visible_message(span_boldwarning("[src] prepares a barrage of fire!"))
 	fire_rain_cooldown = world.time + 125
 	swooping = 1
 	sleep(30 - anger_modifier)
@@ -150,7 +150,7 @@
 			if(istype(L, /mob/living/simple_animal/hostile/megafauna/watcher))
 				continue
 			L.adjustFireLoss(20)
-			to_chat(L, "<span class='userdanger'>You're reproved by the Watcher's holy fire!</span>")
+			to_chat(L, span_userdanger("You're reproved by the Watcher's holy fire!"))
 			hit_things += L
 		previousturf = J
 		sleep(1)
@@ -191,7 +191,7 @@
 	swooping |= SWOOP_DAMAGEABLE
 	density = FALSE
 	icon_state = "shadow"
-	visible_message("<span class='boldwarning'>[src] soars high!</span>")
+	visible_message(span_boldwarning("[src] soars high!"))
 
 	var/negative
 	var/initial_x = x
@@ -264,7 +264,7 @@
 	playsound(loc, 'sound/effects/meteorimpact.ogg', 200, 1)
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
-			visible_message("<span class='warning'>[src] slams down on [L], crushing [L.p_them()]!</span>")
+			visible_message(span_warning("[src] slams down on [L], crushing [L.p_them()]!"))
 		else
 			L.adjustBruteLoss(75)
 			if(L && !QDELETED(L)) // Some mobs are deleted on death
@@ -273,7 +273,7 @@
 					throw_dir = pick(GLOB.alldirs)
 				var/throwtarget = get_edge_target_turf(src, throw_dir)
 				L.throw_at(throwtarget, 3)
-				visible_message("<span class='warning'>[L] is thrown clear of [src]!</span>")
+				visible_message(span_warning("[L] is thrown clear of [src]!"))
 
 	for(var/mob/M in range(7, src))
 		shake_camera(M, 15, 1)
@@ -288,7 +288,7 @@
 		AltClickNoInteract(src, A)
 		return
 	if(swoop_cooldown >= world.time)
-		to_chat(src, "<span class='warning'>You need to wait 20 seconds between jump attacks!</span>")
+		to_chat(src, span_warning("You need to wait 20 seconds between jump attacks!"))
 		return
 	swoop_attack(TRUE, A, 25)
 
@@ -337,7 +337,7 @@
 			continue
 		if(islist(flame_hit) && !flame_hit[L])
 			L.adjustFireLoss(40)
-			to_chat(L, "<span class='userdanger'>You're purified by the Watcher's rehabilitative fire!</span>")
+			to_chat(L, span_userdanger("You're purified by the Watcher's rehabilitative fire!"))
 			flame_hit[L] = TRUE
 		else
 			L.adjustFireLoss(10) //if we've already hit them, do way less damage

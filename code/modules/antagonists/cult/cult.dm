@@ -60,7 +60,7 @@
 		. = is_convertable_to_cult(new_owner.current,cult_team)
 
 /datum/antagonist/cult/greet()
-	to_chat(owner, "<span class='userdanger'>You are a member of the cult!</span>")
+	to_chat(owner, span_userdanger("You are a member of the cult!"))
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/bloodcult.ogg', 100, FALSE, pressure_affected = FALSE)//subject to change
 	owner.announce_objectives()
 
@@ -102,10 +102,10 @@
 	var/item_name = initial(item_path.name)
 	var/where = mob.equip_in_one_of_slots(T, slots)
 	if(!where)
-		to_chat(mob, "<span class='userdanger'>Unfortunately, you weren't able to get a [item_name]. This is very bad and you should adminhelp immediately (press F1).</span>")
+		to_chat(mob, span_userdanger("Unfortunately, you weren't able to get a [item_name]. This is very bad and you should adminhelp immediately (press F1)."))
 		return 0
 	else
-		to_chat(mob, "<span class='danger'>You have a [item_name] in your [where].</span>")
+		to_chat(mob, span_danger("You have a [item_name] in your [where]."))
 		if(where == "backpack")
 			SEND_SIGNAL(mob.back, COMSIG_TRY_STORAGE_SHOW, mob)
 		return TRUE
@@ -153,8 +153,8 @@
 	SSticker.mode.cult -= owner
 	SSticker.mode.update_cult_icons_removed(owner)
 	if(!silent)
-		owner.current.visible_message("<span class='deconversion_message'>[owner.current] looks like [owner.current.p_theyve()] just reverted to [owner.current.p_their()] old faith!</span>", null, null, null, owner.current)
-		to_chat(owner.current, "<span class='userdanger'>An unfamiliar white light flashes through your mind, cleansing the taint of the Geometer and all your memories as her servant.</span>")
+		owner.current.visible_message(span_deconversion_message("[owner.current] looks like [owner.current.p_theyve()] just reverted to [owner.current.p_their()] old faith!"), null, null, null, owner.current)
+		to_chat(owner.current, span_userdanger("An unfamiliar white light flashes through your mind, cleansing the taint of the Geometer and all your memories as her servant."))
 		owner.current.log_message("has renounced the cult of Nar'Sie!", LOG_ATTACK, color="#960000")
 	if(cult_team?.blood_target && cult_team.blood_target_image && owner.current.client)
 		owner.current.client.images -= cult_team.blood_target_image
@@ -178,11 +178,11 @@
 
 /datum/antagonist/cult/proc/admin_give_dagger(mob/admin)
 	if(!equip_cultist(FALSE))
-		to_chat(admin, "<span class='danger'>Spawning dagger failed!</span>")
+		to_chat(admin, span_danger("Spawning dagger failed!"))
 
 /datum/antagonist/cult/proc/admin_give_metal(mob/admin)
 	if (!equip_cultist(TRUE))
-		to_chat(admin, "<span class='danger'>Spawning runed metal failed!</span>")
+		to_chat(admin, span_danger("Spawning runed metal failed!"))
 
 /datum/antagonist/cult/master
 	ignore_implant = TRUE
@@ -203,7 +203,7 @@
 	set_antag_hud(current, "cultmaster")
 
 /datum/antagonist/cult/master/greet()
-	to_chat(owner.current, "<span class='cultlarge'>You are the cult's Master</span>. As the cult's Master, you have a unique title and loud voice when communicating, are capable of marking \
+	to_chat(owner.current, "[span_cult_large("You are the cult's Master")]. As the cult's Master, you have a unique title and loud voice when communicating, are capable of marking \
 	targets, such as a location or a noncultist, to direct the cult to them, and, finally, you are capable of summoning the entire living cult to your location <b><i>once</i></b>.")
 	to_chat(owner.current, "Use these abilities to direct the cult to victory at any cost.")
 
@@ -360,7 +360,7 @@
 	if(replacement)
 		for(var/datum/mind/H in members)
 			if(H.current)
-				to_chat(H.current, "<span class='danger'>Nar'Sie</span> murmurs, <span class='cultlarge'>[sac_objective.target] is beyond your reach. Sacrifice [new_target] instead...</span></span>")
+				to_chat(H.current, span_danger("Nar'Sie</span> murmurs, [span_cult_large("[sac_objective.target] is beyond your reach. Sacrifice [new_target] instead...")]"))
 	sac_objective.target = new_target
 	sac_objective.target_current = new_target.current
 	sac_objective.update_explanation_text()
@@ -441,17 +441,17 @@
 			if(objective.completable)
 				var/completion = objective.check_completion()
 				if(completion >= 1)
-					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
+					parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_greentext("<B>Success!</B>")]"
 				else if(completion <= 0)
-					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+					parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_redtext("Fail.")]"
 				else
-					parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='yellowtext'>[completion*100]%</span>"
+					parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_yellowtext("[completion*100]%")]"
 			else
 				parts += "<B>Objective #[count]</B>: [objective.explanation_text]"
 			count++
 
 	if(members.len)
-		parts += "<span class='header'>The cultists were:</span>"
+		parts += span_header("The cultists were:")
 		parts += printplayerlist(members)
 
 	return "<div class='panel redborder'>[parts.Join("<br>")]</div>"

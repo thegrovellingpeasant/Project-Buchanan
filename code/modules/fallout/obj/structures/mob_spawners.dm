@@ -60,28 +60,28 @@
 
 /obj/structure/nest/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HARM)
-		to_chat(user, "<span class='warning'>You feel it is impossible to destroy this. Best to cover it up with something.</span>")
+		to_chat(user, span_warning("You feel it is impossible to destroy this. Best to cover it up with something."))
 		return
 
 	if(istype(I, /obj/item/stack))
 		var/obj/item/stack/cover_type = I
 		if(!coverable)
-			to_chat(user, "<span class='warning'>The hole is unable to be covered!</span>")
+			to_chat(user, span_warning("The hole is unable to be covered!"))
 			return
 		if(covered)
-			to_chat(user, "<span class='warning'>The hole is already covered!</span>")
+			to_chat(user, span_warning("The hole is already covered!"))
 			return
 		if(cover_type.amount < 4)
 			to_chat(user, span_warning("You need four [cover_type.singular_name]\s in order to cover the hole!"))
 			return
 		if(!do_after(user, 5 SECONDS, FALSE, src))
-			to_chat(user, "<span class='warning'>You must stand still to build the cover!</span>")
+			to_chat(user, span_warning("You must stand still to build the cover!"))
 			return
 		cover_type.use(4)
 
 		if(!covered)
 			new /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low(src.loc)
-			to_chat(user, "<span class='warning'>You find something while covering the hole!</span>")
+			to_chat(user, span_warning("You find something while covering the hole!"))
 
 		covered = TRUE
 		qdel(GetComponent(/datum/component/spawner/ranged))

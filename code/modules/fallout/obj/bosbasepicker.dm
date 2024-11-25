@@ -11,10 +11,10 @@
 /obj/machinery/computer/shuttle/bos/Topic(href, href_list)
 	if(href_list["move"])
 		if(!is_centcom_level(z))
-			to_chat(usr, "<span class='warning'>The controls have malfunctioned, and you cannot seem to lock the base down!</span>")
+			to_chat(usr, span_warning("The controls have malfunctioned, and you cannot seem to lock the base down!"))
 			return 0
 	..()
-	
+
 /obj/docking_port/mobile/elevator/bos
 	name = "Brotherhood of Steel Foyer"
 	width = 6
@@ -62,7 +62,7 @@
 
 /obj/docking_port/stationary/bosaway/six
 	name = "Bos Base 6"
-	id = "Bos6" 
+	id = "Bos6"
 
 /obj/docking_port/stationary/bosaway/seven
 	name = "Bos Base 7"

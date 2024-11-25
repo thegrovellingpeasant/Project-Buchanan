@@ -35,7 +35,7 @@
 
 
 /obj/item/pen/suicide_act(mob/user)
-	user.visible_message("<span class='suicide'>[user] is scribbling numbers all over [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit sudoku...</span>")
+	user.visible_message(span_suicide("[user] is scribbling numbers all over [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit sudoku..."))
 	return(BRUTELOSS)
 
 /obj/item/pen/blue
@@ -71,7 +71,7 @@
 			colour = "blue"
 		else
 			colour = "black"
-	to_chat(user, "<span class='notice'>\The [src] will now write in [colour].</span>")
+	to_chat(user, span_notice("\The [src] will now write in [colour]."))
 	desc = "It's a fancy four-color ink pen, set to [colour]."
 
 /obj/item/pen/fountain
@@ -128,7 +128,7 @@
 	var/deg = input(user, "What angle would you like to rotate the pen head to? (1-360)", "Rotate Pen Head") as null|num
 	if(deg && (deg > 0 && deg <= 360))
 		degrees = deg
-		to_chat(user, "<span class='notice'>You rotate the top of the pen to [degrees] degrees.</span>")
+		to_chat(user, span_notice("You rotate the top of the pen to [degrees] degrees."))
 		SEND_SIGNAL(src, COMSIG_PEN_ROTATED, deg, user)
 
 /obj/item/pen/attack(mob/living/M, mob/user,stealth)
@@ -137,9 +137,9 @@
 
 	if(!force)
 		if(M.can_inject(user, 1))
-			to_chat(user, "<span class='warning'>You stab [M] with the pen.</span>")
+			to_chat(user, span_warning("You stab [M] with the pen."))
 			if(!stealth)
-				to_chat(M, "<span class='danger'>You feel a tiny prick!</span>")
+				to_chat(M, span_danger("You feel a tiny prick!"))
 			. = 1
 
 		log_combat(user, M, "stabbed", src)
@@ -152,14 +152,14 @@
 		naming = TRUE
 		w_class = WEIGHT_CLASS_GIGANTIC
 		sharpness = SHARP_NONE
-		to_chat(usr, "<span class='notice'>You firmly grip the pen in preparation to rename something.</span>")
+		to_chat(usr, span_notice("You firmly grip the pen in preparation to rename something."))
 		playsound(src, 'sound/machines/button2.ogg', 100, 1)
 		return
 	if(naming)
 		naming = FALSE
 		w_class = WEIGHT_CLASS_TINY
 		sharpness = SHARP_POINTY
-		to_chat(usr, "<span class='notice'>You reset the grip on the pen</span>")
+		to_chat(usr, span_notice("You reset the grip on the pen"))
 		playsound(src, 'sound/machines/button2.ogg', 100, 1)
 		return
 
@@ -178,10 +178,10 @@
 				if(QDELETED(O) || !user.canUseTopic(O, BE_CLOSE))
 					return
 				if(oldname == input)
-					to_chat(user, "<span class='notice'>You changed \the [O.name] to... well... \the [O.name].</span>")
+					to_chat(user, span_notice("You changed \the [O.name] to... well... \the [O.name]."))
 				else
 					O.name = input
-					to_chat(user, "<span class='notice'>\The [oldname] has been successfully been renamed to \the [input].</span>")
+					to_chat(user, span_notice("\The [oldname] has been successfully been renamed to \the [input]."))
 					O.renamedByPlayer = TRUE
 
 			if(penchoice == "Change description")
@@ -189,8 +189,8 @@
 				if(QDELETED(O) || !user.canUseTopic(O, BE_CLOSE))
 					return
 				O.desc = input
-				to_chat(user, "<span class='notice'>You have successfully changed \the [O.name]'s description.</span>")
-	else	
+				to_chat(user, span_notice("You have successfully changed \the [O.name]'s description."))
+	else
 		return
 /*
  * Sleepypens
@@ -235,9 +235,9 @@
 /obj/item/pen/edagger/suicide_act(mob/user)
 	. = BRUTELOSS
 	if(on)
-		user.visible_message("<span class='suicide'>[user] forcefully rams the pen into their mouth!</span>")
+		user.visible_message(span_suicide("[user] forcefully rams the pen into their mouth!"))
 	else
-		user.visible_message("<span class='suicide'>[user] is holding a pen up to their mouth! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+		user.visible_message(span_suicide("[user] is holding a pen up to their mouth! It looks like [user.p_theyre()] trying to commit suicide!"))
 		attack_self(user)
 
 /obj/item/pen/edagger/attack_self(mob/living/user)
@@ -251,7 +251,7 @@
 		embedding = list(embed_chance = EMBED_CHANCE)
 		throwforce = initial(throwforce)
 		playsound(user, 'sound/weapons/saberoff.ogg', 5, TRUE)
-		to_chat(user, "<span class='warning'>[src] can now be concealed.</span>")
+		to_chat(user, span_warning("[src] can now be concealed."))
 	else
 		on = TRUE
 		force = 18
@@ -262,7 +262,7 @@
 		embedding = list(embed_chance = 100) //rule of cool
 		throwforce = 35
 		playsound(user, 'sound/weapons/saberon.ogg', 5, TRUE)
-		to_chat(user, "<span class='warning'>[src] is now active.</span>")
+		to_chat(user, span_warning("[src] is now active."))
 	updateEmbedding()
 	update_icon()
 
