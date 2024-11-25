@@ -107,7 +107,7 @@
 		else
 			return
 
-	LAZYADDASSOC(ladder_watchers, "[peek_dir]", peeker)
+	LAZYADDASSOCLIST(ladder_watchers, "[peek_dir]", peeker)
 	RegisterSignal(peeker, COMSIG_MOVABLE_MOVED, PROC_REF(on_peeker_move))
 	// This is the closest thing this codebase has to an incapacitation signal.
 	RegisterSignal(peeker, COMSIG_DISABLE_COMBAT_MODE, PROC_REF(stop_peeking))
