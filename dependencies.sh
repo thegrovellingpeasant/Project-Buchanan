@@ -5,23 +5,24 @@
 
 # byond version
 export BYOND_MAJOR=514
-export BYOND_MINOR=1571
+export BYOND_MINOR=1589
 
 #rust_g git tag
-export RUST_G_VERSION=0.4.10
+export RUST_G_VERSION=3.3.0
 
 #node version
-export NODE_VERSION=14
-export NODE_VERSION_PRECISE=14.16.1
+export NODE_VERSION_LTS=20.13.0
+# compatiblility mode MUST work with windows 7
+export NODE_VERSION_COMPAT=20.2.0
 
 # SpacemanDMM git tag
-export SPACEMAN_DMM_VERSION=suite-1.7
+export SPACEMAN_DMM_VERSION=suite-1.9
 
 # Python version for mapmerge and other tools
-export PYTHON_VERSION=3.7.9
+export PYTHON_VERSION=3.9.0
 
-# Auxmos git tag
-export AUXMOS_VERSION=v0.2.3
+#hypnagogic repo
+export CUTTER_REPO=spacestation13/hypnagogic
 
-# Extools git tag
-export EXTOOLS_VERSION=v0.0.7
+#hypnagogic git tag
+export CUTTER_VERSION=v4.0.0

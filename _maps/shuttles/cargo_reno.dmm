@@ -307,8 +307,8 @@
 /obj/machinery/door/airlock/wood,
 /obj/docking_port/mobile/supply{
 	width = 5;
-	dwidth = 1;
-	dheight = 15;
+	dwidth = 0;
+	dheight = 14;
 	height = 20;
 	dir = 4
 	},

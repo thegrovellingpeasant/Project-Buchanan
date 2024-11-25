@@ -771,7 +771,7 @@
 		button_icon_state = "slimeeject"
 	..()
 
-/datum/action/innate/integrate_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/integrate_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	if(species && species.current_extract)
 		current_button.add_overlay(mutable_appearance(species.current_extract.icon, species.current_extract.icon_state))
@@ -825,7 +825,7 @@
 			return TRUE
 		return FALSE
 
-/datum/action/innate/use_extract/ApplyIcon(obj/screen/movable/action_button/current_button, force)
+/datum/action/innate/use_extract/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force)
 	..(current_button, TRUE)
 	if(species && species.current_extract)
 		current_button.add_overlay(mutable_appearance(species.current_extract.icon, species.current_extract.icon_state))
@@ -892,8 +892,8 @@
 	linked_mobs.Add(M)
 	if(!selflink)
 		to_chat(M, "<span class='notice'>You are now connected to [slimelink_owner.real_name]'s Slime Link.</span>")
-		RegisterSignal(M, COMSIG_MOB_DEATH , .proc/unlink_mob)
-		RegisterSignal(M, COMSIG_PARENT_QDELETING, .proc/unlink_mob)
+		RegisterSignal(M, COMSIG_MOB_DEATH , PROC_REF(unlink_mob))
+		RegisterSignal(M, COMSIG_PARENT_QDELETING, PROC_REF(unlink_mob))
 	var/datum/action/innate/linked_speech/action = new(src)
 	linked_actions.Add(action)
 	action.Grant(M)

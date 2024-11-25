@@ -135,8 +135,8 @@
 		var/speedbase = abs((4 SECONDS) / limbs_to_dismember.len)
 		for(bodypart in limbs_to_dismember)
 			i++
-			addtimer(CALLBACK(src, .proc/suicide_dismember, user, bodypart), speedbase * i)
-	addtimer(CALLBACK(src, .proc/manual_suicide, user), (5 SECONDS) * i)
+			addtimer(CALLBACK(src, PROC_REF(suicide_dismember), user, bodypart), speedbase * i)
+	addtimer(CALLBACK(src, PROC_REF(manual_suicide), user), (5 SECONDS) * i)
 	return MANUAL_SUICIDE
 
 /obj/item/melee/sabre/proc/suicide_dismember(mob/living/user, obj/item/bodypart/affecting)
@@ -154,13 +154,14 @@
 /obj/item/melee/canesword
 	name = "canesword"
 	desc = "A weapon for a true gentlemen, the blade is crafted with grace and style."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
 	icon_state = "cane_sword"
 	item_state = "cane_sword"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	flags_1 = CONDUCT_1
 	obj_flags = UNIQUE_RENAME
-	force = 24
+	force = 28
 	w_class = WEIGHT_CLASS_BULKY
 	armour_penetration = 0.5
 	sharpness = SHARP_EDGED

@@ -24,7 +24,7 @@
 	ranged_cooldown_time = 10
 	ranged = 1
 	pixel_x = -32
-	
+
 	gender = MALE
 	wander = FALSE
 	loot = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5, /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid)
@@ -52,13 +52,13 @@
 		return
 
 	if(prob(40))
-		INVOKE_ASYNC(src, .proc/charge)
-	
+		INVOKE_ASYNC(src, PROC_REF(charge))
+
 	else if(prob(15))
 		disorienting_scream()
 
 	else if(prob(40+anger_modifier/2))
-		INVOKE_ASYNC(src, .proc/triple_charge)
+		INVOKE_ASYNC(src, PROC_REF(triple_charge))
 		disorienting_scream()
 
 /mob/living/simple_animal/hostile/megafauna/yaoguai/Initialize()
@@ -149,7 +149,7 @@
 	if(prob(20))
 		visible_message(span_danger("\The [src] growls, enraged!"))
 
-		addtimer(CALLBACK(src, .proc/charge), 3)
+		addtimer(CALLBACK(src, PROC_REF(charge)), 3)
 	if(prob(85) || Proj.damage > 30) //prob(x) = chance for proj to actually do something
 		return ..()
 	else

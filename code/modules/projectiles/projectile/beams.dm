@@ -129,7 +129,7 @@
 /obj/item/projectile/beam/disabler
 	name = "disabler beam"
 	icon_state = "omnilaser"
-	damage = 36 // Citadel change for balance from 36
+	damage = 33 // Citadel change for balance from 36
 	damage_type = STAMINA
 	flag = "energy"
 	hitsound = 'sound/weapons/tap.ogg'
@@ -353,7 +353,7 @@
 
 /obj/item/projectile/beam/laser/pistol //AEP7
 	name = "laser beam"
-	damage = 35
+	damage = 29
 
 /obj/item/projectile/beam/laser/pistol/hitscan //hitscan AEP7
 	name = "laser beam"
@@ -404,7 +404,7 @@
 	damage = 12
 
 /obj/item/projectile/beam/laser/pistol/wattz //Wattz pistol
-	damage = 31
+	damage = 23
 
 /obj/item/projectile/beam/laser/pistol/wattz/hitscan //hitscan wattz
 	name = "weak laser beam"
@@ -416,7 +416,7 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 33
+	damage = 26
 	armour_penetration = 0.20
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
@@ -458,7 +458,7 @@
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 55 //fucc you normies
+	damage = 45 //fucc you normies
 	armour_penetration = 0 //no AP, armor shouldnt have more than 20 resist against plasma unless its specialized
 	flag = "energy" //checks vs. energy protection
 	wound_bonus = 45 //being hit with plasma is horrific
@@ -502,18 +502,18 @@
 		M.gets_drilled(firer)
 
 /obj/item/projectile/f13plasma/pistol //Plasma pistol
-	damage = 40
+	damage = 35
 	wound_bonus = 20 //being hit with plasma is horrific
 
 /obj/item/projectile/f13plasma/pistol/worn
 	damage = 30
 
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
-	damage = 45
+	damage = 40
 	wound_bonus = 35 //being hit with plasma is horrific
 
 /obj/item/projectile/f13plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 35
+	damage = 30
 
 /obj/item/projectile/beam/laser/rcw //RCW
 	name = "rapidfire beam"
@@ -568,9 +568,9 @@
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/aer14/hitscan
-	damage = 32
+	damage = 36
 	wound_bonus = 20
-	armour_penetration = 0.05
+	armour_penetration = 0.6
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
@@ -629,7 +629,7 @@
 
 /obj/item/projectile/beam/laser/musket //musket
 	name = "laser bolt"
-	damage = 40
+	damage = 36
 	armour_penetration = 0.6
 
 

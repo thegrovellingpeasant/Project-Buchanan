@@ -329,16 +329,6 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 	if(blocks_air || !turf_count) //if there weren't any open turfs, no need to update.
 		return
 
-	var/datum/gas_mixture/total = new//Holders to assimilate air from nearby turfs
-
-	for(var/T in atmos_adjacent_turfs)
-		var/turf/open/S = T
-		if(!S.air)
-			continue
-		total.merge(S.air)
-
-	air.copy_from(total.remove_ratio(1/turf_count))
-
 /turf/proc/ReplaceWithLattice()
 	ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 	new /obj/structure/lattice(locate(x, y, z))

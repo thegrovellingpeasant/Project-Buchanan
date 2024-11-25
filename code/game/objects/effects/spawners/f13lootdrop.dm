@@ -162,7 +162,7 @@
 				/obj/item/clothing/under/f13/female/flapper,
 				/obj/item/clothing/suit/armor/f13/mordinos/grey_trench_coat
 				)
-				
+
 /obj/effect/spawner/bundle/f13/worker
 	name = "overalls and flat cap"
 	items = list(
@@ -1408,7 +1408,7 @@
 				/obj/item/ammo_box/magazine/m556/rifle/
 				)
 
-obj/effect/spawner/bundle/f13/combat_rifle
+/obj/effect/spawner/bundle/f13/combat_rifle
 	name = "combat rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/combat,
@@ -2394,7 +2394,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 			/obj/item/storage/box/ration/ranger_dinner,
 			)
 
-/obj/effect/spawner/lootdrop/f13/robotics 
+/obj/effect/spawner/lootdrop/f13/robotics
 	name = "robotics spawners"
 	loot = list(
 				/obj/effect/spawner/lootdrop/f13/robotics/light,

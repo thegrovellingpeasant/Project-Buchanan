@@ -48,7 +48,7 @@
 				return FALSE
 	return ..()
 
-/obj/Initialize()
+/obj/Initialize(mapload)
 	if (islist(armor))
 		armor = getArmor(arglist(armor))
 	else if (!armor)
@@ -342,7 +342,7 @@
 	var/list/skins = list()
 	for(var/S in unique_reskin)
 		skins[S] = image(icon = icon, icon_state = unique_reskin[S])
-	var/choice = show_radial_menu(M, src, skins, custom_check = CALLBACK(src, .proc/check_skinnable, M), radius = 40, require_near = TRUE)
+	var/choice = show_radial_menu(M, src, skins, custom_check = CALLBACK(src, PROC_REF(check_skinnable), M), radius = 40, require_near = TRUE)
 	if(!choice)
 		return FALSE
 	icon_state = unique_reskin[choice]

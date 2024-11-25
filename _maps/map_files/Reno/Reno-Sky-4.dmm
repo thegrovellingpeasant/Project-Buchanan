@@ -648,6 +648,12 @@
 	dir = 1;
 	smooth = 0
 	},
+/obj/item/card/id/reno/bishops/ring/soldier,
+/obj/item/card/id/reno/bishops/ring/soldier,
+/obj/item/card/id/reno/bishops/ring/soldier,
+/obj/item/card/id/reno/bishops/ring/soldier,
+/obj/item/card/id/reno/bishops/ring/officer,
+/obj/item/card/id/reno/bishops/ring/officer,
 /turf/open/floor/carpet/reno/pattern1,
 /area/f13/reno_sharkclub)
 "cH" = (
@@ -1067,6 +1073,9 @@
 "eq" = (
 /obj/machinery/light/ncr{
 	dir = 1
+	},
+/obj/machinery/computer/shuttle/penthouse_elevator{
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/heist)
@@ -2053,16 +2062,8 @@
 "ij" = (
 /obj/structure/closet/fridge,
 /obj/item/storage/fancy/heart_box,
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
-	},
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent."
-	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
 /obj/item/reagent_containers/food/snacks/f13/sugarbombs,
@@ -2196,6 +2197,18 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_prison)
+"iD" = (
+/obj/docking_port/stationary{
+	dir = 2;
+	height = 3;
+	id = "penthouse_elevator_top";
+	name = "Penthouse";
+	width = 5;
+	dheight = 2;
+	dwidth = 2
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/heist)
 "iE" = (
 /obj/item/candle/infinite{
 	pixel_y = -9;
@@ -4849,6 +4862,10 @@
 	pixel_y = 11;
 	pixel_x = -7
 	},
+/obj/machinery/button/door{
+	pixel_y = 17;
+	id = "penthouse_ent"
+	},
 /turf/open/floor/carpet/red,
 /area/f13/heist)
 "tr" = (
@@ -6282,16 +6299,16 @@
 	icon_state = "table";
 	color = "#665240"
 	},
-/obj/machinery/computer/card/ncr{
-	pixel_x = 14;
-	pixel_y = 2
-	},
 /obj/item/stamp/hos{
 	pixel_y = 9;
 	pixel_x = -6
 	},
 /obj/item/stamp{
 	name = "Stamp"
+	},
+/obj/machinery/computer/card/ncr_mp{
+	pixel_x = 14;
+	pixel_y = 2
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/reno_prison)
@@ -7309,7 +7326,9 @@
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raider_mall)
 "Dh" = (
-/obj/machinery/door/airlock/vault,
+/obj/machinery/door/airlock/vault{
+	req_access_txt = "168"
+	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/heist)
 "Di" = (
@@ -9029,13 +9048,14 @@
 "Ku" = (
 /obj/docking_port/stationary{
 	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "bishop_elevator";
-	name = "bishop_elevator";
+	height = 4;
+	id = "bishop_elevator_top";
+	name = "3rd floor";
 	roundstart_template = /datum/map_template/shuttle/bishop_elevator;
-	width = 3;
-	dir = 8
+	width = 4;
+	dir = 8;
+	dheight = 3;
+	dwidth = 2
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/reno_sharkclub)
@@ -11110,10 +11130,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_prison)
 "Te" = (
-/obj/machinery/door/unpowered/house{
-	req_one_access_txt = "165";
-	name = "room B5"
-	},
+/obj/machinery/door/unpowered/house,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
 "Tg" = (
@@ -45455,7 +45472,7 @@ nb
 Vy
 dt
 dt
-dt
+iD
 vE
 Mn
 Mn

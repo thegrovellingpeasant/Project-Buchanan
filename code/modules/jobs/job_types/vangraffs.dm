@@ -7,8 +7,8 @@
 
 	access = list(ACCESS_VANGRAFFS)
 	minimal_access = list(ACCESS_VANGRAFFS)
-	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
-	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
+	forbids = "Van Graff company policy forbids employees from the use of merchandise without authorization from either the Branch Manager or the Branch's Enforcer. The energy weapons store does not deal in ballistic weaponry for the purpose of brand recognition."
+	enforces = "The company expects professional front facing behavior from all its employees. the punishment for violations is typically severe. It's expected that competition is cut out by whatever means necessary, it's just good business after all."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
 
 /datum/outfit/job/vangraffs
@@ -54,7 +54,6 @@
 	belt = null
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/storage/bag/money/small/huge = 1,
@@ -158,7 +157,6 @@
 	belt = /obj/item/clothing/gloves/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs/enforcer
 	suit_store = /obj/item/gun/energy/laser/plasma
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/big = 1)
@@ -330,7 +328,6 @@
 	belt = /obj/item/storage/belt/military/assault
 	suit = /obj/item/clothing/suit/armor/f13/combat/vangraffs
 	suit_store = /obj/item/gun/energy/laser/aer9
-	r_hand = null
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/storage/bag/money/small/few = 1)

@@ -249,6 +249,26 @@
 		if(!findname(.))
 			break
 
+/proc/random_unique_wright_name(gender, attempts_to_find_unique_name=10)
+	for(var/i in 1 to attempts_to_find_unique_name)
+		if(gender==FEMALE)
+			. = capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.wright_surname))
+		else
+			. = capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.wright_surname))
+
+		if(!findname(.))
+			break
+
+/proc/random_unique_bishop_name(gender, attempts_to_find_unique_name=10)
+	for(var/i in 1 to attempts_to_find_unique_name)
+		if(gender==FEMALE)
+			. = capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.bishop_surname))
+		else
+			. = capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.bishop_surname))
+
+		if(!findname(.))
+			break
+
 /proc/random_unique_lizard_name(gender, attempts_to_find_unique_name=10)
 	for(var/i in 1 to attempts_to_find_unique_name)
 		. = capitalize(lizard_name(gender))
