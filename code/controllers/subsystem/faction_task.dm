@@ -654,8 +654,9 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	. = ..()
 	var/obj/item/card/id/heister_id = new /obj/item/card/id(get_turf(user))
 	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
-	user.put_in_active_hand(heister_id)
+	user.equip_to_slot(heister_id, SLOT_WEAR_ID)
 	user.put_in_inactive_hand(heist_note)
+
 
 /datum/faction_task/individual_player/heist/New()
 	..()
