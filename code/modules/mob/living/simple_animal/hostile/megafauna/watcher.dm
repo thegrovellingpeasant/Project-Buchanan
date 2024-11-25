@@ -107,7 +107,7 @@
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_rain(anger_modifier)
 	if(!target)
 		return
-	target.visible_message(span_boldwarning("Prepares a barrage of fire!"))
+	target.visible_message(span_boldwarning("[src] prepares a barrage of fire!"))
 	fire_rain_cooldown = world.time + 125
 	swooping = 1
 	sleep(30 - anger_modifier)
