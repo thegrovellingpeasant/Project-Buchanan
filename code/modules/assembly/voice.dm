@@ -24,7 +24,7 @@
 
 /obj/item/assembly/voice/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Use a multitool to swap between \"inclusive\", \"exclusive\", \"recognizer\", and \"voice sensor\" mode.</span>"
+	. += span_notice("Use a multitool to swap between \"inclusive\", \"exclusive\", \"recognizer\", and \"voice sensor\" mode.")
 
 /obj/item/assembly/voice/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)
 	. = ..()
@@ -37,7 +37,7 @@
 		if(!istype(speaker, /obj/item/assembly/playback)) // Check if it isn't a playback device to prevent spam and lag
 			if(message_language == languages) // If it isn't in the same language as the message, don't try to find the message
 				if(check_activation(speaker, raw_message)) // Is it the message?
-					addtimer(CALLBACK(src, .proc/pulse, 0), 10)
+					addtimer(CALLBACK(src, PROC_REF(pulse), 0), 10)
 
 /obj/item/assembly/voice/proc/record_speech(atom/movable/speaker, raw_message, datum/language/message_language)
 	languages = message_language // Assign the message's language to a variable to use it elsewhere
@@ -56,7 +56,7 @@
 			say("Your voice pattern is saved.", language = languages)
 		if(VOICE_SENSOR_MODE)
 			if(length(raw_message))
-				addtimer(CALLBACK(src, .proc/pulse, 0), 10)
+				addtimer(CALLBACK(src, PROC_REF(pulse), 0), 10)
 
 /obj/item/assembly/voice/proc/check_activation(atom/movable/speaker, raw_message)
 	. = FALSE
@@ -77,7 +77,7 @@
 /obj/item/assembly/voice/multitool_act(mob/living/user, obj/item/I)
 	mode %= modes.len
 	mode++
-	to_chat(user, "<span class='notice'>You set [src] into [modes[mode]] mode.</span>")
+	to_chat(user, span_notice("You set [src] into [modes[mode]] mode."))
 	listening = FALSE
 	recorded = ""
 	return TRUE

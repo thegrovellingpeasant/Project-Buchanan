@@ -13,7 +13,7 @@
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(is_ninja(C))
-			to_chat(C, "<span class='notice'>Using your superior ninja reflexes, you take the hat off before tipping.</span>")
+			to_chat(C, span_notice("Using your superior ninja reflexes, you take the hat off before tipping."))
 			return ..()
 
 		if(src == C.head)
@@ -28,7 +28,7 @@
 	if(usr)
 		var/mob/living/carbon/C = usr
 		if(is_ninja(C))
-			to_chat(C, "<span class='notice'>Using your superior ninja reflexes, you take the hat off before tipping.</span>")
+			to_chat(C, span_notice("Using your superior ninja reflexes, you take the hat off before tipping."))
 			return ..()
 
 		if(src == C.head)
@@ -38,14 +38,14 @@
 /obj/item/clothing/head/hattip/equipped(mob/M, slot)
 	. = ..()
 	if (slot == SLOT_HEAD)
-		RegisterSignal(M, COMSIG_MOB_SAY, .proc/handle_speech)
+		RegisterSignal(M, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	else
 		UnregisterSignal(M, COMSIG_MOB_SAY)
 
 /obj/item/clothing/head/hattip/dropped(mob/M)
 	. = ..()
 	UnregisterSignal(M, COMSIG_MOB_SAY)
-	addtimer(CALLBACK(src, .proc/root_and_toot), 200)
+	addtimer(CALLBACK(src, PROC_REF(root_and_toot)), 200)
 
 /obj/item/clothing/head/hattip/proc/root_and_toot()
 	if(QDELETED(src) || isnull(loc))

@@ -57,7 +57,7 @@
 		G = new G
 		myseed.genes += G
 	set_light(G.glow_range(myseed), G.glow_power(myseed), G.glow_color)
-	//addtimer(CALLBACK(src, .proc/Spread), delay)
+	//addtimer(CALLBACK(src, PROC_REF(Spread)), delay)
 
 //temp disable
 
@@ -105,7 +105,7 @@
 			shrooms_planted++ //if we failed due to generation, don't try to plant one later
 	if(shrooms_planted < myseed.yield) //if we didn't get all possible shrooms planted, try again later
 		myseed.yield -= shrooms_planted
-		addtimer(CALLBACK(src, .proc/Spread), delay)*/
+		addtimer(CALLBACK(src, PROC_REF(Spread)), delay)*/
 
 /obj/structure/glowshroom/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	if(damage_type == BURN && damage_amount)
@@ -117,7 +117,7 @@
 
 /obj/structure/glowshroom/acid_act(acidpwr, acid_volume)
 	. = 1
-	visible_message("<span class='danger'>[src] melts away!</span>")
+	visible_message(span_danger("[src] melts away!"))
 	var/obj/effect/decal/cleanable/molten_object/I = new (get_turf(src))
 	I.desc = "Looks like this was \an [src] some time ago."
 	qdel(src)

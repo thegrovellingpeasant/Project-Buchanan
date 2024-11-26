@@ -27,6 +27,3 @@
 	#define VAR_PRIVATE var
 	#define VAR_PROTECTED var
 #endif
-
-/proc/enable_debugging()
-	CRASH("Auxtools not found")

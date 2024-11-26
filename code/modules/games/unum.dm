@@ -7,6 +7,17 @@
 	deckstyle = "unum"
 	original_size = 108
 
+/obj/item/toy/cards/deck/unum/update_icon_state()
+	switch(cards.len)
+		if(54 to INFINITY)
+			icon_state = "deck_[deckstyle]_full"
+		if(27 to 54)
+			icon_state = "deck_[deckstyle]_half"
+		if(1 to 27)
+			icon_state = "deck_[deckstyle]_low"
+		else
+			icon_state = "deck_[deckstyle]_empty"
+
 //Populate the deck.
 /obj/item/toy/cards/deck/unum/populate_deck()
 	for(var/colour in list("Red","Yellow","Green","Blue"))

@@ -57,7 +57,7 @@
 	var/list/mats = allowed_materials
 	if(!mats)
 		mats = SSmaterials.materialtypes_by_category[MAT_CATEGORY_RIGID]
-	AddComponent(/datum/component/material_container, mats, _show_on_examine=TRUE, _after_insert=CALLBACK(src, .proc/AfterMaterialInsert))
+	AddComponent(/datum/component/material_container, mats, _show_on_examine=TRUE, _after_insert=CALLBACK(src, PROC_REF(AfterMaterialInsert)))
 	. = ..()
 	wires = new /datum/wires/autolathe(src)
 	stored_research = new stored_research
@@ -72,7 +72,7 @@
 		var/mob/living/L = user
 		if(tooadvanced == TRUE)
 			if(HAS_TRAIT(L, TRAIT_TECHNOPHOBE))
-				to_chat(user, "<span class='warning'>The array of simplistic button pressing confuses you. Besides, did you really want to spend all day staring at a screen?</span>")
+				to_chat(user, span_warning("The array of simplistic button pressing confuses you. Besides, did you really want to spend all day staring at a screen?"))
 				return FALSE
 			else
 				. = ..()
@@ -210,7 +210,7 @@
 				use_power(power)
 				icon_state = "[icon_state]_n"
 				var/time = is_stack ? 10 : base_print_speed * coeff * multiplier
-				addtimer(CALLBACK(src, .proc/make_item, power, materials_used, custom_materials, multiplier, coeff, is_stack), time)
+				addtimer(CALLBACK(src, PROC_REF(make_item), power, materials_used, custom_materials, multiplier, coeff, is_stack), time)
 			else
 				to_chat(usr, "<span class=\"alert\">Not enough materials for this operation.</span>")
 
@@ -268,7 +268,7 @@
 	. += ..()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>The status display reads: Storing up to <b>[materials.max_amount]</b> material units.<br>Material consumption at <b>[prod_coeff*100]%</b>.</span>"
+		. += span_notice("The status display reads: Storing up to <b>[materials.max_amount]</b> material units.<br>Material consumption at <b>[prod_coeff*100]%</b>.")
 
 /obj/machinery/autolathe/proc/main_win(mob/user)
 	var/dat = "<div class='statusDisplay'><h3>Autolathe Menu:</h3><br>"
@@ -307,7 +307,7 @@
 			continue
 
 		if(disabled || !can_build(D))
-			dat += "<span class='linkOff'>[D.name]</span>"
+			dat += span_linkoff("[D.name]")
 		else
 			dat += "<a href='?src=[REF(src)];make=[D.id];multiplier=1'>[D.name]</a>"
 
@@ -341,7 +341,7 @@
 	for(var/v in matching_designs)
 		var/datum/design/D = v
 		if(disabled || !can_build(D))
-			dat += "<span class='linkOff'>[D.name]</span>"
+			dat += span_linkoff("[D.name]")
 		else
 			dat += "<a href='?src=[REF(src)];make=[D.id];multiplier=1'>[D.name]</a>"
 
@@ -541,7 +541,7 @@
 
 	if(I.type in typesof(/obj/item/book/granter/crafting_recipe/gunsmithing))
 		var/obj/item/book/granter/crafting_recipe/gunsmithing/inserted_book = I
-		to_chat(user, "<span class='notice'>You upgrade [src] with [inserted_book.autolathe_level] ammunition schematics.</span>")
+		to_chat(user, span_notice("You upgrade [src] with [inserted_book.autolathe_level] ammunition schematics."))
 		switch(inserted_book.autolathe_level)
 			if("simple")
 				simple = TRUE

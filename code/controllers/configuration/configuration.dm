@@ -194,7 +194,11 @@
 	return (var_name != NAMEOF(src, entries_by_type) || !hiding_entries_by_type) && ..()
 
 /datum/controller/configuration/vv_edit_var(var_name, var_value)
-	var/list/banned_edits = list(NAMEOF(src, entries_by_type), NAMEOF(src, entries), NAMEOF(src, directory))
+	var/list/banned_edits = list(
+		NAMEOF(src, entries_by_type),
+		NAMEOF(src, entries),
+		NAMEOF(src, directory),
+	)
 	return !(var_name in banned_edits) && ..()
 
 /datum/controller/configuration/stat_entry(msg)
@@ -479,4 +483,4 @@ Example config:
 
 //Message admins when you can.
 /datum/controller/configuration/proc/DelayedMessageAdmins(text)
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/message_admins, text), 0)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(message_admins), text), 0)

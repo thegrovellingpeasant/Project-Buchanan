@@ -39,13 +39,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
-	damage = 38
-	wound_bonus = 17
-	bare_wound_bonus = 17
+	damage = 30
+	wound_bonus = 20
+	bare_wound_bonus = 20
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
-	damage = 38
+	damage = 30
 	armour_penetration = 0.21
 	wound_bonus = 17
 	bare_wound_bonus = 17
@@ -53,13 +53,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
-	damage = 30
+	damage = 26
 	wound_bonus = 17
 	bare_wound_bonus = 17
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
-	damage = 17
+	damage = 9
 	stamina = 35
 	sharpness = SHARP_NONE
 	armour_penetration = 0
@@ -68,7 +68,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a556/microshrapnel
 	name = "5.56 microshrapnel bullet"
-	damage = 10
+	damage = 25
 	wound_bonus = 20
 	bare_wound_bonus = 20
 	wound_falloff_tile = 0.5
@@ -98,13 +98,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 45
+	damage = 34
 	wound_bonus = 25
 	bare_wound_bonus = 25
 
 /obj/item/projectile/bullet/a762/simple
 	name = "7.62 FMJ bullet"
-	damage = 45
+	damage = 34
 	wound_bonus = 25
 	bare_wound_bonus = 25
 
@@ -112,12 +112,12 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport
 	name = ".308 bullet"
-	damage = -4
+	damage = 36
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
-	damage = 15
-	stamina = 38
+	damage = 19
+	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -138,7 +138,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a762/microshrapnel
 	name = "7.62 microshrapnel bullet"
-	damage = 32
+	damage = 27
 	wound_bonus = 20
 	bare_wound_bonus = 20
 	wound_falloff_tile = 0.5
@@ -150,12 +150,12 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 60
+	damage = 45
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
 
 /obj/item/projectile/bullet/a50MG/incendiary
-	damage = 40
+	damage = 35
 	var/fire_stacks = 4
 	zone_accuracy_factor = 100
 
@@ -167,7 +167,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/a50MG/explosive
-	damage = -20
+	damage = 25
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -182,7 +182,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a50MG/penetrator
 	name = ".50 penetrator round"
-	damage = -10
+	damage = 35
 	movement_type = FLYING | UNSTOPPABLE
 
 /*
@@ -195,7 +195,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a50MG/contam
 	name = "12.7mm contaminated bullet"
-	damage = -10
+	damage = 35
 	var/smoke_radius = 1
 
 /obj/item/projectile/bullet/a50MG/contam/Initialize()
@@ -219,13 +219,13 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
-	damage = 0
+	damage = 28
 	wound_bonus = 15
 	bare_wound_bonus = 15
 
 /obj/item/projectile/bullet/a473/rubber
 	name = "4.73 polyurethane bullet"
-	damage = -20
+	damage = 8
 	stamina = 18
 	sharpness = SHARP_NONE
 	armour_penetration = 0.05
@@ -234,7 +234,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/incendiary
 	name = "4.73 tracer bullet"
-	damage = 27
+	damage = 20
 	armour_penetration = 0.1
 	var/fire_stacks = 3
 	zone_accuracy_factor = 100
@@ -285,7 +285,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 
 /obj/item/projectile/bullet/a473/hv
 	name = "4.73mm highvelocity bullet"
-	damage = -6 //the g11 is now just straight up 16 damage so this makes it 10
+	damage = 22
 	hitscan = TRUE
 	wound_bonus = 0
 

@@ -57,8 +57,8 @@
 		g1 = GETGREENPART(default_color)
 		b1 = GETBLUEPART(default_color)
 		spec_updatehealth(H)
-		RegisterSignal(C, COMSIG_ATOM_EMAG_ACT, .proc/on_emag_act)
-		RegisterSignal(C, COMSIG_ATOM_EMP_ACT, .proc/on_emp_act)
+		RegisterSignal(C, COMSIG_ATOM_EMAG_ACT, PROC_REF(on_emag_act))
+		RegisterSignal(C, COMSIG_ATOM_EMP_ACT, PROC_REF(on_emp_act))
 		ethereal_light = H.mob_light()
 
 /datum/species/ethereal/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
@@ -92,18 +92,18 @@
 /datum/species/ethereal/proc/on_emp_act(mob/living/carbon/human/H, severity)
 	EMPeffect = TRUE
 	spec_updatehealth(H)
-	to_chat(H, "<span class='notice'>You feel the light of your body leave you.</span>")
-	addtimer(CALLBACK(src, .proc/stop_emp, H), (severity/5) SECONDS, TIMER_UNIQUE|TIMER_OVERRIDE) //lights out
+	to_chat(H, span_notice("You feel the light of your body leave you."))
+	addtimer(CALLBACK(src, PROC_REF(stop_emp), H), (severity/5) SECONDS, TIMER_UNIQUE|TIMER_OVERRIDE) //lights out
 
 /datum/species/ethereal/proc/on_emag_act(mob/living/carbon/human/H, mob/user)
 	if(emageffect)
 		return
 	emageffect = TRUE
 	if(user)
-		to_chat(user, "<span class='notice'>You tap [H] on the back with your card.</span>")
-	H.visible_message("<span class='danger'>[H] starts flickering in an array of colors!</span>")
+		to_chat(user, span_notice("You tap [H] on the back with your card."))
+	H.visible_message(span_danger("[H] starts flickering in an array of colors!"))
 	handle_emag(H)
-	addtimer(CALLBACK(src, .proc/stop_emag, H), 30 SECONDS) //Disco mode for 30 seconds! This doesn't affect the ethereal at all besides either annoying some players, or making someone look badass.
+	addtimer(CALLBACK(src, PROC_REF(stop_emag), H), 30 SECONDS) //Disco mode for 30 seconds! This doesn't affect the ethereal at all besides either annoying some players, or making someone look badass.
 
 
 /datum/species/ethereal/spec_life(mob/living/carbon/human/H)
@@ -114,7 +114,7 @@
 /datum/species/ethereal/proc/stop_emp(mob/living/carbon/human/H)
 	EMPeffect = FALSE
 	spec_updatehealth(H)
-	to_chat(H, "<span class='notice'>You feel more energized as your shine comes back.</span>")
+	to_chat(H, span_notice("You feel more energized as your shine comes back."))
 
 
 /datum/species/ethereal/proc/handle_emag(mob/living/carbon/human/H)
@@ -122,32 +122,32 @@
 		return
 	current_color = pick(ETHEREAL_COLORS)
 	spec_updatehealth(H)
-	addtimer(CALLBACK(src, .proc/handle_emag, H), 5) //Call ourselves every 0.5 seconds to change color
+	addtimer(CALLBACK(src, PROC_REF(handle_emag), H), 5) //Call ourselves every 0.5 seconds to change color
 
 /datum/species/ethereal/proc/stop_emag(mob/living/carbon/human/H)
 	emageffect = FALSE
 	spec_updatehealth(H)
-	H.visible_message("<span class='danger'>[H] stops flickering and goes back to their normal state!</span>")
+	H.visible_message(span_danger("[H] stops flickering and goes back to their normal state!"))
 
 /datum/species/ethereal/proc/handle_charge(mob/living/carbon/human/H)
 	brutemod = 1.25
 	switch(get_charge(H))
 		if(ETHEREAL_CHARGE_NONE)
-			H.throw_alert("ethereal_charge", /obj/screen/alert/etherealcharge, 3)
+			H.throw_alert("ethereal_charge", /atom/movable/screen/alert/etherealcharge, 3)
 		if(ETHEREAL_CHARGE_NONE to ETHEREAL_CHARGE_LOWPOWER)
-			H.throw_alert("ethereal_charge", /obj/screen/alert/etherealcharge, 2)
+			H.throw_alert("ethereal_charge", /atom/movable/screen/alert/etherealcharge, 2)
 			if(H.health > 10.5)
 				apply_damage(0.65, TOX, null, null, H)
 			brutemod = 1.75
 		if(ETHEREAL_CHARGE_LOWPOWER to ETHEREAL_CHARGE_NORMAL)
-			H.throw_alert("ethereal_charge", /obj/screen/alert/etherealcharge, 1)
+			H.throw_alert("ethereal_charge", /atom/movable/screen/alert/etherealcharge, 1)
 			brutemod = 1.5
 		if(ETHEREAL_CHARGE_FULL to ETHEREAL_CHARGE_OVERLOAD)
-			H.throw_alert("ethereal_overcharge", /obj/screen/alert/ethereal_overcharge, 1)
+			H.throw_alert("ethereal_overcharge", /atom/movable/screen/alert/ethereal_overcharge, 1)
 			apply_damage(0.2, TOX, null, null, H)
 			brutemod = 1.5
 		if(ETHEREAL_CHARGE_OVERLOAD to ETHEREAL_CHARGE_DANGEROUS)
-			H.throw_alert("ethereal_overcharge", /obj/screen/alert/ethereal_overcharge, 2)
+			H.throw_alert("ethereal_overcharge", /atom/movable/screen/alert/ethereal_overcharge, 2)
 			apply_damage(0.65, TOX, null, null, H)
 			brutemod = 1.75
 			if(prob(10)) //10% each tick for ethereals to explosively release excess energy if it reaches dangerous levels
@@ -157,8 +157,8 @@
 			H.clear_alert("ethereal_overcharge")
 
 /datum/species/ethereal/proc/discharge_process(mob/living/carbon/human/H)
-	to_chat(H, "<span class='warning'>You begin to lose control over your charge!</span>")
-	H.visible_message("<span class='danger'>[H] begins to spark violently!</span>")
+	to_chat(H, span_warning("You begin to lose control over your charge!"))
+	H.visible_message(span_danger("[H] begins to spark violently!"))
 	var/static/mutable_appearance/overcharge //shameless copycode from lightning spell
 	overcharge = overcharge || mutable_appearance('icons/effects/effects.dmi', "electricity", EFFECTS_LAYER)
 	H.add_overlay(overcharge)
@@ -170,12 +170,12 @@
 		tesla_zap(H, 2, stomach.crystal_charge*50, ZAP_OBJ_DAMAGE | ZAP_ALLOW_DUPLICATES)
 		if(istype(stomach))
 			stomach.adjust_charge(100 - stomach.crystal_charge)
-		to_chat(H, "<span class='warning'>You violently discharge energy!</span>")
-		H.visible_message("<span class='danger'>[H] violently discharges energy!</span>")
+		to_chat(H, span_warning("You violently discharge energy!"))
+		H.visible_message(span_danger("[H] violently discharges energy!"))
 		if(prob(10)) //chance of developing heart disease to dissuade overcharging oneself
 			var/datum/disease/D = new /datum/disease/heart_failure
 			H.ForceContractDisease(D)
-			to_chat(H, "<span class='userdanger'>You're pretty sure you just felt your heart stop for a second there..</span>")
+			to_chat(H, span_userdanger("You're pretty sure you just felt your heart stop for a second there.."))
 			H.playsound_local(H, 'sound/effects/singlebeat.ogg', 100, 0)
 		H.Paralyze(100)
 		return

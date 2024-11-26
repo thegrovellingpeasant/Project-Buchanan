@@ -67,7 +67,6 @@
 	return (length(samples) >= 128)
 
 /datum/instrument/Destroy()
-	SSinstruments.instrument_data -= id
 	for(var/i in songs_using)
 		var/datum/song/S = i
 		S.set_instrument(null)
@@ -83,7 +82,7 @@
 	samples = list()
 	for(var/key in real_samples)
 		real_keys += text2num(key)
-	sortTim(real_keys, /proc/cmp_numeric_asc, associative = FALSE)
+	sortTim(real_keys, GLOBAL_PROC_REF(cmp_numeric_asc), associative = FALSE)
 
 	for(var/i in 1 to (length(real_keys) - 1))
 		var/from_key = real_keys[i]

@@ -27,7 +27,7 @@
 		return_list[BLOCK_RETURN_PROJECTILE_BLOCK_PERCENTAGE] = 100
 		return
 	var/list/obj/item/tocheck = get_blocking_items()
-	sortTim(tocheck, /proc/cmp_numeric_dsc, TRUE)
+	sortTim(tocheck, GLOBAL_PROC_REF(cmp_numeric_dsc), TRUE)
 	// i don't like this
 	var/block_chance_modifier = round(damage / -3)
 	if(real_attack)
@@ -82,8 +82,8 @@
 	if(. & BLOCK_SUCCESS)
 		return
 	if(prob(final_block_chance))
-		owner.visible_message("<span class='danger'>[owner] blocks [attack_text] with [src]!</span>",
-			"<span class='danger'>You block [attack_text] with [src]!</span>")
+		owner.visible_message(span_danger("[owner] blocks [attack_text] with [src]!"),
+			span_danger("You block [attack_text] with [src]!"))
 		return . | BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return . | BLOCK_NONE
 

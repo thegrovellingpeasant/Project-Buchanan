@@ -55,7 +55,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 		/datum/gang_item/clothing/soviet_uniform,
 		/datum/gang_item/clothing/biker_uniform,
 		/datum/gang_item/clothing/chairmen_uniform,
-		
+
 		/datum/gang_item/equipment/bundleelguapo,
 		/datum/gang_item/equipment/bundleanarchist,
 		/datum/gang_item/equipment/bundlegunner,
@@ -108,7 +108,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	if(!round_start)
 		add_verb(new_leader,/mob/living/proc/setcolor)
 	add_verb(new_leader,/mob/living/proc/leavegang)
-	to_chat(new_leader, "<span class='notice'>You have become a new leader of the [name]! You can now invite and remove members at will. You have also received a Gangtool device that allows you to buy a special gear for you and your gang.</span>")
+	to_chat(new_leader, span_notice("You have become a new leader of the [name]! You can now invite and remove members at will. You have also received a Gangtool device that allows you to buy a special gear for you and your gang."))
 
 	var/obj/item/device/gangtool/gangtool = new(new_leader)
 	gangtool.gang = new_leader.gang
@@ -137,9 +137,9 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	if(!round_start)
 		remove_verb(old_leader,/mob/living/proc/setcolor)
 	add_verb(old_leader,/mob/living/proc/assumeleader)
-	to_chat(old_leader, "<span class='warning'>You are no longer the leader of the [name]!</span>")
+	to_chat(old_leader, span_warning("You are no longer the leader of the [name]!"))
 	if(assigned_tool)
-		assigned_tool.audible_message("<span class='warning'>With a change of the [name] leadership, [assigned_tool] ceases to function and self-destructs!</span>")
+		assigned_tool.audible_message(span_warning("With a change of the [name] leadership, [assigned_tool] ceases to function and self-destructs!"))
 		qdel(assigned_tool)
 
 /datum/gang/proc/add_member(mob/living/carbon/new_member)
@@ -150,9 +150,9 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	add_verb(new_member,/mob/living/proc/leavegang)
 
 	add_verb(new_member,/mob/living/proc/assumeleader)
-	to_chat(new_member, "<span class='notice'>You are now a member of the [name]! Everyone can recognize your gang membership now.</span>")
+	to_chat(new_member, span_notice("You are now a member of the [name]! Everyone can recognize your gang membership now."))
 	if(welcome_text)
-		to_chat(new_member, "<span class='notice'>Welcome text: </span><span class='purple'>[welcome_text]</span>")
+		to_chat(new_member, span_notice("Welcome text: </span><span class='purple'>[welcome_text]"))
 
 /datum/gang/proc/remove_member(mob/living/carbon/member)
 	members -= member
@@ -161,7 +161,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	add_verb(member,/mob/living/proc/creategang)
 	remove_verb(member,/mob/living/proc/leavegang)
 	remove_verb(member,/mob/living/proc/assumeleader)
-	to_chat(member, "<span class='warning'>You are no longer a member of the [name]!</span>")
+	to_chat(member, span_warning("You are no longer a member of the [name]!"))
 
 	if(!members.len && !round_start)
 		GLOB.gang_names -= lowertext(name)
@@ -195,10 +195,10 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 
 	var/datum/gang/G = gang
 	if(alert(C, "[src] invites you to join the [G.name].", "Gang invitation", "Yes", "No") == "No")
-		visible_message(C, "<span class='warning'>[C.name] refused an offer to join the [G.name]!</span>")
+		visible_message(C, span_warning("[C.name] refused an offer to join the [G.name]!"))
 		return
 	else
-		visible_message(C, "<span class='notice'>[C.name] accepted an offer to join the [G.name]!</span>")
+		visible_message(C, span_notice("[C.name] accepted an offer to join the [G.name]!"))
 
 	G.add_member(C)
 	C.gang = G
@@ -212,7 +212,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 		return
 	input = copytext(sanitize(input), 1, 30)
 	if(lowertext(input) in GLOB.gang_names)
-		to_chat(src, "<span class='notice'>This gang name is already taken!</span>")
+		to_chat(src, span_notice("This gang name is already taken!"))
 		return
 	GLOB.gang_names |= lowertext(input)
 
@@ -220,7 +220,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	G.name = input
 	GLOB.all_gangs |= G
 	gang = G
-	to_chat(src, "<span class='notice'>You have created [G.name]!</span>")
+	to_chat(src, span_notice("You have created [G.name]!"))
 
 	G.add_member(src)
 	G.add_leader(src)
@@ -249,7 +249,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	if(G && G.leader)
 		var/mob/living/L = G.leader
 		if(L.stat != DEAD && L.client)
-			to_chat(src, "<span class='warning'>Gang leader is still alive and well!</span>")
+			to_chat(src, span_warning("Gang leader is still alive and well!"))
 			return
 		else
 			G.remove_leader(L)
@@ -280,8 +280,8 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 		if(!new_leader || new_leader == src)
 			return
 		var/mob/living/H = new_leader
-		to_chat(src, "<span class='notice'>You have transferred gang leadership of the [G.name] to [H.real_name]!</span>")
-		to_chat(H, "<span class='notice'>You have received gang leadership of the [G.name] from [src.real_name]!</span>")
+		to_chat(src, span_notice("You have transferred gang leadership of the [G.name] to [H.real_name]!"))
+		to_chat(H, span_notice("You have received gang leadership of the [G.name] from [src.real_name]!"))
 		G.remove_leader(src)
 		G.add_leader(H)
 
@@ -309,8 +309,8 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 			return
 
 		var/mob/living/H = kicked_member
-		to_chat(src, "<span class='notice'>You have removed [H.real_name] from the [G.name]!</span>")
-		to_chat(H, "<span class='warning'>You have been kicked from the [G.name] by [src.real_name]!</span>")
+		to_chat(src, span_notice("You have removed [H.real_name] from the [G.name]!"))
+		to_chat(H, span_warning("You have been kicked from the [G.name] by [src.real_name]!"))
 		G.remove_member(H)
 
 /mob/living/proc/setwelcome()
@@ -325,7 +325,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	input = copytext(sanitize(input), 1, 300)
 	G.welcome_text = input
 
-	to_chat(src, "<span class='notice'>You have set a welcome text for a new gang members!</span>")
+	to_chat(src, span_notice("You have set a welcome text for a new gang members!"))
 
 /mob/living/proc/setcolor()
 	set name = "Choose Gang Color"
@@ -338,4 +338,4 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 		return
 	G.color = sanitize_color(picked_color)
 
-	to_chat(src, "<span class='notice'>You have chosen a new gang color!</span>")
+	to_chat(src, span_notice("You have chosen a new gang color!"))

@@ -23,8 +23,8 @@
 	src.proctype = proctype
 	src.escape_on_find = escape_on_find
 
-	RegisterSignal(target, COMSIG_CLICK_ALT, .proc/mob_try_pickup)
-	RegisterSignal(target, COMSIG_PARENT_EXAMINE, .proc/on_examine)
+	RegisterSignal(target, COMSIG_CLICK_ALT, PROC_REF(mob_try_pickup))
+	RegisterSignal(target, COMSIG_PARENT_EXAMINE, PROC_REF(on_examine))
 
 /datum/element/mob_holder/Detach(datum/source, force)
 	. = ..()
@@ -33,28 +33,28 @@
 
 /datum/element/mob_holder/proc/on_examine(mob/living/source, mob/user, list/examine_list)
 	if(ishuman(user) && !istype(source.loc, /obj/item/clothing/head/mob_holder))
-		examine_list += "<span class='notice'>Looks like [source.p_they(TRUE)] can be picked up with <b>Alt+Click</b>!</span>"
+		examine_list += span_notice("Looks like [source.p_they(TRUE)] can be picked up with <b>Alt+Click</b>!")
 
 /datum/element/mob_holder/proc/mob_try_pickup(mob/living/source, mob/user)
 	if(!ishuman(user) || !user.Adjacent(source) || user.incapacitated())
 		return FALSE
 	if(user.get_active_held_item())
-		to_chat(user, "<span class='warning'>Your hands are full!</span>")
+		to_chat(user, span_warning("Your hands are full!"))
 		return FALSE
 	if(source.buckled)
-		to_chat(user, "<span class='warning'>[source] is buckled to something!</span>")
+		to_chat(user, span_warning("[source] is buckled to something!"))
 		return FALSE
 	if(source == user)
-		to_chat(user, "<span class='warning'>You can't pick yourself up.</span>")
+		to_chat(user, span_warning("You can't pick yourself up."))
 		return FALSE
-	source.visible_message("<span class='warning'>[user] starts picking up [source].</span>", \
-					"<span class='userdanger'>[user] starts picking you up!</span>")
+	source.visible_message(span_warning("[user] starts picking up [source]."), \
+					span_userdanger("[user] starts picking you up!"))
 	if(!do_after(user, 20, target = source) || source.buckled)
 		return FALSE
 
-	source.visible_message("<span class='warning'>[user] picks up [source]!</span>", \
-					"<span class='userdanger'>[user] picks you up!</span>")
-	to_chat(user, "<span class='notice'>You pick [source] up.</span>")
+	source.visible_message(span_warning("[user] picks up [source]!"), \
+					span_userdanger("[user] picks you up!"))
+	to_chat(user, span_notice("You pick [source] up."))
 	source.drop_all_held_items()
 	var/obj/item/clothing/head/mob_holder/holder = new(get_turf(source), source, worn_state, alt_worn, right_hand, left_hand, inv_slots)
 	holder.escape_on_find = escape_on_find
@@ -165,7 +165,7 @@
 /obj/item/clothing/head/mob_holder/container_resist()
 	if(isliving(loc))
 		var/mob/living/L = loc
-		L.visible_message("<span class='warning'>[held_mob] escapes from [L]!</span>", "<span class='warning'>[held_mob] escapes your grip!</span>")
+		L.visible_message(span_warning("[held_mob] escapes from [L]!"), span_warning("[held_mob] escapes your grip!"))
 	release()
 
 /obj/item/clothing/head/mob_holder/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)

@@ -97,7 +97,7 @@
 
 /datum/minimap_group/proc/show(mob/user)
 	if(!length(minimaps))
-		to_chat(user, "<span class='boldwarning'>ERROR: Attempted to access an empty datum/minimap_group. This should probably not happen.</span>")
+		to_chat(user, span_boldwarning("ERROR: Attempted to access an empty datum/minimap_group. This should probably not happen."))
 		return
 
 	var/list/datas = list()
@@ -136,7 +136,6 @@
 		window.onload = function() {
 			if(!window.HTMLCanvasElement) {
 				var label = document.getElementById("label-1");
-				label.textContent = "<h1>WARNING! HTMLCanvasElement not found!</h1>"
 				return false
 			}
 			var datas = \[[jointext(datas, ",")]]
@@ -171,7 +170,6 @@
 					var color = "#" + hexify(imagedata.data\[color_idx]) + hexify(imagedata.data\[color_idx+1]) + hexify(imagedata.data\[color_idx+2]);
 					var label = document.getElementById("label-" + (i+1)); //label-String(n)
 
-					label.textContent = data\[color];
 					canvas.title = data\[color];
 				}
 				canvas.onmouseout = function(e){

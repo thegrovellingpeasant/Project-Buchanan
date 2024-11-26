@@ -20,7 +20,7 @@
 
 /datum/antagonist/heretic/greet()
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/ecult_op.ogg', 100, FALSE, pressure_affected = FALSE)//subject to change
-	to_chat(owner, "<span class='boldannounce'>You are the Heretic!</span><br>\
+	to_chat(owner, "[span_boldannounce("You are the Heretic!")]<br>\
 	<B>The old ones gave you these tasks to fulfill:</B>")
 	owner.announce_objectives()
 	to_chat(owner, "<span class='cult'>The book whispers, the forbidden knowledge walks once again!<br>\
@@ -51,7 +51,7 @@
 		EK.on_lose(owner.current)
 
 	if(!silent)
-		to_chat(owner.current, "<span class='userdanger'>Your mind begins to flare as the otherwordly knowledge escapes your grasp!</span>")
+		to_chat(owner.current, span_userdanger("Your mind begins to flare as the otherwordly knowledge escapes your grasp!"))
 		owner.current.log_message("has renounced the cult of the old ones!", LOG_ATTACK, color="#960000")
 	GLOB.reality_smash_track.RemoveMind(owner)
 	STOP_PROCESSING(SSprocessing,src)
@@ -77,10 +77,10 @@
 	var/item_name = initial(item_path.name)
 	var/where = H.equip_in_one_of_slots(T, slots)
 	if(!where)
-		to_chat(H, "<span class='userdanger'>Unfortunately, you weren't able to get a [item_name]. This is very bad and you should adminhelp immediately (press F1).</span>")
+		to_chat(H, span_userdanger("Unfortunately, you weren't able to get a [item_name]. This is very bad and you should adminhelp immediately (press F1)."))
 		return FALSE
 	else
-		to_chat(H, "<span class='danger'>You have a [item_name] in your [where].</span>")
+		to_chat(H, span_danger("You have a [item_name] in your [where]."))
 		if(where == "backpack")
 			SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_SHOW, H)
 		return TRUE
@@ -137,7 +137,7 @@
 
 /datum/antagonist/heretic/get_admin_commands()
 	. = ..()
-	.["Equip"] = CALLBACK(src,.proc/equip_cultist)
+	.["Equip"] = CALLBACK(src, PROC_REF(equip_cultist))
 
 /datum/antagonist/heretic/roundend_report()
 	var/list/parts = list()
@@ -152,18 +152,18 @@
 		for(var/o in objectives)
 			var/datum/objective/objective = o
 			if(objective.check_completion())
-				parts += "<b>Objective #[count]</b>: [objective.explanation_text] <span class='greentext'>Success!</b></span>"
+				parts += "<b>Objective #[count]</b>: [objective.explanation_text] [span_greentext("Success!</b>")]"
 			else
-				parts += "<b>Objective #[count]</b>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+				parts += "<b>Objective #[count]</b>: [objective.explanation_text] [span_redtext("Fail.")]"
 				cultiewin = FALSE
 			count++
 	if(ascended)
 		parts += "<span class='greentext big'>HERETIC HAS ASCENDED!</span>"
 	else
 		if(cultiewin)
-			parts += "<span class='greentext'>The heretic was successful!</span>"
+			parts += span_greentext("The heretic was successful!")
 		else
-			parts += "<span class='redtext'>The heretic has failed.</span>"
+			parts += span_redtext("The heretic has failed.")
 
 	parts += "<b>Knowledge Researched:</b> "
 

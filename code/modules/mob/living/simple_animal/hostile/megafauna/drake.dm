@@ -87,7 +87,7 @@ Difficulty: Medium
 		return FALSE
 	return ..()
 
-/mob/living/simple_animal/hostile/megafauna/dragon/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/mob/living/simple_animal/hostile/megafauna/dragon/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
 	if(swooping & SWOOP_INVULNERABLE) //to suppress attack messages without overriding every single proc that could send a message saying we got hit
 		return
 	return ..()
@@ -116,22 +116,22 @@ Difficulty: Medium
 
 	if(prob(15 + anger_modifier) && !client)
 		if(health < maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack, TRUE, null, 50)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack), TRUE, null, 50)
 		else
 			fire_rain()
 
 	else if(prob(10+anger_modifier) && !client)
 		if(health > maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack))
 		else
-			INVOKE_ASYNC(src, .proc/triple_swoop)
+			INVOKE_ASYNC(src, PROC_REF(triple_swoop))
 	else
 		fire_walls()
 
 /mob/living/simple_animal/hostile/megafauna/dragon/proc/fire_rain()
 	if(!target)
 		return
-	target.visible_message("<span class='boldwarning'>Fire rains from the sky!</span>")
+	target.visible_message(span_boldwarning("Fire rains from the sky!"))
 	for(var/turf/turf in range(9,get_turf(target)))
 		if(prob(11))
 			new /obj/effect/temp_visual/target(turf)
@@ -140,7 +140,7 @@ Difficulty: Medium
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
-		INVOKE_ASYNC(src, .proc/fire_wall, d)
+		INVOKE_ASYNC(src, PROC_REF(fire_wall), d)
 
 /mob/living/simple_animal/hostile/megafauna/dragon/proc/fire_wall(dir)
 	var/list/hit_things = list(src)
@@ -157,7 +157,7 @@ Difficulty: Medium
 			if(istype(L, /mob/living/simple_animal/hostile/megafauna/dragon))
 				continue
 			L.adjustFireLoss(20)
-			to_chat(L, "<span class='userdanger'>You're hit by the drake's fire breath!</span>")
+			to_chat(L, span_userdanger("You're hit by the drake's fire breath!"))
 			hit_things += L
 		previousturf = J
 		sleep(1)
@@ -179,7 +179,7 @@ Difficulty: Medium
 	swooping |= SWOOP_DAMAGEABLE
 	density = FALSE
 	icon_state = "shadow"
-	visible_message("<span class='boldwarning'>[src] swoops up high!</span>")
+	visible_message(span_boldwarning("[src] swoops up high!"))
 
 	var/negative
 	var/initial_x = x
@@ -252,7 +252,7 @@ Difficulty: Medium
 	playsound(loc, 'sound/effects/meteorimpact.ogg', 200, 1)
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
-			visible_message("<span class='warning'>[src] slams down on [L], crushing [L.p_them()]!</span>")
+			visible_message(span_warning("[src] slams down on [L], crushing [L.p_them()]!"))
 			L.gib()
 		else
 			L.adjustBruteLoss(75)
@@ -262,7 +262,7 @@ Difficulty: Medium
 					throw_dir = pick(GLOB.alldirs)
 				var/throwtarget = get_edge_target_turf(src, throw_dir)
 				L.throw_at(throwtarget, 3)
-				visible_message("<span class='warning'>[L] is thrown clear of [src]!</span>")
+				visible_message(span_warning("[L] is thrown clear of [src]!"))
 
 	for(var/mob/M in range(7, src))
 		shake_camera(M, 15, 1)
@@ -277,7 +277,7 @@ Difficulty: Medium
 		AltClickNoInteract(src, A)
 		return
 	if(swoop_cooldown >= world.time)
-		to_chat(src, "<span class='warning'>You need to wait 20 seconds between swoop attacks!</span>")
+		to_chat(src, span_warning("You need to wait 20 seconds between swoop attacks!"))
 		return
 	swoop_attack(TRUE, A, 25)
 
@@ -314,7 +314,7 @@ Difficulty: Medium
 
 /obj/effect/temp_visual/target/Initialize(mapload, list/flame_hit)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/fall, flame_hit)
+	INVOKE_ASYNC(src, PROC_REF(fall), flame_hit)
 
 /obj/effect/temp_visual/target/proc/fall(list/flame_hit)
 	var/turf/T = get_turf(src)
@@ -332,7 +332,7 @@ Difficulty: Medium
 			continue
 		if(islist(flame_hit) && !flame_hit[L])
 			L.adjustFireLoss(40)
-			to_chat(L, "<span class='userdanger'>You're hit by the drake's fire breath!</span>")
+			to_chat(L, span_userdanger("You're hit by the drake's fire breath!"))
 			flame_hit[L] = TRUE
 		else
 			L.adjustFireLoss(10) //if we've already hit them, do way less damage
@@ -358,7 +358,7 @@ Difficulty: Medium
 
 /obj/effect/temp_visual/dragon_flight/Initialize(mapload, negative)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/flight, negative)
+	INVOKE_ASYNC(src, PROC_REF(flight), negative)
 
 /obj/effect/temp_visual/dragon_flight/proc/flight(negative)
 	if(negative)
@@ -414,7 +414,7 @@ Difficulty: Medium
 				continue
 			hit_list += L
 			L.adjustFireLoss(20)
-			to_chat(L, "<span class='userdanger'>You're hit by [source]'s fire breath!</span>")
+			to_chat(L, span_userdanger("You're hit by [source]'s fire breath!"))
 
 		// deals damage to mechs
 		for(var/obj/mecha/M in T.contents)

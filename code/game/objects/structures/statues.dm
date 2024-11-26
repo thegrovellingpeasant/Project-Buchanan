@@ -15,8 +15,8 @@
 /obj/structure/statue/Initialize()
 	. = ..()
 	AddElement(/datum/element/art, impressiveness)
-	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, impressiveness *  75)), 0)
-	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, CALLBACK(src, .proc/can_user_rotate), CALLBACK(src, .proc/can_be_rotated), null)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum, _AddElement), list(/datum/element/beauty, impressiveness *  75)), 0)
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, CALLBACK(src, PROC_REF(can_user_rotate)), CALLBACK(src, PROC_REF(can_be_rotated)), null)
 
 /obj/structure/statue/proc/can_be_rotated(mob/user)
 	if(!anchored)
@@ -36,10 +36,10 @@
 				return FALSE
 
 			user.visible_message("[user] is slicing apart the [name].", \
-								"<span class='notice'>You are slicing apart the [name]...</span>")
+								span_notice("You are slicing apart the [name]..."))
 			if(W.use_tool(src, user, 40, volume=50))
 				user.visible_message("[user] slices apart the [name].", \
-									"<span class='notice'>You slice apart the [name]!</span>")
+									span_notice("You slice apart the [name]!"))
 				deconstruct(TRUE)
 			return
 	return ..()
@@ -572,7 +572,7 @@
 /obj/structure/statue/wood/headstonewood/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/clothing/head))
 		if(Helmet)
-			to_chat(user, "<span class='notice'>There's already a hat on the marker.</span>")
+			to_chat(user, span_notice("There's already a hat on the marker."))
 			return
 		W.forceMove(src)
 		Helmet = W
@@ -581,7 +581,7 @@
 		return
 	if(istype(W, /obj/item/card/id/dogtag))
 		if(Dogtags)
-			to_chat(user, "<span class='notice'>There's already some dogtags on the marker.</span>")
+			to_chat(user, span_notice("There's already some dogtags on the marker."))
 			return
 		W.forceMove(src)
 		Dogtags = W

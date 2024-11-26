@@ -17,11 +17,11 @@
 		if(!istype(product))
 			return //Something fucked up here or it's a weird product
 		user.put_in_hands(product)
-		to_chat(user, "<span class='notice'>You pluck [product] from [src].</span>")
+		to_chat(user, span_notice("You pluck [product] from [src]."))
 		has_plod = FALSE
 		update_icon() //Won't update due to proc otherwise
 		timer = initial(timer) + rand(-100,100) //add some variability
-		addtimer(CALLBACK(src, .proc/regrow),timer) //Set up the timer properly
+		addtimer(CALLBACK(src, PROC_REF(regrow)),timer) //Set up the timer properly
 	update_icon()
 
 /obj/structure/flora/wasteplant/proc/regrow()

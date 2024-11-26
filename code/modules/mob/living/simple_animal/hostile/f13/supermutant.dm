@@ -62,7 +62,7 @@
 	if(prob(85) || Proj.damage > 26)
 		return ..()
 	else
-		visible_message("<span class='danger'>\The [Proj] is deflected harmlessly by \the [src]'s thick skin!</span>")
+		visible_message(span_danger("\The [Proj] is deflected harmlessly by \the [src]'s thick skin!"))
 		return FALSE
 
 /mob/living/simple_animal/hostile/supermutant/death(gibbed)
@@ -96,7 +96,7 @@
 	icon_state = icon_dead
 	anchored = FALSE
 	if(!gibbed)
-		visible_message("<span class='danger'>\the [src] shouts something incoherent about brahmins for the last time and stops moving...</span>")
+		visible_message(span_danger("\the [src] shouts something incoherent about brahmins for the last time and stops moving..."))
 	..()
 
 /mob/living/simple_animal/hostile/supermutant/vault
@@ -377,7 +377,7 @@
 	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(D, alpha = 0, color = "#FF0000", transform = matrix()*2, time = 1)
 	addtimer(3)
-	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, .proc/charge_end))
+	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, PROC_REF(charge_end)))
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/rain/proc/charge_end(list/effects_to_destroy)
 	charging = FALSE
@@ -445,7 +445,7 @@
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
-		INVOKE_ASYNC(src, .proc/fire_release_wall, d)
+		INVOKE_ASYNC(src, PROC_REF(fire_release_wall), d)
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain/proc/fire_release_wall(dir)
 	var/list/hit_things = list(src)
@@ -462,7 +462,7 @@
 			if(istype(L, /mob/living/simple_animal/hostile/supermutant/nightkin/ranged/rain))
 				continue
 			L.adjustFireLoss(20)
-			to_chat(L, "<span class='userdanger'>You're hit by the nightkin's release of energy!</span>")
+			to_chat(L, span_userdanger("You're hit by the nightkin's release of energy!"))
 			hit_things += L
 		previousturf = J
 		addtimer(1)
@@ -515,8 +515,8 @@
 /mob/living/simple_animal/hostile/supermutant/ranged/mutcastle
 	name = "super mutant"
 	faction = list("deathclaw")
-	
-	
+
+
 /mob/living/simple_animal/hostile/supermutant/nightkin/mutcastle
 	name = "super mutant"
 	faction = list("deathclaw")

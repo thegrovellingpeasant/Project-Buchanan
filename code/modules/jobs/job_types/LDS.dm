@@ -147,7 +147,7 @@ Mayor
 		),
 	)
 
-datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -283,7 +283,7 @@ datum/outfit/job/latterdaysaints/f13missionary/pre_equip(mob/living/carbon/human
 		),
 	)
 
-datum/outfit/job/latterdaysaints/f13newcanaanite/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/latterdaysaints/f13newcanaanite/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return

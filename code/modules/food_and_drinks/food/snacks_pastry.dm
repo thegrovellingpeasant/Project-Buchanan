@@ -39,7 +39,7 @@
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
 			if(M.mind && HAS_TRAIT(M.mind, TRAIT_LAW_ENFORCEMENT_METABOLISM) && !HAS_TRAIT(H, TRAIT_AGEUSIA))
-				to_chat(H,"<span class='notice'>I love this taste!</span>")
+				to_chat(H,span_notice("I love this taste!"))
 				H.adjust_disgust(-5 + -2.5 * fraction)
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "fav_food", /datum/mood_event/favorite_food)
 				last_check_time = world.time
@@ -478,7 +478,7 @@
 		for(var/R in S.bonus_reagents)
 			LAZYSET(S.cached_reagents_amount, R, S.reagents.get_reagent_amount(R))
 		S.previous_typepath = type
-		addtimer(CALLBACK(S, .proc/cool_down), 7 MINUTES) //canonically they reverted back to normal after 7 minutes.
+		addtimer(CALLBACK(S, PROC_REF(cool_down)), 7 MINUTES) //canonically they reverted back to normal after 7 minutes.
 
 /obj/item/reagent_containers/food/snacks/donkpocket/proc/cool_down()
 	if(!previous_typepath) //This shouldn't happen.
@@ -765,11 +765,11 @@
 	if(istype(I, /obj/item/reagent_containers/food/snacks/pancakes/))
 		var/obj/item/reagent_containers/food/snacks/pancakes/P = I
 		if((contents.len >= PANCAKE_MAX_STACK) || ((P.contents.len + contents.len) > PANCAKE_MAX_STACK) || (reagents.total_volume >= volume))
-			to_chat(user, "<span class='warning'>You can't add that many pancakes to [src]!</span>")
+			to_chat(user, span_warning("You can't add that many pancakes to [src]!"))
 		else
 			if(!user.transferItemToLoc(I, src))
 				return
-			to_chat(user, "<span class='notice'>You add the [I] to the [name].</span>")
+			to_chat(user, span_notice("You add the [I] to the [name]."))
 			P.name = initial(P.name)
 			contents += P
 			update_snack_overlays(P)

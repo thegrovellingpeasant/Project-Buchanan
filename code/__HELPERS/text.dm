@@ -94,7 +94,7 @@
 	else
 		return trim(html_encode(name), max_length) //trim is "outside" because html_encode can expand single symbols into multiple symbols (such as turning < into &lt;)
 
-// Do NOT use this for regular procs, it is intentionally unsanitized. Allows for the usage of span classes in narrates from the admins 
+// Do NOT use this for regular procs, it is intentionally unsanitized. Allows for the usage of span classes in narrates from the admins
 /proc/multiline_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
 	var/name = input(user, message, title, default) as message|null
 	if(isnull(name)) // Return null if canceled.
@@ -123,7 +123,7 @@
 		return null
 	if(length(name) > max_length)
 		to_chat(user, name)
-		to_chat(user, "<span class='danger'>^^^----- The preceeding message has been DISCARDED for being over the maximum length of [max_length]. It has NOT been sent! -----^^^</span>")
+		to_chat(user, span_danger("^^^----- The preceeding message has been DISCARDED for being over the maximum length of [max_length]. It has NOT been sent! -----^^^"))
 		return null
 	if(no_trim)
 		return copytext(html_encode(name), 1, max_length)

@@ -3,26 +3,26 @@
 	set name = "Mentorhelp"
 
 	//clean the input msg
-	if(!msg)	
+	if(!msg)
 		return
 
 	//remove out mentorhelp verb temporarily to prevent spamming of mentors.
 	remove_verb(src, /client/verb/mentorhelp)
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/add_verb, src, /client/verb/mentorhelp), 30 SECONDS)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(add_verb), src, /client/verb/mentorhelp), 30 SECONDS)
 
 	msg = sanitize(copytext_char(msg, 1, MAX_MESSAGE_LEN))
 	if(!msg || !mob)
 		return
 
 	var/show_char = CONFIG_GET(flag/mentors_mobname_only)
-	var/mentor_msg = "<span class='mentornotice'><b><font color='purple'>MENTORHELP:</b> <b>[key_name_mentor(src, 1, 0, 1, show_char)]</b>: [msg]</font></span>"
+	var/mentor_msg = span_mentornotice("<b><font color='purple'>MENTORHELP:</b> <b>[key_name_mentor(src, 1, 0, 1, show_char)]</b>: [msg]</font>")
 	log_mentor("MENTORHELP: [key_name_mentor(src, 0, 0, 0, 0)]: [msg]")
 
 	for(var/client/X in GLOB.mentors | GLOB.admins)
 		SEND_SOUND(X, 'sound/items/bikehorn.ogg')
 		to_chat(X, mentor_msg)
 
-	to_chat(src, "<span class='mentornotice'><font color='purple'>PM to-<b>Mentors</b>: [msg]</font></span>")
+	to_chat(src, span_mentornotice("<font color='purple'>PM to-<b>Mentors</b>: [msg]</font>"))
 	return
 
 /proc/get_mentor_counts()

@@ -14,8 +14,8 @@
 /obj/machinery/hydroponics/constructable/automagic/default_unfasten_wrench(mob/user, obj/item/I, time = 20)
 	. = ..()
 	if(. == SUCCESSFUL_UNFASTEN)
-		user.visible_message("<span class='notice'>[user.name] [anchored ? "fasten" : "unfasten"] [src]</span>", \
-		"<span class='notice'>You [anchored ? "fasten" : "unfasten"] [src]</span>")
+		user.visible_message(span_notice("[user.name] [anchored ? "fasten" : "unfasten"] [src]"), \
+		span_notice("You [anchored ? "fasten" : "unfasten"] [src]"))
 		var/datum/component/plumbing/CP = GetComponent(/datum/component/plumbing)
 		if(anchored)
 			CP.enable()
@@ -34,7 +34,7 @@
 
 /obj/machinery/hydroponics/constructable/automagic/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, .proc/can_be_rotated))
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, PROC_REF(can_be_rotated)))
 
 
 /obj/machinery/hydroponics/constructable/proc/can_be_rotated(mob/user, rotation_type)

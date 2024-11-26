@@ -2,7 +2,7 @@
 	var/too_spooky = TRUE //will it spawn a new instrument?
 
 /datum/component/spooky/Initialize()
-	RegisterSignal(parent, COMSIG_ITEM_ATTACK, .proc/spectral_attack)
+	RegisterSignal(parent, COMSIG_ITEM_ATTACK, PROC_REF(spectral_attack))
 
 /datum/component/spooky/proc/spectral_attack(datum/source, mob/living/carbon/C, mob/user)
 	if(ishuman(user)) //this weapon wasn't meant for mortals.
@@ -38,7 +38,7 @@
 	if((H.getStaminaLoss() > 95) && (!istype(H.dna.species, /datum/species/skeleton)) && (!istype(H.dna.species, /datum/species/golem)) && (!istype(H.dna.species, /datum/species/android)) && (!istype(H.dna.species, /datum/species/jelly)))
 		H.DefaultCombatKnockdown(20)
 		H.set_species(/datum/species/skeleton)
-		H.visible_message("<span class='warning'>[H] has given up on life as a mortal.</span>")
+		H.visible_message(span_warning("[H] has given up on life as a mortal."))
 		var/T = get_turf(H)
 		if(too_spooky)
 			if(prob(30))

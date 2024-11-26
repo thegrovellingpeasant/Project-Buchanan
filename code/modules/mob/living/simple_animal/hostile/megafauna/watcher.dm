@@ -12,7 +12,7 @@
 	icon = 'icons/fallout/mobs/megafauna/watcher.dmi'
 	icon_state = "benotafraid"
 	icon_living = "benotafraid"
-	icon_dead = "benotafraid"
+	icon_dead = ""
 	speak = list("Be not afraid.")
 	friendly_verb_continuous = "watches"
 	friendly_verb_simple = "watch"
@@ -27,10 +27,13 @@
 	pixel_x = -16
 	gender = MALE
 	wander = FALSE
-	loot = list(/obj/item/melee/powered/ripper/prewar)
-	decompose = FALSE
+	loot = list(/obj/item/melee/powered/ripper/prewar, /obj/effect/decal/cleanable/blood/gibs, /obj/item/clothing/glasses/godeye)
+	decompose = TRUE
 	can_devour = FALSE
 	stat_attack = UNCONSCIOUS
+	del_on_death = TRUE
+	deathmessage = "The Watcher collapses to the floor and falls apart. Its impact shaking the ground!"
+	deathsound = 'sound/creatures/legion_death.ogg'
 	var/swooping = NONE
 	var/swoop_cooldown = 0
 	var/fire_rain_cooldown = 0
@@ -57,7 +60,7 @@
 		return FALSE
 	return ..()
 
-/mob/living/simple_animal/hostile/megafauna/watcher/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/mob/living/simple_animal/hostile/megafauna/watcher/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
 	if(swooping & SWOOP_INVULNERABLE) //to suppress attack messages without overriding every single proc that could send a message saying we got hit
 		return
 	return ..()
@@ -88,23 +91,23 @@
 
 	if(prob(25 + anger_modifier) && !client)
 		if(health < maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack, TRUE, null, 50)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack), TRUE, null, 50)
 		else
 			if(fire_rain_cooldown <= world.time)
 				fire_rain(anger_modifier)
 
 	else if(prob(10+anger_modifier) && !client)
 		if(health > maxHealth/2)
-			INVOKE_ASYNC(src, .proc/swoop_attack)
+			INVOKE_ASYNC(src, PROC_REF(swoop_attack))
 		else
-			INVOKE_ASYNC(src, .proc/triple_swoop)
+			INVOKE_ASYNC(src, PROC_REF(triple_swoop))
 	else
 		fire_walls(anger_modifier)
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_rain(anger_modifier)
 	if(!target)
 		return
-	target.visible_message("<span class='boldwarning'>Prepares a barrage of fire!</span>")
+	target.visible_message(span_boldwarning("[src] prepares a barrage of fire!"))
 	fire_rain_cooldown = world.time + 125
 	swooping = 1
 	sleep(30 - anger_modifier)
@@ -126,11 +129,11 @@
 	playsound(get_turf(src),'sound/magic/fireball.ogg', 200, 1)
 
 	for(var/d in GLOB.cardinals)
-		INVOKE_ASYNC(src, .proc/fire_wall, d)
-	
+		INVOKE_ASYNC(src, PROC_REF(fire_wall), d)
+
 	if(health < (maxHealth * 0.8))
 		sleep(40 - anger_modifier)
-		INVOKE_ASYNC(src, .proc/diagonal_shots)
+		INVOKE_ASYNC(src, PROC_REF(diagonal_shots))
 
 /mob/living/simple_animal/hostile/megafauna/watcher/proc/fire_wall(dir)
 	var/list/hit_things = list(src)
@@ -147,7 +150,7 @@
 			if(istype(L, /mob/living/simple_animal/hostile/megafauna/watcher))
 				continue
 			L.adjustFireLoss(20)
-			to_chat(L, "<span class='userdanger'>You're reproved by the Watcher's holy fire!</span>")
+			to_chat(L, span_userdanger("You're reproved by the Watcher's holy fire!"))
 			hit_things += L
 		previousturf = J
 		sleep(1)
@@ -188,7 +191,7 @@
 	swooping |= SWOOP_DAMAGEABLE
 	density = FALSE
 	icon_state = "shadow"
-	visible_message("<span class='boldwarning'>[src] soars high!</span>")
+	visible_message(span_boldwarning("[src] soars high!"))
 
 	var/negative
 	var/initial_x = x
@@ -257,11 +260,11 @@
 	sleep(5)
 	swooping &= ~SWOOP_INVULNERABLE
 	mouse_opacity = initial(mouse_opacity)
-	icon_state = "mega_gekko"
+	icon_state = "benotafraid"
 	playsound(loc, 'sound/effects/meteorimpact.ogg', 200, 1)
 	for(var/mob/living/L in orange(1, src))
 		if(L.stat)
-			visible_message("<span class='warning'>[src] slams down on [L], crushing [L.p_them()]!</span>")
+			visible_message(span_warning("[src] slams down on [L], crushing [L.p_them()]!"))
 		else
 			L.adjustBruteLoss(75)
 			if(L && !QDELETED(L)) // Some mobs are deleted on death
@@ -270,7 +273,7 @@
 					throw_dir = pick(GLOB.alldirs)
 				var/throwtarget = get_edge_target_turf(src, throw_dir)
 				L.throw_at(throwtarget, 3)
-				visible_message("<span class='warning'>[L] is thrown clear of [src]!</span>")
+				visible_message(span_warning("[L] is thrown clear of [src]!"))
 
 	for(var/mob/M in range(7, src))
 		shake_camera(M, 15, 1)
@@ -285,7 +288,7 @@
 		AltClickNoInteract(src, A)
 		return
 	if(swoop_cooldown >= world.time)
-		to_chat(src, "<span class='warning'>You need to wait 20 seconds between jump attacks!</span>")
+		to_chat(src, span_warning("You need to wait 20 seconds between jump attacks!"))
 		return
 	swoop_attack(TRUE, A, 25)
 
@@ -316,7 +319,7 @@
 
 /obj/effect/temp_visual/target/Initialize(mapload, list/flame_hit)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/watcher_fall, flame_hit)
+	INVOKE_ASYNC(src, PROC_REF(watcher_fall), flame_hit)
 
 /obj/effect/temp_visual/target/proc/watcher_fall(list/flame_hit)
 	var/turf/T = get_turf(src)
@@ -334,7 +337,7 @@
 			continue
 		if(islist(flame_hit) && !flame_hit[L])
 			L.adjustFireLoss(40)
-			to_chat(L, "<span class='userdanger'>You're purified by the Watcher's rehabilitative fire!</span>")
+			to_chat(L, span_userdanger("You're purified by the Watcher's rehabilitative fire!"))
 			flame_hit[L] = TRUE
 		else
 			L.adjustFireLoss(10) //if we've already hit them, do way less damage
@@ -351,8 +354,8 @@
 	duration = 5
 
 /obj/effect/temp_visual/watcher_flight
-	icon = 'icons/fallout/mobs/megafauna/64x64megafauna.dmi'
-	icon_state = "mega_gekko"
+	icon = 'icons/fallout/mobs/megafauna/watcher.dmi'
+	icon_state = "swoop"
 	layer = ABOVE_ALL_MOB_LAYER
 	pixel_x = -16
 	duration = 10
@@ -360,7 +363,7 @@
 
 /obj/effect/temp_visual/watcher_flight/Initialize(mapload, negative)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/flight, negative)
+	INVOKE_ASYNC(src, PROC_REF(flight), negative)
 
 /obj/effect/temp_visual/watcher_flight/proc/flight(negative)
 	if(negative)
@@ -386,17 +389,3 @@
 	else
 		animate(src, pixel_x = -16, pixel_z = 0, time = 5)
 
-/mob/living/simple_animal/hostile/megafauna/watcher/proc/do_death_beep()
-    playsound(src, 'sound/creatures/legion_death.ogg', 75, TRUE)
-    visible_message(span_warning("The Watcher collapses onto the floor, its' impact shaking the ground [src]!"), span_warning("The Watcher collapses onto the floor, its' impact shaking the ground!"))
-
-/mob/living/simple_animal/hostile/megafauna/watcher/proc/self_destruct()
-    explosion(src,5,5,6,6)
-
-/mob/living/simple_animal/hostile/megafauna/watcher/death()
-	playsound(src, 'sound/creatures/legion_death_far.ogg', 75, TRUE)
-	do_sparks(3, TRUE, src)
-	for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/do_death_beep), i*i SECONDS)
-	addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
-	return ..()

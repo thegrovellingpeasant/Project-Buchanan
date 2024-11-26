@@ -122,10 +122,6 @@
 		breath.set_volume(BREATH_VOLUME)
 	check_breath(breath)
 
-	if(breath)
-		loc.assume_air(breath)
-		air_update_turf()
-
 /mob/living/carbon/proc/has_smoke_protection()
 	if(HAS_TRAIT(src, TRAIT_NOBREATH))
 		return TRUE
@@ -148,7 +144,7 @@
 		adjustOxyLoss(1)
 
 		failed_last_breath = 1
-		throw_alert("not_enough_oxy", /obj/screen/alert/not_enough_oxy)
+		throw_alert("not_enough_oxy", /atom/movable/screen/alert/not_enough_oxy)
 		return 0
 
 	var/safe_oxy_min = 16
@@ -176,7 +172,7 @@
 				adjustOxyLoss(8)
 		if(prob(20))
 			emote("cough")
-		throw_alert("too_much_oxy", /obj/screen/alert/too_much_oxy)
+		throw_alert("too_much_oxy", /atom/movable/screen/alert/too_much_oxy)
 		SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "suffocation", /datum/mood_event/suffocation)
 
 	if(O2_partialpressure < safe_oxy_min) //Not enough oxygen
@@ -190,7 +186,7 @@
 		else
 			adjustOxyLoss(3)
 			failed_last_breath = 1
-		throw_alert("not_enough_oxy", /obj/screen/alert/not_enough_oxy)
+		throw_alert("not_enough_oxy", /atom/movable/screen/alert/not_enough_oxy)
 		SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "suffocation", /datum/mood_event/suffocation)
 
 	else //Enough oxygen
@@ -224,7 +220,7 @@
 	if(Toxins_partialpressure > safe_tox_max)
 		var/ratio = (breath.get_moles(GAS_PLASMA)/safe_tox_max) * 10
 		adjustToxLoss(clamp(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
-		throw_alert("too_much_tox", /obj/screen/alert/too_much_tox)
+		throw_alert("too_much_tox", /atom/movable/screen/alert/too_much_tox)
 	else
 		clear_alert("too_much_tox")
 
@@ -270,22 +266,22 @@
 					// At lower pp, give out a little warning
 					SEND_SIGNAL(src, COMSIG_CLEAR_MOOD_EVENT, "smell")
 					if(prob(5))
-						to_chat(src, "<span class='notice'>There is an unpleasant smell in the air.</span>")
+						to_chat(src, span_notice("There is an unpleasant smell in the air."))
 				if(5 to 20)
 					//At somewhat higher pp, warning becomes more obvious
 					if(prob(15))
-						to_chat(src, "<span class='warning'>You smell something horribly decayed inside this room.</span>")
+						to_chat(src, span_warning("You smell something horribly decayed inside this room."))
 						SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "smell", /datum/mood_event/disgust/bad_smell)
 				if(15 to 30)
 					//Small chance to vomit. By now, people have internals on anyway
 					if(prob(5))
-						to_chat(src, "<span class='warning'>The stench of rotting carcasses is unbearable!</span>")
+						to_chat(src, span_warning("The stench of rotting carcasses is unbearable!"))
 						SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "smell", /datum/mood_event/disgust/nauseating_stench)
 						vomit()
 				if(30 to INFINITY)
 					//Higher chance to vomit. Let the horror start
 					if(prob(25))
-						to_chat(src, "<span class='warning'>The stench of rotting carcasses is unbearable!</span>")
+						to_chat(src, span_warning("The stench of rotting carcasses is unbearable!"))
 						SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "smell", /datum/mood_event/disgust/nauseating_stench)
 						vomit()
 				else
@@ -631,15 +627,15 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		if(drunkenness >= 81)
 			adjustToxLoss(0.2)
 			if(prob(5) && !stat)
-				to_chat(src, "<span class='warning'>Maybe you should lie down for a bit...</span>")
+				to_chat(src, span_warning("Maybe you should lie down for a bit..."))
 
 		if(drunkenness >= 91)
 			adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4, 60)
 			if(prob(20) && !stat)
 				if(SSshuttle.emergency.mode == SHUTTLE_DOCKED && is_station_level(z)) //QoL mainly
-					to_chat(src, "<span class='warning'>You're so tired... but you can't miss that shuttle...</span>")
+					to_chat(src, span_warning("You're so tired... but you can't miss that shuttle..."))
 				else
-					to_chat(src, "<span class='warning'>Just a quick nap...</span>")
+					to_chat(src, span_warning("Just a quick nap..."))
 					Sleeping(900)
 
 		if(drunkenness >= 101)
@@ -682,7 +678,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		return
 	adjustToxLoss(4, TRUE,  TRUE)
 	if(prob(15))
-		to_chat(src, "<span class='danger'>You feel a stabbing pain in your abdomen!</span>")
+		to_chat(src, span_danger("You feel a stabbing pain in your abdomen!"))
 
 
 ////////////////

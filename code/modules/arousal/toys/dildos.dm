@@ -90,7 +90,7 @@
 /obj/item/dildo/examine(mob/user)
 	. = ..()
 	if(can_customize)
-		. += "<span class='notice'>Alt-Click \the [src.name] to customize it.</span>"
+		. += span_notice("Alt-Click \the [src.name] to customize it.")
 
 /obj/item/dildo/random//totally random
 	name 				= "random dildo"//this name will show up in vendors and shit so you know what you're vending(or don't, i guess :^))
@@ -135,14 +135,14 @@ obj/item/dildo/custom
 // Suicide acts, by request
 
 /obj/item/dildo/proc/manual_suicide(mob/living/user)
-		user.visible_message("<span class='suicide'>[user] finally finishes deepthroating the [src], and their life.</span>")
+		user.visible_message(span_suicide("[user] finally finishes deepthroating the [src], and their life."))
 		user.adjustOxyLoss(200)
 		user.death(0)
 
 /obj/item/dildo/suicide_act(mob/living/user)
 //	is_knotted = ((src.dildo_shape == "knotted")?"They swallowed the knot":"Their face is turning blue")
 	if(do_after(user,17,target=src))
-		user.visible_message("<span class='suicide'>[user] tears-up and gags as they shove [src] down their throat! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+		user.visible_message(span_suicide("[user] tears-up and gags as they shove [src] down their throat! It looks like [user.p_theyre()] trying to commit suicide!"))
 		playsound(loc, 'sound/weapons/gagging.ogg', 50, 1, -1)
 		user.Stun(150)
 		user.adjust_blurriness(8)
@@ -152,7 +152,7 @@ obj/item/dildo/custom
 
 /obj/item/dildo/flared/huge/suicide_act(mob/living/user)
 	if(do_after(user,35,target=src))
-		user.visible_message("<span class='suicide'>[user] tears-up and gags as they try to deepthroat the [src]! WHY WOULD THEY DO THAT? It looks like [user.p_theyre()] trying to commit suicide!!</span>")
+		user.visible_message(span_suicide("[user] tears-up and gags as they try to deepthroat the [src]! WHY WOULD THEY DO THAT? It looks like [user.p_theyre()] trying to commit suicide!!"))
 		playsound(loc, 'sound/weapons/gagging.ogg', 50, 2, -1)
 		user.Stun(300)
 		user.adjust_blurriness(8)

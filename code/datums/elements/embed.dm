@@ -37,16 +37,16 @@
 	if(!isitem(target) && !isprojectile(target))
 		return ELEMENT_INCOMPATIBLE
 
-	RegisterSignal(target, COMSIG_ELEMENT_ATTACH, .proc/severancePackage)
+	RegisterSignal(target, COMSIG_ELEMENT_ATTACH, PROC_REF(severancePackage))
 	if(isprojectile(target))
 		payload_type = projectile_payload
-		RegisterSignal(target, COMSIG_PROJECTILE_SELF_ON_HIT, .proc/checkEmbedProjectile)
+		RegisterSignal(target, COMSIG_PROJECTILE_SELF_ON_HIT, PROC_REF(checkEmbedProjectile))
 	else if(isitem(target))
-		RegisterSignal(target, COMSIG_MOVABLE_IMPACT_ZONE, .proc/checkEmbedMob)
-		RegisterSignal(target, COMSIG_MOVABLE_IMPACT, .proc/checkEmbedOther)
-		RegisterSignal(target, COMSIG_PARENT_EXAMINE, .proc/examined)
-		RegisterSignal(target, COMSIG_EMBED_TRY_FORCE, .proc/tryForceEmbed)
-		RegisterSignal(target, COMSIG_ITEM_DISABLE_EMBED, .proc/detachFromWeapon)
+		RegisterSignal(target, COMSIG_MOVABLE_IMPACT_ZONE, PROC_REF(checkEmbedMob))
+		RegisterSignal(target, COMSIG_MOVABLE_IMPACT, PROC_REF(checkEmbedOther))
+		RegisterSignal(target, COMSIG_PARENT_EXAMINE, PROC_REF(examined))
+		RegisterSignal(target, COMSIG_EMBED_TRY_FORCE, PROC_REF(tryForceEmbed))
+		RegisterSignal(target, COMSIG_ITEM_DISABLE_EMBED, PROC_REF(detachFromWeapon))
 		if(!initialized)
 			src.embed_chance = embed_chance
 			src.fall_chance = fall_chance
@@ -87,7 +87,7 @@
 			var/pen_mod = -armor*(1-weapon.armour_penetration) // even a little bit of armor can make a big difference for shrapnel with large negative armor pen -- FO13 AP OVERHAUL made percentage reduction
 			actual_chance += pen_mod // doing the armor pen as a separate calc just in case this ever gets expanded on
 			if(actual_chance <= 0)
-				victim.visible_message("<span class='danger'>[weapon] bounces off [victim]'s armor, unable to embed!</span>", "<span class='notice'>[weapon] bounces off your armor, unable to embed!</span>", vision_distance = COMBAT_MESSAGE_RANGE)
+				victim.visible_message(span_danger("[weapon] bounces off [victim]'s armor, unable to embed!"), span_notice("[weapon] bounces off your armor, unable to embed!"), vision_distance = COMBAT_MESSAGE_RANGE)
 				return
 
 	var/roll_embed = prob(actual_chance)

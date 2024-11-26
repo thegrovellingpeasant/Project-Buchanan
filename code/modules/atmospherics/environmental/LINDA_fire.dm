@@ -55,6 +55,9 @@
 	perform_exposure()
 	setDir(pick(GLOB.cardinals))
 	air_update_turf()
+	//atmos is disabled, run it on objects instead.
+	if(SSair.flags & SS_NO_FIRE)
+		START_PROCESSING(SSobj, src)
 
 /obj/effect/hotspot/proc/perform_exposure()
 	var/turf/open/location = loc
@@ -65,23 +68,11 @@
 
 	bypassing = volume > CELL_VOLUME*0.95
 
-	if(bypassing)
-		volume = location.air.reaction_results["fire"]*FIRE_GROWTH_RATE
-		temperature = location.air.return_temperature()
-	else
-		var/datum/gas_mixture/affected = location.air.remove_ratio(volume/location.air.return_volume())
-		if(affected) //in case volume is 0
-			affected.set_temperature(temperature)
-			affected.react(src)
-			temperature = affected.return_temperature()
-			volume = affected.reaction_results["fire"]*FIRE_GROWTH_RATE
-			location.assume_air(affected)
-
-	for(var/A in location)
-		var/atom/AT = A
+	volume = location.air.reaction_results["fire"]*FIRE_GROWTH_RATE
+	temperature = location.air.return_temperature()
+	for(var/atom/AT as anything in location)
 		if(!QDELETED(AT) && AT != src) // It's possible that the item is deleted in temperature_expose
 			AT.fire_act(temperature, volume)
-	return
 
 /obj/effect/hotspot/proc/gauss_lerp(x, x1, x2)
 	var/b = (x1 + x2) * 0.5

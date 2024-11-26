@@ -15,7 +15,7 @@
 	selection_color = "#dece90"
 	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
-	access = list(ACCESS_NCR)
+	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 
 
@@ -32,13 +32,13 @@
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	belt = /obj/item/storage/belt/military/assault/ncr
-	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	ears = /obj/item/radio/headset/headset_government_ncrcf
 	head = /obj/item/clothing/head/beret/ncr/military_police
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
@@ -122,7 +122,6 @@
 	gloves =  /obj/item/clothing/gloves/color/latex
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/labgoat
 	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -144,7 +143,7 @@
 	flag = F13CONVICT
 	total_positions = -1
 	spawn_positions = -1
-	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg..."
+	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg... TIP: Food, booze, cigarettes, and chems regenerate stamina for mining."
 	supervisors = "the guards"
 	exp_requirements = EXP_TYPE_CITIZENS
 
@@ -515,7 +514,6 @@
 	head = /obj/item/clothing/head/f13/det_hat_alt
 	shoes =  /obj/item/clothing/shoes/laceup
 	r_pocket = /obj/item/flashlight/flare
-	r_hand = /obj/item/storage/backpack/satchel/explorer
 	suit_store = /obj/item/gun/ballistic/revolver/police
 	backpack_contents = list(
 		/obj/item/pda/detective = 1,
@@ -551,13 +549,13 @@
 
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set1/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/pill/patch/jet = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set2/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/toy/cards/deck = 1,
 		/obj/item/storage/box/dice = 1,
 		/obj/item/toy/eightball = 1
@@ -565,69 +563,69 @@
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set3/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/lighter/greyscale = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_bigboss = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set4/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/gun/ballistic/revolver/hobo/knifegun = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set5/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/melee/onehanded/knife/hunting = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set6/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/gun/ballistic/automatic/hobo/zipgun = 1,
 		/obj/item/ammo_box/magazine/zipgun = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set7/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set8/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/hypospray/medipen/medx = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set9/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/toy/crayon/spraycan = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set10/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/reagent_containers/pill/patch/turbo = 2
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set11/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/pill_bottle/chem_tin/mentats = 1,
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set12/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/box/matches = 1,
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set13/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/circuitboard/machine/chem_dispenser = 1,
 		/obj/item/stock_parts/cell/high = 1,
@@ -644,19 +642,19 @@
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set14/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/meager = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set15/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/few = 1
 		)
 	generate_items_inside(items_inside, src)
 
 /obj/item/storage/backpack/duffelbag/equipment/contraband/set16/PopulateContents()
-	var/static/items_inside = list(
+	var/static/list/items_inside = list(
 		/obj/item/storage/bag/money/small/big = 1
 		)
 	generate_items_inside(items_inside, src)

@@ -9,25 +9,25 @@
 //Buildmode Shuttle
 //Builmode Move
 
-/obj/screen/buildmode
+/atom/movable/screen/buildmode
 	icon = 'icons/misc/buildmode.dmi'
 	var/datum/buildmode/bd
 
-/obj/screen/buildmode/New(bd)
+/atom/movable/screen/buildmode/New(bd)
 	..()
 	src.bd = bd
 
-/obj/screen/buildmode/Destroy()
+/atom/movable/screen/buildmode/Destroy()
 	bd.buttons -= src
 	bd = null
 	return ..()
 
-/obj/screen/buildmode/mode
+/atom/movable/screen/buildmode/mode
 	icon_state = "buildmode1"
 	name = "Toggle Mode"
 	screen_loc = "NORTH,WEST"
 
-/obj/screen/buildmode/mode/Click(location, control, params)
+/atom/movable/screen/buildmode/mode/Click(location, control, params)
 	var/list/pa = params2list(params)
 
 	if(pa.Find("left"))
@@ -37,39 +37,39 @@
 	update_icon()
 	return 1
 
-/obj/screen/buildmode/mode/update_icon()
+/atom/movable/screen/buildmode/mode/update_icon()
 	icon_state = "buildmode[bd.mode]"
 	return
 
-/obj/screen/buildmode/help
+/atom/movable/screen/buildmode/help
 	icon_state = "buildhelp"
 	screen_loc = "NORTH,WEST+1"
 	name = "Buildmode Help"
 
-/obj/screen/buildmode/help/Click()
+/atom/movable/screen/buildmode/help/Click()
 	bd.show_help(usr)
 	return 1
 
-/obj/screen/buildmode/bdir
+/atom/movable/screen/buildmode/bdir
 	icon_state = "build"
 	screen_loc = "NORTH,WEST+2"
 	name = "Change Dir"
 
 
-/obj/screen/buildmode/bdir/update_icon()
+/atom/movable/screen/buildmode/bdir/update_icon()
 	setDir(bd.build_dir)
 	return
 
-/obj/screen/buildmode/quit
+/atom/movable/screen/buildmode/quit
 	icon_state = "buildquit"
 	screen_loc = "NORTH,WEST+3"
 	name = "Quit Buildmode"
 
-/obj/screen/buildmode/quit/Click()
+/atom/movable/screen/buildmode/quit/Click()
 	bd.quit()
 	return 1
 
-/obj/screen/buildmode/bdir/Click()
+/atom/movable/screen/buildmode/bdir/Click()
 	bd.change_dir()
 	update_icon()
 	return 1
@@ -77,7 +77,7 @@
 /datum/buildmode
 	var/mode = BASIC_BUILDMODE
 	var/client/holder = null
-	var/list/obj/screen/buttons = list()
+	var/list/atom/movable/screen/buttons = list()
 	var/build_dir = SOUTH
 	var/atom/movable/throw_atom = null
 	var/turf/cornerA = null
@@ -116,10 +116,10 @@
 	return ..()
 
 /datum/buildmode/proc/create_buttons()
-	buttons += new /obj/screen/buildmode/mode(src)
-	buttons += new /obj/screen/buildmode/help(src)
-	buttons += new /obj/screen/buildmode/bdir(src)
-	buttons += new /obj/screen/buildmode/quit(src)
+	buttons += new /atom/movable/screen/buildmode/mode(src)
+	buttons += new /atom/movable/screen/buildmode/help(src)
+	buttons += new /atom/movable/screen/buildmode/bdir(src)
+	buttons += new /atom/movable/screen/buildmode/quit(src)
 
 /datum/buildmode/proc/toggle_modes()
 	mode = (mode % NUM_BUILDMODES) +1
@@ -262,7 +262,7 @@
 	var/ctrl_click = pa.Find("ctrl")
 
 	//Clicking on UI elements shouldn't try to build things in nullspace.
-	if(istype(object,/obj/screen))
+	if(istype(object,/atom/movable/screen))
 		return FALSE
 
 	. = TRUE
@@ -302,7 +302,7 @@
 		if(ADV_BUILDMODE)
 			if(left_click && alt_click)
 				objholder = object.type
-				to_chat(user, "<span class='notice'>[initial(object.name)] ([object.type]) selected.</span>")
+				to_chat(user, span_notice("[initial(object.name)] ([object.type]) selected."))
 			else if(left_click)
 				if(ispath(objholder, /turf))
 					var/turf/T = get_turf(object)
@@ -323,17 +323,17 @@
 					if(object.vv_edit_var(varholder, valueholder))
 						log_admin("Build Mode: [key_name(user)] modified [object.name]'s [varholder] to [valueholder]")
 					else
-						to_chat(user, "<span class='warning'>Varedit rejected</span>")
+						to_chat(user, span_warning("Varedit rejected"))
 				else
-					to_chat(user, "<span class='warning'>[initial(object.name)] does not have a var called '[varholder]'</span>")
+					to_chat(user, span_warning("[initial(object.name)] does not have a var called '[varholder]'"))
 			if(right_click)
 				if(object.vars.Find(varholder))
 					if(object.vv_edit_var(varholder, initial(object.vars[varholder])))
 						log_admin("Build Mode: [key_name(user)] modified [object.name]'s [varholder] to [valueholder]")
 					else
-						to_chat(user, "<span class='warning'>Varedit rejected</span>")
+						to_chat(user, span_warning("Varedit rejected"))
 				else
-					to_chat(user, "<span class='warning'>[initial(object.name)] does not have a var called '[varholder]'</span>")
+					to_chat(user, span_warning("[initial(object.name)] does not have a var called '[varholder]'"))
 
 		if(THROW_BUILDMODE)
 			if(left_click)
@@ -357,16 +357,16 @@
 					preview += image('icons/turf/overlays.dmi',cornerB,"blueOverlay")
 					usr.client.images -= preview
 					usr.client.images += preview
-					to_chat(user, "<span class='boldwarning'>Region selected, if you're happy with your selection left click again, otherwise right click.</span>")
+					to_chat(user, span_boldwarning("Region selected, if you're happy with your selection left click again, otherwise right click."))
 					return
 				if(cornerA && cornerB)
 					if(!generator_path)
-						to_chat(user, "<span class='warning'>Select generator type first.</span>")
+						to_chat(user, span_warning("Select generator type first."))
 						return
 					var/datum/mapGenerator/G = new generator_path
 					if(istype(G, /datum/mapGenerator/repair/reload_station_map))
 						if(GLOB.reloading_map)
-							to_chat(user, "<span class='boldwarning'>You are already reloading an area! Please wait for it to fully finish loading before trying to load another!</span>")
+							to_chat(user, span_boldwarning("You are already reloading an area! Please wait for it to fully finish loading before trying to load another!"))
 							return
 					G.defineRegion(cornerA, cornerB, 1)
 					for(var/t in G.map)

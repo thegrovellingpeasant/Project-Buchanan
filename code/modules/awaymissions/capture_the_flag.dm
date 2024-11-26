@@ -50,7 +50,7 @@
 		for(var/mob/M in GLOB.player_list)
 			var/area/mob_area = get_area(M)
 			if(istype(mob_area, /area/ctf))
-				to_chat(M, "<span class='userdanger'>\The [src] has been returned to base!</span>")
+				to_chat(M, span_userdanger("\The [src] has been returned to base!"))
 		STOP_PROCESSING(SSobj, src)
 
 /obj/item/ctf/on_attack_hand(mob/living/user, act_intent = user.a_intent, unarmed_attack_flags)
@@ -73,7 +73,7 @@
 	for(var/mob/M in GLOB.player_list)
 		var/area/mob_area = get_area(M)
 		if(istype(mob_area, /area/ctf))
-			to_chat(M, "<span class='userdanger'>\The [src] has been taken!</span>")
+			to_chat(M, span_userdanger("\The [src] has been taken!"))
 	STOP_PROCESSING(SSobj, src)
 	..()
 
@@ -86,7 +86,7 @@
 	for(var/mob/M in GLOB.player_list)
 		var/area/mob_area = get_area(M)
 		if(istype(mob_area, /area/ctf))
-			to_chat(M, "<span class='userdanger'>\The [src] has been dropped!</span>")
+			to_chat(M, span_userdanger("\The [src] has been dropped!"))
 	anchored = TRUE
 
 
@@ -219,7 +219,7 @@
 			people_who_want_to_play.Cut()
 			toggle_all_ctf()
 		else
-			to_chat(user, "<span class='notice'>CTF has been requested. [num]/[CTF_REQUIRED_PLAYERS] have readied up.</span>")
+			to_chat(user, span_notice("CTF has been requested. [num]/[CTF_REQUIRED_PLAYERS] have readied up."))
 
 		return
 
@@ -255,7 +255,7 @@
 		var/turf/T = get_turf(body)
 		new /obj/effect/ctf/ammo(T)
 		recently_dead_ckeys += body.ckey
-		addtimer(CALLBACK(src, .proc/clear_cooldown, body.ckey), respawn_cooldown, TIMER_UNIQUE)
+		addtimer(CALLBACK(src, PROC_REF(clear_cooldown), body.ckey), respawn_cooldown, TIMER_UNIQUE)
 		body.dust()
 
 /obj/machinery/capture_the_flag/proc/clear_cooldown(ckey)
@@ -297,7 +297,7 @@
 		var/area/mob_area = get_area(M)
 		if(istype(mob_area, /area/ctf))
 			to_chat(M, "<span class='narsie [team_span]'>[team] team wins!</span>")
-			to_chat(M, "<span class='userdanger'>Teams have been cleared. Click on the machines to vote to begin another round.</span>")
+			to_chat(M, span_userdanger("Teams have been cleared. Click on the machines to vote to begin another round."))
 			for(var/obj/item/ctf/W in M)
 				M.dropItemToGround(W)
 			M.dust()
@@ -386,7 +386,7 @@
 
 /obj/item/gun/ballistic/automatic/pistol/deagle/ctf/dropped(mob/user)
 	. = ..()
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/ctf_floor_vanish, src), 1)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ctf_floor_vanish), src), 1)
 
 /obj/item/ammo_casing/a50/ctf
 	projectile_type = /obj/item/projectile/bullet/ctf
@@ -406,14 +406,14 @@
 
 /obj/item/gun/ballistic/automatic/laser/ctf/dropped(mob/user)
 	. = ..()
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/ctf_floor_vanish, src), 1)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ctf_floor_vanish), src), 1)
 
 /obj/item/ammo_box/magazine/recharge/ctf
 	ammo_type = /obj/item/ammo_casing/caseless/laser/ctf
 
 /obj/item/ammo_box/magazine/recharge/ctf/dropped(mob/user)
 	. = ..()
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/ctf_floor_vanish, src), 1)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ctf_floor_vanish), src), 1)
 
 /obj/item/ammo_casing/caseless/laser/ctf
 	projectile_type = /obj/item/projectile/beam/ctf
@@ -479,7 +479,7 @@
 
 /obj/item/claymore/ctf/dropped(mob/user)
 	. = ..()
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/ctf_floor_vanish, src), 1)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ctf_floor_vanish), src), 1)
 
 /datum/outfit/ctf
 	name = "CTF"
@@ -572,7 +572,7 @@
 	if(!is_ctf_target(L))
 		return
 	if(!(src.team in L.faction))
-		to_chat(L, "<span class='danger'><B>Stay out of the enemy spawn!</B></span>")
+		to_chat(L, span_danger("<B>Stay out of the enemy spawn!</B>"))
 		L.death()
 
 /obj/structure/trap/ctf/red
@@ -632,7 +632,7 @@
 			for(var/obj/item/gun/G in M)
 				qdel(G)
 			O.equip(M)
-			to_chat(M, "<span class='notice'>Ammunition reloaded!</span>")
+			to_chat(M, span_notice("Ammunition reloaded!"))
 			playsound(get_turf(M), 'sound/weapons/shotgunpump.ogg', 50, 1, -1)
 			qdel(src)
 			break
@@ -687,7 +687,7 @@
 				for(var/mob/M in GLOB.player_list)
 					var/area/mob_area = get_area(M)
 					if(istype(mob_area, /area/ctf))
-						to_chat(M, "<span class='userdanger'>[user.real_name] has captured \the [src], claiming it for [CTF.team]! Go take it back!</span>")
+						to_chat(M, span_userdanger("[user.real_name] has captured \the [src], claiming it for [CTF.team]! Go take it back!"))
 				break
 
 #undef WHITE_TEAM

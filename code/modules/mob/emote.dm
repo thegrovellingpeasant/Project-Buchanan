@@ -10,7 +10,7 @@
 	var/datum/emote/E
 	E = E.emote_list[input_text]
 	if(!E)
-		to_chat(src, "<span class='notice'>Unusable emote '[act]'. Say *help for a list.</span>")
+		to_chat(src, span_notice("Unusable emote '[act]'. Say *help for a list."))
 		return
 	E.run_emote(src, param, m_type, intentional)
 
@@ -19,20 +19,19 @@
 		return FALSE
 
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
-		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
+		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return FALSE
-	
+
 	if(length(message) > MAX_MESSAGE_LEN)
 		to_chat(usr, message)
-		to_chat(usr, "<span class='danger'>^^^----- The preceeding message has been DISCARDED for being over the maximum length of [MAX_MESSAGE_LEN]. It has NOT been sent! -----^^^</span>")
+		to_chat(usr, span_danger("^^^----- The preceeding message has been DISCARDED for being over the maximum length of [MAX_MESSAGE_LEN]. It has NOT been sent! -----^^^"))
 		return FALSE
-	
+
 	if(usr.stat == SOFT_CRIT || usr.stat == UNCONSCIOUS || usr.stat == DEAD)
-		to_chat(usr, "<span class='notice'>You cannot Do in your current condition.</span>")
+		to_chat(usr, span_notice("You cannot Do in your current condition."))
 		return FALSE
 
 	usr.log_message(message, LOG_EMOTE)
-	usr.emote_for_ghost_sight(message)		//If all these checks have passed, might as well log the message now
 	return TRUE
 
 /datum/emote/spin

@@ -111,7 +111,7 @@
 			if(A.layer > highest.layer)
 				highest = A
 		throw_impact(highest, i)
-	INVOKE_ASYNC(src, .proc/SpinAnimation, 5, 2)
+	INVOKE_ASYNC(src, PROC_REF(SpinAnimation), 5, 2)
 	return TRUE
 
 //For physical constraints to travelling up/down.
@@ -132,8 +132,17 @@
 	return T.zPassOut(src, direction, destination) && destination.zPassIn(src, direction, T)
 
 /atom/movable/vv_edit_var(var_name, var_value)
-	var/static/list/banned_edits = list("step_x", "step_y", "step_size")
-	var/static/list/careful_edits = list("bound_x", "bound_y", "bound_width", "bound_height")
+	var/static/list/banned_edits = list(
+		NAMEOF_STATIC(src, step_x),
+		NAMEOF_STATIC(src, step_y),
+		NAMEOF_STATIC(src, step_size),
+	)
+	var/static/list/careful_edits = list(
+		NAMEOF_STATIC(src, bound_x),
+		NAMEOF_STATIC(src, bound_y),
+		NAMEOF_STATIC(src, bound_width),
+		NAMEOF_STATIC(src, bound_height),
+	)
 	if(var_name in banned_edits)
 		return FALSE	//PLEASE no.
 	if((var_name in careful_edits) && (var_value % world.icon_size) != 0)
@@ -196,7 +205,7 @@
 		var/mob/M = AM
 		log_combat(src, M, "grabbed", addition="passive grab")
 		if(!supress_message)
-			visible_message("<span class='warning'>[src] has grabbed [M] passively!</span>")
+			visible_message(span_warning("[src] has grabbed [M] passively!"))
 	return TRUE
 
 /atom/movable/proc/stop_pulling()
@@ -398,12 +407,12 @@
 /atom/movable/proc/force_push(atom/movable/AM, force = move_force, direction, silent = FALSE)
 	. = AM.force_pushed(src, force, direction)
 	if(!silent && .)
-		visible_message("<span class='warning'>[src] forcefully pushes against [AM]!</span>", "<span class='warning'>You forcefully push against [AM]!</span>")
+		visible_message(span_warning("[src] forcefully pushes against [AM]!"), span_warning("You forcefully push against [AM]!"))
 
 /atom/movable/proc/move_crush(atom/movable/AM, force = move_force, direction, silent = FALSE)
 	. = AM.move_crushed(src, force, direction)
 	if(!silent && .)
-		visible_message("<span class='danger'>[src] crushes past [AM]!</span>", "<span class='danger'>You crush [AM]!</span>")
+		visible_message(span_danger("[src] crushes past [AM]!"), span_danger("You crush [AM]!"))
 
 /atom/movable/proc/move_crushed(atom/movable/pusher, force = MOVE_FORCE_DEFAULT, direction)
 	return FALSE

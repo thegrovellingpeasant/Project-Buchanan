@@ -19,7 +19,7 @@
 	. = ..()
 	if(user.get_item_by_slot(SLOT_GLASSES) == src)
 		if(world.time >= nextadrenalinepop)
-			. += "<span class='notice'>The built-in adrenaline injector is ready for use.</span>"
+			. += span_notice("The built-in adrenaline injector is ready for use.")
 		else
 			. += "<span class='notice'>[DisplayTimeText(nextadrenalinepop - world.time)] left before the adrenaline injector can be used again."
 
@@ -35,7 +35,7 @@
 		return
 	if(slot != SLOT_GLASSES)
 		return
-	RegisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, .proc/injectadrenaline)
+	RegisterSignal(user, COMSIG_LIVING_COMBAT_ENABLED, PROC_REF(injectadrenaline))
 
 /obj/item/clothing/glasses/phantomthief/syndicate/dropped(mob/user)
 	. = ..()

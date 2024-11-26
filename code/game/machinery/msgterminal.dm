@@ -82,14 +82,14 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 /obj/machinery/msgterminal/ui_interact(mob/user)
 	. = ..()
-	if(open) 
+	if(open)
 		return
 	var/dat = ""
 	dat += "<head><style>body {padding: 0; margin: 15px; background-color: #062113; color: #4aed92; line-height: 170%;} a, button, a:link, a:visited, a:active, .linkOn, .linkOff {color: #4aed92; text-decoration: none; background: #062113; border: none; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a:hover {color: #062113; background: #4aed92; border: 1px solid #4aed92} a.white, a.white:link, a.white:visited, a.white:active {color: #4aed92; text-decoration: none; background: #4aed92; border: 1px solid #161616; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a.white:hover {color: #062113; background: #4aed92;} .linkOn, a.linkOn:link, a.linkOn:visited, a.linkOn:active, a.linkOn:hover {color: #4aed92; background: #062113; border-color: #062113;} .linkOff, a.linkOff:link, a.linkOff:visited, a.linkOff:active, a.linkOff:hover{color: #4aed92; background: #062113; border-color: #062113;}</style></head><font face='courier'>"
 	dat += "<center><b>ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM v.85</b><br>"
 	dat += "<b>COPYRIGHT 2075-2077 ROBCO INDUSTRIES</b><br><br><br><br>"
 
-	
+
 	playsound(src, 'sound/f13machines/terminalkeytap01.ogg', 20, 1)
 	switch(screen)
 		if(1)	//choose your target
@@ -109,11 +109,11 @@ GLOBAL_LIST_EMPTY(allTerminals)
 				dat += "</tr>"
 			dat += "<tr>"
 			dat += "<td width='55%'>"
-			if(src.terminalid == "brotherhood")	
+			if(src.terminalid == "brotherhood")
 				dat += "<br>Circle of Steel"
-			if(src.terminalid == "legion")	
+			if(src.terminalid == "legion")
 				dat += "<br>Cohort War Council of Southwestern Arizona"
-			if(src.terminalid == "ncr")	
+			if(src.terminalid == "ncr")
 				dat += "<br>Arizona Command Camp Alexander"
 			dat += "</td>"
 			dat += "<td width='45%'>"
@@ -123,8 +123,8 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 			dat += "</table>"
 			dat += "<br><A href='?src=[REF(src)];setScreen=0'><< Back</A><br>"
-			dat += "<br><div class='panel redborder'><span class='redtext'>(( NOTE: Do not misuse this terminal to send harassing, joke or meme messages to other factions or groups in the terminal list. ))</span></div><br>"
-			
+			dat += "<br><div class='panel redborder'>[span_redtext("(( NOTE: Do not misuse this terminal to send harassing, joke or meme messages to other factions or groups in the terminal list. ))")]</div><br>"
+
 
 		if(3)	//relay information
 			dat += "Who would you like to send a message to?<br><br>"
@@ -146,11 +146,11 @@ GLOBAL_LIST_EMPTY(allTerminals)
 
 		if(6)	//sent successfully
 			playsound(src, 'sound/f13machines/terminalmenuenter.ogg', 20, 1)
-			dat += "<span class='good'>Message delivered.</span><br><br>"
+			dat += "[span_good("Message delivered.")]<br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 
 		if(7)	//unsuccessful; not sent
-			dat += "<span class='bad'>An error occurred.</span><br><br>"
+			dat += "[span_bad("An error occurred.")]<br><br>"
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
 
 		if(8)	//view messages
@@ -189,12 +189,12 @@ GLOBAL_LIST_EMPTY(allTerminals)
 				message_admins("[ADMIN_LOOKUPFLW(usr)] has sent <font size=2>COMMAND MESSAGE</font> FROM terminal:[ADMIN_LOOKUPFLW(src)]. '[message]' <br>Jump to the reply terminal:[ADMIN_JMP_MSGTERMINAL(src)]")
 				log_terminal("[key_name(usr)] sent a COMMAND message, '[message]' from the terminal at [AREACOORD(usr)].")
 				screen = 6
-				dat += "<span class='good'>Message to Command delivered.</span><br><br>"
+				dat += "[span_good("Message to Command delivered.")]<br><br>"
 				updateUsrDialog()
 				playsound(src, 'sound/f13machines/terminalmenuenter.ogg', 20, 1)
 			else
 				screen = 7
-				dat += "<span class='bad'>Message to Command aborted.</span><br><br>"
+				dat += "[span_bad("Message to Command aborted.")]<br><br>"
 				updateUsrDialog()
 				playsound(src, 'sound/f13machines/terminalmenucancel.ogg', 20, 1)
 			dat += "<a href='?src=[REF(src)];setScreen=0'>Continue</a><br>"
@@ -237,7 +237,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			dpt = "";
 			screen = 0
 			priority = NORMAL_MESSAGE_PRIORITY
-		
+
 	if(href_list["terminal"] && message)
 		var/sending = message
 		sending += "<br>"
@@ -274,9 +274,9 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		//log to (this)
 		switch(priority)
 			if(HIGH_MESSAGE_PRIORITY)
-				messages += "<span class='bad'>High Priority</span><br><b><div class='panel redborder'>To:</b> <font size=1>[uppertext(dpt)]</font><br>[sending]</div>"
+				messages += "[span_bad("High Priority")]<br><b><div class='panel redborder'>To:</b> <font size=1>[uppertext(dpt)]</font><br>[sending]</div>"
 			if(EXTREME_MESSAGE_PRIORITY)
-				messages += "<span class='bad'>!!!Extreme Priority!!!</span><br><b><div class='panel redborder'>To:</b> <font size=1>[uppertext(dpt)]</font><br>[sending]"
+				messages += "[span_bad("!!!Extreme Priority!!!")]<br><b><div class='panel redborder'>To:</b> <font size=1>[uppertext(dpt)]</font><br>[sending]"
 			else
 				messages += "<div class='panel greenborder'><b>To:</b> <font size=1>[uppertext(dpt)]</font><br>[sending]</div>"
 
@@ -346,7 +346,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			if(!silent)
 				playsound(src, beepsound, 50, 1)
 				say(title)
-			messages += "<span class='bad'>High Priority</span><br><b>From:</b> [linkedsender]<br>[message]" //the fuck is this not being sent
+			messages += "[span_bad("High Priority")]<br><b>From:</b> [linkedsender]<br>[message]" //the fuck is this not being sent
 
 		if(EXTREME_MESSAGE_PRIORITY)		// Extreme Priority
 			if(newmessagepriority < EXTREME_MESSAGE_PRIORITY)
@@ -355,7 +355,7 @@ GLOBAL_LIST_EMPTY(allTerminals)
 			//we ignore the silent option because this is !!!IMPORTANT!!!
 			playsound(src, beepsound, 50, 1)
 			say(title)
-			messages += "<span class='bad'><b>!!!Extreme Priority!!!</span></b><br><b>From:</b> [linkedsender]<br>[message]"
+			messages += "[span_bad("<b>!!!Extreme Priority!!!")]</b><br><b>From:</b> [linkedsender]<br>[message]"
 
 		else		// Normal priority
 			if(newmessagepriority < NORMAL_MESSAGE_PRIORITY)
@@ -370,19 +370,19 @@ GLOBAL_LIST_EMPTY(allTerminals)
 /obj/machinery/msgterminal/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/wrench))
 		if(anchored)
-			to_chat(user, "<span class='notice'>You unsecure the terminal.</span>")
+			to_chat(user, span_notice("You unsecure the terminal."))
 			anchored = FALSE
 		else
-			to_chat(user, "<span class='notice'>You secure the terminal.</span>")
+			to_chat(user, span_notice("You secure the terminal."))
 			anchored = TRUE
 		update_icon()
 		return
 	if(istype(O, /obj/item/crowbar))
 		if(open)
-			to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
+			to_chat(user, span_notice("You close the maintenance panel."))
 			open = FALSE
 		else
-			to_chat(user, "<span class='notice'>You open the maintenance panel.</span>")
+			to_chat(user, span_notice("You open the maintenance panel."))
 			open = TRUE
 		update_icon()
 		return
@@ -390,12 +390,12 @@ GLOBAL_LIST_EMPTY(allTerminals)
 		if(open)
 			hackState = !hackState
 			if(hackState)
-				to_chat(user, "<span class='notice'>You modify the wiring.</span>")
+				to_chat(user, span_notice("You modify the wiring."))
 			else
-				to_chat(user, "<span class='notice'>You reset the wiring.</span>")
+				to_chat(user, span_notice("You reset the wiring."))
 			update_icon()
 		else
-			to_chat(user, "<span class='warning'>You must open the maintenance panel first!</span>")
+			to_chat(user, span_warning("You must open the maintenance panel first!"))
 		return
 
 #undef NO_NEW_MESSAGE

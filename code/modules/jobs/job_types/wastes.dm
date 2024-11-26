@@ -128,6 +128,8 @@
 	description = "You are a member of some tribe that wandered into the area, maybe you'll take a look at the pretty colors in the big village, or scalp someone..."
 	supervisors = "your instincts"
 
+	outfit = /datum/outfit/job/wastes/f13tribalmigrant
+
 	loadout_options = list(
 	/datum/outfit/loadout/nomad_oregon_cannibal,
 	/datum/outfit/loadout/nomad_rustwalker,

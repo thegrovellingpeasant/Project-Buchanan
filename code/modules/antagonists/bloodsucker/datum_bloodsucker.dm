@@ -67,17 +67,17 @@
 
 /datum/antagonist/bloodsucker/greet()
 	var/fullname = ReturnFullName(TRUE)
-	to_chat(owner, "<span class='userdanger'>You are [fullname], a strain of vampire dubbed bloodsucker!</span><br>")
+	to_chat(owner, "[span_userdanger("You are [fullname], a strain of vampire dubbed bloodsucker!")]<br>")
 	owner.announce_objectives()
 	to_chat(owner, "<span class='boldannounce'>* You regenerate your health slowly, you're weak to fire, and you depend on blood to survive. Allow your stolen blood to run too low, and you will find yourself at \
 	risk of being discovered!</span><br>")
 	//to_chat(owner, "<span class='boldannounce'>As an immortal, your power is linked to your age. The older you grow, the more abilities you will have access to.<span>")
 	var/bloodsucker_greet
-	bloodsucker_greet +=  "<span class='boldannounce'>* Other Bloodsuckers are not necessarily your friends, but your survival may depend on cooperation. Betray them at your own discretion and peril.</span><br>"
-	bloodsucker_greet += "<span class='boldannounce'><i>* Use \",b\" to speak your ancient Bloodsucker language.</span><br>"
-	bloodsucker_greet += "<span class='announce'>Bloodsucker Tip: Rest in a <i>Coffin</i> to claim it, and that area, as your lair.</span><br>"
-	bloodsucker_greet += "<span class='announce'>Bloodsucker Tip: Fear the daylight! Solar flares will bombard the station periodically, and only your coffin can guarantee your safety.</span><br>"
-	bloodsucker_greet += "<span class='announce'>Bloodsucker Tip: You wont loose blood if you are unconcious or sleeping. Use this to your advantage to conserve blood.</span><br>"
+	bloodsucker_greet +=  "[span_boldannounce("* Other Bloodsuckers are not necessarily your friends, but your survival may depend on cooperation. Betray them at your own discretion and peril.")]<br>"
+	bloodsucker_greet += "[span_boldannounce("<i>* Use \",b\" to speak your ancient Bloodsucker language.")]<br>"
+	bloodsucker_greet += "[span_announce("Bloodsucker Tip: Rest in a <i>Coffin</i> to claim it, and that area, as your lair.")]<br>"
+	bloodsucker_greet += "[span_announce("Bloodsucker Tip: Fear the daylight! Solar flares will bombard the station periodically, and only your coffin can guarantee your safety.")]<br>"
+	bloodsucker_greet += "[span_announce("Bloodsucker Tip: You wont loose blood if you are unconcious or sleeping. Use this to your advantage to conserve blood.")]<br>"
 	to_chat(owner, bloodsucker_greet)
 
 	owner.current.playsound_local(null, 'sound/bloodsucker/BloodsuckerAlert.ogg', 100, FALSE, pressure_affected = FALSE)
@@ -86,7 +86,7 @@
 
 /datum/antagonist/bloodsucker/farewell()
 	owner.current.visible_message("[owner.current]'s skin flushes with color, their eyes growing glossier. They look...alive.",\
-			"<span class='userdanger'><FONT size = 3>With a snap, your curse has ended. You are no longer a Bloodsucker. You live once more!</FONT></span>")
+			span_userdanger("<FONT size = 3>With a snap, your curse has ended. You are no longer a Bloodsucker. You live once more!</FONT>"))
 	// Refill with Blood
 	owner.current.blood_volume = max(owner.current.blood_volume,BLOOD_VOLUME_SAFE)
 
@@ -121,7 +121,7 @@
 			bloodsucker_title = pick ("Count","Baron","Viscount","Prince","Duke","Tzar","Dreadlord","Lord","Master")
 		else
 			bloodsucker_title = pick ("Countess","Baroness","Viscountess","Princess","Duchess","Tzarina","Dreadlady","Lady","Mistress")
-		to_chat(owner, "<span class='announce'>You have earned a title! You are now known as <i>[ReturnFullName(TRUE)]</i>!</span>")
+		to_chat(owner, span_announce("You have earned a title! You are now known as <i>[ReturnFullName(TRUE)]</i>!"))
 	// Titles [Fledgling]
 	else
 		bloodsucker_title = null
@@ -142,7 +142,7 @@
 			if(prob(10)) // Gender override
 				bloodsucker_reputation = pick("Queen of the Damned", "Blood Queen", "Empress of Blades", "Sinlady", "God-Queen")
 
-		to_chat(owner, "<span class='announce'>You have earned a reputation! You are now known as <i>[ReturnFullName(TRUE)]</i>!</span>")
+		to_chat(owner, span_announce("You have earned a reputation! You are now known as <i>[ReturnFullName(TRUE)]</i>!"))
 
 	// Reputations [Fledgling]
 	else
@@ -262,9 +262,9 @@
 	if(istype(owner.current.loc, /obj/structure/closet/crate/coffin))
 		SpendRank()
 	else
-		to_chat(owner, "<EM><span class='notice'>You have grown more ancient! Sleep in a coffin that you have claimed to thicken your blood and become more powerful.</span></EM>")
+		to_chat(owner, "<EM>[span_notice("You have grown more ancient! Sleep in a coffin that you have claimed to thicken your blood and become more powerful.")]</EM>")
 		if(bloodsucker_level_unspent >= 2)
-			to_chat(owner, "<span class='announce'>Bloodsucker Tip: If you cannot find or steal a coffin to use, you can build one from wooden planks.</span><br>")
+			to_chat(owner, "[span_announce("Bloodsucker Tip: If you cannot find or steal a coffin to use, you can build one from wooden planks.")]<br>")
 
 /datum/antagonist/bloodsucker/proc/LevelUpPowers()
 	for(var/datum/action/bloodsucker/power in powers)
@@ -294,21 +294,21 @@
 		if(bloodsucker_level_unspent <= 0) // Already spent all your points, and tried opening/closing your coffin, pal.
 			return
 		if(!istype(owner.current.loc, /obj/structure/closet/crate/coffin))
-			to_chat(owner.current, "<span class='warning'>Return to your coffin to advance your Rank.</span>")
+			to_chat(owner.current, span_warning("Return to your coffin to advance your Rank."))
 			return
 		if(!choice || !options[choice] || (locate(options[choice]) in powers)) // ADDED: Check to see if you already have this power, due to window stacking.
-			to_chat(owner.current, "<span class='notice'>You prevent your blood from thickening just yet, but you may try again later.</span>")
+			to_chat(owner.current, span_notice("You prevent your blood from thickening just yet, but you may try again later."))
 			return
 		if(L.blood_volume < level_bloodcost)
-			to_chat(owner.current, "<span class='warning'>You dont have enough blood to thicken your blood, you need [level_bloodcost - L.blood_volume] units more!</span>")
+			to_chat(owner.current, span_warning("You dont have enough blood to thicken your blood, you need [level_bloodcost - L.blood_volume] units more!"))
 			return
 		// Buy New Powers
 		var/datum/action/bloodsucker/P = options[choice]
 		AddBloodVolume(-level_bloodcost)
 		BuyPower(new P)
-		to_chat(owner.current, "<span class='notice'>You have used [level_bloodcost] units of blood and learned [initial(P.name)]!</span>")
+		to_chat(owner.current, span_notice("You have used [level_bloodcost] units of blood and learned [initial(P.name)]!"))
 	else
-		to_chat(owner.current, "<span class='notice'>You grow more ancient by the night!</span>")
+		to_chat(owner.current, span_notice("You grow more ancient by the night!"))
 	/////////
 	// Advance Powers (including new)
 	LevelUpPowers()
@@ -332,8 +332,8 @@
 	// Assign True Reputation
 	if(bloodsucker_level == 4)
 		SelectReputation(am_fledgling = FALSE, forced = TRUE)
-	to_chat(owner.current, "<span class='notice'>You are now a rank [bloodsucker_level] Bloodsucker. Your strength, health, feed rate, regen rate, can have up to [bloodsucker_level - count_vassals(owner.current.mind)] vassals, and maximum blood have all increased!</span>")
-	to_chat(owner.current, "<span class='notice'>Your existing powers have all ranked up as well!</span>")
+	to_chat(owner.current, span_notice("You are now a rank [bloodsucker_level] Bloodsucker. Your strength, health, feed rate, regen rate, can have up to [bloodsucker_level - count_vassals(owner.current.mind)] vassals, and maximum blood have all increased!"))
+	to_chat(owner.current, span_notice("Your existing powers have all ranked up as well!"))
 	update_hud(TRUE)
 	owner.current.playsound_local(null, 'sound/effects/pope_entry.ogg', 25, TRUE, pressure_affected = FALSE)
 
@@ -341,7 +341,7 @@
 
 //This handles the application of antag huds/special abilities
 /datum/antagonist/bloodsucker/apply_innate_effects(mob/living/mob_override)
-	RegisterSignal(owner.current,COMSIG_LIVING_BIOLOGICAL_LIFE,.proc/LifeTick)
+	RegisterSignal(owner.current,COMSIG_LIVING_BIOLOGICAL_LIFE, PROC_REF(LifeTick))
 	return
 
 //This handles the removal of antag huds/special abilities
@@ -432,14 +432,14 @@
 	var/list/report = list()
 
 	// Vamp Name
-	report += "<br><span class='header'><b>\[[ReturnFullName(TRUE)]\]</b></span>"
+	report += "<br>[span_header("<b>\[[ReturnFullName(TRUE)]\]</b>")]"
 
 	// Default Report
 	report += ..()
 
 	// Now list their vassals
 	if (vassals.len > 0)
-		report += "<span class='header'>Their Vassals were...</span>"
+		report += span_header("Their Vassals were...")
 		for (var/datum/antagonist/vassal/V in vassals)
 			if (V.owner)
 				var/jobname = V.owner.assigned_role ? "the [V.owner.assigned_role]" : ""
@@ -449,7 +449,7 @@
 
 //Displayed at the start of roundend_category section, default to roundend_category header
 /datum/antagonist/bloodsucker/roundend_report_header()
-	return 	"<span class='header'>Lurking in the darkness, the Bloodsuckers were:</span><br>"
+	return 	"[span_header("Lurking in the darkness, the Bloodsuckers were:")]<br>"
 
 
 
@@ -670,9 +670,9 @@
 #define ui_vamprank_display "WEST:6,CENTER-2:-5"   // 2 tiles down
 
 /datum/hud
-	var/obj/screen/bloodsucker/blood_counter/blood_display
-	var/obj/screen/bloodsucker/rank_counter/vamprank_display
-	var/obj/screen/bloodsucker/sunlight_counter/sunlight_display
+	var/atom/movable/screen/bloodsucker/blood_counter/blood_display
+	var/atom/movable/screen/bloodsucker/rank_counter/vamprank_display
+	var/atom/movable/screen/bloodsucker/sunlight_counter/sunlight_display
 
 /datum/antagonist/bloodsucker/proc/add_hud()
 	return
@@ -708,36 +708,36 @@
 			owner.current.hud_used.vamprank_display.icon_state = (bloodsucker_level_unspent > 0) ? "rank_up" : "rank"
 
 
-/obj/screen/bloodsucker
+/atom/movable/screen/bloodsucker
 	invisibility = INVISIBILITY_ABSTRACT
 
-/obj/screen/bloodsucker/proc/clear()
+/atom/movable/screen/bloodsucker/proc/clear()
 	invisibility = INVISIBILITY_ABSTRACT
 
-/obj/screen/bloodsucker/proc/update_counter(value, valuecolor)
+/atom/movable/screen/bloodsucker/proc/update_counter(value, valuecolor)
 	invisibility = 0
 
-/obj/screen/bloodsucker/blood_counter
+/atom/movable/screen/bloodsucker/blood_counter
 	icon = 'icons/mob/actions/bloodsucker.dmi'
 	name = "Blood Consumed"
 	icon_state = "blood_display"
 	screen_loc = ui_blood_display
 
-/obj/screen/bloodsucker/blood_counter/update_counter(value, valuecolor)
+/atom/movable/screen/bloodsucker/blood_counter/update_counter(value, valuecolor)
 	..()
 	maptext = "<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='[valuecolor]'>[round(value,1)]</font></div>"
 
-/obj/screen/bloodsucker/rank_counter
+/atom/movable/screen/bloodsucker/rank_counter
 	name = "Bloodsucker Rank"
 	icon = 'icons/mob/actions/bloodsucker.dmi'
 	icon_state = "rank"
 	screen_loc = ui_vamprank_display
 
-/obj/screen/bloodsucker/rank_counter/update_counter(value, valuecolor)
+/atom/movable/screen/bloodsucker/rank_counter/update_counter(value, valuecolor)
 	..()
 	maptext = "<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='[valuecolor]'>[round(value,1)]</font></div>"
 
-/obj/screen/bloodsucker/sunlight_counter
+/atom/movable/screen/bloodsucker/sunlight_counter
 	icon = 'icons/mob/actions/bloodsucker.dmi'
 	name = "Solar Flare Timer"
 	icon_state = "sunlight_night"
@@ -761,7 +761,7 @@
 		owner.current.hud_used.sunlight_display.icon_state = "sunlight_" + (amDay ? "day":"night")
 
 
-/obj/screen/bloodsucker/sunlight_counter/update_counter(value, valuecolor)
+/atom/movable/screen/bloodsucker/sunlight_counter/update_counter(value, valuecolor)
 	..()
 	maptext = "<div align='center' valign='bottom' style='position:relative; top:0px; left:6px'><font color='[valuecolor]'>[value]</font></div>"
 

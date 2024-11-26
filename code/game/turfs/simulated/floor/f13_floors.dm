@@ -155,10 +155,10 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "oakfloor1"
 
-	New()
-		..()
-		if(icon_state == "oakfloor1")
-			icon_state = "oakfloor[rand(1,4)]"
+/turf/open/floor/wood/f13/oak/Initialize(mapload)
+	. = ..()
+	if(icon_state == "oakfloor1")
+		icon_state = "oakfloor[rand(1,4)]"
 
 /turf/open/floor/wood/f13/housewoodbroken
 	icon_state = "housewood1-broken"

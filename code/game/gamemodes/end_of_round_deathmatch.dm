@@ -38,7 +38,7 @@ GLOBAL_LIST_INIT(eord_arsenal, list(
 	if(isliving(src) && is_centcom_level(z))
 		was_dead = " (again), try not to die this time"
 
-	to_chat(spawned_mob, "<br><br><h1><span class='danger'>Fight for your life[was_dead]!</span></h1><br><br>")
+	to_chat(spawned_mob, "<br><br><h1>[span_danger("Fight for your life[was_dead]!")]</h1><br><br>")
 
 
 /// This is only available to mobs once they join EORD.
@@ -65,11 +65,11 @@ GLOBAL_LIST_INIT(eord_arsenal, list(
 
 
 /datum/controller/subsystem/ticker/proc/end_of_round_deathmatch()
-	RegisterSignal(SSdcs, COMSIG_GLOB_MOB_LOGIN, .proc/grant_eord_respawn) // New mobs can now respawn into EORD
+	RegisterSignal(SSdcs, COMSIG_GLOB_MOB_LOGIN, PROC_REF(grant_eord_respawn)) // New mobs can now respawn into EORD
 	var/list/spawns = GLOB.deathmatch_spawn_points.Copy()
 
 	if(!length(spawns))
-		to_chat(world, "<br><br><h1><span class='danger'>End of Round Deathmatch initialization failed, please do not grief.</span></h1><br><br>")
+		to_chat(world, "<br><br><h1>[span_danger("End of Round Deathmatch initialization failed, please do not grief.")]</h1><br><br>")
 		return
 
 	for(var/mob/player_mob as anything in GLOB.player_list)
@@ -85,7 +85,7 @@ GLOBAL_LIST_INIT(eord_arsenal, list(
 		if(isliving(player_mob) && is_centcom_level(player_mob.z))
 			continue // Already at CentComm, lets not force them out of their bodies.
 		if(!player_mob.mind) // This proc is too important to prevent one admin shenanigan from runtiming it entirely
-			to_chat(player_mob, "<br><br><h1><span class='danger'>You don't have a mind, if you believe this is not intended, please report it.</span></h1><br><br>")
+			to_chat(player_mob, "<br><br><h1>[span_danger("You don't have a mind, if you believe this is not intended, please report it.")]</h1><br><br>")
 			continue
 
 		var/turf/spawn_location
@@ -95,13 +95,13 @@ GLOBAL_LIST_INIT(eord_arsenal, list(
 		else
 			spawns = GLOB.deathmatch_spawn_points.Copy()
 			if(!length(spawns))
-				to_chat(world, "<br><br><h1><span class='danger'>End of Round Deathmatch initialization failed, please do not grief.</span></h1><br><br>")
+				to_chat(world, "<br><br><h1>[span_danger("End of Round Deathmatch initialization failed, please do not grief.")]</h1><br><br>")
 				return
 			spawn_location = pick(spawns)
 			spawns -= spawn_location
 
 		if(!spawn_location)
-			to_chat(player_mob, "<br><br><h1><span class='danger'>Failed to find a valid location for End of Round Deathmatch. Please do not grief.</span></h1><br><br>")
+			to_chat(player_mob, "<br><br><h1>[span_danger("Failed to find a valid location for End of Round Deathmatch. Please do not grief.")]</h1><br><br>")
 			continue
 
 		player_mob.spawn_at_eord(spawn_location)

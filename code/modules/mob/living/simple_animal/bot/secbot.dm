@@ -263,7 +263,7 @@ Auto Patrol: []"},
 
 /mob/living/simple_animal/bot/secbot/proc/retaliate(mob/living/carbon/human/H)
 	var/judgement_criteria = judgement_criteria()
-	threatlevel = H.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+	threatlevel = H.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, PROC_REF(check_for_weapons)))
 	threatlevel += 6
 	if(threatlevel >= 4)
 		target = H
@@ -291,7 +291,7 @@ Auto Patrol: []"},
 			return
 	if(H.a_intent == INTENT_HELP && bot_accessory)
 
-		to_chat(H, "<span class='warning'>You knock [bot_accessory] off of [src]'s head!</span>")
+		to_chat(H, span_warning("You knock [bot_accessory] off of [src]'s head!"))
 		reset_fashion()
 		return
 
@@ -311,19 +311,19 @@ Auto Patrol: []"},
 
 /mob/living/simple_animal/bot/secbot/proc/attempt_place_on_head(mob/user, obj/item/clothing/head/H)
 	if(user && !user.temporarilyRemoveItemFromInventory(H))
-		to_chat(user, "<span class='warning'>\The [H] is stuck to your hand, you cannot put it on [src]'s head!</span>")
+		to_chat(user, span_warning("\The [H] is stuck to your hand, you cannot put it on [src]'s head!"))
 		return
 	if(bot_accessory)
-		to_chat("<span class='warning'>\[src] already has an accessory, and the laws of physics disallow him from wearing a second!</span>")
+		to_chat(span_warning("\[src] already has an accessory, and the laws of physics disallow him from wearing a second!"))
 		return
 
 	if(H.beepsky_fashion)
-		to_chat(user, "<span class='warning'>You set [H] on [src].</span>")
+		to_chat(user, span_warning("You set [H] on [src]."))
 		bot_accessory = H
 		H.forceMove(src)
 		apply_fashion(H.beepsky_fashion)
 	else
-		to_chat(user, "<span class='warning'>You set [H] on [src]'s head, but it falls off!</span>")
+		to_chat(user, span_warning("You set [H] on [src]'s head, but it falls off!"))
 		H.forceMove(drop_location())
 
 /mob/living/simple_animal/bot/secbot/regenerate_icons()
@@ -347,9 +347,9 @@ Auto Patrol: []"},
 	. = ..()
 	if(emagged == 2)
 		if(user)
-			to_chat(user, "<span class='danger'>You short out [src]'s target assessment circuits.</span>")
+			to_chat(user, span_danger("You short out [src]'s target assessment circuits."))
 			oldtarget_name = user.name
-		audible_message("<span class='danger'>[src] buzzes oddly!</span>")
+		audible_message(span_danger("[src] buzzes oddly!"))
 		declare_arrests = FALSE
 		update_icon()
 
@@ -386,8 +386,8 @@ Auto Patrol: []"},
 /mob/living/simple_animal/bot/secbot/proc/cuff(mob/living/carbon/C)
 	mode = BOT_ARREST
 	playsound(src, 'sound/weapons/cablecuff.ogg', 30, TRUE, -2)
-	C.visible_message("<span class='danger'>[process_emote("CAPTURE_ONE", C)]</span>",\
-						"<span class='userdanger'>[process_emote("CAPTURE_TWO", C)]</span>")
+	C.visible_message(span_danger("[process_emote("CAPTURE_ONE", C)]"),\
+						span_userdanger("[process_emote("CAPTURE_TWO", C)]"))
 	if(do_after(src, 60, FALSE, C))
 		attempt_handcuff(C)
 
@@ -403,7 +403,7 @@ Auto Patrol: []"},
 /mob/living/simple_animal/bot/secbot/proc/stun_attack(mob/living/carbon/C)
 	var/judgement_criteria = judgement_criteria()
 	icon_state = "secbot-c"
-	addtimer(CALLBACK(src, /atom/.proc/update_icon), 2)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 2)
 	var/threat = 5
 	if(ishuman(C))
 		if(stored_fashion)
@@ -415,19 +415,19 @@ Auto Patrol: []"},
 		C.stuttering = 5
 		C.DefaultCombatKnockdown(100)
 		var/mob/living/carbon/human/H = C
-		threat = H.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+		threat = H.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, PROC_REF(check_for_weapons)))
 	else
 		playsound(src, 'sound/weapons/egloves.ogg', 50, TRUE, -1)
 		C.DefaultCombatKnockdown(100)
 		C.stuttering = 5
-		threat = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+		threat = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, PROC_REF(check_for_weapons)))
 
 	log_combat(src,C,"stunned")
 	if(declare_arrests)
 		var/area/location = get_area(src)
 		speak(process_emote("ARREST", C, threat, arrest_type, location), radio_channel)
-	C.visible_message("<span class='danger'>[process_emote("ATTACK_ONE", C)]</span>",\
-							"<span class='userdanger'>[process_emote("ATTACK_TWO", C)]</span>")
+	C.visible_message(span_danger("[process_emote("ATTACK_ONE", C)]"),\
+							span_userdanger("[process_emote("ATTACK_TWO", C)]"))
 
 /mob/living/simple_animal/bot/secbot/handle_automated_action()
 	if(!..())
@@ -522,13 +522,13 @@ Auto Patrol: []"},
 	target = null
 	last_found = world.time
 	frustration = 0
-	INVOKE_ASYNC(src, .proc/handle_automated_action)
+	INVOKE_ASYNC(src, PROC_REF(handle_automated_action))
 
 /mob/living/simple_animal/bot/secbot/proc/back_to_hunt()
 	anchored = FALSE
 	frustration = 0
 	mode = BOT_HUNT
-	INVOKE_ASYNC(src, .proc/handle_automated_action)
+	INVOKE_ASYNC(src, PROC_REF(handle_automated_action))
 // look for a criminal in view of the bot
 
 /mob/living/simple_animal/bot/secbot/proc/look_for_perp()
@@ -541,7 +541,7 @@ Auto Patrol: []"},
 		if((C.name == oldtarget_name) && (world.time < last_found + 100))
 			continue
 
-		threatlevel = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, .proc/check_for_weapons))
+		threatlevel = C.assess_threat(judgement_criteria, weaponcheck=CALLBACK(src, PROC_REF(check_for_weapons)))
 
 		if(!threatlevel)
 			continue
@@ -553,7 +553,7 @@ Auto Patrol: []"},
 			playsound(loc, pick('sound/voice/beepsky/criminal.ogg', 'sound/voice/beepsky/justice.ogg', 'sound/voice/beepsky/freeze.ogg'), 50, FALSE)
 			visible_message(process_emote("TAUNT", target, threatlevel))
 			mode = BOT_HUNT
-			INVOKE_ASYNC(src, .proc/handle_automated_action)
+			INVOKE_ASYNC(src, PROC_REF(handle_automated_action))
 			break
 		else
 			continue
@@ -566,7 +566,7 @@ Auto Patrol: []"},
 /mob/living/simple_animal/bot/secbot/explode()
 
 	walk_to(src,0)
-	visible_message("<span class='boldannounce'>[process_emote("DEATH")]</span>")
+	visible_message(span_boldannounce("[process_emote("DEATH")]"))
 	var/atom/Tsec = drop_location()
 
 	var/obj/item/bot_assembly/secbot/Sa = new (Tsec)

@@ -3,15 +3,15 @@
 /mob/living/proc/HaveBloodsuckerBodyparts(displaymessage = "") // displaymessage can be something such as "rising from death" for Torpid Sleep. givewarningto is the person receiving messages.
 	if(!getorganslot(ORGAN_SLOT_HEART))
 		if(displaymessage != "")
-			to_chat(src, "<span class='warning'>Without a heart, you are incapable of [displaymessage].</span>")
+			to_chat(src, span_warning("Without a heart, you are incapable of [displaymessage]."))
 		return FALSE
 	if(!get_bodypart(BODY_ZONE_HEAD))
 		if(displaymessage != "")
-			to_chat(src, "<span class='warning'>Without a head, you are incapable of [displaymessage].</span>")
+			to_chat(src, span_warning("Without a head, you are incapable of [displaymessage]."))
 		return FALSE
 	if(!getorgan(/obj/item/organ/brain)) // NOTE: This is mostly just here so we can do one scan for all needed parts when creating a vamp. You probably won't be trying to use powers w/out a brain.
 		if(displaymessage != "")
-			to_chat(src, "<span class='warning'>Without a brain, you are incapable of [displaymessage].</span>")
+			to_chat(src, span_warning("Without a brain, you are incapable of [displaymessage]."))
 		return FALSE
 	return TRUE
 
@@ -25,7 +25,7 @@
 		return ""
 	// Viewer is Target's Vassal?
 	if(viewer.mind.has_antag_datum(ANTAG_DATUM_VASSAL) in bloodsuckerdatum.vassals)
-		var/returnString = "\[<span class='warning'><EM>This is your Master!</EM></span>\]"
+		var/returnString = "\[[span_warning("<EM>This is your Master!</EM>")]\]"
 		var/returnIcon = "[icon2html('icons/misc/language.dmi', world, "bloodsucker")]"
 		returnString += "\n"
 		return returnIcon + returnString
@@ -33,12 +33,12 @@
 	if(!viewer.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER) && !(viewer in bloodsuckerdatum.vassals))
 		return ""
 	// Default String
-	var/returnString = "\[<span class='warning'><EM>[bloodsuckerdatum.ReturnFullName(1)]</EM></span>\]"
+	var/returnString = "\[[span_warning("<EM>[bloodsuckerdatum.ReturnFullName(1)]</EM>")]\]"
 	var/returnIcon = "[icon2html('icons/misc/language.dmi', world, "bloodsucker")]"
 
 	// In Disguise (Veil)?
 	//if (name_override != null)
-	//	returnString += "<span class='suicide'> ([real_name] in disguise!) </span>"
+	//	returnString += span_suicide(" ([real_name] in disguise!) ")
 
 	//returnString += "\n"  Don't need spacers. Using . += "" in examine.dm does this on its own.
 	return returnIcon + returnString
@@ -64,7 +64,7 @@
 		returnIcon = "[icon2html('icons/misc/mark_icons.dmi', world, "vassal")]"
 	// Am I someone ELSE'S Vassal?
 	else if(viewer.mind.has_antag_datum(ANTAG_DATUM_BLOODSUCKER))
-		returnString +=	"This [dna.species.name] bears the mark of <span class='boldwarning'>[vassaldatum.master.ReturnFullName(vassaldatum.master.owner.current,1)]</span>"
+		returnString +=	"This [dna.species.name] bears the mark of [span_boldwarning("[vassaldatum.master.ReturnFullName(vassaldatum.master.owner.current,1)]")]"
 		returnIcon = "[icon2html('icons/misc/mark_icons.dmi', world, "vassal_grey")]"
 	// Are you serving the same master as I am?
 	else if(viewer.mind.has_antag_datum(ANTAG_DATUM_VASSAL) in vassaldatum.master.vassals)

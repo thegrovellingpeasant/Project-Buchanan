@@ -7238,13 +7238,11 @@
 "Ls" = (
 /obj/docking_port/stationary{
 	dir = 4;
-	dwidth = 1;
 	height = 20;
 	id = "supply_away";
-	json_key = "supply";
 	name = "Cargo Dock";
 	width = 5;
-	dheight = 15;
+	dheight = 14;
 	roundstart_template = /datum/map_template/shuttle/cargo/reno
 	},
 /turf/open/indestructible/ground/inside/subway,

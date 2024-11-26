@@ -25,11 +25,11 @@
 	// Being Grabbed
 	if(owner.pulledby && owner.pulledby.grab_state >= GRAB_AGGRESSIVE)
 		if(display_error)
-			to_chat(owner, "<span class='warning'>You're being grabbed!</span>")
+			to_chat(owner, span_warning("You're being grabbed!"))
 		return FALSE
 	if(!owner.has_gravity(owner.loc)) //We dont want people to be able to use this to fly around in space
 		if(display_error)
-			to_chat(owner, "<span class='warning'>You cant dash while floating!</span>")
+			to_chat(owner, span_warning("You cant dash while floating!"))
 		return FALSE
 	return TRUE
 
@@ -48,7 +48,7 @@
 /datum/action/bloodsucker/targeted/haste/FireTargetedPower(atom/A)
 	// This is a non-async proc to make sure the power is "locked" until this finishes.
 	hit = list()
-	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, .proc/on_move)
+	RegisterSignal(owner, COMSIG_MOVABLE_MOVED, PROC_REF(on_move))
 	var/mob/living/user = owner
 	var/turf/T = isturf(A) ? A : get_turf(A)
 	// Pulled? Not anymore.

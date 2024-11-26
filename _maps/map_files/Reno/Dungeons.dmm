@@ -1,18 +1,18 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "heT" = (
 /obj/effect/landmark/map_load_mark/dungeons/ghoulsubway,
-/turf/open/space/basic,
-/area/space)
+/turf/closed/mineral/random/low_chance,
+/area/f13/reno_caves)
 "ofT" = (
-/turf/open/space/basic,
-/area/space)
+/turf/closed/mineral/random/low_chance,
+/area/f13/reno_caves)
 "ulp" = (
 /turf/closed/indestructible/paper,
 /area/space)
 "xPE" = (
 /obj/effect/landmark/map_load_mark/dungeons/raidersubway,
-/turf/open/space/basic,
-/area/space)
+/turf/closed/mineral/random/low_chance,
+/area/f13/reno_caves)
 
 (1,1,1) = {"
 ofT

@@ -86,32 +86,32 @@
 	. = TRUE
 	if(opened == GENERATOR_COVER_CLOSED)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You start to pry upen the cover of the fusion core slot...</span>")
+		to_chat(user, span_notice("You start to pry upen the cover of the fusion core slot..."))
 		if(I.use_tool(src,user,70))
 			if(opened == GENERATOR_COVER_CLOSED)
 				opened = GENERATOR_COVER_OPENED
 				user.visible_message(\
 					"[user.name] has pried open the fusion core cover panel of the[src.name]!",\
-					"<span class='notice'>You pry open the fusion core's cover panel.</span>")
+					span_notice("You pry open the fusion core's cover panel."))
 				return
 			else
 				return
-	
+
 /obj/machinery/power/fusion_generator/wirecutter_act(mob/living/user, obj/item/I)
 	. = TRUE
 	if(opened == GENERATOR_COVER_OPENED)
 		I.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You start to cut the wires connected to the fusion core...</span>")
+		to_chat(user, span_notice("You start to cut the wires connected to the fusion core..."))
 		if(I.use_tool(src,user,100))
 			if(wiring == GENERATOR_WIRING_INTACT)
 				wiring = GENERATOR_WIRING_DISABLED
-				user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You cut the wires in the way of the fusion core.</span>")
+				user.visible_message("[user] removes \the [cell] from [src.name]!",span_notice("You cut the wires in the way of the fusion core."))
 				return
 			else
 				user.visible_message("You already cut the wires in the way!")
 				return
 	else
-		to_chat(user, "<span class='warning'>The panel is still on!</span>")
+		to_chat(user, span_warning("The panel is still on!"))
 		return
 
 /obj/machinery/power/fusion_generator/screwdriver_act(mob/living/user, obj/item/I)
@@ -119,27 +119,27 @@
 		return TRUE
 	. = TRUE
 	if(!opened)
-		to_chat(user, "<span class='warning'>The slot cover is still in the way!</span>")
+		to_chat(user, span_warning("The slot cover is still in the way!"))
 		return
 	if(wiring)
 		if(cell)
-			user.visible_message("[user] removes \the [cell] from [src.name]!","<span class='notice'>You remove \the [cell].</span>")
+			user.visible_message("[user] removes \the [cell] from [src.name]!",span_notice("You remove \the [cell]."))
 			user.put_in_hands(cell)
 			cell.update_icon()
 			cell = null
 			update_icon_state()
 			return
 		else
-			to_chat(user, "<span class='notice'>There's no fusion core for you to remove!</span>")
+			to_chat(user, span_notice("There's no fusion core for you to remove!"))
 	else
-		to_chat(user, "<span class='warning'>The wiring is still in the way!</span>")
+		to_chat(user, span_warning("The wiring is still in the way!"))
 		return
 
 /obj/machinery/power/fusion_generator/attackby(obj/item/I, mob/living/user, params)
 
 	if(istype(I, /obj/item/stock_parts/cell) && (opened && wiring))
 		if(cell)
-			to_chat(user, "<span class='warning'>There is a power cell already installed!</span>")
+			to_chat(user, span_warning("There is a power cell already installed!"))
 			return
 		else
 			if(!user.transferItemToLoc(I, src))
@@ -147,7 +147,7 @@
 			cell = I
 			user.visible_message(\
 				"[user.name] has inserted the [cell] to [src.name]!",\
-				"<span class='notice'>You insert the [cell].</span>")
+				span_notice("You insert the [cell]."))
 			update_icon_state()
 
 /obj/machinery/power/fusion_generator/ncrcf

@@ -5,7 +5,7 @@
 /datum/component/combat_mode
 	var/mode_flags = COMBAT_MODE_INACTIVE
 	var/combatmessagecooldown
-	var/obj/screen/combattoggle/hud_icon
+	var/atom/movable/screen/combattoggle/hud_icon
 	var/hud_loc
 
 /datum/component/combat_mode/Initialize(hud_loc = ui_combat_toggle)
@@ -15,14 +15,14 @@
 
 	src.hud_loc = hud_loc
 
-	RegisterSignal(L, list(SIGNAL_ADDTRAIT(TRAIT_COMBAT_MODE_LOCKED), SIGNAL_REMOVETRAIT(TRAIT_COMBAT_MODE_LOCKED)), .proc/update_combat_lock)
-	RegisterSignal(L, COMSIG_TOGGLE_COMBAT_MODE, .proc/user_toggle_intentional_combat_mode)
-	RegisterSignal(L, COMSIG_DISABLE_COMBAT_MODE, .proc/safe_disable_combat_mode)
-	RegisterSignal(L, COMSIG_ENABLE_COMBAT_MODE, .proc/safe_enable_combat_mode)
-	RegisterSignal(L, COMSIG_MOB_DEATH, .proc/on_death)
-	RegisterSignal(L, COMSIG_MOB_CLIENT_LOGOUT, .proc/on_logout)
-	RegisterSignal(L, COMSIG_MOB_HUD_CREATED, .proc/on_mob_hud_created)
-	RegisterSignal(L, COMSIG_COMBAT_MODE_CHECK, .proc/check_flags)
+	RegisterSignal(L, list(SIGNAL_ADDTRAIT(TRAIT_COMBAT_MODE_LOCKED), SIGNAL_REMOVETRAIT(TRAIT_COMBAT_MODE_LOCKED)), PROC_REF(update_combat_lock))
+	RegisterSignal(L, COMSIG_TOGGLE_COMBAT_MODE, PROC_REF(user_toggle_intentional_combat_mode))
+	RegisterSignal(L, COMSIG_DISABLE_COMBAT_MODE, PROC_REF(safe_disable_combat_mode))
+	RegisterSignal(L, COMSIG_ENABLE_COMBAT_MODE, PROC_REF(safe_enable_combat_mode))
+	RegisterSignal(L, COMSIG_MOB_DEATH, PROC_REF(on_death))
+	RegisterSignal(L, COMSIG_MOB_CLIENT_LOGOUT, PROC_REF(on_logout))
+	RegisterSignal(L, COMSIG_MOB_HUD_CREATED, PROC_REF(on_mob_hud_created))
+	RegisterSignal(L, COMSIG_COMBAT_MODE_CHECK, PROC_REF(check_flags))
 
 	update_combat_lock()
 
@@ -72,16 +72,16 @@
 	mode_flags &= ~COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_ENABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles reflexively tighten!</span>" : "<span class='warning'>You drop into a combative stance!</span>"
+		var/self_message = forced? span_warning("Your muscles reflexively tighten!") : span_warning("You drop into a combative stance!")
 		if(visible && (forced || world.time >= combatmessagecooldown))
 			combatmessagecooldown = world.time + 10 SECONDS
 			if(!forced)
 				if(source.a_intent != INTENT_HELP)
-					source.visible_message("<span class='warning'>[source] [source.resting ? "tenses up" : "drops into a combative stance"].</span>", self_message)
+					source.visible_message(span_warning("[source] [source.resting ? "tenses up" : "drops into a combative stance"]."), self_message)
 				else
-					source.visible_message("<span class='notice'>[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")].</span>")
+					source.visible_message(span_notice("[source] [pick("looks","seems","goes")] [pick("alert","attentive","vigilant")]."))
 			else
-				source.visible_message("<span class='warning'>[source] drops into a combative stance!</span>", self_message)
+				source.visible_message(span_warning("[source] drops into a combative stance!"), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)
@@ -105,9 +105,9 @@
 	mode_flags |= COMBAT_MODE_INACTIVE
 	SEND_SIGNAL(source, COMSIG_LIVING_COMBAT_DISABLED, forced)
 	if(!silent)
-		var/self_message = forced? "<span class='warning'>Your muscles are forcibly relaxed!</span>" : "<span class='warning'>You relax your stance.</span>"
+		var/self_message = forced? span_warning("Your muscles are forcibly relaxed!") : span_warning("You relax your stance.")
 		if(visible)
-			source.visible_message("<span class='warning'>[source] relaxes [source.p_their()] stance.</span>", self_message)
+			source.visible_message(span_warning("[source] relaxes [source.p_their()] stance."), self_message)
 		else
 			to_chat(source, self_message)
 		if(playsound)
@@ -161,18 +161,18 @@
 	safe_disable_combat_mode(source)
 
 /// The screen button.
-/obj/screen/combattoggle
+/atom/movable/screen/combattoggle
 	name = "toggle combat mode"
 	icon = 'modular_citadel/icons/ui/screen_midnight.dmi'
 	icon_state = "combat_off"
 	var/mutable_appearance/flashy
 	var/combat_on = FALSE ///Wheter combat mode is enabled or not, so we don't have to store a reference.
 
-/obj/screen/combattoggle/Click()
+/atom/movable/screen/combattoggle/Click()
 	if(hud && usr == hud.mymob)
 		SEND_SIGNAL(hud.mymob, COMSIG_TOGGLE_COMBAT_MODE)
 
-/obj/screen/combattoggle/update_icon_state()
+/atom/movable/screen/combattoggle/update_icon_state()
 	var/mob/living/user = hud?.mymob
 	if(!user)
 		return
@@ -183,7 +183,7 @@
 	else
 		icon_state = "combat_off"
 
-/obj/screen/combattoggle/update_overlays()
+/atom/movable/screen/combattoggle/update_overlays()
 	. = ..()
 	var/mob/living/carbon/user = hud?.mymob
 	if(!(user?.client))

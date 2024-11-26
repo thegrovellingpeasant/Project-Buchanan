@@ -155,31 +155,31 @@
 		if(!anchored)
 			W.play_tool_sound(src, 75)
 			user.visible_message("[user.name] secures the [src.name] to the floor.", \
-				"<span class='notice'>You secure the anchor bolts to the floor.</span>", \
-				"<span class='italics'>You hear a ratchet.</span>")
+				span_notice("You secure the anchor bolts to the floor."), \
+				span_italics("You hear a ratchet."))
 			src.anchored = TRUE
 			connect_to_network()
 		else if(!linked_shielding.len > 0)
 			W.play_tool_sound(src, 75)
 			user.visible_message("[user.name] unsecures the [src.name].", \
-				"<span class='notice'>You remove the anchor bolts.</span>", \
-				"<span class='italics'>You hear a ratchet.</span>")
+				span_notice("You remove the anchor bolts."), \
+				span_italics("You hear a ratchet."))
 			src.anchored = FALSE
 			disconnect_from_network()
 		else
-			to_chat(user, "<span class='warning'>Once bolted and linked to a shielding unit it the [src.name] is unable to be moved!</span>")
+			to_chat(user, span_warning("Once bolted and linked to a shielding unit it the [src.name] is unable to be moved!"))
 
 	else if(istype(W, /obj/item/am_containment))
 		if(fueljar)
-			to_chat(user, "<span class='warning'>There is already a [fueljar] inside!</span>")
+			to_chat(user, span_warning("There is already a [fueljar] inside!"))
 			return
 
 		if(!user.transferItemToLoc(W, src))
 			return
 		fueljar = W
 		user.visible_message("[user.name] loads an [W.name] into the [src.name].", \
-				"<span class='notice'>You load an [W.name].</span>", \
-				"<span class='italics'>You hear a thunk.</span>")
+				span_notice("You load an [W.name]."), \
+				span_italics("You hear a thunk."))
 	else
 		return ..()
 
@@ -245,12 +245,12 @@
 			if(AMS.processing)
 				AMS.shutdown_core()
 			AMS.control_unit = null
-			addtimer(CALLBACK(AMS, /obj/machinery/am_shielding.proc/controllerscan), 10)
+			addtimer(CALLBACK(AMS, TYPE_PROC_REF(/obj/machinery/am_shielding, controllerscan)), 10)
 		linked_shielding = list()
 	else
 		for(var/obj/machinery/am_shielding/AMS in linked_shielding)
 			AMS.update_icon()
-	addtimer(CALLBACK(src, .proc/reset_shield_icon_delay), 20)
+	addtimer(CALLBACK(src, PROC_REF(reset_shield_icon_delay)), 20)
 
 /obj/machinery/power/am_control_unit/proc/reset_shield_icon_delay()
 	shield_icon_delay = 0
@@ -263,7 +263,7 @@
 	for(var/obj/machinery/am_shielding/AMS in linked_cores)
 		stored_core_stability += AMS.stability
 	stored_core_stability/=linked_cores.len
-	addtimer(CALLBACK(src, .proc/reset_stored_core_stability_delay), 40)
+	addtimer(CALLBACK(src, PROC_REF(reset_stored_core_stability_delay)), 40)
 
 /obj/machinery/power/am_control_unit/proc/reset_stored_core_stability_delay()
 	stored_core_stability_delay = 0

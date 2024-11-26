@@ -35,7 +35,7 @@
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/Initialize()
 	. = ..()
-	INVOKE_ASYNC(src, .proc/spawn_animation)
+	INVOKE_ASYNC(src, PROC_REF(spawn_animation))
 	glow = new(get_turf(src))
 	if(!GLOB.ark_of_the_clockwork_justiciar)
 		GLOB.ark_of_the_clockwork_justiciar = src
@@ -49,7 +49,7 @@
 			START_PROCESSING(SSprocessing, src)
 			SSshuttle.registerHostileEnvironment(src)
 		else
-			to_chat(user, "<span class='brass'>You decide against activating the ark.. for now.</span>")
+			to_chat(user, span_brass("You decide against activating the ark.. for now."))
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
 	. = ..()
@@ -57,7 +57,7 @@
 		flick("clockwork_gateway_damaged", glow)
 		playsound(src, 'sound/machines/clockcult/ark_damage.ogg', 75, FALSE)
 		if(last_scream < world.time)
-			audible_message("<span class='boldwarning'>An unearthly screaming sound resonates throughout the area!</span>")
+			audible_message(span_boldwarning("An unearthly screaming sound resonates throughout the area!"))
 			for(var/V in GLOB.player_list)
 				var/mob/M = V
 				var/turf/T = get_turf(M)
@@ -77,7 +77,7 @@
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/let_slip_the_dogs()
 	first_sound_played = TRUE
 	active = TRUE
-	visible_message("<span class='boldwarning'>[src] shudders and roars to life, its parts beginning to whirr and screech!</span>")
+	visible_message(span_boldwarning("[src] shudders and roars to life, its parts beginning to whirr and screech!"))
 	priority_announce("Massive [Gibberish("bluespace", 100)] anomaly detected on all frequencies. All crew are directed to \
 	@!$, [text2ratvar("PURGE ALL UNTRUTHS")] <&. the anomalies and destroy their source to prevent further damage to corporate property. This is \
 	not a drill.", "Central Command Higher Dimensional Affairs", 'sound/magic/clockwork/ark_activation_sequence.ogg')
@@ -100,19 +100,19 @@
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/spawn_animation()
 	var/turf/T = get_turf(src)
 	new/obj/effect/clockwork/general_marker/inathneq(T)
-	hierophant_message("<span class='inathneq'>\"[text2ratvar("Engine, come forth and show your servants your mercy")]!\"</span>")
+	hierophant_message(span_inathneq("\"[text2ratvar("Engine, come forth and show your servants your mercy")]!\""))
 	playsound(T, 'sound/magic/clockwork/invoke_general.ogg', 30, 0)
 	sleep(10)
 	new/obj/effect/clockwork/general_marker/sevtug(T)
-	hierophant_message("<span class='sevtug'>\"[text2ratvar("Engine, come forth and show this station your decorating skills")]!\"</span>")
+	hierophant_message(span_sevtug("\"[text2ratvar("Engine, come forth and show this station your decorating skills")]!\""))
 	playsound(T, 'sound/magic/clockwork/invoke_general.ogg', 45, 0)
 	sleep(10)
 	new/obj/effect/clockwork/general_marker/nezbere(T)
-	hierophant_message("<span class='nezbere'>\"[text2ratvar("Engine, come forth and shine your light across this realm")]!!\"</span>")
+	hierophant_message(span_nezbere("\"[text2ratvar("Engine, come forth and shine your light across this realm")]!!\""))
 	playsound(T, 'sound/magic/clockwork/invoke_general.ogg', 60, 0)
 	sleep(10)
 	new/obj/effect/clockwork/general_marker/nzcrentr(T)
-	hierophant_message("<span class='nzcrentr'>\"[text2ratvar("Engine, come forth")].\"</span>")
+	hierophant_message(span_nzcrentr("\"[text2ratvar("Engine, come forth")].\""))
 	playsound(T, 'sound/magic/clockwork/invoke_general.ogg', 75, 0)
 	sleep(10)
 	playsound(T, 'sound/magic/clockwork/invoke_general.ogg', 100, 0)
@@ -125,13 +125,13 @@
 			L.forceMove(pick(open_turfs))
 	glow = new(get_turf(src))
 	var/area/gate_area = get_area(src)
-	hierophant_message("<span class='large_brass'><b>An Ark of the Clockwork Justicar has been created in [gate_area.map_name]!</b></span>", FALSE, src)
+	hierophant_message(span_large_brass("<b>An Ark of the Clockwork Justicar has been created in [gate_area.map_name]!</b>"), FALSE, src)
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/initiate_mass_recall()
 	recalling = TRUE
 	sound_to_playing_players('sound/machines/clockcult/ark_recall.ogg', 75, FALSE)
 	hierophant_message("<span class='bold large_brass'>The Eminence has initiated a mass recall! You are being transported to the Ark!</span>")
-	addtimer(CALLBACK(src, .proc/mass_recall), 100)
+	addtimer(CALLBACK(src, PROC_REF(mass_recall)), 100)
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/mass_recall()
 	for(var/V in SSticker.mode.servants_of_ratvar)
@@ -141,7 +141,7 @@
 		if(isliving(M.current) && M.current.stat != DEAD)
 			var/turf/t_turf = isAI(M.current) ? get_step(get_step(src, NORTH),NORTH) : get_turf(src) // AI too fat, must make sure it always ends up a 2 tiles north instead of on the ark.
 			do_teleport(M.current, t_turf, channel = TELEPORT_CHANNEL_CULT, forced = TRUE)
-			M.current.overlay_fullscreen("flash", /obj/screen/fullscreen/flash)
+			M.current.overlay_fullscreen("flash", /atom/movable/screen/fullscreen/flash)
 			M.current.clear_fullscreen("flash", 5)
 	playsound(src, 'sound/magic/clockwork/invoke_general.ogg', 50, FALSE)
 	recalls_remaining--
@@ -149,11 +149,11 @@
 	transform = matrix() * 2
 	animate(src, transform = matrix() * 0.5, time = 30, flags = ANIMATION_END_NOW)
 
-obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
+/obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 	STOP_PROCESSING(SSprocessing, src)
 	if(!purpose_fulfilled)
 		var/area/gate_area = get_area(src)
-		hierophant_message("<span class='large_brass'><b>An Ark of the Clockwork Justicar has fallen at [gate_area.map_name]!</b></span>")
+		hierophant_message(span_large_brass("<b>An Ark of the Clockwork Justicar has fallen at [gate_area.map_name]!</b>"))
 		send_to_playing_players(sound(null, 0, channel = CHANNEL_JUSTICAR_ARK))
 	var/was_stranded = SSshuttle.emergency.mode == SHUTTLE_STRANDED
 	SSshuttle.clearHostileEnvironment(src)
@@ -172,7 +172,7 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 		if(!disassembled)
 			resistance_flags |= INDESTRUCTIBLE
 			countdown.stop()
-			visible_message("<span class='userdanger'>[src] begins to pulse uncontrollably... you might want to run!</span>")
+			visible_message(span_userdanger("[src] begins to pulse uncontrollably... you might want to run!"))
 			sound_to_playing_players(volume = 50, channel = CHANNEL_JUSTICAR_ARK, S = sound('sound/effects/clockcult_gateway_disrupted.ogg'))
 			for(var/mob/M in GLOB.player_list)
 				var/turf/T = get_turf(M)
@@ -218,27 +218,27 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 	icon_state = initial(icon_state)
 	if(is_servant_of_ratvar(user) || isobserver(user))
 		if(!active)
-			. += "<span class='big'><b>Time until the Ark's activation:</b> [DisplayTimeText(get_arrival_time())]</span>"
+			. += span_big("<b>Time until the Ark's activation:</b> [DisplayTimeText(get_arrival_time())]")
 		else
-			. += "<span class='big'><b>Time until Ratvar's arrival:</b> [DisplayTimeText(get_arrival_time())]</span>"
+			. += span_big("<b>Time until Ratvar's arrival:</b> [DisplayTimeText(get_arrival_time())]")
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='heavy_brass'>The Ark is feeding power into the bluespace field.</span>"
+					. += span_heavy_brass("The Ark is feeding power into the bluespace field.")
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
-					. += "<span class='heavy_brass'>The field is ripping open a copy of itself in Ratvar's prison.</span>"
+					. += span_heavy_brass("The field is ripping open a copy of itself in Ratvar's prison.")
 				if(GATEWAY_RATVAR_COMING to INFINITY)
-					. += "<span class='heavy_brass'>With the bluespace field established, Ratvar is preparing to come through!</span>"
+					. += span_heavy_brass("With the bluespace field established, Ratvar is preparing to come through!")
 	else
 		if(!active)
-			. += "<span class='warning'>Whatever it is, it doesn't seem to be active.</span>"
+			. += span_warning("Whatever it is, it doesn't seem to be active.")
 		else
 			switch(progress_in_seconds)
 				if(-INFINITY to GATEWAY_REEBE_FOUND)
-					. += "<span class='warning'>You see a swirling bluespace anomaly steadily growing in intensity.</span>"
+					. += span_warning("You see a swirling bluespace anomaly steadily growing in intensity.")
 				if(GATEWAY_REEBE_FOUND to GATEWAY_RATVAR_COMING)
-					. += "<span class='warning'>The anomaly is stable, and you can see flashes of something from it.</span>"
+					. += span_warning("The anomaly is stable, and you can see flashes of something from it.")
 				if(GATEWAY_RATVAR_COMING to INFINITY)
-					. += "<span class='boldwarning'>The anomaly is stable! Something is coming through!</span>"
+					. += span_boldwarning("The anomaly is stable! Something is coming through!")
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/process()
 	adjust_clockwork_power(2.5) //Provides weak power generation on its own
@@ -255,9 +255,9 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 			if(!isnewplayer(M))
 				var/turf/T = get_turf(M)
 				if(T && T.z == z)
-					to_chat(M, "<span class='warning'><b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]...</span>")
+					to_chat(M, span_warning("<b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]..."))
 				else
-					to_chat(M, "<span class='boldwarning'>You hear otherworldly sounds from all around you...</span>")
+					to_chat(M, span_boldwarning("You hear otherworldly sounds from all around you..."))
 	if(!obj_integrity)
 		return
 	for(var/turf/closed/wall/W in RANGE_TURFS(2, src))
@@ -275,7 +275,7 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 		var/turf/T = get_turf(M)
 		if(is_servant_of_ratvar(M) && (!T || T.z != z))
 			M.forceMove(get_step(src, SOUTH))
-			M.overlay_fullscreen("flash", /obj/screen/fullscreen/flash)
+			M.overlay_fullscreen("flash", /atom/movable/screen/fullscreen/flash)
 			M.clear_fullscreen("flash", 5)
 	progress_in_seconds += GATEWAY_SUMMON_RATE
 	switch(progress_in_seconds)
@@ -344,12 +344,12 @@ obj/structure/destructible/clockwork/massive/celestial_gateway/Destroy()
 	if(!IsAdminGhost(user))
 		return ..()
 	if(GLOB.servants_active)
-		to_chat(user, "<span class='danger'>The Ark is already counting down.</span>")
+		to_chat(user, span_danger("The Ark is already counting down."))
 		return ..()
 	if(alert(user, "Activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 		if(alert(user, "REALLY activate the Ark's countdown?", name, "Yes", "No") == "Yes")
 			if(alert(user, "You're REALLY SURE? This cannot be undone.", name, "Yes - Activate the Ark", "No") == "Yes - Activate the Ark")
-				message_admins("<span class='danger'>Admin [key_name_admin(user)] started the Ark's countdown!</span>")
+				message_admins(span_danger("Admin [key_name_admin(user)] started the Ark's countdown!"))
 				log_admin("Admin [key_name(user)] started the Ark's countdown on a non-clockcult mode!")
 				to_chat(user, "<span class='userdanger'>The gamemode is now being treated as clockwork cult, and the Ark is counting down from 5 \
 				minutes. You will need to create servant players yourself.</span>")

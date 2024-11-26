@@ -65,7 +65,7 @@
 
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
 	if(!allowed(user))
-		to_chat(user, "<span class='warning'>Error - Unauthorized User</span>")
+		to_chat(user, span_warning("Error - Unauthorized User"))
 		playsound(src, 'sound/misc/compiler-failure.ogg', 50, 1)
 		return
 	..()
@@ -218,7 +218,7 @@
 		if(starter_temp)
 			air_contents.set_temperature(starter_temp)
 		if(!air_contents.return_volume())
-			CRASH("Auxtools is failing somehow! Gas with pointer [air_contents._extools_pointer_gasmixture] is not valid.")
+			CRASH("Auxtools is failing somehow!")
 		air_contents.set_moles(gas_type,(maximum_pressure * filled) * air_contents.return_volume() / (R_IDEAL_GAS_EQUATION * air_contents.return_temperature()))
 
 /obj/machinery/portable_atmospherics/canister/air/create_gas()
@@ -269,10 +269,10 @@
 		return TRUE
 	var/pressure = air_contents.return_pressure()
 	if(pressure > 300)
-		to_chat(user, "<span class='alert'>The pressure gauge on \the [src] indicates a high pressure inside... maybe you want to reconsider?</span>")
-	to_chat(user, "<span class='notice'>You begin cutting \the [src] apart...</span>")
+		to_chat(user, span_alert("The pressure gauge on \the [src] indicates a high pressure inside... maybe you want to reconsider?"))
+	to_chat(user, span_notice("You begin cutting \the [src] apart..."))
 	if(I.use_tool(src, user, 3 SECONDS, volume=50))
-		to_chat(user, "<span class='notice'>You cut \the [src] apart.</span>")
+		to_chat(user, span_notice("You cut \the [src] apart."))
 		deconstruct(TRUE)
 		message_admins("[src] deconstructed by [ADMIN_LOOKUPFLW(user)]")
 		log_game("[src] deconstructed by [key_name(user)]")
@@ -474,8 +474,8 @@
 		if("eject")
 			if(holding)
 				if(valve_open)
-					message_admins("[ADMIN_LOOKUPFLW(usr)] removed [holding] from [src] with valve still open at [ADMIN_VERBOSEJMP(src)] releasing contents into the <span class='boldannounce'>air</span>.")
-					investigate_log("[key_name(usr)] removed the [holding], leaving the valve open and transferring into the <span class='boldannounce'>air</span>.", INVESTIGATE_ATMOS)
+					message_admins("[ADMIN_LOOKUPFLW(usr)] removed [holding] from [src] with valve still open at [ADMIN_VERBOSEJMP(src)] releasing contents into the [span_boldannounce("air")].")
+					investigate_log("[key_name(usr)] removed the [holding], leaving the valve open and transferring into the [span_boldannounce("air")].", INVESTIGATE_ATMOS)
 				replace_tank(usr, FALSE)
 				. = TRUE
 	update_icon()

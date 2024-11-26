@@ -93,10 +93,10 @@
 		if(give_round(AC, replace_spent))
 			user.transferItemToLoc(AC, src, TRUE)
 			num_loaded++
-	
+
 	if(num_loaded)
 		if(!silent)
-			to_chat(user, "<span class='notice'>You load [num_loaded] shell\s into \the [src]!</span>")
+			to_chat(user, span_notice("You load [num_loaded] shell\s into \the [src]!"))
 			playsound(src, 'sound/weapons/bulletinsert.ogg', 60, 1)
 		A.update_icon()
 		update_icon()
@@ -106,13 +106,13 @@
 /obj/item/ammo_box/attack_self(mob/user)
 	var/obj/item/ammo_casing/A = get_round()
 	if (unloadable == TRUE)
-		to_chat(user, "<span class='notice'>You can't remove ammo from \the [src]!</span>")
+		to_chat(user, span_notice("You can't remove ammo from \the [src]!"))
 	else
 		if(A)
 			if(!user.put_in_hands(A))
 				A.bounce_away(FALSE, NONE)
 			playsound(src, 'sound/weapons/bulletinsert.ogg', 60, 1)
-			to_chat(user, "<span class='notice'>You remove a round from \the [src]!</span>")
+			to_chat(user, span_notice("You remove a round from \the [src]!"))
 			update_icon()
 
 /obj/item/ammo_box/update_icon()
