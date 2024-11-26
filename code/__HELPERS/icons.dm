@@ -829,7 +829,7 @@ world
 						break
 				layers[current] = current_layer
 
-		//sortTim(layers, /proc/cmp_image_layer_asc)
+		//sortTim(layers, GLOBAL_PROC_REF(cmp_image_layer_asc))
 
 		var/icon/add // Icon of overlay being added
 
@@ -1067,7 +1067,6 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 		var/icon/out_icon = icon('icons/effects/effects.dmi', "nothing")
 		for(var/D in showDirs)
 			body.setDir(D)
-			COMPILE_OVERLAYS(body)
 			var/icon/partial = getFlatIcon(body)
 			out_icon.Insert(partial,dir=D)
 

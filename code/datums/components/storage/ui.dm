@@ -11,7 +11,7 @@
 		else
 			var/datum/numbered_display/ND = .[I.type]
 			ND.number++
-	. = sortTim(., /proc/cmp_numbered_displays_name_asc, associative = TRUE)
+	. = sortTim(., GLOBAL_PROC_REF(cmp_numbered_displays_name_asc), associative = TRUE)
 
 /**
  * Orients all objects in legacy mode, and returns the objects to show to the user.
@@ -102,7 +102,7 @@
 	var/min_pixels = (MINIMUM_PIXELS_PER_ITEM * length(percentage_by_item)) + padding_pixels
 	// do the check for fallback for when someone has too much gamer gear
 	if((min_pixels) > (max_horizontal_pixels + 4))	// 4 pixel grace zone
-		to_chat(user, "<span class='warning'>[parent] was showed to you in legacy mode due to your items overrunning the three row limit! Consider not carrying too much or bugging a maintainer to raise this limit!</span>")
+		to_chat(user, span_warning("[parent] was showed to you in legacy mode due to your items overrunning the three row limit! Consider not carrying too much or bugging a maintainer to raise this limit!"))
 		return orient2hud_legacy(user, maxcolumns)
 	// after this point we are sure we can somehow fit all items into our max number of rows.
 
@@ -112,7 +112,7 @@
 	var/overrun = FALSE
 	if(used > our_volume)
 		// congratulations we are now in overrun mode. everything will be crammed to minimum storage pixels.
-		to_chat(user, "<span class='warning'>[parent] rendered in overrun mode due to more items inside than the maximum volume supports.</span>")
+		to_chat(user, span_warning("[parent] rendered in overrun mode due to more items inside than the maximum volume supports."))
 		overrun = TRUE
 
 	// how much we are using
@@ -134,8 +134,8 @@
 		I = i
 		var/percent = percentage_by_item[I]
 		if(!ui_item_blocks[I])
-			ui_item_blocks[I] = new /obj/screen/storage/volumetric_box/center(null, src, I)
-		var/obj/screen/storage/volumetric_box/center/B = ui_item_blocks[I]
+			ui_item_blocks[I] = new /atom/movable/screen/storage/volumetric_box/center(null, src, I)
+		var/atom/movable/screen/storage/volumetric_box/center/B = ui_item_blocks[I]
 		var/pixels_to_use = overrun? MINIMUM_PIXELS_PER_ITEM : max(using_horizontal_pixels * percent, MINIMUM_PIXELS_PER_ITEM)
 		var/addrow = FALSE
 		if(CEILING(pixels_to_use, 1) >= FLOOR(horizontal_pixels - current_pixel - VOLUMETRIC_STORAGE_EDGE_PADDING, 1))
@@ -196,7 +196,7 @@
 	else if(current_maxscreensize)
 		maxallowedscreensize = current_maxscreensize
 	// we got screen size, register signal
-	RegisterSignal(M, COMSIG_MOB_CLIENT_LOGOUT, .proc/on_logout, override = TRUE)
+	RegisterSignal(M, COMSIG_MOB_CLIENT_LOGOUT, PROC_REF(on_logout), override = TRUE)
 	if(M.active_storage != src)
 		if(M.active_storage)
 			M.active_storage.ui_hide(M)

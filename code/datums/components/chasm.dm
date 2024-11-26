@@ -24,7 +24,7 @@
 		))
 
 /datum/component/chasm/Initialize(turf/target)
-	RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED, COMSIG_ATOM_ENTERED), .proc/Entered)
+	RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED, COMSIG_ATOM_ENTERED), PROC_REF(Entered))
 	target_turf = target
 	START_PROCESSING(SSobj, src) // process on create, in case stuff is still there
 
@@ -57,7 +57,7 @@
 	for (var/thing in to_check)
 		if (droppable(thing))
 			. = 1
-			INVOKE_ASYNC(src, .proc/drop, thing)
+			INVOKE_ASYNC(src, PROC_REF(drop), thing)
 
 /datum/component/chasm/proc/droppable(atom/movable/AM)
 	// avoid an infinite loop, but allow falling a large distance
@@ -87,8 +87,8 @@
 
 	if(T)
 		// send to the turf below
-		AM.visible_message("<span class='boldwarning'>[AM] falls into [parent]!</span>", "<span class='userdanger'>[fall_message]</span>")
-		T.visible_message("<span class='boldwarning'>[AM] falls from above!</span>")
+		AM.visible_message(span_boldwarning("[AM] falls into [parent]!"), span_userdanger("[fall_message]"))
+		T.visible_message(span_boldwarning("[AM] falls from above!"))
 		AM.forceMove(T)
 		if(isliving(AM))
 			var/mob/living/L = AM
@@ -98,7 +98,7 @@
 
 	else
 		// send to oblivion
-		AM.visible_message("<span class='boldwarning'>[AM] falls into [parent]!</span>", "<span class='userdanger'>[oblivion_message]</span>")
+		AM.visible_message(span_boldwarning("[AM] falls into [parent]!"), span_userdanger("[oblivion_message]"))
 		if (isliving(AM))
 			var/mob/living/L = AM
 			L.mob_transforming = TRUE
@@ -127,7 +127,7 @@
 		qdel(AM)
 		if(AM && !QDELETED(AM))	//It's indestructible
 			var/atom/parent = src.parent
-			parent.visible_message("<span class='boldwarning'>[parent] spits out [AM]!</span>")
+			parent.visible_message(span_boldwarning("[parent] spits out [AM]!"))
 			AM.alpha = oldalpha
 			AM.color = oldcolor
 			AM.transform = oldtransform

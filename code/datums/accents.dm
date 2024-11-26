@@ -26,7 +26,7 @@
 /datum/accent/abductor/modify_speech(list/speech_args, datum/source)
 	var/message = speech_args[SPEECH_MESSAGE]
 	var/mob/living/carbon/human/user = source
-	var/rendered = "<span class='abductor'><b>[user.name]:</b> [message]</span>"
+	var/rendered = span_abductor("<b>[user.name]:</b> [message]")
 	user.log_talk(message, LOG_SAY, tag="abductor")
 	for(var/mob/living/carbon/human/H in GLOB.alive_mob_list)
 		var/obj/item/organ/tongue/T = H.getorganslot(ORGAN_SLOT_TONGUE)

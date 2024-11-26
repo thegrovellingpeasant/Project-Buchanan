@@ -57,7 +57,7 @@
 			break
 	if(!team_name || already_taken) // basic protection against two teams with the same name. This could still happen with extreme unluck due to syndicate_name() but it shouldn't break anything.
 		team.name = syndicate_name()
-		to_chat(owner, "<span class='danger'>Since you gave [already_taken ? "an already used" : "no"] name, your team's name has been randomly generated: [team.name]!</span>")
+		to_chat(owner, span_danger("Since you gave [already_taken ? "an already used" : "no"] name, your team's name has been randomly generated: [team.name]!"))
 		return
 	team.name = team_name
 
@@ -83,8 +83,8 @@
 
 /datum/antagonist/overthrow/get_admin_commands()
 	. = ..()
-	.["Give storage with random item"] = CALLBACK(src,.proc/equip_overthrow)
-	.["Give overthrow boss equip"] = CALLBACK(src,.proc/equip_initial_overthrow_agent)
+	.["Give storage with random item"] = CALLBACK(src, PROC_REF(equip_overthrow))
+	.["Give overthrow boss equip"] = CALLBACK(src, PROC_REF(equip_initial_overthrow_agent))
 
 // Dynamically creates the HUD for the team if it doesn't exist already, inserting it into the global huds list, and assigns it to the user. The index is saved into a var owned by the team datum.
 /datum/antagonist/overthrow/proc/update_overthrow_icons_added(datum/mind/traitor_mind)

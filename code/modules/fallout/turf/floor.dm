@@ -30,7 +30,7 @@
 			new /obj/item/stack/sheet/mineral/wood(src)
 		else
 			new floor_tile(src)
-		to_chat(user, "<span class='danger'>You unscrew the planks.</span>")
+		to_chat(user, span_danger("You unscrew the planks."))
 		make_plating()
 		playsound(src, C.usesound, 80, 1)
 		return
@@ -70,13 +70,13 @@
 	name = "floor"
 	icon_state = "darkyellowfull"
 
-/turf/open/floor/f13/dark/lit 
+/turf/open/floor/f13/dark/lit
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/f13/rusty
 	icon_state = "floorrusty"
 
-/turf/open/floor/f13/rusty/lit 
+/turf/open/floor/f13/rusty/lit
 	sunlight_state = SUNLIGHT_SOURCE
 
 /turf/open/floor/f13/paintwall

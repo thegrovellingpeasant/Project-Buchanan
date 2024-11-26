@@ -132,13 +132,13 @@
 		var/stasis = (bz_percentage >= 0.05 && bodytemperature < (T0C + 100)) || force_stasis
 
 		if(stat == CONSCIOUS && stasis)
-			to_chat(src, "<span class='danger'>Nerve gas in the air has put you in stasis!</span>")
+			to_chat(src, span_danger("Nerve gas in the air has put you in stasis!"))
 			powerlevel = 0
 			rabid = 0
 			set_stat(UNCONSCIOUS)
 			regenerate_icons()
 		else if(stat == UNCONSCIOUS && !stasis)
-			to_chat(src, "<span class='notice'>You wake up from the stasis.</span>")
+			to_chat(src, span_notice("You wake up from the stasis."))
 			set_stat(CONSCIOUS)
 			regenerate_icons()
 
@@ -388,7 +388,7 @@
 				else if(CHECK_MOBILITY(src, MOBILITY_MOVE) && isturf(loc) && prob(33))
 					step(src, pick(GLOB.cardinals))
 		else if(!AIproc)
-			INVOKE_ASYNC(src, .proc/AIprocess)
+			INVOKE_ASYNC(src, PROC_REF(AIprocess))
 
 /mob/living/simple_animal/slime/handle_automated_movement()
 	return //slime random movement is currently handled in handle_targets()

@@ -13,7 +13,7 @@
 	var/onmob_overlays = FALSE //worn counterpart of the above.
 
 /obj/item/storage/belt/suicide_act(mob/living/carbon/user)
-	user.visible_message("<span class='suicide'>[user] begins belting [user.p_them()]self with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+	user.visible_message(span_suicide("[user] begins belting [user.p_them()]self with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return BRUTELOSS
 
 /obj/item/storage/belt/update_overlays()
@@ -742,7 +742,7 @@
 
 	for(var/obj/item/reagent_containers/syringe/dart/D in contents)
 		if(round(target.reagents.total_volume, 1) <= 0)
-			to_chat(user, "<span class='notice'>You soak as many of the darts as you can with the contents from [target].</span>")
+			to_chat(user, span_notice("You soak as many of the darts as you can with the contents from [target]."))
 			return
 		if(D.mode == SYRINGE_INJECT)
 			continue
@@ -880,12 +880,12 @@
 /obj/item/storage/belt/canesword
 	name = "cane"
 	desc = "A cane with gold at it's top, middle, and handle part, and the latter has a hidden compartment for a thin blade."
-	icon_state = "cane"
+	icon_state = "cane_sword"
 	item_state = "cane_sword"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BELT
+	slot_flags = FALSE
 	content_overlays = FALSE
 	onmob_overlays = FALSE
 	var/list/fitting_swords = list(/obj/item/melee/canesword)
@@ -903,7 +903,7 @@
 /obj/item/storage/belt/canesword/examine(mob/user)
 	. = ..()
 	if(length(contents))
-		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
+		. += span_notice("Alt-click it to quickly draw the blade.")
 
 /obj/item/storage/belt/canesword/PopulateContents()
 	new starting_sword(src)
@@ -931,7 +931,7 @@
 /obj/item/storage/belt/sabre/examine(mob/user)
 	. = ..()
 	if(length(contents))
-		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
+		. += span_notice("Alt-click it to quickly draw the blade.")
 
 /obj/item/storage/belt/sabre/PopulateContents()
 	new starting_sword(src)
@@ -1088,21 +1088,21 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, "<span class='warning'>Your hands are full!</span>")
+		to_chat(user, span_warning("Your hands are full!"))
 		return
 	var/obj/item/ammo_casing/caseless/arrow/L = locate() in contents
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, "<span class='notice'>You take \a [L] out of the quiver.</span>")
+		to_chat(user, span_notice("You take \a [L] out of the quiver."))
 		return TRUE
 	var/obj/item/ammo_casing/caseless/W = locate() in contents
 	if(W && contents.len > 0)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, user)
 		user.put_in_hands(W)
-		to_chat(user, "<span class='notice'>You take \a [W] out of the quiver.</span>")
+		to_chat(user, span_notice("You take \a [W] out of the quiver."))
 	else
-		to_chat(user, "<span class='notice'>There is nothing left in the quiver.</span>")
+		to_chat(user, span_notice("There is nothing left in the quiver."))
 	return TRUE
 
 //Bone Arrow Quiver
@@ -1135,19 +1135,19 @@
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		return
 	if(!length(user.get_empty_held_indexes()))
-		to_chat(user, "<span class='warning'>Your hands are full!</span>")
+		to_chat(user, span_warning("Your hands are full!"))
 		return
 	var/obj/item/ammo_casing/caseless/arrow/L = locate() in contents
 	if(L)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, L, user)
 		user.put_in_hands(L)
-		to_chat(user, "<span class='notice'>You take \a [L] out of the quiver.</span>")
+		to_chat(user, span_notice("You take \a [L] out of the quiver."))
 		return TRUE
 	var/obj/item/ammo_casing/caseless/W = locate() in contents
 	if(W && contents.len > 0)
 		SEND_SIGNAL(src, COMSIG_TRY_STORAGE_TAKE, W, user)
 		user.put_in_hands(W)
-		to_chat(user, "<span class='notice'>You take \a [W] out of the quiver.</span>")
+		to_chat(user, span_notice("You take \a [W] out of the quiver."))
 	else
-		to_chat(user, "<span class='notice'>There is nothing left in the quiver.</span>")
+		to_chat(user, span_notice("There is nothing left in the quiver."))
 	return TRUE

@@ -7,7 +7,7 @@
 
 /obj/item/organ/body_egg/on_find(mob/living/finder)
 	..()
-	to_chat(finder, "<span class='warning'>You found an unknown alien organism in [owner]'s [zone]!</span>")
+	to_chat(finder, span_warning("You found an unknown alien organism in [owner]'s [zone]!"))
 
 /obj/item/organ/body_egg/New(loc)
 	if(iscarbon(loc))
@@ -18,13 +18,13 @@
 	..()
 	ADD_TRAIT(owner, TRAIT_XENO_HOST, TRAIT_GENERIC)
 	owner.med_hud_set_status()
-	INVOKE_ASYNC(src, .proc/AddInfectionImages, owner)
+	INVOKE_ASYNC(src, PROC_REF(AddInfectionImages), owner)
 
 /obj/item/organ/body_egg/Remove(special = FALSE)
 	if(!QDELETED(owner))
 		REMOVE_TRAIT(owner, TRAIT_XENO_HOST, TRAIT_GENERIC)
 		owner.med_hud_set_status()
-		INVOKE_ASYNC(src, .proc/RemoveInfectionImages, owner)
+		INVOKE_ASYNC(src, PROC_REF(RemoveInfectionImages), owner)
 	return ..()
 
 /obj/item/organ/body_egg/on_death()

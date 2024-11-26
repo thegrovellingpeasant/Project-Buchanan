@@ -113,7 +113,7 @@
 	if (loc != user)
 		return ..()
 	if(SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED))
-		INVOKE_ASYNC(src, /datum.proc/ui_interact, user)
+		INVOKE_ASYNC(src, TYPE_PROC_REF(/datum, ui_interact), user)
 
 /obj/item/storage/portable_chem_mixer/attack_self(mob/user)
 	if(loc == user)
@@ -122,7 +122,7 @@
 			ui_interact(user)
 			return
 		else
-			to_chat(user, "<span class='notice'>The portable chemical mixer is currently open and its contents can be accessed.</span>")
+			to_chat(user, span_notice("The portable chemical mixer is currently open and its contents can be accessed."))
 			return
 	return
 
@@ -130,8 +130,8 @@
 	. = ..()
 	if(ismob(loc))
 		var/mob/M = loc
-		if(!M.incapacitated() && istype(over_object, /obj/screen/inventory/hand))
-			var/obj/screen/inventory/hand/H = over_object
+		if(!M.incapacitated() && istype(over_object, /atom/movable/screen/inventory/hand))
+			var/atom/movable/screen/inventory/hand/H = over_object
 			M.putItemFromInventoryInHandIfPossible(src, H.held_index)
 
 /obj/item/storage/portable_chem_mixer/ui_interact(mob/user, datum/tgui/ui)

@@ -28,7 +28,7 @@ GLOBAL_LIST_EMPTY(enclave_radios)
 
 /obj/machinery/radioterminal/ui_interact(mob/user)
 	. = ..()
-	if(open) 
+	if(open)
 		return
 	var/dat = ""
 	dat += "<head><style>body {padding: 0; margin: 15px; background-color: #062113; color: #4aed92; line-height: 170%;} a, button, a:link, a:visited, a:active, .linkOn, .linkOff {color: #4aed92; text-decoration: none; background: #062113; border: none; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a:hover {color: #062113; background: #4aed92; border: 1px solid #4aed92} a.white, a.white:link, a.white:visited, a.white:active {color: #4aed92; text-decoration: none; background: #4aed92; border: 1px solid #161616; padding: 1px 4px 1px 4px; margin: 0 2px 0 0; cursor:default;} a.white:hover {color: #062113; background: #4aed92;} .linkOn, a.linkOn:link, a.linkOn:visited, a.linkOn:active, a.linkOn:hover {color: #4aed92; background: #062113; border-color: #062113;} .linkOff, a.linkOff:link, a.linkOff:visited, a.linkOff:active, a.linkOff:hover{color: #4aed92; background: #062113; border-color: #062113;}</style></head><font face='courier'>"
@@ -59,7 +59,7 @@ GLOBAL_LIST_EMPTY(enclave_radios)
 	if(..())
 		return
 	if(!allowed(usr))
-		to_chat(usr, "<span class='warning'>Access denied.</span>")
+		to_chat(usr, span_warning("Access denied."))
 		return
 	usr.set_machine(src)
 	add_fingerprint(usr)
@@ -82,26 +82,26 @@ GLOBAL_LIST_EMPTY(enclave_radios)
 /obj/machinery/radioterminal/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/wrench))
 		if(anchored)
-			to_chat(user, "<span class='notice'>You unsecure the terminal.</span>")
+			to_chat(user, span_notice("You unsecure the terminal."))
 			anchored = FALSE
 		else
-			to_chat(user, "<span class='notice'>You secure the terminal.</span>")
+			to_chat(user, span_notice("You secure the terminal."))
 			anchored = TRUE
 		update_icon()
 		return
 	if(istype(O, /obj/item/crowbar))
 		if(open)
-			to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
+			to_chat(user, span_notice("You close the maintenance panel."))
 			open = FALSE
 		else
-			to_chat(user, "<span class='notice'>You open the maintenance panel.</span>")
+			to_chat(user, span_notice("You open the maintenance panel."))
 			open = TRUE
 		update_icon()
 		return
 	if(istype(O, /obj/item/radio))
 		var/obj/item/radio/new_radio = O
 		if(new_radio.factionized && new_radio.linked_faction == assigned_faction && !new_radio.linked_mob)
-			to_chat(user, "<span class='notice'>The radio has been linked!</span>")
+			to_chat(user, span_notice("The radio has been linked!"))
 			new_radio.linked_mob = user
 			new_radio.kill_switched = FALSE
 			new_radio.Factionize()

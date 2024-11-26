@@ -105,7 +105,7 @@
 /obj/structure/sink/oil_well/on_attack_hand(mob/M)
 	flick("puddle-oil-splash",src)
 	reagents.reaction(M, TOUCH, 20) //Covers target in 20u of oil.
-	to_chat(M, "<span class='notice'>You touch the pool of oil, only to get oil all over yourself. It would be wise to wash this off with water.</span>")
+	to_chat(M, span_notice("You touch the pool of oil, only to get oil all over yourself. It would be wise to wash this off with water."))
 
 /obj/structure/sink/oil_well/attackby(obj/item/O, mob/user, params)
 	flick("puddle-oil-splash",src)
@@ -119,12 +119,12 @@
 		if(RG.is_refillable())
 			if(!RG.reagents.holder_full())
 				RG.reagents.add_reagent(dispensedreagent, min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
-				to_chat(user, "<span class='notice'>You fill [RG] from [src].</span>")
+				to_chat(user, span_notice("You fill [RG] from [src]."))
 				return TRUE
-			to_chat(user, "<span class='notice'>\The [RG] is full.</span>")
+			to_chat(user, span_notice("\The [RG] is full."))
 			return FALSE
 	if(user.a_intent != INTENT_HARM)
-		to_chat(user, "<span class='notice'>You won't have any luck getting \the [O] out if you drop it in the oil.</span>")
+		to_chat(user, span_notice("You won't have any luck getting \the [O] out if you drop it in the oil."))
 		return 1
 	else
 		return ..()
@@ -179,15 +179,15 @@
 
 /obj/structure/closet/crate/grave/open(mob/living/user, obj/item/S)
 	if(!opened)
-		to_chat(user, "<span class='notice'>The ground here is too hard to dig up with your bare hands. You'll need a shovel.</span>")
+		to_chat(user, span_notice("The ground here is too hard to dig up with your bare hands. You'll need a shovel."))
 	else
-		to_chat(user, "<span class='notice'>The grave has already been dug up.</span>")
+		to_chat(user, span_notice("The grave has already been dug up."))
 
 /obj/structure/closet/crate/grave/tool_interact(obj/item/S, mob/living/carbon/user)
 	if(user.a_intent == INTENT_HELP) //checks to attempt to dig the grave, must be done on help intent only.
 		if(!opened)
 			if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_SHOVEL)
-				to_chat(user, "<span class='notice'>You start start to dig open \the [src]  with \the [S]...</span>")
+				to_chat(user, span_notice("You start start to dig open \the [src]  with \the [S]..."))
 				if (do_after(user,20, target = src))
 					opened = TRUE
 					locked = TRUE
@@ -196,22 +196,22 @@
 					SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "graverobbing", /datum/mood_event/graverobbing)
 					if(lead_tomb == TRUE && first_open == TRUE)
 						user.gain_trauma(/datum/brain_trauma/magic/stalker)
-						to_chat(user, "<span class='boldwarning'>Oh no, no no no, THEY'RE EVERYWHERE! EVERY ONE OF THEM IS EVERYWHERE!</span>")
+						to_chat(user, span_boldwarning("Oh no, no no no, THEY'RE EVERYWHERE! EVERY ONE OF THEM IS EVERYWHERE!"))
 						first_open = FALSE
 					return 1
 				return 1
 			else
-				to_chat(user, "<span class='notice'>You can't dig up a grave with \the [S.name].</span>")
+				to_chat(user, span_notice("You can't dig up a grave with \the [S.name]."))
 				return 1
 		else
-			to_chat(user, "<span class='notice'>The grave has already been dug up.</span>")
+			to_chat(user, span_notice("The grave has already been dug up."))
 			return 1
 
 	else if((user.a_intent != INTENT_HELP) && opened) //checks to attempt to remove the grave entirely.
 		if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_SHOVEL)
-			to_chat(user, "<span class='notice'>You start to remove \the [src]  with \the [S].</span>")
+			to_chat(user, span_notice("You start to remove \the [src]  with \the [S]."))
 			if (do_after(user,15, target = src))
-				to_chat(user, "<span class='notice'>You remove \the [src]  completely.</span>")
+				to_chat(user, span_notice("You remove \the [src]  completely."))
 				SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "graverobbing", /datum/mood_event/graverobbing)
 				deconstruct(TRUE)
 				return 1
@@ -306,61 +306,17 @@
 	switch(rand(1,2))
 		if(1)
 			//Instrinct Resistance
-			to_chat(user, "<span class='notice'>You feel robust.</span>")
+			to_chat(user, span_notice("You feel robust."))
 			var/datum/species/S// = user.dna.species
 			S.brutemod *= 0.5
 			S.burnmod *= 0.5
 			S.coldmod *= 0.5
 		if(2)
-		//	new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
+			new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
 		else
 			return
 
-
-/obj/structure/closet/crate/grave/strangebird
-	name = "The Bird"
-	desc = "It looks like it could be opened with the right crowbar..."
-	icon = 'icons/obj/crates.dmi'
-	icon_state = "bird"
-	dense_when_open = TRUE
-	material_drop = /obj/item/stack/ore/glass/basalt
-	material_drop_amount = 5
-	anchored = FALSE
-	anchorable = FALSE
-	drag_delay = 0.2 SECONDS
-	locked = TRUE
-	breakout_time = 900
-	cutting_tool = /obj/item/crowbar/abductor/heist
-	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
-
-/obj/structure/closet/crate/grave/strangebird/tool_interact(obj/item/S, mob/living/carbon/user)
-	. = ..()
-	if(prob(50))
-		do_sparks(3, TRUE, src)
-		for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
-		return ..()
-
-	switch(rand(1,3))
-		if(1)
-			new /obj/item/gun/ballistic/automatic/smg/tommygun(src)
-			new /obj/item/ammo_box/magazine/tommygunm45(src)
-			new /obj/item/ammo_box/magazine/tommygunm45(src)
-		if(2)
-			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
-			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
-			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
-		if(3)
-			new /obj/item/gun/ballistic/shotgun/automatic/combat/neostead(src)
-			new /obj/item/ammo_box/shotgun/incendiary(src)
-			new /obj/item/ammo_box/shotgun/trainshot(src)
-		else
-			return
-
-/obj/structure/closet/crate/grave/strangebird/proc/self_destruct()
-    explosion(src,5,5,6,6)
-
-/obj/structure/closet/crate/grave/experimental_crate
+/obj/structure/closet/crate/mcgruffin/experimental_crate
 	name = "The Prototype"
 	desc = "It looks like it could be opened with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
@@ -375,24 +331,19 @@
 	breakout_time = 900
 	cutting_tool = /obj/item/crowbar/abductor/heist
 	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
+	var/isEmpty = FALSE
 
-/obj/structure/closet/crate/grave/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
-	. = ..()
-	if(prob(50))
-		do_sparks(3, TRUE, src)
-		for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
-		return ..()
+/obj/structure/closet/crate/mcgruffin/experimental_crate/PopulateContents()  //GRAVEROBBING IS NOW A FEATURE
+	..()
 
 	switch(rand(1,3))
 		if(1)
-			new /obj/item/clothing/suit/armor/f13/power_armor/advanced(src)
-			new /obj/item/clothing/head/helmet/f13/power_armor/advanced(src)
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45d(src)
+			new /obj/item/clothing/head/helmet/f13/power_armor/t45d(src)
 			new /obj/item/book/granter/trait/pa_wear(src)
 		if(2)
 			new /obj/item/reagent_containers/glass/bottle/FEV_solution(src)
 			new /obj/item/reagent_containers/glass/bottle/FEV_solution/two(src)
-
 		if(3)
 			new /obj/item/gun/energy/laser/aer14(src)
 			new /obj/item/stock_parts/cell/ammo/mfc(src)
@@ -400,5 +351,210 @@
 		else
 			return
 
-/obj/structure/closet/crate/grave/experimental_crate/proc/self_destruct()
-    explosion(src,5,5,6,6)
+
+/obj/structure/closet/crate/mcgruffin/experimental_crate/open(mob/living/user, obj/item/S)
+	if(!opened)
+		to_chat(user, span_notice("The crate is locked. You'll need a special crowbar."))
+	else
+		to_chat(user, span_notice("The crate is already open."))
+
+/obj/structure/closet/crate/mcgruffin/experimental_crate/tool_interact(obj/item/S, mob/living/carbon/user)
+	if(user.a_intent == INTENT_HELP) //checks to attempt to dig the grave, must be done on help intent only.
+		if(!opened)
+			if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_CROWBAR)
+				to_chat(user, span_notice("You start to pry open \the [src]  with \the [S]..."))
+				if (do_after(user,20, target = src))
+					opened = TRUE
+					locked = TRUE
+					dump_contents()
+					update_icon()
+					if(!isEmpty)
+						isEmpty = TRUE
+						switch(rand(1,4))
+							if(1)
+								new /mob/living/simple_animal/hostile/securitron/sentrybot/mini(get_turf(src))
+							if(2)
+								new /obj/effect/anomaly/flux(get_turf(src))
+							if(3)
+								new /obj/effect/anomaly/bluespace(get_turf(src))
+							if(4)
+								new /mob/living/simple_animal/hostile/securitron/sentrybot/mini(get_turf(src))
+					return 1
+				return 1
+			else
+				to_chat(user, span_notice("You can't open the crate with \the [S.name]."))
+				return 1
+		else
+			to_chat(user, span_notice("The crate is already open"))
+			return 1
+	return
+
+/obj/structure/closet/crate/mcgruffin/experimental_crate/bust_open()
+	..()
+	opened = TRUE
+	update_icon()
+	dump_contents()
+	return
+
+/obj/structure/closet/crate/mcgruffin/strangebird
+	name = "The Prototype"
+	desc = "It looks like it could be opened with the right crowbar..."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "bird"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchored = FALSE
+	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = /obj/item/crowbar/abductor/heist
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
+	var/lead_tomb = FALSE
+	var/first_open = FALSE
+	lead_tomb = TRUE
+	first_open = TRUE
+
+/obj/structure/closet/crate/mcgruffin/strangebird/PopulateContents()  //GRAVEROBBING IS NOW A FEATURE
+	..()
+
+	switch(rand(1,3))
+		if(1)
+			new /obj/item/gun/ballistic/automatic/smg/tommygun(src)
+			new /obj/item/ammo_box/magazine/tommygunm45(src)
+			new /obj/item/ammo_box/magazine/tommygunm45(src)
+		if(2)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+			new /obj/item/stack/f13Cash/ncr/fivezerozero(src)
+		if(3)
+			new /obj/item/gun/ballistic/shotgun/automatic/combat/neostead(src)
+			new /obj/item/ammo_box/shotgun/incendiary(src)
+			new /obj/item/ammo_box/shotgun/trainshot(src)
+		else
+			return
+
+
+/obj/structure/closet/crate/mcgruffin/strangebird/open(mob/living/user, obj/item/S)
+	if(!opened)
+		to_chat(user, span_notice("The crate is locked. You'll need a special crowbar."))
+	else
+		to_chat(user, span_notice("The crate is already open."))
+
+/obj/structure/closet/crate/mcgruffin/strangebird/tool_interact(obj/item/S, mob/living/carbon/user)
+	if(user.a_intent == INTENT_HELP) //checks to attempt to dig the grave, must be done on help intent only.
+		if(!opened)
+			if(istype(S,cutting_tool) && S.tool_behaviour == TOOL_CROWBAR)
+				to_chat(user, span_notice("You start to pry open \the [src]  with \the [S]..."))
+				if (do_after(user,20, target = src))
+					opened = TRUE
+					locked = TRUE
+					dump_contents()
+					update_icon()
+					if(lead_tomb == TRUE && first_open == TRUE)
+						switch(rand(1,2))
+							if(1)
+								user.gain_trauma(/datum/brain_trauma/special/imaginary_friend)
+								to_chat(user, span_boldwarning("Where did he come from?"))
+								first_open = FALSE
+							if(2)
+								user.add_client_colour(/datum/client_colour/monochrome)
+								to_chat(user, span_boldwarning("Made it Ma! Top of the world!!"))
+								first_open = FALSE
+
+					return 1
+				return 1
+			else
+				to_chat(user, span_notice("You can't open the crate with \the [S.name]."))
+				return 1
+		else
+			to_chat(user, span_notice("The crate is already open"))
+			return 1
+	return
+
+/obj/structure/closet/crate/mcgruffin/strangebird/bust_open()
+	..()
+	opened = TRUE
+	update_icon()
+	dump_contents()
+	return
+
+/obj/structure/closet/crate/mcgruffin/ark
+	name = "The Ark"
+	desc = "It looks like it could be opened with the right crowbar..."
+	icon = 'icons/obj/crates.dmi'
+	icon_state = "ark"
+	dense_when_open = TRUE
+	material_drop = /obj/item/stack/ore/glass/basalt
+	material_drop_amount = 5
+	anchored = FALSE
+	anchorable = FALSE
+	drag_delay = 0.2 SECONDS
+	locked = TRUE
+	breakout_time = 900
+	cutting_tool = /obj/item/crowbar/abductor/heist
+	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
+	var/isEmpty = FALSE
+
+/obj/structure/closet/crate/mcgruffin/ark/PopulateContents()  //GRAVEROBBING IS NOW A FEATURE
+	..()
+
+	switch(rand(1,2))
+		if(1)
+			new /obj/item/nullrod/claymore/bostaff(src)
+		if(2)
+			new /obj/item/reagent_containers/food/drinks/bottle/holywater(src)
+		else
+			return
+
+
+/obj/structure/closet/crate/mcgruffin/ark/open(mob/living/user, obj/item/S)
+	if(!opened)
+		to_chat(user, span_notice("The crate is locked. You'll need a special crowbar."))
+	else
+		to_chat(user, span_notice("The crate is already open."))
+
+/obj/structure/closet/crate/mcgruffin/ark/tool_interact(obj/item/I, mob/living/carbon/user)
+	if(user.a_intent == INTENT_HELP) //checks to attempt to dig the grave, must be done on help intent only.
+		if(!opened)
+			if(istype(I,cutting_tool) && I.tool_behaviour == TOOL_CROWBAR)
+				to_chat(user, span_notice("You start to pry open \the [src]  with \the [I]..."))
+				if (do_after(user,20, target = src))
+					opened = TRUE
+					locked = TRUE
+					dump_contents()
+					update_icon()
+					if(!isEmpty)
+						isEmpty = TRUE
+						switch(rand(1,2))
+							if(1)
+								//Instrinct Resistance
+								to_chat(user, span_notice("You feel robust."))
+								tesla_zap(user, 4, 8000, ZAP_MOB_DAMAGE | ZAP_OBJ_DAMAGE | ZAP_MOB_STUN)
+								playsound(user, 'sound/machines/defib_zap.ogg', 50, TRUE)
+								var/datum/species/S = user.dna.species
+								S.brutemod *= 0.5
+								S.burnmod *= 0.5
+								S.coldmod *= 0.5
+							if(2)
+								new /mob/living/simple_animal/hostile/megafauna/watcher(get_turf(src))
+					return 1
+				return 1
+			else
+				to_chat(user, span_notice("You can't open the crate with \the [I.name]."))
+				return 1
+		else
+			to_chat(user, span_notice("The crate is already open"))
+			return 1
+	return
+
+/obj/structure/closet/crate/mcgruffin/ark/bust_open()
+	..()
+	opened = TRUE
+	update_icon()
+	dump_contents()
+	return
+
+

@@ -189,7 +189,7 @@
 
 	Launch(TRUE)
 
-	to_chat(user, "<span class='notice'>Calling your shuttle. One moment...</span>")
+	to_chat(user, span_notice("Calling your shuttle. One moment..."))
 	while(mode != SHUTTLE_CALL && !damaged)
 		stoplag()
 
@@ -197,7 +197,7 @@
 	if(mode != SHUTTLE_CALL)
 		AnnounceArrival(mob, rank)
 	else
-		LAZYADD(queued_announces, CALLBACK(GLOBAL_PROC, .proc/AnnounceArrival, mob, rank))
+		LAZYADD(queued_announces, CALLBACK(GLOBAL_PROC, PROC_REF(AnnounceArrival), mob, rank))
 
 /obj/docking_port/mobile/arrivals/vv_edit_var(var_name, var_value)
 	switch(var_name)

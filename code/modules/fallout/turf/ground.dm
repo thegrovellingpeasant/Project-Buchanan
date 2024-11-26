@@ -29,10 +29,10 @@
 		var/obj/item/stack/tile/plasteel/S = C
 		if(S.use(1))
 			playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
-			to_chat(user, "<span class='notice'>You build a floor.</span>")
+			to_chat(user, span_notice("You build a floor."))
 			ChangeTurf(/turf/open/floor/plating)
 		else
-			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
+			to_chat(user, span_warning("You need one floor tile to build a floor!"))
 	else
 		return ..()
 
@@ -417,7 +417,7 @@
 	icon_state = "evaporationpond1"
 	dir = NORTHWEST
 
-/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft 
+/turf/open/indestructible/ground/outside/saltflats/evaporationpondleft
 	icon = 'icons/fallout/objects/wendover.dmi'
 	icon_state = "evaporationpond3"
 	dir = WEST
@@ -533,9 +533,9 @@
 	icon = 'icons/fallout/turfs/wasteland.dmi'
 	icon_state = "desertsmooth"
 	slowdown = 0.3
-	list/loots = list(
-						/obj/item/stack/crafting/metalparts/five = 30,
-						)
+	loots = list(
+		/obj/item/stack/crafting/metalparts/five = 30,
+	)
 	footstep = FOOTSTEP_LOOSE_SAND
 	barefootstep = FOOTSTEP_LOOSE_SAND
 	clawfootstep = FOOTSTEP_LOOSE_SAND
@@ -972,7 +972,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/right/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
-	
+
 /turf/open/indestructible/ground/outside/sidewalk/top/dark
 	name = "\proper sidewalk"
 	sunlight_state = NO_SUNLIGHT
@@ -1117,7 +1117,7 @@
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(oldloc, /turf/open/indestructible/ground/outside/water))
-			to_chat(L, "<span class='warning'>You get drenched in water!</span>")
+			to_chat(L, span_warning("You get drenched in water!"))
 		L.water_act(5)
 	..()
 
@@ -1128,7 +1128,7 @@
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(newloc, /turf/open/indestructible/ground/outside/water))
-			to_chat(L, "<span class='warning'>You climb out of \the [src].</span>")
+			to_chat(L, span_warning("You climb out of \the [src]."))
 	..()
 
 /turf/open/indestructible/ground/outside/water/update_icon()
@@ -1468,7 +1468,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c/southwest
 	dir = SOUTHWEST
@@ -1495,7 +1495,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c2/southwest
 	dir = SOUTHWEST
@@ -1522,7 +1522,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c3/southwest
 	dir = SOUTHWEST
@@ -1549,7 +1549,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c4/southwest
 	dir = SOUTHWEST
@@ -1577,7 +1577,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c5/southwest
 	dir = SOUTHWEST
@@ -1605,7 +1605,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c6/southwest
 	dir = SOUTHWEST
@@ -1633,7 +1633,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c7/southwest
 	dir = SOUTHWEST
@@ -1660,7 +1660,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c8/southwest
 	dir = SOUTHWEST
@@ -1687,7 +1687,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c9/southwest
 	dir = SOUTHWEST
@@ -1714,7 +1714,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c10/southwest
 	dir = SOUTHWEST
@@ -1741,7 +1741,7 @@
 	dir = NORTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southeast
-	dir = SOUTHEAST	
+	dir = SOUTHEAST
 
 /turf/open/indestructible/ground/outside/gravel/Interstate80/c11/southwest
 	dir = SOUTHWEST

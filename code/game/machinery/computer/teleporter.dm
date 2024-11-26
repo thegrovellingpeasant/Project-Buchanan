@@ -90,7 +90,7 @@
 			say("Processing hub calibration to target...")
 			calibrating = TRUE
 			power_station.update_icon()
-			addtimer(CALLBACK(src, .proc/finish_calibration), 50 * (3 - power_station.teleporter_hub.accuracy)) //Better parts mean faster calibration
+			addtimer(CALLBACK(src, PROC_REF(finish_calibration)), 50 * (3 - power_station.teleporter_hub.accuracy)) //Better parts mean faster calibration
 			. = TRUE
 
 /obj/machinery/computer/teleporter/proc/finish_calibration()
@@ -150,7 +150,7 @@
 			var/mob/living/M = target
 			var/obj/item/implant/tracking/I = locate() in M.implants
 			if(I)
-				RegisterSignal(I, COMSIG_IMPLANT_REMOVING, .proc/untarget_implant)
+				RegisterSignal(I, COMSIG_IMPLANT_REMOVING, PROC_REF(untarget_implant))
 				imp_t = I
 			else
 				target = null
@@ -165,7 +165,7 @@
 				var/area/A = get_area(R)
 				L[avoid_assoc_duplicate_keys(A.name, areaindex)] = R
 		if(!L.len)
-			to_chat(user, "<span class='alert'>No active connected stations located.</span>")
+			to_chat(user, span_alert("No active connected stations located."))
 			return
 		var/desc = input("Please select a station to lock in.", "Locking Computer") as null|anything in L
 		if(!user.canUseTopic(src, !hasSiliconAccessInArea(user), NO_DEXTERY)) //again, check if we are still around

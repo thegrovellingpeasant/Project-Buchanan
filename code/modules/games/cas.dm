@@ -31,15 +31,19 @@
 	decksize = 50
 	card_text_file = "strings/cas_black.txt"
 
+GLOBAL_LIST_INIT(card_decks, list(
+	casblack = world.file2list("strings/cas_black.txt"),
+	caswhite = world.file2list("strings/cas_white.txt")
+))
+
 /obj/item/toy/cards/deck/cas/populate_deck()
-	var/static/list/cards_against_space = list("cas_white" = world.file2list("strings/cas_white.txt"),"cas_black" = world.file2list("strings/cas_black.txt"))
-	allcards = cards_against_space[card_face]
-	var/list/possiblecards = allcards.Copy()
-	if(possiblecards.len < decksize) // sanity check
-		decksize = (possiblecards.len - 1)
+	var/list/cards_against_space = GLOB.card_decks[deckstyle]
+	var/list/possible_cards = cards_against_space.Copy()
+	if(possible_cards.len < decksize) // sanity check
+		decksize = (possible_cards.len - 1)
 	var/list/randomcards = list()
 	for(var/x in 1 to decksize)
-		randomcards += pick_n_take(possiblecards)
+		randomcards += pick_n_take(possible_cards)
 	for(var/x in 1 to randomcards.len)
 		var/cardtext = randomcards[x]
 		var/datum/playingcard/P
@@ -61,7 +65,7 @@
 	if(user.lying)
 		return
 	if(cards.len == 0)
-		to_chat(user, "<span class='warning'>There are no more cards to draw!</span>")
+		to_chat(user, span_warning("There are no more cards to draw!"))
 		return
 	var/obj/item/toy/cards/singlecard/cas/H = new/obj/item/toy/cards/singlecard/cas(user.loc)
 	var/datum/playingcard/choice = cards[1]
@@ -75,21 +79,21 @@
 	src.cards -= choice
 	H.pickup(user)
 	user.put_in_hands(H)
-	user.visible_message("[user] draws a card from the deck.", "<span class='notice'>You draw a card from the deck.</span>")
+	user.visible_message("[user] draws a card from the deck.", span_notice("You draw a card from the deck."))
 	update_icon()
 
 /obj/item/toy/cards/deck/cas/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/toy/cards/singlecard/cas))
 		var/obj/item/toy/cards/singlecard/cas/SC = I
 		if(!user.temporarilyRemoveItemFromInventory(SC))
-			to_chat(user, "<span class='warning'>The card is stuck to your hand, you can't add it to the deck!</span>")
+			to_chat(user, span_warning("The card is stuck to your hand, you can't add it to the deck!"))
 			return
 		var/datum/playingcard/RC // replace null datum for the re-added card
 		RC = new()
 		RC.name = "[SC.name]"
 		RC.card_icon = SC.card_face
 		cards += RC
-		user.visible_message("[user] adds a card to the bottom of the deck.","<span class='notice'>You add the card to the bottom of the deck.</span>")
+		user.visible_message("[user] adds a card to the bottom of the deck.",span_notice("You add the card to the bottom of the deck."))
 		qdel(SC)
 	update_icon()
 
@@ -109,12 +113,12 @@
 /obj/item/toy/cards/singlecard/cas/examine(mob/user)
 	. = ..()
 	if (flipped)
-		. += "<span class='notice'>The card is face down.</span>"
+		. += span_notice("The card is face down.")
 	else if (blank)
-		. += "<span class='notice'>The card is blank. Write on it with a pen.</span>"
+		. += span_notice("The card is blank. Write on it with a pen.")
 	else
-		. += "<span class='notice'>The card reads: [name]</span>"
-	. += "<span class='notice'>Alt-click to flip it.</span>"
+		. += span_notice("The card reads: [name]")
+	. += span_notice("Alt-click to flip it.")
 
 /obj/item/toy/cards/singlecard/cas/Flip()
 	set name = "Flip Card"
@@ -145,7 +149,7 @@
 /obj/item/toy/cards/singlecard/cas/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/pen))
 		if(!user.is_literate())
-			to_chat(user, "<span class='notice'>You scribble illegibly on [src]!</span>")
+			to_chat(user, span_notice("You scribble illegibly on [src]!"))
 			return
 		if(!blank)
 			to_chat(user, "You cannot write on that card.")

@@ -43,10 +43,10 @@
 
 /datum/component/simple_rotation/proc/add_signals()
 	if(rotation_flags & ROTATION_ALTCLICK)
-		RegisterSignal(parent, COMSIG_CLICK_ALT, .proc/HandRot)
-		RegisterSignal(parent, COMSIG_PARENT_EXAMINE, .proc/ExamineMessage)
+		RegisterSignal(parent, COMSIG_CLICK_ALT, PROC_REF(HandRot))
+		RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(ExamineMessage))
 	if(rotation_flags & ROTATION_WRENCH)
-		RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, .proc/WrenchRot)
+		RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, PROC_REF(WrenchRot))
 
 /datum/component/simple_rotation/proc/add_verbs()
 	if(rotation_flags & ROTATION_VERBS)
@@ -99,7 +99,7 @@
 
 /datum/component/simple_rotation/proc/ExamineMessage(datum/source, mob/user, list/examine_list)
 	if(rotation_flags & ROTATION_ALTCLICK)
-		examine_list += "<span class='notice'>Alt-click to rotate it clockwise.</span>"
+		examine_list += span_notice("Alt-click to rotate it clockwise.")
 
 /datum/component/simple_rotation/proc/HandRot(datum/source, mob/user, rotation = default_rotation_direction)
 	if(can_be_rotated)
@@ -162,7 +162,7 @@
 	return !AM.anchored
 
 /datum/component/simple_rotation/proc/default_after_rotation(mob/user, rotation_type)
-	to_chat(user,"<span class='notice'>You [rotation_type == ROTATION_FLIP ? "flip" : "rotate"] [parent].</span>")
+	to_chat(user,span_notice("You [rotation_type == ROTATION_FLIP ? "flip" : "rotate"] [parent]."))
 
 /atom/movable/proc/simple_rotate_clockwise()
 	set name = "Rotate Clockwise"

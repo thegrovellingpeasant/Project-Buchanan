@@ -13,8 +13,8 @@
 
 /obj/item/binoculars/Initialize()
 	. = ..()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
 
 /obj/item/binoculars/ComponentInitialize()
 	. = ..()
@@ -25,15 +25,15 @@
 	return ..()
 
 /obj/item/binoculars/proc/on_wield(obj/item/source, mob/user)
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/unwield)
-	RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, .proc/rotate)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(unwield))
+	RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, PROC_REF(rotate))
 	listeningTo = user
-	user.visible_message("<span class='notice'>[user] holds [src] up to [user.p_their()] eyes.</span>", "<span class='notice'>You hold [src] up to your eyes.</span>")
+	user.visible_message(span_notice("[user] holds [src] up to [user.p_their()] eyes."), span_notice("You hold [src] up to your eyes."))
 	item_state = "binoculars_wielded"
 	user.regenerate_icons()
 	if(!user?.client)
 		return
-	
+
 	var/client/C = user.client
 	var/_x = 0
 	var/_y = 0
@@ -83,7 +83,7 @@
 		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
 		listeningTo = null
-	user.visible_message("<span class='notice'>[user] lowers [src].</span>", "<span class='notice'>You lower [src].</span>")
+	user.visible_message(span_notice("[user] lowers [src]."), span_notice("You lower [src]."))
 	item_state = "binoculars"
 	user.regenerate_icons()
 	if(user && user.client)

@@ -321,7 +321,7 @@
 	projectiletype = /obj/item/projectile/bullet/c45/simple
 	projectilesound = 'sound/weapons/gunshot_smg.ogg'
 
-mob/living/simple_animal/hostile/raider/deserter/trooper
+/mob/living/simple_animal/hostile/raider/deserter/trooper
 	name = "Deserter Trooper"
 	desc = "He is what looks to be a deserter."
 	icon_state = "trooper"

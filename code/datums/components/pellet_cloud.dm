@@ -78,14 +78,14 @@
 	return ..()
 
 /datum/component/pellet_cloud/RegisterWithParent()
-	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, .proc/nullspace_parent)
+	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, PROC_REF(nullspace_parent))
 	if(isammocasing(parent))
-		RegisterSignal(parent, COMSIG_PELLET_CLOUD_INIT, .proc/create_casing_pellets)
+		RegisterSignal(parent, COMSIG_PELLET_CLOUD_INIT, PROC_REF(create_casing_pellets))
 	else if(isgrenade(parent))
-		RegisterSignal(parent, COMSIG_GRENADE_ARMED, .proc/grenade_armed)
-		RegisterSignal(parent, COMSIG_GRENADE_PRIME, .proc/create_blast_pellets)
+		RegisterSignal(parent, COMSIG_GRENADE_ARMED, PROC_REF(grenade_armed))
+		RegisterSignal(parent, COMSIG_GRENADE_PRIME, PROC_REF(create_blast_pellets))
 	else if(islandmine(parent))
-		RegisterSignal(parent, COMSIG_ITEM_MINE_TRIGGERED, .proc/create_blast_pellets)
+		RegisterSignal(parent, COMSIG_ITEM_MINE_TRIGGERED, PROC_REF(create_blast_pellets))
 
 /datum/component/pellet_cloud/UnregisterFromParent()
 	UnregisterSignal(parent, list(COMSIG_PARENT_PREQDELETED, COMSIG_PELLET_CLOUD_INIT, COMSIG_GRENADE_PRIME, COMSIG_GRENADE_ARMED, COMSIG_MOVABLE_MOVED, COMSIG_MOVABLE_UNCROSSED, COMSIG_ITEM_MINE_TRIGGERED, COMSIG_ITEM_DROPPED))
@@ -110,8 +110,8 @@
 			else //Smart spread
 				spread = round((i / num_pellets - 0.5) * distro)
 
-		RegisterSignal(shell.BB, COMSIG_PROJECTILE_SELF_ON_HIT, .proc/pellet_hit)
-		RegisterSignal(shell.BB, list(COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PARENT_QDELETING), .proc/pellet_range)
+		RegisterSignal(shell.BB, COMSIG_PROJECTILE_SELF_ON_HIT, PROC_REF(pellet_hit))
+		RegisterSignal(shell.BB, list(COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PARENT_QDELETING), PROC_REF(pellet_range))
 		LAZYADD(pellets, shell.BB)
 		if(!shell.throw_proj(target, targloc, shooter, params, spread))
 			return
@@ -155,7 +155,7 @@
 	var/self_harm_radius_mult = 3
 
 	if(lanced_by && prob(60))
-		to_chat(lanced_by, "<span class='userdanger'>Your plan to whack someone with a grenade on a stick backfires on you, literally!</span>")
+		to_chat(lanced_by, span_userdanger("Your plan to whack someone with a grenade on a stick backfires on you, literally!"))
 		self_harm_radius_mult = 1 // we'll still give the guy who got hit some extra shredding, but not 3*radius
 		pellet_delta += radius
 		for(var/i in 1 to radius)
@@ -172,13 +172,13 @@
 	for(var/M in martyrs)
 		var/mob/living/martyr = M
 		if(radius > 4)
-			martyr.visible_message("<b><span class='danger'>[martyr] heroically covers \the [parent] with [martyr.p_their()] body, absorbing a load of the shrapnel!</span></b>", "<span class='userdanger'>You heroically cover \the [parent] with your body, absorbing a load of the shrapnel!</span>")
+			martyr.visible_message("<b>[span_danger("[martyr] heroically covers \the [parent] with [martyr.p_their()] body, absorbing a load of the shrapnel!")]</b>", span_userdanger("You heroically cover \the [parent] with your body, absorbing a load of the shrapnel!"))
 			magnitude_absorbed += round(radius * 0.5)
 		else if(radius >= 2)
-			martyr.visible_message("<b><span class='danger'>[martyr] heroically covers \the [parent] with [martyr.p_their()] body, absorbing some of the shrapnel!</span></b>", "<span class='userdanger'>You heroically cover \the [parent] with your body, absorbing some of the shrapnel!</span>")
+			martyr.visible_message("<b>[span_danger("[martyr] heroically covers \the [parent] with [martyr.p_their()] body, absorbing some of the shrapnel!")]</b>", span_userdanger("You heroically cover \the [parent] with your body, absorbing some of the shrapnel!"))
 			magnitude_absorbed += 2
 		else
-			martyr.visible_message("<b><span class='danger'>[martyr] heroically covers \the [parent] with [martyr.p_their()] body, snuffing out the shrapnel!</span></b>", "<span class='userdanger'>You heroically cover \the [parent] with your body, snuffing out the shrapnel!</span>")
+			martyr.visible_message("<b>[span_danger("[martyr] heroically covers \the [parent] with [martyr.p_their()] body, snuffing out the shrapnel!")]</b>", span_userdanger("You heroically cover \the [parent] with your body, snuffing out the shrapnel!"))
 			magnitude_absorbed = radius
 
 		var/pellets_absorbed = (radius ** 2) - ((radius - magnitude_absorbed - 1) ** 2)
@@ -187,7 +187,7 @@
 
 		if(martyr.stat != DEAD && martyr.client)
 			LAZYADD(purple_hearts, martyr)
-			RegisterSignal(martyr, COMSIG_PARENT_QDELETING, .proc/on_target_qdel, override=TRUE)
+			RegisterSignal(martyr, COMSIG_PARENT_QDELETING, PROC_REF(on_target_qdel), override=TRUE)
 
 		for(var/i in 1 to round(pellets_absorbed * 0.5))
 			pew(martyr)
@@ -219,7 +219,7 @@
 	if (targets_hit.Find(target))
 		targets_hit[target]++
 		if(targets_hit[target] == 1)
-			RegisterSignal(target, COMSIG_PARENT_QDELETING, .proc/on_target_qdel, override=TRUE)
+			RegisterSignal(target, COMSIG_PARENT_QDELETING, PROC_REF(on_target_qdel), override=TRUE)
 	UnregisterSignal(P, list(COMSIG_PARENT_QDELETING, COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PROJECTILE_SELF_ON_HIT))
 	if(terminated == num_pellets)
 		finalize()
@@ -244,8 +244,8 @@
 	LAZYADD(P.permutated, parent) // don't hit the target we hit already with the flak
 	P.suppressed = SUPPRESSED_VERY // set the projectiles to make no message so we can do our own aggregate message
 	P.preparePixelProjectile(target, parent)
-	RegisterSignal(P, COMSIG_PROJECTILE_SELF_ON_HIT, .proc/pellet_hit)
-	RegisterSignal(P, list(COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PARENT_QDELETING), .proc/pellet_range)
+	RegisterSignal(P, COMSIG_PROJECTILE_SELF_ON_HIT, PROC_REF(pellet_hit))
+	RegisterSignal(P, list(COMSIG_PROJECTILE_RANGE_OUT, COMSIG_PARENT_QDELETING), PROC_REF(pellet_range))
 	LAZYADD(pellets, P)
 	P.fire()
 
@@ -269,11 +269,11 @@
 			hit_part.painless_wound_roll(wound_type, damage_dealt, w_bonus, bw_bonus, initial(P.sharpness))
 
 		if(num_hits > 1)
-			target.visible_message("<span class='danger'>[target] is hit by [num_hits] [proj_name]s[hit_part ? " in the [hit_part.name]" : ""]!</span>", null, null, COMBAT_MESSAGE_RANGE, target)
-			to_chat(target, "<span class='userdanger'>You're hit by [num_hits] [proj_name]s[hit_part ? " in the [hit_part.name]" : ""]!</span>")
+			target.visible_message(span_danger("[target] is hit by [num_hits] [proj_name]s[hit_part ? " in the [hit_part.name]" : ""]!"), null, null, COMBAT_MESSAGE_RANGE, target)
+			to_chat(target, span_userdanger("You're hit by [num_hits] [proj_name]s[hit_part ? " in the [hit_part.name]" : ""]!"))
 		else
-			target.visible_message("<span class='danger'>[target] is hit by a [proj_name][hit_part ? " in the [hit_part.name]" : ""]!</span>", null, null, COMBAT_MESSAGE_RANGE, target)
-			to_chat(target, "<span class='userdanger'>You're hit by a [proj_name][hit_part ? " in the [hit_part.name]" : ""]!</span>")
+			target.visible_message(span_danger("[target] is hit by a [proj_name][hit_part ? " in the [hit_part.name]" : ""]!"), null, null, COMBAT_MESSAGE_RANGE, target)
+			to_chat(target, span_userdanger("You're hit by a [proj_name][hit_part ? " in the [hit_part.name]" : ""]!"))
 	UnregisterSignal(parent, COMSIG_PARENT_PREQDELETED)
 	if(queued_delete)
 		qdel(parent)
@@ -284,9 +284,9 @@
 	if(ismob(nade.loc))
 		shooter = nade.loc
 	LAZYINITLIST(bodies)
-	RegisterSignal(parent, COMSIG_ITEM_DROPPED, .proc/grenade_dropped)
-	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, .proc/grenade_moved)
-	RegisterSignal(parent, COMSIG_MOVABLE_UNCROSSED, .proc/grenade_uncrossed)
+	RegisterSignal(parent, COMSIG_ITEM_DROPPED, PROC_REF(grenade_dropped))
+	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, PROC_REF(grenade_moved))
+	RegisterSignal(parent, COMSIG_MOVABLE_UNCROSSED, PROC_REF(grenade_uncrossed))
 
 /// Someone dropped the grenade, so set them to the shooter in case they're on top of it when it goes off
 /datum/component/pellet_cloud/proc/grenade_dropped(obj/item/nade, mob/living/slick_willy)
@@ -297,7 +297,7 @@
 /datum/component/pellet_cloud/proc/grenade_moved()
 	LAZYCLEARLIST(bodies)
 	for(var/mob/living/L in get_turf(parent))
-		RegisterSignal(L, COMSIG_PARENT_QDELETING, .proc/on_target_qdel, override=TRUE)
+		RegisterSignal(L, COMSIG_PARENT_QDELETING, PROC_REF(on_target_qdel), override=TRUE)
 		LAZYADD(bodies, L)
 
 /// Someone who was originally "under" the grenade has moved off the tile and is now eligible for being a martyr and "covering" it

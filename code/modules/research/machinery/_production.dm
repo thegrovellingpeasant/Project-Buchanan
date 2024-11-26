@@ -26,8 +26,8 @@
 	cached_designs = list()
 	stored_research = new
 	host_research = SSresearch.science_tech
-	INVOKE_ASYNC(src, .proc/update_research)
-	materials = AddComponent(/datum/component/remote_materials, "lathe", mapload, _after_insert=CALLBACK(src, .proc/AfterMaterialInsert))
+	INVOKE_ASYNC(src, PROC_REF(update_research))
+	materials = AddComponent(/datum/component/remote_materials, "lathe", mapload, _after_insert=CALLBACK(src, PROC_REF(AfterMaterialInsert)))
 	RefreshParts()
 
 /obj/machinery/rnd/production/Destroy()
@@ -82,7 +82,7 @@
 	. = ..()
 	var/datum/component/remote_materials/materials = GetComponent(/datum/component/remote_materials)
 	if(in_range(user, src) || isobserver(user))
-		. += "<span class='notice'>The status display reads: Storing up to <b>[materials.local_size]</b> material units locally.<br>Material usage cost at <b>[print_cost_coeff*100]%</b>.</span>"
+		. += span_notice("The status display reads: Storing up to <b>[materials.local_size]</b> material units locally.<br>Material usage cost at <b>[print_cost_coeff*100]%</b>.")
 
 //we eject the materials upon deconstruction.
 /obj/machinery/rnd/production/on_deconstruction()
@@ -171,8 +171,8 @@
 	if(production_animation)
 		flick(production_animation, src)
 	var/timecoeff = D.lathe_time_factor * print_cost_coeff
-	addtimer(CALLBACK(src, .proc/reset_busy), (20 * timecoeff * amount) ** 0.5)
-	addtimer(CALLBACK(src, .proc/do_print, D.build_path, amount, efficient_mats, D.dangerous_construction, usr), (20 * timecoeff * amount) ** 0.5)
+	addtimer(CALLBACK(src, PROC_REF(reset_busy)), (20 * timecoeff * amount) ** 0.5)
+	addtimer(CALLBACK(src, PROC_REF(do_print), D.build_path, amount, efficient_mats, D.dangerous_construction, usr), (20 * timecoeff * amount) ** 0.5)
 	return TRUE
 
 /obj/machinery/rnd/production/proc/search(string)
@@ -276,7 +276,7 @@
 		t = check_mat(D, M)
 		temp_material += " | "
 		if (t < 1)
-			temp_material += "<span class='bad'>[all_materials[M] * coeff] [CallMaterialName(M)]</span>"
+			temp_material += span_bad("[all_materials[M] * coeff] [CallMaterialName(M)]")
 		else
 			temp_material += " [all_materials[M] * coeff] [CallMaterialName(M)]"
 		c = min(c,t)
@@ -300,7 +300,7 @@
 			l += "<A href='?src=[REF(src)];build=[D.id];amount=10'>x10</A>[RDSCREEN_NOBREAK]"
 		l += "[temp_material][sec_text][RDSCREEN_NOBREAK]"
 	else
-		l += "<span class='linkOff'>[D.name]</span>[temp_material][sec_text][RDSCREEN_NOBREAK]"
+		l += "[span_linkoff("[D.name]")][temp_material][sec_text][RDSCREEN_NOBREAK]"
 	l += ""
 	return l
 

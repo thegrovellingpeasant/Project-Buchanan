@@ -129,7 +129,7 @@
 			if (!user.transferItemToLoc(W,src))
 				return
 			src.diskette = W
-			to_chat(user, "<span class='notice'>You insert [W].</span>")
+			to_chat(user, span_notice("You insert [W]."))
 			playsound(src, 'sound/machines/terminal_insert_disc.ogg', 50, 0)
 			src.updateUsrDialog()
 	else if(istype(W, /obj/item/multitool))
@@ -167,7 +167,7 @@
 			else
 				dat += "<a href='byond://?src=[REF(src)];task=stopautoprocess'>Stop autoclone</a>"
 		else
-			dat += "<span class='linkOff'>Autoclone</span>"
+			dat += span_linkoff("Autoclone")
 	dat += "<h3>Cloning Pod Status</h3>"
 	dat += "<div class='statusDisplay'>[temp]&nbsp;</div>"
 
@@ -207,14 +207,14 @@
 					dat += "<a href='byond://?src=[REF(src)];scan=1'>[use_records ? "Start Scan" : "Clone"]</a>"
 					dat += "<br><a href='byond://?src=[REF(src)];lock=1'>[scanner.locked ? "Unlock Scanner" : "Lock Scanner"]</a>"
 				else
-					dat += "<span class='linkOff'>[use_records ? "Start Scan" : "Clone"]</span>"
+					dat += span_linkoff("[use_records ? "Start Scan" : "Clone"]")
 			if(use_records)
 				// Database
 				dat += "<h3>Database Functions</h3>"
 				if (src.records.len && src.records.len > 0)
 					dat += "<a href='byond://?src=[REF(src)];menu=2'>View Records ([src.records.len])</a><br>"
 				else
-					dat += "<span class='linkOff'>View Records (0)</span><br>"
+					dat += "[span_linkoff("View Records (0)")]<br>"
 				if (src.diskette)
 					dat += "<a href='byond://?src=[REF(src)];disk=eject'>Eject Disk</a><br>"
 
@@ -242,8 +242,8 @@
 				else
 					dat += "<font class='bad'>Unable to locate Health Implant.</font><br /><br />"
 
-				dat += "<b>Unique Identifier:</b><br /><span class='highlight'>[src.active_record.fields["UI"]]</span><br>"
-				dat += "<b>Structural Enzymes:</b><br /><span class='highlight'>[src.active_record.fields["SE"]]</span><br>"
+				dat += "<b>Unique Identifier:</b><br />[span_highlight("[src.active_record.fields["UI"]]")]<br>"
+				dat += "<b>Structural Enzymes:</b><br />[span_highlight("[src.active_record.fields["SE"]]")]<br>"
 
 				if(diskette && diskette.fields)
 					dat += "<div class='block'>"
@@ -307,7 +307,7 @@
 		say("Initiating scan...")
 		var/prev_locked = scanner.locked
 		scanner.locked = TRUE
-		addtimer(CALLBACK(src, .proc/finish_scan, scanner.occupant, prev_locked), 2 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(finish_scan), scanner.occupant, prev_locked), 2 SECONDS)
 		. = TRUE
 
 		//No locking an open scanner.

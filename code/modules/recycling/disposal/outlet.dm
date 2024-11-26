@@ -44,9 +44,9 @@
 	if((start_eject + 30) < world.time)
 		start_eject = world.time
 		playsound(src, 'sound/machines/warning-buzzer.ogg', 50, 0, 0)
-		addtimer(CALLBACK(src, .proc/expel_holder, H, TRUE), 20)
+		addtimer(CALLBACK(src, PROC_REF(expel_holder), H, TRUE), 20)
 	else
-		addtimer(CALLBACK(src, .proc/expel_holder, H), 20)
+		addtimer(CALLBACK(src, PROC_REF(expel_holder), H), 20)
 
 /obj/structure/disposaloutlet/proc/expel_holder(obj/structure/disposalholder/H, playsound=FALSE)
 	if(playsound)
@@ -71,9 +71,9 @@
 		return TRUE
 
 	playsound(src, 'sound/items/welder2.ogg', 100, 1)
-	to_chat(user, "<span class='notice'>You start slicing the floorweld off [src]...</span>")
+	to_chat(user, span_notice("You start slicing the floorweld off [src]..."))
 	if(I.use_tool(src, user, 20))
-		to_chat(user, "<span class='notice'>You slice the floorweld off [src].</span>")
+		to_chat(user, span_notice("You slice the floorweld off [src]."))
 		stored.forceMove(loc)
 		transfer_fingerprints_to(stored)
 		stored = null
@@ -119,9 +119,9 @@
 	if((start_eject + 30) < world.time)
 		start_eject = world.time
 		playsound(src, 'sound/machines/warning-buzzer.ogg', 50, 0, 0)
-		addtimer(CALLBACK(src, .proc/expel_holder, H, TRUE), 20)
+		addtimer(CALLBACK(src, PROC_REF(expel_holder), H, TRUE), 20)
 	else
-		addtimer(CALLBACK(src, .proc/expel_holder, H), 20)
+		addtimer(CALLBACK(src, PROC_REF(expel_holder), H), 20)
 
 
 /obj/structure/disposaloutlet/damaged/proc/expel_holder2(obj/structure/disposalholder/H, playsound=FALSE)
@@ -147,9 +147,9 @@
 		return TRUE
 
 	playsound(src, 'sound/items/welder2.ogg', 100, 1)
-	to_chat(user, "<span class='notice'>You start slicing the floorweld off [src]...</span>")
+	to_chat(user, span_notice("You start slicing the floorweld off [src]..."))
 	if(I.use_tool(src, user, 20))
-		to_chat(user, "<span class='notice'>You slice the floorweld off [src].</span>")
+		to_chat(user, span_notice("You slice the floorweld off [src]."))
 		stored.forceMove(loc)
 		transfer_fingerprints_to(stored)
 		stored = null

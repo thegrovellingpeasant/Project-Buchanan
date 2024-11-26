@@ -45,7 +45,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 /datum/preferences/proc/update_preferences(current_version, savefile/S)
 	if(current_version < 37)	//If you remove this, remove force_reset_keybindings() too.
 		force_reset_keybindings_direct(TRUE)
-		addtimer(CALLBACK(src, .proc/force_reset_keybindings), 30)	//No mob available when this is run, timer allows user choice.
+		addtimer(CALLBACK(src, PROC_REF(force_reset_keybindings)), 30)	//No mob available when this is run, timer allows user choice.
 
 
 /datum/preferences/proc/update_character(current_version, savefile/S)
@@ -85,7 +85,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		return FALSE
 	if(world.time < loadprefcooldown)
 		if(istype(parent))
-			to_chat(parent, "<span class='warning'>You're attempting to load your preferences a little too fast. Wait half a second, then try again.</span>")
+			to_chat(parent, span_warning("You're attempting to load your preferences a little too fast. Wait half a second, then try again."))
 		return FALSE
 	loadprefcooldown = world.time + PREF_SAVELOAD_COOLDOWN
 	if(!fexists(path))
@@ -261,7 +261,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		return 0
 	if(world.time < saveprefcooldown)
 		if(istype(parent))
-			to_chat(parent, "<span class='warning'>You're attempting to save your preferences a little too fast. Wait half a second, then try again.</span>")
+			to_chat(parent, span_warning("You're attempting to save your preferences a little too fast. Wait half a second, then try again."))
 		return 0
 	saveprefcooldown = world.time + PREF_SAVELOAD_COOLDOWN
 	var/savefile/S = new /savefile(path)
@@ -331,7 +331,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		return FALSE
 	if(world.time < loadcharcooldown) //This is before the check to see if the filepath exists to ensure that BYOND can't get hung up on read attempts when the hard drive is a little slow
 		if(istype(parent))
-			to_chat(parent, "<span class='warning'>You're attempting to load your character a little too fast. Wait half a second, then try again.</span>")
+			to_chat(parent, span_warning("You're attempting to load your character a little too fast. Wait half a second, then try again."))
 		return "SLOW THE FUCK DOWN" //the reason this isn't null is to make sure that people don't have their character slots overridden by random chars if they accidentally double-click a slot
 	loadcharcooldown = world.time + PREF_SAVELOAD_COOLDOWN
 	if(!fexists(path))
@@ -593,24 +593,16 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["insect_markings"] 	= sanitize_inlist(features["insect_markings"], GLOB.insect_markings_list, "None")
 	features["insect_wings"] 		= sanitize_inlist(features["insect_wings"], GLOB.insect_wings_list)
 
-	var/static/size_min
-	if(!size_min)
-		size_min = CONFIG_GET(number/body_size_min)
-	var/static/size_max
-	if(!size_max)
-		size_max = CONFIG_GET(number/body_size_max)
-	features["body_size"]			= sanitize_num_clamp(features["body_size"], size_min, size_max, RESIZE_DEFAULT_SIZE, 0.01)
+	var/static/size_min = CONFIG_GET(number/body_size_min)
+	var/static/size_max = CONFIG_GET(number/body_size_max)
+	features["body_size"] = sanitize_num_clamp(features["body_size"], size_min, size_max, RESIZE_DEFAULT_SIZE, 0.01)
 
 	var/static/list/B_sizes
 	if(!B_sizes)
 		var/list/L = CONFIG_GET(keyed_list/breasts_cups_prefs)
 		B_sizes = L.Copy()
-	var/static/min_D
-	if(!min_D)
-		min_D = CONFIG_GET(number/penis_min_inches_prefs)
-	var/static/max_D
-	if(!max_D)
-		max_D = CONFIG_GET(number/penis_max_inches_prefs)
+	var/static/min_D = CONFIG_GET(number/penis_min_inches_prefs)
+	var/static/max_D = CONFIG_GET(number/penis_max_inches_prefs)
 	var/static/safe_visibilities
 	if(!safe_visibilities)
 		var/list/L = CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -667,7 +659,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		return 0
 	if(world.time < savecharcooldown)
 		if(istype(parent))
-			to_chat(parent, "<span class='warning'>You're attempting to save your character a little too fast. Wait half a second, then try again.</span>")
+			to_chat(parent, span_warning("You're attempting to save your character a little too fast. Wait half a second, then try again."))
 		return 0
 	savecharcooldown = world.time + PREF_SAVELOAD_COOLDOWN
 	var/savefile/S = new /savefile(path)

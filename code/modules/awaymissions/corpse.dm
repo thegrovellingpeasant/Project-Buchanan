@@ -38,10 +38,10 @@
 	if(!SSticker.HasRoundStarted() || !loc || !ghost_usable)
 		return
 	if(!uses)
-		to_chat(user, "<span class='warning'>This spawner is out of charges!</span>")
+		to_chat(user, span_warning("This spawner is out of charges!"))
 		return
 	if(jobban_isbanned(user, banType))
-		to_chat(user, "<span class='warning'>You are jobanned!</span>")
+		to_chat(user, span_warning("You are jobanned!"))
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
@@ -66,7 +66,7 @@
 /obj/effect/mob_spawn/Initialize(mapload)
 	. = ..()
 	if(instant || (roundstart && (mapload || (SSticker && SSticker.current_state > GAME_STATE_SETTING_UP))))
-		INVOKE_ASYNC(src, .proc/create)
+		INVOKE_ASYNC(src, PROC_REF(create))
 	else if(ghost_usable)
 		GLOB.poi_list |= src
 		LAZYADD(GLOB.mob_spawners[job_description ? job_description : name], src)
@@ -114,9 +114,9 @@
 		if(show_flavour)
 			var/output_message = "<span class='big bold'>[short_desc]</span>"
 			if(flavour_text != "")
-				output_message += "\n<span class='bold'>[flavour_text]</span>"
+				output_message += "\n[span_bold("[flavour_text]")]"
 			if(important_info != "")
-				output_message += "\n<span class='userdanger'>[important_info]</span>"
+				output_message += "\n[span_userdanger("[important_info]")]"
 			to_chat(M, output_message)
 		var/datum/mind/MM = M.mind
 		var/datum/antagonist/A
@@ -594,7 +594,7 @@
 	var/despawn = alert("Return to cryosleep? (Warning, Your mob will be deleted!)",,"Yes","No")
 	if(despawn == "No" || !loc || !Adjacent(user))
 		return
-	user.visible_message("<span class='notice'>[user.name] climbs back into cryosleep...</span>")
+	user.visible_message(span_notice("[user.name] climbs back into cryosleep..."))
 	qdel(user)
 
 /datum/outfit/cryobartender

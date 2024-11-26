@@ -1,9 +1,9 @@
 /mob/living/ComponentInitialize()
 	. = ..()
-	RegisterSignal(src, list(SIGNAL_ADDTRAIT(TRAIT_SPRINT_LOCKED), SIGNAL_REMOVETRAIT(TRAIT_SPRINT_LOCKED)), .proc/update_sprint_lock)
+	RegisterSignal(src, list(SIGNAL_ADDTRAIT(TRAIT_SPRINT_LOCKED), SIGNAL_REMOVETRAIT(TRAIT_SPRINT_LOCKED)), PROC_REF(update_sprint_lock))
 
 /mob/living/proc/update_sprint_icon()
-	var/obj/screen/sprintbutton/S = locate() in hud_used?.static_inventory
+	var/atom/movable/screen/sprintbutton/S = locate() in hud_used?.static_inventory
 	S?.update_icon()
 
 /mob/living/proc/update_hud_sprint_bar()
@@ -62,7 +62,7 @@
 	var/old = (combat_flags & COMBAT_FLAG_SPRINT_TOGGLED)
 	if(old)
 		if(combat_flags & COMBAT_FLAG_SPRINT_FORCED)
-			to_chat(src, "<span class='warning'>You are unable to stop sprinting!</span>")
+			to_chat(src, span_warning("You are unable to stop sprinting!"))
 			return
 		disable_intentional_sprint_mode()
 		if((m_intent == MOVE_INTENT_RUN) && CHECK_ALL_MOBILITY(src, MOBILITY_STAND|MOBILITY_MOVE))

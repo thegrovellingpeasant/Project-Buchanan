@@ -839,7 +839,7 @@ Records disabled until a use for them is found
 					else
 						dat += " |"
 					if(category == gear_category)
-						dat += " <span class='linkOn'>[category]</span> "
+						dat += " [span_linkon("[category]")] "
 					else
 						dat += " <a href='?_src_=prefs;preference=gear;select_category=[html_encode(category)]'>[category]</a> "
 
@@ -862,7 +862,7 @@ Records disabled until a use for them is found
 						else
 							dat += " |"
 						if(gear_subcategory == subcategory)
-							dat += " <span class='linkOn'>[subcategory]</span> "
+							dat += " [span_linkon("[subcategory]")] "
 						else
 							dat += " <a href='?_src_=prefs;preference=gear;select_subcategory=[html_encode(subcategory)]'>[subcategory]</a> "
 					dat += "</b></center></td></tr>"
@@ -969,13 +969,13 @@ Records disabled until a use for them is found
 					var/datum/keybinding/kb = i
 					var/current_independent_binding = user_modless_binds[kb.name] || "Unbound"
 					if(!length(user_binds[kb.name]))
-						dat += "<span class='bindname'>[kb.full_name]</span><span class='bindings'><a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=["Unbound"]'>Unbound</a>"
+						dat += "[span_bindname("[kb.full_name]")]<span class='bindings'><a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=["Unbound"]'>Unbound</a>"
 						var/list/default_keys = hotkeys ? kb.hotkey_keys : kb.classic_keys
 						if(LAZYLEN(default_keys))
 							dat += "| Default: [default_keys.Join(", ")]"
 						dat += "</span>"
 						if(!kb.special && !kb.clientside)
-							dat += "<span class='independent'>Independent Binding: <a href='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[current_independent_binding];independent=1'>[current_independent_binding]</a></span>"
+							dat += span_independent("Independent Binding: <a href='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[current_independent_binding];independent=1'>[current_independent_binding]</a>")
 						dat += "<br>"
 					else
 						var/bound_key = user_binds[kb.name][1]
@@ -990,7 +990,7 @@ Records disabled until a use for them is found
 							dat += "| Default: [default_keys.Join(", ")]"
 						dat += "</span>"
 						if(!kb.special && !kb.clientside)
-							dat += "<span class='independent'>Independent Binding: <a href='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[current_independent_binding];independent=1'>[current_independent_binding]</a></span>"
+							dat += span_independent("Independent Binding: <a href='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[current_independent_binding];independent=1'>[current_independent_binding]</a>")
 						dat += "<br>"
 
 			dat += "<br><br>"
@@ -1069,7 +1069,7 @@ Records disabled until a use for them is found
 		//The job before the current job. I only use this to get the previous jobs color when I'm filling in blank rows.
 		var/datum/job/lastJob
 
-		for(var/datum/job/job in sortList(SSjob.occupations, /proc/cmp_job_display_asc))
+		for(var/datum/job/job in sortList(SSjob.occupations, GLOBAL_PROC_REF(cmp_job_display_asc)))
 			if(job.total_positions == 0)
 				continue
 
@@ -1124,9 +1124,9 @@ Records disabled until a use for them is found
 				HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
 				continue
 			if((rank in GLOB.command_positions) || (rank == "AI"))//Bold head jobs
-				HTML += "<b><span class='dark'>[rank]</span></b>"
+				HTML += "<b>[span_dark("[rank]")]</b>"
 			else
-				HTML += "<span class='dark'>[rank]</span>"
+				HTML += span_dark("[rank]")
 
 			HTML += "</td><td width='40%'>"
 
@@ -1212,7 +1212,7 @@ Records disabled until a use for them is found
 		return
 
 	if (!isnum(desiredLvl))
-		to_chat(user, "<span class='danger'>UpdateJobPreference - desired level was not a number. Please notify coders!</span>")
+		to_chat(user, span_danger("UpdateJobPreference - desired level was not a number. Please notify coders!"))
 		ShowChoices(user)
 		return
 
@@ -1242,7 +1242,7 @@ Records disabled until a use for them is found
 
 /datum/preferences/proc/SetQuirks(mob/user)
 	if(!SSquirks)
-		to_chat(user, "<span class='danger'>The quirk subsystem is still initializing! Try again in a minute.</span>")
+		to_chat(user, span_danger("The quirk subsystem is still initializing! Try again in a minute."))
 		return
 
 	var/list/dat = list()
@@ -1306,7 +1306,7 @@ Records disabled until a use for them is found
 
 /datum/preferences/proc/SetSpecial(mob/user)
 //	if(!SSquirks)
-	//	to_chat(user, "<span class='danger'>The quirk subsystem is still initializing! Try again in a minute.</span>")
+	//	to_chat(user, span_danger("The quirk subsystem is still initializing! Try again in a minute."))
 //		return
 
 	var/list/dat = list()
@@ -1421,21 +1421,21 @@ Records disabled until a use for them is found
 					var/list/L = V
 					for(var/Q in all_quirks)
 						if((quirk in L) && (Q in L) && !(Q == quirk)) //two quirks have lined up in the list of the list of quirks that conflict with each other, so return (see quirks.dm for more details)
-							to_chat(user, "<span class='danger'>[quirk] is incompatible with [Q].</span>")
+							to_chat(user, span_danger("[quirk] is incompatible with [Q]."))
 							return
 				var/value = SSquirks.quirk_points[quirk]
 				var/balance = GetQuirkBalance()
 				if(quirk in all_quirks)
 					if(balance + value < 0)
-						to_chat(user, "<span class='warning'>Refunding this would cause you to go below your balance!</span>")
+						to_chat(user, span_warning("Refunding this would cause you to go below your balance!"))
 						return
 					all_quirks -= quirk
 				else
 					if(GetPositiveQuirkCount() >= MAX_QUIRKS)
-						to_chat(user, "<span class='warning'>You can't have more than [MAX_QUIRKS] positive quirks!</span>")
+						to_chat(user, span_warning("You can't have more than [MAX_QUIRKS] positive quirks!"))
 						return
 					if(balance - value < 0)
-						to_chat(user, "<span class='warning'>You don't have enough balance to gain this quirk!</span>")
+						to_chat(user, span_warning("You don't have enough balance to gain this quirk!"))
 						return
 					all_quirks += quirk
 				SetQuirks(user)
@@ -1671,7 +1671,7 @@ Records disabled until a use for them is found
 										if(modified_limbs[modification][1] == LOADOUT_LIMB_PROSTHETIC)
 											number_of_prosthetics += 1
 									if(number_of_prosthetics >= MAXIMUM_LOADOUT_PROSTHETICS && !(limb_type in modified_limbs && modified_limbs[limb_type][1] == LOADOUT_LIMB_PROSTHETIC))
-										to_chat(user, "<span class='danger'>You can only have up to two prosthetic limbs!</span>")
+										to_chat(user, span_danger("You can only have up to two prosthetic limbs!"))
 									else
 										//save the actual prosthetic data
 										modified_limbs[limb_type] = list(modification_type, prosthetic_type)
@@ -1761,7 +1761,7 @@ Records disabled until a use for them is found
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
 
 				if("mutant_color2")
 					var/new_mutantcolor = input(user, "Choose your character's secondary alien/mutant color:", "Character Preference","#"+features["mcolor2"]) as color|null
@@ -1772,7 +1772,7 @@ Records disabled until a use for them is found
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor2"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
 
 				if("mutant_color3")
 					var/new_mutantcolor = input(user, "Choose your character's tertiary alien/mutant color:", "Character Preference","#"+features["mcolor3"]) as color|null
@@ -1783,7 +1783,7 @@ Records disabled until a use for them is found
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor3"] = sanitize_hexcolor(new_mutantcolor, 6)
 						else
-							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
 
 				if("mismatched_markings")
 					show_mismatched_markings = !show_mismatched_markings
@@ -1987,7 +1987,7 @@ Records disabled until a use for them is found
 							if(custom_tone)
 								var/temp_hsv = RGBtoHSV(custom_tone)
 								if(ReadHSV(temp_hsv)[3] < ReadHSV("#333333")[3]) // rgb(50,50,50)
-									to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+									to_chat(user,span_danger("Invalid color. Your color is not bright enough."))
 								else
 									use_custom_skin_tone = TRUE
 									skin_tone = custom_tone
@@ -2099,7 +2099,7 @@ Records disabled until a use for them is found
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["cock_color"] = sanitize_hexcolor(new_cockcolor, 6)
 						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user,span_danger("Invalid color. Your color is not bright enough."))
 
 				if("cock_length")
 					var/min_D = CONFIG_GET(number/penis_min_inches_prefs)
@@ -2139,7 +2139,7 @@ Records disabled until a use for them is found
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["balls_color"] = sanitize_hexcolor(new_ballscolor, 6)
 						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user,span_danger("Invalid color. Your color is not bright enough."))
 
 				if("balls_visibility")
 					var/n_vis = input(user, "Testicles Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2166,7 +2166,7 @@ Records disabled until a use for them is found
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["breasts_color"] = sanitize_hexcolor(new_breasts_color, 6)
 						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user,span_danger("Invalid color. Your color is not bright enough."))
 
 				if("breasts_visibility")
 					var/n_vis = input(user, "Breasts Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2188,7 +2188,7 @@ Records disabled until a use for them is found
 						else if(ReadHSV(temp_hsv)[3] >= ReadHSV(MINIMUM_MUTANT_COLOR)[3])
 							features["vag_color"] = sanitize_hexcolor(new_vagcolor, 6)
 						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
+							to_chat(user,span_danger("Invalid color. Your color is not bright enough."))
 
 				if("vag_visibility")
 					var/n_vis = input(user, "Vagina Visibility", "Character Preference") as null|anything in CONFIG_GET(keyed_list/safe_visibility_toggles)
@@ -2532,7 +2532,7 @@ Records disabled until a use for them is found
 					persistent_scars = !persistent_scars
 
 				if("clear_scars")
-					to_chat(user, "<span class='notice'>All scar slots cleared. Please save character to confirm.</span>")
+					to_chat(user, span_notice("All scar slots cleared. Please save character to confirm."))
 					scars_list["1"] = ""
 					scars_list["2"] = ""
 					scars_list["3"] = ""
@@ -2620,9 +2620,9 @@ Records disabled until a use for them is found
 				if("ambientocclusion")
 					ambientocclusion = !ambientocclusion
 					if(parent && parent.screen && parent.screen.len)
-						var/obj/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
-						var/obj/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
-						var/obj/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/game_world/G = parent.mob.hud_used.plane_masters["[GAME_PLANE]"]
+						var/atom/movable/screen/plane_master/above_wall/A = parent.mob.hud_used.plane_masters["[ABOVE_WALL_PLANE]"]
+						var/atom/movable/screen/plane_master/wall/W = parent.mob.hud_used.plane_masters["[WALL_PLANE]"]
 						G.backdrop(parent.mob)
 						A.backdrop(parent.mob)
 						W.backdrop(parent.mob)
@@ -2676,11 +2676,11 @@ Records disabled until a use for them is found
 			else if(toggle && !(has_loadout_gear(loadout_slot, "[G.type]")))
 				/*
 				if(!is_loadout_slot_available(G.category))
-					to_chat(user, "<span class='danger'>You cannot take this loadout, as you've already chosen too many of the same category!</span>")
+					to_chat(user, span_danger("You cannot take this loadout, as you've already chosen too many of the same category!"))
 					return
 				*/
 				if(G.donoritem && !G.donator_ckey_check(user.ckey))
-					to_chat(user, "<span class='danger'>This is an item intended for donator use only. You are not authorized to use this item.</span>")
+					to_chat(user, span_danger("This is an item intended for donator use only. You are not authorized to use this item."))
 					return
 				if(gear_points >= initial(G.cost))
 					var/list/new_loadout_data = list(LOADOUT_ITEM = "[G.type]")

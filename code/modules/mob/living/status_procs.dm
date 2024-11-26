@@ -564,11 +564,11 @@
 		if(amount) //don't spam up the chat for continuous stuns
 			if(priority_absorb_key["visible_message"] || priority_absorb_key["self_message"])
 				if(priority_absorb_key["visible_message"] && priority_absorb_key["self_message"])
-					visible_message("<span class='warning'>[src][priority_absorb_key["visible_message"]]</span>", "<span class='boldwarning'>[priority_absorb_key["self_message"]]</span>")
+					visible_message(span_warning("[src][priority_absorb_key["visible_message"]]"), span_boldwarning("[priority_absorb_key["self_message"]]"))
 				else if(priority_absorb_key["visible_message"])
-					visible_message("<span class='warning'>[src][priority_absorb_key["visible_message"]]</span>")
+					visible_message(span_warning("[src][priority_absorb_key["visible_message"]]"))
 				else if(priority_absorb_key["self_message"])
-					to_chat(src, "<span class='boldwarning'>[priority_absorb_key["self_message"]]</span>")
+					to_chat(src, span_boldwarning("[priority_absorb_key["self_message"]]"))
 			priority_absorb_key["stuns_absorbed"] += amount
 		return TRUE
 
@@ -618,7 +618,7 @@
 
 /mob/living/proc/become_nearsighted(source)
 	if(!HAS_TRAIT(src, TRAIT_NEARSIGHT))
-		overlay_fullscreen("nearsighted", /obj/screen/fullscreen/impaired, 1)
+		overlay_fullscreen("nearsighted", /atom/movable/screen/fullscreen/impaired, 1)
 	ADD_TRAIT(src, TRAIT_NEARSIGHT, source)
 
 /mob/living/proc/cure_husk(source)
@@ -647,7 +647,7 @@
 	if(stat == DEAD)
 		return
 	if(!silent)
-		INVOKE_ASYNC(src, .proc/emote, "deathgasp")
+		INVOKE_ASYNC(src, PROC_REF(emote), "deathgasp")
 	ADD_TRAIT(src, TRAIT_FAKEDEATH, source)
 	ADD_TRAIT(src, TRAIT_DEATHCOMA, source)
 	tod = STATION_TIME_TIMESTAMP("hh:mm:ss", world.time)
@@ -669,11 +669,11 @@
 		for(var/listed_type in slowdown_type)
 			if(ispath(listed_type))
 				listed_type = "[listed_type]" //Path2String
-			LAZYADDASSOC(movespeed_mod_immunities, listed_type, source)
+			LAZYADDASSOCLIST(movespeed_mod_immunities, listed_type, source)
 	else
 		if(ispath(slowdown_type))
 			slowdown_type = "[slowdown_type]" //Path2String
-		LAZYADDASSOC(movespeed_mod_immunities, slowdown_type, source)
+		LAZYADDASSOCLIST(movespeed_mod_immunities, slowdown_type, source)
 	if(update)
 		update_movespeed()
 

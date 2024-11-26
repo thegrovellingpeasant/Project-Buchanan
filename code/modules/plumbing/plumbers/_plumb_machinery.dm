@@ -26,7 +26,7 @@
 	. = ..()
 	anchored = bolt
 	create_reagents(buffer, reagent_flags)
-	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, .proc/can_be_rotated))
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, PROC_REF(can_be_rotated)))
 
 /obj/machinery/plumbing/proc/can_be_rotated(mob/user,rotation_type)
 	return TRUE
@@ -34,7 +34,7 @@
 
 /obj/machinery/plumbing/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>The maximum volume display reads: <b>[reagents.maximum_volume] units</b>.</span>"
+	. += span_notice("The maximum volume display reads: <b>[reagents.maximum_volume] units</b>.")
 
 /obj/machinery/plumbing/wrench_act(mob/living/user, obj/item/I)
 	..()

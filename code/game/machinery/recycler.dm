@@ -45,7 +45,7 @@
 
 /obj/machinery/recycler/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Reclaiming <b>[amount_produced]%</b> of materials salvaged.</span>"
+	. += span_notice("Reclaiming <b>[amount_produced]%</b> of materials salvaged.")
 	. += {"The power light is [(stat & NOPOWER) ? "off" : "on"].
 	The safety-mode light is [safety_mode ? "on" : "off"].
 	The safety-sensors status light is [obj_flags & EMAGGED ? "off" : "on"]."}
@@ -78,7 +78,7 @@
 		safety_mode = FALSE
 		update_icon()
 	playsound(src, "sparks", 75, 1, -1)
-	to_chat(user, "<span class='notice'>You use the cryptographic sequencer on [src].</span>")
+	to_chat(user, span_notice("You use the cryptographic sequencer on [src]."))
 	return TRUE
 
 /obj/machinery/recycler/update_icon_state()
@@ -180,7 +180,7 @@
 	safety_mode = TRUE
 	update_icon()
 	L.forceMove(loc)
-	addtimer(CALLBACK(src, .proc/reboot), SAFETY_COOLDOWN)
+	addtimer(CALLBACK(src, PROC_REF(reboot)), SAFETY_COOLDOWN)
 
 /obj/machinery/recycler/proc/reboot()
 	playsound(src, 'sound/machines/ping.ogg', 50, 0)

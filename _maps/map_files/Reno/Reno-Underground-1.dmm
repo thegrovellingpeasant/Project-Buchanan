@@ -22735,9 +22735,9 @@
 	dir = 4;
 	height = 20;
 	id = "supply_home";
-	json_key = "supply";
 	width = 5;
-	dheight = 14
+	dheight = 14;
+	name = "Cargo Bay"
 	},
 /turf/open/floor/plating/tunnel/curb,
 /area/f13/wrights_armory)
@@ -23021,8 +23021,7 @@
 	height = 51;
 	width = 5;
 	roundstart_template = /datum/map_template/shuttle/raider_elevator;
-	dheight = 44;
-	dwidth = 1
+	dheight = 43
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_subway)
@@ -35551,11 +35550,11 @@
 	id = "ghoul_base";
 	name = "2";
 	area_type = /area/f13/reno_subway;
-	dwidth = 5;
 	height = 51;
 	width = 5;
 	roundstart_template = /datum/map_template/shuttle/ghoul_elevator;
-	dheight = 49
+	dheight = 48;
+	dwidth = 4
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/reno_subway)

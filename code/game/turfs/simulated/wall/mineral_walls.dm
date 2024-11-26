@@ -15,14 +15,14 @@
 	sheet_type = /obj/item/stack/rods
 	canSmoothWith = list(/turf/closed/wall/mineral/brick, /obj/structure/falsewall/brick)
 
-turf/closed/wall/mineral/whitebrick
+/turf/closed/wall/mineral/whitebrick
 	name = "brick wall"
 	desc = "Sturdy wall made of bricks and mortar."
 	icon = 'icons/turf/walls/boss_wallwhite.dmi'
 	icon_state = "wall"
 	canSmoothWith = list(/turf/closed/wall/mineral/whitebrick)
 
-turf/closed/wall/mineral/stonewall
+/turf/closed/wall/mineral/stonewall
 	name = "brick wall"
 	desc = "Sturdy wall made of bricks and mortar."
 	icon = 'icons/turf/walls/boss_wallgrey.dmi'

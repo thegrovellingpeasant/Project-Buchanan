@@ -183,7 +183,7 @@
 /datum/action/item_action/stickmen/New(Target)
 	..()
 	if(isitem(Target))
-		RegisterSignal(Target, COMSIG_PARENT_EXAMINE, .proc/give_infos)
+		RegisterSignal(Target, COMSIG_PARENT_EXAMINE, PROC_REF(give_infos))
 
 /datum/action/item_action/stickmen/Destroy()
 	for(var/A in summoned_stickmen)
@@ -205,7 +205,7 @@
 /datum/action/item_action/stickmen/Grant(mob/M)
 	. = ..()
 	if(owner)
-		RegisterSignal(M, COMSIG_MOB_POINTED, .proc/rally)
+		RegisterSignal(M, COMSIG_MOB_POINTED, PROC_REF(rally))
 	if(book_of_grudges[M]) //Stop attacking your new master.
 		book_of_grudges -= M
 		for(var/A in summoned_stickmen)
@@ -223,7 +223,7 @@
 	if(!.)
 		return
 	if(!ready)
-		to_chat(owner, "<span class='warning'>[src]'s internal magic supply is still recharging!</span>")
+		to_chat(owner, span_warning("[src]'s internal magic supply is still recharging!"))
 		return FALSE
 	var/summon = TRUE
 	if(length(summoned_stickmen) >= max_stickmen)
@@ -242,9 +242,9 @@
 		var/mob/living/simple_animal/hostile/S = new summoned_mob_path (get_turf(usr))
 		S.faction = owner.faction
 		S.foes = book_of_grudges
-		RegisterSignal(S, COMSIG_PARENT_QDELETING, .proc/remove_from_list)
+		RegisterSignal(S, COMSIG_PARENT_QDELETING, PROC_REF(remove_from_list))
 	ready = FALSE
-	addtimer(CALLBACK(src, .proc/ready_again), cooldown)
+	addtimer(CALLBACK(src, PROC_REF(ready_again)), cooldown)
 
 /datum/action/item_action/stickmen/proc/remove_from_list(datum/source, forced)
 	summoned_stickmen -= source
@@ -252,7 +252,7 @@
 /datum/action/item_action/stickmen/proc/ready_again()
 	ready = TRUE
 	if(owner)
-		to_chat(owner, "<span class='notice'>[src] hums, its internal magic supply restored.</span>")
+		to_chat(owner, span_notice("[src] hums, its internal magic supply restored."))
 
 /**
  * Rallies your army of stickmen to whichever target the user is pointing.
@@ -273,9 +273,9 @@
 			var/obj/mecha/M = A
 			L = M.occupant
 		if(L && L.stat != DEAD && !HAS_TRAIT(L, TRAIT_DEATHCOMA)) //Taking revenge on the deads would be proposterous.
-			addtimer(CALLBACK(src, .proc/clear_grudge, L), 2 MINUTES, TIMER_OVERRIDE|TIMER_UNIQUE)
+			addtimer(CALLBACK(src, PROC_REF(clear_grudge), L), 2 MINUTES, TIMER_OVERRIDE|TIMER_UNIQUE)
 			if(!book_of_grudges[L])
-				RegisterSignal(L, list(COMSIG_PARENT_QDELETING, COMSIG_MOB_DEATH), .proc/grudge_settled)
+				RegisterSignal(L, list(COMSIG_PARENT_QDELETING, COMSIG_MOB_DEATH), PROC_REF(grudge_settled))
 				book_of_grudges[L] = TRUE
 	for(var/k in summoned_stickmen) //Shamelessly copied from the blob rally power
 		var/mob/living/simple_animal/hostile/S = k
@@ -340,9 +340,9 @@
 /obj/item/wizard_armour_charge/afterattack(obj/item/clothing/suit/space/hardsuit/shielded/wizard/W, mob/user)
 	. = ..()
 	if(!istype(W))
-		to_chat(user, "<span class='warning'>The rune can only be used on battlemage armour!</span>")
+		to_chat(user, span_warning("The rune can only be used on battlemage armour!"))
 		return
 	var/datum/component/shielded/S = GetComponent(/datum/component/shielded)
 	S.adjust_charges(8)
-	to_chat(user, "<span class='notice'>You charge \the [W]. It can now absorb [S.charges] hits.</span>")
+	to_chat(user, span_notice("You charge \the [W]. It can now absorb [S.charges] hits."))
 	qdel(src)

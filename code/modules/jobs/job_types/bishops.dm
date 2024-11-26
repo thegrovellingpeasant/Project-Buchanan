@@ -52,14 +52,10 @@
 
 	uniform	= /obj/item/clothing/under/f13/bishops/boss
 	id = /obj/item/card/id/reno/bishops/ring/boss
-	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/helmet/f13/bishops/fedora
 	neck = /obj/item/clothing/neck/mayoral_sash
-	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/boss
-	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
@@ -108,7 +104,7 @@
 		H.mind.add_antag_datum(/datum/antagonist/mobster, SSticker.mode.bishopteam)
 	if(H.gender == FEMALE)
 		H.gender = MALE
-		H.real_name = random_unique_name(MALE)
+		H.real_name = random_unique_bishop_name(MALE)
 		H.name = H.real_name
 		if(H.wear_id)
 			var/obj/item/card/id/reno/bishops/ring/boss/L = H.wear_id
@@ -143,14 +139,7 @@
 	jobtype = /datum/job/bishops/f13wife
 
 	id = /obj/item/card/id/reno/bishops/ring/wedding
-	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	head = null
-	neck = null
-	gloves = null
-	suit = null
-	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
 	backpack_contents = list(
@@ -193,7 +182,7 @@
 
 	if(H.gender == MALE)
 		H.gender = FEMALE
-		H.real_name = random_unique_name(FEMALE)
+		H.real_name = random_unique_bishop_name(FEMALE)
 		H.name = H.real_name
 		if(H.wear_id)
 			var/obj/item/card/id/reno/bishops/ring/wedding/L = H.wear_id
@@ -234,13 +223,9 @@
 
 	uniform	= /obj/item/clothing/under/f13/bishops/officer
 	id = /obj/item/card/id/reno/bishops/ring/officer
-	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/storage/belt/holster/legholster
-	gloves = null
 	suit = /obj/item/clothing/suit/armor/f13/bishops/blue_trench_coat
-	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
@@ -326,7 +311,6 @@
 	id = /obj/item/card/id/reno/bishops/ring/soldier
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/armor/f13/reno/bulletproof/lite
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
@@ -403,14 +387,8 @@
 
 	uniform	= /obj/item/clothing/under/f13/bishops/casino_worker
 	id = /obj/item/card/id/reno/bishops/papers/worker
-	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
-	head = null
-	neck = null
 	gloves = /obj/item/clothing/gloves/color/white
-	suit = null
-	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
@@ -448,14 +426,7 @@
 
 	uniform	= /obj/item/clothing/under/f13/sleazeball
 	id = /obj/item/card/id/reno/bishops/papers/worker
-	accessory = null
 	shoes = /obj/item/clothing/shoes/jackboots
-	head = null
-	neck = null
-	gloves = null
-	suit = null
-	suit_store = null
-	r_hand = null
 	backpack = /obj/item/storage/backpack/satchel
 	satchel = /obj/item/storage/backpack/satchel
 	backpack_contents = list(

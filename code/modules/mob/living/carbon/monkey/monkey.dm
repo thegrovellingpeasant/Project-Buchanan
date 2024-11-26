@@ -35,7 +35,7 @@
 		var/cap = CONFIG_GET(number/monkeycap)
 		if (LAZYLEN(SSmobs.cubemonkeys) > cap)
 			if (spawner)
-				to_chat(spawner, "<span class='warning'>Bluespace harmonics prevent the spawning of more than [cap] monkeys on the station at one time!</span>")
+				to_chat(spawner, span_warning("Bluespace harmonics prevent the spawning of more than [cap] monkeys on the station at one time!"))
 			return INITIALIZE_HINT_QDEL
 		SSmobs.cubemonkeys += src
 
@@ -172,4 +172,4 @@
 	if(prob(10))
 		var/obj/item/clothing/head/helmet/justice/escape/helmet = new(src)
 		equip_to_slot_or_del(helmet,SLOT_HEAD)
-		INVOKE_ASYNC(helmet, /obj/item.proc/attack_self, src) // todo encapsulate toggle
+		INVOKE_ASYNC(helmet, TYPE_PROC_REF(/obj/item, attack_self), src) // todo encapsulate toggle

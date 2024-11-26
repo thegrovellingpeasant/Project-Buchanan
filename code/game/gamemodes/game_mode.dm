@@ -72,7 +72,7 @@
 			return 0
 		return 1
 	else
-		message_admins("<span class='notice'>DEBUG: GAME STARTING WITHOUT PLAYER NUMBER CHECKS, THIS WILL PROBABLY BREAK SHIT.</span>")
+		message_admins(span_notice("DEBUG: GAME STARTING WITHOUT PLAYER NUMBER CHECKS, THIS WILL PROBABLY BREAK SHIT."))
 		return 1
 
 
@@ -85,7 +85,7 @@
 	//finalize_monster_hunters() Disabled for now
 	if(!report)
 		report = !CONFIG_GET(flag/no_intercept_report)
-	addtimer(CALLBACK(GLOBAL_PROC, .proc/display_roundstart_logout_report), ROUNDSTART_LOGOUT_REPORT_TIME)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(display_roundstart_logout_report)), ROUNDSTART_LOGOUT_REPORT_TIME)
 
 	if(prob(20)) //CIT CHANGE - adds a 20% chance for the security level to be the opposite of what it normally is
 		flipseclevel = TRUE
@@ -102,7 +102,7 @@
 			query_round_game_mode.Execute()
 			qdel(query_round_game_mode)
 	if(report)
-		addtimer(CALLBACK(src, .proc/send_intercept, 0), rand(waittime_l, waittime_h))
+		addtimer(CALLBACK(src, PROC_REF(send_intercept), 0), rand(waittime_l, waittime_h))
 	generate_station_goals()
 	gamemode_ready = TRUE
 	return 1
@@ -477,7 +477,7 @@
 //Reports player logouts//
 //////////////////////////
 /proc/display_roundstart_logout_report()
-	var/list/msg = list("<span class='boldnotice'>Roundstart logout report\n\n</span>")
+	var/list/msg = list(span_boldnotice("Roundstart logout report\n\n"))
 	for(var/i in GLOB.mob_living_list)
 		var/mob/living/L = i
 		var/mob/living/carbon/C = L
@@ -495,7 +495,7 @@
 				failed = TRUE //AFK client
 			if(!failed && L.stat)
 				if(L.suiciding)	//Suicider
-					msg += "<b>[L.name]</b> ([L.key]), the [L.job] (<span class='boldannounce'>Suicide</span>)\n"
+					msg += "<b>[L.name]</b> ([L.key]), the [L.job] ([span_boldannounce("Suicide")])\n"
 					failed = TRUE //Disconnected client
 				if(!failed && L.stat == UNCONSCIOUS)
 					msg += "<b>[L.name]</b> ([L.key]), the [L.job] (Dying)\n"
@@ -518,7 +518,7 @@
 			if(D.mind && D.mind.current == L)
 				if(L.stat == DEAD)
 					if(L.suiciding)	//Suicider
-						msg += "<b>[L.name]</b> ([ckey(D.mind.key)]), the [L.job] (<span class='boldannounce'>Suicide</span>)\n"
+						msg += "<b>[L.name]</b> ([ckey(D.mind.key)]), the [L.job] ([span_boldannounce("Suicide")])\n"
 						continue //Disconnected client
 					else
 						msg += "<b>[L.name]</b> ([ckey(D.mind.key)]), the [L.job] (Dead)\n"
@@ -527,7 +527,7 @@
 					if(D.can_reenter_corpse)
 						continue //Adminghost, or cult/wizard ghost
 					else
-						msg += "<b>[L.name]</b> ([ckey(D.mind.key)]), the [L.job] (<span class='boldannounce'>Ghosted</span>)\n"
+						msg += "<b>[L.name]</b> ([ckey(D.mind.key)]), the [L.job] ([span_boldannounce("Ghosted")])\n"
 						continue //Ghosted while alive
 
 

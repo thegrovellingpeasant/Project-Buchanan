@@ -94,23 +94,23 @@
 /obj/item/ammo_casing/mws_batt/lethal
 	name = "'MWS' microbattery - LETHAL"
 	type_color = "#bf3d3d"
-	type_name = "<span class='lethal'>LETHAL</span>"
+	type_name = span_lethal("LETHAL")
 	projectile_type = /obj/item/projectile/beam
 
 /obj/item/ammo_casing/mws_batt/stun
 	name = "'MWS' microbattery - STUN"
 	type_color = "#0f81bc"
-	type_name = "<span class='stun'>STUN</span>"
+	type_name = span_stun("STUN")
 	projectile_type = /obj/item/projectile/beam/disabler
 
 /obj/item/ammo_casing/mws_batt/xray
 	name = "'MWS' microbattery - XRAY"
 	type_color = "#32c025"
-	type_name = "<span class='xray'>XRAY</span>"
+	type_name = span_xray("XRAY")
 	projectile_type = /obj/item/projectile/beam/xray
 
 /obj/item/ammo_casing/mws_batt/ion
 	name = "'MWS' microbattery - ION"
 	type_color = "#d084d6"
-	type_name = "<span class='ion'>ION</span>"
+	type_name = span_ion("ION")
 	projectile_type = /obj/item/projectile/ion

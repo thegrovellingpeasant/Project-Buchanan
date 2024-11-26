@@ -95,7 +95,7 @@
 	isSwitchingStates = 0
 
 	if(close_delay != -1)
-		addtimer(CALLBACK(src, .proc/Close), close_delay)
+		addtimer(CALLBACK(src, PROC_REF(Close)), close_delay)
 
 /obj/structure/mineral_door/proc/Close()
 	if(isSwitchingStates || state != 1)
@@ -123,9 +123,9 @@
 
 /obj/structure/mineral_door/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_MINING)
-		to_chat(user, "<span class='notice'>You start digging the [name]...</span>")
+		to_chat(user, span_notice("You start digging the [name]..."))
 		if(I.use_tool(src, user, 40, volume=50))
-			to_chat(user, "<span class='notice'>You finish digging.</span>")
+			to_chat(user, span_notice("You finish digging."))
 			deconstruct(TRUE)
 	else if(user.a_intent != INTENT_HARM)
 		return attack_hand(user)

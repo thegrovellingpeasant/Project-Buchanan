@@ -159,12 +159,12 @@
 			if(user.transferItemToLoc(AM, src))
 				cell = AM
 				if(oldcell)
-					to_chat(user, "<span class='notice'>You perform a tactical reload on \the [src], replacing the cell.</span>")
+					to_chat(user, span_notice("You perform a tactical reload on \the [src], replacing the cell."))
 					oldcell.dropped()
 					oldcell.forceMove(get_turf(src.loc))
 					oldcell.update_icon()
 				//else
-				//	to_chat(user, "<span class='notice'>You insert the cell into \the [src].</span>")
+				//	to_chat(user, span_notice("You insert the cell into \the [src]."))
 
 				//playsound(src, 'sound/weapons/autoguninsert.ogg', 60, TRUE)
 				//chamber_round()
@@ -172,17 +172,17 @@
 				update_icon()
 				return 1
 			else
-				to_chat(user, "<span class='warning'>You cannot seem to get \the [src] out of your hands!</span>")
+				to_chat(user, span_warning("You cannot seem to get \the [src] out of your hands!"))
 
 /obj/item/gun/energy/laser/proc/burst_select()
 	var/mob/living/carbon/human/user = usr
 	select = !select
 	if(!select)
 		disable_burst()
-		to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
+		to_chat(user, span_notice("You switch to semi-automatic."))
 	else
 		enable_burst()
-		to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
+		to_chat(user, span_notice("You switch to [burst_size]-rnd burst."))
 
 /obj/item/gun/energy/laser/proc/enable_burst()
 	burst_size = initial(burst_size)
@@ -576,12 +576,12 @@
 				armed = 1
 				if(!user.put_in_hands(gun))
 					armed = 0
-					to_chat(user, "<span class='warning'>You need a free hand to hold the gun!</span>")
+					to_chat(user, span_warning("You need a free hand to hold the gun!"))
 					return
 				update_icon()
 				user.update_inv_back()
 		else
-			to_chat(user, "<span class='warning'>You are already holding the gun!</span>")
+			to_chat(user, span_warning("You are already holding the gun!"))
 	else
 		..()
 
@@ -608,8 +608,8 @@
 
 		if(!M.incapacitated())
 
-			if(istype(over_object, /obj/screen/inventory/hand))
-				var/obj/screen/inventory/hand/H = over_object
+			if(istype(over_object, /atom/movable/screen/inventory/hand))
+				var/atom/movable/screen/inventory/hand/H = over_object
 				M.putItemFromInventoryInHandIfPossible(src, H.held_index)
 
 
@@ -625,9 +625,9 @@
 	gun.forceMove(src)
 	armed = 0
 	if(user)
-		to_chat(user, "<span class='notice'>You attach the [gun.name] to the [name].</span>")
+		to_chat(user, span_notice("You attach the [gun.name] to the [name]."))
 	else
-		src.visible_message("<span class='warning'>The [gun.name] snaps back onto the [name]!</span>")
+		src.visible_message(span_warning("The [gun.name] snaps back onto the [name]!"))
 	update_icon()
 	user.update_inv_back()
 

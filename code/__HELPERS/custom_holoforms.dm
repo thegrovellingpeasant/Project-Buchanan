@@ -24,7 +24,6 @@
 	var/icon/combined = new
 	for(var/d in GLOB.cardinals)
 		mannequin.setDir(d)
-		COMPILE_OVERLAYS(mannequin)
 		CHECK_TICK
 		var/icon/capture = getFlatIcon(mannequin)
 		CHECK_TICK
@@ -50,7 +49,7 @@
 /proc/generate_custom_holoform_from_prefs_safe(datum/preferences/prefs, mob/user)
 	if(user)
 		if(user.client.prefs.last_custom_holoform > world.time - CUSTOM_HOLOFORM_DELAY)
-			to_chat(user, "<span class='boldwarning'>You are attempting to set your custom holoform too fast!</span>")
+			to_chat(user, span_boldwarning("You are attempting to set your custom holoform too fast!"))
 			return
 	return generate_custom_holoform_from_prefs(prefs, null, null, TRUE, TRUE)
 

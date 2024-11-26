@@ -153,7 +153,7 @@
 	do_animate("opening")
 	playsound(src.loc, 'sound/machines/windowdoor.ogg', 100, 1)
 	src.icon_state ="[src.base_state]open"
-	addtimer(CALLBACK(src, .proc/finish_opening), 10)
+	addtimer(CALLBACK(src, PROC_REF(finish_opening)), 10)
 	return TRUE
 
 /obj/machinery/door/window/proc/finish_opening()
@@ -183,7 +183,7 @@
 	density = TRUE
 	air_update_turf(1)
 	update_freelook_sight()
-	addtimer(CALLBACK(src, .proc/finish_closing), 10)
+	addtimer(CALLBACK(src, PROC_REF(finish_closing)), 10)
 	return TRUE
 
 /obj/machinery/door/window/proc/finish_closing()
@@ -228,12 +228,12 @@
 	operating = TRUE
 	flick("[src.base_state]spark", src)
 	playsound(src, "sparks", 75, 1)
-	addtimer(CALLBACK(src, .proc/open_windows_me), 6)
+	addtimer(CALLBACK(src, PROC_REF(open_windows_me)), 6)
 	return TRUE
 
 /obj/machinery/door/window/proc/open_windows_me()
 	operating = FALSE
-	desc += "<BR><span class='warning'>Its access panel is smoking slightly.</span>"
+	desc += "<BR>[span_warning("Its access panel is smoking slightly.")]"
 	open(2)
 
 /obj/machinery/door/window/attackby(obj/item/I, mob/living/user, params)
@@ -245,17 +245,17 @@
 	if(!(flags_1&NODECONSTRUCT_1))
 		if(istype(I, /obj/item/screwdriver))
 			if(density || operating)
-				to_chat(user, "<span class='warning'>You need to open the door to access the maintenance panel!</span>")
+				to_chat(user, span_warning("You need to open the door to access the maintenance panel!"))
 				return
 			I.play_tool_sound(src)
 			panel_open = !panel_open
-			to_chat(user, "<span class='notice'>You [panel_open ? "open":"close"] the maintenance panel of the [src.name].</span>")
+			to_chat(user, span_notice("You [panel_open ? "open":"close"] the maintenance panel of the [src.name]."))
 			return
 
 		if(istype(I, /obj/item/crowbar))
 			if(panel_open && !density && !operating)
 				user.visible_message("[user] removes the electronics from the [src.name].", \
-									"<span class='notice'>You start to remove electronics from the [src.name]...</span>")
+									span_notice("You start to remove electronics from the [src.name]..."))
 				if(I.use_tool(src, user, 40, volume=50))
 					if(panel_open && !density && !operating && src.loc)
 						var/obj/structure/windoor_assembly/WA = new /obj/structure/windoor_assembly(src.loc)
@@ -278,11 +278,11 @@
 						WA.created_name = src.name
 
 						if(obj_flags & EMAGGED)
-							to_chat(user, "<span class='warning'>You discard the damaged electronics.</span>")
+							to_chat(user, span_warning("You discard the damaged electronics."))
 							qdel(src)
 							return
 
-						to_chat(user, "<span class='notice'>You remove the airlock electronics.</span>")
+						to_chat(user, span_notice("You remove the airlock electronics."))
 
 						var/obj/item/electronics/airlock/ae
 						if(!electronics)
@@ -311,7 +311,7 @@
 		else
 			close(2)
 	else
-		to_chat(user, "<span class='warning'>The door's motors resist your efforts to force it!</span>")
+		to_chat(user, span_warning("The door's motors resist your efforts to force it!"))
 
 /obj/machinery/door/window/do_animate(animation)
 	switch(animation)
@@ -346,11 +346,11 @@
 				return
 
 			if(density)
-				INVOKE_ASYNC(src, .proc/open)
+				INVOKE_ASYNC(src, PROC_REF(open))
 			else
-				INVOKE_ASYNC(src, .proc/close)
+				INVOKE_ASYNC(src, PROC_REF(close))
 		if("touch")
-			INVOKE_ASYNC(src, .proc/open_and_close)
+			INVOKE_ASYNC(src, PROC_REF(open_and_close))
 
 /obj/machinery/door/window/brigdoor
 	name = "secure door"

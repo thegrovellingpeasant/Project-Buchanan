@@ -88,8 +88,8 @@
 /mob/living/simple_animal/hostile/securitron/death()
 	do_sparks(3, TRUE, src)
 	for(var/i in 1 to 3)
-		addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
-	addtimer(CALLBACK(src, .proc/self_destruct), 4 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(do_death_beep)), i * 1 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(self_destruct)), 4 SECONDS)
 	return ..()
 
 /mob/living/simple_animal/hostile/securitron/Aggro()
@@ -203,5 +203,15 @@
 
 /mob/living/simple_animal/hostile/securitron/sentrybot/suicide/AttackingTarget()
 	if(ishuman(target))
-		addtimer(CALLBACK(src, .proc/do_death_beep), 1 SECONDS)
-		addtimer(CALLBACK(src, .proc/self_destruct), 2 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(do_death_beep)), 1 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(self_destruct)), 2 SECONDS)
+
+/mob/living/simple_animal/hostile/securitron/sentrybot/mini
+	name = "sentry bot"
+	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick armor plating."
+	icon_state = "sentrybot_mini"
+	icon_living = "sentrybot_mini"
+	icon_dead = "sentrybot_mini_dead"
+	mob_size = MOB_SIZE_SMALL
+	health = 150
+	maxHealth = 150

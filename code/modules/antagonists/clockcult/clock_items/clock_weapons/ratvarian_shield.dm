@@ -18,11 +18,11 @@
 /obj/item/shield/riot/ratvarian/examine(mob/user)
 	if((is_servant_of_ratvar(user) || isobserver(user)))
 		desc = clockwork_desc
-		desc +="\n <span class='inathneq_small'>The shield has absorbed [dam_absorbed] damage, multiplying the effectiveness of its bashes by [calc_bash_mult()]</span>"
+		desc +="\n [span_inathneq_small("The shield has absorbed [dam_absorbed] damage, multiplying the effectiveness of its bashes by [calc_bash_mult()]")]"
 	. = ..()
 	desc = initial(desc)
 
-obj/item/shield/riot/ratvarian/proc/calc_bash_mult()
+/obj/item/shield/riot/ratvarian/proc/calc_bash_mult()
 	var/bash_mult = 0
 	if(!dam_absorbed)
 		return 1
@@ -40,7 +40,7 @@ obj/item/shield/riot/ratvarian/proc/calc_bash_mult()
 		return ..()
 
 	if(!is_servant_of_ratvar(owner))
-		owner.visible_message("<span class='warning'>As [owner] blocks the attack with [src], [owner.p_they()] suddenly drops it, whincing in pain! </span>", "<span class='warning'>As you block the attack with [src], it heats up tremendously, forcing you to drop it from the pain alone! </span>")
+		owner.visible_message(span_warning("As [owner] blocks the attack with [src], [owner.p_they()] suddenly drops it, whincing in pain! "), span_warning("As you block the attack with [src], it heats up tremendously, forcing you to drop it from the pain alone! "))
 		owner.emote("scream")
 		playsound(src, 'sound/machines/fryer/deep_fryer_emerge.ogg', 50)
 		if(iscarbon(owner)) //Type safety for if a drone somehow got a shield (ratvar protect us)
@@ -49,7 +49,7 @@ obj/item/shield/riot/ratvarian/proc/calc_bash_mult()
 			C.apply_damage((iscultist(C) ? damage * 2 : damage), BURN, (istype(part, /obj/item/bodypart/l_arm) ? BODY_ZONE_L_ARM : BODY_ZONE_R_ARM)) //Deals the damage to the holder instead of absorbing it instead + forcedrops. Doubled if a cultist of Nar'Sie.
 		else
 			owner.adjustFireLoss(iscultist(owner) ? damage * 2 : damage)
-		addtimer(CALLBACK(owner, /mob/living.proc/dropItemToGround, src, TRUE), 1)
+		addtimer(CALLBACK(owner, TYPE_PROC_REF(/mob/living, dropItemToGround), src, TRUE), 1)
 	else if(!is_servant_of_ratvar(attacker)) //No exploiting my snowflake mechanics
 		dam_absorbed += damage
 		playsound(owner,  'sound/machines/clockcult/steam_whoosh.ogg', 30)

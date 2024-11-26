@@ -209,7 +209,7 @@
 	if(user.gender == FEMALE)
 		return 0
 	var/mob/living/carbon/human/H = user
-	user.visible_message("<span class='suicide'>[user] is donning [src]! It looks like [user.p_theyre()] trying to be nice to girls.</span>")
+	user.visible_message(span_suicide("[user] is donning [src]! It looks like [user.p_theyre()] trying to be nice to girls."))
 	user.say("M'lady.", forced = "fedora suicide")
 	sleep(10)
 	H.facial_hair_style = "Neckbeard"
@@ -358,7 +358,7 @@
 /obj/item/clothing/head/frenchberet/equipped(mob/M, slot)
 	. = ..()
 	if (slot == SLOT_HEAD)
-		RegisterSignal(M, COMSIG_MOB_SAY, .proc/handle_speech)
+		RegisterSignal(M, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 	else
 		UnregisterSignal(M, COMSIG_MOB_SAY)
 

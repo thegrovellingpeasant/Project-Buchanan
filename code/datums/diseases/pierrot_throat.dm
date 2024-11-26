@@ -16,19 +16,19 @@
 	switch(stage)
 		if(1)
 			if(prob(10))
-				to_chat(affected_mob, "<span class='danger'>You feel a little silly.</span>")
+				to_chat(affected_mob, span_danger("You feel a little silly."))
 		if(2)
 			if(prob(10))
-				to_chat(affected_mob, "<span class='danger'>You start seeing rainbows.</span>")
+				to_chat(affected_mob, span_danger("You start seeing rainbows."))
 		if(3)
 			if(prob(10))
-				to_chat(affected_mob, "<span class='danger'>Your thoughts are interrupted by a loud <b>HONK!</b></span>")
+				to_chat(affected_mob, span_danger("Your thoughts are interrupted by a loud <b>HONK!</b>"))
 		if(4)
 			if(prob(5))
 				affected_mob.say( pick( list("HONK!", "Honk!", "Honk.", "Honk?", "Honk!!", "Honk?!", "Honk...") ) , forced = "pierrot's throat")
 
 /datum/disease/pierrot_throat/after_add()
-	RegisterSignal(affected_mob, COMSIG_MOB_SAY, .proc/handle_speech)
+	RegisterSignal(affected_mob, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/disease/pierrot_throat/proc/handle_speech(datum/source, list/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]

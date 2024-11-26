@@ -725,7 +725,7 @@
 	if(!can_use(usr))
 		return 0
 
-	to_chat(usr, "<span class='notice'>You adjust the [src].</span>")
+	to_chat(usr, span_notice("You adjust the [src]."))
 	if(src.uniformtoggled)
 		src.icon_state = "[initial(icon_state)]"
 		src.item_state = "[initial(icon_state)]"
@@ -2177,10 +2177,10 @@
 	item_state = "chosen"
 
 /obj/item/clothing/under/f13/chosenf
-	name = "tribal outfit"
+	name = "tribal female outfit"
 	desc = "A leather outfit of a style commonly seen worn by tribals."
 	icon_state = "chosen_f"
-	item_state = "chosen"
+	item_state = "chosen_f"
 
 /obj/item/clothing/under/f13/sequin_dress
 	name = "sequin dress"

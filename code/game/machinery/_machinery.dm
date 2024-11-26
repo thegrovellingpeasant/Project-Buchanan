@@ -134,7 +134,7 @@ Class Procs:
 	var/barricade = TRUE //if true, acts as barricade
 	var/proj_pass_rate = 65 //percentage change for bullets to fly over, if barricade=1
 
-/obj/machinery/Initialize()
+/obj/machinery/Initialize(mapload)
 	if(!armor)
 		armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 70)
 	. = ..()
@@ -149,7 +149,7 @@ Class Procs:
 		circuit = new circuit
 		circuit.apply_default_parts(src)
 	power_change()
-	RegisterSignal(src, COMSIG_ENTER_AREA, .proc/power_change)
+	RegisterSignal(src, COMSIG_ENTER_AREA, PROC_REF(power_change))
 
 	if (occupant_typecache)
 		occupant_typecache = typecacheof(occupant_typecache)
@@ -318,7 +318,7 @@ Class Procs:
 		user.set_machine(src)
 	. = ..()
 
-/obj/machinery/ui_act(action, params)
+/obj/machinery/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	add_fingerprint(usr)
 	return ..()
 
@@ -339,7 +339,7 @@ Class Procs:
 	else
 		user.DelayNextAction(CLICK_CD_MELEE)
 		user.do_attack_animation(src, ATTACK_EFFECT_PUNCH)
-		user.visible_message("<span class='danger'>[user.name] smashes against \the [src.name] with its paws.</span>", null, null, COMBAT_MESSAGE_RANGE)
+		user.visible_message(span_danger("[user.name] smashes against \the [src.name] with its paws."), null, null, COMBAT_MESSAGE_RANGE)
 		take_damage(4, BRUTE, "melee", 1)
 
 /obj/machinery/attack_robot(mob/user)
@@ -371,7 +371,7 @@ Class Procs:
 	. = !(state_open || panel_open || is_operational() || (flags_1 & NODECONSTRUCT_1)) && I.tool_behaviour == TOOL_CROWBAR
 	if(.)
 		I.play_tool_sound(src, 50)
-		visible_message("<span class='notice'>[usr] pries open \the [src].</span>", "<span class='notice'>You pry open \the [src].</span>")
+		visible_message(span_notice("[usr] pries open \the [src]."), span_notice("You pry open \the [src]."))
 		open_machine()
 
 /obj/machinery/proc/default_deconstruction_crowbar(obj/item/I, ignore_panel = 0)
@@ -421,11 +421,11 @@ Class Procs:
 		if(!panel_open)
 			panel_open = TRUE
 			icon_state = icon_state_open
-			to_chat(user, "<span class='notice'>You open the maintenance hatch of [src].</span>")
+			to_chat(user, span_notice("You open the maintenance hatch of [src]."))
 		else
 			panel_open = FALSE
 			icon_state = icon_state_closed
-			to_chat(user, "<span class='notice'>You close the maintenance hatch of [src].</span>")
+			to_chat(user, span_notice("You close the maintenance hatch of [src]."))
 		return TRUE
 	return FALSE
 
@@ -433,13 +433,13 @@ Class Procs:
 	if(panel_open && I.tool_behaviour == TOOL_WRENCH)
 		I.play_tool_sound(src, 50)
 		setDir(turn(dir,-90))
-		to_chat(user, "<span class='notice'>You rotate [src].</span>")
+		to_chat(user, span_notice("You rotate [src]."))
 		return 1
 	return 0
 
 /obj/proc/can_be_unfasten_wrench(mob/user, silent) //if we can unwrench this object; returns SUCCESSFUL_UNFASTEN and FAILED_UNFASTEN, which are both TRUE, or CANT_UNFASTEN, which isn't.
 	if(!(isfloorturf(loc) || istype(loc, /turf/open/indestructible)) && !anchored)
-		to_chat(user, "<span class='warning'>[src] needs to be on the floor to be secured!</span>")
+		to_chat(user, span_warning("[src] needs to be on the floor to be secured!"))
 		return FAILED_UNFASTEN
 	return SUCCESSFUL_UNFASTEN
 
@@ -449,12 +449,12 @@ Class Procs:
 		if(!can_be_unfasten || can_be_unfasten == FAILED_UNFASTEN)
 			return can_be_unfasten
 		if(time)
-			to_chat(user, "<span class='notice'>You begin [anchored ? "un" : ""]securing [src]...</span>")
+			to_chat(user, span_notice("You begin [anchored ? "un" : ""]securing [src]..."))
 		I.play_tool_sound(src, 50)
 		var/prev_anchored = anchored
 		//as long as we're the same anchored state and we're either on a floor or are anchored, toggle our anchored state
-		if(I.use_tool(src, user, time, extra_checks = CALLBACK(src, .proc/unfasten_wrench_check, prev_anchored, user)))
-			to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [src].</span>")
+		if(I.use_tool(src, user, time, extra_checks = CALLBACK(src, PROC_REF(unfasten_wrench_check), prev_anchored, user)))
+			to_chat(user, span_notice("You [anchored ? "un" : ""]secure [src]."))
 			setAnchored(!anchored)
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			SEND_SIGNAL(src, COMSIG_OBJ_DEFAULT_UNFASTEN_WRENCH, anchored)
@@ -503,7 +503,7 @@ Class Procs:
 									B.moveToNullspace()
 							SEND_SIGNAL(W, COMSIG_TRY_STORAGE_INSERT, A, null, null, TRUE)
 							component_parts -= A
-							to_chat(user, "<span class='notice'>[capitalize(A.name)] replaced with [B.name].</span>")
+							to_chat(user, span_notice("[capitalize(A.name)] replaced with [B.name]."))
 							shouldplaysound = 1 //Only play the sound when parts are actually replaced!
 							break
 			RefreshParts()
@@ -516,18 +516,18 @@ Class Procs:
 
 /obj/machinery/proc/display_parts(mob/user)
 	. = list()
-	. += "<span class='notice'>It contains the following parts:</span>"
+	. += span_notice("It contains the following parts:")
 	for(var/obj/item/C in component_parts)
-		. += "<span class='notice'>[icon2html(C, user)] \A [C].</span>"
+		. += span_notice("[icon2html(C, user)] \A [C].")
 	. = jointext(., "")
 
 /obj/machinery/examine(mob/user)
 	. = ..()
 	if(stat & BROKEN)
-		. += "<span class='notice'>It looks broken and non-functional.</span>"
+		. += span_notice("It looks broken and non-functional.")
 	if(!(resistance_flags & INDESTRUCTIBLE))
 		if(resistance_flags & ON_FIRE)
-			. += "<span class='warning'>It's on fire!</span>"
+			. += span_warning("It's on fire!")
 		var/healthpercent = (obj_integrity/max_integrity) * 100
 		switch(healthpercent)
 			if(50 to 99)
@@ -535,7 +535,7 @@ Class Procs:
 			if(25 to 50)
 				. += "It appears heavily damaged."
 			if(0 to 25)
-				. += "<span class='warning'>It's falling apart!</span>"
+				. += span_warning("It's falling apart!")
 	if(user.research_scanner && component_parts)
 		. += display_parts(user, TRUE)
 

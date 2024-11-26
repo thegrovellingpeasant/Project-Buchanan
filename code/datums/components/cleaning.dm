@@ -4,7 +4,7 @@
 /datum/component/cleaning/Initialize()
 	if(!ismovableatom(parent))
 		return COMPONENT_INCOMPATIBLE
-	RegisterSignal(parent, list(COMSIG_MOVABLE_MOVED), .proc/Clean)
+	RegisterSignal(parent, list(COMSIG_MOVABLE_MOVED), PROC_REF(Clean))
 
 /datum/component/cleaning/proc/Clean()
 	var/atom/movable/AM = parent
@@ -36,4 +36,4 @@
 				SEND_SIGNAL(cleaned_human, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_WEAK)
 				cleaned_human.wash_cream()
 				cleaned_human.regenerate_icons()
-				to_chat(cleaned_human, "<span class='danger'>[AM] cleans your face!</span>")
+				to_chat(cleaned_human, span_danger("[AM] cleans your face!"))

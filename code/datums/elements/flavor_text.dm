@@ -32,7 +32,7 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	save_key = _save_key
 	examine_no_preview = _examine_no_preview
 
-	RegisterSignal(target, COMSIG_PARENT_EXAMINE, .proc/show_flavor)
+	RegisterSignal(target, COMSIG_PARENT_EXAMINE, PROC_REF(show_flavor))
 
 	if(can_edit && ismob(target)) //but only mobs receive the proc/verb for the time being
 		var/mob/M = target
@@ -40,7 +40,7 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 		M.verbs |= /mob/proc/manage_flavor_tests
 
 	if(save_key && ishuman(target))
-		RegisterSignal(target, COMSIG_HUMAN_PREFS_COPIED_TO, .proc/update_prefs_flavor_text)
+		RegisterSignal(target, COMSIG_HUMAN_PREFS_COPIED_TO, PROC_REF(update_prefs_flavor_text))
 
 /datum/element/flavor_text/Detach(atom/A)
 	. = ..()
@@ -68,13 +68,13 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	if(!text)
 		return
 	if(examine_no_preview)
-		examine_list += "<span class='notice'><a href='?src=[REF(src)];show_flavor=[REF(target)]'>\[[flavor_name]\]</a></span>"
+		examine_list += span_notice("<a href='?src=[REF(src)];show_flavor=[REF(target)]'>\[[flavor_name]\]</a>")
 		return
 	var/msg = replacetext(text, "\n", " ")
 	if(length_char(msg) <= 40)
-		examine_list += "<span class='notice'>[msg]</span>"
+		examine_list += span_notice("[msg]")
 	else
-		examine_list += "<span class='notice'>[copytext_char(msg, 1, 37)]... <a href='?src=[REF(src)];show_flavor=[REF(target)]'>More...</span></a>"
+		examine_list += "[span_notice("[copytext_char(msg, 1, 37)]... <a href='?src=[REF(src)];show_flavor=[REF(target)]'>More...")]</a>"
 
 /datum/element/flavor_text/Topic(href, href_list)
 	. = ..()
@@ -141,11 +141,11 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	. = ..()
 	if(. == ELEMENT_INCOMPATIBLE)
 		return
-	RegisterSignal(target, COMSIG_CARBON_IDENTITY_TRANSFERRED_TO, .proc/update_dna_flavor_text)
-	RegisterSignal(target, COMSIG_MOB_ANTAG_ON_GAIN, .proc/on_antag_gain)
+	RegisterSignal(target, COMSIG_CARBON_IDENTITY_TRANSFERRED_TO, PROC_REF(update_dna_flavor_text))
+	RegisterSignal(target, COMSIG_MOB_ANTAG_ON_GAIN, PROC_REF(on_antag_gain))
 	if(ishuman(target))
-		RegisterSignal(target, COMSIG_HUMAN_HARDSET_DNA, .proc/update_dna_flavor_text)
-		RegisterSignal(target, COMSIG_HUMAN_ON_RANDOMIZE, .proc/unset_flavor)
+		RegisterSignal(target, COMSIG_HUMAN_HARDSET_DNA, PROC_REF(update_dna_flavor_text))
+		RegisterSignal(target, COMSIG_HUMAN_ON_RANDOMIZE, PROC_REF(unset_flavor))
 
 /datum/element/flavor_text/carbon/Detach(mob/living/carbon/C)
 	. = ..()

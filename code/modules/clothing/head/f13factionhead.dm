@@ -1014,7 +1014,7 @@
 	if(!can_use(usr))
 		return 0
 
-	to_chat(usr, "<span class='notice'>You turn the [src] inside out.</span>")
+	to_chat(usr, span_notice("You turn the [src] inside out."))
 	if(src.helmettoggled)
 		src.icon_state = "[initial(icon_state)]"
 		src.item_state = "[initial(icon_state)]"
@@ -1167,7 +1167,7 @@
 	icon_state = "army_general"
 	item_state = "army_general"
 
-obj/item/clothing/head/f13/army/beret
+/obj/item/clothing/head/f13/army/beret
 	name = "US Army beret"
 	desc = "A black beret, standard issue for all US Army personnel not authorised to wear a different beret."
 	icon = 'icons/fallout/clothing/hats.dmi'

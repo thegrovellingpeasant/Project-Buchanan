@@ -92,7 +92,7 @@
 	H.equipOutfit(outfit_type)
 
 /datum/antagonist/wizard/greet()
-	to_chat(owner, "<span class='boldannounce'>You are the Space Wizard!</span>")
+	to_chat(owner, span_boldannounce("You are the Space Wizard!"))
 	to_chat(owner, "<B>The Space Wizards Federation has given you the following tasks:</B>")
 	owner.announce_objectives()
 	to_chat(owner, "<B>These are merely guidelines! The federation are your masters, but you forge your own path!</B>")
@@ -102,7 +102,7 @@
 	to_chat(owner,"<B>Remember:</B> do not forget to prepare your spells.")
 
 /datum/antagonist/wizard/farewell()
-	to_chat(owner, "<span class='userdanger'>You have been brainwashed! You are no longer a wizard!</span>")
+	to_chat(owner, span_userdanger("You have been brainwashed! You are no longer a wizard!"))
 
 /datum/antagonist/wizard/proc/rename_wizard()
 	set waitfor = FALSE
@@ -131,7 +131,7 @@
 
 /datum/antagonist/wizard/get_admin_commands()
 	. = ..()
-	.["Send to Lair"] = CALLBACK(src,.proc/admin_send_to_lair)
+	.["Send to Lair"] = CALLBACK(src, PROC_REF(admin_send_to_lair))
 
 /datum/antagonist/wizard/proc/admin_send_to_lair(mob/admin)
 	owner.current.forceMove(pick(GLOB.wizardstart))
@@ -270,20 +270,20 @@
 		if(objective.completable)
 			var/completion = objective.check_completion()
 			if(completion >= 1)
-				parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
+				parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_greentext("<B>Success!</B>")]"
 			else if(completion <= 0)
-				parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+				parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_redtext("Fail.")]"
 				wizardwin = FALSE
 			else
-				parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='yellowtext'>[completion*100]%</span>"
+				parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_yellowtext("[completion*100]%")]"
 		else
 			parts += "<B>Objective #[count]</B>: [objective.explanation_text]"
 		count++
 
 	if(wizardwin)
-		parts += "<span class='greentext'>The wizard was successful!</span>"
+		parts += span_greentext("The wizard was successful!")
 	else
-		parts += "<span class='redtext'>The wizard has failed!</span>"
+		parts += span_redtext("The wizard has failed!")
 
 	if(owner.spell_list.len>0)
 		parts += "<B>[owner.name] used the following spells: </B>"
@@ -298,10 +298,10 @@
 /datum/team/wizard/roundend_report()
 	var/list/parts = list()
 
-	parts += "<span class='header'>Wizards/witches of [master_wizard.owner.name] team were:</span>"
+	parts += span_header("Wizards/witches of [master_wizard.owner.name] team were:")
 	parts += master_wizard.roundend_report()
 	parts += " "
-	parts += "<span class='header'>[master_wizard.owner.name] apprentices were:</span>"
+	parts += span_header("[master_wizard.owner.name] apprentices were:")
 	parts += printplayerlist(members - master_wizard.owner)
 
 	return "<div class='panel redborder'>[parts.Join("<br>")]</div>"

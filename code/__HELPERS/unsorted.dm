@@ -1062,7 +1062,7 @@ rough example of the "cone" made by the 3 dirs checked
 	return closest_atom
 
 
-proc/pick_closest_path(value, list/matches = get_fancy_list_of_atom_types())
+/proc/pick_closest_path(value, list/matches = get_fancy_list_of_atom_types())
 	if (value == FALSE) //nothing should be calling us with a number, so this is safe
 		value = input("Enter type to find (blank for all, cancel to cancel)", "Search for type") as null|text
 		if (isnull(value))
@@ -1083,21 +1083,6 @@ proc/pick_closest_path(value, list/matches = get_fancy_list_of_atom_types())
 			return
 	chosen = matches[chosen]
 	return chosen
-
-//gives us the stack trace from CRASH() without ending the current proc.
-/proc/stack_trace(msg)
-	CRASH(msg)
-
-/datum/proc/stack_trace(msg)
-	CRASH(msg)
-
-GLOBAL_REAL_VAR(list/stack_trace_storage)
-/proc/gib_stack_trace()
-	stack_trace_storage = list()
-	stack_trace()
-	stack_trace_storage.Cut(1, min(3,stack_trace_storage.len))
-	. = stack_trace_storage
-	stack_trace_storage = null
 
 //Key thing that stops lag. Cornerstone of performance in ss13, Just sitting here, in unsorted.dm.
 
@@ -1139,8 +1124,6 @@ GLOBAL_REAL_VAR(list/stack_trace_storage)
 	var/animate_color = C.color
 	C.color = flash_color
 	animate(C, color = animate_color, time = flash_time)
-
-#define RANDOM_COLOUR (rgb(rand(0,255),rand(0,255),rand(0,255)))
 
 /proc/random_nukecode()
 	var/val = rand(0, 99999)
@@ -1375,12 +1358,25 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		if(is_servant_of_ratvar(V) || isobserver(V))
 			. += V
 
-//datum may be null, but it does need to be a typed var
+/**
+ * NAMEOF: Compile time checked variable name to string conversion
+ * evaluates to a string equal to "X", but compile errors if X isn't a var on datum.
+ * datum may be null, but it does need to be a typed var.
+ **/
 #define NAMEOF(datum, X) (#X || ##datum.##X)
 
-#define VARSET_LIST_CALLBACK(target, var_name, var_value) CALLBACK(GLOBAL_PROC, /proc/___callbackvarset, ##target, ##var_name, ##var_value)
+/**
+ * NAMEOF that actually works in static definitions because src::type requires src to be defined
+ */
+#if DM_VERSION >= 515
+#define NAMEOF_STATIC(datum, X) (nameof(type::##X))
+#else
+#define NAMEOF_STATIC(datum, X) (#X || ##datum.##X)
+#endif
+
+#define VARSET_LIST_CALLBACK(target, var_name, var_value) CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(___callbackvarset), ##target, ##var_name, ##var_value)
 //dupe code because dm can't handle 3 level deep macros
-#define VARSET_CALLBACK(datum, var, var_value) CALLBACK(GLOBAL_PROC, /proc/___callbackvarset, ##datum, NAMEOF(##datum, ##var), ##var_value)
+#define VARSET_CALLBACK(datum, var, var_value) CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(___callbackvarset), ##datum, NAMEOF(##datum, ##var), ##var_value)
 
 /proc/___callbackvarset(list_or_datum, var_name, var_value)
 	if(length(list_or_datum))
@@ -1392,8 +1388,8 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 	else
 		D.vars[var_name] = var_value
 
-#define	TRAIT_CALLBACK_ADD(target, trait, source) CALLBACK(GLOBAL_PROC, /proc/___TraitAdd, ##target, ##trait, ##source)
-#define	TRAIT_CALLBACK_REMOVE(target, trait, source) CALLBACK(GLOBAL_PROC, /proc/___TraitRemove, ##target, ##trait, ##source)
+#define	TRAIT_CALLBACK_ADD(target, trait, source) CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(___TraitAdd), ##target, ##trait, ##source)
+#define	TRAIT_CALLBACK_REMOVE(target, trait, source) CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(___TraitRemove), ##target, ##trait, ##source)
 
 ///DO NOT USE ___TraitAdd OR ___TraitRemove as a replacement for ADD_TRAIT / REMOVE_TRAIT defines. To be used explicitly for callback.
 /proc/___TraitAdd(target,trait,source)
@@ -1577,11 +1573,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 //empty string - use TgsTargetBroadcast with admin_only = FALSE
 //other string - use TgsChatBroadcast with the tag that matches config_setting, only works with TGS4, if using TGS3 the above method is used
 /proc/send2chat(message, config_setting)
-	if(config_setting == null)
-		return
-
-	UNTIL(GLOB.tgs_initialized)
-	if(!world.TgsAvailable())
+	if(config_setting == null || !world.TgsAvailable())
 		return
 
 	var/datum/tgs_version/version = world.TgsVersion()

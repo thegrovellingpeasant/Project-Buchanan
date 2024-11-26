@@ -132,7 +132,7 @@
 	if(A.smooth & SMOOTH_OLD)
 		A:recalculate_junction()
 		A:relative()
-		
+
 	if(A.smooth & (SMOOTH_TRUE | SMOOTH_MORE))
 		var/adjacencies = calculate_adjacencies(A)
 
@@ -436,5 +436,5 @@
 				junction |= cdir
 				break
 
-atom/proc/relative(custom_junction = junction)
+/atom/proc/relative(custom_junction = junction)
 	icon_state = "[src.icon_type_smooth][custom_junction]"

@@ -178,7 +178,7 @@
 	var/datum/team/antag_team = A.get_team()
 	if(antag_team)
 		antag_team.add_member(src)
-	INVOKE_ASYNC(A, /datum/antagonist.proc/on_gain)
+	INVOKE_ASYNC(A, TYPE_PROC_REF(/datum/antagonist, on_gain))
 	return A
 
 /datum/mind/proc/remove_antag_datum(datum_type)
@@ -372,7 +372,7 @@
 
 	if(creator.mind.special_role)
 		message_admins("[ADMIN_LOOKUPFLW(current)] has been created by [ADMIN_LOOKUPFLW(creator)], an antagonist.")
-		to_chat(current, "<span class='userdanger'>Despite your creators current allegiances, your true master remains [creator.real_name]. If their loyalties change, so do yours. This will never change unless your creator's body is destroyed.</span>")
+		to_chat(current, span_userdanger("Despite your creators current allegiances, your true master remains [creator.real_name]. If their loyalties change, so do yours. This will never change unless your creator's body is destroyed."))
 
 /datum/mind/proc/show_memory(mob/recipient, window=1)
 	if(!recipient)
@@ -416,7 +416,7 @@
 	if(href_list["remove_antag"])
 		var/datum/antagonist/A = locate(href_list["remove_antag"]) in antag_datums
 		if(!istype(A))
-			to_chat(usr,"<span class='warning'>Invalid antagonist ref to be removed.</span>")
+			to_chat(usr,span_warning("Invalid antagonist ref to be removed."))
 			return
 		A.admin_remove(usr)
 
@@ -622,7 +622,7 @@
 							log_admin("[key_name(usr)] changed [current]'s telecrystal count to [crystals].")
 			if("uplink")
 				if(!equip_traitor())
-					to_chat(usr, "<span class='danger'>Equipping a syndicate failed!</span>")
+					to_chat(usr, span_danger("Equipping a syndicate failed!"))
 					log_admin("[key_name(usr)] tried and failed to give [current] an uplink.")
 				else
 					log_admin("[key_name(usr)] gave [current] an uplink.")
@@ -643,7 +643,7 @@
 
 /datum/mind/proc/announce_objectives()
 	var/obj_count = 1
-	to_chat(current, "<span class='notice'>Your current objectives:</span>")
+	to_chat(current, span_notice("Your current objectives:"))
 	for(var/objective in get_all_objectives())
 		var/datum/objective/O = objective
 		to_chat(current, "<B>Objective #[obj_count]</B>: [O.explanation_text]")
@@ -751,7 +751,7 @@
 				continue
 		S.charge_counter = delay
 		S.updateButtonIcon()
-		INVOKE_ASYNC(S, /obj/effect/proc_holder/spell.proc/start_recharge)
+		INVOKE_ASYNC(S, TYPE_PROC_REF(/obj/effect/proc_holder/spell, start_recharge))
 
 /datum/mind/proc/get_ghost(even_if_they_cant_reenter)
 	for(var/mob/dead/observer/G in GLOB.dead_mob_list)

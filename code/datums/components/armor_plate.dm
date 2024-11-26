@@ -9,11 +9,11 @@
 	if(!isobj(parent))
 		return COMPONENT_INCOMPATIBLE
 
-	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, .proc/examine)
-	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, .proc/applyplate)
-	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, .proc/dropplates)
+	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(examine))
+	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, PROC_REF(applyplate))
+	RegisterSignal(parent, COMSIG_PARENT_PREQDELETED, PROC_REF(dropplates))
 	if(istype(parent, /obj/mecha/working/ripley))
-		RegisterSignal(parent, COMSIG_ATOM_UPDATE_OVERLAYS, .proc/apply_mech_overlays)
+		RegisterSignal(parent, COMSIG_ATOM_UPDATE_OVERLAYS, PROC_REF(apply_mech_overlays))
 
 	if(_maxamount)
 		maxamount = _maxamount
@@ -36,29 +36,29 @@
 	if(ismecha(parent))
 		if(amount)
 			if(amount < maxamount)
-				examine_list += "<span class='notice'>Its armor is enhanced with [amount] [upgrade_name].</span>"
+				examine_list += span_notice("Its armor is enhanced with [amount] [upgrade_name].")
 			else
-				examine_list += "<span class='notice'>It's wearing a fearsome carapace entirely composed of [upgrade_name] - its pilot must be an experienced monster hunter.</span>"
+				examine_list += span_notice("It's wearing a fearsome carapace entirely composed of [upgrade_name] - its pilot must be an experienced monster hunter.")
 		else
-			examine_list += "<span class='notice'>You could probably use high-quality metal parts to reinforce it.</span>"
+			examine_list += span_notice("You could probably use high-quality metal parts to reinforce it.")
 	else
 		if(amount)
-			examine_list += "<span class='notice'>It has been strengthened with [amount]/[maxamount] [upgrade_name].</span>"
+			examine_list += span_notice("It has been strengthened with [amount]/[maxamount] [upgrade_name].")
 		else
-			examine_list += "<span class='notice'>It can be strengthened with up to [maxamount] [upgrade_name].</span>"
+			examine_list += span_notice("It can be strengthened with up to [maxamount] [upgrade_name].")
 
 /datum/component/armor_plate/proc/applyplate(datum/source, obj/item/I, mob/user, params)
 	if(!istype(I,upgrade_item))
 		return
 	if(amount >= maxamount)
-		to_chat(user, "<span class='warning'>You can't improve [parent] any further!</span>")
+		to_chat(user, span_warning("You can't improve [parent] any further!"))
 		return
 
 	if(istype(I,/obj/item/stack))
 		I.use(1)
 	else
 		if(length(I.contents))
-			to_chat(user, "<span class='warning'>[I] cannot be used for armoring while there's something inside!</span>")
+			to_chat(user, span_warning("[I] cannot be used for armoring while there's something inside!"))
 			return
 		qdel(I)
 
@@ -69,9 +69,9 @@
 	if(ismecha(O))
 		var/obj/mecha/R = O
 		R.update_icon()
-		to_chat(user, "<span class='info'>You strengthen [R], improving its resistance against melee, bullet and laser damage.</span>")
+		to_chat(user, span_info("You strengthen [R], improving its resistance against melee, bullet and laser damage."))
 	else
-		to_chat(user, "<span class='info'>You strengthen [O], improving its resistance against attacks.</span>")
+		to_chat(user, span_info("You strengthen [O], improving its resistance against attacks."))
 
 
 /datum/component/armor_plate/proc/dropplates(datum/source, force)

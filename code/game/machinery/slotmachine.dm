@@ -38,13 +38,13 @@
 	jackpots = rand(0, 2) //false hope
 	plays = rand(5, 20)
 
-	INVOKE_ASYNC(src, .proc/toggle_reel_spin, TRUE)//The reels won't spin unless we activate them
+	INVOKE_ASYNC(src, PROC_REF(toggle_reel_spin), TRUE)//The reels won't spin unless we activate them
 
 	var/list/reel = reels[1]
 	for(var/i = 0, i < reel.len, i++) //Populate the reels.
 		randomize_reels()
 
-	INVOKE_ASYNC(src, .proc/toggle_reel_spin, FALSE)
+	INVOKE_ASYNC(src, PROC_REF(toggle_reel_spin), FALSE)
 
 /obj/machinery/computer/slot_machine/Destroy()
 	if(balance)
@@ -82,27 +82,27 @@
 			if(!user.transferItemToLoc(C, drop_location()))
 				return
 			C.throw_at(user, 3, 10)
-			to_chat(user, "<span class='warning'>[src] spits your dollars back out!</span>")
+			to_chat(user, span_warning("[src] spits your dollars back out!"))
 
 		else
 			if(!user.temporarilyRemoveItemFromInventory(C))
 				return
-			to_chat(user, "<span class='notice'>You insert [C.amount] dollars into [src]'s slot!</span>")
+			to_chat(user, span_notice("You insert [C.amount] dollars into [src]'s slot!"))
 			playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
 			balance += C.amount
 			qdel(C)
 	else if(istype(I, /obj/item/stack/f13Cash))
-		to_chat(user, "<span class='warning'>[src] only accepts hub currency!</span>")
+		to_chat(user, span_warning("[src] only accepts hub currency!"))
 		return
 	else if(istype(I, /obj/item/card/slotmachine))
 		if(consumed_money > 0)
 			if(!do_after(user, 100, target = src))
 				return
-			to_chat(user, "<span class='notice'>You swipe [I] on the [src]'s card reader and it dispenses stored caps!</span>")
+			to_chat(user, span_notice("You swipe [I] on the [src]'s card reader and it dispenses stored caps!"))
 			give_money(consumed_money, TRUE)
 			consumed_money = 0
 		else
-			to_chat(user, "<span class='danger'>You swipe [I] on the [src]'s card reader, but it has no caps stored!</span>")
+			to_chat(user, span_danger("You swipe [I] on the [src]'s card reader, but it has no caps stored!"))
 		return
 	else
 		return ..()
@@ -181,7 +181,7 @@
 	var/the_name
 	if(user)
 		the_name = user.real_name
-		visible_message("<span class='notice'>[user] pulls the lever and the slot machine starts spinning!</span>")
+		visible_message(span_notice("[user] pulls the lever and the slot machine starts spinning!"))
 		playsound(src, 'sound/lavaland/cursed_slot_machine.ogg', 50, 0)
 
 	else
@@ -212,14 +212,14 @@
 
 /obj/machinery/computer/slot_machine/proc/can_spin(mob/user)
 	if(stat & NOPOWER)
-		to_chat(user, "<span class='warning'>The slot machine has no power!</span>")
+		to_chat(user, span_warning("The slot machine has no power!"))
 	if(stat & BROKEN)
-		to_chat(user, "<span class='warning'>The slot machine is broken!</span>")
+		to_chat(user, span_warning("The slot machine is broken!"))
 	if(working)
-		to_chat(user, "<span class='warning'>You need to wait until the machine stops spinning before you can play again!</span>")
+		to_chat(user, span_warning("You need to wait until the machine stops spinning before you can play again!"))
 		return 0
 	if(balance < SPIN_PRICE)
-		to_chat(user, "<span class='warning'>Insufficient money to play!</span>")
+		to_chat(user, span_warning("Insufficient money to play!"))
 		return 0
 	return 1
 
@@ -254,12 +254,12 @@
 		give_money(SMALL_PRIZE)
 
 	else if(linelength == 3)
-		to_chat(user, "<span class='notice'>You win three free games!</span>")
+		to_chat(user, span_notice("You win three free games!"))
 		balance += SPIN_PRICE * 4
 		money = max(money - SPIN_PRICE * 4, money)
 
 	else
-		to_chat(user, "<span class='warning'>No luck!</span>")
+		to_chat(user, span_warning("No luck!"))
 
 /obj/machinery/computer/slot_machine/proc/get_lines()
 	var/amountthesame

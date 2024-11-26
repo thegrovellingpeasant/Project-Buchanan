@@ -28,7 +28,7 @@ GLOBAL_LIST(labor_sheet_values)
 			if(!initial(sheet.point_value) || (initial(sheet.merge_type) && initial(sheet.merge_type) != sheet_type)) //ignore no-value sheets and x/fifty subtypes
 				continue
 			sheet_list += list(list("ore" = initial(sheet.name), "value" = initial(sheet.point_value)))
-		GLOB.labor_sheet_values = sortList(sheet_list, /proc/cmp_sheet_list)
+		GLOB.labor_sheet_values = sortList(sheet_list, GLOBAL_PROC_REF(cmp_sheet_list))
 
 /proc/cmp_sheet_list(list/a, list/b)
 	return a["value"] - b["value"]
@@ -79,40 +79,40 @@ GLOBAL_LIST(labor_sheet_values)
 				var/obj/item/card/id/prisoner/P = I
 				P.points += stacking_machine.points
 				stacking_machine.points = 0
-				to_chat(usr, "<span class='notice'>Points transferred.</span>")
+				to_chat(usr, span_notice("Points transferred."))
 				. = TRUE
 			else
-				to_chat(usr, "<span class='alert'>No valid id for point transfer detected.</span>")
+				to_chat(usr, span_alert("No valid id for point transfer detected."))
 		if("claim_sentence")
 			var/mob/M = usr
 			var/obj/item/card/id/I = M.get_idcard(TRUE)
 			if(istype(I, /obj/item/card/id/prisoner))
 				var/obj/item/card/id/prisoner/P = I
 				if( !P.sentence )
-					to_chat(usr, "<span class='notice'>Your sentence is either permanent, or has already been served.</span>")
+					to_chat(usr, span_notice("Your sentence is either permanent, or has already been served."))
 					return
 				P.sentence -= stacking_machine.sentence
 				stacking_machine.sentence = 0
-				to_chat(usr, "<span class='notice'>Sentence reduced.</span>")
+				to_chat(usr, span_notice("Sentence reduced."))
 				. = TRUE
 			else
-				to_chat(usr, "<span class='alert'>No valid id for point transfer detected.</span>")
+				to_chat(usr, span_alert("No valid id for point transfer detected."))
 		/*if("move_shuttle")
 			if(!alone_in_area(get_area(src), usr))
-				to_chat(usr, "<span class='alert'>Prisoners are only allowed to be released while alone.</span>")
+				to_chat(usr, span_alert("Prisoners are only allowed to be released while alone."))
 			else
 				switch(SSshuttle.moveShuttle("laborcamp", "laborcamp_home", TRUE))
 					if(1)
-						to_chat(usr, "<span class='alert'>Shuttle not found.</span>")
+						to_chat(usr, span_alert("Shuttle not found."))
 					if(2)
-						to_chat(usr, "<span class='alert'>Shuttle already at station.</span>")
+						to_chat(usr, span_alert("Shuttle already at station."))
 					if(3)
-						to_chat(usr, "<span class='alert'>No permission to dock could be granted.</span>")
+						to_chat(usr, span_alert("No permission to dock could be granted."))
 					else
 						if(!(obj_flags & EMAGGED))
 							Radio.set_frequency(FREQ_SECURITY)
 							Radio.talk_into(src, "A prisoner has returned to the station. Minerals and Prisoner ID card ready for retrieval.", FREQ_SECURITY)
-						to_chat(usr, "<span class='notice'>Shuttle received message and will be sent shortly.</span>")
+						to_chat(usr, span_notice("Shuttle received message and will be sent shortly."))
 						. = TRUE*/
 
 /obj/machinery/mineral/labor_claim_console/proc/locate_stacking_machine()
@@ -125,7 +125,7 @@ GLOBAL_LIST(labor_sheet_values)
 /obj/machinery/mineral/labor_claim_console/emag_act(mob/user)
 	if(!(obj_flags & EMAGGED))
 		obj_flags |= EMAGGED
-		to_chat(user, "<span class='warning'>PZZTTPFFFT</span>")
+		to_chat(user, span_warning("PZZTTPFFFT"))
 
 /**********************Prisoner Collection Unit**************************/
 
@@ -161,12 +161,12 @@ GLOBAL_LIST(labor_sheet_values)
 	if(istype(I, /obj/item/card/id))
 		if(istype(I, /obj/item/card/id/prisoner))
 			var/obj/item/card/id/prisoner/prisoner_id = I
-			to_chat(user, "<span class='notice'><B>ID: [prisoner_id.registered_name]</B></span>")
-			to_chat(user, "<span class='notice'>Points Collected:[prisoner_id.points]</span>")
-			to_chat(user, "<span class='notice'>Point Quota: [prisoner_id.goal]</span>")
-			to_chat(user, "<span class='notice'>Remaining Sentence:[prisoner_id.sentence]</span>")
-			to_chat(user, "<span class='notice'>Collect points by bringing smelted minerals to the Labor Shuttle stacking machine. Reach your quota to earn your release.</span>")
+			to_chat(user, span_notice("<B>ID: [prisoner_id.registered_name]</B>"))
+			to_chat(user, span_notice("Points Collected:[prisoner_id.points]"))
+			to_chat(user, span_notice("Point Quota: [prisoner_id.goal]"))
+			to_chat(user, span_notice("Remaining Sentence:[prisoner_id.sentence]"))
+			to_chat(user, span_notice("Collect points by bringing smelted minerals to the Labor Shuttle stacking machine. Reach your quota to earn your release."))
 		else
-			to_chat(user, "<span class='warning'>Error: Invalid ID</span>")
+			to_chat(user, span_warning("Error: Invalid ID"))
 	else
 		return ..()

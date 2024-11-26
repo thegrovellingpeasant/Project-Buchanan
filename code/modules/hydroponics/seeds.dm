@@ -77,11 +77,11 @@
 
 /obj/item/seeds/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Use a pen on it to rename it or change its description.</span>"
+	. += span_notice("Use a pen on it to rename it or change its description.")
 	if(reagents_add && user.can_see_reagents())
-		. += "<span class='notice'>- Plant Reagents -</span>"
+		. += span_notice("- Plant Reagents -")
 		for(var/datum/plant_gene/reagent/G in genes)
-			. += "<span class='notice'>- [G.get_name()] -</span>"
+			. += span_notice("- [G.get_name()] -")
 
 /obj/item/seeds/proc/Copy()
 	var/obj/item/seeds/S = new type(null, 1)
@@ -106,7 +106,7 @@
 	S.reagents_add = reagents_add.Copy() // Faster than grabbing the list from genes.
 	return S
 
-obj/item/seeds/proc/is_gene_forbidden(typepath)
+/obj/item/seeds/proc/is_gene_forbidden(typepath)
 	return (typepath in forbiddengenes)
 
 
@@ -396,7 +396,7 @@ obj/item/seeds/proc/is_gene_forbidden(typepath)
 	if(get_gene(/datum/plant_gene/trait/plant_type/fungal_metabolism))
 		text += "- Plant type: Mushroom. Can grow in dry soil.\n"
 	if(get_gene(/datum/plant_gene/trait/plant_type/alien_properties))
-		text += "- Plant type: <span class='warning'>UNKNOWN</span> \n"
+		text += "- Plant type: [span_warning("UNKNOWN")] \n"
 	if(potency != -1)
 		text += "- Potency: [potency]\n"
 	if(yield != -1)
@@ -425,19 +425,19 @@ obj/item/seeds/proc/is_gene_forbidden(typepath)
 
 /obj/item/seeds/attackby(obj/item/O, mob/user, params)
 	if (istype(O, /obj/item/plant_analyzer))
-		to_chat(user, "<span class='info'>*---------*\n This is \a <span class='name'>[src]</span>.</span>")
+		to_chat(user, span_info("*---------*\n This is \a [span_name("[src]")]."))
 		var/text
 		var/obj/item/plant_analyzer/P_analyzer = O
 		if(P_analyzer.scan_mode == PLANT_SCANMODE_STATS)
 			text = get_analyzer_text()
 			if(text)
-				to_chat(user, "<span class='notice'>[text]</span>")
+				to_chat(user, span_notice("[text]"))
 		if(reagents_add && P_analyzer.scan_mode == PLANT_SCANMODE_CHEMICALS)
-			to_chat(user, "<span class='notice'>- Plant Reagents -</span>")
-			to_chat(user, "<span class='notice'>*---------*</span>")
+			to_chat(user, span_notice("- Plant Reagents -"))
+			to_chat(user, span_notice("*---------*"))
 			for(var/datum/plant_gene/reagent/G in genes)
-				to_chat(user, "<span class='notice'>- [G.get_name()] -</span>")
-			to_chat(user, "<span class='notice'>*---------*</span>")
+				to_chat(user, span_notice("- [G.get_name()] -"))
+			to_chat(user, span_notice("*---------*"))
 
 
 		return

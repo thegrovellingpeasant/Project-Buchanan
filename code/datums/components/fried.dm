@@ -12,8 +12,8 @@
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 
-	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, .proc/examine)
-	RegisterSignal(parent, COMSIG_COMPONENT_CLEAN_ACT, .proc/restore) //basically, unfry people who are being cleaned (badmemes fried someone)
+	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(examine))
+	RegisterSignal(parent, COMSIG_COMPONENT_CLEAN_ACT, PROC_REF(restore)) //basically, unfry people who are being cleaned (badmemes fried someone)
 
 	fry_power = frying_power
 	owner = parent
@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(frying_bad_chems, list(
 	if(ismob(owner))
 		colour_priority = WASHABLE_COLOUR_PRIORITY //badmins fried someone and we want to let them wash the fry colour off
 		//lets heavily hint at how to undo their frying
-		to_chat(owner, "<span class='warning'>You've been coated in hot cooking oil! You should probably go wash it off at the showers.</span>")
+		to_chat(owner, span_warning("You've been coated in hot cooking oil! You should probably go wash it off at the showers."))
 	else
 		owner.AddComponent(/datum/component/edible, foodtypes = fried_tastes, tastes = fried_tastes, eat_time = fried_eat_time) //we don't want mobs to get the edible component
 

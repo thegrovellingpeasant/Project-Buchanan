@@ -62,8 +62,8 @@
 		return
 	if(!patient_insertion_check(target))
 		return
-	occupant_message("<span class='notice'>You start putting [target] into [src]...</span>")
-	chassis.visible_message("<span class='warning'>[chassis] starts putting [target] into \the [src].</span>")
+	occupant_message(span_notice("You start putting [target] into [src]..."))
+	chassis.visible_message(span_warning("[chassis] starts putting [target] into \the [src]."))
 	if(do_after_cooldown(target))
 		if(!patient_insertion_check(target))
 			return
@@ -71,19 +71,19 @@
 		patient = target
 		START_PROCESSING(SSobj, src)
 		update_equip_info()
-		occupant_message("<span class='notice'>[target] successfully loaded into [src]. Life support functions engaged.</span>")
-		chassis.visible_message("<span class='warning'>[chassis] loads [target] into [src].</span>")
+		occupant_message(span_notice("[target] successfully loaded into [src]. Life support functions engaged."))
+		chassis.visible_message(span_warning("[chassis] loads [target] into [src]."))
 		mecha_log_message("[target] loaded. Life support functions engaged.")
 
 /obj/item/mecha_parts/mecha_equipment/medical/sleeper/proc/patient_insertion_check(mob/living/carbon/target)
 	if(target.buckled)
-		occupant_message("<span class='warning'>[target] will not fit into the sleeper because [target.p_theyre()] buckled to [target.buckled]!</span>")
+		occupant_message(span_warning("[target] will not fit into the sleeper because [target.p_theyre()] buckled to [target.buckled]!"))
 		return
 	if(target.has_buckled_mobs())
-		occupant_message("<span class='warning'>[target] will not fit into the sleeper because of the creatures attached to it!</span>")
+		occupant_message(span_warning("[target] will not fit into the sleeper because of the creatures attached to it!"))
 		return
 	if(patient)
-		occupant_message("<span class='warning'>The sleeper is already occupied!</span>")
+		occupant_message(span_warning("The sleeper is already occupied!"))
 		return
 	return 1
 
@@ -99,7 +99,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/medical/sleeper/detach()
 	if(patient)
-		occupant_message("<span class='warning'>Unable to detach [src] - equipment occupied!</span>")
+		occupant_message(span_warning("Unable to detach [src] - equipment occupied!"))
 		return
 	STOP_PROCESSING(SSobj, src)
 	return ..()
@@ -174,9 +174,9 @@
 				<font color="[patient.getOxyLoss() < 60 ? "#3d5bc3" : "#c51e1e"]"><b>Respiratory Damage:</b> [patient.getOxyLoss()]%</font><br />
 				<font color="[patient.getToxLoss() < 60 ? "#3d5bc3" : "#c51e1e"]"><b>Toxin Content:</b> [patient.getToxLoss()]%</font><br />
 				<font color="[patient.getFireLoss() < 60 ? "#3d5bc3" : "#c51e1e"]"><b>Burn Severity:</b> [patient.getFireLoss()]%</font><br />
-				<span class='danger'>[patient.getCloneLoss() ? "Subject appears to have cellular damage." : ""]</span><br />
-				<span class='danger'>[patient.getOrganLoss(ORGAN_SLOT_BRAIN) ? "Significant brain damage detected." : ""]</span><br />
-				<span class='danger'>[length(patient.get_traumas()) ? "Brain Traumas detected." : ""]</span><br />
+				[span_danger("[patient.getCloneLoss() ? "Subject appears to have cellular damage." : ""]")]<br />
+				[span_danger("[patient.getOrganLoss(ORGAN_SLOT_BRAIN) ? "Significant brain damage detected." : ""]")]<br />
+				[span_danger("[length(patient.get_traumas()) ? "Brain Traumas detected." : ""]")]<br />
 				"}
 
 /obj/item/mecha_parts/mecha_equipment/medical/sleeper/proc/get_patient_reagents()
@@ -384,7 +384,7 @@
 			message += " added to production"
 			START_PROCESSING(SSobj, src)
 			occupant_message(message)
-			occupant_message("<span class='notice'>Reagent processing started.</span>")
+			occupant_message(span_notice("Reagent processing started."))
 			mecha_log_message("Reagent processing started.")
 		return
 	if (href_list["show_reagents"])

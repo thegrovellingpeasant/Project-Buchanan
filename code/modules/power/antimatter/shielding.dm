@@ -30,15 +30,15 @@
 
 /obj/machinery/am_shielding/Initialize()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/controllerscan), 10)
+	addtimer(CALLBACK(src, PROC_REF(controllerscan)), 10)
 
 /obj/machinery/am_shielding/proc/overheat()
-	visible_message("<span class='danger'>[src] melts!</span>")
+	visible_message(span_danger("[src] melts!"))
 	new /obj/effect/hotspot(loc)
 	qdel(src)
 
 /obj/machinery/am_shielding/proc/collapse()
-	visible_message("<span class='notice'>[src] collapses back into a container!</span>")
+	visible_message(span_notice("[src] collapses back into a container!"))
 	new /obj/item/am_shielding_container(drop_location())
 	qdel(src)
 
@@ -65,7 +65,7 @@
 
 	if(!control_unit)
 		if(!priorscan)
-			addtimer(CALLBACK(src, .proc/controllerscan, 1), 20)
+			addtimer(CALLBACK(src, PROC_REF(controllerscan), 1), 20)
 			return
 		collapse()
 

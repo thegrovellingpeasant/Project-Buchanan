@@ -13,7 +13,7 @@
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))
-			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			to_chat(user, span_notice("You've collected [src]"))
 			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
 			if(istype(H))
 				H.add(1)
@@ -33,7 +33,7 @@
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))
-			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			to_chat(user, span_notice("You've collected [src]"))
 			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
 			if(istype(H))
 				H.add(1)
@@ -53,7 +53,7 @@
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))
-			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			to_chat(user, span_notice("You've collected [src]"))
 			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
 			if(istype(H))
 				H.add(1)
@@ -98,7 +98,7 @@
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))
-			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			to_chat(user, span_notice("You've collected [src]"))
 			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
 			if(istype(H))
 				H.add(1)
@@ -153,7 +153,7 @@
 	if(W.sharpness && W.force > 0 && !(NODECONSTRUCT_1 in flags_1))
 		to_chat(user, "You begin to harvest [src]...")
 		if(do_after(user, 100/W.force, target = user))
-			to_chat(user, "<span class='notice'>You've collected [src]</span>")
+			to_chat(user, span_notice("You've collected [src]"))
 			var/obj/item/stack/sheet/hay/H = user.get_inactive_held_item()
 			if(istype(H))
 				H.add(1)
@@ -226,11 +226,11 @@
 		if(!istype(product))
 			return //Something fucked up here or it's a weird product
 		user.put_in_hands(product)
-		to_chat(user, "<span class='notice'>You pluck [product] from [src].</span>")
+		to_chat(user, span_notice("You pluck [product] from [src]."))
 		has_plod = FALSE
 		update_icon() //Won't update due to proc otherwise
 		timer = initial(timer) + rand(-100,100) //add some variability
-		addtimer(CALLBACK(src, .proc/regrow),timer) //Set up the timer properly
+		addtimer(CALLBACK(src, PROC_REF(regrow)),timer) //Set up the timer properly
 	update_icon()
 
 /obj/structure/flora/wasteplant/proc/regrow()
@@ -292,7 +292,7 @@
 	desc = "The sacred datura root, useful as an anesthetic for surgery and in healing salves, as well as for rites of passage rituals and ceremonies"
 	produce = /obj/item/reagent_containers/food/snacks/grown/datura
 
-obj/structure/flora/wasteplant/wild_punga
+/obj/structure/flora/wasteplant/wild_punga
 	name = "wild punga"
 	icon_state = "wild_punga"
 	desc = "Punga fruit plants flower at a single point at the terminus of their stems, gradually developing into large, fleshy fruits with a yellow/brown, thick skin."

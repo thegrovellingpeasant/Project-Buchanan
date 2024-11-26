@@ -69,8 +69,8 @@
 	if((grabbing_cooldown <= world.time) && !client)
 		if(in_melee == TRUE)
 			if(prob(80+anger_modifier/2))
-				INVOKE_ASYNC(src, .proc/grab_attack)
-	
+				INVOKE_ASYNC(src, PROC_REF(grab_attack))
+
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spawner/ranged, mob_types, spawn_time, faction, spawn_text, max_mobs, _range = 7)
@@ -108,13 +108,13 @@
 	var/mob/living/L = target
 	L.Paralyze(30)
 	animate(target, pixel_z = 20, time = 10, loop = 1)
-	visible_message("<span class='boldwarning'>[src] grabs [L] with its' claw and lifts them up, squeezing them!</span>")
+	visible_message(span_boldwarning("[src] grabs [L] with its' claw and lifts them up, squeezing them!"))
 	sleep(15)
 	L.apply_damage(20, BRUTE, wound_bonus=WOUND_SLASH)
 	playsound(get_turf(L), 'sound/effects/meteorimpact.ogg', 100, 1)
 	shake_camera(L, 4, 3)
 	shake_camera(src, 2, 3)
-	visible_message("<span class='boldwarning'>[src] slams [L] down!</span>")
+	visible_message(span_boldwarning("[src] slams [L] down!"))
 	var/throwtarget = get_edge_target_turf(target, dir)
 	L.throw_at(throwtarget, 4, 3)
 	L.pixel_z = 0
@@ -134,7 +134,7 @@
 	setDir(get_dir(src, T))
 	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(D, alpha = 0, color = "#FF0000", transform = matrix()*2, time = 1)
-	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, .proc/charge_end))
+	throw_at(T, get_dist(src, T), 1, src, 0, callback = CALLBACK(src, PROC_REF(charge_end)))
 
 /mob/living/simple_animal/hostile/megafauna/mirelurkqueen/proc/charge_end(list/effects_to_destroy)
 	charging = FALSE
@@ -172,8 +172,8 @@
 	if(prob(10))
 		if(change_behaviour == TRUE)
 			visible_message(span_danger("\The [src] hisses, enraged!"))
-		
-			addtimer(CALLBACK(src, .proc/Charge), 3)
+
+			addtimer(CALLBACK(src, PROC_REF(Charge)), 3)
 	if(prob(85) || Proj.damage > 30)
 		return ..()
 	else

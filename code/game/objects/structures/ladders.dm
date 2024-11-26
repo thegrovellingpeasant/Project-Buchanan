@@ -67,22 +67,22 @@
 	if(up && down)
 		switch(alert(peeker, "Look up or down the ladder?", "Ladder", list("Up", "Down", "Cancel")))
 			if("Up")
-				peeker.visible_message("<span class='notice'>[peeker] looks up [peeker]!</span>",
-				"<span class='notice'>You look up [peeker]!</span>")
+				peeker.visible_message(span_notice("[peeker] looks up [peeker]!"),
+				span_notice("You look up [peeker]!"))
 				peek_dir = UP
 			if("Down")
-				usr.visible_message("<span class='notice'>[usr] looks down [src]!</span>",
-				"<span class='notice'>You look down [src]!</span>")
+				usr.visible_message(span_notice("[usr] looks down [src]!"),
+				span_notice("You look down [src]!"))
 				peek_dir = DOWN
 			else
 				return
 	else if(up)
-		usr.visible_message("<span class='notice'>[usr] looks up [src]!</span>",
-		"<span class='notice'>You look up [src]!</span>")
+		usr.visible_message(span_notice("[usr] looks up [src]!"),
+		span_notice("You look up [src]!"))
 		peek_dir = UP
 	else if(down)
-		usr.visible_message("<span class='notice'>[usr] looks down [src]!</span>",
-		"<span class='notice'>You look down [src]!</span>")
+		usr.visible_message(span_notice("[usr] looks down [src]!"),
+		span_notice("You look down [src]!"))
 		peek_dir = DOWN
 	else
 		return
@@ -99,18 +99,18 @@
 		if(UP)
 			peeker.reset_perspective(up.loc)
 			if(!LAZYACCESS(ladder_watchers, "[peek_dir]"))
-				RegisterSignal(up, COMSIG_CLICK, .proc/on_connected_ladder_clicked)
+				RegisterSignal(up, COMSIG_CLICK, PROC_REF(on_connected_ladder_clicked))
 		if(DOWN)
 			peeker.reset_perspective(down.loc)
 			if(!LAZYACCESS(ladder_watchers, "[peek_dir]"))
-				RegisterSignal(down, COMSIG_CLICK, .proc/on_connected_ladder_clicked)
+				RegisterSignal(down, COMSIG_CLICK, PROC_REF(on_connected_ladder_clicked))
 		else
 			return
 
-	LAZYADDASSOC(ladder_watchers, "[peek_dir]", peeker)
-	RegisterSignal(peeker, COMSIG_MOVABLE_MOVED, .proc/on_peeker_move)
+	LAZYADDASSOCLIST(ladder_watchers, "[peek_dir]", peeker)
+	RegisterSignal(peeker, COMSIG_MOVABLE_MOVED, PROC_REF(on_peeker_move))
 	// This is the closest thing this codebase has to an incapacitation signal.
-	RegisterSignal(peeker, COMSIG_DISABLE_COMBAT_MODE, .proc/stop_peeking)
+	RegisterSignal(peeker, COMSIG_DISABLE_COMBAT_MODE, PROC_REF(stop_peeking))
 
 
 /obj/structure/ladder/proc/on_peeker_move(mob/source)
@@ -150,7 +150,7 @@
 
 /obj/structure/ladder/singularity_pull()
 	if (!(resistance_flags & INDESTRUCTIBLE))
-		visible_message("<span class='danger'>[src] is torn to pieces by the gravitational pull!</span>")
+		visible_message(span_danger("[src] is torn to pieces by the gravitational pull!"))
 		qdel(src)
 
 /obj/structure/ladder/proc/travel(going_up, mob/user, is_ghost, obj/structure/ladder/ladder)
@@ -158,7 +158,7 @@
 		if(in_use)
 			return
 		in_use = TRUE
-		user.visible_message("[user] begins to climb [going_up ? "up" : "down"] [src].", "<span class='notice'>You begin to climb [going_up ? "up" : "down"] [src].</span>")
+		user.visible_message("[user] begins to climb [going_up ? "up" : "down"] [src].", span_notice("You begin to climb [going_up ? "up" : "down"] [src]."))
 		if(!do_after(user, timetouse, target = src))
 			in_use = FALSE
 			return
@@ -185,7 +185,7 @@
 		)
 
 	if (up && down)
-		var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
+		var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
 		if (!is_ghost && !in_range(src, user))
 			return  // nice try
 		switch(result)
@@ -200,7 +200,7 @@
 	else if(down)
 		travel(FALSE, user, is_ghost, down)
 	else
-		to_chat(user, "<span class='warning'>[src] doesn't seem to lead anywhere!</span>")
+		to_chat(user, span_warning("[src] doesn't seem to lead anywhere!"))
 
 	if(!is_ghost)
 		add_fingerprint(user)
@@ -230,9 +230,9 @@
 
 /obj/structure/ladder/proc/show_fluff_message(going_up, mob/user)
 	if(going_up)
-		user.visible_message("[user] climbs up [src].","<span class='notice'>You climb up [src].</span>")
+		user.visible_message("[user] climbs up [src].",span_notice("You climb up [src]."))
 	else
-		user.visible_message("[user] climbs down [src].","<span class='notice'>You climb down [src].</span>")
+		user.visible_message("[user] climbs down [src].",span_notice("You climb down [src]."))
 
 
 // Indestructible away mission ladders which link based on a mapped ID and height value rather than X/Y/Z.
@@ -325,7 +325,7 @@
 /obj/structure/ladder/unbreakable/binary/unlinked //Crew gets to complete one
 	id = "unlinked_binary"
 	area_to_place = null
-	
+
 /obj/structure/ladder/unbreakable/transition
 	name = "transition zone"
 	desc = "<font color='#6eaa2c'>Head to the other side.</font>"
@@ -362,16 +362,16 @@
 
 /obj/structure/ladder/unbreakable/transition/show_fluff_message(going_up, mob/user)
 	if(going_up)
-		user.visible_message("[user] walks up to [src].","<span class='notice'>You walk up to [src].</span>")
+		user.visible_message("[user] walks up to [src].",span_notice("You walk up to [src]."))
 	else
-		user.visible_message("[user] walks down to [src].","<span class='notice'>You walk down to [src].</span>")
+		user.visible_message("[user] walks down to [src].",span_notice("You walk down to [src]."))
 
 /obj/structure/ladder/unbreakable/transition/travel(going_up, mob/user, is_ghost, obj/structure/ladder/ladder)
 	if(!is_ghost)
 		if(in_use)
 			return
 		in_use = TRUE
-		user.visible_message("[user] begins to walk [going_up ? "up to" : "down to"] [src].", "<span class='notice'>You begin to walk [going_up ? "up to" : "down to"] [src].</span>")
+		user.visible_message("[user] begins to walk [going_up ? "up to" : "down to"] [src].", span_notice("You begin to walk [going_up ? "up to" : "down to"] [src]."))
 		if(!do_after(user, timetouse, target = src))
 			in_use = FALSE
 			return

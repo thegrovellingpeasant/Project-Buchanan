@@ -14,7 +14,7 @@
 	var/desc = "Heavy gusts of wind blanket the area, periodically knocking down anyone caught in the open."
 
 	/// The message displayed in chat to foreshadow the weather's beginning
-	var/telegraph_message = "<span class='warning'>The wind begins to pick up.</span>"
+	var/telegraph_message = span_warning("The wind begins to pick up.")
 
 	/// In deciseconds, how long from the beginning of the telegraph until the weather begins
 	var/telegraph_duration = 300
@@ -23,7 +23,7 @@
 	/// The overlay applied to all tiles on the z-level
 	var/telegraph_overlay
 	/// Displayed in chat once the weather begins in earnest
-	var/weather_message = "<span class='userdanger'>The wind begins to blow ferociously!</span>"
+	var/weather_message = span_userdanger("The wind begins to blow ferociously!")
 	///In deciseconds, how long the weather lasts once it begins
 	var/weather_duration = 1200
 	///See above - this is the lowest possible duration
@@ -38,7 +38,7 @@
 	var/weather_color = null
 
 	/// Displayed once the weather is over
-	var/end_message = "<span class='danger'>The wind relents its assault.</span>"
+	var/end_message = span_danger("The wind relents its assault.")
 	/// In deciseconds, how long the "wind-down" graphic will appear before vanishing entirely
 	var/end_duration = 300
 	/// Sound that plays while weather is ending
@@ -58,13 +58,13 @@
 	/// The list of z-levels that this weather is actively affecting
 	var/impacted_z_levels
 
-	/// Since it's above everything else, this is the layer used by default. TURF_LAYER is below mobs and walls if you need to use that. 
-	var/overlay_layer = AREA_LAYER 
+	/// Since it's above everything else, this is the layer used by default. TURF_LAYER is below mobs and walls if you need to use that.
+	var/overlay_layer = AREA_LAYER
 	/// Plane for the overlay
 	var/overlay_plane = BLACKNESS_PLANE
-	/// If the weather has no purpose but aesthetics. 
+	/// If the weather has no purpose but aesthetics.
 	var/aesthetic = FALSE
-	/// Used by mobs to prevent them from being affected by the weather 
+	/// Used by mobs to prevent them from being affected by the weather
 	var/immunity_type = "storm"
 
 	/// The stage of the weather, from 1-4
@@ -79,7 +79,7 @@
 	var/barometer_predictable = FALSE
 	/// For barometers to know when the next storm will hit
 	var/next_hit_time = 0
-	
+
 	var/affects_turfs = FALSE //Does this weather affect turfs at all?
 	var/turfs_impacted = FALSE // Did this weather already impact turfs?
 	var/carbons_only = FALSE //Does this weather affect only carbon mobs?
@@ -124,7 +124,7 @@
 				to_chat(M, telegraph_message)
 			if(telegraph_sound)
 				SEND_SOUND(M, sound(telegraph_sound))
-	addtimer(CALLBACK(src, .proc/start), telegraph_duration)
+	addtimer(CALLBACK(src, PROC_REF(start)), telegraph_duration)
 
 /**
  * Starts the actual weather and effects from it
@@ -145,7 +145,7 @@
 				to_chat(M, weather_message)
 			if(weather_sound)
 				SEND_SOUND(M, sound(weather_sound))
-	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
+	addtimer(CALLBACK(src, PROC_REF(wind_down)), weather_duration)
 
 /**
  * Weather enters the winding down phase, stops effects
@@ -166,7 +166,7 @@
 				to_chat(M, end_message)
 			if(end_sound)
 				SEND_SOUND(M, sound(end_sound))
-	addtimer(CALLBACK(src, .proc/end), end_duration)
+	addtimer(CALLBACK(src, PROC_REF(end)), end_duration)
 
 /**
  * Fully ends the weather

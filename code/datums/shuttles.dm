@@ -670,6 +670,16 @@
 	name = "Ghoul Subway"
 	port_id = "ghoul"
 
+/datum/map_template/shuttle/bishop_elevator
+	suffix = "elevator"
+	name = "Bishop Elevator"
+	port_id = "bishop"
+
+/datum/map_template/shuttle/penthouse_elevator
+	suffix = "elevator"
+	name = "Penthouse Elevator"
+	port_id = "penthouse"
+
 /datum/map_template/shuttle/emergency/pahrump
 	suffix = "pahrump"
 	name = "Pahrump train"

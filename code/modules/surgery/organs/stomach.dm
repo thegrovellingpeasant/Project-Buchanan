@@ -11,10 +11,10 @@
 	healing_factor = STANDARD_ORGAN_HEALING
 	decay_factor = STANDARD_ORGAN_DECAY
 
-	low_threshold_passed = "<span class='info'>Your stomach flashes with pain before subsiding. Food doesn't seem like a good idea right now.</span>"
-	high_threshold_passed = "<span class='warning'>Your stomach flares up with constant pain- you can hardly stomach the idea of food right now!</span>"
-	high_threshold_cleared = "<span class='info'>The pain in your stomach dies down for now, but food still seems unappealing.</span>"
-	low_threshold_cleared = "<span class='info'>The last bouts of pain in your stomach have died out.</span>"
+	low_threshold_passed = span_info("Your stomach flashes with pain before subsiding. Food doesn't seem like a good idea right now.")
+	high_threshold_passed = span_warning("Your stomach flares up with constant pain- you can hardly stomach the idea of food right now!")
+	high_threshold_cleared = span_info("The pain in your stomach dies down for now, but food still seems unappealing.")
+	low_threshold_cleared = span_info("The last bouts of pain in your stomach have died out.")
 
 /obj/item/organ/stomach/on_life()
 	. = ..()
@@ -34,7 +34,7 @@
 	var/prob_divisor = damage > high_threshold ? 10 : 40
 	if(prob((damage/prob_divisor) * (Nutri.volume**2)))
 		owner.vomit(damage)
-		to_chat(owner, "<span class='warning'>Your stomach reels in pain as you're incapable of holding down all that food!</span>")
+		to_chat(owner, span_warning("Your stomach reels in pain as you're incapable of holding down all that food!"))
 
 /obj/item/organ/stomach/proc/handle_disgust(mob/living/carbon/human/H)
 	if(H.disgust)
@@ -44,7 +44,7 @@
 				H.stuttering += 1
 				H.confused += 2
 			if(prob(10) && !H.stat)
-				to_chat(H, "<span class='warning'>You feel kind of iffy...</span>")
+				to_chat(H, span_warning("You feel kind of iffy..."))
 			H.jitteriness = max(H.jitteriness - 3, 0)
 		if(H.disgust >= DISGUST_LEVEL_VERYGROSS)
 			if(prob(pukeprob)) //iT hAndLeS mOrE ThaN PukInG
@@ -62,13 +62,13 @@
 			H.clear_alert("disgust")
 			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "disgust")
 		if(DISGUST_LEVEL_GROSS to DISGUST_LEVEL_VERYGROSS)
-			H.throw_alert("disgust", /obj/screen/alert/gross)
+			H.throw_alert("disgust", /atom/movable/screen/alert/gross)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "disgust", /datum/mood_event/gross)
 		if(DISGUST_LEVEL_VERYGROSS to DISGUST_LEVEL_DISGUSTED)
-			H.throw_alert("disgust", /obj/screen/alert/verygross)
+			H.throw_alert("disgust", /atom/movable/screen/alert/verygross)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "disgust", /datum/mood_event/verygross)
 		if(DISGUST_LEVEL_DISGUSTED to INFINITY)
-			H.throw_alert("disgust", /obj/screen/alert/disgusted)
+			H.throw_alert("disgust", /atom/movable/screen/alert/disgusted)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "disgust", /datum/mood_event/disgusted)
 
 /obj/item/organ/stomach/Remove(special = FALSE)
@@ -99,10 +99,10 @@
 	switch(severity)
 		if(1)
 			owner.nutrition = min(owner.nutrition - 50, 0)
-			to_chat(owner, "<span class='warning'>Alert: Detected severe battery discharge!</span>")
+			to_chat(owner, span_warning("Alert: Detected severe battery discharge!"))
 		if(2)
 			owner.nutrition = min(owner.nutrition - 100, 0)
-			to_chat(owner, "<span class='warning'>Alert: Minor battery discharge!</span>")
+			to_chat(owner, span_warning("Alert: Minor battery discharge!"))
 
 /obj/item/organ/stomach/gen2synth
 	name = "synth digestion unit"
@@ -115,10 +115,10 @@
 	switch(severity)
 		if(1)
 			owner.nutrition = min(owner.nutrition - 50, 0)
-			to_chat(owner, "<span class='warning'>Alert: Detected severe battery discharge!</span>")
+			to_chat(owner, span_warning("Alert: Detected severe battery discharge!"))
 		if(2)
 			owner.nutrition = min(owner.nutrition - 100, 0)
-			to_chat(owner, "<span class='warning'>Alert: Minor battery discharge!</span>")
+			to_chat(owner, span_warning("Alert: Minor battery discharge!"))
 
 /obj/item/organ/stomach/ethereal
 	name = "biological battery"
@@ -132,8 +132,8 @@
 
 /obj/item/organ/stomach/ethereal/Insert(mob/living/carbon/M, special = 0, drop_if_replaced = TRUE)
 	..()
-	RegisterSignal(owner, COMSIG_PROCESS_BORGCHARGER_OCCUPANT, .proc/charge)
-	RegisterSignal(owner, COMSIG_LIVING_ELECTROCUTE_ACT, .proc/on_electrocute)
+	RegisterSignal(owner, COMSIG_PROCESS_BORGCHARGER_OCCUPANT, PROC_REF(charge))
+	RegisterSignal(owner, COMSIG_LIVING_ELECTROCUTE_ACT, PROC_REF(on_electrocute))
 
 /obj/item/organ/stomach/ethereal/Remove(mob/living/carbon/M, special = 0)
 	UnregisterSignal(owner, COMSIG_PROCESS_BORGCHARGER_OCCUPANT)
@@ -147,7 +147,7 @@
 	if(flags & SHOCK_ILLUSION)
 		return
 	adjust_charge(shock_damage * siemens_coeff * 2)
-	to_chat(owner, "<span class='notice'>You absorb some of the shock into your body!</span>")
+	to_chat(owner, span_notice("You absorb some of the shock into your body!"))
 
 /obj/item/organ/stomach/ethereal/proc/adjust_charge(amount)
 	crystal_charge = clamp(crystal_charge + amount, ETHEREAL_CHARGE_NONE, ETHEREAL_CHARGE_DANGEROUS)

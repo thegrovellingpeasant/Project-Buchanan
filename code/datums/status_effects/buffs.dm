@@ -3,15 +3,15 @@
 /datum/status_effect/shadow_mend
 	id = "shadow_mend"
 	duration = 30
-	alert_type = /obj/screen/alert/status_effect/shadow_mend
+	alert_type = /atom/movable/screen/alert/status_effect/shadow_mend
 
-/obj/screen/alert/status_effect/shadow_mend
+/atom/movable/screen/alert/status_effect/shadow_mend
 	name = "Shadow Mend"
 	desc = "Shadowy energies wrap around your wounds, sealing them at a price. After healing, you will slowly lose health every three seconds for thirty seconds."
 	icon_state = "shadow_mend"
 
 /datum/status_effect/shadow_mend/on_apply()
-	owner.visible_message("<span class='notice'>Violet light wraps around [owner]'s body!</span>", "<span class='notice'>Violet light wraps around your body!</span>")
+	owner.visible_message(span_notice("Violet light wraps around [owner]'s body!"), span_notice("Violet light wraps around your body!"))
 	playsound(owner, 'sound/magic/teleport_app.ogg', 50, 1)
 	return ..()
 
@@ -21,7 +21,7 @@
 
 /datum/status_effect/shadow_mend/on_remove()
 	. = ..()
-	owner.visible_message("<span class='warning'>The violet light around [owner] glows black!</span>", "<span class='warning'>The tendrils around you cinch tightly and reap their toll...</span>")
+	owner.visible_message(span_warning("The violet light around [owner] glows black!"), span_warning("The tendrils around you cinch tightly and reap their toll..."))
 	playsound(owner, 'sound/magic/teleport_diss.ogg', 50, 1)
 	owner.apply_status_effect(STATUS_EFFECT_VOID_PRICE)
 
@@ -29,9 +29,9 @@
 	id = "void_price"
 	duration = 300
 	tick_interval = 30
-	alert_type = /obj/screen/alert/status_effect/void_price
+	alert_type = /atom/movable/screen/alert/status_effect/void_price
 
-/obj/screen/alert/status_effect/void_price
+/atom/movable/screen/alert/status_effect/void_price
 	name = "Void Price"
 	desc = "Black tendrils cinch tightly against you, digging wicked barbs into your flesh."
 	icon_state = "shadow_mend"
@@ -46,17 +46,17 @@
 	duration = 200
 	tick_interval = 0 //tick as fast as possible
 	status_type = STATUS_EFFECT_REPLACE
-	alert_type = /obj/screen/alert/status_effect/vanguard
+	alert_type = /atom/movable/screen/alert/status_effect/vanguard
 	var/datum/progressbar/progbar
 	var/stamhealed = 0 //How much stamina did we regenerate?
 
-/obj/screen/alert/status_effect/vanguard
+/atom/movable/screen/alert/status_effect/vanguard
 	name = "Vanguard"
 	desc = "You're absorbing stuns aswell as quickly regenerating stamina, but be careful: 50% of stamina restored and 25% of stuns absorbed will affect you after this effect ends."
 	icon_state = "vanguard"
 	alerttooltipstyle = "clockcult"
 
-/obj/screen/alert/status_effect/vanguard/MouseEntered(location,control,params)
+/atom/movable/screen/alert/status_effect/vanguard/MouseEntered(location,control,params)
 	var/mob/living/L = usr
 	var/datum/status_effect/vanguard_shield/E = attached_effect
 	if(istype(L)) //this is probably more safety than actually needed
@@ -76,7 +76,7 @@
 /datum/status_effect/vanguard_shield/on_apply()
 	owner.log_message("gained Vanguard stun immunity", LOG_ATTACK)
 	owner.add_stun_absorption("vanguard", INFINITY, 1, "'s yellow aura momentarily intensifies!", "Your ward absorbs the stun!", " radiating with a soft yellow light!")
-	owner.visible_message("<span class='warning'>[owner] begins to faintly glow!</span>", "<span class='brass'>You will absorb all stuns aswell as quickly regenerate stamina for the next twenty seconds .</span>")
+	owner.visible_message(span_warning("[owner] begins to faintly glow!"), span_brass("You will absorb all stuns aswell as quickly regenerate stamina for the next twenty seconds ."))
 	owner.SetAllImmobility(0, FALSE)
 	progbar = new(owner, duration, owner)
 	progbar.bar.color = list("#FAE48C", "#FAE48C", "#FAE48C", rgb(0,0,0))
@@ -97,7 +97,7 @@
 		stuns_blocked = FLOOR(min(vanguard["stuns_absorbed"] * 0.25, 400), 1)
 		vanguard["end_time"] = 0 //so it doesn't absorb the stuns we're about to apply
 	if(owner.stat != DEAD)
-		var/message_to_owner = "<span class='warning'>You feel your Vanguard quietly fade...</span>"
+		var/message_to_owner = span_warning("You feel your Vanguard quietly fade...")
 		var/otheractiveabsorptions = FALSE
 		for(var/i in owner.stun_absorption)
 			if(owner.stun_absorption[i]["end_time"] > world.time && owner.stun_absorption[i]["priority"] > vanguard["priority"])
@@ -105,22 +105,22 @@
 		if(!GLOB.ratvar_awakens && (stuns_blocked && !otheractiveabsorptions || stamhealed))
 			owner.DefaultCombatKnockdown(stuns_blocked)
 			owner.adjustStaminaLoss(stamhealed * 0.5)
-			message_to_owner = "<span class='boldwarning'>The weight of the Vanguard's protection crashes down upon you!</span>"
+			message_to_owner = span_boldwarning("The weight of the Vanguard's protection crashes down upon you!")
 			if(stuns_blocked >= 300)
-				message_to_owner += "\n<span class='userdanger'>You faint from the exertion!</span>"
+				message_to_owner += "\n[span_userdanger("You faint from the exertion!")]"
 				stuns_blocked *= 2
 				owner.Unconscious(stuns_blocked)
 		else
 			stuns_blocked = 0 //so logging is correct in cases where there were stuns blocked but we didn't stun for other reasons
-		owner.visible_message("<span class='warning'>[owner]'s glowing aura fades!</span>", message_to_owner)
+		owner.visible_message(span_warning("[owner]'s glowing aura fades!"), message_to_owner)
 		owner.log_message("lost Vanguard stun immunity[stuns_blocked ? "and was stunned for [stuns_blocked]":""] [stamhealed ? ", incurring [stamhealed * 0.25] staminaloss" : ""]", LOG_ATTACK)
 
 /datum/status_effect/inathneqs_endowment
 	id = "inathneqs_endowment"
 	duration = 150
-	alert_type = /obj/screen/alert/status_effect/inathneqs_endowment
+	alert_type = /atom/movable/screen/alert/status_effect/inathneqs_endowment
 
-/obj/screen/alert/status_effect/inathneqs_endowment
+/atom/movable/screen/alert/status_effect/inathneqs_endowment
 	name = "Inath-neq's Endowment"
 	desc = "Adrenaline courses through you as the Resonant Cogwheel's energy shields you from all harm!"
 	icon_state = "inathneqs_endowment"
@@ -128,7 +128,7 @@
 
 /datum/status_effect/inathneqs_endowment/on_apply()
 	owner.log_message("gained Inath-neq's invulnerability", LOG_ATTACK)
-	owner.visible_message("<span class='warning'>[owner] shines with azure light!</span>", "<span class='notice'>You feel Inath-neq's power flow through you! You're invincible!</span>")
+	owner.visible_message(span_warning("[owner] shines with azure light!"), span_notice("You feel Inath-neq's power flow through you! You're invincible!"))
 	var/oldcolor = owner.color
 	owner.color = "#1E8CE1"
 	owner.fully_heal()
@@ -142,14 +142,14 @@
 /datum/status_effect/inathneqs_endowment/on_remove()
 	. = ..()
 	owner.log_message("lost Inath-neq's invulnerability", LOG_ATTACK)
-	owner.visible_message("<span class='warning'>The light around [owner] flickers and dissipates!</span>", "<span class='boldwarning'>You feel Inath-neq's power fade from your body!</span>")
+	owner.visible_message(span_warning("The light around [owner] flickers and dissipates!"), span_boldwarning("You feel Inath-neq's power fade from your body!"))
 	owner.status_flags &= ~GODMODE
 	playsound(owner, 'sound/magic/ethereal_exit.ogg', 50, 1)
 
 /datum/status_effect/cyborg_power_regen
 	id = "power_regen"
 	duration = 100
-	alert_type = /obj/screen/alert/status_effect/power_regen
+	alert_type = /atom/movable/screen/alert/status_effect/power_regen
 	var/power_to_give = 0 //how much power is gained each tick
 
 /datum/status_effect/cyborg_power_regen/on_creation(mob/living/new_owner, new_power_per_tick)
@@ -157,7 +157,7 @@
 	if(. && isnum(new_power_per_tick))
 		power_to_give = new_power_per_tick
 
-/obj/screen/alert/status_effect/power_regen
+/atom/movable/screen/alert/status_effect/power_regen
 	name = "Power Regeneration"
 	desc = "You are quickly regenerating power!"
 	icon_state = "power_regen"
@@ -174,16 +174,16 @@
 	id = "his_grace"
 	duration = -1
 	tick_interval = 4
-	alert_type = /obj/screen/alert/status_effect/his_grace
+	alert_type = /atom/movable/screen/alert/status_effect/his_grace
 	var/bloodlust = 0
 
-/obj/screen/alert/status_effect/his_grace
+/atom/movable/screen/alert/status_effect/his_grace
 	name = "His Grace"
 	desc = "His Grace hungers, and you must feed Him."
 	icon_state = "his_grace"
 	alerttooltipstyle = "hisgrace"
 
-/obj/screen/alert/status_effect/his_grace/MouseEntered(location,control,params)
+/atom/movable/screen/alert/status_effect/his_grace/MouseEntered(location,control,params)
 	desc = initial(desc)
 	var/datum/status_effect/his_grace/HG = attached_effect
 	desc += "<br><font size=3><b>Current Bloodthirst: [HG.bloodlust]</b></font>\
@@ -225,18 +225,18 @@
 /datum/status_effect/wish_granters_gift //Fully revives after ten seconds.
 	id = "wish_granters_gift"
 	duration = 50
-	alert_type = /obj/screen/alert/status_effect/wish_granters_gift
+	alert_type = /atom/movable/screen/alert/status_effect/wish_granters_gift
 
 /datum/status_effect/wish_granters_gift/on_apply()
-	to_chat(owner, "<span class='notice'>Death is not your end! The Wish Granter's energy suffuses you, and you begin to rise...</span>")
+	to_chat(owner, span_notice("Death is not your end! The Wish Granter's energy suffuses you, and you begin to rise..."))
 	return ..()
 
 /datum/status_effect/wish_granters_gift/on_remove()
 	. = ..()
 	owner.revive(full_heal = TRUE, admin_revive = TRUE)
-	owner.visible_message("<span class='warning'>[owner] appears to wake from the dead, having healed all wounds!</span>", "<span class='notice'>You have regenerated.</span>")
+	owner.visible_message(span_warning("[owner] appears to wake from the dead, having healed all wounds!"), span_notice("You have regenerated."))
 
-/obj/screen/alert/status_effect/wish_granters_gift
+/atom/movable/screen/alert/status_effect/wish_granters_gift
 	name = "Wish Granter's Immortality"
 	desc = "You are being resurrected!"
 	icon_state = "wish_granter"
@@ -256,7 +256,7 @@
 		if(isliving(B.current))
 			var/mob/living/M = B.current
 			SEND_SOUND(M, sound('sound/hallucinations/veryfar_noise.ogg'))
-			to_chat(M, "<span class='cultlarge'>The Cult's Master, [owner], has fallen in \the [A]!</span>")
+			to_chat(M, span_cult_large("The Cult's Master, [owner], has fallen in \the [A]!"))
 
 /datum/status_effect/cult_master/tick()
 	if(owner.stat != DEAD && !alive)
@@ -274,7 +274,7 @@
 	id = "blooddrunk"
 	duration = 10
 	tick_interval = 0
-	alert_type = /obj/screen/alert/status_effect/blooddrunk
+	alert_type = /atom/movable/screen/alert/status_effect/blooddrunk
 	var/last_health = 0
 	var/last_bruteloss = 0
 	var/last_fireloss = 0
@@ -283,7 +283,7 @@
 	var/last_cloneloss = 0
 	var/last_staminaloss = 0
 
-/obj/screen/alert/status_effect/blooddrunk
+/atom/movable/screen/alert/status_effect/blooddrunk
 	name = "Blood-Drunk"
 	desc = "You are drunk on blood! Your pulse thunders in your ears! Nothing can harm you!" //not true, and the item description mentions its actual effect
 	icon_state = "blooddrunk"
@@ -403,7 +403,7 @@
 
 
 /datum/status_effect/sword_spin/on_apply()
-	owner.visible_message("<span class='danger'>[owner] begins swinging the sword with inhuman strength!</span>")
+	owner.visible_message(span_danger("[owner] begins swinging the sword with inhuman strength!"))
 	var/oldcolor = owner.color
 	owner.color = "#ff0000"
 	owner.add_stun_absorption("bloody bastard sword", duration, 2, "doesn't even flinch as the sword's power courses through them!", "You shrug off the stun!", " glowing with a blazing red aura!")
@@ -422,7 +422,7 @@
 
 /datum/status_effect/sword_spin/on_remove()
 	. = ..()
-	owner.visible_message("<span class='warning'>[owner]'s inhuman strength dissipates and the sword's runes grow cold!</span>")
+	owner.visible_message(span_warning("[owner]'s inhuman strength dissipates and the sword's runes grow cold!"))
 
 //Used by changelings to rapidly heal
 //Heals 10 brute and oxygen damage every second, and 5 fire
@@ -430,7 +430,7 @@
 /datum/status_effect/fleshmend
 	id = "fleshmend"
 	duration = 100
-	alert_type = /obj/screen/alert/status_effect/fleshmend
+	alert_type = /atom/movable/screen/alert/status_effect/fleshmend
 
 /datum/status_effect/fleshmend/tick()
 	if(owner.on_fire)
@@ -446,7 +446,7 @@
 	var/mob/living/carbon/C = owner
 	QDEL_LIST(C.all_scars)
 
-/obj/screen/alert/status_effect/fleshmend
+/atom/movable/screen/alert/status_effect/fleshmend
 	name = "Fleshmend"
 	desc = "Our wounds are rapidly healing. <i>This effect is prevented if we are on fire.</i>"
 	icon_state = "fleshmend"
@@ -471,7 +471,7 @@
 	status_type = STATUS_EFFECT_UNIQUE
 	duration = -1
 	tick_interval = 25
-	examine_text = "<span class='notice'>They seem to have an aura of healing and helpfulness about them.</span>"
+	examine_text = span_notice("They seem to have an aura of healing and helpfulness about them.")
 	alert_type = null
 	var/hand
 	var/deathTick = 0
@@ -521,11 +521,11 @@
 						var/obj/item/bodypart/L = itemUser.newBodyPart(BODY_ZONE_L_ARM, FALSE, FALSE)
 						L.attach_limb(itemUser)
 						itemUser.put_in_hand(newRod, hand, forced = TRUE)
-					to_chat(itemUser, "<span class='notice'>Your arm suddenly grows back with the Rod of Asclepius still attached!</span>")
+					to_chat(itemUser, span_notice("Your arm suddenly grows back with the Rod of Asclepius still attached!"))
 				else
 					//Otherwise get rid of whatever else is in their hand and return the rod to said hand
 					itemUser.put_in_hand(newRod, hand, forced = TRUE)
-					to_chat(itemUser, "<span class='notice'>The Rod of Asclepius suddenly grows back out of your arm!</span>")
+					to_chat(itemUser, span_notice("The Rod of Asclepius suddenly grows back out of your arm!"))
 			//Because a servant of medicines stops at nothing to help others, lets keep them on their toes and give them an additional boost.
 			if(itemUser.health < itemUser.maxHealth)
 				new /obj/effect/temp_visual/heal(get_turf(itemUser), "#375637")
@@ -555,7 +555,7 @@
 				var/mob/living/simple_animal/SM = L
 				SM.adjustHealth(-3.5, forced = TRUE)
 
-/obj/screen/alert/status_effect/regenerative_core
+/atom/movable/screen/alert/status_effect/regenerative_core
 	name = "Reinforcing Tendrils"
 	desc = "You can move faster than your broken body could normally handle!"
 	icon_state = "regenerative_core"
@@ -565,7 +565,7 @@
 	id = "Regenerative Core"
 	duration = 1 MINUTES
 	status_type = STATUS_EFFECT_REPLACE
-	alert_type = /obj/screen/alert/status_effect/regenerative_core
+	alert_type = /atom/movable/screen/alert/status_effect/regenerative_core
 
 /datum/status_effect/regenerative_core/on_apply()
 	. = ..()
@@ -586,9 +586,9 @@
 	id = "Anatomic Panacea"
 	duration = 100
 	tick_interval = 10
-	alert_type = /obj/screen/alert/status_effect/panacea
+	alert_type = /atom/movable/screen/alert/status_effect/panacea
 
-/obj/screen/alert/status_effect/panacea
+/atom/movable/screen/alert/status_effect/panacea
 	name = "Panacea"
 	desc = "We purge the impurities from our body."
 	icon_state = "panacea"
@@ -644,14 +644,14 @@
 /datum/status_effect/ghoulheal //the actual healing is handled in ghoul.dm
 	id = "ghoulheal"
 	duration = -1
-	alert_type = /obj/screen/alert/status_effect/ghoulheal
-	examine_text = "<span class='notice'>They are regenerating slowly, wounds alight with a green glow.</span>"
+	alert_type = /atom/movable/screen/alert/status_effect/ghoulheal
+	examine_text = span_notice("They are regenerating slowly, wounds alight with a green glow.")
 
 /datum/status_effect/ghoulheal/tick()
 	if(owner.health != owner.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(src), "#0f9600")
 
-/obj/screen/alert/status_effect/ghoulheal
+/atom/movable/screen/alert/status_effect/ghoulheal
 	name = "Radiation Healing"
 	desc = "You are regenerating from radiation. The more radiation you accumulate, the faster you will heal, and the slower you will move. Don't accumulate too much."
 	icon_state = "fleshmend"

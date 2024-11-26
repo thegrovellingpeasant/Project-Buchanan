@@ -10,7 +10,7 @@
 	var/check_flags = 0
 	var/required_mobility_flags = MOBILITY_USE
 	var/processing = FALSE
-	var/obj/screen/movable/action_button/button = null
+	var/atom/movable/screen/movable/action_button/button = null
 	var/buttontooltipstyle = ""
 	var/transparent_when_unavailable = TRUE
 	var/use_target_appearance = FALSE
@@ -34,7 +34,7 @@
 
 /datum/action/proc/link_to(Target)
 	target = Target
-	RegisterSignal(Target, COMSIG_ATOM_UPDATED_ICON, .proc/OnUpdatedIcon)
+	RegisterSignal(Target, COMSIG_ATOM_UPDATED_ICON, PROC_REF(OnUpdatedIcon))
 
 /datum/action/Destroy()
 	if(owner)
@@ -155,7 +155,7 @@
 		button.color = rgb(255,255,255,255)
 		return 1
 
-/datum/action/proc/ApplyIcon(obj/screen/movable/action_button/current_button, force = FALSE)
+/datum/action/proc/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
 	if(icon_icon && button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
 		current_button.cut_overlays()
 		current_button.add_overlay(mutable_appearance(icon_icon, button_icon_state))
@@ -447,7 +447,7 @@
 			owner.research_scanner++
 		else
 			owner.research_scanner--
-		to_chat(owner, "<span class='notice'>[target] research scanner has been [active ? "activated" : "deactivated"].</span>")
+		to_chat(owner, span_notice("[target] research scanner has been [active ? "activated" : "deactivated"]."))
 		return 1
 
 /datum/action/item_action/toggle_research_scanner/Remove(mob/M)
@@ -513,7 +513,7 @@
 		owner.put_in_hands(I)
 		I.attack_self(owner)
 	else
-		to_chat(owner, "<span class='cultitalic'>Your hands are full!</span>")
+		to_chat(owner, span_cult_italic("Your hands are full!"))
 
 //MGS Box
 /datum/action/item_action/agent_box
@@ -598,7 +598,7 @@
 	if (!istype(H))
 		return
 	if (H.stealthcooldown > world.time)
-		to_chat(owner,"<span class='warning'>The hijack implant's stealth mode toggle is still rebooting!</span>")
+		to_chat(owner,span_warning("The hijack implant's stealth mode toggle is still rebooting!"))
 		return
 	H.stealthmode = !H.stealthmode
 	for (var/area/area in H.imp_in.siliconaccessareas)
@@ -608,7 +608,7 @@
 			apc.update_icon()
 	H.stealthcooldown = world.time + 15 SECONDS
 	H.toggle_eyes()
-	to_chat(owner,"<span class='notice'>You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"].</span>")
+	to_chat(owner,span_notice("You toggle the hijack implant's stealthmode [H.stealthmode ? "on" : "off"]."))
 
 /datum/action/item_action/flash
 	name = "Flash"
@@ -792,7 +792,7 @@
 		I.override = TRUE
 		I.pixel_x -= owner.pixel_x
 		I.pixel_y -= owner.pixel_y
-		owner.add_alt_appearance(/datum/atom_hud/alternate_appearance/basic, "smallsprite", I)
+		owner.add_alt_appearance(/datum/atom_hud/alternate_appearance/basic, "smallsprite", I, AA_TARGET_SEE_APPEARANCE | AA_MATCH_TARGET_OVERLAYS)
 		small = TRUE
 	else
 		owner.remove_alt_appearance("smallsprite")
@@ -804,7 +804,7 @@
 	icon_icon = 'icons/mob/actions/actions_items.dmi'
 	button_icon_state = "storage_gather_switch"
 
-/datum/action/item_action/storage_gather_mode/ApplyIcon(obj/screen/movable/action_button/current_button)
+/datum/action/item_action/storage_gather_mode/ApplyIcon(atom/movable/screen/movable/action_button/current_button)
 	. = ..()
 	var/old_layer = target.layer
 	var/old_plane = target.plane

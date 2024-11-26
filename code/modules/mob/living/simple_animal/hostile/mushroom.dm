@@ -44,9 +44,9 @@
 /mob/living/simple_animal/hostile/mushroom/examine(mob/user)
 	. = ..()
 	if(health >= maxHealth)
-		. += "<span class='info'>It looks healthy.</span>"
+		. += span_info("It looks healthy.")
 	else
-		. += "<span class='info'>It looks like it's been roughed up.</span>"
+		. += span_info("It looks like it's been roughed up.")
 
 /mob/living/simple_animal/hostile/mushroom/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
@@ -89,7 +89,7 @@
 /mob/living/simple_animal/hostile/mushroom/adjustHealth(amount, updating_health = TRUE, forced = FALSE) //Possibility to flee from a fight just to make it more visually interesting
 	if(!retreat_distance && prob(33))
 		retreat_distance = 5
-		addtimer(CALLBACK(src, .proc/stop_retreat), 30)
+		addtimer(CALLBACK(src, PROC_REF(stop_retreat)), 30)
 	. = ..()
 
 /mob/living/simple_animal/hostile/mushroom/proc/stop_retreat()
@@ -102,7 +102,7 @@
 			M.visible_message("[M] chews a bit on [src].")
 			faint_ticker++
 			return TRUE
-		M.visible_message("<span class='warning'>[M] devours [src]!</span>")
+		M.visible_message(span_warning("[M] devours [src]!"))
 		var/level_gain = (powerlevel - M.powerlevel)
 		if(level_gain >= -1 && !bruised && !M.ckey)//Player shrooms can't level up to become robust gods.
 			if(level_gain < 1)//So we still gain a level if two mushrooms were the same level
@@ -138,7 +138,7 @@
 	revive(full_heal = 1)
 	UpdateMushroomCap()
 	recovery_cooldown = 1
-	addtimer(CALLBACK(src, .proc/recovery_recharge), 300)
+	addtimer(CALLBACK(src, PROC_REF(recovery_recharge)), 300)
 
 /mob/living/simple_animal/hostile/mushroom/proc/recovery_recharge()
 	recovery_cooldown = 0
@@ -164,7 +164,7 @@
 			Recover()
 			qdel(I)
 		else
-			to_chat(user, "<span class='warning'>[src] won't eat it!</span>")
+			to_chat(user, span_warning("[src] won't eat it!"))
 		return
 	if(I.force)
 		Bruise()

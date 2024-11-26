@@ -7,7 +7,7 @@
 	max_integrity = 40
 	construction_value = 5
 	layer = WALL_OBJ_LAYER
-	break_message = "<span class='warning'>The reflectors's fragile shield shatters into pieces!</span>"
+	break_message = span_warning("The reflectors's fragile shield shatters into pieces!")
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	light_color = "#DAAA18"
 	var/list/allowed_projectile_typecache = list(
@@ -22,7 +22,7 @@
 
 /obj/structure/destructible/clockwork/reflector/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, .proc/can_be_rotated),CALLBACK(src,.proc/after_rotation))
+	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, PROC_REF(can_be_rotated)),CALLBACK(src, PROC_REF(after_rotation)))
 
 /obj/structure/destructible/clockwork/reflector/bullet_act(obj/item/projectile/P)
 	if(!anchored || !allowed_projectile_typecache[P.type] || !(P.dir in GLOB.cardinals))
@@ -61,7 +61,7 @@
 
 /obj/structure/destructible/clockwork/reflector/proc/can_be_rotated(mob/user,rotation_type)
 	if(anchored)
-		to_chat(user, "<span class='warning'>[src] cannot be rotated while it is fastened to the floor!</span>")
+		to_chat(user, span_warning("[src] cannot be rotated while it is fastened to the floor!"))
 		return FALSE
 
 	return TRUE
@@ -81,6 +81,6 @@
 		return ..()
 
 	anchored = !anchored
-	to_chat(user, "<span class='notice'>You [anchored ? "secure" : "unsecure"] \the [src].</span>")
+	to_chat(user, span_notice("You [anchored ? "secure" : "unsecure"] \the [src]."))
 	I.play_tool_sound(src)
 	return TRUE

@@ -389,14 +389,14 @@ Contains:
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/Initialize()
 	. = ..()
-	AddComponent(/datum/component/anti_magic, FALSE, FALSE, TRUE, ITEM_SLOT_HEAD, charges, TRUE, null, CALLBACK(src, .proc/anti_magic_gone))
+	AddComponent(/datum/component/anti_magic, FALSE, FALSE, TRUE, ITEM_SLOT_HEAD, charges, TRUE, null, CALLBACK(src, PROC_REF(anti_magic_gone)))
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert/paranormal/proc/anti_magic_gone()
 	var/mob/M = loc
 	if(!istype(M))
 		return
 	do_sparks(2, TRUE, M)
-	M.show_message("<span class='warning'>\The [src] sparks and fizzles as its psychic wards wane away at last...</span>", MSG_VISUAL)
+	M.show_message(span_warning("\The [src] sparks and fizzles as its psychic wards wane away at last..."), MSG_VISUAL)
 
 /obj/item/clothing/suit/space/hardsuit/ert/paranormal
 	name = "paranormal response team suit"
@@ -410,14 +410,14 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert/paranormal/Initialize()
 	. = ..()
-	AddComponent(/datum/component/anti_magic, TRUE, TRUE, FALSE, ITEM_SLOT_OCLOTHING, charges, TRUE, null, CALLBACK(src, .proc/anti_magic_gone))
+	AddComponent(/datum/component/anti_magic, TRUE, TRUE, FALSE, ITEM_SLOT_OCLOTHING, charges, TRUE, null, CALLBACK(src, PROC_REF(anti_magic_gone)))
 
 /obj/item/clothing/suit/space/hardsuit/ert/paranormal/proc/anti_magic_gone()
 	var/mob/M = loc
 	if(!istype(M))
 		return
 	do_sparks(2, TRUE, M)
-	M.show_message("<span class='warning'>\The [src] sparks and fizzles as its anti magic wards wane away at last...</span>", MSG_VISUAL)
+	M.show_message(span_warning("\The [src] sparks and fizzles as its anti magic wards wane away at last..."), MSG_VISUAL)
 
 /obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor
 	name = "inquisitor's hardsuit"
@@ -488,7 +488,7 @@ Contains:
 /obj/item/clothing/suit/space/fragile/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	. = ..()
 	if(!torn && prob(50) && damage >= 5)
-		to_chat(owner, "<span class='warning'>[src] tears from the damage, breaking the air-tight seal!</span>")
+		to_chat(owner, span_warning("[src] tears from the damage, breaking the air-tight seal!"))
 		clothing_flags &= ~STOPSPRESSUREDAMAGE
 		name = "torn [src]."
 		desc = "A bulky suit meant to protect the user during emergency situations, at least until someone tore a hole in the suit."

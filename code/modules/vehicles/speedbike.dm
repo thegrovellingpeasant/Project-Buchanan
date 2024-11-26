@@ -44,7 +44,7 @@
 	icon = 'icons/obj/car.dmi'
 	icon_state = "speedwagon"
 	layer = LYING_MOB_LAYER
-	var/static/mutable_appearance/overlay = mutable_appearance(icon, "speedwagon_cover", ABOVE_MOB_LAYER)
+	var/static/mutable_appearance/overlay = mutable_appearance('icons/obj/car.dmi', "speedwagon_cover", ABOVE_MOB_LAYER)
 	max_buckled_mobs = 4
 	var/crash_all = FALSE //CHAOS
 	pixel_y = -48
@@ -72,7 +72,7 @@
 		var/atom/throw_target = get_edge_target_turf(A, dir)
 		if(crash_all)
 			A.throw_at(throw_target, 4, 3)
-			visible_message("<span class='danger'>[src] crashes into [A]!</span>")
+			visible_message(span_danger("[src] crashes into [A]!"))
 			playsound(src, 'sound/effects/bang.ogg', 50, 1)
 		if(ishuman(A))
 			var/mob/living/carbon/human/H = A
@@ -81,7 +81,7 @@
 			H.apply_damage(rand(20,35), BRUTE)
 			if(!crash_all)
 				H.throw_at(throw_target, 4, 3)
-				visible_message("<span class='danger'>[src] crashes into [H]!</span>")
+				visible_message(span_danger("[src] crashes into [H]!"))
 				playsound(src, 'sound/effects/bang.ogg', 50, 1)
 
 /obj/vehicle/ridden/space/speedwagon/Moved()

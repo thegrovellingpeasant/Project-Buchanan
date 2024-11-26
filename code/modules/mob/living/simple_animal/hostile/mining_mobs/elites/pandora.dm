@@ -50,25 +50,25 @@
 /datum/action/innate/elite_attack/singular_shot
 	name = "Singular Shot"
 	button_icon_state = "singular_shot"
-	chosen_message = "<span class='boldwarning'>You are now creating a single linear magic square.</span>"
+	chosen_message = span_boldwarning("You are now creating a single linear magic square.")
 	chosen_attack_num = SINGULAR_SHOT
 
 /datum/action/innate/elite_attack/magic_box
 	name = "Magic Box"
 	button_icon_state = "magic_box"
-	chosen_message = "<span class='boldwarning'>You are now attacking with a box of magic squares.</span>"
+	chosen_message = span_boldwarning("You are now attacking with a box of magic squares.")
 	chosen_attack_num = MAGIC_BOX
 
 /datum/action/innate/elite_attack/pandora_teleport
 	name = "Line Teleport"
 	button_icon_state = "pandora_teleport"
-	chosen_message = "<span class='boldwarning'>You will now teleport to your target.</span>"
+	chosen_message = span_boldwarning("You will now teleport to your target.")
 	chosen_attack_num = PANDORA_TELEPORT
 
 /datum/action/innate/elite_attack/aoe_squares
 	name = "AOE Blast"
 	button_icon_state = "aoe_squares"
-	chosen_message = "<span class='boldwarning'>Your attacks will spawn an AOE blast at your target location.</span>"
+	chosen_message = span_boldwarning("Your attacks will spawn an AOE blast at your target location.")
 	chosen_attack_num = AOE_SQUARES
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/OpenFire()
@@ -118,7 +118,7 @@
 	new /obj/effect/temp_visual/hierophant/blast/pandora(T, src, null, null, list(owner))
 	T = get_step(T, angleused)
 	procsleft = procsleft - 1
-	addtimer(CALLBACK(src, .proc/singular_shot_line, procsleft, angleused, T), 2)
+	addtimer(CALLBACK(src, PROC_REF(singular_shot_line), procsleft, angleused, T), 2)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/magic_box(target)
 	ranged_cooldown = world.time + cooldown_time
@@ -134,7 +134,7 @@
 	new /obj/effect/temp_visual/hierophant/telegraph(T, src)
 	new /obj/effect/temp_visual/hierophant/telegraph(source, src)
 	playsound(source,'sound/machines/airlockopen.ogg', 200, 1)
-	addtimer(CALLBACK(src, .proc/pandora_teleport_2, T, source), 2)
+	addtimer(CALLBACK(src, PROC_REF(pandora_teleport_2), T, source), 2)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport_2(turf/T, turf/source)
 	new /obj/effect/temp_visual/hierophant/telegraph/teleport(T, src)
@@ -144,22 +144,22 @@
 	for(var/t in RANGE_TURFS(1, source))
 		new /obj/effect/temp_visual/hierophant/blast/pandora(t, src, null, null, list(owner))
 	animate(src, alpha = 0, time = 2, easing = EASE_OUT) //fade out
-	visible_message("<span class='hierophant_warning'>[src] fades out!</span>")
+	visible_message(span_hierophant_warning("[src] fades out!"))
 	density = FALSE
-	addtimer(CALLBACK(src, .proc/pandora_teleport_3, T), 2)
+	addtimer(CALLBACK(src, PROC_REF(pandora_teleport_3), T), 2)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/pandora_teleport_3(turf/T)
 	forceMove(T)
 	animate(src, alpha = 255, time = 2, easing = EASE_IN) //fade IN
 	density = TRUE
-	visible_message("<span class='hierophant_warning'>[src] fades in!</span>")
+	visible_message(span_hierophant_warning("[src] fades in!"))
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/aoe_squares(target)
 	ranged_cooldown = world.time + cooldown_time
 	var/turf/T = get_turf(target)
 	new /obj/effect/temp_visual/hierophant/blast/pandora(T, src, null, null, list(owner))
 	var/max_size = 2
-	addtimer(CALLBACK(src, .proc/aoe_squares_2, T, 0, max_size), 2)
+	addtimer(CALLBACK(src, PROC_REF(aoe_squares_2), T, 0, max_size), 2)
 
 /mob/living/simple_animal/hostile/asteroid/elite/pandora/proc/aoe_squares_2(turf/T, ring, max_size)
 	if(ring > max_size)
@@ -167,7 +167,7 @@
 	for(var/t in spiral_range_turfs(ring, T))
 		if(get_dist(t, T) == ring)
 			new /obj/effect/temp_visual/hierophant/blast/pandora(t, src, null, null, list(owner))
-	addtimer(CALLBACK(src, .proc/aoe_squares_2, T, (ring + 1), max_size), 2)
+	addtimer(CALLBACK(src, PROC_REF(aoe_squares_2), T, (ring + 1), max_size), 2)
 
 //The specific version of hiero's squares pandora uses
 /obj/effect/temp_visual/hierophant/blast/pandora

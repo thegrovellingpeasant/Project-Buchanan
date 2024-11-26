@@ -52,7 +52,11 @@
 
 
 /turf/vv_edit_var(var_name, var_value)
-	var/static/list/banned_edits = list("x", "y", "z")
+	var/static/list/banned_edits = list(
+		NAMEOF_STATIC(src, x),
+		NAMEOF_STATIC(src, y),
+		NAMEOF_STATIC(src, z),
+	)
 	if(var_name in banned_edits)
 		return FALSE
 	switch(var_name)
@@ -196,12 +200,12 @@
 		if(flags & FALL_STOP_INTERCEPTING)
 			break
 	if(prev_turf && !(flags & FALL_NO_MESSAGE))
-		prev_turf.visible_message("<span class='danger'>[mov_name] falls through [prev_turf]!</span>")
+		prev_turf.visible_message(span_danger("[mov_name] falls through [prev_turf]!"))
 	if(flags & FALL_INTERCEPTED)
 		return
 	if(zFall(A, ++levels))
 		return FALSE
-	A.visible_message("<span class='danger'>[A] crashes into [src]!</span>")
+	A.visible_message(span_danger("[A] crashes into [src]!"))
 	A.onZImpact(src, levels)
 	return TRUE
 
@@ -402,13 +406,13 @@
 	if(.)
 		return
 	if(length(src_object.contents()))
-		to_chat(user, "<span class='notice'>You start dumping out the contents...</span>")
+		to_chat(user, span_notice("You start dumping out the contents..."))
 		if(!do_after(user,20,target=src_object.parent))
 			return FALSE
 
 	var/list/things = src_object.contents()
 	var/datum/progressbar/progress = new(user, things.len, src)
-	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(src_object, /datum/component/storage.proc/mass_remove_from_storage, src, things, progress)))
+	while (do_after(user, 10, TRUE, src, FALSE, CALLBACK(src_object, TYPE_PROC_REF(/datum/component/storage, mass_remove_from_storage), src, things, progress)))
 		stoplag(1)
 	qdel(progress)
 
