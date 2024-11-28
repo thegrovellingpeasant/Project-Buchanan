@@ -117,7 +117,7 @@
 	name = "Yellow Orb"
 	desc = "You feel faster just looking at it."
 	color = "#FFFF00"
-	duration = 300
+	duration = 30 SECONDS
 
 /obj/effect/mine/pickup/speed/mineEffect(mob/living/carbon/victim)
 	if(!victim.client || !istype(victim))

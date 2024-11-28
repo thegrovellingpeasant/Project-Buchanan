@@ -93,6 +93,13 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 		if(old == ELECTROCHROMATIC_DIMMED)
 			electrochromatic_dim()
 
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
+	)
+
+	if (flags_1 & ON_BORDER_1)
+		AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/structure/window/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/simple_rotation,ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS ,null,CALLBACK(src, PROC_REF(can_be_rotated)),CALLBACK(src, PROC_REF(after_rotation)))
@@ -151,12 +158,23 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 		return FALSE
 	return 1
 
-/obj/structure/window/CheckExit(atom/movable/O, turf/target)
-	if(istype(O) && (O.pass_flags & PASSGLASS))
-		return 1
-	if(get_dir(O.loc, target) == dir)
-		return 0
-	return 1
+/obj/structure/window/proc/on_exit(datum/source, atom/movable/leaving, direction)
+	SIGNAL_HANDLER
+	if(leaving.movement_type & UNSTOPPABLE)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if (leaving.pass_flags & pass_flags_self)
+		return
+
+	if (fulltile)
+		return
+
+	if(direction == dir && density)
+		leaving.Bump(src)
+		return COMPONENT_ATOM_BLOCK_EXIT
 
 /obj/structure/window/attack_tk(mob/user)
 	user.DelayNextAction(CLICK_CD_MELEE)

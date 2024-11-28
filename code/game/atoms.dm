@@ -330,9 +330,6 @@
 /atom/proc/AllowDrop()
 	return FALSE
 
-/atom/proc/CheckExit()
-	return TRUE
-
 /atom/proc/HasProximity(atom/movable/AM as mob|obj)
 	return
 
