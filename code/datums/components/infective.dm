@@ -15,10 +15,15 @@
 
 	if(!ismovable(parent))
 		return COMPONENT_INCOMPATIBLE
+
+	var/static/list/disease_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(try_infect_crossed),
+	)
+	AddComponent(/datum/component/connect_loc_behalf, parent, disease_connections)
+
 	RegisterSignal(parent, COMSIG_COMPONENT_CLEAN_ACT, PROC_REF(clean))
 	RegisterSignal(parent, COMSIG_MOVABLE_BUCKLE, PROC_REF(try_infect_buckle))
 	RegisterSignal(parent, COMSIG_MOVABLE_BUMP, PROC_REF(try_infect_collide))
-	RegisterSignal(parent, COMSIG_MOVABLE_CROSSED, PROC_REF(try_infect_crossed))
 	RegisterSignal(parent, COMSIG_MOVABLE_IMPACT_ZONE, PROC_REF(try_infect_impact_zone))
 	if(isitem(parent))
 		RegisterSignal(parent, COMSIG_ITEM_ATTACK_ZONE, PROC_REF(try_infect_attack_zone))

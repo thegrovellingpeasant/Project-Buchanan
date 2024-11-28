@@ -109,11 +109,12 @@
 		stair_ascend(AM)
 		return FALSE
 	return ..()
-
-/*obj/structure/stairs/Cross(atom/movable/AM)
+/* // seeing if removing this will let buggies work, the cost is that stairs will be walkable from all directions
+/obj/structure/stairs/Cross(atom/movable/AM)
 	if(isTerminator() && (get_dir(src, AM) == dir))
 		return FALSE
-	return ..()*/ // seeing if removing this will let buggies work, the cost is that stairs will be walkable from all directions
+	return ..()
+*/
 
 /obj/structure/stairs/update_icon_state()
 	if(isTerminator())

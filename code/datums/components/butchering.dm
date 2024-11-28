@@ -127,9 +127,12 @@
 	. = ..()
 	if(. == COMPONENT_INCOMPATIBLE)
 		return
-	RegisterSignal(parent, COMSIG_MOVABLE_CROSSED, PROC_REF(onCrossed))
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddComponent(/datum/component/connect_loc_behalf, parent, loc_connections)
 
-/datum/component/butchering/recycler/proc/onCrossed(datum/source, mob/living/L)
+/datum/component/butchering/recycler/proc/on_entered(datum/source, mob/living/L)
 	if(!istype(L))
 		return
 	var/obj/machinery/recycler/eater = parent

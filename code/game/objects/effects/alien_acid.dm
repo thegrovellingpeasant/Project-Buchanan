@@ -24,6 +24,8 @@
 	pixel_y = target.pixel_y + rand(-4,4)
 
 	START_PROCESSING(SSobj, src)
+	if(isturf(target))
+		RegisterSignal(target, COMSIG_ATOM_ENTERED, PROC_REF(on_entered))
 
 
 /obj/effect/acid/Destroy()
@@ -52,17 +54,26 @@
 		qdel(src)
 		return 0
 
-/obj/effect/acid/Crossed(AM as mob|obj)
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(L.movement_type & FLYING)
-			return
-		if(L.m_intent != MOVE_INTENT_WALK && prob(40))
-			var/acid_used = min(acid_level*0.05, 20)
-			if(L.acid_act(10, acid_used, "feet"))
-				acid_level = max(0, acid_level - acid_used*10)
-				playsound(L, 'sound/weapons/sear.ogg', 50, 1)
-				to_chat(L, span_userdanger("[src] burns you!"))
+/// Handles searing the feet of whoever walks over this without protection. Only active if the parent is a turf.
+/obj/effect/acid/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(!isliving(arrived))
+		return
+	var/mob/living/crosser = arrived
+	if(crosser.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
+		return
+	if(crosser.m_intent == MOVE_INTENT_WALK)
+		return
+	if(prob(60))
+		return
+
+	var/acid_used = min(acid_level * 0.05, 20)
+	if(!crosser.acid_act(10, acid_used, FEET))
+		return
+	playsound(crosser, 'sound/weapons/sear.ogg', 50, TRUE)
+	to_chat(crosser, span_userdanger("The acid on the [arrived] burns you!"))
+	acid_level = max(0, acid_level - acid_used*10)
 
 //xenomorph corrosive acid
 /obj/effect/acid/alien

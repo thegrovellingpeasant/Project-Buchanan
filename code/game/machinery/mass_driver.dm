@@ -39,13 +39,22 @@
 		return
 	drive()
 
+#define DRIVE_DELAY (1 SECONDS)
+
 /obj/machinery/mass_driver/pressure_plate
 	name = "pressure plated mass driver"
-	var/drive_delay = 10
 
-/obj/machinery/mass_driver/pressure_plate/Crossed(atom/movable/O)
+/obj/machinery/mass_driver/pressure_plate/Initialize(mapload)
 	. = ..()
-	if(isliving(O))
-		var/mob/living/L = O
-		to_chat(L, span_warning("You feel something click beneath you!"))
-	addtimer(CALLBACK(src, PROC_REF(drive)), drive_delay)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+/obj/machinery/mass_driver/pressure_plate/proc/on_entered(datum/source, atom/movable/enterer, old_loc)
+	SIGNAL_HANDLER
+	if(isliving(source))
+		to_chat(source, span_warning("You feel something click beneath you!"))
+	addtimer(CALLBACK(src, PROC_REF(drive)), DRIVE_DELAY)
+
+#undef DRIVE_DELAY

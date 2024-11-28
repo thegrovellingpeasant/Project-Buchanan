@@ -635,12 +635,6 @@
 /mob/living/proc/update_damage_overlays()
 	return
 
-/mob/living/Crossed(atom/movable/AM)
-	. = ..()
-	for(var/i in get_equipped_items())
-		var/obj/item/item = i
-		SEND_SIGNAL(item, COMSIG_ITEM_WEARERCROSSED, AM)
-
 /mob/living/proc/makeTrail(turf/target_turf, turf/start, direction)
 	if(!has_gravity() || !isturf(start) || !blood_volume)
 		return

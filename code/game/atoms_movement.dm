@@ -1,5 +1,14 @@
 // File for movement procs for atom/movable
 
+/**
+ * meant for movement with zero side effects. only use for objects that are supposed to move "invisibly" (like camera mobs or ghosts)
+ * if you want something to move onto a tile with a beartrap or recycler or tripmine or mouse without that object knowing about it at all, use this
+ * most of the time you want forceMove()
+ */
+/atom/movable/proc/abstract_move(atom/new_loc)
+	var/atom/old_loc = loc
+	loc = new_loc
+	Moved(old_loc)
 
 ////////////////////////////////////////
 // Here's where we rewrite how byond handles movement except slightly different
@@ -28,27 +37,19 @@
 	var/atom/oldloc = loc
 	var/area/oldarea = get_area(oldloc)
 	var/area/newarea = get_area(newloc)
+	move_stacks++
 	loc = newloc
 	. = TRUE
 	oldloc.Exited(src, newloc)
 	if(oldarea != newarea)
 		oldarea.Exited(src, newloc)
 
-	for(var/i in oldloc)
-		if(i == src) // Multi tile objects
-			continue
-		var/atom/movable/thing = i
-		thing.Uncrossed(src)
-
 	newloc.Entered(src, oldloc)
 	if(oldarea != newarea)
 		newarea.Entered(src, oldloc)
 
-	for(var/i in loc)
-		if(i == src) // Multi tile objects
-			continue
-		var/atom/movable/thing = i
-		thing.Crossed(src)
+	Moved(oldloc, direct)
+
 //
 ////////////////////////////////////////
 
@@ -166,7 +167,6 @@
 
 //Called after a successful Move(). By this point, we've already moved
 /atom/movable/proc/Moved(atom/OldLoc, Dir, Forced = FALSE, list/old_locs)
-	SEND_SIGNAL(src, COMSIG_MOVABLE_MOVED, OldLoc, Dir, Forced, old_locs)
 	if (!inertia_moving)
 		inertia_next_move = world.time + inertia_move_delay
 		newtonian_move(Dir)
@@ -174,41 +174,73 @@
 		update_parallax_contents()
 	for (var/datum/light_source/light as anything in light_sources) // Cycle through the light sources on this atom and tell them to update.
 		light.source_atom.update_light()
+	move_stacks--
+	if(move_stacks > 0)
+		return
+
+	SEND_SIGNAL(src, COMSIG_MOVABLE_MOVED, OldLoc, Dir, Forced)
 	return TRUE
 
-
-// Make sure you know what you're doing if you call this, this is intended to only be called by byond directly.
+// Make sure you know what you're doing if you call this
 // You probably want CanPass()
-/atom/movable/Cross(atom/movable/AM)
-	. = TRUE
-	SEND_SIGNAL(src, COMSIG_MOVABLE_CROSS, AM)
-	return CanPass(AM, get_dir(src, AM), TRUE)
-
-//oldloc = old location on atom, inserted when forceMove is called and ONLY when forceMove is called!
-/atom/movable/Crossed(atom/movable/AM, oldloc)
-	SEND_SIGNAL(src, COMSIG_MOVABLE_CROSSED, AM)
-
-/atom/movable/Uncross(atom/movable/AM, atom/newloc)
-	. = ..()
-	if(SEND_SIGNAL(src, COMSIG_MOVABLE_UNCROSS, AM) & COMPONENT_MOVABLE_BLOCK_UNCROSS)
+/atom/movable/Cross(atom/movable/crossed_atom)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_CROSS, crossed_atom) & COMPONENT_BLOCK_CROSS)
 		return FALSE
-	if(isturf(newloc) && !CheckExit(AM, newloc))
+	if(SEND_SIGNAL(crossed_atom, COMSIG_MOVABLE_CROSS_OVER, src) & COMPONENT_BLOCK_CROSS)
 		return FALSE
+	return CanPass(crossed_atom, get_dir(src, crossed_atom))
 
-/atom/movable/Uncrossed(atom/movable/AM)
-	SEND_SIGNAL(src, COMSIG_MOVABLE_UNCROSSED, AM)
+///default byond proc that is deprecated for us in lieu of signals. do not call
+/atom/movable/Crossed(atom/movable/crossed_atom, oldloc)
+	SHOULD_NOT_OVERRIDE(TRUE)
+	CRASH("atom/movable/Crossed() was called!")
 
-/atom/movable/Bump(atom/A)
-	if(!A)
+/**
+ * `Uncross()` is a default BYOND proc that is called when something is *going*
+ * to exit this atom's turf. It is prefered over `Uncrossed` when you want to
+ * deny that movement, such as in the case of border objects, objects that allow
+ * you to walk through them in any direction except the one they block
+ * (think side windows).
+ *
+ * While being seemingly harmless, most everything doesn't actually want to
+ * use this, meaning that we are wasting proc calls for every single atom
+ * on a turf, every single time something exits it, when basically nothing
+ * cares.
+ *
+ * This overhead caused real problems on Sybil round #159709, where lag
+ * attributed to Uncross was so bad that the entire master controller
+ * collapsed and people made Among Us lobbies in OOC.
+ *
+ * If you want to replicate the old `Uncross()` behavior, the most apt
+ * replacement is [`/datum/element/connect_loc`] while hooking onto
+ * [`COMSIG_ATOM_EXIT`].
+ */
+/atom/movable/Uncross()
+	SHOULD_NOT_OVERRIDE(TRUE)
+	CRASH("Uncross() should not be being called, please read the doc-comment for it for why.")
+
+/**
+ * default byond proc that is normally called on everything inside the previous turf
+ * a movable was in after moving to its current turf
+ * this is wasteful since the vast majority of objects do not use Uncrossed
+ * use connect_loc to register to COMSIG_ATOM_EXITED instead
+ */
+/atom/movable/Uncrossed(atom/movable/uncrossed_atom)
+	SHOULD_NOT_OVERRIDE(TRUE)
+	CRASH("/atom/movable/Uncrossed() was called")
+
+/atom/movable/Bump(atom/bumped_atom)
+	if(!bumped_atom)
 		CRASH("Bump was called with no argument.")
-	SEND_SIGNAL(src, COMSIG_MOVABLE_BUMP, A)
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_BUMP, bumped_atom) & COMPONENT_INTERCEPT_BUMPED)
+		return
 	. = ..()
 	if(!QDELETED(throwing))
-		throwing.hit_atom(A)
+		throwing.finalize(hit = TRUE, target = bumped_atom)
 		. = TRUE
-		if(QDELETED(A))
+		if(QDELETED(bumped_atom))
 			return
-	A.Bumped(src)
+	bumped_atom.Bumped(src)
 
 /atom/movable/proc/onTransitZ(old_z,new_z)
 	SEND_SIGNAL(src, COMSIG_MOVABLE_Z_CHANGED, old_z, new_z)
@@ -233,6 +265,7 @@
 
 /atom/movable/proc/doMove(atom/destination)
 	. = FALSE
+	move_stacks++
 	if(destination)
 		if(pulledby)
 			pulledby.stop_pulling()
@@ -244,16 +277,14 @@
 		var/area/old_area = get_area(oldloc)
 		var/area/destarea = get_area(destination)
 
-		loc = destination
 		moving_diagonally = 0
+		loc = destination
 
 		if(!same_loc)
 			if(oldloc)
 				oldloc.Exited(src, destination)
 				if(old_area && old_area != destarea)
 					old_area.Exited(src, destination)
-			for(var/atom/movable/AM in oldloc)
-				AM.Uncrossed(src)
 			var/turf/oldturf = get_turf(oldloc)
 			var/turf/destturf = get_turf(destination)
 			var/old_z = (oldturf ? oldturf.z : null)
@@ -264,19 +295,14 @@
 			if(destarea && old_area != destarea)
 				destarea.Entered(src, oldloc)
 
-			for(var/atom/movable/AM in destination)
-				if(AM == src)
-					continue
-				AM.Crossed(src, oldloc)
-
 		Moved(oldloc, NONE, TRUE, old_locs)
 		. = TRUE
 
 	//If no destination, move the atom into nullspace (don't do this unless you know what you're doing)
 	else
 		. = TRUE
+		var/atom/oldloc = loc
 		if (loc)
-			var/atom/oldloc = loc
 			var/area/old_area = get_area(oldloc)
 			oldloc.Exited(src, null)
 			if(old_area)
