@@ -49,7 +49,7 @@
 		/obj/item/reagent_containers/pill,
 		/obj/item/stack/f13Cash))
 
-/obj/item/storage/wallet/Exited(atom/movable/AM)
+/obj/item/storage/wallet/Exited(atom/movable/gone, direction)
 	. = ..()
 	refreshID()
 
@@ -64,7 +64,7 @@
 		combined_access |= I.access
 	update_icon()
 
-/obj/item/storage/wallet/Entered(atom/movable/AM)
+/obj/item/storage/wallet/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
 	refreshID()
 

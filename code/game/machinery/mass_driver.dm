@@ -51,7 +51,7 @@
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/machinery/mass_driver/pressure_plate/proc/on_entered(datum/source, atom/movable/enterer, old_loc)
+/obj/machinery/mass_driver/pressure_plate/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	SIGNAL_HANDLER
 	if(isliving(source))
 		to_chat(source, span_warning("You feel something click beneath you!"))

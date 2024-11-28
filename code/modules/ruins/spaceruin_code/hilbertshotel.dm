@@ -240,9 +240,9 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	explosion_block = INFINITY
 	var/obj/item/hilbertshotel/parentSphere
 
-/turf/open/space/bluespace/Entered(atom/movable/A)
+/turf/open/space/bluespace/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	A.forceMove(get_turf(parentSphere))
+	arrived.forceMove(get_turf(parentSphere))
 
 /turf/closed/indestructible/hoteldoor
 	name = "Hotel Door"
@@ -339,11 +339,11 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/datum/turf_reservation/reservation
 	var/turf/storageTurf
 
-/area/hilbertshotel/Entered(atom/movable/AM)
+/area/hilbertshotel/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	if(istype(AM, /obj/item/hilbertshotel))
-		relocate(AM)
-	var/list/obj/item/hilbertshotel/hotels = AM.GetAllContents(/obj/item/hilbertshotel)
+	if(istype(arrived, /obj/item/hilbertshotel))
+		relocate(arrived)
+	var/list/obj/item/hilbertshotel/hotels = arrived.GetAllContents(/obj/item/hilbertshotel)
 	for(var/obj/item/hilbertshotel/H in hotels)
 		if(parentSphere == H)
 			relocate(H)
@@ -366,10 +366,10 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 		to_chat(M, span_danger("[H] almost implodes in upon itself, but quickly rebounds, shooting off into a random point in space!"))
 	H.forceMove(targetturf)
 
-/area/hilbertshotel/Exited(atom/movable/AM)
+/area/hilbertshotel/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(ismob(AM))
-		var/mob/M = AM
+	if(ismob(gone))
+		var/mob/M = gone
 		parentSphere?.checked_in_ckeys -= M.ckey
 		if(M.mind)
 			var/stillPopulated = FALSE
@@ -419,10 +419,10 @@ GLOBAL_VAR_INIT(hhmysteryRoomNumber, 1337)
 	var/roomNumber
 	var/obj/item/hilbertshotel/parentSphere
 
-/obj/item/abstracthotelstorage/Entered(atom/movable/AM, atom/oldLoc)
+/obj/item/abstracthotelstorage/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	if(ismob(AM))
-		var/mob/M = AM
+	if(ismob(arrived))
+		var/mob/M = arrived
 		M.mob_transforming = TRUE
 
 /obj/item/abstracthotelstorage/Exited(atom/movable/AM, atom/newLoc)

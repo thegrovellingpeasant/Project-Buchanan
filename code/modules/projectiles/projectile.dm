@@ -777,7 +777,7 @@
 		if(can_hit_target(L, permutated, (AM == original)))
 			Bump(AM)
 
-/obj/item/projectile/Move(atom/newloc, dir = NONE)
+/obj/item/projectile/Move(atom/newloc, direction=0, glide_size_override = 0)
 	. = ..()
 	if(.)
 		if(temporary_unstoppable_movement)

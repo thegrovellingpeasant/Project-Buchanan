@@ -77,8 +77,8 @@
 		grill_fuel -= 10
 		grilled_item.AddComponent(/datum/component/sizzle)
 
-/obj/machinery/grill/Exited(atom/movable/AM)
-	if(AM == grilled_item)
+/obj/machinery/grill/Exited(atom/movable/gone, direction)
+	if(gone == grilled_item)
 		finish_grill()
 		grilled_item = null
 	..()

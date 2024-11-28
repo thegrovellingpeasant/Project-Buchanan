@@ -287,38 +287,22 @@
 		return CHECK_BITFIELD(mover.movement_type, UNSTOPPABLE)
 	return TRUE
 
-/turf/Exit(atom/movable/mover, atom/newloc)
-	. = ..()
-	if(!.)
-		return FALSE
-	for(var/i in contents)
-		if(QDELETED(mover))
-			break
-		if(i == mover)
-			continue
-		var/atom/movable/thing = i
-		if(!thing.Uncross(mover, newloc))
-			if(thing.flags_1 & ON_BORDER_1)
-				mover.Bump(thing)
-			if(!CHECK_BITFIELD(mover.movement_type, UNSTOPPABLE))
-				return FALSE
-
-/turf/Entered(atom/movable/AM)
+/turf/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
-	if(explosion_level && AM.ex_check(explosion_id))
-		AM.ex_act(explosion_level)
+	if(explosion_level && arrived.ex_check(explosion_id))
+		arrived.ex_act(explosion_level)
 
 
-/turf/open/Entered(atom/movable/AM)
+/turf/open/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
 	//melting
-	if(isobj(AM) && air && air.return_temperature() > T0C)
-		var/obj/O = AM
+	if(isobj(arrived) && air && air.return_temperature() > T0C)
+		var/obj/O = arrived
 		if(O.obj_flags & FROZEN)
 			O.make_unfrozen()
 
-	if(!AM.zfalling)
-		zFall(AM)
+	if(!arrived.zfalling)
+		zFall(arrived)
 
 /turf/proc/is_plasteel_floor()
 	return FALSE

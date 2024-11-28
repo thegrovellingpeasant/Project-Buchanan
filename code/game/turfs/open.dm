@@ -72,10 +72,10 @@
 	heavyfootstep = null
 	var/sound
 
-/turf/open/indestructible/sound/Entered(mob/AM)
+/turf/open/indestructible/sound/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
-	if(istype(AM))
-		playsound(src,sound,50,1)
+	if(istype(arrived))
+		playsound(arrived, sound, 50, 1)
 
 /turf/open/indestructible/cobble/side
 	icon_state = "cobble_side"
@@ -176,7 +176,7 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/indestructible/clock_spawn_room/Entered()
+/turf/open/indestructible/clock_spawn_room/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
 	START_PROCESSING(SSfastprocess, src)
 

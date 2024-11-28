@@ -521,17 +521,15 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			used_environ += amount
 
 
-/area/Entered(atom/movable/M, atom/OldLoc)
+/area/Entered(atom/movable/arrived, area/old_area)
 	set waitfor = FALSE
-	SEND_SIGNAL(src, COMSIG_AREA_ENTERED, M)
-	SEND_SIGNAL(M, COMSIG_ENTER_AREA, src) //The atom that enters the area
-	if(!isliving(M))
+	SEND_SIGNAL(src, COMSIG_AREA_ENTERED, arrived, old_area)
+	SEND_SIGNAL(arrived, COMSIG_ENTER_AREA, src) //The atom that enters the area
+	if(!isliving(arrived))
 		return
 
-	var/mob/living/L = M
-	var/turf/oldTurf = get_turf(OldLoc)
-	var/area/A = oldTurf?.loc
-	if(A && (A.has_gravity != has_gravity))
+	var/mob/living/L = arrived
+	if(old_area.has_gravity != has_gravity)
 		L.update_gravity(L.mob_has_gravity())
 
 	if(!L.ckey)
@@ -566,9 +564,9 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		return FALSE //Too big
 	beauty = totalbeauty / areasize
 
-/area/Exited(atom/movable/M)
-	SEND_SIGNAL(src, COMSIG_AREA_EXITED, M)
-	SEND_SIGNAL(M, COMSIG_EXIT_AREA, src) //The atom that exits the area
+/area/Exited(atom/movable/gone, direction)
+	SEND_SIGNAL(src, COMSIG_AREA_EXITED, gone)
+	SEND_SIGNAL(gone, COMSIG_EXIT_AREA, src) //The atom that exits the area
 
 /client/proc/ResetAmbiencePlayed()
 	played = FALSE

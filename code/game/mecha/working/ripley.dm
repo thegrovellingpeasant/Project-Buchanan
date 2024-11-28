@@ -143,9 +143,9 @@
 	var/obj/item/mecha_parts/mecha_equipment/mining_scanner/scanner = new
 	scanner.attach(src)
 
-/obj/mecha/working/ripley/Exit(atom/movable/O)
-	if(O in cargo)
-		return 0
+/obj/mecha/working/ripley/Exit(atom/movable/leaving, direction)
+	if(leaving in cargo)
+		return FALSE
 	return ..()
 
 /obj/mecha/working/ripley/Topic(href, href_list)

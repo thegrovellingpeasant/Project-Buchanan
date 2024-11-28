@@ -41,7 +41,7 @@
 	mech_sized = TRUE
 	teleport_channel = TELEPORT_CHANNEL_WORMHOLE
 
-/obj/effect/portal/Move(newloc)
+/obj/effect/portal/Move(atom/newloc, direction=0, glide_size_override = 0)
 	for(var/T in newloc)
 		if(istype(T, /obj/effect/portal))
 			return FALSE

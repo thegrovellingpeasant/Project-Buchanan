@@ -100,7 +100,7 @@
 	if(move_dir == eat_dir)
 		return TRUE
 
-/obj/machinery/recycler/proc/on_entered(datum/source, atom/movable/enterer, old_loc)
+/obj/machinery/recycler/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	SIGNAL_HANDLER
 	INVOKE_ASYNC(src, PROC_REF(eat), enterer)
 

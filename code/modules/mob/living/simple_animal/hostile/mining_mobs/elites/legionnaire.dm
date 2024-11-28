@@ -257,9 +257,9 @@
 	var/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/myowner = null
 
 
-/obj/structure/legionnaire_bonfire/Entered(atom/movable/mover, turf/target)
-	if(isliving(mover))
-		var/mob/living/L = mover
+/obj/structure/legionnaire_bonfire/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(isliving(arrived))
+		var/mob/living/L = arrived
 		L.adjust_fire_stacks(3)
 		L.IgniteMob()
 	. = ..()

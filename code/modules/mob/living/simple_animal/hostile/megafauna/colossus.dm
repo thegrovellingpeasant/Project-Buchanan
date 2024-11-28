@@ -707,10 +707,10 @@ Difficulty: Very Hard
 		holder_animal = loc
 	START_PROCESSING(SSobj, src)
 
-/obj/structure/closet/stasis/Entered(atom/A)
-	if(isliving(A) && holder_animal)
-		var/mob/living/L = A
-		L.mob_transforming = 1
+/obj/structure/closet/stasis/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(isliving(arrived) && holder_animal)
+		var/mob/living/L = arrived
+		L.mob_transforming = TRUE
 		ADD_TRAIT(L, TRAIT_MUTE, STASIS_MUTE)
 		L.status_flags |= GODMODE
 		L.mind.transfer_to(holder_animal)

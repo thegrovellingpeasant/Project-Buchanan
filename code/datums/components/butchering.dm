@@ -132,11 +132,13 @@
 	)
 	AddComponent(/datum/component/connect_loc_behalf, parent, loc_connections)
 
-/datum/component/butchering/recycler/proc/on_entered(datum/source, mob/living/L)
-	if(!istype(L))
+/datum/component/butchering/recycler/proc/on_entered(datum/source, mob/living/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(!istype(arrived))
 		return
 	var/obj/machinery/recycler/eater = parent
 	if(eater.safety_mode || (eater.stat & (BROKEN|NOPOWER))) //I'm so sorry.
 		return
-	if(L.stat == DEAD && (L.butcher_results || L.guaranteed_butcher_results))
-		Butcher(parent, L)
+	if(arrived.stat == DEAD && (arrived.butcher_results || arrived.guaranteed_butcher_results))
+		Butcher(parent, arrived)

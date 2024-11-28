@@ -6,7 +6,9 @@
  * most of the time you want forceMove()
  */
 /atom/movable/proc/abstract_move(atom/new_loc)
+	RESOLVE_ACTIVE_MOVEMENT // This should NEVER happen, but, just in case...
 	var/atom/old_loc = loc
+	move_stacks++
 	loc = new_loc
 	Moved(old_loc)
 
@@ -14,46 +16,84 @@
 // Here's where we rewrite how byond handles movement except slightly different
 // To be removed on step_ conversion
 // All this work to prevent a second bump
-/atom/movable/Move(atom/newloc, direct=0, glide_size_override = 0)
+/atom/movable/Move(atom/newloc, direction=0, glide_size_override = 0)
 	set waitfor = FALSE			//n o
 	. = FALSE
 	if(!newloc || newloc == loc)
 		return
 
-	if(!direct)
-		direct = get_dir(src, newloc)
-	setDir(direct)
+	// A mid-movement... movement... occured, resolve that first.
+	RESOLVE_ACTIVE_MOVEMENT
 
-	if(!loc.Exit(src, newloc))
-		return
+	if(!direction)
+		direction = get_dir(src, newloc)
+	setDir(direction)
 
-	if(!newloc.Enter(src, src.loc))
-		return
+	var/is_multi_tile_object = bound_width > 32 || bound_height > 32
 
-	if (SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_MOVE, newloc) & COMPONENT_MOVABLE_BLOCK_PRE_MOVE)
-		return
+	var/list/old_locs
+	if(is_multi_tile_object && isturf(loc))
+		old_locs = locs // locs is a special list, this is effectively the same as .Copy() but with less steps
+		for(var/atom/exiting_loc as anything in old_locs)
+			if(!exiting_loc.Exit(src, direction))
+				return
+	else
+		if(!loc.Exit(src, direction))
+			return
+
+	var/list/new_locs
+	if(is_multi_tile_object && isturf(newloc))
+		new_locs = block(
+			newloc,
+			locate(
+				min(world.maxx, newloc.x + CEILING(bound_width / 32, 1)),
+				min(world.maxy, newloc.y + CEILING(bound_height / 32, 1)),
+				newloc.z
+				)
+		) // If this is a multi-tile object then we need to predict the new locs and check if they allow our entrance.
+		for(var/atom/entering_loc as anything in new_locs)
+			if(!entering_loc.Enter(src))
+				return
+			if(SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_MOVE, entering_loc) & COMPONENT_MOVABLE_BLOCK_PRE_MOVE)
+				return
+	else // Else just try to enter the single destination.
+		if(!newloc.Enter(src))
+			return
+		if(SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_MOVE, newloc) & COMPONENT_MOVABLE_BLOCK_PRE_MOVE)
+			return
 
 	// Past this is the point of no return
 	var/atom/oldloc = loc
 	var/area/oldarea = get_area(oldloc)
 	var/area/newarea = get_area(newloc)
 	move_stacks++
+	SET_ACTIVE_MOVEMENT(oldloc, direction, FALSE, old_locs)
 	loc = newloc
+
 	. = TRUE
-	oldloc.Exited(src, newloc)
-	if(oldarea != newarea)
-		oldarea.Exited(src, newloc)
 
-	newloc.Entered(src, oldloc)
+	if(old_locs) // This condition will only be true if it is a multi-tile object.
+		for(var/atom/exited_loc as anything in (old_locs - new_locs))
+			exited_loc.Exited(src, direction)
+	else // Else there's just one loc to be exited.
+		oldloc.Exited(src, direction)
 	if(oldarea != newarea)
-		newarea.Entered(src, oldloc)
+		oldarea.Exited(src, direction)
 
-	Moved(oldloc, direct)
+	if(new_locs) // Same here, only if multi-tile.
+		for(var/atom/entered_loc as anything in (new_locs - old_locs))
+			entered_loc.Entered(src, oldloc, old_locs)
+	else
+		newloc.Entered(src, oldloc, old_locs)
+	if(oldarea != newarea)
+		newarea.Entered(src, oldarea)
+
+	RESOLVE_ACTIVE_MOVEMENT
 
 //
 ////////////////////////////////////////
 
-/atom/movable/Move(atom/newloc, direct, glide_size_override = 0)
+/atom/movable/Move(atom/newloc, direction, glide_size_override = 0)
 	set waitfor = FALSE			//n o
 	var/atom/movable/pullee = pulling
 	var/turf/T = loc
@@ -62,15 +102,12 @@
 	if(!loc || !newloc)
 		return FALSE
 	var/atom/oldloc = loc
-	var/list/old_locs
-	if(bound_height > 32 || bound_width > 32)
-		old_locs = locs.Copy()
 	//Early override for some cases like diagonal movement
 	if(glide_size_override)
 		set_glide_size(glide_size_override)
 
 	if(loc != newloc)
-		if (!(direct & (direct - 1))) //Cardinal move
+		if (!(direction & (direction - 1))) //Cardinal move
 			. = ..()
 		else //Diagonal move, split it into cardinal moves
 			moving_diagonally = FIRST_DIAG_STEP
@@ -79,8 +116,8 @@
 			// place due to a Crossed, Bumped, etc. call will interrupt
 			// the second half of the diagonal movement, or the second attempt
 			// at a first half if step() fails because we hit something.
-			if (direct & NORTH)
-				if (direct & EAST)
+			if (direction & NORTH)
+				if (direction & EAST)
 					if (step(src, NORTH) && moving_diagonally)
 						first_step_dir = NORTH
 						moving_diagonally = SECOND_DIAG_STEP
@@ -89,7 +126,7 @@
 						first_step_dir = EAST
 						moving_diagonally = SECOND_DIAG_STEP
 						. = step(src, NORTH)
-				else if (direct & WEST)
+				else if (direction & WEST)
 					if (step(src, NORTH) && moving_diagonally)
 						first_step_dir = NORTH
 						moving_diagonally = SECOND_DIAG_STEP
@@ -98,8 +135,8 @@
 						first_step_dir = WEST
 						moving_diagonally = SECOND_DIAG_STEP
 						. = step(src, NORTH)
-			else if (direct & SOUTH)
-				if (direct & EAST)
+			else if (direction & SOUTH)
+				if (direction & EAST)
 					if (step(src, SOUTH) && moving_diagonally)
 						first_step_dir = SOUTH
 						moving_diagonally = SECOND_DIAG_STEP
@@ -108,7 +145,7 @@
 						first_step_dir = EAST
 						moving_diagonally = SECOND_DIAG_STEP
 						. = step(src, SOUTH)
-				else if (direct & WEST)
+				else if (direction & WEST)
 					if (step(src, SOUTH) && moving_diagonally)
 						first_step_dir = SOUTH
 						moving_diagonally = SECOND_DIAG_STEP
@@ -122,7 +159,7 @@
 					setDir(first_step_dir)
 				else if (!inertia_moving)
 					inertia_next_move = world.time + inertia_move_delay
-					newtonian_move(direct)
+					newtonian_move(direction)
 			moving_diagonally = 0
 			return
 
@@ -131,10 +168,10 @@
 		return
 
 	if(.)
-		last_move = direct
-		setDir(direct)
+		last_move = direction
+		setDir(direction)
 
-		if(has_buckled_mobs() && !handle_buckled_mob_movement(loc, direct, glide_size_override)) //movement failed due to buckled mob(s)
+		if(has_buckled_mobs() && !handle_buckled_mob_movement(loc, direction, glide_size_override)) //movement failed due to buckled mob(s)
 			return FALSE
 
 		if(pulling && pulling == pullee && pulling != moving_from_pull) //we were pulling a thing and didn't lose it during our move.
@@ -147,7 +184,6 @@
 					pulling.moving_from_pull = src
 					pulling.Move(T, get_dir(pulling, T), glide_size) //the pullee tries to reach our previous position
 					pulling.moving_from_pull = null
-		Moved(oldloc, direct, FALSE, old_locs)
 
 	//glide_size strangely enough can change mid movement animation and update correctly while the animation is playing
 	//This means that if you don't override it late like this, it will just be set back by the movement update that's called when you move turfs.
@@ -175,8 +211,11 @@
 	for (var/datum/light_source/light as anything in light_sources) // Cycle through the light sources on this atom and tell them to update.
 		light.source_atom.update_light()
 	move_stacks--
-	if(move_stacks > 0)
+	if(move_stacks > 0) //we want only the first Moved() call in the stack to send this signal, all the other ones have an incorrect old_loc
 		return
+	if(move_stacks < 0)
+		stack_trace("move_stacks is negative in Moved()!")
+		move_stacks = 0 //setting it to 0 so that we dont get every movable with negative move_stacks runtiming on every movement
 
 	SEND_SIGNAL(src, COMSIG_MOVABLE_MOVED, OldLoc, Dir, Forced)
 	return TRUE
@@ -265,14 +304,15 @@
 
 /atom/movable/proc/doMove(atom/destination)
 	. = FALSE
+	RESOLVE_ACTIVE_MOVEMENT
 	move_stacks++
+	var/atom/oldloc = loc
+
+	SET_ACTIVE_MOVEMENT(oldloc, NONE, TRUE, null)
+
 	if(destination)
 		if(pulledby)
 			pulledby.stop_pulling()
-		var/atom/oldloc = loc
-		var/list/old_locs
-		if(bound_height > 32 || bound_width > 32)
-			old_locs = locs.Copy()
 		var/same_loc = oldloc == destination
 		var/area/old_area = get_area(oldloc)
 		var/area/destarea = get_area(destination)
@@ -293,21 +333,21 @@
 				onTransitZ(old_z, dest_z)
 			destination.Entered(src, oldloc)
 			if(destarea && old_area != destarea)
-				destarea.Entered(src, oldloc)
+				destarea.Entered(src, old_area)
 
-		Moved(oldloc, NONE, TRUE, old_locs)
 		. = TRUE
 
 	//If no destination, move the atom into nullspace (don't do this unless you know what you're doing)
 	else
 		. = TRUE
-		var/atom/oldloc = loc
 		if (loc)
 			var/area/old_area = get_area(oldloc)
 			oldloc.Exited(src, null)
 			if(old_area)
 				old_area.Exited(src, null)
 		loc = null
+
+	RESOLVE_ACTIVE_MOVEMENT
 
 //Called whenever an object moves and by mobs when they attempt to move themselves through space
 //And when an object or action applies a force on src, see newtonian_move() below

@@ -164,13 +164,13 @@
 	RegisterSignal(newloc, COMSIG_ATOM_EXITED, PROC_REF(check_exit))
 	listeningTo = newloc
 
-/obj/item/assembly/infra/proc/check_exit(datum/source, atom/movable/offender)
+/obj/item/assembly/infra/proc/check_exit(datum/source, atom/movable/gone, direction)
 	if(QDELETED(src))
 		return
-	if(offender == src || istype(offender,/obj/effect/beam/i_beam))
+	if(gone == src || istype(gone,/obj/effect/beam/i_beam))
 		return
-	if (offender && isitem(offender))
-		var/obj/item/I = offender
+	if (gone && isitem(gone))
+		var/obj/item/I = gone
 		if (I.item_flags & ABSTRACT)
 			return
 	return refreshBeam()

@@ -123,9 +123,9 @@
 			if(target && !target.stat)
 				O.throw_at(target, 5, 10)
 
-/obj/effect/anomaly/grav/proc/on_entered(datum/source, atom/movable/AM)
+/obj/effect/anomaly/grav/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	SIGNAL_HANDLER
-	gravShock(AM)
+	gravShock(enterer)
 
 /obj/effect/anomaly/grav/Bump(atom/A)
 	gravShock(A)
@@ -178,9 +178,9 @@
 	for(var/mob/living/M in range(0, src))
 		mobShock(M)
 
-/obj/effect/anomaly/flux/proc/on_entered(datum/source, atom/movable/AM)
+/obj/effect/anomaly/flux/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	SIGNAL_HANDLER
-	mobShock(AM)
+	mobShock(enterer)
 
 /obj/effect/anomaly/flux/Bump(atom/A)
 	mobShock(A)

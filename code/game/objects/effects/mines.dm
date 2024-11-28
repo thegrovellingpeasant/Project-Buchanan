@@ -18,15 +18,15 @@
 /obj/effect/mine/proc/mineEffect(mob/victim)
 	to_chat(victim, span_danger("*click*"))
 
-/obj/effect/mine/proc/on_entered(atom/movable/source, atom/movable/arrived, atom/old_loc)
+/obj/effect/mine/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	SIGNAL_HANDLER
 
-	if(triggered || !isturf(loc) || iseffect(source) || !istype(source))
+	if(triggered || !isturf(loc) || iseffect(enterer) || !istype(enterer))
 		return
-	if(source.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
+	if(enterer.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return
 
-	triggermine(source)
+	triggermine(enterer)
 
 /obj/effect/mine/proc/triggermine(mob/victim)
 	if(triggered)

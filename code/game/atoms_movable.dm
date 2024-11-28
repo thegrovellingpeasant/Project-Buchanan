@@ -1,6 +1,8 @@
 /atom/movable
 	layer = OBJ_LAYER
 	var/last_move = null
+	/// A list containing arguments for Moved().
+	VAR_PRIVATE/tmp/list/active_movement
 	var/last_move_time = 0
 	var/anchored = FALSE
 	var/move_resist = MOVE_RESIST_DEFAULT
@@ -34,7 +36,7 @@
 	var/list/acted_explosions	//for explosion dodging
 	glide_size = 8
 	appearance_flags = TILE_BOUND|PIXEL_SCALE
-	///how many times a this movable was moved since Moved() was last called
+	///how many times a this movable had movement procs called on it since Moved() was last called
 	var/move_stacks = 0
 	var/datum/forced_movement/force_moving = null	//handled soley by forced_movement.dm
 	var/movement_type = GROUND		//Incase you have multiple types, you automatically use the most useful one. IE: Skating on ice, flippers on water, flying over chasm/space, etc.

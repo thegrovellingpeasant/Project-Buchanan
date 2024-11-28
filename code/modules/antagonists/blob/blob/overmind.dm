@@ -258,18 +258,18 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 				stat(null, "Time Before Manual Placement: [max(round((manualplace_min_time - world.time)*0.1, 0.1), 0)]")
 			stat(null, "Time Before Automatic Placement: [max(round((autoplace_max_time - world.time)*0.1, 0.1), 0)]")
 
-/mob/camera/blob/Move(NewLoc, Dir = 0)
+/mob/camera/blob/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(placed)
-		var/obj/structure/blob/B = locate() in range("3x3", NewLoc)
+		var/obj/structure/blob/B = locate() in range("3x3", newloc)
 		if(B)
-			forceMove(NewLoc)
+			forceMove(newloc)
 		else
 			return 0
 	else
-		var/area/A = get_area(NewLoc)
-		if(isspaceturf(NewLoc) || istype(A, /area/shuttle)) //if unplaced, can't go on shuttles or space tiles
+		var/area/A = get_area(newloc)
+		if(isspaceturf(newloc) || istype(A, /area/shuttle)) //if unplaced, can't go on shuttles or space tiles
 			return 0
-		forceMove(NewLoc)
+		forceMove(newloc)
 		return 1
 
 /mob/camera/blob/mind_initialize()

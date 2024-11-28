@@ -109,6 +109,7 @@
 		stair_ascend(AM)
 		return FALSE
 	return ..()
+
 /* // seeing if removing this will let buggies work, the cost is that stairs will be walkable from all directions
 /obj/structure/stairs/Cross(atom/movable/AM)
 	if(isTerminator() && (get_dir(src, AM) == dir))

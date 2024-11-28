@@ -170,7 +170,7 @@
 	for(var/obj/structure/lattice/L in src)
 		L.ratvar_act()
 
-/turf/open/floor/clockwork/Entered(atom/movable/AM)
+/turf/open/floor/clockwork/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
 	START_PROCESSING(SSobj, src)
 
