@@ -5,6 +5,7 @@
 	icon_keyboard = "terminal_key"
 	icon_screen = "terminal_on_alt"
 	circuit = /obj/item/circuitboard/computer/cargo
+	connectable = FALSE
 
 	var/requestonly = FALSE
 	var/contraband = FALSE
