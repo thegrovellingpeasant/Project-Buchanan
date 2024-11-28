@@ -715,6 +715,8 @@
 
 //Hook for running code when a dir change occurs
 /atom/proc/setDir(newdir, ismousemovement=FALSE)
+	if(dir == newdir)
+		return
 	SEND_SIGNAL(src, COMSIG_ATOM_DIR_CHANGE, dir, newdir)
 	dir = newdir
 
