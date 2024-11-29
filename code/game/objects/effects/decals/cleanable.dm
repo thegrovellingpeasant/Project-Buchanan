@@ -29,6 +29,7 @@
 
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+		COMSIG_ATOM_EXITED = PROC_REF(on_exited),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
@@ -96,6 +97,10 @@
 			S.blood_state = blood_state
 			update_icon()
 			H.update_inv_shoes()
+
+/obj/effect/decal/cleanable/proc/on_exited(datum/source, atom/movable/gone, direction)
+	SIGNAL_HANDLER
+	return
 
 /obj/effect/decal/cleanable/proc/can_bloodcrawl_in()
 	if((blood_state != BLOOD_STATE_OIL) && (blood_state != BLOOD_STATE_NOT_BLOODY))

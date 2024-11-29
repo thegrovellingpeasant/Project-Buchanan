@@ -71,75 +71,79 @@
 	new /obj/effect/abstract/DPtarget(empty_pod_turf, empty_pod)
 
 /datum/syndicate_contract/proc/enter_check(datum/source, sent_mob)
-	if(istype(source, /obj/structure/closet/supplypod/extractionpod))
-		if(isliving(sent_mob))
-			var/mob/living/M = sent_mob
-			var/datum/antagonist/traitor/traitor_data = contract.owner.has_antag_datum(/datum/antagonist/traitor)
+	SIGNAL_HANDLER
 
-			if(M == contract.target.current)
-				traitor_data.contractor_hub.contract_TC_to_redeem += contract.payout
-				traitor_data.contractor_hub.contracts_completed += 1
+	if(!istype(source, /obj/structure/closet/supplypod/extractionpod))
+		return
+	if(!isliving(sent_mob))
+		return
 
-				if(M.stat != DEAD)
-					traitor_data.contractor_hub.contract_TC_to_redeem += contract.payout_bonus
+	var/mob/living/M = sent_mob
+	var/datum/antagonist/traitor/traitor_data = contract.owner.has_antag_datum(/datum/antagonist/traitor)
 
-				status = CONTRACT_STATUS_COMPLETE
+	if(M == contract.target.current)
+		traitor_data.contractor_hub.contract_TC_to_redeem += contract.payout
+		traitor_data.contractor_hub.contracts_completed += 1
 
-				if(traitor_data.contractor_hub.current_contract == src)
-					traitor_data.contractor_hub.current_contract = null
+		if(M.stat != DEAD)
+			traitor_data.contractor_hub.contract_TC_to_redeem += contract.payout_bonus
 
-				traitor_data.contractor_hub.contract_rep += 2
-			else
-				status = CONTRACT_STATUS_ABORTED // Sending a target that wasn't even yours is as good as just aborting it
+		status = CONTRACT_STATUS_COMPLETE
 
-				if(traitor_data.contractor_hub.current_contract == src)
-					traitor_data.contractor_hub.current_contract = null
+		if(traitor_data.contractor_hub.current_contract == src)
+			traitor_data.contractor_hub.current_contract = null
 
-			if(iscarbon(M))
-				for(var/obj/item/W in M)
-					if(ishuman(M))
-						var/mob/living/carbon/human/H = M
-						if(W == H.w_uniform)
-							continue //So all they're left with are shoes and uniform.
-						if(W == H.shoes)
-							continue
+		traitor_data.contractor_hub.contract_rep += 2
+	else
+		status = CONTRACT_STATUS_ABORTED // Sending a target that wasn't even yours is as good as just aborting it
 
+		if(traitor_data.contractor_hub.current_contract == src)
+			traitor_data.contractor_hub.current_contract = null
 
-					M.transferItemToLoc(W)
-					victim_belongings.Add(W)
-
-			var/obj/structure/closet/supplypod/extractionpod/pod = source
-
-			// Handle the pod returning
-			pod.send_up(pod)
-
+	if(iscarbon(M))
+		for(var/obj/item/W in M)
 			if(ishuman(M))
-				var/mob/living/carbon/human/target = M
+				var/mob/living/carbon/human/H = M
+				if(W == H.w_uniform)
+					continue //So all they're left with are shoes and uniform.
+				if(W == H.shoes)
+					continue
 
-				// After we remove items, at least give them what they need to live.
-				target.dna.species.give_important_for_life(target)
-			handleVictimExperience(M)	// After pod is sent we start the victim narrative/heal.
-			var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
-			var/points_to_check = min(D.account_balance, ransom)
-			D.adjust_money(min(points_to_check, ransom))
-			priority_announce("One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
-							As is policy we've taken a portion of the station's funds to offset the overall cost.", null, "attention", null, "Nanotrasen Asset Protection")
 
-			sleep(30)
+			M.transferItemToLoc(W)
+			victim_belongings.Add(W)
 
-			// Pay contractor their portion of ransom
-			if (status == CONTRACT_STATUS_COMPLETE)
-				var/mob/living/carbon/human/H
-				var/obj/item/card/id/C
-				if(ishuman(contract.owner.current))
-					H = contract.owner.current
-					C = H.get_idcard(TRUE)
+	var/obj/structure/closet/supplypod/extractionpod/pod = source
 
-				if(C && C.registered_account)
-					C.registered_account.adjust_money(points_to_check * 0.35)
+	// Handle the pod returning
+	pod.send_up(pod)
 
-					C.registered_account.bank_card_talk("We've processed the ransom, agent. Here's your cut - your balance is now \
-					[C.registered_account.account_balance] cr.", TRUE)
+	if(ishuman(M))
+		var/mob/living/carbon/human/target = M
+
+		// After we remove items, at least give them what they need to live.
+		target.dna.species.give_important_for_life(target)
+	INVOKE_ASYNC(src, PROC_REF(handleVictimExperience), M) // After pod is sent we start the victim narrative/heal.
+	var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
+	var/points_to_check = min(D.account_balance, ransom)
+	D.adjust_money(min(points_to_check, ransom))
+	priority_announce("One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
+					As is policy we've taken a portion of the station's funds to offset the overall cost.", null, "attention", null, "Nanotrasen Asset Protection")
+
+	addtimer(CALLBACK(src, PROC_REF(payout)), 3 SECONDS)
+
+/// Pay contractor their portion of the ransom for the contract they completed.
+/datum/syndicate_contract/proc/payout()
+	if(status != CONTRACT_STATUS_COMPLETE)
+		return
+
+	var/obj/item/card/id/C = contract.owner?.current?.get_idcard(TRUE)
+	if(isnull(C) || !C.registered_account)
+		return
+
+	C.registered_account.adjust_money(points_to_check * 0.35)
+	C.registered_account.bank_card_talk("We've processed the ransom, agent. Here's your cut - \
+		your balance is now [C.registered_account.account_balance] cr.", TRUE)
 
 /datum/syndicate_contract/proc/handleVictimExperience(mob/living/M)	// They're off to holding - handle the return timer and give some text about what's going on.
 	addtimer(CALLBACK(src, PROC_REF(returnVictim), M), 4 MINUTES)	// Ship 'em back - dead or alive... 4 minutes wait.

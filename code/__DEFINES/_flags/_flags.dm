@@ -85,7 +85,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define FLYING				(1<<1) //observers have this, funnily enough.
 #define VENTCRAWLING		(1<<2)
 #define FLOATING			(1<<3)
-///When moving, will Bump()/Cross()/Uncross() everything, but won't be stopped.
+///When moving, will Bump()/Cross()/Enter/Exit everything, but won't be stopped from moving through.
 #define UNSTOPPABLE			(1<<4)
 ///Applied if you're crawling around on the ground/resting.
 #define CRAWLING			(1<<5)

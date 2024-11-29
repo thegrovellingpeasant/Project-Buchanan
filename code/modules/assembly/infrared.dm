@@ -165,15 +165,16 @@
 	listeningTo = newloc
 
 /obj/item/assembly/infra/proc/check_exit(datum/source, atom/movable/gone, direction)
+	SIGNAL_HANDLER
 	if(QDELETED(src))
 		return
-	if(gone == src || istype(gone,/obj/effect/beam/i_beam))
+	if(gone == src || istype(gone, /obj/effect/beam/i_beam))
 		return
-	if (gone && isitem(gone))
+	if(isitem(gone))
 		var/obj/item/I = gone
-		if (I.item_flags & ABSTRACT)
+		if(I.item_flags & ABSTRACT)
 			return
-	return refreshBeam()
+	INVOKE_ASYNC(src, PROC_REF(refreshBeam))
 
 /obj/item/assembly/infra/setDir()
 	. = ..()

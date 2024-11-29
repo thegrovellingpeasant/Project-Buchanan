@@ -50,6 +50,7 @@
 		use_delay = use_delay_override
 
 /datum/component/squeak/proc/play_squeak()
+	SIGNAL_HANDLER
 	do_play_squeak()
 
 /datum/component/squeak/proc/do_play_squeak(bypass_cooldown = FALSE)

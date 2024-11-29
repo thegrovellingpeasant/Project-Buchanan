@@ -26,7 +26,7 @@
 	if(enterer.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return
 
-	triggermine(enterer)
+	INVOKE_ASYNC(src, PROC_REF(triggermine), enterer)
 
 /obj/effect/mine/proc/triggermine(mob/victim)
 	if(triggered)

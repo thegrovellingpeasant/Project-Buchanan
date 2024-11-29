@@ -342,6 +342,7 @@
 	return master._removal_reset(thing)
 
 /datum/component/storage/proc/_remove_and_refresh(datum/source, atom/movable/gone, direction)
+	SIGNAL_HANDLER
 	if(LAZYACCESS(ui_item_blocks, gone))
 		var/atom/movable/screen/storage/volumetric_box/center/C = ui_item_blocks[gone]
 		for(var/i in can_see_contents())		//runtimes result if mobs can access post deletion.
@@ -362,6 +363,7 @@
 	return master.remove_from_storage(AM, new_location)
 
 /datum/component/storage/proc/refresh_mob_views()
+	SIGNAL_HANDLER
 	var/list/seeing = can_see_contents()
 	for(var/i in seeing)
 		ui_show(i)
