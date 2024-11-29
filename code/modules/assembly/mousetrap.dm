@@ -136,7 +136,7 @@
 				span_warning("You accidentally step on [src]"),
 			)
 	else if(ismouse(MM))
-		INVOKE_ASYNC(src, PROC_REF(triggered), AM)
+		INVOKE_ASYNC(src, PROC_REF(triggered), MM)
 
 /obj/item/assembly/mousetrap/on_found(mob/finder)
 	if(armed)
