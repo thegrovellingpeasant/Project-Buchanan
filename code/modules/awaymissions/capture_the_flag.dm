@@ -612,9 +612,14 @@
 /obj/effect/ctf/ammo/Initialize(mapload)
 	. = ..()
 	QDEL_IN(src, AMMO_DROP_LIFETIME)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/effect/ctf/ammo/Crossed(atom/movable/AM)
-	reload(AM)
+/obj/effect/ctf/ammo/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	INVOKE_ASYNC(src, PROC_REF(reload), arrived)
 
 /obj/effect/ctf/ammo/Bump(atom/movable/AM)
 	reload(AM)

@@ -8,6 +8,13 @@
 	max_integrity = 100
 	density = FALSE
 
+/obj/structure/destructible/clockwork/trap/steam_vent/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/structure/destructible/clockwork/trap/steam_vent/activate()
 	set_opacity(!opacity)
 	icon_state = "steam_vent_[opacity]"
@@ -17,7 +24,8 @@
 	else
 		playsound(src, 'sound/machines/clockcult/integration_cog_install.ogg', 50, TRUE)
 
-/obj/structure/destructible/clockwork/trap/steam_vent/Crossed(atom/movable/AM)
-	if(isliving(AM) && opacity)
-		var/mob/living/L = AM
+/obj/structure/destructible/clockwork/trap/steam_vent/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(isliving(arrived) && opacity)
+		var/mob/living/L = arrived
 		L.adjust_fire_stacks(-1) //It's wet!

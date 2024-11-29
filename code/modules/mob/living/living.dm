@@ -1140,7 +1140,7 @@
 		ExtinguishMob()
 
 //Share fire evenly between the two mobs
-//Called in MobBump() and Crossed()
+//Called in MobBump() and on_entered()
 /mob/living/proc/spreadFire(mob/living/L)
 	if(!istype(L))
 		return

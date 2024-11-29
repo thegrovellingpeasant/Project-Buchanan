@@ -327,7 +327,7 @@
 		qdel(src)
 
 /obj/item/restraints/legcuffs/beartrap/energy/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	Crossed(user) //honk
+	spring_trap(null, user) //honk
 	. = ..()
 
 /obj/item/restraints/legcuffs/beartrap/energy/cyborg
@@ -388,6 +388,6 @@
 /obj/item/restraints/legcuffs/bola/energy/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(iscarbon(hit_atom))
 		var/obj/item/restraints/legcuffs/beartrap/B = new /obj/item/restraints/legcuffs/beartrap/energy/cyborg(get_turf(hit_atom))
-		B.Crossed(hit_atom)
+		B.spring_trap(null, hit_atom)
 		qdel(src)
 	..()

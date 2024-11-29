@@ -7,15 +7,7 @@
 	icon_state = "pressure_sensor"
 	alpha = 75
 
-/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech/Initialize(mapload)
-	. = ..()
-	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
-	)
-	AddElement(/datum/element/connect_loc, loc_connections)
-
-/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
-	SIGNAL_HANDLER
+/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	if(!istype(arrived, /obj/mecha))
 		return
 
