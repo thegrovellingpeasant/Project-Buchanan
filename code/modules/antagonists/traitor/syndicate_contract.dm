@@ -130,20 +130,24 @@
 	priority_announce("One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
 					As is policy we've taken a portion of the station's funds to offset the overall cost.", null, "attention", null, "Nanotrasen Asset Protection")
 
-	addtimer(CALLBACK(src, PROC_REF(payout)), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(payout), points_to_check), 3 SECONDS)
 
-/// Pay contractor their portion of the ransom for the contract they completed.
-/datum/syndicate_contract/proc/payout()
+/**
+ * Pays the contractor their portion of the ransom for the contract they completed.
+ * Args:
+ * - points_to_check - The amount of money to pay the contractor.
+ */
+/datum/syndicate_contract/proc/payout(points_to_check)
 	if(status != CONTRACT_STATUS_COMPLETE)
 		return
 
-	var/obj/item/card/id/C = contract.owner?.current?.get_idcard(TRUE)
-	if(isnull(C) || !C.registered_account)
+	var/obj/item/card/id/contractor_card = contract.owner?.current?.get_idcard(TRUE)
+	if(isnull(contractor_card) || !contractor_card.registered_account)
 		return
 
-	C.registered_account.adjust_money(points_to_check * 0.35)
-	C.registered_account.bank_card_talk("We've processed the ransom, agent. Here's your cut - \
-		your balance is now [C.registered_account.account_balance] cr.", TRUE)
+	contractor_card.registered_account.adjust_money(points_to_check * 0.35)
+	contractor_card.registered_account.bank_card_talk("We've processed the ransom, agent. Here's your cut - \
+		your balance is now [contractor_card.registered_account.account_balance] cr.", TRUE)
 
 /datum/syndicate_contract/proc/handleVictimExperience(mob/living/M)	// They're off to holding - handle the return timer and give some text about what's going on.
 	addtimer(CALLBACK(src, PROC_REF(returnVictim), M), 4 MINUTES)	// Ship 'em back - dead or alive... 4 minutes wait.
