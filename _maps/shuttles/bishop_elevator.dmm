@@ -3,7 +3,9 @@
 /turf/closed/wall/f13/woodalt,
 /area/shuttle/bishop_elevator)
 "r" = (
-/obj/machinery/door/airlock/wood/glass,
+/obj/machinery/door/airlock/wood/glass{
+	req_one_access_txt = "165"
+	},
 /obj/docking_port/mobile/elevator{
 	dir = 8;
 	dwidth = 2;

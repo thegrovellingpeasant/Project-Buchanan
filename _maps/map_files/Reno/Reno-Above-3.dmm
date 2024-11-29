@@ -13246,7 +13246,7 @@
 	req_access_txt = "165";
 	name = "elevator"
 	},
-/turf/open/floor/plasteel/f13,
+/turf/open/floor/carpet/reno/evil4,
 /area/f13/reno_sharkclub)
 "mWb" = (
 /turf/open/floor/plating/tunnel,
