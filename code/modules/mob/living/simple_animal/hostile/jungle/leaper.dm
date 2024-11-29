@@ -78,30 +78,34 @@
 	max_integrity = 10
 	density = FALSE
 
-/obj/structure/leaper_bubble/Initialize()
+/obj/structure/leaper_bubble/Initialize(mapload)
 	. = ..()
 	INVOKE_ASYNC(src, TYPE_PROC_REF(/atom/movable, float), TRUE)
-	QDEL_IN(src, 100)
+	QDEL_IN(src, 10 SECONDS)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/leaper_bubble/Destroy()
 	new /obj/effect/temp_visual/leaper_projectile_impact(get_turf(src))
 	playsound(src,'sound/effects/snap.ogg',50, 1, -1)
 	return ..()
 
-/obj/structure/leaper_bubble/Crossed(atom/movable/AM)
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(!istype(L, /mob/living/simple_animal/hostile/jungle/leaper))
-			playsound(src,'sound/effects/snap.ogg',50, 1, -1)
-			L.DefaultCombatKnockdown(50)
-			if(iscarbon(L))
-				var/mob/living/carbon/C = L
-				C.reagents.add_reagent(/datum/reagent/toxin/leaper_venom, 5)
-			if(isanimal(L))
-				var/mob/living/simple_animal/A = L
-				A.adjustHealth(25)
-			qdel(src)
-	return ..()
+/obj/structure/leaper_bubble/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!isliving(arrived) || istype(arrived, /mob/living/simple_animal/hostile/jungle/leaper))
+		return
+	playsound(src, 'sound/effects/snap.ogg', 50, 1, -1)
+	var/mob/living/L = arrived
+	L.DefaultCombatKnockdown(50)
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		C.reagents.add_reagent(/datum/reagent/toxin/leaper_venom, 5)
+	if(isanimal(L))
+		var/mob/living/simple_animal/A = L
+		A.adjustHealth(25)
+	qdel(src)
 
 /datum/reagent/toxin/leaper_venom
 	name = "Leaper venom"

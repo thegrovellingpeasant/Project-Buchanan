@@ -31,11 +31,15 @@
 	var/projectile_density = TRUE		//griffons get shot
 	del_on_death = TRUE
 
-/mob/living/simple_animal/banana_spider/Initialize()
+/mob/living/simple_animal/banana_spider/Initialize(mapload)
 	. = ..()
 	var/area/A = get_area(src)
 	if(A)
 		notify_ghosts("A banana spider has been created in \the [A.name].", source = src, action=NOTIFY_ATTACK, flashwindow = FALSE, ignore_dnr_observers = TRUE)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /mob/living/simple_animal/banana_spider/attack_ghost(mob/user)
 	if(key)			//please stop using src. without a good reason.
@@ -64,27 +68,29 @@
 	. = ..()
 	AddComponent(/datum/component/slippery, 40)
 
-/mob/living/simple_animal/banana_spider/Crossed(atom/movable/AM)		//no /var in proc headers
-	. = ..()
-	if(istype(AM, /obj/item/projectile) && projectile_density)		//forced projectile density
-		var/obj/item/projectile/P = AM
+/mob/living/simple_animal/banana_spider/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(istype(arrived, /obj/item/projectile) && projectile_density) //forced projectile density
+		var/obj/item/projectile/P = arrived
 		P.Bump(src)
-	if(ismob(AM))
-		if(isliving(AM))
-			var/mob/living/A = AM
-			if(A.mob_size > MOB_SIZE_SMALL && !(A.movement_type & FLYING))
-				if(prob(squish_chance))
-					A.visible_message(span_notice("[A] squashed [src]."), span_notice("You squashed [src] under your weight as you fell."))
-					adjustBruteLoss(1)
-				else
-					visible_message(span_notice("[src] avoids getting crushed."))
-	else
-		if(isstructure(AM))
-			if(prob(squish_chance))
-				AM.visible_message(span_notice("[src] was crushed under [AM]'s weight as they fell."))
-				adjustBruteLoss(1)
-			else
-				visible_message(span_notice("[src] avoids getting crushed."))
+	if(isstructure(arrived))
+		if(prob(squish_chance))
+			arrived.visible_message(span_notice("[src] was crushed under [arrived]'s weight as they fell."))
+			adjustBruteLoss(1)
+		else
+			visible_message(span_notice("[src] avoids getting crushed."))
+		return
+	if(!ismob(arrived))
+		return
+	if(!isliving(arrived))
+		return
+	var/mob/living/A = arrived
+	if(A.mob_size > MOB_SIZE_SMALL && !(A.movement_type & FLYING))
+		if(prob(squish_chance))
+			A.visible_message(span_notice("[A] squashed [src]."), span_notice("You squashed [src] under your weight as you fell."))
+			adjustBruteLoss(1)
+		else
+			visible_message(span_notice("[src] avoids getting crushed."))
 
 /mob/living/simple_animal/banana_spider/ex_act()
 	return
