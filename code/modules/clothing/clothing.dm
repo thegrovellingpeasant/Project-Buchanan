@@ -115,9 +115,9 @@
 				repair(user, params)
 			if(CLOTHING_SHREDDED)
 				if(S.amount < 3)
-					to_chat(user, "<span class='warning'>You require 3 [S.name] to repair [src].</span>")
+					to_chat(user, span_warning("You require 3 [S.name] to repair [src]."))
 					return
-				to_chat(user, "<span class='notice'>You begin fixing the damage to [src] with [S]...</span>")
+				to_chat(user, span_notice("You begin fixing the damage to [src] with [S]..."))
 				if(do_after(user, 6 SECONDS, TRUE, src))
 					if(S.use(3))
 						repair(user, params)
@@ -125,13 +125,13 @@
 
 	if(LAZYLEN(salvage_loot) && (W.tool_behaviour == salvage_tool_behavior))
 		user.visible_message("[user] begins recycling the [src].", \
-				"<span class='notice'>You begin recycling the [src].</span>", \
-				"<span class='italics'>You hear the noise of a [salvage_tool_behavior] working on metal and ceramic.</span>")
+				span_notice("You begin recycling the [src]."), \
+				span_italics("You hear the noise of a [salvage_tool_behavior] working on metal and ceramic."))
 		W.play_tool_sound(get_turf(src))
 		if(!do_after(user, 60, TRUE, src))
 			return
 		drop_salvage()
-		to_chat(user, "<span class='notice'>You finish recycling \the [src].</span>")
+		to_chat(user, span_notice("You finish recycling \the [src]."))
 		qdel(src)
 		return TRUE
 
@@ -147,7 +147,7 @@
 	damage_by_parts = null
 	if(user)
 		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
-		to_chat(user, "<span class='notice'>You fix the damage on [src].</span>")
+		to_chat(user, span_notice("You fix the damage on [src]."))
 
 /**
  * take_damage_zone() is used for dealing damage to specific bodyparts on a worn piece of clothing, meant to be called from [/obj/item/bodypart/proc/check_woundings_mods()]
@@ -196,7 +196,7 @@
 
 	if(iscarbon(loc))
 		var/mob/living/carbon/C = loc
-		C.visible_message("<span class='danger'>The [zone_name] on [C]'s [src.name] is [break_verb] away!</span>", "<span class='userdanger'>The [zone_name] on your [src.name] is [break_verb] away!</span>", vision_distance = COMBAT_MESSAGE_RANGE)
+		C.visible_message(span_danger("The [zone_name] on [C]'s [src.name] is [break_verb] away!"), span_userdanger("The [zone_name] on your [src.name] is [break_verb] away!"), vision_distance = COMBAT_MESSAGE_RANGE)
 		RegisterSignal(C, COMSIG_MOVABLE_MOVED, PROC_REF(bristle))
 
 	zones_disabled++
@@ -250,18 +250,18 @@
 /obj/item/clothing/examine(mob/user)
 	. = ..()
 	if(damaged_clothes == CLOTHING_SHREDDED)
-		. += "<span class='warning'><b>It is completely shredded and requires mending before it can be worn again!</b></span>"
+		. += span_warning("<b>It is completely shredded and requires mending before it can be worn again!</b>")
 		return
 	for(var/zone in damage_by_parts)
 		var/pct_damage_part = damage_by_parts[zone] / limb_integrity * 100
 		var/zone_name = parse_zone(zone)
 		switch(pct_damage_part)
 			if(100 to INFINITY)
-				. += "<span class='warning'><b>The [zone_name] is useless and requires mending!</b></span>"
+				. += span_warning("<b>The [zone_name] is useless and requires mending!</b>")
 			if(60 to 99)
-				. += "<span class='warning'>The [zone_name] is heavily shredded!</span>"
+				. += span_warning("The [zone_name] is heavily shredded!")
 			if(30 to 59)
-				. += "<span class='danger'>The [zone_name] is partially shredded.</span>"
+				. += span_danger("The [zone_name] is partially shredded.")
 	var/datum/component/storage/pockets = GetComponent(/datum/component/storage)
 	if(pockets)
 		var/list/how_cool_are_your_threads = list("<span class='notice'>")
@@ -305,9 +305,9 @@
 		durability_list += list("ACID" = armor.acid)
 
 	if(LAZYLEN(armor_list) || LAZYLEN(durability_list))
-		. += "<span class='notice'>It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.</span>"
+		. += span_notice("It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.")
 	if(salvage_tool_behavior && LAZYLEN(salvage_loot))
-		. += "<span class='notice'>It can be recycled for materials using [salvage_tool_behavior].</span>"
+		. += span_notice("It can be recycled for materials using [salvage_tool_behavior].")
 
 /obj/item/clothing/Topic(href, href_list)
 	. = ..()
@@ -334,7 +334,7 @@
 	update_clothes_damaged_state()
 	if(ismob(loc)) //It's not important enough to warrant a message if nobody's wearing it
 		var/mob/M = loc
-		to_chat(M, "<span class='warning'>Your [name] starts to fall apart!</span>")
+		to_chat(M, span_warning("Your [name] starts to fall apart!"))
 
 //This mostly exists so subtypes can call appriopriate update icon calls on the wearer.
 /obj/item/clothing/proc/update_clothes_damaged_state(damaged_state = CLOTHING_DAMAGED)
@@ -384,7 +384,7 @@ BLIND     // can't see anything
 
 	visor_toggling()
 
-	to_chat(user, "<span class='notice'>You adjust \the [src] [up ? "up" : "down"].</span>")
+	to_chat(user, span_notice("You adjust \the [src] [up ? "up" : "down"]."))
 
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
@@ -428,7 +428,7 @@ BLIND     // can't see anything
 		update_clothes_damaged_state()
 		if(ismob(loc))
 			var/mob/M = loc
-			M.visible_message("<span class='danger'>[M]'s [src.name] falls off, completely shredded!</span>", "<span class='warning'><b>Your [src.name] falls off, completely shredded!</b></span>", vision_distance = COMBAT_MESSAGE_RANGE)
+			M.visible_message(span_danger("[M]'s [src.name] falls off, completely shredded!"), span_warning("<b>Your [src.name] falls off, completely shredded!</b>"), vision_distance = COMBAT_MESSAGE_RANGE)
 			M.dropItemToGround(src)
 	else
 		..()
@@ -462,7 +462,7 @@ BLIND     // can't see anything
 					wearable = TRUE
 
 			if(!wearable)
-				to_chat(M, "<span class='warning'>Your species cannot wear [src].</span>")
+				to_chat(M, span_warning("Your species cannot wear [src]."))
 				return FALSE
 
 	return TRUE
@@ -474,7 +474,7 @@ BLIND     // can't see anything
 	if(!istype(L))
 		return
 	if(prob(0.2))
-		to_chat(L, "<span class='warning'>The damaged threads on your [src.name] chafe!</span>")
+		to_chat(L, span_warning("The damaged threads on your [src.name] chafe!"))
 
 /// The results of salvaging the clothing
 /obj/item/clothing/proc/drop_salvage()

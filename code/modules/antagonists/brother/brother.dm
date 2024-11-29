@@ -27,7 +27,7 @@
 /datum/antagonist/brother/on_removal()
 	SSticker.mode.brothers -= owner
 	if(owner.current)
-		to_chat(owner.current,"<span class='userdanger'>You are no longer the [special_role]!</span>")
+		to_chat(owner.current,span_userdanger("You are no longer the [special_role]!"))
 	owner.special_role = null
 	return ..()
 
@@ -102,7 +102,7 @@
 /datum/team/brother_team/roundend_report()
 	var/list/parts = list()
 
-	parts += "<span class='header'>The blood brothers of [name] were:</span>"
+	parts += span_header("The blood brothers of [name] were:")
 	for(var/datum/mind/M in members)
 		parts += printplayer(M)
 	var/win = TRUE
@@ -111,19 +111,19 @@
 		if(objective.completable)
 			var/completion = objective.check_completion()
 			if(completion >= 1)
-				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
+				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_greentext("<B>Success!</B>")]"
 			else if(completion <= 0)
-				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_redtext("Fail.")]"
 				win = FALSE
 			else
-				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] <span class='yellowtext'>[completion*100]%</span>"
+				parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text] [span_yellowtext("[completion*100]%")]"
 		else
 			parts += "<B>Objective #[objective_count]</B>: [objective.explanation_text]"
 		objective_count++
 	if(win)
-		parts += "<span class='greentext'>The blood brothers were successful!</span>"
+		parts += span_greentext("The blood brothers were successful!")
 	else
-		parts += "<span class='redtext'>The blood brothers have failed!</span>"
+		parts += span_redtext("The blood brothers have failed!")
 
 	return "<div class='panel redborder'>[parts.Join("<br>")]</div>"
 

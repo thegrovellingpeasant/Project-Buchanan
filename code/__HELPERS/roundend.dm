@@ -223,7 +223,7 @@
 
 	CHECK_TICK
 
-	set_observer_default_invisibility(0, "<span class='warning'>The round is over! You are now visible to the living.</span>")
+	set_observer_default_invisibility(0, span_warning("The round is over! You are now visible to the living."))
 
 	CHECK_TICK
 
@@ -257,7 +257,7 @@
 
 	end_of_round_deathmatch()
 	var/time_to_end = CONFIG_GET(number/eorg_period)
-	to_chat(world, "<span class='info'>EORD in progress, game end delayed by [time_to_end * 0.1] seconds!</a></span>")
+	to_chat(world, span_info("EORD in progress, game end delayed by [time_to_end * 0.1] seconds!</a>"))
 	addtimer(CALLBACK(src, PROC_REF(standard_reboot)), time_to_end)
 
 
@@ -320,7 +320,7 @@
 			parts += "[FOURSPACES][FOURSPACES][choice]: [score]"
 
 	parts += "[FOURSPACES]Round Duration: <B>[DisplayTimeText(world.time - SSticker.round_start_time)]</B>"
-	//parts += "[FOURSPACES]Station Integrity: <B>[mode.station_was_nuked ? "<span class='redtext'>Destroyed</span>" : "[popcount["station_integrity"]]%"]</B>"
+	//parts += "[FOURSPACES]Station Integrity: <B>[mode.station_was_nuked ? span_redtext("Destroyed") : "[popcount["station_integrity"]]%"]</B>"
 	var/total_players = GLOB.joined_player_list.len
 	if(total_players)
 		parts+= "[FOURSPACES]Total Population: <B>[total_players]</B>"
@@ -384,17 +384,17 @@
 			if(EMERGENCY_ESCAPED_OR_ENDGAMED)
 				if(!M.onCentCom() && !M.onSyndieBase())
 					parts += "<div class='panel stationborder'>"
-					parts += "<span class='marooned'>You managed to survive the events in [station_name()]...</span>"
+					parts += span_marooned("You managed to survive the events in [station_name()]...")
 				else
 					parts += "<div class='panel greenborder'>"
-					parts += "<span class='greentext'>You managed to survive the events in [station_name()] as [M.real_name].</span>"
+					parts += span_greentext("You managed to survive the events in [station_name()] as [M.real_name].")
 			else
 				parts += "<div class='panel greenborder'>"
-				parts += "<span class='greentext'>You managed to survive the events in [station_name()] as [M.real_name].</span>"
+				parts += span_greentext("You managed to survive the events in [station_name()] as [M.real_name].")
 
 		else
 			parts += "<div class='panel redborder'>"
-			parts += "<span class='redtext'>You did not survive the events in [station_name()]...</span>"
+			parts += span_redtext("You did not survive the events in [station_name()]...")
 	else
 		parts += "<div class='panel stationborder'>"
 	parts += "<br>"
@@ -418,7 +418,7 @@
 	for (var/i in GLOB.ai_list)
 		var/mob/living/silicon/ai/aiPlayer = i
 		if(aiPlayer.mind)
-			parts += "<b>[aiPlayer.name]</b>[aiPlayer.mind.hide_ckey ? "" : " (Played by: <b>[aiPlayer.mind.key]</b>)"]'s laws [aiPlayer.stat != DEAD ? "at the end of the round" : "when it was <span class='redtext'>deactivated</span>"] were:"
+			parts += "<b>[aiPlayer.name]</b>[aiPlayer.mind.hide_ckey ? "" : " (Played by: <b>[aiPlayer.mind.key]</b>)"]'s laws [aiPlayer.stat != DEAD ? "at the end of the round" : "when it was [span_redtext("deactivated")]"] were:"
 			parts += aiPlayer.laws.get_law_list(include_zeroth=TRUE)
 
 		parts += "<b>Total law changes: [aiPlayer.law_change_counter]</b>"
@@ -429,14 +429,14 @@
 			for(var/mob/living/silicon/robot/robo in aiPlayer.connected_robots)
 				borg_num--
 				if(robo.mind)
-					robolist += "<b>[robo.name]</b>[robo.mind.hide_ckey ? "" : " (Played by: <b>[robo.mind.key]</b>)"] [robo.stat == DEAD ? " <span class='redtext'>(Deactivated)</span>" : ""][borg_num ?", ":""]<br>"
+					robolist += "<b>[robo.name]</b>[robo.mind.hide_ckey ? "" : " (Played by: <b>[robo.mind.key]</b>)"] [robo.stat == DEAD ? " [span_redtext("(Deactivated)")]" : ""][borg_num ?", ":""]<br>"
 			parts += "[robolist]"
 		if(!borg_spacer)
 			borg_spacer = TRUE
 
 	for (var/mob/living/silicon/robot/robo in GLOB.silicon_mobs)
 		if (!robo.connected_ai && robo.mind)
-			parts += "[borg_spacer?"<br>":""]<b>[robo.name]</b>[robo.mind.hide_ckey ? "" : " (Played by: <b>[robo.mind.key]</b>)"] [(robo.stat != DEAD)? "<span class='greentext'>survived</span> as an AI-less borg!" : "was <span class='redtext'>unable to survive</span> the rigors of being a cyborg without an AI."] Its laws were:"
+			parts += "[borg_spacer?"<br>":""]<b>[robo.name]</b>[robo.mind.hide_ckey ? "" : " (Played by: <b>[robo.mind.key]</b>)"] [(robo.stat != DEAD)? "[span_greentext("survived")] as an AI-less borg!" : "was [span_redtext("unable to survive")] the rigors of being a cyborg without an AI."] Its laws were:"
 
 			if(robo) //How the hell do we lose robo between here and the world messages directly above this?
 				parts += robo.laws.get_law_list(include_zeroth=TRUE)
@@ -460,7 +460,7 @@
 /datum/controller/subsystem/ticker/proc/medal_report()
 	if(GLOB.commendations.len)
 		var/list/parts = list()
-		parts += "<span class='header'>Medal Commendations:</span>"
+		parts += span_header("Medal Commendations:")
 		for (var/com in GLOB.commendations)
 			parts += com
 		return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
@@ -471,7 +471,7 @@
 	var/list/matches_log = SSmatchmaking.matches_log
 	if(!length(matches_log))
 		return ""
-	var/list/parts = list("<span class='header'>Matchmakings:</span>")
+	var/list/parts = list(span_header("Matchmakings:"))
 	parts += matches_log
 	return "<div class='panel stationborder'>[parts.Join("<br>")]</div>"
 
@@ -558,17 +558,17 @@
 	var/text = "<b>[ply.hide_ckey ? "<b>[ply.name]</b>[jobtext] " : "[ply.key]</b> was <b>[ply.name]</b>[jobtext] and "]"
 	if(ply.current)
 		if(ply.current.stat == DEAD)
-			text += " <span class='redtext'>died</span>"
+			text += " [span_redtext("died")]"
 		else
-			text += " <span class='greentext'>survived</span>"
+			text += " [span_greentext("survived")]"
 		if(fleecheck)
 			var/turf/T = get_turf(ply.current)
 			if(!T || !is_station_level(T.z))
-				text += " while <span class='redtext'>fleeing the area</span>"
+				text += " while [span_redtext("fleeing the area")]"
 		if(ply.current.real_name != ply.name)
 			text += " as <b>[ply.current.real_name]</b>"
 	else
-		text += " <span class='redtext'>had their body destroyed</span>"
+		text += " [span_redtext("had their body destroyed")]"
 	return text
 
 /proc/printplayerlist(list/players,fleecheck)
@@ -590,11 +590,11 @@
 		if(objective.completable)
 			var/completion = objective.check_completion()
 			if(completion >= 1)
-				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='greentext'><B>Success!</B></span>"
+				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_greentext("<B>Success!</B>")]"
 			else if(completion <= 0)
-				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='redtext'>Fail.</span>"
+				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_redtext("Fail.")]"
 			else
-				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] <span class='yellowtext'>[completion*100]%</span>"
+				objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text] [span_yellowtext("[completion*100]%")]"
 		else
 			objective_parts += "<B>Objective #[count]</B>: [objective.explanation_text]"
 		count++

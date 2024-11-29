@@ -261,10 +261,10 @@
 		var/mob/living/carbon/human/H = user
 		if(H.get_num_arms() == 0)
 			if(H.get_num_legs() != 0)
-				message_param = "tries to point at %t with a leg, <span class='userdanger'>falling down</span> in the process!"
+				message_param = "tries to point at %t with a leg, [span_userdanger("falling down")] in the process!"
 				H.DefaultCombatKnockdown(20)
 			else
-				message_param = "<span class='userdanger'>bumps [user.p_their()] head on the ground</span> trying to motion towards %t."
+				message_param = "[span_userdanger("bumps [user.p_their()] head on the ground")] trying to motion towards %t."
 				H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
 	..()
 
@@ -426,7 +426,7 @@
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
 	if(stop_bad_mime.Find(input, 1, 1))
-		to_chat(user, "<span class='danger'>Invalid emote.</span>")
+		to_chat(user, span_danger("Invalid emote."))
 		return TRUE
 	return FALSE
 
@@ -512,10 +512,10 @@
 	. = ..()
 	var/obj/item/circlegame/N = new(user)
 	if(user.put_in_hands(N))
-		to_chat(user, "<span class='notice'>You make a circle with your hand.</span>")
+		to_chat(user, span_notice("You make a circle with your hand."))
 	else
 		qdel(N)
-		to_chat(user, "<span class='warning'>You don't have any free hands to make a circle with.</span>")
+		to_chat(user, span_warning("You don't have any free hands to make a circle with."))
 
 /datum/emote/living/slap
 	key = "slap"
@@ -528,9 +528,9 @@
 		return
 	var/obj/item/slapper/N = new(user)
 	if(user.put_in_hands(N))
-		to_chat(user, "<span class='notice'>You ready your slapping hand.</span>")
+		to_chat(user, span_notice("You ready your slapping hand."))
 	else
-		to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>")
+		to_chat(user, span_warning("You're incapable of slapping in your current state."))
 
 /datum/emote/living/audible/blorble
 	key = "blorble"

@@ -55,11 +55,11 @@
 	var/obj/structure/closet/supplypod/bluespacepod/pod = new()
 	pod.explosionSize = list(0,0,0,0)
 	new_item.forceMove(pod)
-	var/msg = "<span class='danger'>After making your selection, you notice a strange target on the ground. It might be best to step back!</span>"
+	var/msg = span_danger("After making your selection, you notice a strange target on the ground. It might be best to step back!")
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(istype(H.ears, /obj/item/radio/headset))
-			msg = "You hear something crackle in your ears for a moment before a voice speaks.  \"Please stand by for a message from Central Command.  Message as follows: <span class='bold'>Item request received. Your package is inbound, please stand back from the landing site.</span> Message ends.\""
+			msg = "You hear something crackle in your ears for a moment before a voice speaks.  \"Please stand by for a message from Central Command.  Message as follows: [span_bold("Item request received. Your package is inbound, please stand back from the landing site.")] Message ends.\""
 	to_chat(M, msg)
 
 	new /obj/effect/abstract/DPtarget(get_turf(src), pod)
@@ -156,7 +156,7 @@
 
 /obj/item/choice_beacon/augments/spawn_option(atom/choice,mob/living/M)
 	new choice(get_turf(M))
-	to_chat(M, "<span class='hear'>You hear something crackle from the beacon for a moment before a voice speaks. \"Please stand by for a message from S.E.L.F. Message as follows: <b>Item request received. Your package has been transported, use the autosurgeon supplied to apply the upgrade.</b> Message ends.\"</span>")
+	to_chat(M, span_hear("You hear something crackle from the beacon for a moment before a voice speaks. \"Please stand by for a message from S.E.L.F. Message as follows: <b>Item request received. Your package has been transported, use the autosurgeon supplied to apply the upgrade.</b> Message ends.\""))
 
 /obj/item/choice_beacon/pet //donator beacon that summons a small friendly animal
 	name = "pet beacon"
@@ -209,7 +209,7 @@
 	var/choice_text = choice
 	if(ispath(choice_text))
 		choice_text = initial(choice.name)
-	to_chat(M, "<span class='hear'>The box opens, revealing the [choice_text]!</span>")
+	to_chat(M, span_hear("The box opens, revealing the [choice_text]!"))
 	playsound(src.loc, 'sound/items/poster_ripped.ogg', 50, 1)
 	M.temporarilyRemoveItemFromInventory(src, TRUE)
 	M.put_in_hands(new choice)

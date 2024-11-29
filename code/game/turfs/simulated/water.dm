@@ -37,7 +37,7 @@
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(oldloc, /turf/open/water))
-			to_chat(L, "<span class='warning'>You get drenched in water!</span>")
+			to_chat(L, span_warning("You get drenched in water!"))
 		playsound(src, "water_wade", 20, TRUE)
 	if(istype(AM, /mob/living && !/mob/living/carbon/human))
 		var/mob/living/U = AM
@@ -67,7 +67,7 @@
 		if(L.check_submerged() <= 0)
 			return
 		if(!istype(newloc, /turf/open/water))
-			to_chat(L, "<span class='warning'>You climb out of \the [src].</span>")
+			to_chat(L, span_warning("You climb out of \the [src]."))
 	if(istype(AM, /mob/living))
 		var/mob/living/U = AM
 		U.update_water()
@@ -116,7 +116,7 @@
 			else
 				drownee.adjustOxyLoss(1)
 				if(prob(35))
-					to_chat(drownee, "<span class='danger'>You're drowning!</span>")*/ // removed until land drowning is solved
+					to_chat(drownee, span_danger("You're drowning!"))*/ // removed until land drowning is solved
 	adjust_fire_stacks(-amount * 5)
 	for(var/atom/movable/AM in contents)
 		AM.water_act(amount)

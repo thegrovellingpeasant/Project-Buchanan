@@ -93,7 +93,7 @@
 			if(R.amount > 0 && ((C && C.registered_account && onstation) || (!onstation && isliving(user))))
 				dat += "<td align='right'><b>[R.amount]&nbsp;</b><a href='byond://?src=[REF(src)];vend=[REF(R)]'>Vend</a></td>"
 			else
-				dat += "<td align='right'><span class='linkOff'>Not&nbsp;Available</span></td>"
+				dat += "<td align='right'>[span_linkoff("Not&nbsp;Available")]</td>"
 			dat += "</tr>"
 		dat += "</table>"
 	dat += "</div>"
