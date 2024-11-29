@@ -652,11 +652,11 @@ GLOBAL_LIST_INIT(faction_relics, list(
 
 /datum/faction_task/individual_player/heist/add_player(mob/living/user)
 	. = ..()
-	var/obj/item/card/id/heister_id = new /obj/item/card/id(get_turf(user))
+	var/obj/item/card/id/reno/heisters/heister_id = new /obj/item/card/id/reno/heisters(get_turf(user))
 	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
 	user.equip_to_slot(heister_id, SLOT_WEAR_ID)
 	user.put_in_inactive_hand(heist_note)
-
+/obj/item/card/id/reno/heisters
 
 /datum/faction_task/individual_player/heist/New()
 	..()
@@ -670,6 +670,12 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist/calculate_score()
 	var/turf/T = get_turf(target)
 	if(target && istype(T.loc, drop_off))
+
+
+
+
+
+
 		return TRUE
 	return FALSE
 
