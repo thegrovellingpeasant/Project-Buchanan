@@ -299,26 +299,30 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 100)
 	var/list/debris = list()
 
-/obj/structure/table/glass/New()
+/obj/structure/table/glass/Initialize(mapload)
 	. = ..()
 	debris += new frame
 	debris += new /obj/item/shard
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/table/glass/Destroy()
 	QDEL_LIST(debris)
 	. = ..()
 
-/obj/structure/table/glass/Crossed(atom/movable/AM)
-	. = ..()
+/obj/structure/table/glass/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(flags_1 & NODECONSTRUCT_1)
 		return
-	if(!isliving(AM))
+	if(!isliving(arrived))
 		return
 	// Don't break if they're just flying past
-	if(AM.throwing)
-		addtimer(CALLBACK(src, PROC_REF(throw_check), AM), 5)
+	if(arrived.throwing)
+		addtimer(CALLBACK(src, PROC_REF(throw_check), arrived), 5)
 	else
-		check_break(AM)
+		check_break(arrived)
 
 /obj/structure/table/glass/proc/throw_check(mob/living/M)
 	if(M.loc == get_turf(src))
