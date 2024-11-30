@@ -359,7 +359,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				H.physiology.footstep_type = null
 
 		if(H.client && has_field_of_vision && CONFIG_GET(flag/use_field_of_vision))
-			H.LoadComponent(/datum/component/field_of_vision, H.field_of_vision_type)
+			H.LoadComponent(/datum/component/field_of_vision, fov_type = H.field_of_vision_type)
 
 	C.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/species, TRUE, multiplicative_slowdown = speedmod)
 
@@ -1465,10 +1465,13 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 		playsound(target.loc, user.dna.species.attack_sound, 25, 1, -1)
 
-		target.visible_message(span_danger("[user] [atk_verb]s [target]!"), \
-					span_userdanger("[user] [atk_verb]s you!"), null, COMBAT_MESSAGE_RANGE, null, \
-					user, span_danger("You [atk_verb] [target]!"))
-
+		target.visible_message(
+			message = span_danger("[user] [atk_verb]s [target]!"), \
+			self_message = span_userdanger("[user] [atk_verb]s you!"),
+			blind_message = null,
+			vision_distance = COMBAT_MESSAGE_RANGE,
+			ignored_mobs = null,
+		)
 		target.lastattacker = user.real_name
 		target.lastattackerckey = user.ckey
 		user.dna.species.spec_unarmedattacked(user, target)

@@ -247,7 +247,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		return
 
 	var/turf/T = loc
-	loc = null
+	abstract_move(null)
 	loc = T
 
 /obj/item/examine(mob/user) //This might be spammy. Remove?

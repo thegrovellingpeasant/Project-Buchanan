@@ -67,6 +67,7 @@
 		for(var/obj/item/stack/S in loc)
 			if(S.merge_type == merge_type)
 				INVOKE_ASYNC(src, PROC_REF(merge), S)
+				//Merge can call qdel on us, so let's be safe yeah?
 				if(QDELETED(src))
 					return
 	var/list/temp_recipes = get_main_recipes()
