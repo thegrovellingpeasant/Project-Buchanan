@@ -52,8 +52,8 @@
 		AM.forceMove(get_turf(src))
 	return ..()
 
-/obj/item/mecha_parts/mecha_equipment/medical/sleeper/Exit(atom/movable/O)
-	return 0
+/obj/item/mecha_parts/mecha_equipment/medical/sleeper/Exit(atom/movable/leaving, direction)
+	return FALSE
 
 /obj/item/mecha_parts/mecha_equipment/medical/sleeper/action(mob/living/carbon/target)
 	if(!action_checks(target))

@@ -5,7 +5,7 @@
 	icon_state = "caucasian_m"
 	appearance_flags = KEEP_TOGETHER|TILE_BOUND|PIXEL_SCALE|LONG_GLIDE
 
-/mob/living/carbon/human/Initialize()
+/mob/living/carbon/human/Initialize(mapload)
 	add_verb(src, /mob/living/proc/mob_sleep)
 	add_verb(src, /mob/living/proc/lay_down)
 	add_verb(src, /mob/living/carbon/human/verb/underwear_toggle)
@@ -35,6 +35,11 @@
 
 	RegisterSignal(src, COMSIG_COMPONENT_CLEAN_ACT, TYPE_PROC_REF(/atom, clean_blood))
 	GLOB.human_list += src
+
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 
 /mob/living/carbon/human/ComponentInitialize()
@@ -210,12 +215,13 @@
 
 // called when something steps onto a human
 // this could be made more general, but for now just handle mulebot
-/mob/living/carbon/human/Crossed(atom/movable/AM)
-	var/mob/living/simple_animal/bot/mulebot/MB = AM
+/mob/living/carbon/human/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	var/mob/living/simple_animal/bot/mulebot/MB = arrived
 	if(istype(MB))
-		MB.RunOver(src)
+		INVOKE_ASYNC(MB, TYPE_PROC_REF(/mob/living/simple_animal/bot/mulebot, RunOver), src)
 
-	spreadFire(AM)
+	spreadFire(arrived)
 
 /mob/living/carbon/human/proc/despawn()
 	var/datum/job/job_to_free = SSjob.GetJob(job)
@@ -1097,7 +1103,7 @@
 /mob/living/carbon/human/species
 	var/race = null
 
-/mob/living/carbon/human/species/Initialize()
+/mob/living/carbon/human/species/Initialize(mapload)
 	. = ..()
 	set_species(race)
 

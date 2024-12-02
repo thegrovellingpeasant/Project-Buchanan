@@ -24,26 +24,14 @@
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
 	light_color = LIGHT_COLOR_FIRE
 
-/obj/effect/particle_effect/sparks/Initialize()
-	. = ..()
+/obj/effect/particle_effect/sparks/Initialize(mapload)
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/effect/particle_effect/sparks/LateInitialize()
 	flick(icon_state, src) // replay the animation
 	playsound(src, "sparks", 100, TRUE)
-	var/turf/T = loc
-	if(isturf(T))
-		T.hotspot_expose(700,5)
 	QDEL_IN(src, 20)
-
-/obj/effect/particle_effect/sparks/Destroy()
-	var/turf/T = loc
-	if(isturf(T))
-		T.hotspot_expose(700,1)
-	return ..()
-
-/obj/effect/particle_effect/sparks/Move()
-	..()
-	var/turf/T = loc
-	if(isturf(T))
-		T.hotspot_expose(700,1)
 
 /datum/effect_system/spark_spread
 	effect_type = /obj/effect/particle_effect/sparks

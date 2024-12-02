@@ -19,14 +19,17 @@
 	/// chance we'll be stopped from squeaking by cooldown when something crossing us squeaks
 	var/cross_squeak_delay_chance = 33		// about 3 things can squeak at a time
 
+	///what we set connect_loc to if parent is an item
+	var/static/list/item_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(play_squeak_crossed),
+	)
+
 /datum/component/squeak/Initialize(custom_sounds, volume_override, chance_override, step_delay_override, use_delay_override)
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 	RegisterSignal(parent, list(COMSIG_ATOM_ENTERED, COMSIG_ATOM_BLOB_ACT, COMSIG_ATOM_HULK_ATTACK, COMSIG_PARENT_ATTACKBY), PROC_REF(play_squeak))
 	if(ismovable(parent))
 		RegisterSignal(parent, list(COMSIG_MOVABLE_BUMP, COMSIG_MOVABLE_IMPACT), PROC_REF(play_squeak))
-		RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED, COMSIG_ITEM_WEARERCROSSED), PROC_REF(play_squeak_crossed))
-		RegisterSignal(parent, COMSIG_CROSS_SQUEAKED, PROC_REF(delay_squeak))
 		RegisterSignal(parent, COMSIG_MOVABLE_DISPOSING, PROC_REF(disposing_react))
 		if(isitem(parent))
 			RegisterSignal(parent, list(COMSIG_ITEM_ATTACK, COMSIG_ITEM_ATTACK_OBJ, COMSIG_ITEM_HIT_REACT), PROC_REF(play_squeak))
@@ -47,6 +50,7 @@
 		use_delay = use_delay_override
 
 /datum/component/squeak/proc/play_squeak()
+	SIGNAL_HANDLER
 	do_play_squeak()
 
 /datum/component/squeak/proc/do_play_squeak(bypass_cooldown = FALSE)
@@ -68,28 +72,27 @@
 	else
 		steps++
 
-/datum/component/squeak/proc/play_squeak_crossed(datum/source, atom/movable/AM)
-	if(isitem(AM))
-		var/obj/item/I = AM
+/datum/component/squeak/proc/play_squeak_crossed(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(isitem(arrived))
+		var/obj/item/I = arrived
 		if(I.item_flags & ABSTRACT)
 			return
-		else if(istype(AM, /obj/item/projectile))
-			var/obj/item/projectile/P = AM
+		else if(istype(arrived, /obj/item/projectile))
+			var/obj/item/projectile/P = arrived
 			if(P.original != parent)
 				return
 	var/atom/current_parent = parent
 	if(isturf(current_parent.loc))
 		if(do_play_squeak())
-			SEND_SIGNAL(AM, COMSIG_CROSS_SQUEAKED)
+			if(prob(cross_squeak_delay_chance))
+				last_squeak = world.time
 
 /datum/component/squeak/proc/use_squeak()
 	if(last_use + use_delay < world.time)
 		last_use = world.time
 		play_squeak()
-
-/datum/component/squeak/proc/delay_squeak()
-	if(prob(cross_squeak_delay_chance))
-		last_squeak = world.time
 
 /datum/component/squeak/proc/on_equip(datum/source, mob/equipper, slot)
 	RegisterSignal(equipper, COMSIG_MOVABLE_DISPOSING, PROC_REF(disposing_react), TRUE)

@@ -183,17 +183,6 @@
 			A.start_pulling(AM)
 			AM.can_be_z_moved = TRUE
 
-		//now we're on the new z_level, proceed the space drifting
-		stoplag()//Let a diagonal move finish, if necessary
-		A.newtonian_move(A.inertia_dir)
-
-/turf/open/space/Exited(atom/movable/AM, atom/OldLoc)
-	. = ..()
-	var/turf/old = get_turf(OldLoc)
-	if(!isspaceturf(old) && ismob(AM))
-		var/mob/M = AM
-		M.update_gravity(M.mob_has_gravity())
-
 /turf/open/space/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return
 

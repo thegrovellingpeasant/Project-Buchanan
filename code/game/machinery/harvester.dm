@@ -185,9 +185,9 @@
 	else
 		to_chat(user,span_warning("[src] is active and can't be opened!")) //rip
 
-/obj/machinery/harvester/Exited(atom/movable/user)
-	if (!state_open && user == occupant)
-		container_resist(user)
+/obj/machinery/harvester/Exited(atom/movable/gone, direction)
+	if (!state_open && gone == occupant)
+		container_resist(gone)
 
 /obj/machinery/harvester/relaymove(mob/user)
 	if (!state_open)

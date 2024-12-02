@@ -51,12 +51,12 @@
 	GLOB.singularities.Remove(src)
 	return ..()
 
-/obj/singularity/Move(atom/newloc, direct)
-	if(current_size >= STAGE_FIVE || check_turfs_in(direct))
+/obj/singularity/Move(atom/newloc, direction=0, glide_size_override = 0)
+	if(current_size >= STAGE_FIVE || check_turfs_in(direction))
 		last_failed_movement = 0//Reset this because we moved
 		return ..()
 	else
-		last_failed_movement = direct
+		last_failed_movement = direction
 		return 0
 
 /obj/singularity/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)

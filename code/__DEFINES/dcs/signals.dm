@@ -204,12 +204,14 @@
 #define COMSIG_MOVABLE_PRE_MOVE "movable_pre_move"					///from base of atom/movable/Moved(): (/atom)
 	#define COMPONENT_MOVABLE_BLOCK_PRE_MOVE 1
 #define COMSIG_MOVABLE_MOVED "movable_moved"					//from base of atom/movable/Moved(): (/atom, dir, forced, list/old_locs)
-#define COMSIG_MOVABLE_CROSS "movable_cross"					//from base of atom/movable/Cross(): (/atom/movable)
-#define COMSIG_MOVABLE_CROSSED "movable_crossed"                //from base of atom/movable/Crossed(): (/atom/movable)
-#define COMSIG_MOVABLE_UNCROSS "movable_uncross"				//from base of atom/movable/Uncross(): (/atom/movable)
-	#define COMPONENT_MOVABLE_BLOCK_UNCROSS 1
-#define COMSIG_MOVABLE_UNCROSSED "movable_uncrossed"            //from base of atom/movable/Uncrossed(): (/atom/movable)
-#define COMSIG_MOVABLE_BUMP "movable_bump"						//from base of atom/movable/Bump(): (/atom)
+///from base of atom/movable/Cross(): (/atom/movable)
+#define COMSIG_MOVABLE_CROSS "movable_cross"
+	#define COMPONENT_BLOCK_CROSS (1<<0)
+///from base of atom/movable/Move(): (/atom/movable)
+#define COMSIG_MOVABLE_CROSS_OVER "movable_cross_am"
+///from base of atom/movable/Bump(): (/atom)
+#define COMSIG_MOVABLE_BUMP "movable_bump"
+	#define COMPONENT_INTERCEPT_BUMPED (1<<0)
 #define COMSIG_MOVABLE_IMPACT "movable_impact"					//from base of atom/movable/throw_impact(): (/atom/hit_atom, /datum/thrownthing/throwingdatum)
 	#define COMPONENT_MOVABLE_IMPACT_FLIP_HITPUSH 1			///if true, flip if the impact will push what it hits
 	#define COMPONENT_MOVABLE_IMPACT_NEVERMIND 2			///return true if you destroyed whatever it was you're impacting and there won't be anything for hitby() to run on
@@ -398,7 +400,6 @@
 #define COMSIG_ITEM_ATTACK_ZONE "item_attack_zone"				//from base of mob/living/carbon/attacked_by(): (mob/living/carbon/target, mob/living/user, hit_zone)
 #define COMSIG_ITEM_IMBUE_SOUL "item_imbue_soul" 				//return a truthy value to prevent ensouling, checked in /obj/effect/proc_holder/spell/targeted/lichdom/cast(): (mob/user)
 #define COMSIG_ITEM_HIT_REACT "item_hit_react"					//from base of obj/item/hit_reaction(): (list/args)
-#define COMSIG_ITEM_WEARERCROSSED "wearer_crossed"				//called on item when crossed by something (): (/atom/movable)
 #define COMSIG_ITEM_SHARPEN_ACT "sharpen_act"					//from base of item/sharpener/attackby(): (amount, max)
 	#define COMPONENT_BLOCK_SHARPEN_APPLIED 1
 	#define COMPONENT_BLOCK_SHARPEN_BLOCKED 2
@@ -545,9 +546,6 @@
 #define COMSIG_TWOHANDED_WIELD "twohanded_wield"						//from base of datum/component/two_handed/proc/wield(mob/living/carbon/user): (/mob/user)
 	#define COMPONENT_TWOHANDED_BLOCK_WIELD 1
 #define COMSIG_TWOHANDED_UNWIELD "twohanded_unwield"					//from base of datum/component/two_handed/proc/unwield(mob/living/carbon/user): (/mob/user)
-
-// /datum/component/squeak signals
-#define COMSIG_CROSS_SQUEAKED "cross_squeaked"							// sent when a squeak component squeaks from crossing something, to delay anything else crossing that might squeak to prevent ear hurt.
 
 // /datum/action signals
 #define COMSIG_ACTION_TRIGGER "action_trigger"						//from base of datum/action/proc/Trigger(): (datum/action)

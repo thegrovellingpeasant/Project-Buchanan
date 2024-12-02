@@ -27,9 +27,9 @@
 	D.set_vehicle_dir_offsets(EAST, -18, 0)
 	D.set_vehicle_dir_offsets(WEST, -18, 0)
 
-/obj/vehicle/ridden/space/speedbike/Move(newloc,move_dir)
+/obj/vehicle/ridden/space/speedbike/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(has_buckled_mobs())
-		new /obj/effect/temp_visual/dir_setting/speedbike_trail(loc,move_dir)
+		new /obj/effect/temp_visual/dir_setting/speedbike_trail(loc, direction)
 	. = ..()
 
 /obj/vehicle/ridden/space/speedbike/red

@@ -276,9 +276,13 @@
 	var/datum/spacevine_controller/master = null
 	var/list/mutations = list()
 
-/obj/structure/spacevine/Initialize()
+/obj/structure/spacevine/Initialize(mapload)
 	. = ..()
 	add_atom_colour("#ffffff", FIXED_COLOUR_PRIORITY)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/spacevine/examine(mob/user)
 	. = ..()
@@ -329,11 +333,12 @@
 		if(BURN)
 			playsound(src.loc, 'sound/items/welder.ogg', 100, TRUE)
 
-/obj/structure/spacevine/Crossed(atom/movable/AM)
-	if(!isliving(AM))
+/obj/structure/spacevine/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!isliving(arrived))
 		return
 	for(var/datum/spacevine_mutation/SM in mutations)
-		SM.on_cross(src, AM)
+		SM.on_cross(src, arrived)
 
 /obj/structure/spacevine/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	for(var/datum/spacevine_mutation/SM in mutations)

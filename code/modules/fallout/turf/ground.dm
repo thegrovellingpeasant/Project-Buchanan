@@ -36,10 +36,10 @@
 	else
 		return ..()
 
-/turf/open/indestructible/ground/Entered(atom/movable/AM, atom/oldloc)
-	if(istype(AM, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
-		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = AM
-		if(mirelurkqueen.change_behaviour== TRUE)
+/turf/open/indestructible/ground/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(istype(arrived, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
+		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = arrived
+		if(mirelurkqueen.change_behaviour == TRUE)
 			visible_message(span_danger(">The mirelurk queen slows down on dry land!"))
 			mirelurkqueen.change_behaviour = FALSE
 	..()
@@ -1110,24 +1110,24 @@
 	. = ..()
 	update_icon()
 
-/turf/open/indestructible/ground/outside/water/Entered(atom/movable/AM, atom/oldloc)
-	if(istype(AM, /mob/living))
-		var/mob/living/L = AM
+/turf/open/indestructible/ground/outside/water/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(istype(arrived, /mob/living))
+		var/mob/living/L = arrived
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(oldloc, /turf/open/indestructible/ground/outside/water))
+		if(!istype(old_loc, /turf/open/indestructible/ground/outside/water))
 			to_chat(L, span_warning("You get drenched in water!"))
 		L.water_act(5)
 	..()
 
-/turf/open/indestructible/ground/outside/water/Exited(atom/movable/AM, atom/newloc)
-	if(istype(AM, /mob/living))
-		var/mob/living/L = AM
+/turf/open/indestructible/ground/outside/water/Exited(atom/movable/gone, direction)
+	if(istype(gone, /mob/living))
+		var/mob/living/L = gone
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(newloc, /turf/open/indestructible/ground/outside/water))
+		if(!istype(get_step(gone, direction), /turf/open/indestructible/ground/outside/water))
 			to_chat(L, span_warning("You climb out of \the [src]."))
 	..()
 

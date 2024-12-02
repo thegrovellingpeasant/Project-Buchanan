@@ -635,12 +635,6 @@
 /mob/living/proc/update_damage_overlays()
 	return
 
-/mob/living/Crossed(atom/movable/AM)
-	. = ..()
-	for(var/i in get_equipped_items())
-		var/obj/item/item = i
-		SEND_SIGNAL(item, COMSIG_ITEM_WEARERCROSSED, AM)
-
 /mob/living/proc/makeTrail(turf/target_turf, turf/start, direction)
 	if(!has_gravity() || !isturf(start) || !blood_volume)
 		return
@@ -1146,7 +1140,7 @@
 		ExtinguishMob()
 
 //Share fire evenly between the two mobs
-//Called in MobBump() and Crossed()
+//Called in MobBump() and on_entered()
 /mob/living/proc/spreadFire(mob/living/L)
 	if(!istype(L))
 		return

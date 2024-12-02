@@ -22,29 +22,35 @@
 	var/can_trigger = TRUE
 	var/trigger_delay = 10
 
-/obj/item/pressure_plate/Initialize()
+/obj/item/pressure_plate/Initialize(mapload)
 	. = ..()
 	tile_overlay = image(icon = 'icons/turf/floors.dmi', icon_state = "pp_overlay")
 	if(roundstart_signaller)
 		sigdev = new
 		sigdev.code = roundstart_signaller_code
 		sigdev.frequency = roundstart_signaller_freq
-		if(isopenturf(loc))
-			hide(TRUE)
+	if(isopenturf(loc))
+		hide(TRUE)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/item/pressure_plate/Crossed(atom/movable/AM)
-	. = ..()
+/obj/item/pressure_plate/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
 	if(!can_trigger || !active)
-		return
-	if(trigger_item && !istype(AM, specific_item))
-		return
-	if(trigger_mob && isliving(AM))
-		var/mob/living/L = AM
+		return FALSE
+	if(trigger_item && !istype(enterer, specific_item))
+		return FALSE
+	if(trigger_mob && isliving(enterer))
+		var/mob/living/L = enterer
 		to_chat(L, span_warning("You feel something click beneath you!"))
 	else if(!trigger_item)
-		return
+		return FALSE
 	can_trigger = FALSE
 	addtimer(CALLBACK(src, PROC_REF(trigger)), trigger_delay)
+	return TRUE
 
 /obj/item/pressure_plate/proc/trigger()
 	can_trigger = TRUE

@@ -74,11 +74,11 @@
 /mob/living/simple_animal/hostile/statue/med_hud_set_status()
 	return //we're a statue we're invincible
 
-/mob/living/simple_animal/hostile/statue/Move(turf/NewLoc)
-	if(can_be_seen(NewLoc))
+/mob/living/simple_animal/hostile/statue/Move(atom/newloc, direction=0, glide_size_override = 0)
+	if(can_be_seen(newloc))
 		if(client)
 			to_chat(src, span_warning("You cannot move, there are eyes on you!"))
-		return 0
+		return FALSE
 	return ..()
 
 /mob/living/simple_animal/hostile/statue/BiologicalLife(seconds, times_fired)

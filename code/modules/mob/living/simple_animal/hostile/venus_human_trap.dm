@@ -38,13 +38,22 @@
 	mouse_opacity = MOUSE_OPACITY_ICON
 	desc = "A thick vine, painful to the touch."
 
-/obj/effect/ebeam/vine/Crossed(atom/movable/AM)
+/obj/effect/ebeam/vine/Initialize(mapload)
 	. = ..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(!isvineimmune(L))
-			L.adjustBruteLoss(5)
-			to_chat(L, span_alert("You cut yourself on the thorny vines."))
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+/obj/effect/ebeam/vine/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!isliving(arrived))
+		return
+	if(isvineimmune(arrived)) //only living can pass this.
+		return
+	var/mob/living/L = arrived
+	L.adjustBruteLoss(5)
+	to_chat(L, span_alert("You cut yourself on the thorny vines."))
 
 /**
  * Venus Human Trap

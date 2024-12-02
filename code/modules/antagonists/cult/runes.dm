@@ -156,7 +156,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 	var/oldcolor = color
 	color = rgb(255, 0, 0)
 	animate(src, color = oldcolor, time = 5)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 5)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 5)
 
 //Malformed Rune: This forms if a rune is not drawn correctly. Invoking it does nothing but hurt the user.
 /obj/effect/rune/malformed
@@ -227,7 +227,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 		..()
 		do_sacrifice(L, invokers)
 	animate(src, color = oldcolor, time = 5)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 5)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 5)
 	Cult_team.check_size() // Triggers the eye glow or aura effects if the cult has grown large enough relative to the crew
 	rune_in_use = FALSE
 
@@ -398,7 +398,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 			continue
 		if(!A.anchored)
 			movedsomething = TRUE
-			if(do_teleport(A, target, forceMove = TRUE, channel = TELEPORT_CHANNEL_CULT))
+			if(do_teleport(A, target, channel = TELEPORT_CHANNEL_CULT))
 				movesuccess = TRUE
 	if(movedsomething)
 		..()

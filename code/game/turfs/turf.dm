@@ -264,61 +264,49 @@
 	// Byond's default turf/Enter() doesn't have the behaviour we want with Bump()
 	// By default byond will call Bump() on the first dense object in contents
 	// Here's hoping it doesn't stay like this for years before we finish conversion to step_
-	var/atom/firstbump
-	if(!CanPass(mover))
-		firstbump = src
-	else
-		for(var/i in contents)
-			if(i == mover || i == mover.loc) // Multi tile objects and moving out of other objects
+	var/atom/first_bump
+	var/can_pass_self = CanPass(mover)
+	if(can_pass_self)
+		for(var/atom/movable/thing as anything in contents)
+			if(thing == mover || thing == mover.loc) // Multi tile objects and moving out of other objects
 				continue
-			if(QDELETED(mover))
-				break
-			var/atom/movable/thing = i
 			if(!thing.Cross(mover))
+				if(QDELETED(mover)) //deleted from Cross() (CanPass is pure so it can't delete, Cross shouldn't be doing this either though, but it can happen)
+					return FALSE
 				if(CHECK_BITFIELD(mover.movement_type, UNSTOPPABLE))
 					mover.Bump(thing)
+					if(QDELETED(mover)) //deleted from Bump()
+						return FALSE
 					continue
 				else
-					if(!firstbump || ((thing.layer > firstbump.layer || thing.flags_1 & ON_BORDER_1) && !(firstbump.flags_1 & ON_BORDER_1)))
-						firstbump = thing
-	if(firstbump)
+					if(!first_bump || ((thing.layer > first_bump.layer || thing.flags_1 & ON_BORDER_1) && !(first_bump.flags_1 & ON_BORDER_1)))
+						first_bump = thing
+	if(QDELETED(mover)) //Mover deleted from Cross/CanPass/Bump, do not proceed.
+		return FALSE
+	if(!can_pass_self) //Even if mover is unstoppable they need to bump us.
+		first_bump = src
+	if(first_bump)
 		if(!QDELETED(mover))
-			mover.Bump(firstbump)
+			mover.Bump(first_bump)
 		return CHECK_BITFIELD(mover.movement_type, UNSTOPPABLE)
 	return TRUE
 
-/turf/Exit(atom/movable/mover, atom/newloc)
-	. = ..()
-	if(!.)
-		return FALSE
-	for(var/i in contents)
-		if(QDELETED(mover))
-			break
-		if(i == mover)
-			continue
-		var/atom/movable/thing = i
-		if(!thing.Uncross(mover, newloc))
-			if(thing.flags_1 & ON_BORDER_1)
-				mover.Bump(thing)
-			if(!CHECK_BITFIELD(mover.movement_type, UNSTOPPABLE))
-				return FALSE
-
-/turf/Entered(atom/movable/AM)
+/turf/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
-	if(explosion_level && AM.ex_check(explosion_id))
-		AM.ex_act(explosion_level)
+	if(explosion_level && arrived.ex_check(explosion_id))
+		arrived.ex_act(explosion_level)
 
 
-/turf/open/Entered(atom/movable/AM)
+/turf/open/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	..()
 	//melting
-	if(isobj(AM) && air && air.return_temperature() > T0C)
-		var/obj/O = AM
+	if(isobj(arrived) && air && air.return_temperature() > T0C)
+		var/obj/O = arrived
 		if(O.obj_flags & FROZEN)
 			O.make_unfrozen()
 
-	if(!AM.zfalling)
-		zFall(AM)
+	if(!arrived.zfalling)
+		zFall(arrived)
 
 /turf/proc/is_plasteel_floor()
 	return FALSE

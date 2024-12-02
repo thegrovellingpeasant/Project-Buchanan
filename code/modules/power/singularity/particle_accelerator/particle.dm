@@ -22,11 +22,13 @@
 	energy = 50
 
 
-/obj/effect/accelerated_particle/New(loc)
-	..()
-
+/obj/effect/accelerated_particle/Initialize(mapload)
+	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(move)), 1)
-
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/effect/accelerated_particle/Bump(atom/A)
 	if(A)
@@ -43,9 +45,10 @@
 			B.take_damage(energy*0.6)
 			movement_range = 0
 
-/obj/effect/accelerated_particle/Crossed(atom/A)
-	if(isliving(A))
-		toxmob(A)
+/obj/effect/accelerated_particle/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(isliving(arrived))
+		toxmob(arrived)
 
 
 /obj/effect/accelerated_particle/ex_act(severity, target)

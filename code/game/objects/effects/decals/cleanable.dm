@@ -27,6 +27,12 @@
 		if(LAZYLEN(diseases_to_add))
 			AddComponent(/datum/component/infective, diseases_to_add)
 
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+		COMSIG_ATOM_EXITED = PROC_REF(on_exited),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 	addtimer(CALLBACK(src, TYPE_PROC_REF(/datum, _AddElement), list(/datum/element/beauty, beauty)), 0)
 
 /obj/effect/decal/cleanable/proc/replace_decal(obj/effect/decal/cleanable/C) // Returns true if we should give up in favor of the pre-existing decal
@@ -69,13 +75,13 @@
 		reagents.expose_temperature(exposed_temperature)
 	..()
 
-
 //Add "bloodiness" of this blood's type, to the human's shoes
 //This is on /cleanable because fuck this ancient mess
-/obj/effect/decal/cleanable/Crossed(atom/movable/O)
-	..()
-	if(ishuman(O))
-		var/mob/living/carbon/human/H = O
+/obj/effect/decal/cleanable/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(ishuman(arrived))
+		var/mob/living/carbon/human/H = arrived
 		if(H.shoes && blood_state && bloodiness && !HAS_TRAIT(H, TRAIT_LIGHT_STEP))
 			var/obj/item/clothing/shoes/S = H.shoes
 			var/add_blood = 0
@@ -91,6 +97,10 @@
 			S.blood_state = blood_state
 			update_icon()
 			H.update_inv_shoes()
+
+/obj/effect/decal/cleanable/proc/on_exited(datum/source, atom/movable/gone, direction)
+	SIGNAL_HANDLER
+	return
 
 /obj/effect/decal/cleanable/proc/can_bloodcrawl_in()
 	if((blood_state != BLOOD_STATE_OIL) && (blood_state != BLOOD_STATE_NOT_BLOODY))

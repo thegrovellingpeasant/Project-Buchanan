@@ -447,7 +447,7 @@
 			dat += "<A href='?src=[REF(src)];[HrefToken()];f_dynamic_roundstart=1'>(Force Roundstart Rulesets)</A><br>"
 			if (GLOB.dynamic_forced_roundstart_ruleset.len > 0)
 				for(var/datum/dynamic_ruleset/roundstart/rule in GLOB.dynamic_forced_roundstart_ruleset)
-					dat += {"<A href='?src=[REF(src)];[HrefToken()];f_dynamic_roundstart_remove=\ref[rule]'>-> [rule.name] <-</A><br>"}
+					dat += {"<A href='?src=[REF(src)];[HrefToken()];f_dynamic_roundstart_remove=[text_ref(rule)]'>-> [rule.name] <-</A><br>"}
 				dat += "<A href='?src=[REF(src)];[HrefToken()];f_dynamic_roundstart_clear=1'>(Clear Rulesets)</A><br>"
 			dat += "<A href='?src=[REF(src)];[HrefToken()];f_dynamic_storyteller=1'>(Force Storyteller)</A><br>"
 			if (GLOB.dynamic_forced_storyteller)
