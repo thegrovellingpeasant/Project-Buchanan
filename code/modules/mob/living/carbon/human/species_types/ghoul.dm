@@ -1,4 +1,4 @@
-//ghouls-heal from radiation, do not breathe. do not go into crit. terrible at melee, easily dismembered. 
+//ghouls-heal from radiation, do not breathe. do not go into crit. terrible at melee, easily dismembered.
 //cannot use medical chemicals to heal brute or burn, must heal from rads, sutures. can use antitoxin chemicals.  //actually changed my mind i'll give stims reduced effect instead
 //Slower than humans at combat armor speed, appear dead. rotted organs unable to use for transplant.
 //like before, they cannot take piercing wounds or burn wounds or slash wounds, but they can have their bones broken by any source of wound now instead of being impervious
@@ -64,7 +64,7 @@
 /datum/species/ghoul/qualifies_for_rank(rank, list/features)
 	if(rank in GLOB.legion_positions) /* legion HATES these ghoul */
 		return 0
-	if(rank in GLOB.brotherhood_positions) //don't hate them, just tolorate. 
+	if(rank in GLOB.brotherhood_positions) //don't hate them, just tolorate.
 		return 0
 	if(rank in GLOB.vault_positions) //purest humans left in america. supposedly.
 		return 0
@@ -78,11 +78,11 @@
 		H.adjustBruteLoss(2)
 		H.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM)
 		if(prob(5))
-			to_chat(H, "<span class='warning'>You feel like taking radaway wasn't the best idea.</span>")
+			to_chat(H, span_warning("You feel like taking radaway wasn't the best idea."))
 	if(chem.type == /datum/reagent/medicine/radx)
 		H.adjustBruteLoss(2)
 		if(prob(5))
-			to_chat(H, "<span class='warning'>You feel sick...</span>")
+			to_chat(H, span_warning("You feel sick..."))
 		H.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM)
 	if(chem.type == /datum/reagent/medicine/stimpak)
 		H.adjustBruteLoss(1.5) //this is a very shitty way of making it so that they heal at a reduced rate for the emergency fix, i'll make the code cleaner tomorrow

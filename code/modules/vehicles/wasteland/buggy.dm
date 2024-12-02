@@ -55,11 +55,11 @@
 
 /obj/vehicle/ridden/motorcycle/buggy/user_unbuckle_mob(mob/living/buckled_mob, mob/user)
 	if(user != buckled_mob)
-		visible_message("<span class='warning'>[user] starts to unbuckle [buckled_mob] from [src]!</span>")
+		visible_message(span_warning("[user] starts to unbuckle [buckled_mob] from [src]!"))
 		if(do_after(user, 50, 1, target = buckled_mob, required_mobility_flags = MOBILITY_RESIST))
 			return ..()
 		else
-			visible_message("<span class='warning'>[user] fails to unbuckle [buckled_mob] from [src]!</span>")
+			visible_message(span_warning("[user] fails to unbuckle [buckled_mob] from [src]!"))
 			return
 	if(user == buckled_mob)
 		unbuckle_mob(buckled_mob, user)
@@ -81,16 +81,16 @@
 		return FALSE
 	if(isliving(dropping) && M != dropping)
 		var/mob/living/L = dropping
-		L.visible_message("<span class='warning'>[M] starts forcing [L] into [src]!</span>")
+		L.visible_message(span_warning("[M] starts forcing [L] into [src]!"))
 		mob_try_forced_enter(M, L)
 	return ..()
 
 /obj/vehicle/ridden/motorcycle/buggy/mob_try_exit(mob/M, mob/user, silent = FALSE)
 	if(M == user && (occupants[M] & VEHICLE_CONTROL_KIDNAPPED))
-		to_chat(user, "<span class='notice'>You push against the back of [src] trunk to try and get out.</span>")
+		to_chat(user, span_notice("You push against the back of [src] trunk to try and get out."))
 		if(!do_after(user, escape_time, target = src))
 			return FALSE
-		to_chat(user,"<span class='danger'>[user] gets out of [src]</span>")
+		to_chat(user,span_danger("[user] gets out of [src]"))
 		mob_exit(M, silent)
 		return TRUE
 	mob_exit(M, silent)
@@ -108,7 +108,7 @@
 
 /obj/vehicle/ridden/motorcycle/buggy/proc/mob_forced_enter(mob/M, silent = FALSE)
 	if(!silent)
-		M.visible_message("<span class='warning'>[M] is forced into \the [src]!</span>")
+		M.visible_message(span_warning("[M] is forced into \the [src]!"))
 	M.forceMove(src)
 	add_occupant(M, VEHICLE_CONTROL_KIDNAPPED)*/
 
@@ -172,7 +172,7 @@
 		var/atom/throw_target = get_edge_target_turf(A, dir)
 		if(crash_all)
 			A.throw_at(throw_target, 4, 3)
-			visible_message("<span class='danger'>[src] crashes into [A]!</span>")
+			visible_message(span_danger("[src] crashes into [A]!"))
 			playsound(src, 'sound/effects/bang.ogg', 50, 1)
 		if(ishuman(A))
 			var/mob/living/carbon/human/H = A
@@ -181,14 +181,14 @@
 			H.apply_damage(rand(10,15), BRUTE)
 			if(!crash_all)
 				H.throw_at(throw_target, 2, 3)
-				visible_message("<span class='danger'>[src] crashes into [H]!</span>")
+				visible_message(span_danger("[src] crashes into [H]!"))
 				playsound(src, 'sound/effects/bang.ogg', 50, 1)
 		if(isliving(A))
 			var/mob/living/W = A
 			W.apply_damage(10, BRUTE)
 			if(!crash_all)
 				W.throw_at(throw_target, 1, 2)
-				visible_message("<span class='danger'>[src] crashes into [W]!</span>")
+				visible_message(span_danger("[src] crashes into [W]!"))
 				playsound(src, 'sound/effects/bang.ogg', 50, 1)
 
 /obj/vehicle/ridden/motorcycle/buggy/red

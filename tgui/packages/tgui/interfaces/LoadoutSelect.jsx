@@ -1,5 +1,5 @@
 import { useBackend } from '../backend';
-import { Button, Flex, Section, Tabs } from '../components';
+import { Button, Dropdown, Section, Stack } from '../components';
 import { Image } from '../components/Image';
 import { Window } from '../layouts';
 
@@ -9,24 +9,21 @@ export const LoadoutSelect = (props, context) => {
   return (
     <Window width={500} height={450} resizable>
       <Window.Content scrollable>
-        <Tabs style={{ 'vertical-align': 'top', flex: 'initial' }}>
-          {(!outfits?.length && 'No loadout options.') ||
-            outfits.map((outfit) => (
-              <Tabs.Tab
-                key={outfit}
-                selected={selected === outfit}
-                onClick={() =>
-                  act('loadout_select', {
-                    name: outfit,
-                  })
-                }
-              >
-                {outfit}
-              </Tabs.Tab>
-            ))}
-        </Tabs>
-        <Flex direction="row" width="100%">
-          <Flex.Item
+        <Section>
+          <Dropdown
+            selected={selected || 'Select a Loadout'}
+            width="100%"
+            nowrap
+            options={outfits}
+            onSelected={(value) =>
+              act('loadout_select', {
+                name: value,
+              })
+            }
+          />
+        </Section>
+        <Stack direction="row" width="100%">
+          <Stack.Item
             width="50%"
             height="100%"
             style={{ 'vertical-align': 'top' }}
@@ -65,8 +62,8 @@ export const LoadoutSelect = (props, context) => {
                   </div>
                 ))}
             </Section>
-          </Flex.Item>
-          <Flex.Item
+          </Stack.Item>
+          <Stack.Item
             height="100%"
             width="50%"
             style={{ 'vertical-align': 'top' }}
@@ -116,8 +113,8 @@ export const LoadoutSelect = (props, context) => {
                 </div>
               )}
             </Section>
-          </Flex.Item>
-        </Flex>
+          </Stack.Item>
+        </Stack>
       </Window.Content>
     </Window>
   );

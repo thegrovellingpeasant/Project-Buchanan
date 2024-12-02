@@ -215,8 +215,8 @@
 			M.take_damage(dam_force * chassis.melee_multiplier)
 			playsound(src, hitsound, 50)
 			start_cooldown()
-			target.visible_message("<span class='danger'>[chassis] attacks [target] with the [src]!</span>", \
-								"<span class='userdanger'>[chassis] attacks [target] with the [src]!</span>")
+			target.visible_message(span_danger("[chassis] attacks [target] with the [src]!"), \
+								span_userdanger("[chassis] attacks [target] with the [src]!"))
 			log_combat(chassis.occupant, M, "attacked", "[name]", "(INTENT: [uppertext(chassis.occupant.a_intent)]) (DAMTYE: [uppertext(damtype)])")
 			return 1
 		if(isliving(target))
@@ -229,8 +229,8 @@
 			M.updatehealth()
 			playsound(src, hitsound, 50)
 			start_cooldown()
-			target.visible_message("<span class='danger'>[chassis] attacks [target] with the [src]!</span>", \
-								"<span class='userdanger'>[chassis] attacks [target] with the [src]!</span>")
+			target.visible_message(span_danger("[chassis] attacks [target] with the [src]!"), \
+								span_userdanger("[chassis] attacks [target] with the [src]!"))
 			log_combat(chassis.occupant, M, "attacked", "[name]", "(INTENT: [uppertext(chassis.occupant.a_intent)]) (DAMTYE: [uppertext(damtype)])")
 			return 1
 		if(istype(target, /obj/structure))

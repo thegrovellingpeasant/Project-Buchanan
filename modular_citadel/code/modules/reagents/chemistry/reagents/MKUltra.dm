@@ -179,7 +179,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 			Vc.Remove()
 		nVc.Insert(M)
 		qdel(Vc)
-		to_chat(M, "<span class='notice'><i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i></span>")
+		to_chat(M, span_notice("<i>You feel your vocal chords tingle you speak in a more charasmatic and sultry tone.</i>"))
 	else
 		log_reagent("FERMICHEM: MKUltra: [creatorName], [creatorID], is enthralling [M.name], [M.ckey]")
 		M.apply_status_effect(/datum/status_effect/chem/enthrall)
@@ -234,7 +234,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 	metabolization_rate = 1//Mostly to manage brain damage and reduce server stress
 	if (M.ckey == creatorID && creatorName == M.real_name)//If the creator drinks 100u, then you get the status for someone random (They don't have the vocal chords though, so it's limited.)
 		if (!M.has_status_effect(/datum/status_effect/chem/enthrall))
-			to_chat(M, "<span class='love'><i>You are unable to resist your own charms anymore, and become a full blown narcissist.</i></span>")
+			to_chat(M, span_love("<i>You are unable to resist your own charms anymore, and become a full blown narcissist.</i>"))
 	ADD_TRAIT(M, TRAIT_PACIFISM, "MKUltra")
 	var/datum/status_effect/chem/enthrall/E
 	if (!M.has_status_effect(/datum/status_effect/chem/enthrall))
@@ -264,7 +264,8 @@ Creating a chem with a low purity will make you permanently fall in love with so
 //Creates a gas cloud when the reaction blows up, causing everyone in it to fall in love with someone/something while it's in their system.
 /datum/reagent/fermi/enthrallExplo//Created in a gas cloud when it explodes
 	name = "Gaseous MKUltra"
-	description = "A forbidden deep red gas that overwhelms a foreign body, causing the person they next lay their eyes on to become more interesting. Studies have shown that people are 66% more likely to make friends with this in the air. Produced when MKUltra explodes."
+	description = "A forbidden deep red gas that overwhelms a foreign body, causing the person they next lay their eyes on to become more interesting. \
+		Studies have shown that people are 66% more likely to make friends with this in the air. Produced when MKUltra explodes."
 	color = "#2C051A" // rgb: , 0, 255
 	metabolization_rate = 0.1
 	taste_description = "synthetic chocolate, a base tone of alcohol, and high notes of roses."
@@ -286,22 +287,22 @@ Creating a chem with a low purity will make you permanently fall in love with so
 		love = pick(seen)
 		M.apply_status_effect(STATUS_EFFECT_INLOVE, love)
 		lewd = (M.client?.prefs.cit_toggles & HYPNO) && (love.client?.prefs.cit_toggles & HYPNO)
-		to_chat(M, "[(lewd?"<span class='love'>":"<span class='warning'>")][(lewd?"You develop a sudden crush on [love], your heart beginning to race as you look upon them with new eyes.":"You suddenly feel like making friends with [love].")] You feel strangely drawn towards them.</span>")
+		to_chat(M, "[(lewd ? "<span class='love'>":"<span class='warning'>")][(lewd ? "You develop a sudden crush on [love], your heart beginning to race as you look upon them with new eyes.":"You suddenly feel like making friends with [love].")] You feel strangely drawn towards them.</span>")
 		log_reagent("FERMICHEM: [M] ckey: [M.key] has temporarily bonded with [love] ckey: [love.key]")
 		SSblackbox.record_feedback("tally", "fermi_chem", 1, "Times people have bonded")
 	else
 		if(get_dist(M, love) < 8)
-			var/message = "[(lewd?"I'm next to my crush..! Eee!":"I'm making friends with [love]!")]"
+			var/message = "[lewd ? "I'm next to my crush..! Eee!" : "I'm making friends with [love]!"]"
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "InLove", /datum/mood_event/InLove, message)
 			SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "MissingLove")
 		else
-			var/message = "[(lewd?"I can't keep my crush off my mind, I need to see them again!":"I really want to make friends with [love]!")]"
+			var/message = "[lewd ? "I can't keep my crush off my mind, I need to see them again!" : "I really want to make friends with [love]!"]"
 			SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "MissingLove", /datum/mood_event/MissingLove, message)
 			SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "InLove")
 			if(prob(5))
 				M.Stun(10)
 				M.emote("whimper")//does this exist?
-				to_chat(M, "[(lewd?"<span class='love'>":"<span class='warning'>")] You're overcome with a desire to see [love].</span>")
+				to_chat(M, "[lewd ? "<span class='love'>" : "<span class='warning'>"] You're overcome with a desire to see [love].")
 				M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.5)//I found out why everyone was so damaged!
 	..()
 
@@ -319,10 +320,10 @@ Creating a chem with a low purity will make you permanently fall in love with so
 	if(Lover.client?.prefs.cit_toggles & NEVER_HYPNO)
 		return // doesn't even give a message, it's just ignored
 	if(Lover.has_status_effect(STATUS_EFFECT_INLOVE))
-		to_chat(Lover, "<span class='warning'>You are already fully devoted to someone else!</span>")
+		to_chat(Lover, span_warning("You are already fully devoted to someone else!"))
 		return
 	var/lewd = (Lover.client?.prefs.cit_toggles & HYPNO) && (Love.client?.prefs.cit_toggles & HYPNO)
-	to_chat(Lover, "[(lewd?"<span class='love'>":"<span class='warning'>")]You develop a deep and sudden bond with [Love][(lewd?", your heart beginning to race as your mind filles with thoughts about them.":".")] You are determined to keep them safe and happy, and feel drawn towards them.</span>")
+	to_chat(Lover, "[(lewd ? "<span class='love'>" : "<span class='warning'>")]You develop a deep and sudden bond with [Love][(lewd?", your heart beginning to race as your mind filles with thoughts about them.":".")] You are determined to keep them safe and happy, and feel drawn towards them.")
 	if(Lover.mind)
 		Lover.mind.store_memory("You are in love with [Love].")
 	Lover.faction |= "[REF(Love)]"

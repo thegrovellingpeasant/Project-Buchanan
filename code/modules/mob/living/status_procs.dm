@@ -564,11 +564,11 @@
 		if(amount) //don't spam up the chat for continuous stuns
 			if(priority_absorb_key["visible_message"] || priority_absorb_key["self_message"])
 				if(priority_absorb_key["visible_message"] && priority_absorb_key["self_message"])
-					visible_message("<span class='warning'>[src][priority_absorb_key["visible_message"]]</span>", "<span class='boldwarning'>[priority_absorb_key["self_message"]]</span>")
+					visible_message(span_warning("[src][priority_absorb_key["visible_message"]]"), span_boldwarning("[priority_absorb_key["self_message"]]"))
 				else if(priority_absorb_key["visible_message"])
-					visible_message("<span class='warning'>[src][priority_absorb_key["visible_message"]]</span>")
+					visible_message(span_warning("[src][priority_absorb_key["visible_message"]]"))
 				else if(priority_absorb_key["self_message"])
-					to_chat(src, "<span class='boldwarning'>[priority_absorb_key["self_message"]]</span>")
+					to_chat(src, span_boldwarning("[priority_absorb_key["self_message"]]"))
 			priority_absorb_key["stuns_absorbed"] += amount
 		return TRUE
 
@@ -669,11 +669,11 @@
 		for(var/listed_type in slowdown_type)
 			if(ispath(listed_type))
 				listed_type = "[listed_type]" //Path2String
-			LAZYADDASSOC(movespeed_mod_immunities, listed_type, source)
+			LAZYADDASSOCLIST(movespeed_mod_immunities, listed_type, source)
 	else
 		if(ispath(slowdown_type))
 			slowdown_type = "[slowdown_type]" //Path2String
-		LAZYADDASSOC(movespeed_mod_immunities, slowdown_type, source)
+		LAZYADDASSOCLIST(movespeed_mod_immunities, slowdown_type, source)
 	if(update)
 		update_movespeed()
 

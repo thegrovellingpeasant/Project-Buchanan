@@ -13,7 +13,7 @@
 	. = ..()
 	if (enabled)
 		GLOB.teleportbeacons += src
-	else 
+	else
 		icon_state = "beacon-off"
 
 /obj/item/beacon/Destroy()
@@ -25,10 +25,10 @@
 	if (enabled)
 		icon_state = "beacon"
 		GLOB.teleportbeacons += src
-	else 
+	else
 		icon_state = "beacon-off"
 		GLOB.teleportbeacons.Remove(src)
-	to_chat(user, "<span class='notice'>You [enabled ? "enable" : "disable"] the beacon.</span>")
+	to_chat(user, span_notice("You [enabled ? "enable" : "disable"] the beacon."))
 	return
 
 /obj/item/beacon/attackby(obj/item/W, mob/user)
@@ -40,7 +40,7 @@
 			name = new_name
 			renamed = TRUE
 		return
-	else	
+	else
 		return ..()
 
 /obj/item/beacon/vr
