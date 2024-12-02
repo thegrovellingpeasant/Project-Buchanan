@@ -3492,13 +3492,6 @@
 /obj/structure/chair/sofa/right,
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_east_building)
-"dqp" = (
-/obj/structure/table/reinforced,
-/obj/item/stack/f13Cash/random/chips/med{
-	pixel_y = 8
-	},
-/turf/open/floor/f13/dark,
-/area/f13/reno_sharkclub_vault)
 "dqs" = (
 /obj/effect/overlay/junk/oldpipes{
 	pixel_x = 11;
@@ -46651,7 +46644,7 @@ wic
 ejT
 wwk
 eKS
-dqp
+wUu
 wwk
 wic
 fhz
