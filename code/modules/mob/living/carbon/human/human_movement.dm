@@ -54,11 +54,11 @@
 /mob/living/carbon/human/mob_negates_gravity()
 	return ((shoes && shoes.negates_gravity()) || (dna.species.negates_gravity(src)))
 
-/mob/living/carbon/human/Move(NewLoc, direct)
+/mob/living/carbon/human/Move(atom/newloc, direction=0, glide_size_override = 0)
 	var/oldpseudoheight = pseudo_z_axis
 	. = ..()
 	for(var/datum/mutation/human/HM in dna.mutations)
-		HM.on_move(NewLoc)
+		HM.on_move(newloc)
 	if(. && (combat_flags & COMBAT_FLAG_SPRINT_ACTIVE) && !(movement_type & FLYING) && CHECK_ALL_MOBILITY(src, MOBILITY_MOVE|MOBILITY_STAND) && m_intent == MOVE_INTENT_RUN && has_gravity(loc) && (!pulledby || (pulledby.pulledby == src)))
 		if(!HAS_TRAIT(src, TRAIT_FREESPRINT))
 			doSprintLossTiles(1)
@@ -69,7 +69,7 @@
 			DefaultCombatKnockdown(80)
 	if(shoes)
 		if(!lying && !buckled)
-			if(loc == NewLoc)
+			if(loc == newloc)
 				if(!has_gravity(loc))
 					return
 				var/obj/item/clothing/shoes/S = shoes

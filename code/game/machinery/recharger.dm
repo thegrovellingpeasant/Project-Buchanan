@@ -55,9 +55,9 @@
 		using_power = FALSE
 		update_icon()
 
-/obj/machinery/recharger/Exited(atom/movable/M, atom/newloc)
+/obj/machinery/recharger/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(charging == M)
+	if(charging == gone)
 		setCharging()
 
 /obj/machinery/recharger/attackby(obj/item/G, mob/user, params)
@@ -234,9 +234,9 @@
 			var/obj/item/stock_parts/cell/C = charging.get_cell()
 			. += span_notice("- \The [charging]'s cell is at <b>[C.percent()]%</b>.")
 
-/obj/machinery/recharger/pump/Exited(atom/movable/M, atom/newloc)
+/obj/machinery/recharger/pump/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(charging == M)
+	if(charging == gone)
 		setCharging()
 
 /obj/machinery/recharger/pump/attackby(obj/item/G, mob/user, params)

@@ -21,7 +21,7 @@
 		return 1
 	return ..()
 
-/obj/vehicle/ridden/fuel/Move(NewLoc,Dir=0,step_x=0,step_y=0)
+/obj/vehicle/ridden/fuel/Move(atom/newloc, direction=0, glide_size_override = 0)
 	. = ..()
 	if(engine_on && move_wasting)
 		fuel_holder.reagents.remove_reagent("welding_fuel",move_wasting)

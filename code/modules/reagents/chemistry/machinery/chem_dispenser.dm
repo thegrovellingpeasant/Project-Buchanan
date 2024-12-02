@@ -175,9 +175,9 @@
 	if(beaker)
 		beaker.ex_act(severity, target)
 
-/obj/machinery/chem_dispenser/Exited(atom/movable/A, atom/newloc)
+/obj/machinery/chem_dispenser/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(A == beaker)
+	if(gone == beaker)
 		beaker = null
 		update_icon()
 

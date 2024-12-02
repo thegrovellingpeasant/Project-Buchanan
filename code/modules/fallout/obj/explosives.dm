@@ -57,12 +57,6 @@
 	if(prob(15))
 		playsound(get_turf(src),'sound/f13weapons/mine_one.ogg',100, extrarange = -5)
 
-/*
-/obj/item/bottlecap_mine/Crossed(go/AM)
-	if(state == ACTIVE && ishuman(AM))
-		boom()
-*/
-
 /obj/item/bottlecap_mine/update_icon()
 	switch(state)
 		if(DISABLED)
@@ -82,19 +76,6 @@
 		if(ACTIVE)
 			. += span_warning("It seems activated!")
 
-
-
-
-/obj/item/grenade/plastic/c4/New()
-	wires = new /datum/wires/explosive/c4(src)
-	..()
-
-/obj/item/grenade/plastic/c4/Destroy()
-	qdel(wires)
-	wires = null
-	target = null
-	return ..()
-
 /obj/item/mine
 	name = "dummy mine"
 	desc = "Better stay away from that thing."
@@ -112,17 +93,20 @@
 	. = ..()
 	AddElement(/datum/element/empprotection, EMP_PROTECT_WIRES)
 
-/obj/item/mine/Initialize()
+/obj/item/mine/Initialize(mapload)
 	. = ..()
 	if(random)
 		wires = new /datum/wires/explosive/mine/random(src)
 	else
 		wires = new /datum/wires/explosive/mine(src)
 
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/item/mine/Destroy()
-	qdel(wires)
-	wires = null
+	QDEL_NULL(wires)
 	return ..()
 
 /obj/item/mine/attack_self(mob/user)
@@ -149,28 +133,28 @@
 /obj/item/mine/proc/mineEffect(mob/victim)
 	to_chat(victim, span_danger("*click*"))
 
-/obj/item/mine/Crossed(atom/movable/AM)
+/obj/item/mine/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(!armed)
 		return
-	if(triggered || !isturf(loc) || !isliving(AM) || isstructure(AM) || isnottriggermine(AM))
-		return
-	. = ..()
-
-	if(AM.movement_type & FLYING)
+	if(triggered || !isturf(loc) || !isliving(arrived) || isstructure(arrived) || isnottriggermine(arrived))
 		return
 
-	triggermine(AM)
+	if(arrived.movement_type & FLYING)
+		return
+
+	triggermine(arrived)
 
 /obj/item/mine/proc/triggermine(mob/victim)
 	if(triggered)
 		return
 	visible_message(span_danger("[victim] sets off [icon2html(src, viewers(src))] [src]!"))
-	var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+	var/datum/effect_system/spark_spread/s = new(loc)
 	s.set_up(3, 1, src)
 	s.start()
 	mineEffect(victim)
 	SEND_SIGNAL(src, COMSIG_ITEM_MINE_TRIGGERED)
-	triggered = 1
+	triggered = TRUE
 	qdel(src)
 
 /obj/item/mine/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir)

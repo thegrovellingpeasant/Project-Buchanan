@@ -184,13 +184,17 @@
 	var/list/obj/effect/portal/created = create_portal_pair(current_location, get_teleport_turf(get_turf(T)), 300, 1, null, atmos_link_override)
 	if(!(LAZYLEN(created) == 2))
 		return
-	RegisterSignal(created[1], COMSIG_PARENT_QDELETING, PROC_REF(on_portal_destroy)) //Gosh darn it kevinz.
-	RegisterSignal(created[2], COMSIG_PARENT_QDELETING, PROC_REF(on_portal_destroy))
-	try_move_adjacent(created[1], user.dir)
-	active_portal_pairs[created[1]] = created[2]
-	var/obj/effect/portal/c1 = created[1]
-	var/obj/effect/portal/c2 = created[2]
-	investigate_log("was used by [key_name(user)] at [AREACOORD(user)] to create a portal pair with destinations [AREACOORD(c1)] and [AREACOORD(c2)].", INVESTIGATE_PORTAL)
+	var/obj/effect/portal/portal1 = created[1]
+	var/obj/effect/portal/portal2 = created[2]
+
+	RegisterSignal(portal1, COMSIG_PARENT_QDELETING, PROC_REF(on_portal_destroy)) //Gosh darn it kevinz.
+	RegisterSignal(portal2, COMSIG_PARENT_QDELETING, PROC_REF(on_portal_destroy))
+	var/turf/check_turf = get_turf(get_step(user, user.dir))
+	if(check_turf.CanPass(user, get_dir(check_turf, user)))
+		portal1.forceMove(check_turf)
+	active_portal_pairs[portal1] = portal2
+
+	investigate_log("was used by [key_name(user)] at [AREACOORD(user)] to create a portal pair with destinations [AREACOORD(portal1)] and [AREACOORD(portal2)].", INVESTIGATE_PORTAL)
 	add_fingerprint(user)
 
 /obj/item/hand_tele/proc/on_portal_destroy(obj/effect/portal/P)

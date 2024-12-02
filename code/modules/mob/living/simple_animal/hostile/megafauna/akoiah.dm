@@ -79,10 +79,10 @@
 		return
 	..()
 
-/mob/living/simple_animal/hostile/megafauna/yaoguai/Move(atom/newloc, direct)
+/mob/living/simple_animal/hostile/megafauna/yaoguai/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(!can_move)
 		return
-	stored_move_dirs |= direct
+	stored_move_dirs |= direction
 	return ..()
 
 /mob/living/simple_animal/hostile/megafauna/yaoguai/Move()

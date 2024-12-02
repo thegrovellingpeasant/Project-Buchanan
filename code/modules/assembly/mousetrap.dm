@@ -6,11 +6,29 @@
 	custom_materials = list(/datum/material/iron=100)
 	attachable = TRUE
 	var/armed = FALSE
+	///if we are attached to an assembly holder, we attach a connect_loc element to ourselves that listens to this from the holder
+	var/static/list/holder_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
 
+/obj/item/assembly/mousetrap/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/item/assembly/mousetrap/examine(mob/user)
 	. = ..()
 	. += span_notice("The pressure plate is [armed?"primed":"safe"].")
+
+/obj/item/assembly/mousetrap/on_attach()
+	. = ..()
+	AddComponent(/datum/component/connect_loc_behalf, holder, holder_connections)
+
+/obj/item/assembly/mousetrap/on_detach()
+	. = ..()
+	qdel(GetComponent(/datum/component/connect_loc_behalf))
 
 /obj/item/assembly/mousetrap/activate()
 	if(..())
@@ -97,23 +115,28 @@
 	return ..()
 
 
-/obj/item/assembly/mousetrap/Crossed(atom/movable/AM as mob|obj)
-	if(armed)
-		if(ismob(AM))
-			var/mob/MM = AM
-			if(!(MM.movement_type & FLYING))
-				if(ishuman(AM))
-					var/mob/living/carbon/H = AM
-					if(H.m_intent == MOVE_INTENT_RUN)
-						triggered(H)
-						H.visible_message(span_warning("[H] accidentally steps on [src]."), \
-										  span_warning("You accidentally step on [src]"))
-				else if(ismouse(MM))
-					triggered(MM)
-		else if(AM.density) // For mousetrap grenades, set off by anything heavy
-			triggered(AM)
-	..()
+/obj/item/assembly/mousetrap/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 
+	if(!armed)
+		return
+	if(!ismob(enterer))
+		if(enterer.density) // For mousetrap grenades, set off by anything heavy
+			INVOKE_ASYNC(src, PROC_REF(triggered), enterer)
+		return
+	var/mob/MM = enterer
+	if(MM.movement_type & FLYING)
+		return
+	if(ishuman(enterer))
+		var/mob/living/carbon/H = enterer
+		if(H.m_intent == MOVE_INTENT_RUN)
+			INVOKE_ASYNC(src, PROC_REF(triggered), enterer)
+			H.visible_message(
+				span_warning("[H] accidentally steps on [src]."),
+				span_warning("You accidentally step on [src]"),
+			)
+	else if(ismouse(MM))
+		INVOKE_ASYNC(src, PROC_REF(triggered), MM)
 
 /obj/item/assembly/mousetrap/on_found(mob/finder)
 	if(armed)

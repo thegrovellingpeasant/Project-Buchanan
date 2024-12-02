@@ -79,10 +79,10 @@
 /mob/living/canZMove(dir, turf/target)
 	return can_zTravel(target, dir) && (movement_type & FLYING)
 
-/mob/living/Move(atom/newloc, direct, glide_size_override)
+/mob/living/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if (buckled && buckled.loc != newloc) //not updating position
 		if (!buckled.anchored)
-			return buckled.Move(newloc, direct, glide_size)
+			return buckled.Move(newloc, direction, glide_size)
 		else
 			return FALSE
 
