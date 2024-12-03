@@ -1359,7 +1359,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 					continue
 			else if(!M.has_field_of_vision)
 				continue
-			M.LoadComponent(/datum/component/field_of_vision, M.field_of_vision_type)
+			M.LoadComponent(/datum/component/field_of_vision, fov_type = M.field_of_vision_type)
 			CHECK_TICK
 
 	busy_toggling_fov = FALSE

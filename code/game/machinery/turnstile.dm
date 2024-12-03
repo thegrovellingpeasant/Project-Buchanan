@@ -11,16 +11,21 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	layer = OPEN_DOOR_LAYER
 
-/obj/machinery/turnstile/Initialize()
+/obj/machinery/turnstile/Initialize(mapload)
 	. = ..()
 	icon_state = "turnstile"
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
+	)
+
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/machinery/turnstile/CanAtmosPass(turf/T)
 	return TRUE
 
 /obj/machinery/turnstile/proc/allowed_access(mob/B)
 	if(B.pulledby && ismob(B.pulledby))
-		return allowed(B.pulledby) | allowed(B)
+		return allowed(B.pulledby) || allowed(B)
 	else
 		return allowed(B)
 
@@ -58,28 +63,17 @@
 	else
 		return FALSE
 
-/obj/machinery/turnstile/CheckExit(atom/movable/AM as mob|obj, target)
-	if(istype(AM, /obj/item/projectile))
-		return TRUE
-	if(isliving(AM))
-		var/mob/living/M = AM
-		var/outdir = dir
-		if(allowed_access(M))
-			switch(dir)
-				if(NORTH)
-					outdir = SOUTH
-				if(SOUTH)
-					outdir = NORTH
-				if(EAST)
-					outdir = WEST
-				if(WEST)
-					outdir = EAST
-		var/turf/outturf = get_step(src, outdir)
-		var/canexit = (target == src.loc) | (target == outturf)
+/obj/machinery/turnstile/proc/on_exit(datum/source, atom/movable/leaving, direction)
+	SIGNAL_HANDLER
 
-		if(!canexit && world.time - M.last_bumped <= 5)
-			to_chat(usr, span_notice("\the [src] resists your efforts."))
-		M.last_bumped = world.time
-		return canexit
-	else
-		return TRUE
+	if(!isliving(leaving))
+		return FALSE
+	var/mob/living/leaving_mob = leaving
+	//can only go in the opposite direction you came in from.
+	var/canexit = (direction == REVERSE_DIR(dir))
+
+	leaving_mob.last_bumped = world.time
+	if(!canexit)
+		if(world.time - leaving_mob.last_bumped <= 5)
+			to_chat(usr, span_notice("You find yourself unable to climb over \the [src]."))
+		return COMPONENT_ATOM_BLOCK_EXIT

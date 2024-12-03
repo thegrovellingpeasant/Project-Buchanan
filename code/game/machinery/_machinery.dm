@@ -559,9 +559,9 @@ Class Procs:
 		if(prob(40))
 			emp_act(50)
 
-/obj/machinery/Exited(atom/movable/AM, atom/newloc)
+/obj/machinery/Exited(atom/movable/gone, direction)
 	. = ..()
-	if (AM == occupant)
+	if (gone == occupant)
 		SEND_SIGNAL(src, COMSIG_MACHINE_EJECT_OCCUPANT, occupant)
 		occupant = null
 

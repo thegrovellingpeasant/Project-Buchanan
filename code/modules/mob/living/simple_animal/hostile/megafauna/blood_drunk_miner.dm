@@ -95,7 +95,7 @@ Difficulty: Medium
 	new /obj/effect/temp_visual/dir_setting/miner_death(loc, dir)
 	return ..()
 
-/mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/Move(atom/newloc)
+/mob/living/simple_animal/hostile/megafauna/blood_drunk_miner/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(dashing || (newloc && newloc.z == z && (islava(newloc) || ischasm(newloc)))) //we're not stupid!
 		return FALSE
 	return ..()

@@ -90,6 +90,9 @@
 /proc/_num2text(N, SigFig = 6)
 	return num2text(N, SigFig)
 
+/proc/_trimtext(Text)
+	return trimtext(Text)
+
 /proc/_ohearers(Dist, Center = usr)
 	return ohearers(Dist, Center)
 

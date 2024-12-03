@@ -48,6 +48,12 @@
 	dais_overlay.layer = CLOSED_TURF_LAYER
 	add_overlay(dais_overlay)
 
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
+	)
+
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/structure/necropolis_gate/Destroy(force)
 	if(force)
 		qdel(sight_blocker, TRUE)
@@ -58,10 +64,18 @@
 /obj/structure/necropolis_gate/singularity_pull()
 	return 0
 
-/obj/structure/necropolis_gate/CheckExit(atom/movable/O, target)
-	if(get_dir(O.loc, target) == dir)
-		return !density
-	return 1
+/obj/structure/necropolis_gate/proc/on_exit(datum/source, atom/movable/leaving, direction)
+	SIGNAL_HANDLER
+
+	if(leaving.movement_type & UNSTOPPABLE)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if (direction == dir && density)
+		leaving.Bump(src)
+		return COMPONENT_ATOM_BLOCK_EXIT
 
 /obj/structure/opacity_blocker
 	icon = 'icons/effects/96x96.dmi'
@@ -258,6 +272,10 @@ GLOBAL_DATUM(necropolis_gate, /obj/structure/necropolis_gate/legion_gate)
 /obj/structure/stone_tile/Initialize(mapload)
 	. = ..()
 	icon_state = "[tile_key][rand(1, tile_random_sprite_max)]"
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/stone_tile/Destroy(force)
 	if(force || fallen)
@@ -268,24 +286,25 @@ GLOBAL_DATUM(necropolis_gate, /obj/structure/necropolis_gate/legion_gate)
 /obj/structure/stone_tile/singularity_pull()
 	return
 
-/obj/structure/stone_tile/Crossed(atom/movable/AM)
+/obj/structure/stone_tile/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(falling || fallen)
 		return
 	var/turf/T = get_turf(src)
 	if(!islava(T) && !ischasm(T)) //nothing to sink or fall into
 		return
 	var/obj/item/I
-	if(istype(AM, /obj/item))
-		I = AM
+	if(isitem(arrived))
+		I = arrived
 	var/mob/living/L
-	if(isliving(AM))
-		L = AM
+	if(isliving(arrived))
+		L = arrived
 	switch(fall_on_cross)
 		if(COLLAPSE_ON_CROSS, DESTROY_ON_CROSS)
 			if((I && I.w_class >= WEIGHT_CLASS_BULKY) || (L && !(L.movement_type & FLYING) && L.mob_size >= MOB_SIZE_HUMAN)) //too heavy! too big! aaah!
-				collapse()
+				INVOKE_ASYNC(src, PROC_REF(collapse))
 		if(UNIQUE_EFFECT)
-			crossed_effect(AM)
+			crossed_effect(arrived)
 
 /obj/structure/stone_tile/proc/collapse()
 	falling = TRUE

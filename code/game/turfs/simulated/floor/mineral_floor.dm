@@ -156,11 +156,12 @@
 	var/last_event = 0
 	var/active = null
 
-/turf/open/floor/mineral/uranium/Entered(mob/AM)
-	.=..()
-	if(!.)
-		if(istype(AM))
-			radiate()
+/turf/open/floor/mineral/uranium/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	. = ..()
+	if(.)
+		return
+	if(istype(arrived))
+		radiate()
 
 /turf/open/floor/mineral/uranium/attackby(obj/item/W, mob/user, params)
 	.=..()

@@ -53,6 +53,13 @@
 	var/list/prefixes
 	var/list/suffixes
 
+/mob/living/simple_animal/bot/cleanbot/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /mob/living/simple_animal/bot/cleanbot/proc/deputize(obj/item/W, mob/user)
 	if(in_range(src, user))
 		to_chat(user, span_notice("You attach \the [W] to \the [src]."))
@@ -134,21 +141,22 @@
 	text_dehack = "[name]'s software has been reset!"
 	text_dehack_fail = "[name] does not seem to respond to your repair code!"
 
-/mob/living/simple_animal/bot/cleanbot/Crossed(atom/movable/AM)
-	. = ..()
+/mob/living/simple_animal/bot/cleanbot/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 
+	if(!weapon || !has_gravity() || !ismob(arrived))
+		return
+	var/mob/living/carbon/C = arrived
+	if(!istype(C))
+		return
 	zone_selected = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-	if(weapon && has_gravity() && ismob(AM))
-		var/mob/living/carbon/C = AM
-		if(!istype(C))
-			return
 
-		if(!(C.job in stolen_valor))
-			stolen_valor += C.job
-		update_titles()
+	if(!(C.job in stolen_valor))
+		stolen_valor += C.job
+	update_titles()
 
-		weapon.attack(C, src)
-		C.Knockdown(20)
+	INVOKE_ASYNC(weapon, TYPE_PROC_REF(/obj/item, attack), C, src)
+	C.Knockdown(20)
 
 /mob/living/simple_animal/bot/cleanbot/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/card/id)||istype(W, /obj/item/pda))

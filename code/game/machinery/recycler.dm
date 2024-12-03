@@ -23,6 +23,10 @@
 	. = ..()
 	update_icon()
 	req_one_access = get_all_accesses() + get_all_centcom_access()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/machinery/recycler/deconstruct(disassembled = TRUE)
 	safety_mode = TRUE //to stop stock parts and circuit from being deleted.
@@ -96,9 +100,9 @@
 	if(move_dir == eat_dir)
 		return TRUE
 
-/obj/machinery/recycler/Crossed(atom/movable/AM)
-	eat(AM)
-	. = ..()
+/obj/machinery/recycler/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	INVOKE_ASYNC(src, PROC_REF(eat), enterer)
 
 /obj/machinery/recycler/proc/eat(atom/AM0)
 	if(stat & (BROKEN|NOPOWER) || safety_mode)

@@ -254,20 +254,27 @@
 	density = FALSE
 	light_range = 4
 	light_color = LIGHT_COLOR_RED
-	var/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/myowner = null
+	var/mob/living/simple_animal/hostile/asteroid/elite/legionnaire/myowner
 
-
-/obj/structure/legionnaire_bonfire/Entered(atom/movable/mover, turf/target)
-	if(isliving(mover))
-		var/mob/living/L = mover
-		L.adjust_fire_stacks(3)
-		L.IgniteMob()
+/obj/structure/legionnaire_bonfire/Initialize(mapload)
 	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+/obj/structure/legionnaire_bonfire/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!isliving(arrived))
+		return
+	var/mob/living/L = arrived
+	L.adjust_fire_stacks(3)
+	L.IgniteMob()
 
 /obj/structure/legionnaire_bonfire/Destroy()
 	if(myowner != null)
 		myowner.mypile = null
-	. = ..()
+	return ..()
 
 //The visual effect which appears in front of legionnaire when he goes to charge.
 /obj/effect/temp_visual/dragon_swoop/legionnaire

@@ -17,13 +17,13 @@
 /turf/closed/wall/mineral/cult/devastate_wall()
 	new sheet_type(get_turf(src), sheet_amount)
 
-/turf/closed/wall/mineral/cult/Exited(atom/movable/AM, atom/newloc)
+/turf/closed/wall/mineral/cult/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(istype(AM, /mob/living/simple_animal/hostile/construct/harvester)) //harvesters can go through cult walls, dragging something with
-		var/mob/living/simple_animal/hostile/construct/harvester/H = AM
+	if(istype(gone, /mob/living/simple_animal/hostile/construct/harvester)) //harvesters can go through cult walls, dragging something with
+		var/mob/living/simple_animal/hostile/construct/harvester/H = gone
 		var/atom/movable/stored_pulling = H.pulling
 		if(stored_pulling)
-			stored_pulling.setDir(get_dir(stored_pulling.loc, newloc))
+			stored_pulling.setDir(direction)
 			stored_pulling.forceMove(src)
 			H.start_pulling(stored_pulling, supress_message = TRUE)
 
@@ -33,7 +33,7 @@
 		var/previouscolor = color
 		color = "#FAE48C"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /turf/closed/wall/mineral/cult/artificer
 	name = "runed stone wall"
@@ -110,7 +110,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /turf/closed/wall/clockwork/dismantle_wall(devastated=0, explode=0)
 	if(devastated)

@@ -22,14 +22,14 @@
 #define MOVEMENT_DELAY_BUFFER 0.75
 #define MOVEMENT_DELAY_BUFFER_DELTA 1.25
 
-/client/Move(n, direction)
+/client/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(world.time < move_delay) //do not move anything ahead of this check please
 		return FALSE
 	else
 		next_move_dir_add = next_move_dir_sub = NONE
 	var/old_move_delay = move_delay
 	move_delay = world.time + world.tick_lag //this is here because Move() can now be called mutiple times per tick
-	if(!n || !direction || !mob?.loc)
+	if(!newloc || !direction || !mob?.loc)
 		return FALSE
 	//GET RID OF THIS SOON AS MOBILITY FLAGS IS DONE
 	if(mob.mob_transforming)
@@ -38,7 +38,7 @@
 	if(mob.control_object)
 		return Move_object(direction)
 	if(!isliving(mob))
-		return mob.Move(n, direction)
+		return mob.Move(newloc, direction)
 	if(mob.stat == DEAD)
 		mob.ghostize()
 		return FALSE
@@ -54,7 +54,7 @@
 		return mob.remote_control.relaymove(mob, direction)
 
 	if(isAI(mob))
-		return AIMove(n,direction,mob)
+		return AIMove(newloc,direction,mob)
 
 	if(Process_Grab()) //are we restrained by someone's grip?
 		return
@@ -90,11 +90,11 @@
 			newdir = angle2dir(dir2angle(direction) + pick(45, -45))
 		if(newdir)
 			direction = newdir
-			n = get_step(L, direction)
+			newloc = get_step(L, direction)
 
 	. = ..()
 
-	if((direction & (direction - 1)) && mob.loc == n) //moved diagonally successfully
+	if((direction & (direction - 1)) && mob.loc == newloc) //moved diagonally successfully
 		add_delay *= SQRT_2
 	mob.set_glide_size(DELAY_TO_GLIDE_SIZE(add_delay), FALSE)
 	move_delay += add_delay
@@ -108,7 +108,7 @@
 
 	last_move = world.time
 
-	SEND_SIGNAL(mob, COMSIG_MOB_CLIENT_MOVE, src, direction, n, oldloc, add_delay)
+	SEND_SIGNAL(mob, COMSIG_MOB_CLIENT_MOVE, src, direction, newloc, oldloc, add_delay)
 
 /// Process_Grab(): checks for grab, attempts to break if so. Return TRUE to prevent movement.
 /client/proc/Process_Grab()

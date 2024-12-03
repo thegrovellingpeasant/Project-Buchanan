@@ -8,18 +8,25 @@
 	/// We manually check to see if we've been triggered in case multiple atoms cross us in the time between the mine being triggered and it actually deleting, to avoid a race condition with multiple detonations
 	var/triggered = FALSE
 
+/obj/effect/mine/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/effect/mine/proc/mineEffect(mob/victim)
 	to_chat(victim, span_danger("*click*"))
 
-/obj/effect/mine/Crossed(atom/movable/AM)
-	if(triggered || !isturf(loc) || isnottriggermine(AM) || isstructure(AM))
-		return
-	. = ..()
+/obj/effect/mine/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 
-	if(AM.movement_type & FLYING)
+	if(triggered || !isturf(loc) || iseffect(enterer) || !istype(enterer))
+		return
+	if(enterer.movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return
 
-	triggermine(AM)
+	INVOKE_ASYNC(src, PROC_REF(triggermine), enterer)
 
 /obj/effect/mine/proc/triggermine(mob/victim)
 	if(triggered)
@@ -110,7 +117,7 @@
 	name = "Yellow Orb"
 	desc = "You feel faster just looking at it."
 	color = "#FFFF00"
-	duration = 300
+	duration = 30 SECONDS
 
 /obj/effect/mine/pickup/speed/mineEffect(mob/living/carbon/victim)
 	if(!victim.client || !istype(victim))

@@ -15,10 +15,9 @@
 
 	var/turf/T = get_turf(M)
 	var/list/organs = M.getorganszone("head") + M.getorganszone("eyes") + M.getorganszone("mouth")
-	for(var/internal_organ in organs)
-		var/obj/item/organ/I = internal_organ
-		I.Remove()
-		I.forceMove(T)
+	for(var/obj/item/organ/internal_organ as anything in organs)
+		internal_organ.Remove()
+		internal_organ.forceMove(T)
 	head.drop_limb()
 	qdel(head)
 	new M.gib_type(T,1,M.get_static_viruses())

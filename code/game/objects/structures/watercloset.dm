@@ -250,9 +250,13 @@
 	var/watertemp = "normal"	//freezing, normal, or boiling
 	var/datum/looping_sound/showering/soundloop
 
-/obj/machinery/shower/Initialize()
+/obj/machinery/shower/Initialize(mapload)
 	. = ..()
 	soundloop = new(list(src), FALSE)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, src, loc_connections)
 
 /obj/machinery/shower/Destroy()
 	QDEL_NULL(soundloop)
@@ -334,16 +338,16 @@
 	if(mist && (!on || watertemp == "freezing"))
 		qdel(mist)
 
-/obj/machinery/shower/Crossed(atom/movable/AM)
-	..()
+/obj/machinery/shower/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(on)
-		if(isliving(AM))
-			var/mob/living/L = AM
+		if(isliving(arrived))
+			var/mob/living/L = arrived
 			if(wash_mob(L)) //it's a carbon mob.
 				var/mob/living/carbon/C = L
 				C.slip(80,null,NO_SLIP_WHEN_WALKING)
-		else if(isobj(AM))
-			wash_obj(AM)
+		else if(isobj(arrived))
+			wash_obj(arrived)
 
 /obj/machinery/shower/proc/wash_obj(obj/O)
 	. = SEND_SIGNAL(O, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_WEAK)

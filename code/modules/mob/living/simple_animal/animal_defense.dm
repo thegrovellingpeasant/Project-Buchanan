@@ -28,9 +28,13 @@
 				to_chat(M, span_notice("You don't want to hurt [src]!"))
 				return
 			M.do_attack_animation(src, ATTACK_EFFECT_PUNCH)
-			visible_message(span_danger("[M] [response_harm_continuous] [src]!"),\
-							span_userdanger("[M] [response_harm_continuous] you!"), null, COMBAT_MESSAGE_RANGE, null, \
-							M, span_danger("You [response_harm_simple] [src]!"))
+			visible_message(
+				message = span_danger("[M] [response_harm_continuous] [src]!"),\
+				self_message = span_userdanger("[M] [response_harm_continuous] you!"),
+				blind_message = null,
+				vision_distance = COMBAT_MESSAGE_RANGE,
+				ignored_mobs = null,
+			)
 			playsound(loc, attacked_sound, 25, 1, -1)
 			attack_threshold_check(harm_intent_damage)
 			log_combat(M, src, "attacked")

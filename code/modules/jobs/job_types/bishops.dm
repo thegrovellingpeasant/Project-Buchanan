@@ -409,7 +409,7 @@
 	description = "You're an affiliate of the Bishops, though while you are not a member of the family you are under their protection provided you pull your weight in your respective racket and give them their share."
 	selection_color = "#8CA2BD"
 	exp_requirements = EXP_TYPE_BISHOPS
-	access = null
+	access = list()
 
 	outfit = /datum/outfit/job/bishops/f13racketeer
 
