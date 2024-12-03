@@ -249,6 +249,14 @@
 	density = FALSE
 	layer = ABOVE_MOB_LAYER
 
+#undef CUT_TIME
+#undef CLIMB_TIME
+
+#undef NO_HOLE
+#undef MEDIUM_HOLE
+#undef LARGE_HOLE
+#undef DESTROY_HOLE
+
 // Obsolete wooden fences and dancing pole, better in railing.
 /obj/structure/fence/wooden
 	name = "wooden fence"
@@ -303,8 +311,6 @@ Electric Fences subtype - for use at NCRCF
 	var/obj/machinery/power/fusion_generator/ncrcf/fusion_generator = null
 	flags_1 = NODECONSTRUCT_1
 	resistance_flags = FIRE_PROOF | ACID_PROOF | UNACIDABLE | FREEZE_PROOF | INDESTRUCTIBLE
-	barricade = TRUE
-	proj_pass_rate = 95
 
 /obj/structure/fence/electric_fence/end
 	icon_state = "end"
@@ -326,7 +332,7 @@ Electric Fences subtype - for use at NCRCF
 	update_cut_status()
 
 /obj/structure/fence/electric_fence/proc/locate_generator()
-	fusion_generator = locate(/obj/machinery/power/fusion_generator/ncrcf)
+	fusion_generator = locate()
 
 /obj/structure/fence/electric_fence/examine(mob/user)
 	. = ..()
@@ -386,86 +392,3 @@ Electric Fences subtype - for use at NCRCF
 		else
 			return FALSE
 	return FALSE
-
-/obj/structure/fence/electric_fence/attackby(obj/item/W, mob/user)
-	.=..()
-	if(istype(W, /obj/item/wirecutters))
-		if(!cuttable)
-			to_chat(user, "<span class='notice'>This section of the fence can't be cut.</span>")
-			return
-		if(invulnerable)
-			to_chat(user, "<span class='notice'>This fence is too strong to cut through.</span>")
-			return
-		if(fusion_generator)
-			if(!fusion_generator.get_cell())
-				return
-			else 
-				shock(user, 60)
-				return
-		var/current_stage = hole_size
-
-		user.visible_message("<span class='danger'>\The [user] starts cutting through \the [src] with \the [W].</span>",\
-		"<span class='danger'>You start cutting through \the [src] with \the [W].</span>")
-
-		if(do_after(user, CUT_TIME*W.toolspeed, target = src))
-			if(current_stage == hole_size)
-				switch(++hole_size)
-					if(MEDIUM_HOLE)
-						visible_message("<span class='notice'>\The [user] cuts into \the [src] some more.</span>")
-						to_chat(user, "<span class='info'>You could probably fit yourself through that hole now. Although climbing through would be much faster if you made it even bigger.</span>")
-						climbable = TRUE
-						W.play_tool_sound(user, 20)
-					if(LARGE_HOLE)
-						visible_message("<span class='notice'>\The [user] completely cuts through \the [src].</span>")
-						to_chat(user, "<span class='info'>The hole in \the [src] is now big enough to walk through.</span>")
-						climbable = FALSE
-						W.play_tool_sound(user, 20)
-					if(DESTROY_HOLE)
-						visible_message("<span class='notice'>\The [user] removes \the [src].</span>")
-						to_chat(user, "<span class='info'>\The [src] is removed.</span>")
-						deconstruct(TRUE)
-						W.play_tool_sound(user, 20)
-
-				update_cut_status()
-
-		
-	if(istype(W, /obj/item/stack/rods))
-		var/obj/item/stack/rods/rods = W
-		switch(hole_size)
-			if(NO_HOLE)
-				to_chat(user, "<span class='warning'>You cannot repair \the [src] any further!</span>")
-				return
-			if(MEDIUM_HOLE)
-				if(rods.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
-					return
-				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
-				if(do_after(user, 20, target = src))
-					if(rods.get_amount() < 2)
-						return
-					rods.use(2)
-					to_chat(user, "<span class='notice'>You completely repair the hole in \the [src].</span>")
-					hole_size = NO_HOLE
-			if(LARGE_HOLE)
-				if(rods.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
-					return
-				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
-				if(do_after(user, 20, target = src))
-					if(rods.get_amount() < 2)
-						return
-					rods.use(2)
-					to_chat(user, "<span class='notice'>You repair a bit of the hole in \the [src].</span>")
-					hole_size = MEDIUM_HOLE
-
-		update_cut_status()
-
-	return TRUE
-
-#undef CUT_TIME
-#undef CLIMB_TIME
-
-#undef NO_HOLE
-#undef MEDIUM_HOLE
-#undef LARGE_HOLE
-#undef DESTROY_HOLE
