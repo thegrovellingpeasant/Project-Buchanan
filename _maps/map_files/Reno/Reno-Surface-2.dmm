@@ -1454,7 +1454,9 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_west_building)
 "aGQ" = (
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
 /area/f13/raiders)
 "aGS" = (
@@ -7828,7 +7830,9 @@
 /area/f13/reno_east_building)
 "dpY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_x = 32
+	},
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/reno_building)
 "dqa" = (
@@ -11294,7 +11298,9 @@
 "eOr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/right,
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_y = 32
+	},
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/reno_building)
 "eOJ" = (
@@ -11314,7 +11320,9 @@
 /area/f13/wrights)
 "eQA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_y = -32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1/lit,
 /area/f13/raiders)
 "eQP" = (
@@ -11588,7 +11596,9 @@
 /area/f13/reno_east_building)
 "eXk" = (
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/nrpd)
 "eXu" = (
@@ -40693,7 +40703,9 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/right,
 /area/f13/reno_streets)
 "qUR" = (
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2/lit,
 /area/f13/reno_west_building)
 "qUT" = (
@@ -44825,7 +44837,9 @@
 /area/f13/reno_wasteland)
 "sJA" = (
 /obj/structure/closet/crate/bin,
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/nrpd)
 "sJE" = (
@@ -53206,7 +53220,9 @@
 /area/f13/nrpd)
 "wgY" = (
 /obj/structure/rack/shelf_metal,
-/obj/structure/sign/poster/ncr/democracy,
+/obj/structure/sign/poster/ncr/democracy{
+	pixel_y = 32
+	},
 /obj/effect/spawner/lootdrop/f13/armor/clothes/postwar,
 /obj/effect/spawner/lootdrop/f13/armor/clothes/postwar,
 /turf/open/floor/carpet/reno/evil3,
@@ -55147,7 +55163,9 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_wasteland)
 "wUB" = (
-/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random{
+	pixel_x = 32
+	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontalwest0"
 	},
