@@ -245,8 +245,8 @@
 						currmsg.answer_callback.InvokeAsync()
 				state = STATE_VIEWMESSAGE
 				updateDialog()
-//		if("status")
-//			state = STATE_STATUSDISPLAY
+		if("status")
+			state = STATE_STATUSDISPLAY
 		if("securitylevel")
 			tmp_alertlevel = text2num( href_list["newalertlevel"] )
 			if(!tmp_alertlevel)
@@ -254,7 +254,7 @@
 			state = STATE_CONFIRM_LEVEL
 		if("changeseclevel")
 			state = STATE_ALERT_LEVEL
-/*
+
 		if("emergencyaccess")
 			state = STATE_TOGGLE_EMERGENCY
 		if("enableemergency")
@@ -287,7 +287,7 @@
 		if("setmsg2")
 			stat_msg2 = reject_bad_text(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40)
 			updateDialog()
-*/
+
 /*		// OMG CENTCOM LETTERHEAD
 		if("MessageCentCom")
 			if(authenticated)
@@ -492,11 +492,12 @@
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=logout'>Log Out</A> \]<BR>"
 				dat += "<BR><B>General Functions</B>"
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=messagelist'>Message List</A> \]"
-				switch(SSshuttle.emergency.mode)
+				/*switch(SSshuttle.emergency.mode)
 					if(SHUTTLE_IDLE, SHUTTLE_RECALL)
 						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=callshuttle'>Call transit</A> \]"
 					else
 						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=cancelshuttle'>Cancel transit Call</A> \]"
+				*/
 
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=status'>Set Status Display</A> \]"
 				if (authenticated==2)

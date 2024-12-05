@@ -279,7 +279,7 @@
 	supervisors = "NCR common law and the mayor"
 	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13rpdpolicechief
-	access = list(ACCESS_NRPD)
+	access = list(ACCESS_NRPD, ACCESS_COMMAND)
 	minimal_access = list(ACCESS_NRPD, ACCESS_NCR_COMMAND)
 
 
