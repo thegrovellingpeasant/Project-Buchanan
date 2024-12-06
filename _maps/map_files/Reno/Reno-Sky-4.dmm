@@ -5481,7 +5481,9 @@
 	},
 /area/f13/reno_prison)
 "vE" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/structure/simple_door/bunker/glass{
+	req_one_access_txt = "168"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/heist)
 "vG" = (
@@ -6275,17 +6277,6 @@
 	sunlight_state = 1
 	},
 /area/f13/reno_streets)
-"zx" = (
-/obj/structure/simple_door/house{
-	name = "mayor's office";
-	req_one_access_txt = "165"
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bishop_boss_doors";
-	name = "office entrance"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/reno_sharkclub)
 "zB" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/bottle/holywater{
@@ -6747,9 +6738,9 @@
 	id = "bishop_boss_doors";
 	name = "office entrance"
 	},
-/obj/structure/simple_door/house{
-	name = "mayor's office";
-	req_one_access_txt = "165"
+/obj/machinery/door/unpowered/house{
+	req_one_access_txt = "163";
+	name = "mayor's office"
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/reno_sharkclub)
@@ -8783,7 +8774,7 @@
 /area/f13/reno_prison)
 "Jv" = (
 /obj/machinery/door/unpowered/house{
-	req_one_access_txt = "165";
+	req_one_access_txt = "163";
 	name = "mayor's suite"
 	},
 /turf/open/floor/wood/f13/old,
@@ -34030,7 +34021,7 @@ Hp
 Hp
 Hp
 Hp
-zx
+Bj
 Bj
 Hp
 Hp
