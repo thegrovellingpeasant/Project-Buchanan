@@ -3492,6 +3492,10 @@
 /obj/structure/chair/sofa/right,
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_east_building)
+"dqp" = (
+/obj/machinery/telecomms/server/presets/government,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/reno_wasteland)
 "dqs" = (
 /obj/effect/overlay/junk/oldpipes{
 	pixel_x = 11;
@@ -57035,7 +57039,7 @@ ghq
 ghq
 ghq
 ghq
-qVi
+dqp
 wPm
 oJY
 nUa
