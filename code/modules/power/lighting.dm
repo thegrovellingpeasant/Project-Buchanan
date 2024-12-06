@@ -959,45 +959,11 @@
 	desc = "A refitted security lightbulb, which will turn a menacing red when the NCR garrison declare martial law."
 
 /obj/machinery/light/small/ncr/process()
-	if (flicker_chance && !flickering && prob(flicker_chance))
-		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
-	if(!cell)
-		return flicker_chance ? null : PROCESS_KILL // only kill if we don't flicker or have a cell
-	if(has_power())
-		if (cell.charge == cell.maxcharge)
-			return PROCESS_KILL
-		cell.charge = min(cell.maxcharge, cell.charge + LIGHT_EMERGENCY_POWER_USE) //Recharge emergency power automatically while not using it
-	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
-		update(FALSE) //Disables emergency mode and sets the color to normal
-	if(GLOB.security_level == SEC_LEVEL_AMBER)
-		icon_state = "bulb_emergency"
-		light_color = "#FF0000"
-		bulb_colour = "#FF3232"
-	if(GLOB.security_level < SEC_LEVEL_AMBER)
-		icon_state = "bulb"
-		light_color = "#FFDDCC"
-		bulb_colour = "#FFF6ED"
+	. = ..()
 
 /obj/machinery/light/ncr
 	name = "Security light fixture"
-	desc = "A refitted security light fixture, which will a menacing red when the NCR garrison declare martial law."
+	desc = "A refitted security light fixture, which will turn a menacing red when the NCR garrison declare martial law."
 
 /obj/machinery/light/ncr/process()
-	if (flicker_chance && !flickering && prob(flicker_chance))
-		flicker(amount = rand(3, 8), spark = FALSE, sounds = FALSE, loud = FALSE)
-	if(!cell)
-		return flicker_chance ? null : PROCESS_KILL // only kill if we don't flicker or have a cell
-	if(has_power())
-		if (cell.charge == cell.maxcharge)
-			return PROCESS_KILL
-		cell.charge = min(cell.maxcharge, cell.charge + LIGHT_EMERGENCY_POWER_USE) //Recharge emergency power automatically while not using it
-	if(emergency_mode && !use_emergency_power(LIGHT_EMERGENCY_POWER_USE))
-		update(FALSE) //Disables emergency mode and sets the color to normal
-	if(GLOB.security_level == SEC_LEVEL_AMBER)
-		icon_state = "tube_emergency"
-		bulb_colour = "#FF3232"
-		light_color = "#FF0000"
-	if(GLOB.security_level < SEC_LEVEL_AMBER)
-		icon_state = "tube"
-		bulb_colour = "#FFF6ED"
-		light_color = "#FFDDCC"
+	. = ..()
