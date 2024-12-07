@@ -36,7 +36,7 @@
 	/// Message for when the wolf decides to start running away
 	var/retreat_message_said = FALSE
 
-/mob/living/simple_animal/hostile/asteroid/wolf/Move(atom/newloc)
+/mob/living/simple_animal/hostile/asteroid/wolf/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(newloc && newloc.z == z && (islava(newloc) || ischasm(newloc)))
 		return FALSE
 	return ..()

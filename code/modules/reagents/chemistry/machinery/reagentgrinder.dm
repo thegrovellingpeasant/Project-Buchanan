@@ -299,7 +299,7 @@
 	if(!beaker || stat & (NOPOWER|BROKEN))
 		return
 	operate_for(50, juicing = TRUE)
-	addtimer(CALLBACK(src, /obj/machinery/reagentgrinder/proc/mix_complete), 50)
+	addtimer(CALLBACK(src, PROC_REF(mix_complete)), 50)
 
 /obj/machinery/reagentgrinder/proc/mix_complete()
 	if(beaker?.reagents.total_volume)

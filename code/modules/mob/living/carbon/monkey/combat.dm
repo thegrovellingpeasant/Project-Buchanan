@@ -404,14 +404,14 @@
 			retaliate(H)
 	..()
 
-/mob/living/carbon/monkey/Crossed(atom/movable/AM)
-	if(!IsDeadOrIncap() && ismob(AM) && target)
-		var/mob/living/carbon/monkey/M = AM
-		if(!istype(M) || !M)
-			return
-		knockOver(M)
+/mob/living/carbon/monkey/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(IsDeadOrIncap() || !ismob(arrived) || !target)
 		return
-	..()
+	var/mob/living/carbon/monkey/M = arrived
+	if(!istype(M) || !M)
+		return
+	knockOver(M)
 
 /mob/living/carbon/monkey/proc/monkeyDrop(obj/item/A)
 	if(A)

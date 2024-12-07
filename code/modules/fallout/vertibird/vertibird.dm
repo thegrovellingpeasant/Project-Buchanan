@@ -59,7 +59,7 @@ obj/vertibird/proc/getLocationsHTML()
 	var/html
 	for(var/I = 1 to length(GLOB.vertibirdLandZone))
 		var/obj/landmark/vertibird/mark = GLOB.vertibirdLandZone[I]
-		html += "<a href='?src=\ref[src];fly=true;x=[mark.x];y=[mark.y];z=[mark.z]'>[mark.name]</a><br>"
+		html += "<a href='?src=[text_ref(src)];fly=true;x=[mark.x];y=[mark.y];z=[mark.z]'>[mark.name]</a><br>"
 	return html
 
 obj/vertibird/proc/flew(targetX, targetY, targetZ)

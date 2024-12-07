@@ -14,9 +14,19 @@
 	var/obj/item/assembly/a_left = null
 	var/obj/item/assembly/a_right = null
 
+/obj/item/assembly_holder/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+/obj/item/assembly_holder/proc/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	return
+
 /obj/item/assembly_holder/IsAssemblyHolder()
 	return TRUE
-
 
 /obj/item/assembly_holder/proc/assemble(obj/item/assembly/A, obj/item/assembly/A2, mob/user)
 	attach(A,user)
@@ -38,6 +48,7 @@
 	else
 		a_right = A
 	A.holder_movement()
+	A.on_attach()
 
 /obj/item/assembly_holder/update_icon()
 	cut_overlays()
@@ -60,12 +71,6 @@
 
 	if(master)
 		master.update_icon()
-
-/obj/item/assembly_holder/Crossed(atom/movable/AM as mob|obj)
-	if(a_left)
-		a_left.Crossed(AM)
-	if(a_right)
-		a_right.Crossed(AM)
 
 /obj/item/assembly_holder/on_found(mob/finder)
 	if(a_left)

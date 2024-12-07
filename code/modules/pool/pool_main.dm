@@ -73,48 +73,69 @@
 		return ..()
 
 // Exit check
-/turf/open/pool/Exit(atom/movable/AM, atom/newloc)
-	if(!AM.has_gravity(src))
+/turf/open/pool/Exit(atom/movable/leaving, direction)
+	if(!leaving.has_gravity(src))
 		return ..()
-	if(isliving(AM) || isstructure(AM))
-		if(AM.throwing)
+	if(isliving(leaving) || isstructure(leaving))
+		if(leaving.throwing)
 			return ..()			//WHEEEEEEEEEEE
-		if(istype(AM, /obj/structure) && isliving(AM.pulledby))
+		if(istype(leaving, /obj/structure) && isliving(leaving.pulledby))
 			return ..()			//people pulling stuff out of pool
-		if(!ishuman(AM))
+		if(!ishuman(leaving))
 			return ..()			//human weak, monkey (and anyone else) ook ook eek eek strong
-		if(isliving(AM) && (locate(/obj/structure/pool/ladder) in src))
+		if(isliving(leaving) && (locate(/obj/structure/pool/ladder) in src))
 			return ..()			//climbing out
-		return istype(newloc, /turf/open/pool)
+		if(!istype(get_step(leaving, direction), /turf/open/pool))
+			to_chat(leaving, span_warning("You climb out of \the [src]."))
+		return istype(get_step(leaving, direction), /turf/open/pool)
 	return ..()
 
 // Exited logic
-/turf/open/pool/Exited(atom/A, atom/newLoc)
+/turf/open/pool/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(isliving(A))
-		var/turf/open/pool/P = newLoc
+	if(isliving(gone))
+		var/turf/open/pool/P = get_step(gone, direction)
 		if(!istype(P) || (P.controller != controller))
-			controller?.mobs_in_pool -= A
+			controller?.mobs_in_pool -= gone
 
 // Entered logic
-/turf/open/pool/Entered(atom/movable/AM, atom/oldloc)
-	if(istype(AM, /obj/effect/decal/cleanable))
-		var/obj/effect/decal/cleanable/C = AM
+/turf/open/pool/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(istype(arrived, /mob/living/carbon/human))
+		var/mob/living/L = arrived
+		L.update_water()
+		if(L.check_submerged() <= 0)
+			return
+		if(!istype(old_loc, /turf/open/pool))
+			to_chat(L, span_warning("You get drenched in water from entering \the [src]!"))
+	if(istype(arrived, /mob/living))
+		var/mob/living/U = arrived
+		U.update_water()
+		if(U.check_submerged() <= 0)
+			return
+	if(istype(arrived, /obj/vehicle))
+		var/obj/vehicle/V = arrived
+		V.vehicle_update_water()
+		if(V.vehicle_check_submerged() <= 0)
+			return
+	arrived.water_act(5)
+
+	if(istype(arrived, /obj/effect/decal/cleanable))
+		var/obj/effect/decal/cleanable/C = arrived
 		if(prob(C.bloodiness))
 			controller.set_bloody(TRUE)
-		QDEL_IN(AM, 25)
-		animate(AM, alpha = 10, time = 20)
+		QDEL_IN(arrived, 25)
+		animate(arrived, alpha = 10, time = 20)
 		return ..()
-	if(!AM.has_gravity(src))
+	if(!arrived.has_gravity(src))
 		return ..()
-	if(isliving(AM))
-		var/mob/living/victim = AM
+	if(isliving(arrived))
+		var/mob/living/victim = arrived
 		if(!HAS_TRAIT(victim, TRAIT_SWIMMING))		//poor guy not swimming time to dunk them!
 			victim.AddElement(/datum/element/swimming)
 			controller.mobs_in_pool += victim
 			if(locate(/obj/structure/pool/ladder) in src)		//safe climbing
 				return
-			if(iscarbon(AM))		//FUN TIME!
+			if(iscarbon(arrived))		//FUN TIME!
 				var/mob/living/carbon/H = victim
 				if(filled)
 					if (H.wear_mask && H.wear_mask.flags_cover & MASKCOVERSMOUTH)
@@ -230,42 +251,21 @@
 		return T.filled
 	return 0
 
-/turf/open/pool/Entered(atom/movable/AM, atom/oldloc)
-	if(istype(AM, /mob/living/carbon/human))
-		var/mob/living/L = AM
+/turf/open/pool/Exited(atom/movable/gone, direction)
+	if(istype(gone, /mob/living/carbon/human))
+		var/mob/living/carbon/human/L = gone
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(oldloc, /turf/open/pool))
-			to_chat(L, span_warning("You get drenched in water from entering \the [src]!"))
-	if(istype(AM, /mob/living))
-		var/mob/living/U = AM
-		U.update_water()
-		if(U.check_submerged() <= 0)
-			return
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
-		V.vehicle_update_water()
-		if(V.vehicle_check_submerged() <= 0)
-			return
-	AM.water_act(5)
-	..()
-
-/turf/open/pool/Exited(atom/movable/AM, atom/newloc)
-	if(istype(AM, /mob/living/carbon/human))
-		var/mob/living/carbon/human/L = AM
-		L.update_water()
-		if(L.check_submerged() <= 0)
-			return
-		if(!istype(newloc, /turf/open/pool))
+		if(!istype(get_step(gone, direction), /turf/open/pool))
 			to_chat(L, span_warning("You climb out of \the [src]."))
-	if(istype(AM, /mob/living))
-		var/mob/living/U = AM
+	if(istype(gone, /mob/living))
+		var/mob/living/U = gone
 		U.update_water()
 		if(U.check_submerged() <= 0)
 			return
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
+	if(istype(gone, /obj/vehicle))
+		var/obj/vehicle/V = gone
 		V.vehicle_update_water()
 		if(V.vehicle_check_submerged() <= 0)
 			return

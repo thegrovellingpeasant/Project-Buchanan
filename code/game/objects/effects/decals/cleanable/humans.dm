@@ -82,14 +82,15 @@
 	icon_state = "nothingwhatsoever"
 	desc = "WHOSE FOOTPRINTS ARE THESE?"
 	random_icon_states = null
+	blood_state = BLOOD_STATE_BLOOD //the icon state to load images from
 	var/entered_dirs = 0
 	var/exited_dirs = 0
-	blood_state = BLOOD_STATE_BLOOD //the icon state to load images from
 	var/list/shoe_types = list()
 
-/obj/effect/decal/cleanable/blood/footprints/Crossed(atom/movable/O)
-	if(ishuman(O))
-		var/mob/living/carbon/human/H = O
+/obj/effect/decal/cleanable/blood/footprints/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	. = ..()
+	if(ishuman(arrived))
+		var/mob/living/carbon/human/H = arrived
 		var/obj/item/clothing/shoes/S = H.shoes
 		if(S && S.bloody_shoes[blood_state])
 			if(color != S.last_blood_color)
@@ -100,9 +101,10 @@
 				entered_dirs |= H.dir
 				update_icon()
 
-/obj/effect/decal/cleanable/blood/footprints/Uncrossed(atom/movable/O)
-	if(ishuman(O))
-		var/mob/living/carbon/human/H = O
+/obj/effect/decal/cleanable/blood/footprints/on_exited(datum/source, atom/movable/gone, direction)
+	. = ..()
+	if(ishuman(gone))
+		var/mob/living/carbon/human/H = gone
 		var/obj/item/clothing/shoes/S = H.shoes
 		if(S && S.bloody_shoes[blood_state])
 			if(color != S.last_blood_color)//last entry - we check its color

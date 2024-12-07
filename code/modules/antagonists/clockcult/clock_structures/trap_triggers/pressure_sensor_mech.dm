@@ -7,12 +7,11 @@
 	icon_state = "pressure_sensor"
 	alpha = 75
 
-/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech/Crossed(atom/movable/AM)
-
-	if(!istype(AM,/obj/mecha/))
+/obj/structure/destructible/clockwork/trap/trigger/pressure_sensor/mech/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(!istype(arrived, /obj/mecha))
 		return
 
-	var/obj/mecha/M = AM
+	var/obj/mecha/M = arrived
 	if(M.occupant && is_servant_of_ratvar(M.occupant))
 		return
 	audible_message("<i>*click*</i>")

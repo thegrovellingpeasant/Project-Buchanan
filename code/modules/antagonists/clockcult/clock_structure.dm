@@ -18,7 +18,7 @@
 	var/construction_value = 0 //How much value the structure contributes to the overall "power" of the structures on the station
 	var/immune_to_servant_attacks = FALSE //if we ignore attacks from servants of ratvar instead of taking damage
 
-/obj/structure/destructible/clockwork/Initialize()
+/obj/structure/destructible/clockwork/Initialize(mapload)
 	. = ..()
 	change_construction_value(construction_value)
 	GLOB.all_clockwork_objects += src
@@ -37,7 +37,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /obj/structure/destructible/clockwork/examine(mob/user)
 	var/can_see_clockwork = is_servant_of_ratvar(user) || isobserver(user)

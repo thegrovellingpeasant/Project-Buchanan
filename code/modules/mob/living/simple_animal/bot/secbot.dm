@@ -174,7 +174,7 @@
 	desc = "It's Officer Pingsky! Delegated to satellite guard duty for harbouring anti-human sentiment."
 	radio_channel = RADIO_CHANNEL_AI_PRIVATE
 
-/mob/living/simple_animal/bot/secbot/Initialize()
+/mob/living/simple_animal/bot/secbot/Initialize(mapload)
 	. = ..()
 	update_icon()
 	var/datum/job/detective/J = new/datum/job/detective
@@ -184,6 +184,11 @@
 	//SECHUD
 	var/datum/atom_hud/secsensor = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
 	secsensor.add_hud_to(src)
+
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /mob/living/simple_animal/bot/secbot/update_icon()
 	if(mode == BOT_HUNT)
@@ -590,14 +595,14 @@ Auto Patrol: []"},
 		target = user
 		mode = BOT_HUNT
 
-/mob/living/simple_animal/bot/secbot/Crossed(atom/movable/AM)
-	if(has_gravity() && ismob(AM) && target)
-		var/mob/living/carbon/C = AM
-		if(!istype(C) || !C || in_range(src, target))
-			return
-		knockOver(C)
+/mob/living/simple_animal/bot/secbot/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!has_gravity() || !ismob(arrived) || !target)
 		return
-	..()
+	var/mob/living/carbon/C = arrived
+	if(!istype(C) || !C || in_range(src, target))
+		return
+	knockOver(C)
 
 /obj/machinery/bot_core/secbot
 	req_access = list(ACCESS_SECURITY)

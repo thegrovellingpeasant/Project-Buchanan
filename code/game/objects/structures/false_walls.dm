@@ -55,7 +55,7 @@
 		for(var/mob/living/obstacle in srcturf) //Stop people from using this as a shield
 			opening = FALSE
 			return
-	addtimer(CALLBACK(src, /obj/structure/falsewall/proc/toggle_open), 5)
+	addtimer(CALLBACK(src, PROC_REF(toggle_open)), 5)
 
 /obj/structure/falsewall/proc/toggle_open()
 	if(!QDELETED(src))

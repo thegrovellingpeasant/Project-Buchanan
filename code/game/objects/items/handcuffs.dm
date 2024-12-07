@@ -257,6 +257,10 @@
 /obj/item/restraints/legcuffs/beartrap/Initialize()
 	. = ..()
 	icon_state = "[initial(icon_state)][armed]"
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(spring_trap),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/item/restraints/legcuffs/beartrap/suicide_act(mob/user)
 	user.visible_message(span_suicide("[user] is sticking [user.p_their()] head in the [src.name]! It looks like [user.p_theyre()] trying to commit suicide!"))
@@ -270,37 +274,39 @@
 		icon_state = "[initial(icon_state)][armed]"
 		to_chat(user, span_notice("[src] is now [armed ? "armed" : "disarmed"]"))
 
-/obj/item/restraints/legcuffs/beartrap/Crossed(AM as mob|obj)
-	if(armed && isturf(src.loc))
-		if(isliving(AM))
-			var/mob/living/L = AM
-			var/snap = FALSE
-			var/def_zone = BODY_ZONE_CHEST
-			if(iscarbon(L))
-				var/mob/living/carbon/C = L
-				if(!C.lying)
-					def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-					if(!C.legcuffed && C.get_num_legs(FALSE) >= 2) //beartrap can't cuff your leg if there's already a beartrap or legcuffs, or you don't have two legs.
-						snap = TRUE
-						C.legcuffed = src
-						forceMove(C)
-						C.update_equipment_speed_mods()
-						C.update_inv_legcuffed()
-						SSblackbox.record_feedback("tally", "handcuffs", 1, type)
-			else if(isanimal(L))
-				var/mob/living/simple_animal/SA = L
-				if(SA.mob_size > MOB_SIZE_TINY)
-					snap = TRUE
-			if(L.movement_type & (FLYING | FLOATING))
-				snap = FALSE
-			if(snap)
-				armed = FALSE
-				icon_state = "[initial(icon_state)][armed]"
-				playsound(src.loc, 'sound/effects/snap.ogg', 50, 1)
-				L.visible_message(span_danger("[L] triggers \the [src]."), \
-						span_userdanger("You trigger \the [src]!"))
-				L.apply_damage(trap_damage, BRUTE, def_zone)
-	..()
+/obj/item/restraints/legcuffs/beartrap/proc/spring_trap(datum/source, atom/movable/gone, direction)
+	SIGNAL_HANDLER
+	if(!armed || !isturf(src.loc))
+		return
+	if(!isliving(gone))
+		return
+	var/mob/living/L = gone
+	var/snap = FALSE
+	var/def_zone = BODY_ZONE_CHEST
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		if(!C.lying)
+			def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+			if(!C.legcuffed && C.get_num_legs(FALSE) >= 2) //beartrap can't cuff your leg if there's already a beartrap or legcuffs, or you don't have two legs.
+				snap = TRUE
+				C.legcuffed = src
+				forceMove(C)
+				C.update_equipment_speed_mods()
+				C.update_inv_legcuffed()
+				SSblackbox.record_feedback("tally", "handcuffs", 1, type)
+	else if(isanimal(L))
+		var/mob/living/simple_animal/SA = L
+		if(SA.mob_size > MOB_SIZE_TINY)
+			snap = TRUE
+	if(L.movement_type & (FLYING | FLOATING))
+		snap = FALSE
+	if(snap)
+		armed = FALSE
+		icon_state = "[initial(icon_state)][armed]"
+		playsound(src.loc, 'sound/effects/snap.ogg', 50, 1)
+		L.visible_message(span_danger("[L] triggers \the [src]."), \
+				span_userdanger("You trigger \the [src]!"))
+		L.apply_damage(trap_damage, BRUTE, def_zone)
 
 /obj/item/restraints/legcuffs/beartrap/energy
 	name = "energy snare"
@@ -321,7 +327,7 @@
 		qdel(src)
 
 /obj/item/restraints/legcuffs/beartrap/energy/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	Crossed(user) //honk
+	spring_trap(null, user) //honk
 	. = ..()
 
 /obj/item/restraints/legcuffs/beartrap/energy/cyborg
@@ -382,6 +388,6 @@
 /obj/item/restraints/legcuffs/bola/energy/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(iscarbon(hit_atom))
 		var/obj/item/restraints/legcuffs/beartrap/B = new /obj/item/restraints/legcuffs/beartrap/energy/cyborg(get_turf(hit_atom))
-		B.Crossed(hit_atom)
+		B.spring_trap(null, hit_atom)
 		qdel(src)
 	..()

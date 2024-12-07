@@ -60,12 +60,12 @@
 	if(bottle)
 		bottle.ex_act(severity, target)
 
-/obj/machinery/chem_master/Exited(atom/movable/A, atom/newloc)
+/obj/machinery/chem_master/Exited(atom/movable/gone, direction)
 	. = ..()
-	if(A == beaker)
+	if(gone == beaker)
 		beaker = null
 		update_icon()
-	if(A == bottle)
+	if(gone == bottle)
 		bottle = null
 		update_icon()
 

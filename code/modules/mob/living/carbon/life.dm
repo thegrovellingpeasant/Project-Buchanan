@@ -369,15 +369,13 @@
 
 /mob/living/carbon/proc/handle_organs()
 	if(stat != DEAD)
-		for(var/V in internal_organs)
-			var/obj/item/organ/O = V
+		for(var/obj/item/organ/O as anything in internal_organs)
 			if(O)
 				O.on_life()
 	else
 		if(reagents.has_reagent(/datum/reagent/toxin/formaldehyde, 1) || reagents.has_reagent(/datum/reagent/preservahyde, 1)) // No organ decay if the body contains formaldehyde. Or preservahyde.
 			return
-		for(var/V in internal_organs)
-			var/obj/item/organ/O = V
+		for(var/obj/item/organ/O as anything in internal_organs)
 			if(O)
 				O.on_death() //Needed so organs decay while inside the body.
 

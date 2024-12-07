@@ -30,7 +30,7 @@
 	var/useable = TRUE
 	var/list/food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 
-/obj/item/organ/Initialize()
+/obj/item/organ/Initialize(mapload)
 	. = ..()
 	if(organ_flags & ORGAN_EDIBLE)
 		AddComponent(/datum/component/edible, food_reagents, null, RAW | MEAT | GROSS, null, 10, null, null, null, CALLBACK(src, PROC_REF(OnEatFrom)))
@@ -87,27 +87,18 @@
 /obj/item/organ/proc/on_find(mob/living/finder)
 	return
 
-/obj/item/organ/process()	//runs decay when outside of a person AND ONLY WHEN OUTSIDE (i.e. long obj).
+/obj/item/organ/process()
 	on_death() //Kinda hate doing it like this, but I really don't want to call process directly.
 
-//Sources; life.dm process_organs
-/obj/item/organ/proc/on_death() //Runs when outside AND inside.
-	decay()
-
-//Applys the slow damage over time decay
-/obj/item/organ/proc/decay()
-	if(!can_decay())
+///Called by process if it it's not in a body, called by human's life if it is.
+/obj/item/organ/proc/on_death()
+	if(CHECK_BITFIELD(organ_flags, ORGAN_NO_SPOIL | ORGAN_SYNTHETIC | ORGAN_FAILING))
 		STOP_PROCESSING(SSobj, src)
 		return
 	is_cold()
 	if(organ_flags & ORGAN_FROZEN)
 		return
 	applyOrganDamage(maxHealth * decay_factor)
-
-/obj/item/organ/proc/can_decay()
-	if(CHECK_BITFIELD(organ_flags, ORGAN_NO_SPOIL | ORGAN_SYNTHETIC | ORGAN_FAILING))
-		return FALSE
-	return TRUE
 
 //Checks to see if the organ is frozen from temperature
 /obj/item/organ/proc/is_cold()
