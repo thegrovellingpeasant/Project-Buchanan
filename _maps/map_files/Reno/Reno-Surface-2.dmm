@@ -1454,7 +1454,7 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_west_building)
 "aGQ" = (
-/obj/structure/sign/poster/prewar{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust/lit,
@@ -7830,7 +7830,7 @@
 /area/f13/reno_east_building)
 "dpY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/prewar{
+/obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
 /turf/open/floor/wood/f13/carpet/lit,
@@ -10411,9 +10411,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/reno_building)
 "evV" = (
-/obj/structure/sign/poster/ncr{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/ncr/keep_to_myself,
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/nrpd)
 "evX" = (
@@ -11300,7 +11298,7 @@
 "eOr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/right,
-/obj/structure/sign/poster/prewar{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
 /turf/open/floor/wood/f13/carpet/lit,
@@ -11322,7 +11320,7 @@
 /area/f13/wrights)
 "eQA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/prewar{
+/obj/structure/sign/poster/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1/lit,
@@ -11598,7 +11596,7 @@
 /area/f13/reno_east_building)
 "eXk" = (
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/wanted{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -12047,6 +12045,10 @@
 /obj/structure/fence/cut/large,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
+"fij" = (
+/obj/structure/sign/poster/ncr/irradiated_food,
+/turf/open/floor/carpet/reno/evil2,
+/area/f13/nrpd)
 "fir" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -36352,9 +36354,7 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/prewar{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/random,
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raiders)
 "pln" = (
@@ -40703,7 +40703,7 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/right,
 /area/f13/reno_streets)
 "qUR" = (
-/obj/structure/sign/poster/prewar{
+/obj/structure/sign/poster/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess/redchess2/lit,
@@ -44837,7 +44837,7 @@
 /area/f13/reno_wasteland)
 "sJA" = (
 /obj/structure/closet/crate/bin,
-/obj/structure/sign/poster/wanted{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -53220,7 +53220,7 @@
 /area/f13/nrpd)
 "wgY" = (
 /obj/structure/rack/shelf_metal,
-/obj/structure/sign/poster/ncr{
+/obj/structure/sign/poster/ncr/democracy{
 	pixel_y = 32
 	},
 /obj/effect/spawner/lootdrop/f13/armor/clothes/postwar,
@@ -55163,7 +55163,7 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_wasteland)
 "wUB" = (
-/obj/structure/sign/poster/wanted{
+/obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
 /turf/open/indestructible/ground/outside/reno_sidewalk{
@@ -55928,9 +55928,7 @@
 /turf/open/floor/plasteel/grimy/lit,
 /area/f13/raiders)
 "xmI" = (
-/obj/structure/sign/poster/ncr{
-	pixel_y = 32
-	},
+/obj/structure/sign/poster/ncr/keep_to_myself,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/nrpd)
 "xmK" = (
@@ -74173,7 +74171,7 @@ goP
 nlr
 jtA
 mqI
-evV
+fij
 jGe
 mqI
 feG

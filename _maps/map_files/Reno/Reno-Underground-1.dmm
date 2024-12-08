@@ -35328,9 +35328,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_subway)
 "ulP" = (
-/obj/structure/sign/poster/prewar{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/prewar/poster61,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/reno_subway)
 "umi" = (
