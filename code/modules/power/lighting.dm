@@ -964,12 +964,17 @@
 /obj/machinery/light/ncr
 	name = "Security light fixture"
 	desc = "A refitted security light fixture, which will turn a menacing red when the NCR garrison declare martial law."
-	icon = 'icons/obj/lighting.dmi'
-	icon_state = "tube_emergency"
+	icon_state = "tube"
+	desc = "A lighting fixture with red lighting."
+	nightshift_allowed = FALSE
+	no_emergency = TRUE
+	brightness = 4
+	density = 0
+	layer = WALL_OBJ_LAYER
+	bulb_colour = "#8B0000"
+	light_color = "#FF0000"
 
 /obj/machinery/light/ncr/process()
 	. = ..()
 	if(GLOB.security_level == SEC_LEVEL_AMBER)
-		bulb_colour = "#8B0000"
-		light_color = "#FF0000"
 		icon_state = "tube_emergency"
