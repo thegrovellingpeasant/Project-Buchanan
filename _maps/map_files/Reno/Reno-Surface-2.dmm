@@ -10411,7 +10411,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid/lit,
 /area/f13/reno_building)
 "evV" = (
-/obj/structure/sign/poster/ncr/keep_to_myself,
+/obj/structure/sign/poster/ncr/keep_to_myself{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/nrpd)
 "evX" = (
@@ -12046,7 +12048,9 @@
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
 "fij" = (
-/obj/structure/sign/poster/ncr/irradiated_food,
+/obj/structure/sign/poster/ncr/irradiated_food{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/nrpd)
 "fir" = (
