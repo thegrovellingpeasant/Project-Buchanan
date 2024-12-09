@@ -2557,8 +2557,8 @@
 	},
 /area/f13/reno_wasteland)
 "bgK" = (
-/obj/structure/destructible/tribal_torch,
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "crosswalk"
 	},
@@ -5964,7 +5964,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/reno_prison)
 "cCu" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_wasteland)
 "cCH" = (
@@ -8277,7 +8277,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhouse)
 "dAd" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_road/horizontaltopborder,
 /area/f13/reno_streets)
 "dAe" = (
@@ -9769,7 +9769,7 @@
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/wrights)
 "ejq" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/bottom{
 	icon_state = "horizontalbottomborderbottom1"
 	},
@@ -11359,7 +11359,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/reno_prison)
 "eRH" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/right{
 	icon_state = "verticalrightborderright1"
 	},
@@ -11553,13 +11553,6 @@
 "eVD" = (
 /turf/open/indestructible/ground/outside/reno_road{
 	icon_state = "crosswalk"
-	},
-/area/f13/reno_streets)
-"eVM" = (
-/obj/structure/destructible/tribal_torch,
-/turf/open/indestructible/ground/outside/reno_sidewalk{
-	icon_state = "outerturn";
-	dir = 8
 	},
 /area/f13/reno_streets)
 "eWq" = (
@@ -12765,7 +12758,7 @@
 	},
 /area/f13/reno_streets)
 "fxE" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/bottom,
 /area/f13/reno_wasteland)
 "fxN" = (
@@ -16046,7 +16039,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_hotel)
 "gRj" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/savannah/rightcenter,
 /area/f13/reno_wasteland)
 "gRr" = (
@@ -18228,7 +18221,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
 /area/f13/enclave)
 "hKU" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outerpavementalt"
 	},
@@ -18543,7 +18536,7 @@
 	},
 /area/f13/reno_wasteland)
 "hQB" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontalwest0"
 	},
@@ -19802,10 +19795,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
-"ipw" = (
-/obj/item/candle/tribal_torch,
-/turf/open/indestructible/ground/outside/reno_sidewalk/right,
-/area/f13/reno_streets)
 "ipM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -20503,7 +20492,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull/lit,
 /area/f13/reno_building)
 "iHT" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/farmhouse)
 "iHY" = (
@@ -24634,7 +24623,7 @@
 /turf/open/floor/f13/rusty/lit,
 /area/f13/wrights)
 "kpp" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirtcorner";
@@ -25448,7 +25437,7 @@
 /turf/open/indestructible/ground/outside/water/still,
 /area/f13/reno_building)
 "kGC" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt/south{
 	icon = 'icons/fallout/turfs/renodirt.dmi'
 	},
@@ -27357,7 +27346,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_east_building)
 "lqh" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontaltopbordertop3"
 	},
@@ -28459,7 +28448,7 @@
 /turf/closed/wall/mineral/stonewall,
 /area/f13/reno_building)
 "lNV" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt/east{
 	icon = 'icons/fallout/turfs/renodirt.dmi'
 	},
@@ -30569,7 +30558,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "mHa" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner";
 	icon = 'icons/fallout/turfs/renodirt.dmi'
@@ -30832,7 +30821,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white/whitebluechess,
 /area/f13/reno_prison)
 "mLP" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontaltopbordertop1"
 	},
@@ -32116,10 +32105,6 @@
 /obj/item/clothing/head/cone,
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_prison_yard)
-"nqu" = (
-/obj/item/candle/tribal_torch,
-/turf/open/indestructible/ground/outside/desert/reno,
-/area/f13/reno_wasteland)
 "nqv" = (
 /obj/effect/overlay/gravel/edge{
 	dir = 8
@@ -33492,7 +33477,7 @@
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
 "nTz" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/right,
 /area/f13/reno_streets)
 "nTA" = (
@@ -36243,7 +36228,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_building)
 "phn" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/bottom,
 /area/f13/reno_streets)
 "phv" = (
@@ -36497,10 +36482,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar/lit,
 /area/f13/reno_east_building)
-"pnU" = (
-/obj/structure/destructible/tribal_torch,
-/turf/open/indestructible/ground/outside/desert/reno,
-/area/f13/reno_streets)
 "pob" = (
 /turf/open/floor/f13{
 	dir = 8;
@@ -38421,7 +38402,7 @@
 /turf/open/floor/f13/lit,
 /area/f13/reno_wasteland)
 "qbi" = (
-/obj/item/candle/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_road/horizontalbottomborder,
 /area/f13/reno_streets)
 "qbz" = (
@@ -41290,7 +41271,7 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/raider_mall)
 "rgG" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/savannah/topleftcorner,
 /area/f13/reno_wasteland)
 "rgM" = (
@@ -43416,7 +43397,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/reno_building)
 "scE" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_road/hor,
 /area/f13/reno_streets)
 "scJ" = (
@@ -46845,7 +46826,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_streets)
 "tCn" = (
@@ -47287,7 +47268,7 @@
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_streets)
 "tKa" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outerturn";
 	dir = 4
@@ -49689,7 +49670,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_tribal)
 "uOr" = (
-/obj/item/candle/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/right{
 	icon_state = "verticalrightborderrightbottom"
 	},
@@ -52430,7 +52411,7 @@
 /turf/open/indestructible/ground/outside/sidewalk/walkway,
 /area/f13/reno_streets)
 "vTM" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
 "vTQ" = (
@@ -52859,7 +52840,7 @@
 /turf/open/floor/plating/lit,
 /area/f13/farmhousesouth)
 "wax" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "outermiddle"
 	},
@@ -53619,7 +53600,7 @@
 /turf/open/indestructible/ground/outside/reno_road/vert,
 /area/f13/reno_streets)
 "wqJ" = (
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/reno_sidewalk/left,
 /area/f13/reno_streets)
 "wqL" = (
@@ -54634,7 +54615,7 @@
 	pixel_x = 3;
 	pixel_y = 11
 	},
-/obj/structure/destructible/tribal_torch,
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
 "wJn" = (
@@ -64149,7 +64130,7 @@ iYS
 nTz
 iYS
 iPA
-ipw
+nTz
 iYS
 jqW
 aYs
@@ -68920,7 +68901,7 @@ oXs
 dwW
 bzb
 bYW
-pnU
+gkC
 bYO
 pYv
 "}
@@ -77716,7 +77697,7 @@ iYS
 bNi
 bNi
 xpS
-eVM
+pyX
 wCX
 pqv
 rfZ
@@ -86587,7 +86568,7 @@ dtL
 dtL
 dtL
 dtL
-nqu
+vTM
 xGp
 ubH
 kYe
