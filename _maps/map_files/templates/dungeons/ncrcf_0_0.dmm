@@ -411,18 +411,10 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/caves)
 "nh" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "mining_internal1"
+/obj/machinery/light/small{
+	dir = 8
 	},
-/obj/structure/barricade/bars{
-	max_integrity = 99999;
-	name = "strong metal bars";
-	obj_integrity = 99999
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
-	},
+/turf/closed/indestructible/f13vaultrusted,
 /area/f13/caves)
 "nk" = (
 /obj/structure/railing/handrail{
@@ -991,14 +983,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"De" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
-	},
-/area/f13/caves)
 "Dj" = (
 /obj/machinery/conveyor{
 	id = "mining_internal"
@@ -1349,16 +1333,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "OT" = (
-/obj/structure/railing/wood{
-	pixel_y = 15
+/obj/item/kirbyplants/dead{
+	desc = "It doesn't look very healthy...";
+	name = "Dead potted plant";
+	pixel_x = -7
 	},
-/obj/structure/railing/wood{
-	dir = 8;
-	pixel_y = 8;
-	pixel_x = -2;
-	layer = 4.27
+/obj/structure/table/reinforced,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
 	},
-/turf/closed/indestructible/rock/smoothing/abovemob,
 /area/f13/caves)
 "OX" = (
 /obj/structure/railing/handrail{
@@ -1503,9 +1486,6 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/caves)
 "RM" = (
-/obj/machinery/conveyor{
-	id = "mining_internal"
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -1571,30 +1551,28 @@
 	pixel_y = 28;
 	pixel_x = -8
 	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
+"SY" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
 /obj/structure/table/reinforced,
 /obj/machinery/mineral/processing_unit_console{
 	icon = 'icons/obj/computer.dmi';
 	icon_state = "terminal";
-	dir = 8;
+	dir = 4;
 	pixel_y = 5;
 	desc = "Break this and the warden will have your ass."
 	},
 /obj/machinery/mineral/stacking_unit_console{
 	icon = 'icons/obj/computer.dmi';
 	icon_state = "terminal";
-	dir = 8;
+	dir = 4;
 	pixel_y = -9;
 	pixel_x = 4
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
-	},
-/area/f13/caves)
-"SY" = (
-/obj/item/kirbyplants/dead{
-	desc = "It doesn't look very healthy...";
-	name = "Dead potted plant";
-	pixel_x = -7
 	},
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
@@ -2115,10 +2093,10 @@ CD
 Yq
 NK
 CG
-WY
-CD
-OT
-Br
+Ge
+Sy
+Ge
+Ge
 Br
 Br
 "}
@@ -2131,10 +2109,10 @@ CD
 aM
 ph
 Qd
-dx
-Sy
 Ge
-Ge
+Ox
+SY
+OT
 Ge
 Br
 "}
@@ -2147,10 +2125,10 @@ CD
 eT
 Ge
 Ge
-Ge
-Ox
-De
-SY
+nh
+LD
+Tu
+Th
 Ge
 Br
 "}
@@ -2163,10 +2141,10 @@ CD
 eT
 Ge
 HR
-De
 LD
-Tu
-Th
+LD
+qJ
+BS
 Ge
 Br
 "}
@@ -2181,8 +2159,8 @@ dx
 mB
 TT
 ST
-qJ
-BS
+LD
+LD
 Ge
 Br
 "}
@@ -2194,11 +2172,11 @@ CD
 CD
 CD
 dx
-nh
+mB
 Fl
 Fl
-Fl
-Fl
+LD
+LD
 Ge
 Br
 "}
