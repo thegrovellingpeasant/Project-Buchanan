@@ -273,7 +273,7 @@
 	var/satchel  = /obj/item/storage/backpack/satchel
 	var/duffelbag = /obj/item/storage/backpack/duffelbag
 
-	var/pda_slot = SLOT_BELT
+	var/pda_slot = ITEM_SLOT_BELT
 
 	var/chemwhiz = FALSE //F13 Chemwhiz, for chemistry machines
 	var/pa_wear = FALSE //F13 pa_wear, ability to wear PA
@@ -370,7 +370,7 @@
 
 	//Fortuna edit start. radio management
 	if(J.faction && ears)
-		var/obj/item/radio/T = H.get_item_by_slot(SLOT_EARS)
+		var/obj/item/radio/T = H.get_item_by_slot(ITEM_SLOT_EARS)
 		if(istype(T) && T.factionized)
 			T.linked_mob = H
 	//Fortuna edit end. radio management

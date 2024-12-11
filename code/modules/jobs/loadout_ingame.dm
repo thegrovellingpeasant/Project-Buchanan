@@ -195,7 +195,7 @@
 	if (!M.client)
 		return
 
-	if (preview_images[selected_datum.name] && !selected_datum.contains_randomisation)
+	if (preview_images[selected_datum.name])
 		return //The images have already been generated
 
 	//They've not been made yet, lets do them. First of all, we make a mannequin based on the user's current appearance

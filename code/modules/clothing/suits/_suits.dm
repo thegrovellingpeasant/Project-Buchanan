@@ -52,7 +52,7 @@
 /obj/item/clothing/suit/equipped(mob/user, slot)
 	..()
 
-	if(attached_accessory && slot != SLOT_HANDS && ishuman(user))
+	if(attached_accessory && slot != ITEM_SLOT_POCKETS && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		attached_accessory.on_suit_equip(src, user)
 		if(attached_accessory.above_suit)

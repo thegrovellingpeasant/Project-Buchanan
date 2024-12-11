@@ -220,7 +220,7 @@
 	return
 
 /obj/item/clothing/neck/petcollar/locked/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(loc == user && user.get_item_by_slot(SLOT_NECK) && lock != FALSE)
+	if(loc == user && user.get_item_by_slot(ITEM_SLOT_NECK) && lock != FALSE)
 		to_chat(user, span_warning("The collar is locked! You'll need unlock the collar before you can take it off!"))
 		return
 	..()
@@ -305,7 +305,7 @@
 	. = ..()
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
-		if(C.get_item_by_slot(SLOT_NECK) == src)
+		if(C.get_item_by_slot(ITEM_SLOT_NECK) == src)
 			to_chat(user, span_warning("You can't untie [src] while wearing it!"))
 			return
 		if(user.is_holding(src))
