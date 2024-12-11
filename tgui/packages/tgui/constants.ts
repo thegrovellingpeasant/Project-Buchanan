@@ -4,6 +4,8 @@
  * @license MIT
  */
 
+import { name } from "../tgfont/config.cjs";
+
 type Gas = {
   id: string;
   path: string;
@@ -147,6 +149,132 @@ export const RADIO_CHANNELS = [
     name: 'Common',
     freq: 1459,
     color: '#1ecc43',
+  },
+  //fallout channels
+  {
+    name: 'Vault',
+    freq: 1361,
+    color: '#6eaa2c',
+  },
+  {
+    name : 'NCR',
+    freq: 1363,
+    color: '#eaaa54',
+  },
+  {
+    name : 'BoS',
+    freq: 1365,
+    color: '#686868',
+  },
+  {
+    name : 'Enclave',
+    freq: 1367,
+    color: '#67696b',
+  },
+  {
+    name : 'Legion',
+    freq: 1371,
+    color: '#c24d44',
+  },
+  {
+    name : 'Den',
+    freq: 1375,
+    color: '#a8732b',
+  },
+  {
+    name : 'Town',
+    freq: 1369,
+    color: '#a30000',
+  },
+  {
+    name : 'Ranger',
+    freq: 1373,
+    color: '#83733c',
+  },
+  {
+    name : 'Khans',
+    freq: 1376,
+    color: '#f0420d',
+  },
+  {
+    name : 'LDS New Canaanites',
+    freq: 1377,
+    color: '#D4AF37',
+  },
+  {
+    name : 'Post office',
+    freq: 1379,
+    color: '#004B87',
+  },
+  {
+    name : 'Eighties',
+    freq: 1381,
+    color: '#1858D9',
+  },
+  {
+    name : 'Blue',
+    freq: 1383,
+    color: '#0000FF',
+  },
+  {
+    name : 'Red',
+    freq: 1385,
+    color: '#FF0000',
+  },
+  {
+    name : 'WND',
+    freq: 1387,
+    color: '#a280ba',
+  },
+  {
+    name : 'Montego Bay',
+    freq: 1389,
+    color: '#008000',
+  },
+  {
+    name : 'Salvatores',
+    freq: 1391,
+    color: '#FF99CC',
+  },
+  {
+    name : 'Mordinos',
+    freq: 1395,
+    color: '#FF7566',
+  },
+  {
+    name : 'Hotel',
+    freq: 1399,
+    color: '#F7EFCF',
+  },
+  {
+    name : 'Bishops',
+    freq: 1401,
+    color: '#8CA2BD',
+  },
+  {
+    name : 'Wrights',
+    freq: 1403,
+    color: '#B3875E',
+  },
+  {
+    name : 'Vangraffs',
+    freq: 1405,
+    color: '#4da34e',
+  },
+  {
+    name : 'NCR Patrol',
+    freq: 1407,
+    color: '#606896',
+  },
+  {
+    name : 'NCR CF',
+    freq: 1409,
+    color: '#d9b884',
+  },
+  {
+    name : 'Government',
+    freq: 1311,
+    color: '#7b5fb3',
   },
 ] as const;
 
