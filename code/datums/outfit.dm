@@ -33,11 +33,13 @@
 ////////F13 Randomization Edit
 	var/list/all_types = list()
 	var/list/all_possible_types = list()
+
+
 ///////////////////////////////////////////////////
 //Simple randomisation support. If any of the piece types is a list, a random item is picked from that list
 //Supports weighted selection too, optionally
 /datum/outfit/New()
-	for (var/a in ALL_OUTFIT_SLOTS)
+	for (var/a in uniform + suit + back + belt + gloves + shoes + head + mask + neck + ears + glasses + id + l_pocket + r_pocket + suit_store + r_hand + l_hand + internals_slot)
 		if (islist(vars[a]))
 			contains_randomisation = TRUE
 			all_possible_types += vars[a]
@@ -46,7 +48,8 @@
 		else if(vars[a])
 			all_possible_types += vars[a]
 			all_types += vars[a]
-	.=..()
+	return ..()
+
 //////////////////////////////////////////////////////
 /datum/outfit/proc/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	//to be overridden for customization depending on client prefs,species etc
