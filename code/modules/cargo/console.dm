@@ -7,7 +7,6 @@
 	circuit = /obj/item/circuitboard/computer/cargo
 	connectable = FALSE
 
-	var/caps
 	var/requestonly = FALSE
 	var/contraband = FALSE
 	var/self_paid = FALSE
