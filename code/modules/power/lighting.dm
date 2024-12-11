@@ -957,24 +957,32 @@
 /obj/machinery/light/small/ncr
 	name = "Security light bulb"
 	desc = "A refitted security lightbulb, which will turn a menacing red when the NCR garrison declare martial law."
+	light_color = LIGHT_COLOR_WHITE
 
 /obj/machinery/light/small/ncr/process()
 	. = ..()
+	if(GLOB.security_level == SEC_LEVEL_AMBER)
+		icon_state = "bulb_emergency"
+		bulb_colour = "#8B0000"
+		light_color = "#FF0000"
+	else (GLOB.security_level < SEC_LEVEL_AMBER)
+		icon_state = "bulb"
+		bulb_colour = "#FFF6ED"
+		light_color = LIGHT_COLOR_WHITE
 
 /obj/machinery/light/ncr
 	name = "Security light fixture"
 	desc = "A refitted security light fixture, which will turn a menacing red when the NCR garrison declare martial law."
 	icon_state = "tube"
-	desc = "A lighting fixture with red lighting."
-	nightshift_allowed = FALSE
-	no_emergency = TRUE
-	brightness = 4
-	density = 0
-	layer = WALL_OBJ_LAYER
-	bulb_colour = "#8B0000"
-	light_color = "#FF0000"
+	light_color = LIGHT_COLOR_WHITE
 
 /obj/machinery/light/ncr/process()
 	. = ..()
 	if(GLOB.security_level == SEC_LEVEL_AMBER)
 		icon_state = "tube_emergency"
+			bulb_colour = "#8B0000"
+			light_color = "#FF0000"
+		else (GLOB.security_level < SEC_LEVEL_AMBER)
+			icon_state = "tube"
+			bulb_colour = "#FFF6ED"
+			light_color = LIGHT_COLOR_WHITE
