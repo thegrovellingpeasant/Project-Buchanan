@@ -13,7 +13,7 @@
 	if(!magpulse)
 		return ..()
 
-/mob/living/silicon/robot/Move(NewLoc, direct)
+/mob/living/silicon/robot/Move(atom/newloc, direction=0, glide_size_override = 0)
 	. = ..()
 	if(. && (combat_flags & COMBAT_FLAG_SPRINT_ACTIVE) && !(movement_type & FLYING) && CHECK_ALL_MOBILITY(src, MOBILITY_STAND | MOBILITY_MOVE))
 		if(!(cell?.use(25)))

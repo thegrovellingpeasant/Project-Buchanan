@@ -82,6 +82,11 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 	updateallghostimages()
 
+	var/turf/T
+	if(ismob(body))
+		T = get_turf(body) //Where is the body located?
+	else
+		T = loc
 	if(body)
 		gender = body.gender
 		if(body.mind && body.mind.name)
@@ -107,15 +112,14 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 	update_icon()
 
-	if(!isturf(loc))
-		var/turf/T
+	if(!T)
 		var/list/turfs = get_area_turfs(/area/shuttle/arrival)
-		if(turfs.len)
+		if(length(turfs))
 			T = pick(turfs)
 		else
 			T = SSmapping.get_station_center()
 
-		forceMove(T)
+	abstract_move(T)
 
 	if(!name)							//To prevent nameless ghosts
 		name = random_unique_name(gender)
@@ -149,13 +153,13 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/old_color = color
 	color = "#960000"
 	animate(src, color = old_color, time = 10, flags = ANIMATION_PARALLEL)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 10)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 10)
 
 /mob/dead/observer/ratvar_act()
 	var/old_color = color
 	color = "#FAE48C"
 	animate(src, color = old_color, time = 10, flags = ANIMATION_PARALLEL)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 10)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 10)
 
 /mob/dead/observer/Destroy()
 	GLOB.ghost_images_default -= ghostimage_default
@@ -383,28 +387,27 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 
 
-/mob/dead/observer/Move(NewLoc, direct, glide_size_override = 32)
+/mob/dead/observer/Move(atom/newloc, direction=0, glide_size_override = 32)
 	if(updatedir)
-		setDir(direct)//only update dir if we actually need it, so overlays won't spin on base sprites that don't have directions of their own
-	var/oldloc = loc
+		setDir(direction)//only update dir if we actually need it, so overlays won't spin on base sprites that don't have directions of their own
 
 	if(glide_size_override)
 		set_glide_size(glide_size_override)
-	if(NewLoc)
-		forceMove(NewLoc)
+	if(newloc)
+		abstract_move(newloc)
 		update_parallax_contents()
 	else
-		forceMove(get_turf(src))  //Get out of closets and such as a ghost
-		if((direct & NORTH) && y < world.maxy)
-			y++
-		else if((direct & SOUTH) && y > 1)
-			y--
-		if((direct & EAST) && x < world.maxx)
-			x++
-		else if((direct & WEST) && x > 1)
-			x--
+		var/turf/destination = get_turf(src)
+		if((direction & NORTH) && y < world.maxy)
+			destination = get_step(destination, NORTH)
+		else if((direction & SOUTH) && y > 1)
+			destination = get_step(destination, SOUTH)
+		if((direction & EAST) && x < world.maxx)
+			destination = get_step(destination, EAST)
+		else if((direction & WEST) && x > 1)
+			destination = get_step(destination, WEST)
 
-	Moved(oldloc, direct)
+		abstract_move(destination)//Get out of closets and such as a ghost
 
 /mob/dead/observer/verb/reenter_corpse()
 	set category = "Ghost"
@@ -490,7 +493,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		to_chat(usr, "No area available.")
 		return
 
-	usr.forceMove(pick(L))
+	usr.abstract_move(pick(L))
 	update_parallax_contents()
 
 /mob/dead/observer/proc/view_gas()
@@ -569,7 +572,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			var/turf/T = get_turf(M) //Turf of the destination mob
 
 			if(T && isturf(T))	//Make sure the turf exists, then move the source to that destination.
-				A.forceMove(T)
+				A.abstract_move(T)
 				A.update_parallax_contents()
 			else
 				to_chat(A, "This mob is not located in the game world.")
@@ -769,7 +772,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			var/tz = text2num(href_list["z"])
 			var/turf/target = locate(tx, ty, tz)
 			if(istype(target))
-				forceMove(target)
+				abstract_move(target)
 				return
 		if(href_list["reenter"])
 			reenter_corpse()

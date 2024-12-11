@@ -11,7 +11,7 @@
 	. = ..()
 	QDEL_IN(src, 70)
 
-/obj/effect/particle_effect/water/Move(turf/newloc)
+/obj/effect/particle_effect/water/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if (--src.life < 1)
 		qdel(src)
 		return 0
@@ -38,7 +38,7 @@
  * steam.set_up(5, 0, mob.loc) -- sets up variables
  * OPTIONAL: steam.attach(mob)
  * steam.start() -- spawns the effect
- *  */ 
+ *  */
 /////////////////////////////////////////////
 /obj/effect/particle_effect/steam
 	name = "steam"

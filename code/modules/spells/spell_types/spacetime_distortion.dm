@@ -82,6 +82,10 @@
 /obj/effect/cross_action/spacetime_dist/Initialize(mapload)
 	. = ..()
 	setDir(pick(GLOB.cardinals))
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/effect/cross_action/spacetime_dist/proc/walk_link(atom/movable/AM)
 	if(ismob(AM))
@@ -100,9 +104,10 @@
 	playsound(get_turf(src),sound,70,0)
 	busy = FALSE
 
-/obj/effect/cross_action/spacetime_dist/Crossed(atom/movable/AM)
+/obj/effect/cross_action/spacetime_dist/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(!busy)
-		walk_link(AM)
+		walk_link(arrived)
 
 /obj/effect/cross_action/spacetime_dist/attackby(obj/item/W, mob/user, params)
 	if(user.temporarilyRemoveItemFromInventory(W))

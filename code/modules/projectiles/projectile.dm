@@ -163,12 +163,16 @@
 	/// For telling whether we want to roll for bone breaking or lacerations if we're bothering with wounds
 	sharpness = SHARP_NONE
 
-/obj/item/projectile/Initialize()
+/obj/item/projectile/Initialize(mapload)
 	. = ..()
 	permutated = list()
 	decayedRange = range
 	if(LAZYLEN(embedding))
 		updateEmbedding()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /**
  * Artificially modified to be called at around every world.icon_size pixels of movement.
@@ -770,14 +774,14 @@
 		angle = arctan(y - oy, x - ox)
 	return list(angle, p_x, p_y)
 
-/obj/item/projectile/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
-	. = ..()
-	if(isliving(AM) && !(pass_flags & PASSMOB))
-		var/mob/living/L = AM
-		if(can_hit_target(L, permutated, (AM == original)))
-			Bump(AM)
+/obj/item/projectile/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(isliving(arrived) && !(pass_flags & PASSMOB))
+		var/mob/living/L = arrived
+		if(can_hit_target(L, permutated, (arrived == original)))
+			Bump(arrived)
 
-/obj/item/projectile/Move(atom/newloc, dir = NONE)
+/obj/item/projectile/Move(atom/newloc, direction=0, glide_size_override = 0)
 	. = ..()
 	if(.)
 		if(temporary_unstoppable_movement)

@@ -25,6 +25,10 @@
 		ignore_typecache = typecacheof(list(
 			/obj/effect,
 			/mob/dead))
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/trap/Destroy()
 	qdel(spark_system)
@@ -55,14 +59,15 @@
 	else
 		animate(src, alpha = initial(alpha), time = time_between_triggers)
 
-/obj/structure/trap/Crossed(atom/movable/AM)
+/obj/structure/trap/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(last_trigger + time_between_triggers > world.time)
 		return
 	// Don't want the traps triggered by sparks, ghosts or projectiles.
-	if(is_type_in_typecache(AM, ignore_typecache))
+	if(is_type_in_typecache(arrived, ignore_typecache))
 		return
-	if(ismob(AM))
-		var/mob/M = AM
+	if(ismob(arrived))
+		var/mob/M = arrived
 		if(M.mind in immune_minds)
 			return
 		if(M.anti_magic_check())
@@ -70,8 +75,8 @@
 	if(charges <= 0)
 		return
 	flare()
-	if(isliving(AM))
-		trap_effect(AM)
+	if(isliving(arrived))
+		trap_effect(arrived)
 
 /obj/structure/trap/proc/trap_effect(mob/living/L)
 	return
@@ -173,13 +178,13 @@
 	. = ..()
 	time_between_triggers = 10
 
-/obj/structure/trap/stun/hunter/Crossed(atom/movable/AM)
-	if(isliving(AM))
-		var/mob/living/L = AM
+/obj/structure/trap/stun/hunter/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(isliving(arrived))
+		var/mob/living/L = arrived
 		if(!L.mind?.has_antag_datum(/datum/antagonist/fugitive))
 			return
 	caught = TRUE
-	. = ..()
+	return ..()
 
 /obj/structure/trap/stun/hunter/flare()
 	..()

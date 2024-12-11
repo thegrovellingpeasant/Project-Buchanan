@@ -213,21 +213,18 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(brain && (replace_current || !should_have_brain))
 		if(!brain.decoy_override)//Just keep it if it's fake
-			brain.Remove(TRUE,TRUE)
 			QDEL_NULL(brain)
 	if(should_have_brain && !brain)
 		brain = new mutant_brain()
 		brain.Insert(C, TRUE, TRUE)
 
 	if(heart && (!should_have_heart || replace_current))
-		heart.Remove(TRUE)
 		QDEL_NULL(heart)
 	if(should_have_heart && !heart)
 		heart = new mutant_heart()
 		heart.Insert(C)
 
 	if(lungs && (!should_have_lungs || replace_current))
-		lungs.Remove(TRUE)
 		QDEL_NULL(lungs)
 	if(should_have_lungs && !lungs)
 		if(mutantlungs)
@@ -237,7 +234,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		lungs.Insert(C)
 
 	if(liver && (!should_have_liver || replace_current))
-		liver.Remove(TRUE)
 		QDEL_NULL(liver)
 	if(should_have_liver && !liver)
 		if(mutantliver)
@@ -247,7 +243,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		liver.Insert(C)
 
 	if(stomach && (!should_have_stomach || replace_current))
-		stomach.Remove(TRUE)
 		QDEL_NULL(stomach)
 	if(should_have_stomach && !stomach)
 		if(mutantstomach)
@@ -257,14 +252,12 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		stomach.Insert(C)
 
 	if(appendix && (!should_have_appendix || replace_current))
-		appendix.Remove(TRUE)
 		QDEL_NULL(appendix)
 	if(should_have_appendix && !appendix)
 		appendix = new()
 		appendix.Insert(C)
 
 	if(tail && (!should_have_tail || replace_current))
-		tail.Remove(TRUE)
 		QDEL_NULL(tail)
 	if(should_have_tail && !tail)
 		tail = new mutanttail()
@@ -272,21 +265,18 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(C.get_bodypart(BODY_ZONE_HEAD))
 		if(eyes && (replace_current || !should_have_eyes))
-			eyes.Remove(TRUE)
 			QDEL_NULL(eyes)
 		if(should_have_eyes && !eyes)
 			eyes = new mutanteyes
 			eyes.Insert(C, TRUE)
 
 		if(ears && (replace_current || !should_have_ears))
-			ears.Remove(TRUE)
 			QDEL_NULL(ears)
 		if(should_have_ears && !ears)
 			ears = new mutantears
 			ears.Insert(C)
 
 		if(tongue && (replace_current || !should_have_tongue))
-			tongue.Remove(TRUE)
 			QDEL_NULL(tongue)
 		if(should_have_tongue && !tongue)
 			tongue = new mutanttongue
@@ -296,7 +286,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		for(var/mutantorgan in old_species.mutant_organs)
 			var/obj/item/organ/I = C.getorgan(mutantorgan)
 			if(I)
-				I.Remove()
 				QDEL_NULL(I)
 
 	for(var/path in mutant_organs)
@@ -370,7 +359,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				H.physiology.footstep_type = null
 
 		if(H.client && has_field_of_vision && CONFIG_GET(flag/use_field_of_vision))
-			H.LoadComponent(/datum/component/field_of_vision, H.field_of_vision_type)
+			H.LoadComponent(/datum/component/field_of_vision, fov_type = H.field_of_vision_type)
 
 	C.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/species, TRUE, multiplicative_slowdown = speedmod)
 
@@ -1476,10 +1465,13 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 		playsound(target.loc, user.dna.species.attack_sound, 25, 1, -1)
 
-		target.visible_message(span_danger("[user] [atk_verb]s [target]!"), \
-					span_userdanger("[user] [atk_verb]s you!"), null, COMBAT_MESSAGE_RANGE, null, \
-					user, span_danger("You [atk_verb] [target]!"))
-
+		target.visible_message(
+			message = span_danger("[user] [atk_verb]s [target]!"), \
+			self_message = span_userdanger("[user] [atk_verb]s you!"),
+			blind_message = null,
+			vision_distance = COMBAT_MESSAGE_RANGE,
+			ignored_mobs = null,
+		)
 		target.lastattacker = user.real_name
 		target.lastattackerckey = user.ckey
 		user.dna.species.spec_unarmedattacked(user, target)

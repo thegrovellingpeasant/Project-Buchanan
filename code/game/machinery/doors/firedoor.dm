@@ -288,6 +288,14 @@
 	CanAtmosPass = ATMOS_PASS_PROC
 	pass_flags_self = PASSGLASS
 
+/obj/machinery/door/firedoor/border_only/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
+	)
+
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/machinery/door/firedoor/border_only/closed
 	icon_state = "door_closed"
 	opacity = TRUE
@@ -354,13 +362,18 @@
 	else
 		return TRUE
 
-/obj/machinery/door/firedoor/border_only/CheckExit(atom/movable/mover, border_dir)
-	if(istype(mover) && (mover.pass_flags & pass_flags_self))
-		return TRUE
-	if(border_dir == dir)
-		return !density
-	else
-		return TRUE
+/obj/machinery/door/firedoor/border_only/proc/on_exit(datum/source, atom/movable/leaving, direction)
+	SIGNAL_HANDLER
+
+	if(leaving.movement_type & UNSTOPPABLE)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if(direction == dir && density)
+		leaving.Bump(src)
+		return COMPONENT_ATOM_BLOCK_EXIT
 
 /obj/machinery/door/firedoor/border_only/CanAtmosPass(turf/T)
 	if(get_dir(loc, T) == dir)

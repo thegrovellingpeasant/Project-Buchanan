@@ -23,12 +23,12 @@
 	playsound(src, 'sound/weapons/blade1.ogg', 50, TRUE)
 	return BULLET_ACT_BLOCK
 
-/mob/living/simple_animal/bot/secbot/grievous/Crossed(atom/movable/AM)
-	..()
-	if(ismob(AM) && AM == target)
-		visible_message("[src] flails his swords and cuts [AM]!")
+/mob/living/simple_animal/bot/secbot/grievous/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	. = ..()
+	if(ismob(arrived) && arrived == target)
+		visible_message("[src] flails his swords and cuts [arrived]!")
 		playsound(src,'sound/effects/beepskyspinsabre.ogg',100,TRUE,-1)
-		stun_attack(AM)
+		stun_attack(arrived)
 
 /mob/living/simple_animal/bot/secbot/grievous/Initialize()
 	. = ..()
@@ -48,7 +48,7 @@
 		return TRUE
 
 /mob/living/simple_animal/bot/secbot/grievous/stun_attack(mob/living/carbon/C) //Criminals don't deserve to live
-	weapon.attack(C, src)
+	INVOKE_ASYNC(weapon, TYPE_PROC_REF(/obj/item, attack), C, src)
 	playsound(src, 'sound/weapons/blade1.ogg', 50, TRUE, -1)
 	if(C.stat == DEAD)
 		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 2)

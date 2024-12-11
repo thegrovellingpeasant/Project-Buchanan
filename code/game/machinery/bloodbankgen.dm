@@ -227,17 +227,17 @@
 	if(bag)
 		dat += "<br>Current Capacity: [bag.reagents.total_volume] of [bag.reagents.maximum_volume]"
 		if(bag.reagents && bag.reagents.total_volume)
-			dat += "<br><a href='?src=\ref[src];activateinput=1'>Drain</a>"
+			dat += "<br><a href='?src=[text_ref(src)];activateinput=1'>Drain</a>"
 
-		dat += "<br><a href='?src=\ref[src];detachinput=1'>Detach</a>"
+		dat += "<br><a href='?src=[text_ref(src)];detachinput=1'>Detach</a>"
 
 
 	dat += "<br><br>Synthetics Bag<HR>"
 	if(outbag)
 		dat += "<br>Current Capacity:[outbag.reagents.total_volume] of [outbag.reagents.maximum_volume]"
 		if(!(outbag.reagents.total_volume >= outbag.reagents.maximum_volume))
-			dat += "<br><a href='?src=\ref[src];activateoutput=1'>Fill</a>"
-		dat += "<br><a href='?src=\ref[src];detachoutput=1'>Detach</a>"
+			dat += "<br><a href='?src=[text_ref(src)];activateoutput=1'>Fill</a>"
+		dat += "<br><a href='?src=[text_ref(src)];detachoutput=1'>Detach</a>"
 
 	if(!bag && !outbag)
 		dat += "<div class='statusDisplay'>No containers inside, please insert container.</div>"

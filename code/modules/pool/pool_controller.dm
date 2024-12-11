@@ -395,8 +395,8 @@
 		<h3>Temperature</h3>
 		<div class='statusDisplay'>
 		<B>Current temperature:</B> [temp2text()]<BR>
-		[CanUpTemp(user) ? "<a href='?src=\ref[src];IncreaseTemp=1'>Increase Temperature</a><br>" : "[span_linkoff("Increase Temperature")]<br>"]
-		[CanDownTemp(user) ? "<a href='?src=\ref[src];DecreaseTemp=1'>Decrease Temperature</a><br>" : "[span_linkoff("Decrease Temperature")]<br>"]
+		[CanUpTemp(user) ? "<a href='?src=[text_ref(src)];IncreaseTemp=1'>Increase Temperature</a><br>" : "[span_linkoff("Increase Temperature")]<br>"]
+		[CanDownTemp(user) ? "<a href='?src=[text_ref(src)];DecreaseTemp=1'>Decrease Temperature</a><br>" : "[span_linkoff("Decrease Temperature")]<br>"]
 		</div>
 		<h3>Drain</h3>
 		<div class='statusDisplay'>
@@ -407,7 +407,7 @@
 	else
 		dat += "[span_bad("Drained")]<BR>"
 	if((issilicon(user) || IsAdminGhost(user) || drainable) && !linked_drain.active)
-		dat += "<a href='?src=\ref[src];Activate Drain=1'>[drained ? "Fill" : "Drain"] Pool</a><br>"
+		dat += "<a href='?src=[text_ref(src)];Activate Drain=1'>[drained ? "Fill" : "Drain"] Pool</a><br>"
 	popup.set_content(dat)
 	popup.open()
 

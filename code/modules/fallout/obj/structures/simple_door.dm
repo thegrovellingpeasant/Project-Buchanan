@@ -36,7 +36,10 @@
 /obj/structure/simple_door/Initialize()
 	. = ..()
 	icon_state = door_type
-
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/simple_door/Destroy()
 	if(padlock)
@@ -228,17 +231,21 @@
 		return 1
 	return !density
 
-/obj/structure/simple_door/CheckExit(atom/movable/O as mob|obj, target)
-	if(!density && !manual_opened && ishuman(O))
-		var/mob/living/carbon/human/H = O
-		if(H.client && H.stat != 2)
-			if(hard_open)
-				spawn(H.movement_delay())TryToSwitchState(H) //AutoClosing
-			else
-				spawn(H.movement_delay())TryToSwitchState(H,1)
-	if(O.loc == loc)
-		return 1
-	return !density
+/obj/structure/simple_door/proc/on_exit(datum/source, atom/movable/leaving, direction)
+	if(density || manual_opened || !ishuman(leaving))
+		return
+	var/mob/living/carbon/human/H = leaving
+	if(H.client && H.stat != UNCONSCIOUS)
+		if(hard_open)
+			spawn(H.movement_delay())
+				TryToSwitchState(H) //AutoClosing
+		else
+			spawn(H.movement_delay())
+				TryToSwitchState(H,1)
+
+	if (direction == dir && density)
+		leaving.Bump(src)
+		return COMPONENT_ATOM_BLOCK_EXIT
 
 // Fallout 13 general doors directory
 

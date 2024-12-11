@@ -14,7 +14,7 @@
 	debris = list()
 	var/timerid
 
-/obj/structure/destructible/clockwork/taunting_trail/Initialize()
+/obj/structure/destructible/clockwork/taunting_trail/Initialize(mapload)
 	. = ..()
 	timerid = QDEL_IN(src, 15)
 	var/obj/structure/destructible/clockwork/taunting_trail/Tt = locate(/obj/structure/destructible/clockwork/taunting_trail) in loc
@@ -28,6 +28,10 @@
 	setDir(pick(GLOB.cardinals))
 	transform = matrix()*1.3
 	animate(src, alpha = 100, time = 15)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/structure/destructible/clockwork/taunting_trail/Destroy()
 	deltimer(timerid)
@@ -39,9 +43,9 @@
 /obj/structure/destructible/clockwork/taunting_trail/CanPass(atom/movable/mover, border_dir)
 	return TRUE
 
-/obj/structure/destructible/clockwork/taunting_trail/Crossed(atom/movable/AM)
-	affect_mob(AM)
-	return ..()
+/obj/structure/destructible/clockwork/taunting_trail/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	affect_mob(arrived)
 
 /obj/structure/destructible/clockwork/taunting_trail/Bumped(atom/movable/AM)
 	affect_mob(AM)

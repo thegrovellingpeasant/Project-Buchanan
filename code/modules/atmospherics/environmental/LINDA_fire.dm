@@ -58,6 +58,10 @@
 	//atmos is disabled, run it on objects instead.
 	if(SSair.flags & SS_NO_FIRE)
 		START_PROCESSING(SSobj, src)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/effect/hotspot/proc/perform_exposure()
 	var/turf/open/location = loc
@@ -202,10 +206,11 @@
 				T.to_be_destroyed = FALSE
 				T.max_fire_temperature_sustained = 0
 
-/obj/effect/hotspot/Crossed(atom/movable/AM, oldLoc)
-	..()
-	if(isliving(AM))
-		var/mob/living/L = AM
+/obj/effect/hotspot/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(isliving(arrived))
+		var/mob/living/L = arrived
 		L.fire_act(temperature, volume)
 
 /obj/effect/hotspot/singularity_pull()

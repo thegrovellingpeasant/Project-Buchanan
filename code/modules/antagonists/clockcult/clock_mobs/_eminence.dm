@@ -23,10 +23,10 @@
 /mob/camera/eminence/CanPass(atom/movable/mover, border_dir)
 	return TRUE
 
-/mob/camera/eminence/Move(NewLoc, direct)
+/mob/camera/eminence/Move(atom/newloc, direction=0, glide_size_override = 0)
 	var/OldLoc = loc
-	if(NewLoc && !istype(NewLoc, /turf/open/indestructible/reebe_void))
-		var/turf/T = get_turf(NewLoc)
+	if(newloc && !istype(newloc, /turf/open/indestructible/reebe_void))
+		var/turf/T = get_turf(newloc)
 		if(!GLOB.ratvar_awakens)
 			if(locate(/obj/effect/blessing, T))
 				if(last_failed_turf != T)
@@ -47,7 +47,7 @@
 				if(prob(166 - (get_dist(src, TT) * 33)))
 					TT.ratvar_act() //Causes moving to leave a swath of proselytized area behind the Eminence
 		forceMove(T)
-		Moved(OldLoc, direct)
+		Moved(OldLoc, direction)
 
 /mob/camera/eminence/Process_Spacemove(movement_dir = 0)
 	return TRUE

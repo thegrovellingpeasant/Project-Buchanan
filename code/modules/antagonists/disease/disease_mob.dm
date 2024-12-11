@@ -108,12 +108,12 @@ the new instance inside the host to be updated to the template's stats.
 /mob/camera/disease/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
 	return
 
-/mob/camera/disease/Move(NewLoc, Dir = 0)
+/mob/camera/disease/Move(atom/newloc, direction=0, glide_size_override = 0)
 	if(freemove)
-		forceMove(NewLoc)
+		forceMove(newloc)
 	else
 		if(world.time > (last_move_tick + move_delay))
-			follow_next(Dir & NORTHWEST)
+			follow_next(direction & NORTHWEST)
 			last_move_tick = world.time
 
 /mob/camera/disease/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)

@@ -31,7 +31,7 @@
 	var/chew_probability = 1
 	faction = list("rat")
 
-/mob/living/simple_animal/mouse/Initialize()
+/mob/living/simple_animal/mouse/Initialize(mapload)
 	. = ..()
 	if(!body_color)
 		body_color = pick(list("brown","gray","white"))
@@ -39,6 +39,11 @@
 	icon_state = "mouse_[body_color]"
 	icon_living = "mouse_[body_color]"
 	icon_dead = "mouse_[body_color]_dead"
+
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /mob/living/simple_animal/mouse/proc/splat()
 	src.health = 0
@@ -60,15 +65,17 @@
 		..(gibbed)
 
 
-/mob/living/simple_animal/mouse/Crossed(AM as mob|obj)
-	if( ishuman(AM) )
-		if(!stat)
-			var/mob/M = AM
-			to_chat(M, span_notice("[icon2html(src, M)] Squeak!"))
-	if(istype(AM, /obj/item/reagent_containers/food/snacks/royalcheese))
+/mob/living/simple_animal/mouse/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+
+	if(istype(arrived, /obj/item/reagent_containers/food/snacks/royalcheese))
 		evolve()
-		qdel(AM)
-	..()
+		qdel(arrived)
+		return
+	if(!ishuman(arrived) || stat) //dead or non-human walking over us
+		return
+	var/mob/M = arrived
+	to_chat(M, span_notice("[icon2html(src, M)] Squeak!"))
 
 /mob/living/simple_animal/mouse/handle_automated_action()
 	if(!isturf(loc))
@@ -117,7 +124,7 @@
 /mob/living/simple_animal/mouse/proc/evolve()
 	var/mob/living/simple_animal/hostile/regalrat = new /mob/living/simple_animal/hostile/regalrat(loc)
 	visible_message(span_warning("[src] devours the cheese! He morphs into something... greater!"))
-	regalrat.say("RISE, MY SUBJECTS! SCREEEEEEE!")
+	INVOKE_ASYNC(regalrat, TYPE_PROC_REF(/atom/movable, say), "RISE, MY SUBJECTS! SCREEEEEEE!")
 	if(mind)
 		mind.transfer_to(regalrat)
 	qdel(src)

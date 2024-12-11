@@ -70,7 +70,7 @@
 				tempL.Remove(attempt)
 
 		if(!success)
-			do_teleport(target, L, forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = forcecheck)
+			do_teleport(target, L, channel = TELEPORT_CHANNEL_MAGIC, forced = forcecheck)
 			playsound(get_turf(user), sound2, 50,1)
 
 	return

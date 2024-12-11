@@ -179,9 +179,7 @@
 #define FREQ_WND 1387 // radio station
 #define FREQ_MONTEGOBAY 1389 // montego bay
 #define FREQ_SALVATORES 1391 //Salvatores
-//#define FREQ_BISHOPS 1393 //Bishops
 #define FREQ_MORDINOS 1395 //Mordinos
-//#define FREQ_WRIGHTS 1397 //Wrights
 #define FREQ_HOTEL 1399 //Hotel
 #define FREQ_BISHOPS 1401 // Bishops
 #define FREQ_WRIGHTS 1403 // Wrights

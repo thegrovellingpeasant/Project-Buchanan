@@ -30,51 +30,51 @@
 /turf/open/water/update_icon()
 	. = ..()
 
-/turf/open/water/Entered(atom/movable/AM, atom/oldloc)
-	if(istype(AM, /mob/living/carbon/human))
-		var/mob/living/carbon/human/L = AM
+/turf/open/water/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(istype(arrived, /mob/living/carbon/human))
+		var/mob/living/carbon/human/L = arrived
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(oldloc, /turf/open/water))
+		if(!istype(old_loc, /turf/open/water))
 			to_chat(L, span_warning("You get drenched in water!"))
 		playsound(src, "water_wade", 20, TRUE)
-	if(istype(AM, /mob/living && !/mob/living/carbon/human))
-		var/mob/living/U = AM
+	if(istype(arrived, /mob/living && !/mob/living/carbon/human))
+		var/mob/living/U = arrived
 		U.update_water()
 		if(U.check_submerged() <= 0)
 			return
 		playsound(src, "water_wade", 20, TRUE)
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
+	if(istype(arrived, /obj/vehicle))
+		var/obj/vehicle/V = arrived
 		V.vehicle_update_water()
 		if(V.vehicle_check_submerged() <= 0)
 			return
 		playsound(src, "water_wade", 20, TRUE)
-	if(istype(AM, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
-		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = AM
+	if(istype(arrived, /mob/living/simple_animal/hostile/megafauna/mirelurkqueen))
+		var/mob/living/simple_animal/hostile/megafauna/mirelurkqueen = arrived
 		if(mirelurkqueen.change_behaviour == FALSE)
 			visible_message(span_danger(">The mirelurk queen speeds up in the water!"))
 			mirelurkqueen.change_behaviour = TRUE
 		playsound(src, "water_wade", 20, TRUE)
-	AM.water_act(5)
+	arrived.water_act(5)
 	..()
 
-/turf/open/water/Exited(atom/movable/AM, atom/newloc)
-	if(istype(AM, /mob/living/carbon/human))
-		var/mob/living/carbon/human/L = AM
+/turf/open/water/Exited(atom/movable/gone, direction)
+	if(istype(gone, /mob/living/carbon/human))
+		var/mob/living/carbon/human/L = gone
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(newloc, /turf/open/water))
+		if(!istype(direction, /turf/open/water))
 			to_chat(L, span_warning("You climb out of \the [src]."))
-	if(istype(AM, /mob/living))
-		var/mob/living/U = AM
+	if(istype(gone, /mob/living))
+		var/mob/living/U = gone
 		U.update_water()
 		if(U.check_submerged() <= 0)
 			return
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
+	if(istype(gone, /obj/vehicle))
+		var/obj/vehicle/V = gone
 		V.vehicle_update_water()
 		if(V.vehicle_check_submerged() <= 0)
 			return
