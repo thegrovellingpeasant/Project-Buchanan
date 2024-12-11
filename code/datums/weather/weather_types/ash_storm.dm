@@ -22,7 +22,7 @@
 
 	immunity_type = "ash"
 
-	probability = 90
+	probability = 0
 
 	barometer_predictable = TRUE
 

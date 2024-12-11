@@ -38,7 +38,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
