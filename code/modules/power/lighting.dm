@@ -965,7 +965,7 @@
 		icon_state = "bulb_emergency"
 		bulb_colour = "#8B0000"
 		light_color = "#FF0000"
-	else (GLOB.security_level < SEC_LEVEL_AMBER)
+	else if (GLOB.security_level < SEC_LEVEL_AMBER)
 		icon_state = "bulb"
 		bulb_colour = "#FFF6ED"
 		light_color = LIGHT_COLOR_WHITE
@@ -980,9 +980,9 @@
 	. = ..()
 	if(GLOB.security_level == SEC_LEVEL_AMBER)
 		icon_state = "tube_emergency"
-			bulb_colour = "#8B0000"
-			light_color = "#FF0000"
-		else (GLOB.security_level < SEC_LEVEL_AMBER)
-			icon_state = "tube"
-			bulb_colour = "#FFF6ED"
-			light_color = LIGHT_COLOR_WHITE
+		bulb_colour = "#8B0000"
+		light_color = "#FF0000"
+	else if (GLOB.security_level < SEC_LEVEL_AMBER)
+		icon_state = "tube"
+		bulb_colour = "#FFF6ED"
+		light_color = LIGHT_COLOR_WHITE

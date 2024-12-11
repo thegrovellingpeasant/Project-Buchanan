@@ -296,11 +296,6 @@
 	else
 		attack_hand(user)
 
-//return amount (only for the shit above and blow this proc lol)
-/obj/machinery/computer/cargo/proc/return_amount(obj/item/M)
-	return 1
-
-/obj/machinery/computer/cargo/proc/add_caps_to_credits( obj/item/M, datum/export_report/report)
-	var/amount = return_amount(M)
-	report.total_value[src] += amount
-	M.use(amount)
+/obj/machinery/computer/cargo/proc/add_caps_to_credits(obj/item/stack/C, datum/export_report/report)
+	report.total_value += C.amount
+	C.use(C.amount)
