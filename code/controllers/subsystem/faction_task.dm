@@ -44,6 +44,9 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 	"/datum/job/wastes/f13vagrant" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
 		),
+	"datum/job/citizens/f13convict" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+		),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -645,7 +648,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 75
+	player_chance = 10
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off
