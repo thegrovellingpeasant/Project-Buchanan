@@ -17,7 +17,8 @@
 	end_message = span_boldannounce("The downpour gradually slows to a light shower. It should be safe outside now.")
 	end_sound = 'sound/ambience/acidrain_end.ogg'
 
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	//area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	area_types = list(/area)
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION
 	protect_indoors = TRUE
