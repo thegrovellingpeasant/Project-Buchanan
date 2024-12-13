@@ -1,7 +1,7 @@
 /datum/weather/acid_rain
 	name = "acid rain"
 	desc = "The planet's thunderstorms are by nature acidic, and will incinerate anyone standing beneath them without protection."
-	probability = 2
+	probability = 0
 
 	telegraph_duration = 400
 	telegraph_message = span_userdanger("Thunder rumbles far above. You hear droplets drumming against the canopy. Seek shelter.")
@@ -31,7 +31,7 @@
 /datum/weather/acid_rain/weather_act(mob/living/L)
 	var/resist = L.getarmor(null, "acid")
 	if(prob(max(0,100-resist)))
-		L.acid_act(90, 10)
+		L.acid_act(60, 10)
 	L.adjustFireLoss(4)
 
 /datum/weather/acid_rain/weather_act_turf(turf/T)

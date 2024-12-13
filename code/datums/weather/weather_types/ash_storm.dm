@@ -22,7 +22,7 @@
 
 	immunity_type = "ash"
 
-	probability = 90
+	probability = 0
 
 	barometer_predictable = TRUE
 
@@ -104,7 +104,7 @@
 /datum/weather/ash_storm/sandstorm
 	name = "sandstorm"
 	desc = "A passing sand storm blankets the area in harmless sands."
-	probability = 15
+	probability = 10
 
 	telegraph_message = span_userdanger("Sandstorm is coming to the area, decreasing overall visibility outside.")
 
