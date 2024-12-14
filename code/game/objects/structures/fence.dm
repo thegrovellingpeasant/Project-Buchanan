@@ -392,3 +392,10 @@ Electric Fences subtype - for use at NCRCF
 		else
 			return FALSE
 	return FALSE
+
+/obj/structure/fence/electric_fence/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/wirecutters))
+		if(fusion_generator)
+			if(fusion_generator.get_cell())
+				shock(user, 100)
+	.=..()
