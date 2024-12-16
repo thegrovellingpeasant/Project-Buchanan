@@ -505,6 +505,8 @@
 	desc = "A green cross, one of the international symbols of aid and health." // Didn't the American Heart Foundation trademark red crosses? I'm playing it safe with green, not that they'll notice spacegame13 poster.
 	icon_state = "poster42_legit"
 
+/obj/structure/sign/poster/ncr
+	name = "Generic NCR Poster"
 
 /obj/structure/sign/poster/ncr/keep_to_myself
 	name = "Careless Talk Costs Lives"
@@ -525,6 +527,8 @@
 	name = "Loaded?"
 	desc = "Loaded? Don't take chances with pick-ups... Loose women may also be loaded with disease."
 	icon_state = "poster49"
+
+/obj/structure/sign/poster/prewarf
 
 /obj/structure/sign/poster/prewar/corporate_espionage
 	name = "Only You Can Prevent CORPORATE ESPIONAGE"
