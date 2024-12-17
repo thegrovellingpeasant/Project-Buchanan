@@ -1,3 +1,7 @@
+DEFINE_BITFIELD(car_traits, list(
+	"CAN_KIDNAP" = CAN_KIDNAP,
+))
+
 /obj/vehicle/sealed/car
 	layer = ABOVE_MOB_LAYER
 	anchored = TRUE

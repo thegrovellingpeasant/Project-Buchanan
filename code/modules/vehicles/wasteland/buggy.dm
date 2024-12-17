@@ -16,7 +16,6 @@
 	move_resist = MOVE_FORCE_VERY_STRONG
 	pull_force = MOVE_FORCE_VERY_STRONG
 	var/crash_all = FALSE //CHAOS
-	var/car_traits = NONE //Bitflag for special behavior such as kidnapping
 	var/engine_sound = 'sound/vehicles/carrev.ogg'
 	var/last_enginesound_time
 	var/engine_sound_length = 20 //Set this to the length of the engine sound

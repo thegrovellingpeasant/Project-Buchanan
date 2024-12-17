@@ -29,16 +29,24 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define DF_ISPROCESSING (1<<2)
 
 //FLAGS BITMASK
+#define NOJAUNT_1					(1<<0)
+#define UNUSED_RESERVATION_TURF_1	(1<<1)
+///If a turf can be made dirty at roundstart. This is also used in areas.
+#define CAN_BE_DIRTY_1				(1<<2)
 ///This flag is what recursive_hear_check() uses to determine wether to add an item to the hearer list or not.
 #define HEAR_1						(1<<3)
 ///Projectiles will use default chance-based ricochet handling on things with this.
 #define DEFAULT_RICOCHET_1			(1<<4)
 ///Conducts electricity (metal etc.).
 #define CONDUCT_1					(1<<5)
+///Blocks lava rivers being generated on the turf.
+#define NO_LAVA_GEN_1				(1<<6)
 ///For machines and structures that should not break into parts, eg, holodeck stuff.
 #define NODECONSTRUCT_1				(1<<7)
 ///Item has priority to check when entering or leaving.
 #define ON_BORDER_1					(1<<9)
+///Blocks ruins spawning on the turf.
+#define NO_RUINS_1					(1<<10)
 ///Prevent clicking things below it on the same turf eg. doors/ fulltile windows.
 #define PREVENT_CLICK_UNDER_1		(1<<11)
 #define HOLOGRAM_1					(1<<12)
@@ -52,20 +60,10 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define PREVENT_CONTENTS_EXPLOSION_1 (1<<16)
 /// Early returns mob.face_atom()
 #define BLOCK_FACE_ATOM_1			(1<<17)
-/// Use when this shouldn't be obscured by large icons.
-#define CRITICAL_ATOM_1 (1<<20)
-
-//turf-only flags
-#define NOJAUNT_1					(1<<0)
-#define UNUSED_RESERVATION_TURF_1	(1<<1)
-///If a turf can be made dirty at roundstart. This is also used in areas.
-#define CAN_BE_DIRTY_1				(1<<2)
-///Blocks lava rivers being generated on the turf.
-#define NO_LAVA_GEN_1				(1<<6)
-///Blocks ruins spawning on the turf.
-#define NO_RUINS_1					(1<<10)
 #define CAN_HAVE_NATURE				(1<<18)
 #define ADJACENCIES_OVERLAY			(1<<19)
+/// Use when this shouldn't be obscured by large icons.
+#define CRITICAL_ATOM_1 (1<<20)
 
 /*
 	These defines are used specifically with the atom/pass_flags bitmask
@@ -124,9 +122,6 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 // radiation
 #define RAD_PROTECT_CONTENTS (1<<0)
 #define RAD_NO_CONTAMINATE (1<<1)
-
-#define GLOBAL_LIGHT_TURF_2         (1<<0)     //Sets any light emitted by this turf to GLOBAL_LIGHTING, isn't affected by other GLOBAL_LIGHTING lights
-#define BLOCK_RADIO_2               (1<<1)     //Check if turf is blocking radio signals (because underground, or something) - encyption keys override
 
 //Mob mobility var flags
 /// any flag
