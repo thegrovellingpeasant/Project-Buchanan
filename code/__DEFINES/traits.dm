@@ -174,6 +174,8 @@
 #define TRAIT_PASSTABLE			"passtable"
 #define TRAIT_GIANT				"giant"
 #define TRAIT_DWARF				"dwarf"
+/// Properly wielded two handed item
+#define TRAIT_WIELDED "wielded"
 #define TRAIT_ALCOHOL_TOLERANCE	"alcohol_tolerance"
 #define TRAIT_AGEUSIA			"ageusia"
 #define TRAIT_HEAVY_SLEEPER		"heavy_sleeper"
@@ -291,7 +293,9 @@
 #define TRAIT_KEEP_TOGETHER 	"keep-together"
 
 // item traits
-#define TRAIT_NODROP            "nodrop"
+#define TRAIT_NODROP "nodrop"
+/// The items needs two hands to be carried
+#define TRAIT_NEEDS_TWO_HANDS "needstwohands"
 
 // common trait sources
 #define TRAIT_GENERIC "generic"
