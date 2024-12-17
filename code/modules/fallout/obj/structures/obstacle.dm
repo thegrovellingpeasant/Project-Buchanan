@@ -55,10 +55,10 @@
 	desc = "Don't walk into this."
 	icon_state = "barbed"
 	density = FALSE
+	pass_flags = LETPASSTHROW
 	var/slowdown = 40
 	var/buildstacktype = /obj/item/stack/rods
 	var/buildstackamount = 5
-	pass_flags = LETPASSTHROW
 
 /obj/structure/obstacle/barbedwire/end
 	icon_state = "barbed_end"
@@ -67,19 +67,14 @@
 	. = ..()
 	AddComponent(/datum/component/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
 
-/obj/structure/obstacle/barbedwire/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/wirecutters))
-
-		to_chat(user, span_notice("You start cutting the [src]..."))
-		if(I.use_tool(src, user, 40, volume=50))
-			playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
-			deconstruct(TRUE)
-			return TRUE
-
-	return ..()
+/obj/structure/obstacle/barbedwire/wirecutter_act(mob/living/user, obj/item/tool)
+	to_chat(user, span_notice("You start cutting the [src]..."))
+	if(tool.use_tool(src, user, 40, volume = 50))
+		playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
+		deconstruct(TRUE)
+	return TRUE
 
 /obj/structure/obstacle/barbedwire/proc/shock(mob/user, prb) 	// war crime mode, if you can find an electrical generator
-
 	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
 		return FALSE
 	var/turf/T = get_turf(src)
