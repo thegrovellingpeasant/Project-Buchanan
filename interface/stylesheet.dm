@@ -77,10 +77,10 @@ em						{font-style: normal;	font-weight: bold;}
 .salvatoresradio		{color: #FF99CC;}
 .mordinosradio			{color: #FF7566;}
 .hotelradio				{color: #F7EFCF;}
-.bishopsradio			{color: #8CA2BD;}
+.bishopsradio			{color: #3b8bed;}
 .wrightsradio			{color: #B3875E;}
 .vangraffsradio			{color: #4da34e;}
-.nrpdradio				{color: #606896;}
+.nrpdradio				{color: #7f0ecf;}
 .ncrcfradio				{color: #d9b884;}
 .governmentradio		{color: #7b5fb3;}
 

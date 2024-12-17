@@ -370,9 +370,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 // Can be an item or object
 GLOBAL_LIST_INIT(faction_relics, list(
-	"/datum/job/bishops" = /obj/structure/closet/crate/grave/ark, \
-	"/datum/job/vangraffs" = /obj/structure/closet/crate/grave/experimental_crate, \
-	"/datum/job/wrights" = /obj/structure/closet/crate/grave/strangebird, \
+	"/datum/job/bishops" = /obj/structure/closet/crate/mcgruffin/ark,
+	"/datum/job/vangraffs" = /obj/structure/closet/crate/mcgruffin/experimental_crate,
+	"/datum/job/wrights" = /obj/structure/closet/crate/mcgruffin/strangebird,
 ))
 /area/f13/vangraffs_vault
 

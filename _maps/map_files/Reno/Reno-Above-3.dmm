@@ -279,8 +279,8 @@
 /area/f13/wrights)
 "ans" = (
 /obj/machinery/telecomms/server/presets/science,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "anu" = (
 /obj/machinery/smartfridge/bottlerack,
 /turf/open/floor/wood/wood_diagonal/lit,
@@ -366,8 +366,8 @@
 /area/f13/vangraffs)
 "aqQ" = (
 /obj/machinery/telecomms/server/presets/command,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "arb" = (
 /obj/structure/railing/corner{
 	layer = 4.25
@@ -900,8 +900,8 @@
 /obj/structure/table,
 /obj/item/folder/blue,
 /obj/item/pen/blue,
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "aQA" = (
 /obj/structure/railing{
 	dir = 4
@@ -1949,10 +1949,10 @@
 	dir = 4;
 	network = "tcommsat"
 	},
-/turf/open/floor/plasteel/yellow/side{
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
 	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "bTx" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8;
@@ -2320,8 +2320,8 @@
 /area/f13/reno_wasteland)
 "chm" = (
 /obj/machinery/telecomms/server/presets/ncr,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "chu" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -2381,8 +2381,8 @@
 /area/f13/vangraffs)
 "cky" = (
 /obj/machinery/telecomms/server/presets/town,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "cll" = (
 /obj/structure/table,
 /obj/item/stack/medical/suture,
@@ -2664,8 +2664,8 @@
 /area/f13/reno_building)
 "czB" = (
 /obj/machinery/telecomms/server/presets/common,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "czL" = (
 /obj/structure/barricade/tentclothcorner{
 	opacity = 0;
@@ -3493,12 +3493,9 @@
 /turf/open/floor/carpet/brown/lit,
 /area/f13/reno_east_building)
 "dqp" = (
-/obj/structure/table/reinforced,
-/obj/item/stack/f13Cash/random/chips/med{
-	pixel_y = 8
-	},
-/turf/open/floor/f13/dark,
-/area/f13/reno_sharkclub_vault)
+/obj/machinery/telecomms/server/presets/government,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "dqs" = (
 /obj/effect/overlay/junk/oldpipes{
 	pixel_x = 11;
@@ -3669,8 +3666,8 @@
 /area/f13/reno_west_building)
 "dxe" = (
 /obj/machinery/telecomms/bus/preset_one,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "dxj" = (
 /obj/structure/railing{
 	dir = 6;
@@ -3757,7 +3754,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "dAN" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkrusty";
@@ -4540,7 +4537,7 @@
 /turf/open/floor/plasteel/vault/telecomms/mainframe{
 	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "epB" = (
 /obj/structure/vault_door/old{
 	icon_state = "openreverse";
@@ -4890,7 +4887,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "eOy" = (
 /obj/effect/overlay/curb/east,
 /obj/effect/overlay/painting/graffiti{
@@ -4933,6 +4930,10 @@
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace/air,
 /area/f13/reno_wasteland)
+"eQw" = (
+/obj/machinery/telecomms/server/presets/vangraffs,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "eQQ" = (
 /obj/structure/window/gothic/fulltile,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -5258,8 +5259,8 @@
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "fhz" = (
 /obj/machinery/camera{
 	dir = 6;
@@ -5552,8 +5553,8 @@
 /area/f13/reno_prison)
 "fsA" = (
 /obj/machinery/telecomms/processor/preset_four,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "fsY" = (
 /obj/machinery/vending/nukacolavendfull,
 /turf/open/floor/f13{
@@ -5670,8 +5671,8 @@
 	},
 /obj/machinery/light,
 /obj/structure/filingcabinet/chestdrawer,
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "fAX" = (
 /turf/open/indestructible/ground/outside/roof/stairs/east{
 	dir = 1
@@ -6249,9 +6250,9 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/theater)
 "ghq" = (
-/obj/machinery/telecomms/server/presets/bishops,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/obj/machinery/telecomms/server/presets/den,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "ghr" = (
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/carpet/blue/lit,
@@ -6373,9 +6374,8 @@
 /turf/open/floor/wood/f13/carpet/lit,
 /area/f13/reno_yakuza)
 "gmV" = (
-/obj/machinery/telecomms/server/presets/salvatores,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "gnS" = (
 /obj/structure/chair/sofa/luxury,
 /obj/item/clothing/head/f13/ncr/ncr_cap,
@@ -6580,8 +6580,8 @@
 /area/f13/reno_east_building)
 "gAz" = (
 /obj/machinery/telecomms/bus/preset_four,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "gAB" = (
 /obj/machinery/photocopier,
 /turf/open/floor/carpet/green/lit,
@@ -7278,8 +7278,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "haO" = (
 /obj/effect/overlay/shadow,
 /obj/effect/overlay/catwalk,
@@ -7367,8 +7367,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "hfW" = (
 /obj/structure/closet/fridge,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -8013,8 +8013,8 @@
 /area/f13/raiders)
 "hOt" = (
 /obj/machinery/telecomms/server/presets/mordinos,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "hOB" = (
 /obj/structure/barricade/bars,
 /obj/structure/lattice/catwalk{
@@ -8772,8 +8772,8 @@
 /area/f13/reno_sharkclub)
 "izv" = (
 /obj/structure/closet/emcloset,
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "iAC" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -8855,8 +8855,8 @@
 /area/f13/reno_east_building)
 "iGj" = (
 /obj/machinery/telecomms/receiver/preset_left,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "iGr" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowbottom"
@@ -9218,8 +9218,8 @@
 /area/f13/reno_wasteland)
 "iWn" = (
 /obj/machinery/telecomms/server/presets/security,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "iWQ" = (
 /obj/structure/table,
 /obj/item/gun/ballistic/automatic/varmint/ratslayer,
@@ -9323,8 +9323,8 @@
 /area/f13/raiders)
 "jbq" = (
 /obj/machinery/telecomms/server/presets/hotel,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "jbY" = (
 /obj/structure/table/wood/fancy,
 /obj/item/flashlight/lantern{
@@ -9611,7 +9611,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "jnp" = (
 /obj/structure/decoration/rag{
 	icon_state = "flag_ncr";
@@ -10295,10 +10295,10 @@
 	dir = 4;
 	network = "tcommsat"
 	},
-/turf/open/floor/plasteel/yellow/side{
-	dir = 10
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "jRX" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
@@ -10525,10 +10525,10 @@
 "kea" = (
 /obj/structure/table,
 /obj/item/radio/off,
-/turf/open/floor/plasteel/yellow/side{
-	dir = 10
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "keB" = (
 /obj/structure/table/reinforced,
 /obj/item/toy/beach_ball/holoball{
@@ -10604,8 +10604,8 @@
 /area/f13/reno_prison)
 "khd" = (
 /obj/machinery/telecomms/server/presets/service,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "khf" = (
 /obj/machinery/vending/cola/space_up,
 /obj/structure/sign/poster/contraband/space_cola{
@@ -10672,9 +10672,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarerwhite/lit,
 /area/f13/raider_mall)
 "kjC" = (
-/obj/machinery/telecomms/server/presets/vault,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/closed/indestructible/riveted,
+/area/tcommsat/server)
 "kka" = (
 /turf/open/floor/plasteel/f13/vault_floor/blueredchess/lit,
 /area/f13/reno_east_building)
@@ -10713,15 +10712,15 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "kmj" = (
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -35
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "kmw" = (
 /obj/item/warpaint_bowl{
 	pixel_y = 2
@@ -11105,7 +11104,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "kIm" = (
 /obj/structure/chair/pew/left{
 	dir = 8
@@ -11630,8 +11629,8 @@
 /area/f13/reno_yakuza)
 "lnn" = (
 /obj/machinery/telecomms/broadcaster/preset_left,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "lnp" = (
 /obj/machinery/light/ncr{
 	dir = 4
@@ -11937,8 +11936,8 @@
 /area/f13/reno_sharkclub)
 "lAH" = (
 /obj/machinery/telecomms/server/presets/khans,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "lDk" = (
 /obj/structure/chair/comfy/plywood{
 	dir = 4
@@ -11953,8 +11952,8 @@
 /area/f13/reno_prison)
 "lFd" = (
 /obj/machinery/telecomms/server/presets/supply,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "lFl" = (
 /obj/structure/railing/wood/post{
 	pixel_y = 26;
@@ -12939,8 +12938,8 @@
 /area/f13/vangraffs)
 "mHf" = (
 /obj/machinery/telecomms/server/presets/ranger,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "mHp" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
@@ -13246,7 +13245,7 @@
 	req_access_txt = "165";
 	name = "elevator"
 	},
-/turf/open/floor/plasteel/f13,
+/turf/open/floor/carpet/reno/evil4,
 /area/f13/reno_sharkclub)
 "mWb" = (
 /turf/open/floor/plating/tunnel,
@@ -13299,8 +13298,8 @@
 /area/f13/reno_prison)
 "mYK" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "mZF" = (
 /obj/structure/bed/wooden{
 	color = "#E0C9A6";
@@ -13325,7 +13324,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nay" = (
 /obj/structure/table/reinforced,
 /obj/machinery/reagentgrinder,
@@ -13457,7 +13456,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nga" = (
 /obj/structure/closet/locker,
 /obj/item/melee/classic_baton,
@@ -13519,10 +13518,12 @@
 /area/f13/farmhousesouth)
 "nlK" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	light_color = "#706891";
+	layer = 3
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nmw" = (
 /obj/machinery/smartfridge/bottlerack/drug_storage,
 /obj/machinery/light/fo13colored/Red{
@@ -13571,7 +13572,7 @@
 	dir = 4
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nqh" = (
 /obj/structure/sign/painting/library{
 	pixel_x = -32
@@ -13680,7 +13681,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nvA" = (
 /obj/structure/chair/sofa/right{
 	dir = 8
@@ -14086,7 +14087,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "nKk" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
@@ -14130,8 +14131,8 @@
 /area/f13/reno_prison)
 "nNd" = (
 /obj/machinery/telecomms/server/presets/medical,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "nNF" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/wood/wood_diagonal/lit,
@@ -14311,12 +14312,12 @@
 /area/f13/raiders)
 "nTH" = (
 /obj/machinery/telecomms/server/presets/bos,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "nUa" = (
 /obj/machinery/telecomms/receiver/preset_right,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "nUb" = (
 /obj/structure/chair/sofa/corner{
 	color = "#800000";
@@ -14512,8 +14513,8 @@
 	name = "Station Intercom (Telecomms)";
 	pixel_y = 26
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "obJ" = (
 /obj/structure/simple_door/house,
 /obj/effect/decal/cleanable/dirt,
@@ -15212,6 +15213,10 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_prison_yard)
+"oIj" = (
+/obj/machinery/telecomms/server/presets/bishops,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "oJm" = (
 /obj/structure/closet/locker,
 /obj/item/grenade/homemade/firebomb,
@@ -15230,8 +15235,8 @@
 /area/f13/reno_sharkclub)
 "oJY" = (
 /obj/machinery/telecomms/bus/preset_three,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "oKf" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -15486,8 +15491,8 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/reno_streets)
 "oZb" = (
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "oZt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -15662,7 +15667,7 @@
 /area/f13/reno_wasteland)
 "phf" = (
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "phi" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowvertical"
@@ -15868,8 +15873,8 @@
 /area/f13/reno_west_building)
 "pop" = (
 /obj/machinery/telecomms/server/presets/legion,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "ppf" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/wood/f13/oak{
@@ -16474,7 +16479,7 @@
 /area/f13/reno_sharkclub)
 "pOe" = (
 /turf/closed/wall/r_wall,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "pOf" = (
 /turf/closed/wall/rust,
 /area/f13/enclave)
@@ -16577,8 +16582,8 @@
 /obj/machinery/light_switch{
 	pixel_x = 27
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "pXj" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "panicarmory"
@@ -16712,7 +16717,7 @@
 "qdQ" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "qdU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red/lit,
@@ -16742,8 +16747,8 @@
 	name = "Telecomms RC";
 	pixel_x = 30
 	},
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "qfn" = (
 /obj/effect/overlay/curb/west,
 /turf/open/transparent/glass,
@@ -16765,10 +16770,10 @@
 /obj/machinery/computer/message_monitor{
 	dir = 4
 	},
-/turf/open/floor/plasteel/yellow/side{
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
 	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "qhD" = (
 /obj/structure/target_stake,
 /obj/item/target{
@@ -16980,8 +16985,8 @@
 /area/f13/raider_mall)
 "qqs" = (
 /obj/machinery/blackbox_recorder,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "qqt" = (
 /obj/structure/table/round,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -17570,7 +17575,7 @@
 	dir = 8
 	},
 /turf/open/floor/circuit/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "qTE" = (
 /obj/structure/chair/sofa/left{
 	color = "#800000";
@@ -17656,8 +17661,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/green/white/whitegreenchess,
 /area/f13/farmhousesouth)
 "qVi" = (
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/obj/machinery/telecomms/server/presets/salvatores,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "qVn" = (
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_prison)
@@ -18308,7 +18314,7 @@
 "rzt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "rzL" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
@@ -18391,8 +18397,8 @@
 /area/f13/reno_sharkclub)
 "rEb" = (
 /obj/machinery/telecomms/server/presets/engineering,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "rEt" = (
 /obj/structure/table/wood/greyscale/varnished,
 /obj/item/reagent_containers/food/snacks/badrecipe{
@@ -18740,7 +18746,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "rRo" = (
 /obj/structure/table/glass,
 /obj/item/kirbyplants/random{
@@ -19212,6 +19218,10 @@
 	sunlight_state = 1
 	},
 /area/f13/vangraffs)
+"soI" = (
+/obj/machinery/telecomms/server/presets/vault,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "soK" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -19459,8 +19469,8 @@
 "sGm" = (
 /obj/structure/table,
 /obj/item/paper_bin,
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "sGn" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/civilcode,
@@ -20216,8 +20226,8 @@
 /area/f13/nrpd)
 "tyL" = (
 /obj/machinery/telecomms/server/presets/wrights,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "tzh" = (
 /obj/structure/sign/poster/contraband/pinup_bed{
 	pixel_y = 31
@@ -20292,7 +20302,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "tBj" = (
 /obj/structure/barricade/tentleathercorner{
 	opacity = 0;
@@ -20670,8 +20680,8 @@
 	req_access_txt = "19; 61"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/floor/lit,
+/area/tcommsat/server)
 "tQx" = (
 /obj/structure/sign/painting/library{
 	pixel_y = 32
@@ -20824,7 +20834,7 @@
 	name = "SERVER ROOM"
 	},
 /turf/closed/wall,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "tXt" = (
 /obj/structure/chair/wood/modern{
 	dir = 1
@@ -21687,8 +21697,8 @@
 /area/f13/reno_wasteland)
 "uSc" = (
 /obj/machinery/telecomms/bus/preset_two,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "uSf" = (
 /obj/machinery/door/unpowered/securedoor{
 	name = "hotel door";
@@ -22161,10 +22171,10 @@
 /area/f13/reno_hotel)
 "vot" = (
 /obj/structure/table,
-/turf/open/floor/plasteel/yellow/side{
-	dir = 9
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "vpd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -23094,7 +23104,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "wfF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
@@ -23167,10 +23177,10 @@
 "whG" = (
 /obj/structure/table,
 /obj/item/multitool,
-/turf/open/floor/plasteel/yellow/side{
-	dir = 9
+/turf/open/floor/plasteel/f13/vault_floor/green/side{
+	dir = 8
 	},
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "wic" = (
 /turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_sharkclub)
@@ -23255,7 +23265,7 @@
 "wlN" = (
 /obj/machinery/status_display,
 /turf/closed/wall,
-/area/f13/reno_wasteland)
+/area/tcommsat/server)
 "wlQ" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
@@ -23423,8 +23433,8 @@
 /area/f13/reno_prison)
 "wvt" = (
 /obj/machinery/telecomms/processor/preset_two,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "wwk" = (
 /turf/open/floor/f13/dark,
 /area/f13/reno_sharkclub_vault)
@@ -23810,8 +23820,8 @@
 /area/f13/reno_prison)
 "wPm" = (
 /obj/machinery/telecomms/processor/preset_three,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "wPD" = (
 /obj/structure/railing/wood{
 	dir = 8;
@@ -23978,8 +23988,8 @@
 /area/f13/raiders)
 "wWM" = (
 /obj/machinery/telecomms/server/presets/enclave,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "wWU" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -24254,8 +24264,8 @@
 /area/f13/wrights)
 "xhx" = (
 /obj/machinery/telecomms/message_server,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "xhJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/nest/mob/robobrain{
@@ -24414,9 +24424,9 @@
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/clinic)
 "xnL" = (
-/obj/machinery/telecomms/server/presets/den,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/obj/machinery/telecomms/server/presets/wndradio,
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "xnU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -24695,8 +24705,8 @@
 /area/f13/reno_prison)
 "xyZ" = (
 /obj/machinery/telecomms/processor/preset_one,
-/turf/open/floor/plasteel/dark/telecomms/mainframe,
-/area/f13/reno_wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/lit,
+/area/tcommsat/server)
 "xzi" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -46651,7 +46661,7 @@ wic
 ejT
 wwk
 eKS
-dqp
+wUu
 wwk
 wic
 fhz
@@ -56124,24 +56134,24 @@ hUs
 "}
 (203,1,1) = {"
 lst
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
 wCD
 wCD
 wCD
@@ -56276,7 +56286,7 @@ hUs
 "}
 (204,1,1) = {"
 lst
-uLw
+kjC
 pOe
 pOe
 pOe
@@ -56293,7 +56303,7 @@ pOe
 pOe
 pOe
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -56428,7 +56438,7 @@ hUs
 "}
 (205,1,1) = {"
 lst
-uLw
+kjC
 pOe
 phf
 phf
@@ -56437,15 +56447,15 @@ phf
 qSc
 phf
 phf
-qVi
-qVi
+gmV
+gmV
 qdQ
-qVi
-qVi
+gmV
+gmV
 phf
 phf
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -56580,9 +56590,9 @@ hUs
 "}
 (206,1,1) = {"
 lst
-uLw
-pOe
 kjC
+pOe
+gmV
 nTH
 wWM
 cky
@@ -56590,14 +56600,14 @@ tyL
 rEb
 czB
 qqs
-qVi
+gmV
 phf
-qVi
+gmV
 xhx
 lFd
 khd
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -56732,13 +56742,13 @@ hUs
 "}
 (207,1,1) = {"
 lst
-uLw
+kjC
 pOe
 gmV
 hOt
 jbq
-ghq
-ghq
+qVi
+soI
 gAz
 fsA
 mYK
@@ -56749,7 +56759,7 @@ lnn
 uSc
 wvt
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -56884,7 +56894,7 @@ hUs
 "}
 (208,1,1) = {"
 lst
-uLw
+kjC
 pOe
 nlK
 phf
@@ -56901,7 +56911,7 @@ phf
 phf
 nKb
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57036,13 +57046,13 @@ hUs
 "}
 (209,1,1) = {"
 lst
-uLw
+kjC
 pOe
+gmV
+eQw
 ghq
-ghq
-ghq
-ghq
-qVi
+oIj
+dqp
 wPm
 oJY
 nUa
@@ -57053,7 +57063,7 @@ iGj
 xyZ
 dxe
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57188,7 +57198,7 @@ hUs
 "}
 (210,1,1) = {"
 lst
-uLw
+kjC
 pOe
 xnL
 chm
@@ -57197,15 +57207,15 @@ mHf
 lAH
 iWn
 aqQ
-qVi
-qVi
+gmV
+gmV
 phf
-qVi
-qVi
+gmV
+gmV
 nNd
 ans
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57340,7 +57350,7 @@ hUs
 "}
 (211,1,1) = {"
 lst
-uLw
+kjC
 pOe
 phf
 phf
@@ -57349,15 +57359,15 @@ phf
 npO
 phf
 phf
-qVi
+gmV
 naj
 tBg
 kHi
-qVi
+gmV
 phf
 phf
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57492,7 +57502,7 @@ hUs
 "}
 (212,1,1) = {"
 lst
-uLw
+kjC
 pOe
 pOe
 pOe
@@ -57509,7 +57519,7 @@ wfd
 wfd
 nve
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57644,12 +57654,12 @@ hUs
 "}
 (213,1,1) = {"
 lst
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
 pOe
 vot
 qht
@@ -57661,7 +57671,7 @@ whG
 bTi
 kea
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57801,7 +57811,7 @@ wCD
 wCD
 wCD
 wCD
-uLw
+kjC
 pOe
 obz
 kkX
@@ -57813,7 +57823,7 @@ oZb
 kkX
 kmj
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -57953,7 +57963,7 @@ wCD
 wCD
 wCD
 wCD
-uLw
+kjC
 pOe
 haH
 oZb
@@ -57965,7 +57975,7 @@ oZb
 oZb
 fAi
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -58105,7 +58115,7 @@ wCD
 wCD
 wCD
 wCD
-uLw
+kjC
 pOe
 pOe
 sGm
@@ -58117,7 +58127,7 @@ pWP
 oZb
 fhw
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -58257,8 +58267,8 @@ wCD
 wCD
 wCD
 wCD
-uLw
-uLw
+kjC
+kjC
 pOe
 pOe
 pOe
@@ -58269,7 +58279,7 @@ pOe
 pOe
 pOe
 pOe
-uLw
+kjC
 wCD
 wCD
 wCD
@@ -58410,18 +58420,18 @@ wCD
 wCD
 wCD
 wCD
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
-uLw
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
+kjC
 wCD
 wCD
 wCD
