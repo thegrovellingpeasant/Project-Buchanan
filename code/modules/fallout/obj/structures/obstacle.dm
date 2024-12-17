@@ -74,6 +74,11 @@
 		deconstruct(TRUE)
 	return TRUE
 
+/**
+ * This code is completely unused
+ * No idea when it was meant to be called, but as of Dec 17, 2024, it isn't called anywhere.
+ * Leaving this in, in case anyone wants to plug it in.
+ */
 /obj/structure/obstacle/barbedwire/proc/shock(mob/user, prb) 	// war crime mode, if you can find an electrical generator
 	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
 		return FALSE
