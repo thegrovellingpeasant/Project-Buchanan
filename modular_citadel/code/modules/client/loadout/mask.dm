@@ -1,7 +1,7 @@
 /datum/gear/mask
 	category = LOADOUT_CATEGORY_MASK
 	subcategory = LOADOUT_SUBCATEGORY_MASK_GENERAL
-	slot = SLOT_WEAR_MASK
+	slot = ITEM_SLOT_MASK
 
 /datum/gear/mask/facewrap
 	name = "desert facewrap"

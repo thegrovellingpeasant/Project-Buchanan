@@ -151,7 +151,7 @@
 
 	if(tc)
 		var/obj/item/U = new uplink_type(H, H.key, tc)
-		H.equip_to_slot_or_del(U, SLOT_IN_BACKPACK)
+		H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
 
 	var/obj/item/implant/weapons_auth/W = new
 	W.implant(H)
@@ -167,7 +167,7 @@
 	mask = /obj/item/clothing/mask/gas/syndicate
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
-	internals_slot = SLOT_R_STORE
+	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military
 	backpack_contents = list(/obj/item/storage/box/syndie=1,\
 		/obj/item/tank/jetpack/oxygen/harness=1,\
@@ -181,7 +181,7 @@
 	suit = /obj/item/clothing/suit/space/syndicate/black/red
 	head = /obj/item/clothing/head/helmet/space/syndicate/black/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
-	internals_slot = SLOT_R_STORE
+	internals_slot = ITEM_SLOT_RPOCKET
 	belt = /obj/item/storage/belt/military
 	backpack_contents = list(/obj/item/storage/box/syndie=1,\
 	/obj/item/tank/jetpack/oxygen/harness=1,\

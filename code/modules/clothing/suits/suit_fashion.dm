@@ -430,7 +430,7 @@
 /* uncomment when old system cleaned out
 /obj/item/clothing/suit/cardborg/equipped(mob/living/user, slot)
 	..()
-	if(slot == SLOT_WEAR_SUIT)
+	if(slot == ITEM_SLOT_OCLOTHING)
 		disguise(user)
 
 /obj/item/clothing/suit/cardborg/dropped(mob/living/user)

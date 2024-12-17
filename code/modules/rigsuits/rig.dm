@@ -694,7 +694,7 @@
 
 /obj/item/rig/equipped(mob/living/carbon/human/M, slot)
 	..()
-	if(!istype(M) || slot != SLOT_BACK)
+	if(!istype(M) || slot != ITEM_SLOT_BACK)
 		return //we don't care about picking up/nonhumans
 
 	spawn(1) //equipped() is called BEFORE the item is actually set as the slot
@@ -725,7 +725,7 @@
 						L.temporarilyRemoveItemFromInventory(uneq_piece, 1, 1)
 						if(uneq_piece == boots)
 							if(under_boots)
-								if(L.equip_to_slot_if_possible(under_boots, SLOT_SHOES))
+								if(L.equip_to_slot_if_possible(under_boots, ITEM_SLOT_FEET))
 									under_boots = null
 								else
 									to_chat(user, span_warning("Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))"))
@@ -745,25 +745,25 @@
 
 	switch(piece)
 		if("helmet")
-			equip_to = SLOT_HEAD
+			equip_to = ITEM_SLOT_HEAD
 			use_obj = helmet
 			check_slot = wearer.head
 		if("gauntlets")
-			equip_to = SLOT_GLOVES
+			equip_to = ITEM_SLOT_GLOVES
 			use_obj = gloves
 			check_slot = wearer.gloves
 		if("boots")
-			equip_to = SLOT_SHOES
+			equip_to = ITEM_SLOT_FEET
 			use_obj = boots
 			check_slot = wearer.shoes
 		if("chest")
-			equip_to = SLOT_WEAR_SUIT
+			equip_to = ITEM_SLOT_OCLOTHING
 			use_obj = chest
 			check_slot = wearer.wear_suit
 
 	if(use_obj)
 		if(check_slot == use_obj && deploy_mode != ONLY_DEPLOY) //user is wearing it, retract it if not forced to deploy
-			if((item_flags & NODROP) && equip_to != SLOT_HEAD && !force) //you can only retract the helmet if the suit isn't unsealed
+			if((item_flags & NODROP) && equip_to != ITEM_SLOT_HEAD && !force) //you can only retract the helmet if the suit isn't unsealed
 				to_chat(user, span_warning("You can't retract \the [use_obj] while the suit is sealed!"))
 				return
 
@@ -777,7 +777,7 @@
 				to_strip.temporarilyRemoveItemFromInventory(use_obj, 1)
 				if(use_obj == boots)
 					if(under_boots)
-						if(to_strip.equip_to_slot_if_possible(under_boots, SLOT_SHOES))
+						if(to_strip.equip_to_slot_if_possible(under_boots, ITEM_SLOT_FEET))
 							under_boots = null
 						else
 							to_chat(user, span_warning("Somehow, your [under_boots] got stuck to the [boots], and were retracted with them. ((This shouldn't happen, bug report this.))"))

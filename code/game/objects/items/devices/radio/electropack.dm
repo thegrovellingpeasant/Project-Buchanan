@@ -165,7 +165,7 @@
 	name = "[name] #[frequency]/[code]"
 
 /obj/item/electropack/shockcollar/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(loc == user && user.get_item_by_slot(SLOT_NECK))
+	if(loc == user && user.get_item_by_slot(ITEM_SLOT_NECK))
 		to_chat(user, span_warning("The collar is fastened tight! You'll need help taking this off!"))
 		return
 	return ..()
@@ -176,7 +176,7 @@
 
 	if(isliving(loc) && on) //the "on" arg is currently useless
 		var/mob/living/L = loc
-		if(!L.get_item_by_slot(SLOT_NECK)) //**properly** stops pocket shockers
+		if(!L.get_item_by_slot(ITEM_SLOT_NECK)) //**properly** stops pocket shockers
 			return
 		if(shock_cooldown == TRUE)
 			return
@@ -215,7 +215,7 @@
 		if(ismob(src.loc))
 			return
 		var/mob/M = src.loc
-		if(M.get_item_by_slot(SLOT_NECK) == src)
+		if(M.get_item_by_slot(ITEM_SLOT_NECK) == src)
 			ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 	return ..()*/
 
@@ -253,7 +253,7 @@
 		if(!ismob(src.loc))
 			return
 		var/mob/M = src.loc
-		if(M.get_item_by_slot(SLOT_NECK) == src)
+		if(M.get_item_by_slot(ITEM_SLOT_NECK) == src)
 			ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 	return ..()*/
 
@@ -273,7 +273,7 @@
 
 /obj/item/electropack/shockcollar/explosive/proc/boom(mob/living/L)
 	explosion(get_turf(src),0,1,2, flame_range = 2)
-	if(!istype(L) || L != loc || L.get_item_by_slot(SLOT_NECK) != src)
+	if(!istype(L) || L != loc || L.get_item_by_slot(ITEM_SLOT_NECK) != src)
 		return
 	var/obj/item/bodypart/head/victimhead = L.get_bodypart(BODY_ZONE_HEAD)
 	if(istype(victimhead))
@@ -285,9 +285,9 @@
 	desc = "A small key designed to work with shock collars."
 /* I'LL COME BACK TO THIS MAYBE. TODAYS DATE IS 9th JAN 2021. IF I DIDN'T COME BACK TO THIS GET RID OF THE KEY STUFF
 /obj/item/key/scollar/attack(mob/living/M, mob/living/user)
-	if(!istype(M.get_item_by_slot(SLOT_NECK), /obj/item/electropack/shockcollar))
+	if(!istype(M.get_item_by_slot(ITEM_SLOT_NECK), /obj/item/electropack/shockcollar))
 		return ..()
-	var/obj/item/electropack/shockcollar/shockCollar = M.get_item_by_slot(SLOT_NECK)
+	var/obj/item/electropack/shockcollar/shockCollar = M.get_item_by_slot(ITEM_SLOT_NECK)
 	shockCollar.lock = !shockCollar.lock
 	visible_message(span_warning("[shockCollar] [shockCollar.lock ? "locks" : "unlocks"] around [M]'s neck."))
 	if(shockCollar.lock)

@@ -144,7 +144,7 @@
 	beepsky_fashion = /datum/beepsky_fashion/cat
 
 /obj/item/clothing/head/kitty/equipped(mob/living/carbon/human/user, slot)
-	if(ishuman(user) && slot == SLOT_HEAD)
+	if(ishuman(user) && slot == ITEM_SLOT_HEAD)
 		update_icon(user)
 		user.update_inv_head() //Color might have been changed by update_icon.
 	..()
@@ -183,7 +183,7 @@
 
 /obj/item/clothing/head/cardborg/equipped(mob/living/user, slot)
 	..()
-	if(ishuman(user) && slot == SLOT_HEAD)
+	if(ishuman(user) && slot == ITEM_SLOT_HEAD)
 		var/mob/living/carbon/human/H = user
 		if(istype(H.wear_suit, /obj/item/clothing/suit/cardborg))
 			var/obj/item/clothing/suit/cardborg/CB = H.wear_suit
@@ -269,7 +269,7 @@
 
 /obj/item/clothing/head/foilhat/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
-	if(slot != SLOT_HEAD || warped)
+	if(slot != ITEM_SLOT_HEAD || warped)
 		return
 	if(paranoia)
 		QDEL_NULL(paranoia)
@@ -299,7 +299,7 @@
 	if(!isliving(loc) || !paranoia)
 		return
 	var/mob/living/target = loc
-	if(target.get_item_by_slot(SLOT_HEAD) != src)
+	if(target.get_item_by_slot(ITEM_SLOT_HEAD) != src)
 		return
 	QDEL_NULL(paranoia)
 	if(!target.IsUnconscious())

@@ -120,16 +120,11 @@
 	if(!isturf(a.loc))
 		return
 	for(var/atom/movable/AM in range(radius_range, a))
-		if(AM.flags_1 & HOLOGRAM_1 || LAZYFIND(blacklist, AM.type))
+		if((AM.flags_1 & HOLOGRAM_1) || (blacklist && (AM.type in blacklist)))
 			continue
-		if(istype(a, /mob/living/carbon/human))
-			var/mob/living/carbon/human/user = a
-			var/found = FALSE
-			for(var/slot in ALL_EQUIP_SLOTS - list("l_store", "r_store"))
-				if(user.vars[slot] == AM)
-					found = TRUE
-					break
-			if(found)
+		if(isitem(AM))
+			var/obj/item/item = AM
+			if(item.item_flags & ABSTRACT) //let's not tempt fate, shall we?
 				continue
 		. += AM
 

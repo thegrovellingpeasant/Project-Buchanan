@@ -107,7 +107,7 @@
 	desc = "This little bugger can be used to store and transport ores."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "satchel"
-	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKETS
 	w_class = WEIGHT_CLASS_NORMAL
 	component_type = /datum/component/storage/concrete/stack
 	var/spam_protection = FALSE //If this is TRUE, the holder won't receive any messages when they fail to pick up ore through crossing it
@@ -395,7 +395,7 @@
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "bag"
 	desc = "A bag for holding a variety of medical supplies."
-	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKETS
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/chemistry/ComponentInitialize()
@@ -413,7 +413,7 @@
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "tribal_chembag"
 	desc = "A bag for holding a variety of tribal medical supplies."
-	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKETS
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/chemistry/ComponentInitialize()
@@ -434,7 +434,7 @@
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "biobag"
 	desc = "A well-insulated bag for the safe carrying of organs, limbs and IV bags."
-	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_BELT|ITEM_SLOT_POCKETS
 	resistance_flags = FLAMMABLE
 
 /obj/item/storage/bag/bio/ComponentInitialize()
@@ -465,7 +465,7 @@
 	desc = "A pouch for your ammo that goes in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "ammopouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_POCKETS
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 
@@ -483,7 +483,7 @@
 	desc = "A pouch for sheets and RCD ammunition that manages to hang where you would normally put things in your pocket."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "materialpouch"
-	slot_flags = ITEM_SLOT_POCKET
+	slot_flags = ITEM_SLOT_POCKETS
 	w_class = WEIGHT_CLASS_BULKY
 	resistance_flags = FLAMMABLE
 

@@ -234,23 +234,23 @@
 	<HR>
 	<B><FONT size=3>[name]</FONT></B>
 	<HR>
-	<BR><B>Head:</B> <A href='?src=[REF(src)];item=[SLOT_HEAD]'>				[(head && !(head.item_flags & ABSTRACT)) 			? head 		: "Nothing"]</A>
-	<BR><B>Mask:</B> <A href='?src=[REF(src)];item=[SLOT_WEAR_MASK]'>		[(wear_mask && !(wear_mask.item_flags & ABSTRACT))	? wear_mask	: "Nothing"]</A>
-	<BR><B>Neck:</B> <A href='?src=[REF(src)];item=[SLOT_NECK]'>		[(wear_neck && !(wear_neck.item_flags & ABSTRACT))	? wear_neck	: "Nothing"]</A>"}
+	<BR><B>Head:</B> <A href='?src=[REF(src)];item=[ITEM_SLOT_HEAD]'>				[(head && !(head.item_flags & ABSTRACT)) 			? head 		: "Nothing"]</A>
+	<BR><B>Mask:</B> <A href='?src=[REF(src)];item=[ITEM_SLOT_MASK]'>		[(wear_mask && !(wear_mask.item_flags & ABSTRACT))	? wear_mask	: "Nothing"]</A>
+	<BR><B>Neck:</B> <A href='?src=[REF(src)];item=[ITEM_SLOT_NECK]'>		[(wear_neck && !(wear_neck.item_flags & ABSTRACT))	? wear_neck	: "Nothing"]</A>"}
 
 	for(var/i in 1 to held_items.len)
 		var/obj/item/I = get_item_for_held_index(i)
-		dat += "<BR><B>[get_held_index_name(i)]:</B></td><td><A href='?src=[REF(src)];item=[SLOT_HANDS];hand_index=[i]'>[(I && !(I.item_flags & ABSTRACT)) ? I : "Nothing"]</a>"
+		dat += "<BR><B>[get_held_index_name(i)]:</B></td><td><A href='?src=[REF(src)];item=[ITEM_SLOT_POCKETS];hand_index=[i]'>[(I && !(I.item_flags & ABSTRACT)) ? I : "Nothing"]</a>"
 
-	dat += "<BR><B>Back:</B> <A href='?src=[REF(src)];item=[SLOT_BACK]'>[back ? back : "Nothing"]</A>"
+	dat += "<BR><B>Back:</B> <A href='?src=[REF(src)];item=[ITEM_SLOT_BACK]'>[back ? back : "Nothing"]</A>"
 
 	if(!HAS_TRAIT(src, TRAIT_NO_INTERNALS) && istype(wear_mask, /obj/item/clothing/mask) && istype(back, /obj/item/tank))
 		dat += "<BR><A href='?src=[REF(src)];internal=1'>[internal ? "Disable Internals" : "Set Internals"]</A>"
 
 	if(handcuffed)
-		dat += "<BR><A href='?src=[REF(src)];item=[SLOT_HANDCUFFED]'>Handcuffed</A>"
+		dat += "<BR><A href='?src=[REF(src)];item=[ITEM_SLOT_HANDCUFFED]'>Handcuffed</A>"
 	if(legcuffed)
-		dat += "<BR><A href='?src=[REF(src)];item=[SLOT_LEGCUFFED]'>Legcuffed</A>"
+		dat += "<BR><A href='?src=[REF(src)];item=[ITEM_SLOT_LEGCUFFED]'>Legcuffed</A>"
 
 	dat += {"
 	<BR>
@@ -308,7 +308,7 @@
 		// too soon.
 		var/buckle_cd = 600
 		if(handcuffed)
-			var/obj/item/restraints/O = src.get_item_by_slot(SLOT_HANDCUFFED)
+			var/obj/item/restraints/O = src.get_item_by_slot(ITEM_SLOT_HANDCUFFED)
 			buckle_cd = O.breakouttime
 		MarkResistTime()
 		visible_message(span_warning("[src] attempts to unbuckle [p_them()]self!"), \
@@ -1174,15 +1174,15 @@
 /mob/living/carbon/check_obscured_slots()
 	if(head)
 		if(head.flags_inv & HIDEMASK)
-			LAZYOR(., SLOT_WEAR_MASK)
+			LAZYOR(., ITEM_SLOT_MASK)
 		if(head.flags_inv & HIDEEYES)
-			LAZYOR(., SLOT_GLASSES)
+			LAZYOR(., ITEM_SLOT_EYES)
 		if(head.flags_inv & HIDEEARS)
-			LAZYOR(., SLOT_EARS)
+			LAZYOR(., ITEM_SLOT_EARS)
 
 	if(wear_mask)
 		if(wear_mask.flags_inv & HIDEEYES)
-			LAZYOR(., SLOT_GLASSES)
+			LAZYOR(., ITEM_SLOT_EYES)
 
 // if any of our bodyparts are bleeding
 /mob/living/carbon/proc/is_bleeding()

@@ -38,7 +38,7 @@
 	item_state = "gold_zippo"
 	w_class = WEIGHT_CLASS_TINY
 	flags_1 = CONDUCT_1
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 	heat = 1500
 	resistance_flags = FIRE_PROOF
 	light_color = LIGHT_COLOR_FIRE

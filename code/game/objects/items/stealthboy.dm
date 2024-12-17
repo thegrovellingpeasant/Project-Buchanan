@@ -17,7 +17,7 @@
 	actions_types = list(/datum/action/item_action/stealthboy_cloak)
 
 /obj/item/stealthboy/ui_action_click(mob/user)
-	if(user.get_item_by_slot(SLOT_BELT) == src)
+	if(user.get_item_by_slot(ITEM_SLOT_BELT) == src)
 		if(!on)
 			Activate(usr)
 		else
@@ -25,7 +25,7 @@
 	return
 
 /obj/item/stealthboy/item_action_slot_check(slot, mob/user)
-	if(slot == SLOT_BELT)
+	if(slot == ITEM_SLOT_BELT)
 		return 1
 
 /obj/item/stealthboy/proc/Activate(mob/living/carbon/human/user)
@@ -47,11 +47,11 @@
 
 /obj/item/stealthboy/dropped(mob/user)
 	..()
-	if(user && user.get_item_by_slot(SLOT_BELT) != src)
+	if(user && user.get_item_by_slot(ITEM_SLOT_BELT) != src)
 		Deactivate()
 
 /obj/item/stealthboy/process()
-	if(user.get_item_by_slot(SLOT_BELT) != src)
+	if(user.get_item_by_slot(ITEM_SLOT_BELT) != src)
 		Deactivate()
 		return
 	if(on)

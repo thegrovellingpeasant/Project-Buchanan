@@ -31,7 +31,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		OFFSET_FHAIR = list(0,0),
 		OFFSET_SUIT = list(0,0),
 		OFFSET_NECK = list(0,0),
-		OFFSET_MUTPARTS = list(0,0)
+		OFFSET_MUTPARTS = list(0,0),
 		)
 
 	var/hair_color	// this allows races to have specific hair colors... if null, it uses the H's hair/facial hair colors. if "mutcolor", it uses the H's mutant_color
@@ -971,11 +971,11 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/num_legs = H.get_num_legs(FALSE)
 
 	switch(slot)
-		if(SLOT_HANDS)
+		if(ITEM_SLOT_POCKETS)
 			if(H.get_empty_held_indexes())
 				return TRUE
 			return FALSE
-		if(SLOT_WEAR_MASK)
+		if(ITEM_SLOT_MASK)
 			if(H.wear_mask)
 				return FALSE
 			if(!(I.slot_flags & ITEM_SLOT_MASK))
@@ -983,25 +983,25 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_NECK)
+		if(ITEM_SLOT_NECK)
 			if(H.wear_neck)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_NECK) )
 				return FALSE
 			return TRUE
-		if(SLOT_BACK)
+		if(ITEM_SLOT_BACK)
 			if(H.back)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_BACK) )
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_WEAR_SUIT)
+		if(ITEM_SLOT_OCLOTHING)
 			if(H.wear_suit)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_OCLOTHING) )
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_GLOVES)
+		if(ITEM_SLOT_GLOVES)
 			if(H.gloves)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_GLOVES) )
@@ -1009,7 +1009,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(num_arms < 2)
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_SHOES)
+		if(ITEM_SLOT_FEET)
 			if(H.shoes)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_FEET) )
@@ -1022,7 +1022,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				else
 					return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_BELT)
+		if(ITEM_SLOT_BELT)
 			if(H.belt)
 				return FALSE
 			if(!CHECK_BITFIELD(I.item_flags, NO_UNIFORM_REQUIRED))
@@ -1034,7 +1034,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(!(I.slot_flags & ITEM_SLOT_BELT))
 				return
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_GLASSES)
+		if(ITEM_SLOT_EYES)
 			if(H.glasses)
 				return FALSE
 			if(!(I.slot_flags & ITEM_SLOT_EYES))
@@ -1042,7 +1042,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_HEAD)
+		if(ITEM_SLOT_HEAD)
 			if(H.head)
 				return FALSE
 			if(!(I.slot_flags & ITEM_SLOT_HEAD))
@@ -1050,7 +1050,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_EARS)
+		if(ITEM_SLOT_EARS)
 			if(H.ears)
 				return FALSE
 			if(!(I.slot_flags & ITEM_SLOT_EARS))
@@ -1058,13 +1058,13 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_W_UNIFORM)
+		if(ITEM_SLOT_ICLOTHING)
 			if(H.w_uniform)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_ICLOTHING) )
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_WEAR_ID)
+		if(ITEM_SLOT_ID)
 			if(H.wear_id)
 				return FALSE
 			if(!CHECK_BITFIELD(I.item_flags, NO_UNIFORM_REQUIRED))
@@ -1076,7 +1076,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if( !(I.slot_flags & ITEM_SLOT_ID) )
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
-		if(SLOT_L_STORE)
+		if(ITEM_SLOT_LPOCKET)
 			if(HAS_TRAIT(I, TRAIT_NODROP)) //Pockets aren't visible, so you can't move TRAIT_NODROP items into them.
 				return FALSE
 			if(H.l_store)
@@ -1088,11 +1088,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				if(return_warning)
 					return_warning[1] = span_warning("You need a jumpsuit before you can attach this [I.name]!")
 				return FALSE
-			if(I.slot_flags & ITEM_SLOT_DENYPOCKET)
-				return FALSE
-			if( I.w_class <= WEIGHT_CLASS_SMALL || (I.slot_flags & ITEM_SLOT_POCKET) )
+			if( I.w_class <= WEIGHT_CLASS_SMALL || (I.slot_flags & ITEM_SLOT_POCKETS) )
 				return TRUE
-		if(SLOT_R_STORE)
+		if(ITEM_SLOT_RPOCKET)
 			if(HAS_TRAIT(I, TRAIT_NODROP))
 				return FALSE
 			if(H.r_store)
@@ -1104,12 +1102,10 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				if(return_warning)
 					return_warning[1] = span_warning("You need a jumpsuit before you can attach this [I.name]!")
 				return FALSE
-			if(I.slot_flags & ITEM_SLOT_DENYPOCKET)
-				return FALSE
-			if( I.w_class <= WEIGHT_CLASS_SMALL || (I.slot_flags & ITEM_SLOT_POCKET) )
+			if( I.w_class <= WEIGHT_CLASS_SMALL || (I.slot_flags & ITEM_SLOT_POCKETS) )
 				return TRUE
 			return FALSE
-		if(SLOT_S_STORE)
+		if(ITEM_SLOT_SUITSTORE)
 			if(HAS_TRAIT(I, TRAIT_NODROP))
 				return FALSE
 			if(H.s_store)
@@ -1129,7 +1125,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if( istype(I, /obj/item/pda) || istype(I, /obj/item/pen) || is_type_in_list(I, H.wear_suit.allowed) )
 				return TRUE
 			return FALSE
-		if(SLOT_HANDCUFFED)
+		if(ITEM_SLOT_HANDCUFFED)
 			if(H.handcuffed)
 				return FALSE
 			if(!istype(I, /obj/item/restraints/handcuffs))
@@ -1137,7 +1133,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(num_arms < 2)
 				return FALSE
 			return TRUE
-		if(SLOT_LEGCUFFED)
+		if(ITEM_SLOT_LEGCUFFED)
 			if(H.legcuffed)
 				return FALSE
 			if(!istype(I, /obj/item/restraints/legcuffs))
@@ -1145,7 +1141,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(num_legs < 2)
 				return FALSE
 			return TRUE
-		if(SLOT_IN_BACKPACK)
+		if(ITEM_SLOT_BACKPACK)
 			if(H.back)
 				if(SEND_SIGNAL(H.back, COMSIG_TRY_STORAGE_CAN_INSERT, I, H, TRUE))
 					return TRUE

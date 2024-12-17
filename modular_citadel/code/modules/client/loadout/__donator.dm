@@ -2,7 +2,7 @@
 
 /datum/gear/donator
 	name = "IF YOU SEE THIS, PING A CODER RIGHT NOW!"
-	slot = SLOT_IN_BACKPACK
+	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/storage/belt/holster/ranger45
 	category = LOADOUT_CATEGORY_DONATOR
 	ckeywhitelist = list("This entry should never appear with this variable set.") //If it does, then that means somebody fucked up the whitelist system pretty hard
@@ -10,13 +10,13 @@
 
 /datum/gear/donator/donortestingbikehorn
 	name = "Donor item testing"
-	slot = SLOT_IN_BACKPACK
+	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/storage/belt/holster/ranger45
 	geargroupID = list("DONORTEST") //This is a list mainly for the sake of testing, but geargroupID works just fine with ordinary strings
 
 /datum/gear/donator/monke1818
 	name = "CIA Badge"
-	slot = SLOT_IN_BACKPACK
+	slot = ITEM_SLOT_BACKPACK
 	path = /obj/item/clothing/accessory/cia_badge
 	ckeywhitelist = list("monke1818")
 
@@ -24,7 +24,7 @@
 ///Loadout Boxes///// See kits.dm, use this model for loadouts that have more than one item per character.
 /////////////////////
 /datum/gear/donator/kits
-	slot = SLOT_IN_BACKPACK
+	slot = ITEM_SLOT_BACKPACK
 
 /*example
 /datum/gear/donator/kits/averyamadeus
@@ -120,7 +120,7 @@
 	name = "Burnings Goods"
 	path = /obj/item/storage/box/large/custom_kit/burningcold
 	ckeywhitelist = list("myguy49")
-	
+
 /obj/item/storage/box/large/custom_kit/pineapple/PopulateContents()
 	new /obj/item/clothing/suit/armor/f13/combat/environmental(src)
 	new /obj/item/clothing/head/helmet/f13/combat/environmental(src)
@@ -151,8 +151,8 @@
 /datum/gear/donator/kits/snugglytrap
 	name = "Good boy kit"
 	path = /obj/item/storage/box/large/custom_kit/snugglytrap
-	ckeywhitelist = list("snugglytrap")	
-	
+	ckeywhitelist = list("snugglytrap")
+
 /obj/item/storage/box/large/custom_kit/erabite/PopulateContents()
 	new /obj/item/clothing/head/helmet/f13/rangercombat/rangertrauma(src)
 	new /obj/item/clothing/suit/armor/f13/rangercombat/degancustom(src)
@@ -165,7 +165,7 @@
 /datum/gear/donator/kits/erabite
 	name = "Era stuff"
 	path = /obj/item/storage/box/large/custom_kit/erabite
-	ckeywhitelist = list("erabite")	
+	ckeywhitelist = list("erabite")
 
 /obj/item/storage/box/large/custom_kit/flaka/PopulateContents()
 	new /obj/item/clothing/head/f13/enclave/hood(src)
@@ -179,7 +179,7 @@
 
 /obj/item/storage/box/large/custom_kit/rix/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/ballisticfist(src)
-	
+
 /datum/gear/donator/kits/rix
 	name = "Dark stuff"
 	path = /obj/item/storage/box/large/custom_kit/rix
@@ -191,11 +191,11 @@
 	new /obj/item/clothing/shoes/kindleKicks(src)
 	new /obj/item/storage/belt/military/assault(src)
 	new /obj/item/clothing/suit/armor/f13/combat/khan(src)
-	
+
 /datum/gear/donator/kits/sunny
 	name = "Sunnys stuff"
 	path = /obj/item/storage/box/large/custom_kit/sunny
-	ckeywhitelist = list("nirzak")						
+	ckeywhitelist = list("nirzak")
 
 /obj/item/storage/box/large/custom_kit/sokkxx/PopulateContents()
 	new /obj/item/modkit/sokkxxarmor(src)
@@ -228,7 +228,7 @@
 	name = "I die to mobsx2"
 	path = /obj/item/storage/box/large/custom_kit/pug2
 	ckeywhitelist = list("puglord777")
-	
+
 /datum/gear/donator/kits/mutie
 	name = "Muties"
 	path = /obj/item/storage/box/large/custom_kit/mutie
@@ -252,7 +252,7 @@
 	name = "Algernon's Home"
 	desc = "A worn, gnawed on and slightly damp old box, home to the Oasis bar's secret ingredient. The initials 'R.R' are written in the bottom right corner."
 	icon_state = "c-ration"
-	
+
 /obj/item/storage/box/large/custom_kit/skubblers/PopulateContents()
 	new /obj/item/reagent_containers/food/snacks/cube/algernon(src)
 	new /obj/item/reagent_containers/food/snacks/cheesewedge(src)

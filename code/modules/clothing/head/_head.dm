@@ -47,7 +47,7 @@
 				self_message = span_warning("[src] bounces off your [WH.name], falling to the floor."),
 			)
 			return
-		if(H.equip_to_slot_if_possible(src, SLOT_HEAD, FALSE, TRUE))
+		if(H.equip_to_slot_if_possible(src, ITEM_SLOT_HEAD, FALSE, TRUE))
 			H.visible_message(
 				message = span_notice("[src] lands neatly on [H]'s head!"),
 				self_message = span_warning("[src] lands perfectly onto your head!"),
@@ -87,7 +87,7 @@
 
 /obj/item/clothing/head/equipped(mob/user, slot)
 	. = ..()
-	if(ishuman(user) && slot == SLOT_HEAD && speechspan)
+	if(ishuman(user) && slot == ITEM_SLOT_HEAD && speechspan)
 		var/mob/living/carbon/human/H = user
 		H.speech_span = speechspan
 
@@ -96,7 +96,7 @@
 	if(!ishuman(user))
 		return
 	var/mob/living/carbon/human/H = user
-	if(H.get_item_by_slot(SLOT_HEAD) == src && speechspan)
+	if(H.get_item_by_slot(ITEM_SLOT_HEAD) == src && speechspan)
 		H.speech_span = null
 
 /*
@@ -109,7 +109,7 @@
 /obj/item/clothing/head/equipped(mob/user, slot)
 	..()
 
-	if(attached_accessory && slot != SLOT_HANDS && ishuman(user))
+	if(attached_accessory && slot != ITEM_SLOT_POCKETS && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		attached_accessory.on_head_equip(src, user)
 		H.update_inv_head()
