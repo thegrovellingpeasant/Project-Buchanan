@@ -15,6 +15,13 @@
 	var/check_antimagic = TRUE
 	var/check_holy = FALSE
 
+/obj/effect/clockwork/sigil/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/effect/clockwork/sigil/attackby(obj/item/I, mob/living/user, params)
 	if(I.force)
 		if(is_servant_of_ratvar(user) && user.a_intent != INTENT_HARM)
@@ -40,19 +47,21 @@
 	visible_message(span_warning("[src] scatters into thousands of particles."))
 	qdel(src)
 
-/obj/effect/clockwork/sigil/Crossed(atom/movable/AM)
-	..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(L.stat <= stat_affected)
-			if((!is_servant_of_ratvar(L) || (affects_servants && is_servant_of_ratvar(L))) && (L.mind || L.has_status_effect(STATUS_EFFECT_SIGILMARK)) && !isdrone(L))
-				var/atom/I = L.anti_magic_check(check_antimagic, check_holy)
-				if(I)
-					if(isitem(I))
-						L.visible_message(span_warning("[L]'s [I.name] [resist_string], protecting [L.p_them()] from [src]'s effects!"), \
-						span_userdanger("Your [I.name] [resist_string], protecting you!"))
-					return
-				sigil_effects(L)
+/obj/effect/clockwork/sigil/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(!isliving(arrived))
+		return
+	var/mob/living/L = arrived
+	if(L.stat > stat_affected)
+		return
+	if((!is_servant_of_ratvar(L) || (affects_servants && is_servant_of_ratvar(L))) && (L.mind || L.has_status_effect(STATUS_EFFECT_SIGILMARK)) && !isdrone(L))
+		var/atom/I = L.anti_magic_check(check_antimagic, check_holy)
+		if(I)
+			if(isitem(I))
+				L.visible_message(span_warning("[L]'s [I.name] [resist_string], protecting [L.p_them()] from [src]'s effects!"), \
+				span_userdanger("Your [I.name] [resist_string], protecting you!"))
+			return
+		INVOKE_ASYNC(src, PROC_REF(sigil_effects), L)
 
 /obj/effect/clockwork/sigil/proc/sigil_effects(mob/living/L)
 
@@ -140,7 +149,7 @@
 		if(glow)
 			qdel(glow)
 		animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 20)
 		visible_message(span_warning("[src] slowly stops glowing!"))
 		return
 	if(is_eligible_servant(L))
@@ -173,7 +182,7 @@
 			else
 				to_chat(M, span_heavy_brass("[message] [L.real_name]!"))
 	animate(src, color = oldcolor, time = 20, flags = ANIMATION_END_NOW)
-	addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 20)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 20)
 	visible_message(span_warning("[src] slowly stops glowing!"))
 
 
@@ -246,7 +255,7 @@
 		cyborg.color = list("#EC8A2D", "#EC8A2D", "#EC8A2D", rgb(0,0,0))
 		cyborg.apply_status_effect(STATUS_EFFECT_POWERREGEN, giving_power * 0.1) //ten ticks, restoring 10% each
 		animate(cyborg, color = previous_color, time = 100)
-		addtimer(CALLBACK(cyborg, /atom/proc/update_atom_colour), 100)
+		addtimer(CALLBACK(cyborg, TYPE_PROC_REF(/atom, update_atom_colour)), 100)
 
 /obj/effect/clockwork/sigil/transmission/proc/cyborg_checks(mob/living/silicon/robot/cyborg, silent)
 	if(!cyborg.cell)

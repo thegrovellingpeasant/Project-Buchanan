@@ -59,12 +59,12 @@
 		visible_message(span_warning("\The [src] has been broken by [user] with an electromagnetic card!"))
 	return TRUE
 
-/obj/item/storage/lockbox/Entered()
+/obj/item/storage/lockbox/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
 	open = TRUE
 	update_icon()
 
-/obj/item/storage/lockbox/Exited()
+/obj/item/storage/lockbox/Exited(atom/movable/gone, direction)
 	. = ..()
 	open = TRUE
 	update_icon()

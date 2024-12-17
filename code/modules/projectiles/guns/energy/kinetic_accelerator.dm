@@ -70,10 +70,10 @@
 	else
 		to_chat(user, span_notice("There are no modifications currently installed."))
 
-/obj/item/gun/energy/kinetic_accelerator/Exited(atom/movable/AM)
+/obj/item/gun/energy/kinetic_accelerator/Exited(atom/movable/gone, direction)
 	. = ..()
-	if((AM in modkits) && istype(AM, /obj/item/borg/upgrade/modkit))
-		var/obj/item/borg/upgrade/modkit/M = AM
+	if((gone in modkits) && istype(gone, /obj/item/borg/upgrade/modkit))
+		var/obj/item/borg/upgrade/modkit/M = gone
 		M.uninstall(src, FALSE)
 
 /obj/item/gun/energy/kinetic_accelerator/attackby(obj/item/I, mob/user)

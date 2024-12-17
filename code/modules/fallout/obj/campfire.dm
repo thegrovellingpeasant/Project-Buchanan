@@ -16,6 +16,13 @@
 	icon = 'icons/fallout/objects/furniture/heating.dmi'
 	icon_state = "campfire"
 
+/obj/structure/campfire/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /obj/structure/campfire/Destroy()
 	SSobj.processing.Remove(src)
 	..()
@@ -52,7 +59,8 @@
 /obj/structure/campfire/fire_act(exposed_temperature, exposed_volume)
 	fire()
 
-/obj/structure/campfire/Crossed(atom/movable/AM)
+/obj/structure/campfire/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
 	if(fired)
 		burn_process()
 

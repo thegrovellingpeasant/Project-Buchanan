@@ -67,6 +67,9 @@
 		for(var/obj/item/stack/S in loc)
 			if(S.merge_type == merge_type)
 				INVOKE_ASYNC(src, PROC_REF(merge), S)
+				//Merge can call qdel on us, so let's be safe yeah?
+				if(QDELETED(src))
+					return
 	var/list/temp_recipes = get_main_recipes()
 	recipes = temp_recipes.Copy()
 	if(material_type)
@@ -78,6 +81,10 @@
 					recipes += temp
 	update_weight()
 	update_icon()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/item/stack/proc/get_main_recipes()
 	return list()//empty list
@@ -399,10 +406,10 @@
 	S.add(transfer)
 	return transfer
 
-/obj/item/stack/Crossed(obj/o)
-	if(istype(o, merge_type) && !o.throwing)
-		merge(o)
-	. = ..()
+/obj/item/stack/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(istype(arrived, merge_type) && !arrived.throwing)
+		INVOKE_ASYNC(src, PROC_REF(merge), arrived)
 
 /obj/item/stack/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
 	if(istype(AM, merge_type))

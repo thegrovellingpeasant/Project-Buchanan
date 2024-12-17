@@ -418,15 +418,15 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 				for(var/obj/item/Itm in content)
 					var/item_name = url_encode(Itm.name)
 					var/price = content[Itm]
-					dat += "<a href='byond://?src=\ref[src];vend=[item_name];current_price=[price]'>[Itm.name] | [price] caps</a> "
-					dat += "<a href='byond://?src=\ref[src];examine=[item_name];current_price=[price]'>Examine</a><br> "
+					dat += "<a href='byond://?src=[text_ref(src)];vend=[item_name];current_price=[price]'>[Itm.name] | [price] caps</a> "
+					dat += "<a href='byond://?src=[text_ref(src)];examine=[item_name];current_price=[price]'>Examine</a><br> "
 
 		//--- Service
 		if(STATE_SERVICE)
 			dat += "<h3>Machine setup menu</h3>"
 			dat += "<div class='statusDisplay'>"
 			dat += "<font color='green'>Caps stored - [stored_caps]</font>"
-			dat += "<a href='?src=\ref[src];removecaps=1'>Unload</a>"
+			dat += "<a href='?src=[text_ref(src)];removecaps=1'>Unload</a>"
 			dat += "<h4> Items </h4> "
 
 			if(content.len == 0)
@@ -436,15 +436,15 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 					var/item_name = url_encode(Itm.name)
 					var/price = content[Itm]
 					dat += "<b>[Itm.name]</b> - [content[Itm]] caps"
-					dat += "<a href='?src=\ref[src];setprice=[item_name];current_price=[price]'>Set price</a> "
-					dat += "<a href='?src=\ref[src];remove=[item_name];current_price=[price]'>Remove</a> <br>"
+					dat += "<a href='?src=[text_ref(src)];setprice=[item_name];current_price=[price]'>Set price</a> "
+					dat += "<a href='?src=[text_ref(src)];remove=[item_name];current_price=[price]'>Remove</a> <br>"
 
 		// --- Vend
 		if(STATE_VEND)
 			dat += "<h3>Select an item</h3>"
 			dat += "<div class='statusDisplay'>"
 			dat += "<font color = 'red'>Waiting for [expected_price] caps!</font>"
-			dat += "<a href='?src=\ref[src];back=1'> Back</a> "
+			dat += "<a href='?src=[text_ref(src)];back=1'> Back</a> "
 
 		// --- Lock Open
 		if(STATE_LOCKOPEN)

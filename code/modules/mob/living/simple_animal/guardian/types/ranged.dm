@@ -100,7 +100,7 @@
 	if(picked_snare)
 		src.snares -= picked_snare
 		qdel(picked_snare)
-		to_chat(src, "[span_danger("<B>Snare disarmed.")]</B>")
+		to_chat(src, span_danger("<B>Snare disarmed.</B>"))
 
 /obj/effect/snare
 	name = "snare"
@@ -108,13 +108,20 @@
 	var/mob/living/simple_animal/hostile/guardian/spawner
 	invisibility = INVISIBILITY_ABSTRACT
 
+/obj/effect/snare/Initialize(mapload)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/effect/snare/Crossed(AM as mob|obj)
-	if(isliving(AM) && spawner && spawner.summoner && AM != spawner && !spawner.hasmatchingsummoner(AM))
-		to_chat(spawner.summoner, "[span_danger("<B>[AM] has crossed surveillance snare, [name].")]</B>")
+/obj/effect/snare/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	if(isliving(arrived) && spawner && spawner.summoner && arrived != spawner && !spawner.hasmatchingsummoner(arrived))
+		to_chat(spawner.summoner, span_danger("<B>[arrived] has crossed surveillance snare, [name].</B>"))
 		var/list/guardians = spawner.summoner.hasparasites()
 		for(var/para in guardians)
-			to_chat(para, "[span_danger("<B>[AM] has crossed surveillance snare, [name].")]</B>")
+			to_chat(para, span_danger("<B>[arrived] has crossed surveillance snare, [name].</B>"))
 
 /obj/effect/snare/singularity_act()
 	return

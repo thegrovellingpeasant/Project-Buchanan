@@ -13,11 +13,11 @@ GLOBAL_LIST_EMPTY(cursed_minds)
 	baseturfs = /turf/open/water/cursed_spring
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
-/turf/open/water/cursed_spring/Entered(atom/movable/thing, atom/oldLoc)
+/turf/open/water/cursed_spring/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	if(!isliving(thing))
+	if(!isliving(arrived))
 		return
-	var/mob/living/L = thing
+	var/mob/living/L = arrived
 	if(!L.client)
 		return
 	if(GLOB.cursed_minds[L.mind])

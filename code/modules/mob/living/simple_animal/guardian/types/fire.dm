@@ -13,8 +13,16 @@
 	tech_fluff_string = span_holoparasite("Boot sequence complete. Crowd control modules activated. Holoparasite swarm online.")
 	carp_fluff_string = span_holoparasite("CARP CARP CARP! You caught one! OH GOD, EVERYTHING'S ON FIRE. Except you and the fish.")
 
+/mob/living/simple_animal/hostile/guardian/fire/Initialize(mapload, theme)
+	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 /mob/living/simple_animal/hostile/guardian/fire/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
+	. = ..()
+	if(!.)
 		return
 	if(summoner)
 		summoner.ExtinguishMob()
@@ -25,9 +33,9 @@
 	if(. && ishuman(target) && target != summoner)
 		new /datum/hallucination/delusion(target,TRUE,"custom",200,0, icon_state,icon)
 
-/mob/living/simple_animal/hostile/guardian/fire/Crossed(AM as mob|obj)
-	..()
-	collision_ignite(AM)
+/mob/living/simple_animal/hostile/guardian/fire/proc/on_entered(datum/source, atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	SIGNAL_HANDLER
+	collision_ignite(arrived)
 
 /mob/living/simple_animal/hostile/guardian/fire/Bumped(atom/movable/AM)
 	..()

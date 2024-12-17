@@ -41,9 +41,9 @@
 			qdel(src)
 	return ..()
 
-/obj/item/paperplane/Exited(atom/movable/AM, atom/newLoc)
+/obj/item/paperplane/Exited(atom/movable/gone, direction)
 	. = ..()
-	if (AM == internalPaper)
+	if (gone == internalPaper)
 		internalPaper = null
 		if(!QDELETED(src))
 			qdel(src)

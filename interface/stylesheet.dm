@@ -62,8 +62,9 @@ em						{font-style: normal;	font-weight: bold;}
 .ncrradio				{color: #eaaa54;}
 .bosradio				{color: #686868;}
 .enclaveradio			{color: #67696b;}
-.denradio				{color: #a8732b;}
 .legionradio			{color: #c24d44;}
+.denradio				{color: #a8732b;}
+.townradio				{color: #a30000;}
 .rangerradio			{color: #83733c;}
 .khansradio				{color: #f0420d;}
 .ldsradio				{color: #D4AF37;}

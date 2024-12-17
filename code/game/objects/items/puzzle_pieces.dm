@@ -155,13 +155,15 @@
 	icon_state = "lasergrid_full"
 	claimed = TRUE
 
-/obj/item/pressure_plate/hologrid/Crossed(atom/movable/AM)
+/obj/item/pressure_plate/hologrid/on_entered(datum/source, atom/movable/enterer, atom/old_loc, list/atom/old_locs)
 	. = ..()
-	if(trigger_item && istype(AM, specific_item) && !claimed)
-		AM.anchored = TRUE
-		flick("laserbox_burn", AM)
+	if(!.)
+		return
+	if(trigger_item && istype(enterer, specific_item) && !claimed)
+		enterer.anchored = TRUE
+		flick("laserbox_burn", enterer)
 		trigger()
-		QDEL_IN(AM, 15)
+		QDEL_IN(enterer, 15)
 
 // snowflake code until undertile elements
 /obj/item/pressure_plate/hologrid/hide()
