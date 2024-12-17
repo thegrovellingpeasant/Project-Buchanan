@@ -556,7 +556,8 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/setup_officer_positions()
 	var/datum/job/J = SSjob.GetJob("Vault-tec Security")
 	if(!J)
-		CRASH("setup_officer_positions(): Security officer job is missing")
+		log_job_debug("setup_officer_positions(): There is no assigned/dedicated Security Officer job, no positions will be scaled.")
+		return
 
 	var/ssc = CONFIG_GET(number/security_scaling_coeff)
 	if(ssc > 0)
