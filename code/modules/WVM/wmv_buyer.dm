@@ -356,11 +356,13 @@ Fence
 						/obj/item/gun/ballistic/automatic/pistol/ninemil = 100,
 						/obj/item/gun/ballistic/automatic/pistol/pistol22 = 40,
 						/obj/item/gun/ballistic/automatic/pistol/m1911 = 100,
-						/obj/item/ammo_box/magazine/m22 = 15,
-						/obj/item/ammo_box/c38 = 15,
-						/obj/item/ammo_box/magazine/m9mmds = 45,
-						/obj/item/ammo_box/magazine/m45 = 55,
-						/obj/item/ammo_box/a308box = 90,
+						// Apparently people can sell empty ammo boxes and get the full credit. 
+						// Commented out until better implementation.
+						// /obj/item/ammo_box/magazine/m22 = 15,
+						// /obj/item/ammo_box/c38 = 15,
+						// /obj/item/ammo_box/magazine/m9mmds = 45,
+						// /obj/item/ammo_box/magazine/m45 = 55,
+						// /obj/item/ammo_box/a308box = 90,
 						/obj/item/melee/onehanded/knife/survival = 30,
 						/obj/item/clothing/neck/necklace/dope = 35
 						)

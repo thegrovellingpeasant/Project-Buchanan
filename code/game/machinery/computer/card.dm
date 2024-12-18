@@ -492,6 +492,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 
 /obj/machinery/computer/card/ncr
 	name = "\improper NCR identification console"
+	req_one_access = (ACCESS_NCR_COMMAND)
 	circuit = /obj/item/circuitboard/computer/card/ncr
 	// The job list is here so only specific titles are allowed.
 	job_list = list(

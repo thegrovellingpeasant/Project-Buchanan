@@ -7,12 +7,12 @@
 	desc = "Controls a stacking machine... in theory."
 	density = FALSE
 	circuit = /obj/item/circuitboard/machine/stacking_unit_console
-	var/obj/machinery/mineral/stacking_machine/machine
+	var/obj/machinery/mineral/stacking_machine/laborstacker/machine = null
 	var/machinedir = SOUTHEAST
 
-/obj/machinery/mineral/stacking_unit_console/Initialize()
+/obj/machinery/mineral/stacking_unit_console/Initialize(/obj/machinery/mineral/stacking_machine/laborstacker)
 	. = ..()
-	machine = locate(/obj/machinery/mineral/stacking_machine, get_step(src, machinedir))
+	machine = locate(/obj/machinery/mineral/stacking_machine/laborstacker)
 	if (machine)
 		machine.CONSOLE = src
 
