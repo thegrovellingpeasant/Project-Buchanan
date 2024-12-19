@@ -31,9 +31,9 @@
 	if(!prob(probability))
 		return
 
-	if(!ishuman(source))
+	if(!ishuman(arrived))
 		return
-	var/mob/living/carbon/human/H = source
+	var/mob/living/carbon/human/H = arrived
 	if(HAS_TRAIT(H, TRAIT_PIERCEIMMUNE))
 		return
 
