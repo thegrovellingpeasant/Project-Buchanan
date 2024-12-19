@@ -105,7 +105,7 @@
 /datum/weather/ash_storm/sandstorm
 	name = "sandstorm"
 	desc = "A passing sand storm blankets the area in harmless sands."
-	probability = 10
+	probability = 0
 
 	telegraph_message = span_userdanger("Sandstorm is coming to the area, decreasing overall visibility outside.")
 
