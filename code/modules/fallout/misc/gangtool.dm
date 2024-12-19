@@ -54,7 +54,7 @@
 
 		var/toAdd = G.get_name_display(user, gang, src)
 		if(G.can_buy(user, gang, src))
-			toAdd = "<a href='?src=[text_ref(src)];purchase=[G.id]'>[toAdd]</a>"
+			toAdd = "<a href='?src=\ref[src];purchase=[G.id]'>[toAdd]</a>"
 		dat += toAdd
 		var/extra = G.get_extra_info(user, gang, src)
 		if(extra)
@@ -62,7 +62,7 @@
 		dat += "<br>"
 	dat += "<br>"
 
-	dat += "<a href='?src=[text_ref(src)];choice=refresh'>Refresh</a><br>"
+	dat += "<a href='?src=\ref[src];choice=refresh'>Refresh</a><br>"
 
 	var/datum/browser/popup = new(user, "gangtool", "Welcome to GangTool v3.6", 350, 625)
 	popup.set_content(dat)
