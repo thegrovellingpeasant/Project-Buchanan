@@ -1741,3 +1741,14 @@
 /obj/item/card/id/reno/vangraffs/business/management
 	desc = "It has eggshell coloring."
 	icon_state = "business_card_2"
+
+//////////////////
+/// Heist Boys ///
+//////////////////
+
+/obj/item/card/id/reno/heisters
+	name = "NCR citizenship permit"
+	desc = "A plain, though worn, ID permit for an NCR citizen... or is it?"
+	icon_state = "doctor"
+	item_state = "card-doctor"
+	access = list(ACCESS_HEIST)

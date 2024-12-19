@@ -41,6 +41,12 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 	"/datum/job/citizens/f13tourist" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
 		),
+	"/datum/job/wastes/f13vagrant" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+		),
+	"datum/job/citizens/f13convict" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+		),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -642,10 +648,18 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 75
+	player_chance = 10
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off
+
+/datum/faction_task/individual_player/heist/add_player(mob/living/user)
+	. = ..()
+	var/obj/item/card/id/reno/heisters/heister_id = new /obj/item/card/id/reno/heisters(get_turf(user))
+	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
+	user.equip_to_slot(heister_id, SLOT_WEAR_ID)
+	user.put_in_inactive_hand(heist_note)
+/obj/item/card/id/reno/heisters
 
 /datum/faction_task/individual_player/heist/New()
 	..()
@@ -659,6 +673,12 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist/calculate_score()
 	var/turf/T = get_turf(target)
 	if(target && istype(T.loc, drop_off))
+
+
+
+
+
+
 		return TRUE
 	return FALSE
 
@@ -670,9 +690,6 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		return "<font color='#097f10'>The heist was successful.</font>"
 	else
 		return "<font color='#bc2621'>The heist failed.</font>"
-
-
-
 
 ///////////////////
 /* Miscellaneous */
