@@ -292,8 +292,7 @@
 	if(istype(I, /obj/item/stack/f13Cash))
 		add_caps_to_credits(I)
 		return
-	else
-		attack_hand(user)
+	return ..()
 		return
 	return .=..()
 
