@@ -1703,7 +1703,7 @@
 /obj/structure/table/wood/greyscale,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /turf/open/floor/plasteel/grimy,
@@ -4827,9 +4827,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/reno_caves)
 "aSc" = (
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /obj/structure/rack/shelf_metal,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/plating,
@@ -20756,7 +20754,7 @@
 	name = "double bun wig";
 	pixel_y = 15;
 	pixel_x = 1;
-	color = '#3c2045'
+	color = "#3c2045"
 	},
 /obj/item/clothing/head/maid{
 	pixel_y = 29;
@@ -26345,7 +26343,7 @@
 "eKm" = (
 /obj/structure/railing/corner{
 	dir = 4;
-	color = '#9a4a3b'
+	color = "#9a4a3b"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
@@ -30113,7 +30111,7 @@
 	smooth = 0
 	},
 /obj/machinery/light/floor{
-	color = '#db7dc3'
+	color = "#db7dc3"
 	},
 /obj/structure/statue/diamond/indestructible/oldworldstatue{
 	pixel_x = -15;
@@ -35636,7 +35634,7 @@
 /area/f13/reno_prewarbunker)
 "gsG" = (
 /obj/structure/railing/corner{
-	color = '#9a4a3b';
+	color = "#9a4a3b";
 	layer = 4.25
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -39140,7 +39138,7 @@
 /area/f13/reno_wasteland)
 "gYX" = (
 /obj/structure/curtain{
-	color = '#c7522a';
+	color = "#c7522a";
 	layer = 4.26
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -49029,9 +49027,7 @@
 /obj/machinery/chem_dispenser{
 	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/raiders)
 "iNu" = (
@@ -49484,9 +49480,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
 "iQM" = (
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /obj/effect/decal/cleanable/blood/old{
 	color = "#370404";
 	icon_state = "floor3"
@@ -50143,7 +50137,7 @@
 	},
 /obj/item/clothing/head/wig{
 	icon_state = "hair_emo";
-	color = '#b36372';
+	color = "#b36372";
 	pixel_y = 16
 	},
 /obj/item/clothing/head/lobsterhat{
@@ -50292,7 +50286,7 @@
 "iYy" = (
 /obj/structure/railing{
 	dir = 1;
-	color = '#9a4a3b'
+	color = "#9a4a3b"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -51995,7 +51989,7 @@
 	name = "countrygirl wig";
 	pixel_y = 15;
 	pixel_x = 1;
-	color = '#3d3939'
+	color = "#3d3939"
 	},
 /obj/effect/overlay/curb{
 	dir = 4;
@@ -56318,7 +56312,7 @@
 	name = "room B1"
 	},
 /obj/structure/curtain{
-	color = '#c7522a';
+	color = "#c7522a";
 	layer = 4.26
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -59524,9 +59518,7 @@
 "kIY" = (
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/raiders)
 "kJb" = (
@@ -78164,7 +78156,7 @@
 /area/f13/reno_subway)
 "oaX" = (
 /obj/structure/curtain{
-	color = '#6d2375';
+	color = "#6d2375";
 	anchored = 0
 	},
 /turf/open/floor/carpet/reno/pattern1,
@@ -79079,15 +79071,15 @@
 	},
 /obj/item/cardboard_cutout/adaptive,
 /obj/item/clothing/under/dress/corset{
-	color = '#99ff99'
+	color = "#99ff99"
 	},
 /obj/item/clothing/under/misc/stripper/green{
-	color = '#359435'
+	color = "#359435"
 	},
 /obj/item/clothing/head/wig{
 	icon_state = "hair_unkempt";
 	name = "unkempt wig";
-	color = '#c2614c'
+	color = "#c2614c"
 	},
 /obj/item/clothing/shoes/f13/tribal_sandals,
 /obj/structure/sign/poster/contraband/kudzu{
@@ -83275,7 +83267,7 @@
 "oUJ" = (
 /obj/structure/simple_door/metal/store,
 /obj/structure/curtain{
-	color = '#c7522a';
+	color = "#c7522a";
 	layer = 4.26
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/lit,
@@ -84297,7 +84289,7 @@
 /area/f13/reno_west_building)
 "peN" = (
 /obj/structure/curtain{
-	color = '#6d2375';
+	color = "#6d2375";
 	anchored = 0
 	},
 /obj/structure/dresser,
@@ -85022,7 +85014,7 @@
 	dir = 8
 	},
 /obj/structure/railing{
-	color = '#9a4a3b';
+	color = "#9a4a3b";
 	layer = 4.25
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -90752,7 +90744,7 @@
 "qmk" = (
 /obj/structure/railing{
 	dir = 4;
-	color = '#9a4a3b'
+	color = "#9a4a3b"
 	},
 /obj/item/card/id/reno/bishops/key/suite1{
 	pixel_y = 7
@@ -91772,9 +91764,7 @@
 	pixel_y = 8;
 	pixel_x = 6
 	},
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /obj/effect/decal/remains/cloth{
 	pixel_x = -32
 	},
@@ -94321,7 +94311,7 @@
 	layer = 2.8
 	},
 /obj/structure/railing{
-	color = '#9a4a3b';
+	color = "#9a4a3b";
 	layer = 4.25
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -99397,7 +99387,7 @@
 /area/f13/reno_subway)
 "rNd" = (
 /obj/structure/railing/corner{
-	color = '#9a4a3b';
+	color = "#9a4a3b";
 	layer = 4.25
 	},
 /turf/open/floor/carpet/reno/evil2,
@@ -99829,7 +99819,7 @@
 "rQQ" = (
 /obj/structure/railing{
 	dir = 1;
-	color = '#9a4a3b'
+	color = "#9a4a3b"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/reno_sharkclub)
@@ -103723,7 +103713,7 @@
 /area/f13/nrpd)
 "sAx" = (
 /obj/structure/curtain{
-	color = '#6d2375';
+	color = "#6d2375";
 	anchored = 0
 	},
 /obj/structure/closet/cabinet,
@@ -106746,9 +106736,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/reno_prison)
 "tbM" = (
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /obj/effect/decal/remains/cloth{
 	pixel_x = 32
 	},
@@ -113914,7 +113902,7 @@
 /area/f13/reno_west_building)
 "und" = (
 /obj/structure/curtain{
-	color = '#6d2375';
+	color = "#6d2375";
 	anchored = 0
 	},
 /obj/structure/closet/cabinet,
@@ -135138,9 +135126,7 @@
 /turf/closed/wall/r_wall/gothic/rivet,
 /area/f13/reno_tribal)
 "ycu" = (
-/obj/effect/decal/cleanable/flour{
-	name = ""flour""
-	},
+/obj/effect/decal/cleanable/flour,
 /obj/structure/nest/mob/raider/firefighter{
 	dir = 1
 	},
