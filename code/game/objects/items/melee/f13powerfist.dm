@@ -239,7 +239,7 @@
 
 /obj/item/shishkebabpack/equipped(mob/user, slot)
 	..()
-	if(slot != SLOT_BACK)
+	if(slot != ITEM_SLOT_BACK)
 		remove_sword()
 
 /obj/item/shishkebabpack/proc/remove_sword()

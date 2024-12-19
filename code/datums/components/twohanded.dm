@@ -146,7 +146,7 @@
 /datum/component/two_handed/proc/on_equip(datum/source, mob/user, slot)
 	SIGNAL_HANDLER
 
-	if(require_twohands && (slot == SLOT_HANDS)) // force equip the item
+	if(require_twohands && (slot == ITEM_SLOT_POCKETS)) // force equip the item
 		wield(user)
 	if(!user.is_holding(parent) && wielded && !require_twohands)
 		unwield(user)
@@ -286,7 +286,7 @@
 	parent_item.update_icon()
 
 	if(istype(user)) // tk showed that we might not have a mob here
-		if(user.get_item_by_slot(SLOT_BACK) == parent)
+		if(user.get_item_by_slot(ITEM_SLOT_BACK) == parent)
 			user.update_inv_back()
 		else
 			user.update_inv_hands()

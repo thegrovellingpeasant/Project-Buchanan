@@ -44,7 +44,7 @@ Chief Engineer
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
+	pda_slot = ITEM_SLOT_LPOCKET
 	chameleon_extras = /obj/item/stamp/ce
 
 /datum/outfit/job/ce/rig
@@ -56,7 +56,7 @@ Chief Engineer
 	suit_store = /obj/item/tank/internals/oxygen
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = null
-	internals_slot = SLOT_S_STORE
+	internals_slot = ITEM_SLOT_SUITSTORE
 
 
 /*
@@ -98,7 +98,7 @@ Station Engineer
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
+	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/engineer/gloved
@@ -112,7 +112,7 @@ Station Engineer
 	suit = /obj/item/clothing/suit/space/hardsuit/engine
 	suit_store = /obj/item/tank/internals/oxygen
 	head = null
-	internals_slot = SLOT_S_STORE
+	internals_slot = ITEM_SLOT_SUITSTORE
 
 
 /*
@@ -149,7 +149,7 @@ Atmospheric Technician
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
+	pda_slot = ITEM_SLOT_LPOCKET
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/atmos/rig
@@ -158,4 +158,4 @@ Atmospheric Technician
 	mask = /obj/item/clothing/mask/gas
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/atmos
 	suit_store = /obj/item/tank/internals/oxygen
-	internals_slot = SLOT_S_STORE
+	internals_slot = ITEM_SLOT_SUITSTORE

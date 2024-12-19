@@ -70,7 +70,7 @@
 //				loaded_atom.forceMove(T)
 //				continue
 //			var/obj/item/loaded = loaded_atom
-//			var/obj/item/storage/S = H.get_item_by_slot(SLOT_BACK)     // These lines would try to put it in their backpack, then failing that, their hands, then the ground - we just do ground.
+//			var/obj/item/storage/S = H.get_item_by_slot(ITEM_SLOT_BACK)     // These lines would try to put it in their backpack, then failing that, their hands, then the ground - we just do ground.
 //			if(istype(S))
 //				SEND_SIGNAL(S, COMSIG_TRY_STORAGE_INSERT,loaded, TRUE, H)	//Force it into their backpack
 //				continue
@@ -146,7 +146,7 @@
 
 
 	//M.put_in_hands(loaded_box)								   // Try to put the object in their hands
-	//var/obj/item/storage/S = M.get_item_by_slot(SLOT_BACK)     // These lines would try to put it in their backpack, then failing that, their hands, then the ground - we just do ground.
+	//var/obj/item/storage/S = M.get_item_by_slot(ITEM_SLOT_BACK)     // These lines would try to put it in their backpack, then failing that, their hands, then the ground - we just do ground.
 
 	//S.contents += loaded_box
 	//if(istype(S))

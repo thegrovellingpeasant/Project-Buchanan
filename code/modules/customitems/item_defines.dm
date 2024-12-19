@@ -26,7 +26,7 @@ All custom items with worn sprites must follow the contained sprite system: http
 	item_state = "corvo_cigarette"
 	body_parts_covered = 0
 	w_class = 2
-	slot_flags = SLOT_EARS | SLOT_MASK
+	slot_flags = ITEM_SLOT_EARS | SLOT_MASK
 	var/active = FALSE
 
 /obj/item/clothing/mask/fluff/corvo_cigarette/attack_self(mob/user)
