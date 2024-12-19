@@ -289,11 +289,14 @@
 	frequency.post_signal(src, status_signal)
 
 /obj/machinery/computer/cargo/attackby(obj/item/I, mob/living/user, params)
-	. = ..()
 	if(istype(I, /obj/item/stack/f13Cash))
 		add_caps_to_credits(I)
+		return
 	else
 		attack_hand(user)
+		return
+	return .=..()
+
 
 /obj/machinery/computer/cargo/proc/add_caps_to_credits(obj/item/stack/C, datum/export_report/report)
 	report.total_value += C.amount
