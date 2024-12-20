@@ -1749,4 +1749,7 @@
 /obj/item/card/id/reno/heisters
 	name = "NCR citizenship permit"
 	desc = "A plain, though worn, ID permit for an NCR citizen... or is it?"
+	icon_state = "doctor"
+	item_state = "card-doctor"
 	access = list(ACCESS_HEIST)
+	uses_overlays = FALSE

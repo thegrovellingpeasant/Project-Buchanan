@@ -648,7 +648,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 5
+	player_chance = 100
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off
@@ -659,7 +659,6 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
 	user.equip_to_slot(heister_id, SLOT_WEAR_ID)
 	user.put_in_inactive_hand(heist_note)
-/obj/item/card/id/reno/heisters
 
 /datum/faction_task/individual_player/heist/New()
 	..()
