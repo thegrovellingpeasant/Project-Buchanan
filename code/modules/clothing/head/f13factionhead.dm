@@ -46,7 +46,7 @@
 
 /obj/item/clothing/head/helmet/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_HEAD))*/
+	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_HEAD))*/
 
 //Raider
 /obj/item/clothing/head/helmet/f13/raider

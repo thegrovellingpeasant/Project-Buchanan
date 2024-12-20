@@ -182,9 +182,7 @@
 	selected_items = selected_datum.ui_data()
 
 	generate_previews()
-	spawn()
-		if (usr)
-			ui_interact(usr)
+	SStgui.update_uis(src)
 
 //This proc creates preview images for an outfit, if needed
 /datum/component/loadout_selector/proc/generate_previews()
@@ -197,7 +195,7 @@
 	if (!M.client)
 		return
 
-	if (preview_images[selected_datum.name] && !selected_datum.contains_randomisation)
+	if (preview_images[selected_datum.name])
 		return //The images have already been generated
 
 	//They've not been made yet, lets do them. First of all, we make a mannequin based on the user's current appearance
@@ -215,3 +213,13 @@
 
 	preview_images[selected_datum.name] = cached_icons
 
+///Makes a human dummy with the user's preferences, which we use for the loadout manager's UI.
+///The outfit is put in later, we only handle looking similar.
+/datum/component/loadout_selector/proc/duplicate_human(mob/living/carbon/human/duplicated_human)
+	var/mob/living/carbon/human/dummy/mannequin = new
+
+	var/datum/preferences/duplicated_preferences = duplicated_human.get_preferences()
+	if(duplicated_preferences)
+		duplicated_preferences.copy_to(mannequin)
+
+	return mannequin

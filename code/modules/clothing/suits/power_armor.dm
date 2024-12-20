@@ -106,10 +106,10 @@
 	var/mob/living/carbon/human/H = user
 	if(src == H.wear_suit) //Suit is already equipped
 		return ..()
-	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_WEAR_SUIT && requires_training)
+	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == ITEM_SLOT_OCLOTHING && requires_training)
 		to_chat(user, span_warning("You don't have the proper training to operate the power armor!"))
 		return 0
-	if(slot == SLOT_WEAR_SUIT)
+	if(slot == ITEM_SLOT_OCLOTHING)
 		ADD_TRAIT(user, TRAIT_STUNIMMUNE,	"stun_immunity")
 		ADD_TRAIT(user, TRAIT_PUSHIMMUNE,	"push_immunity")
 		return ..()
