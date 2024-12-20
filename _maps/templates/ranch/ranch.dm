@@ -1,6 +1,10 @@
 /obj/effect/landmark/map_load_mark/brahmin_ranch_random
 	name = "Ranch House"
-	templates = list( "brahmin_ranch_1","brahmin_ranch_2","brahmin_ranch_3" )
+	templates = list(
+		"brahmin_ranch_1",
+		"brahmin_ranch_2",
+		"brahmin_ranch_3",
+	)
 
 /datum/map_template/fallout/ranch1
 	name = "Brahmin Ranch"
@@ -16,4 +20,3 @@
 	name = "Brahmin Ranch V3"
 	id = "brahmin_ranch_3"
 	mappath = "_maps/map_files/templates/ranch/brahmin_ranch_3.dmm"
-

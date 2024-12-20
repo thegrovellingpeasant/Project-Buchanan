@@ -14606,7 +14606,6 @@
 /area/f13/building)
 "aUT" = (
 /obj/structure/table/wood,
-/obj/item/dildo,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aUU" = (
@@ -15370,7 +15369,6 @@
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/bundle/costume/chicken,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/item/dildo,
 /obj/item/clothing/suit/f13/sexymaid,
 /obj/item/clothing/head/helmet/f13/brahmincowboyhat,
 /obj/item/clothing/suit/armor/f13/brahmin_leather_duster,
@@ -28508,7 +28506,6 @@
 "bWH" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
-/obj/item/dildo,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -31804,7 +31801,6 @@
 "cnq" = (
 /obj/structure/table/wood/fancy,
 /obj/item/restraints/handcuffs,
-/obj/item/dildo,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "cnr" = (
@@ -41666,10 +41662,6 @@
 "pmD" = (
 /obj/structure/closet{
 	storage_capacity = 10
-	},
-/obj/item/dildo,
-/obj/item/dildo{
-	icon_state = "dildo"
 	},
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/mask/muzzle,
