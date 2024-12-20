@@ -38203,6 +38203,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_east_building)
+"gNY" = (
+/obj/structure/simple_door/metal,
+/turf/closed/wall/mineral/concrete,
+/area/f13/reno_subway)
 "gOf" = (
 /turf/open/indestructible/ground/outside/reno_road/vert{
 	icon_state = "pothole_gravel1"
@@ -75216,6 +75220,11 @@
 	dir = 1;
 	smooth = 0
 	},
+/obj/item/reagent_containers/food/drinks/bottle/champagne{
+	name = "20,000 Cap Bottle";
+	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent.";
+	pixel_y = 9
+	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "nzz" = (
@@ -76486,8 +76495,6 @@
 "nKs" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/item/storage/secure/briefcase,
-/obj/item/storage/box/deputy_badges,
-/obj/item/storage/box/deputy_badges,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/nrpd)
 "nKB" = (
@@ -89922,7 +89929,7 @@
 "qdw" = (
 /obj/item/reagent_containers/glass/bucket{
 	pixel_x = 12;
-	plane = 1;
+	plane = 0.1;
 	pixel_y = -4
 	},
 /turf/open/floor/plating/dirt/dark{
@@ -115296,7 +115303,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/weather/dirt{
-	dir = 6
+	dir = 6;
 	},
 /obj/structure/disposalpipe/broken{
 	dir = 4;
@@ -142916,7 +142923,7 @@ sEa
 eDl
 eLk
 eLk
-sBb
+gNY
 eLk
 eLk
 eLk
