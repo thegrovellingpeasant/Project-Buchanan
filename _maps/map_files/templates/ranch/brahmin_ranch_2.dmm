@@ -654,15 +654,10 @@
 /area/f13/village)
 "cj" = (
 /obj/structure/closet/cabinet,
-/obj/item/dildo,
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "ck" = (
 /obj/structure/table/wood/settler,
-/obj/item/dildo{
-	icon_state = "dildo";
-	layer = 1.1
-	},
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /turf/open/floor/f13/wood,
 /area/f13/village)
