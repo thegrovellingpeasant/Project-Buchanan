@@ -575,7 +575,7 @@
 	momentum_speed = max(momentum_speed_x, momentum_speed_y)
 
 /obj/item/flightpack/item_action_slot_check(slot)
-	return slot == SLOT_BACK
+	return slot == ITEM_SLOT_BACK
 
 /obj/item/flightpack/proc/enable_stabilizers()
 	if(requires_suit && suit && !suit.deployedshoes)
@@ -731,7 +731,7 @@
 			clothing_flags &= ~NOSLIP
 
 /obj/item/clothing/shoes/flightshoes/item_action_slot_check(slot)
-	return slot == SLOT_SHOES
+	return slot == ITEM_SLOT_FEET
 
 /obj/item/clothing/shoes/flightshoes/proc/delink_suit()
 	if(suit)
@@ -896,7 +896,7 @@
 		if(user.back)
 			usermessage("You're already wearing something on your back!", "boldwarning")
 			return FALSE
-		user.equip_to_slot_if_possible(pack,SLOT_BACK,0,0,1)
+		user.equip_to_slot_if_possible(pack,ITEM_SLOT_BACK,0,0,1)
 		pack.item_flags |= NODROP
 		resync()
 		user.visible_message(span_notice("A [pack.name] extends from [user]'s [name] and clamps to [user.p_their()] back!"))
@@ -934,7 +934,7 @@
 		if(user.shoes)
 			usermessage("You're already wearing something on your feet!", "boldwarning")
 			return FALSE
-		user.equip_to_slot_if_possible(shoes,SLOT_SHOES,0,0,1)
+		user.equip_to_slot_if_possible(shoes,ITEM_SLOT_FEET,0,0,1)
 		shoes.item_flags |= NODROP
 		user.visible_message(span_notice("[user]'s [name] extends a pair of [shoes.name] over [user.p_their()] feet!"))
 		user.update_inv_wear_suit()
@@ -965,7 +965,7 @@
 /obj/item/clothing/suit/space/hardsuit/flightsuit/equipped(mob/M, slot)
 	if(ishuman(M))
 		user = M
-	if(slot != SLOT_WEAR_SUIT)
+	if(slot != ITEM_SLOT_OCLOTHING)
 		if(deployedpack)
 			retract_flightpack(TRUE)
 		if(deployedshoes)
@@ -1000,7 +1000,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/flightsuit/attackby(obj/item/I, mob/wearer, params)
 	user = wearer
-	if(src == user.get_item_by_slot(SLOT_WEAR_SUIT))
+	if(src == user.get_item_by_slot(ITEM_SLOT_OCLOTHING))
 		usermessage("You can not perform any service without taking the suit off!", "boldwarning")
 		return FALSE
 	else if(locked)

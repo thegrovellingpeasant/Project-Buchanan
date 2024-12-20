@@ -73,7 +73,7 @@
 	. = ..()
 	. += span_boldnotice("Alt click to drain reagents.")
 
-/obj/machinery/pool/controller/Initialize()
+/obj/machinery/pool/controller/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSfastprocess, src)
 	create_reagents(1000)

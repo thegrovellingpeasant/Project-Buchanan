@@ -286,4 +286,4 @@ SUBSYSTEM_DEF(matchmaking)
 	<br>Bounty will be paid upon delivery of body or proof of death."
 
 	var/obj/item/poster/wanted/bounty = new(pref_holder.loc, photo.picture.picture_image, perp_name, description, "WANTED")
-	pref_holder.equip_to_slot_if_possible(bounty, SLOT_IN_BACKPACK, TRUE, TRUE, FALSE, TRUE)
+	pref_holder.equip_to_slot_if_possible(bounty, ITEM_SLOT_BACKPACK, TRUE, TRUE, FALSE, TRUE)

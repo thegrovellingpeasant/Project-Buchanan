@@ -115,9 +115,9 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	assigned_tool = gangtool
 
 	var/list/slots = list (
-		"backpack" = SLOT_IN_BACKPACK,
-		"left pocket" = SLOT_L_STORE,
-		"right pocket" = SLOT_R_STORE
+		"backpack" = ITEM_SLOT_BACKPACK,
+		"left pocket" = ITEM_SLOT_LPOCKET,
+		"right pocket" = ITEM_SLOT_RPOCKET
 	)
 
 	var/where = new_leader.equip_in_one_of_slots(gangtool, slots, FALSE)

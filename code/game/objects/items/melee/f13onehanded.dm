@@ -386,7 +386,7 @@
 	throw_speed = 3
 	throw_range = 3
 	sharpness = SHARP_NONE
-	slot_flags = SLOT_BELT
+	slot_flags = ITEM_SLOT_BELT
 
 /obj/item/melee/onehanded/club/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -699,7 +699,7 @@
 		mob_overlay_icon = righthand_file
 	if(!unarmed_adjusted)
 		mob_overlay_icon = lefthand_file
-	if(ishuman(user) && slot == SLOT_GLOVES)
+	if(ishuman(user) && slot == ITEM_SLOT_GLOVES)
 		ADD_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
 			H.dna.species.punchdamagehigh = force + 8 //The +8 damage is what brings up your punch damage to the unarmed weapon's force fully
@@ -709,7 +709,7 @@
 				H.dna.species.attack_verb = pick("slash","slice","rip","tear","cut","dice")
 			if(sharpness == SHARP_NONE)
 				H.dna.species.attack_verb = pick("punch","jab","whack")
-	if(ishuman(user) && slot != SLOT_GLOVES && !H.gloves)
+	if(ishuman(user) && slot != ITEM_SLOT_GLOVES && !H.gloves)
 		REMOVE_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(!HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
 			H.dna.species.punchdamagehigh = 1

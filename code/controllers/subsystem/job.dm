@@ -556,7 +556,8 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/setup_officer_positions()
 	var/datum/job/J = SSjob.GetJob("Vault-tec Security")
 	if(!J)
-		CRASH("setup_officer_positions(): Security officer job is missing")
+		log_job_debug("setup_officer_positions(): There is no assigned/dedicated Security Officer job, no positions will be scaled.")
+		return
 
 	var/ssc = CONFIG_GET(number/security_scaling_coeff)
 	if(ssc > 0)
@@ -732,9 +733,9 @@ SUBSYSTEM_DEF(job)
 				permitted = FALSE
 			if(G.donoritem && !G.donator_ckey_check(the_mob.client.ckey))
 				permitted = FALSE
-			if(!equipbackpackstuff && G.slot == SLOT_IN_BACKPACK)//snowflake check since plopping stuff in the backpack doesnt work for pre-job equip loadout stuffs
+			if(!equipbackpackstuff && G.slot == ITEM_SLOT_BACKPACK)//snowflake check since plopping stuff in the backpack doesnt work for pre-job equip loadout stuffs
 				permitted = FALSE
-			if(equipbackpackstuff && G.slot != SLOT_IN_BACKPACK)//ditto
+			if(equipbackpackstuff && G.slot != ITEM_SLOT_BACKPACK)//ditto
 				permitted = FALSE
 			if(!permitted)
 				continue
@@ -754,7 +755,7 @@ SUBSYSTEM_DEF(job)
 							I.forceMove(get_turf(C))
 						else
 							qdel(I)
-				else if(!M.equip_to_slot_if_possible(I, SLOT_IN_BACKPACK, disable_warning = TRUE, bypass_equip_delay_self = TRUE)) // Otherwise, try to put it in the backpack
+				else if(!M.equip_to_slot_if_possible(I, ITEM_SLOT_BACKPACK, disable_warning = TRUE, bypass_equip_delay_self = TRUE)) // Otherwise, try to put it in the backpack
 					if(can_drop)
 						I.forceMove(get_turf(M)) // If everything fails, just put it on the floor under the mob.
 					else

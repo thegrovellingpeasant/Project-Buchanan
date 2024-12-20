@@ -1,7 +1,7 @@
 /datum/gear/head
 	category = LOADOUT_CATEGORY_HEAD
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_GENERAL
-	slot = SLOT_HEAD
+	slot = ITEM_SLOT_HEAD
 
 /datum/gear/head/baseball
 	name = "ballcap"

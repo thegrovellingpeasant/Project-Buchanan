@@ -568,7 +568,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	..()
 	var/obj/item/storage/box/recruit_forms/forms = new(get_turf(user))
 	forms.set_task(src)
-	user.equip_to_slot_if_possible(forms, SLOT_IN_BACKPACK)
+	user.equip_to_slot_if_possible(forms, ITEM_SLOT_BACKPACK)
 
 /datum/faction_task/individual_faction/recruit/calculate_score()
 	if(recruits >= recruit_target)
