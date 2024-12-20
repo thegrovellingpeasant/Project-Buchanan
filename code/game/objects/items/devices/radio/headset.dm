@@ -514,7 +514,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_nrpd
 	name = "NRPD radio headset"
-	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :p."
+	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :j."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_nrpd
 

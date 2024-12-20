@@ -137,8 +137,8 @@
 #define RADIO_TOKEN_VANGRAFFS ":v"
 
 #define RADIO_CHANNEL_NRPD "NRPD"
-#define RADIO_KEY_NRPD "p"
-#define RADIO_TOKEN_NRPD ":p"
+#define RADIO_KEY_NRPD "j"
+#define RADIO_TOKEN_NRPD ":j"
 
 #define RADIO_CHANNEL_NCRCF "NCRCF"
 #define RADIO_KEY_NCRCF "w"
@@ -183,9 +183,9 @@
 #define FREQ_HOTEL 1399 //Hotel
 #define FREQ_BISHOPS 1401 // Bishops
 #define FREQ_WRIGHTS 1403 // Wrights
-#define FREQ_VANGRAFFS 1405 // Van Graffs
-#define FREQ_NRPD 1407 // New Reno Police Department
-#define FREQ_NCRCF 1409 // New California Correctional Facility
+#define FREQ_VANGRAFFS 1405 // Van  Graffs
+#define FREQ_NRPD 1409 // New Reno Police Department
+#define FREQ_NCRCF 1413 // New California Correctional Facility
 #define FREQ_GOVERNMENT 1311 // Government
 
 
