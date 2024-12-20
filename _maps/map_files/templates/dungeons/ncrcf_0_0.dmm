@@ -701,6 +701,26 @@
 	},
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/caves)
+"uL" = (
+/obj/structure/table/reinforced,
+/obj/machinery/mineral/processing_unit_console{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "terminal";
+	dir = 8;
+	pixel_y = 5;
+	desc = "Break this and the warden will have your ass."
+	},
+/obj/machinery/mineral/stacking_unit_console{
+	icon = 'icons/obj/computer.dmi';
+	icon_state = "terminal";
+	dir = 8;
+	pixel_y = -9;
+	pixel_x = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/caves)
 "vb" = (
 /obj/structure/railing/wood{
 	pixel_y = 15
@@ -1571,21 +1591,6 @@
 	pixel_y = 28;
 	pixel_x = -8
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/mineral/processing_unit_console{
-	icon = 'icons/obj/computer.dmi';
-	icon_state = "terminal";
-	dir = 8;
-	pixel_y = 5;
-	desc = "Break this and the warden will have your ass."
-	},
-/obj/machinery/mineral/stacking_unit_console{
-	icon = 'icons/obj/computer.dmi';
-	icon_state = "terminal";
-	dir = 8;
-	pixel_y = -9;
-	pixel_x = 4
-	},
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -2136,7 +2141,7 @@ Sy
 Ge
 Ge
 Ge
-Br
+Ge
 "}
 (19,1,1) = {"
 jL
@@ -2151,8 +2156,8 @@ Ge
 Ox
 De
 SY
+LD
 Ge
-Br
 "}
 (20,1,1) = {"
 Jm
@@ -2165,10 +2170,10 @@ Ge
 HR
 De
 LD
+LD
 Tu
 Th
 Ge
-Br
 "}
 (21,1,1) = {"
 Le
@@ -2181,10 +2186,10 @@ dx
 mB
 TT
 ST
+uL
 qJ
 BS
 Ge
-Br
 "}
 (22,1,1) = {"
 Le
@@ -2195,12 +2200,12 @@ CD
 CD
 dx
 nh
-Fl
+LD
+LD
 Fl
 Fl
 Fl
 Ge
-Br
 "}
 (23,1,1) = {"
 Jm
@@ -2214,9 +2219,9 @@ JQ
 Dj
 JO
 RM
+JO
 hh
 Ge
-Br
 "}
 (24,1,1) = {"
 CD
@@ -2232,7 +2237,7 @@ Ge
 Ge
 Ge
 Ge
-Br
+Ge
 "}
 (25,1,1) = {"
 CD
