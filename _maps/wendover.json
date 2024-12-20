@@ -3,9 +3,7 @@
 	"map_path": "map_files/Wendover",
 	"map_file": [
 		"Dungeons.dmm",
-		"Wendover-Underground-1.dmm",
-		"Wendover-Surface-2.dmm",
-		"Wendover-Above-3.dmm"
+		"Wendover.dmm"
 	],
 	"station_ruin_budget":0,
 	"space_ruin_levels":0,
