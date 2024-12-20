@@ -5409,7 +5409,7 @@
 	dir = 8
 	},
 /obj/structure/barricade/wooden{
-	layer = 2.s9
+	layer = 2.9
 	},
 /obj/structure/lattice/catwalk{
 	icon = 'icons/fallout/turfs/ground.dmi';
@@ -19914,7 +19914,7 @@
 /obj/structure/ladder/unbreakable/rvladdertop{
 	id = "rvladder";
 	height = 3;
-	layer = 2.s9
+	layer = 2.9
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_wasteland)
@@ -38203,10 +38203,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/reno_east_building)
-"gNY" = (
-/obj/structure/simple_door/metal,
-/turf/closed/wall/mineral/concrete,
-/area/f13/reno_subway)
 "gOf" = (
 /turf/open/indestructible/ground/outside/reno_road/vert{
 	icon_state = "pothole_gravel1"
@@ -44516,7 +44512,7 @@
 /obj/structure/table/reinforced,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /turf/open/floor/f13/green,
@@ -48565,7 +48561,7 @@
 /area/f13/reno_sewers)
 "iJM" = (
 /obj/structure/barricade/wooden{
-	layer = 2.s9
+	layer = 2.9
 	},
 /obj/structure/barricade/bars{
 	layer = 2.99
@@ -72177,7 +72173,7 @@
 /area/f13/reno_west_building)
 "mWb" = (
 /obj/structure/barricade/wooden{
-	layer = 2.s9
+	layer = 2.9
 	},
 /obj/structure/barricade/tentclothedge{
 	opacity = 0;
@@ -75220,12 +75216,6 @@
 	dir = 1;
 	smooth = 0
 	},
-/obj/item/reagent_containers/food/drinks/bottle/champagne{
-	list_reagents = list(/datum/reagent/consumable/ethanol/helianthus=100,/datum/reagent/consumable/ethanol/admiralty=150,/datum/reagent/consumable/ethanol/godfather=100,/datum/reagent/consumable/ethanol/red_queen=100,/datum/reagent/consumable/ethanol/old_timer=50);
-	name = "20,000 Cap Bottle";
-	desc = "The label reads: The Red Reaver & The Golden Oracle, Siempre Viva. The bottle is full of a blue liquid, with flecks of gold and a red metal suspended inside, it seems to glow slightly, a tag attached to the cork reads 'For services rendered. Take care of yourself, from Fats Dagmara.' Small print on the back states the bottle is under heavy pressure and warns any effects of consumption may be permanent.";
-	pixel_y = 9
-	},
 /turf/open/floor/carpet/green,
 /area/f13/reno_sharkclub)
 "nzz" = (
@@ -76496,6 +76486,8 @@
 "nKs" = (
 /obj/structure/closet/cabinet/anchored,
 /obj/item/storage/secure/briefcase,
+/obj/item/storage/box/deputy_badges,
+/obj/item/storage/box/deputy_badges,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/nrpd)
 "nKB" = (
@@ -89930,7 +89922,7 @@
 "qdw" = (
 /obj/item/reagent_containers/glass/bucket{
 	pixel_x = 12;
-	plane = .1;
+	plane = 1;
 	pixel_y = -4
 	},
 /turf/open/floor/plating/dirt/dark{
@@ -93364,7 +93356,7 @@
 /area/f13/reno_subway)
 "qLn" = (
 /obj/structure/barricade/wooden{
-	layer = 2.s9
+	layer = 2.9
 	},
 /obj/structure/barricade/bars{
 	layer = 2.99
@@ -94376,7 +94368,7 @@
 /obj/structure/table/reinforced,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/white,
@@ -98488,7 +98480,7 @@
 /obj/structure/table/reinforced,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /obj/machinery/light/small{
@@ -99027,7 +99019,7 @@
 /obj/structure/table,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /turf/open/floor/f13/green/lit,
@@ -100996,7 +100988,7 @@
 	opacity = 0
 	},
 /obj/structure/barricade/wooden{
-	layer = 2.s9
+	layer = 2.9
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/reno_subway)
@@ -112511,7 +112503,7 @@
 /obj/structure/table/reinforced,
 /obj/item/phone{
 	pixel_y = 3;
-	desc = "Should anything ever go wrong..."3;
+	desc = "Should anything ever go wrong...";
 	pixel_x = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
@@ -115304,8 +115296,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/weather/dirt{
-	dir = 6;
-	CanAtmosPass = ss
+	dir = 6
 	},
 /obj/structure/disposalpipe/broken{
 	dir = 4;
@@ -135546,7 +135537,6 @@
 "ygu" = (
 /obj/structure/nest/mob/ghoulcommando{
 	name = "The Warden";
-	desc = s;
 	dir = 4
 	},
 /turf/open/floor/plating/tunnel,
@@ -142926,7 +142916,7 @@ sEa
 eDl
 eLk
 eLk
-gNY
+sBb
 eLk
 eLk
 eLk

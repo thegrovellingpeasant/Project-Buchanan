@@ -318,7 +318,7 @@
 
 /obj/structure/closet/crate/mcgruffin/experimental_crate
 	name = "The Prototype"
-	desc = "It looks like it could be opened with the right crowbar..."
+	desc = "A crate made of titanium, with robust grooves going down its side. There's probably something good in here. If only you had the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "prototype"
 	dense_when_open = TRUE
@@ -397,8 +397,8 @@
 	return
 
 /obj/structure/closet/crate/mcgruffin/strangebird
-	name = "The Prototype"
-	desc = "It looks like it could be opened with the right crowbar..."
+	name = "Strange Bird"
+	desc = "It has an ominous feeling to it. Its eyes seem to drift along with you. You think you could open it with the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "bird"
 	dense_when_open = TRUE
@@ -483,7 +483,7 @@
 
 /obj/structure/closet/crate/mcgruffin/ark
 	name = "The Ark"
-	desc = "It looks like it could be opened with the right crowbar..."
+	desc = "It looks very, very old. Something powerful is surely inside it. If only you had the right crowbar..."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "ark"
 	dense_when_open = TRUE
