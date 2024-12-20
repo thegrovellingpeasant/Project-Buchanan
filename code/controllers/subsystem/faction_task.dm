@@ -648,7 +648,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 10
+	player_chance = 5
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off

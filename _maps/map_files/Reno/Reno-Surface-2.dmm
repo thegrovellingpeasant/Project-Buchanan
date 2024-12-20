@@ -8748,10 +8748,7 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "penthouse_ent"
 	},
-/obj/machinery/door/airlock/vault{
-	req_access_txt = "168";
-	name = "mysterious door"
-	},
+/obj/machinery/door/airlock/vault/heist,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/reno_tribal)
 "dKM" = (
@@ -34646,16 +34643,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/desert/reno,
 /area/f13/reno_wasteland)
-"otM" = (
-/obj/machinery/door/airlock/vault{
-	req_access_txt = "168";
-	name = "mysterious door"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "penthouse_ent"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/reno_tribal)
 "otT" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/reagent_containers/food/snacks/badrecipe{
@@ -90951,7 +90938,7 @@ iqE
 dIN
 dIN
 gJl
-otM
+dKK
 dbO
 dzi
 dzi

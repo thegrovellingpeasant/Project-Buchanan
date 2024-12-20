@@ -402,6 +402,10 @@
 	damage_deflection = 44
 	security_level = 6
 
+/obj/machinery/door/airlock/vault/heist
+	name = "mysterious door"
+	req_one_access = (ACCESS_HEIST)
+
 //////////////////////////////////
 /*
 	Hatch Airlocks
