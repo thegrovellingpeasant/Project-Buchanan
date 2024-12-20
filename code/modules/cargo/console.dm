@@ -296,5 +296,6 @@
 
 
 /obj/machinery/computer/cargo/proc/add_caps_to_credits(obj/item/stack/C, datum/export_report/report)
-	report.total_value += C.amount
-	C.use(C.amount)
+	if (report)
+		report.total_value[src] += 5000
+		C.use(C.amount)
