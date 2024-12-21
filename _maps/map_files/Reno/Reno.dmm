@@ -99087,7 +99087,6 @@
 /area/f13/reno_prison)
 "qJt" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/storage/bag/money/small/banker,
 /turf/open/indestructible/ground/outside/reno_sidewalk{
 	icon_state = "horizontalwest0"
 	},
