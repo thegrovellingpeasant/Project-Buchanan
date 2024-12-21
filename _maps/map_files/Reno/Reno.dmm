@@ -8226,10 +8226,6 @@
 	},
 /turf/open/floor/carpet/arcade/lit,
 /area/f13/reno_west_building)
-"bto" = (
-/obj/machinery/autolathe/ammo/unlocked_basic,
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
 "btv" = (
 /obj/structure/pool/ladder/invisible,
 /turf/open/water/deep,
@@ -25369,13 +25365,10 @@
 /turf/open/floor/wood/f13/oakbroken/lit,
 /area/f13/reno_east_building)
 "emA" = (
-/obj/structure/simple_door/metal/store{
-	name = "shark club"
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "shark_lockdown"
-	},
-/turf/open/floor/carpet/reno/evil3,
+/turf/open/floor/clockwork/reebe,
 /area/f13/reno_sharkclub)
 "emC" = (
 /obj/structure/table,
@@ -27475,10 +27468,8 @@
 	},
 /area/f13/reno_prison_yard)
 "eFp" = (
-/obj/structure/statue/sandstone/venus{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/obj/structure/window/gothic/fulltile,
+/turf/open/space/basic,
 /area/f13/reno_sharkclub)
 "eFr" = (
 /obj/effect/overlay/gravel/edge{
@@ -55549,8 +55540,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/shack)
 "jrd" = (
+/obj/structure/statue/sandstone/venus{
+	anchored = 1
+	},
 /turf/open/floor/clockwork/reebe,
-/area/f13/reno_streets)
+/area/f13/reno_sharkclub)
 "jri" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -109426,11 +109420,9 @@
 	},
 /area/f13/reno_streets)
 "suh" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/reno_sharkclub)
+/obj/machinery/autolathe/ammo/unlocked_basic,
+/turf/open/transparent/openspace/air,
+/area/f13/reno_wasteland)
 "suj" = (
 /obj/structure/chair/sofa/luxury/right{
 	dir = 1
@@ -142550,13 +142542,10 @@
 /turf/open/indestructible/ground/outside/reno_sidewalk/bottom,
 /area/f13/reno_streets)
 "xTi" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "shark_lockdown"
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/structure/simple_door/metal/store{
-	name = "shark club"
-	},
-/turf/open/floor/carpet/reno/evil3,
+/turf/open/floor/clockwork/reebe,
 /area/f13/reno_sharkclub)
 "xTm" = (
 /obj/item/blanket/ruined,
@@ -202304,8 +202293,8 @@ wDq
 mlc
 oRh
 fax
-jrd
-jrd
+oYN
+kMP
 kMP
 kMP
 xqi
@@ -202456,8 +202445,8 @@ wDq
 dtp
 viH
 fax
-jrd
-jrd
+kMP
+kMP
 xTi
 bWm
 bWm
@@ -202608,12 +202597,12 @@ gOf
 hDS
 eag
 fax
-kMP
-emA
-kMP
-suh
-bWm
 eFp
+emA
+jrd
+bWm
+bWm
+bWm
 bWm
 bWm
 hYN
@@ -202760,9 +202749,9 @@ wDq
 ksT
 eag
 fax
-kMP
+eFp
 qOn
-hBd
+qOn
 qOn
 vUc
 vUc
@@ -247443,7 +247432,7 @@ dJD
 dJD
 dJD
 dJD
-bto
+suh
 tGX
 tGX
 tGX
