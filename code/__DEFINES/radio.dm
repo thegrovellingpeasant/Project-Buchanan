@@ -137,8 +137,8 @@
 #define RADIO_TOKEN_VANGRAFFS ":v"
 
 #define RADIO_CHANNEL_NRPD "NRPD"
-#define RADIO_KEY_NRPD "e"
-#define RADIO_TOKEN_NRPD ":e"
+#define RADIO_KEY_NRPD "p"
+#define RADIO_TOKEN_NRPD ":p"
 
 #define RADIO_CHANNEL_NCRCF "NCRCF"
 #define RADIO_KEY_NCRCF "w"

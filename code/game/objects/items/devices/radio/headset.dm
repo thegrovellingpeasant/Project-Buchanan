@@ -421,7 +421,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_usps
 	name = "post office radio headset"
-	desc = "This is used by the town.\nTo access the postal channel, use :p. \nTo access the town channel, use :f."
+	desc = "This is used by the town.\nTo access the postal channel, use :s. \nTo access the town channel, use :f."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_usps
 
@@ -514,7 +514,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_nrpd
 	name = "NRPD radio headset"
-	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :e."
+	desc = "This is used by the NRPD. \nTo access the NRPD channel, use :p."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_nrpd
 
