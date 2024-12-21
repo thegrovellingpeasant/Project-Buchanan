@@ -48,6 +48,7 @@
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/medium = 1
@@ -93,6 +94,7 @@
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/meager = 1
@@ -312,6 +314,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/medium = 1
 		)
@@ -355,6 +358,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/meager = 1
 		)

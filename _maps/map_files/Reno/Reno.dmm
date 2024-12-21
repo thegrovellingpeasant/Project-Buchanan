@@ -17118,6 +17118,10 @@
 	},
 /turf/open/floor/f13/green,
 /area/f13/raiders)
+"cSq" = (
+/obj/machinery/autolathe/ammo/unlocked_basic,
+/turf/open/transparent/openspace/air,
+/area/f13/reno_wasteland)
 "cSr" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -74561,7 +74565,7 @@
 /turf/open/indestructible/ground/outside/dirt/west,
 /area/f13/reno_streets)
 "mAC" = (
-/obj/machinery/autolathe/ammo,
+/obj/machinery/autolathe/ammo/unlocked_basic,
 /turf/open/floor/f13/dark,
 /area/f13/reno_sharkclub_vault)
 "mAD" = (
@@ -247445,7 +247449,7 @@ dJD
 dJD
 dJD
 dJD
-tGX
+cSq
 tGX
 tGX
 tGX
