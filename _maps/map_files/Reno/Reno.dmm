@@ -19321,6 +19321,10 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/reno_road/horizontaltopborder,
 /area/f13/reno_streets)
+"dkD" = (
+/obj/machinery/autolathe/ammo/unlocked_basic,
+/turf/open/transparent/openspace/air,
+/area/f13/reno_wasteland)
 "dkI" = (
 /obj/item/trash/can,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -27468,9 +27472,11 @@
 	},
 /area/f13/reno_prison_yard)
 "eFp" = (
-/obj/structure/window/gothic/fulltile,
-/turf/open/space/basic,
-/area/f13/reno_sharkclub)
+/obj/structure/junk/small/disco,
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "eFr" = (
 /obj/effect/overlay/gravel/edge{
 	dir = 9
@@ -55540,11 +55546,19 @@
 /turf/open/floor/plasteel/f13/vault_floor/darkerrusty,
 /area/f13/shack)
 "jrd" = (
-/obj/structure/statue/sandstone/venus{
-	anchored = 1
+/obj/structure/table/wood/junk,
+/obj/item/reagent_containers/food/drinks/beer{
+	pixel_y = 9;
+	pixel_x = 7
 	},
-/turf/open/floor/clockwork/reebe,
-/area/f13/reno_sharkclub)
+/obj/structure/reagent_dispensers/beerkeg{
+	pixel_y = 9;
+	pixel_x = -4
+	},
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "jri" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -94403,6 +94417,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo/lit,
 /area/f13/reno_east_building)
+"pSx" = (
+/obj/structure/girder,
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "pSK" = (
 /obj/structure/table/wood/greyscale/red,
 /obj/item/paper/crumpled{
@@ -99477,6 +99497,12 @@
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_streets)
+"qMD" = (
+/obj/structure/junk/small/coilroll4,
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "qMF" = (
 /obj/machinery/light{
 	dir = 4
@@ -109420,9 +109446,11 @@
 	},
 /area/f13/reno_streets)
 "suh" = (
-/obj/machinery/autolathe/ammo/unlocked_basic,
-/turf/open/transparent/openspace/air,
-/area/f13/reno_wasteland)
+/obj/structure/junk/locker,
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "suj" = (
 /obj/structure/chair/sofa/luxury/right{
 	dir = 1
@@ -120645,6 +120673,12 @@
 	},
 /turf/open/transparent/openspace/air,
 /area/f13/reno_streets)
+"ukd" = (
+/obj/structure/statue/sandstone/venus{
+	anchored = 1
+	},
+/turf/open/floor/clockwork/reebe,
+/area/f13/reno_sharkclub)
 "ukf" = (
 /obj/structure/sign/poster/contraband/donut_corp{
 	pixel_y = 32
@@ -131562,6 +131596,12 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/reno_subway)
+"wdB" = (
+/obj/structure/junk/small/pipes3,
+/turf/open/indestructible/ground/outside/reno_sidewalk{
+	icon_state = "outermiddle"
+	},
+/area/f13/reno_building)
 "wdG" = (
 /obj/structure/closet/crate/wicker,
 /turf/open/floor/wood/f13/oak/lit,
@@ -138551,6 +138591,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/lit,
 /area/f13/raiders)
+"xkN" = (
+/obj/structure/window/gothic/fulltile,
+/turf/open/space/basic,
+/area/f13/reno_sharkclub)
 "xkP" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -202597,9 +202641,9 @@ gOf
 hDS
 eag
 fax
-eFp
+xkN
 emA
-jrd
+ukd
 bWm
 bWm
 bWm
@@ -202749,7 +202793,7 @@ wDq
 ksT
 eag
 fax
-eFp
+xkN
 qOn
 qOn
 qOn
@@ -205950,15 +205994,15 @@ nhF
 mQi
 sge
 sge
-vna
+mQi
 vna
 tJi
 hcu
 hcu
 lMs
-vna
+mQi
 cVz
-cVz
+wdB
 tOq
 tOq
 tOq
@@ -206102,13 +206146,13 @@ uUO
 mQi
 uCI
 fYN
-vna
+mQi
 oQn
 qZh
 gBX
 gBX
 hcu
-vna
+mQi
 cVz
 cVz
 tOq
@@ -206254,14 +206298,14 @@ opM
 mQi
 uCI
 fYN
-vna
+mQi
 xOM
 qZh
 pHe
 kCv
 hcu
-vna
-cVz
+mQi
+suh
 cVz
 tOq
 daj
@@ -206406,15 +206450,15 @@ dmo
 jKP
 uCI
 fYN
-vna
+mQi
 iCr
 cnI
 ucC
 bGI
 hcu
-vna
-cVz
-cVz
+mQi
+jrd
+eFp
 tOq
 xew
 vcl
@@ -206558,15 +206602,15 @@ iBS
 mQi
 uCI
 uCI
-vna
+mQi
 amt
 qZh
 qZh
 gBX
 gVu
-vna
-cVz
-cVz
+mQi
+pSx
+qMD
 tOq
 pnb
 pnb
@@ -206710,13 +206754,13 @@ mQi
 mQi
 sPJ
 mlV
-vna
-vna
+mQi
+mQi
 hUQ
 hUQ
 hUQ
-vna
-vna
+mQi
+mQi
 bQa
 psF
 tOq
@@ -206868,9 +206912,9 @@ lRP
 lRP
 lRP
 lRP
-lRP
 ajw
 lRP
+lYt
 lRP
 oYN
 oYN
@@ -247432,7 +247476,7 @@ dJD
 dJD
 dJD
 dJD
-suh
+dkD
 tGX
 tGX
 tGX
