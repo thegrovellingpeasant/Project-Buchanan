@@ -197,11 +197,10 @@
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "iq" = (
-/obj/machinery/mineral/wasteland_vendor/reno/prison_firearms,
-/obj/effect/overlay/gravel/edge{
-	dir = 6
+/obj/machinery/mineral/wasteland_vendor/reno/prison_expedition,
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
 	},
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "iL" = (
 /obj/item/paper/bishops,
@@ -447,9 +446,6 @@
 /area/f13/caves)
 "nL" = (
 /obj/machinery/mineral/wasteland_vendor/reno/prison_recreation,
-/obj/effect/overlay/gravel/edge{
-	dir = 4
-	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -579,16 +575,13 @@
 	on = 1;
 	pixel_y = 3;
 	layer = 4.29;
-	pixel_x = 11
+	pixel_x = 11;
+	anchored = 1
 	},
 /obj/structure/rack/shelf_metal,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/gun/ballistic/rifle/mosin,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
+/obj/item/gun/ballistic/rifle/mosin{
+	pixel_y = 0
+	},
 /obj/item/ammo_box/a762,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -847,10 +840,7 @@
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "yM" = (
-/obj/machinery/mineral/wasteland_vendor/reno/prison_recreation,
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_corner"
-	},
+/obj/machinery/mineral/wasteland_vendor/reno/prison_accessories,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -1167,8 +1157,9 @@
 	},
 /area/f13/caves)
 "HT" = (
-/obj/effect/overlay/gravel/edge{
-	dir = 9
+/obj/structure/table/wood,
+/obj/item/toy/cards/deck{
+	pixel_y = 8
 	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
@@ -1400,7 +1391,6 @@
 /obj/machinery/mineral/wasteland_trader/renobuyer{
 	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
 	},
-/obj/effect/overlay/gravel/edge,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -1574,12 +1564,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "SG" = (
-/obj/machinery/mineral/wasteland_trader/renobuyer{
-	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
-	},
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_corner"
-	},
+/obj/structure/chair/stool/retro,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -1722,14 +1707,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"UB" = (
-/obj/effect/overlay/gravel/edge{
-	dir = 6
-	},
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
-	},
-/area/f13/caves)
 "Vi" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/wood/f13/oak{
@@ -1750,7 +1727,6 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/caves)
 "Wx" = (
-/obj/machinery/mineral/wasteland_vendor/reno/prison_expedition,
 /obj/effect/overlay/gravel/edge{
 	icon_state = "gravel_corner";
 	dir = 4
@@ -1807,10 +1783,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "Yp" = (
-/obj/machinery/mineral/wasteland_vendor/reno/prison_firearms,
 /obj/effect/overlay/gravel/edge{
 	dir = 4
 	},
+/obj/machinery/mineral/wasteland_vendor/reno/prison_expedition,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -1820,12 +1796,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "YP" = (
-/obj/machinery/mineral/wasteland_vendor/reno/prison_accessories,
-/obj/effect/overlay/gravel/edge{
-	dir = 9
+/obj/structure/chair/stool/retro/backed{
+	dir = 1
 	},
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
+/turf/open/floor/plating/f13/inside/gravel{
+	sunlight_state = 0
 	},
 /area/f13/caves)
 "ZC" = (
@@ -2312,8 +2287,8 @@ Br
 Br
 Br
 Br
-Wx
-Hu
+SG
+HT
 YP
 yO
 PH
@@ -2328,8 +2303,8 @@ ZM
 Wx
 Hu
 jt
-HT
-RX
+yO
+yO
 yO
 iL
 Hu
@@ -2347,8 +2322,8 @@ yO
 yO
 yO
 Hl
-UB
-SG
+yO
+PH
 Le
 "}
 (32,1,1) = {"

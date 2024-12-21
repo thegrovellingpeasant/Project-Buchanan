@@ -480,6 +480,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_bishops
 
+/obj/item/radio/headset/headset_bishops_boss
+	name = "Bishops radio headset"
+	desc = "This is used by the Bishops. \nTo access the Bishop channel, use :b."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_bishops
+	keyslot2 = new /obj/item/encryptionkey/headset_government
+
 /obj/item/radio/headset/headset_wrights
 	name = "Wrights radio headset"
 	desc = "This is used by the Wrights. \nTo access the Wright channel, use :w."
@@ -520,7 +527,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_ncrcf
 	name = "NCRCF radio headset"
-	desc = "This is used by the NCRCF. \nTo access the NCR channel, use :n. \nTo access the NCRCF channel, use :w."
+	desc = "This is used by the NCRCF.\nTo access the NCRCF channel, use :w."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ncrcf
 
@@ -537,7 +544,6 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_ncrcf
 	keyslot2 = new /obj/item/encryptionkey/headset_government
-
 
 /obj/item/radio/headset/headset_cent/empty
 	keyslot = null
