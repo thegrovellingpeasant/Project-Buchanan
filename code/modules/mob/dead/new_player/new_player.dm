@@ -636,7 +636,6 @@
 	if(.)
 		new_character.key = key		//Manually transfer the key to log them in
 		new_character.stop_sound_channel(CHANNEL_LOBBYMUSIC)
-		GLOB.faction_task_controller.add_player(.)
 		new_character = null
 		qdel(src)
 

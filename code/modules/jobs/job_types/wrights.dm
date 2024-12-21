@@ -17,7 +17,7 @@
 	name = "wrightsdatums"
 	jobtype = /datum/job/wrights
 	ears = /obj/item/radio/headset/headset_wrights
-	exp_type = EXP_TYPE_WRIGHTS
+
 /*--------------------------------------------------------------*/
 
 /datum/job/wrights/f13wrightelder
