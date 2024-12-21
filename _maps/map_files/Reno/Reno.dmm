@@ -50499,6 +50499,9 @@
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/reno_tribal)
+"ixG" = (
+/turf/closed/indestructible/riveted,
+/area/f13/reno_caves)
 "ixJ" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -57858,6 +57861,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/reno_hotel)
+"jLZ" = (
+/obj/effect/landmark/start/f13/bishops/floorman,
+/turf/open/floor/wood,
+/area/f13/reno_sharkclub)
 "jMb" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -70502,6 +70509,10 @@
 /obj/item/blanket/ruined,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/reno_sewers)
+"lPr" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/reno_caves)
 "lPw" = (
 /obj/effect/overlay/junk{
 	icon = 'icons/obj/atmospherics/components/unary_devices.dmi';
@@ -105530,10 +105541,6 @@
 	name = "tile"
 	},
 /area/f13/reno_prison)
-"rLA" = (
-/obj/effect/landmark/start/f13/bishops/floorman,
-/turf/open/floor/wood,
-/area/f13/reno_sharkclub)
 "rLB" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/indestructible/ground/outside/reno_road{
@@ -182332,8 +182339,8 @@ ikb
 sZJ
 "}
 (249,1,1) = {"
-tyh
-sTI
+ixG
+ixG
 sTI
 sTI
 sTI
@@ -182484,8 +182491,8 @@ cSX
 sZJ
 "}
 (250,1,1) = {"
-tyh
-tyh
+lPr
+ixG
 tyh
 tyh
 tyh
@@ -205545,7 +205552,7 @@ xBy
 nqT
 hZe
 bWp
-rLA
+jLZ
 bWp
 bWp
 pph
