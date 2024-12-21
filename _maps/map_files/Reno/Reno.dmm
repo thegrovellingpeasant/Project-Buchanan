@@ -134032,7 +134032,7 @@
 /area/f13/reno_hotel)
 "wxO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/autolathe/ammo,
+/obj/machinery/autolathe/ammo/unlocked,
 /turf/open/floor/f13{
 	dir = 1;
 	icon_state = "darkyellow"
