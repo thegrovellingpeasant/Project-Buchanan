@@ -28,7 +28,7 @@
 	INVOKE_ASYNC(src, PROC_REF(auto_scan), thing)
 
 /obj/machinery/scanner_gate/proc/auto_scan(atom/movable/thing)
-	if(!(stat & (BROKEN|NOPOWER)) && anchored && !panel_open)
+	if(!(stat & (BROKEN|NOPOWER)) && anchored)
 		perform_scan(thing)
 
 /obj/machinery/scanner_gate/proc/set_scanline(scanline_type, duration)
@@ -55,11 +55,6 @@
 		set_scanline(null)
 		return
 	set_scanline("passive")
-
-/obj/machinery/scanner_gate/screwdriver_act(mob/living/user, obj/item/screwdriver_tool)
-	if(default_deconstruction_screwdriver(user, "[initial(icon_state)]_open", initial(icon_state), screwdriver_tool))
-		return
-	return FALSE
 
 /obj/machinery/scanner_gate/proc/perform_scan(atom/movable/thing)
 	var/beep = FALSE
