@@ -22415,7 +22415,6 @@
 	dir = 4;
 	pixel_y = -16
 	},
-/obj/effect/landmark/start/f13/bishops/casinoworker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/reno_sharkclub)
 "dKT" = (
@@ -90887,6 +90886,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
+/obj/effect/landmark/start/f13/bishops/floorman,
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
 "ppv" = (
@@ -105530,6 +105530,10 @@
 	name = "tile"
 	},
 /area/f13/reno_prison)
+"rLA" = (
+/obj/effect/landmark/start/f13/bishops/floorman,
+/turf/open/floor/wood,
+/area/f13/reno_sharkclub)
 "rLB" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/indestructible/ground/outside/reno_road{
@@ -118498,6 +118502,7 @@
 	dir = 1;
 	pixel_y = 16
 	},
+/obj/effect/landmark/start/f13/bishops/floorman,
 /turf/open/floor/wood,
 /area/f13/reno_sharkclub)
 "tUx" = (
@@ -205540,7 +205545,7 @@ xBy
 nqT
 hZe
 bWp
-bWp
+rLA
 bWp
 bWp
 pph

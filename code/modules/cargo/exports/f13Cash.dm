@@ -13,10 +13,16 @@
 		. += " Your deposit is completed."
 
 /datum/export/f13Cash/get_amount(obj/O)
-    var/obj/item/stack/f13Cash/S = O
-    if(istype(S))
-        return S.amount
-    return 0
+    if(!isitem(O))
+        return 0
+    var/obj/item/I = O
+    if(!istype(I, /obj/item/stack/f13Cash))
+        return 0
+
+    var/obj/item/stack/f13Cash/c = I
+    var/amount = c.get_item_credit_value()
+
+    return amount
 
 /datum/export/f13Cash/caps
 	cost = 1
