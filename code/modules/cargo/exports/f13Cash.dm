@@ -12,6 +12,12 @@
 	if(. && notes)
 		. += " Your deposit is completed."
 
+/datum/export/f13Cash/get_amount(obj/O)
+    var/obj/item/stack/f13Cash/S = O
+    if(istype(S))
+        return S.amount
+    return 0
+
 /datum/export/f13Cash/caps
 	cost = 1
 	unit_name = "cap"
