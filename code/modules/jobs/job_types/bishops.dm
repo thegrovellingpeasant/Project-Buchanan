@@ -32,7 +32,6 @@
 	supervisors = "Mr Bishop"
 	description = "You are the head of the Bishop family. Your management of the Shark Club, the most famous casino in the city, and the good relations of the family with the NCR, have placed the gang in a comfortable situation, attracting most of the new blood in the city among their ranks, making the Bishops the most 'populated' family in New Reno. Manage the Casino, organize meetings with the other gangs to make ends meet, rely on prostitution, if necessary, assign soldiers to your capos, allow capos to have some level of autonomy regarding their soldiers, as long as it doesn't hinder the flow of business, and remember to get someone to manage the acts at the Shark to attract visitors. Though you have made it to the top, you never know who may be plotting against you to take your place, so always be weary, even of your own family."
 	selection_color = "#7C93AF"
-	exp_requirements = EXP_TYPE_BISHOPS
 	exp_requirements = 540
 
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
@@ -124,7 +123,6 @@
 	supervisors = "the Bishop Boss"
 	description = "You are the wife of the Boss; how this happened? Who knows, maybe it was a drunken marriage. While you have no real responsibilities you do hold some level of authority, albeit lesser than that of the boss. You may find yourself doing things like micromanaging the casino staff, pestering the boss and the mobsters, and getting thrown off the third story of the Shark Club in an impromptu divorce."
 	selection_color = "#7C93AF"
-	exp_requirements = EXP_TYPE_BISHOPS
 	exp_requirements = 360
 
 
@@ -203,7 +201,6 @@
 	supervisors = "the Bishop Boss"
 	description = "You have proven your worth as an earner for the Bishop Family and, as such, it has been trusted to you to lead a small band of made men for the boss. You are the mediator between the head of the family and said made men, so expect to be given some level of autonomy to use your subordinates in the most efficient way possible to meet the needs of the boss and the family. Should the made men not be assigned to you by the Boss, the decision will fall unto you and the other capos. Help to manage the Casino, make sure there's entertainment for the visitors, follow the instructions of your superior, keep the made men in line."
 	selection_color = "#8CA2BD"
-	exp_requirements = EXP_TYPE_BISHOPS
 	exp_requirements = 180
 
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
@@ -277,7 +274,6 @@
 	supervisors = "Capos and the Bishop Boss"
 	description = "You have become a made man of the Bishop Family. Expect to be assigned to follow the orders of one of the Capos, be it helping in the casino, extorting businesses, protecting your superiors during a meeting, and so on. Do not disturb the boss with unnecessary affairs."
 	selection_color = "#8CA2BD"
-	exp_requirements = EXP_TYPE_BISHOPS
 	access = list(ACCESS_BISHOPS, ACCESS_ROOMONE, ACCESS_ROOMTWO, ACCESS_ROOMTHREE, ACCESS_ROOMFOUR,
 	ACCESS_ROOMFIVE, ACCESS_ROOMSIX, ACCESS_ROOMSEVEN, ACCESS_ROOMEIGHT, ACCESS_ROOMNINE, ACCESS_BISHOPSLAB,
 	ACCESS_BISHOPVAULT)
@@ -377,7 +373,6 @@
 	supervisors = "Bishop Capos, the Underboss, and the Bishop Boss"
 	description =  "You are an employee of the Shark Club, the Bishop owned casino in New Reno. Though you're not a proper member of the family, you count with their protection, and you're also expected to fulfill their demands. Serve drinks to the costumers, deal the cards on the tables, change money for casino chips (and vice versa), and keep a constant dialogue with whoever is keeping the casino safe to kick out drunkards, cheaters, and the more dangerous folks that may come to pay a visit to the family."
 	selection_color = "#8CA2BD"
-	exp_requirements = EXP_TYPE_BISHOPS
 
 	outfit = /datum/outfit/job/bishops/f13floorman
 
@@ -408,7 +403,6 @@
 	supervisors = "Bishop Capos and the Bishop Boss"
 	description = "You're an affiliate of the Bishops, though while you are not a member of the family you are under their protection provided you pull your weight in your respective racket and give them their share."
 	selection_color = "#8CA2BD"
-	exp_requirements = EXP_TYPE_BISHOPS
 	access = list()
 
 	outfit = /datum/outfit/job/bishops/f13racketeer

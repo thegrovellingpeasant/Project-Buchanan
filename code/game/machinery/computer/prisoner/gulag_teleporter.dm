@@ -2,8 +2,6 @@
 /obj/machinery/computer/prisoner/gulag_teleporter_computer
 	name = "labor camp teleporter console"
 	desc = "Used to send criminals to the Labor Camp."
-	icon_screen = "explosive"
-	icon_keyboard = "security_key"
 	req_access = list(ACCESS_ARMORY)
 	circuit = /obj/item/circuitboard/computer/gulag_teleporter_console
 
@@ -12,8 +10,6 @@
 	var/obj/structure/gulag_beacon/beacon = null
 	var/mob/living/carbon/human/prisoner = null
 	var/datum/data/record/temporary_record = null
-
-	light_color = LIGHT_COLOR_RED
 
 /obj/machinery/computer/prisoner/gulag_teleporter_computer/Initialize()
 	. = ..()
@@ -34,7 +30,7 @@
 	if(teleporter && (teleporter.occupant && ishuman(teleporter.occupant)))
 		prisoner = teleporter.occupant
 		prisoner_list["name"] = prisoner.real_name
-		if(contained_id)
+		if(inserted_id)
 			can_teleport = TRUE
 		if(!isnull(GLOB.data_core.general))
 			for(var/r in GLOB.data_core.security)
@@ -57,10 +53,10 @@
 		data["beacon_location"] = "([beacon.x], [beacon.y], [beacon.z])"
 	else
 		data["beacon"] = null
-	if(contained_id)
-		data["id"] = contained_id
-		data["id_name"] = contained_id.registered_name
-		data["goal"] = contained_id.goal
+	if(inserted_id)
+		data["id"] = inserted_id
+		data["id_name"] = inserted_id.registered_name
+		data["goal"] = inserted_id.goal
 	else
 		data["id"] = null
 	data["can_teleport"] = can_teleport
@@ -83,7 +79,7 @@
 			beacon = findbeacon()
 			return TRUE
 		if("handle_id")
-			if(contained_id)
+			if(inserted_id)
 				id_eject(usr)
 			else
 				id_insert(usr)
@@ -94,7 +90,7 @@
 				return
 			if(!new_goal)
 				new_goal = default_goal
-			contained_id.goal = clamp(new_goal, 0, 1000) //maximum 1000 points
+			inserted_id.goal = clamp(new_goal, 0, 1000) //maximum 1000 points
 			return TRUE
 		if("toggle_open")
 			if(teleporter.locked)
@@ -130,16 +126,16 @@
 	return locate(/obj/structure/gulag_beacon)
 
 /obj/machinery/computer/prisoner/gulag_teleporter_computer/proc/teleport(mob/user)
-	if(!contained_id) //incase the ID was removed after the transfer timer was set.
+	if(!inserted_id) //incase the ID was removed after the transfer timer was set.
 		say("Warning: Unable to transfer prisoner without a valid Prisoner ID inserted!")
 		return
 	var/id_goal_not_set
-	if(!contained_id.goal)
+	if(!inserted_id.goal)
 		id_goal_not_set = TRUE
-		contained_id.goal = default_goal
-		say("[contained_id]'s ID card goal defaulting to [contained_id.goal] points.")
-	log_game("[key_name(user)] teleported [key_name(prisoner)] to the Labor Camp [COORD(beacon)] for [id_goal_not_set ? "default goal of ":""][contained_id.goal] points.")
-	teleporter.handle_prisoner(contained_id, temporary_record)
+		inserted_id.goal = default_goal
+		say("[inserted_id]'s ID card goal defaulting to [inserted_id.goal] points.")
+	log_game("[key_name(user)] teleported [key_name(prisoner)] to the Labor Camp [COORD(beacon)] for [id_goal_not_set ? "default goal of ":""][inserted_id.goal] points.")
+	teleporter.handle_prisoner(inserted_id, temporary_record)
 	playsound(src, 'sound/weapons/emitter.ogg', 50, TRUE)
 	prisoner.forceMove(get_turf(beacon))
 	prisoner.Stun(40) // small travel dizziness
@@ -149,5 +145,5 @@
 	if(teleporter.locked)
 		teleporter.locked = FALSE
 	teleporter.toggle_open()
-	contained_id = null
+	inserted_id = null
 	temporary_record = null
