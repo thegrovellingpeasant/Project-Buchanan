@@ -7,12 +7,16 @@
 	circuit = /obj/item/circuitboard/machine/scanner_gate
 	COOLDOWN_DECLARE(next_beep)
 
+	var/obj/item/radio/radio
 	var/scanline_timer
 	/// Overlay object we're using for scanlines
 	var/obj/effect/overlay/scanline = null
 
 /obj/machinery/scanner_gate/Initialize(mapload)
 	. = ..()
+	radio = new(src)
+	radio.listening = FALSE
+	radio.set_frequency(FREQ_NCR)
 	set_scanline("passive")
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
@@ -65,7 +69,7 @@
 		var/mob/living/scanned_living = thing
 		var/obj/item/card/id/idcard = scanned_living.get_idcard()
 		if(!isnull(idcard))
-			if(ACCESS_WEAPONS in idcard.access)
+			if(ACCESS_NCR in idcard.access)
 				return
 		for(var/obj/item/scanned_item in scanned_living.GetAllContents())
 			if(isgun(scanned_item))
@@ -83,6 +87,7 @@
 	if(!COOLDOWN_FINISHED(src, next_beep))
 		return
 
+	radio.talk_into(src, "Unauthorizezd weapon detected!!", FREQ_NCR)
 	say("Weapons detected!!")
 	COOLDOWN_START(src, next_beep, 2 SECONDS)
 	playsound(source = src, soundin = 'sound/machines/scanner/scanbuzz.ogg', vol = 30, vary = FALSE, extrarange = -5)
