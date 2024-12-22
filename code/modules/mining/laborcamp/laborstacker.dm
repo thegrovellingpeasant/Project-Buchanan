@@ -62,6 +62,7 @@ GLOBAL_LIST(labor_sheet_values)
 
 	if(stacking_machine)
 		data["unclaimed_points"] = stacking_machine.points
+		data["unclaimed_sentence"] = stacking_machine.sentence
 
 	data["ores"] = GLOB.labor_sheet_values
 	data["can_go_home"] = can_go_home
@@ -116,7 +117,7 @@ GLOBAL_LIST(labor_sheet_values)
 						. = TRUE*/
 
 /obj/machinery/mineral/labor_claim_console/proc/locate_stacking_machine()
-	stacking_machine = locate()
+	stacking_machine = locate(/obj/machinery/mineral/stacking_machine/laborstacker)
 	if(stacking_machine)
 		stacking_machine.CONSOLE = src
 	else
