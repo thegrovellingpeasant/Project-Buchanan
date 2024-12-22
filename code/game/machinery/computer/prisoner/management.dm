@@ -5,14 +5,8 @@
 	icon_state = "computer"
 	icon_keyboard = "generic_key"
 	icon_screen = "generic"
+	req_access = null
 	req_one_access = list(ACCESS_BRIG, ACCESS_NCR)
-	var/id = 0
-	var/temp = null
-	var/status = 0
-	var/timeleft = 60
-	var/stop = 0
-	var/screen = 0 // 0 - No Access Denied, 1 - Access allowed
-	circuit = /obj/item/circuitboard/computer/prisoner
 	light_color = LIGHT_COLOR_GREEN
 
 /obj/machinery/computer/prisoner/management/ui_interact(mob/user)
@@ -24,10 +18,10 @@
 		dat += "<HR><A href='?src=[REF(src)];lock=1'>{Log In}</A>"
 	else if(screen == 1)
 		dat += "<H3>Prisoner ID Management</H3>"
-		if(contained_id)
-			dat += text("<A href='?src=[REF(src)];id=eject'>[contained_id]</A><br>")
-			dat += text("Collected Points: [contained_id.points]. <A href='?src=[REF(src)];id=reset'>Reset.</A><br>")
-			dat += text("Card goal: [contained_id.goal].  <A href='?src=[REF(src)];id=setgoal'>Set </A><br>")
+		if(inserted_id)
+			dat += text("<A href='?src=[REF(src)];id=eject'>[inserted_id]</A><br>")
+			dat += text("Collected Points: [inserted_id.points]. <A href='?src=[REF(src)];id=reset'>Reset.</A><br>")
+			dat += text("Card goal: [inserted_id.goal].  <A href='?src=[REF(src)];id=setgoal'>Set </A><br>")
 			dat += text("NCR Law recommends quotas of 100 points per minute they would normally serve in a Correctional Facility.<BR>")
 		else
 			dat += text("<A href='?src=[REF(src)];id=insert'>Insert Prisoner ID.</A><br>")
@@ -85,55 +79,24 @@
 	return
 
 /obj/machinery/computer/prisoner/management/Topic(href, href_list)
-	if(..())
+	. = ..()
+	if(.)
 		return
-	if(usr.contents.Find(src) || (in_range(src, usr) && isturf(loc)) || hasSiliconAccessInArea(usr))
-		usr.set_machine(src)
+	if(!(href_list["id"]))
+		return
 
-		if(href_list["id"])
-			if(href_list["id"] =="insert" && !contained_id)
-				id_insert(usr)
-			else if(contained_id)
-				switch(href_list["id"])
-					if("eject")
-						id_eject(usr)
-					if("reset")
-						contained_id.points = 0
-					if("setgoal")
-						var/num = round(input(usr, "Choose prisoner's goal:", "Input an Integer", null) as num|null)
-						if(num >= 0)
-							num = min(num,1000) //Cap the quota to the equivilent of 10 minutes.
-							contained_id.goal = num
-		/*else if(href_list["inject1"])
-			var/obj/item/implant/I = locate(href_list["inject1"]) in GLOB.tracked_chem_implants
-			if(I && istype(I))
-				I.activate(1)
-		else if(href_list["inject5"])
-			var/obj/item/implant/I = locate(href_list["inject5"]) in GLOB.tracked_chem_implants
-			if(I && istype(I))
-				I.activate(5)
-		else if(href_list["inject10"])
-			var/obj/item/implant/I = locate(href_list["inject10"]) in GLOB.tracked_chem_implants
-			if(I && istype(I))
-				I.activate(10)
+	if(href_list["id"] =="insert" && !inserted_id)
+		id_insert(usr)
+	else if(inserted_id)
+		switch(href_list["id"])
+			if("eject")
+				id_eject(usr)
+			if("reset")
+				inserted_id.points = 0
+			if("setgoal")
+				var/num = round(input(usr, "Choose prisoner's goal:", "Input an Integer", null) as num|null)
+				if(num >= 0)
+					num = min(num,1000) //Cap the quota to the equivilent of 10 minutes.
+					inserted_id.goal = num
 
-		else if(href_list["lock"])
-			if(allowed(usr))
-				screen = !screen
-				playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
-			else
-				to_chat(usr, span_danger("Unauthorized access."))
-
-		else if(href_list["warn"])
-			var/warning = stripped_input(usr, "Message:", "Enter your message here!", "", MAX_MESSAGE_LEN)
-			if(!warning)
-				return
-			var/obj/item/implant/I = locate(href_list["warn"]) in GLOB.tracked_implants
-			if(I && istype(I) && I.imp_in)
-				var/mob/living/R = I.imp_in
-				to_chat(R, span_italics("You hear a voice in your head saying: '[warning]'"))
-				log_directed_talk(usr, R, warning, LOG_SAY, "implant message")
-		*/
-		src.add_fingerprint(usr)
 	src.updateUsrDialog()
-	return

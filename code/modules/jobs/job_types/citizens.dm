@@ -148,7 +148,6 @@
 	spawn_positions = -1
 	description = "You fucked up. Not in what you did, because of course - you had a reason to - but in getting caught. Now you're here, in an NCR prison, doomed to slave away much like your counterparts underneath the Legion's rule. Serve your time quietly and peacefully, and maybe you won't have the boot forced down your throat. Of course, there's always the option of severing the leg... TIP: Food, booze, cigarettes, and chems regenerate stamina for mining."
 	supervisors = "the guards"
-	exp_requirements = EXP_TYPE_CITIZENS
 
 	outfit = /datum/outfit/job/citizens/f13convict
 
@@ -371,7 +370,6 @@
 	spawn_positions = -1
 	description = "You have found you way to New Reno, The Biggest Little City in the World. Though the city itself is usually in a perpetual state of tension between the clashes among the families, the poor state of the charities, or the rampant hobo criminality, you don't need to think too much about it. You've come here to visit the landmarks, stay at a hotel, play some cards in the casino, or enjoy the so called 'New Reno experience', and you have enough caps to make that happen."
 	supervisors = "hedonism"
-	exp_requirements = EXP_TYPE_CITIZENS
 
 	outfit = /datum/outfit/job/citizens/f13tourist
 
