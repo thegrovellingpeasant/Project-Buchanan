@@ -20,6 +20,8 @@
 #define SOUND_MINIMUM_PRESSURE 10
 #define FALLOFF_SOUNDS 1
 
+#define SFX_INDUSTRIAL_SCAN "industrial_scan"
+
 
 //Ambience types
 
