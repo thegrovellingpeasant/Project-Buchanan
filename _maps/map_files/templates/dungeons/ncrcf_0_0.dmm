@@ -410,17 +410,12 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/caves)
 "nh" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "mining_internal1"
+/obj/structure/table/wood,
+/obj/item/toy/cards/deck{
+	pixel_y = 8
 	},
-/obj/structure/barricade/bars{
-	max_integrity = 99999;
-	name = "strong metal bars";
-	obj_integrity = 99999
-	},
-/turf/open/floor/f13{
-	icon_state = "yellowrustyfull"
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
 	},
 /area/f13/caves)
 "nk" = (
@@ -1156,15 +1151,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/caves)
-"HT" = (
-/obj/structure/table/wood,
-/obj/item/toy/cards/deck{
-	pixel_y = 8
-	},
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
-	},
-/area/f13/caves)
 "HW" = (
 /obj/structure/railing/wood{
 	dir = 8;
@@ -1563,12 +1549,6 @@
 /obj/structure/punching_bag,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"SG" = (
-/obj/structure/chair/stool/retro,
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
-	},
-/area/f13/caves)
 "ST" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "mining_internal";
@@ -1707,6 +1687,15 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"UB" = (
+/obj/effect/overlay/gravel/edge{
+	icon_state = "gravel_corner";
+	dir = 4
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
+/area/f13/caves)
 "Vi" = (
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/wood/f13/oak{
@@ -1727,10 +1716,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/caves)
 "Wx" = (
-/obj/effect/overlay/gravel/edge{
-	icon_state = "gravel_corner";
-	dir = 4
-	},
+/obj/structure/chair/stool/retro,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -2174,7 +2160,7 @@ CD
 CD
 CD
 dx
-nh
+mB
 LD
 LD
 Fl
@@ -2287,8 +2273,8 @@ Br
 Br
 Br
 Br
-SG
-HT
+Wx
+nh
 YP
 yO
 PH
@@ -2300,7 +2286,7 @@ Hu
 RE
 Vi
 ZM
-Wx
+UB
 Hu
 jt
 yO

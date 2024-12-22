@@ -15,7 +15,7 @@
 	selection_color = "#dece90"
 	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
-	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND, ACCESS_BRIG)
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 
 
@@ -63,7 +63,7 @@
 	supervisors = "the Warden"
 	outfit = /datum/outfit/job/citizens/f13ncrcfguard
 	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR, ACCESS_BRIG)
 
 
 /datum/outfit/job/citizens/f13ncrcfguard/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -108,7 +108,7 @@
 	description = "You lucked out and managed a somewhat well-paying occupation. Learned physicians are hard to come by, so your New Californian citizenship only sweetened the deal as you were whisked away by the government into working on a backwater correctional facility."
 	outfit = /datum/outfit/job/citizens/f13ncrcfphysician
 	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR, ACCESS_BRIG)
 
 /datum/outfit/job/citizens/f13ncrcfphysician
 	name = "NCRCF Physician"
@@ -119,6 +119,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = null
+	ears = /obj/item/radio/headset/headset_ncrcf
 	mask =  /obj/item/clothing/mask/surgical
 	neck = /obj/item/clothing/neck/stethoscope
 	gloves =  /obj/item/clothing/gloves/color/latex
