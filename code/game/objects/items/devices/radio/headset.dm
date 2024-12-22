@@ -36,7 +36,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_VANGRAFFS = RADIO_TOKEN_VANGRAFFS,
 	RADIO_CHANNEL_NRPD = RADIO_TOKEN_NRPD,
 	RADIO_CHANNEL_NCRCF = RADIO_TOKEN_NCRCF,
-	RADIO_CHANNEL_GOVERNMENT = RADIO_TOKEN_GOVERNMENT
+	RADIO_CHANNEL_GOVERNMENT = RADIO_TOKEN_GOVERNMENT,
 ))
 
 /obj/item/radio/headset
@@ -421,7 +421,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_usps
 	name = "post office radio headset"
-	desc = "This is used by the town.\nTo access the postal channel, use :p. \nTo access the town channel, use :f."
+	desc = "This is used by the town.\nTo access the postal channel, use :s. \nTo access the town channel, use :f."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_usps
 
@@ -526,7 +526,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_government_nrpd
 	name = "NCR government headset"
-	desc = "This is used by the NCR Command. \nTo access the NRPD channel, use :p. \nTo access the Government channel, use :g."
+	desc = "This is used by the NCR Command. \nTo access the NRPD channel, use :e. \nTo access the Government channel, use :g."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_nrpd
 	keyslot2 = new /obj/item/encryptionkey/headset_government

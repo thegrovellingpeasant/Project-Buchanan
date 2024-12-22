@@ -306,7 +306,7 @@
 
 /obj/item/encryptionkey/headset_vangraffs
 	name = "Van Graffs radio encryption key"
-	desc = "An encryption key for a radio headset. To access the Van Graff channel, use :w."
+	desc = "An encryption key for a radio headset. To access the Van Graff channel, use :v."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_VANGRAFFS = 1)
 
@@ -324,7 +324,7 @@
 
 /obj/item/encryptionkey/headset_government
 	name = "Government radio encryption key"
-	desc = "An encryption key for a radio headset. To access the Government channel, use :w."
+	desc = "An encryption key for a radio headset. To access the Government channel, use :g."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_GOVERNMENT = 1)
 
