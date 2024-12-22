@@ -5,7 +5,7 @@
 |	Chance of a global task occuring is determined in the global_faction datum.					|
 |	To enable the global task for a faction, the datum path as a string should be added and		|
 |	set equal to TRUE.																			|
-|	--	Ex: "datum/job/[FACTION] = list("/datum/faction_task/global_faction/[TASK]" = TRUE		|
+|	--	Ex: "datum/job/[FACTION] = list("/datum/faction_task/global_faction/[TASKK]" = TRUE		|
 |																								|
 |	Individual faction tasks (tasks assigned to a single faction) function the same except		|
 |	instead of setting them to true, they should be to their % chance of being chosen.			|
@@ -23,30 +23,24 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-	),
+		),
 	"/datum/job/bishops" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 30,
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-	),
+		),
 	"/datum/job/vangraffs" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 30,
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-	),
+		),
 	"/datum/job/citizens/f13tourist" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
-	),
-	"/datum/job/wastes/f13vagrant" = list(
-		"/datum/faction_task/individual_player/heist" = 100,
-	),
-	"datum/job/citizens/f13convict" = list(
-		"/datum/faction_task/individual_player/heist" = 100,
-	),
+		),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -376,9 +370,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 // Can be an item or object
 GLOBAL_LIST_INIT(faction_relics, list(
-	"/datum/job/bishops" = /obj/structure/closet/crate/mcguffin/ark,
-	"/datum/job/vangraffs" = /obj/structure/closet/crate/mcguffin/experimental_crate,
-	"/datum/job/wrights" = /obj/structure/closet/crate/mcguffin/strangebird,
+	"/datum/job/bishops" = /obj/structure/closet/crate/grave/ark, \
+	"/datum/job/vangraffs" = /obj/structure/closet/crate/grave/experimental_crate, \
+	"/datum/job/wrights" = /obj/structure/closet/crate/grave/strangebird, \
 ))
 /area/f13/vangraffs_vault
 
@@ -568,7 +562,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	..()
 	var/obj/item/storage/box/recruit_forms/forms = new(get_turf(user))
 	forms.set_task(src)
-	user.equip_to_slot_if_possible(forms, ITEM_SLOT_BACKPACK)
+	user.equip_to_slot_if_possible(forms, SLOT_IN_BACKPACK)
 
 /datum/faction_task/individual_faction/recruit/calculate_score()
 	if(recruits >= recruit_target)
@@ -648,17 +642,10 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 10
+	player_chance = 75
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off
-
-/datum/faction_task/individual_player/heist/add_player(mob/living/user)
-	. = ..()
-	var/obj/item/card/id/reno/heisters/heister_id = new /obj/item/card/id/reno/heisters(get_turf(user))
-	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
-	user.equip_to_slot(heister_id, ITEM_SLOT_ID)
-	user.put_in_inactive_hand(heist_note)
 
 /datum/faction_task/individual_player/heist/New()
 	..()
@@ -672,12 +659,6 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist/calculate_score()
 	var/turf/T = get_turf(target)
 	if(target && istype(T.loc, drop_off))
-
-
-
-
-
-
 		return TRUE
 	return FALSE
 
@@ -689,6 +670,9 @@ GLOBAL_LIST_INIT(faction_relics, list(
 		return "<font color='#097f10'>The heist was successful.</font>"
 	else
 		return "<font color='#bc2621'>The heist failed.</font>"
+
+
+
 
 ///////////////////
 /* Miscellaneous */
