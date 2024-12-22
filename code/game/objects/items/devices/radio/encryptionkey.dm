@@ -312,7 +312,7 @@
 
 /obj/item/encryptionkey/headset_nrpd
 	name = "NRPD radio encryption key"
-	desc = "An encryption key for a radio headset. To access the NRPD channel, use :w."
+	desc = "An encryption key for a radio headset. To access the NRPD channel, use :p."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_NRPD = 1)
 

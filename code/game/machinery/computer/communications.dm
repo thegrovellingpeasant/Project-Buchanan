@@ -73,7 +73,7 @@
 				if(check_access(I))
 					authenticated = 1
 					auth_id = "[I.registered_name] ([I.assignment])"
-					if((ACCESS_CAPTAIN in I.access))
+					if((ACCESS_NCR_COMMAND in I.access))
 						authenticated = 2
 					playsound(src, 'sound/machines/terminal_on.ogg', 50, FALSE)
 				if(obj_flags & EMAGGED)
@@ -245,8 +245,8 @@
 						currmsg.answer_callback.InvokeAsync()
 				state = STATE_VIEWMESSAGE
 				updateDialog()
-//		if("status")
-//			state = STATE_STATUSDISPLAY
+		if("status")
+			state = STATE_STATUSDISPLAY
 		if("securitylevel")
 			tmp_alertlevel = text2num( href_list["newalertlevel"] )
 			if(!tmp_alertlevel)
@@ -254,7 +254,7 @@
 			state = STATE_CONFIRM_LEVEL
 		if("changeseclevel")
 			state = STATE_ALERT_LEVEL
-/*
+
 		if("emergencyaccess")
 			state = STATE_TOGGLE_EMERGENCY
 		if("enableemergency")
@@ -287,7 +287,7 @@
 		if("setmsg2")
 			stat_msg2 = reject_bad_text(input("Line 2", "Enter Message Text", stat_msg2) as text|null, 40)
 			updateDialog()
-*/
+
 /*		// OMG CENTCOM LETTERHEAD
 		if("MessageCentCom")
 			if(authenticated)
@@ -492,11 +492,12 @@
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=logout'>Log Out</A> \]<BR>"
 				dat += "<BR><B>General Functions</B>"
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=messagelist'>Message List</A> \]"
-				switch(SSshuttle.emergency.mode)
+				/*switch(SSshuttle.emergency.mode)
 					if(SHUTTLE_IDLE, SHUTTLE_RECALL)
 						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=callshuttle'>Call transit</A> \]"
 					else
 						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=cancelshuttle'>Cancel transit Call</A> \]"
+				*/
 
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=status'>Set Status Display</A> \]"
 				if (authenticated==2)
@@ -511,16 +512,16 @@
 							dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=crossserver=all;cross_dest=[server]'>Send a message to station in [server] sector.</A> \]"
 						if(cross_servers.len > 2)
 							dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=crossserver;cross_dest=all'>Send a message to all allied stations</A> \]"
-					if(SSmapping.config.allow_custom_shuttles)
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=purchase_menu'>Purchase Shuttle</A> \]"
+					/*if(SSmapping.config.allow_custom_shuttles)
+						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=purchase_menu'>Purchase Shuttle</A> \]"*/
 					dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=changeseclevel'>Change Alert Level</A> \]"
 					dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=emergencyaccess'>Emergency Maintenance Access</A> \]"
-					dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=nukerequest'>Request Nuclear Authentication Codes</A> \]"
-					if(!(obj_flags & EMAGGED))
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=MessageCentCom'>Send Message to CentCom</A> \]"
-					else
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=MessageSyndicate'>Send Message to \[UNKNOWN\]</A> \]"
-						dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=RestoreBackup'>Restore Backup Routing Data</A> \]"
+					//dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=nukerequest'>Request Nuclear Authentication Codes</A> \]"
+					//if(!(obj_flags & EMAGGED))
+					//	dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=MessageCentCom'>Send Message to CentCom</A> \]"
+					//else
+					//	dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=MessageSyndicate'>Send Message to \[UNKNOWN\]</A> \]"
+					//	dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=RestoreBackup'>Restore Backup Routing Data</A> \]"
 			else
 				dat += "<BR>\[ <A HREF='?src=[REF(src)];operation=login'>Log In</A> \]"
 		if(STATE_CALLSHUTTLE)
