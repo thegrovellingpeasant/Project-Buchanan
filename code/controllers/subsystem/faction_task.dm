@@ -41,6 +41,12 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 	"/datum/job/citizens/f13tourist" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
 	),
+	"/datum/job/wastes/f13vagrant" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+	),
+	"datum/job/citzens/f13convict" = list(
+		"/datum/faction_task/individual_player/heist" = 100,
+	),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -562,7 +568,7 @@ GLOBAL_LIST_INIT(faction_relics, list(
 	..()
 	var/obj/item/storage/box/recruit_forms/forms = new(get_turf(user))
 	forms.set_task(src)
-	user.equip_to_slot_if_possible(forms, SLOT_IN_BACKPACK)
+	user.equip_to_slot_if_possible(forms, ITEM_SLOT_BACKPACK)
 
 /datum/faction_task/individual_faction/recruit/calculate_score()
 	if(recruits >= recruit_target)
@@ -642,10 +648,17 @@ GLOBAL_LIST_INIT(faction_relics, list(
 /datum/faction_task/individual_player/heist
 	name = "Heist"
 	max_players = 5
-	player_chance = 75
+	player_chance = 15
 	var/datum/job/target_faction
 	var/obj/target
 	var/area/drop_off
+
+/datum/faction_task/individual_player/heist/add_player(mob/living/user)
+	var/obj/item/card/id/reno/heisters/heister_id = new /obj/item/card/id/reno/heisters(get_turf(user))
+	var/obj/item/paper/heist/heist_note = new /obj/item/paper/heist(get_turf(user))
+	user.equip_to_slot_if_possible(heister_id, ITEM_SLOT_ID)
+	user.put_in_inactive_hand(heist_note)
+	. = ..()
 
 /datum/faction_task/individual_player/heist/New()
 	..()
