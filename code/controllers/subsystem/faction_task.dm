@@ -5,7 +5,7 @@
 |	Chance of a global task occuring is determined in the global_faction datum.					|
 |	To enable the global task for a faction, the datum path as a string should be added and		|
 |	set equal to TRUE.																			|
-|	--	Ex: "datum/job/[FACTION] = list("/datum/faction_task/global_faction/[TASKK]" = TRUE		|
+|	--	Ex: "datum/job/[FACTION] = list("/datum/faction_task/global_faction/[TASK]" = TRUE		|
 |																								|
 |	Individual faction tasks (tasks assigned to a single faction) function the same except		|
 |	instead of setting them to true, they should be to their % chance of being chosen.			|
@@ -23,30 +23,30 @@ GLOBAL_LIST_INIT(faction_task_probabilities, list(
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-		),
+	),
 	"/datum/job/bishops" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 30,
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-		),
+	),
 	"/datum/job/vangraffs" = list(
 		"/datum/faction_task/global_faction/wealth" = TRUE,
 		"/datum/faction_task/individual_faction/frame" = 30,
 		"/datum/faction_task/individual_faction/assassination" = 40,
 		"/datum/faction_task/individual_faction/recruit" = 30,
 		"/datum/faction_task/individual_player/coupdetat" = 20
-		),
+	),
 	"/datum/job/citizens/f13tourist" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
-		),
+	),
 	"/datum/job/wastes/f13vagrant" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
-		),
+	),
 	"datum/job/citizens/f13convict" = list(
 		"/datum/faction_task/individual_player/heist" = 100,
-		),
+	),
 ))
 
 GLOBAL_DATUM_INIT(faction_task_controller, /datum/faction_task_controller, new)
@@ -376,9 +376,9 @@ GLOBAL_LIST_INIT(faction_vault_areas, list(
 
 // Can be an item or object
 GLOBAL_LIST_INIT(faction_relics, list(
-	"/datum/job/bishops" = /obj/structure/closet/crate/grave/ark, \
-	"/datum/job/vangraffs" = /obj/structure/closet/crate/grave/experimental_crate, \
-	"/datum/job/wrights" = /obj/structure/closet/crate/grave/strangebird, \
+	"/datum/job/bishops" = /obj/structure/closet/crate/mcguffin/ark,
+	"/datum/job/vangraffs" = /obj/structure/closet/crate/mcguffin/experimental_crate,
+	"/datum/job/wrights" = /obj/structure/closet/crate/mcguffin/strangebird,
 ))
 /area/f13/vangraffs_vault
 
