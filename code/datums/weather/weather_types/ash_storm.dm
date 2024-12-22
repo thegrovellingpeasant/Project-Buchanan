@@ -16,13 +16,14 @@
 	end_duration = 300
 	end_overlay = "light_ash"
 
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	//area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	area_types = list(/area)
 	protect_indoors = TRUE
 	target_trait = ZTRAIT_ASHSTORM
 
 	immunity_type = "ash"
 
-	probability = 90
+	probability = 0
 
 	barometer_predictable = TRUE
 
@@ -104,7 +105,7 @@
 /datum/weather/ash_storm/sandstorm
 	name = "sandstorm"
 	desc = "A passing sand storm blankets the area in harmless sands."
-	probability = 15
+	probability = 0
 
 	telegraph_message = span_userdanger("Sandstorm is coming to the area, decreasing overall visibility outside.")
 
@@ -134,7 +135,8 @@
 	end_duration = 3000
 	end_overlay = "light_ash"
 
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	//area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	area_types = list(/area)
 	protect_indoors = TRUE
 	target_trait = ZTRAIT_STATION
 

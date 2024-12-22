@@ -690,21 +690,179 @@ Temperance Union members harbor a deep-seated distrust in the effectiveness of c
 
 /obj/item/paper/vangraffs
 	name = "To The New Robotics Contractor"
-	desc = "If you're reading this it means Chop Van Graff failed to properly update her instructional note."
+	desc = "If you're reading this, you have chosen or been chosen to be an assistant roboticist."
 	icon_state = "paper_words"
-	info = {"ChopChop please."}
+	info = {"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Graff Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Instructions from Van Graff Branch Manager</h1>
+
+<p>I don’t like to be official, so let’s make this quick and easy.</p>
+
+<p>Besides energy weapon sales, we get major profits from robot sales and upgrades. Naturally, those require resources. That’s where you come in.</p>
+
+<p>There are two ways to acquire raw metals for robot crafting:</p>
+<ul>
+    <li>Manually in the underground mine Northeast of the town</li>
+    <li>Importing it from the NCR Correctional Facility</li>
+</ul>
+
+<p>The import prices per single ore piece are as follows:</p>
+<ul>
+    <li>Iron - 2 caps</li>
+    <li>Plasma - 4 caps</li>
+    <li>Silver - 6 caps</li>
+    <li>Gold - 8 caps</li>
+    <li>Titanium - 9 caps</li>
+    <li>Uranium - 11 caps</li>
+    <li>Diamond - 15 caps</li>
+</ul>
+
+<p class="warning">If the profit on these sales doesn’t outstrip the cost of resources, you’re not just wasting my time—you’re making a serious mistake. Don’t bring in a damn thing that costs more than it’s worth. I’m trusting you to handle this with professionalism. Fail to uphold these standards and our next conversation won’t just be unpleasant. It’ll be the last talk you ever have.</p>
+
+<p>- Van Graff Branch Manager</p>
+
+</body>
+</html>"}
 
 /obj/item/paper/wrights
 	name = "Wright Export Contract"
-	desc = "If you're reading this it means Chop Wright failed to do her chores and must be sternly corrected."
+	desc = "If you're reading this it means your family or an associate of the Wrights family has something new cooked up."
 	icon_state = "paper_words"
-	info = {"ChopChop please."}
+	info = {"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1><p>Ladies and gentlemen,</p></h1>
+
+<p>It is my pleasure to acquaint you, our newest and most distinguished hires, with the fundamental duties that lie ahead. Beyond overseeing the clinic, we are also engaged in the profitable enterprise of exporting raw resources via train.</p>
+
+<p>These resources may be obtained through the rather unfortunate yet necessary menial labor conducted in the mines northeast of New Reno. Alternatively, one may procure ore imported directly from the NCR Prison, following the rates listed here per individual piece of ore:</p>
+
+<ul>
+    <li>Iron - 2 caps</li>
+    <li>Plasma - 4 caps</li>
+    <li>Silver - 6 caps</li>
+    <li>Gold - 8 caps</li>
+    <li>Titanium - 9 caps</li>
+    <li>Uranium - 11 caps</li>
+    <li>Diamond - 15 caps</li>
+</ul>
+
+<p>Once the ore is acquired, it is exported via our rail line in bulk at established rates, a highly profitable venture that secures our standing here in New Reno. Do not falter in this task; a considerable responsibility rests upon you to uphold the family’s interests.</p>
+
+<p class="warning">Rest assured, you are being watched—not only by us but, indeed, by Providence itself.</p>
+
+</body>
+</html>"}
 
 /obj/item/paper/ncrcf
 	name = "Instructions for the NCRCF"
-	desc = "If you're reading this it means the first girlboss senator has failed utterly. - Kimball and the Boys."
+	desc = "If you're reading this, it means you're here to police the dregs of society rather than being on the frontlines."
 	icon_state = "paper_words"
-	info = {"ChopChop please."}
+	info = {"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Speech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #c00;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>NOTICE MEMO 3471</h1>
+
+<p>LISTEN UP, YOU SORRY SACKS OF FILTH. YOU MIGHT BE OUT OF THE ARMY BUT THAT DOESN'T MEAN YOU GET TO SIT AROUND PLAYING WITH TEA CUPS LIKE A BUNCH OF HELPLESS GRANDMAS. THIS ISN'T A DAYCARE CENTER - THIS PRISON IS OUR GOVERNMENT'S PRIDE AND JOY, AND I'LL BE DAMNED IF YOU'RE GONNA BE THE CLOWNS WHO SCREW IT UP.</p>
+
+<p>YOUR JOB ISN'T JUST TO BABYSIT INMATES; YOU'VE GOT TO MAKE SURE THOSE WORTHLESS WORMS DIG UP EVERY OUNCE OF ORE IN THE MINE. THAT ORE ISN'T JUST DIRT, IT'S PROFIT FOR THIS WHOLE OPERATION. YOU EXPORT THE ORE STRAIGHT TO THE VAN GRAFF FAMILY FOR THEIR ROBOT FREAKSHOWS AND THE WRIGHTS TO SHIP IT OUT VIA TRAIN.</p>
+
+<p>HERE ARE ORE PRICES:</p>
+<ul>
+    <li>IRON - 2 CAPS</li>
+    <li>PLASMA - 4 CAPS</li>
+    <li>SILVER - 6 CAPS</li>
+    <li>GOLD - 8 CAPS</li>
+    <li>TITANIUM - 9 CAPS</li>
+    <li>URANIUM - 11 CAPS</li>
+    <li>DIAMOND - 15 CAPS</li>
+</ul>
+
+<p>THIS ISN'T YOUR MOTHER'S BACKYARD PROJECT; THIS OPERATION KEEPS THIS PLACE RUNNING. GET IT THROUGH YOUR THICK SKULLS AND ACT LIKE IT, OR SO HELP ME, I'M GOING TO MAKE GOD HIMSELF COME DOWN SWINGING A HAMMER BIGGER THAN VAULT-CITY AND CRUSH WHATEVER'S LEFT OF YOUR SORRY EXCUSES FOR MANHOOD. MAKE THIS UNIT PROUD OR I WILL PERSONALLY MAKE SURE YOU REGRET IT.</p>
+
+</body>
+</html>"}
 
 /obj/item/paper/bishops
 	name = "Word to the Wise"
@@ -713,3 +871,12 @@ Temperance Union members harbor a deep-seated distrust in the effectiveness of c
 	info = {"<center>Money Making Opportunity</center><br><br>
 To anyone interested in making some caps, we've cut a deal with the prison commissary robot to begin moving chems into the NCR Correctional Facility. Get the chems from our supply in the Shark Club, sneak them in somehow, load up his machine, cash out, and find a way to get the caps out of the prison. Don't screw this up, capisce?<br><br><br>
 <center>- Yours truly and anonymously</center>"}
+
+/obj/item/paper/heist
+	name = "Burn After Reading."
+	desc = "A note given to those who have no qualms about disrupting the gangs of New Reno.."
+	icon_state = "paper_words"
+	info = {"<center>To the crew,</center><br><br>
+	As a reminder: The clubhouse is just northeast of town in the tribal camp. Follow the I-80 east until you find the ruined town, then follow the dirt path north and east until you see the green lady. Head through the gate, the elevator to the penthouse is inside working, we got the placed cleaned up and loaded with supplies for your job. Bring the artifact there, get it open, then kick up your feet with some champagne. I can’t wait to see what’s inside..<br><br><br>
+	<center>- M. </center><br><br>
+	<center>P.S. Snitches will be shot- burn this note! </center>"}
