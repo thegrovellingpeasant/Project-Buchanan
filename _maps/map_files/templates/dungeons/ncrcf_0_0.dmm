@@ -120,9 +120,6 @@
 	pixel_x = 2;
 	layer = 4.27
 	},
-/obj/structure/railing/wood{
-	pixel_y = -5
-	},
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "el" = (
@@ -304,21 +301,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "km" = (
-/obj/structure/railing/wood{
-	dir = 8;
-	pixel_y = 20;
-	layer = 4.27
-	},
 /obj/structure/railing/wood/post{
 	pixel_x = -14;
-	layer = 4.28
+	layer = 4.28;
+	pixel_y = -5
 	},
-/obj/structure/closet/crate/leftfootlocker,
-/obj/item/radio/prison,
-/obj/item/radio/prison,
-/obj/item/radio/prison,
-/obj/item/radio/prison,
-/obj/item/radio/prison,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "ku" = (
@@ -410,13 +397,14 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/caves)
 "nh" = (
-/obj/structure/table/wood,
-/obj/item/toy/cards/deck{
-	pixel_y = 8
+/obj/item/flashlight/lantern{
+	on = 1;
+	pixel_y = 31;
+	layer = 4.29;
+	pixel_x = -1;
+	anchored = 1
 	},
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
-	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/caves)
 "nk" = (
 /obj/structure/railing/handrail{
@@ -578,6 +566,10 @@
 	pixel_y = 0
 	},
 /obj/item/ammo_box/a762,
+/obj/item/gun/ballistic/rifle/mosin{
+	pixel_y = 0
+	},
+/obj/item/ammo_box/a762,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rn" = (
@@ -596,14 +588,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sn" = (
-/obj/structure/stairs/east{
-	color = "#faf0b9";
-	max_integrity = 99999
-	},
 /obj/structure/railing/wood{
 	pixel_y = -7
 	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/indestructible/ground/outside/roof/stairs/north{
+	color = "#faf0b9";
+	dir = 8
+	},
 /area/f13/caves)
 "sF" = (
 /obj/item/flashlight/lantern{
@@ -730,6 +721,11 @@
 	},
 /obj/effect/spawner/lootdrop/cig_packs,
 /obj/item/storage/box/matches,
+/obj/structure/railing/wood/post{
+	pixel_x = -17;
+	layer = 4.26;
+	pixel_y = 30
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "vL" = (
@@ -756,7 +752,8 @@
 	on = 1;
 	pixel_y = 4;
 	layer = 4.29;
-	pixel_x = -14
+	pixel_x = -14;
+	anchored = 1
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -1151,6 +1148,15 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/caves)
+"HT" = (
+/obj/structure/closet/crate/leftfootlocker,
+/obj/item/radio/prison,
+/obj/item/radio/prison,
+/obj/item/radio/prison,
+/obj/item/radio/prison,
+/obj/item/radio/prison,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "HW" = (
 /obj/structure/railing/wood{
 	dir = 8;
@@ -1374,28 +1380,18 @@
 /turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "PH" = (
-/obj/machinery/mineral/wasteland_trader/renobuyer{
-	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
+/obj/structure/railing/wood/post{
+	pixel_x = -18;
+	layer = 4.28;
+	pixel_y = -1
 	},
-/turf/open/indestructible/ground/inside/subway{
-	name = "cave"
-	},
+/turf/closed/wall/mineral/wood,
 /area/f13/caves)
 "PI" = (
-/obj/structure/closet/locker/oldstyle,
 /obj/structure/railing/wood{
-	dir = 8;
-	pixel_y = 8;
-	pixel_x = -3;
-	layer = 4.27
+	pixel_y = -5
 	},
-/obj/structure/railing/wood/post{
-	pixel_x = -17;
-	layer = 4.26;
-	pixel_y = 30
-	},
-/obj/item/storage/box/drinkingglasses,
-/turf/open/indestructible/ground/inside/mountain,
+/turf/closed/indestructible/rock/smoothing,
 /area/f13/caves)
 "PL" = (
 /obj/effect/overlay/gravel/edge{
@@ -1548,6 +1544,14 @@
 	},
 /obj/structure/punching_bag,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"SG" = (
+/obj/machinery/mineral/wasteland_trader/renobuyer{
+	desc = "A shady vending machine, but working and able to take in various narcotics and repay the user in the form of caps. All stock will go sto the NCRCF Commissary."
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
 /area/f13/caves)
 "ST" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -1755,18 +1759,21 @@
 	layer = 4.26;
 	pixel_y = 26
 	},
-/obj/structure/railing/wood/post{
-	pixel_x = -18;
-	layer = 4.28;
-	pixel_y = -1
+/obj/structure/stairs/east{
+	color = "#faf0b9";
+	max_integrity = 99999;
+	dir = 2
 	},
-/turf/open/indestructible/ground/outside/roof/stairs/north{
-	color = "#faf0b9"
-	},
+/turf/open/space/basic,
 /area/f13/caves)
 "Yd" = (
-/obj/structure/closet/crate/miningcar,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/table/wood,
+/obj/item/toy/cards/deck{
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/inside/subway{
+	name = "cave"
+	},
 /area/f13/caves)
 "Yp" = (
 /obj/effect/overlay/gravel/edge{
@@ -1930,9 +1937,9 @@ Mx
 "}
 (8,1,1) = {"
 sZ
-Uo
+nh
 XR
-CD
+PH
 CD
 wS
 CD
@@ -1948,7 +1955,7 @@ Mx
 RT
 sn
 DG
-CD
+HT
 CD
 CD
 CD
@@ -1963,7 +1970,7 @@ Mx
 (10,1,1) = {"
 yL
 km
-Yd
+CD
 CD
 CD
 CD
@@ -2274,10 +2281,10 @@ Br
 Br
 Br
 Wx
-nh
+Yd
 YP
 yO
-PH
+SG
 Le
 "}
 (30,1,1) = {"
@@ -2309,7 +2316,7 @@ yO
 yO
 Hl
 yO
-PH
+SG
 Le
 "}
 (32,1,1) = {"

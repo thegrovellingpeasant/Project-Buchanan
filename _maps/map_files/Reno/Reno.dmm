@@ -2401,6 +2401,11 @@
 	},
 /turf/open/floor/carpet/reno/evil2,
 /area/f13/reno_sharkclub)
+"aun" = (
+/obj/structure/window/fulltile/ruins,
+/obj/structure/fence,
+/turf/open/floor/plasteel/f13/vault_floor/plating/lit,
+/area/f13/reno_prison)
 "aus" = (
 /obj/structure/barricade/tentclothedge{
 	opacity = 0;
@@ -8423,6 +8428,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralchess,
 /area/f13/chapel)
+"bvg" = (
+/obj/machinery/scanner_gate,
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/reno_prison)
 "bvh" = (
 /obj/item/clothing/head/cone,
 /turf/open/floor/plating/tunnel/curb,
@@ -50499,9 +50508,6 @@
 	},
 /turf/open/indestructible/ground/outside/graveldirt,
 /area/f13/reno_tribal)
-"ixG" = (
-/turf/closed/indestructible/riveted,
-/area/f13/reno_caves)
 "ixJ" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -57861,10 +57867,6 @@
 /obj/effect/spawner/lootdrop/f13/armor/clothes/prewar,
 /turf/open/floor/wood/wood_diagonal/lit,
 /area/f13/reno_hotel)
-"jLZ" = (
-/obj/effect/landmark/start/f13/bishops/floorman,
-/turf/open/floor/wood,
-/area/f13/reno_sharkclub)
 "jMb" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -66145,6 +66147,10 @@
 	dir = 4
 	},
 /area/f13/reno_sewers)
+"lea" = (
+/obj/effect/landmark/start/f13/bishops/floorman,
+/turf/open/floor/wood,
+/area/f13/reno_sharkclub)
 "ler" = (
 /obj/structure/table_frame/wood,
 /turf/open/floor/wood/f13/carpet/lit,
@@ -70509,10 +70515,6 @@
 /obj/item/blanket/ruined,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/reno_sewers)
-"lPr" = (
-/obj/machinery/telecomms/relay/preset/telecomms,
-/turf/open/indestructible,
-/area/f13/reno_caves)
 "lPw" = (
 /obj/effect/overlay/junk{
 	icon = 'icons/obj/atmospherics/components/unary_devices.dmi';
@@ -79872,6 +79874,9 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/plating/lit,
 /area/f13/raiders)
+"nwr" = (
+/turf/closed/indestructible/riveted,
+/area/f13/reno_caves)
 "nwt" = (
 /turf/open/floor/wood/f13/oak,
 /area/f13/reno_building)
@@ -112873,7 +112878,7 @@
 "sXB" = (
 /obj/structure/railing{
 	dir = 8;
-	pixel_x = -7
+	pixel_x = -8
 	},
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/reno_prison)
@@ -124940,6 +124945,14 @@
 	icon_state = "crosswalk"
 	},
 /area/f13/reno_streets)
+"uWN" = (
+/obj/structure/railing{
+	dir = 8;
+	pixel_y = 6;
+	pixel_x = -7
+	},
+/turf/open/floor/wood/f13/oak/lit,
+/area/f13/reno_prison)
 "uWO" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -141505,6 +141518,10 @@
 /obj/structure/closet/cabinet,
 /turf/open/floor/wood/f13/oak/lit,
 /area/f13/farmhouse)
+"xIH" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/reno_caves)
 "xIK" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -182339,8 +182356,8 @@ ikb
 sZJ
 "}
 (249,1,1) = {"
-ixG
-ixG
+nwr
+nwr
 sTI
 sTI
 sTI
@@ -182491,8 +182508,8 @@ cSX
 sZJ
 "}
 (250,1,1) = {"
-lPr
-ixG
+xIH
+nwr
 tyh
 tyh
 tyh
@@ -183896,8 +183913,8 @@ kZc
 pNM
 bnu
 whP
-mAY
-jLx
+hJy
+bvg
 vBA
 vyj
 wzn
@@ -184044,7 +184061,7 @@ pxs
 cve
 wKQ
 wKQ
-kZc
+aun
 tIC
 vfU
 mAY
@@ -184199,7 +184216,7 @@ wKQ
 xmE
 xmd
 jLx
-jLx
+uWN
 jLx
 fIJ
 tsb
@@ -205552,7 +205569,7 @@ xBy
 nqT
 hZe
 bWp
-jLZ
+lea
 bWp
 bWp
 pph
