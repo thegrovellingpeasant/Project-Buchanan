@@ -15,7 +15,7 @@
 	selection_color = "#dece90"
 	exp_requirements = 360
 	outfit = /datum/outfit/job/citizens/f13ncrcfwarden
-	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_COMMAND, ACCESS_BRIG)
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_COMMAND)
 
 
@@ -38,7 +38,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster/legholster
 	gloves = /obj/item/clothing/gloves/f13/leather
-	suit = /obj/item/clothing/suit/armor/f13/civilians/ncr_police_coat/chief
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = /obj/item/storage/backpack/satchel/trekker
@@ -48,6 +48,7 @@
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/medium = 1
@@ -62,7 +63,7 @@
 	supervisors = "the Warden"
 	outfit = /datum/outfit/job/citizens/f13ncrcfguard
 	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR, ACCESS_BRIG)
 
 
 /datum/outfit/job/citizens/f13ncrcfguard/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -93,6 +94,7 @@
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/reagent_containers/spray/pepper = 1,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/meager = 1
@@ -106,7 +108,7 @@
 	description = "You lucked out and managed a somewhat well-paying occupation. Learned physicians are hard to come by, so your New Californian citizenship only sweetened the deal as you were whisked away by the government into working on a backwater correctional facility."
 	outfit = /datum/outfit/job/citizens/f13ncrcfphysician
 	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	minimal_access = list(ACCESS_NCR, ACCESS_BRIG)
 
 /datum/outfit/job/citizens/f13ncrcfphysician
 	name = "NCRCF Physician"
@@ -117,6 +119,7 @@
 	accessory = null
 	shoes = /obj/item/clothing/shoes/laceup
 	head = null
+	ears = /obj/item/radio/headset/headset_ncrcf
 	mask =  /obj/item/clothing/mask/surgical
 	neck = /obj/item/clothing/neck/stethoscope
 	gloves =  /obj/item/clothing/gloves/color/latex
@@ -311,6 +314,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/medium = 1
 		)
@@ -354,6 +358,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/melee/classic_baton/police = 1,
 		/obj/item/reagent_containers/spray/pepper = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/storage/bag/money/small/meager = 1
 		)

@@ -1252,6 +1252,7 @@
 	pixel_x = 8
 	},
 /obj/item/storage/fancy/cigarettes/cigpack_greytort,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13{
 	icon_state = "rarewhite"
 	},
@@ -1870,6 +1871,11 @@
 	icon_state = "darkgreenfull"
 	},
 /area/f13/vault)
+"zq" = (
+/obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/plasteel/f13/vault_floor/misc/bar,
+/area/f13/vault)
 "zs" = (
 /obj/structure/closet/locker,
 /turf/open/floor/f13{
@@ -2180,6 +2186,13 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/reno/evil,
+/area/f13/vault)
+"Dy" = (
+/obj/structure/table,
+/obj/item/reagent_containers/glass/bottle/random_virus,
+/turf/open/floor/f13{
+	icon_state = "rarewhite"
+	},
 /area/f13/vault)
 "DK" = (
 /obj/structure/chair/office/dark{
@@ -3968,6 +3981,13 @@
 /obj/effect/spawner/lootdrop/trash,
 /turf/open/indestructible/ground/outside/sidewalk/innerhorizontal/dark,
 /area/f13/subway)
+"Xc" = (
+/obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/f13/red{
+	icon_state = "redsolid"
+	},
+/area/f13/vault)
 "Xf" = (
 /obj/machinery/autolathe,
 /turf/open/floor/f13{
@@ -6270,7 +6290,7 @@ Vo
 Vo
 Vo
 CI
-CI
+zq
 xZ
 Uy
 QH
@@ -6868,7 +6888,7 @@ xZ
 Bk
 qu
 vF
-ur
+Dy
 Bk
 Oi
 Vb
@@ -6980,7 +7000,7 @@ Bk
 Bk
 Bk
 Bk
-Oi
+Xc
 fM
 oh
 Sx

@@ -1,5 +1,5 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Wendover!</h1>
+<h1>Welcome to New Reno</h1>
 <br>
 We hope you have a lovely day!<br>
