@@ -338,8 +338,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	if(ishuman(C))
 		var/mob/living/carbon/human/H = C
-		if(NOGENITALS in H.dna.species.species_traits)
-			H.give_genitals(TRUE) //call the clean up proc to delete anything on the mob then return.
 		if(mutant_bodyparts["meat_type"]) //I can't believe it's come to the meat
 			H.type_of_meat = GLOB.meat_types[H.dna.features["meat_type"]]
 
@@ -599,10 +597,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		var/datum/sprite_accessory/taur/TA
 		if(mutant_bodyparts["taur"] && H.dna.features["taur"])
 			TA = GLOB.taur_list[H.dna.features["taur"]]
-		if(!(TA?.hide_legs) && H.socks && !H.hidden_socks && H.get_num_legs(FALSE) >= 2)
-			if(H.saved_socks)
-				H.socks = H.saved_socks
-				H.saved_socks = ""
+		if(!(TA?.hide_legs) && H.socks && H.get_num_legs(FALSE) >= 2)
 			var/datum/sprite_accessory/underwear/socks/S = GLOB.socks_list[H.socks]
 			if(S)
 				var/digilegs = ((DIGITIGRADE in species_traits) && S.has_digitigrade) ? "_d" : ""
@@ -611,10 +606,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					MA.color = "#[H.socks_color]"
 				standing += MA
 
-		if(H.underwear && !H.hidden_underwear)
-			if(H.saved_underwear)
-				H.underwear = H.saved_underwear
-				H.saved_underwear = ""
+		if(H.underwear)
 			var/datum/sprite_accessory/underwear/bottom/B = GLOB.underwear_list[H.underwear]
 			if(B)
 				var/digilegs = ((DIGITIGRADE in species_traits) && B.has_digitigrade) ? "_d" : ""
@@ -623,10 +615,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 					MA.color = "#[H.undie_color]"
 				standing += MA
 
-		if(H.undershirt && !H.hidden_undershirt)
-			if(H.saved_undershirt)
-				H.undershirt = H.saved_undershirt
-				H.saved_undershirt = ""
+		if(H.undershirt)
 			var/datum/sprite_accessory/underwear/top/T = GLOB.undershirt_list[H.undershirt]
 			if(T)
 				var/state = "[T.icon_state][((DIGITIGRADE in species_traits) && T.has_digitigrade) ? "_d" : ""]"
@@ -1517,9 +1506,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/target_on_help = target.a_intent == INTENT_HELP
 	var/target_aiming_for_mouth = target.zone_selected == "mouth"
 	var/target_restrained = target.restrained()
-	var/same_dir = (target.dir & user.dir)
-	var/aim_for_groin  = user.zone_selected == "groin"
-	var/target_aiming_for_groin = target.zone_selected == "groin"
 	var/aim_for_head = user.zone_selected == "head"
 	var/target_aiming_for_head = target.zone_selected == "head"
 
@@ -1539,22 +1525,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		user.adjustStaminaLossBuffered(3)
 		if (!HAS_TRAIT(target, TRAIT_PERMABONER))
 			stop_wagging_tail(target)
-		return FALSE
-	else if(aim_for_groin && (target == user || target.lying || same_dir) && (target_on_help || target_restrained || target_aiming_for_groin))
-		if(target.client?.prefs.cit_toggles & NO_ASS_SLAP)
-			to_chat(user,"A force stays your hand, preventing you from slapping \the [target]'s ass!")
-			return FALSE
-		user.do_attack_animation(target, ATTACK_EFFECT_ASS_SLAP)
-		user.adjustStaminaLossBuffered(3)
-		target.adjust_arousal(20,maso = TRUE)
-		if (ishuman(target) && HAS_TRAIT(target, TRAIT_MASO) && target.has_dna() && prob(10))
-			target.mob_climax(forced_climax=TRUE)
-		if (!HAS_TRAIT(target, TRAIT_PERMABONER))
-			stop_wagging_tail(target)
-		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
-		target.visible_message(\
-			span_danger("\The [user] slaps [user == target ? "[user.p_their()] own" : "\the [target]'s"] ass!"))
-
 		return FALSE
 
 //BONK chucklehead!
@@ -1926,8 +1896,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			if(BP)
 				if(BP.receive_damage(damage_amount, 0, wound_bonus = wound_bonus, bare_wound_bonus = bare_wound_bonus, sharpness = sharpness))
 					H.update_damage_overlays()
-					if(damage_amount < 20)
-						H.adjust_arousal(damage_amount, maso = TRUE)
 
 			else//no bodypart, we deal damage with a more general method.
 				H.adjustBruteLoss(damage_amount)
