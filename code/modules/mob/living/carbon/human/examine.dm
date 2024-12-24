@@ -114,13 +114,6 @@
 	if(!isnull(effects_exam))
 		. += effects_exam
 
-	//CIT CHANGES START HERE - adds genital details to examine text
-	if(LAZYLEN(internal_organs) && CHECK_BITFIELD(user.client?.prefs.cit_toggles, GENITAL_EXAMINE))
-		for(var/obj/item/organ/genital/dicc in internal_organs)
-			if(istype(dicc) && dicc.is_exposed())
-				. += "[dicc.desc]"
-	//END OF CIT CHANGES
-
 	//Jitters
 	switch(jitteriness)
 		if(300 to INFINITY)
@@ -353,13 +346,6 @@
 				msg += "[t_He] appear[p_s()] to be staring off into space.\n"
 			if (HAS_TRAIT(src, TRAIT_DEAF))
 				msg += "[t_He] appear[p_s()] to not be responding to noises.\n"
-
-	var/obj/item/organ/vocal_cords/Vc = user.getorganslot(ORGAN_SLOT_VOICE)
-	if(Vc)
-		if(istype(Vc, /obj/item/organ/vocal_cords/velvet))
-			if(client.prefs.cit_toggles & HYPNO)
-				msg += "[span_velvet("<i>You feel your chords resonate looking at them.</i>")]\n"
-
 
 	if(!appears_dead)
 		if(stat == UNCONSCIOUS)

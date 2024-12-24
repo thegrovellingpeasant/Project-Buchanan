@@ -1,4 +1,4 @@
-/obj/structure/medscreen/
+/obj/structure/medscreen
 	name = "medical screen"
 	desc = "No peaking now!"
 	icon_state = "screen"
@@ -7,10 +7,10 @@
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
 	integrity_failure = 30
-	var/buildstacktype = /obj/item/stack/sheet/metal
-	var/buildstackamount = 2
 	density = FALSE
 	layer = 5
+	var/buildstacktype = /obj/item/stack/sheet/metal
+	var/buildstackamount = 2
 
 /obj/structure/medscreen/Moved()
 	. = ..()
