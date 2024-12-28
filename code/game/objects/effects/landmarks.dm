@@ -1137,8 +1137,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Bishop Made Man"
 	icon_state = "Bishop Made Man"
 
-/obj/effect/landmark/start/f13/bishops/casinoworker
-	name = "Bishops Casino Worker"
+/obj/effect/landmark/start/f13/bishops/floorman
+	name = "Bishop Floor Man"
 	icon_state = "Bishops Casino Worker"
 
 /obj/effect/landmark/start/f13/bishops/racketeer

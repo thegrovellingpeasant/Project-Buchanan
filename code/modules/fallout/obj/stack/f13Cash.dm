@@ -209,7 +209,7 @@
 	singular_name = "Denari" // -us or -i
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "denarius"
-	flavor_desc =	"The inscriptions are in Latin,\n\
+	flavor_desc = "The inscriptions are in Latin,\n\
 		'Caesar Dictator' on the front and\n\
 		'Magnum Chasma' on the back."
 	value = CASH_DEN * CASH_CAP
@@ -248,9 +248,9 @@
 	singular_name = "Aure"// -us or -i
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "aureus"
-	flavor_desc = 	"The inscriptions are in Latin,\n\
-					'Aeternit Imperi' on the front and\n\
-					'Pax Per Bellum' on the back."
+	flavor_desc =  "The inscriptions are in Latin,\n\
+		'Aeternit Imperi' on the front and\n\
+		'Pax Per Bellum' on the back."
 	value = CASH_AUR * CASH_CAP
 	merge_type = /obj/item/stack/f13Cash/aureus
 
