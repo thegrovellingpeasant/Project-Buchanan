@@ -715,7 +715,8 @@ SUBSYSTEM_DEF(job)
 	var/mob/the_mob = N
 	if(!the_mob)
 		the_mob = M // cause this doesn't get assigned if player is a latejoiner
-	GLOB.faction_task_controller.add_player(M)
+	if(M.mind && M.mind.assigned_role)
+		GLOB.faction_task_controller.add_player(M)
 	var/list/chosen_gear = the_mob.client.prefs.loadout_data["SAVE_[the_mob.client.prefs.loadout_slot]"]
 	if(the_mob.client && the_mob.client.prefs && (chosen_gear && chosen_gear.len))
 		if(!ishuman(M))//no silicons allowed
@@ -731,8 +732,6 @@ SUBSYSTEM_DEF(job)
 			if(G.donoritem && !G.donator_ckey_check(the_mob.client.ckey))
 				permitted = FALSE
 			if(!equipbackpackstuff && G.slot == ITEM_SLOT_BACKPACK)//snowflake check since plopping stuff in the backpack doesnt work for pre-job equip loadout stuffs
-				permitted = FALSE
-			if(equipbackpackstuff && G.slot != ITEM_SLOT_BACKPACK)//ditto
 				permitted = FALSE
 			if(!permitted)
 				continue
