@@ -46,7 +46,8 @@
 	light_range = 9
 	var/deflect_chance = 10 //chance to deflect the incoming projectiles, hits, or lesser the effect of ex_act.
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
-	var/list/facing_modifiers = list(FRONT_ARMOUR = 1.5, SIDE_ARMOUR = 1, BACK_ARMOUR = 0.5)
+	// Indexed by FRONT_ARMOUR, SIDE_ARMOUR, and BACK_ARMOUR, respectively.
+	var/list/facing_modifiers = list(1.5, 1, 0.5)
 	var/obj/item/stock_parts/cell/cell
 	var/obj/item/stock_parts/scanning_module/scanning_module
 	var/obj/item/stock_parts/capacitor/capacitor

@@ -46,22 +46,28 @@ Option 3: Download a pre-compiled nightly at https://tgstation13.download/nightl
 
 ## INSTALLATION
 
-First-time installation should be fairly straightforward. First, you'll need
-BYOND installed. You can get it from https://www.byond.com/download. Once you've done
-that, extract the game files to wherever you want to keep them. This is a
-sourcecode-only release, so the next step is to compile the server files.
-Open fortune13.dme by double-clicking it, open the Build menu, and click
-compile. This'll take a little while, and if everything's done right you'll get
-a message like this:
+Install BYOND 516.1688 from https://www.byond.com/download, then extract or clone
+the game files. This version is also pinned in `dependencies.sh` and `.tgs.yml`.
+
+On Windows, run `BUILD.bat` to compile the server and its TGUI assets. To include
+both supported maps (Wendover and Reno) and fail on compiler warnings, run this
+from the repository root:
+
+```powershell
+.\tools\build\build.bat build -DALL_MAPS -Werror
+```
+
+For Linux or a BYOND installation outside the standard Windows locations, see
+[the build script documentation](tools/build/README.md). A successful build ends
+with a message like this:
 
 ```
 saving fortune13.dmb (DEBUG mode)
 fortune13.dmb - 0 errors, 0 warnings
 ```
 
-If you see any errors or warnings, something has gone wrong - possibly a corrupt
-download or the files extracted wrong. If problems persist, ask for assistance
-in irc://irc.rizon.net/coderbus
+Use the build script instead of compiling `fortune13.dme` directly in Dream Maker;
+the script also prepares the required JavaScript assets and compile flags.
 
 Once that's done, open up the config folder. You'll want to edit config.txt to
 set the probabilities for different gamemodes in Secret and to set your server
